@@ -74,7 +74,7 @@ def apply(mmap, cfg):
     from ai_money import ai_money
     ai_money(mmap)
     from dual_prod import dual_production
-    dual_production(mmap)
+    dual_production(mmap, float(getattr(cfg, 'WATER_Z', 200.0)))
     for flag, module, func in OPTIONAL:
         if not getattr(cfg, flag, False):
             continue
