@@ -1,0 +1,14 @@
+---
+description: 查红警3地编脚本动作、条件或 Lua 动作时，先读 docs/ra3wiki，按编号和参数提示回答。
+alwaysApply: false
+---
+
+# 本地 ra3wiki
+
+地图编辑器脚本以 `docs/ra3wiki` 为准。原文在 https://www.yuque.com/muzeqaq/ra3mapwiki 。
+
+- 目录：`docs/ra3wiki/catalog.md`
+- 动作：`docs/ra3wiki/actions.json`，字段 `index`、`id`、`path`、`zh`、`arg`、`obsolete`
+- 条件：`docs/ra3wiki/conditions.json`，字段相同
+
+按编号引用动作，参数用该条的 `arg`。`obsolete` 为 true 的条目编辑器标在废弃目录下。教程正文不在本地，需要时打开目录里的链接。

@@ -1,0 +1,1248 @@
+{
+  "source": "https://www.yuque.com/muzeqaq/ra3mapwiki/eaht4xli7pd51gzk",
+  "zh_source": "https://www.yuque.com/muzeqaq/ra3mapwiki/fnshx90tfo5m4k8k",
+  "fetched": "2026-10-15",
+  "count": 155,
+  "items": [
+    {
+      "index": 1,
+      "id": "COUNTER",
+      "path": "",
+      "zh": "计时器计算出一个值",
+      "obsolete": false,
+      "arg": ""
+    },
+    {
+      "index": 2,
+      "id": "FLAG",
+      "path": "",
+      "zh": "标记为一个值",
+      "obsolete": false,
+      "arg": ""
+    },
+    {
+      "index": 3,
+      "id": "CONDITION_TRUE",
+      "path": "",
+      "zh": "真实 真",
+      "obsolete": false,
+      "arg": ""
+    },
+    {
+      "index": 4,
+      "id": "TIMER_EXPIRED",
+      "path": "",
+      "zh": "计时器已过期",
+      "obsolete": false,
+      "arg": ""
+    },
+    {
+      "index": 5,
+      "id": "TEAM_INSIDE_AREA_PARTIALLY",
+      "path": "Team/Area or Path/Team has units in an area.",
+      "zh": "小队已经在一个区域部署了部队",
+      "obsolete": false,
+      "arg": "${TeamName} has one or more units in ${TriggerAreaName} (${SurfaceType})."
+    },
+    {
+      "index": 6,
+      "id": "TEAM_DESTROYED",
+      "path": "Team/Attacked, Destroyed, or Exists/Team is destroyed.",
+      "zh": "团队被摧毁",
+      "obsolete": false,
+      "arg": "${TeamName} has been destroyed."
+    },
+    {
+      "index": 7,
+      "id": "CAMERA_MOVEMENT_FINISHED",
+      "path": "Camera/Camera movement finished.",
+      "zh": "摄像机运动完成",
+      "obsolete": false,
+      "arg": "The camera movement has finished."
+    },
+    {
+      "index": 8,
+      "id": "TEAM_HAS_UNITS",
+      "path": "Team/Attacked, Destroyed, or Exists/Team has units.",
+      "zh": "团队有单位",
+      "obsolete": false,
+      "arg": "${TeamName} has one or more units."
+    },
+    {
+      "index": 9,
+      "id": "NAMED_INSIDE_AREA",
+      "path": "Object Type/Area or Path/Named object is inside an area.",
+      "zh": "命名对象在一个区域内",
+      "obsolete": false,
+      "arg": "${UnitName} is inside ${TriggerAreaName}"
+    },
+    {
+      "index": 10,
+      "id": "NAMED_OUTSIDE_AREA",
+      "path": "Object Type/Area or Path/Named object is outside an area.",
+      "zh": "命名对象在区域之外",
+      "obsolete": false,
+      "arg": "${UnitName} is outside ${TriggerAreaName}"
+    },
+    {
+      "index": 11,
+      "id": "NAMED_DESTROYED",
+      "path": "Object Type/Attacked, Destroyed, or Exists/Named object is destroyed.",
+      "zh": "命名对象被销毁",
+      "obsolete": false,
+      "arg": "${UnitName} has been destroyed."
+    },
+    {
+      "index": 12,
+      "id": "NAMED_NOT_DESTROYED",
+      "path": "Object Type/Attacked, Destroyed, or Exists/Named object exists and is alive.",
+      "zh": "命名对象存在并且是活动的",
+      "obsolete": false,
+      "arg": "${UnitName} exists and is alive."
+    },
+    {
+      "index": 13,
+      "id": "TEAM_INSIDE_AREA_ENTIRELY",
+      "path": "Team/Area or Path/Team is completely inside an area.",
+      "zh": "团队完全在一个区域内",
+      "obsolete": false,
+      "arg": "${TeamName} is all inside ${TriggerAreaName} (${SurfaceType})."
+    },
+    {
+      "index": 14,
+      "id": "TEAM_OUTSIDE_AREA_ENTIRELY",
+      "path": "Team/Area or Path/Team is completely outside an area.",
+      "zh": "团队完全在一个区域之外",
+      "obsolete": false,
+      "arg": "${TeamName} is completely outside ${TriggerAreaName} (${SurfaceType})."
+    },
+    {
+      "index": 15,
+      "id": "NAMED_ATTACKED_BY_OBJECTTYPE",
+      "path": "Object Type/Attacked, Destroyed, or Exists/Named object is attacked by a specific object type.",
+      "zh": "命名对象受到特定对象类型的攻击",
+      "obsolete": false,
+      "arg": "${UnitName} has been attacked by a(n) ${ObjectType}"
+    },
+    {
+      "index": 16,
+      "id": "TEAM_ATTACKED_BY_OBJECTTYPE",
+      "path": "Team/Attacked, Destroyed, or Exists/Team is attacked by a specific object type.",
+      "zh": "团队受到特定对象类型的攻击",
+      "obsolete": false,
+      "arg": "${TeamName} has been attacked by a(n) ${ObjectType}"
+    },
+    {
+      "index": 17,
+      "id": "NAMED_ATTACKED_BY_PLAYER",
+      "path": "Object Type/Attacked, Destroyed, or Exists/Named object has been attacked by Player.",
+      "zh": "已命名物体被玩家攻击",
+      "obsolete": false,
+      "arg": "${UnitName} has been attacked by ${PlayerName}"
+    },
+    {
+      "index": 18,
+      "id": "TEAM_ATTACKED_BY_PLAYER",
+      "path": "Team/Attacked, Destroyed, or Exists/Team has been attacked by Player.",
+      "zh": "球队被球员攻击",
+      "obsolete": false,
+      "arg": "${TeamName} has been attacked by ${PlayerName}"
+    },
+    {
+      "index": 19,
+      "id": "BUILT_BY_PLAYER",
+      "path": "Player/Owns/Player has built an object type.",
+      "zh": "玩家创建了一个对象类型",
+      "obsolete": false,
+      "arg": "${ObjectType} has been built by ${PlayerName}"
+    },
+    {
+      "index": 20,
+      "id": "NAMED_CREATED",
+      "path": "Unit has been created.",
+      "zh": "单位已经创建",
+      "obsolete": true,
+      "arg": "${UnitName} has been created."
+    },
+    {
+      "index": 21,
+      "id": "TEAM_CREATED",
+      "path": "Team/Attacked, Destroyed, or Exists/Team has been created.",
+      "zh": "队伍被产生",
+      "obsolete": false,
+      "arg": "${TeamName} has been created."
+    },
+    {
+      "index": 22,
+      "id": "PLAYER_HAS_CREDITS",
+      "path": "Player/Owns/Player has (comparison) number of credits.",
+      "zh": "玩家拥有(比较)数量的积分",
+      "obsolete": false,
+      "arg": "${PlayerName} has ${Comparison} ${Integer} credits."
+    },
+    {
+      "index": 23,
+      "id": "NAMED_DISCOVERED",
+      "path": "Player/Sighted/Player has sighted named object.",
+      "zh": "玩家看到了命名的物体",
+      "obsolete": false,
+      "arg": "${PlayerName} has seen ${UnitName}"
+    },
+    {
+      "index": 24,
+      "id": "TEAM_DISCOVERED",
+      "path": "Player/Sighted/Player has sighted Team.",
+      "zh": "玩家看到了团队",
+      "obsolete": false,
+      "arg": "${PlayerName} has seen ${TeamName}."
+    },
+    {
+      "index": 25,
+      "id": "NAMED_OWNED_BY_PLAYER",
+      "path": "Player/Owns/Player owns Unit.",
+      "zh": "玩家拥有单位",
+      "obsolete": false,
+      "arg": "${PlayerName} owns ${UnitName}."
+    },
+    {
+      "index": 26,
+      "id": "TEAM_OWNED_BY_PLAYER",
+      "path": "Player/Owns/Player owns Team.",
+      "zh": "玩家拥有团队",
+      "obsolete": false,
+      "arg": "${PlayerName} is owned by ${TeamName}."
+    },
+    {
+      "index": 27,
+      "id": "PLAYER_HAS_POWER",
+      "path": "Player/Power/Player's base currently has power.",
+      "zh": "玩家的基础现在拥有能量",
+      "obsolete": false,
+      "arg": "${PlayerName} buildings are powered."
+    },
+    {
+      "index": 28,
+      "id": "NAMED_REACHED_WAYPOINTS_END",
+      "path": "Object Type/Area or Path/Named object has reached the end of a specific waypoint path. (Unreliable)",
+      "zh": "",
+      "obsolete": false,
+      "arg": "${UnitName} has reached the end of ${WaypointPathName}"
+    },
+    {
+      "index": 29,
+      "id": "TEAM_REACHED_WAYPOINTS_END",
+      "path": "Team/Area or Path/Team has reached the end of a specific waypoint path. (Unreliable)",
+      "zh": "",
+      "obsolete": false,
+      "arg": "${TeamName} has reached the end of ${WaypointPathName}"
+    },
+    {
+      "index": 30,
+      "id": "NAMED_SELECTED",
+      "path": "Object Type/Selected/Named object is currently selected.",
+      "zh": "命名对象当前被选中",
+      "obsolete": false,
+      "arg": "${UnitName} is currently selected."
+    },
+    {
+      "index": 31,
+      "id": "NAMED_ENTERED_AREA",
+      "path": "Unit enters an area.",
+      "zh": "单位进入一个区域",
+      "obsolete": true,
+      "arg": "${UnitName} enters ${TriggerAreaName}"
+    },
+    {
+      "index": 32,
+      "id": "NAMED_EXITED_AREA",
+      "path": "Object Type/Area or Path/Named object exits an area.",
+      "zh": "命名对象退出一个区域",
+      "obsolete": false,
+      "arg": "${UnitName} exits ${TriggerAreaName}"
+    },
+    {
+      "index": 33,
+      "id": "TEAM_ENTERED_AREA_ENTIRELY",
+      "path": "Team entirely enters an area.",
+      "zh": "整个团队进入一个区域",
+      "obsolete": true,
+      "arg": "${TeamName} all enter ${TriggerAreaName} (${SurfaceType})."
+    },
+    {
+      "index": 34,
+      "id": "TEAM_ENTERED_AREA_PARTIALLY",
+      "path": "Team/Area or Path/One unit from team enters an area.",
+      "zh": "一个小队进入一个区域",
+      "obsolete": false,
+      "arg": "One unit from ${TeamName} enters ${TriggerAreaName} (${SurfaceType})."
+    },
+    {
+      "index": 35,
+      "id": "TEAM_EXITED_AREA_ENTIRELY",
+      "path": "Team/Area or Path/Team entirely exits an area.",
+      "zh": "团队完全离开一个区域",
+      "obsolete": false,
+      "arg": "${TeamName} has completely exited ${TriggerAreaName} (${SurfaceType})."
+    },
+    {
+      "index": 36,
+      "id": "TEAM_EXITED_AREA_PARTIALLY",
+      "path": "Team/Area or Path/One unit from team exits an area.",
+      "zh": "一个小队离开一个区域",
+      "obsolete": false,
+      "arg": "One unit from ${TeamName} exits ${TriggerAreaName} (${SurfaceType})."
+    },
+    {
+      "index": 37,
+      "id": "MULTIPLAYER_ALLIED_VICTORY",
+      "path": "Multiplayer allied victory.",
+      "zh": "多人盟军的胜利",
+      "obsolete": true,
+      "arg": "The multiplayer game has ended in victory for the local player and his allies."
+    },
+    {
+      "index": 38,
+      "id": "MULTIPLAYER_ALLIED_DEFEAT",
+      "path": "Multiplayer allied defeat.",
+      "zh": "多人盟军击败",
+      "obsolete": true,
+      "arg": "The multiplayer game has ended in defeat for the local player and his allies."
+    },
+    {
+      "index": 39,
+      "id": "MULTIPLAYER_PLAYER_DEFEAT",
+      "path": "Player/Win & Loss/Multiplayer local player defeat check.",
+      "zh": "多人本地玩家击败检查",
+      "obsolete": false,
+      "arg": "Everything belonging to the local player has been destroyed, but his allies may or may not have been defeated."
+    },
+    {
+      "index": 40,
+      "id": "PLAYER_HAS_NO_POWER",
+      "path": "Player/Power/Player's base currently has no power.",
+      "zh": "玩家的基础目前没有能量。",
+      "obsolete": false,
+      "arg": "${PlayerName} buildings are not powered."
+    },
+    {
+      "index": 41,
+      "id": "HAS_FINISHED_VIDEO",
+      "path": "Movie/Movie in the radar has completed playing.",
+      "zh": "电影在雷达上已经完成播放",
+      "obsolete": false,
+      "arg": "Movie ${MovieName} has completed playing."
+    },
+    {
+      "index": 42,
+      "id": "HAS_FINISHED_SPEECH",
+      "path": "Speech has completed playing.",
+      "zh": "演讲结束",
+      "obsolete": true,
+      "arg": "${SpeechName} has completed playing."
+    },
+    {
+      "index": 43,
+      "id": "HAS_FINISHED_AUDIO",
+      "path": "Audio/Sound has completed playing.",
+      "zh": "声音已经播放完毕",
+      "obsolete": false,
+      "arg": "${SoundName} has completed playing."
+    },
+    {
+      "index": 44,
+      "id": "BUILDING_ENTERED_BY_PLAYER",
+      "path": "Player/Garrisoned/Player has garrisoned a specific building.",
+      "zh": "玩家已驻守特定建筑",
+      "obsolete": false,
+      "arg": "${PlayerName} has garrisoned building named ${UnitName}"
+    },
+    {
+      "index": 45,
+      "id": "ENEMY_SIGHTED",
+      "path": "Object Type/Sighted/Unit has sighted a friendly, neutral, or enemy unit belonging to Player.",
+      "zh": "单位发现一个属于玩家的友军、中立或敌人单位",
+      "obsolete": false,
+      "arg": "${UnitName} sees a(n) ${Relation} unit belonging to ${PlayerName}."
+    },
+    {
+      "index": 46,
+      "id": "UNIT_HEALTH",
+      "path": "Object Type/Attacked, Destroyed, or Exists/Named object's health % compared to a value.",
+      "zh": "命名对象的运行状况%与某个值的比较",
+      "obsolete": false,
+      "arg": "${UnitName} health is ${Comparison} ${Integer} percent."
+    },
+    {
+      "index": 47,
+      "id": "NAMED_DYING",
+      "path": "Object Type/Attacked, Destroyed, or Exists/Named object is dying. (Cinematic)",
+      "zh": "",
+      "obsolete": false,
+      "arg": "${UnitName} has been killed, but is still on screen."
+    },
+    {
+      "index": 48,
+      "id": "NAMED_TOTALLY_DEAD",
+      "path": "Object Type/Attacked, Destroyed, or Exists/Named object is finished dying. (Cinematic)",
+      "zh": "",
+      "obsolete": false,
+      "arg": "${UnitName} has been killed, and is finished dying."
+    },
+    {
+      "index": 49,
+      "id": "PLAYER_HAS_OBJECT_COMPARISON",
+      "path": "Player/Owns/Player has (comparison) object type.",
+      "zh": "玩家拥有(比较)对象类型",
+      "obsolete": false,
+      "arg": "${PlayerName} has ${Comparison} ${Integer} object of type ${ObjectType}."
+    },
+    {
+      "index": 50,
+      "id": "PLAYER_TRIGGERED_SPECIAL_POWER",
+      "path": "Player/Special Power/Player starts using a special power.",
+      "zh": "玩家开始使用一种特殊能力",
+      "obsolete": false,
+      "arg": "${PlayerName} starts using ${SpecialPowerName}."
+    },
+    {
+      "index": 51,
+      "id": "PLAYER_COMPLETED_SPECIAL_POWER",
+      "path": "Player/Special Power/Player completed using a special power.",
+      "zh": "玩家使用特殊能力完成",
+      "obsolete": false,
+      "arg": "${PlayerName} completed using ${SpecialPowerName}."
+    },
+    {
+      "index": 52,
+      "id": "PLAYER_TRIGGERED_SPECIAL_POWER_FROM_NAMED",
+      "path": "Player/Special Power/Player start using a special power from a named object.",
+      "zh": "玩家开始使用来自命名对象的特殊能力",
+      "obsolete": false,
+      "arg": "${PlayerName} starts using ${SpecialPowerName} from ${UnitName}."
+    },
+    {
+      "index": 53,
+      "id": "PLAYER_BUILT_UPGRADE",
+      "path": "Player/Upgrades and Sciences/Player built an Upgrade.",
+      "zh": "玩家建造了一种升级",
+      "obsolete": false,
+      "arg": "${PlayerName} has built ${UpgradeName}."
+    },
+    {
+      "index": 54,
+      "id": "PLAYER_DESTROYED_N_BUILDINGS_PLAYER",
+      "path": "Player/Attacked or Destroyed/Player destroyed N or more of an opponent's buildings.",
+      "zh": "玩家摧毁了N个或更多个对手的建筑",
+      "obsolete": false,
+      "arg": "${PlayerName} has destroyed ${Integer} or more buildings owned by ${PlayerName}."
+    },
+    {
+      "index": 55,
+      "id": "PLAYER_HAS_COMPARISON_UNIT_TYPE_IN_TRIGGER_AREA",
+      "path": "Player/Area/Player has (comparison) object type in an area.",
+      "zh": "玩家在一个区域中拥有(比较)对象类型",
+      "obsolete": false,
+      "arg": "${PlayerName} has ${Comparison} ${Integer} object of type ${ObjectType} in the ${TriggerAreaName}."
+    },
+    {
+      "index": 56,
+      "id": "PLAYER_HAS_COMPARISON_UNIT_KIND_IN_TRIGGER_AREA",
+      "path": "Player/Area/Player has (comparison) object types with kindof in an area.",
+      "zh": "玩家有（比较）物体类型和区域中的种类",
+      "obsolete": false,
+      "arg": "${PlayerName} has ${Comparison} ${Integer} objects with ${UnitOrStructureKind} in the ${TriggerAreaName}."
+    },
+    {
+      "index": 57,
+      "id": "TYPE_SIGHTED",
+      "path": "Object Type/Sighted/Named object has sighted a type of object belonging to Player.",
+      "zh": "命名对象看到了一个属于玩家的对象类型",
+      "obsolete": false,
+      "arg": "${UnitName} sees a(n) ${ObjectType} belonging to ${PlayerName}."
+    },
+    {
+      "index": 58,
+      "id": "NAMED_BUILDING_IS_EMPTY",
+      "path": "Object Type/Garrisoned/A specific building is empty.",
+      "zh": "一个特定的建筑是空的",
+      "obsolete": false,
+      "arg": "${UnitName} is empty."
+    },
+    {
+      "index": 59,
+      "id": "UNIT_HAS_OBJECT_STATUS",
+      "path": "Object Type/Object Status/Named object has object status.",
+      "zh": "命名对象具有对象状态",
+      "obsolete": false,
+      "arg": "${UnitName} has ${ObjectStatus}"
+    },
+    {
+      "index": 60,
+      "id": "TEAM_ALL_HAS_OBJECT_STATUS",
+      "path": "Team/Object Status/Team has object status - all.",
+      "zh": "团队拥有对象状态-所有",
+      "obsolete": false,
+      "arg": "${TeamName} has ${ObjectStatus}"
+    },
+    {
+      "index": 61,
+      "id": "TEAM_SOME_HAVE_OBJECT_STATUS",
+      "path": "Team/Object Status/Team has object status - partial.",
+      "zh": "团队有对象状态部分",
+      "obsolete": false,
+      "arg": "${TeamName} has ${ObjectStatus}"
+    },
+    {
+      "index": 62,
+      "id": "PLAYER_POWER_COMPARE_PERCENT",
+      "path": "Player/Power/Player has (comparison) percent power supply to consumption.",
+      "zh": "玩家的能量供给与消耗的百分比",
+      "obsolete": false,
+      "arg": "${PlayerName} has ${Comparison} ${Integer} percent power supply ratio."
+    },
+    {
+      "index": 63,
+      "id": "PLAYER_EXCESS_POWER_COMPARE_VALUE",
+      "path": "Player/Power/Player has (comparison) kilowatts excess power supply.",
+      "zh": "玩家有(比较)千瓦的过剩电力供应",
+      "obsolete": false,
+      "arg": "${PlayerName} has ${Comparison} ${Integer} excess kilowatts power supply."
+    },
+    {
+      "index": 64,
+      "id": "SKIRMISH_SPECIAL_POWER_READY",
+      "path": "Player/Special Power/Player's special power is ready to fire.",
+      "zh": "玩家的特殊能力已准备好开火",
+      "obsolete": false,
+      "arg": "${PlayerName} is ready to fire ${SpecialPowerName}."
+    },
+    {
+      "index": 65,
+      "id": "SKIRMISH_VALUE_IN_AREA",
+      "path": "Player has (comparison) threat level in area.",
+      "zh": "玩家在区域内拥有(比较)威胁等",
+      "obsolete": true,
+      "arg": "${PlayerName} has ${Comparison} ${RealNumber} threat within area ${TriggerAreaName}"
+    },
+    {
+      "index": 66,
+      "id": "SKIRMISH_PLAYER_FACTION",
+      "path": "Player/Faction and Start Position/Player is faction.",
+      "zh": "玩家是派系.",
+      "obsolete": false,
+      "arg": "${PlayerName} is ${FactionName}"
+    },
+    {
+      "index": 67,
+      "id": "SKIRMISH_SUPPLIES_VALUE_WITHIN_DISTANCE",
+      "path": "Supplies are within specified distance.",
+      "zh": "供应在规定的距离内",
+      "obsolete": true,
+      "arg": "${PlayerName} has supplies within ${RealNumber} of ${TriggerAreaName} worth at least ${RealNumber}"
+    },
+    {
+      "index": 68,
+      "id": "SKIRMISH_COMMAND_BUTTON_READY_ALL",
+      "path": "Team/CommandButton/Team's CommandButton ability is ready - all.",
+      "zh": "团队的命令按钮能力是现成的",
+      "obsolete": false,
+      "arg": "${PlayerName}'s ${TeamName} are ready to use ${TeamAbilityName} (all applicable members)."
+    },
+    {
+      "index": 69,
+      "id": "SKIRMISH_COMMAND_BUTTON_READY_PARTIAL",
+      "path": "Team/CommandButton/Team's CommandButton ability is ready - partial",
+      "zh": "",
+      "obsolete": false,
+      "arg": "${PlayerName}'s ${TeamName} are ready to use ${TeamAbilityName} (at least one member)."
+    },
+    {
+      "index": 70,
+      "id": "SKIRMISH_UNOWNED_FACTION_UNIT_EXISTS",
+      "path": "Object Type/Unowned/There are (comparison) unowned faction objects.",
+      "zh": "有(比较而言)无主的派系对象",
+      "obsolete": false,
+      "arg": "${PlayerName}. There are ${Comparison} ${Integer} unowned faction objects."
+    },
+    {
+      "index": 71,
+      "id": "SKIRMISH_PLAYER_HAS_COMPARISON_GARRISONED",
+      "path": "Player/Garrisoned/Player has (comparison) garrisoned buildings.",
+      "zh": "玩家拥有驻守的建筑",
+      "obsolete": false,
+      "arg": "${PlayerName} has ${Comparison} ${Integer} garrisoned buildings."
+    },
+    {
+      "index": 72,
+      "id": "SKIRMISH_PLAYER_HAS_UNITS_IN_AREA",
+      "path": "Player/Area/Player has units in an area",
+      "zh": "",
+      "obsolete": false,
+      "arg": "${PlayerName} has units in ${TriggerAreaName}."
+    },
+    {
+      "index": 73,
+      "id": "SKIRMISH_PLAYER_HAS_BEEN_ATTACKED_BY_PLAYER",
+      "path": "Player/Attacked or Destroyed/Player has been attacked by Player.",
+      "zh": "玩家被玩家攻击了",
+      "obsolete": false,
+      "arg": "${PlayerName} has been attacked by ${PlayerName}."
+    },
+    {
+      "index": 74,
+      "id": "SKIRMISH_PLAYER_IS_OUTSIDE_AREA",
+      "path": "Player doesn't have units in an area.",
+      "zh": "玩家在某个区域没有单位",
+      "obsolete": true,
+      "arg": "${PlayerName} has doesn't have units in ${TriggerAreaName}."
+    },
+    {
+      "index": 75,
+      "id": "SKIRMISH_PLAYER_HAS_DISCOVERED_PLAYER",
+      "path": "Player/Sighted/Player has sighted another player.",
+      "zh": "玩家看到了另一个玩家",
+      "obsolete": false,
+      "arg": "${PlayerName} has seen ${PlayerName}."
+    },
+    {
+      "index": 76,
+      "id": "PLAYER_LOST_OBJECT_TYPE",
+      "path": "Player/Owns/Player has lost an object of type.",
+      "zh": "玩家丢失了一个类型对象",
+      "obsolete": false,
+      "arg": "${PlayerName} has lost an object of type ${ObjectType}."
+    },
+    {
+      "index": 77,
+      "id": "SUPPLY_SOURCE_SAFE",
+      "path": "Supply source is safe.",
+      "zh": "供应源安全",
+      "obsolete": true,
+      "arg": "${PlayerName} closest supply src with at least ${Integer} available resources is SAFE from enemy influence."
+    },
+    {
+      "index": 78,
+      "id": "SUPPLY_SOURCE_ATTACKED",
+      "path": "Supply source is attacked.",
+      "zh": "供应源被攻击",
+      "obsolete": true,
+      "arg": "${PlayerName} supply source is under attack."
+    },
+    {
+      "index": 79,
+      "id": "START_POSITION_IS",
+      "path": "Player/Faction and Start Position/Start Position.",
+      "zh": "起始位置",
+      "obsolete": false,
+      "arg": "${PlayerName} starting position is ${Integer} ."
+    },
+    {
+      "index": 80,
+      "id": "PLAYER_HAS_COMPARISON_UNIT_TYPE_IN_TRIGGER_AREA_WITH_UPGRADE",
+      "path": "Player/Area/Player has (comparison) object type in an area with a specified upgrade.",
+      "zh": "玩家在指定的升级区域中拥有(比较)对象类型",
+      "obsolete": false,
+      "arg": "${PlayerName} has ${Comparison} ${Integer} object of type with ${ObjectType} in the ${TriggerAreaName} with ${UpgradeName}."
+    },
+    {
+      "index": 81,
+      "id": "COUNTER_COUNTER",
+      "path": "Scripting/Counter compared to another Counter.",
+      "zh": "计数器与另一个计数器相比较",
+      "obsolete": false,
+      "arg": "Counter ${CounterName} IS ${Comparison} counter ${CounterName}"
+    },
+    {
+      "index": 82,
+      "id": "COUNTER_SECONDS",
+      "path": "Scripting/Counter compared to time in seconds.",
+      "zh": "计数器与时间的比较，以秒为单位",
+      "obsolete": false,
+      "arg": "Counter ${CounterName} IS ${Comparison} time ${RealNumber} secs."
+    },
+    {
+      "index": 83,
+      "id": "DISTANCE_BETWEEN_OBJ",
+      "path": "Scripting/Compare distance between 2 named objects.",
+      "zh": "比较两个命名对象之间的距离",
+      "obsolete": false,
+      "arg": "Distance between ${UnitName} and ${UnitName} is ${Comparison} ${RealNumber}."
+    },
+    {
+      "index": 84,
+      "id": "DISTANCE_BETWEEN_TEAM",
+      "path": "Scripting/Compare distance between 2 teams.",
+      "zh": "比较两队之间的距离",
+      "obsolete": false,
+      "arg": "Distance between ${TeamName} and ${TeamName} is ${Comparison} ${RealNumber}."
+    },
+    {
+      "index": 85,
+      "id": "UNIT_HAS_GAINED_LEVEL",
+      "path": "Object Type/Experience/Named object has gained experience level.",
+      "zh": "命名对象获得经验等级",
+      "obsolete": false,
+      "arg": "${UnitName} has gained a level."
+    },
+    {
+      "index": 86,
+      "id": "UNIT_IS_AT_LEVEL",
+      "path": "Experience/Named object is at experience level.",
+      "zh": "命名对象处于经验级别",
+      "obsolete": true,
+      "arg": "${UnitName} is at experience level ${Text}"
+    },
+    {
+      "index": 87,
+      "id": "CAMERA_HIT_SPECIFIC_SPLINE_WAYPOINT",
+      "path": "Camera/Camera following spline path hits specified waypoint.",
+      "zh": "跟随样条路径的摄像机到达指定的路径点",
+      "obsolete": false,
+      "arg": "Camera following spline path hits ${WaypointName}."
+    },
+    {
+      "index": 88,
+      "id": "HAS_COMMAND_POINTS_TO_BUILD_TEAM",
+      "path": "Player/CommandPoints/Player has enough command points to build a team. (May be broken. -JB)",
+      "zh": "",
+      "obsolete": false,
+      "arg": "${PlayerName} has enough command points to build ${TeamName}."
+    },
+    {
+      "index": 89,
+      "id": "HAS_COMMAND_POINTS_TO_BUILD_UNIT",
+      "path": "Player/CommandPoints/Player has enough command points to build object type.",
+      "zh": "玩家有足够的命令点来构建对象类型",
+      "obsolete": false,
+      "arg": "${PlayerName} has enough command points to build ${ObjectType}."
+    },
+    {
+      "index": 90,
+      "id": "PLAYER_HAS_KILLED_KINDOF_UNITS",
+      "path": "Player/Attacked or Destroyed/Player has destroyed N or more objects of kindof.",
+      "zh": "玩家已经摧毁了N个或更多的物体。",
+      "obsolete": false,
+      "arg": "${PlayerName} has killed ${Integer} or more objects of ${UnitOrStructureKind}."
+    },
+    {
+      "index": 91,
+      "id": "PLAYER_HAS_KILLED_TYPE_UNITS",
+      "path": "Player/Attacked or Destroyed/Player has destroyed N or more objects of type.",
+      "zh": "玩家已摧毁N个或更多类型的物体",
+      "obsolete": false,
+      "arg": "${PlayerName} has killed ${Integer} or more ${ObjectType}."
+    },
+    {
+      "index": 92,
+      "id": "NAMED_DESTROYED_BY_OBJECTTYPE",
+      "path": "Object Type/Attacked, Destroyed, or Exists/Named object is destroyed by a specific object type.",
+      "zh": "命名对象由特定的对象类型销毁",
+      "obsolete": false,
+      "arg": "${UnitName} has been destroyed by a(n) ${ObjectType}"
+    },
+    {
+      "index": 93,
+      "id": "PLAYER_HAS_N_OR_FEWER_BASES",
+      "path": "Player currently controls N or fewer bases.",
+      "zh": "玩家目前控制着N个或更少的基地",
+      "obsolete": true,
+      "arg": "${PlayerName} currently controls ${Integer} or fewer bases."
+    },
+    {
+      "index": 94,
+      "id": "CAMERA_ENTERED_AREA",
+      "path": "Camera/Camera entered trigger area.",
+      "zh": "摄像机进入触发区",
+      "obsolete": false,
+      "arg": "Camera enters ${TriggerAreaName}."
+    },
+    {
+      "index": 95,
+      "id": "ENEMY_SIGHTED_BY_TEAM",
+      "path": "Team/Sighted/Team has sighted a friendly, neutral, or enemy unit belonging to Player.",
+      "zh": "团队发现一个属于玩家的友好、中立或敌人单位。",
+      "obsolete": false,
+      "arg": "${TeamName} sees a(n) ${Relation} unit belonging to ${PlayerName}."
+    },
+    {
+      "index": 96,
+      "id": "COMPARISON_TREES_IN_TRIGGER_AREA",
+      "path": "There are (comparison) trees in an area.",
+      "zh": "在一个地区有(比较)树",
+      "obsolete": true,
+      "arg": "There are ${Comparison} ${Integer} trees in the ${TriggerAreaName} ."
+    },
+    {
+      "index": 97,
+      "id": "GATE_IS_OPEN",
+      "path": "Check if a gate is open. (False, if not a gate, or closed)",
+      "zh": "",
+      "obsolete": true,
+      "arg": "The unit (presumed a gate) referenced as${UnitName} is OPEN."
+    },
+    {
+      "index": 98,
+      "id": "UNIT_CAN_PATH_TO_WAYPOINT",
+      "path": "Object Type/Area or Path/Named object can path to waypoint.",
+      "zh": "命名对象可以路径到路径点",
+      "obsolete": false,
+      "arg": "${UnitName} can path to ${WaypointName}."
+    },
+    {
+      "index": 99,
+      "id": "UNIT_CAN_PATH_TO_OBJECT",
+      "path": "Object Type/Area or Path/Named object can path to named object.",
+      "zh": "命名对象可以路径到命名对象",
+      "obsolete": false,
+      "arg": "${UnitName} can path to ${UnitName}."
+    },
+    {
+      "index": 100,
+      "id": "UNIT_CAN_PATH_INTO_PLAYERS_NEAREST_BASE",
+      "path": "Named object can path into (Player's) nearest base or is already inside it.",
+      "zh": "命名对象可以进入(玩家)最近的基地，或者已经在基地内",
+      "obsolete": true,
+      "arg": "${UnitName} is inside, or can path into the nearest base owned by player, ${PlayerName}"
+    },
+    {
+      "index": 101,
+      "id": "TEAM_CAN_PATH_TO_WAYPOINT",
+      "path": "Team/Area or Path/Team can path to waypoint.",
+      "zh": "团队可以路径到路标",
+      "obsolete": false,
+      "arg": "The first unit of ${TeamName} can path to ${WaypointName}."
+    },
+    {
+      "index": 102,
+      "id": "TEAM_CAN_PATH_TO_OBJECT",
+      "path": "Team/Area or Path/Team can path to named object.",
+      "zh": "团队可以路径到命名的对象",
+      "obsolete": false,
+      "arg": "The first unit of ${TeamName} can path to ${UnitName}."
+    },
+    {
+      "index": 103,
+      "id": "TEAM_CAN_PATH_INTO_PLAYERS_NEAREST_BASE",
+      "path": "Team can path into (Player's) nearest base or is already inside it.",
+      "zh": "队伍可以进入(玩家)最近的基地，或者已经在基地内",
+      "obsolete": true,
+      "arg": "The first unit of team ${TeamName} is inside, or can path into the nearest base owned by player, ${PlayerName}"
+    },
+    {
+      "index": 104,
+      "id": "MUSIC_IS_PLAYING_FROM_SCRIPT",
+      "path": "Audio/Music/Playing Music is from Script",
+      "zh": "",
+      "obsolete": false,
+      "arg": "The music scripting system is on."
+    },
+    {
+      "index": 105,
+      "id": "UNIT_COMPARE_RANK",
+      "path": "Object Type/Attacked, Destroyed, or Exists/Named object's veterancy level compared to a value.",
+      "zh": "命名对象的经验等级与一个值的比较",
+      "obsolete": false,
+      "arg": "Does ${UnitName} have veterancy level ${Comparison} ${Integer}."
+    },
+    {
+      "index": 106,
+      "id": "PLAYER_HAS_OBJECT_OF_VETERANCY",
+      "path": "Player/Experience/Player has object of veterancy level compared to a value.",
+      "zh": "玩家将对象的老练程度与价值相比较",
+      "obsolete": false,
+      "arg": "${PlayerName} has ${ObjectType} with veterancy level ${Comparison} ${Integer}."
+    },
+    {
+      "index": 107,
+      "id": "PLAYER_HAS_NUMBER_OBJECTS_WITH_MODELCONDITION",
+      "path": "Player/Owns/Player has (comparison) objects with a model condition.",
+      "zh": "",
+      "obsolete": false,
+      "arg": "${PlayerName} has ${Comparison} ${Integer} objects with ${ModelCondition}."
+    },
+    {
+      "index": 108,
+      "id": "PLAYER_HAS_NUMBER_UNITS_DISTANCE_FROM_OBJECT",
+      "path": "Player/Owns/Player has (comparison) obejcts more than x distance from named object.",
+      "zh": "玩家与指定对象之间的距离大于x",
+      "obsolete": false,
+      "arg": "Player ${PlayerName} has ${Comparison} ${Integer} objects at least ${RealNumber} feet from ${UnitName}."
+    },
+    {
+      "index": 109,
+      "id": "UNIT_HAS_PASSENGER",
+      "path": "Object Type/Garrison/Evaluates if named object is currently holding passengers.",
+      "zh": "评估指定对象当前是否携带乘客",
+      "obsolete": false,
+      "arg": "Evaluate if ${UnitName} is containing any passengers."
+    },
+    {
+      "index": 110,
+      "id": "UNIT_IS_ATTACKED_AND_CANNOT_RETALIATE",
+      "path": "Object Type/Attacked, Destroyed, or Exists/Evaluate if a named object is being attacked but cannot retaliate",
+      "zh": "",
+      "obsolete": false,
+      "arg": "Evaluate if ${UnitName} is being attacked and cannot retaliate."
+    },
+    {
+      "index": 111,
+      "id": "TEAM_IS_ATTACKED_AND_CANNOT_RETALIATE_ANY",
+      "path": "Team/Attacked, Destroyed, or Exists/Evaluate if any member of a team is being attacked but cannot retaliate",
+      "zh": "",
+      "obsolete": false,
+      "arg": "Evaluate if any team member of ${TeamName} is being attacked and cannot retaliate."
+    },
+    {
+      "index": 112,
+      "id": "TEAM_IS_ATTACKED_AND_CANNOT_RETALIATE_ALL",
+      "path": "Team/Attacked, Destroyed, or Exists/Evaluate if all members of a team being attacked cannot retaliate",
+      "zh": "",
+      "obsolete": false,
+      "arg": "Evaluate if all team members of ${TeamName} are being attacked and cannot retaliate."
+    },
+    {
+      "index": 113,
+      "id": "IS_GAME_IN_SKIRMISH_OR_MULTIPLAYER",
+      "path": "Is game in a skirmish or multiplayer game.",
+      "zh": "游戏是小规模战斗还是多人游戏",
+      "obsolete": true,
+      "arg": "Is the game in a skirmish or multiplayer mode == ${Boolean}"
+    },
+    {
+      "index": 114,
+      "id": "COMPARE_NUM_PLAYERS_IN_GAME",
+      "path": "Game Type/Compares the number of players in game to a value.",
+      "zh": "将游戏中的玩家数量与一个值进行比较",
+      "obsolete": false,
+      "arg": "Is this a ${Comparison} ${Integer} player game."
+    },
+    {
+      "index": 115,
+      "id": "TEAM_HAS_FEWER_THAN_X_UNITS_WITH_KINDOF",
+      "path": "Team/Attacked, Destroyed, or Exists/Team has fewer than X units left of KindOf.",
+      "zh": "团队剩下不到X个单位",
+      "obsolete": false,
+      "arg": "${TeamName} has fewer than ${Integer} units left of type ${UnitOrStructureKind}."
+    },
+    {
+      "index": 116,
+      "id": "SKIRMISH_FIRE_SPECIAL_POWER_ON_TEAM",
+      "path": "Player/Special Power/Player can perform special power on team location.",
+      "zh": "玩家可以在团队位置上执行特殊异能",
+      "obsolete": false,
+      "arg": "${PlayerName} can perform ${SpecialPowerName} at ${TeamName}'s location."
+    },
+    {
+      "index": 117,
+      "id": "NAMED_RANK_LEVEL",
+      "path": "Named object is rank level or above.",
+      "zh": "命名对象的级别或以上",
+      "obsolete": true,
+      "arg": "${UnitName} is veterancy ${Integer} or above."
+    },
+    {
+      "index": 118,
+      "id": "EVAL_TEAM_HEALTH",
+      "path": "Team/Health/Team health level compared to a value.",
+      "zh": "团队健康水平比较值",
+      "obsolete": false,
+      "arg": "Does ${TeamName} have ${Comparison} ${Integer} percent health."
+    },
+    {
+      "index": 119,
+      "id": "IS_UNIT_WEBBED",
+      "path": "",
+      "zh": "检查单元网络状态",
+      "obsolete": false,
+      "arg": ""
+    },
+    {
+      "index": 120,
+      "id": "NUM_UNITS_LEVELED_UP",
+      "path": "Player/Owns/Num objects leveled up during game.",
+      "zh": "Num对象在游戏中升级",
+      "obsolete": false,
+      "arg": "Does ${PlayerName} have ${Integer} objects that have gained veterancy this game."
+    },
+    {
+      "index": 121,
+      "id": "PLAYER_HAS_NUM_UNITS_WITH_UPGRADE",
+      "path": "Player/Owns/Num objects has specified upgrade.",
+      "zh": "Num对象已指定升级",
+      "obsolete": false,
+      "arg": "Does ${PlayerName} have ${Integer} units that have ${UpgradeName}."
+    },
+    {
+      "index": 122,
+      "id": "PLAYER_HAS_NUM_UNITS_LOADED_WITH_OBJECT",
+      "path": "Player/Owns/Num objects of type loaded on transport.",
+      "zh": "传输时加载的类型对象的数目",
+      "obsolete": false,
+      "arg": "Does ${PlayerName} have ${Integer} objects of type ${ObjectName} loaded on transport of type ${ObjectName}."
+    },
+    {
+      "index": 123,
+      "id": "UNIT_HAS_TOGGLED_WEAPON",
+      "path": "",
+      "zh": "玩家是否拥有带有“切换武器”设置的对象",
+      "obsolete": false,
+      "arg": ""
+    },
+    {
+      "index": 124,
+      "id": "UNIT_USING_AUTOPICKUP",
+      "path": "Does Player have Units that have triggered auto pickup.",
+      "zh": "玩家是否拥有能够触发自动拾取的单位",
+      "obsolete": true,
+      "arg": "Does ${PlayerName} have ${ObjectName} that has triggered auto pickup."
+    },
+    {
+      "index": 125,
+      "id": "UNIT_IN_ALT_FORMATION",
+      "path": "Does Player have Units that are in alternate formation.",
+      "zh": "玩家是否拥有可替换的单位",
+      "obsolete": true,
+      "arg": "Does ${PlayerName} have ${ObjectName} that is currently in alternate formation."
+    },
+    {
+      "index": 126,
+      "id": "HAS_EVA_EVENT_PLAYED_IN_LAST_N_SECONDS",
+      "path": "Player/Eva/Has EVA event played recently.",
+      "zh": "最近有EVA活动吗",
+      "obsolete": false,
+      "arg": "Has ${EVA} played with in the last ${RealNumber} seconds."
+    },
+    {
+      "index": 127,
+      "id": "IS_NUM_OF_UNITS_BELONGING_TO_PLAYER_NEAR_EVA_EVENT_LAST_PLAYED_LOCATION_COMPARISON_INT",
+      "path": "Is number of units belonging to player near EVA event's last played location greater than, less than, or equal to a fixed value.",
+      "zh": "在EVA事件的最后一次游戏地点附近，玩家的单位数量是大于，小于，还是等于一个固定值",
+      "obsolete": true,
+      "arg": "Is the number of units belong to ${PlayerName} within ${RealNumber} feet of the location where ${EVA} last played ${Comparison} ${Integer}"
+    },
+    {
+      "index": 128,
+      "id": "PLAYER_HAS_COMPARISON_UNIT_TYPE_IN_TRIGGER_AREA_COMPLETELY_BUILT",
+      "path": "Player/Area/Player has (comparison) completely built unit types in an area.",
+      "zh": "玩家在一个区域中拥有完整的单位类型",
+      "obsolete": false,
+      "arg": "${PlayerName} has ${Comparison} ${Integer} completely built objects of type ${ObjectType} in the ${TriggerAreaName}."
+    },
+    {
+      "index": 129,
+      "id": "CAMERA_SCROLL_DISTANCE",
+      "path": "Tutorial/Camera/Camera scroll distance.",
+      "zh": "相机滚动距离",
+      "obsolete": false,
+      "arg": "Player has scrolled camera ${RealNumber} units."
+    },
+    {
+      "index": 130,
+      "id": "CAMERA_ROTATE_DISTANCE",
+      "path": "Tutorial/Camera/Camera rotate distance.",
+      "zh": "相机旋转的距离",
+      "obsolete": false,
+      "arg": "Player has rotated camera ${RealNumber} degrees."
+    },
+    {
+      "index": 131,
+      "id": "CAMERA_ZOOM_DISTANCE",
+      "path": "Tutorial/Camera/Camera zoom distance.",
+      "zh": "相机变焦距离",
+      "obsolete": false,
+      "arg": "Player has zoomed camera ${RealNumber} units."
+    },
+    {
+      "index": 132,
+      "id": "CAMERA_RESET",
+      "path": "Tutorial/Camera/Camera reset.",
+      "zh": "相机重置",
+      "obsolete": false,
+      "arg": "Player has reset camera"
+    },
+    {
+      "index": 133,
+      "id": "UNIT_USING_STANCE",
+      "path": "Object Type/Stance/Named object is using stance.",
+      "zh": "命名对象正在使用姿态",
+      "obsolete": false,
+      "arg": "Is ${UnitName} in the ${ObjectStance}."
+    },
+    {
+      "index": 134,
+      "id": "PLAYER_ISSUED_FORMATION_ORDER",
+      "path": "Tutorial/Player/Player has issued a formation order.",
+      "zh": "牌手已发出队形命令",
+      "obsolete": false,
+      "arg": "Player has issued formation order"
+    },
+    {
+      "index": 135,
+      "id": "TYPE_SELECTED",
+      "path": "Object Type/Selected/Object Type is currently selected.",
+      "zh": "当前已选择对象类型",
+      "obsolete": false,
+      "arg": "${ObjectType} is currently selected."
+    },
+    {
+      "index": 136,
+      "id": "UNIT_TEST_OBJECT_PANEL_FLAGS",
+      "path": "Object Type/Settings/Test object flags.",
+      "zh": "测试对象标志",
+      "obsolete": false,
+      "arg": "Test the value of ${ObjectPanelFlag} for ${UnitName}."
+    },
+    {
+      "index": 137,
+      "id": "TEST_CAMPAIGN_FLAG",
+      "path": "Campaign/Test a campaign flag.",
+      "zh": "测试一面竞选旗帜",
+      "obsolete": false,
+      "arg": "Test the value of campaign flag ${CampaignFlag}."
+    },
+    {
+      "index": 138,
+      "id": "UNIT_HAS_UPGRADE",
+      "path": "Object Type/Upgrades/Unit has upgrade.",
+      "zh": "单位已经升级",
+      "obsolete": false,
+      "arg": "${UnitName} has ${UpgradeName}."
+    },
+    {
+      "index": 139,
+      "id": "UNIT_SPECIAL_POWER_READY",
+      "path": "Object Type/Special Power/Unit's special power is ready to fire.",
+      "zh": "部队的特殊力量已经准备好开火",
+      "obsolete": false,
+      "arg": "${UnitName} is ready to fire ${SpecialPowerName}."
+    },
+    {
+      "index": 140,
+      "id": "PLAYER_HAS_NUMBER_OBJECTS_WITH_OBJECT_STATUS",
+      "path": "Player/Owns/Player has (comparison) objects with object status",
+      "zh": "",
+      "obsolete": false,
+      "arg": "${PlayerName} has ${Comparison} ${Integer} with ${ObjectStatus}."
+    },
+    {
+      "index": 141,
+      "id": "PLAYER_TRIGGERED_SCRIPT_EVENT",
+      "path": "Player/Player has triggered game event",
+      "zh": "",
+      "obsolete": false,
+      "arg": "${PlayerName} has triggered ${ScriptEvent}."
+    },
+    {
+      "index": 142,
+      "id": "BUILDING_GARRISONNED_BY_OBJECT_TYPE",
+      "path": "Object Type/Garrison/Named building is garrisoned by object type owned by specific player.",
+      "zh": "命名建筑由特定玩家拥有的对象类型驻守",
+      "obsolete": false,
+      "arg": "${UnitName} is garrisoned by object type ${ObjectType} owned by ${PlayerName}."
+    },
+    {
+      "index": 143,
+      "id": "PLAYER_TRIGGERED_SPECIAL_POWER_IN_AREA",
+      "path": "Player/Special Power/Player starts using a special power in trigger area.",
+      "zh": "玩家开始在触发区域使用一种特殊能力",
+      "obsolete": false,
+      "arg": "${PlayerName} starts using ${SpecialPowerName} in ${TriggerAreaName}."
+    },
+    {
+      "index": 144,
+      "id": "MISSION_HOT_SPOT_ACTIVE",
+      "path": "Interface/Mission Hot-Spot/Mission hot-spot has been activated.",
+      "zh": "任务热点已经激活",
+      "obsolete": false,
+      "arg": "Mission hot-spot ${MissionHotSpot} has been activated."
+    },
+    {
+      "index": 145,
+      "id": "PLAYER_RED_ALERT_ACTIVATED",
+      "path": "Player/Red Alerts/Player activated their Red Alert.",
+      "zh": "玩家启动了红色警报。",
+      "obsolete": false,
+      "arg": "Player has activated their Red Alert.${PlayerName}"
+    },
+    {
+      "index": 146,
+      "id": "PLAYER_IS_HUMAN_OR_AI_PERSONALITY",
+      "path": "Player/Controlled By/Is player controlled by human or AI Personality.",
+      "zh": "玩家是受人类人格还是AI人格控制",
+      "obsolete": false,
+      "arg": "${PlayerName} is controlled by ${Personality}"
+    },
+    {
+      "index": 147,
+      "id": "PLAYER_HAS_KILLED_NAMED_UNIT",
+      "path": "Player/Attacked or Destroyed/Player has killed Named Unit",
+      "zh": "",
+      "obsolete": false,
+      "arg": "${PlayerName} has killed object named: ${UnitName}"
+    },
+    {
+      "index": 148,
+      "id": "TEAM_COMPARE_NUM_MEMBERS",
+      "path": "Team/Attacked, Destroyed, or Exists/Team has (comparison) number of objects.",
+      "zh": "团队有(比较)数量的对象",
+      "obsolete": false,
+      "arg": "${TeamName} has${Comparison} ${Integer} members."
+    },
+    {
+      "index": 149,
+      "id": "NAMED_HAS_KILLED_COMPARISON_UNIT_TYPE",
+      "path": "Object Type/Attacked, Destroyed, or Exists/Named object has killed (comparison) number of object type or type list.",
+      "zh": "命名对象已终止（比较）对象类型或类型列表的数量",
+      "obsolete": false,
+      "arg": "${UnitName} has killed ${Comparison} ${Integer} ${ObjectType}"
+    },
+    {
+      "index": 150,
+      "id": "UNIT_HAS_MODELCONDITION",
+      "path": "Object Type/Settings/Named object has model condition.",
+      "zh": "命名对象具有模型条件",
+      "obsolete": false,
+      "arg": "${UnitName} has ${ModelCondition}"
+    },
+    {
+      "index": 151,
+      "id": "PLAYER_HAS_COMPARISON_POWER_POINTS",
+      "path": "Player/Special Power/Player has <comparison><n> power points.",
+      "zh": "玩家有“比较”“n”动力点",
+      "obsolete": false,
+      "arg": "${PlayerName} has ${Comparison} ${Integer} power points."
+    },
+    {
+      "index": 152,
+      "id": "UI_STATE_PROPOSITION_STATE",
+      "path": "Tutorial/UI state proposition is true.",
+      "zh": "UI状态命题为真",
+      "obsolete": false,
+      "arg": "${UiState} is true."
+    },
+    {
+      "index": 153,
+      "id": "PLAYER_HAS_PLAYER_TECH",
+      "path": "Player/Special Power/Player has player tech.",
+      "zh": "玩家拥有玩家技术",
+      "obsolete": false,
+      "arg": "${PlayerName} has ${PlayerTech} player tech."
+    },
+    {
+      "index": 154,
+      "id": "CURRENT_PLATFORM",
+      "path": "Platform/Is game running on platform.",
+      "zh": "游戏是否在平台上运行",
+      "obsolete": false,
+      "arg": "Is game running on ${Platform}"
+    },
+    {
+      "index": 155,
+      "id": "PLAYER_HAS_COMPARISON_UNIT_KIND",
+      "path": "Player/Owns/Player has (comparison) object types with kindof.",
+      "zh": "玩家有（比较）对象类型和类型",
+      "obsolete": false,
+      "arg": "${PlayerName} has ${Comparison} ${Integer} objects with ${UnitOrStructureKind}."
+    }
+  ]
+}

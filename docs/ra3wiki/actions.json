@@ -1,0 +1,4512 @@
+{
+  "source": "https://www.yuque.com/muzeqaq/ra3mapwiki/pzle8sromsst4oh9",
+  "zh_source": "https://www.yuque.com/muzeqaq/ra3mapwiki/orutriyre2fllrih",
+  "fetched": "2026-10-15",
+  "count": 563,
+  "items": [
+    {
+      "index": 0,
+      "id": "DEBUG_MESSAGE_BOX",
+      "path": "Scripting/Debug/Display message and pause",
+      "zh": "显示消息和暂停",
+      "obsolete": false,
+      "arg": "Show debug string and pause: ${Text}"
+    },
+    {
+      "index": 1,
+      "id": "SET_FLAG",
+      "path": "",
+      "zh": "将标志设置为值",
+      "obsolete": false,
+      "arg": ""
+    },
+    {
+      "index": 2,
+      "id": "SET_COUNTER",
+      "path": "",
+      "zh": "将计数器设置为值",
+      "obsolete": false,
+      "arg": ""
+    },
+    {
+      "index": 3,
+      "id": "VICTORY",
+      "path": "Win & Loss/Announce victory.",
+      "zh": "宣布胜利",
+      "obsolete": false,
+      "arg": "Show 'Victorious' window and end game"
+    },
+    {
+      "index": 4,
+      "id": "DEFEAT",
+      "path": "Win & Loss/Announce defeat.",
+      "zh": "宣布失败",
+      "obsolete": false,
+      "arg": "Show 'Defeated' window and end game"
+    },
+    {
+      "index": 5,
+      "id": "NO_OP",
+      "path": "",
+      "zh": "空操作",
+      "obsolete": false,
+      "arg": ""
+    },
+    {
+      "index": 6,
+      "id": "SET_TIMER",
+      "path": "",
+      "zh": "帧倒计时计时器--设置",
+      "obsolete": false,
+      "arg": ""
+    },
+    {
+      "index": 7,
+      "id": "PLAY_SOUND_EFFECT",
+      "path": "Media/Audio/Sound Effect/Play 2D sound effect.",
+      "zh": "播放2D音效",
+      "obsolete": false,
+      "arg": "Play ${SoundName} as though it was a 2D sound (NOT RECOMMENDED for 3D sounds)."
+    },
+    {
+      "index": 8,
+      "id": "ENABLE_SCRIPT",
+      "path": "",
+      "zh": "启用脚本",
+      "obsolete": false,
+      "arg": ""
+    },
+    {
+      "index": 9,
+      "id": "DISABLE_SCRIPT",
+      "path": "",
+      "zh": "禁用脚本",
+      "obsolete": false,
+      "arg": ""
+    },
+    {
+      "index": 10,
+      "id": "CALL_SUBROUTINE",
+      "path": "",
+      "zh": "运行子程序脚本",
+      "obsolete": false,
+      "arg": ""
+    },
+    {
+      "index": 11,
+      "id": "PLAY_SOUND_EFFECT_AT",
+      "path": "Media/Audio/Sound Effect/Play sound effect at waypoint.",
+      "zh": "在导航点播放音效",
+      "obsolete": false,
+      "arg": "Play ${SoundName} at ${WaypointName}."
+    },
+    {
+      "index": 12,
+      "id": "DAMAGE_MEMBERS_OF_TEAM",
+      "path": "Team/Damage or Remove/Damage the members of Team.",
+      "zh": "破坏团队成员",
+      "obsolete": false,
+      "arg": "Damage ${TeamName}, amount=${RealNumber} (-1==kill)."
+    },
+    {
+      "index": 13,
+      "id": "MOVE_TEAM_TO",
+      "path": "Team/Move/Set team to move to a location.",
+      "zh": "设置团队移动到一个位置",
+      "obsolete": false,
+      "arg": "Move ${TeamName} to ${WaypointName}."
+    },
+    {
+      "index": 14,
+      "id": "MOVE_CAMERA_TO",
+      "path": "Cinematics/Camera/Move the camera to a location.",
+      "zh": "移动相机到一个位置",
+      "obsolete": false,
+      "arg": "Move camera to ${CameraLocation} in ${RealNumber} seconds, camera shutter ${RealNumber} seconds, ease-in ${RealNumber} seconds, ease-out ${RealNumber} seconds."
+    },
+    {
+      "index": 15,
+      "id": "INCREMENT_COUNTER",
+      "path": "",
+      "zh": "增加计数器",
+      "obsolete": false,
+      "arg": ""
+    },
+    {
+      "index": 16,
+      "id": "DECREMENT_COUNTER",
+      "path": "",
+      "zh": "减少计数器",
+      "obsolete": false,
+      "arg": ""
+    },
+    {
+      "index": 17,
+      "id": "MOVE_CAMERA_ALONG_SPLINE_PATH",
+      "path": "Cinematics/Camera/Move along a spline path.",
+      "zh": "沿着样条路径移动",
+      "obsolete": false,
+      "arg": "Move along ${WaypointPathName} in ${RealNumber} seconds, camera shutter ${RealNumber} seconds, ease-in ${RealNumber} seconds, ease-out ${RealNumber} seconds, delay start ${RealNumber} seconds."
+    },
+    {
+      "index": 18,
+      "id": "ROTATE_CAMERA",
+      "path": "Cinematics/Camera/Rotate around the current viewpoint.",
+      "zh": "围绕当前视点旋转",
+      "obsolete": false,
+      "arg": "Rotate ${RealNumber} times, taking ${RealNumber} seconds, ease-in ${RealNumber} seconds, ease-out ${RealNumber} seconds."
+    },
+    {
+      "index": 19,
+      "id": "RESET_CAMERA",
+      "path": "Cinematics/Camera/Reset to the default view.",
+      "zh": "重新设置默认的视角",
+      "obsolete": false,
+      "arg": "Reset to ${WaypointName}, taking ${RealNumber} seconds, ease-in ${RealNumber} seconds, ease-out ${RealNumber} seconds."
+    },
+    {
+      "index": 20,
+      "id": "RESET_CAMERA_TUTORIAL_STATE",
+      "path": "Tutorial/Reset camera tutorial state.",
+      "zh": "重置摄像机教程状态",
+      "obsolete": false,
+      "arg": "Reset camera tutorial state."
+    },
+    {
+      "index": 21,
+      "id": "SET_MILLISECOND_TIMER",
+      "path": "",
+      "zh": "秒倒计时计时器--设置",
+      "obsolete": false,
+      "arg": ""
+    },
+    {
+      "index": 22,
+      "id": "CAMERA_MOD_FREEZE_TIME",
+      "path": "Cinematics/Settings/Freeze time during the camera movement.",
+      "zh": "相机移动期间的冻结时间",
+      "obsolete": false,
+      "arg": "Freeze time during the camera movement."
+    },
+    {
+      "index": 23,
+      "id": "CREATE_OBJECT",
+      "path": "Object Type/Spawn/Spawn object.",
+      "zh": "产生对象",
+      "obsolete": true,
+      "arg": "Spawn object ${ObjectName} in ${TeamName} at position (${PositionCoordinate}), rotated ${Angle} ."
+    },
+    {
+      "index": 24,
+      "id": "SUSPEND_BACKGROUND_SOUNDS",
+      "path": "Media/Audio/All Sounds/Suspend all sounds.",
+      "zh": "暂停一切听起来",
+      "obsolete": false,
+      "arg": "Suspend background sounds."
+    },
+    {
+      "index": 25,
+      "id": "RESUME_BACKGROUND_SOUNDS",
+      "path": "Media/Audio/All Sounds/Resume all sounds.",
+      "zh": "恢复所有的声音",
+      "obsolete": false,
+      "arg": "Resume background sounds."
+    },
+    {
+      "index": 26,
+      "id": "CAMERA_MOD_SET_FINAL_ZOOM",
+      "path": "Cinematics/Camera/Set Final zoom for camera movement.",
+      "zh": "设置相机移动的最终变焦",
+      "obsolete": false,
+      "arg": "Adjust zoom to ${RealNumber} (1.0==max height, 0.0==in the ground) ${Percentage} ease-in ${Percentage} ease-out."
+    },
+    {
+      "index": 27,
+      "id": "CAMERA_MOD_SET_FINAL_PITCH",
+      "path": "Cinematics/Camera/Set Final pitch for camera movement.",
+      "zh": "设置摄像机移动的最终间距",
+      "obsolete": false,
+      "arg": "Adjust pitch to ${RealNumber} (1.0==default, 0.0==toward horizon, >1 = toward ground) ${Percentage} ease-in ${Percentage} ease-out."
+    },
+    {
+      "index": 28,
+      "id": "CAMERA_MOD_LOOK_TOWARD",
+      "path": "Cinematics/Camera/Camera look toward point while moving.",
+      "zh": "相机在移动时注视点",
+      "obsolete": false,
+      "arg": "Look toward ${WaypointName} during the camera movement."
+    },
+    {
+      "index": 29,
+      "id": "TEAM_ATTACK_TEAM",
+      "path": "Team/Attack/Set team to attack another team.",
+      "zh": "设置团队攻击另一个团队",
+      "obsolete": false,
+      "arg": "${TeamName} begin attack on ${TeamName}"
+    },
+    {
+      "index": 30,
+      "id": "CREATE_REINFORCEMENT_TEAM",
+      "path": "Team/Spawn, Build, or Merge/Spawn a reinforcement team at location.",
+      "zh": "在某个地点生成一个增援小队",
+      "obsolete": false,
+      "arg": "Spawn an instance of ${TeamName} at ${WaypointName}."
+    },
+    {
+      "index": 31,
+      "id": "MOVE_CAMERA_TO_SELECTION",
+      "path": "Cinematics/Camera/End movement at selected unit.",
+      "zh": "在选定单位结束移动",
+      "obsolete": false,
+      "arg": "End movement at selected unit."
+    },
+    {
+      "index": 32,
+      "id": "TEAM_FOLLOW_WAYPOINTS",
+      "path": "Team/Move/Set team to follow a waypoint path.",
+      "zh": "",
+      "obsolete": false,
+      "arg": "Have ${TeamName} follow ${WaypointPathName} , as a team is ${Boolean} , in formation is ${Boolean}"
+    },
+    {
+      "index": 33,
+      "id": "MOVE_NAMED_UNIT_TO",
+      "path": "Object Type/Move/Named object move to a location.",
+      "zh": "命名对象移动到一个位置",
+      "obsolete": false,
+      "arg": "Move ${UnitName} to ${WaypointName}."
+    },
+    {
+      "index": 34,
+      "id": "NAMED_ATTACK_NAMED",
+      "path": "Object Type/Attack/Set unit to attack another unit.",
+      "zh": "让一个单位攻击另一个单位",
+      "obsolete": false,
+      "arg": "${UnitName} begin attack on ${UnitName}"
+    },
+    {
+      "index": 35,
+      "id": "CREATE_NAMED_ON_TEAM_AT_WAYPOINT",
+      "path": "Object Type/Spawn/Spawn a named object on a team at a waypoint.",
+      "zh": "在一个路径点生成一个命名的物体",
+      "obsolete": false,
+      "arg": "Spawn ${UnitName} of type ${ObjectName} on ${TeamName} at ${WaypointName}"
+    },
+    {
+      "index": 36,
+      "id": "CREATE_UNNAMED_ON_TEAM_AT_WAYPOINT",
+      "path": "Object Type/Spawn/Spawn an unnamed object on a team at a waypoint.",
+      "zh": "在一个路标点生成一个未命名的物体",
+      "obsolete": false,
+      "arg": "Spawn unit of type ${ObjectName} on ${TeamName} at ${WaypointName}"
+    },
+    {
+      "index": 37,
+      "id": "NAMED_APPLY_ATTACK_PRIORITY_SET",
+      "path": "",
+      "zh": "应用命名对象的攻击优先级集",
+      "obsolete": false,
+      "arg": ""
+    },
+    {
+      "index": 38,
+      "id": "TEAM_APPLY_ATTACK_PRIORITY_SET",
+      "path": "",
+      "zh": "应用团队的攻击优先级设置",
+      "obsolete": false,
+      "arg": ""
+    },
+    {
+      "index": 39,
+      "id": "SET_BASE_CONSTRUCTION_SPEED",
+      "path": "Player/Build/Set the delay between building teams.",
+      "zh": "设置建筑团队之间的延迟",
+      "obsolete": false,
+      "arg": "${PlayerName} seconds between building teams.${Integer}"
+    },
+    {
+      "index": 40,
+      "id": "NAMED_ATTACK_AREA",
+      "path": "Object Type/Attack/Named object attacks an area.",
+      "zh": "命名对象攻击区域",
+      "obsolete": false,
+      "arg": "${UnitName} attacks anything in ${TriggerAreaName}"
+    },
+    {
+      "index": 41,
+      "id": "NAMED_ATTACK_AREA_FOR_SECONDS",
+      "path": "Object Type/Attack/Named object attacks an area for a given number of seconds.",
+      "zh": "命名对象在给定的秒数内攻击一个区域",
+      "obsolete": false,
+      "arg": "${UnitName} attacks anything in ${TriggerAreaName} for ${Integer} seconds."
+    },
+    {
+      "index": 42,
+      "id": "NAMED_ATTACK_TEAM",
+      "path": "Object Type/Attack/Named object attacks Team.",
+      "zh": "命名对象攻击",
+      "obsolete": false,
+      "arg": "${UnitName} attacks ${TeamName}"
+    },
+    {
+      "index": 43,
+      "id": "TEAM_ATTACK_NAMED",
+      "path": "Team/Attack/Team attacks a named object.",
+      "zh": "团队攻击一个已命名的物体",
+      "obsolete": false,
+      "arg": "${TeamName} attacks ${UnitName}"
+    },
+    {
+      "index": 44,
+      "id": "TEAM_LOAD_TRANSPORTS",
+      "path": "Team/Transport/Transport -- automatically load.",
+      "zh": "把——自动加载",
+      "obsolete": true,
+      "arg": "${TeamName} load into transports."
+    },
+    {
+      "index": 45,
+      "id": "NAMED_ENTER_NAMED",
+      "path": "",
+      "zh": "运输——装载单位成具体",
+      "obsolete": false,
+      "arg": " loads into "
+    },
+    {
+      "index": 46,
+      "id": "TEAM_ENTER_NAMED",
+      "path": "",
+      "zh": "运输-装载小组到特定的",
+      "obsolete": false,
+      "arg": " attempt to load into "
+    },
+    {
+      "index": 47,
+      "id": "NAMED_EXIT_ALL",
+      "path": "Object Type/Transport/Transport -- unload units from specific.",
+      "zh": "运输——从特定单位卸下",
+      "obsolete": true,
+      "arg": "${UnitName} unloads."
+    },
+    {
+      "index": 48,
+      "id": "TEAM_EXIT_ALL",
+      "path": "Team/Transport/Transport -- unload team from all.",
+      "zh": "运输，将所有队伍撤离",
+      "obsolete": true,
+      "arg": "${TeamName} unload."
+    },
+    {
+      "index": 49,
+      "id": "NAMED_FOLLOW_WAYPOINTS",
+      "path": "Object Type/Move/Named object follow a waypoint path.",
+      "zh": "命名对象遵循路径点路径",
+      "obsolete": false,
+      "arg": "${UnitName} follow ${WaypointPathName}"
+    },
+    {
+      "index": 50,
+      "id": "NAMED_GUARD",
+      "path": "Object Type/Guard/Named object guards.",
+      "zh": "命名对象防护",
+      "obsolete": false,
+      "arg": "${UnitName} begins guarding."
+    },
+    {
+      "index": 51,
+      "id": "TEAM_GUARD",
+      "path": "Team/Guard/Team guard current location.",
+      "zh": "小队守卫当前位置",
+      "obsolete": false,
+      "arg": "${TeamName} begins guarding."
+    },
+    {
+      "index": 52,
+      "id": "NAMED_HUNT",
+      "path": "Object Type/Attack/Hunt (choose enemy target, move towards it, and attack when within range).",
+      "zh": "狩猎(选择敌人目标，向其移动，在射程内攻击)",
+      "obsolete": false,
+      "arg": "${UnitName} begins hunting."
+    },
+    {
+      "index": 53,
+      "id": "TEAM_HUNT",
+      "path": "Team/Attack/Hunt (choose enemy target, move towards it, and attack when within range).",
+      "zh": "狩猎(选择目标，向其移动，并在射程内攻击)",
+      "obsolete": false,
+      "arg": "${TeamName} begins hunting."
+    },
+    {
+      "index": 54,
+      "id": "SELL_OBJECT",
+      "path": "Object Type/Damage or Remove/Sell off named Object.",
+      "zh": "出售命名对象",
+      "obsolete": false,
+      "arg": "Sell off ${UnitName}"
+    },
+    {
+      "index": 55,
+      "id": "PLAYER_SELL_EVERYTHING",
+      "path": "Player/Remove, Sell, or Transfer All/Player sells everything.",
+      "zh": "玩家出售一切",
+      "obsolete": false,
+      "arg": "Sell everything belonging to ${PlayerName}"
+    },
+    {
+      "index": 56,
+      "id": "PLAYER_DISABLE_BASE_CONSTRUCTION",
+      "path": "Player/Build/Permissions/Player is not allowed to build buildings.",
+      "zh": "玩家不允许建造建筑",
+      "obsolete": false,
+      "arg": "${PlayerName} is not allowed to build buildings."
+    },
+    {
+      "index": 57,
+      "id": "PLAYER_DISABLE_FACTORIES",
+      "path": "Player/Build/Player cannot build from an object type.",
+      "zh": "玩家不能从一个对象类型建造",
+      "obsolete": false,
+      "arg": "${PlayerName} is not allowed to build from ${ObjectName}"
+    },
+    {
+      "index": 58,
+      "id": "PLAYER_DISABLE_UNIT_CONSTRUCTION",
+      "path": "Player/Build/Permissions/Player is not allowed to build units.",
+      "zh": "玩家不允许建造单位",
+      "obsolete": false,
+      "arg": "${PlayerName} is not allowed to build units."
+    },
+    {
+      "index": 59,
+      "id": "PLAYER_ENABLE_BASE_CONSTRUCTION",
+      "path": "Player/Build/Permissions/Player is allowed to build buildings.",
+      "zh": "玩家可以建造建筑",
+      "obsolete": false,
+      "arg": "${PlayerName} is allowed to build buildings."
+    },
+    {
+      "index": 60,
+      "id": "PLAYER_ENABLE_FACTORIES",
+      "path": "Player/Build/Player can build from an object type.",
+      "zh": "玩家可以从一个对象类型建造",
+      "obsolete": false,
+      "arg": "${PlayerName} is allowed to build from ${ObjectName}"
+    },
+    {
+      "index": 61,
+      "id": "PLAYER_ENABLE_UNIT_CONSTRUCTION",
+      "path": "Player/Build/Permissions/Player is allowed to build units.",
+      "zh": "玩家可以建造单位",
+      "obsolete": false,
+      "arg": "${PlayerName} is able to build units."
+    },
+    {
+      "index": 62,
+      "id": "BUILD_TEAM",
+      "path": "Team/Spawn, Build, or Merge/Start building Team.",
+      "zh": "启动构建团队",
+      "obsolete": false,
+      "arg": "Start building ${TeamName}"
+    },
+    {
+      "index": 63,
+      "id": "NAMED_DAMAGE",
+      "path": "Object Type/Damage or Remove/Deal damage to a named object.",
+      "zh": "对指定对象造成伤害",
+      "obsolete": false,
+      "arg": "${UnitName} takes ${Integer} points of damage."
+    },
+    {
+      "index": 64,
+      "id": "NAMED_DELETE",
+      "path": "Object Type/Damage or Remove/Delete a named object.",
+      "zh": "删除命名对象",
+      "obsolete": false,
+      "arg": "${UnitName} is removed from the world."
+    },
+    {
+      "index": 65,
+      "id": "TEAM_DELETE",
+      "path": "Team/Damage or Remove/Delete Team.",
+      "zh": "删除团队",
+      "obsolete": false,
+      "arg": "${TeamName} is removed from the world."
+    },
+    {
+      "index": 66,
+      "id": "NAMED_SHOCK",
+      "path": "Object Type/Damage or Remove/Shock a specific unit.",
+      "zh": "电击一个特定单位",
+      "obsolete": true,
+      "arg": "${UnitName} will be shocked dir (0-360) ${RealNumber}, force ${RealNumber}, zMult ${RealNumber}, with FX named ${Text} ."
+    },
+    {
+      "index": 67,
+      "id": "NAMED_KILL",
+      "path": "Object Type/Damage or Remove/Kill a named object.",
+      "zh": "杀死一个命名对象",
+      "obsolete": false,
+      "arg": "${UnitName}is dealt a lethal amount of damage."
+    },
+    {
+      "index": 68,
+      "id": "TEAM_KILL",
+      "path": "Team/Damage or Remove/Kill an entire team.",
+      "zh": "干掉一整支队伍",
+      "obsolete": false,
+      "arg": "${TeamName} is dealt a lethal amount of damage."
+    },
+    {
+      "index": 69,
+      "id": "PLAYER_KILL",
+      "path": "Player/Remove, Sell, or Transfer All/Kill Player.",
+      "zh": "杀死玩家",
+      "obsolete": false,
+      "arg": "All of ${PlayerName}'s buildings and units are dealt a lethal amount of damage."
+    },
+    {
+      "index": 70,
+      "id": "NAMED_FLASH",
+      "path": "Object Type/Flash or Color/Flash a specific unit for a specified amount of time.",
+      "zh": "在指定的时间内闪现一个特定的单元",
+      "obsolete": false,
+      "arg": "${UnitName} flashes for ${Integer} seconds."
+    },
+    {
+      "index": 71,
+      "id": "TEAM_FLASH",
+      "path": "Team/Flash/Flash Team for a specified amount of time.",
+      "zh": "flashteam的一段指定的时间",
+      "obsolete": false,
+      "arg": "${TeamName} flashes for ${Integer} seconds."
+    },
+    {
+      "index": 72,
+      "id": "MOVIE_PLAY_FULLSCREEN",
+      "path": "Media/Video/Play a movie in fullscreen mode.",
+      "zh": "以全屏模式播放电影",
+      "obsolete": false,
+      "arg": "${MovieName} plays fullscreen but doesn't play for low detail ( ${Boolean} )"
+    },
+    {
+      "index": 73,
+      "id": "MOVIE_PLAY_RADAR",
+      "path": "Media/Video/Play a movie in the radar.",
+      "zh": "在雷达上播放一部电影",
+      "obsolete": false,
+      "arg": "${MovieName} plays in the radar window."
+    },
+    {
+      "index": 74,
+      "id": "SOUND_PLAY_NAMED",
+      "path": "Media/Audio/Sound Effect/Play a sound as though coming from a named object.",
+      "zh": "播放一个声音，仿佛来自一个命名的对象",
+      "obsolete": false,
+      "arg": "${SoundName} plays as though coming from ${UnitName}"
+    },
+    {
+      "index": 75,
+      "id": "SPEECH_PLAY",
+      "path": "Media/Audio/Sound Effect/Play a speech file.",
+      "zh": "播放语音文件",
+      "obsolete": true,
+      "arg": "${SpeechName} plays, allowing overlap ${Boolean} (true to allow, false to disallow)."
+    },
+    {
+      "index": 76,
+      "id": "PLAYER_TRANSFER_OWNERSHIP_PLAYER",
+      "path": "Player/Remove, Sell, or Transfer All/Transfer assets from one player to another player.",
+      "zh": "将资产从一个玩家转移到另一个玩家",
+      "obsolete": false,
+      "arg": "All assets of ${PlayerName} are transferred to ${PlayerName}"
+    },
+    {
+      "index": 77,
+      "id": "NAMED_TRANSFER_OWNERSHIP_PLAYER",
+      "path": "Object Type/Allegiance/Transfer a named object to the control of a Player.",
+      "zh": "将指定对象转移到玩家的控件上",
+      "obsolete": false,
+      "arg": "${UnitName} is transferred to the command of ${PlayerName}"
+    },
+    {
+      "index": 78,
+      "id": "PLAYER_RELATES_PLAYER",
+      "path": "Player/Allegiance/Change how Player relates to another player.",
+      "zh": "改变玩家与其他玩家的关系",
+      "obsolete": false,
+      "arg": "${PlayerName} considers ${PlayerName} to be ${Relation}"
+    },
+    {
+      "index": 79,
+      "id": "OPTIONAL_VICTORY",
+      "path": "Win & Loss/End the mission in victory if the user chooses to",
+      "zh": "如果用户选择胜利结束任务",
+      "obsolete": true,
+      "arg": "End game in victory if the user indicates that they wish to."
+    },
+    {
+      "index": 80,
+      "id": "RADAR_CREATE_EVENT",
+      "path": "Interface/Radar/Create a radar event at a specified location.",
+      "zh": "在指定位置创建雷达事件",
+      "obsolete": false,
+      "arg": "A radar event occurs at ${PositionCoordinate} of type ${RadarEventType}"
+    },
+    {
+      "index": 81,
+      "id": "MAP_REVEAL_AT_WAYPOINT",
+      "path": "Map/Fog or Reveal/Reveal map at waypoint -- fog.",
+      "zh": "在路标处显示地图——雾",
+      "obsolete": false,
+      "arg": "The map is revealed at ${WaypointName} with a radius of ${RealNumber} feet for ${PlayerName}."
+    },
+    {
+      "index": 82,
+      "id": "TEAM_MERGE_INTO_TEAM",
+      "path": "Team/Spawn, Build, or Merge/Merge Team into another team.",
+      "zh": "将团队合并到另一个团队",
+      "obsolete": false,
+      "arg": "${TeamName} merges onto ${TeamName}"
+    },
+    {
+      "index": 83,
+      "id": "DISABLE_INPUT",
+      "path": "Interface/Input/User input -- disable.",
+      "zh": "用户输入，禁用",
+      "obsolete": false,
+      "arg": "Disable mouse and keyboard input."
+    },
+    {
+      "index": 84,
+      "id": "ENABLE_INPUT",
+      "path": "Interface/Input/User input -- enable.",
+      "zh": "用户输入，使用",
+      "obsolete": false,
+      "arg": "Enable mouse and keyboard input."
+    },
+    {
+      "index": 85,
+      "id": "SOUND_AMBIENT_PAUSE",
+      "path": "Media/Audio/Sound Effect/Suspend the ambient sounds.",
+      "zh": "暂停环境声音",
+      "obsolete": false,
+      "arg": "Pause the ambient sounds."
+    },
+    {
+      "index": 86,
+      "id": "SOUND_AMBIENT_RESUME",
+      "path": "Media/Audio/Sound Effect/Resume the ambient sounds.",
+      "zh": "恢复环境声音",
+      "obsolete": false,
+      "arg": "Resume the ambient sounds."
+    },
+    {
+      "index": 87,
+      "id": "MUSIC_SET_TRACK",
+      "path": "Media/Audio/Music/Play a music track.",
+      "zh": "播放音乐架",
+      "obsolete": false,
+      "arg": "Play ${MusicName} using fadeout (${Boolean}) and fadein (${Boolean})."
+    },
+    {
+      "index": 88,
+      "id": "DEBUG_STRING",
+      "path": "Scripting/Debug/Display string",
+      "zh": "显示字符串",
+      "obsolete": false,
+      "arg": "Show debug string without pausing: ${Text}"
+    },
+    {
+      "index": 89,
+      "id": "MAP_REVEAL_ALL",
+      "path": "Map/Shroud or Reveal/Reveal the entire map for Player.",
+      "zh": "为玩家揭示整个地图",
+      "obsolete": true,
+      "arg": "The world is revealed for ${PlayerName}."
+    },
+    {
+      "index": 90,
+      "id": "TEAM_GARRISON_SPECIFIC_BUILDING",
+      "path": "Team/Garrison/Garrison a named object with Team.",
+      "zh": "与团队一起驻守一个命名的物体",
+      "obsolete": false,
+      "arg": "${TeamName} enters into ${UnitName}"
+    },
+    {
+      "index": 91,
+      "id": "EXIT_SPECIFIC_BUILDING",
+      "path": "",
+      "zh": "清空指定对象",
+      "obsolete": false,
+      "arg": " empties."
+    },
+    {
+      "index": 92,
+      "id": "TEAM_GARRISON_NEAREST_BUILDING",
+      "path": "Team/Garrison/Garrison a nearby structure with Team.",
+      "zh": "在附近建造一个建筑",
+      "obsolete": false,
+      "arg": "${TeamName} garrison a nearby object."
+    },
+    {
+      "index": 93,
+      "id": "TEAM_EXIT_ALL_BUILDINGS",
+      "path": "Team/Garrison/Exit all objects a team is in.",
+      "zh": "退出团队所在的所有对象",
+      "obsolete": false,
+      "arg": "${TeamName} exits all objects."
+    },
+    {
+      "index": 94,
+      "id": "NAMED_GARRISON_SPECIFIC_BUILDING",
+      "path": "",
+      "zh": "用一个命名的物体加成一个命名的物体",
+      "obsolete": false,
+      "arg": " garrison "
+    },
+    {
+      "index": 95,
+      "id": "NAMED_GARRISON_NEAREST_BUILDING",
+      "path": "Object Type/Garrison/Garrison a nearby structure with a named object.",
+      "zh": "用命名的物体在附近的建筑上驻军",
+      "obsolete": false,
+      "arg": "${UnitName} garrison a nearby structure."
+    },
+    {
+      "index": 96,
+      "id": "NAMED_EXIT_BUILDING",
+      "path": "Object Type/Garrison/Named object exit whatever object it's in.",
+      "zh": "命名对象退出它所在的任何对象",
+      "obsolete": false,
+      "arg": "${UnitName} leaves it's garrison."
+    },
+    {
+      "index": 97,
+      "id": "PLAYER_EXIT_ALL_BUILDINGS",
+      "path": "Player/Garrison/All of Player's units leave their garrisons.",
+      "zh": "所有玩家的单位离开他们的驻军",
+      "obsolete": false,
+      "arg": "All of ${PlayerName} units leave their garrisons."
+    },
+    {
+      "index": 98,
+      "id": "TEAM_WANDER",
+      "path": "Team/Move/Follow a waypoint path -- wander.",
+      "zh": "遵循路标路径-漫步",
+      "obsolete": false,
+      "arg": "Have ${TeamName} wander along ${WaypointPathName}"
+    },
+    {
+      "index": 99,
+      "id": "TEAM_PANIC",
+      "path": "Cinematics/Force Emotion/Follow a waypoint path -- panic.",
+      "zh": "沿着路径点走，恐慌",
+      "obsolete": false,
+      "arg": "Have ${TeamName} move in panic along ${WaypointPathName}"
+    },
+    {
+      "index": 100,
+      "id": "SETUP_CAMERA",
+      "path": "Cinematics/Camera/Set up the camera.",
+      "zh": "设置相机",
+      "obsolete": false,
+      "arg": "Position camera at ${WaypointName}, zoom = ${RealNumber}(0.0 to 1.0), pitch = ${RealNumber}(1.0==default), looking towards ${WaypointName}."
+    },
+    {
+      "index": 101,
+      "id": "CAMERA_LETTERBOX_BEGIN",
+      "path": "Cinematics/Settings/Start letterbox mode.",
+      "zh": "开始信箱模式",
+      "obsolete": false,
+      "arg": "Start letterbox mode (hide UI, add border)."
+    },
+    {
+      "index": 102,
+      "id": "CAMERA_LETTERBOX_END",
+      "path": "Cinematics/Settings/End letterbox mode.",
+      "zh": "结束信箱模式",
+      "obsolete": false,
+      "arg": "End letterbox mode (show UI, remove border)."
+    },
+    {
+      "index": 103,
+      "id": "ZOOM_CAMERA",
+      "path": "Cinematics/Camera/Change the camera zoom.",
+      "zh": "改变相机高度",
+      "obsolete": false,
+      "arg": "Change camera zoom to ${RealNumber} in ${RealNumber} seconds, ease-in ${RealNumber} seconds, ease-out ${RealNumber} seconds."
+    },
+    {
+      "index": 104,
+      "id": "PITCH_CAMERA",
+      "path": "Cinematics/Camera/Change the camera pitch.",
+      "zh": "改变相机俯仰",
+      "obsolete": false,
+      "arg": "Change camera pitch to ${RealNumber} in ${RealNumber} seconds, ease-in ${RealNumber} seconds, ease-out ${RealNumber} seconds."
+    },
+    {
+      "index": 105,
+      "id": "CAMERA_FOLLOW_NAMED",
+      "path": "Cinematics/Camera/Follow a specific unit.",
+      "zh": "遵循一个特定的单元",
+      "obsolete": false,
+      "arg": "Have the camera follow ${UnitName}. Snap camera to object is ${Boolean}. Camera will be ${RealNumber} higher than the unit."
+    },
+    {
+      "index": 110,
+      "id": "SET_ATTACK_PRIORITY_THING",
+      "path": "",
+      "zh": "为单个对象类型修改一个集合的优先级",
+      "obsolete": false,
+      "arg": ""
+    },
+    {
+      "index": 111,
+      "id": "SET_ATTACK_PRIORITY_KIND_OF",
+      "path": "",
+      "zh": "修改一个集合中所有类型的优先级",
+      "obsolete": false,
+      "arg": ""
+    },
+    {
+      "index": 112,
+      "id": "SET_DEFAULT_ATTACK_PRIORITY",
+      "path": "",
+      "zh": "指定设置的默认优先级",
+      "obsolete": false,
+      "arg": ""
+    },
+    {
+      "index": 113,
+      "id": "CAMERA_STOP_FOLLOW",
+      "path": "Cinematics/Camera/Stop following any units.",
+      "zh": "停止跟踪任何单位",
+      "obsolete": false,
+      "arg": "Stop following any units."
+    },
+    {
+      "index": 114,
+      "id": "FREEZE_TIME",
+      "path": "Cinematics/Settings/Freeze time.",
+      "zh": "冻结时间",
+      "obsolete": false,
+      "arg": "Freeze time."
+    },
+    {
+      "index": 115,
+      "id": "UNFREEZE_TIME",
+      "path": "Cinematics/Settings/Unfreeze time.",
+      "zh": "解冻时间",
+      "obsolete": false,
+      "arg": "Unfreeze time."
+    },
+    {
+      "index": 116,
+      "id": "SHOW_MILITARY_CAPTION",
+      "path": "Tutorial/Show windowed text caption.",
+      "zh": "显示窗口文本标题",
+      "obsolete": false,
+      "arg": "Show ${LocalizedStringName} for ${RealNumber} seconds."
+    },
+    {
+      "index": 117,
+      "id": "SET_STOPPING_DISTANCE",
+      "path": "Team/Settings/Set stopping distance for each unit's current locomotor.",
+      "zh": "设置每个单元当前移动装置的停止距离",
+      "obsolete": true,
+      "arg": "Set stopping distances for ${TeamName} to ${RealNumber}."
+    },
+    {
+      "index": 118,
+      "id": "NAMED_SET_STOPPING_DISTANCE",
+      "path": "Object Type/Settings/Set stopping distance for current locomotor.",
+      "zh": "设置当前运动器停止距离",
+      "obsolete": true,
+      "arg": "Set stopping distance for ${UnitName} to ${RealNumber}."
+    },
+    {
+      "index": 119,
+      "id": "MUSIC_SET_VOLUME",
+      "path": "Media/Audio/Volume/Set the current music volume.",
+      "zh": "设置当前音乐音量",
+      "obsolete": false,
+      "arg": "Set the desired music volume to ${RealNumber}%. (0-100)"
+    },
+    {
+      "index": 120,
+      "id": "MAP_SHROUD_ALL",
+      "path": "Map/Shroud or Reveal/Shroud the entire map for Player.",
+      "zh": "覆盖玩家的整个地图",
+      "obsolete": true,
+      "arg": "The world is shrouded for ${PlayerName}."
+    },
+    {
+      "index": 121,
+      "id": "SET_RANDOM_TIMER",
+      "path": "",
+      "zh": "帧倒计时计时器-设置为随机",
+      "obsolete": false,
+      "arg": ""
+    },
+    {
+      "index": 122,
+      "id": "SET_RANDOM_MSEC_TIMER",
+      "path": "",
+      "zh": "秒倒计时-设置随机",
+      "obsolete": false,
+      "arg": ""
+    },
+    {
+      "index": 123,
+      "id": "STOP_TIMER",
+      "path": "",
+      "zh": "计时器停止",
+      "obsolete": false,
+      "arg": ""
+    },
+    {
+      "index": 124,
+      "id": "RESTART_TIMER",
+      "path": "",
+      "zh": "重启已停止-计时器",
+      "obsolete": false,
+      "arg": ""
+    },
+    {
+      "index": 125,
+      "id": "ADD_TO_MSEC_TIMER",
+      "path": "",
+      "zh": "秒倒计时计时器——增加秒数",
+      "obsolete": false,
+      "arg": ""
+    },
+    {
+      "index": 126,
+      "id": "SUB_FROM_MSEC_TIMER",
+      "path": "",
+      "zh": "秒倒计时计时器——减去秒",
+      "obsolete": false,
+      "arg": ""
+    },
+    {
+      "index": 127,
+      "id": "TEAM_TRANSFER_TO_PLAYER",
+      "path": "Team/Allegiance/Transfer control of Team to Player.",
+      "zh": "将团队控制权移交给玩家",
+      "obsolete": false,
+      "arg": "Control of ${TeamName} transfers to ${PlayerName}"
+    },
+    {
+      "index": 128,
+      "id": "PLAYER_SET_MONEY",
+      "path": "Player/Money/Set Player's money.",
+      "zh": "设置玩家的钱",
+      "obsolete": false,
+      "arg": "Set ${PlayerName}'s money to $${Integer}"
+    },
+    {
+      "index": 129,
+      "id": "PLAYER_GIVE_MONEY",
+      "path": "Player/Money/Increase or Decrease Player's money.",
+      "zh": "增加或减少玩家的金钱",
+      "obsolete": false,
+      "arg": "${PlayerName} gets $${Integer}"
+    },
+    {
+      "index": 130,
+      "id": "DISPLAY_COUNTDOWN_TIMER",
+      "path": "Interface/Counters and Timers/Specific timer -- display.",
+      "zh": "特定的计时器,显示",
+      "obsolete": false,
+      "arg": "Show ${CounterName} with text ${LocalizedStringName}"
+    },
+    {
+      "index": 131,
+      "id": "HIDE_COUNTDOWN_TIMER",
+      "path": "Interface/Counters and Timers/Specific timer -- hide.",
+      "zh": "特定的计时器——隐藏",
+      "obsolete": false,
+      "arg": "Hide ${CounterName}"
+    },
+    {
+      "index": 132,
+      "id": "ENABLE_COUNTDOWN_TIMER_DISPLAY",
+      "path": "Interface/Counters and Timers/All timers -- display.",
+      "zh": "所有计时器,显示",
+      "obsolete": false,
+      "arg": "Enables timer display."
+    },
+    {
+      "index": 133,
+      "id": "DISABLE_COUNTDOWN_TIMER_DISPLAY",
+      "path": "Interface/Counters and Timers/All timers -- hide.",
+      "zh": "所有计时器——隐藏",
+      "obsolete": false,
+      "arg": "Disables timer display."
+    },
+    {
+      "index": 134,
+      "id": "NAMED_STOP_SPECIAL_POWER_COUNTDOWN",
+      "path": "Object Type/Special Power/Countdown timer -- pause.",
+      "zh": "节目计时器——暂停",
+      "obsolete": false,
+      "arg": "Pause ${UnitName}'s ${SpecialPowerName} countdown."
+    },
+    {
+      "index": 135,
+      "id": "NAMED_START_SPECIAL_POWER_COUNTDOWN",
+      "path": "Object Type/Special Power/Countdown timer -- resume.",
+      "zh": "节目计时器——简历",
+      "obsolete": false,
+      "arg": "Resume ${UnitName}'s ${SpecialPowerName} countdown."
+    },
+    {
+      "index": 136,
+      "id": "NAMED_SET_SPECIAL_POWER_COUNTDOWN",
+      "path": "Object Type/Special Power/Countdown timer -- set.",
+      "zh": "节目计时器——简历",
+      "obsolete": false,
+      "arg": "Set ${UnitName}'s ${SpecialPowerName} to ${Integer} seconds."
+    },
+    {
+      "index": 137,
+      "id": "NAMED_FIRE_SPECIAL_POWER_AT_WAYPOINT",
+      "path": "Object Type/Special Power/Special Power -- fire at location.",
+      "zh": "节目计时器——简历",
+      "obsolete": false,
+      "arg": "${UnitName} fires ${SpecialPowerName} at ${WaypointName}."
+    },
+    {
+      "index": 138,
+      "id": "CAMERA_TETHER_NAMED",
+      "path": "Cinematics/Camera/Begin tether camera to a specific unit.",
+      "zh": "开始拴相机到一个特定的单位",
+      "obsolete": false,
+      "arg": "Have the camera tethered to ${UnitName}. Snap camera to object is ${Boolean}. Amount of play is ${RealNumber}."
+    },
+    {
+      "index": 139,
+      "id": "CAMERA_STOP_TETHER_NAMED",
+      "path": "Cinematics/Camera/End tether to any units.",
+      "zh": "结束拴到任何单位",
+      "obsolete": false,
+      "arg": "Stop tether to any units."
+    },
+    {
+      "index": 140,
+      "id": "NAMED_STOP",
+      "path": "Object Type/Move/Unit stops.",
+      "zh": "单位停止",
+      "obsolete": false,
+      "arg": "${UnitName} stops."
+    },
+    {
+      "index": 141,
+      "id": "TEAM_STOP",
+      "path": "Team/Move/Team stops.",
+      "zh": "团队停止",
+      "obsolete": false,
+      "arg": "${TeamName} stops."
+    },
+    {
+      "index": 142,
+      "id": "TEAM_STOP_AND_DISBAND",
+      "path": "Team/Move/Team stops, then disbands.",
+      "zh": "团队停止,然后解散",
+      "obsolete": false,
+      "arg": "${TeamName} stops, then disbands."
+    },
+    {
+      "index": 143,
+      "id": "RECRUIT_TEAM",
+      "path": "Team/Spawn, Build, or Merge/Recruit Team.",
+      "zh": "招聘团队",
+      "obsolete": true,
+      "arg": "Recruit an instance of ${TeamName}, maximum recruiting distance (feet):${RealNumber}."
+    },
+    {
+      "index": 144,
+      "id": "RECRUIT_TEAM_AT_TEAM",
+      "path": "Team/Spawn, Build, or Merge/Recruit Team at location of another team.",
+      "zh": "在另一队地点招募一队",
+      "obsolete": true,
+      "arg": "Recruit an instance of ${TeamName}, maximum recruiting distance (feet):${RealNumber} from the team ${TeamName}."
+    },
+    {
+      "index": 145,
+      "id": "TEAM_SET_OVERRIDE_RELATION_TO_TEAM",
+      "path": "Team/Allegiance/Override Team's relationship to a Team.",
+      "zh": "覆盖团队与团队的关系",
+      "obsolete": false,
+      "arg": "${TeamName} considers ${TeamName} to be ${Relation} (rather than using the the player relationship)."
+    },
+    {
+      "index": 146,
+      "id": "TEAM_REMOVE_OVERRIDE_RELATION_TO_TEAM",
+      "path": "Team/Allegiance/Remove an override to Team's relationship to a Team.",
+      "zh": "删除一个覆盖到Team和Team的关系",
+      "obsolete": false,
+      "arg": "${TeamName} uses the player relationship to ${TeamName}"
+    },
+    {
+      "index": 147,
+      "id": "TEAM_REMOVE_ALL_OVERRIDE_RELATIONS",
+      "path": "Team/Allegiance/Remove all overrides to Team's relationship to Teams and Players.",
+      "zh": "删除所有团队与团队和球员的关系",
+      "obsolete": false,
+      "arg": "${TeamName} uses the player relationship to all other teams and players."
+    },
+    {
+      "index": 148,
+      "id": "CAMERA_LOOK_TOWARD_OBJECT",
+      "path": "Cinematics/Camera/Rotate toward unit.",
+      "zh": "向着单位旋转",
+      "obsolete": false,
+      "arg": "Rotate toward ${UnitName}, taking ${RealNumber} seconds and holding ${RealNumber} seconds, ease-in ${RealNumber} seconds, ease-out ${RealNumber} seconds with z-offset of ${RealNumber}."
+    },
+    {
+      "index": 149,
+      "id": "TEAM_SET_OVERRIDE_RELATION_TO_PLAYER",
+      "path": "Team/Allegiance/Override Team's relationship to a Player.",
+      "zh": "重写团队与玩家的关系",
+      "obsolete": false,
+      "arg": "${TeamName} considers ${PlayerName} to be ${Relation} (rather than using the the player relationship)."
+    },
+    {
+      "index": 150,
+      "id": "PLAYER_SET_OVERRIDE_RELATION_TO_TEAM",
+      "path": "Player/Allegiance/Override Player's relationship to another team.",
+      "zh": "覆盖玩家与其他队伍的关系",
+      "obsolete": false,
+      "arg": "${PlayerName} considers ${TeamName} to be ${Relation} (rather than using the the player relationship)."
+    },
+    {
+      "index": 151,
+      "id": "UNIT_EXECUTE_SEQUENTIAL_SCRIPT",
+      "path": "Object Type/SequentialScript/Set a specific unit to execute a script sequentially.",
+      "zh": "设置一个特定的单元来按顺序执行脚本",
+      "obsolete": true,
+      "arg": "${UnitName} executes ${ScriptName} sequentially."
+    },
+    {
+      "index": 152,
+      "id": "UNIT_EXECUTE_SEQUENTIAL_SCRIPT_LOOPING",
+      "path": "Object Type/SequentialScript/Set a specific unit to execute a looping sequential script.",
+      "zh": "设置一个特定的单元来执行一个循环顺序脚本",
+      "obsolete": true,
+      "arg": "${UnitName} executes ${ScriptName} sequentially, ${Integer} times. (0=forever)"
+    },
+    {
+      "index": 153,
+      "id": "UNIT_STOP_SEQUENTIAL_SCRIPT",
+      "path": "Object Type/SequentialScript/Set a named object to stop executing a sequential script.",
+      "zh": "设置一个命名对象停止执行顺序脚本",
+      "obsolete": false,
+      "arg": "${UnitName} stops executing."
+    },
+    {
+      "index": 154,
+      "id": "TEAM_EXECUTE_SEQUENTIAL_SCRIPT",
+      "path": "Team/SequentialScript/Execute script sequentially -- start.",
+      "zh": "执行脚本sequentially-start",
+      "obsolete": true,
+      "arg": "${TeamName} executes ${ScriptName} sequentially."
+    },
+    {
+      "index": 155,
+      "id": "TEAM_EXECUTE_SEQUENTIAL_SCRIPT_LOOPING",
+      "path": "Team/SequentialScript/Execute script sequentially -- looping.",
+      "zh": "按顺序执行脚本——循环",
+      "obsolete": true,
+      "arg": "${TeamName} executes ${ScriptName} sequentially, ${Integer} times. (0=forever)"
+    },
+    {
+      "index": 156,
+      "id": "TEAM_STOP_SEQUENTIAL_SCRIPT",
+      "path": "Team/SequentialScript/Execute script sequentially -- stop.",
+      "zh": "执行脚本顺序——停止",
+      "obsolete": false,
+      "arg": "${TeamName} stops executing."
+    },
+    {
+      "index": 157,
+      "id": "UNIT_GUARD_FOR_FRAMECOUNT",
+      "path": "Object Type/SequentialScript/Set to guard for some number of frames.",
+      "zh": "设置为某些帧数的保护",
+      "obsolete": true,
+      "arg": "${UnitName} guards for ${Integer} frames."
+    },
+    {
+      "index": 158,
+      "id": "UNIT_IDLE_FOR_FRAMECOUNT",
+      "path": "Object Type/SequentialScript/Named object idles for some number of frames.",
+      "zh": "指定的对象空闲一定数量的帧",
+      "obsolete": false,
+      "arg": "${UnitName} idles for ${Integer} frames."
+    },
+    {
+      "index": 159,
+      "id": "TEAM_GUARD_FOR_FRAMECOUNT",
+      "path": "Team/SequentialScript/Guard -- number of frames.",
+      "zh": "警卫队的帧数",
+      "obsolete": true,
+      "arg": "${TeamName} guards for ${Integer} frames."
+    },
+    {
+      "index": 160,
+      "id": "TEAM_IDLE_FOR_FRAMECOUNT",
+      "path": "Team/SequentialScript/Idle for some number of frames.",
+      "zh": "空闲一定数量的帧",
+      "obsolete": false,
+      "arg": "${TeamName} idles for ${Integer} frames."
+    },
+    {
+      "index": 161,
+      "id": "NAMED_USE_COMMANDBUTTON_ABILITY_ON_NAMED",
+      "path": "",
+      "zh": "在特定单位上使用命令按钮能力",
+      "obsolete": false,
+      "arg": " use  on ."
+    },
+    {
+      "index": 162,
+      "id": "NAMED_USE_COMMANDBUTTON_ABILITY_AT_WAYPOINT",
+      "path": "Object Type/CommandButton/Use commandbutton ability at a waypoint.",
+      "zh": "在一个路标点使用命令按钮能力",
+      "obsolete": false,
+      "arg": "${UnitName} use ${UnitAbilityName} at ${WaypointName}."
+    },
+    {
+      "index": 163,
+      "id": "MAP_SWITCH_BORDER",
+      "path": "Map/Modify/Change the active border of the map.",
+      "zh": "改变地图的活动边界",
+      "obsolete": false,
+      "arg": "${BoundaryName} becomes the active border."
+    },
+    {
+      "index": 164,
+      "id": "TEAM_GUARD_POSITION",
+      "path": "Team/Guard/Team guard at location.",
+      "zh": "位置有队员守卫",
+      "obsolete": false,
+      "arg": "${TeamName} begins guarding at ${WaypointName}"
+    },
+    {
+      "index": 165,
+      "id": "TEAM_GUARD_OBJECT",
+      "path": "Team/Guard/Team guard a named object.",
+      "zh": "团队守卫一个命名的物体",
+      "obsolete": false,
+      "arg": "${TeamName} begins guarding ${UnitName}"
+    },
+    {
+      "index": 166,
+      "id": "TEAM_GUARD_AREA",
+      "path": "Team/Guard/Team guard an area.",
+      "zh": "团队守卫一个区域",
+      "obsolete": false,
+      "arg": "${TeamName} begins guarding ${TriggerAreaName}"
+    },
+    {
+      "index": 167,
+      "id": "CAMERA_LOOK_TOWARD_WAYPOINT",
+      "path": "Cinematics/Camera/Rotate to look at a waypoint.",
+      "zh": "旋转以查看路径点",
+      "obsolete": false,
+      "arg": "Rotate to look at ${WaypointName}, taking ${RealNumber} seconds, ease-in ${RealNumber} seconds, ease-out ${RealNumber} seconds, reverse rotation ${Boolean}."
+    },
+    {
+      "index": 168,
+      "id": "UNIT_DESTROY_ALL_CONTAINED",
+      "path": "Object Type/Damage or Remove/Kill all units contained within a specific transport or structure.",
+      "zh": "杀死特定运输工具或建筑内的所有单位",
+      "obsolete": false,
+      "arg": "All units inside ${UnitName} are killed."
+    },
+    {
+      "index": 169,
+      "id": "SCREEN_SHAKE",
+      "path": "Cinematics/Camera/Shake Screen.",
+      "zh": "震动屏幕",
+      "obsolete": false,
+      "arg": "The screen will shake with ${CameraShakeIntensity}"
+    },
+    {
+      "index": 170,
+      "id": "TECHTREE_MODIFY_BUILDABILITY_OBJECT",
+      "path": "Player/Build/Adjust the tech tree for a specific object type.",
+      "zh": "调整特定对象类型的科技树",
+      "obsolete": false,
+      "arg": "${ObjectName} becomes ${Buildability}"
+    },
+    {
+      "index": 171,
+      "id": "WAREHOUSE_SET_VALUE",
+      "path": "",
+      "zh": "供应来源——设定现金价值",
+      "obsolete": false,
+      "arg": "Warehouse named  is set to having  dollars worth of boxes."
+    },
+    {
+      "index": 172,
+      "id": "OBJECT_CREATE_RADAR_EVENT",
+      "path": "Interface/Radar/Create a radar event at a named object.",
+      "zh": "在指定对象上创建雷达事件",
+      "obsolete": false,
+      "arg": "A radar event occurs at ${UnitName} of type ${RadarEventType}"
+    },
+    {
+      "index": 173,
+      "id": "TEAM_CREATE_RADAR_EVENT",
+      "path": "Interface/Radar/Create a radar event at a Team.",
+      "zh": "在Team中创建一个雷达事件",
+      "obsolete": false,
+      "arg": "A radar event occurs at ${TeamName} of type ${RadarEventType}"
+    },
+    {
+      "index": 174,
+      "id": "DEBUG_CRASH_BOX",
+      "path": "",
+      "zh": "显示崩溃框(仅调试内部版本)",
+      "obsolete": false,
+      "arg": ""
+    },
+    {
+      "index": 175,
+      "id": "SOUND_DISABLE_TYPE",
+      "path": "Media/Audio/Sound Events/Sound Events -- disable type.",
+      "zh": "声音——禁用事件类型",
+      "obsolete": false,
+      "arg": "${AudioName} is disabled."
+    },
+    {
+      "index": 176,
+      "id": "SOUND_ENABLE_TYPE",
+      "path": "Media/Audio/Sound Events/Sound Events -- enable type.",
+      "zh": "声音事件,使类型",
+      "obsolete": false,
+      "arg": "${AudioName} is enabled."
+    },
+    {
+      "index": 177,
+      "id": "SOUND_ENABLE_ALL",
+      "path": "Media/Audio/Sound Events/Sound Events -- enable all.",
+      "zh": "声音——让所有的事件",
+      "obsolete": false,
+      "arg": "Enable all sound events."
+    },
+    {
+      "index": 178,
+      "id": "AUDIO_OVERRIDE_VOLUME_TYPE",
+      "path": "Media/Audio/Sound Events/Sound Events -- override volume -- type.",
+      "zh": "声音事件——覆盖卷类型",
+      "obsolete": true,
+      "arg": "${AudioName} play at ${RealNumber}% of full volume."
+    },
+    {
+      "index": 179,
+      "id": "AUDIO_RESTORE_VOLUME_TYPE",
+      "path": "Media/Audio/Sound Events/Sound Events -- restore volume -- type.",
+      "zh": "声音事件——恢复卷类型",
+      "obsolete": true,
+      "arg": "${AudioName} play at normal volume."
+    },
+    {
+      "index": 180,
+      "id": "AUDIO_RESTORE_VOLUME_ALL_TYPE",
+      "path": "Media/Audio/Sound Events/Sound Events -- restore volume -- all.",
+      "zh": "声音事件——恢复卷",
+      "obsolete": true,
+      "arg": "All sound events play at normal volume."
+    },
+    {
+      "index": 181,
+      "id": "NAMED_SET_HELD",
+      "path": "Object Type/Settings/Set unit to be held in place, ignoring Physics, Locomotors, etc.",
+      "zh": "设置要保持的单位，忽略物理，运动等",
+      "obsolete": true,
+      "arg": "Set Held status for ${UnitName} to ${Boolean}."
+    },
+    {
+      "index": 182,
+      "id": "NAMED_SET_TOPPLE_DIRECTION",
+      "path": "Object Type/Settings/Set topple direction.",
+      "zh": "设置推翻方向",
+      "obsolete": false,
+      "arg": "${UnitName} will topple towards ${PositionCoordinate} if destroyed."
+    },
+    {
+      "index": 183,
+      "id": "MAP_REVEAL_ALL_PERM",
+      "path": "Map/Fog or Reveal/Reveal the entire map permanently for Player.",
+      "zh": "为Playe永久揭示整个地图",
+      "obsolete": false,
+      "arg": "The world is revealed permanently for ${PlayerName}."
+    },
+    {
+      "index": 184,
+      "id": "MAP_REVEAL_ALL_UNDO_PERM",
+      "path": "Map/Fog or Reveal/Un-Reveal the entire map permanently for Player.",
+      "zh": "为玩家永久取消显示整个地图",
+      "obsolete": false,
+      "arg": "Undo the permanent reveal for ${PlayerName}. This will mess things up badly if called when there has been no permanent reveal."
+    },
+    {
+      "index": 185,
+      "id": "TEAM_WANDER_IN_PLACE",
+      "path": "Team/Move/Set to wander around current location.",
+      "zh": "设置在当前位置徘徊",
+      "obsolete": false,
+      "arg": "Have ${TeamName} wander around it's current location."
+    },
+    {
+      "index": 186,
+      "id": "TEAM_INCREASE_PRIORITY",
+      "path": "Team/Spawn, Build, or Merge/Change priority by Success Priority Increase amount.",
+      "zh": "Change priority by Success priority增加数量",
+      "obsolete": true,
+      "arg": "Increase the AI priority for${TeamName} by its Success Priority Increase amount."
+    },
+    {
+      "index": 187,
+      "id": "TEAM_DECREASE_PRIORITY",
+      "path": "Team/Spawn, Build, or Merge/Change priority by Failure Priority Decrease amount.",
+      "zh": "Change priority by Failure priority减少数量",
+      "obsolete": true,
+      "arg": "Reduce the AI priority for${TeamName} by its Failure Priority Decrease amount."
+    },
+    {
+      "index": 188,
+      "id": "DISPLAY_COUNTER",
+      "path": "Interface/Counters and Timers/Specific counter -- display.",
+      "zh": "特定的计数器,显示",
+      "obsolete": false,
+      "arg": "Show ${CounterName} with text ${LocalizedStringName}"
+    },
+    {
+      "index": 189,
+      "id": "HIDE_COUNTER",
+      "path": "Interface/Counters and Timers/Specific counter -- hide.",
+      "zh": "特定的计数器,隐藏",
+      "obsolete": false,
+      "arg": "Hide ${CounterName}"
+    },
+    {
+      "index": 190,
+      "id": "TEAM_USE_COMMANDBUTTON_ABILITY_ON_NAMED",
+      "path": "",
+      "zh": "在命名对象上使用命令按钮功能",
+      "obsolete": false,
+      "arg": " use  on ."
+    },
+    {
+      "index": 191,
+      "id": "TEAM_USE_COMMANDBUTTON_ABILITY_AT_WAYPOINT",
+      "path": "Team/CommandButton/Use commandbutton ability at a waypoint.",
+      "zh": "在一个路标点使用命令按钮能力",
+      "obsolete": false,
+      "arg": "${TeamName} use ${TeamAbilityName} at ${WaypointName}."
+    },
+    {
+      "index": 192,
+      "id": "NAMED_USE_COMMANDBUTTON_ABILITY",
+      "path": "Object Type/CommandButton/Use commandbutton ability.",
+      "zh": "使用命令按钮的能力",
+      "obsolete": false,
+      "arg": "${UnitName} use ${UnitAbilityName}."
+    },
+    {
+      "index": 193,
+      "id": "TEAM_USE_COMMANDBUTTON_ABILITY",
+      "path": "Team/CommandButton/Use commandbutton ability.",
+      "zh": "用命令按钮的能力",
+      "obsolete": false,
+      "arg": "${TeamName} use ${TeamAbilityName}."
+    },
+    {
+      "index": 194,
+      "id": "NAMED_FLASH_WHITE",
+      "path": "Object Type/Flash or Color/Flash a named object white for a specified amount of time.",
+      "zh": "在指定的时间内将指定的对象Flash为白色",
+      "obsolete": false,
+      "arg": "${UnitName} flashes white for ${Integer} seconds."
+    },
+    {
+      "index": 195,
+      "id": "TEAM_FLASH_WHITE",
+      "path": "Team/Flash/Flash Team white for a specified amount of time.",
+      "zh": "闪光队在指定的时间内保持白色",
+      "obsolete": false,
+      "arg": "${TeamName} flashes white for ${Integer} seconds."
+    },
+    {
+      "index": 196,
+      "id": "SKIRMISH_FOLLOW_APPROACH_PATH",
+      "path": "Team/Move/Team follow approach path.",
+      "zh": "团队遵循进场路径",
+      "obsolete": true,
+      "arg": "Have ${TeamName} approach the enemy using path ${SkirmishApproachPath}, as a team is ${Boolean}"
+    },
+    {
+      "index": 197,
+      "id": "IDLE_ALL_UNITS",
+      "path": "Cinematics/Force Emotion/Idle all units for all players.",
+      "zh": "为所有玩家闲置所有单位",
+      "obsolete": false,
+      "arg": "Idle all units for all players."
+    },
+    {
+      "index": 198,
+      "id": "NAMED_CUSTOM_COLOR",
+      "path": "Object Type/Flash or Color/Set a named object to use a special indicator color.",
+      "zh": "设置一个命名对象使用一个特殊的指示颜色",
+      "obsolete": false,
+      "arg": "${UnitName} uses the color ${Color} ."
+    },
+    {
+      "index": 199,
+      "id": "SKIRMISH_MOVE_TO_APPROACH_PATH",
+      "path": "Team/Move/Team move to approach path.",
+      "zh": "团队移至进场路径",
+      "obsolete": true,
+      "arg": "Have ${TeamName} move to the start of enemy path ${SkirmishApproachPath}."
+    },
+    {
+      "index": 200,
+      "id": "SKIRMISH_FIRE_SPECIAL_POWER_AT_MOST_COST",
+      "path": "Player/Special Power/Special power -- fire at enemy's highest cost area.",
+      "zh": "特殊能力-向敌人的最高成本区域开火",
+      "obsolete": false,
+      "arg": "${PlayerName} fire ${SpecialPowerName} at enemy's most costly area."
+    },
+    {
+      "index": 201,
+      "id": "NAMED_RECEIVE_UPGRADE",
+      "path": "Object Type/Settings/Give upgrade to named object.",
+      "zh": "升级指定对象",
+      "obsolete": false,
+      "arg": "Give ${UpgradeName} to ${UnitName}."
+    },
+    {
+      "index": 202,
+      "id": "SKIRMISH_WAIT_FOR_COMMANDBUTTON_AVAILABLE_ALL",
+      "path": "",
+      "zh": "延迟顺序脚本，直到指定的命令能力就绪为止",
+      "obsolete": false,
+      "arg": ""
+    },
+    {
+      "index": 203,
+      "id": "SKIRMISH_WAIT_FOR_COMMANDBUTTON_AVAILABLE_PARTIAL",
+      "path": "",
+      "zh": "延迟一个连续的脚本，直到指定的命令能力是部分的",
+      "obsolete": false,
+      "arg": ""
+    },
+    {
+      "index": 204,
+      "id": "TEAM_ALL_USE_COMMANDBUTTON_ON_NEAREST_ENEMY_UNIT",
+      "path": "Team/CommandButton/Use command ability -- all -- nearest enemy unit",
+      "zh": "使用命令能力-所有-最近的敌人单位",
+      "obsolete": false,
+      "arg": "${TeamName} use ${TeamAbilityName} on nearest enemy unit."
+    },
+    {
+      "index": 205,
+      "id": "TEAM_ALL_USE_COMMANDBUTTON_ON_NEAREST_GARRISONED_BUILDING",
+      "path": "Team/CommandButton/Use command ability -- all -- nearest enemy garrisoned building.",
+      "zh": "使用命令能力-所有-最近的敌人驻守建筑",
+      "obsolete": false,
+      "arg": "${TeamName} use ${TeamAbilityName} on nearest enemy garrisoned building."
+    },
+    {
+      "index": 206,
+      "id": "TEAM_ALL_USE_COMMANDBUTTON_ON_NEAREST_KINDOF",
+      "path": "Team/CommandButton/Use command ability -- all -- nearest enemy object with kind of.",
+      "zh": "使用命令能力-所有-最近的敌人目标",
+      "obsolete": false,
+      "arg": "${TeamName} use ${TeamAbilityName} on nearest enemy with ${UnitOrStructureKind}"
+    },
+    {
+      "index": 207,
+      "id": "TEAM_ALL_USE_COMMANDBUTTON_ON_NEAREST_ENEMY_BUILDING",
+      "path": "Team/CommandButton/Use command ability -- all -- nearest enemy building.",
+      "zh": "使用命令能力-所有-最近的敌人建筑",
+      "obsolete": false,
+      "arg": "${TeamName} use ${TeamAbilityName} on nearest enemy building."
+    },
+    {
+      "index": 208,
+      "id": "TEAM_ALL_USE_COMMANDBUTTON_ON_NEAREST_ENEMY_BUILDING_CLASS",
+      "path": "Team/CommandButton/Use command ability -- all -- nearest enemy building kindof.",
+      "zh": "使用命令能力-所有-最近的敌人建筑类",
+      "obsolete": false,
+      "arg": "${TeamName} use ${TeamAbilityName} on nearest enemy building with ${UnitOrStructureKind}"
+    },
+    {
+      "index": 209,
+      "id": "TEAM_ALL_USE_COMMANDBUTTON_ON_NEAREST_OBJECTTYPE",
+      "path": "Team/CommandButton/Use command ability -- all -- nearest object type.",
+      "zh": "使用命令能力——all——最接近的对象类型",
+      "obsolete": false,
+      "arg": "${TeamName} use ${TeamAbilityName} on nearest object of type ${ObjectName}."
+    },
+    {
+      "index": 210,
+      "id": "TEAM_PARTIAL_USE_COMMANDBUTTON",
+      "path": "Team/CommandButton/Use command ability -- partial -- self.",
+      "zh": "用命令的能力——部分自我",
+      "obsolete": false,
+      "arg": "${RealNumber}% of ${TeamName} perform ${TeamAbilityName}."
+    },
+    {
+      "index": 211,
+      "id": "TEAM_CAPTURE_NEAREST_UNOWNED_FACTION_UNIT",
+      "path": "Team/Capture/Capture unowned faction unit -- nearest.",
+      "zh": "捕获无主派系单位-最近",
+      "obsolete": false,
+      "arg": "${TeamName} capture the nearest unowned faction unit."
+    },
+    {
+      "index": 212,
+      "id": "TEAM_WAIT_FOR_NOT_CONTAINED_ALL",
+      "path": "",
+      "zh": "延迟一个顺序脚本，直到团队不再包含-全部",
+      "obsolete": false,
+      "arg": ""
+    },
+    {
+      "index": 213,
+      "id": "TEAM_FOLLOW_WAYPOINTS_EXACT",
+      "path": "Team/Move/Set to EXACTLY follow a waypoint path.",
+      "zh": "设置精确跟随路径点路径",
+      "obsolete": false,
+      "arg": "Have ${TeamName} EXACTLY follow ${WaypointPathName} , as a team is ${Boolean}"
+    },
+    {
+      "index": 214,
+      "id": "NAMED_FOLLOW_WAYPOINTS_EXACT",
+      "path": "Object Type/Move/Named object follow a waypoint path -- exactly.",
+      "zh": "命名的对象遵循路径点路径——完全正确",
+      "obsolete": false,
+      "arg": "${UnitName} EXACTLY follow ${WaypointPathName}"
+    },
+    {
+      "index": 215,
+      "id": "AI_PLAYER_BUILD_UPGRADE",
+      "path": "Player/Upgrades and Sciences/AI Player build an Upgrade.",
+      "zh": "AI玩家建立一个升级",
+      "obsolete": true,
+      "arg": "Have AI ${PlayerName} build this upgrade: ${UpgradeName}"
+    },
+    {
+      "index": 216,
+      "id": "OBJECTLIST_ADDOBJECTTYPE",
+      "path": "Scripting/Object List/Add Object Type to Object List.",
+      "zh": "添加对象类型到对象列表",
+      "obsolete": false,
+      "arg": "Add ${ObjectName} to ${ObjectTypeListName}"
+    },
+    {
+      "index": 217,
+      "id": "OBJECTLIST_REMOVEOBJECTTYPE",
+      "path": "Scripting/Object List/Remove Object Type from Object List.",
+      "zh": "从对象列表中删除对象类型",
+      "obsolete": false,
+      "arg": "Remove ${ObjectName} from ${ObjectTypeListName}"
+    },
+    {
+      "index": 218,
+      "id": "MAP_REVEAL_PERMANENTLY_AT_WAYPOINT",
+      "path": "Map/Fog or Reveal/Reveal map at waypoint -- permanently.",
+      "zh": "在路标处显示地图——永久",
+      "obsolete": false,
+      "arg": "The map is permanently revealed at ${WaypointName} with a radius of ${RealNumber} for ${PlayerName}. (Afterwards referred to as ${MapRevealName})."
+    },
+    {
+      "index": 219,
+      "id": "MAP_UNDO_REVEAL_PERMANENTLY_AT_WAYPOINT",
+      "path": "Map/Fog or Reveal/Reveal map at waypoint -- undo permanently.",
+      "zh": "在路标处显示地图——永久撤销",
+      "obsolete": false,
+      "arg": "${MapRevealName} is undone."
+    },
+    {
+      "index": 220,
+      "id": "NAMED_SET_STEALTH_ENABLED",
+      "path": "Object Type/Settings/Stealth -- enable or disable.",
+      "zh": "隐形,启用或禁用",
+      "obsolete": false,
+      "arg": "Set ${UnitName} stealth ability to ${Boolean}."
+    },
+    {
+      "index": 221,
+      "id": "EVA_SET_ENABLED_DISABLED",
+      "path": "Media/Audio/EVA/Enable or Disable EVA.",
+      "zh": "启用/禁用EVA",
+      "obsolete": false,
+      "arg": "Set EVA to be enabled ${Boolean} (False to disable.)"
+    },
+    {
+      "index": 222,
+      "id": "OPTIONS_SET_OCCLUSION_MODE",
+      "path": "Cinematics/Settings/Enable or Disable Occlusion (Drawing Behind Buildings).",
+      "zh": "启用或禁用行为(在建筑物后面绘图)",
+      "obsolete": false,
+      "arg": "Set Occlusion to be enabled ${Boolean} (False to disable.)"
+    },
+    {
+      "index": 223,
+      "id": "LOCALDEFEAT",
+      "path": "Win & Loss/Announce local defeat.",
+      "zh": "宣布当地失败",
+      "obsolete": false,
+      "arg": "Show 'Game Over' window"
+    },
+    {
+      "index": 224,
+      "id": "OPTIONS_SET_DRAWICON_UI_MODE",
+      "path": "Cinematics/Settings/Enable or Disable Draw-icon UI.",
+      "zh": "启用或禁用绘制图标用户界面",
+      "obsolete": false,
+      "arg": "Set Draw-icon UI to be enabled ${Boolean} (False to disable.)"
+    },
+    {
+      "index": 225,
+      "id": "OPTIONS_SET_PARTICLE_CAP_MODE",
+      "path": "Cinematics/Settings/Enable or Disable Particle Cap.",
+      "zh": "启用或禁用“缔约方上限”",
+      "obsolete": false,
+      "arg": "Set Particle Cap to be enabled ${Boolean} (False to disable.)"
+    },
+    {
+      "index": 226,
+      "id": "UNIT_AFFECT_OBJECT_PANEL_FLAGS",
+      "path": "Object Type/Settings/Change Object flags.",
+      "zh": "更改对象标志",
+      "obsolete": false,
+      "arg": "${UnitName} changes the value of ${ObjectPanelFlag} to ${Boolean}."
+    },
+    {
+      "index": 227,
+      "id": "TEAM_AFFECT_OBJECT_PANEL_FLAGS",
+      "path": "Team/Settings/Change Object flags - all.",
+      "zh": "全部更改对象标志",
+      "obsolete": false,
+      "arg": "${TeamName} change the value of ${ObjectPanelFlag} to ${Boolean}."
+    },
+    {
+      "index": 228,
+      "id": "PLAYER_SELECT_SKILLSET",
+      "path": "Player/Upgrades and Sciences/Set the skillset for an AI Player.",
+      "zh": "为AI玩家设置技能",
+      "obsolete": true,
+      "arg": "${PlayerName} uses skillset number ${Integer} (1-5)."
+    },
+    {
+      "index": 229,
+      "id": "SCRIPTING_OVERRIDE_HULK_LIFETIME",
+      "path": "Object Type/Hulk set override lifetime.",
+      "zh": "浩克设置覆盖寿命",
+      "obsolete": false,
+      "arg": "Override hulk lifetime to ${RealNumber} seconds. Negative value reverts to normal behavior."
+    },
+    {
+      "index": 230,
+      "id": "NAMED_FACE_NAMED",
+      "path": "",
+      "zh": "面对另一个单位",
+      "obsolete": false,
+      "arg": " begin facing "
+    },
+    {
+      "index": 231,
+      "id": "NAMED_FACE_WAYPOINT",
+      "path": "Object Type/Move/Face a waypoint.",
+      "zh": "面对一个路标",
+      "obsolete": false,
+      "arg": "${UnitName} begin facing ${WaypointName}"
+    },
+    {
+      "index": 232,
+      "id": "TEAM_FACE_NAMED",
+      "path": "",
+      "zh": "面对另一个单位",
+      "obsolete": false,
+      "arg": " begin facing "
+    },
+    {
+      "index": 233,
+      "id": "TEAM_FACE_WAYPOINT",
+      "path": "Team/Move/Face a waypoint.",
+      "zh": "面对一个路标",
+      "obsolete": false,
+      "arg": "${TeamName} begin facing ${WaypointName}"
+    },
+    {
+      "index": 235,
+      "id": "UNIT_SPAWN_NAMED_LOCATION_ORIENTATION",
+      "path": "Object Type/Spawn/Spawn -- named object on Team at a position with an orientation.",
+      "zh": "",
+      "obsolete": true,
+      "arg": "Spawn ${UnitName} of type ${ObjectName} on ${TeamName} at position (${PositionCoordinate}), rotated ${Angle} ."
+    },
+    {
+      "index": 236,
+      "id": "PLAYER_EXCLUDE_FROM_SCORE_SCREEN",
+      "path": "Player/Scoring/Exclude this player from the score screen.",
+      "zh": "把这个玩家从得分屏幕上移除",
+      "obsolete": false,
+      "arg": "Exclude ${PlayerName} from the score screen."
+    },
+    {
+      "index": 237,
+      "id": "TEAM_GUARD_SUPPLY_CENTER",
+      "path": "Team/Guard/Guard a supply source.",
+      "zh": "守卫供给源",
+      "obsolete": false,
+      "arg": "Have ${TeamName} guard attacked or closest supply source with at least ${Integer} available resources"
+    },
+    {
+      "index": 238,
+      "id": "ENABLE_SCORING",
+      "path": "Map/Gameplay/Turn on scoring.",
+      "zh": "打开得分",
+      "obsolete": true,
+      "arg": "Turn on scoring."
+    },
+    {
+      "index": 239,
+      "id": "DISABLE_SCORING",
+      "path": "Map/Gameplay/Turn off scoring.",
+      "zh": "关掉得分",
+      "obsolete": true,
+      "arg": "Turn off scoring."
+    },
+    {
+      "index": 240,
+      "id": "SOUND_SET_VOLUME",
+      "path": "Media/Audio/Volume/Set the current sound volume.",
+      "zh": "设置当前音量",
+      "obsolete": false,
+      "arg": "Set the desired sound volume to ${RealNumber}%. (0-100)"
+    },
+    {
+      "index": 241,
+      "id": "SPEECH_SET_VOLUME",
+      "path": "Media/Audio/Volume/Set the current speech volume.",
+      "zh": "设置当前语音音量",
+      "obsolete": true,
+      "arg": "Set the desired speech volume to ${RealNumber}%. (0-100)"
+    },
+    {
+      "index": 242,
+      "id": "DISABLE_BORDER_SHROUD",
+      "path": "Map/Fog or Reveal/Border Shroud is turned off.",
+      "zh": "边境裹尸布关闭",
+      "obsolete": false,
+      "arg": "Shroud off the map edges is turned off."
+    },
+    {
+      "index": 243,
+      "id": "ENABLE_BORDER_SHROUD",
+      "path": "Map/Fog or Reveal/Border Shroud is turned on.",
+      "zh": "边境裹尸布打开",
+      "obsolete": false,
+      "arg": "Shroud off the map edges is turned on."
+    },
+    {
+      "index": 244,
+      "id": "OBJECT_ALLOW_BONUSES",
+      "path": "Map/Gameplay/Adjust Object Bonuses based on difficulty.",
+      "zh": "根据难度调整对象奖励",
+      "obsolete": false,
+      "arg": "Enable Object Bonuses based on difficulty ${Boolean} (true to enable, false to disable)."
+    },
+    {
+      "index": 245,
+      "id": "SOUND_REMOVE_TYPE",
+      "path": "Media/Audio/Sound Events/Sound Events -- remove type.",
+      "zh": "声音事件——删除类型",
+      "obsolete": true,
+      "arg": "${AudioName} is removed."
+    },
+    {
+      "index": 246,
+      "id": "TEAM_GUARD_IN_TUNNEL_NETWORK",
+      "path": "Team/Guard/Guard -- from inside tunnel network.",
+      "zh": "保安，来自隧道网络内部",
+      "obsolete": true,
+      "arg": "${TeamName} Enter and guard from tunnel network."
+    },
+    {
+      "index": 247,
+      "id": "QUICKVICTORY",
+      "path": "Win & Loss/Announce quick win",
+      "zh": "宣布快速赢得",
+      "obsolete": false,
+      "arg": "End game in victory immediately."
+    },
+    {
+      "index": 248,
+      "id": "UNIT_SET_MODELCONDITION",
+      "path": "Object Type/Settings/Change Custom Model Condition flag.",
+      "zh": "改变自定义模型条件标志",
+      "obsolete": false,
+      "arg": "${UnitName} sets custom model condition number (1-10) ${Integer} to ${Boolean}."
+    },
+    {
+      "index": 249,
+      "id": "TEAM_SET_MODELCONDITION",
+      "path": "Team/Settings/Change Custom Model Condition flag - all.",
+      "zh": "更改自定义模型条件标志-全部",
+      "obsolete": false,
+      "arg": "${TeamName} sets custom model condition number (1-4) ${Integer} to ${Boolean}."
+    },
+    {
+      "index": 250,
+      "id": "TEAM_DELETE_LIVING",
+      "path": "Team/Damage or Remove/Delete Team, but ignore dead guys.",
+      "zh": "删除团队，但忽略死人",
+      "obsolete": false,
+      "arg": "Each living member of ${TeamName} is removed from the world. (Dead or dying members will remain)"
+    },
+    {
+      "index": 251,
+      "id": "DELETE_ALL_UNMANNED",
+      "path": "Object Type/Delete all unmanned (sniped) vehicles.",
+      "zh": "删除所有无人(狙击)车辆",
+      "obsolete": false,
+      "arg": "Delete all unmanned (sniped) vehicles."
+    },
+    {
+      "index": 252,
+      "id": "CHOOSE_VICTIM_ALWAYS_USES_NORMAL",
+      "path": "Map/Gameplay/Force ChooseVictim to ignore game difficulty and always use Normal setting.",
+      "zh": "强制选择受害者忽略游戏难度，总是使用普通设置",
+      "obsolete": true,
+      "arg": "Force ChooseVictim to ignore game difficulty and always use Normal setting ${Boolean} (true to enable, false to disable)."
+    },
+    {
+      "index": 253,
+      "id": "SET_CAMERA_CLIP_DEPTH_MULTIPLIER",
+      "path": "Cinematics/Camera/Change the camera depth of field.",
+      "zh": "改变相机的景深",
+      "obsolete": false,
+      "arg": "Modify normal depth of Frustrum by ${RealNumber} (1.0 = normal, < 1.0 shortens frustrum, > 1.0 lengthens.)"
+    },
+    {
+      "index": 254,
+      "id": "CAMERA_ADD_SHAKER_AT",
+      "path": "Cinematics/Camera/Add Camera Shaker Effect at.",
+      "zh": "添加相机震动效果",
+      "obsolete": false,
+      "arg": "Add Camera Shaker Effect at waypoint ${WaypointName} with Amplitude ${RealNumber} Duration (seconds) ${RealNumber} Radius.${RealNumber}"
+    },
+    {
+      "index": 255,
+      "id": "ENABLE_OBJECT_SOUND",
+      "path": "Media/Audio/Sound Effect/Enable object's ambient sound",
+      "zh": "启用对象的环境声音",
+      "obsolete": true,
+      "arg": "Enable (or trigger) ${UnitName}'s ambient sound."
+    },
+    {
+      "index": 256,
+      "id": "DISABLE_OBJECT_SOUND",
+      "path": "Media/Audio/Sound Effect/Disable object's ambient sound",
+      "zh": "禁用对象的环境声音",
+      "obsolete": true,
+      "arg": "Disable ${UnitName}'s ambient sound."
+    },
+    {
+      "index": 257,
+      "id": "ROTATE_CAMERA_LOCKED",
+      "path": "Cinematics/Camera/Rotate the camera in place.",
+      "zh": "原地旋转摄像机",
+      "obsolete": false,
+      "arg": "Rotate in place ${RealNumber} times, taking ${RealNumber} seconds, ease-in ${RealNumber} seconds, ease-out ${RealNumber} seconds."
+    },
+    {
+      "index": 258,
+      "id": "CAMERA_BLOOM_EFFECT_BEGIN",
+      "path": "Cinematics/Lighting/Begin bloom lighting effect.",
+      "zh": "开始绽放照明效果",
+      "obsolete": false,
+      "arg": "Set Bloom Filter to be enabled"
+    },
+    {
+      "index": 259,
+      "id": "CAMERA_BLOOM_EFFECT_END",
+      "path": "Cinematics/Lighting/End bloom lighting effect.",
+      "zh": "端花照明效果",
+      "obsolete": false,
+      "arg": "Set Bloom Filter to be disabled"
+    },
+    {
+      "index": 260,
+      "id": "UNIT_SET_FLAME_STATUS",
+      "path": "Object Type/Settings/Ignite or quench aflame status.",
+      "zh": "点燃或熄灭火焰状态",
+      "obsolete": true,
+      "arg": "${UnitName} is now on fire (T-F) ${Boolean} ."
+    },
+    {
+      "index": 261,
+      "id": "TEAM_SET_FLAME_STATUS",
+      "path": "Team/Settings/Ignite or quench aflame status - all.",
+      "zh": "点燃或熄灭火焰状态-所有",
+      "obsolete": true,
+      "arg": "${UnitName} is now on fire (T-F) ${Boolean} ."
+    },
+    {
+      "index": 262,
+      "id": "ROLL_CAMERA",
+      "path": "Cinematics/Camera/Change the camera roll.",
+      "zh": "更换摄像机的滚轴",
+      "obsolete": false,
+      "arg": "Change camera roll to ${RealNumber} degrees in ${RealNumber} seconds, ease-in ${RealNumber} seconds, ease-out ${RealNumber} seconds."
+    },
+    {
+      "index": 263,
+      "id": "HIDE_UI",
+      "path": "Cinematics/Settings/Hide UI",
+      "zh": "隐藏用户界面",
+      "obsolete": false,
+      "arg": "Hide UI (like letterbox mode, but with no border)."
+    },
+    {
+      "index": 264,
+      "id": "SHOW_UI",
+      "path": "Cinematics/Settings/Show UI",
+      "zh": "显示用户界面",
+      "obsolete": false,
+      "arg": "Show UI"
+    },
+    {
+      "index": 265,
+      "id": "TEAM_GIVE_EXPERIENCE_LEVEL",
+      "path": "Team/Experience/Gives the team an experience level.",
+      "zh": "给团队一个经验水平",
+      "obsolete": true,
+      "arg": "Gives ${TeamName} experience level ${ExperienceLevel}."
+    },
+    {
+      "index": 266,
+      "id": "TEAM_GIVE_EXPERIENCE_POINTS",
+      "path": "Team/Experience/Gives the team experience points.",
+      "zh": "给予团队经验值",
+      "obsolete": false,
+      "arg": "Gives ${TeamName} experience points ${Integer}."
+    },
+    {
+      "index": 267,
+      "id": "TEAM_SET_EXPERIENCE_POINTS",
+      "path": "Team/Experience/Sets the team's experience points.",
+      "zh": "设置团队经验值",
+      "obsolete": false,
+      "arg": "Sets ${TeamName} experience points' to ${Integer}."
+    },
+    {
+      "index": 268,
+      "id": "UNIT_GIVE_EXPERIENCE_LEVEL",
+      "path": "Object Type/Experience/Gives a unit an experience level.",
+      "zh": "给予一个单位一定的经验值",
+      "obsolete": true,
+      "arg": "Gives ${UnitName} experience level ${ExperienceLevel}."
+    },
+    {
+      "index": 269,
+      "id": "UNIT_GIVE_EXPERIENCE_POINTS",
+      "path": "Object Type/Experience/Gives a named object experience points.",
+      "zh": "给出一个命名对象的经验点",
+      "obsolete": false,
+      "arg": "Gives ${UnitName} experience points ${Integer}."
+    },
+    {
+      "index": 270,
+      "id": "UNIT_SET_EXPERIENCE_POINTS",
+      "path": "Object Type/Experience/Sets a named object's experience points.",
+      "zh": "设置一个命名对象的经验值",
+      "obsolete": false,
+      "arg": "Sets ${UnitName} experience points to ${Integer}."
+    },
+    {
+      "index": 271,
+      "id": "TOGGLE_AVI_CAPTURE",
+      "path": "",
+      "zh": "切换AVI捕获",
+      "obsolete": false,
+      "arg": ""
+    },
+    {
+      "index": 272,
+      "id": "PLAY_MOVIE_IN_GAME",
+      "path": "PlayMovie/Plays a movie in game.",
+      "zh": "在游戏中播放电影",
+      "obsolete": true,
+      "arg": "Play Movie named ${MovieName} allow cancel ${Boolean} ."
+    },
+    {
+      "index": 273,
+      "id": "MAP_CHANGE_CLOUD_SPEED",
+      "path": "Map/Modify/Change the speed of the CloudEffect.",
+      "zh": "修改“CloudEffect”的运行速度",
+      "obsolete": true,
+      "arg": "Modify the default CloudEffect speed to be ${Percentage}"
+    },
+    {
+      "index": 274,
+      "id": "TERRAIN_RENDER_DISABLE",
+      "path": "Camera/Terrain/Enable or Disable Terrain Render.",
+      "zh": "启用或禁用地形渲染",
+      "obsolete": true,
+      "arg": "Disable terrain render ${Boolean} (True to disable.)"
+    },
+    {
+      "index": 275,
+      "id": "SET_RANDOM_COUNTER",
+      "path": "",
+      "zh": "设置一个随机计数器",
+      "obsolete": false,
+      "arg": ""
+    },
+    {
+      "index": 276,
+      "id": "SET_COUNTER_TO_COUNTER",
+      "path": "",
+      "zh": "设置counter为另一个计数器",
+      "obsolete": false,
+      "arg": ""
+    },
+    {
+      "index": 277,
+      "id": "SET_FLAG_TO_FLAG",
+      "path": "",
+      "zh": "设置另一个标志",
+      "obsolete": false,
+      "arg": ""
+    },
+    {
+      "index": 278,
+      "id": "SET_UNIT_REFERENCE",
+      "path": "Scripting/Reference/Set reference to a unit.",
+      "zh": "设置一个单位的引用",
+      "obsolete": true,
+      "arg": "Set ${UnitReference} to reference unit ${UnitName}"
+    },
+    {
+      "index": 279,
+      "id": "SET_TEAM_REFERENCE",
+      "path": "Scripting/Reference/Set reference to a team.",
+      "zh": "设置引用到一个团队",
+      "obsolete": true,
+      "arg": "Set ${TeamReference} to reference team ${TeamName}"
+    },
+    {
+      "index": 280,
+      "id": "SET_UNIT_REFERENCE_TO_REFERENCE",
+      "path": "Scripting/Reference/Set reference to another unit reference.",
+      "zh": "设置引用到另一个单位引用",
+      "obsolete": true,
+      "arg": "Set ${UnitReference} to reference another unit reference ${UnitReference}"
+    },
+    {
+      "index": 281,
+      "id": "SET_TEAM_REFERENCE_TO_REFERNECE",
+      "path": "Scripting/Reference/ Set reference to another team reference.",
+      "zh": "设置引用到另一个团队引用",
+      "obsolete": true,
+      "arg": "Set ${TeamReference} to reference another team reference ${TeamReference}"
+    },
+    {
+      "index": 282,
+      "id": "TEAM_GIVE_NEAREST_TEAM_UPGRADE",
+      "path": "Team/Upgrades/Team will give nearest team upgrade (Giving Team must have upgrade)",
+      "zh": "队伍会给最近的队伍升级(给予队伍必须有升级)",
+      "obsolete": true,
+      "arg": "${TeamName} will give nearest team upgrade"
+    },
+    {
+      "index": 283,
+      "id": "ALLOW_DISALLOW_ONE_BUILDING",
+      "path": "Player/Build/Allow or Disallow one building of a specific type",
+      "zh": "允许或不允许一个特定类型的建筑",
+      "obsolete": false,
+      "arg": "${PlayerName} allowed to build ${ObjectName} is ${Boolean}."
+    },
+    {
+      "index": 284,
+      "id": "ALLOW_DISALLOW_ALL_BUILDINGS",
+      "path": "Base/Allow or Disallow all buildings",
+      "zh": "允许或禁止所有建筑",
+      "obsolete": true,
+      "arg": "${PlayerName} is allowed to build ALL buildings is ${Boolean} ."
+    },
+    {
+      "index": 285,
+      "id": "FOCAL_LENGTH_CAMERA",
+      "path": "Cinematics/Camera/Change the camera's focal length (mm).",
+      "zh": "改变相机焦距(毫米)",
+      "obsolete": false,
+      "arg": "Change camera focal length to ${RealNumber}mm in ${RealNumber} seconds, ease-in ${RealNumber} seconds, ease-out ${RealNumber} seconds."
+    },
+    {
+      "index": 286,
+      "id": "MOVE_CAMERA_LOCATOR_ALONG_SPLINE_PATH",
+      "path": "Cinematics/Camera/Order camera's locator to follow a spline path.",
+      "zh": "命令相机的定位器遵循样条路径",
+      "obsolete": false,
+      "arg": "Look at point moving along ${WaypointPathName} in ${RealNumber} seconds, camera shutter ${RealNumber} seconds, ease-in ${RealNumber} seconds, ease-out ${RealNumber} seconds, delay start ${RealNumber} seconds."
+    },
+    {
+      "index": 287,
+      "id": "TEAM_MOVE_TO_NEAREST_OBJECT_OF_KINDOF",
+      "path": "Team/Move/Team will move to the nearest object that matches kindof specified.",
+      "zh": "队伍会移动到最近的匹配kindof指定的对象",
+      "obsolete": false,
+      "arg": "${TeamName} will move to the nearest object of ${UnitOrStructureKind}."
+    },
+    {
+      "index": 288,
+      "id": "TEAM_MOVE_TO_NEAREST_OBJECT_OF_KINDOF_OWNED_BY_PLAYER",
+      "path": "Team/Move/Team will move to the nearest object that matches both kindof and player specified.",
+      "zh": "队伍会移动到最接近的目标，同时匹配指定的种类和玩家",
+      "obsolete": false,
+      "arg": "${TeamName} will move to the nearest object of ${UnitOrStructureKind} that is owned by the ${PlayerName}."
+    },
+    {
+      "index": 289,
+      "id": "TEAM_MOVE_TO_NEAREST_OBJECT_OF_TYPE",
+      "path": "Team/Move/Team will move to the nearest object that matches type specified.",
+      "zh": "Team将移动到最近的匹配指定类型的对象",
+      "obsolete": false,
+      "arg": "${TeamName} will move to the nearest object of type ${ObjectType}."
+    },
+    {
+      "index": 290,
+      "id": "TEAM_MOVE_TO_NEAREST_OBJECT_OF_TYPE_OWNED_BY_PLAYER",
+      "path": "Team/Move/Team will move to the nearest object that matches both type and player specified.",
+      "zh": "队伍会移动到最近的匹配类型和玩家的物体上",
+      "obsolete": false,
+      "arg": "${TeamName} will move to the nearest object of type ${ObjectType} that is owned by ${PlayerName}."
+    },
+    {
+      "index": 291,
+      "id": "COUNTER_MATH_COUNTER",
+      "path": "Scripting/Counters/Counter do math opertation with another Counter.",
+      "zh": "Counter用另一个Counter做数学运算",
+      "obsolete": false,
+      "arg": "Counter ${CounterName} , ${MathOperator} with counter ${CounterName}"
+    },
+    {
+      "index": 292,
+      "id": "COUNTER_MATH_VALUE",
+      "path": "Scripting/Counters/Counter do math opertation with value.",
+      "zh": "counter用value做数学运算",
+      "obsolete": false,
+      "arg": "Counter ${CounterName} , ${MathOperator} with value ${Integer}"
+    },
+    {
+      "index": 293,
+      "id": "TEAM_RECRUIT_UNITS",
+      "path": "Team/Capture-Recruit/Team recruits from same player and nearby allied AI teams.",
+      "zh": "从同一玩家和附近的盟军AI队伍中招募团队成员",
+      "obsolete": true,
+      "arg": "${TeamName} will recruit ${Integer} units of type ${ObjectType} from nearby recruitable allied teams."
+    },
+    {
+      "index": 294,
+      "id": "TEAM_RECRUIT_UNITS_FROM_TEAM",
+      "path": "Team/Capture-Recruit/Team recruits from another specific team.",
+      "zh": "从另一个特定团队招募的团队成员",
+      "obsolete": true,
+      "arg": "${TeamName} will recruit ${Integer} units of type ${ObjectType} from ${TeamName} ."
+    },
+    {
+      "index": 295,
+      "id": "TEAM_GUARD_TEAM",
+      "path": "Team/Guard/Team guard a specific team.",
+      "zh": "团队守卫一个特定的团队",
+      "obsolete": false,
+      "arg": "${TeamName} begins guarding ${TeamName}"
+    },
+    {
+      "index": 296,
+      "id": "TEAM_GUARD_NEAREST_KINDOF",
+      "path": "Team/Guard/Team guard nearest kindof.",
+      "zh": "最接近的队员后卫",
+      "obsolete": false,
+      "arg": "${TeamName} begins guarding nearest ${UnitOrStructureKind}"
+    },
+    {
+      "index": 297,
+      "id": "UNIT_GUARD_NEAREST_KINDOF",
+      "path": "Object Type/Guard/Named object guards nearest kindof.",
+      "zh": "指定位置的对象保护",
+      "obsolete": false,
+      "arg": "${UnitName} begins guarding nearest ${UnitOrStructureKind}"
+    },
+    {
+      "index": 298,
+      "id": "TEAM_GIVE_TEAM_UPGRADE",
+      "path": "Team/Upgrades/Team will give team upgrade (Giving Team must have upgrade)",
+      "zh": "团队会给予团队升级(给予团队必须有升级)",
+      "obsolete": true,
+      "arg": "${TeamName} will give ${TeamName} upgrade"
+    },
+    {
+      "index": 299,
+      "id": "TEAM_UPGRADE",
+      "path": "Team/Upgrades/Give Team the specified upgrade",
+      "zh": "给团队指定的升级",
+      "obsolete": false,
+      "arg": "Give Team ${TeamName} the upgrade ${UpgradeName}."
+    },
+    {
+      "index": 300,
+      "id": "SET_PLAYER_MONEY_TO_COUNTER",
+      "path": "Scripting/Counters/Set players money to counter.",
+      "zh": "设置玩家的金钱来对抗",
+      "obsolete": false,
+      "arg": "Store amount of ${PlayerName} money to the counter ${CounterName}"
+    },
+    {
+      "index": 301,
+      "id": "SET_UNIT_EXPERIENCE_TO_COUNTER",
+      "path": "Scripting/Counters/Set units experience points to counter.",
+      "zh": "设置单位经验值来对抗",
+      "obsolete": false,
+      "arg": "Store amount of ${UnitName} experience points to the counter ${CounterName}"
+    },
+    {
+      "index": 302,
+      "id": "SET_PLAYER_COMMAND_POINTS_USED_TO_COUNTER",
+      "path": "ThreeSixty/Set command points used by player to counter.",
+      "zh": "设置玩家用来反击的命令点",
+      "obsolete": false,
+      "arg": "Store amount of command points used by player ${PlayerName} to the counter ${CounterName}"
+    },
+    {
+      "index": 303,
+      "id": "SET_PLAYER_COMMAND_POINTS_AVAILABLE_TO_COUNTER",
+      "path": "ThreeSixty/Set command points available to player to counter.",
+      "zh": "设置可用于玩家对抗的命令点",
+      "obsolete": false,
+      "arg": "Store amount of command points available to player ${PlayerName} to the counter ${CounterName}"
+    },
+    {
+      "index": 304,
+      "id": "SET_PLAYER_COMMAND_POINTS_TOTAL_TO_COUNTER",
+      "path": "ThreeSixty/Set command points total of player to counter.",
+      "zh": "设置玩家的命令点数",
+      "obsolete": false,
+      "arg": "Store total number of command point of player ${PlayerName} to the counter ${CounterName}"
+    },
+    {
+      "index": 305,
+      "id": "SET_COMMAND_POINTS_TO_BUILD_TEAM_TO_COUNTER",
+      "path": "ThreeSixty/Set command points required to build team to counter.",
+      "zh": "设置小队作战所需的命令点",
+      "obsolete": false,
+      "arg": "Store the amount of command points required to build ${TeamName} to the counter ${CounterName}"
+    },
+    {
+      "index": 306,
+      "id": "UNIT_GUARD_FOR_SECONDS",
+      "path": "Object Type/SequentialScript/Set to guard for some number of seconds.",
+      "zh": "设置为守卫数秒",
+      "obsolete": true,
+      "arg": "${UnitName} guards for ${Integer} seconds."
+    },
+    {
+      "index": 307,
+      "id": "UNIT_IDLE_FOR_SECONDS",
+      "path": "Object Type/SequentialScript/Named object idles for some number of seconds.",
+      "zh": "命名对象空闲一定的秒数",
+      "obsolete": false,
+      "arg": "${UnitName} idles for ${Integer} seconds."
+    },
+    {
+      "index": 308,
+      "id": "TEAM_GUARD_FOR_SECONDS",
+      "path": "Team/SequentialScript/Guard -- number of seconds.",
+      "zh": "警卫队的秒数",
+      "obsolete": true,
+      "arg": "${TeamName} guards for ${Integer} seconds."
+    },
+    {
+      "index": 309,
+      "id": "TEAM_IDLE_FOR_SECONDS",
+      "path": "Team/SequentialScript/Idle for some number of seconds.",
+      "zh": "空闲几秒钟",
+      "obsolete": false,
+      "arg": "${TeamName} idles for ${Integer} seconds."
+    },
+    {
+      "index": 310,
+      "id": "SET_COUNTER_IN_SECONDS",
+      "path": "",
+      "zh": "将计数器设置为以秒为单位的时间",
+      "obsolete": false,
+      "arg": ""
+    },
+    {
+      "index": 311,
+      "id": "SET_RANDOM_COUNTER_IN_SECONDS",
+      "path": "",
+      "zh": "设置一个以秒为单位的随机计数器",
+      "obsolete": false,
+      "arg": ""
+    },
+    {
+      "index": 312,
+      "id": "AUDIO_FADE_VOLUME",
+      "path": "Media/Audio/Volume/Fade all audio",
+      "zh": "褪去所有的音频",
+      "obsolete": false,
+      "arg": "Fade (0-1) all audio from volume ${RealNumber} to volume ${RealNumber}. Take ${RealNumber} seconds to increase, hold for ${RealNumber} seconds, and decrease ${RealNumber} seconds."
+    },
+    {
+      "index": 313,
+      "id": "TOGGLE_AUTO_BUILD",
+      "path": "Player/Build/Turn on or off a player's structures that auto build units. (Starts ON)",
+      "zh": "开启或关闭玩家能够自动建造单位的建筑。 (开始)",
+      "obsolete": true,
+      "arg": "${PlayerName} toggle auto build ${Boolean}"
+    },
+    {
+      "index": 314,
+      "id": "GIVE_PLAYER_UPGRADE",
+      "path": "Player/Upgrades and Sciences/Give Player an Upgrade.",
+      "zh": "给予玩家升级",
+      "obsolete": false,
+      "arg": "Give ${PlayerName} this upgrade: ${UpgradeName}"
+    },
+    {
+      "index": 315,
+      "id": "SET_PLAYER_KILLS_OF_TYPE_TO_COUNTER",
+      "path": "Scripting/Counters/Set number of player kills of a type to counter.",
+      "zh": "设置玩家杀死某种类型的敌人的次数",
+      "obsolete": false,
+      "arg": "Store the amount of kills by ${PlayerName} of the type of object(s) ${ObjectType} to ${CounterName}"
+    },
+    {
+      "index": 316,
+      "id": "SET_PLAYER_KILLS_OF_KINDOF_TO_COUNTER",
+      "path": "Scripting/Counters/Set number of player kills of a kindof to counter.",
+      "zh": "设置玩家杀死某种敌人的次数",
+      "obsolete": false,
+      "arg": "Store the amount of kills by ${PlayerName} of the ${UnitOrStructureKind} to ${CounterName}"
+    },
+    {
+      "index": 317,
+      "id": "SET_PLAYER_OWNERSHIP_OF_TYPE_COUNTER",
+      "path": "Scripting/Counters/Set number of object types owned by player to counter.",
+      "zh": "设置玩家可以对抗的对象类型的数量",
+      "obsolete": false,
+      "arg": "Store the number of ${ObjectType} owned by ${PlayerName} to ${CounterName}"
+    },
+    {
+      "index": 318,
+      "id": "TEAM_SET_HEALTH",
+      "path": "Team/Damage or Remove/Set the health of the team members (in percentage).",
+      "zh": "设置团队成员的生命值(百分比)",
+      "obsolete": false,
+      "arg": "Set health of ${TeamName} to percentage (0.0 - 100.0) ${RealNumber}"
+    },
+    {
+      "index": 319,
+      "id": "NAMED_USE_COMMANDBUTTON_ON_NEAREST_ENEMY_UNIT",
+      "path": "Object Type/CommandButton/Use commandbutton ability at nearest enemy unit",
+      "zh": "在最近的敌人单位使用命令按钮技能",
+      "obsolete": false,
+      "arg": "${UnitName} use ${TeamAbilityName} on nearest enemy unit."
+    },
+    {
+      "index": 320,
+      "id": "NAMED_USE_COMMANDBUTTON_ON_NEAREST_GARRISONED_BUILDING",
+      "path": "Object Type/CommandButton/Use commandbutton ability at nearest enemy garrisoned building.",
+      "zh": "在最近的敌人驻守建筑上使用命令按钮技能",
+      "obsolete": false,
+      "arg": "${UnitName} use ${TeamAbilityName} on nearest enemy garrisoned building."
+    },
+    {
+      "index": 321,
+      "id": "NAMED_USE_COMMANDBUTTON_ON_NEAREST_KINDOF",
+      "path": "Object Type/CommandButton/Use commandbutton ability at nearest enemy object with kind of.",
+      "zh": "在最近的敌人物体上使用命令按钮能力",
+      "obsolete": false,
+      "arg": "${UnitName} use ${TeamAbilityName} on nearest enemy with ${UnitOrStructureKind}"
+    },
+    {
+      "index": 322,
+      "id": "NAMED_USE_COMMANDBUTTON_ON_NEAREST_ENEMY_BUILDING",
+      "path": "Object Type/CommandButton/Use commandbutton ability at nearest enemy building.",
+      "zh": "在最近的敌人建筑使用命令按钮技能",
+      "obsolete": false,
+      "arg": "${UnitName} use ${TeamAbilityName} on nearest enemy building."
+    },
+    {
+      "index": 323,
+      "id": "NAMED_USE_COMMANDBUTTON_ON_NEAREST_ENEMY_BUILDING_CLASS",
+      "path": "Object Type/CommandButton/Use commandbutton ability at nearest enemy building kindof.",
+      "zh": "在离敌人最近的地方使用命令按钮技能",
+      "obsolete": false,
+      "arg": "${UnitName} use ${TeamAbilityName} on nearest enemy building with ${UnitOrStructureKind}"
+    },
+    {
+      "index": 324,
+      "id": "NAMED_USE_COMMANDBUTTON_ON_NEAREST_OBJECTTYPE",
+      "path": "Object Type/CommandButton/Use commandbutton ability at nearest object type.",
+      "zh": "在最接近的对象类型上使用命令按钮功能",
+      "obsolete": false,
+      "arg": "${UnitName} use ${TeamAbilityName} on nearest object of type ${ObjectName}."
+    },
+    {
+      "index": 325,
+      "id": "NAMED_SET_STRICT_CONTROL_ENABLED",
+      "path": "Object Type/Settings/Strict control -- enable or disable.",
+      "zh": "严格控制——启用或禁用",
+      "obsolete": true,
+      "arg": "Set ${UnitName} strict control to ${Boolean}."
+    },
+    {
+      "index": 326,
+      "id": "TEAM_SET_STRICT_CONTROL_ENABLED",
+      "path": "Team/Status/Strict Control set enabled or disabled.",
+      "zh": "启用或禁用严格控制设置",
+      "obsolete": true,
+      "arg": "Set ${TeamName} strict control to ${Boolean}."
+    },
+    {
+      "index": 327,
+      "id": "UNIT_SET_MODELCONDITION_FOR_DURATION",
+      "path": "Object Type/Settings/Set a model condition flag on a named object for duration. % specifies # of members in horde that get this.",
+      "zh": "在指定对象上设置一个模型条件标志，持续时间。 指定在部落中得到这个的成员",
+      "obsolete": false,
+      "arg": "${UnitName} sets ${ModelCondition} for ${RealNumber} seconds. Percentage (hordes) ${Percentage}."
+    },
+    {
+      "index": 328,
+      "id": "UNIT_CLEAR_MODELCONDITION",
+      "path": "Object Type/Settings/Clear model condition flag on a named object.",
+      "zh": "清除指定对象上的模型条件标志",
+      "obsolete": false,
+      "arg": "${UnitName} clears ${ModelCondition}."
+    },
+    {
+      "index": 329,
+      "id": "TEAM_SET_MODELCONDITION_FOR_DURATION",
+      "path": "Team/Settings/Set a model condition flag on a team (and horde members) for duration. % specifies # of members in team that get this.",
+      "zh": "在团队(和部落成员)上设置一个持续时间的模型状态标志。 指定团队中的成员得到这个",
+      "obsolete": true,
+      "arg": "${TeamName} sets model condition ${ModelCondition} for ${RealNumber} seconds. Percentage ${Percentage}."
+    },
+    {
+      "index": 330,
+      "id": "TEAM_CLEAR_MODELCONDITION",
+      "path": "Team/Settings/Clear model condition flag on a team.",
+      "zh": "清除队伍的模型状态标志",
+      "obsolete": false,
+      "arg": "${TeamName} clears model condition ${ModelCondition}."
+    },
+    {
+      "index": 331,
+      "id": "KILL_HORDE_MEMBERS",
+      "path": "Object Type/Damage or Remove/Kill off a percentage of the Horde",
+      "zh": "杀死一定百分比的部落",
+      "obsolete": true,
+      "arg": "Horde ${UnitName} kill off ${RealNumber} percent."
+    },
+    {
+      "index": 332,
+      "id": "DIM_WORLD_LIGHTS",
+      "path": "",
+      "zh": "调暗所有的全局和环境灯",
+      "obsolete": false,
+      "arg": ""
+    },
+    {
+      "index": 333,
+      "id": "RESTORE_WORLD_LIGHTS",
+      "path": "",
+      "zh": "恢复(非昏暗)所有全局和环境灯",
+      "obsolete": false,
+      "arg": ""
+    },
+    {
+      "index": 334,
+      "id": "AUDIO_MAKE_SOUND_IMMUNE_TO_FADE",
+      "path": "Media/Audio/Volume/Make sound immune to fade",
+      "zh": "使声音免疫褪色",
+      "obsolete": false,
+      "arg": "Make the ${AudioName} ignore the fade levels set by 'fade all audio.'"
+    },
+    {
+      "index": 335,
+      "id": "AUDIO_MAKE_SOUND_SUBJECT_TO_FADE",
+      "path": "Media/Audio/Volume/Make sound subject to fade",
+      "zh": "使声音渐弱",
+      "obsolete": false,
+      "arg": "Make the ${AudioName} subject to the fade levels set by 'fade all audio.'"
+    },
+    {
+      "index": 336,
+      "id": "AUDIO_MAKE_ALL_SOUNDS_SUBJECT_TO_FADE",
+      "path": "Media/Audio/Volume/Make all sounds subject to fade",
+      "zh": "使所有的声音都变得微弱",
+      "obsolete": false,
+      "arg": "Make all sounds subject to the fade levels set by 'fade all audio.'"
+    },
+    {
+      "index": 337,
+      "id": "CREATE_REINFORCEMENT_TEAM_AT_UNIT_POSITION",
+      "path": "",
+      "zh": "在指定目标的位置生成一个增援小队",
+      "obsolete": false,
+      "arg": "Spawn an instance of  at ."
+    },
+    {
+      "index": 338,
+      "id": "FIRE_SPECIAL_POWER_ON_NEAREST_OBJECTTYPE",
+      "path": "Player/Special Power/Special power -- fire on nearest object type to team.",
+      "zh": "特殊火力——对离队伍最近的目标开火",
+      "obsolete": false,
+      "arg": "${PlayerName} fire ${SpecialPowerName} on nearest object of ${ObjectType} to ${TeamName}"
+    },
+    {
+      "index": 339,
+      "id": "FIRE_SPECIAL_POWER_ON_NEAREST_OBJECTTYPE_BY_PLAYER",
+      "path": "Player/Special Power/Special power -- fire on nearest object type to team owned by player.",
+      "zh": "特殊能力-对距离玩家队伍最近的物体类型开火",
+      "obsolete": false,
+      "arg": "${PlayerName} fire ${SpecialPowerName} on nearest object of ${ObjectType} to ${TeamName} owned by ${PlayerName}"
+    },
+    {
+      "index": 340,
+      "id": "FIRE_SPECIAL_POWER_ON_TEAM",
+      "path": "Player/Special Power/Special power -- fire on team.",
+      "zh": "特殊力量——向团队开火",
+      "obsolete": false,
+      "arg": "${PlayerName} fire ${SpecialPowerName} on ${TeamName}"
+    },
+    {
+      "index": 341,
+      "id": "AUDIO_SET_REVERB_ROOM_TYPE",
+      "path": "Media/Audio/All Sounds/Set global reverb room type.",
+      "zh": "设置全局混响室类型",
+      "obsolete": false,
+      "arg": "Use global reverb room type ${ReverbRoomType}"
+    },
+    {
+      "index": 342,
+      "id": "AUDIO_REMOVE_REVERB",
+      "path": "Media/Audio/All Sounds/Remove all reverb effects",
+      "zh": "移除所有混响效果",
+      "obsolete": false,
+      "arg": "Do not use reverb effects"
+    },
+    {
+      "index": 343,
+      "id": "AUDIO_PUSH_MUSIC",
+      "path": "Media/Audio/Music/Push music track.",
+      "zh": "推动音乐跟踪",
+      "obsolete": false,
+      "arg": "Push (stack) ${MusicName} atop the current music track using fadeout (${Boolean}) and fadein (${Boolean})."
+    },
+    {
+      "index": 344,
+      "id": "AUDIO_POP_MUSIC",
+      "path": "Media/Audio/Music/Pop music track.",
+      "zh": "流行音乐跟踪",
+      "obsolete": false,
+      "arg": "Pop the current music track off the stack using fadeout (${Boolean}) and fadein (${Boolean})."
+    },
+    {
+      "index": 345,
+      "id": "UNIT_GUARD_POSITION",
+      "path": "Object Type/Guard/Named object guard at location.",
+      "zh": "指定位置的对象保护",
+      "obsolete": false,
+      "arg": "${UnitName} begins guarding at ${WaypointName}"
+    },
+    {
+      "index": 346,
+      "id": "UNIT_GUARD_OBJECT",
+      "path": "Object Type/Guard/Named object guard another named object.",
+      "zh": "命名对象保护另一个命名对象",
+      "obsolete": false,
+      "arg": "${UnitName} begins guarding ${UnitName}"
+    },
+    {
+      "index": 347,
+      "id": "UNIT_GUARD_AREA",
+      "path": "Object Type/Guard/Named object guard area.",
+      "zh": "命名的对象保护区域",
+      "obsolete": false,
+      "arg": "${UnitName} begins guarding ${TriggerAreaName}"
+    },
+    {
+      "index": 348,
+      "id": "MOVE_TEAM_HOME",
+      "path": "Team/Move/Set team to move to home position (designated in team template).",
+      "zh": "设置团队移动到本队位置(在团队模板中指定)",
+      "obsolete": false,
+      "arg": "Move ${TeamName} Home."
+    },
+    {
+      "index": 349,
+      "id": "MUSIC_TURN_OFF_MUSIC_SCRIPTING",
+      "path": "",
+      "zh": "关闭音乐脚本",
+      "obsolete": false,
+      "arg": ""
+    },
+    {
+      "index": 350,
+      "id": "MUSIC_RETURN_TO_MUSIC_SCRIPTING",
+      "path": "",
+      "zh": "回到音乐脚本",
+      "obsolete": false,
+      "arg": ""
+    },
+    {
+      "index": 351,
+      "id": "MUSIC_RESET_MUSIC_SCRIPTING_SYSTEM",
+      "path": "",
+      "zh": "重置音乐脚本系统",
+      "obsolete": false,
+      "arg": ""
+    },
+    {
+      "index": 352,
+      "id": "TEAM_SET_PLAYERS_NEAREST_UNIT_OF_TYPE_TO_REFERENCE",
+      "path": "Scripting/Reference/Set a reference to an object nearest-to-team, owned by player.",
+      "zh": "设置一个玩家拥有的，离队伍最近的物体的引用",
+      "obsolete": false,
+      "arg": "Find an object matching a type in the list ${ObjectType} nearest the ${TeamName} (and owned by the teams Player) and set its reference to ${UnitReference}"
+    },
+    {
+      "index": 353,
+      "id": "GATE_OPEN",
+      "path": "Object Type/gate/open a gate",
+      "zh": "开放一个门",
+      "obsolete": true,
+      "arg": "Open gate ${UnitName}"
+    },
+    {
+      "index": 354,
+      "id": "GATE_CLOSE",
+      "path": "Object Type/gate/ close a gate",
+      "zh": "剂量门",
+      "obsolete": true,
+      "arg": "Close gate.${UnitName}"
+    },
+    {
+      "index": 355,
+      "id": "TEAM_HARVEST",
+      "path": "Team/Attack/Harvest around waypoint.",
+      "zh": "收获在路标",
+      "obsolete": true,
+      "arg": "${TeamName} begins harvesting around ${WaypointName}."
+    },
+    {
+      "index": 356,
+      "id": "MUSIC_PLAY_TRACK_FINITE_TIMES",
+      "path": "Media/Audio/Music/Play a music track a certain number of times.",
+      "zh": "播放音乐曲目一定次数",
+      "obsolete": false,
+      "arg": "Play ${MusicName} ${Integer} times using fadeout (${Boolean}) and fadein (${Boolean})."
+    },
+    {
+      "index": 357,
+      "id": "MUSIC_PLAY_TRACK_FINITE_TIMES_AND_NOTIFY",
+      "path": "Media/Audio/Music/Play a music track a certain number of times, then set a flag.",
+      "zh": "播放音乐曲目一定次数，然后设置一个标志",
+      "obsolete": false,
+      "arg": "Play ${MusicName} ${Integer} times using fadeout (${Boolean}) and fadein (${Boolean}), then set ${FlagName} to true."
+    },
+    {
+      "index": 358,
+      "id": "MUSIC_PUSH_TRACK_FINITE_TIMES",
+      "path": "Media/Audio/Music/Push music track and play it a certain number of times.",
+      "zh": "推动音乐轨道，并播放一定的次数",
+      "obsolete": false,
+      "arg": "Push (stack) ${MusicName} atop the current music track and play it ${Integer} times using fadeout (${Boolean}) and fadein (${Boolean}). (Does NOT pop the music off the stack upon completion.)"
+    },
+    {
+      "index": 359,
+      "id": "MUSIC_PUSH_TRACK_FINITE_TIMES_AND_NOTIFY",
+      "path": "Media/Audio/Music/Push music track, play it a certain number of times, then set a flag.",
+      "zh": "推动音乐轨道，播放一定次数，然后设置一个标志",
+      "obsolete": false,
+      "arg": "Push (stack) ${MusicName} atop the current music track and play it ${Integer} times using fadeout (${Boolean}) and fadein (${Boolean}), then set ${FlagName} to true. (Does NOT pop the music off the stack upon completion.)"
+    },
+    {
+      "index": 360,
+      "id": "REPAIR_OBJECT",
+      "path": "Object Type/Repair/Repair named Object.",
+      "zh": "修复命名对象",
+      "obsolete": false,
+      "arg": "Repair named object ${UnitName} ${Boolean}, and it is ${Boolean} that this should be free."
+    },
+    {
+      "index": 361,
+      "id": "TEAM_REPAIR_NEREST",
+      "path": "Team/Repair/Repair nearest building that needs it.",
+      "zh": "修理最近的需要它的建筑物",
+      "obsolete": true,
+      "arg": "Have Team ${TeamName} repair the nearest building within the radius ${RealNumber}"
+    },
+    {
+      "index": 362,
+      "id": "NAME_SET_AUTO_ABILITY",
+      "path": "",
+      "zh": "团队设置命令按钮自动开关能力",
+      "obsolete": false,
+      "arg": "Have Team  set auto ability  to "
+    },
+    {
+      "index": 363,
+      "id": "TEAM_SET_AUTO_ABILITY",
+      "path": "Team/CommandButton/Team set auto ability to on or off.",
+      "zh": "团队设置自动能力开启或关闭",
+      "obsolete": true,
+      "arg": "Have Team ${TeamName} set auto ability ${CommandButtonName} to ${Boolean}"
+    },
+    {
+      "index": 364,
+      "id": "SET_LOGIC_FOG_STATE",
+      "path": "Fog or Reveal/Toggle Fog of War.",
+      "zh": "切换战争迷雾",
+      "obsolete": true,
+      "arg": "Set presence of Fog of War to ${Boolean}. (Default true.)"
+    },
+    {
+      "index": 365,
+      "id": "CAMERA_RESTRICT_TO_AREA",
+      "path": "Cinematics/Camera/Restrict camera movement to area.",
+      "zh": "限制摄像机在区域内移动",
+      "obsolete": false,
+      "arg": "Restrict camera movement to ${TriggerAreaName}."
+    },
+    {
+      "index": 366,
+      "id": "CAMERA_REMOVE_AREA_RESTRICTION",
+      "path": "Camera/Move/Restrict camera movement to area -- REMOVE.",
+      "zh": "限制摄像机移动到区域-移除",
+      "obsolete": true,
+      "arg": "Restrict camera movement to area -- REMOVE."
+    },
+    {
+      "index": 367,
+      "id": "UNIT_GUARD_AREA_FROM_POSITION",
+      "path": "Object Type/Guard/Named object guard an area from a location.",
+      "zh": "指定的对象从一个位置保护一个区域",
+      "obsolete": false,
+      "arg": "${UnitName} begins guarding ${TriggerAreaName} from ${WaypointName}"
+    },
+    {
+      "index": 368,
+      "id": "TEAM_GUARD_AREA_FROM_POSITION",
+      "path": "Team/Guard/Team guard an area from a location.",
+      "zh": "从一个地点守卫一个区域",
+      "obsolete": false,
+      "arg": "${TeamName} begins guarding ${TriggerAreaName} from ${WaypointName}"
+    },
+    {
+      "index": 369,
+      "id": "FIND_HOME_BASE_OF_PLAYER",
+      "path": "Scripting/Reference/Find home base of player",
+      "zh": "找到玩家的大本营",
+      "obsolete": false,
+      "arg": "Find the home base owned by ${PlayerName} and set ${UnitReference} to reference it. (Building must be inside map boundaries: ${Boolean})"
+    },
+    {
+      "index": 370,
+      "id": "SET_REF_TO_NEREST_TEAM_OF_TYPE_OWNED_BY_PLAYER",
+      "path": "Scripting/Reference/Set reference to object type of player nearest team.",
+      "zh": "设置参考对象类型的球员最近的队伍",
+      "obsolete": false,
+      "arg": "Find ${ObjectType} Owned by ${PlayerName} nearest ${TeamName} and reference as ${UnitReference}"
+    },
+    {
+      "index": 371,
+      "id": "SET_REF_TO_NEREST_TEAM_OF_UNNAMED_TYPE_OWNED_BY_PLAYER",
+      "path": "Scripting/Reference/Set reference to unnamed object owned by player",
+      "zh": "设置引用玩家拥有的未命名物体",
+      "obsolete": false,
+      "arg": "Find unnamed ${ObjectType} Owned by ${PlayerName} nearest ${TeamName} and reference as ${UnitReference}"
+    },
+    {
+      "index": 372,
+      "id": "MAP_EXIT",
+      "path": "Map/Modify/Exit Map",
+      "zh": "退出地图",
+      "obsolete": false,
+      "arg": "Exits map back to the main menu."
+    },
+    {
+      "index": 373,
+      "id": "GATE_READY",
+      "path": "",
+      "zh": "延迟一个顺序脚本，直到门再次准备好",
+      "obsolete": false,
+      "arg": ""
+    },
+    {
+      "index": 374,
+      "id": "TEAM_NEEDS_OPEN_GATE",
+      "path": "Team/Misc/Set or clear a team-needs-gate open flag",
+      "zh": "设置或关闭一个团队需要大门的旗帜",
+      "obsolete": true,
+      "arg": "Team ${TeamName} wants gate ${UnitName} open is ${Boolean}"
+    },
+    {
+      "index": 375,
+      "id": "UNIT_SET_TEAM",
+      "path": "Object Type/Allegiance/Force named object to join team.",
+      "zh": "强制指定对象加入团队",
+      "obsolete": false,
+      "arg": "${UnitName} will join ${TeamName}."
+    },
+    {
+      "index": 376,
+      "id": "UNIT_STAND_GROUND",
+      "path": "Object Type/Status/Unit Set Stand Ground Status.",
+      "zh": "Unit Set Stand地面状态",
+      "obsolete": true,
+      "arg": "Set Stand Ground Status of ${UnitName} to ${Boolean}"
+    },
+    {
+      "index": 377,
+      "id": "TEAM_STAND_GROUND",
+      "path": "Object Type/Status/Team Set Stand Ground Status.",
+      "zh": "团队设置站位地面状态…",
+      "obsolete": true,
+      "arg": "Set Stand Ground Status of ${TeamName} to ${Boolean}"
+    },
+    {
+      "index": 378,
+      "id": "UNIT_TELEPORT_TO_WAYPOINT",
+      "path": "Object Type/Move/Teleport named object to waypoint.",
+      "zh": "将命名对象传送到路径点",
+      "obsolete": false,
+      "arg": "Teleport ${UnitName} to ${WaypointName}."
+    },
+    {
+      "index": 379,
+      "id": "TEAM_TELEPORT_TO_WAYPOINT",
+      "path": "Team/Move/Teleport team to waypoint.",
+      "zh": "传送小队到导航点",
+      "obsolete": false,
+      "arg": "Teleport ${TeamName} to ${WaypointName}."
+    },
+    {
+      "index": 380,
+      "id": "OVERRIDE_PLAYER_COMMAND_POINTS",
+      "path": "ThreeSixty/Override player command points.",
+      "zh": "覆盖玩家命令点",
+      "obsolete": false,
+      "arg": "Override command points for ${PlayerName} to total: ${Integer} maximum: ${Integer}"
+    },
+    {
+      "index": 381,
+      "id": "SELECT_OBJECT",
+      "path": "Tutorial/Player selects object.",
+      "zh": "玩家选择对象",
+      "obsolete": false,
+      "arg": "For ${PlayerName} select object ${UnitName}"
+    },
+    {
+      "index": 382,
+      "id": "DESELECT",
+      "path": "Tutorial/Deselects everything.",
+      "zh": "取消选择所有",
+      "obsolete": false,
+      "arg": "Deselects everything"
+    },
+    {
+      "index": 383,
+      "id": "HUMAN_IMPASSABLE_AREA",
+      "path": "Map/Make area impassable for human player.",
+      "zh": "让人类玩家无法通过区域",
+      "obsolete": false,
+      "arg": "Make area ${TriggerAreaName} impassable for human player: ${Boolean}"
+    },
+    {
+      "index": 384,
+      "id": "SET_COUNTER_TO_NUMBER_OBJECTS_PLAYER_OWNES_WITH_MODELCONDITION",
+      "path": "Scripting/Counters/Set counter to number of objects owned by player with a model condition",
+      "zh": "将计数器设置为玩家在模型条件下拥有的物体数量",
+      "obsolete": false,
+      "arg": "Store the number of objects owned by ${PlayerName} with ${ModelCondition} ON to the counter ${CounterName}"
+    },
+    {
+      "index": 385,
+      "id": "PLAY_SOUND_EFFECT_AT_TEAM",
+      "path": "Media/Audio/Sound Effect/Play sound effect from team.",
+      "zh": "从团队中播放音效",
+      "obsolete": false,
+      "arg": "Play ${SoundName} as though coming from a member of ${TeamName}."
+    },
+    {
+      "index": 386,
+      "id": "VICTORY_SCREEN",
+      "path": "Win & Loss/ Show Victory Screen",
+      "zh": "屏幕显示胜利",
+      "obsolete": false,
+      "arg": "Shows the victory screen, but does not behave as a victory."
+    },
+    {
+      "index": 387,
+      "id": "LOCK_CAMERA",
+      "path": "Tutorial/Lock or unlock camera.",
+      "zh": "锁定或解锁相机",
+      "obsolete": false,
+      "arg": "Set the camera lock to ${Boolean} ."
+    },
+    {
+      "index": 388,
+      "id": "UNIT_ENABLE_HOUSE_COLOR",
+      "path": "",
+      "zh": "启用或禁用房子的颜色",
+      "obsolete": false,
+      "arg": "Enable house color for  to ."
+    },
+    {
+      "index": 389,
+      "id": "TEAM_ENABLE_HOUSE_COLOR",
+      "path": "Team/Settings/Enables or disables the house color",
+      "zh": "启用或禁用房子的颜色",
+      "obsolete": false,
+      "arg": "Enable the house color for ${TeamName} to ${Boolean} ."
+    },
+    {
+      "index": 390,
+      "id": "ENABLE_HOUSE_COLOR",
+      "path": "Map/Modify/Enables or disables the house color for all units",
+      "zh": "为所有单位启用或禁用房子的颜色",
+      "obsolete": false,
+      "arg": "Enable the house color for all units ${Boolean} ."
+    },
+    {
+      "index": 391,
+      "id": "UNIT_FORCE_EMOTION",
+      "path": "Cinematics/Force Emotion/Force a named object to have an emotion for duration.",
+      "zh": "强制一个命名的对象有持续的情感",
+      "obsolete": false,
+      "arg": "Force ${UnitName} to have ${Emotion} for ${RealNumber} seconds."
+    },
+    {
+      "index": 392,
+      "id": "TEAM_FORCE_EMOTION",
+      "path": "Cinematics/Force Emotion/Force a team to have an emotion for duration.",
+      "zh": "迫使团队拥有持续的情感",
+      "obsolete": false,
+      "arg": "Force ${TeamName} to have ${Emotion} for ${RealNumber} seconds."
+    },
+    {
+      "index": 393,
+      "id": "PLAYER_FORCE_EMOTION",
+      "path": "Cinematics/Force Emotion/Force all of player's units to have an emotion for duration.",
+      "zh": "迫使玩家的所有单位都有持续的情感",
+      "obsolete": false,
+      "arg": "Force all units of ${PlayerName} to have ${Emotion} for ${RealNumber} seconds."
+    },
+    {
+      "index": 394,
+      "id": "SET_PLAYER_OWNERSHIP_OF_TYPE_COUNTER_INCLUDE_DEAD",
+      "path": "Scripting/Counters/Set number of object types owned by player to a counter including dead ones.",
+      "zh": "将玩家拥有的对象类型的数量设置为一个计数器，包括死亡的对象",
+      "obsolete": false,
+      "arg": "Store the number of objects (include dead ones)${ObjectType} owned by ${PlayerName} to ${CounterName}"
+    },
+    {
+      "index": 395,
+      "id": "UNIT_GAIN_LEVEL",
+      "path": "Object Type/Experience/Named object levels up with visual FX.",
+      "zh": "命名对象等级与视觉特效",
+      "obsolete": false,
+      "arg": "${UnitName} gains a level with FX turned ${Boolean}"
+    },
+    {
+      "index": 396,
+      "id": "TEAM_GAIN_LEVEL",
+      "path": "Team/Experience/Team levels up with visual FX.",
+      "zh": "使用视觉特效升级团队",
+      "obsolete": false,
+      "arg": "${TeamName} gains a level with FX turned ${Boolean}"
+    },
+    {
+      "index": 397,
+      "id": "AUDIO_SET_REVERB_SUPPRESSION_POLYGON",
+      "path": "Media/Audio/All Sounds/Suppress reverb within an area",
+      "zh": "在一个区域内抑制混响",
+      "obsolete": false,
+      "arg": "Lower reverb of all sounds in ${TriggerAreaName} to ${Percentage} of normal."
+    },
+    {
+      "index": 398,
+      "id": "AUDIO_REMOVE_REVERB_SUPPRESSION_POLYGON",
+      "path": "Media/Audio/All Sounds/Unsuppress reverb in an area",
+      "zh": "在一个区域内不抑制混响",
+      "obsolete": false,
+      "arg": "Return the reverb of sounds in ${TriggerAreaName} to normal."
+    },
+    {
+      "index": 399,
+      "id": "AUDIO_REMOVE_ALL_REVERB_SUPPRESSION_POLYGONS",
+      "path": "Media/Audio/All Sounds/Unsuppress all reverb",
+      "zh": "Unsuppress所有混响",
+      "obsolete": false,
+      "arg": "Remove all reverb-suppression areas."
+    },
+    {
+      "index": 400,
+      "id": "LOCK_CAMERA_ANGLE_AND_HEIGHT",
+      "path": "Tutorial/Lock or unlock camera height and angle (allow scrolling).",
+      "zh": "锁定或解锁相机高度和角度(允许滚动)",
+      "obsolete": false,
+      "arg": "Set the camera angle& height lock to ${Boolean} ."
+    },
+    {
+      "index": 401,
+      "id": "ROTATE_CAMERA_TO_ANGLE",
+      "path": "Cinematics/Camera/Rotate to a specific view angle.",
+      "zh": "旋转到特定的视图角度",
+      "obsolete": false,
+      "arg": "Rotate camera view to ${RealNumber} degrees, taking ${RealNumber} seconds, ease-in ${RealNumber} seconds, ease-out ${RealNumber} seconds."
+    },
+    {
+      "index": 402,
+      "id": "NAMED_SET_CAMERA_FADING",
+      "path": "Object Type/Settings/Camera fading -- enable or disable.",
+      "zh": "相机衰落——启用或禁用",
+      "obsolete": true,
+      "arg": "Set ${UnitName} camera fading to ${Boolean}."
+    },
+    {
+      "index": 403,
+      "id": "SHOW_MISSION_OBJECTIVE",
+      "path": "Interface/Objectives/Show mission objective",
+      "zh": "显示任务目标",
+      "obsolete": true,
+      "arg": "Make mission objective '${MissionObjective}' visible."
+    },
+    {
+      "index": 404,
+      "id": "HIDE_MISSION_OBJECTIVE",
+      "path": "Interface/Objectives/Hide mission objective",
+      "zh": "隐藏任务目标",
+      "obsolete": true,
+      "arg": "Hide mission objective '${MissionObjective}'."
+    },
+    {
+      "index": 405,
+      "id": "LINK_MISSION_OBJECTIVE_TO_OBJECT",
+      "path": "Interface/Objectives/Link mission objective to object",
+      "zh": "连接任务目标到目标",
+      "obsolete": false,
+      "arg": "Set mission objective '${MissionObjective}' linked to ${UnitName} to ${Boolean}."
+    },
+    {
+      "index": 406,
+      "id": "LINK_MISSION_OBJECTIVE_TO_WAYPOINT",
+      "path": "Interface/Objectives/Link mission objective to waypoint",
+      "zh": "",
+      "obsolete": false,
+      "arg": "Set mission objective '${MissionObjective}' linked to ${WaypointName} to ${Boolean}."
+    },
+    {
+      "index": 407,
+      "id": "MARK_MISSION_OBJECTIVE_COMPLETED",
+      "path": "Interface/Objectives/Mark mission objective as completed",
+      "zh": "将任务目标标记为已完成",
+      "obsolete": false,
+      "arg": "Mark mission objective '${MissionObjective}' as completed."
+    },
+    {
+      "index": 408,
+      "id": "MARK_MISSION_OBJECTIVE_NOT_COMPLETED",
+      "path": "Interface/Objectives/Mark mission objective as not completed",
+      "zh": "将任务目标标记为未完成",
+      "obsolete": false,
+      "arg": "Mark mission objective '${MissionObjective}' as not completed."
+    },
+    {
+      "index": 411,
+      "id": "UNIT_CHANGE_OBJECT_STATUS",
+      "path": "Object Type/Settings/Change object status.",
+      "zh": "更改对象状态",
+      "obsolete": false,
+      "arg": "For ${UnitName} set ${ObjectStatus} to ${Boolean}."
+    },
+    {
+      "index": 412,
+      "id": "TEAM_CHANGE_OBJECT_STATUS",
+      "path": "Team/Settings/Change object status.",
+      "zh": "更改对象状态",
+      "obsolete": false,
+      "arg": "For all units in ${TeamName} set ${ObjectStatus} to ${Boolean}."
+    },
+    {
+      "index": 413,
+      "id": "ATTACK_MOVE_TEAM_TO",
+      "path": "Team/Attack/Set team to attack-move to a location.",
+      "zh": "设置团队攻击-移动到一个地点",
+      "obsolete": false,
+      "arg": "AttackMove ${TeamName} to ${WaypointName}."
+    },
+    {
+      "index": 414,
+      "id": "TEAM_ATTACK_MOVE_FOLLOW_WAYPOINTS",
+      "path": "Team/Attack/Set team to attack-move along a waypoint path.",
+      "zh": "设置团队攻击-沿着路径点路径移动",
+      "obsolete": false,
+      "arg": "Have ${TeamName} AttackMove along ${WaypointPathName} , as a team is ${Boolean} , in formation is ${Boolean}"
+    },
+    {
+      "index": 415,
+      "id": "ATTACK_MOVE_NAMED_UNIT_TO",
+      "path": "Object Type/Attack/Named object attack-move to a location.",
+      "zh": "命名对象攻击-移动到一个位置",
+      "obsolete": false,
+      "arg": "AttackMove ${UnitName} to ${WaypointName}."
+    },
+    {
+      "index": 416,
+      "id": "NAMED_ATTACK_FOLLOW_WAYPOINTS",
+      "path": "Object Type/Attack/Named object attack-move along a waypoint path.",
+      "zh": "命名对象攻击-沿着路径点移动",
+      "obsolete": false,
+      "arg": "${UnitName} AttackMove follows waypoints, beginning at ${WaypointPathName}"
+    },
+    {
+      "index": 417,
+      "id": "UNIT_ATTACK_MOVE_TOWARDS_NEAREST_OBJECT_TYPE",
+      "path": "Object Type/Attack/Move unit towards the nearest object of a specific type",
+      "zh": "将单位移动到最近的特定类型的对象",
+      "obsolete": false,
+      "arg": "${UnitName} will AttackMove towards the nearest ${ObjectName}"
+    },
+    {
+      "index": 418,
+      "id": "TEAM_ATTACK_MOVE_TOWARDS_NEAREST_OBJECT_TYPE",
+      "path": "Team/Attack/Move team towards the nearest object of a specific type",
+      "zh": "将队伍移动到最近的特定类型的目标",
+      "obsolete": false,
+      "arg": "${TeamName} will AttackMove towards the nearest ${ObjectName}"
+    },
+    {
+      "index": 419,
+      "id": "MOVE_CAMERA_BY_ANIMATION",
+      "path": "Cinematics/Camera/Move using camera animation.",
+      "zh": "使用摄像机动画移动",
+      "obsolete": false,
+      "arg": "Move using ${CameraAnimation}."
+    },
+    {
+      "index": 420,
+      "id": "MAP_REVEAL_IN_TRIGGER",
+      "path": "Map/Fog or Reveal/Reveal map in trigger -- fog.",
+      "zh": "在触发雾中显示地图",
+      "obsolete": false,
+      "arg": "The map is revealed inside ${TriggerAreaName} for ${PlayerName}."
+    },
+    {
+      "index": 421,
+      "id": "MAP_REVEAL_PERMANENTLY_IN_TRIGGER",
+      "path": "Map/Fog or Reveal/Reveal map in polytrigger -- permanently.",
+      "zh": "在多触发器中显示地图——永久",
+      "obsolete": false,
+      "arg": "The map is permanently revealed in trigger ${TriggerAreaName} for ${PlayerName}. (Afterwards referred to as ${MapRevealName})."
+    },
+    {
+      "index": 422,
+      "id": "MAP_UNDO_REVEAL_PERMANENTLY_IN_TRIGGER",
+      "path": "Map/Fog or Reveal/Reveal map in polytrigger -- undo permanently.",
+      "zh": "揭示地图在多触发器-撤消永久",
+      "obsolete": false,
+      "arg": "${MapRevealName} is undone."
+    },
+    {
+      "index": 423,
+      "id": "TEAM_INCREASE_PRIORITY_BY_VALUE",
+      "path": "Team/Spawn, Build, or Merge/Increase priority by specific amount.",
+      "zh": "按特定数量增加优先级",
+      "obsolete": false,
+      "arg": "Increase the build priority for ${TeamName} by ${Integer} ."
+    },
+    {
+      "index": 424,
+      "id": "TEAM_DECREASE_PRIORITY_BY_VALUE",
+      "path": "Team/Spawn, Build, or Merge/Decrease priority by specific amount.",
+      "zh": "按特定数量降低优先级",
+      "obsolete": false,
+      "arg": "Decrease the build priority for ${TeamName} by ${Integer} ."
+    },
+    {
+      "index": 425,
+      "id": "ATTACK_MOVE_TEAM_TO_NAMED_OBJECT",
+      "path": "Team/Attack/Attack move a team to a named object.",
+      "zh": "攻击移动一个团队到一个命名的对象",
+      "obsolete": false,
+      "arg": "AttackMove ${TeamName} to ${UnitName}."
+    },
+    {
+      "index": 426,
+      "id": "ATTACK_MOVE_TEAM_TO_NEAREST_OBJECT_OF_TYPE_OF_PLAYER",
+      "path": "Team/Attack/Move team towards the nearest object of a specific type owned by a player",
+      "zh": "将队伍移动到玩家拥有的最近的特定类型的目标",
+      "obsolete": false,
+      "arg": "${TeamName} will AttackMove towards the nearest ${ObjectType} owned by ${PlayerName}"
+    },
+    {
+      "index": 427,
+      "id": "TEAM_SET_AI_RECRUITABLE_FLAG",
+      "path": "Team/Settings/Change status of the Scripted AI Recruitable flag for team members.",
+      "zh": "改变脚本AI可招募标志的状态",
+      "obsolete": false,
+      "arg": "Set the Scripted AI Recruitable flag for ${TeamName} to ${Boolean}"
+    },
+    {
+      "index": 428,
+      "id": "NAMED_GARRISON_SPECIFIC_BUILDING_INSTANTLY",
+      "path": "",
+      "zh": "用一个命名对象加里森一个命名对象实例",
+      "obsolete": false,
+      "arg": " garrison's  instantly."
+    },
+    {
+      "index": 429,
+      "id": "TEAM_GARRISON_SPECIFIC_BUILDING_INSTANTLY",
+      "path": "",
+      "zh": "立即组队加成一个命名的物体",
+      "obsolete": false,
+      "arg": " garrison's  instantly."
+    },
+    {
+      "index": 430,
+      "id": "PLAYER_FIRE_SPECIAL_POWER_AT_WAYPOINT",
+      "path": "Player/Special Power/Special power -- fire at waypoint.",
+      "zh": "特殊力量——在航路点开火",
+      "obsolete": false,
+      "arg": "${PlayerName} fires ${SpecialPowerName} at ${WaypointName}."
+    },
+    {
+      "index": 431,
+      "id": "NAMED_BUILD_STRUCTURE_AT_WAYPOINT",
+      "path": "Object Type/CommandButton/Build thing at waypoint.",
+      "zh": "在路标处建造东西",
+      "obsolete": true,
+      "arg": "${UnitName} build ${ObjectName} at angle ${Angle} at ${WaypointName}."
+    },
+    {
+      "index": 432,
+      "id": "TEAM_GARRISON_TEAM_INSTANTLY",
+      "path": "Team/Garrison/Garrison a team instantly with a team.",
+      "zh": "立即组队进驻一支队伍",
+      "obsolete": false,
+      "arg": "${TeamName} garrison's ${TeamName} instantly."
+    },
+    {
+      "index": 433,
+      "id": "LOCK_CAMERA_ZOOM",
+      "path": "Tutorial/Lock or unlock camera zoom.",
+      "zh": "锁定或解锁相机变焦",
+      "obsolete": false,
+      "arg": "Set the camera zoom lock to ${Boolean} ."
+    },
+    {
+      "index": 434,
+      "id": "LOCK_CAMERA_ROTATION",
+      "path": "Tutorial/Lock or unlock camera rotation.",
+      "zh": "锁定或解锁相机旋转",
+      "obsolete": false,
+      "arg": "Set the camera rotation lock to ${Boolean} ."
+    },
+    {
+      "index": 435,
+      "id": "LOCK_CAMERA_SCROLL",
+      "path": "Tutorial/Lock or unlock camera scroll.",
+      "zh": "锁定或解锁相机滚动",
+      "obsolete": false,
+      "arg": "Set the camera scroll lock to ${Boolean} ."
+    },
+    {
+      "index": 436,
+      "id": "LOCK_CAMERA_RESET",
+      "path": "Tutorial/Lock or unlock camera reset.",
+      "zh": "锁定或解锁相机复位",
+      "obsolete": false,
+      "arg": "Set the camera reset lock to ${Boolean} ."
+    },
+    {
+      "index": 437,
+      "id": "PLAYER_SET_SPECIAL_POWER_COUNTDOWN",
+      "path": "Player/Special Power/Special power -- set countdown timer.",
+      "zh": "特殊功率-设置倒计时计时器",
+      "obsolete": false,
+      "arg": "Set ${PlayerName}'s ${SpecialPowerName} to ${Integer} seconds."
+    },
+    {
+      "index": 438,
+      "id": "ENABLE_PLANNING_MODE",
+      "path": "Tutorial/Enable planning mode",
+      "zh": "启用规划模式",
+      "obsolete": false,
+      "arg": "Enable planning mode."
+    },
+    {
+      "index": 439,
+      "id": "DISABLE_PLANNING_MODE",
+      "path": "Tutorial/Disable planning mode",
+      "zh": "禁用规划模式",
+      "obsolete": false,
+      "arg": "Disable planning mode."
+    },
+    {
+      "index": 440,
+      "id": "CREATE_NAMED_ON_TEAM_AT_OBJECTTYPE",
+      "path": "Object Type/Spawn/Spawn -- named unit on Team at an object type.",
+      "zh": "刷出——团队中指定单位的对象类型",
+      "obsolete": true,
+      "arg": "Spawn ${UnitName} of type ${ObjectName} on ${TeamName} at type ${ObjectName}"
+    },
+    {
+      "index": 441,
+      "id": "UNIT_SET_MAX_LEVEL",
+      "path": "Object Type/Experience/Sets the unit's maximum level.",
+      "zh": "设置单位的最大等级",
+      "obsolete": true,
+      "arg": "Sets ${UnitName} maximum level to ${Integer}."
+    },
+    {
+      "index": 442,
+      "id": "PLAYER_AI_CHANGEBASEBUILDER",
+      "path": "SkirmishAI/Turn on or off AI Base Builder.",
+      "zh": "开启或关闭AI基地建设者",
+      "obsolete": false,
+      "arg": "Turn AI Base Builder for ${PlayerName} ${NewBoolean}"
+    },
+    {
+      "index": 443,
+      "id": "PLAYER_AI_CHANGEUNITBUILDER",
+      "path": "SkirmishAI/Turn on or off AI Unit Builder.",
+      "zh": "开启或关闭AI单位建造者",
+      "obsolete": false,
+      "arg": "Turn AI Unit Builder for ${PlayerName} ${NewBoolean}"
+    },
+    {
+      "index": 444,
+      "id": "PLAYER_AI_CHANGETEAMBUILDER",
+      "path": "SkirmishAI/Turn on or off AI Party Builder.",
+      "zh": "开启或关闭AI团队建造者",
+      "obsolete": false,
+      "arg": "Turn AI Party Builder for ${PlayerName} ${NewBoolean}"
+    },
+    {
+      "index": 445,
+      "id": "PLAYER_AI_CHANGE_ECONOMY_MANAGER",
+      "path": "SkirmishAI/Turn on or off AI Economy Manager.",
+      "zh": "开启或关闭AI经济管理器",
+      "obsolete": false,
+      "arg": "Turn AI Economy Builder for ${PlayerName} ${NewBoolean}"
+    },
+    {
+      "index": 446,
+      "id": "PLAYER_AI_CHANGEWALLBUILDER",
+      "path": "SkirmishAI/Turn on or off AI Wall Builder.",
+      "zh": "打开或关闭AI墙建造者",
+      "obsolete": false,
+      "arg": "Turn AI Wall Builder for ${PlayerName} ${NewBoolean}"
+    },
+    {
+      "index": 447,
+      "id": "PLAYER_AI_CHANGEUNITUPGRADER",
+      "path": "SkirmishAI/Turn on or off AI Unit Upgrader.",
+      "zh": "开启或关闭AI单位升级",
+      "obsolete": false,
+      "arg": "Turn AI Unit Upgrader for ${PlayerName} ${NewBoolean}"
+    },
+    {
+      "index": 448,
+      "id": "PLAYER_AI_CHANGESCIENCEUPGRADER",
+      "path": "SkirmishAI/Turn on or off AI Science Upgrader.",
+      "zh": "开启或关闭人工智能科学升级",
+      "obsolete": false,
+      "arg": "Turn AI Science Upgrader for ${PlayerName} ${NewBoolean}"
+    },
+    {
+      "index": 449,
+      "id": "PLAYER_AI_CHANGETACTICAL",
+      "path": "SkirmishAI/Turn on or off Tactical AI.",
+      "zh": "开启或关闭战术AI",
+      "obsolete": false,
+      "arg": "Turn Tactical AI for ${PlayerName} ${NewBoolean}"
+    },
+    {
+      "index": 450,
+      "id": "TEAM_AI_TRANSFER",
+      "path": "SkirmishAI/Transfer control of Team to or from Skirmish AI.",
+      "zh": "将团队控制权转移给或从Skirmish AI那里转移",
+      "obsolete": false,
+      "arg": "Turn Skirmish AI for ${TeamName} ${NewBoolean}"
+    },
+    {
+      "index": 451,
+      "id": "UNIT_AI_TRANSFER",
+      "path": "",
+      "zh": "将单位的控制权转移给或从小规模战斗的AI手中转移",
+      "obsolete": false,
+      "arg": "Turn Skirmish AI for  "
+    },
+    {
+      "index": 452,
+      "id": "UNIT_AI_TRANSFER_ALL",
+      "path": "SkirmishAI/Transfer control of all player's units to or from Skirmish AI -- Enable Skirmish AI.",
+      "zh": "将所有玩家的单位的控制权转移给或从小规模战斗AI转移——启用小规模战斗AI",
+      "obsolete": false,
+      "arg": "Turn Skirmish AI for ${PlayerName} ${NewBoolean} starting opening moves and timers."
+    },
+    {
+      "index": 453,
+      "id": "NAMED_SET_SLEEP_STATUS",
+      "path": "Object Type/Settings/Set the sleep status of a specific unit.",
+      "zh": "设置指定单元的休眠状态",
+      "obsolete": true,
+      "arg": "${UnitName} changes his sleep status to ${Boolean}"
+    },
+    {
+      "index": 454,
+      "id": "TEAM_SET_SLEEP_STATUS",
+      "path": "Team/Settings/Set the Sleep status of Team.",
+      "zh": "设置团队的睡眠状态",
+      "obsolete": true,
+      "arg": "${TeamName} change their sleep status to ${Boolean}"
+    },
+    {
+      "index": 455,
+      "id": "BUILD_LIST_MOVE_TO_TOP",
+      "path": "Base Builder/Move structure to top of build list.",
+      "zh": "将结构移动到构建列表的顶部",
+      "obsolete": false,
+      "arg": "Move ${UnitName} to top of build list"
+    },
+    {
+      "index": 456,
+      "id": "BUILD_LIST_ELIMINATE_FOOTPRINT",
+      "path": "Base Builder/Eliminate building footprint.",
+      "zh": "消除建筑足迹",
+      "obsolete": false,
+      "arg": "Eliminate footprint for ${UnitName} ."
+    },
+    {
+      "index": 457,
+      "id": "BUILD_LIST_ELIMINATE_FOOTPRINT_ALL",
+      "path": "Base Builder/Eliminate all building footprints.",
+      "zh": "消除所有建筑物的脚印",
+      "obsolete": false,
+      "arg": "Eliminate all building footprints for ${PlayerName} ."
+    },
+    {
+      "index": 458,
+      "id": "UNIT_CONTEXT_SENSITIVE_ATTACK",
+      "path": "Object Type/Attack/Set named object to capture a named object.",
+      "zh": "设置命名对象以捕获命名对象",
+      "obsolete": false,
+      "arg": "${UnitName} begin context-sensitive attack on ${UnitName}"
+    },
+    {
+      "index": 459,
+      "id": "SKIRMISH_AI_SET_FAVORED_ENEMY",
+      "path": "SkirmishAI/Enemy Target Control/Set Skirmish AI favored enemy",
+      "zh": "设置遭遇战AI的敌人",
+      "obsolete": false,
+      "arg": "Set favored enemy of ${PlayerName} to ${PlayerName}"
+    },
+    {
+      "index": 460,
+      "id": "SKIRMISH_AI_USE_REBUILD_SYSTEM",
+      "path": "SkirmishAI/Use Skirmish AI Structure Rebuilds",
+      "zh": "使用小规模AI建筑重建",
+      "obsolete": false,
+      "arg": "Use structure rebuilds for ${PlayerName}: ${Boolean}"
+    },
+    {
+      "index": 461,
+      "id": "PLAYER_ALLOW_AI_AUTOACQUIRE",
+      "path": "",
+      "zh": "允许玩家自动获取AI",
+      "obsolete": false,
+      "arg": "Use AI AutoAcquire for : "
+    },
+    {
+      "index": 462,
+      "id": "TEAM_ALLOW_AI_AUTOACQUIRE",
+      "path": "SkirmishAI/Allow AI Auto-Acquire for team.",
+      "zh": "允许AI自动获取团队",
+      "obsolete": false,
+      "arg": "Use AI AutoAcquire for ${TeamName}: ${Boolean}"
+    },
+    {
+      "index": 463,
+      "id": "UNIT_ALLOW_AI_AUTOACQUIRE",
+      "path": "SkirmishAI/Allow AI Auto-Acquire for named object.",
+      "zh": "允许AI自动获取命名对象",
+      "obsolete": false,
+      "arg": "Use AI AutoAcquire for ${UnitName}: ${Boolean}"
+    },
+    {
+      "index": 466,
+      "id": "CREATE_NAMED_ON_TEAM_AT_WAYPOINT_WITH_ORIENTATION",
+      "path": "Object Type/Spawn/Spawn a named object on a team at a waypoint with an orientation.",
+      "zh": "在团队中一个方向的路标点生成一个命名的物体",
+      "obsolete": false,
+      "arg": "Spawn ${UnitName} of type ${ObjectName} on ${TeamName} at ${WaypointName}, rotated ${Angle}."
+    },
+    {
+      "index": 467,
+      "id": "CREATE_UNNAMED_ON_TEAM_AT_WAYPOINT_WITH_ORIENTATION",
+      "path": "Object Type/Spawn/Spawn an unnamed object on a team at a waypoint with an orientation.",
+      "zh": "在一个团队中在一个有方向的路标点刷出一个未命名的物体",
+      "obsolete": false,
+      "arg": "Spawn unit of type ${ObjectName} on ${TeamName} at ${WaypointName}, rotated ${Angle}."
+    },
+    {
+      "index": 468,
+      "id": "CREATE_NAMED_ON_TEAM_AT_OBJECTTYPE_WITH_ORIENTATION",
+      "path": "Object Type/Spawn/Spawn -- named unit on Team at an object type with specified orientation.",
+      "zh": "刷出——团队中指定方向和对象类型的命名单位",
+      "obsolete": true,
+      "arg": "Spawn ${UnitName} of type ${ObjectName} on ${TeamName} at type ${ObjectName}, rotated ${Angle}."
+    },
+    {
+      "index": 469,
+      "id": "SET_CAMPAIGN_FLAG",
+      "path": "Campaign/Set or clear a campaign flag",
+      "zh": "插上或挂上一面竞选旗帜",
+      "obsolete": false,
+      "arg": "Set campaign flag ${CampaignFlag} to ${Boolean}"
+    },
+    {
+      "index": 470,
+      "id": "PLAYER_SPECIAL_POWER_AVAILABILITY",
+      "path": "Player/Special Power/Set special power availability.",
+      "zh": "设置特殊电源可用性",
+      "obsolete": false,
+      "arg": "${PlayerName} set ${SpecialPowerName} availability to ${Availability}."
+    },
+    {
+      "index": 471,
+      "id": "PLAYER_UNIT_TYPE_SPECIAL_POWER_IGNORE_REQUIREMENTS",
+      "path": "Player/Special Power/Player's object's special power ignores requirements.",
+      "zh": "玩家目标的特殊能量会忽略要求",
+      "obsolete": false,
+      "arg": "The ${SpecialPowerName} for ${ObjectTypeListName} owned by ${PlayerName} ignores requirements: ${Boolean}."
+    },
+    {
+      "index": 472,
+      "id": "SKIRMISH_AI_MAKE_BASE",
+      "path": "SkirmishAI/Create a skirmish AI base",
+      "zh": "创建一个小规模AI基地",
+      "obsolete": false,
+      "arg": "Player ${PlayerName} has a base at ${WaypointName}."
+    },
+    {
+      "index": 473,
+      "id": "UNIT_SET_STANCE",
+      "path": "Object Type/Settings/Sets a unit's current stance",
+      "zh": "设置一个单位的当前姿态",
+      "obsolete": false,
+      "arg": "Sets ${UnitName} stance to ${ObjectStance}."
+    },
+    {
+      "index": 474,
+      "id": "DISPLAY_TUTORIAL_TEXT",
+      "path": "Tutorial/Display tutorial text",
+      "zh": "显示文本教程",
+      "obsolete": false,
+      "arg": "Show tutorial text: ${LocalizedStringName}"
+    },
+    {
+      "index": 475,
+      "id": "HIDE_TUTORIAL_TEXT",
+      "path": "Tutorial/Hide tutorial text",
+      "zh": "隐藏文本教程",
+      "obsolete": false,
+      "arg": "Hide the tutorial text."
+    },
+    {
+      "index": 476,
+      "id": "FLASH_MOUSE_HUD_FIXED_ELEMENT",
+      "path": "Tutorial/Flash PC HUD fixed element",
+      "zh": "Flash PC HUD固定元素",
+      "obsolete": false,
+      "arg": "Set flash PC HUD fixed element ${MouseHud} to ${Boolean}."
+    },
+    {
+      "index": 477,
+      "id": "FLASH_UI_PLAYER_POWER_BUTTON",
+      "path": "Tutorial/Flash UI player power button",
+      "zh": "Flash UI播放器电源按钮",
+      "obsolete": false,
+      "arg": "Set flash UI player power button ${SpecialPowerName} to ${Boolean}."
+    },
+    {
+      "index": 478,
+      "id": "FLASH_UI_UNIT_ABILITY_BUTTON",
+      "path": "Tutorial/Flash named object's UI user ability button",
+      "zh": "Flash命名对象的UI用户能力按钮",
+      "obsolete": false,
+      "arg": "For ${UnitName} set flash UI user ability button ${UnitAbilityName} to ${Boolean}."
+    },
+    {
+      "index": 479,
+      "id": "FLASH_UI_BUILD_BUTTON",
+      "path": "Tutorial/Flash UI build button",
+      "zh": "Flash UI构建按钮",
+      "obsolete": false,
+      "arg": "Set flash UI build '${ObjectName}' button to ${Boolean}."
+    },
+    {
+      "index": 481,
+      "id": "SKIRMISH_AI_USE_REPAIRS",
+      "path": "SkirmishAI/Skirmish AI may repair buildings",
+      "zh": "战斗AI可以修复建筑",
+      "obsolete": false,
+      "arg": "Use structure repair for ${PlayerName}: ${Boolean}"
+    },
+    {
+      "index": 482,
+      "id": "DISABLE_MOUSE_HUD_FIXED_ELEMENT",
+      "path": "Tutorial/Disable PC HUD fixed element",
+      "zh": "禁用PC HUD固定元素",
+      "obsolete": false,
+      "arg": "Set disable PC HUD fixed element ${MouseHud} to ${Boolean}."
+    },
+    {
+      "index": 483,
+      "id": "DISABLE_UI_PLAYER_POWER_BUTTON",
+      "path": "Tutorial/Disable UI player power button",
+      "zh": "禁用UI播放器电源按钮",
+      "obsolete": false,
+      "arg": "Set disable UI player power button ${SpecialPowerName} to ${Boolean}."
+    },
+    {
+      "index": 484,
+      "id": "DISABLE_UI_UNIT_ABILITY_BUTTON",
+      "path": "Tutorial/Disable named object's UI user ability button",
+      "zh": "禁用命名对象的UI用户能力按钮",
+      "obsolete": false,
+      "arg": "For ${UnitName} set disable UI user ability button ${UnitAbilityName} to ${Boolean}."
+    },
+    {
+      "index": 485,
+      "id": "DISABLE_UI_BUILD_BUTTON",
+      "path": "Tutorial/Disable UI build button",
+      "zh": "禁用UI构建按钮",
+      "obsolete": false,
+      "arg": "Set disable UI build '${ObjectName}' button to ${Boolean}."
+    },
+    {
+      "index": 486,
+      "id": "UNIT_SET_HEALTH",
+      "path": "",
+      "zh": "设置单位的运行状况(以百分比计)",
+      "obsolete": false,
+      "arg": "Set health of  to percentage (0.0 - 100.0) "
+    },
+    {
+      "index": 487,
+      "id": "PLAYER_SET_BASE_POWER",
+      "path": "Player/Power/Set the base power for the player.",
+      "zh": "设置玩家的基础能量",
+      "obsolete": false,
+      "arg": "Set base power for ${PlayerName} to ${Integer}"
+    },
+    {
+      "index": 488,
+      "id": "TEAM_CONTEXT_SENSITIVE_ATTACK",
+      "path": "Team/Attack/Set team to capture a named object.",
+      "zh": "设置团队捕获一个命名的对象",
+      "obsolete": false,
+      "arg": "${TeamName} begin context-sensitive attack on ${UnitName}"
+    },
+    {
+      "index": 489,
+      "id": "SET_UNIT_HEALTH_PERCENTAGE_TO_COUNTER",
+      "path": "Scripting/Counters/Set unit's health as percentage to counter.",
+      "zh": "设置单位生命值作为反击的百分比",
+      "obsolete": false,
+      "arg": "Store ${UnitName}'s health as percentage to the counter ${CounterName}"
+    },
+    {
+      "index": 490,
+      "id": "PLAYER_SET_MONEY_CAP",
+      "path": "Player/Money/Set player's money cap.",
+      "zh": "设置玩家的金钱上限",
+      "obsolete": false,
+      "arg": "Set ${PlayerName}'s money cap to $${Integer}"
+    },
+    {
+      "index": 491,
+      "id": "SWITCH_TO_PRODUCTION_QUEUE_TAB",
+      "path": "Tutorial/Switch to production queue tab",
+      "zh": "切换到生产队列选项卡",
+      "obsolete": false,
+      "arg": "Switch to ${ProductionQueueTab}."
+    },
+    {
+      "index": 492,
+      "id": "SET_MISSION_OBJECTIVE_STATUS",
+      "path": "Interface/Objectives/Set mission objective status",
+      "zh": "设定任务目标状态",
+      "obsolete": false,
+      "arg": "Set status of mission objective '${MissionObjective}' to ${MissionObjectiveStatus}."
+    },
+    {
+      "index": 493,
+      "id": "SET_COUNTER_TO_NUMBER_OBJECTS_PLAYER_OWNS_WITH_KINDOF",
+      "path": "Scripting/Counters/Set counter to number of objects owned by player with kindof",
+      "zh": "设置玩家拥有的物品数量",
+      "obsolete": false,
+      "arg": "Store the number of objects owned by ${PlayerName} of ${UnitOrStructureKind} to ${CounterName}, count dead : ${Boolean}, count under construction : ${Boolean}"
+    },
+    {
+      "index": 494,
+      "id": "REGISTER_OBJECT_VS_OBJECT_KILL_RECORDING",
+      "path": "Scripting/Data Tracking/Record object vs. object kills",
+      "zh": "记录对象对对象的杀戮",
+      "obsolete": false,
+      "arg": "Record object type ${ObjectName} belonging to ${PlayerName} killed object type ${ObjectName} belonging to ${PlayerName}."
+    },
+    {
+      "index": 495,
+      "id": "STORE_OBJECT_KILL_COUNT_TO_COUNTER",
+      "path": "Scripting/Data Tracking/Store object vs. object kills to counter",
+      "zh": "存储对象vs.对象杀死计数器",
+      "obsolete": false,
+      "arg": "Store num of object type ${ObjectName} belonging to ${PlayerName} killed object type ${ObjectName} belonging to ${PlayerName} to counter ${CounterName}."
+    },
+    {
+      "index": 496,
+      "id": "PLAY_SOUND_AS_IF_IT_WAS_AN_EVA_EVENT",
+      "path": "Media/Audio/EVA/Play a sound effect as if it were an EVA event.",
+      "zh": "播放一个声音效果，好像它是一个EVA事件",
+      "obsolete": false,
+      "arg": "${SoundName} plays as if it was an EVA event"
+    },
+    {
+      "index": 497,
+      "id": "PLAY_SOUND_AS_IF_IT_WAS_AN_EVA_EVENT_WITH_SUBTITLE",
+      "path": "Media/Audio/EVA/Play a sound effect as if it were an EVA event, and subtitle it.",
+      "zh": "播放一个声音效果，就像它是一个EVA事件，并字幕",
+      "obsolete": false,
+      "arg": "${SoundName} plays as if it was an EVA event, while displaying ${LocalizedStringName} for ${RealNumber} seconds."
+    },
+    {
+      "index": 498,
+      "id": "PLAY_SPEECH_AS_IF_IT_WAS_AN_EVA_EVENT",
+      "path": "Media/Audio/Sound Effect/Play a speech file as if it were an EVA event.",
+      "zh": "播放一个语音文件，就像EVA事件一样",
+      "obsolete": true,
+      "arg": "${SpeechName} plays as if it was an EVA event"
+    },
+    {
+      "index": 499,
+      "id": "PLAY_SPEECH_AS_IF_IT_WAS_AN_EVA_EVENT_WITH_SUBTITLE",
+      "path": "Media/Audio/Sound Effect/Play a speech file as if it were an EVA event, and subtitle it.",
+      "zh": "播放一个语音文件，就像它是一个EVA事件，并为其添加字幕",
+      "obsolete": true,
+      "arg": "${SpeechName} plays as if it was an EVA event, while displaying military briefing ${LocalizedStringName} for ${RealNumber} seconds."
+    },
+    {
+      "index": 500,
+      "id": "UNIT_KILL_ALL_IN_AREA",
+      "path": "Object Type/Damage or Remove/Kill all units belonging to the specified player in the specified area.",
+      "zh": "在指定区域内杀死所有属于指定玩家的单位",
+      "obsolete": false,
+      "arg": "Kill all units belonging to ${PlayerName} in ${TriggerAreaName}."
+    },
+    {
+      "index": 501,
+      "id": "SKIRMISH_AI_REBUILD_SYSTEM_SCAN",
+      "path": "SkirmishAI/Skirmish AI Structure Rebuilds Rescan",
+      "zh": "小规模AI结构重建重新扫描",
+      "obsolete": false,
+      "arg": "Scan for new structures to rebuild for ${PlayerName}"
+    },
+    {
+      "index": 502,
+      "id": "NAMED_REMOVE_UPGRADE",
+      "path": "Object Type/Settings/Remove upgrade from named object.",
+      "zh": "从命名对象中移除升级",
+      "obsolete": false,
+      "arg": "Remove ${UpgradeName} from ${UnitName}."
+    },
+    {
+      "index": 503,
+      "id": "MOVE_CAMERA_TO_NAMED",
+      "path": "Cinematics/Camera/Move the camera to a named object's location.",
+      "zh": "将摄像机移动到指定对象的位置",
+      "obsolete": false,
+      "arg": "Move camera to ${UnitName} in ${RealNumber} seconds, camera shutter ${RealNumber} seconds, ease-in ${RealNumber} seconds, ease-out ${RealNumber} seconds."
+    },
+    {
+      "index": 504,
+      "id": "REMOVE_PLAYER_UPGRADE",
+      "path": "Player/Upgrades and Sciences/Remove upgrade from Player.",
+      "zh": "从播放器中移除升级",
+      "obsolete": false,
+      "arg": "Remove ${UpgradeName} from ${PlayerName}"
+    },
+    {
+      "index": 505,
+      "id": "MUSIC_PLAY_TRACK_FINITE_TIMES_AS_SPECIAL_END_OF_LEVEL_MUSIC",
+      "path": "Media/Audio/Music/Play SPECIAL END-OF-LEVEL music a certain number of times.",
+      "zh": "播放特定次数的特殊关卡结束音乐",
+      "obsolete": false,
+      "arg": "Play ${MusicName} as SPECIAL END-OF-LEVEL MUSIC ${Integer} times using fadeout (${Boolean}) and fadein (${Boolean})."
+    },
+    {
+      "index": 506,
+      "id": "LINK_MISSION_HOT_SPOT_TO_OBJECT",
+      "path": "Interface/Mission Hot-Spot/Link mission hot-spot to object",
+      "zh": "连接任务热点到目标",
+      "obsolete": false,
+      "arg": "Set mission hot-spot ${MissionHotSpot} linked to object ${UnitName} to ${Boolean}."
+    },
+    {
+      "index": 507,
+      "id": "LINK_MISSION_HOT_SPOT_TO_WAYPOINT",
+      "path": "Interface/Mission Hot-Spot/Link mission hot-spot to waypoint",
+      "zh": "连接任务热点到航路点",
+      "obsolete": false,
+      "arg": "Set mission hot-spot ${MissionHotSpot} linked to waypoint ${WaypointName} to ${Boolean}."
+    },
+    {
+      "index": 508,
+      "id": "SET_MISSION_HOT_SPOT_VISIBILITY",
+      "path": "Interface/Mission Hot-Spot/Set visibility of mission hot-spot",
+      "zh": "设置任务热点的可见性",
+      "obsolete": false,
+      "arg": "Set visibility of mission hot-spot ${MissionHotSpot} to ${Boolean}."
+    },
+    {
+      "index": 509,
+      "id": "PLAYER_SET_ALLY_BUILDABILITY",
+      "path": "Player/Build/Player cannot build in a specific ally's buildability radii (ground control).",
+      "zh": "玩家不能在特定盟友的可建造范围内建造(地面控制)",
+      "obsolete": false,
+      "arg": "${PlayerName} is allowed to build in ${PlayerName} controlled territory: ${NewBoolean}"
+    },
+    {
+      "index": 510,
+      "id": "FADE_OUT_TO_BLACK",
+      "path": "Interface/Fade/Fade-out to black",
+      "zh": "消失在黑暗中",
+      "obsolete": false,
+      "arg": "Fade-out the entire screen to black in ${RealNumber} seconds."
+    },
+    {
+      "index": 511,
+      "id": "FADE_IN_FROM_BLACK",
+      "path": "Interface/Fade/Fade-in from black",
+      "zh": "淡入从黑",
+      "obsolete": false,
+      "arg": "Fade-in the entire screen from black in ${RealNumber} seconds."
+    },
+    {
+      "index": 512,
+      "id": "NAMED_OUTLINE",
+      "path": "Object Type/Flash or Color/Outline a specific unit with an outline type.",
+      "zh": "用大纲类型概括一个特定的单元",
+      "obsolete": false,
+      "arg": "${UnitName} is set to ${ObjectOutline} outline type."
+    },
+    {
+      "index": 513,
+      "id": "MAP_SHROUD_SET_RESHROUD_TIME",
+      "path": "Map/Fog or Reveal/Set Re-Fog delay.",
+      "zh": "设置Re-Fog延迟",
+      "obsolete": false,
+      "arg": "Set Fog Delay(In Seconds) to ${RealNumber}"
+    },
+    {
+      "index": 514,
+      "id": "SET_MISSION_HOT_SPOT_ACTIVENESS",
+      "path": "Interface/Mission Hot-Spot/Set mission hot-spot to be active or inactive",
+      "zh": "将任务热点设置为激活或不激活",
+      "obsolete": false,
+      "arg": "Set 'active' status of mission hot-spot ${MissionHotSpot} to ${Boolean}."
+    },
+    {
+      "index": 515,
+      "id": "SKIRMISH_AI_SET_ENEMY_PLAYER_PRIORITY",
+      "path": "SkirmishAI/Enemy Target Control/Set enemy player priority",
+      "zh": "设置敌方玩家的优先级",
+      "obsolete": false,
+      "arg": "Skirmish AI for ${PlayerName}: Give enemy player ${PlayerName} a target priority of ${Integer}"
+    },
+    {
+      "index": 516,
+      "id": "SKIRMISH_AI_CLEAR_ENEMY_PLAYER_PRIORITY",
+      "path": "SkirmishAI/Enemy Target Control/Clear enemy player priority",
+      "zh": "清除敌人玩家优先级",
+      "obsolete": false,
+      "arg": "Skirmish AI for ${PlayerName}: Does not target enemy player ${PlayerName}"
+    },
+    {
+      "index": 517,
+      "id": "SKIRMISH_AI_SET_ALL_ENEMY_PLAYERS_PRIORITIES",
+      "path": "SkirmishAI/Enemy Target Control/Set all enemy players' priority",
+      "zh": "设置所有敌方玩家的优先级",
+      "obsolete": false,
+      "arg": "Skirmish AI for ${PlayerName}: Give all enemy players a target priority of ${Integer}"
+    },
+    {
+      "index": 518,
+      "id": "SKIRMISH_AI_CLEAR_ALL_ENEMY_PLAYERS_PRIORITIES",
+      "path": "SkirmishAI/Enemy Target Control/Clear all enemy players' priority",
+      "zh": "清除所有敌方玩家的优先级",
+      "obsolete": false,
+      "arg": "Skirmish AI for ${PlayerName}: Does not target any enemy player."
+    },
+    {
+      "index": 519,
+      "id": "SKIRMISH_AI_USE_AUTOMATIC_ENEMY_PLAYER_PRIORITY_SCHEME",
+      "path": "SkirmishAI/Enemy Target Control/Use automatic enemy player prioritization scheme",
+      "zh": "使用敌人玩家自动优先排序机制",
+      "obsolete": false,
+      "arg": "Skirmish AI for ${PlayerName}: Choose enemy players automatically using ${SkimishPriorityScheme}"
+    },
+    {
+      "index": 520,
+      "id": "SKIRMISH_AI_USE_DEFAULT_AUTOMATIC_ENEMY_PLAYER_PRIORITY_SCHEME",
+      "path": "SkirmishAI/Enemy Target Control/Use default automatic enemy player prioritization scheme",
+      "zh": "使用默认的敌人玩家自动优先排序机制",
+      "obsolete": false,
+      "arg": "Skirmish AI for ${PlayerName}: Choose enemy players automatically using default prioritization scheme"
+    },
+    {
+      "index": 521,
+      "id": "REDALERT_DISABLE_THREAT_LEVEL_BONUS",
+      "path": "Player/Red Alerts/Disable Threat Level Bonus",
+      "zh": "取消威胁等级加成",
+      "obsolete": false,
+      "arg": "Disable ${PlayerName} threat level bonus."
+    },
+    {
+      "index": 522,
+      "id": "SET_COOP_AI_COMMAND_UI_ENABLED",
+      "path": "Interface/Enable or disable the co-op AI command panel",
+      "zh": "启用或禁用合作AI命令面板",
+      "obsolete": false,
+      "arg": "Set the enabled status of the co-op AI command panel to ${Boolean}"
+    },
+    {
+      "index": 523,
+      "id": "SKIRMISH_AI_CONSIDER_ENEMY_WHEN_BUILDING",
+      "path": "SkirmishAI/Build Control/Consider specific enemy when deciding what to build",
+      "zh": "在决定造什么东西的时候要考虑特定的敌人",
+      "obsolete": false,
+      "arg": "Skirmish AI for ${PlayerName}: Consider ${PlayerName}'s units when deciding what the best or worst unit to build is."
+    },
+    {
+      "index": 524,
+      "id": "SKIRMISH_AI_DONT_CONSIDER_ENEMY_WHEN_BUILDING",
+      "path": "SkirmishAI/Build Control/Don't consider specific enemy when deciding what to build",
+      "zh": "在决定造什么东西的时候不要考虑特定的敌人",
+      "obsolete": false,
+      "arg": "Skirmish AI for ${PlayerName}: Does not consider ${PlayerName}'s units when deciding what the best or worst unit to build is."
+    },
+    {
+      "index": 525,
+      "id": "SKIRMISH_AI_CONSIDER_ALL_ENEMIES_WHEN_BUILDING",
+      "path": "SkirmishAI/Build Control/Consider all enemies when deciding what to build",
+      "zh": "在决定建造什么时考虑所有的敌人",
+      "obsolete": false,
+      "arg": "Skirmish AI for ${PlayerName}: Considers all enemies' units when deciding what the best or worst unit to build is."
+    },
+    {
+      "index": 526,
+      "id": "SKIRMISH_AI_DONT_CONSIDER_ANY_ENEMIES_WHEN_BUILDING",
+      "path": "SkirmishAI/Build Control/Don't consider any enemies when deciding what to build",
+      "zh": "在决定建造什么东西时不要考虑任何敌人",
+      "obsolete": false,
+      "arg": "Skirmish AI for ${PlayerName}: Do not consider any enemies' units when deciding what the best or worst unit to build is."
+    },
+    {
+      "index": 527,
+      "id": "UNIT_SPAWN_NAMED_OBJECT_ON_TEAM_AT_NAMED_OBJECT_LOCATION",
+      "path": "",
+      "zh": "刷出——团队中指定对象的位置",
+      "obsolete": false,
+      "arg": "Spawn  of type  on  at named object ."
+    },
+    {
+      "index": 528,
+      "id": "PLAYER_GRANT_SPECIAL_POWER",
+      "path": "Player/Special Power/Grant power to player.",
+      "zh": "给某个玩家协议",
+      "obsolete": false,
+      "arg": "Grant ${SpecialPowerName}to player ${PlayerName}"
+    },
+    {
+      "index": 529,
+      "id": "SKIRMISH_AI_TRANSFER_ALL",
+      "path": "SkirmishAI/Transfer ownership of all player's units to or from Skirmish AI -- Don't Enable Skirmish AI.",
+      "zh": "将所有玩家单位的所有权转让给或从Skirmish AI转移-不启用Skirmish AI",
+      "obsolete": false,
+      "arg": "Turn Skirmish AI for ${PlayerName} ${NewBoolean} without starting opening moves and timers."
+    },
+    {
+      "index": 530,
+      "id": "SKIRMISH_AI_START",
+      "path": "SkirmishAI/Start AI Opening moves and timers(Turn on the Skirmish AI).",
+      "zh": "开始AI开启动作和计时器(打开小冲突AI)",
+      "obsolete": false,
+      "arg": "Start SkirmishAI for side: ${PlayerName}"
+    },
+    {
+      "index": 531,
+      "id": "PLAYER_CAMERA_MOVE_TO",
+      "path": "Cinematics/Camera/Move the camera for player to a location.",
+      "zh": "将玩家的摄像机移动到一个位置",
+      "obsolete": false,
+      "arg": "Move ${PlayerName} camera to ${CameraLocation} in ${RealNumber} seconds, camera shutter ${RealNumber} seconds, ease-in ${RealNumber} seconds, ease-out ${RealNumber} seconds."
+    },
+    {
+      "index": 532,
+      "id": "PLAYER_CAMERA_MOVE_TO_NAMED",
+      "path": "Cinematics/Camera/Move the camera for player to a named object's location.",
+      "zh": "将玩家的摄像机移动到指定对象的位置",
+      "obsolete": false,
+      "arg": "Move ${PlayerName} camera to ${UnitName} in ${RealNumber} seconds, camera shutter ${RealNumber} seconds, ease-in ${RealNumber} seconds, ease-out ${RealNumber} seconds."
+    },
+    {
+      "index": 533,
+      "id": "PLAYER_SET_MAX_PLAYER_POWER_POINTS",
+      "path": "Player/Special Power/Set maximum player power points.",
+      "zh": "设定玩家的最大力量点",
+      "obsolete": false,
+      "arg": "${PlayerName} set maximum power points to ${Integer}."
+    },
+    {
+      "index": 534,
+      "id": "PLAYER_LOCK_PLAYER_TECH",
+      "path": "Player/Special Power/Lock or Unlock a player tech.",
+      "zh": "锁定或解锁一个玩家科技",
+      "obsolete": false,
+      "arg": "${PlayerName} set ${PlayerTech} locked to ${Boolean}."
+    },
+    {
+      "index": 535,
+      "id": "ALLOW_DISALLOW_ONE_UPGRADE",
+      "path": "Player/Upgrades and Sciences/Allow or Disallow one upgrade",
+      "zh": "允许或不允许一次升级",
+      "obsolete": false,
+      "arg": "${PlayerName} allowed to build ${UpgradeName} is ${Boolean}."
+    },
+    {
+      "index": 536,
+      "id": "NAMED_SET_DISABLED",
+      "path": "Object Type/Settings/Disable -- enable or disable.",
+      "zh": "禁用-启用或禁用",
+      "obsolete": false,
+      "arg": "Set ${UnitName} ${ObjectDisableType} to ${Boolean}."
+    },
+    {
+      "index": 537,
+      "id": "TEAM_SET_STANCE",
+      "path": "Team/Settings/Set a Team's current stance",
+      "zh": "设置一个队伍的当前姿态",
+      "obsolete": false,
+      "arg": "Sets ${TeamName} stance to ${ObjectStance}."
+    },
+    {
+      "index": 538,
+      "id": "NAMED_SHOW_INFOBOX",
+      "path": "Interface/Info Box/Show Info Box",
+      "zh": "显示信息框",
+      "obsolete": false,
+      "arg": "${UnitName} Show info box text ${LocalizedStringName} for ${RealNumber} seconds. Display Image from button ${Text}"
+    },
+    {
+      "index": 539,
+      "id": "NAMED_REMOVE_INFOBOX",
+      "path": "Interface/Info Box/Remove Info Box",
+      "zh": "删除信息框",
+      "obsolete": false,
+      "arg": "${UnitName} remove info box"
+    },
+    {
+      "index": 540,
+      "id": "PLAYER_TOGGLE_RESOURCE_SHARING",
+      "path": "Player/Money/Toggle allied resource sharing on-off.",
+      "zh": "切换联合资源共享开关",
+      "obsolete": false,
+      "arg": "${PlayerName} turn resource sharing: ${NewBoolean}"
+    },
+    {
+      "index": 541,
+      "id": "TEAM_FOLLOW_WAYPOINTS_STARTING_AT_WAYPOINT",
+      "path": "Team/Move/Set team to follow a waypoint path starting at waypoint.",
+      "zh": "设置团队从路点开始遵循路点路径",
+      "obsolete": false,
+      "arg": "Have ${TeamName} follow ${WaypointPathName} , as a team is ${Boolean} , in formation is ${Boolean} , starting at waypoint ${WaypointName}"
+    },
+    {
+      "index": 542,
+      "id": "NAMED_FOLLOW_WAYPOINTS_STARTING_AT_WAYPOINT",
+      "path": "Object Type/Move/Named object follow a waypoint path starting at waypoint.",
+      "zh": "命名对象遵循从路径点开始的路径点路径",
+      "obsolete": false,
+      "arg": "${UnitName} follow ${WaypointPathName} starting at ${WaypointName}"
+    },
+    {
+      "index": 543,
+      "id": "PATH_MUSIC_PLAY_EVENT",
+      "path": "Media/Audio/PathfinderMusic/Play Event.",
+      "zh": "游戏活动",
+      "obsolete": false,
+      "arg": "Play a specific Path Music Event(${PathMusic}), also Suspends Dynamic State System( if running )."
+    },
+    {
+      "index": 544,
+      "id": "PATH_MUSIC_DISABLE_DYNAMIC_SYSTEM",
+      "path": "Media/Audio/PathfinderMusic/Disable Dynamic System.",
+      "zh": "禁用动态系统",
+      "obsolete": false,
+      "arg": "Disable the Path Music Dynamic State System"
+    },
+    {
+      "index": 545,
+      "id": "PATH_MUSIC_ENABLE_DYNAMIC_SYSTEM",
+      "path": "Media/Audio/PathfinderMusic/Enable Standard Dynamic System.",
+      "zh": "启用标准动态系统",
+      "obsolete": false,
+      "arg": "Enable the Standard Path Music Dynamic State System"
+    },
+    {
+      "index": 546,
+      "id": "PATH_MUSIC_STOP_MUSIC",
+      "path": "Media/Audio/PathfinderMusic/Stop Music.",
+      "zh": "停止音乐",
+      "obsolete": false,
+      "arg": "Stop any Path Music currently playing."
+    },
+    {
+      "index": 547,
+      "id": "UNIT_SET_MODELCONDITION_GENERIC",
+      "path": "Object Type/Settings/Set a model condition flag on a named object for duration(optional).",
+      "zh": "在命名对象上设置一个持续时间的模型条件标志(可选)",
+      "obsolete": false,
+      "arg": "${UnitName} sets ${ModelCondition} for ${RealNumber} seconds(optional)."
+    },
+    {
+      "index": 548,
+      "id": "PLAYER_SET_PLAYER_POWER_POINTS",
+      "path": "Player/Special Power/Set the players current power point total.",
+      "zh": "设置玩家当前的总功率点",
+      "obsolete": false,
+      "arg": "${PlayerName} set power points to ${Integer}."
+    },
+    {
+      "index": 549,
+      "id": "NAMED_FORCE_ATTACK_NAMED",
+      "path": "Object Type/Attack/Named Object force attack a named object.",
+      "zh": "命名对象强制攻击一个命名对象",
+      "obsolete": false,
+      "arg": "${UnitName} force attacks ${UnitName}"
+    },
+    {
+      "index": 550,
+      "id": "NAMED_FORCE_ATTACK_WAYPOINT",
+      "path": "Object Type/Attack/Named Object force attack a waypoint.",
+      "zh": "命名物体强制攻击一个路径点",
+      "obsolete": false,
+      "arg": "${UnitName} force attacks ${WaypointName}"
+    },
+    {
+      "index": 551,
+      "id": "NAMED_SET_MAX_HEALTH",
+      "path": "",
+      "zh": "设置一个单位的最大生命值",
+      "obsolete": false,
+      "arg": "Set health of  to  set current health to max "
+    },
+    {
+      "index": 552,
+      "id": "LINK_MISSION_OBJECTIVE_TO_WAYPOINT_WITH_CATEGORY",
+      "path": "Interface/Objectives/Link mission objective to waypoint using icon",
+      "zh": "使用图标连接任务目标到航路点",
+      "obsolete": false,
+      "arg": "Set mission objective '${MissionObjective}' linked to ${WaypointName} to ${Boolean} using icon ${MissionObjectiveCategory}."
+    },
+    {
+      "index": 553,
+      "id": "LINK_MISSION_OBJECTIVE_TO_OBJECT_WITH_CATEGORY",
+      "path": "Interface/Objectives/Link mission objective to object using icon",
+      "zh": "使用图标连接任务目标到目标",
+      "obsolete": false,
+      "arg": "Set mission objective '${MissionObjective}' linked to ${UnitName} to ${Boolean} using icon ${MissionObjectiveCategory}."
+    },
+    {
+      "index": 554,
+      "id": "CAMPAIGN_CREATE_AUTO_SAVE",
+      "path": "Campaign/Create campaign auto save checkpoint.",
+      "zh": "创建活动自动保存检查点",
+      "obsolete": false,
+      "arg": "Create auto save checkpoint with description: ${LocalizedStringName}."
+    },
+    {
+      "index": 555,
+      "id": "PATH_MUSIC_ENABLE_SPECIFIC_DYNAMIC_SYSTEM",
+      "path": "Media/Audio/PathfinderMusic/Enable Specific Dynamic System.",
+      "zh": "启用特定动态系统",
+      "obsolete": false,
+      "arg": "Enables a specific Path Music Dynamic State System(${PathMusicDynamicSystem})"
+    },
+    {
+      "index": 556,
+      "id": "PATH_MUSIC_ENABLE_RESUME_SYSTEM",
+      "path": "Media/Audio/PathfinderMusic/Resume Dynamic System.",
+      "zh": "简历动态系统",
+      "obsolete": false,
+      "arg": "Resume a Suspended Path Music Dynamic State System"
+    },
+    {
+      "index": 557,
+      "id": "FLASH_JOYPAD_COMMANDBAR_BUTTON",
+      "path": "Tutorial/Flash console command menu button",
+      "zh": "Flash控制台命令菜单按钮",
+      "obsolete": false,
+      "arg": "Set flash console command menu button ${CommandMenuButton} to ${Boolean}."
+    },
+    {
+      "index": 558,
+      "id": "DISABLE_JOYPAD_COMMANDBAR_BUTTON",
+      "path": "Tutorial/Disable console command menu button",
+      "zh": "关闭控制台命令菜单按钮",
+      "obsolete": false,
+      "arg": "Set disable console command menu button ${CommandMenuButton} to ${Boolean}."
+    },
+    {
+      "index": 559,
+      "id": "FLASH_JOYPAD_HUD_FIXED_ELEMENT",
+      "path": "Tutorial/Flash console HUD fixed element",
+      "zh": "Flash控制台HUD固定元素",
+      "obsolete": false,
+      "arg": "Set flash console HUD fixed element ${FixedHUD} to ${Boolean}."
+    },
+    {
+      "index": 560,
+      "id": "DISABLE_JOYPAD_HUD_FIXED_ELEMENT",
+      "path": "Tutorial/Disable console HUD fixed element",
+      "zh": "关闭控制台HUD固定元素",
+      "obsolete": false,
+      "arg": "Set disable console HUD fixed element ${FixedHUD} to ${Boolean}."
+    },
+    {
+      "index": 561,
+      "id": "SHOW_UNIT_INTRO",
+      "path": "Interface/Show unit intro",
+      "zh": "显示单位介绍",
+      "obsolete": false,
+      "arg": "Show unit intro for ${ObjectName}."
+    },
+    {
+      "index": 562,
+      "id": "PLAYER_SET_ALL_UNITS_TO_FLEE",
+      "path": "Player/Retreat/Set all units on player to flee off map.",
+      "zh": "设置玩家的所有单位逃离地图",
+      "obsolete": false,
+      "arg": "Set ${PlayerName} units to flee off map"
+    },
+    {
+      "index": 563,
+      "id": "CAMERA_LETTERBOX_BEGIN_WITH_RADAR",
+      "path": "Cinematics/Settings/Start letterbox mode(shows radar).",
+      "zh": "启动信箱模式(显示雷达)",
+      "obsolete": false,
+      "arg": "Start letterbox mode (hide UI, add border), but keep the Radar visible."
+    },
+    {
+      "index": 564,
+      "id": "PATH_MUSIC_FADE_OUT_MUSIC",
+      "path": "Media/Audio/PathfinderMusic/Fade Out Music.",
+      "zh": "淡出音乐",
+      "obsolete": false,
+      "arg": "Fade Out Path Music Volume( Stop Music after fade ) over (${RealNumber}) seconds."
+    },
+    {
+      "index": 565,
+      "id": "PATH_MUSIC_FADE_IN_MUSIC",
+      "path": "Media/Audio/PathfinderMusic/Fade In Music.",
+      "zh": "消失在音乐",
+      "obsolete": false,
+      "arg": "Fade In Path Music Volume over (${RealNumber}) seconds."
+    },
+    {
+      "index": 566,
+      "id": "PLAYER_CAMERA_TETHER_NAMED",
+      "path": "Cinematics/Camera/Begin tether player's camera to a specific unit.",
+      "zh": "开始将玩家的相机绑定到一个特定的单位上",
+      "obsolete": false,
+      "arg": "${PlayerName} have player camera tethered to ${UnitName}. Snap camera to object is ${Boolean}. Amount of play is ${RealNumber}."
+    },
+    {
+      "index": 567,
+      "id": "PLAYER_ALLOWED_TOBE_COOPAI",
+      "path": "Interface/Toggle CoOp AI interface.",
+      "zh": "切换合作AI界面",
+      "obsolete": false,
+      "arg": "Set ${PlayerName} CoOp AI's interface to ${Boolean}"
+    },
+    {
+      "index": 568,
+      "id": "PLAYER_TOGGLE_SKIRMISH_AI",
+      "path": "SkirmishAI/Toggle SkirmishAI On-Off.",
+      "zh": "切换SkirmishAI开关",
+      "obsolete": false,
+      "arg": "Set ${PlayerName} to toggle SkirmishAI ${Boolean}"
+    },
+    {
+      "index": 569,
+      "id": "PLAY_SOUND_AS_AI_COCOMMANDER_DIALOG",
+      "path": "Media/Audio/EVA/Play a sound effect as AI co-commander dialog.",
+      "zh": "播放AI联合指挥官对话的音效",
+      "obsolete": false,
+      "arg": "${SoundName} plays as AI co-commander dialog"
+    },
+    {
+      "index": 570,
+      "id": "PLAY_SOUND_AS_AI_COCOMMANDER_DIALOG_WITH_SUBTITLE",
+      "path": "Media/Audio/EVA/Play a sound effect as AI co-commander dialog, and subtitle it.",
+      "zh": "播放AI联合指挥官对话框的音效，并添加字幕",
+      "obsolete": false,
+      "arg": "${SoundName} plays as AI co-commander dialog, while displaying ${LocalizedStringName} for ${RealNumber} seconds."
+    },
+    {
+      "index": 571,
+      "id": "PLACE_AI_BEACON_LOCATION",
+      "path": "SkirmishAI/Beacon/Spawn an AI Beacon at a waypoint.",
+      "zh": "在一个路标点生成一个AI 信标",
+      "obsolete": false,
+      "arg": "${PlayerName} place beacon type: ${AiBeaconType} at waypoint: ${WaypointName}"
+    },
+    {
+      "index": 572,
+      "id": "PLACE_AI_BEACON_OBJECT",
+      "path": "SkirmishAI/Beacon/Spawn an AI Beacon on a named object",
+      "zh": "在指定对象上生成一个AI 信标",
+      "obsolete": false,
+      "arg": "${PlayerName} place beacon type: ${AiBeaconType} on unit: ${UnitName}"
+    }
+  ]
+}
