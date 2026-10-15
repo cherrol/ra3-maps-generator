@@ -139,7 +139,7 @@ def main():
     lvl4 = majority(lvl4, 2, 1, fixed=(lvl4 == LEVELS[4]))
 
     render(lvl4, os.path.join(base, 'layers5_preview_v10.png'),
-           'v5  r=%d passes=%d keep<=%d/layer  (5 layers, 480 = impassable, 南海已北缩)' % (R, PASSES, KEEP_PER_LAYER),
+           'v5  r=%d passes=%d keep<=%d/layer  (5 layers, 480 = impassable, 南边海域已北缩)' % (R, PASSES, KEEP_PER_LAYER),
            cuts + [peak_cut])
     print('已保存 layers5_preview_v10.png（v1~v4 保留）')
 

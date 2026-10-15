@@ -104,6 +104,7 @@ def team_atk(mmap, cfg=None):
     _add_teams(mmap)
     idmap, _ = _ensure_names(mmap, {
         'Script', 'OrCondition', 'Condition', 'ScriptAction', 'X',
+        'SET_FLAG', 'FLAG',
     })
     key = idmap['X']
     parts = [_boot(idmap, key)]

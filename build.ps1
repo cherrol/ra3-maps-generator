@@ -1,8 +1,8 @@
 # 一键构建 RA3 地图（PowerShell 包装）
 #
 #   .\build.ps1                       # 默认配方
-#   .\build.ps1 -Map bagui_dadi -Install
-#   .\build.ps1 -Map bagui_dadi -Only map,verify
+#   .\build.ps1 -Map <id> -Install
+#   .\build.ps1 -Map <id> -Only map,verify
 [CmdletBinding()]
 param(
     [string]$Map,

@@ -42,7 +42,7 @@ PEAK_IMPASSABLE = cfg.PEAK_IMPASSABLE
 
 GEOJSONS = [(P.data_file(f), prov, amp) for f, prov, amp in getattr(cfg, 'GEOJSONS', [])]
 if not GEOJSONS:
-    GEOJSONS = [(P.data_file(getattr(cfg, 'GEOJSON', 'guangxi_boundary.json')), '广西', 1.0)]
+    GEOJSONS = [(P.data_file(getattr(cfg, 'GEOJSON', 'main_boundary.json')), '', 1.0)]
 OUTSIDE_AMP = float(getattr(cfg, 'OUTSIDE_AMP', 0.70))
 
 LON0, LON1 = cfg.LON0, cfg.LON1
@@ -110,6 +110,8 @@ GARAGE_POS = getattr(cfg, 'GARAGE_POS', None)
 OUTER_ORE = list(getattr(cfg, 'OUTER_ORE', []) or [])
 OUTER_DERRICK = list(getattr(cfg, 'OUTER_DERRICK', []) or [])
 CITY_SEATS = dict(getattr(cfg, 'CITY_SEATS', {}) or {})
+CITY_POINTS = [tuple(p) for p in (getattr(cfg, 'CITY_POINTS', None) or ())]
+CITY_AMP_AT = [tuple(p) for p in (getattr(cfg, 'CITY_AMP_AT', None) or ())]
 BASE_CITY_CLEARANCE = float(getattr(cfg, 'BASE_CITY_CLEARANCE', 30.0))
 CITY_ORE_COUNT = int(getattr(cfg, 'CITY_ORE_COUNT', 28))
 CITY_ORE_OFFSET = float(getattr(cfg, 'CITY_ORE_OFFSET', 14.0))
@@ -123,7 +125,7 @@ ACADEMY_POS = list(getattr(cfg, 'ACADEMY_POS', []) or [])
 
 BASES = cfg.BASES
 RIVERS = cfg.RIVERS
-CITY_AMP = cfg.CITY_AMP
+CITY_AMP = dict(getattr(cfg, 'CITY_AMP', {}) or {})
 
 # ------------------------------------------------------------------ helpers
 def load_geojson():
@@ -162,11 +164,11 @@ class Geo:
         # ⚠ 轴向（T1.8.7 实测锚定，勿再改）：**数据第 0 行 = 最北**，行号越大越往南，
         #   与 v11 蓝图 / terrain.npz 的 raw / dem.npz **同帧**。
         #   证据（work/diag_geo_frame.py，三个独立锚点）：
-        #     ① 沿海城市北海/钦州/防城港 按本式换算后距海 2~47 格；
+        #     ① 南岸三个市中心按本式换算后距海 2~47 格；
         #        旧式 (lat-lat0) 换算（行 0 = 南）把它们放到内陆 500~630 格处；
         #     ② make_mask() 与地形 land 的 IoU：本式 0.82 / 旧式 0.63；
-        #     ③ dem.npz 同帧取海拔：百色 545m（桂西北高原）> 桂林 40m（桂东北低地）✓。
-        #   旧公式让 geo 帧与 raw 帧南北相反 -> 省界红线/城市/油田/河流净距全部与地形颠倒。
+        #     ③ dem.npz 同帧取海拔：西北高地 545m > 东北低地 40m。
+        #   旧公式让 geo 帧与 raw 帧南北相反 -> 边界线、城镇、油田、河流净距全部与地形颠倒。
         y = self.oy + (self.lat1 - lat) * self.sy
         return x, y
 
@@ -272,15 +274,69 @@ def fbm(shape, base_cells, octaves, seed, gain=0.5):
 
 
 # ------------------------------------------------------------------ terrain
-def city_centers(geo, inside_only=True):
-    """城市中心列表 [(name, cx, cy)]：广西各市用真实市区坐标，邻省用多边形质心。
+def _city_at(idx, x, y):
+    """这个格子落在哪一块里。贴边时向周围看三格。"""
+    h, w = idx.shape
+    ix, iy = int(round(x)), int(round(y))
+    for rad in range(0, 4):
+        for dy in range(-rad, rad + 1):
+            for dx in range(-rad, rad + 1):
+                if rad and max(abs(dx), abs(dy)) != rad:
+                    continue
+                yy, xx = iy + dy, ix + dx
+                if 0 <= yy < h and 0 <= xx < w and int(idx[yy, xx]) >= 0:
+                    return int(idx[yy, xx])
+    return -1
 
-    inside_only=True 时丢掉落在可玩区之外的（邻省多边形会超出取景框）。
+
+def _seat_lookup(geo):
+    """配方给出的中心点落在哪一块上。返回 {块名: (cx, cy)}。"""
+    cached = getattr(geo, '_seat_lookup', None)
+    if cached is not None:
+        return cached
+    pts = [(float(lon), float(lat)) for lon, lat in CITY_POINTS]
+    if not pts:
+        pts = [(float(lon), float(lat)) for lon, lat in CITY_SEATS.values()]
+    idx = geo.city_index_map()
+    found = {}
+    for lon, lat in pts:
+        x, y = geo.to_cell(lon, lat)
+        i = _city_at(idx, x, y)
+        if i < 0:
+            continue
+        found[geo.cities[i][0]] = (x, y)
+    geo._seat_lookup = found
+    return found
+
+
+def _amp_lookup(geo):
+    """按中心点覆盖这一块的山地强度。"""
+    cached = getattr(geo, '_amp_lookup', None)
+    if cached is not None:
+        return cached
+    idx = geo.city_index_map()
+    found = {}
+    for lon, lat, amp in CITY_AMP_AT:
+        x, y = geo.to_cell(float(lon), float(lat))
+        i = _city_at(idx, x, y)
+        if i >= 0:
+            found[geo.cities[i][0]] = float(amp)
+    geo._amp_lookup = found
+    return found
+
+
+def city_centers(geo, inside_only=True):
+    """城市中心 [(块名, cx, cy)]。配方点用给出的坐标，其余用多边形质心。
+
+    inside_only=True 时丢掉落在可玩区之外的。
     """
     lo, hi = BORDER + 4, BORDER + PLAY - 4
+    seats = _seat_lookup(geo)
     out = []
     for name, rings, prov, _amp in geo.cities:
-        if name in CITY_SEATS:
+        if name in seats:
+            cx, cy = seats[name]
+        elif name in CITY_SEATS:
             cx, cy = geo.to_cell(*CITY_SEATS[name])
         else:
             best = None
@@ -299,14 +355,15 @@ def city_centers(geo, inside_only=True):
 
 
 def city_ore_points(geo, count, margin=34.0):
-    """城市矿脉候选点：优先广西 14 市，再按间隔取邻省城市，凑够 count 个。
+    """城市矿脉候选点：先用配方点中的块，再按间隔取其余块，凑够 count 个。
 
     目标点必须离可玩区边缘有 margin 格，否则会被挤到边缘挡墙上。
     """
     lo, hi = BORDER + margin, BORDER + PLAY - margin
     centers = [c for c in city_centers(geo) if lo <= c[1] <= hi and lo <= c[2] <= hi]
-    gx = [c for c in centers if c[0] in CITY_SEATS]
-    other = [c for c in centers if c[0] not in CITY_SEATS]
+    seated = set(_seat_lookup(geo))
+    gx = [c for c in centers if c[0] in seated]
+    other = [c for c in centers if c[0] not in seated]
     need = max(0, count - len(gx))
     picked = list(gx)
     if need > 0 and other:
@@ -466,7 +523,8 @@ def near_ore_surface_ok(z, bx, by, x, y, T=None, layers=None):
 
 def resolve_slots(geo, z, land, base_cells, verbose=True, base_extra_snap=None,
                   ore_open_rank=False, ramps=None):
-    """在为资源点铺平之前，先把矿/油井/观察哨/车库的位置解算好。
+    """按构建顺序落资源：近矿、近处油井、外围矿、城市油田和房子，
+    然后哨站和精兵学院、车库医院机场、船厂。
 
     约束：落在省内陆地上、非水域、坡度平缓；离所有出生点保持最小距离；
     彼此保持最小间距。返回 dict(name -> [(cx, cy), ...])。
@@ -524,7 +582,7 @@ def resolve_slots(geo, z, land, base_cells, verbose=True, base_extra_snap=None,
         print('  [矿位] 平整且离山脚>=%.0f格: %d 格；贴山脚(%d~%d格)+矿口有净空: %d 格' % (
             mount_clear, int(ok_ore.sum()), int(ORE_FOOT_MIN), int(ORE_FOOT_MAX), int(ok_foot.sum())))
     base_list = list(base_cells.values())
-    seats_all = city_centers(geo)          # 所有城市中心（广西用真实市区，邻省用质心）
+    seats_all = city_centers(geo)
 
     # 矿优先级最高：其他资源与“任何已放置点（含矿）”的间距至少是矿区建造范围 + 余量，
     # 这样矿的建造范围内不会出现油井/车库/机场/医院/精兵学院/雷达等任何资源。
@@ -1019,7 +1077,84 @@ def resolve_slots(geo, z, land, base_cells, verbose=True, base_extra_snap=None,
         if verbose and _added:
             print('    [矿位] %s 保底补 %d 个矿（原有 %d 个，水面基地=%s）'
                   % (_bn, _added, _have, _on_water))
-    # 出生点的矿已经放好。其余矿按玩家总数撒开，陆地和水面各一半。
+    # 近矿之后、外围矿之前：每个出生点一处油井。后面的矿和城市油井让开这些落点。
+    # ---- 油井、哨站和中部建筑落在平整处，并避开层界、岸线、斜坡、不可通行。
+    _flat_tol = float(T.get('build_flat_slope', 2.5))          # 允许的自然坡度上限
+    _build_ok = (ok & (slope < _flat_tol)
+                 & (d_steep >= float(T.get('build_foot_clear', 8.0)))
+                 & (d_water >= float(T.get('build_water_clear', 4.0))))
+    _lvl_i = np.zeros_like(z, dtype=np.int16)
+    for _lv in sorted([float(v) for v in (T.get('levels') or [LAND_Z])]):
+        _lvl_i = _lvl_i + (z >= _lv - 1.0).astype(np.int16)
+    _edge = np.zeros_like(_build_ok, dtype=bool)
+    _edge[:, 1:] |= (_lvl_i[:, 1:] != _lvl_i[:, :-1])
+    _edge[1:, :] |= (_lvl_i[1:, :] != _lvl_i[:-1, :])
+    _w0 = z < WATER_Z
+    _shore = np.zeros(z.shape, dtype=bool)
+    for _dy in (-1, 0, 1):
+        for _dx in (-1, 0, 1):
+            _shore |= _w0 != np.roll(np.roll(_w0, _dy, 0), _dx, 1)
+    # 斜坡按挖出来的坡面算，不只看轴对齐框。建筑中心离开坡面 build_foot_clear 格，
+    # 和离开层界同一距离，整座建筑不压在坡上。
+    _ramp_body = ramp_body_mask(z.shape, ramps or [], z)
+    _foot = float(T.get('build_foot_clear', 8.0))
+    _on_ramp = (distance_transform(_ramp_body) < _foot) if _ramp_body.any() else np.zeros(z.shape, dtype=bool)
+    _impass = (slope > SLOPE_IMPASSABLE) | (z > WATER_Z + PEAK_IMPASSABLE)
+    _avoid = _edge | _shore | _on_ramp | _impass
+    _build_ok &= (distance_transform(_edge) >= 3.0) & ~_avoid
+    # 中立资源落水也是配方开关。开阔水面可以用，岸线、斜坡和不可通行仍然避开。
+    _neutral_ok = _build_ok
+    _open_water = ((z < WATER_Z) & ~_avoid
+                   & (d_edge >= float(T.get('ore_border_clear', 30.0))))
+    if bool(T.get('neutral_in_water')):
+        _sea_pad = (_open_water
+                    & (distance_transform(z >= WATER_Z) >= float(T.get('neutral_water_edge', 12.0))))
+        _neutral_ok = _build_ok | _sea_pad
+        if verbose:
+            print('  [资源] 中立设施可落水：开阔水面 %d 格' % int(_sea_pad.sum()))
+
+    derricks = []
+    for idx, (lon, lat, name, team, kind) in enumerate(BASES):
+        bx, by = base_cells[name]
+        cell = resolve(bx, by, RESOURCE_PAD_CLEARANCE, other_spacing, placed, mask=_neutral_ok)
+        # 水上出生点：L1~L3 找出来的往往是很远的陆上位置（>70 格），
+        # 这里**优先在水面就近放**，放不下才用陆上那个。
+        if z[int(round(by)), int(round(bx))] < WATER_Z:
+            _sea_ok = (z < WATER_Z) & ~_avoid
+            # 注意：resolve 是"从中心按环向外扫"，中心就是基地 -> 永远先撞到基地自己那格，
+            # 又被 base_list 的净空挡掉 -> 必然返回 None。所以要**从离基地 25 格的方向点起搜**。
+            _wc = None
+            for _band in ((0.0, 90.0), (0.0, 140.0)):
+                for _ang in [(idx * 1.7 + k * 0.9) for k in range(8)]:
+                    _sx = bx + math.cos(_ang) * 25.0
+                    _sy = by + math.sin(_ang) * 25.0
+                    for _sp in (other_spacing,):
+                        _try = resolve(_sx, _sy, 0.0, _sp, placed,
+                                       max_search=int(_band[1]), mask=_sea_ok)
+                        if _try is not None:
+                            _wc = _try
+                            break
+                    if _wc is not None:
+                        break
+                if _wc is not None:
+                    break
+            if _wc is not None:
+                _dw = math.hypot(_wc[0] - bx, _wc[1] - by)
+                _dl = math.hypot(cell[0] - bx, cell[1] - by) if cell is not None else 1e9
+                if _dw < _dl:
+                    cell = _wc
+                    if verbose:
+                        print('    [油井] %s 是水上基地，油井落水面 (%d,%d) 距基地 %.0f 格'
+                              % (name, _wc[0], _wc[1], _dw))
+        if cell is None:
+            if verbose:
+                print('    [油井] 出生点 %s 附近放不下，跳过' % name)
+            continue
+        derricks.append(cell)
+    _spawn_n = len(derricks)
+    if verbose:
+        print('  [油井] 出生点油井 %d 个' % _spawn_n)
+    # 近矿和近处油井已经放好。其余矿按玩家总数撒开，陆地和水面各一半。
     _n_outer = int(T.get('ore_outer_per_player', 4)) * len(base_list)
     _ramp_ore = ramp_cover_mask(z.shape, ramps or [])
     _land_outer = _big_open & ~_ramp_ore
@@ -1043,6 +1178,12 @@ def resolve_slots(geo, z, land, base_cells, verbose=True, base_extra_snap=None,
                         continue
                     md = 1e9
                     _blocked = False
+                    for p in placed:
+                        if math.hypot(_x - p[0], _y - p[1]) < other_spacing:
+                            _blocked = True
+                            break
+                    if _blocked:
+                        continue
                     for p in ore:
                         d0 = math.hypot(_x - p[0], _y - p[1])
                         if d0 < _sp_sc:
@@ -1062,7 +1203,7 @@ def resolve_slots(geo, z, land, base_cells, verbose=True, base_extra_snap=None,
             added += 1
         return added
 
-    if base_list and _n_outer > 0:
+    if base_list and _n_outer > 0 and not T.get('ore_bands'):
         _wq = _n_outer // 2
         _lq = _n_outer - _wq
         _aw = _fill_outer(_water_outer, _wq)
@@ -1075,48 +1216,16 @@ def resolve_slots(geo, z, land, base_cells, verbose=True, base_extra_snap=None,
                   % (_aw + _al, _aw, _al, _n_outer))
     if verbose and _fallback:
         print('  [矿位] %d 个矿只能退回目标格（周围没有满足间距的落点）' % len(_fallback))
-    # ---- 油井、哨站和中部建筑落在平整处，并避开层界、岸线、斜坡、不可通行。
-    _flat_tol = float(T.get('build_flat_slope', 2.5))          # 允许的自然坡度上限
-    _build_ok = (ok & (slope < _flat_tol)
-                 & (d_steep >= float(T.get('build_foot_clear', 8.0)))
-                 & (d_water >= float(T.get('build_water_clear', 4.0))))
-    _lvl_i = np.zeros_like(z, dtype=np.int16)
-    for _lv in sorted([float(v) for v in (T.get('levels') or [LAND_Z])]):
-        _lvl_i = _lvl_i + (z >= _lv - 1.0).astype(np.int16)
-    _edge = np.zeros_like(_build_ok, dtype=bool)
-    _edge[:, 1:] |= (_lvl_i[:, 1:] != _lvl_i[:, :-1])
-    _edge[1:, :] |= (_lvl_i[1:, :] != _lvl_i[:-1, :])
-    _w0 = z < WATER_Z
-    _shore = np.zeros(z.shape, dtype=bool)
-    for _dy in (-1, 0, 1):
-        for _dx in (-1, 0, 1):
-            _shore |= _w0 != np.roll(np.roll(_w0, _dy, 0), _dx, 1)
-    _ramp_m = ramp_cover_mask(z.shape, ramps or [])
-    _impass = (slope > SLOPE_IMPASSABLE) | (z > WATER_Z + PEAK_IMPASSABLE)
-    _avoid = _edge | _shore | _ramp_m | _impass
-    _build_ok &= (distance_transform(_edge) >= 3.0) & ~_avoid
-    # 中立资源落水也是配方开关。开阔水面可以用，岸线、斜坡和不可通行仍然避开。
-    _neutral_ok = _build_ok
-    _open_water = ((z < WATER_Z) & ~_avoid
-                   & (d_edge >= float(T.get('ore_border_clear', 30.0))))
-    if bool(T.get('neutral_in_water')):
-        _sea_pad = (_open_water
-                    & (distance_transform(z >= WATER_Z) >= float(T.get('neutral_water_edge', 12.0))))
-        _neutral_ok = _build_ok | _sea_pad
-        if verbose:
-            print('  [资源] 中立设施可落水：开阔水面 %d 格' % int(_sea_pad.sum()))
-
-    # ---- 油井：只放在配方 CITY_SEATS 的地级市。自治州、自治县和落在水上的市不算。
-    #      CITY_CLUSTER 打开时，纹理圆相接的市合成一片：单独一片一口油井加一栋小房子，
-    #      多座挨着则两栋房子在两侧、两口油井在中间。没开的图仍是每座城市一口油井。
-    _seat_names = set(getattr(cfg, 'CITY_SEATS', {}).keys())
-    derricks = []
+    # ---- 油井：只放在配方点落进去的块上。自治州、自治县和落在水上的不算。
+    #      CITY_CLUSTER 打开时，纹理圆相接的块合成一片：单独一片一口油井加一栋小房子，
+    #      多座挨着则两栋房子在两侧、两口油井在中间。没开的图仍是每座一块一口油井。
+    _seat_names = set(_seat_lookup(geo))
     houses = []
     house_kinds = []
     _cityd = []
     for _n, tx, ty in (seats_all or []):
         if _n not in _seat_names:
-            continue                                     # 非地级市，跳过
+            continue
         if '自治州' in _n or '自治县' in _n:
             continue
         _ix, _iy = int(round(tx)), int(round(ty))
@@ -1288,45 +1397,8 @@ def resolve_slots(geo, z, land, base_cells, verbose=True, base_extra_snap=None,
             if cell is not None:
                 derricks.append(cell)
         if verbose:
-            print('  [油井] 城市油井 %d 个（陆地内城市 %d 个）' % (len(derricks), len(_cityd)))
-    _city_derrick_n = len(derricks)
-    for idx, (lon, lat, name, team, kind) in enumerate(BASES):
-        bx, by = base_cells[name]
-        cell = resolve(bx, by, RESOURCE_PAD_CLEARANCE, other_spacing, placed, mask=_neutral_ok)
-        # 水上出生点：L1~L3 找出来的往往是很远的陆上位置（>70 格），
-        # 这里**优先在水面就近放**，放不下才用陆上那个。
-        if z[int(round(by)), int(round(bx))] < WATER_Z:
-            _sea_ok = (z < WATER_Z) & ~_avoid
-            # 注意：resolve 是"从中心按环向外扫"，中心就是基地 -> 永远先撞到基地自己那格，
-            # 又被 base_list 的净空挡掉 -> 必然返回 None。所以要**从离基地 25 格的方向点起搜**。
-            _wc = None
-            for _band in ((0.0, 90.0), (0.0, 140.0)):
-                for _ang in [(idx * 1.7 + k * 0.9) for k in range(8)]:
-                    _sx = bx + math.cos(_ang) * 25.0
-                    _sy = by + math.sin(_ang) * 25.0
-                    for _sp in (other_spacing,):
-                        _try = resolve(_sx, _sy, 0.0, _sp, placed,
-                                       max_search=int(_band[1]), mask=_sea_ok)
-                        if _try is not None:
-                            _wc = _try
-                            break
-                    if _wc is not None:
-                        break
-                if _wc is not None:
-                    break
-            if _wc is not None:
-                _dw = math.hypot(_wc[0] - bx, _wc[1] - by)
-                _dl = math.hypot(cell[0] - bx, cell[1] - by) if cell is not None else 1e9
-                if _dw < _dl:
-                    cell = _wc
-                    if verbose:
-                        print('    [油井] %s 是水上基地，油井落水面 (%d,%d) 距基地 %.0f 格'
-                              % (name, _wc[0], _wc[1], _dw))
-        if cell is None:
-            if verbose:
-                print('    [油井] 出生点 %s 附近放不下，跳过' % name)
-            continue
-        derricks.append(cell)
+            print('  [油井] 城市油井 %d 个（陆地内城市 %d 个）' % (len(derricks) - _spawn_n, len(_cityd)))
+    _city_derrick_n = len(derricks) - _spawn_n
     if verbose:
         _spawn_n = len(derricks) - _city_derrick_n
         if bool(getattr(cfg, 'CITY_CLUSTER', False)):
@@ -1526,8 +1598,8 @@ def flatten_pads(z, pads, min_z, xx, yy, verbose=True):
     return z
 
 
-def guangxi_boundary_mask(geo, size):
-    """主省外轮廓。配方里强度 >= 1 的那一省才画，邻省只补陆地，不画进这条线。"""
+def main_boundary_mask(geo, size):
+    """主区外轮廓。配方里强度 >= 1 的那一份才画，邻区只补陆地，不画进这条线。"""
     gx = [c for c in geo.cities if float(c[3]) >= 1.0]
     if not gx:
         gx = list(geo.cities)
@@ -2221,6 +2293,51 @@ def _ramp_win(ii, ys, xs, r):
     return ii[y1, x1] - ii[y0, x1] - ii[y1, x0] + ii[y0, x0]
 
 
+def _high_side_axes(hi_c, ys, xs):
+    """交界格指向高层一侧的单位法线。"""
+    sx = np.zeros(hi_c.shape, dtype=np.float64)
+    sy = np.zeros(hi_c.shape, dtype=np.float64)
+    nb = np.zeros(hi_c.shape, dtype=bool)
+    nb[:, :-1] = hi_c[:, 1:]
+    sx[:, :-1] += nb[:, :-1]
+    nb[:, :] = False
+    nb[:, 1:] = hi_c[:, :-1]
+    sx[:, 1:] -= nb[:, 1:]
+    nb[:, :] = False
+    nb[:-1, :] = hi_c[1:, :]
+    sy[:-1, :] += nb[:-1, :]
+    nb[:, :] = False
+    nb[1:, :] = hi_c[:-1, :]
+    sy[1:, :] -= nb[1:, :]
+    dx = sx[ys, xs]
+    dy = sy[ys, xs]
+    nrm = np.maximum(np.hypot(dx, dy), 1e-6)
+    return dx / nrm, dy / nrm
+
+
+def _smooth_axes(ux, uy, xs, ys, radius=14.0):
+    """把单格法线沿交界抹平，得到这段边界的垂线。交界太长时保持单格法线。"""
+    ux = np.asarray(ux, dtype=np.float64)
+    uy = np.asarray(uy, dtype=np.float64)
+    n = int(ux.shape[0])
+    if n == 0 or n > 3000:
+        return ux, uy
+    xs = np.asarray(xs, dtype=np.float64)
+    ys = np.asarray(ys, dtype=np.float64)
+    w = np.clip(radius - np.hypot(xs[:, None] - xs[None, :], ys[:, None] - ys[None, :]), 0.0, None)
+    su = w @ ux
+    sv = w @ uy
+    nrm = np.hypot(su, sv)
+    bad = nrm < 1e-3
+    nrm = np.maximum(nrm, 1e-6)
+    out_u = np.where(bad, ux, su / nrm)
+    out_v = np.where(bad, uy, sv / nrm)
+    flip = (out_u * ux + out_v * uy) < 0.0
+    out_u = np.where(flip, -out_u, out_u)
+    out_v = np.where(flip, -out_v, out_v)
+    return out_u, out_v
+
+
 def plan_auto_ramps(z, targets, bases=None, width=28.0, length=28.0, verbose=True):
     """在层与层、水与陆的交界上自动开口。
 
@@ -2229,6 +2346,8 @@ def plan_auto_ramps(z, targets, bases=None, width=28.0, length=28.0, verbose=Tru
     开口尽量落在玩家通往中心或资源的直线上，上坡优先朝向这些目标。
     ramp_marks 把附近的坡挪到划线上，方向跟线一致；附近没有就补一条。
     配方 ramp_layout=face 时只连相邻层，坡与坡隔开，凸出朝凸出、左侧边界垂直朝第一层。
+    配方 ramp_balance 时上坡尽量垂直于层界，坡面落在两侧的格子尽量接近；
+    两端踩不上台面时退回原来的朝向。没开的图不走这条。
     边长 20~40 格。其余交界保持硬坎。
     """
     H, W = z.shape
@@ -2242,6 +2361,7 @@ def plan_auto_ramps(z, targets, bases=None, width=28.0, length=28.0, verbose=Tru
         labeled.append((val, lab, sizes, mask))
     links = []
     face = T.get('ramp_layout') == 'face'
+    balance = bool(T.get('ramp_balance'))
     if face:
         # 一条坡只跨相邻两层。一层直接接到三层会同时跨过三个层，不开。
         if len(labeled) > 1:
@@ -2290,18 +2410,18 @@ def plan_auto_ramps(z, targets, bases=None, width=28.0, length=28.0, verbose=Tru
                 return False
         return True
 
-    def _probe_reach(span_i):
-        # 坡心比交界沿上坡偏 2 格，验收从坡心再探 4 格。两侧台面要盖住这段。
+    def _probe_reach(span_i, bias=2.0):
+        # 坡心沿上坡偏 bias 格（缺省 2）。验收从坡心再探 4 格，两侧台面要盖住这段。
         half_u = max(10.0, min(20.0, float(span_i) * 0.5))
-        hi_reach = int(math.ceil(2.0 + half_u + 4.0)) + 2
-        lo_reach = int(math.ceil(max(4.0, half_u + 4.0 - 2.0))) + 2
+        hi_reach = int(math.ceil(float(bias) + half_u + 4.0)) + 2
+        lo_reach = int(math.ceil(max(4.0, half_u + 4.0 - float(bias)))) + 2
         return lo_reach, hi_reach
 
-    def _body_clear(y, x, ux, uy, lo_m, hi_m, span_i, wide_i):
+    def _body_clear(y, x, ux, uy, lo_m, hi_m, span_i, wide_i, bias=2.0):
         """坡身不吃第三层。验收在坡端外再探 4 格，探到的格子必须整格落在对应台面上。"""
         half_u = max(10.0, min(20.0, float(span_i) * 0.5))
-        cx = float(x) + float(ux) * 2.0
-        cy = float(y) + float(uy) * 2.0
+        cx = float(x) + float(ux) * float(bias)
+        cy = float(y) + float(uy) * float(bias)
         bw = float(span_i) * 0.5
         bh = float(wide_i) * 0.5
         x0 = max(0, int(math.floor(cx - bw)))
@@ -2327,9 +2447,76 @@ def plan_auto_ramps(z, targets, bases=None, width=28.0, length=28.0, verbose=Tru
 
         return _pad(-1.0, lo_m) and _pad(1.0, hi_m)
 
-    def _place(y, x, ux, uy, lo_v, hi_v, nedge, span_i, wide_i):
-        cx = float(x) + float(ux) * 2.0
-        cy = float(y) + float(uy) * 2.0
+    def _ramp_share(cx, cy, ux, uy, half_u, bw, bh, lo_m, hi_m):
+        """挖坡占地里，低层、高层、总格数。占地是沿坡矩形并上轴对齐框。"""
+        half_v = 0.0
+        for sx, sy in ((bw, bh), (bw, -bh), (-bw, bh), (-bw, -bh)):
+            half_v = max(half_v, abs(-sx * uy + sy * ux))
+        rad = int(math.ceil(max(half_u, half_v, bw, bh))) + 2
+        x0 = max(0, int(math.floor(cx - rad)))
+        y0 = max(0, int(math.floor(cy - rad)))
+        x1 = min(W, int(math.ceil(cx + rad)) + 1)
+        y1 = min(H, int(math.ceil(cy + rad)) + 1)
+        if x0 >= x1 or y0 >= y1:
+            return 0, 0, 0
+        yy, xx = np.mgrid[y0:y1, x0:x1]
+        rx = xx - cx
+        ry = yy - cy
+        u = rx * ux + ry * uy
+        v = -rx * uy + ry * ux
+        inside = ((np.abs(u) <= half_u) & (np.abs(v) <= half_v)
+                  | ((np.abs(rx) <= bw) & (np.abs(ry) <= bh)))
+        lo_n = int((inside & lo_m[y0:y1, x0:x1]).sum())
+        hi_n = int((inside & hi_m[y0:y1, x0:x1]).sum())
+        return lo_n, hi_n, int(inside.sum())
+
+    def _balanced_pose(y, x, ux, uy, lo_m, hi_m, span_i, wide_i):
+        """法线附近选摆法。两侧格子差在 15% 以内就保持最接近垂直的角度。"""
+        half_u = max(10.0, min(20.0, float(span_i) * 0.5))
+        bw = float(span_i) * 0.5
+        bh = float(wide_i) * 0.5
+        best = None
+        base = math.atan2(float(uy), float(ux))
+        for dang in (0.0, 8.0, -8.0, 16.0, -16.0):
+            ang = base + math.radians(dang)
+            uxi, uyi = math.cos(ang), math.sin(ang)
+            if uxi * float(ux) + uyi * float(uy) < 0.0:
+                uxi, uyi = -uxi, -uyi
+            angle_best = None
+            for bias in (0.0, 0.5, 1.0, 2.0):
+                lo_need, hi_need = _probe_reach(span_i, bias)
+                if not room(y, x, uxi, uyi, lo_m, hi_m, lo_need, hi_need, strict=face):
+                    continue
+                if face and not _body_clear(
+                        y, x, uxi, uyi, lo_m, hi_m, span_i, wide_i, bias=bias):
+                    continue
+                cx = float(x) + uxi * bias
+                cy = float(y) + uyi * bias
+                lo_n, hi_n, inside = _ramp_share(
+                    cx, cy, uxi, uyi, half_u, bw, bh, lo_m, hi_m)
+                if inside < 1:
+                    continue
+                imb = abs(lo_n - hi_n) / float(inside)
+                other = inside - lo_n - hi_n
+                if other > 0.15 * inside:
+                    imb = max(imb, other / float(inside))
+                cand = (imb, float(bias))
+                if angle_best is None or cand < angle_best[0]:
+                    angle_best = (cand, uxi, uyi, float(bias), (lo_n, hi_n))
+            if angle_best is None:
+                continue
+            imb = angle_best[0][0]
+            packed = (angle_best[1], angle_best[2], angle_best[3], angle_best[4])
+            if imb <= 0.15:
+                return ((0, abs(dang), imb),) + packed
+            score = (1, imb, abs(dang))
+            if best is None or score < best[0]:
+                best = (score,) + packed
+        return best
+
+    def _place(y, x, ux, uy, lo_v, hi_v, nedge, span_i, wide_i, bias=2.0, share=None):
+        cx = float(x) + float(ux) * float(bias)
+        cy = float(y) + float(uy) * float(bias)
         specs.append({
             'x': round(cx, 1), 'y': round(cy, 1),
             'w': span_i, 'h': wide_i,
@@ -2338,7 +2525,11 @@ def plan_auto_ramps(z, targets, bases=None, width=28.0, length=28.0, verbose=Tru
             'ux': round(float(ux), 4), 'uy': round(float(uy), 4),
         })
         taken.append((cx, cy))
-        if verbose:
+        if verbose and share is not None:
+            ang = math.degrees(math.atan2(float(uy), float(ux)))
+            print('  [斜坡] %.0f→%.0f @(%d,%d) 朝 %.0f° 低%d 高%d 交界 %d 格'
+                  % (lo_v, hi_v, round(cx), round(cy), ang, share[0], share[1], nedge))
+        elif verbose:
             ang = math.degrees(math.atan2(float(uy), float(ux)))
             print('  [斜坡] %.0f→%.0f @(%d,%d) 朝 %.0f° 交界 %d 格'
                   % (lo_v, hi_v, round(cx), round(cy), ang, nedge))
@@ -2370,29 +2561,7 @@ def plan_auto_ramps(z, targets, bases=None, width=28.0, length=28.0, verbose=Tru
                     wide_i = wide
                 ys, xs = np.nonzero(edge)
                 hi_c = hi_lab == cb
-                sx = np.zeros(z.shape, dtype=np.float64)
-                sy = np.zeros(z.shape, dtype=np.float64)
-                cnt = np.zeros(z.shape, dtype=np.float64)
-                nb = np.zeros(hi_c.shape, dtype=bool)
-                nb[:, :-1] = hi_c[:, 1:]
-                sx[:, :-1] += nb[:, :-1]
-                cnt[:, :-1] += nb[:, :-1]
-                nb[:, :] = False
-                nb[:, 1:] = hi_c[:, :-1]
-                sx[:, 1:] -= nb[:, 1:]
-                cnt[:, 1:] += nb[:, 1:]
-                nb[:, :] = False
-                nb[:-1, :] = hi_c[1:, :]
-                sy[:-1, :] += nb[:-1, :]
-                cnt[:-1, :] += nb[:-1, :]
-                nb[:, :] = False
-                nb[1:, :] = hi_c[:-1, :]
-                sy[1:, :] -= nb[1:, :]
-                cnt[1:, :] += nb[1:, :]
-                dx = sx[ys, xs]
-                dy = sy[ys, xs]
-                nrm = np.maximum(np.hypot(dx, dy), 1e-6)
-                ux, uy = dx / nrm, dy / nrm
+                ux, uy = _high_side_axes(hi_c, ys, xs)
                 ux0, uy0 = ux, uy
                 convex = np.zeros(len(xs), dtype=bool)
                 left = np.zeros(len(xs), dtype=bool)
@@ -2418,6 +2587,13 @@ def plan_auto_ramps(z, targets, bases=None, width=28.0, length=28.0, verbose=Tru
                     up_x = np.where(l1cx < xs, 1.0, -1.0)
                     ux = np.where(left, up_x, ux)
                     uy = np.where(left, 0.0, uy)
+                if balance:
+                    # 角度让位给层界法线。凸出和左侧仍只影响开口挑在哪一段。
+                    ux, uy = ux0, uy0
+                    ux_s, uy_s = _smooth_axes(
+                        ux0, uy0, xs, ys, radius=max(8.0, float(wide_i) * 0.5))
+                else:
+                    ux_s, uy_s = ux, uy
                 best_align = np.full(len(xs), -1.0)
                 for tx, ty in targets:
                     vx = tx - xs
@@ -2468,24 +2644,54 @@ def plan_auto_ramps(z, targets, bases=None, width=28.0, length=28.0, verbose=Tru
                 local = []
 
                 def _try(order, align_floor, sep_local, lo_reach, hi_reach, need, base_clear):
+                    uneven = []
+                    checked = 0
+
+                    def _clear(x, y):
+                        if any(math.hypot(x - bx, y - by) < base_clear for bx, by in bases):
+                            return False
+                        if any(math.hypot(x - px, y - py) < sep_local for px, py, *_rest in local):
+                            return False
+                        if any(math.hypot(x - px, y - py) < ramp_gap for px, py in taken):
+                            return False
+                        return True
+
+                    def _fits(y, x, uxi, uyi):
+                        if not room(y, x, uxi, uyi, lo_m, hi_m, lo_reach, hi_reach, strict=face):
+                            return False
+                        if face and not _body_clear(y, x, uxi, uyi, lo_m, hi_m, span_i, wide_i):
+                            return False
+                        return True
+
                     for k in order:
-                        if len(local) >= need:
+                        if len(local) >= need and not balance:
                             return
+                        if balance and (len(local) >= need or checked >= 200):
+                            break
                         if best_align[k] < align_floor:
                             continue
                         y, x = int(ys[k]), int(xs[k])
-                        if any(math.hypot(x - bx, y - by) < base_clear for bx, by in bases):
+                        if not _clear(x, y):
                             continue
-                        if any(math.hypot(x - px, y - py) < sep_local for px, py, _u, _v in local):
+
+                        if balance:
+                            checked += 1
+                            pose = _balanced_pose(
+                                y, x, float(ux_s[k]), float(uy_s[k]),
+                                lo_m, hi_m, span_i, wide_i)
+                            if pose is not None:
+                                score, uxi, uyi, bias, share = pose
+                                item = (float(x), float(y), uxi, uyi, bias, share)
+                                if score[0] == 0:
+                                    local.append(item)
+                                else:
+                                    uneven.append((score, item))
+                                continue
+                            uxi, uyi = float(ux0[k]), float(uy0[k])
+                            if _fits(y, x, uxi, uyi):
+                                uneven.append(((2, 0.0, 0.0),
+                                               (float(x), float(y), uxi, uyi, 2.0, None)))
                             continue
-                        if any(math.hypot(x - px, y - py) < ramp_gap for px, py in taken):
-                            continue
-                        def _fits(uxi, uyi):
-                            if not room(y, x, uxi, uyi, lo_m, hi_m, lo_reach, hi_reach, strict=face):
-                                return False
-                            if face and not _body_clear(y, x, uxi, uyi, lo_m, hi_m, span_i, wide_i):
-                                return False
-                            return True
 
                         uxi, uyi = float(ux[k]), float(uy[k])
                         if T.get('ramp_axis_snap') and not face:
@@ -2494,11 +2700,19 @@ def plan_auto_ramps(z, targets, bases=None, width=28.0, length=28.0, verbose=Tru
                                 uxi, uyi = math.copysign(1.0, uxi), 0.0
                             elif ay > ax and ax < 0.45 * max(ay, 1e-6):
                                 uxi, uyi = 0.0, math.copysign(1.0, uyi)
-                        if not _fits(uxi, uyi):
+                        if not _fits(y, x, uxi, uyi):
                             uxi, uyi = float(ux0[k]), float(uy0[k])
-                            if not _fits(uxi, uyi):
+                            if not _fits(y, x, uxi, uyi):
                                 continue
-                        local.append((float(x), float(y), uxi, uyi))
+                        local.append((float(x), float(y), uxi, uyi, 2.0, None))
+                    if balance and len(local) < need:
+                        uneven.sort()
+                        for _score, item in uneven:
+                            if len(local) >= need:
+                                break
+                            if not _clear(item[0], item[1]):
+                                continue
+                            local.append(item)
 
                 order_pref = np.argsort(-prefer)
                 sep_far = ramp_gap if face else 150.0
@@ -2522,9 +2736,10 @@ def plan_auto_ramps(z, targets, bases=None, width=28.0, length=28.0, verbose=Tru
                              12, 16, 1, 0.0)
                     if len(local) < 1 and len(xs) and not face:
                         k = int(np.argmax(useful + np.maximum(best_align, 0.0)))
-                        local.append((float(xs[k]), float(ys[k]), float(ux[k]), float(uy[k])))
-                for x, y, uxi, uyi in local:
-                    _place(y, x, uxi, uyi, lo_v, hi_v, nedge, span_i, wide_i)
+                        local.append((float(xs[k]), float(ys[k]), float(ux[k]), float(uy[k]), 2.0, None))
+                for x, y, uxi, uyi, bias, share in local:
+                    _place(y, x, uxi, uyi, lo_v, hi_v, nedge, span_i, wide_i,
+                           bias=bias, share=share)
     raw_marks = [tuple(m) for m in (T.get('ramp_marks') or ())]
     marks = [(float(m[0]), float(m[1]), float(m[2]), len(m) >= 4 and bool(m[3]))
              for m in raw_marks]
@@ -2694,39 +2909,67 @@ def plan_auto_ramps(z, targets, bases=None, width=28.0, length=28.0, verbose=Tru
         lo_need, hi_need = _probe_reach(span_i)
         base = math.radians(ang)
         site = None
-        for dang in (0.0, 8.0, -8.0, 16.0, -16.0, 24.0, -24.0):
-            ux0 = math.cos(base + math.radians(dang))
-            uy0 = math.sin(base + math.radians(dang))
+        bias = 2.0
+        share = None
+        if balance and order:
+            ux_e, uy_e = _high_side_axes(hi_m, ys, xs)
+            ux_e, uy_e = _smooth_axes(
+                ux_e, uy_e, xs, ys, radius=max(8.0, float(wide_i) * 0.5))
+            d0 = float(d[order[0]])
+            near_found = []
+            any_found = []
             for k in order:
                 y, x = int(ys[k]), int(xs[k])
-                for sign in (1.0, -1.0):
-                    uxi, uyi = ux0 * sign, uy0 * sign
-                    hit = False
-                    for s in (6, 10, 14):
-                        yy = int(round(y + uyi * s))
-                        xx = int(round(x + uxi * s))
-                        if 0 <= xx < W and 0 <= yy < H and hi_m[yy, xx]:
-                            hit = True
-                            break
-                    if not hit:
-                        continue
-                    if not room(y, x, uxi, uyi, lo_m, hi_m, lo_need, hi_need, strict=face):
-                        continue
-                    if face and not _body_clear(y, x, uxi, uyi, lo_m, hi_m, span_i, wide_i):
-                        continue
-                    site = (y, x, uxi, uyi)
-                    break
+                pose = _balanced_pose(
+                    y, x, float(ux_e[k]), float(uy_e[k]), lo_m, hi_m, span_i, wide_i)
+                if pose is None:
+                    continue
+                score, uxi, uyi, bias_i, share_i = pose
+                item = (score, float(d[k]), (y, x, uxi, uyi, bias_i, share_i))
+                any_found.append(item)
+                if float(d[k]) <= d0 + 8.0:
+                    near_found.append(item)
+            pool = near_found or any_found
+            if pool:
+                pool.sort()
+                y, x, uxi, uyi, bias, share = pool[0][2]
+                site = (y, x, uxi, uyi)
+        if site is None:
+            for dang in (0.0, 8.0, -8.0, 16.0, -16.0, 24.0, -24.0):
+                ux0 = math.cos(base + math.radians(dang))
+                uy0 = math.sin(base + math.radians(dang))
+                for k in order:
+                    y, x = int(ys[k]), int(xs[k])
+                    for sign in (1.0, -1.0):
+                        uxi, uyi = ux0 * sign, uy0 * sign
+                        hit = False
+                        for s in (6, 10, 14):
+                            yy = int(round(y + uyi * s))
+                            xx = int(round(x + uxi * s))
+                            if 0 <= xx < W and 0 <= yy < H and hi_m[yy, xx]:
+                                hit = True
+                                break
+                        if not hit:
+                            continue
+                        if not room(y, x, uxi, uyi, lo_m, hi_m, lo_need, hi_need, strict=face):
+                            continue
+                        if face and not _body_clear(y, x, uxi, uyi, lo_m, hi_m, span_i, wide_i):
+                            continue
+                        site = (y, x, uxi, uyi)
+                        bias = 2.0
+                        share = None
+                        break
+                    if site is not None:
+                        break
                 if site is not None:
                     break
-            if site is not None:
-                break
         if site is None:
             if verbose:
                 print('  [斜坡] 划线 (%.0f,%.0f) 方向对不上台面，未改' % (mx, my))
             continue
         y, x, uxi, uyi = site
-        cx = float(x) + float(uxi) * 2.0
-        cy = float(y) + float(uyi) * 2.0
+        cx = float(x) + float(uxi) * float(bias)
+        cy = float(y) + float(uyi) * float(bias)
         kept = []
         for s in specs:
             same = (abs(min(s['layers']) - min(lo_v, hi_v)) < 2.0
@@ -2737,7 +2980,7 @@ def plan_auto_ramps(z, targets, bases=None, width=28.0, length=28.0, verbose=Tru
             kept.append(s)
         specs[:] = kept
         taken[:] = [(float(s['x']), float(s['y'])) for s in specs]
-        _place(y, x, uxi, uyi, lo_v, hi_v, 0, span_i, wide_i)
+        _place(y, x, uxi, uyi, lo_v, hi_v, 0, span_i, wide_i, bias=bias, share=share)
         pinned.append((cx, cy))
         if verbose:
             print('  [斜坡] 划线 (%.0f,%.0f) -> (%.0f,%.0f) 朝 %.0f°'
@@ -2745,7 +2988,77 @@ def plan_auto_ramps(z, targets, bases=None, width=28.0, length=28.0, verbose=Tru
     cap = int(T.get('ramp_max_per_edge', 3))
     if verbose:
         print('  [斜坡] 自动开口 %d 条（每段交界最多 %d 条，边长 20~40）' % (len(specs), cap))
+    if balance and verbose and specs:
+        diffs = []
+        for s in specs:
+            pair = s.get('pair') or s.get('layers') or (0.0, 0.0)
+            lo_v, hi_v = float(min(pair)), float(max(pair))
+            lo_m = hi_m = None
+            for val, _lab, _sz, mask in labeled:
+                if lo_m is None and abs(float(val) - lo_v) < 1.5:
+                    lo_m = mask
+                if hi_m is None and abs(float(val) - hi_v) < 1.5:
+                    hi_m = mask
+            if lo_m is None or hi_m is None:
+                continue
+            half_u = max(10.0, min(20.0, float(s.get('span', s.get('w', 28))) * 0.5))
+            lo_n, hi_n, inside = _ramp_share(
+                float(s['x']), float(s['y']), float(s['ux']), float(s['uy']),
+                half_u, float(s['w']) * 0.5, float(s['h']) * 0.5, lo_m, hi_m)
+            if inside < 1:
+                continue
+            diffs.append((abs(lo_n - hi_n) / float(inside), lo_n, hi_n,
+                          float(s['x']), float(s['y'])))
+        if diffs:
+            mid = sorted(d[0] for d in diffs)[len(diffs) // 2]
+            worst = max(diffs)
+            print('  [斜坡] 两侧相差 中位 %.0f%% 最大 %.0f%% @(%d,%d) 低%d 高%d'
+                  % (100 * mid, 100 * worst[0], round(worst[3]), round(worst[4]),
+                     worst[1], worst[2]))
     return specs
+
+
+def ramp_body_mask(shape, ramp_specs, z=None):
+    """挖出来的斜坡占地：沿坡矩形，再并上轴对齐框。范围和 carve_marked_ramps 一致。"""
+    H, W = shape
+    cover = np.zeros(shape, dtype=bool)
+    if not ramp_specs:
+        return cover
+    yy, xx = np.mgrid[0:H, 0:W].astype(np.float64)
+    for rs in ramp_specs:
+        if rs.get('ux') is not None and rs.get('uy') is not None:
+            ux, uy = float(rs['ux']), float(rs['uy'])
+            nrm = math.hypot(ux, uy) or 1.0
+            ux, uy = ux / nrm, uy / nrm
+        elif z is not None:
+            ux, uy, _lo, _hi = ramp_uphill(z, rs)
+        else:
+            ux, uy = 1.0, 0.0
+        if rs.get('auto'):
+            half_u = max(10.0, min(20.0, float(rs.get('span', rs.get('w', 32))) * 0.5))
+        else:
+            hw = max(16.0, float(rs.get('w', 56)) * 0.75)
+            hh = max(16.0, float(rs.get('h', 56)) * 0.75)
+            half_u = max(6.0, min(hw, hh) * 0.5)
+            if z is not None:
+                _up = ramp_uphill(z, rs)
+                lo_v, hi_v = _up[2], _up[3]
+                step = float(T.get('ramp_max_step', 2.5))
+                half_u = max(half_u, 0.75 * abs(hi_v - lo_v) / max(step, 0.5))
+        bw = float(rs.get('w', 56)) * 0.5
+        bh = float(rs.get('h', 56)) * 0.5
+        half_v = 0.0
+        for sx, sy in ((bw, bh), (bw, -bh), (-bw, bh), (-bw, -bh)):
+            half_v = max(half_v, abs(-sx * uy + sy * ux))
+        half_v = max(4.0, half_v)
+        cx, cy = float(rs['x']), float(rs['y'])
+        rx = xx - cx
+        ry = yy - cy
+        u = rx * ux + ry * uy
+        v = -rx * uy + ry * ux
+        cover |= ((np.abs(u) <= half_u) & (np.abs(v) <= half_v)) | (
+            (np.abs(rx) <= bw) & (np.abs(ry) <= bh))
+    return cover
 
 
 def ramp_cover_mask(shape, ramp_specs, pad=1.0):
@@ -2890,7 +3203,7 @@ def carve_marked_ramps(z, ramp_specs, T=None, verbose=True):
 
 
 def ensure_base_min_ore(z, base_cells, ore_list, min_ore=2, rng=45.0,
-                        spacing=None, T=None, verbose=True, ramps=None):
+                        spacing=None, T=None, verbose=True, ramps=None, avoid=None):
     """保证**每个出生点周围 rng 格内至少有 min_ore 个矿**（用户硬要求）。
 
     陆上基地先补同层陆地，再补近矿范围内的水面；水上基地只补水面。
@@ -2901,6 +3214,8 @@ def ensure_base_min_ore(z, base_cells, ore_list, min_ore=2, rng=45.0,
         spacing = float(getattr(cfg, 'ORE_MIN_SPACING', 46.0))
     H, W = z.shape
     placed = [(float(o[0]), float(o[1])) for o in ore_list]
+    for _ap in (avoid or ()):
+        placed.append((float(_ap[0]), float(_ap[1])))
     out = list(ore_list)
     d_edge_j, d_shore_j = ore_open_maps(z, T)
     _ecl = float(T.get('ore_edge_clear', 16.0))
@@ -3001,7 +3316,7 @@ def ore_open_maps(z, T=None):
 
 
 def enforce_ore_base_clearance(z, base_cells, ore_list, min_r=44.0, spacing=None,
-                               T=None, verbose=True, ramps=None):
+                               T=None, verbose=True, ramps=None, avoid=None):
     """最终清洗：把**贴在基地上（< min_r 格）或贴着层界/岸边的矿**重新落位。
 
     基地旁那 2 个矿的槽位本身已经保证 44~62 格，但后续的补矿/兜底仍可能贴到基地上
@@ -3042,6 +3357,8 @@ def enforce_ore_base_clearance(z, base_cells, ore_list, min_r=44.0, spacing=None
             _ang = 0.0
         placed = [(float(p[0]), float(p[1])) for p in out] + \
                  [(float(p[0]), float(p[1])) for p in ore_list if p is not o]
+        for _ap in (avoid or ()):
+            placed.append((float(_ap[0]), float(_ap[1])))
         best = None
         _onwater = z[int(_by), int(_bx)] < WATER_Z
         _rr0 = int(math.floor(_near_max)) + 1 if _outer else int(min_r)
@@ -3171,7 +3488,7 @@ def _mouth_ray_clear(cp, pad, x, y, a, r0, r1):
     return True
 
 
-def enforce_ore_mouth_open(z, base_cells, ore_list, T=None, verbose=True, ramps=None):
+def enforce_ore_mouth_open(z, base_cells, ore_list, T=None, verbose=True, ramps=None, avoid=None):
     """矿口朝向收尾：保证每个矿的朝向射线前方开阔（不撞 层界/岸线/斜坡/不可通行）。
 
     规则：
@@ -3354,6 +3671,8 @@ def enforce_ore_mouth_open(z, base_cells, ore_list, T=None, verbose=True, ramps=
             continue
         # ② 挪位。近矿只在 44~62 环上重找（仍朝基地）；远矿不准掉进这个环。
         placed = out + [(float(p[0]), float(p[1])) for p in ore_list if p is not o]
+        for _ap in (avoid or ()):
+            placed.append((float(_ap[0]), float(_ap[1])))
         best = None
         if is_near:
             prefer = math.atan2(oy - bc[1], ox - bc[0])
@@ -3479,6 +3798,8 @@ def enforce_ore_mouth_open(z, base_cells, ore_list, T=None, verbose=True, ramps=
                        if min_r - 0.5 <= math.hypot(o[0] - bx, o[1] - by) <= near_r + 0.5)
         for _k in range(2 - have):
             placed = list(out)
+            for _ap in (avoid or ()):
+                placed.append((float(_ap[0]), float(_ap[1])))
             spot = take_ring(bx, by, base_water, placed, _k * 1.7)
             if spot is None:
                 if verbose:
@@ -3639,7 +3960,271 @@ def trim_outer_ore_quota(ore_list, angles, base_cells, T=None, verbose=True):
     return kept_o, kept_a
 
 
-def trim_near_ore_quota(z, base_cells, ore_list, T=None, keep=2, verbose=True, ramps=None):
+def _walk_mask(z, ramps):
+    """陆上可走格：坡度封死、岸线封死和高山之外。斜坡开口留在岸线豁免里。"""
+    gy, gx = np.gradient(z)
+    slope = np.sqrt(gx * gx + gy * gy)
+    shore = shore_block_mask(z, ramps or [])
+    yy, xx = np.mgrid[0:z.shape[0], 0:z.shape[1]]
+    inset = np.minimum.reduce([
+        xx - BORDER, yy - BORDER,
+        GRID - 1 - BORDER - xx, GRID - 1 - BORDER - yy])
+    return ((z >= WATER_Z) & (slope <= SLOPE_IMPASSABLE)
+            & ~shore & (z <= WATER_Z + PEAK_IMPASSABLE) & (inset >= 1.0))
+
+
+def _bfs_from(walk, sx, sy):
+    """从一格做 8 邻接距离。到不了的格子是 -1。"""
+    from collections import deque
+    H, W = walk.shape
+    sx, sy = int(sx), int(sy)
+    dist = np.full((H, W), -1, np.int32)
+    parent = np.full((H, W), -1, np.int32)
+    if not (0 <= sx < W and 0 <= sy < H and walk[sy, sx]):
+        found = None
+        for rad in range(1, 16):
+            for dy in range(-rad, rad + 1):
+                for dx in range(-rad, rad + 1):
+                    if max(abs(dx), abs(dy)) != rad:
+                        continue
+                    x, y = sx + dx, sy + dy
+                    if 0 <= x < W and 0 <= y < H and walk[y, x]:
+                        found = (x, y)
+                        break
+                if found:
+                    break
+            if found:
+                break
+        if found is None:
+            return dist, parent
+        sx, sy = found
+    q = deque([(sx, sy)])
+    dist[sy, sx] = 0
+    while q:
+        x, y = q.popleft()
+        base = int(dist[y, x]) + 1
+        for dy in (-1, 0, 1):
+            ny = y + dy
+            if ny < 0 or ny >= H:
+                continue
+            row = walk[ny]
+            for dx in (-1, 0, 1):
+                if dx == 0 and dy == 0:
+                    continue
+                nx = x + dx
+                if nx < 0 or nx >= W or not row[nx] or dist[ny, nx] >= 0:
+                    continue
+                dist[ny, nx] = base
+                parent[ny, nx] = y * W + x
+                q.append((nx, ny))
+    return dist, parent
+
+
+def _disc_flat(z, x, y, radius, limit=12.0):
+    H, W = z.shape
+    r = int(math.ceil(radius))
+    if x < r or y < r or x >= W - r or y >= H - r:
+        return False
+    win = z[y - r:y + r + 1, x - r:x + r + 1]
+    yy, xx = np.ogrid[-r:r + 1, -r:r + 1]
+    vals = win[(yy * yy + xx * xx) <= radius * radius]
+    if vals.size == 0:
+        return False
+    return float(vals.max() - vals.min()) <= limit
+
+
+def apply_ore_bands(z, base_cells, ore_list, angles, T=None, ramps=None, avoid=None, verbose=True):
+    """近矿 2 个、中矿 2 个标给出生点，远矿 2 个不标。
+
+    没开 ore_bands 的图不进这里。近矿沿用已经落好的那两个。中矿落在该基地
+    走得到的陆地上，并离开所有近矿环。远矿在更外一圈；可玩水域达到 20% 时改放水面。
+    """
+    T = T if T is not None else {}
+    if not T.get('ore_bands'):
+        return ore_list, angles, None, None, None
+    H, W = z.shape
+    bases = [(n, (float(c[0]), float(c[1]))) for n, c in base_cells.items()]
+    if not bases:
+        return ore_list, angles, None, None, None
+    near_r = float(T.get('ore_near_max_r', 62.0))
+    mid_lo = near_r + float(T.get('ore_mid_gap', 20.0))
+    mid_hi = float(T.get('ore_far_min_dist', 160.0))
+    if mid_hi <= mid_lo + 10.0:
+        mid_hi = mid_lo + 80.0
+    far_lo = mid_hi
+    spacing = float(getattr(cfg, 'ORE_MIN_SPACING', 46.0))
+    if spacing < 46.0:
+        spacing = 46.0
+    build_r = max(float(ORE_CLEAR_RADIUS), float(T.get('ore_mouth_r1', 20)))
+    gy, gx = np.gradient(z)
+    slope = np.sqrt(gx * gx + gy * gy)
+    d_layer, d_shore = ore_open_maps(z, T)
+    yy, xx = np.mgrid[0:H, 0:W]
+    border = np.minimum.reduce([
+        xx - BORDER, yy - BORDER,
+        GRID - 1 - BORDER - xx, GRID - 1 - BORDER - yy])
+    steep = ((slope > SLOPE_IMPASSABLE) | (z > WATER_Z + PEAK_IMPASSABLE)
+             | shore_block_mask(z, ramps or []))
+    d_bad = distance_transform(steep)
+    mouth = mouth_open_map(z, T, ramps)
+    land_ok = ((z >= WATER_Z) & (slope < 2.5) & (d_bad >= build_r + 1.0)
+               & (d_layer >= build_r + 1.0) & (d_shore >= float(T.get('ore_shore_clear', 12.0)))
+               & (border >= float(T.get('ore_border_clear', 30.0))) & mouth)
+    inside = border >= 0
+    water_frac = float(((z < WATER_Z) & inside).sum()) / max(1, int(inside.sum()))
+    far_on_water = water_frac >= 0.20
+    if far_on_water:
+        d_land = distance_transform(z >= WATER_Z)
+        water_ok = ((z < WATER_Z) & (d_land >= build_r + 1.0)
+                    & (border >= float(T.get('ore_border_clear', 30.0))))
+    else:
+        water_ok = np.zeros(z.shape, dtype=bool)
+    walk = _walk_mask(z, ramps)
+    claimed = set()
+    near_o, near_a, near_own = [], [], []
+    for bi, (_name, c) in enumerate(bases):
+        ranked = []
+        for i, o in enumerate(ore_list):
+            if i in claimed:
+                continue
+            d = math.hypot(float(o[0]) - c[0], float(o[1]) - c[1])
+            if d <= near_r:
+                ranked.append((d, i))
+        ranked.sort()
+        for _d, i in ranked[:2]:
+            claimed.add(i)
+            near_o.append((float(ore_list[i][0]), float(ore_list[i][1])))
+            near_a.append(float(angles[i]) if angles and i < len(angles) else 0.0)
+            near_own.append(bi)
+    placed = list(near_o)
+    for p in (avoid or ()):
+        placed.append((float(p[0]), float(p[1])))
+
+    def _blocked(x, y, extra=0.0):
+        need = spacing if extra <= 0 else extra
+        return any(math.hypot(x - px, y - py) < need for px, py in placed)
+
+    def _away_bases(x, y):
+        return all(math.hypot(x - c[0], y - c[1]) > near_r + 0.5 for _n, c in bases)
+
+    def _pick(mask, score_at, limit=240):
+        step = 4
+        best = None
+        ys = range(BORDER + 4, H - BORDER - 4, step)
+        xs = range(BORDER + 4, W - BORDER - 4, step)
+        cands = []
+        for y in ys:
+            row = mask[y]
+            for x in xs:
+                if not row[x] or not _away_bases(x, y) or _blocked(x, y):
+                    continue
+                sc = score_at(x, y)
+                if sc > -1e8:
+                    cands.append((sc, x, y))
+        cands.sort(reverse=True)
+        for _s, x, y in cands[:limit]:
+            if z[y, x] >= WATER_Z and not _disc_flat(z, x, y, build_r):
+                continue
+            return (x, y)
+        return best
+
+    DIAG = ((1.0, 1.0), (1.0, -1.0), (-1.0, 1.0), (-1.0, -1.0))
+    cp, pad = _mouth_blocked_map(z, T, ramps)
+    r0 = int(T.get('ore_mouth_r0', 8))
+    r1 = int(T.get('ore_mouth_r1', 20))
+
+    def _angle(x, y):
+        for dx, dy in DIAG:
+            a = math.atan2(dy, dx)
+            if _mouth_ray_clear(cp, pad, x, y, a, r0, r1):
+                return a
+        return math.atan2(1.0, 1.0)
+
+    mid_o, mid_a, mid_own = [], [], []
+    far_o, far_a = [], []
+    for bi, (name, c) in enumerate(bases):
+        dist, parent = _bfs_from(walk, c[0], c[1])
+        others = [b[1] for j, b in enumerate(bases) if j != bi]
+        mx = sum(p[0] for p in others) / len(others)
+        my = sum(p[1] for p in others) / len(others)
+        out_ang = math.atan2(c[1] - my, c[0] - mx)
+        for k, center in enumerate((out_ang - 0.7, out_ang + 0.7)):
+            def _score(x, y, _c=c, _center=center, _dist=dist):
+                eu = math.hypot(x - _c[0], y - _c[1])
+                if not (mid_lo <= eu <= mid_hi):
+                    return -1e9
+                ang = math.atan2(y - _c[1], x - _c[0])
+                dang = (ang - _center + math.pi) % (2 * math.pi) - math.pi
+                if abs(dang) > 0.6:
+                    return -1e9
+                pd = int(_dist[y, x])
+                if pd < 0:
+                    return -1e9
+                target = (mid_lo + mid_hi) * 0.5
+                return -abs(eu - target) - 0.04 * pd
+
+            cell = _pick(land_ok, _score)
+            if cell is None:
+                def _score2(x, y, _c=c, _dist=dist):
+                    eu = math.hypot(x - _c[0], y - _c[1])
+                    if not (mid_lo <= eu <= mid_hi + 80.0):
+                        return -1e9
+                    pd = int(_dist[y, x])
+                    if pd < 0:
+                        return -1e9
+                    return -abs(eu - mid_lo - 30.0) - 0.04 * pd
+                cell = _pick(land_ok, _score2)
+            if cell is None:
+                if verbose:
+                    print('  [矿带] %s 中矿 %d 放不下' % (name, k + 1))
+                continue
+            x, y = cell
+            mid_o.append((float(x), float(y)))
+            mid_a.append(_angle(x, y))
+            mid_own.append(bi)
+            placed.append((float(x), float(y)))
+
+    n_far = 2 * len(bases)
+    far_mask = water_ok if far_on_water else land_ok
+    cx0, cy0 = (W - 1) * 0.5, (H - 1) * 0.5
+    for _k in range(n_far):
+        def _far_score(x, y):
+            db = min(math.hypot(x - c[0], y - c[1]) for _n, c in bases)
+            if db < far_lo:
+                return -1e9
+            spread = min((math.hypot(x - p[0], y - p[1]) for p in far_o), default=200.0)
+            return spread + 0.1 * db - 0.02 * math.hypot(x - cx0, y - cy0)
+
+        cell = _pick(far_mask, _far_score, limit=400)
+        if cell is None and not far_on_water:
+            def _far_loose(x, y):
+                db = min(math.hypot(x - c[0], y - c[1]) for _n, c in bases)
+                if db < mid_lo:
+                    return -1e9
+                spread = min((math.hypot(x - p[0], y - p[1]) for p in far_o), default=200.0)
+                return spread + 0.05 * db
+            cell = _pick(far_mask, _far_loose, limit=400)
+        if cell is None:
+            if verbose:
+                print('  [矿带] 远矿放不下（已有 %d / %d）' % (len(far_o), n_far))
+            break
+        x, y = cell
+        far_o.append((float(x), float(y)))
+        far_a.append(_angle(x, y) if z[y, x] >= WATER_Z else math.atan2(1.0, 1.0))
+        placed.append((float(x), float(y)))
+
+    ore = near_o + mid_o + far_o
+    ang = near_a + mid_a + far_a
+    kind = ([0] * len(near_o)) + ([1] * len(mid_o)) + ([2] * len(far_o))
+    owner = list(near_own) + list(mid_own) + ([-1] * len(far_o))
+    if verbose:
+        print('  [矿带] 近矿 %d、中矿 %d、远矿 %d（%s）' % (
+            len(near_o), len(mid_o), len(far_o),
+            '远矿在水面' if far_on_water else '远矿在陆地'))
+    return ore, ang, kind, owner
+
+
+def trim_near_ore_quota(z, base_cells, ore_list, T=None, keep=2, verbose=True, ramps=None, avoid=None):
     """近矿超员裁剪：每基地 ore_near_max_r 内**恰好 keep 个**（保底补矿 + 清洗挪位可能叠加出 3 个）。
     超出的矿挪到近矿环之外一整段间距（否则会贴着环、把还能放的近矿挡住），挪不动才删除。"""
     T = T if T is not None else {}
@@ -3689,6 +4274,9 @@ def trim_near_ore_quota(z, base_cells, ore_list, T=None, keep=2, verbose=True, r
                         continue
                     if any(math.hypot(x2 - p[0], y2 - p[1]) < spacing
                            for p in out if p is not extra):
+                        continue
+                    if any(math.hypot(x2 - float(a[0]), y2 - float(a[1])) < spacing
+                           for a in (avoid or ())):
                         continue
                     cands.append((abs(da), x2, y2))
                 if cands:
@@ -3927,10 +4515,11 @@ def _procedural_height(geo, land, verbose=True):
     city_idx = geo.city_index_map()
     inside = land.astype(np.float64)
 
-    # ---- regional mountain amplitude from city polygons (广西各地级市可单独覆盖，邻省用省级强度)
+    # 主区各地块可单独覆盖山地强度，邻区用这一份边界自己的强度。
     amp = np.full((GRID, GRID), OUTSIDE_AMP, dtype=np.float64)
+    amp_at = _amp_lookup(geo)
     for i, (name, _rings, prov, pamp) in enumerate(geo.cities):
-        amp[city_idx == i] = CITY_AMP.get(name, pamp)
+        amp[city_idx == i] = amp_at.get(name, CITY_AMP.get(name, pamp))
 
     # ---- distance fields
     d_land = distance_transform(land)         # distance outside land (sea depth)
@@ -4007,34 +4596,33 @@ def _procedural_height(geo, land, verbose=True):
     keep_soft = smooth(big.astype(np.float64), 3, 2)
     relief = relief * keep_soft
 
-    # ---- 省界之外：以东经 sea_cut_lon 为界，该经线以东、且在各列陆地以南的算海
-    #      （以西是越南/老挝方向，仍按陆地补全，避免把邻国画成海）
+    # ---- 主区之外：以东经 sea_cut_lon 为界，该经线以东、且在各列陆地以南的算海
+    #      以西仍按陆地补全。
     yy, xx = np.mgrid[0:GRID, 0:GRID]
     coast = T.get('coast') or []
     if coast:
-        # 真实海岸线多边形 ∪ 省界 = 陆地；其余即真实海域（北部湾等不会再被画成山脉）
+        # 海岸线多边形并上主区就是陆地，其余是海。
         _img = Image.new('L', (GRID, GRID), 0)
         ImageDraw.Draw(_img).polygon([geo.to_cell(lon, lat) for lon, lat in coast], fill=255)
         land_all = land | (np.array(_img) > 0)
         sea = ~land_all
-        # 南部（南海 / 北部湾）做成大片水域：省界最南端以南按列全部算海，
-        # 这样西南角原来的"省外陆地(越南山地)"也会变成水，形成大片南海。
+        # 南边做成大片水域：主区最南端以南按列全部算海，西南角的区外陆地也变成水。
         _ly = np.where(land, yy, GRID)
-        _south = _ly.min(axis=0)                      # 每列最南端的省界陆地（行号最小）
+        _south = _ly.min(axis=0)                      # 每列最南端的主区陆地（行号最小）
         _south = np.where(_south < GRID, _south, 0)[None, :]
         sea = sea | (yy < _south - int(T.get('sea_south_margin', 3)))
         # 左下角（省外西南）改为平原陆地：给 Player8 当出生地
-        # 左下角改成"与省界连片"的西侧陆地：每行取省界陆地最西列，其以西都算陆地
+        # 左下角改成与主区连片的西侧陆地：每行取主区陆地最西列，其以西都算陆地
         # （原来是矩形，会像一块方地浮在海里，陆地与水域不连贯）
         _wor = np.where(land, xx, GRID + 999).min(axis=1)
-        _hasrow = (_wor < GRID)[:, None]                 # 只在该行有省界陆地时才向西延伸
+        _hasrow = (_wor < GRID)[:, None]                 # 只在该行有主区陆地时才向西延伸
         _wor = np.where(_wor < GRID, _wor, GRID)[:, None]
-        # 西侧整条边也做陆地：全省界最西列再往西 margin 格，所有行都算陆地
+        # 西侧整条边也做陆地：主区最西列再往西 margin 格，所有行都算陆地
         _wor_all = float(np.where(land, xx, GRID + 999).min())
         _strip = max(0.0, _wor_all + float(T.get('west_land_margin', 70.0)))
         _cx2 = float(T.get('sw_corner_x', 0.45)) * GRID
         _cy2 = float(T.get('sw_corner_y', 0.36)) * GRID
-        # 西侧整条边 + 与省界连片的西侧 + 西南角到地图边界
+        # 西侧整条边 + 与主区连片的西侧 + 西南角到地图边界
         sw_plain = ((xx < _strip) | ((xx < _wor) & _hasrow)
                     | ((xx < _cx2) & (yy < _cy2)))
         sea = sea & (~sw_plain)
@@ -4055,7 +4643,7 @@ def _procedural_height(geo, land, verbose=True):
         else:
             east_of_border = xx >= sea_cut
         sea = (~land) & (yy > south_edge) & east_of_border
-        # 左下角改成"与省界连片"的西侧陆地：每行取省界陆地最西列，其以西都算陆地
+        # 左下角改成与主区连片的西侧陆地：每行取主区陆地最西列，其以西都算陆地
         # （原来是矩形，会像一块方地浮在海里，陆地与水域不连贯）
         _wor = np.where(land, xx, GRID + 999).min(axis=1)
         _wor_all = float(_wor.min())
@@ -4067,7 +4655,7 @@ def _procedural_height(geo, land, verbose=True):
         sw_plain = ((xx < _wb) | (xx < _strip) | ((xx < _wor) & _hasrow)
                     | ((xx < _sbx) & (yy < _sby)))
         sea = sea & (~sw_plain)
-    land_or_sea = (~land) & (~sea)                        # 省界之外但属陆地（越南/老挝边境山区）
+    land_or_sea = (~land) & (~sea)                        # 主区之外但仍是陆地
     if verbose:
         print('  [海陆] 海域 %d 格 (%.1f%%)，省外陆地 %d 格' % (
             int(sea.sum()), 100.0 * sea.mean(), int(land_or_sea.sum())))
@@ -4125,7 +4713,7 @@ def build_terrain(verbose=True):
                         _lv, 100.0 * (_lay == _lv).mean()) for _lv in (0, 210, 280, 350, 420, 480)))
                 if bool(T.get('v11_plain', True)):
                     # ---- v11 蓝图模式：这张图就是最终地形。
-                    #      只做「浅平滑 + 海域拉平」，不再叠加 DEM 起伏、省界海陆、河道、平台、
+                    #      只做「浅平滑 + 海域拉平」，不再叠加 DEM 起伏、边界海陆、河道、平台、
                     #      层规则等改写（那些会把 v11 的分层改掉）。
                     #      出生点/资源位置照常在**这张图**上解算（因为后面直接返回，要在这里补）。
                     #      v11_baked：高度场已经是定稿（斜坡也在里面）。没开的图仍重切层、重挖坡。
@@ -4179,6 +4767,9 @@ def build_terrain(verbose=True):
                                 print('  [登陆] 圈内海岸整段可上，去掉圈内水陆斜坡 %d 条' % _ndrop)
                             _rsp = _kept
                         z, _nramp = carve_marked_ramps(z, _rsp, T=T, verbose=verbose)
+                    # 斜坡和登陆岸在出生点之前。登陆圈抬高贴岸水面，出生点再落到这张高度上。
+                    if T.get('landing_coasts'):
+                        z = grade_landing_shores(z, T.get('landing_coasts'), _rsp, verbose=verbose)
                     raw = np.clip(np.round(z / Z_SCALE), 0, 65535).astype(np.uint16)
                     _land_v = z >= WATER_Z
                     if layer_height.enabled(T):
@@ -4319,11 +4910,6 @@ def build_terrain(verbose=True):
                                   % len(_sea_pt3))
                         else:
                             print('  [登陆] 水上出生点 %d 个，岸线只留自动斜坡' % len(_sea_pt3))
-                    if T.get('landing_coasts'):
-                        z = grade_landing_shores(raw.astype(np.float64) * Z_SCALE,
-                                                 T.get('landing_coasts'), _rsp, verbose=verbose)
-                        raw = np.clip(np.round(z / Z_SCALE), 0, 65535).astype(np.uint16)
-                        _land_v = z >= WATER_Z
                     # ---- 落点全部定稿后，再解算资源（矿/油井/要点），保证"每基地 45 格内 >=2 矿"
                     #      是按**最终**出生点坐标算的。
                     _slots_v = resolve_slots(geo, raw.astype(np.float64) * Z_SCALE, _bs, _bc,
@@ -4335,29 +4921,41 @@ def build_terrain(verbose=True):
                         min_ore=int(T.get('base_min_ore', 2)),
                         rng=float(T.get('base_ore_range', 66.0)),
                         spacing=float(getattr(cfg, 'ORE_MIN_SPACING', 46.0)),
-                        T=T, verbose=verbose, ramps=_rsp)
+                        T=T, verbose=verbose, ramps=_rsp,
+                        avoid=list(_slots_v.get('derricks') or []))
                     _slots_v['ore'] = _ORE_F
                     # ---- 最终清洗：任何贴基地的矿都挪走（避免建造场被卡住）
                     _ORE_G, _nmv = enforce_ore_base_clearance(
                         _zF, _bc, list(_slots_v.get('ore') or []),
                         min_r=float(T.get('ore_near_min_r', 44.0)),
                         spacing=float(getattr(cfg, 'ORE_MIN_SPACING', 46.0)),
-                        T=T, verbose=verbose, ramps=_rsp)
+                        T=T, verbose=verbose, ramps=_rsp,
+                        avoid=list(_slots_v.get('derricks') or []))
                     _slots_v['ore'] = _ORE_G
                     # ---- 近矿超员裁剪：保底补矿 + 清洗挪位可能叠加出 3 个（规则：恰好 2 个）
                     _ORE_H = trim_near_ore_quota(_zF, _bc, list(_slots_v.get('ore') or []),
-                                                 T=T, keep=2, verbose=verbose, ramps=_rsp)
+                                                 T=T, keep=2, verbose=verbose, ramps=_rsp,
+                                                 avoid=list(_slots_v.get('derricks') or []))
                     _slots_v['ore'] = _ORE_H
                     # ---- 矿口朝向定稿：前方必须开阔（不撞 层界/岸线/斜坡/不可通行），
                     #      位置定稿后统一重算角度（此前的 ore_angles 已随挪位过时）
                     _ORE_I, _ANG_I = enforce_ore_mouth_open(
                         _zF, _bc, list(_slots_v.get('ore') or []), T=T, verbose=verbose,
-                        ramps=_rsp)
+                        ramps=_rsp, avoid=list(_slots_v.get('derricks') or []))
                     _ORE_I, _ANG_I = apply_ore_place_at(
                         _zF, _bc, _ORE_I, _ANG_I, T=T, verbose=verbose)
                     _ORE_I, _ANG_I = trim_outer_ore_quota(
                         _ORE_I, _ANG_I, _bc, T=T, verbose=verbose)
                     _ORE_I, _ANG_I = apply_ore_face_at(_ORE_I, _ANG_I, T, verbose=verbose)
+                    if T.get('ore_bands'):
+                        _avoid = []
+                        for _key in ('derricks', 'houses', 'posts', 'garage',
+                                     'airports', 'hospitals', 'academies', 'shipyards'):
+                            _avoid.extend(_slots_v.get(_key) or [])
+                        _ORE_I, _ANG_I, _kind, _own = apply_ore_bands(
+                            _zF, _bc, _ORE_I, _ANG_I, T, _rsp, _avoid, verbose=verbose)
+                        _slots_v['ore_kind'] = _kind
+                        _slots_v['ore_owner'] = _own
                     _slots_v['derricks'] = apply_derrick_place_at(
                         list(_slots_v.get('derricks') or []), T, verbose=verbose)
                     _slots_v['ore'] = _ORE_I
@@ -4366,7 +4964,7 @@ def build_terrain(verbose=True):
                     return (geo, raw, _land_v, np.zeros((GRID, GRID), dtype=np.float64),
                             np.zeros((GRID, GRID), dtype=np.float64), _bc, _slots_v, [], [])
 
-    # 海面（省界之外、该列陆地以南）
+    # 海面（主区之外、该列陆地以南）
     if _proc is None:
         raise SystemExit('v11 蓝图没有替换高度场')
     d_land = _proc['d_land']
@@ -4382,7 +4980,7 @@ def build_terrain(verbose=True):
     # 新规则：所有海域拉平（水面 200，海底恒定 -> 一整片平坦水域）
     z_sea = np.full(z.shape, float(T.get('sea_flat', LAND_Z - 20.0)))
     z = np.where(sea, z_sea, z)
-    # 省界之外的陆地（邻国边境山区）：平滑的山地梯度
+    # 主区之外的陆地：平滑的山地梯度
     z = np.where(land_or_sea & (~sw_plain), LAND_Z + 60.0 + amp * 150.0 * mount + n_detail * 40.0, z)
     # 西南境外：平原（不再是 270+ 的山地、也不是水）
     z = np.where(sw_plain & (~land), LAND_Z + 4.0 + hills * (hg_base + amp * hg_amp), z)
@@ -4592,12 +5190,13 @@ def build_terrain(verbose=True):
         pad_mask |= (np.sqrt((xx - cx) ** 2 + (yy - cy) ** 2) < res_radius + 2.0)
     z = np.where(pad_mask & land, np.maximum(z, LAND_Z - 2.0), z)
 
-    # ---- P4(百色) 旁的高山做成更高一层的可通行平台
+    # 配方指定的出生点旁，把高山做成更高一层的可通行平台。
     _p4 = T.get('p4_plateau') or []
     if _p4:
         _pr, _pb, _pl = (float(_p4[0]), float(_p4[1]), float(_p4[2]))
+        _want = T.get('plateau_base') or ''
         for _bn, (_bx, _by) in base_cells.items():
-            if _bn not in ('百色', 'Baise'):
+            if _bn != _want:
                 continue
             # 平台中心：从出生点往 DEM 更高的方向偏一点（贴着那座高山）
             _cy2 = float(np.clip(_by + _pr * 0.45, BORDER + 8, BORDER + PLAY - 8))
@@ -4751,6 +5350,19 @@ def build_terrain(verbose=True):
 
     # ---- 所有水域最终拉平：水面以下一律同一个高度（海面/河面是一整片平坦水域）
     z = np.where(z < WATER_Z, float(T.get('sea_flat', LAND_Z - 20.0)), z)
+    if T.get('ore_bands') and not slots.get('ore_kind'):
+        _avoid = []
+        for _key in ('derricks', 'houses', 'posts', 'garage',
+                     'airports', 'hospitals', 'academies', 'shipyards'):
+            _avoid.extend(slots.get(_key) or [])
+        _ore, _ang, _kind, _own = apply_ore_bands(
+            z, base_cells, list(slots.get('ore') or []),
+            list(slots.get('ore_angles') or []), T,
+            list(slots.get('ramps') or []), _avoid, verbose=verbose)
+        slots['ore'] = _ore
+        slots['ore_angles'] = _ang
+        slots['ore_kind'] = _kind
+        slots['ore_owner'] = _own
     raw = np.clip(np.round(z / Z_SCALE), 0, 65535).astype(np.uint16)
     return geo, raw, land, amp, d_edge, base_cells, slots, b_cells, b_ang
 
@@ -4791,10 +5403,12 @@ def main():
                         hospital_cells=np.array(slots.get('hospitals', []), dtype=np.float64),
                         academy_cells=np.array(slots.get('academies', []), dtype=np.float64),
                         shipyard_cells=np.array(slots.get('shipyards') or [], dtype=np.float64).reshape(-1, 2),
-                        gx_boundary=guangxi_boundary_mask(geo, GRID),
+                        boundary=main_boundary_mask(geo, GRID),
                         bridge_cells=np.array(_b_cells, dtype=np.float64).reshape(-1, 2),
                         bridge_angles=np.array(_b_ang, dtype=np.float64),
-                        ramp_json=np.array(json.dumps(slots.get('ramps') or [])))
+                        ramp_json=np.array(json.dumps(slots.get('ramps') or [])),
+                        ore_kind=np.asarray(slots.get('ore_kind') if slots.get('ore_kind') is not None else [], dtype=np.int8),
+                        ore_owner=np.asarray(slots.get('ore_owner') if slots.get('ore_owner') is not None else [], dtype=np.int16))
 
     # ---- preview (hypsometric colours)
     col = np.zeros((GRID, GRID, 3), dtype=np.uint8)

@@ -98,7 +98,7 @@ def build_readme(P):
         L.append('| 高程范围 | z = %.1f ～ %.1f（水面 %.1f） |' % (
             st['zmin'], st['zmax'], P.WATER_Z))
         L.append('| 水域占比 | %.1f%% |' % st['water_pct'])
-        L.append('| 不可通行占比 | %.1f%%（陡崖、山峰、省界山体） |' % st['impassable_pct'])
+        L.append('| 不可通行占比 | %.1f%%（陡崖、山峰、边界山体） |' % st['impassable_pct'])
         L.append('| 地表纹理 | %d 种 |' % st['textures'])
         L.append('| 对象数 | %d 个（%s） |' % (
             st['objects'], '、'.join('%s×%d' % (k, v) for k, v in st['counts'].most_common(5))))

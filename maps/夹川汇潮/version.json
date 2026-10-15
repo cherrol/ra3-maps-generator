@@ -2,7 +2,7 @@
   "stage": "T",
   "major": 2,
   "minor": 1,
-  "patch": 4,
+  "patch": 9,
   "history": [
     {
       "version": "T1.4.1",
@@ -373,6 +373,31 @@
       "version": "T2.1.4",
       "date": "2026-10-15",
       "note": "共用脚本去掉和第二座产能、分队、固定AI科技重复的旧条目"
+    },
+    {
+      "version": "T2.1.5",
+      "date": "2026-10-16",
+      "note": "装饰层交界、水陆交界、土路、树和石头"
+    },
+    {
+      "version": "T2.1.6",
+      "date": "2026-10-16",
+      "note": "归属矿土路改用 HawaiiDirtRoad01，斜坡优先"
+    },
+    {
+      "version": "T2.1.7",
+      "date": "2026-10-16",
+      "note": "山地道路改用 HawaiiDirtRoad01"
+    },
+    {
+      "version": "T2.1.8",
+      "date": "2026-10-16",
+      "note": "去掉道路"
+    },
+    {
+      "version": "T2.1.9",
+      "date": "2026-10-16",
+      "note": "园石只放在层界低侧"
     }
   ]
 }

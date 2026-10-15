@@ -8,7 +8,7 @@
 预览图、说明、source/ 自检图等一律不进 dist。
 
 用法：
-    python tools/make_dist.py [--map bagui_dadi] [--no-zip]
+    python tools/make_dist.py [--map <id>] [--no-zip]
 """
 import argparse
 import os

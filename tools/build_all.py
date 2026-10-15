@@ -3,8 +3,8 @@
 
 用法：
     python tools/build_all.py                 # 用默认配方
-    python tools/build_all.py --map bagui_dadi
-    python tools/build_all.py --map bagui_dadi --install     # 同时拷进游戏的 Maps 目录
+    python tools/build_all.py --map <id>
+    python tools/build_all.py --map <id> --install     # 同时拷进游戏的 Maps 目录
     python tools/build_all.py --skip terrain  # 跳过某些阶段
     python tools/build_all.py --only accept   # 只验收当前版本产物
 

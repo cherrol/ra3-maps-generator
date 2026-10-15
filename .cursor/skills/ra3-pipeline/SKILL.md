@@ -7,9 +7,9 @@ description: >-
 
 # 流水线
 
-从地形预览做到可玩地图的顺序见作图技能：先确认预览，再锁高度和出生点，然后补可玩内容，最后构建。本技能只记构建命令。
+从地形预览做到可玩地图的顺序见作图技能。构建落点是：高度层和水域，斜坡和登陆岸，出生点，近矿，近处油井，外围矿，城市油田和房子，哨站和精兵学院，车库、医院、机场，船厂，纹理，装饰（层交界、水陆交界、树和石头）。本技能只记构建命令。
 
-`tools/build_all.py`：地形 → 连通性 → 组装 → 校验 → 预览 → 验收 → 说明 → 打包。验收以 `tools/accept.py` 为准，不过则构建失败。地图用 `--map <id>`，缺省时读 `maps/.default`。
+`tools/build_all.py`：地形 → 连通性 → 组装 → 校验 → 预览 → 验收 → 说明 → 打包。验收以 `tools/accept.py` 为准，不过则构建失败。地图用 `--map <id>`，缺省时读 `maps/.default`。每次打包都先 `--bump`，发布名带新版本号，再装进游戏。不覆盖已经安装的上一版。
 
 ```
 python -X utf8 tools/build_all.py --map <id> --bump --install
@@ -21,7 +21,7 @@ python -X utf8 tools/build_all.py --map <id> --bump --install
 python -X utf8 tools/relief_preview.py --map <id>
 ```
 
-步骤和缺省阈值在 `tools/relief_preview.py`。单张图用 `PREVIEW` 覆盖，水域保留框用 `COAST_KEEP`。预览只留 `source.png`（真实高程）、`preview.png`（游戏高度层）、`preview--line.png`（带省界），不写中间版本。
+步骤和缺省阈值在 `tools/relief_preview.py`。单张图用 `PREVIEW` 覆盖，水域保留框用 `COAST_KEEP`。预览只留 `source.png`（真实高程）、`preview.png`（游戏高度层）、`preview--line.png`（带边界），不写中间版本。
 
 Python：`C:\Users\cherrol\.dsh\dsh-runtimes\dsh-primary-runtime\dependencies\python\python.exe`（无 scipy）。本机命令需要关闭沙箱。PowerShell 会吞掉内联 Python 的引号，多行逻辑写成文件再跑。
 

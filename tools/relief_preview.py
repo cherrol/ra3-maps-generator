@@ -1,14 +1,14 @@
 # -*- coding: utf-8 -*-
 """按配方取景框抓真实高程，切成游戏高度层，写出北朝上的预览。不放资源。
 
-步骤对每张图相同。缺省阈值写在 DEFAULT_PREVIEW，来自广东预览的调整。
+步骤对每张图相同。缺省阈值写在 DEFAULT_PREVIEW。
 单张图用 config.PREVIEW 覆盖缺的项；要留一块宽水域凸起时写 config.COAST_KEEP。
 
 只留三张图，不写中间版本：
 
     source.png          真实高程地形
     preview.png         游戏高度层
-    preview--line.png   同上，画出省界
+    preview--line.png   同上，画出边界
 
     python -X utf8 tools/relief_preview.py --map <id>
 """
@@ -29,7 +29,7 @@ import project as proj
 
 UA = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'}
 
-# 连片和海岸的缺省。数字来自广东预览的调整，别的图不写 PREVIEW 时沿用。
+# 连片和海岸的缺省。别的图不写 PREVIEW 时沿用。
 DEFAULT_PREVIEW = {
     'min_width': 30,
     'min_area': 50,
@@ -1074,7 +1074,7 @@ def paint_layer_rings(z, cfg, fr, path):
 
 
 def _write_final(z, dem, cfg, land, directory, note, boundary_label):
-    """地形、游戏分层、带省界的分层。中间版本不留。"""
+    """地形、游戏分层、带边界的分层。中间版本不留。"""
     _drop_stale_previews(directory)
     edge = province_edge(land)
     source = os.path.join(directory, 'source.png')

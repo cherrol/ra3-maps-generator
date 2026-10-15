@@ -1,21 +1,18 @@
 # -*- coding: utf-8 -*-
-"""[CHAI]三秦大地 —— 地图配方
+"""[CHAI]叠岭连原 —— 地图配方
 
-命名对照已有的两张图：两个字的古称加「大地」。
-八桂是广西，南粤是广东，三秦是陕西。
-
-以陕西省行政边界和定稿分层为蓝图。北为陕北黄土高原，中间是关中平原，
-南部是秦岭与汉中、安康盆地，再往南是大巴山。陕西不靠海。
+以主区外轮廓和定稿分层为蓝图。北边是高原，中间是平原，
+南边是山脉和盆地，再往南又是山。这张图不靠海。
 
 北侧四个圆圈是人类出生点。南侧从西向东是人类、固定 AI、固定 AI、人类。
 红线是斜坡。固定 AI 与南侧人类结盟。
 """
 
-MAP_NAME = '[CHAI]三秦大地'
+MAP_NAME = '[CHAI]叠岭连原'
 TEMPLATE = '8p_template.map'
 TERRAIN_ONLY = False
 INLAND = True
-# 共用脚本：NKL blizzard。禁船厂、禁舰船的条目从列表里删掉。陕西不靠海，不另放船厂。
+# 共用脚本：NKL blizzard。禁船厂、禁舰船的条目从列表里删掉。这张图不靠海，不另放船厂。
 ALLOW_NAVY = True
 REMOVE_NAVY_BAN = True
 FORCE_SEA_AI = True
@@ -91,17 +88,17 @@ WATER_Z = 200.0
 SLOPE_IMPASSABLE = 24.0
 PEAK_IMPASSABLE = 235.0
 
-# 取景框 = 陕西省外接矩形，四周留一点边。
+# 取景框是主区外接矩形，四周留一点边。
 GEOJSONS = [
-    ('shaanxi_boundary.json', '陕西', 1.00),
+    ('main_boundary.json', '', 1.00),
 ]
 LON0, LON1 = 105.43, 111.31
 LAT0, LAT1 = 31.65, 39.65
 V_STRETCH = 0.735
 
-# 海拔上限（米）-> 世界高度。陕西整体比沿海省份高，200 米分界会把关中并进黄土高原。
-# 800 以下是关中、汉中、安康；800–1200 是丘陵和高原南缘；1200–1600 是黄土高原；
-# 1600–2400 是秦岭、大巴山；2400 以上是太白等高峰（不可通行）。
+# 海拔上限（米）-> 世界高度。这张图整体比沿海图高，200 米分界会把平原并进高原。
+# 800 以下是盆地和平原；800–1200 是丘陵和高原南缘；1200–1600 是高原；
+# 1600–2400 是山脉；2400 以上是高峰（不可通行）。
 LAYER_M = (
     (800.0, 212.0),
     (1200.0, 280.0),
@@ -112,7 +109,7 @@ SEA_Z = 190.0
 PEAK_Z = 480.0
 
 PREVIEW = {
-    'boundary_label': '省界',
+    'boundary_label': '边界',
 }
 
 # 出生点身份：(经度, 纬度, 名称, 队伍, 类型)
@@ -130,15 +127,15 @@ BASES = [
     (108.6732, 32.4625, '南东', 'E', 'ai'),     # P8，原南东固定 AI 的位置
 ]
 
-MAP_STR_INTRO = '"欢迎来到[CHAI]三秦大地，祝大家玩得开心。"'
+MAP_STR_INTRO = '"欢迎来到[CHAI]叠岭连原，祝大家玩得开心。"'
 MAP_STR_BRIEFING = ('"北侧西北、北、北东、东北四个人类出生点。\\n'
                     '南侧西南和东南是人类，南和南东是固定 AI。\\n'
                     '固定 AI 与南侧人类结盟。"')
 MAP_STR_STARTPOS = ('"房间里的 1–6 号是人类位，按西北、北、北东、东北、西南、东南。\\n'
                     '7 号南、8 号南东是固定 AI，不在房间里选。"')
 
-PREVIEW_TITLE = '[CHAI]三秦大地'
-PREVIEW_SUBTITLE = '陕西 · 北4人 VS 南2人+2个固定AI'
+PREVIEW_TITLE = '{name}'
+PREVIEW_SUBTITLE = '北4人 VS 南2人+2个固定AI'
 PREVIEW_LEGEND = [
     '按定稿红线分层',
     '数字 1–8 是出生点，红线是斜坡',
@@ -161,25 +158,6 @@ PREVIEW_LABELS = {
     'Player_7_Start (imported)': ('p7', 'E'),
     'Player_8_Start (imported)': ('p8', 'E'),
 }
-# 模板里 PlyrCivilian 是苏联、PlyrCreeps 是盟军。
-# p7 固定苏联夏娜，p8 固定帝国晋三。没写 PERSONALITY_LOCK 的图仍按默认性格抽。
-YARD_PLACEMENT = [
-    ('SovietConstructionYard', 'Player_7_Start (imported)', 2, -3, 20),
-    ('JapanConstructionYard', 'Player_8_Start (imported)', -2, 3, 20),
-]
-YARD_RETYPE = {'AlliedConstructionYard': 'JapanConstructionYard'}
-FACTION_LOCK = {
-    'PlyrCivilian': 'PlayerTemplate:Soviet',
-    'PlyrCreeps': 'PlayerTemplate:Japan',
-}
-PERSONALITY_LOCK = {
-    'PlyrCivilian': 'AIPersonalityDefinition:SovietZhanya',
-    'PlyrCreeps': 'AIPersonalityDefinition:JapanShinzo',
-}
-TEAM_UNIT_RETYPE = {
-    'PlyrCreeps': {'GameObject:AlliedEngineer': 'GameObject:JapanEngineer'},
-}
-
 RIVERS = []
 CITY_AMP = {}
 DEFAULT_AMP = 0.35
@@ -232,7 +210,7 @@ TERRAIN = {
         (208, 743, -116),
         (552, 344, 180),
         (570, 472, -90),
-        # 汉中谷地北缘。第四项为 1 的允许一条坡跨过中间层。上坡朝高层。
+        # 南侧谷地北缘。第四项为 1 的允许一条坡跨过中间层。上坡朝高层。
         (440, 517, -135, 1),
         (330, 578, 180, 1),
     ),
@@ -241,6 +219,9 @@ TERRAIN = {
     'base_min_ore': 2,
     'base_ore_range': 66.0,
     'ore_open_rank': True,
+    # 近矿 2、中矿 2 标给这个出生点。远矿 2 不标归属。
+    # 没开的图仍是每名玩家 4 个不归属的外围矿。
+    'ore_bands': True,
     'ore_near_max': 2,
     'ore_near_min_r': 44.0,
     # 只放宽点名的近矿：可以贴着基地，矿口按 ore_face_at 朝外。没写的矿仍按 44 格、朝基地。
@@ -288,11 +269,11 @@ def _install_merge():
                 dem = np.array(dem, copy=True)
                 dem[y[ok], x[ok]] = pack['elev'][ok]
             return _orig(dem, land, cfg)
-        quantize._sanqin_merge = True
+        quantize._merge_heights = True
         return quantize
 
     for mod in mods:
-        if getattr(mod.quantize, '_sanqin_merge', False):
+        if getattr(mod.quantize, '_merge_heights', False):
             continue
         mod.quantize = make(mod.quantize)
 

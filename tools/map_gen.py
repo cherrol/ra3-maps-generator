@@ -63,7 +63,24 @@ def waypoint_plan():
     for i, b in enumerate(fixed, len(humans) + 1):
         plan.append(('Player_%d_Start (imported)' % i, b))
     return plan
-YARD_PLACEMENT = list(getattr(cfg, 'YARD_PLACEMENT', []) or [])
+# 两个固定 AI 每张图一样：p7 苏联欧列格，p8 帝国晋三。不读配方。
+_FIXED_YARDS = (
+    ('SovietConstructionYard', 'Player_7_Start (imported)', 2, -3, 20),
+    ('JapanConstructionYard', 'Player_8_Start (imported)', -2, 3, 20),
+)
+_FIXED_FACTION = {
+    'PlyrCivilian': 'PlayerTemplate:Soviet',
+    'PlyrCreeps': 'PlayerTemplate:Japan',
+}
+# 游戏数据里欧列格是 1SovietBalanced，晋三是 1JapanBalanced。
+# 夏娜是 3SovietAirMarshall，贤治是 2JapanMechaWarfare，一个位子只能钉一位。
+_FIXED_PERSONALITY = {
+    'PlyrCivilian': 'AIPersonalityDefinition:1SovietBalanced',
+    'PlyrCreeps': 'AIPersonalityDefinition:1JapanBalanced',
+}
+_FIXED_UNITS = {
+    'PlyrCreeps': {'GameObject:AlliedEngineer': 'GameObject:JapanEngineer'},
+}
 BASE_ORE_OFFSETS = tuple(getattr(cfg, 'BASE_ORE_OFFSETS', ((-16, -11), (17, -9), (-2, 18))))
 CENTER_ORE = list(getattr(cfg, 'CENTER_ORE', []) or [])
 FORD_ORE = list(getattr(cfg, 'FORD_ORE', []) or [])
@@ -142,7 +159,6 @@ class Terrain:
         self.house_kinds = [int(v) for v in _hk] if _hk is not None and _hk.size else []
         self.post_cells = [tuple(c) for c in d['post_cells']] if 'post_cells' in d else []
         self.garage_cells = [tuple(c) for c in d['garage_cells']] if 'garage_cells' in d else []
-        self.gx_boundary = d['gx_boundary'] if 'gx_boundary' in d else None   # 广西省外边界掩码
         self.airport_cells = [tuple(c) for c in d['airport_cells']] if 'airport_cells' in d else []
         self.hospital_cells = [tuple(c) for c in d['hospital_cells']] if 'hospital_cells' in d else []
         self.academy_cells = [tuple(c) for c in d['academy_cells']] if 'academy_cells' in d else []
@@ -223,7 +239,7 @@ def pick_texture(z, slope, land, water):
     return None      # 其余（平原 + 一层/二层高地）一律草地，由噪声选品种
 
 
-def build_blendtiles_payload(t, template_bt=None, seed=7):
+def build_blendtiles_payload(t, template_bt=None, seed=7, decorate=None):
     rng = np.random.RandomState(seed)
     z, slope, land = t.z, t.slope, t.land
     W = H = bt.GRID
@@ -317,7 +333,10 @@ def build_blendtiles_payload(t, template_bt=None, seed=7):
     # ---- 斜坡车道铺土路纹理（视觉标记"这里能上下层"；车道定义与 carve_marked_ramps 一致）
     _ramp_tex = TEX_INDEX.get('Dirt_Yucatan06')
     _ramp_tex2 = TEX_INDEX.get('Gravel_Yucatan01')
+    t.ramp_tex_mask = np.zeros((H, W), dtype=bool)
     if _ramp_tex is not None:
+        _lb_all = np.zeros((H // 8, W // 8), dtype=bool)
+        _eb_all = np.zeros((H // 8, W // 8), dtype=bool)
         _ramps = list(getattr(t, 'ramps', None) or [])
         for rs in _ramps:
             cx, cy = float(rs['x']), float(rs['y'])
@@ -343,9 +362,15 @@ def build_blendtiles_payload(t, template_bt=None, seed=7):
             # 8x8 块级：块内车道占比 >=25% 换土路；边缘带 >=25% 换碎石过渡
             lb = lane.reshape(H // 8, 8, W // 8, 8).mean(axis=(1, 3)) >= 0.25
             eb = (edge.reshape(H // 8, 8, W // 8, 8).mean(axis=(1, 3)) >= 0.25) & ~lb
+            _lb_all |= lb
+            _eb_all |= eb
             chosen = np.where(np.kron(lb, np.ones((8, 8), dtype=bool)), _ramp_tex, chosen)
             if _ramp_tex2 is not None:
                 chosen = np.where(np.kron(eb, np.ones((8, 8), dtype=bool)), _ramp_tex2, chosen)
+        t.ramp_tex_mask = np.kron(_lb_all | _eb_all, np.ones((8, 8), dtype=bool))
+    # 层纹理和斜坡车道到这里为止。装饰盖上来，再打包。
+    if decorate is not None:
+        chosen = decorate(t, chosen, z)
     # ---- per-cell tile values: block texture base + sub-tile offset (verified order)
     tiles = np.zeros((H, W), dtype=np.uint16)
     oy, ox = np.mgrid[0:H, 0:W]
@@ -381,6 +406,11 @@ def build_blendtiles_payload(t, template_bt=None, seed=7):
     #   （曾因只翻高度场不翻这里，出现"游戏地形对、小地图/边界线/城市反"。）
     tiles = np.flipud(tiles)
     impassable = np.flipud(impassable)
+    blocked = getattr(t, 'decor_block', None)
+    if blocked is None or np.shape(blocked) != allzero.shape:
+        blocked = allzero
+    else:
+        blocked = np.flipud(np.asarray(blocked, dtype=bool))
 
     w = bytearray()
     w += struct.pack('<I', W * H)
@@ -393,7 +423,7 @@ def build_blendtiles_payload(t, template_bt=None, seed=7):
     w += pack_bits(allzero)         # PassageWidths            (v >= 11)
     w += pack_bits(allzero)         # ExtraPassability         (v >= 15)
     w += pack_bits(np.ones((H, W), dtype=bool))   # Visibility  (v >= 17); all ones in real maps
-    w += pack_bits(allzero)         # Buildability             (v >= 24); 0 = buildable
+    w += pack_bits(blocked)         # Buildability             (v >= 24); 0 = buildable
     w += pack_bits(allzero)         # ImpassabilityToAirUnits  (v >= 24)
     w += pack_bits(allzero)         # TiberiumGrowability      (v >= 24)
     w += bytes(H * W)               # DynamicShrubberyDensity   (v >= 25)
@@ -566,19 +596,19 @@ def build_objects(t, template_objects):
                 face_ang[name] = ang
                 print('  [出生] %s 朝向斜坡 (%.0f,%.0f)' % (city, fx, fy))
 
-    # 配方要求换阵营时，把模板里的基地改名后再摆。八桂不设 YARD_RETYPE，仍是盟军基地。
-    for src, dst in (getattr(cfg, 'YARD_RETYPE', {}) or {}).items():
-        found = by_type.get(src, [])
-        if not found:
-            raise SystemExit('模板里没有要改阵营的基地：%s' % src)
-        for o in found:
-            o['type_name'] = dst
-            for pr in o['props']:
-                if pr[0] == 'uniqueID' and isinstance(pr[2], str) and pr[2].startswith(src):
-                    pr[2] = dst + pr[2][len(src):]
-        by_type[dst] = found
-        del by_type[src]
-        print('  [基地] %s -> %s' % (src, dst))
+    # 模板 p8 的基地是盟军。每张图都改成帝国，再摆到固定位旁边。
+    src, dst = 'AlliedConstructionYard', 'JapanConstructionYard'
+    found = by_type.get(src, [])
+    if not found:
+        raise SystemExit('模板里没有要改成帝国的基地：%s' % src)
+    for o in found:
+        o['type_name'] = dst
+        for pr in o['props']:
+            if pr[0] == 'uniqueID' and isinstance(pr[2], str) and pr[2].startswith(src):
+                pr[2] = dst + pr[2][len(src):]
+    by_type[dst] = found
+    del by_type[src]
+    print('  [基地] %s -> %s' % (src, dst))
 
     # 每个固定 AI 的基地改一个脚本能找到的名字，科技脚本都要挂上。
     # 水上的另外强制造船厂和空军。
@@ -596,7 +626,7 @@ def build_objects(t, template_objects):
             ai_at[wp] = (int(wp.split('_')[1]), base[2], zz, zz < wz)
 
     # the two AI construction yards sit right next to their fixed waypoints
-    for tname, wp_name, dx, dy, snap in YARD_PLACEMENT:
+    for tname, wp_name, dx, dy, snap in _FIXED_YARDS:
         placed_yards = by_type.get(tname, [])
         if not placed_yards:
             raise SystemExit('没有可摆放的基地：%s' % tname)
@@ -812,46 +842,15 @@ def build_objects(t, template_objects):
         if t.bridge_cells:
             print('  [桥梁] 放置 %d 个桥段 (%s)' % (len(t.bridge_cells), BRIDGE_TYPE))
 
-    # ---- decorations: wilderness / river-bank props, kept clear of the start pads
-    ore_set = set((round(float(c[0]), 3), round(float(c[1]), 3)) for c in (t.ore_cells or []))
-    decor_pos = DECOR_POS
-    base_cells_ll = list(t.base.values()) or [geo.to_cell(lon, lat) for lon, lat, _, _, _ in bt.BASES]
-    for tname in DECOR_TYPES:
-        for i, o in enumerate(by_type.get(tname, [])):
-            lon, lat = decor_pos[i % len(decor_pos)]
-            cx, cy = geo.to_cell(lon, lat)
-            cx += (1.2 + i * 0.8) * 2.6
-            cy += (1.0 + i * 0.7) * 2.2
-            # push away from every start pad so the spawn area stays clear
-            for bx, by in base_cells_ll:
-                dx, dy = cx - bx, cy - by
-                d = math.hypot(dx, dy)
-                if d < PAD_CLEARANCE:
-                    f = ((PAD_CLEARANCE + 0.5) / d) if d > 0.01 else 1.0
-                    cx, cy = bx + dx * f, by + dy * f
-            # 先按 26 格对齐，再反复外推离开资源/矿区（对齐放在外推之后会把装饰物又拉回矿区）
-            cx, cy = t.snap(cx, cy, 26)
-            for _pass in range(8):
-                moved = False
-                for px, py in placed:
-                    dx, dy = cx - px, cy - py
-                    d = math.hypot(dx, dy)
-                    need = ORE_CLEAR_RADIUS + 6.0 if (px, py) in ore_set else DECOR_RESOURCE_CLEARANCE
-                    if d < need:
-                        f = ((need + 0.5) / d) if d > 0.01 else 1.0
-                        cx, cy = px + dx * f, py + dy * f
-                        moved = True
-                if not moved:
-                    break
-            cx, cy = clamp_playable(cx, cy)
-            o['position'] = (cell_to_world(cx, cy)[0], cell_to_world(cx, cy)[1], 0.0)
+    # 装饰在纹理之后另放，见 place_decorations。
 
     # ---- 城市房屋。CITY_CLUSTER 时用地形阶段算好的落点：单独一片一栋，挨着的一片两栋。
     #      没开这个开关的图仍是每座城市 1~2 栋。
     house_types = list(getattr(cfg, 'CITY_HOUSE_TYPES', ()) or ())
     _pl = (by_type.get(DECOR_TYPES[0]) if DECOR_TYPES else None) or by_type.get('EI_Structure_01') or []
     proto_h = _pl[0] if _pl else None
-    city_list = [(n, cx, cy) for n, cx, cy in bt.city_centers(geo) if n in bt.CITY_SEATS]
+    seated = set(bt._seat_lookup(geo))
+    city_list = [(n, cx, cy) for n, cx, cy in bt.city_centers(geo) if n in seated]
     _cluster_houses = bool(getattr(cfg, 'CITY_CLUSTER', False))
     if _cluster_houses and proto_h:
         small = list(getattr(cfg, 'CITY_HOUSE_SMALL', ()) or ()) or house_types[:2] or ['ST_Building01']
@@ -988,6 +987,11 @@ def write_art_tga(t, path, size=512):
         else:
             g = (f - 0.85) / 0.15; ramp[i] = (190 + 55 * g, 130 + 80 * g, 50 + 130 * g)
     img[landm] = ramp[idx[landm]]
+    # 装饰要出现在小地图上：层交界岩壁、水陆交界沙滩。
+    if getattr(t, 'layer_edge', None) is not None and t.layer_edge.shape == img.shape[:2]:
+        img[t.layer_edge] = (128, 120, 108)
+    if getattr(t, 'shore_band', None) is not None and t.shore_band.shape == img.shape[:2]:
+        img[t.shore_band] = (214, 198, 142)
     # 省外荒地压暗。art_keep_sea 时水面保持原来的蓝色，
     # 否则环岛的外海被压到阈值以下，小地图看不出海，轴向验收也会判反。
     outside = ~land
@@ -997,11 +1001,14 @@ def write_art_tga(t, path, size=512):
     # ⚠ 轴向：数据第 0 行 = 最北，与 v11 蓝图/用户标注同向 —— **不再 flipud**
     im = Image.fromarray(img).resize((size, size), Image.LANCZOS)
     arr_img = np.array(im).copy()
-    # 高亮主省省界（缩略图/雷达上用亮红线描出轮廓）
-    if t.gx_boundary is not None and t.gx_boundary.any():
-        bimg = Image.fromarray(t.gx_boundary.astype(np.uint8) * 255).resize((size, size), Image.NEAREST)
-        bmask = np.array(bimg) > 96
-        arr_img[bmask] = (255, 70, 40)
+    scale = size / float(bt.GRID)
+    for x, y, name, _ang in list(getattr(t, 'scenery', None) or []):
+        px = int(round(float(x) * scale))
+        py = int(round(float(y) * scale))
+        col = (34, 110, 46) if ('Tree' in name or 'Bush' in name) else (168, 164, 156)
+        y0, y1 = max(0, py - 1), min(size, py + 2)
+        x0, x1 = max(0, px - 1), min(size, px + 2)
+        arr_img[y0:y1, x0:x1] = col
     # ⚠ art 与**游戏内实际地形朝向**必须同向（T1.8.8 实机锚定）：
     #   游戏内 3D 地形是正确的 = 北在屏幕上、海（南）在屏幕下。
     #   引擎把小地图图片的"图像上方"摆在屏幕上方 => PIL 读回的 art 必须**行 0 = 北**（海在下半）。
@@ -1286,15 +1293,13 @@ def _write_teams(teams, key_ids):
 
 
 def patch_locked_factions(mmap):
-    """按配方把固定 AI 锁到指定阵营。不改磁盘上的模板。
+    """两个固定 AI 每张图都钉死。不改磁盘上的模板，也不看配方。
 
-    没写 FACTION_LOCK / PERSONALITY_LOCK / TEAM_UNIT_RETYPE 的图保持模板原样。
+    p7 PlyrCivilian 是苏联欧列格，p8 PlyrCreeps 是帝国晋三。
     """
-    locks = dict(getattr(cfg, 'FACTION_LOCK', {}) or {})
-    pers = dict(getattr(cfg, 'PERSONALITY_LOCK', {}) or {})
-    unit_retype = dict(getattr(cfg, 'TEAM_UNIT_RETYPE', {}) or {})
-    if not locks and not pers and not unit_retype:
-        return
+    locks = dict(_FIXED_FACTION)
+    pers = dict(_FIXED_PERSONALITY)
+    unit_retype = {k: dict(v) for k, v in _FIXED_UNITS.items()}
     key_ids = {name: idx for idx, name in mmap.table.items()}
     if locks or pers:
         chunk = mmap.get('SidesList')
@@ -1365,6 +1370,357 @@ def patch_locked_factions(mmap):
             '%s %d 处' % (o, n) for o, n in seen.items()))
 
 
+def _dilate(mask, radius):
+    """切比雪夫膨胀。半径 0 原样返回。"""
+    out = np.asarray(mask, dtype=bool).copy()
+    h, w = out.shape
+    src = out
+    for _ in range(int(radius)):
+        nxt = src.copy()
+        nxt[1:, :] |= src[:-1, :]
+        nxt[:-1, :] |= src[1:, :]
+        nxt[:, 1:] |= src[:, :-1]
+        nxt[:, :-1] |= src[:, 1:]
+        nxt[1:, 1:] |= src[:-1, :-1]
+        nxt[1:, :-1] |= src[:-1, 1:]
+        nxt[:-1, 1:] |= src[1:, :-1]
+        nxt[:-1, :-1] |= src[1:, 1:]
+        src = nxt
+    return src
+
+
+def _stamp_disk(mask, x, y, radius):
+    r = int(math.ceil(float(radius)))
+    if r < 0:
+        return
+    h, w = mask.shape
+    xi, yi = int(round(x)), int(round(y))
+    y0, y1 = max(0, yi - r), min(h, yi + r + 1)
+    x0, x1 = max(0, xi - r), min(w, xi + r + 1)
+    if y0 >= y1 or x0 >= x1:
+        return
+    yy = np.arange(y0, y1)[:, None]
+    xx = np.arange(x0, x1)[None, :]
+    mask[y0:y1, x0:x1] |= (xx - x) ** 2 + (yy - y) ** 2 <= float(radius) ** 2
+
+
+def _obj_cell(o):
+    wx, wy = float(o['position'][0]), float(o['position'][1])
+    cx = wx / float(bt.CELL) + bt.BORDER
+    cy = (bt.GRID - 1 - bt.BORDER) - wy / float(bt.CELL)
+    return cx, cy
+
+
+def _layer_step(z):
+    """陆地格到相邻陆地的最大高度差。水和斜坡上的缓变不算层界。"""
+    land = z >= bt.WATER_Z
+    acc = np.zeros(z.shape, dtype=np.float64)
+    step = np.abs(z[:, 1:] - z[:, :-1])
+    both = land[:, 1:] & land[:, :-1]
+    step = np.where(both, step, 0.0)
+    acc[:, 1:] = np.maximum(acc[:, 1:], step)
+    acc[:, :-1] = np.maximum(acc[:, :-1], step)
+    step = np.abs(z[1:, :] - z[:-1, :])
+    both = land[1:, :] & land[:-1, :]
+    step = np.where(both, step, 0.0)
+    acc[1:, :] = np.maximum(acc[1:, :], step)
+    acc[:-1, :] = np.maximum(acc[:-1, :], step)
+    return acc
+
+
+def _layer_lower(z):
+    """层界低的一侧：相邻陆地高出至少一层的格子。"""
+    land = z >= bt.WATER_Z
+    low = np.zeros(z.shape, dtype=bool)
+    dz = z[:, 1:] - z[:, :-1]
+    both = land[:, 1:] & land[:, :-1]
+    low[:, :-1] |= both & (dz >= 40.0)
+    low[:, 1:] |= both & (dz <= -40.0)
+    dz = z[1:, :] - z[:-1, :]
+    both = land[1:, :] & land[:-1, :]
+    low[:-1, :] |= both & (dz >= 40.0)
+    low[1:, :] |= both & (dz <= -40.0)
+    return low
+
+
+def paint_boundaries(t, chosen, z):
+    """层交界铺岩壁，水陆交界铺沙滩。斜坡车道保持原来的土路和碎石。"""
+    land = z >= bt.WATER_Z
+    ramp = np.asarray(getattr(t, 'ramp_tex_mask', None), dtype=bool)
+    if ramp.shape != z.shape:
+        ramp = np.zeros(z.shape, dtype=bool)
+    edge = _dilate(_layer_step(z) >= 40.0, 1) & land & ~ramp
+    shore = _dilate(z < bt.WATER_Z, 4) & land & ~edge & ~ramp
+    rock = TEX_INDEX.get('Rock_Yucatan01', TEX_INDEX.get('Rock_Yucatan02'))
+    sand = TEX_INDEX.get('Sand_Hawaii02')
+    if rock is not None and edge.any():
+        chosen = chosen.copy()
+        chosen[edge] = rock
+    if sand is not None and shore.any():
+        if rock is None or not edge.any():
+            chosen = chosen.copy()
+        chosen[shore] = sand
+    print('  [装饰] 层交界 %d 格，水陆交界 %d 格' % (int(edge.sum()), int(shore.sum())))
+    t.layer_edge = edge
+    t.shore_band = shore
+    return chosen
+
+
+def decorate_map(t, chosen, z):
+    """纹理之后的装饰：层交界、水陆交界，再定树和石头的格子。"""
+    t.scenery = []
+    t.decor_block = None
+    chosen = paint_boundaries(t, chosen, z)
+    if not bool(getattr(cfg, 'TERRAIN_ONLY', False)):
+        plan_scenery(t, z)
+    return chosen
+
+
+_TREE_TYPES = (
+    'CC_Tree01', 'CC_Tree02', 'CC_Tree03',
+    'HB_Tree03', 'HB_Tree07', 'HB_Tree10',
+    'YU_Bush01', 'YU_Bush03',
+)
+_ROCK_TYPES = (
+    'HA_GardenRock01', 'OK_GardenRock01',
+)
+
+
+def _scenery_clearance(type_name):
+    if type_name == 'OreNode':
+        return float(ORE_CLEAR_RADIUS) + 3.0
+    if type_name == 'OilDerrick':
+        return max(float(RESOURCE_MIN_SPACING), 14.0) + 2.0
+    if 'ConstructionYard' in type_name or type_name.endswith('Yard'):
+        return float(getattr(cfg, 'PAD_CLEARANCE', 26.0))
+    if type_name == 'AirportTechStructure':
+        return 24.0
+    if type_name in ('GarageTechStructure', 'AlliedNavalYard'):
+        return 20.0
+    if 'Bridge' in type_name:
+        return 16.0
+    if type_name in ('HospitalTechStructure', 'VeterancyTechStructure',
+                     'ObservationPostTechStructure'):
+        return 16.0
+    return 14.0
+
+
+def _sample_props(mask, kinds, gap, cap, occ, rng):
+    ys, xs = np.where(mask & ~occ)
+    if ys.size == 0 or cap <= 0:
+        return []
+    order = rng.permutation(ys.size)
+    out = []
+    h, w = occ.shape
+    r = int(gap)
+    for i in order:
+        y, x = int(ys[i]), int(xs[i])
+        if occ[y, x]:
+            continue
+        if y < 1 or x < 1 or y + 1 >= h or x + 1 >= w:
+            continue
+        name = kinds[len(out) % len(kinds)]
+        ang = float(rng.uniform(0.0, math.pi * 2.0))
+        out.append((x, y, name, ang))
+        _stamp_disk(occ, x, y, r)
+        if len(out) >= cap:
+            break
+    return out
+
+
+def plan_scenery(t, z):
+    """树沿层界、岸边和空地放。小石头只放在层界低的一侧。躲开出生点、资源、建筑和斜坡车道。
+
+    每个物体脚下 3×3 标成不可建造。物体几何本身也会挡住建筑。
+    """
+    proto_ok = False
+    for o in list(getattr(t, 'placed_objs', None) or []):
+        if o['type_name'] in ('EI_Structure_01', 'GarageTechStructure'):
+            proto_ok = True
+            break
+    if not proto_ok:
+        print('  [装饰] 模板没有可克隆的物体，树和石头不放')
+        return
+    H, W = z.shape
+    land = z >= bt.WATER_Z
+    forbid = ~land | (t.d_edge < 4.0)
+    ramp = np.asarray(getattr(t, 'ramp_tex_mask', None), dtype=bool)
+    if ramp.shape != z.shape:
+        ramp = np.zeros(z.shape, dtype=bool)
+    forbid |= _dilate(ramp, 1)
+    points = []
+    pad = float(getattr(cfg, 'PAD_CLEARANCE', 26.0))
+    for _nm, (bx, by) in (t.base or {}).items():
+        points.append((float(bx), float(by), pad + 2.0))
+    groups = (
+        (t.ore_cells, float(ORE_CLEAR_RADIUS) + 3.0),
+        (t.derrick_cells, max(float(RESOURCE_MIN_SPACING), 14.0) + 2.0),
+        (t.post_cells, 16.0),
+        (t.garage_cells, 20.0),
+        (t.airport_cells, 24.0),
+        (t.hospital_cells, 16.0),
+        (t.academy_cells, 16.0),
+        (t.shipyard_cells, 20.0),
+        (t.house_cells, 14.0),
+        (t.bridge_cells, 16.0),
+    )
+    for cells, radius in groups:
+        for c in (cells or []):
+            points.append((float(c[0]), float(c[1]), radius))
+    for o in list(getattr(t, 'placed_objs', None) or []):
+        if 'Waypoint' in o['type_name']:
+            continue
+        cx, cy = _obj_cell(o)
+        points.append((cx, cy, _scenery_clearance(o['type_name'])))
+    for x, y, radius in points:
+        _stamp_disk(forbid, x, y, radius)
+    edge = np.asarray(getattr(t, 'layer_edge', None), dtype=bool)
+    if edge.shape != z.shape:
+        edge = np.zeros(z.shape, dtype=bool)
+    shore = _dilate(z < bt.WATER_Z, 8) & land & ~_dilate(z < bt.WATER_Z, 3)
+    foot = np.ones((3, 3), dtype=bool)
+    # 脚下 3×3 都要是陆地，避免半截落在水里。
+    land3 = np.zeros(z.shape, dtype=bool)
+    land3[1:-1, 1:-1] = (
+        land[:-2, :-2] & land[:-2, 1:-1] & land[:-2, 2:]
+        & land[1:-1, :-2] & land[1:-1, 1:-1] & land[1:-1, 2:]
+        & land[2:, :-2] & land[2:, 1:-1] & land[2:, 2:]
+    )
+    open_land = np.asarray(t.passable, dtype=bool) & land3 & ~forbid
+    rng = np.random.RandomState(7 + (sum(ord(c) for c in P.map_id) % 9973))
+    occ = forbid.copy()
+    lower = _layer_lower(z) & land & ~ramp
+    upper = (_layer_step(z) >= 40.0) & land & ~lower
+    rock_band = _dilate(lower, 2) & land3 & ~upper & ~ramp & ~forbid
+    spots = []
+    spots += _sample_props(rock_band, _ROCK_TYPES, 9, 140, occ, rng)
+    spots += _sample_props(edge & land3 & ~forbid, _TREE_TYPES, 11, 100, occ, rng)
+    spots += _sample_props(shore & land3 & ~forbid, _TREE_TYPES, 11, 90, occ, rng)
+    inland = open_land & ~_dilate(edge, 8) & ~_dilate(z < bt.WATER_Z, 10)
+    spots += _sample_props(inland, _TREE_TYPES, 30, 48, occ, rng)
+    block = np.zeros((H, W), dtype=bool)
+    kept = []
+    for x, y, name, ang in spots:
+        if forbid[y, x]:
+            continue
+        kept.append((x, y, name, ang))
+        block[y - 1:y + 2, x - 1:x + 2] |= foot
+    # 资源和建筑盘上保持可建造。
+    block &= ~forbid
+    t.scenery = kept
+    t.decor_block = block
+    n_tree = sum(1 for _x, _y, name, _a in kept if 'Tree' in name or 'Bush' in name)
+    n_rock = len(kept) - n_tree
+    print('  [装饰] 树 %d，石头 %d，不可建造 %d 格' % (n_tree, n_rock, int(block.sum())))
+
+
+def reposition_template_decor(t, objs):
+    """模板里已有的装饰挪开资源和出生点。树和石头在这之后另放。"""
+    if not DECOR_TYPES or not DECOR_POS:
+        return objs
+    geo = t.geo
+    by_type = {}
+    for o in objs:
+        by_type.setdefault(o['type_name'], []).append(o)
+    occupied = []
+    for c in (t.base or {}).values():
+        occupied.append((float(c[0]), float(c[1])))
+    for group in (t.ore_cells, t.derrick_cells, t.post_cells, t.garage_cells,
+                  t.airport_cells, t.hospital_cells, t.academy_cells,
+                  t.shipyard_cells, t.house_cells, t.bridge_cells):
+        for c in (group or []):
+            occupied.append((float(c[0]), float(c[1])))
+    ore_set = set((round(float(c[0]), 3), round(float(c[1]), 3)) for c in (t.ore_cells or []))
+    lo = bt.BORDER + 2.0
+    hi = bt.BORDER + bt.PLAY - 2.0
+    base_cells_ll = list(t.base.values()) or [geo.to_cell(lon, lat) for lon, lat, _, _, _ in bt.BASES]
+    for tname in DECOR_TYPES:
+        for i, o in enumerate(by_type.get(tname, [])):
+            lon, lat = DECOR_POS[i % len(DECOR_POS)]
+            cx, cy = geo.to_cell(lon, lat)
+            cx += (1.2 + i * 0.8) * 2.6
+            cy += (1.0 + i * 0.7) * 2.2
+            for bx, by in base_cells_ll:
+                dx, dy = cx - bx, cy - by
+                d = math.hypot(dx, dy)
+                if d < PAD_CLEARANCE:
+                    f = ((PAD_CLEARANCE + 0.5) / d) if d > 0.01 else 1.0
+                    cx, cy = bx + dx * f, by + dy * f
+            cx, cy = t.snap(cx, cy, 26)
+            for _pass in range(8):
+                moved = False
+                for px, py in occupied:
+                    dx, dy = cx - px, cy - py
+                    d = math.hypot(dx, dy)
+                    key = (round(float(px), 3), round(float(py), 3))
+                    need = ORE_CLEAR_RADIUS + 6.0 if key in ore_set else DECOR_RESOURCE_CLEARANCE
+                    if d < need:
+                        f = ((need + 0.5) / d) if d > 0.01 else 1.0
+                        cx, cy = px + dx * f, py + dy * f
+                        moved = True
+                if not moved:
+                    break
+            cx = min(max(cx, lo), hi)
+            cy = min(max(cy, lo), hi)
+            o['position'] = (cell_to_world(cx, cy)[0], cell_to_world(cx, cy)[1], 0.0)
+    return objs
+
+
+def place_decorations(t, objs):
+    """把已经定好格子的树和石头放进物体表。脚下格子在纹理打包时标成不可建造。"""
+    spots = list(getattr(t, 'scenery', None) or [])
+    if not spots:
+        return objs
+    proto = None
+    for o in objs:
+        if o['type_name'] == 'EI_Structure_01':
+            proto = o
+            break
+    if proto is None:
+        for o in objs:
+            if o['type_name'] == 'GarageTechStructure':
+                proto = o
+                break
+    if proto is None:
+        print('  [装饰] 模板没有可克隆的物体，树和石头不放')
+        t.decor_block = None
+        return objs
+    for i, (cx, cy, tname, ang) in enumerate(spots):
+        o = dict(proto)
+        o['type_name'] = tname
+        o['angle'] = float(ang)
+        o['props'] = [[k, ty, v] for k, ty, v in proto['props']]
+        uid = '%s %d' % (tname, 1000 + i)
+        found = False
+        for pr in o['props']:
+            if pr[0] == 'uniqueID':
+                pr[2] = uid
+                found = True
+            elif pr[0] == 'originalOwner':
+                # 矿和油井同属 PlyrNeutral，开局会留下。
+                # SkirmishCivilian 不是对局里的玩家，物体进游戏后会被清掉。
+                pr[2] = 'PlyrNeutral/teamPlyrNeutral'
+            elif pr[0] == 'objectIndestructible':
+                pr[2] = 0
+            elif pr[0] == 'objectUnsellable':
+                pr[2] = 0
+            elif pr[0] == 'objectRecruitableAI':
+                pr[2] = 1
+            elif pr[0] == 'objectTargetable':
+                pr[2] = 0
+        if not found:
+            o['props'].append(['uniqueID', 3, uid])
+        # 树按原版可见大小随机缩放。园石保持接近默认大小。
+        if 'Rock' in tname:
+            scale = 0.92 + (i % 4) * 0.06
+        else:
+            scale = 1.45 + (i % 8) * 0.12
+        o['props'].append(['objectPrototypeScale', 2, scale])
+        o['position'] = (cell_to_world(cx, cy)[0], cell_to_world(cx, cy)[1], 0.0)
+        objs.append(o)
+    return objs
+
+
 # ------------------------------------------------------------------ main
 def main():
     if not TEMPLATE or not os.path.exists(TEMPLATE):
@@ -1389,6 +1745,8 @@ def main():
         print('  [对象] 纯净地形模式：清空全部 %d 个对象（含模板自带）' % len(tmpl_objects))
     else:
         objs, sea_yards = build_objects(t, tmpl_objects)
+        objs = reposition_template_decor(t, objs)
+        t.placed_objs = objs
 
     # --- replace payloads
     def set_payload(name, payload, version=None):
@@ -1399,13 +1757,21 @@ def main():
             c.version = version
 
     set_payload('HeightMapData', build_heightmap_payload(t))
-    set_payload('BlendTileData', build_blendtiles_payload(t, tmpl_bt),
+    # 纹理先铺层和斜坡车道。装饰再盖层交界、水陆交界，并放树和石头。
+    _blend_src = build_blendtiles_payload(t, tmpl_bt, decorate=decorate_map)
+    if not bool(getattr(cfg, 'TERRAIN_ONLY', False)):
+        objs = place_decorations(t, objs)
+    set_payload('BlendTileData', _blend_src,
                 version=tmpl.get('BlendTileData').version)
     obj_name_idx = None
     for c in tmpl.chunks:
         if c.name == 'ObjectsList':
             obj_name_idx = c.name_idx
     object_asset_idx = next(i for i, n in tmpl.table.items() if n == 'Object')
+    if 'objectPrototypeScale' not in tmpl.table.values():
+        _sid = (max(tmpl.table) + 1) if tmpl.table else 1
+        tmpl.table[_sid] = 'objectPrototypeScale'
+        tmpl.order.append(('objectPrototypeScale', _sid))
     key_ids = {name: idx for idx, name in tmpl.table.items()}
     set_payload('ObjectsList', write_objects(objs, object_asset_idx, key_ids),
                 version=tmpl.get('ObjectsList').version)

@@ -1,15 +1,17 @@
 # -*- coding: utf-8 -*-
-"""抓取邻省（云南/贵州/湖南/广东）地级市边界，用于补全广西省外的地形。"""
+"""抓取四周邻区的地级边界，用来补全主区以外的地形。"""
 import json
 import os
 import urllib.request
 
-DEST = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'maps', 'bagui_dadi', 'data')
+_root = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'maps')
+_mid = open(os.path.join(_root, '.default'), encoding='utf-8').read().strip()
+DEST = os.path.join(_root, _mid, 'data')
 PROVINCES = [
-    ('530000', 'yunnan_boundary.json', '云南省'),
-    ('520000', 'guizhou_boundary.json', '贵州省'),
-    ('430000', 'hunan_boundary.json', '湖南省'),
-    ('440000', 'guangdong_boundary.json', '广东省'),
+    ('530000', 'fill_w.json', 'w'),
+    ('520000', 'fill_n.json', 'n'),
+    ('430000', 'fill_ne.json', 'ne'),
+    ('440000', 'fill_e.json', 'e'),
 ]
 os.makedirs(DEST, exist_ok=True)
 

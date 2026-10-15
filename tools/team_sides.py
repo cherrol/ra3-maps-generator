@@ -12,7 +12,16 @@ import struct
 from nkl_scripts import _ensure_names, _walk
 from sea_ai import _a, _act, _cond, _script
 
-# 条件 1 / 79 的比较号：2 是等于。
+# 条件和动作的内部名字用命令字。写 X 时游戏不执行这条，敌对就留在开局的默认关系上。
+_RELATE = 'PLAYER_RELATES_PLAYER'
+_INC = 'INCREMENT_COUNTER'
+_MOVE = 'TEAM_TELEPORT_TO_WAYPOINT'
+_SET = 'SET_FLAG'
+_COUNTER_IS = 'COUNTER'
+_FLAG_IS = 'FLAG'
+_AT = 'START_POSITION_IS'
+
+# 条件 1 / 79 的比较号：2 是等于。关系：0 敌对，2 友好。
 _EQ = 2
 
 _WEST = ('Player_1', 'Player_2', 'Player_3', 'Player_4')
@@ -28,6 +37,7 @@ def team_sides(mmap):
     """把分队和四人落位接到公共脚本列表末尾。"""
     idmap, _ = _ensure_names(mmap, {
         'Script', 'OrCondition', 'Condition', 'ScriptAction', 'X',
+        _RELATE, _INC, _MOVE, _SET, _COUNTER_IS, _FLAG_IS, _AT,
     })
     key = idmap['X']
     parts = []
@@ -48,13 +58,13 @@ def _count_seat(idmap, key, index, player):
     return _script(idmap, key, 'side-c%d' % index, [
         _at(idmap, key, player, index),
     ], [
-        _act(idmap, key, 15, [_a(0, i=1), _a(4, s=_COUNTER)]),
+        _act(idmap, idmap[_INC], 15, [_a(0, i=1), _a(4, s=_COUNTER)]),
     ], deactivate=1, interval=0)
 
 
 def _relations(idmap, key, name, friends_a, friends_b, four):
     """four 为真时只在正好四人时生效，否则在不是四人时生效。"""
-    cond = _cond(idmap, key, 1, [
+    cond = _cond(idmap, idmap[_COUNTER_IS], 1, [
         _a(4, s=_COUNTER), _a(6, i=_EQ), _a(0, i=4),
     ], inverted=not four)
     actions = []
@@ -81,7 +91,7 @@ def _move_east(idmap, key, src):
         if src == 6:
             conds.append(_flag_on(idmap, key, 'sent5'))
         out.append(_script(idmap, key, 'side-m%d%d' % (src, dest), conds, [
-            _act(idmap, key, 379, [
+            _act(idmap, idmap[_MOVE], 379, [
                 _a(3, s=team), _a(7, s='Player_%d_Start' % dest),
             ]),
             _set_flag(idmap, key, sent),
@@ -121,33 +131,33 @@ def _between(idmap, key, left, right):
 
 def _relate(idmap, key, a, b, friend):
     kind = (2, 'Friend') if friend else (0, 'Enemy')
-    return _act(idmap, key, 78, [
+    return _act(idmap, idmap[_RELATE], 78, [
         _a(11, s=a), _a(11, s=b), _a(19, i=kind[0], s=kind[1]),
     ])
 
 
 def _at(idmap, key, player, index, inverted=False):
-    return _cond(idmap, key, 79, [
+    return _cond(idmap, idmap[_AT], 79, [
         _a(11, s=player), _a(0, i=index),
     ], inverted=inverted)
 
 
 def _four(idmap, key):
-    return _cond(idmap, key, 1, [
+    return _cond(idmap, idmap[_COUNTER_IS], 1, [
         _a(4, s=_COUNTER), _a(6, i=_EQ), _a(0, i=4),
     ])
 
 
 def _flag_on(idmap, key, name):
-    return _cond(idmap, key, 2, [_a(5, s=name), _a(8, i=1)])
+    return _cond(idmap, idmap[_FLAG_IS], 2, [_a(5, s=name), _a(8, i=1)])
 
 
 def _flag_off(idmap, key, name):
-    return _cond(idmap, key, 2, [_a(5, s=name), _a(8, i=1)], inverted=True)
+    return _cond(idmap, idmap[_FLAG_IS], 2, [_a(5, s=name), _a(8, i=1)], inverted=True)
 
 
 def _set_flag(idmap, key, name):
-    return _act(idmap, key, 1, [_a(5, s=name), _a(8, i=1)])
+    return _act(idmap, idmap[_SET], 1, [_a(5, s=name), _a(8, i=1)])
 
 
 def _append_public(mmap, blob):

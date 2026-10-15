@@ -39,7 +39,7 @@ def font(size):
 def main():
     d = np.load(os.path.join(SRCDIR, 'terrain.npz'))
     z = d['raw'].astype(np.float64) * bt.Z_SCALE
-    gx_boundary = d['gx_boundary'] if 'gx_boundary' in d else None
+    gx_boundary = d['boundary'] if 'boundary' in d else (d['gx_boundary'] if 'gx_boundary' in d else None)
     m = MapFile.load(MAP)
     hm = parse_heightmap(m.get('HeightMapData'))
     bt2 = parse_blendtiles(m.get('BlendTileData'), hm['width'], hm['height'], m.table)
@@ -83,11 +83,25 @@ def main():
     # impassable hatch
     img[imp & land] = (img[imp & land].astype(np.float64) * 0.62 +
                        np.array([92, 70, 52]) * 0.38).astype(np.uint8)
+    # 装饰纹理：层交界岩壁、水陆交界沙滩。底图按高度上色时这两样看不出来。
+    _tiles = np.flipud(np.array(bt2['tiles'], dtype=np.uint32).reshape(bt.GRID, bt.GRID))
+    _tex_i = _tiles // 64
+    _tex_names = [t['name'] for t in bt2['textures']]
+
+    def _tex_where(pred):
+        hit = np.zeros(_tex_i.shape, dtype=bool)
+        for i, name in enumerate(_tex_names):
+            if i < int(_tex_i.max()) + 1 and pred(name):
+                hit |= _tex_i == i
+        return hit
+
+    img[_tex_where(lambda n: n.startswith('Rock_'))] = (128, 120, 108)
+    img[_tex_where(lambda n: n.startswith('Sand_'))] = (214, 198, 142)
 
     # ⚠ 预览底图 = 内部帧（行 0 = 北），不再 flipud。
     im = Image.fromarray(img).resize((bt.GRID * S, bt.GRID * S), Image.LANCZOS)
     dr = ImageDraw.Draw(im, 'RGBA')
-    # 高亮主省省界
+    # 高亮主区轮廓
     if gx_boundary is not None and gx_boundary.any():
         bimg = Image.fromarray(gx_boundary.astype(np.uint8) * 255).resize(
             (bt.GRID * S, bt.GRID * S), Image.NEAREST)
@@ -126,13 +140,6 @@ def main():
         dx, dy = math.cos(a) * L * 0.5, -math.sin(a) * L * 0.5
         dr.line([cx - dx, cy - dy, cx + dx, cy + dy], fill=(60, 255, 120), width=9)
         dr.ellipse([cx - 4, cy - 4, cx + 4, cy + 4], fill=(255, 255, 255), outline=(20, 60, 20))
-    # 城市名标注：标在城市房屋旁边（每座城市 1~2 个房子）
-    # ⚠ city_centers 与底图同为**内部帧**（第 0 行 = 最北），直接画、不翻 y
-    for cn, ccx, ccy in [(n, cx, cy) for n, cx, cy in bt.city_centers(bt.Geo()) if n in bt.CITY_SEATS]:
-        cx = ccx * S
-        cy = ccy * S
-        dr.text((cx + 14, cy + 4), cn, font=f_small, fill=(255, 245, 200),
-                stroke_width=3, stroke_fill=(0, 0, 0))
     # 每类独立资源编号标注（矿1..矿N / 油井1..N / 医院1..N …），方便后续按编号调整
     res_kinds = [('OreNode', '矿', (255, 214, 0)), ('OilDerrick', '油井', (255, 92, 0)),
                  ('ObservationPostTechStructure', '哨', (0, 235, 235)),
@@ -162,6 +169,10 @@ def main():
             c = colours[tn]
             r = 7 if tn == 'OreNode' else 9
             dr.ellipse([cx - r, cy - r, cx + r, cy + r], fill=c, outline=(20, 20, 20), width=2)
+        elif any(k in tn for k in ('Tree', 'Bush', 'Palm', 'Shrub')):
+            dr.ellipse([cx - 4, cy - 4, cx + 4, cy + 4], fill=(34, 120, 46), outline=(16, 48, 20))
+        elif any(k in tn for k in ('Rock', 'Rocks', 'Stone')):
+            dr.ellipse([cx - 4, cy - 4, cx + 4, cy + 4], fill=(176, 172, 164), outline=(60, 56, 48))
     # 斜坡编号与验收序号一致，并画出上坡方向，方便按编号改角度。
     if 'ramp_json' in d.files:
         import json
@@ -214,7 +225,7 @@ def main():
     dr.text((24, 18), PREVIEW['title'], font=f_title, fill=(255, 226, 120))
     dr.text((24, 80), PREVIEW['subtitle'], font=f_base, fill=(210, 220, 235))
     # ⚠ 朝向标注：本预览与**游戏内实际显示一致**（T1.8.8 实机确认）——
-    #   北在屏幕上方、海（北部湾，南）在下方，即常规地图朝向。
+    #   北在屏幕上方、海在下方，即常规地图朝向。
     _w = dr.textlength(PREVIEW['subtitle'], font=f_base)
     dr.text((30 + _w, 80), '（本图与游戏内一致：北朝上、海在下方）',
             font=f_base, fill=(255, 170, 90))

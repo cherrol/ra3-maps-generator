@@ -5,7 +5,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from ra3map import MapFile, parse_objects, props_dict, parse_heightmap
 import project as proj
 
-P = proj.current('bagui_dadi')
+P = proj.current()
 m = MapFile.load(P.asset(P.map_name + '.map'))
 hm = parse_heightmap(m.get('HeightMapData'))
 W, H = hm['width'], hm['height']

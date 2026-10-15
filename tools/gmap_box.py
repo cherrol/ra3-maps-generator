@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
-"""只出图：抓谷歌地形图，按广西四向最外缘裁切，导出预览（不改任何地图数据）。
+"""只出图：抓谷歌地形图，按主区四向最外缘裁切，导出预览（不改任何地图数据）。
 
-输出（写到 maps/bagui_dadi/）：
+输出写到当前默认配方目录：
   gmap_box.png         按真实经纬度比例裁切（宽 7.62° x 高 5.51°）
   gmap_box_square.png  拉伸成正方形（模拟地图 V_STRETCH 后的观感）
 """
@@ -18,7 +18,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 import terrain_gen as bt          # noqa: E402
 
-# 广西四向最外缘（上一轮从省界线量出来的）
+# 主区四向最外缘（从边界线量出来的）
 LON_W, LON_E = 104.4422, 112.0657
 LAT_S, LAT_N = 20.8850, 26.3913
 Z = int(os.environ.get('GMAP_Z', '8'))

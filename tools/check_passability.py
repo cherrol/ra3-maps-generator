@@ -24,8 +24,8 @@ def main():
     passable = land_ok & (slope < SLOPE_LIMIT) & (d_edge > 1) & ~bt.shore_block_mask(z, _ramps)
 
     geo = bt.Geo()
-    # 出生点坐标：优先用 terrain.npz 里保存的（已按省界/河道/城市吸附过的）格坐标；
-    # 没有才退回经纬度换算，并夹进可玩区 —— 否则像百色这种偏北的纬度经 V_STRETCH 拉伸后
+    # 出生点坐标：优先用 terrain.npz 里保存的（已按边界、河道、城镇吸附过的）格坐标；
+    # 没有才退回经纬度换算，并夹进可玩区 —— 否则偏北的纬度经 V_STRETCH 拉伸后
     # 会算出 y>GRID，直接 IndexError（自 v11 之前就存在的坑）。
     # npz 里的名字是生成那一版时的 BASES 名称。改名后按顺序对齐，
     # 不要用名字查找，也不要退回 BASES 里的旧经纬度。

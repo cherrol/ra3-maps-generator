@@ -110,6 +110,9 @@ def check_ore(bundle):
     scl = float(bt.T.get('ore_shore_clear', 12.0))
     ramps = json.loads(str(d['ramp_json'])) if 'ramp_json' in d.files else []
     ramp = bt.ramp_cover_mask(z.shape, ramps)
+    ramp_body = bt.ramp_body_mask(z.shape, ramps, z)
+    foot = float(bt.T.get('build_foot_clear', 8.0))
+    ramp_d = bt.distance_transform(ramp_body) if ramp_body.any() else None
     imp = ((slope > bt.SLOPE_IMPASSABLE)
            | (z > bt.WATER_Z + bt.PEAK_IMPASSABLE))
     fails = []
@@ -178,6 +181,20 @@ def check_ore(bundle):
     print('   外围矿 %d 个（陆地 %d、水面 %d，目标 %d）' % (len(outer), n_land, n_water, want_outer))
     if len(outer) != want_outer:
         fails.append('R3: 外围矿 %d 个，要求每名玩家 4 个、共 %d' % (len(outer), want_outer))
+    if bt.T.get('ore_bands'):
+        kinds = list(d['ore_kind']) if 'ore_kind' in d.files and d['ore_kind'].size else []
+        owners = list(d['ore_owner']) if 'ore_owner' in d.files and d['ore_owner'].size else []
+        if len(kinds) != len(ore) or len(owners) != len(ore):
+            fails.append('R3: 矿带开关开了，但矿没有归属')
+        else:
+            for bi, (nm, c) in enumerate(zip(names, bases)):
+                n_mid = sum(1 for k, w in zip(kinds, owners) if int(k) == 1 and int(w) == bi)
+                if n_mid != 2:
+                    fails.append('R3: %s 中矿 %d 个（要求恰好 2，并标给该出生点）' % (nm, n_mid))
+            n_far = sum(1 for k, w in zip(kinds, owners) if int(k) == 2 and int(w) < 0)
+            if n_far != 2 * n_players:
+                fails.append('R3: 远矿 %d 个，要求每名玩家 2 个、不标归属、共 %d' % (n_far, 2 * n_players))
+            print('   矿带：中矿按出生点各 2，远矿 %d 个不归属' % n_far)
     yy_i, xx_i = np.mgrid[0:grid, 0:grid]
     inside = np.minimum.reduce([xx_i - bt.BORDER, yy_i - bt.BORDER,
                                 bt.GRID - 1 - bt.BORDER - xx_i,
@@ -217,7 +234,7 @@ def check_ore(bundle):
                 why = '层界'
             elif shore[y, x]:
                 why = '岸线'
-            elif ramp[y, x]:
+            elif ramp_d is not None and ramp_d[y, x] < foot:
                 why = '斜坡'
             elif imp[y, x]:
                 why = '不可通行'
@@ -355,7 +372,7 @@ def check_buildable(bundle):
 
 
 def check_ramps(bundle):
-    """自动斜坡：沿坡单格落差、端缝、横向落差，车道要有土路纹理。"""
+    """自动斜坡：沿坡单格落差、端缝、横向落差，车道要有 Dirt_Yucatan06。"""
     _d, z, _ore, _ang, _bases, _names, slope, gx, gy = _terrain(bundle)
     h, w = z.shape
     if 'ramp_json' not in _d.files:
@@ -401,7 +418,9 @@ def check_ramps(bundle):
             sx2 = int(round(cx + ux * s2))
             sy2 = int(round(cy + uy * s2))
             if 0 <= sy2 < h and 0 <= sx2 < w:
-                texs.add(tex_names[int(blk_tex[sy2, sx2])])
+                ti = int(blk_tex[sy2, sx2])
+                if 0 <= ti < len(tex_names):
+                    texs.add(tex_names[ti])
         bad = []
         if along_max > RAMP_ALONG_MAX + RAMP_ALONG_SLACK:
             bad.append('沿坡 %.2f' % along_max)
