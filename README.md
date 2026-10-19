@@ -1,7 +1,7 @@
 # RA3 地图工坊（ra3maps）
 
 红警3（Red Alert 3 / SAGE）自定义地图的**可复现构建工程**：直接生成 `.map` 二进制，
-不依赖 WorldBuilder 手工绘制。当前产出：`[CHAI]八桂大地`（以广西壮族自治区地形为蓝图的 8 人 4v4 地图）。
+不依赖 WorldBuilder 手工绘制。
 
 ## 一、目录结构
 
