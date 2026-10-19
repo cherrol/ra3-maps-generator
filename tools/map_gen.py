@@ -940,6 +940,27 @@ def build_objects(t, template_objects):
     return objs, sea_yards
 
 
+def _drop_stale_assetlist(tmpl):
+    """删掉从模板继承来的 AssetList。
+
+    ⚠ 2026-10-16 实机定位（症状："地编里能看见树/石头，游戏里看不见，地编打开再保存进游戏又看见了"）：
+    模板的 AssetList 只有 20 条，是为模板那 15 种对象准备的。我们在它基础上新加了对象
+    （树/石头/园石…），但 AssetList 没跟着重建 —— 游戏按这份过期的清单去准备资源，
+    清单外的对象类型就直接不生成，所以装饰物进不了游戏。
+    地编（WorldBuilder）打开再保存时会按地图内容重建 AssetList（T2.1.9 变成 37 条），
+    所以"地编存一次就好了"。
+
+    本流水线不做资源预登记：直接删掉这个 chunk，游戏会退回到"按需加载"，
+    所有对象类型都能正常生成。实测 A_TEST1_NOASSETLIST / A_TEST4_WBALL 都能看见装饰；
+    地编自己的自动存档也从不写 AssetList。
+    如将来要恢复，把它做成配方开关即可。
+    """
+    before = len(tmpl.chunks)
+    tmpl.chunks = [c for c in tmpl.chunks if c.name != 'AssetList']
+    if len(tmpl.chunks) != before:
+        print('  [AssetList] 已删除模板继承的过期资源清单（否则新加的装饰不会被游戏加载）')
+
+
 # ------------------------------------------------------------------ worldinfo / art
 def build_worldinfo(template_chunk, table):
     r = R(template_chunk.payload)
@@ -1781,6 +1802,7 @@ def main():
     props = build_worldinfo(wi, tmpl.table)
     w = W(); write_props(w, props, key_ids)
     set_payload('WorldInfo', bytes(w.b))
+    _drop_stale_assetlist(tmpl)
     patch_east_bonus_alliance(tmpl)
     if bool(getattr(cfg, 'ALLOW_NAVY', False)):
         _navy_lock = ('Only Ground', 'Only Ground Fix')
