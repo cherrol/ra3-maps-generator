@@ -1,0 +1,96 @@
+{
+  "source": "RA3 WorldBuilder 1.12 native editorNumber and argument type metadata; CONDITION_TRUE=3 verified against shipped campaign and recipe scripts",
+  "commands": {
+    "CONDITION_TRUE": {
+      "kind": "condition",
+      "opcode": 3,
+      "argument_types": []
+    },
+    "COUNTER": {
+      "kind": "condition",
+      "opcode": 1,
+      "argument_types": [
+        4,
+        6,
+        0
+      ]
+    },
+    "TIMER_EXPIRED": {
+      "kind": "condition",
+      "opcode": 4,
+      "argument_types": [
+        4
+      ]
+    },
+    "COUNTER_MATH_VALUE": {
+      "kind": "action",
+      "opcode": 292,
+      "argument_types": [
+        4,
+        57,
+        0
+      ]
+    },
+    "SET_COUNTER": {
+      "kind": "action",
+      "opcode": 2,
+      "argument_types": [
+        4,
+        0
+      ]
+    },
+    "SET_PLAYER_OWNERSHIP_OF_TYPE_COUNTER": {
+      "kind": "action",
+      "opcode": 317,
+      "argument_types": [
+        61,
+        11,
+        4
+      ]
+    },
+    "OBJECTLIST_ADDOBJECTTYPE": {
+      "kind": "action",
+      "opcode": 216,
+      "argument_types": [
+        15,
+        48
+      ]
+    },
+    "CALL_SUBROUTINE": {
+      "kind": "action",
+      "opcode": 10,
+      "argument_types": [
+        13
+      ]
+    },
+    "SET_MILLISECOND_TIMER": {
+      "kind": "action",
+      "opcode": 21,
+      "argument_types": [
+        4,
+        1
+      ]
+    },
+    "DISPLAY_COUNTER": {
+      "kind": "action",
+      "opcode": 188,
+      "argument_types": [
+        4,
+        25
+      ]
+    },
+    "PLACE_AI_BEACON_LOCATION": {
+      "kind": "action",
+      "opcode": 571,
+      "argument_types": [
+        11,
+        103,
+        7
+      ]
+    }
+  },
+  "beacon_types": {
+    "source": "RA3 WorldBuilder 1.12 executable enum strings at 0x70bf78; native 103 parameter",
+    "assault": "Assault"
+  }
+}

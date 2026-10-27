@@ -1,3 +1,5 @@
+> 此文保留迁移前的设计记录；其中 Python 工具路径已停用。当前命令与数据格式见 [Rust 迁移说明](rust_migration.md)。
+
 # World Builder 解析结论与对接方案
 
 > 勘察对象：`D:\app\Ra3NewWorldBuilder`（新地编 / 物版地编，基于 EA 官方 RA3 地编改造）

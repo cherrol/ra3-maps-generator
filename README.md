@@ -1,231 +1,181 @@
 # RA3 地图工坊（ra3maps）
 
-红警3（Red Alert 3 / SAGE）自定义地图的**可复现构建工程**：直接生成 `.map` 二进制，
-不依赖 WorldBuilder 手工绘制。
+使用原生 Rust 从分层蓝图、声明式布局和脚本模板生成《红色警戒 3》地图。构建、校验、预览、版本管理、ZIP 打包和 WorldBuilder 导出均在一个可执行文件中完成，运行时无需 Python、NumPy 或 Pillow。
 
-## 一、目录结构
+地图合集为 **九州大地**。四张图的配方目录、CLI id、规则模板、发布目录与游戏显示名均已统一为：千壑横原、碧嶂回澜、千流叩海、翠屿浮光。默认地图为碧嶂回澜，以下命令使用新名。定名见 [系列命名](docs/九州大地命名.md)，迁移与清理见 [命名迁移](docs/naming_migration.md)。每图最后一个旧发布版本归档于 `archive/九州大地/改名前/`。
 
-```
-ra3maps/
-├─ README.md                本文件
-├─ build.cmd                一键构建入口（cmd，推荐）
-├─ build.ps1                一键构建入口（PowerShell 包装）
-├─ dist/                    【发布包】每张地图一个总目录，里面按版本存放
-│   └─ [CHAI]八桂大地/
-│       ├─ [CHAI]八桂大地T0.0.8/        ← 整个文件夹可直接拷进 Maps\
-│       │   ├─ [CHAI]八桂大地T0.0.8.map
-│       │   ├─ [CHAI]八桂大地T0.0.8_art.tga
-│       │   └─ map.str
-│       ├─ [CHAI]八桂大地T0.0.8.zip     ← 同内容压缩包（分发用）
-│       └─ …（历史版本 T0.0.1 ~ T0.0.7）
-├─ assets/                  【工程产物】每张地图一个总目录，里面按版本存放
-│   └─ [CHAI]八桂大地/
-│       ├─ [CHAI]八桂大地T0.0.8/        ← 当前版本
-│       │   ├─ [CHAI]八桂大地T0.0.8.map / _art.tga / map.str   （游戏文件）
-│       │   ├─ preview.png              总览预览图
-│       │   ├─ README.md                该版本的说明（自动生成）
-│       │   └─ source/                  生成物与自检图（terrain.npz、各类 preview）
-│       └─ …（历史版本 T0.0.1 ~ T0.0.7）
-├─ maps/                    【配方】一张地图的全部"参数与素材"
-│   ├─ .default             默认配方 id
-│   └─ bagui_dadi/
-│       ├─ config.py        配方：尺寸/高程/水域/出生点/河流/纹理/对象布局/文本
-│       ├─ README.md        该图的散文说明（会被合进发布包说明）
-│       ├─ version.json     版本号状态与历史
-│       └─ data/            配方输入（guangxi_boundary.json 广西 14 地级市边界）
-├─ templates/               【骨架】可复用的 .map 模板
-│   └─ 8p_template.map      8 人模板（含"房间 6 位 + 2 固定 AI"脚本系统）
-├─ tools/                   【工具链】与具体地图无关
-│   ├─ project.py           配方/路径解析（--map / RA3MAP_ID / maps/.default）
-│   ├─ ra3map.py            .map 读写库（字符串表、chunk、属性字典、对象）
-│   ├─ refpack.py           RefPack 解压（含社区地图的 0x80 变体）
-│   ├─ refpack_enc.py       RefPack 压缩（LZ77，带回溯引用）
-│   ├─ terrain_gen.py       地形生成（v11 分层蓝图 / 层间斜坡 / 出生点 / 资源）
-│   ├─ map_gen.py           地图组装（骨架 + 地形 -> .map / _art.tga / map.str）
-│   ├─ accept.py            构建验收（矿规则 / 矿场可建造 / 斜坡 / 轴向，失败则构建失败）
-│   ├─ check_passability.py 可通行性与出生点连通性自检（水上基地不要求陆路连通）
-│   ├─ verify_map.py        成品校验 + 回读渲染（build_view / art_preview）
-│   ├─ make_preview.py      生成发布用预览图（中文标注+图例）
-│   ├─ make_readme.py       生成发布包内的地图说明（自动表格 + 配方散文）
-│   ├─ make_dist.py         发布打包：只把游戏文件放进 dist/<地图名>/（可出 zip）
-│   ├─ version.py           版本号状态与递增（测试 T / 正式 V）
-│   ├─ build_all.py         一键流水线（可 --install 安装到游戏）
-│   ├─ layers5_v10.py       仅提供五档配色常量供 `work/*` 引用（v4~v9 已清理）
-│   └─ …                    辅助/逆向脚本（scan_maps、dump_scripts、tex_tokens …）
-├─ lib/opensage/            【参考】OpenSAGE 源码（格式权威参考）
-├─ docs/                    【文档】格式规范（ra3_map_format_spec.md）与会话状态
-└─ work/                    【本机诊断，不进版本库】蓝图导出与旧脚本；验收以 tools/accept.py 为准
+## 构建与使用
+
+四张图均已启用 [通用坐标制作流水](docs/coordinate_pipeline.md)：以各自的定稿成品为基准，自动派生资源清单，检查占地、坡口、近矿及陆路/水路，输出逐格材质坐标。公共策略在 `templates/rules/coordinate-pipeline.json`，每图可做局部覆盖；新增或恶化问题阻止发布。普通流水包含独立的 `coordinates` 阶段，新蓝图构建同样自动导出坐标。
+
+坐标查询使用 `cargo run --release --locked -- coordinates --map 千壑横原`，导出离线交互地图、完整地形格点、层界和对象 CSV/JSON；按原生对象顺序编号，附旧预览编号对照，不修改游戏地图。见 [坐标系统与统计](docs/map_coordinates.md)。
+
+需要 Rust 1.88 或更新版本。首次编译需要获取 Cargo.lock 锁定的依赖。
+
+```sh
+cargo build --release --locked
+cargo run --release -- list
+cargo run --release -- build --map 碧嶂回澜
 ```
 
-**验收在 `tools/accept.py`**，已接进 `build_all` 的 `accept` 阶段。`work/` 被 `.gitignore` 忽略，只放本机诊断和蓝图导出脚本；其中 `check_ore_rules.py` 等是转到 `accept.py` 的兼容入口。
-
-**⚠ 轴向约定（务必先读）**：内部数据第 0 行 = 最北；写进 `.map` 时高度场与物件 y 翻到游戏帧（第 0 行 = 屏幕下方）。显示图（art.tga、预览）北朝上、海在下方。判据是「海在哪一半」，不要用形状 IoU。权威说明在 `docs/SESSION_STATE.md` 第 1 节，检查在 `tools/accept.py` 的 axis 项。
-
-
-**职责划分**：`maps/` 只放"这张地图是什么"（配方与素材）；`tools/` 放"怎么造"（通用算法）；
-`assets/` 放"造出来的东西"；`dist/` 放"能直接进游戏的东西"。新增地图只动 `maps/` 与产物目录。
-
-**产物目录规则**：`assets/<地图名>/<地图名+版本>/` 与 `dist/<地图名>/<地图名+版本>[/.zip]` ——
-一张地图的所有版本、所有相关文件（地图、美术、文本、预览、说明、自检数据、发布包）
-都在同一个以地图名命名的总目录下，版本各占一层；`dist/<地图名>/<地图名+版本>/` 整包可直接拷进游戏。
-
-## 版本号规则
-
-* **测试版**：`<地图名>T<major>.<minor>.<patch>`，从 **`T0.0.1`** 起，**每次修改 +0.0.1**
-* **正式版**：`<地图名>V<major>.<minor>.<patch>`，发布时置为 **`V1.0.0`**，之后**每次 +0.0.1**
-* 递增按三位十进制进位：`T0.0.9 → T0.1.0 → … → T0.9.9 → T1.0.0`
-* 版本号参与**发布名**（游戏内地图名 = 文件夹名 = .map 文件名），因此每个版本在房间里是独立一张图；
-  同时写进 `map.str` 文本与预览图标题
-* 状态与历史存在 `maps/<id>/version.json`（谁、哪天、改了什么）
+Windows 可以使用原有入口：
 
 ```powershell
-# 查看当前版本与历史
-& $py tools\version.py --map bagui_dadi --show
-
-# 改动后：测试版 +0.0.1 并重新出包（--bump 在构建前递增）
-& $py tools\build_all.py --map bagui_dadi --bump --note "调整中路矿脉" --install
-
-# 发布正式版：转 V1.0.0；再次构建即为 V1.0.0
-& $py tools\version.py --map bagui_dadi --release --note "首个正式版"
-
-# 正式版继续 +0.0.1
-& $py tools\build_all.py --map bagui_dadi --bump --release --note "平衡性调整" --install
-
-# 需要时直接指定版本
-& $py tools\version.py --map bagui_dadi --set T0.0.5 --note "回滚到该版本"
+.\build.cmd --map 碧嶂回澜
+.\build.ps1 -Map 碧嶂回澜 -Only map,verify
+.\build.ps1 -Map 碧嶂回澜 -Bump -Note '调整矿位' -Install
 ```
 
-> 约定：**每次修改地图内容（配方/地形/对象布局）都必须递增版本号**，纯工具链改动不必递增。
-> `--bump` 若构建失败会把版本号滚回，并删掉这次新产生的版本目录。
-> 当前版本见 `maps/bagui_dadi/version.json`（现为 **T1.9.8**）。
+Linux/macOS 可使用 `./build.sh --map 碧嶂回澜`。编译完成后也可直接运行 `target/release/ra3maps`（Windows 为 `ra3maps.exe`）。从其他目录运行时传入 `--root <工程根目录>`。
 
-## 二、环境
+地图选择顺序为 `--map`、`RA3MAP_ID`、`maps/.default`，最后尝试唯一配方。不指定地图即可构建默认配方。
 
-* Python：`C:\Users\cherrol\.dsh\dsh-runtimes\dsh-primary-runtime\dependencies\python\python.exe`
-  （依赖 numpy、Pillow，随 DSH 运行时提供）
-* 游戏地图目录：`C:\Users\cherrol\AppData\Roaming\Red Alert 3\Maps\`
-* 游戏安装目录：`D:\game\RedAlert3\`
-* 模板来源：本机社区地图 `{8p_1.5}_testing_map`（Grothen 8 人图），已复制为 `templates/8p_template.map`
+## 项目结构
 
-## 三、常用命令
-
-```powershell
-# 一键构建默认配方（输出到 assets\<地图名>\，并打包 dist\<地图名>\[ + .zip]）
-& $py tools\build_all.py
-
-# 指定配方；构建完并安装到游戏 Maps 目录
-& $py tools\build_all.py --map bagui_dadi --install
-
-# 只跑某些阶段（terrain / passability / map / verify / preview / accept / readme / dist / wb）
-& $py tools\build_all.py --only map --only verify
-& $py tools\build_all.py --only accept          # 只验收当前版本产物
-& $py tools\build_all.py --only dist            # 只重新打包发布件
-
-# 同时导出并安装「新地编(World Builder)」所需文件
-#   （heightmap.xyz / object.txt / 精确角度导入插件 / 官方库优化微程序）
-& $py tools\build_all.py --map bagui_dadi --install --wb
-
-# 单独跑某一环
-& $py tools\terrain_gen.py --map bagui_dadi
-& $py tools\map_gen.py     --map bagui_dadi
-& $py tools\verify_map.py  --map bagui_dadi
-& $py tools\make_preview.py --map bagui_dadi
-& $py tools\make_dist.py   --map bagui_dadi [--no-zip]
+```text
+src/
+  binary.rs       有边界检查的基础二进制编解码
+  refpack.rs      RefPack LZ77 压缩、解压与 EAR 容器
+  map.rs          CkMp、字符串表、属性、对象、高度图和纹理块
+  archive.rs      ZIP/NPY 输入读取和确定性 ZIP 输出
+  project.rs      配方、路径、版本和原子文件写入
+  terrain.rs      分层蓝图、严格层高、海深、斜坡、登陆岸与出生平台
+  surface.rs      可复现纹理噪声、层界/水岸装饰和通行/建造位图
+  scripts.rs      脚本树解析、字符串编号链接与引用检查
+  script_spawns.rs 通用脚本建筑航点的地形适配与占地验收
+  resources.rs    实际对象与脚本资源清单、纹理图集和地图 XML
+  render.rs       原生 PNG/TGA 和文字标注
+  build.rs        构建、验收、发布、安装与 WorldBuilder 导出
+maps/<id>/
+  config.json     名称、尺寸、层高、纹理、文本和输入路径
+  layout.json     出生点、斜坡、资源、对象和属性的定稿布局
+  v11_layers.npz  原有分层蓝图，原生 Rust 直接读取
+  version.json    版本状态与历史
+  data/           地理边界等原始素材
+templates/
+  8p_template.map 地图骨架
+  rules/          已链接规则的声明式脚本树与阵营/队伍模板
+  worldbuilder/   WorldBuilder 导入插件源码
+tests/            编解码、失败回滚与四张地图的回归测试
+lib/opensage/     参考源码
+docs/             地图格式和迁移说明
 ```
 
-**dist 里有什么**：只有游戏会加载的三个文件（`<地图名>.map`、`<地图名>_art.tga`、`map.str`），
-放在以地图名命名的文件夹里，外加同内容的 `.zip`；预览图、说明、source/ 等一律不进 dist。
-把 `dist\<地图名>\` 整个拖进 `%APPDATA%\Red Alert 3\Maps\` 即可游玩（或直接解压 zip）。
+配方与布局的修改方法见 [Rust 迁移与数据配方](docs/rust_migration.md)。历史 DEM、地理边界与预览素材保留在各地图目录；它们不替代启用中的分层蓝图。
 
-`build.ps1` / `build.cmd` 是同一条流水线的包装（`build.cmd` 不受 PowerShell 执行策略限制，推荐）：
+通用玩法模板为 `templates/rules/common-T0.5.1.json`，来自千壑横原前身 T0.5.1 的 224 条脚本。碧嶂回澜、千流叩海、翠屿浮光通过 `RULESET: "common-T0.5.1"` 共用它。构建会在各图出生点附近的平坦陆地补齐 31 个超武、电厂航点，并检查占地、水域、障碍、矿位与建筑间距；落点报告保存在产物的 `script_waypoints.json`。模板保留第二座产能及固定 AI，不包含电脑现金显示、主动进攻、按位置分队和四人落座脚本。
 
-```powershell
-.\build.cmd -Map bagui_dadi -Install          # cmd 包装（推荐）
-.\build.ps1 -Map bagui_dadi -Install          # 若提示脚本未签名：
-                                              #   powershell -ExecutionPolicy Bypass -File .\build.ps1
+千壑横原 T0.6.5 继续保持 T0.6.3 已取消分钟进攻的状态：没有 `minute-attack-*` 脚本或对应诊断计数，专属模板不配置 `periodic_attack`。`update-scripts --map 千壑横原 --bump <源ZIP>` 支持在移除配置后清理成品中的旧模块。详见 [脚本变更记录](docs/periodic_attack.md)。
+
+千壑横原 T0.6.4 已将 568、567 号斜坡分别移到原 376、244 的位置，并按授权挪开医院、避让树石。指定坡心、旧口恢复和端口通行通过核对，使用 `relocate-ramps <源ZIP> <方案JSON> --map <id> --bump` 增量编辑。见 [斜坡移动记录](docs/ramp_relocation.md)。
+
+千壑横原 T0.6.5 在原 377、220、309 位置新增三坡（569/570/571），按授权将 200 号矿移至同层 (752,470)。保留原 24 坡，矿位建造盘、矿口和资源通路通过检查。见 [斜坡新增记录](docs/ramp_additions.md)。
+
+通用脚本由 **224 条基础脚本 + 公共赠送建筑规则** 组成。以下三项统一声明在 `common-T0.5.1.json#/production_placement`，所有可玩地图均应用，包括使用独立 `RULESET` 的千壑横原。
+
+| 通用规则 | 统一行为 | 执行方式 |
+|---|---|---|
+| 赠送避让 `gift-clear-*` | 检查主、备用落点；主点被占尝试备用点，全占保留资格重试，成功后防止重复赠送 | 构建时生成主备航点、检测区域和运行时占用脚本；条数随赠送项目变化 |
+| 建筑水陆落点 | 重工完整占地位于合格平坦陆地，船厂完整占地位于水域；主备点均满足约束 | 构建时选址，成品回读验收 |
+| 赠送建筑朝向 | 赠送兵营、重工、机场、船厂朝向对方队伍出生区域中心，按各自主备落点分别计算 | 构建时设置创建动作的角度，成品回读验收 |
+
+三项保留原赠送条件、阵营及归属。公共规则同时检查建筑间距和障碍；找不到合格位置则构建失败。对应报告为 `gift-clearance.json`、`production-spawns.json`、`production-facing.json`。水陆和朝向属于通用脚本配套的构建规则，脚本总数按成品实际统计，不固定增加三条。
+
+已有成品通过 `cargo run --release -- repair-production --map <id> --bump --note '应用通用赠送建筑规则' <上一版ZIP>` 统一应用水陆、避让和朝向规则，安装加 `--install`。普通 `repack` 仅重新封装。公共规则的适用范围、配置及历史发布记录见 [公共赠送建筑规则](docs/production_placement_fix.md)。
+
+## 构建阶段
+
+完整顺序为 `terrain → passability → map → verify → preview → accept → readme → dist → wb`。失败时返回非零退出码。
+
+```sh
+# 只重建地图并回读校验
+cargo run --release -- build --map 碧嶂回澜 --only map --only verify
+
+# 单独执行某个阶段
+cargo run --release -- terrain --map 碧嶂回澜
+cargo run --release -- accept --map 碧嶂回澜
+cargo run --release -- dist --map 碧嶂回澜 --no-zip
+
+# 修改后递增版本并安装到游戏
+cargo run --release -- build --map 碧嶂回澜 --bump --note '调整矿位' --install
+
+# 导出并安装地编导入文件
+cargo run --release -- build --map 碧嶂回澜 --wb --wb-root 'D:\app\Ra3NewWorldBuilder'
 ```
 
-## 四、新增一张地图
+`--only`、`--skip` 可以重复，拼错阶段名会报错。地图安装需要设置 `APPDATA`，安装目标为 `APPDATA/Red Alert 3/Maps/<发布名>/`。`--wb` 需要 `--wb-root` 或 `RA3MAP_WB_ROOT`。
 
-1. **建配方目录**：`maps/<new_id>/`（`<new_id>` 用 ASCII，如 `pearl_harbor`）。
-2. **写 `config.py`**：直接复制 `maps/bagui_dadi/config.py` 改内容。关键字段：
-   * `MAP_NAME`：地图名（= 游戏 Maps 下的文件夹名与 .map 文件名）
-   * `TEMPLATE`：`templates/` 下的骨架（换玩法就换骨架）
-   * `GRID / BORDER / LAND_Z / WATER_Z`：尺寸与高度基准（可玩区 = `GRID - 2*BORDER` 格，每格 `CELL` 世界单位）
-   * `GEOJSON`：`maps/<new_id>/data/` 下的边界数据（任何带 `properties.name` 的 GeoJSON 多边形都行）
-   * `LON0/LON1/LAT0/LAT1`：经纬度 → 地图坐标的映射范围（决定"蓝图"取景）
-   * `BASES`：出生点 `(经度, 纬度, 名称, 队伍, human|ai)`
-   * `RIVERS`：河流折线 + 河床高度（低于 `WATER_Z` 即形成水面与天然渡口）
-   * `CITY_AMP`：各多边形（城市/地区）的山地强度，塑造"哪里高哪里平"
-   * `TEX_SET / GRASS_TEXTURES`：地表纹理（**必须用本机已有地图中出现过的资源名**）
-   * `WAYPOINT_LAYOUT / YARD_PLACEMENT / *_ORE / DERRICK_POS / POST_POS / DECOR_POS`：对象布局
-   * `MAP_STR_*`、`PREVIEW_*`：地图文本与预览图标注
-3. **放素材**：把 GeoJSON 等输入放进 `maps/<new_id>/data/`。
-4. **构建**：`python tools/build_all.py --map <new_id> --install`。
-5. **产物**：`assets/<MAP_NAME>/`（三个游戏文件 + 预览 + 说明 + source 自检图）。
+`preview` 阶段自动额外生成 `preview--layout.png` 全要素编号图与 `layout-index.json` 索引，保存在当前版本的 `assets` 目录。编号覆盖定稿布局中的每一个对象（包括矿脉、油井、科技建筑、房屋、树木、灌木、石头、装饰、出生点和航点）及每一条斜坡。图片按类别着色，引线连接编号与实际落点；斜坡另画配方范围框和坡轴。画布北朝上，可放大查看密集位置。图外对象会扩展显示范围，在灰底区域保留真实落点。
 
-配方里的 `TERRAIN` 字典可覆盖地形塑形参数（噪声波长/种子、山地增益、海岸与河谷影响半径、
-海面深度、出生点平台尺寸等）；缺省值见 `tools/terrain_gen.py` 的 `TERRAIN_DEFAULTS`。
+编号先按 `layout.json` 的 `objects` 顺序从 1 排起，再排 `ramps`。索引记录编号、类别、格坐标、对象类型、唯一名称及 JSON Pointer 路径；`position_pointers` 列出移动时应同步修改的坐标字段。只移动坐标不会改变编号，增删或重排条目后需以新图为准。布局变更后可运行 `cargo run --release -- build --map <id> --only terrain --only preview` 刷新编号图，无需打包安装。
 
-## 五、已知坑（写在这里，免得反复踩）
+本机发布约定：每次打包完成后，将成品地图目录复制一份到 `C:\Users\cherrol\AppData\Roaming\Red Alert 3\Maps\`。当前 WSL 对应路径为 `/mnt/c/Users/cherrol/AppData/Roaming/Red Alert 3/Maps/`；使用常规构建安装时设置 `APPDATA=/mnt/c/Users/cherrol/AppData/Roaming` 并传入 `--install`。独立 repack 或地编重存包也需要在打包后复制成品目录；ZIP 本身保留在 `dist/`。
 
-1. **压缩容器**：`.map` 磁盘形态为 `EAR\0` + uint32 解压长度 + RefPack 流；解压后必须是 `CkMp`。
-   社区部分地图把大文件标志写成 `0x80`（而非 `0x90`），解析要兼容；写出统一用标准 `0x10 0xFB`。
-2. **字符串表**：`uint32 数量` + 每条 `变长字符串 + uint32 id`，id 从数量降序到 1；
-   属性键名也在这张表里（引用是 **uint24**）。
-3. **chunk 头**：`uint32 名字索引 + uint16 版本 + uint32 数据长度 + 数据`，顺序直读到 EOF，无对齐。
-   版本号随游戏变化（本机 RA3：HeightMapData=6、BlendTileData=27、SidesList=6、Script=4 …），
-   解析必须按 chunk 内版本条件分支。
-4. **BlendTileData 位数组语义**：`Impassability` 1=不可通行；`Buildability`、`Visibility`、
-   `PassageWidths` 等以实机地图实测为准（本机实测 Buildability 全 0 = 可建造、Visibility 近全 1）。
-5. **纹理块编号**：每张纹理占 `(CellSize*2)^2` 个 tile 值；格内偏移按 2×2 分组顺序
-   `((y%8)//2*4+(x%8)//2)*4 + (y%2)*2 + (x%2)`（已在实机地图上验证）。
-6. **纹理资源名**：`BlendTileData` 用短名（`Sand_Hawaii02`），`WorldInfo.terrainTextureStrings`
-   用带前缀资源名（`TSand_Hawaii02`）配法线（`_NRM`/`_nrm` 大小写按原图照抄）。名字必须真实存在。
-7. **出生位约定**：`Player_N_Start` 必须连续编号才是房间可选位；模板用
-   `Player_7_Start (imported)` 这种名字让第 7/8 位**不进房间列表**，由脚本固定生成。
-8. **对象 z 值**：模板中对象/waypoint 的 z 都是 0（贴地由引擎处理），改位置时保持 z=0。
-9. **校验三件套**：`verify_map.py`（结构+连通）、`check_passability.py`（出生点可达性）、
-   `make_preview.py`（人眼确认）——每次构建都会跑，别跳过。
-10. **第二座产能的水陆落点**：赠送的重工/机场/兵营只放陆地，赠送的船厂只放水面
-   （`tools/dual_prod.py` 的 `_REQUIRE`，水面线用配方的 `WATER_Z`）。出生点旁边 14~26 格内
-   找不到合规地形就**不赠送那一座**：路径点不摆、脚本也不写。兵营和重工是固定配置，
-   找不到直接报错停构建。
-   **"水太远"也算摆不下，同样不赠送**（2026-10 用户定稿）：不为了凑一座船厂把落点推到几百格
-   以外。所以内陆出生点的图**没有第二座船厂是正常结果**，不是 bug，别去改 `_MIN_DIST/_MAX_DIST`
-   来"修"它。四张现存图的实测：岭尽生潮最近水面 499 格、环海相望 373 格、夹川汇潮与叠岭连原
-   可玩区内无水 —— 全部按规则取消。
-11. **WorldBuilder 回存的图不能当构建输入**：回存对内容是安全的（地形高度场、通行/可见位图
-   逐字节相同，对象属性/坐标/角度不变），但会**删纹理表**（48 → 13，删掉当前没用的）并
-   **把 594 条 blend 清成 0**（两个回存样本都如此）。回存件只当"能进游戏的成品"用；
-   要改地图请改配方重新构建。它还会**保留**输入里已有的第二座产能落点 —— 拿旧版本去回存，
-   旧规则的落点会一起留下（实测 `夹川汇潮T2.1.9` 回存后仍带 8 个陆地船厂落点 + 32 条船厂脚本）。
-12. **`verify_map.py` 的控制台编码**：日志里有 `✓`，Windows 控制台按 GBK 输出会
-   `UnicodeEncodeError` 中断构建。跑构建前设 `$env:PYTHONIOENCODING="utf-8"`。
-13. **`AssetList` 必须跟着对象表重建，否则新加的对象不进游戏**（2026-10-16 实机定位，
-   症状："地编里能看见树/石头，游戏里看不见；地编打开再保存、再进游戏就看见了"）。
-   模板自带的 `AssetList` 只有 **20 条**，是为模板那 15 种对象准备的资源预登记清单；
-   在模板基础上新加的对象（树/石头/园石/tech 建筑…）如果没进这份清单，游戏按清单备货 →
-   **清单外的对象类型直接不生成**。地编保存时会把清单按地图内容重建（实测 `夹川汇潮T2.1.9`
-   20 → 37 条、`岭尽生潮T0.4.0` 20 → 35 条），所以"地编存一次就好了"。
-   **本流水线的做法：`map_gen.py` 的 `_drop_stale_assetlist()` 直接删掉这个 chunk**
-   （地编自己的自动存档 `WorldBuilderAutoSave*.map` 也从不写它），游戏退回按需加载。
-   判据：构建日志里要有 `[AssetList] 已删除模板继承的过期资源清单`。
-14. **游戏按"地图名"缓存地图**（2026-10 用户定稿）：直接用同名文件覆盖，游戏里读到的
-   可能还是缓存中的旧内容，不会加载新文件。**只要改了地图内容就必须累加版本号**
-   （版本号参与发布名 = 文件夹名 = .map 文件名），**测试图也一样**。
-   所以验证修复时不要复用旧名字，要 `--bump` 出新版本再看。
+已有成品只需要修复封装、重新发布时，使用 `repack`，保留所有地图区块、地形、对象与脚本，要求递增版本：
 
-## 六、当前进度与待办
+```sh
+APPDATA=/mnt/c/Users/cherrol/AppData/Roaming cargo run --release -- repack \
+  --map 千壑横原 --bump --note '修复地图封装与资源配套' --install \
+  'dist/[CHAI]千壑横原/[CHAI]千壑横原T0.5.6.zip'
+```
 
-* 四张图当前版本（2026-10-16，均含"删除过期 AssetList"修复、已装进游戏）：
-  `夹川汇潮 T2.2.1` / `岭尽生潮 T0.4.3` / `环海相望 T0.2.3` / `叠岭连原 T0.3.8`。
-  更早的 `T2.2.0 / T0.4.2 / T0.2.2 / T0.3.7` 不带修复，装饰物进游戏会被丢掉。
-* `[CHAI]八桂大地` 当前 **T1.9.8**（`maps/bagui_dadi/version.json`）。历史包只留当前版本：`python work/cleanup.py --prune-assets`。
-* 玩法形态：严格分层（海底 190 / 海面 200 / 平 212 / 一层 280 / 二层 350 / 三层 420 / 高山 480）+
-  16 条自动斜坡（每段层界和水岸 1–3 条，边长 28，朝向中心或资源；其余边界不可通行）+
-  西 4 / 东 4 出生点（P7、P8 为固定 AI，并与东队结盟，P8 在水上）+
-  每基地近矿恰好 2 个（44–62 格、矿口朝基地）+ 中路争夺矿 + 油田（14 市各 1 + 每出生点 1）+
-  中部 2 哨站 / 1 车库 / 1 学院 / 1 医院 / 1 机场。
-* 还没做的见 `docs/TODO.md`：第 12 条（谷歌地形底图复核），第 13 条（环道塔防，暂不实现）。
+该入口可用于四张地图各自的源 ZIP。地编定稿图必须使用完整的地编保存包，保留 `AssetList`、`map.xml` 与脚本资产声明；资源资产 ID 保持不变，只更新 XML 文件路径中的版本。发布和安装会校验字符串表严格按 ID 倒序、纹理引用及资源配套，成品中存在的 XML 和地编备注也会随包复制。新版本路径已存在时拒绝覆盖。
 
+缺少资源配套的历史成品可运行 `cargo run --release -- repair-resources --map <id> --bump --note '修复资源封装' <上一版ZIP>`。该命令保留高度、斜坡、通行/建造位图、对象和脚本，重建资源清单及 XML，并沿用上一版实际布局快照。构建和发布会拒绝缺少资源清单、XML、图集、脚本列表声明或被引用配套文件的包。原版资源定义来自 RA3 1.12 的 WBStatic/WBData 目录；新增非全局对象需在 `OBJECT_RESOURCE_SOURCES` 中声明 XML 来源。
+
+已有成品的斜坡可用 `cargo run --release -- polish-ramps --map <id> --bump --note '优化斜坡' <上一版ZIP>` 局部修改后发布。该命令只改高度和地表区块：坡轴按附近两层边界调整，坡肩与坡口平缓衔接，纹理逐格铺设并写入两种纹理的混合数据。实际坡面宽度至少 20 格；允许第一层直连第三层，但坡面须避开第二层等第三个台地。每个候选检查全宽并行车道、两端台面、建筑和矿盘占地、原有陆地/水域出生点到矿位的连通关系；不合格的坡保留原地形，仅整理纹理。对象、脚本、图集、资源清单及其他区块逐字节保留。安装可加 `--install`。
+
+通用流水线默认采用 `classic-natural` 纹理规则，即已确认保留的碧嶂回澜前身 T2.2.9 方案；按实际地形重新选材的预览方案未启用。普通 `build` 在 `map` 阶段固定高度、对象、脚本与资源后，自动应用同一套纹理分配和混合规则，再进入校验与打包。配方可写 `TEXTURE_PROFILE: "legacy"` 复现迁移前纹理；缺省或 `"classic-natural"` 使用当前规则。完整规则见 [通用纹理规则](docs/terrain_texture_rules.md)。
+
+已有成品使用 `cargo run --release -- polish-textures --map <id> --bump --note '应用通用 T2.2.9 纹理规则' <上一版ZIP>`。它调用与普通构建相同的选材逻辑，沿用成品及其布局快照，仅重绘 `BlendTileData` 的纹理和混合数组。使用原图已登记的纹理与资源编号，逐字节核对高度、全部通行/建造位图、对象和脚本。`textures--comparison.png` 展示实际材质分布的示意颜色，不是游戏截图；`texture-report.json` 记录规则名、参考版本、前后纹理数量与保留检查。已有局部斜坡优化的成品应走此入口，以保留其几何与布局。
+
+逐坡结果、前后对比和编号图写入新版本 `assets` 目录。保留该目录的 `source/layout.json`，作为后续增量修改的实际布局；常规 `build` 仍从 `maps/<id>/layout.json` 重新生成，不会自动采用成品局部修改。地编定稿图应沿用成品 ZIP 继续局部修改或重封装。
+
+验收包含成品回读、对象边界、脚本格式和第二座产能路径点引用、近矿配额与朝向、矿场建造圆盘、出生点平整跨度、斜坡剖面及高度场轴向。版本递增后的构建失败会恢复原始 `version.json`，只清理本次新产生的版本路径。
+
+## 版本与产物
+
+测试版为 `T0.0.1` 起，正式版为 `V1.0.0` 起，十进制进位：`T0.0.9 → T0.1.0`。工具链重构不递增地图内容版本。
+
+```sh
+cargo run --release -- version --map 碧嶂回澜 --show
+cargo run --release -- version --map 碧嶂回澜 --release --note '首个正式版'
+cargo run --release -- version --map 碧嶂回澜 --set T2.2.1 --note '指定版本'
+```
+
+- `assets/<地图名>/<发布名+版本>/`：地图、TGA、文本、预览、说明、地形缓存及地编导出。
+- `dist/<地图名>/<发布名+版本>/`：包含 `.map`、`_art.tga`、`map.str`、`map.xml`、`overrides.xml`；地编备注等已有配套文件也会保留。
+- `dist/<地图名>/<发布名+版本>.zip`：同样完整的资源配套文件，带发布目录，可直接解压到游戏 Maps 目录。
+
+发布前会检查地图、预览、文本和 XML 配套文件齐全，并核对资源清单、脚本资产声明与纹理图集，再替换目标发布目录。ZIP 的文件顺序和时间戳固定，同一输入可重复得到相同压缩包。
+
+## 格式与轴向
+
+内部高度、布局和预览均为第 0 行在北侧。写入 `.map` 时将高度和逐格纹理/位图翻到游戏坐标，物体 y 同步换算；TGA 用底部原点保存，读回仍为北朝上。
+
+RefPack 兼容社区地图的 `0x80/0x81` 大文件头。输出使用标准 `0x10 0xFB`。所有读取检查长度、区块范围和引用，未知顶层区块保留。写出字符串表时统一使用严格的 `N…1` 顺序；导入允许旧顺序，以便修复历史成品。程序生成图从实际对象、脚本创建的单位、道路、环境和音乐重建 `AssetList`，同时生成匹配的 `map.xml`、纹理图集和脚本资产声明；不再删除资源清单后依赖按需加载。地编完整导出包重新发布时保留其有效清单与配套 XML。
+
+## 诊断命令
+
+```sh
+ra3maps inspect path/to/map.map
+ra3maps dump-scripts path/to/map.map
+ra3maps check-bounds path/to/map.map
+ra3maps unpack packed.map plain.map
+ra3maps pack plain.map packed.map
+ra3maps analyze-terrain --map 碧嶂回澜
+ra3maps refpack compress input.bin output.refpack
+ra3maps --help
+```
+
+PNG 标注会查找系统中文字体，也可通过 `RA3MAP_FONT` 指定 TTF/TTC 文件。Windows 默认查找微软雅黑和黑体，Linux 查找 Noto CJK、文泉驿，再退回系统字体。
+
+## 验证
+
+```sh
+cargo fmt --all --check
+cargo clippy --all-targets --locked -- -D warnings
+cargo test --locked
+```
+
+回归测试在临时目录、空 `PATH` 下完整构建四张地图，包含发布与地编导出，并与对应版本的 `.map` 区块及压缩文件校验值比较。采用通用模板的三张图还检查脚本一致性、建筑航点引用与占地、原有地形及对象保留；测试覆盖非法输入、版本进位、失败回滚、确定性打包及隔离安装。游戏内表现仍需在 Windows/RA3 中检查。

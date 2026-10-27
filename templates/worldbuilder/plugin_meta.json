@@ -1,0 +1,8 @@
+{
+    "PluginName": "CHAI_Import",
+    "PluginVersion": "v1.0.0",
+    "RequireFileDictionary": {
+        "data/plugins/CHAI_Import/Main.cs": "Main.cs",
+        "data/plugins/CHAI_Import/plugin_meta.json": "plugin_meta.json"
+    }
+}
