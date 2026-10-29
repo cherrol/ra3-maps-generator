@@ -8,11 +8,15 @@ use crate::{
 use serde::Serialize;
 use std::collections::BTreeMap;
 
+/// WorldHeightMapEdit rejects a saved map with 50 or more texture families.
+pub const MAX_TEXTURES: usize = 49;
+
 #[derive(Debug, Serialize)]
 pub struct Report {
     pub textures_before: usize,
     pub textures_after: usize,
     pub unused_textures: usize,
+    pub removed_textures: usize,
     pub blends_before: usize,
     pub blends_after: usize,
     pub cliffs_before: usize,
@@ -255,8 +259,8 @@ fn usage(d: &Data) -> Result<Usage> {
 }
 
 /// Compact both blend planes and cliff UV mappings, including references to
-/// secondary-only textures. Keep family IDs stable for incremental authoring;
-/// unused families are harmless once their loading declarations are complete.
+/// secondary-only textures. Keep family IDs stable within the engine limit;
+/// above it, remove only unused families, starting at the end of the table.
 /// All blend flags, phases and bitmap bytes survive.
 pub fn compact(map: &mut MapFile) -> Result<Report> {
     let mut d = Data::parse(map)?;
@@ -265,15 +269,40 @@ pub fn compact(map: &mut MapFile) -> Result<Report> {
     let used_blends = used.blends;
     let used_cliffs = used.cliffs;
     let used_tiles = used.tiles;
+    let family_used: Vec<_> = d
+        .textures
+        .iter()
+        .map(|t| {
+            used_tiles[t.start as usize * 4..(t.start + t.count) as usize * 4]
+                .iter()
+                .any(|v| *v)
+        })
+        .collect();
+    let mut remove = d.textures.len().saturating_sub(MAX_TEXTURES);
+    let mut keep = vec![true; d.textures.len()];
+    for i in (0..keep.len()).rev() {
+        if remove > 0 && !family_used[i] {
+            keep[i] = false;
+            remove -= 1;
+        }
+    }
+    if remove > 0 {
+        return Err(err(format!(
+            "terrain uses more than {MAX_TEXTURES} texture families; replace a painted texture before publishing"
+        )));
+    }
     let cells = used_tiles.len() / 4;
     let mut remap = vec![None; cells * 4];
     let mut textures = Vec::new();
     let mut unused_textures = 0;
     let mut start = 0;
-    for t in &d.textures {
+    for (index, t) in d.textures.iter().enumerate() {
         let range = t.start as usize * 4..(t.start + t.count) as usize * 4;
         if !used_tiles[range.clone()].iter().any(|v| *v) {
             unused_textures += 1;
+        }
+        if !keep[index] {
+            continue;
         }
         for (offset, i) in range.enumerate() {
             remap[i] = Some(start * 4 + offset as u32);
@@ -305,6 +334,7 @@ pub fn compact(map: &mut MapFile) -> Result<Report> {
         textures_before: before.0,
         textures_after: d.textures.len(),
         unused_textures,
+        removed_textures: before.0 - d.textures.len(),
         blends_before: before.1,
         blends_after: d.blends.len(),
         cliffs_before: before.2,
@@ -319,6 +349,16 @@ pub fn validate_references(map: &MapFile) -> Result<()> {
     // Validate both blend planes and cliff references directly. Publication
     // checks need no full-map clone, table compaction or re-encoding.
     usage(&Data::parse(map)?).map(|_| ())
+}
+
+pub fn validate_texture_limit(map: &MapFile) -> Result<()> {
+    let count = Data::parse(map)?.textures.len();
+    if count > MAX_TEXTURES {
+        return Err(err(format!(
+            "terrain texture count {count} exceeds the WorldBuilder limit of {MAX_TEXTURES}; repair-terrain-package before publishing"
+        )));
+    }
+    Ok(())
 }
 
 #[cfg(test)]
@@ -466,6 +506,84 @@ mod tests {
         let saved = m.get("BlendTileData").unwrap().clone();
         assert!(!compact(&mut m).unwrap().changed);
         assert_eq!(&saved, m.get("BlendTileData").unwrap());
+    }
+
+    #[test]
+    fn over_limit_removes_only_unused_family_and_preserves_every_reference() {
+        let mut m = fixture();
+        let mut data = Data::parse(&m).unwrap();
+        data.textures = (0..50)
+            .map(|i| Texture {
+                start: i * 16,
+                count: 16,
+                size: 4,
+                magic: 0,
+                name: format!("Texture{i}"),
+            })
+            .collect();
+        data.planes = std::array::from_fn(|_| vec![0; 50]);
+        for i in 0..50 {
+            data.planes[0][i] = if i == 1 { 0 } else { i as u16 * 64 + 3 };
+        }
+        data.planes[1][0] = 1;
+        data.planes[2][1] = 1;
+        data.planes[3][2] = 1;
+        data.blends[0][..4].copy_from_slice(&(49_u32 * 64 + 1).to_le_bytes());
+        data.cliffs[0][..4].copy_from_slice(&(48_u32 * 64 + 2).to_le_bytes());
+        data.bitmaps = (0..8 * 50_usize.div_ceil(8) + 50)
+            .map(|i| i as u8)
+            .collect();
+        let hm = HeightMap {
+            width: 50,
+            height: 1,
+            border: 0,
+            borders: vec![],
+            elevations: vec![100; 50],
+        };
+        m.get_mut("HeightMapData").unwrap().payload = hm.encode().unwrap();
+        m.get_mut("BlendTileData").unwrap().payload = data.encode().unwrap();
+        assert!(validate_texture_limit(&m).is_err());
+        let report = compact(&mut m).unwrap();
+        assert_eq!((report.textures_after, report.removed_textures), (49, 1));
+        validate_texture_limit(&m).unwrap();
+        let after = Data::parse(&m).unwrap();
+        assert_eq!(data.bitmaps, after.bitmaps);
+        assert!(!after.textures.iter().any(|t| t.name == "Texture1"));
+        for (&old, &new) in data.planes[0].iter().zip(&after.planes[0]) {
+            assert_eq!(
+                (&data.textures[old as usize / 64].name, old % 64),
+                (&after.textures[new as usize / 64].name, new % 64)
+            );
+        }
+        for plane in [1, 2, 3] {
+            let (old_desc, new_desc) = if plane == 3 {
+                (&data.cliffs, &after.cliffs)
+            } else {
+                (&data.blends, &after.blends)
+            };
+            for (&old, &new) in data.planes[plane].iter().zip(&after.planes[plane]) {
+                assert_eq!(old == 0, new == 0);
+                if old == 0 {
+                    continue;
+                }
+                let a = &old_desc[old as usize - 1];
+                let b = &new_desc[new as usize - 1];
+                assert_eq!(
+                    (&data.textures[tile(a) as usize / 64].name, tile(a) % 64),
+                    (&after.textures[tile(b) as usize / 64].name, tile(b) % 64)
+                );
+                assert_eq!(&a[4..], &b[4..]);
+            }
+        }
+        let saved = m.encode().unwrap();
+        assert!(!compact(&mut m).unwrap().changed);
+        assert_eq!(m.encode().unwrap(), saved);
+
+        data.planes[0][1] = 64;
+        m.get_mut("BlendTileData").unwrap().payload = data.encode().unwrap();
+        let saved = m.encode().unwrap();
+        assert!(compact(&mut m).unwrap_err().to_string().contains("49"));
+        assert_eq!(m.encode().unwrap(), saved);
     }
 
     #[test]

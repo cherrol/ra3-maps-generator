@@ -1,0 +1,157 @@
+{
+  "schema_version": 1,
+  "map_name": "长岭旷原",
+  "blueprint": "河北",
+  "label": "地级行政中心",
+  "coordinate_system": "WGS84",
+  "source": "https://geo.datav.aliyun.com/areas_v3/bound/130000_full.json",
+  "source_field": "properties.center (administrative center, not polygon centroid)",
+  "conversion": "GCJ-02 approximately inverted to WGS84 by six iterations, matching terrain boundary ingestion",
+  "retrieved_date": "2026-10-29",
+  "points": [
+    {
+      "adcode": "130100",
+      "name": "石家庄市",
+      "level": "city",
+      "center_wgs84": [
+        114.49641101327697,
+        38.04480058064224
+      ],
+      "center_gcj02": [
+        114.502461,
+        38.045474
+      ]
+    },
+    {
+      "adcode": "130200",
+      "name": "唐山市",
+      "level": "city",
+      "center_wgs84": [
+        118.16908178669945,
+        39.6337837106683
+      ],
+      "center_gcj02": [
+        118.175393,
+        39.635113
+      ]
+    },
+    {
+      "adcode": "130300",
+      "name": "秦皇岛市",
+      "level": "city",
+      "center_wgs84": [
+        119.58078715472334,
+        39.941416591459834
+      ],
+      "center_gcj02": [
+        119.586579,
+        39.942531
+      ]
+    },
+    {
+      "adcode": "130400",
+      "name": "邯郸市",
+      "level": "city",
+      "center_wgs84": [
+        114.48474983503789,
+        36.61204745942239
+      ],
+      "center_gcj02": [
+        114.490686,
+        36.612273
+      ]
+    },
+    {
+      "adcode": "130500",
+      "name": "邢台市",
+      "level": "city",
+      "center_wgs84": [
+        114.50293872300958,
+        37.06771916512496
+      ],
+      "center_gcj02": [
+        114.508851,
+        37.0682
+      ]
+    },
+    {
+      "adcode": "130600",
+      "name": "保定市",
+      "level": "city",
+      "center_wgs84": [
+        115.47605342761415,
+        38.86679112079209
+      ],
+      "center_gcj02": [
+        115.482331,
+        38.867657
+      ]
+    },
+    {
+      "adcode": "130700",
+      "name": "张家口市",
+      "level": "city",
+      "center_wgs84": [
+        114.87796872395369,
+        40.81057847219299
+      ],
+      "center_gcj02": [
+        114.884091,
+        40.811901
+      ]
+    },
+    {
+      "adcode": "130800",
+      "name": "承德市",
+      "level": "city",
+      "center_wgs84": [
+        117.93288406111833,
+        40.97466391061683
+      ],
+      "center_gcj02": [
+        117.939152,
+        40.976204
+      ]
+    },
+    {
+      "adcode": "130900",
+      "name": "沧州市",
+      "level": "city",
+      "center_wgs84": [
+        116.85169220579539,
+        38.31004650476764
+      ],
+      "center_gcj02": [
+        116.857461,
+        38.310582
+      ]
+    },
+    {
+      "adcode": "131000",
+      "name": "廊坊市",
+      "level": "city",
+      "center_wgs84": [
+        116.69848782340586,
+        39.52280429329079
+      ],
+      "center_gcj02": [
+        116.704441,
+        39.523927
+      ]
+    },
+    {
+      "adcode": "131100",
+      "name": "衡水市",
+      "level": "city",
+      "center_wgs84": [
+        115.66012478119906,
+        37.73447407053251
+      ],
+      "center_gcj02": [
+        115.665993,
+        37.735097
+      ]
+    }
+  ],
+  "excluded_features": []
+}

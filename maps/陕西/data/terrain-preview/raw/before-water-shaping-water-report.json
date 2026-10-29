@@ -1,0 +1,17 @@
+{
+  "elevation_bounds_and_province_unchanged": true,
+  "include_rivers": false,
+  "large_lake_cells": 372,
+  "map_name": "千壑横原",
+  "minimum_lake_area_km2": 80,
+  "ocean_cells": 0,
+  "retained_lakes": [
+    {
+      "area_km2": 772.2554172230335,
+      "cells_in_input_frame": 372,
+      "name": "丹江口水库"
+    }
+  ],
+  "water_cells": 372,
+  "water_mask_equals_ocean_union_large_lakes": true
+}

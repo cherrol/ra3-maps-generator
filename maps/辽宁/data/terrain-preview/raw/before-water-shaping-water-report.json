@@ -1,0 +1,16 @@
+{
+  "include_rivers": false,
+  "large_lake_cells": 310,
+  "minimum_lake_area_km2": 80,
+  "ocean_cells": 147108,
+  "ocean_channel_open_radius_cells": 3,
+  "retained_lakes": [
+    {
+      "area_km2": 164.98690803536246,
+      "cells_in_input_frame": 310,
+      "name": "苏邦水库"
+    }
+  ],
+  "water_cells": 147418,
+  "water_mask_equals_ocean_union_large_lakes": true
+}

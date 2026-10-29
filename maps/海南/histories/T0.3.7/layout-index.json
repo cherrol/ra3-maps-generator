@@ -1,0 +1,8391 @@
+{
+  "coordinates": "Full-grid cells; x east, y south; row 0 is north. Angles are radians.",
+  "entries": [
+    {
+      "angle_radians": 2.7828218936920166,
+      "category": "基地建筑",
+      "cell": [
+        560.0,
+        72.0
+      ],
+      "id": 1,
+      "object_type": "SovietConstructionYard",
+      "position_pointers": [
+        "/objects/0/cell",
+        "/base_cells/6"
+      ],
+      "source_pointer": "/objects/0",
+      "unique_id": "sea-mcv-7"
+    },
+    {
+      "angle_radians": 2.4805495738983154,
+      "category": "基地建筑",
+      "cell": [
+        744.0,
+        384.0
+      ],
+      "id": 2,
+      "object_type": "JapanConstructionYard",
+      "position_pointers": [
+        "/objects/1/cell",
+        "/base_cells/7"
+      ],
+      "source_pointer": "/objects/1",
+      "unique_id": "sea-mcv-8"
+    },
+    {
+      "angle_radians": 0.0,
+      "category": "其他对象",
+      "cell": [
+        331.0,
+        526.0
+      ],
+      "id": 3,
+      "object_type": "StPetersburgSidewalk03",
+      "position_pointers": [
+        "/objects/2/cell"
+      ],
+      "source_pointer": "/objects/2",
+      "unique_id": "StPetersburgSidewalk03 87"
+    },
+    {
+      "angle_radians": 0.0,
+      "category": "其他对象",
+      "cell": [
+        321.0,
+        526.0
+      ],
+      "id": 4,
+      "object_type": "StPetersburgSidewalk03",
+      "position_pointers": [
+        "/objects/3/cell"
+      ],
+      "source_pointer": "/objects/3",
+      "unique_id": "StPetersburgSidewalk03 86"
+    },
+    {
+      "angle_radians": 0.0,
+      "category": "其他对象",
+      "cell": [
+        309.0,
+        526.0
+      ],
+      "id": 5,
+      "object_type": "StPetersburgSidewalk03",
+      "position_pointers": [
+        "/objects/4/cell"
+      ],
+      "source_pointer": "/objects/4",
+      "unique_id": "StPetersburgSidewalk03 85"
+    },
+    {
+      "angle_radians": 0.0,
+      "category": "其他对象",
+      "cell": [
+        327.0,
+        526.0
+      ],
+      "id": 6,
+      "object_type": "StPetersburgSidewalk03",
+      "position_pointers": [
+        "/objects/5/cell"
+      ],
+      "source_pointer": "/objects/5",
+      "unique_id": "StPetersburgSidewalk03 84"
+    },
+    {
+      "angle_radians": 0.0,
+      "category": "其他对象",
+      "cell": [
+        309.0,
+        510.0
+      ],
+      "id": 7,
+      "object_type": "StPetersburgSidewalk03",
+      "position_pointers": [
+        "/objects/6/cell"
+      ],
+      "source_pointer": "/objects/6",
+      "unique_id": "StPetersburgSidewalk03 83"
+    },
+    {
+      "angle_radians": 0.0,
+      "category": "其他对象",
+      "cell": [
+        309.0,
+        526.0
+      ],
+      "id": 8,
+      "object_type": "StPetersburgSidewalk03",
+      "position_pointers": [
+        "/objects/7/cell"
+      ],
+      "source_pointer": "/objects/7",
+      "unique_id": "StPetersburgSidewalk03 82"
+    },
+    {
+      "angle_radians": 0.0,
+      "category": "其他对象",
+      "cell": [
+        331.0,
+        510.0
+      ],
+      "id": 9,
+      "object_type": "StPetersburgSidewalk03",
+      "position_pointers": [
+        "/objects/8/cell"
+      ],
+      "source_pointer": "/objects/8",
+      "unique_id": "StPetersburgSidewalk03 81"
+    },
+    {
+      "angle_radians": 0.0,
+      "category": "其他对象",
+      "cell": [
+        331.0,
+        526.0
+      ],
+      "id": 10,
+      "object_type": "StPetersburgSidewalk03",
+      "position_pointers": [
+        "/objects/9/cell"
+      ],
+      "source_pointer": "/objects/9",
+      "unique_id": "StPetersburgSidewalk03 80"
+    },
+    {
+      "angle_radians": 0.0,
+      "category": "其他对象",
+      "cell": [
+        309.0,
+        510.0
+      ],
+      "id": 11,
+      "object_type": "StPetersburgSidewalk03",
+      "position_pointers": [
+        "/objects/10/cell"
+      ],
+      "source_pointer": "/objects/10",
+      "unique_id": "StPetersburgSidewalk03 79"
+    },
+    {
+      "angle_radians": 0.0,
+      "category": "其他对象",
+      "cell": [
+        331.0,
+        510.0
+      ],
+      "id": 12,
+      "object_type": "StPetersburgSidewalk03",
+      "position_pointers": [
+        "/objects/11/cell"
+      ],
+      "source_pointer": "/objects/11",
+      "unique_id": "StPetersburgSidewalk03 78"
+    },
+    {
+      "angle_radians": 2.356194496154785,
+      "category": "矿脉",
+      "cell": [
+        500.0,
+        80.0
+      ],
+      "id": 13,
+      "object_type": "OreNode",
+      "position_pointers": [
+        "/objects/12/cell",
+        "/ore_cells/0"
+      ],
+      "source_pointer": "/objects/12",
+      "unique_id": "OreNode 75"
+    },
+    {
+      "angle_radians": 0.0,
+      "category": "矿脉",
+      "cell": [
+        524.0,
+        44.0
+      ],
+      "id": 14,
+      "object_type": "OreNode",
+      "position_pointers": [
+        "/objects/13/cell",
+        "/ore_cells/1"
+      ],
+      "source_pointer": "/objects/13",
+      "unique_id": "OreNode 74"
+    },
+    {
+      "angle_radians": 0.0,
+      "category": "矿脉",
+      "cell": [
+        648.0,
+        52.0
+      ],
+      "id": 15,
+      "object_type": "OreNode",
+      "position_pointers": [
+        "/objects/14/cell",
+        "/ore_cells/2"
+      ],
+      "source_pointer": "/objects/14",
+      "unique_id": "OreNode 73"
+    },
+    {
+      "angle_radians": 0.7853981852531433,
+      "category": "矿脉",
+      "cell": [
+        300.0,
+        108.0
+      ],
+      "id": 16,
+      "object_type": "OreNode",
+      "position_pointers": [
+        "/objects/15/cell",
+        "/ore_cells/3"
+      ],
+      "source_pointer": "/objects/15",
+      "unique_id": "OreNode 72"
+    },
+    {
+      "angle_radians": 0.0,
+      "category": "废墟",
+      "cell": [
+        330.0,
+        164.0
+      ],
+      "id": 17,
+      "object_type": "EI_Structure_02_Collapse",
+      "position_pointers": [
+        "/objects/16/cell"
+      ],
+      "source_pointer": "/objects/16",
+      "unique_id": "EI_Structure_02_Collapse 71"
+    },
+    {
+      "angle_radians": 0.0,
+      "category": "废墟",
+      "cell": [
+        310.0,
+        164.0
+      ],
+      "id": 18,
+      "object_type": "EI_Structure_01_Collapse",
+      "position_pointers": [
+        "/objects/17/cell"
+      ],
+      "source_pointer": "/objects/17",
+      "unique_id": "EI_Structure_01_Collapse 70"
+    },
+    {
+      "angle_radians": 2.356194496154785,
+      "category": "其他对象",
+      "cell": [
+        320.429248046875,
+        375.452685546875
+      ],
+      "id": 19,
+      "object_type": "EI_Structure_01",
+      "position_pointers": [
+        "/objects/18/cell"
+      ],
+      "source_pointer": "/objects/18",
+      "unique_id": "EI_Structure_01 69"
+    },
+    {
+      "angle_radians": -0.7853981852531433,
+      "category": "其他对象",
+      "cell": [
+        320.2380859375,
+        662.5473022460938
+      ],
+      "id": 20,
+      "object_type": "EI_Structure_01",
+      "position_pointers": [
+        "/objects/19/cell"
+      ],
+      "source_pointer": "/objects/19",
+      "unique_id": "EI_Structure_01 68"
+    },
+    {
+      "angle_radians": -0.7853981852531433,
+      "category": "其他对象",
+      "cell": [
+        383.7044921875,
+        717.0297546386719
+      ],
+      "id": 21,
+      "object_type": "EI_Structure_02",
+      "position_pointers": [
+        "/objects/20/cell"
+      ],
+      "source_pointer": "/objects/20",
+      "unique_id": "EI_Structure_02 67"
+    },
+    {
+      "angle_radians": -0.7853981852531433,
+      "category": "其他对象",
+      "cell": [
+        383.7044921875,
+        585.507861328125
+      ],
+      "id": 22,
+      "object_type": "EI_Structure_02",
+      "position_pointers": [
+        "/objects/21/cell"
+      ],
+      "source_pointer": "/objects/21",
+      "unique_id": "EI_Structure_02 66"
+    },
+    {
+      "angle_radians": -0.7853981852531433,
+      "category": "其他对象",
+      "cell": [
+        383.7044921875,
+        318.221533203125
+      ],
+      "id": 23,
+      "object_type": "EI_Structure_02",
+      "position_pointers": [
+        "/objects/22/cell"
+      ],
+      "source_pointer": "/objects/22",
+      "unique_id": "EI_Structure_02 64"
+    },
+    {
+      "angle_radians": 2.356194496154785,
+      "category": "其他对象",
+      "cell": [
+        256.96279296875,
+        719.7784729003906
+      ],
+      "id": 24,
+      "object_type": "EI_Structure_02",
+      "position_pointers": [
+        "/objects/23/cell"
+      ],
+      "source_pointer": "/objects/23",
+      "unique_id": "EI_Structure_02 63"
+    },
+    {
+      "angle_radians": 2.356194496154785,
+      "category": "其他对象",
+      "cell": [
+        256.96279296875,
+        588.256640625
+      ],
+      "id": 25,
+      "object_type": "EI_Structure_02",
+      "position_pointers": [
+        "/objects/24/cell"
+      ],
+      "source_pointer": "/objects/24",
+      "unique_id": "EI_Structure_02 62"
+    },
+    {
+      "angle_radians": 2.356194496154785,
+      "category": "其他对象",
+      "cell": [
+        256.96279296875,
+        452.492138671875
+      ],
+      "id": 26,
+      "object_type": "EI_Structure_02",
+      "position_pointers": [
+        "/objects/25/cell"
+      ],
+      "source_pointer": "/objects/25",
+      "unique_id": "EI_Structure_02 61"
+    },
+    {
+      "angle_radians": 2.356194496154785,
+      "category": "其他对象",
+      "cell": [
+        256.96279296875,
+        320.970263671875
+      ],
+      "id": 27,
+      "object_type": "EI_Structure_02",
+      "position_pointers": [
+        "/objects/26/cell"
+      ],
+      "source_pointer": "/objects/26",
+      "unique_id": "EI_Structure_02 60"
+    },
+    {
+      "angle_radians": 3.1415927410125732,
+      "category": "矿脉",
+      "cell": [
+        408.0,
+        72.0
+      ],
+      "id": 28,
+      "object_type": "OreNode",
+      "position_pointers": [
+        "/objects/27/cell",
+        "/ore_cells/4"
+      ],
+      "source_pointer": "/objects/27",
+      "unique_id": "OreNode 59"
+    },
+    {
+      "angle_radians": 0.7853981852531433,
+      "category": "矿脉",
+      "cell": [
+        260.0,
+        92.0
+      ],
+      "id": 29,
+      "object_type": "OreNode",
+      "position_pointers": [
+        "/objects/28/cell",
+        "/ore_cells/5"
+      ],
+      "source_pointer": "/objects/28",
+      "unique_id": "OreNode 58"
+    },
+    {
+      "angle_radians": 1.5707963705062866,
+      "category": "矿脉",
+      "cell": [
+        140.0,
+        208.0
+      ],
+      "id": 30,
+      "object_type": "OreNode",
+      "position_pointers": [
+        "/objects/29/cell",
+        "/ore_cells/6"
+      ],
+      "source_pointer": "/objects/29",
+      "unique_id": "OreNode 57"
+    },
+    {
+      "angle_radians": 3.9269907474517822,
+      "category": "矿脉",
+      "cell": [
+        212.0,
+        112.0
+      ],
+      "id": 31,
+      "object_type": "OreNode",
+      "position_pointers": [
+        "/objects/30/cell",
+        "/ore_cells/7"
+      ],
+      "source_pointer": "/objects/30",
+      "unique_id": "OreNode 56"
+    },
+    {
+      "angle_radians": 0.0,
+      "category": "废墟",
+      "cell": [
+        320.0,
+        179.0
+      ],
+      "id": 32,
+      "object_type": "GarageTechStructure_Collapse",
+      "position_pointers": [
+        "/objects/31/cell"
+      ],
+      "source_pointer": "/objects/31",
+      "unique_id": "GarageTechStructure_Collapse 55"
+    },
+    {
+      "angle_radians": 0.0,
+      "category": "废墟",
+      "cell": [
+        340.0,
+        179.0
+      ],
+      "id": 33,
+      "object_type": "NUObservationPostTechStructure_Collapse",
+      "position_pointers": [
+        "/objects/32/cell"
+      ],
+      "source_pointer": "/objects/32",
+      "unique_id": "NUObservationPostTechStructure_Collapse 54"
+    },
+    {
+      "angle_radians": 0.0,
+      "category": "废墟",
+      "cell": [
+        300.0,
+        179.0
+      ],
+      "id": 34,
+      "object_type": "NBOilDerrick_Collapse",
+      "position_pointers": [
+        "/objects/33/cell"
+      ],
+      "source_pointer": "/objects/33",
+      "unique_id": "NBOilDerrick_Collapse 53"
+    },
+    {
+      "angle_radians": 1.5707963705062866,
+      "category": "矿脉",
+      "cell": [
+        100.0,
+        220.0
+      ],
+      "id": 35,
+      "object_type": "OreNode",
+      "position_pointers": [
+        "/objects/34/cell",
+        "/ore_cells/8"
+      ],
+      "source_pointer": "/objects/34",
+      "unique_id": "OreNode 52"
+    },
+    {
+      "angle_radians": 0.7853981852531433,
+      "category": "矿脉",
+      "cell": [
+        736.0,
+        444.0
+      ],
+      "id": 36,
+      "object_type": "OreNode",
+      "position_pointers": [
+        "/objects/35/cell",
+        "/ore_cells/9"
+      ],
+      "source_pointer": "/objects/35",
+      "unique_id": "OreNode 51"
+    },
+    {
+      "angle_radians": 3.1415927410125732,
+      "category": "矿脉",
+      "cell": [
+        788.0,
+        352.0
+      ],
+      "id": 37,
+      "object_type": "OreNode",
+      "position_pointers": [
+        "/objects/36/cell",
+        "/ore_cells/10"
+      ],
+      "source_pointer": "/objects/36",
+      "unique_id": "OreNode 50"
+    },
+    {
+      "angle_radians": 5.497786998748779,
+      "category": "矿脉",
+      "cell": [
+        696.0,
+        460.0
+      ],
+      "id": 38,
+      "object_type": "OreNode",
+      "position_pointers": [
+        "/objects/37/cell",
+        "/ore_cells/11"
+      ],
+      "source_pointer": "/objects/37",
+      "unique_id": "OreNode 49"
+    },
+    {
+      "angle_radians": 0.0,
+      "category": "矿脉",
+      "cell": [
+        664.0,
+        584.0
+      ],
+      "id": 39,
+      "object_type": "OreNode",
+      "position_pointers": [
+        "/objects/38/cell",
+        "/ore_cells/12"
+      ],
+      "source_pointer": "/objects/38",
+      "unique_id": "OreNode 48"
+    },
+    {
+      "angle_radians": 0.0,
+      "category": "矿脉",
+      "cell": [
+        688.0,
+        536.0
+      ],
+      "id": 40,
+      "object_type": "OreNode",
+      "position_pointers": [
+        "/objects/39/cell",
+        "/ore_cells/13"
+      ],
+      "source_pointer": "/objects/39",
+      "unique_id": "OreNode 47"
+    },
+    {
+      "angle_radians": 0.0,
+      "category": "矿脉",
+      "cell": [
+        656.0,
+        636.0
+      ],
+      "id": 41,
+      "object_type": "OreNode",
+      "position_pointers": [
+        "/objects/40/cell",
+        "/ore_cells/14"
+      ],
+      "source_pointer": "/objects/40",
+      "unique_id": "OreNode 46"
+    },
+    {
+      "angle_radians": 0.0,
+      "category": "矿脉",
+      "cell": [
+        512.0,
+        708.0
+      ],
+      "id": 42,
+      "object_type": "OreNode",
+      "position_pointers": [
+        "/objects/41/cell",
+        "/ore_cells/15"
+      ],
+      "source_pointer": "/objects/41",
+      "unique_id": "OreNode 45"
+    },
+    {
+      "angle_radians": 1.5707963705062866,
+      "category": "科技建筑",
+      "cell": [
+        564.0,
+        388.0
+      ],
+      "id": 43,
+      "object_type": "GarageTechStructure",
+      "position_pointers": [
+        "/objects/42/cell",
+        "/garage_cells/0"
+      ],
+      "source_pointer": "/objects/42",
+      "unique_id": "GarageTechStructure 44"
+    },
+    {
+      "angle_radians": 3.9269907474517822,
+      "category": "矿脉",
+      "cell": [
+        616.0,
+        656.0
+      ],
+      "id": 44,
+      "object_type": "OreNode",
+      "position_pointers": [
+        "/objects/43/cell",
+        "/ore_cells/16"
+      ],
+      "source_pointer": "/objects/43",
+      "unique_id": "OreNode 43"
+    },
+    {
+      "angle_radians": 3.1415927410125732,
+      "category": "矿脉",
+      "cell": [
+        620.0,
+        612.0
+      ],
+      "id": 45,
+      "object_type": "OreNode",
+      "position_pointers": [
+        "/objects/44/cell",
+        "/ore_cells/17"
+      ],
+      "source_pointer": "/objects/44",
+      "unique_id": "OreNode 42"
+    },
+    {
+      "angle_radians": 0.0,
+      "category": "矿脉",
+      "cell": [
+        340.0,
+        764.0
+      ],
+      "id": 46,
+      "object_type": "OreNode",
+      "position_pointers": [
+        "/objects/45/cell",
+        "/ore_cells/18"
+      ],
+      "source_pointer": "/objects/45",
+      "unique_id": "OreNode 41"
+    },
+    {
+      "angle_radians": 3.1415927410125732,
+      "category": "矿脉",
+      "cell": [
+        460.0,
+        756.0
+      ],
+      "id": 47,
+      "object_type": "OreNode",
+      "position_pointers": [
+        "/objects/46/cell",
+        "/ore_cells/19"
+      ],
+      "source_pointer": "/objects/46",
+      "unique_id": "OreNode 40"
+    },
+    {
+      "angle_radians": 3.1415927410125732,
+      "category": "矿脉",
+      "cell": [
+        308.0,
+        792.0
+      ],
+      "id": 48,
+      "object_type": "OreNode",
+      "position_pointers": [
+        "/objects/47/cell",
+        "/ore_cells/20"
+      ],
+      "source_pointer": "/objects/47",
+      "unique_id": "OreNode 39"
+    },
+    {
+      "angle_radians": 0.0,
+      "category": "矿脉",
+      "cell": [
+        60.0,
+        720.0
+      ],
+      "id": 49,
+      "object_type": "OreNode",
+      "position_pointers": [
+        "/objects/48/cell",
+        "/ore_cells/21"
+      ],
+      "source_pointer": "/objects/48",
+      "unique_id": "OreNode 38"
+    },
+    {
+      "angle_radians": 2.356194496154785,
+      "category": "矿脉",
+      "cell": [
+        156.0,
+        768.0
+      ],
+      "id": 50,
+      "object_type": "OreNode",
+      "position_pointers": [
+        "/objects/49/cell",
+        "/ore_cells/22"
+      ],
+      "source_pointer": "/objects/49",
+      "unique_id": "OreNode 37"
+    },
+    {
+      "angle_radians": 2.356194496154785,
+      "category": "矿脉",
+      "cell": [
+        204.0,
+        752.0
+      ],
+      "id": 51,
+      "object_type": "OreNode",
+      "position_pointers": [
+        "/objects/50/cell",
+        "/ore_cells/23"
+      ],
+      "source_pointer": "/objects/50",
+      "unique_id": "OreNode 36"
+    },
+    {
+      "angle_radians": -0.7853981852531433,
+      "category": "科技建筑",
+      "cell": [
+        378.0,
+        367.0
+      ],
+      "id": 52,
+      "object_type": "ObservationPostTechStructure",
+      "position_pointers": [
+        "/objects/51/cell",
+        "/post_cells/0"
+      ],
+      "source_pointer": "/objects/51",
+      "unique_id": "ObservationPostTechStructure 35"
+    },
+    {
+      "angle_radians": -0.7853981852531433,
+      "category": "科技建筑",
+      "cell": [
+        478.0,
+        401.0
+      ],
+      "id": 53,
+      "object_type": "ObservationPostTechStructure",
+      "position_pointers": [
+        "/objects/52/cell",
+        "/post_cells/1"
+      ],
+      "source_pointer": "/objects/52",
+      "unique_id": "ObservationPostTechStructure 34"
+    },
+    {
+      "angle_radians": -0.7853981852531433,
+      "category": "油井",
+      "cell": [
+        310.0,
+        142.0
+      ],
+      "id": 54,
+      "object_type": "OilDerrick",
+      "position_pointers": [
+        "/objects/53/cell",
+        "/derrick_cells/0"
+      ],
+      "source_pointer": "/objects/53",
+      "unique_id": "OilDerrick 31"
+    },
+    {
+      "angle_radians": -0.7853981852531433,
+      "category": "油井",
+      "cell": [
+        189.0,
+        244.0
+      ],
+      "id": 55,
+      "object_type": "OilDerrick",
+      "position_pointers": [
+        "/objects/54/cell",
+        "/derrick_cells/1"
+      ],
+      "source_pointer": "/objects/54",
+      "unique_id": "OilDerrick 30"
+    },
+    {
+      "angle_radians": -0.7853981852531433,
+      "category": "油井",
+      "cell": [
+        89.0,
+        257.0
+      ],
+      "id": 56,
+      "object_type": "OilDerrick",
+      "position_pointers": [
+        "/objects/55/cell",
+        "/derrick_cells/2"
+      ],
+      "source_pointer": "/objects/55",
+      "unique_id": "OilDerrick 29"
+    },
+    {
+      "angle_radians": -0.7853981852531433,
+      "category": "油井",
+      "cell": [
+        418.0,
+        697.0
+      ],
+      "id": 57,
+      "object_type": "OilDerrick",
+      "position_pointers": [
+        "/objects/56/cell",
+        "/derrick_cells/3"
+      ],
+      "source_pointer": "/objects/56",
+      "unique_id": "OilDerrick 28"
+    },
+    {
+      "angle_radians": -0.7853981852531433,
+      "category": "油井",
+      "cell": [
+        586.0,
+        87.0
+      ],
+      "id": 58,
+      "object_type": "OilDerrick",
+      "position_pointers": [
+        "/objects/57/cell",
+        "/derrick_cells/4"
+      ],
+      "source_pointer": "/objects/57",
+      "unique_id": "OilDerrick 27"
+    },
+    {
+      "angle_radians": -0.7853981852531433,
+      "category": "油井",
+      "cell": [
+        686.0,
+        433.0
+      ],
+      "id": 59,
+      "object_type": "OilDerrick",
+      "position_pointers": [
+        "/objects/58/cell",
+        "/derrick_cells/5"
+      ],
+      "source_pointer": "/objects/58",
+      "unique_id": "OilDerrick 26"
+    },
+    {
+      "angle_radians": -0.7853981852531433,
+      "category": "油井",
+      "cell": [
+        641.0,
+        525.0
+      ],
+      "id": 60,
+      "object_type": "OilDerrick",
+      "position_pointers": [
+        "/objects/59/cell",
+        "/derrick_cells/6"
+      ],
+      "source_pointer": "/objects/59",
+      "unique_id": "OilDerrick 25"
+    },
+    {
+      "angle_radians": -0.7853981852531433,
+      "category": "油井",
+      "cell": [
+        549.0,
+        645.0
+      ],
+      "id": 61,
+      "object_type": "OilDerrick",
+      "position_pointers": [
+        "/objects/60/cell",
+        "/derrick_cells/7"
+      ],
+      "source_pointer": "/objects/60",
+      "unique_id": "OilDerrick 24"
+    },
+    {
+      "angle_radians": 0.7853981852531433,
+      "category": "矿脉",
+      "cell": [
+        224.0,
+        528.0
+      ],
+      "id": 62,
+      "object_type": "OreNode",
+      "position_pointers": [
+        "/objects/61/cell",
+        "/ore_cells/24"
+      ],
+      "source_pointer": "/objects/61",
+      "unique_id": "OreNode 23"
+    },
+    {
+      "angle_radians": 2.356194496154785,
+      "category": "矿脉",
+      "cell": [
+        464.0,
+        284.0
+      ],
+      "id": 63,
+      "object_type": "OreNode",
+      "position_pointers": [
+        "/objects/62/cell",
+        "/ore_cells/25"
+      ],
+      "source_pointer": "/objects/62",
+      "unique_id": "OreNode 22"
+    },
+    {
+      "angle_radians": 1.5707963705062866,
+      "category": "矿脉",
+      "cell": [
+        356.0,
+        568.0
+      ],
+      "id": 64,
+      "object_type": "OreNode",
+      "position_pointers": [
+        "/objects/63/cell",
+        "/ore_cells/26"
+      ],
+      "source_pointer": "/objects/63",
+      "unique_id": "OreNode 21"
+    },
+    {
+      "angle_radians": 1.5707963705062866,
+      "category": "矿脉",
+      "cell": [
+        484.0,
+        216.0
+      ],
+      "id": 65,
+      "object_type": "OreNode",
+      "position_pointers": [
+        "/objects/64/cell",
+        "/ore_cells/27"
+      ],
+      "source_pointer": "/objects/64",
+      "unique_id": "OreNode 20"
+    },
+    {
+      "angle_radians": 2.356194496154785,
+      "category": "矿脉",
+      "cell": [
+        516.0,
+        488.0
+      ],
+      "id": 66,
+      "object_type": "OreNode",
+      "position_pointers": [
+        "/objects/65/cell",
+        "/ore_cells/28"
+      ],
+      "source_pointer": "/objects/65",
+      "unique_id": "OreNode 19"
+    },
+    {
+      "angle_radians": 0.0,
+      "category": "矿脉",
+      "cell": [
+        284.0,
+        260.0
+      ],
+      "id": 67,
+      "object_type": "OreNode",
+      "position_pointers": [
+        "/objects/66/cell",
+        "/ore_cells/29"
+      ],
+      "source_pointer": "/objects/66",
+      "unique_id": "OreNode 18"
+    },
+    {
+      "angle_radians": 1.5707963705062866,
+      "category": "矿脉",
+      "cell": [
+        604.0,
+        468.0
+      ],
+      "id": 68,
+      "object_type": "OreNode",
+      "position_pointers": [
+        "/objects/67/cell",
+        "/ore_cells/30"
+      ],
+      "source_pointer": "/objects/67",
+      "unique_id": "OreNode 17"
+    },
+    {
+      "angle_radians": 4.71238899230957,
+      "category": "矿脉",
+      "cell": [
+        680.0,
+        196.0
+      ],
+      "id": 69,
+      "object_type": "OreNode",
+      "position_pointers": [
+        "/objects/68/cell",
+        "/ore_cells/31"
+      ],
+      "source_pointer": "/objects/68",
+      "unique_id": "OreNode 16"
+    },
+    {
+      "angle_radians": 4.71238899230957,
+      "category": "矿脉",
+      "cell": [
+        332.0,
+        468.0
+      ],
+      "id": 70,
+      "object_type": "OreNode",
+      "position_pointers": [
+        "/objects/69/cell",
+        "/ore_cells/32"
+      ],
+      "source_pointer": "/objects/69",
+      "unique_id": "OreNode 15"
+    },
+    {
+      "angle_radians": 2.356194496154785,
+      "category": "矿脉",
+      "cell": [
+        360.0,
+        424.0
+      ],
+      "id": 71,
+      "object_type": "OreNode",
+      "position_pointers": [
+        "/objects/70/cell",
+        "/ore_cells/33"
+      ],
+      "source_pointer": "/objects/70",
+      "unique_id": "OreNode 14"
+    },
+    {
+      "angle_radians": 4.71238899230957,
+      "category": "矿脉",
+      "cell": [
+        292.0,
+        488.0
+      ],
+      "id": 72,
+      "object_type": "OreNode",
+      "position_pointers": [
+        "/objects/71/cell",
+        "/ore_cells/34"
+      ],
+      "source_pointer": "/objects/71",
+      "unique_id": "OreNode 13"
+    },
+    {
+      "angle_radians": 1.5707963705062866,
+      "category": "矿脉",
+      "cell": [
+        196.0,
+        452.0
+      ],
+      "id": 73,
+      "object_type": "OreNode",
+      "position_pointers": [
+        "/objects/72/cell",
+        "/ore_cells/35"
+      ],
+      "source_pointer": "/objects/72",
+      "unique_id": "OreNode 12"
+    },
+    {
+      "angle_radians": 4.71238899230957,
+      "category": "矿脉",
+      "cell": [
+        540.0,
+        408.0
+      ],
+      "id": 74,
+      "object_type": "OreNode",
+      "position_pointers": [
+        "/objects/73/cell",
+        "/ore_cells/36"
+      ],
+      "source_pointer": "/objects/73",
+      "unique_id": "OreNode 11"
+    },
+    {
+      "angle_radians": 2.356194496154785,
+      "category": "矿脉",
+      "cell": [
+        544.0,
+        364.0
+      ],
+      "id": 75,
+      "object_type": "OreNode",
+      "position_pointers": [
+        "/objects/74/cell",
+        "/ore_cells/37"
+      ],
+      "source_pointer": "/objects/74",
+      "unique_id": "OreNode 10"
+    },
+    {
+      "angle_radians": 0.0,
+      "category": "矿脉",
+      "cell": [
+        624.0,
+        304.0
+      ],
+      "id": 76,
+      "object_type": "OreNode",
+      "position_pointers": [
+        "/objects/75/cell",
+        "/ore_cells/38"
+      ],
+      "source_pointer": "/objects/75",
+      "unique_id": "OreNode 9"
+    },
+    {
+      "angle_radians": 1.5707963705062866,
+      "category": "矿脉",
+      "cell": [
+        576.0,
+        292.0
+      ],
+      "id": 77,
+      "object_type": "OreNode",
+      "position_pointers": [
+        "/objects/76/cell",
+        "/ore_cells/39"
+      ],
+      "source_pointer": "/objects/76",
+      "unique_id": "OreNode 8"
+    },
+    {
+      "angle_radians": 2.4805495738983154,
+      "category": "出生点",
+      "cell": [
+        744.0,
+        384.0
+      ],
+      "id": 78,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/77/cell",
+        "/base_cells/7"
+      ],
+      "source_pointer": "/objects/77",
+      "unique_id": "Player_8_Start (imported)",
+      "waypoint_name": "Player_8_Start (imported)"
+    },
+    {
+      "angle_radians": 2.7828218936920166,
+      "category": "出生点",
+      "cell": [
+        560.0,
+        72.0
+      ],
+      "id": 79,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/78/cell",
+        "/base_cells/6"
+      ],
+      "source_pointer": "/objects/78",
+      "unique_id": "Player_7_Start (imported)",
+      "waypoint_name": "Player_7_Start (imported)"
+    },
+    {
+      "angle_radians": 2.6260435581207275,
+      "category": "出生点",
+      "cell": [
+        348.0,
+        72.0
+      ],
+      "id": 80,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/79/cell",
+        "/base_cells/5"
+      ],
+      "source_pointer": "/objects/79",
+      "unique_id": "Player_6_Start",
+      "waypoint_name": "Player_6_Start"
+    },
+    {
+      "angle_radians": -1.120134949684143,
+      "category": "出生点",
+      "cell": [
+        176.0,
+        160.0
+      ],
+      "id": 81,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/80/cell",
+        "/base_cells/4"
+      ],
+      "source_pointer": "/objects/80",
+      "unique_id": "Player_5_Start",
+      "waypoint_name": "Player_5_Start"
+    },
+    {
+      "angle_radians": 1.808632254600525,
+      "category": "出生点",
+      "cell": [
+        724.0,
+        584.0
+      ],
+      "id": 82,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/81/cell",
+        "/base_cells/3"
+      ],
+      "source_pointer": "/objects/81",
+      "unique_id": "Player_4_Start",
+      "waypoint_name": "Player_4_Start"
+    },
+    {
+      "angle_radians": -0.8066715598106384,
+      "category": "出生点",
+      "cell": [
+        560.0,
+        672.0
+      ],
+      "id": 83,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/82/cell",
+        "/base_cells/2"
+      ],
+      "source_pointer": "/objects/82",
+      "unique_id": "Player_3_Start",
+      "waypoint_name": "Player_3_Start"
+    },
+    {
+      "angle_radians": -0.6610431671142578,
+      "category": "出生点",
+      "cell": [
+        400.0,
+        760.0
+      ],
+      "id": 84,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/83/cell",
+        "/base_cells/1"
+      ],
+      "source_pointer": "/objects/83",
+      "unique_id": "Player_2_Start",
+      "waypoint_name": "Player_2_Start"
+    },
+    {
+      "angle_radians": -1.6588037014007568,
+      "category": "出生点",
+      "cell": [
+        120.0,
+        720.0
+      ],
+      "id": 85,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/84/cell",
+        "/base_cells/0"
+      ],
+      "source_pointer": "/objects/84",
+      "unique_id": "Player_1_Start",
+      "waypoint_name": "Player_1_Start"
+    },
+    {
+      "angle_radians": 0.7853981852531433,
+      "category": "矿脉",
+      "cell": [
+        108.0,
+        444.0
+      ],
+      "id": 86,
+      "object_type": "OreNode",
+      "position_pointers": [
+        "/objects/85/cell",
+        "/ore_cells/40"
+      ],
+      "source_pointer": "/objects/85",
+      "unique_id": "OreNode 140"
+    },
+    {
+      "angle_radians": 5.497786998748779,
+      "category": "矿脉",
+      "cell": [
+        452.0,
+        88.0
+      ],
+      "id": 87,
+      "object_type": "OreNode",
+      "position_pointers": [
+        "/objects/86/cell",
+        "/ore_cells/41"
+      ],
+      "source_pointer": "/objects/86",
+      "unique_id": "OreNode 141"
+    },
+    {
+      "angle_radians": 3.1415927410125732,
+      "category": "矿脉",
+      "cell": [
+        228.0,
+        792.0
+      ],
+      "id": 88,
+      "object_type": "OreNode",
+      "position_pointers": [
+        "/objects/87/cell",
+        "/ore_cells/42"
+      ],
+      "source_pointer": "/objects/87",
+      "unique_id": "OreNode 142"
+    },
+    {
+      "angle_radians": 1.5707963705062866,
+      "category": "矿脉",
+      "cell": [
+        60.0,
+        264.0
+      ],
+      "id": 89,
+      "object_type": "OreNode",
+      "position_pointers": [
+        "/objects/88/cell",
+        "/ore_cells/43"
+      ],
+      "source_pointer": "/objects/88",
+      "unique_id": "OreNode 143"
+    },
+    {
+      "angle_radians": 1.5707963705062866,
+      "category": "矿脉",
+      "cell": [
+        624.0,
+        260.0
+      ],
+      "id": 90,
+      "object_type": "OreNode",
+      "position_pointers": [
+        "/objects/89/cell",
+        "/ore_cells/44"
+      ],
+      "source_pointer": "/objects/89",
+      "unique_id": "OreNode 144"
+    },
+    {
+      "angle_radians": 1.5707963705062866,
+      "category": "矿脉",
+      "cell": [
+        728.0,
+        92.0
+      ],
+      "id": 91,
+      "object_type": "OreNode",
+      "position_pointers": [
+        "/objects/90/cell",
+        "/ore_cells/45"
+      ],
+      "source_pointer": "/objects/90",
+      "unique_id": "OreNode 145"
+    },
+    {
+      "angle_radians": 4.71238899230957,
+      "category": "矿脉",
+      "cell": [
+        584.0,
+        180.0
+      ],
+      "id": 92,
+      "object_type": "OreNode",
+      "position_pointers": [
+        "/objects/91/cell",
+        "/ore_cells/46"
+      ],
+      "source_pointer": "/objects/91",
+      "unique_id": "OreNode 146"
+    },
+    {
+      "angle_radians": 0.0,
+      "category": "矿脉",
+      "cell": [
+        768.0,
+        108.0
+      ],
+      "id": 93,
+      "object_type": "OreNode",
+      "position_pointers": [
+        "/objects/92/cell",
+        "/ore_cells/47"
+      ],
+      "source_pointer": "/objects/92",
+      "unique_id": "OreNode 147"
+    },
+    {
+      "angle_radians": -0.7853981852531433,
+      "category": "油井",
+      "cell": [
+        93.0,
+        487.0
+      ],
+      "id": 94,
+      "object_type": "OilDerrick",
+      "position_pointers": [
+        "/objects/93/cell",
+        "/derrick_cells/8"
+      ],
+      "source_pointer": "/objects/93",
+      "unique_id": "OilDerrick 108"
+    },
+    {
+      "angle_radians": -0.7853981852531433,
+      "category": "油井",
+      "cell": [
+        278.0,
+        287.0
+      ],
+      "id": 95,
+      "object_type": "OilDerrick",
+      "position_pointers": [
+        "/objects/94/cell",
+        "/derrick_cells/9"
+      ],
+      "source_pointer": "/objects/94",
+      "unique_id": "OilDerrick 109"
+    },
+    {
+      "angle_radians": -0.7853981852531433,
+      "category": "油井",
+      "cell": [
+        288.0,
+        703.0
+      ],
+      "id": 96,
+      "object_type": "OilDerrick",
+      "position_pointers": [
+        "/objects/95/cell",
+        "/derrick_cells/10"
+      ],
+      "source_pointer": "/objects/95",
+      "unique_id": "OilDerrick 110"
+    },
+    {
+      "angle_radians": -0.7853981852531433,
+      "category": "油井",
+      "cell": [
+        317.0,
+        545.0
+      ],
+      "id": 97,
+      "object_type": "OilDerrick",
+      "position_pointers": [
+        "/objects/96/cell",
+        "/derrick_cells/11"
+      ],
+      "source_pointer": "/objects/96",
+      "unique_id": "OilDerrick 111"
+    },
+    {
+      "angle_radians": -0.7853981852531433,
+      "category": "油井",
+      "cell": [
+        383.0,
+        208.0
+      ],
+      "id": 98,
+      "object_type": "OilDerrick",
+      "position_pointers": [
+        "/objects/97/cell",
+        "/derrick_cells/12"
+      ],
+      "source_pointer": "/objects/97",
+      "unique_id": "OilDerrick 112"
+    },
+    {
+      "angle_radians": -0.7853981852531433,
+      "category": "油井",
+      "cell": [
+        472.0,
+        246.0
+      ],
+      "id": 99,
+      "object_type": "OilDerrick",
+      "position_pointers": [
+        "/objects/98/cell",
+        "/derrick_cells/13"
+      ],
+      "source_pointer": "/objects/98",
+      "unique_id": "OilDerrick 113"
+    },
+    {
+      "angle_radians": -0.7853981852531433,
+      "category": "油井",
+      "cell": [
+        493.0,
+        368.0
+      ],
+      "id": 100,
+      "object_type": "OilDerrick",
+      "position_pointers": [
+        "/objects/99/cell",
+        "/derrick_cells/14"
+      ],
+      "source_pointer": "/objects/99",
+      "unique_id": "OilDerrick 114"
+    },
+    {
+      "angle_radians": -0.7853981852531433,
+      "category": "油井",
+      "cell": [
+        576.0,
+        320.0
+      ],
+      "id": 101,
+      "object_type": "OilDerrick",
+      "position_pointers": [
+        "/objects/100/cell",
+        "/derrick_cells/15"
+      ],
+      "source_pointer": "/objects/100",
+      "unique_id": "OilDerrick 115"
+    },
+    {
+      "angle_radians": -0.7853981852531433,
+      "category": "油井",
+      "cell": [
+        580.0,
+        543.0
+      ],
+      "id": 102,
+      "object_type": "OilDerrick",
+      "position_pointers": [
+        "/objects/101/cell",
+        "/derrick_cells/16"
+      ],
+      "source_pointer": "/objects/101",
+      "unique_id": "OilDerrick 116"
+    },
+    {
+      "angle_radians": -0.7853981852531433,
+      "category": "油井",
+      "cell": [
+        611.0,
+        413.0
+      ],
+      "id": 103,
+      "object_type": "OilDerrick",
+      "position_pointers": [
+        "/objects/102/cell",
+        "/derrick_cells/17"
+      ],
+      "source_pointer": "/objects/102",
+      "unique_id": "OilDerrick 117"
+    },
+    {
+      "angle_radians": -0.7853981852531433,
+      "category": "油井",
+      "cell": [
+        611.0,
+        194.0
+      ],
+      "id": 104,
+      "object_type": "OilDerrick",
+      "position_pointers": [
+        "/objects/103/cell",
+        "/derrick_cells/18"
+      ],
+      "source_pointer": "/objects/103",
+      "unique_id": "OilDerrick 118"
+    },
+    {
+      "angle_radians": -0.7853981852531433,
+      "category": "油井",
+      "cell": [
+        729.0,
+        229.0
+      ],
+      "id": 105,
+      "object_type": "OilDerrick",
+      "position_pointers": [
+        "/objects/104/cell",
+        "/derrick_cells/19"
+      ],
+      "source_pointer": "/objects/104",
+      "unique_id": "OilDerrick 119"
+    },
+    {
+      "angle_radians": 1.5707963705062866,
+      "category": "科技建筑",
+      "cell": [
+        292.0,
+        380.0
+      ],
+      "id": 106,
+      "object_type": "GarageTechStructure",
+      "position_pointers": [
+        "/objects/105/cell",
+        "/garage_cells/1"
+      ],
+      "source_pointer": "/objects/105",
+      "unique_id": "GarageTechStructure 101"
+    },
+    {
+      "angle_radians": 1.5707963705062866,
+      "category": "科技建筑",
+      "cell": [
+        362.0,
+        501.0
+      ],
+      "id": 107,
+      "object_type": "AirportTechStructure",
+      "position_pointers": [
+        "/objects/106/cell",
+        "/airport_cells/0"
+      ],
+      "source_pointer": "/objects/106",
+      "unique_id": "AirportTechStructure 107"
+    },
+    {
+      "angle_radians": 1.5707963705062866,
+      "category": "科技建筑",
+      "cell": [
+        505.0,
+        261.0
+      ],
+      "id": 108,
+      "object_type": "AirportTechStructure",
+      "position_pointers": [
+        "/objects/107/cell",
+        "/airport_cells/1"
+      ],
+      "source_pointer": "/objects/107",
+      "unique_id": "AirportTechStructure 108"
+    },
+    {
+      "angle_radians": 1.5707963705062866,
+      "category": "科技建筑",
+      "cell": [
+        445.0,
+        324.0
+      ],
+      "id": 109,
+      "object_type": "VeterancyTechStructure",
+      "position_pointers": [
+        "/objects/108/cell",
+        "/academy_cells/0"
+      ],
+      "source_pointer": "/objects/108",
+      "unique_id": "VeterancyTechStructure 109"
+    },
+    {
+      "angle_radians": 1.5707963705062866,
+      "category": "科技建筑",
+      "cell": [
+        422.0,
+        432.0
+      ],
+      "id": 110,
+      "object_type": "VeterancyTechStructure",
+      "position_pointers": [
+        "/objects/109/cell",
+        "/academy_cells/1"
+      ],
+      "source_pointer": "/objects/109",
+      "unique_id": "VeterancyTechStructure 110"
+    },
+    {
+      "angle_radians": 1.5707963705062866,
+      "category": "科技建筑",
+      "cell": [
+        493.0,
+        509.0
+      ],
+      "id": 111,
+      "object_type": "HospitalTechStructure",
+      "position_pointers": [
+        "/objects/110/cell",
+        "/hospital_cells/0"
+      ],
+      "source_pointer": "/objects/110",
+      "unique_id": "HospitalTechStructure 111"
+    },
+    {
+      "angle_radians": 1.5707963705062866,
+      "category": "科技建筑",
+      "cell": [
+        364.0,
+        259.0
+      ],
+      "id": 112,
+      "object_type": "HospitalTechStructure",
+      "position_pointers": [
+        "/objects/111/cell",
+        "/hospital_cells/1"
+      ],
+      "source_pointer": "/objects/111",
+      "unique_id": "HospitalTechStructure 112"
+    },
+    {
+      "angle_radians": 1.5707963705062866,
+      "category": "科技建筑",
+      "cell": [
+        628.0,
+        570.0
+      ],
+      "id": 113,
+      "object_type": "AlliedNavalYard",
+      "position_pointers": [
+        "/objects/112/cell",
+        "/shipyard_cells/0"
+      ],
+      "source_pointer": "/objects/112",
+      "unique_id": "AlliedNavalYard 113"
+    },
+    {
+      "angle_radians": 0.0,
+      "category": "房屋",
+      "cell": [
+        93.0,
+        457.0
+      ],
+      "id": 114,
+      "object_type": "ST_Building01",
+      "position_pointers": [
+        "/objects/113/cell",
+        "/house_cells/0"
+      ],
+      "source_pointer": "/objects/113",
+      "unique_id": "ST_Building01 600"
+    },
+    {
+      "angle_radians": 0.0,
+      "category": "房屋",
+      "cell": [
+        278.0,
+        260.0
+      ],
+      "id": 115,
+      "object_type": "ST_Building02",
+      "position_pointers": [
+        "/objects/114/cell",
+        "/house_cells/1"
+      ],
+      "source_pointer": "/objects/114",
+      "unique_id": "ST_Building02 601"
+    },
+    {
+      "angle_radians": 0.0,
+      "category": "房屋",
+      "cell": [
+        288.0,
+        676.0
+      ],
+      "id": 116,
+      "object_type": "ST_Building01",
+      "position_pointers": [
+        "/objects/115/cell",
+        "/house_cells/2"
+      ],
+      "source_pointer": "/objects/115",
+      "unique_id": "ST_Building01 602"
+    },
+    {
+      "angle_radians": 0.0,
+      "category": "房屋",
+      "cell": [
+        317.0,
+        518.0
+      ],
+      "id": 117,
+      "object_type": "ST_Building02",
+      "position_pointers": [
+        "/objects/116/cell",
+        "/house_cells/3"
+      ],
+      "source_pointer": "/objects/116",
+      "unique_id": "ST_Building02 603"
+    },
+    {
+      "angle_radians": 0.0,
+      "category": "房屋",
+      "cell": [
+        383.0,
+        181.0
+      ],
+      "id": 118,
+      "object_type": "ST_Building01",
+      "position_pointers": [
+        "/objects/117/cell",
+        "/house_cells/4"
+      ],
+      "source_pointer": "/objects/117",
+      "unique_id": "ST_Building01 604"
+    },
+    {
+      "angle_radians": 0.0,
+      "category": "房屋",
+      "cell": [
+        472.0,
+        219.0
+      ],
+      "id": 119,
+      "object_type": "ST_Building02",
+      "position_pointers": [
+        "/objects/118/cell",
+        "/house_cells/5"
+      ],
+      "source_pointer": "/objects/118",
+      "unique_id": "ST_Building02 605"
+    },
+    {
+      "angle_radians": 0.0,
+      "category": "房屋",
+      "cell": [
+        493.0,
+        341.0
+      ],
+      "id": 120,
+      "object_type": "ST_Building01",
+      "position_pointers": [
+        "/objects/119/cell",
+        "/house_cells/6"
+      ],
+      "source_pointer": "/objects/119",
+      "unique_id": "ST_Building01 606"
+    },
+    {
+      "angle_radians": 0.0,
+      "category": "房屋",
+      "cell": [
+        576.0,
+        293.0
+      ],
+      "id": 121,
+      "object_type": "ST_Building02",
+      "position_pointers": [
+        "/objects/120/cell",
+        "/house_cells/7"
+      ],
+      "source_pointer": "/objects/120",
+      "unique_id": "ST_Building02 607"
+    },
+    {
+      "angle_radians": 0.0,
+      "category": "房屋",
+      "cell": [
+        580.0,
+        516.0
+      ],
+      "id": 122,
+      "object_type": "ST_Building01",
+      "position_pointers": [
+        "/objects/121/cell",
+        "/house_cells/8"
+      ],
+      "source_pointer": "/objects/121",
+      "unique_id": "ST_Building01 608"
+    },
+    {
+      "angle_radians": 0.0,
+      "category": "房屋",
+      "cell": [
+        597.0,
+        373.0
+      ],
+      "id": 123,
+      "object_type": "ST_Building02",
+      "position_pointers": [
+        "/objects/122/cell",
+        "/house_cells/9"
+      ],
+      "source_pointer": "/objects/122",
+      "unique_id": "ST_Building02 609"
+    },
+    {
+      "angle_radians": 0.0,
+      "category": "房屋",
+      "cell": [
+        611.0,
+        167.0
+      ],
+      "id": 124,
+      "object_type": "ST_Building01",
+      "position_pointers": [
+        "/objects/123/cell",
+        "/house_cells/10"
+      ],
+      "source_pointer": "/objects/123",
+      "unique_id": "ST_Building01 610"
+    },
+    {
+      "angle_radians": 0.0,
+      "category": "房屋",
+      "cell": [
+        729.0,
+        202.0
+      ],
+      "id": 125,
+      "object_type": "ST_Building02",
+      "position_pointers": [
+        "/objects/124/cell",
+        "/house_cells/11"
+      ],
+      "source_pointer": "/objects/124",
+      "unique_id": "ST_Building02 611"
+    },
+    {
+      "angle_radians": 5.415755748748779,
+      "category": "石头",
+      "cell": [
+        208.0,
+        360.0
+      ],
+      "id": 126,
+      "object_type": "HA_GardenRock01",
+      "position_pointers": [
+        "/objects/125/cell"
+      ],
+      "source_pointer": "/objects/125",
+      "unique_id": "HA_GardenRock01 1000"
+    },
+    {
+      "angle_radians": 5.497378349304199,
+      "category": "石头",
+      "cell": [
+        277.0,
+        339.0
+      ],
+      "id": 127,
+      "object_type": "OK_GardenRock01",
+      "position_pointers": [
+        "/objects/126/cell"
+      ],
+      "source_pointer": "/objects/126",
+      "unique_id": "OK_GardenRock01 1001"
+    },
+    {
+      "angle_radians": 4.8519287109375,
+      "category": "石头",
+      "cell": [
+        356.0,
+        362.0
+      ],
+      "id": 128,
+      "object_type": "HA_GardenRock01",
+      "position_pointers": [
+        "/objects/127/cell"
+      ],
+      "source_pointer": "/objects/127",
+      "unique_id": "HA_GardenRock01 1002"
+    },
+    {
+      "angle_radians": 1.717265248298645,
+      "category": "石头",
+      "cell": [
+        259.0,
+        682.0
+      ],
+      "id": 129,
+      "object_type": "OK_GardenRock01",
+      "position_pointers": [
+        "/objects/128/cell"
+      ],
+      "source_pointer": "/objects/128",
+      "unique_id": "OK_GardenRock01 1003"
+    },
+    {
+      "angle_radians": 2.3506076335906982,
+      "category": "石头",
+      "cell": [
+        546.0,
+        530.0
+      ],
+      "id": 130,
+      "object_type": "HA_GardenRock01",
+      "position_pointers": [
+        "/objects/129/cell"
+      ],
+      "source_pointer": "/objects/129",
+      "unique_id": "HA_GardenRock01 1004"
+    },
+    {
+      "angle_radians": 1.0846987962722778,
+      "category": "石头",
+      "cell": [
+        165.0,
+        369.0
+      ],
+      "id": 131,
+      "object_type": "OK_GardenRock01",
+      "position_pointers": [
+        "/objects/130/cell"
+      ],
+      "source_pointer": "/objects/130",
+      "unique_id": "OK_GardenRock01 1005"
+    },
+    {
+      "angle_radians": 3.9996964931488037,
+      "category": "石头",
+      "cell": [
+        349.0,
+        356.0
+      ],
+      "id": 132,
+      "object_type": "HA_GardenRock01",
+      "position_pointers": [
+        "/objects/131/cell"
+      ],
+      "source_pointer": "/objects/131",
+      "unique_id": "HA_GardenRock01 1006"
+    },
+    {
+      "angle_radians": 3.0019121170043945,
+      "category": "石头",
+      "cell": [
+        506.0,
+        445.0
+      ],
+      "id": 133,
+      "object_type": "OK_GardenRock01",
+      "position_pointers": [
+        "/objects/132/cell"
+      ],
+      "source_pointer": "/objects/132",
+      "unique_id": "OK_GardenRock01 1007"
+    },
+    {
+      "angle_radians": 3.406162977218628,
+      "category": "石头",
+      "cell": [
+        93.0,
+        524.0
+      ],
+      "id": 134,
+      "object_type": "HA_GardenRock01",
+      "position_pointers": [
+        "/objects/133/cell"
+      ],
+      "source_pointer": "/objects/133",
+      "unique_id": "HA_GardenRock01 1008"
+    },
+    {
+      "angle_radians": 6.011712551116943,
+      "category": "石头",
+      "cell": [
+        364.0,
+        456.0
+      ],
+      "id": 135,
+      "object_type": "OK_GardenRock01",
+      "position_pointers": [
+        "/objects/134/cell"
+      ],
+      "source_pointer": "/objects/134",
+      "unique_id": "OK_GardenRock01 1009"
+    },
+    {
+      "angle_radians": 5.539071083068848,
+      "category": "石头",
+      "cell": [
+        557.0,
+        517.0
+      ],
+      "id": 136,
+      "object_type": "HA_GardenRock01",
+      "position_pointers": [
+        "/objects/135/cell"
+      ],
+      "source_pointer": "/objects/135",
+      "unique_id": "HA_GardenRock01 1010"
+    },
+    {
+      "angle_radians": 4.752102375030518,
+      "category": "石头",
+      "cell": [
+        256.0,
+        418.0
+      ],
+      "id": 137,
+      "object_type": "OK_GardenRock01",
+      "position_pointers": [
+        "/objects/136/cell"
+      ],
+      "source_pointer": "/objects/136",
+      "unique_id": "OK_GardenRock01 1011"
+    },
+    {
+      "angle_radians": 5.0022759437561035,
+      "category": "石头",
+      "cell": [
+        162.0,
+        445.0
+      ],
+      "id": 138,
+      "object_type": "HA_GardenRock01",
+      "position_pointers": [
+        "/objects/137/cell"
+      ],
+      "source_pointer": "/objects/137",
+      "unique_id": "HA_GardenRock01 1012"
+    },
+    {
+      "angle_radians": 0.07434719800949097,
+      "category": "石头",
+      "cell": [
+        211.0,
+        557.0
+      ],
+      "id": 139,
+      "object_type": "OK_GardenRock01",
+      "position_pointers": [
+        "/objects/138/cell"
+      ],
+      "source_pointer": "/objects/138",
+      "unique_id": "OK_GardenRock01 1013"
+    },
+    {
+      "angle_radians": 4.375339031219482,
+      "category": "石头",
+      "cell": [
+        339.0,
+        338.0
+      ],
+      "id": 140,
+      "object_type": "HA_GardenRock01",
+      "position_pointers": [
+        "/objects/139/cell"
+      ],
+      "source_pointer": "/objects/139",
+      "unique_id": "HA_GardenRock01 1014"
+    },
+    {
+      "angle_radians": 4.644072532653809,
+      "category": "石头",
+      "cell": [
+        381.0,
+        467.0
+      ],
+      "id": 141,
+      "object_type": "OK_GardenRock01",
+      "position_pointers": [
+        "/objects/140/cell"
+      ],
+      "source_pointer": "/objects/140",
+      "unique_id": "OK_GardenRock01 1015"
+    },
+    {
+      "angle_radians": 3.564176321029663,
+      "category": "石头",
+      "cell": [
+        366.0,
+        686.0
+      ],
+      "id": 142,
+      "object_type": "HA_GardenRock01",
+      "position_pointers": [
+        "/objects/141/cell"
+      ],
+      "source_pointer": "/objects/141",
+      "unique_id": "HA_GardenRock01 1016"
+    },
+    {
+      "angle_radians": 4.907115936279297,
+      "category": "石头",
+      "cell": [
+        457.0,
+        414.0
+      ],
+      "id": 143,
+      "object_type": "OK_GardenRock01",
+      "position_pointers": [
+        "/objects/142/cell"
+      ],
+      "source_pointer": "/objects/142",
+      "unique_id": "OK_GardenRock01 1017"
+    },
+    {
+      "angle_radians": 4.189600944519043,
+      "category": "石头",
+      "cell": [
+        157.0,
+        378.0
+      ],
+      "id": 144,
+      "object_type": "HA_GardenRock01",
+      "position_pointers": [
+        "/objects/143/cell"
+      ],
+      "source_pointer": "/objects/143",
+      "unique_id": "HA_GardenRock01 1018"
+    },
+    {
+      "angle_radians": 3.5515573024749756,
+      "category": "石头",
+      "cell": [
+        210.0,
+        482.0
+      ],
+      "id": 145,
+      "object_type": "OK_GardenRock01",
+      "position_pointers": [
+        "/objects/144/cell"
+      ],
+      "source_pointer": "/objects/144",
+      "unique_id": "OK_GardenRock01 1019"
+    },
+    {
+      "angle_radians": 3.408996105194092,
+      "category": "石头",
+      "cell": [
+        396.0,
+        620.0
+      ],
+      "id": 146,
+      "object_type": "HA_GardenRock01",
+      "position_pointers": [
+        "/objects/145/cell"
+      ],
+      "source_pointer": "/objects/145",
+      "unique_id": "HA_GardenRock01 1020"
+    },
+    {
+      "angle_radians": 2.994248390197754,
+      "category": "石头",
+      "cell": [
+        313.0,
+        321.0
+      ],
+      "id": 147,
+      "object_type": "OK_GardenRock01",
+      "position_pointers": [
+        "/objects/146/cell"
+      ],
+      "source_pointer": "/objects/146",
+      "unique_id": "OK_GardenRock01 1021"
+    },
+    {
+      "angle_radians": 3.4379255771636963,
+      "category": "石头",
+      "cell": [
+        441.0,
+        596.0
+      ],
+      "id": 148,
+      "object_type": "HA_GardenRock01",
+      "position_pointers": [
+        "/objects/147/cell"
+      ],
+      "source_pointer": "/objects/147",
+      "unique_id": "HA_GardenRock01 1022"
+    },
+    {
+      "angle_radians": 4.907734394073486,
+      "category": "石头",
+      "cell": [
+        246.0,
+        672.0
+      ],
+      "id": 149,
+      "object_type": "OK_GardenRock01",
+      "position_pointers": [
+        "/objects/148/cell"
+      ],
+      "source_pointer": "/objects/148",
+      "unique_id": "OK_GardenRock01 1023"
+    },
+    {
+      "angle_radians": 1.9824464321136475,
+      "category": "石头",
+      "cell": [
+        397.0,
+        569.0
+      ],
+      "id": 150,
+      "object_type": "HA_GardenRock01",
+      "position_pointers": [
+        "/objects/149/cell"
+      ],
+      "source_pointer": "/objects/149",
+      "unique_id": "HA_GardenRock01 1024"
+    },
+    {
+      "angle_radians": 3.52236270904541,
+      "category": "石头",
+      "cell": [
+        459.0,
+        596.0
+      ],
+      "id": 151,
+      "object_type": "OK_GardenRock01",
+      "position_pointers": [
+        "/objects/150/cell"
+      ],
+      "source_pointer": "/objects/150",
+      "unique_id": "OK_GardenRock01 1025"
+    },
+    {
+      "angle_radians": 5.297706127166748,
+      "category": "石头",
+      "cell": [
+        490.0,
+        435.0
+      ],
+      "id": 152,
+      "object_type": "HA_GardenRock01",
+      "position_pointers": [
+        "/objects/151/cell"
+      ],
+      "source_pointer": "/objects/151",
+      "unique_id": "HA_GardenRock01 1026"
+    },
+    {
+      "angle_radians": 4.294517993927002,
+      "category": "石头",
+      "cell": [
+        392.0,
+        387.0
+      ],
+      "id": 153,
+      "object_type": "OK_GardenRock01",
+      "position_pointers": [
+        "/objects/152/cell"
+      ],
+      "source_pointer": "/objects/152",
+      "unique_id": "OK_GardenRock01 1027"
+    },
+    {
+      "angle_radians": 2.519315719604492,
+      "category": "石头",
+      "cell": [
+        200.0,
+        505.0
+      ],
+      "id": 154,
+      "object_type": "HA_GardenRock01",
+      "position_pointers": [
+        "/objects/153/cell"
+      ],
+      "source_pointer": "/objects/153",
+      "unique_id": "HA_GardenRock01 1028"
+    },
+    {
+      "angle_radians": 4.722995758056641,
+      "category": "石头",
+      "cell": [
+        332.0,
+        436.0
+      ],
+      "id": 155,
+      "object_type": "OK_GardenRock01",
+      "position_pointers": [
+        "/objects/154/cell"
+      ],
+      "source_pointer": "/objects/154",
+      "unique_id": "OK_GardenRock01 1029"
+    },
+    {
+      "angle_radians": 6.064309597015381,
+      "category": "石头",
+      "cell": [
+        288.0,
+        328.0
+      ],
+      "id": 156,
+      "object_type": "HA_GardenRock01",
+      "position_pointers": [
+        "/objects/155/cell"
+      ],
+      "source_pointer": "/objects/155",
+      "unique_id": "HA_GardenRock01 1030"
+    },
+    {
+      "angle_radians": 3.6944501399993896,
+      "category": "石头",
+      "cell": [
+        449.0,
+        407.0
+      ],
+      "id": 157,
+      "object_type": "OK_GardenRock01",
+      "position_pointers": [
+        "/objects/156/cell"
+      ],
+      "source_pointer": "/objects/156",
+      "unique_id": "OK_GardenRock01 1031"
+    },
+    {
+      "angle_radians": 2.3072867393493652,
+      "category": "石头",
+      "cell": [
+        148.0,
+        472.0
+      ],
+      "id": 158,
+      "object_type": "HA_GardenRock01",
+      "position_pointers": [
+        "/objects/157/cell"
+      ],
+      "source_pointer": "/objects/157",
+      "unique_id": "HA_GardenRock01 1032"
+    },
+    {
+      "angle_radians": 1.020195722579956,
+      "category": "石头",
+      "cell": [
+        365.0,
+        593.0
+      ],
+      "id": 159,
+      "object_type": "OK_GardenRock01",
+      "position_pointers": [
+        "/objects/158/cell"
+      ],
+      "source_pointer": "/objects/158",
+      "unique_id": "OK_GardenRock01 1033"
+    },
+    {
+      "angle_radians": 1.893935203552246,
+      "category": "石头",
+      "cell": [
+        370.0,
+        675.0
+      ],
+      "id": 160,
+      "object_type": "HA_GardenRock01",
+      "position_pointers": [
+        "/objects/159/cell"
+      ],
+      "source_pointer": "/objects/159",
+      "unique_id": "HA_GardenRock01 1034"
+    },
+    {
+      "angle_radians": 4.416659355163574,
+      "category": "石头",
+      "cell": [
+        159.0,
+        389.0
+      ],
+      "id": 161,
+      "object_type": "OK_GardenRock01",
+      "position_pointers": [
+        "/objects/160/cell"
+      ],
+      "source_pointer": "/objects/160",
+      "unique_id": "OK_GardenRock01 1035"
+    },
+    {
+      "angle_radians": 2.6931862831115723,
+      "category": "石头",
+      "cell": [
+        348.0,
+        601.0
+      ],
+      "id": 162,
+      "object_type": "HA_GardenRock01",
+      "position_pointers": [
+        "/objects/161/cell"
+      ],
+      "source_pointer": "/objects/161",
+      "unique_id": "HA_GardenRock01 1036"
+    },
+    {
+      "angle_radians": 1.253393292427063,
+      "category": "石头",
+      "cell": [
+        127.0,
+        621.0
+      ],
+      "id": 163,
+      "object_type": "OK_GardenRock01",
+      "position_pointers": [
+        "/objects/162/cell"
+      ],
+      "source_pointer": "/objects/162",
+      "unique_id": "OK_GardenRock01 1037"
+    },
+    {
+      "angle_radians": 5.393416404724121,
+      "category": "石头",
+      "cell": [
+        157.0,
+        456.0
+      ],
+      "id": 164,
+      "object_type": "HA_GardenRock01",
+      "position_pointers": [
+        "/objects/163/cell"
+      ],
+      "source_pointer": "/objects/163",
+      "unique_id": "HA_GardenRock01 1038"
+    },
+    {
+      "angle_radians": 1.367384433746338,
+      "category": "石头",
+      "cell": [
+        85.0,
+        599.0
+      ],
+      "id": 165,
+      "object_type": "OK_GardenRock01",
+      "position_pointers": [
+        "/objects/164/cell"
+      ],
+      "source_pointer": "/objects/164",
+      "unique_id": "OK_GardenRock01 1039"
+    },
+    {
+      "angle_radians": 5.967013359069824,
+      "category": "石头",
+      "cell": [
+        316.0,
+        627.0
+      ],
+      "id": 166,
+      "object_type": "HA_GardenRock01",
+      "position_pointers": [
+        "/objects/165/cell"
+      ],
+      "source_pointer": "/objects/165",
+      "unique_id": "HA_GardenRock01 1040"
+    },
+    {
+      "angle_radians": 5.379908084869385,
+      "category": "石头",
+      "cell": [
+        338.0,
+        609.0
+      ],
+      "id": 167,
+      "object_type": "OK_GardenRock01",
+      "position_pointers": [
+        "/objects/166/cell"
+      ],
+      "source_pointer": "/objects/166",
+      "unique_id": "OK_GardenRock01 1041"
+    },
+    {
+      "angle_radians": 5.590969085693359,
+      "category": "石头",
+      "cell": [
+        406.0,
+        493.0
+      ],
+      "id": 168,
+      "object_type": "HA_GardenRock01",
+      "position_pointers": [
+        "/objects/167/cell"
+      ],
+      "source_pointer": "/objects/167",
+      "unique_id": "HA_GardenRock01 1042"
+    },
+    {
+      "angle_radians": 2.4469339847564697,
+      "category": "石头",
+      "cell": [
+        221.0,
+        468.0
+      ],
+      "id": 169,
+      "object_type": "OK_GardenRock01",
+      "position_pointers": [
+        "/objects/168/cell"
+      ],
+      "source_pointer": "/objects/168",
+      "unique_id": "OK_GardenRock01 1043"
+    },
+    {
+      "angle_radians": 2.9816160202026367,
+      "category": "石头",
+      "cell": [
+        313.0,
+        697.0
+      ],
+      "id": 170,
+      "object_type": "HA_GardenRock01",
+      "position_pointers": [
+        "/objects/169/cell"
+      ],
+      "source_pointer": "/objects/169",
+      "unique_id": "HA_GardenRock01 1044"
+    },
+    {
+      "angle_radians": 0.7348659038543701,
+      "category": "石头",
+      "cell": [
+        478.0,
+        591.0
+      ],
+      "id": 171,
+      "object_type": "OK_GardenRock01",
+      "position_pointers": [
+        "/objects/170/cell"
+      ],
+      "source_pointer": "/objects/170",
+      "unique_id": "OK_GardenRock01 1045"
+    },
+    {
+      "angle_radians": 0.13663482666015625,
+      "category": "石头",
+      "cell": [
+        81.0,
+        548.0
+      ],
+      "id": 172,
+      "object_type": "HA_GardenRock01",
+      "position_pointers": [
+        "/objects/171/cell"
+      ],
+      "source_pointer": "/objects/171",
+      "unique_id": "HA_GardenRock01 1046"
+    },
+    {
+      "angle_radians": 1.4213948249816895,
+      "category": "石头",
+      "cell": [
+        482.0,
+        425.0
+      ],
+      "id": 173,
+      "object_type": "OK_GardenRock01",
+      "position_pointers": [
+        "/objects/172/cell"
+      ],
+      "source_pointer": "/objects/172",
+      "unique_id": "OK_GardenRock01 1047"
+    },
+    {
+      "angle_radians": 1.0086392164230347,
+      "category": "石头",
+      "cell": [
+        155.0,
+        426.0
+      ],
+      "id": 174,
+      "object_type": "HA_GardenRock01",
+      "position_pointers": [
+        "/objects/173/cell"
+      ],
+      "source_pointer": "/objects/173",
+      "unique_id": "HA_GardenRock01 1048"
+    },
+    {
+      "angle_radians": 3.551119089126587,
+      "category": "石头",
+      "cell": [
+        555.0,
+        526.0
+      ],
+      "id": 175,
+      "object_type": "OK_GardenRock01",
+      "position_pointers": [
+        "/objects/174/cell"
+      ],
+      "source_pointer": "/objects/174",
+      "unique_id": "OK_GardenRock01 1049"
+    },
+    {
+      "angle_radians": 4.240611553192139,
+      "category": "石头",
+      "cell": [
+        290.0,
+        632.0
+      ],
+      "id": 176,
+      "object_type": "HA_GardenRock01",
+      "position_pointers": [
+        "/objects/175/cell"
+      ],
+      "source_pointer": "/objects/175",
+      "unique_id": "HA_GardenRock01 1050"
+    },
+    {
+      "angle_radians": 3.051471710205078,
+      "category": "石头",
+      "cell": [
+        320.0,
+        434.0
+      ],
+      "id": 177,
+      "object_type": "OK_GardenRock01",
+      "position_pointers": [
+        "/objects/176/cell"
+      ],
+      "source_pointer": "/objects/176",
+      "unique_id": "OK_GardenRock01 1051"
+    },
+    {
+      "angle_radians": 3.4850034713745117,
+      "category": "石头",
+      "cell": [
+        178.0,
+        357.0
+      ],
+      "id": 178,
+      "object_type": "HA_GardenRock01",
+      "position_pointers": [
+        "/objects/177/cell"
+      ],
+      "source_pointer": "/objects/177",
+      "unique_id": "HA_GardenRock01 1052"
+    },
+    {
+      "angle_radians": 0.5568444132804871,
+      "category": "石头",
+      "cell": [
+        299.0,
+        320.0
+      ],
+      "id": 179,
+      "object_type": "OK_GardenRock01",
+      "position_pointers": [
+        "/objects/178/cell"
+      ],
+      "source_pointer": "/objects/178",
+      "unique_id": "OK_GardenRock01 1053"
+    },
+    {
+      "angle_radians": 4.900765895843506,
+      "category": "石头",
+      "cell": [
+        81.0,
+        563.0
+      ],
+      "id": 180,
+      "object_type": "HA_GardenRock01",
+      "position_pointers": [
+        "/objects/179/cell"
+      ],
+      "source_pointer": "/objects/179",
+      "unique_id": "HA_GardenRock01 1054"
+    },
+    {
+      "angle_radians": 6.120811462402344,
+      "category": "石头",
+      "cell": [
+        147.0,
+        407.0
+      ],
+      "id": 181,
+      "object_type": "OK_GardenRock01",
+      "position_pointers": [
+        "/objects/180/cell"
+      ],
+      "source_pointer": "/objects/180",
+      "unique_id": "OK_GardenRock01 1055"
+    },
+    {
+      "angle_radians": 5.183099269866943,
+      "category": "石头",
+      "cell": [
+        97.0,
+        615.0
+      ],
+      "id": 182,
+      "object_type": "HA_GardenRock01",
+      "position_pointers": [
+        "/objects/181/cell"
+      ],
+      "source_pointer": "/objects/181",
+      "unique_id": "HA_GardenRock01 1056"
+    },
+    {
+      "angle_radians": 0.2636406421661377,
+      "category": "石头",
+      "cell": [
+        115.0,
+        623.0
+      ],
+      "id": 183,
+      "object_type": "OK_GardenRock01",
+      "position_pointers": [
+        "/objects/182/cell"
+      ],
+      "source_pointer": "/objects/182",
+      "unique_id": "OK_GardenRock01 1057"
+    },
+    {
+      "angle_radians": 0.7306890487670898,
+      "category": "石头",
+      "cell": [
+        78.0,
+        580.0
+      ],
+      "id": 184,
+      "object_type": "HA_GardenRock01",
+      "position_pointers": [
+        "/objects/183/cell"
+      ],
+      "source_pointer": "/objects/183",
+      "unique_id": "HA_GardenRock01 1058"
+    },
+    {
+      "angle_radians": 0.9947156310081482,
+      "category": "石头",
+      "cell": [
+        157.0,
+        621.0
+      ],
+      "id": 185,
+      "object_type": "OK_GardenRock01",
+      "position_pointers": [
+        "/objects/184/cell"
+      ],
+      "source_pointer": "/objects/184",
+      "unique_id": "OK_GardenRock01 1059"
+    },
+    {
+      "angle_radians": 4.556596755981445,
+      "category": "石头",
+      "cell": [
+        410.0,
+        563.0
+      ],
+      "id": 186,
+      "object_type": "HA_GardenRock01",
+      "position_pointers": [
+        "/objects/185/cell"
+      ],
+      "source_pointer": "/objects/185",
+      "unique_id": "HA_GardenRock01 1060"
+    },
+    {
+      "angle_radians": 0.11027483642101288,
+      "category": "石头",
+      "cell": [
+        264.0,
+        615.0
+      ],
+      "id": 187,
+      "object_type": "OK_GardenRock01",
+      "position_pointers": [
+        "/objects/186/cell"
+      ],
+      "source_pointer": "/objects/186",
+      "unique_id": "OK_GardenRock01 1061"
+    },
+    {
+      "angle_radians": 1.1109539270401,
+      "category": "石头",
+      "cell": [
+        324.0,
+        620.0
+      ],
+      "id": 188,
+      "object_type": "HA_GardenRock01",
+      "position_pointers": [
+        "/objects/187/cell"
+      ],
+      "source_pointer": "/objects/187",
+      "unique_id": "HA_GardenRock01 1062"
+    },
+    {
+      "angle_radians": 5.746957778930664,
+      "category": "石头",
+      "cell": [
+        487.0,
+        587.0
+      ],
+      "id": 189,
+      "object_type": "OK_GardenRock01",
+      "position_pointers": [
+        "/objects/188/cell"
+      ],
+      "source_pointer": "/objects/188",
+      "unique_id": "OK_GardenRock01 1063"
+    },
+    {
+      "angle_radians": 5.029255390167236,
+      "category": "石头",
+      "cell": [
+        231.0,
+        659.0
+      ],
+      "id": 190,
+      "object_type": "HA_GardenRock01",
+      "position_pointers": [
+        "/objects/189/cell"
+      ],
+      "source_pointer": "/objects/189",
+      "unique_id": "HA_GardenRock01 1064"
+    },
+    {
+      "angle_radians": 5.468811511993408,
+      "category": "石头",
+      "cell": [
+        83.0,
+        538.0
+      ],
+      "id": 191,
+      "object_type": "OK_GardenRock01",
+      "position_pointers": [
+        "/objects/190/cell"
+      ],
+      "source_pointer": "/objects/190",
+      "unique_id": "OK_GardenRock01 1065"
+    },
+    {
+      "angle_radians": 3.7126457691192627,
+      "category": "石头",
+      "cell": [
+        501.0,
+        580.0
+      ],
+      "id": 192,
+      "object_type": "HA_GardenRock01",
+      "position_pointers": [
+        "/objects/191/cell"
+      ],
+      "source_pointer": "/objects/191",
+      "unique_id": "HA_GardenRock01 1066"
+    },
+    {
+      "angle_radians": 5.003872871398926,
+      "category": "石头",
+      "cell": [
+        180.0,
+        624.0
+      ],
+      "id": 193,
+      "object_type": "OK_GardenRock01",
+      "position_pointers": [
+        "/objects/192/cell"
+      ],
+      "source_pointer": "/objects/192",
+      "unique_id": "OK_GardenRock01 1067"
+    },
+    {
+      "angle_radians": 3.737210988998413,
+      "category": "石头",
+      "cell": [
+        373.0,
+        665.0
+      ],
+      "id": 194,
+      "object_type": "HA_GardenRock01",
+      "position_pointers": [
+        "/objects/193/cell"
+      ],
+      "source_pointer": "/objects/193",
+      "unique_id": "HA_GardenRock01 1068"
+    },
+    {
+      "angle_radians": 2.464240789413452,
+      "category": "石头",
+      "cell": [
+        348.0,
+        450.0
+      ],
+      "id": 195,
+      "object_type": "OK_GardenRock01",
+      "position_pointers": [
+        "/objects/194/cell"
+      ],
+      "source_pointer": "/objects/194",
+      "unique_id": "OK_GardenRock01 1069"
+    },
+    {
+      "angle_radians": 0.7605894804000854,
+      "category": "石头",
+      "cell": [
+        343.0,
+        349.0
+      ],
+      "id": 196,
+      "object_type": "HA_GardenRock01",
+      "position_pointers": [
+        "/objects/195/cell"
+      ],
+      "source_pointer": "/objects/195",
+      "unique_id": "HA_GardenRock01 1070"
+    },
+    {
+      "angle_radians": 0.5733656883239746,
+      "category": "石头",
+      "cell": [
+        371.0,
+        639.0
+      ],
+      "id": 197,
+      "object_type": "OK_GardenRock01",
+      "position_pointers": [
+        "/objects/196/cell"
+      ],
+      "source_pointer": "/objects/196",
+      "unique_id": "OK_GardenRock01 1071"
+    },
+    {
+      "angle_radians": 6.211052894592285,
+      "category": "石头",
+      "cell": [
+        381.0,
+        627.0
+      ],
+      "id": 198,
+      "object_type": "HA_GardenRock01",
+      "position_pointers": [
+        "/objects/197/cell"
+      ],
+      "source_pointer": "/objects/197",
+      "unique_id": "HA_GardenRock01 1072"
+    },
+    {
+      "angle_radians": 0.28383687138557434,
+      "category": "石头",
+      "cell": [
+        238.0,
+        665.0
+      ],
+      "id": 199,
+      "object_type": "OK_GardenRock01",
+      "position_pointers": [
+        "/objects/198/cell"
+      ],
+      "source_pointer": "/objects/198",
+      "unique_id": "OK_GardenRock01 1073"
+    },
+    {
+      "angle_radians": 1.7328648567199707,
+      "category": "石头",
+      "cell": [
+        270.0,
+        623.0
+      ],
+      "id": 200,
+      "object_type": "HA_GardenRock01",
+      "position_pointers": [
+        "/objects/199/cell"
+      ],
+      "source_pointer": "/objects/199",
+      "unique_id": "HA_GardenRock01 1074"
+    },
+    {
+      "angle_radians": 1.8998216390609741,
+      "category": "石头",
+      "cell": [
+        187.0,
+        529.0
+      ],
+      "id": 201,
+      "object_type": "OK_GardenRock01",
+      "position_pointers": [
+        "/objects/200/cell"
+      ],
+      "source_pointer": "/objects/200",
+      "unique_id": "OK_GardenRock01 1075"
+    },
+    {
+      "angle_radians": 2.5553195476531982,
+      "category": "石头",
+      "cell": [
+        541.0,
+        474.0
+      ],
+      "id": 202,
+      "object_type": "HA_GardenRock01",
+      "position_pointers": [
+        "/objects/201/cell"
+      ],
+      "source_pointer": "/objects/201",
+      "unique_id": "HA_GardenRock01 1076"
+    },
+    {
+      "angle_radians": 3.9807655811309814,
+      "category": "石头",
+      "cell": [
+        473.0,
+        424.0
+      ],
+      "id": 203,
+      "object_type": "OK_GardenRock01",
+      "position_pointers": [
+        "/objects/202/cell"
+      ],
+      "source_pointer": "/objects/202",
+      "unique_id": "OK_GardenRock01 1077"
+    },
+    {
+      "angle_radians": 0.18451203405857086,
+      "category": "石头",
+      "cell": [
+        239.0,
+        446.0
+      ],
+      "id": 204,
+      "object_type": "HA_GardenRock01",
+      "position_pointers": [
+        "/objects/203/cell"
+      ],
+      "source_pointer": "/objects/203",
+      "unique_id": "HA_GardenRock01 1078"
+    },
+    {
+      "angle_radians": 1.8800740242004395,
+      "category": "石头",
+      "cell": [
+        410.0,
+        611.0
+      ],
+      "id": 205,
+      "object_type": "OK_GardenRock01",
+      "position_pointers": [
+        "/objects/204/cell"
+      ],
+      "source_pointer": "/objects/204",
+      "unique_id": "OK_GardenRock01 1079"
+    },
+    {
+      "angle_radians": 1.7803584337234497,
+      "category": "石头",
+      "cell": [
+        430.0,
+        602.0
+      ],
+      "id": 206,
+      "object_type": "HA_GardenRock01",
+      "position_pointers": [
+        "/objects/205/cell"
+      ],
+      "source_pointer": "/objects/205",
+      "unique_id": "HA_GardenRock01 1080"
+    },
+    {
+      "angle_radians": 4.625846862792969,
+      "category": "石头",
+      "cell": [
+        155.0,
+        465.0
+      ],
+      "id": 207,
+      "object_type": "OK_GardenRock01",
+      "position_pointers": [
+        "/objects/206/cell"
+      ],
+      "source_pointer": "/objects/206",
+      "unique_id": "OK_GardenRock01 1081"
+    },
+    {
+      "angle_radians": 3.2308859825134277,
+      "category": "石头",
+      "cell": [
+        547.0,
+        487.0
+      ],
+      "id": 208,
+      "object_type": "HA_GardenRock01",
+      "position_pointers": [
+        "/objects/207/cell"
+      ],
+      "source_pointer": "/objects/207",
+      "unique_id": "HA_GardenRock01 1082"
+    },
+    {
+      "angle_radians": 3.8497939109802246,
+      "category": "石头",
+      "cell": [
+        528.0,
+        466.0
+      ],
+      "id": 209,
+      "object_type": "OK_GardenRock01",
+      "position_pointers": [
+        "/objects/208/cell"
+      ],
+      "source_pointer": "/objects/208",
+      "unique_id": "OK_GardenRock01 1083"
+    },
+    {
+      "angle_radians": 3.57377290725708,
+      "category": "石头",
+      "cell": [
+        202.0,
+        491.0
+      ],
+      "id": 210,
+      "object_type": "HA_GardenRock01",
+      "position_pointers": [
+        "/objects/209/cell"
+      ],
+      "source_pointer": "/objects/209",
+      "unique_id": "HA_GardenRock01 1084"
+    },
+    {
+      "angle_radians": 4.138544082641602,
+      "category": "石头",
+      "cell": [
+        422.0,
+        556.0
+      ],
+      "id": 211,
+      "object_type": "OK_GardenRock01",
+      "position_pointers": [
+        "/objects/210/cell"
+      ],
+      "source_pointer": "/objects/210",
+      "unique_id": "OK_GardenRock01 1085"
+    },
+    {
+      "angle_radians": 4.305541038513184,
+      "category": "石头",
+      "cell": [
+        203.0,
+        544.0
+      ],
+      "id": 212,
+      "object_type": "HA_GardenRock01",
+      "position_pointers": [
+        "/objects/211/cell"
+      ],
+      "source_pointer": "/objects/211",
+      "unique_id": "HA_GardenRock01 1086"
+    },
+    {
+      "angle_radians": 4.305334568023682,
+      "category": "石头",
+      "cell": [
+        323.0,
+        327.0
+      ],
+      "id": 213,
+      "object_type": "OK_GardenRock01",
+      "position_pointers": [
+        "/objects/212/cell"
+      ],
+      "source_pointer": "/objects/212",
+      "unique_id": "OK_GardenRock01 1087"
+    },
+    {
+      "angle_radians": 2.9627766609191895,
+      "category": "石头",
+      "cell": [
+        362.0,
+        369.0
+      ],
+      "id": 214,
+      "object_type": "HA_GardenRock01",
+      "position_pointers": [
+        "/objects/213/cell"
+      ],
+      "source_pointer": "/objects/213",
+      "unique_id": "HA_GardenRock01 1088"
+    },
+    {
+      "angle_radians": 4.165823459625244,
+      "category": "石头",
+      "cell": [
+        299.0,
+        634.0
+      ],
+      "id": 215,
+      "object_type": "OK_GardenRock01",
+      "position_pointers": [
+        "/objects/214/cell"
+      ],
+      "source_pointer": "/objects/214",
+      "unique_id": "OK_GardenRock01 1089"
+    },
+    {
+      "angle_radians": 1.8577061891555786,
+      "category": "石头",
+      "cell": [
+        170.0,
+        624.0
+      ],
+      "id": 216,
+      "object_type": "HA_GardenRock01",
+      "position_pointers": [
+        "/objects/215/cell"
+      ],
+      "source_pointer": "/objects/215",
+      "unique_id": "HA_GardenRock01 1090"
+    },
+    {
+      "angle_radians": 2.9718239307403564,
+      "category": "石头",
+      "cell": [
+        163.0,
+        435.0
+      ],
+      "id": 217,
+      "object_type": "OK_GardenRock01",
+      "position_pointers": [
+        "/objects/216/cell"
+      ],
+      "source_pointer": "/objects/216",
+      "unique_id": "OK_GardenRock01 1091"
+    },
+    {
+      "angle_radians": 0.371295303106308,
+      "category": "石头",
+      "cell": [
+        263.0,
+        358.0
+      ],
+      "id": 218,
+      "object_type": "HA_GardenRock01",
+      "position_pointers": [
+        "/objects/217/cell"
+      ],
+      "source_pointer": "/objects/217",
+      "unique_id": "HA_GardenRock01 1092"
+    },
+    {
+      "angle_radians": 4.900794506072998,
+      "category": "石头",
+      "cell": [
+        133.0,
+        493.0
+      ],
+      "id": 219,
+      "object_type": "OK_GardenRock01",
+      "position_pointers": [
+        "/objects/218/cell"
+      ],
+      "source_pointer": "/objects/218",
+      "unique_id": "OK_GardenRock01 1093"
+    },
+    {
+      "angle_radians": 4.619059085845947,
+      "category": "石头",
+      "cell": [
+        144.0,
+        485.0
+      ],
+      "id": 220,
+      "object_type": "HA_GardenRock01",
+      "position_pointers": [
+        "/objects/219/cell"
+      ],
+      "source_pointer": "/objects/219",
+      "unique_id": "HA_GardenRock01 1094"
+    },
+    {
+      "angle_radians": 3.2220888137817383,
+      "category": "石头",
+      "cell": [
+        190.0,
+        354.0
+      ],
+      "id": 221,
+      "object_type": "OK_GardenRock01",
+      "position_pointers": [
+        "/objects/220/cell"
+      ],
+      "source_pointer": "/objects/220",
+      "unique_id": "OK_GardenRock01 1095"
+    },
+    {
+      "angle_radians": 0.2162800431251526,
+      "category": "石头",
+      "cell": [
+        416.0,
+        509.0
+      ],
+      "id": 222,
+      "object_type": "HA_GardenRock01",
+      "position_pointers": [
+        "/objects/221/cell"
+      ],
+      "source_pointer": "/objects/221",
+      "unique_id": "HA_GardenRock01 1096"
+    },
+    {
+      "angle_radians": 0.29876744747161865,
+      "category": "石头",
+      "cell": [
+        514.0,
+        570.0
+      ],
+      "id": 223,
+      "object_type": "OK_GardenRock01",
+      "position_pointers": [
+        "/objects/222/cell"
+      ],
+      "source_pointer": "/objects/222",
+      "unique_id": "OK_GardenRock01 1097"
+    },
+    {
+      "angle_radians": 2.0637528896331787,
+      "category": "石头",
+      "cell": [
+        517.0,
+        452.0
+      ],
+      "id": 224,
+      "object_type": "HA_GardenRock01",
+      "position_pointers": [
+        "/objects/223/cell"
+      ],
+      "source_pointer": "/objects/223",
+      "unique_id": "HA_GardenRock01 1098"
+    },
+    {
+      "angle_radians": 4.427833080291748,
+      "category": "石头",
+      "cell": [
+        189.0,
+        510.0
+      ],
+      "id": 225,
+      "object_type": "OK_GardenRock01",
+      "position_pointers": [
+        "/objects/224/cell"
+      ],
+      "source_pointer": "/objects/224",
+      "unique_id": "OK_GardenRock01 1099"
+    },
+    {
+      "angle_radians": 5.264049053192139,
+      "category": "石头",
+      "cell": [
+        241.0,
+        434.0
+      ],
+      "id": 226,
+      "object_type": "HA_GardenRock01",
+      "position_pointers": [
+        "/objects/225/cell"
+      ],
+      "source_pointer": "/objects/225",
+      "unique_id": "HA_GardenRock01 1100"
+    },
+    {
+      "angle_radians": 1.5858960151672363,
+      "category": "石头",
+      "cell": [
+        183.0,
+        519.0
+      ],
+      "id": 227,
+      "object_type": "OK_GardenRock01",
+      "position_pointers": [
+        "/objects/226/cell"
+      ],
+      "source_pointer": "/objects/226",
+      "unique_id": "OK_GardenRock01 1101"
+    },
+    {
+      "angle_radians": 5.660877704620361,
+      "category": "石头",
+      "cell": [
+        554.0,
+        504.0
+      ],
+      "id": 228,
+      "object_type": "HA_GardenRock01",
+      "position_pointers": [
+        "/objects/227/cell"
+      ],
+      "source_pointer": "/objects/227",
+      "unique_id": "HA_GardenRock01 1102"
+    },
+    {
+      "angle_radians": 4.898177146911621,
+      "category": "石头",
+      "cell": [
+        275.0,
+        351.0
+      ],
+      "id": 229,
+      "object_type": "OK_GardenRock01",
+      "position_pointers": [
+        "/objects/228/cell"
+      ],
+      "source_pointer": "/objects/228",
+      "unique_id": "OK_GardenRock01 1103"
+    },
+    {
+      "angle_radians": 1.925389289855957,
+      "category": "石头",
+      "cell": [
+        144.0,
+        625.0
+      ],
+      "id": 230,
+      "object_type": "HA_GardenRock01",
+      "position_pointers": [
+        "/objects/229/cell"
+      ],
+      "source_pointer": "/objects/229",
+      "unique_id": "HA_GardenRock01 1104"
+    },
+    {
+      "angle_radians": 2.5489680767059326,
+      "category": "石头",
+      "cell": [
+        309.0,
+        432.0
+      ],
+      "id": 231,
+      "object_type": "OK_GardenRock01",
+      "position_pointers": [
+        "/objects/230/cell"
+      ],
+      "source_pointer": "/objects/230",
+      "unique_id": "OK_GardenRock01 1105"
+    },
+    {
+      "angle_radians": 1.5727664232254028,
+      "category": "石头",
+      "cell": [
+        342.0,
+        440.0
+      ],
+      "id": 232,
+      "object_type": "HA_GardenRock01",
+      "position_pointers": [
+        "/objects/231/cell"
+      ],
+      "source_pointer": "/objects/231",
+      "unique_id": "HA_GardenRock01 1106"
+    },
+    {
+      "angle_radians": 1.7413948774337769,
+      "category": "石头",
+      "cell": [
+        218.0,
+        569.0
+      ],
+      "id": 233,
+      "object_type": "OK_GardenRock01",
+      "position_pointers": [
+        "/objects/232/cell"
+      ],
+      "source_pointer": "/objects/232",
+      "unique_id": "OK_GardenRock01 1107"
+    },
+    {
+      "angle_radians": 2.738905429840088,
+      "category": "石头",
+      "cell": [
+        223.0,
+        654.0
+      ],
+      "id": 234,
+      "object_type": "HA_GardenRock01",
+      "position_pointers": [
+        "/objects/233/cell"
+      ],
+      "source_pointer": "/objects/233",
+      "unique_id": "HA_GardenRock01 1108"
+    },
+    {
+      "angle_radians": 1.0169881582260132,
+      "category": "石头",
+      "cell": [
+        227.0,
+        579.0
+      ],
+      "id": 235,
+      "object_type": "OK_GardenRock01",
+      "position_pointers": [
+        "/objects/234/cell"
+      ],
+      "source_pointer": "/objects/234",
+      "unique_id": "OK_GardenRock01 1109"
+    },
+    {
+      "angle_radians": 1.3183461427688599,
+      "category": "石头",
+      "cell": [
+        423.0,
+        608.0
+      ],
+      "id": 236,
+      "object_type": "HA_GardenRock01",
+      "position_pointers": [
+        "/objects/235/cell"
+      ],
+      "source_pointer": "/objects/235",
+      "unique_id": "HA_GardenRock01 1110"
+    },
+    {
+      "angle_radians": 3.0929348468780518,
+      "category": "石头",
+      "cell": [
+        354.0,
+        686.0
+      ],
+      "id": 237,
+      "object_type": "OK_GardenRock01",
+      "position_pointers": [
+        "/objects/236/cell"
+      ],
+      "source_pointer": "/objects/236",
+      "unique_id": "OK_GardenRock01 1111"
+    },
+    {
+      "angle_radians": 3.0363481044769287,
+      "category": "石头",
+      "cell": [
+        468.0,
+        594.0
+      ],
+      "id": 238,
+      "object_type": "HA_GardenRock01",
+      "position_pointers": [
+        "/objects/237/cell"
+      ],
+      "source_pointer": "/objects/237",
+      "unique_id": "HA_GardenRock01 1112"
+    },
+    {
+      "angle_radians": 3.639631509780884,
+      "category": "石头",
+      "cell": [
+        153.0,
+        415.0
+      ],
+      "id": 239,
+      "object_type": "OK_GardenRock01",
+      "position_pointers": [
+        "/objects/238/cell"
+      ],
+      "source_pointer": "/objects/238",
+      "unique_id": "OK_GardenRock01 1113"
+    },
+    {
+      "angle_radians": 6.199934959411621,
+      "category": "石头",
+      "cell": [
+        396.0,
+        481.0
+      ],
+      "id": 240,
+      "object_type": "HA_GardenRock01",
+      "position_pointers": [
+        "/objects/239/cell"
+      ],
+      "source_pointer": "/objects/239",
+      "unique_id": "HA_GardenRock01 1114"
+    },
+    {
+      "angle_radians": 0.10139993578195572,
+      "category": "石头",
+      "cell": [
+        367.0,
+        656.0
+      ],
+      "id": 241,
+      "object_type": "OK_GardenRock01",
+      "position_pointers": [
+        "/objects/240/cell"
+      ],
+      "source_pointer": "/objects/240",
+      "unique_id": "OK_GardenRock01 1115"
+    },
+    {
+      "angle_radians": 4.022186756134033,
+      "category": "石头",
+      "cell": [
+        369.0,
+        465.0
+      ],
+      "id": 242,
+      "object_type": "HA_GardenRock01",
+      "position_pointers": [
+        "/objects/241/cell"
+      ],
+      "source_pointer": "/objects/241",
+      "unique_id": "HA_GardenRock01 1116"
+    },
+    {
+      "angle_radians": 3.6553094387054443,
+      "category": "石头",
+      "cell": [
+        387.0,
+        476.0
+      ],
+      "id": 243,
+      "object_type": "OK_GardenRock01",
+      "position_pointers": [
+        "/objects/242/cell"
+      ],
+      "source_pointer": "/objects/242",
+      "unique_id": "OK_GardenRock01 1117"
+    },
+    {
+      "angle_radians": 1.0328494310379028,
+      "category": "石头",
+      "cell": [
+        230.0,
+        453.0
+      ],
+      "id": 244,
+      "object_type": "HA_GardenRock01",
+      "position_pointers": [
+        "/objects/243/cell"
+      ],
+      "source_pointer": "/objects/243",
+      "unique_id": "HA_GardenRock01 1118"
+    },
+    {
+      "angle_radians": 2.7592172622680664,
+      "category": "石头",
+      "cell": [
+        268.0,
+        686.0
+      ],
+      "id": 245,
+      "object_type": "OK_GardenRock01",
+      "position_pointers": [
+        "/objects/244/cell"
+      ],
+      "source_pointer": "/objects/244",
+      "unique_id": "OK_GardenRock01 1119"
+    },
+    {
+      "angle_radians": 1.9525731801986694,
+      "category": "石头",
+      "cell": [
+        108.0,
+        616.0
+      ],
+      "id": 246,
+      "object_type": "HA_GardenRock01",
+      "position_pointers": [
+        "/objects/245/cell"
+      ],
+      "source_pointer": "/objects/245",
+      "unique_id": "HA_GardenRock01 1120"
+    },
+    {
+      "angle_radians": 5.309811115264893,
+      "category": "石头",
+      "cell": [
+        193.0,
+        536.0
+      ],
+      "id": 247,
+      "object_type": "OK_GardenRock01",
+      "position_pointers": [
+        "/objects/246/cell"
+      ],
+      "source_pointer": "/objects/246",
+      "unique_id": "OK_GardenRock01 1121"
+    },
+    {
+      "angle_radians": 4.131093502044678,
+      "category": "石头",
+      "cell": [
+        278.0,
+        633.0
+      ],
+      "id": 248,
+      "object_type": "HA_GardenRock01",
+      "position_pointers": [
+        "/objects/247/cell"
+      ],
+      "source_pointer": "/objects/247",
+      "unique_id": "HA_GardenRock01 1122"
+    },
+    {
+      "angle_radians": 1.8688938617706299,
+      "category": "石头",
+      "cell": [
+        221.0,
+        478.0
+      ],
+      "id": 249,
+      "object_type": "OK_GardenRock01",
+      "position_pointers": [
+        "/objects/248/cell"
+      ],
+      "source_pointer": "/objects/248",
+      "unique_id": "OK_GardenRock01 1123"
+    },
+    {
+      "angle_radians": 4.359697341918945,
+      "category": "石头",
+      "cell": [
+        149.0,
+        397.0
+      ],
+      "id": 250,
+      "object_type": "HA_GardenRock01",
+      "position_pointers": [
+        "/objects/249/cell"
+      ],
+      "source_pointer": "/objects/249",
+      "unique_id": "HA_GardenRock01 1124"
+    },
+    {
+      "angle_radians": 2.5464980602264404,
+      "category": "石头",
+      "cell": [
+        86.0,
+        590.0
+      ],
+      "id": 251,
+      "object_type": "OK_GardenRock01",
+      "position_pointers": [
+        "/objects/250/cell"
+      ],
+      "source_pointer": "/objects/250",
+      "unique_id": "OK_GardenRock01 1125"
+    },
+    {
+      "angle_radians": 5.408355712890625,
+      "category": "石头",
+      "cell": [
+        333.0,
+        331.0
+      ],
+      "id": 252,
+      "object_type": "HA_GardenRock01",
+      "position_pointers": [
+        "/objects/251/cell"
+      ],
+      "source_pointer": "/objects/251",
+      "unique_id": "HA_GardenRock01 1126"
+    },
+    {
+      "angle_radians": 0.7226189374923706,
+      "category": "石头",
+      "cell": [
+        91.0,
+        607.0
+      ],
+      "id": 253,
+      "object_type": "OK_GardenRock01",
+      "position_pointers": [
+        "/objects/252/cell"
+      ],
+      "source_pointer": "/objects/252",
+      "unique_id": "OK_GardenRock01 1127"
+    },
+    {
+      "angle_radians": 0.20238979160785675,
+      "category": "石头",
+      "cell": [
+        333.0,
+        617.0
+      ],
+      "id": 254,
+      "object_type": "HA_GardenRock01",
+      "position_pointers": [
+        "/objects/253/cell"
+      ],
+      "source_pointer": "/objects/253",
+      "unique_id": "HA_GardenRock01 1128"
+    },
+    {
+      "angle_radians": 5.101590633392334,
+      "category": "石头",
+      "cell": [
+        554.0,
+        494.0
+      ],
+      "id": 255,
+      "object_type": "OK_GardenRock01",
+      "position_pointers": [
+        "/objects/254/cell"
+      ],
+      "source_pointer": "/objects/254",
+      "unique_id": "OK_GardenRock01 1129"
+    },
+    {
+      "angle_radians": 4.453095436096191,
+      "category": "石头",
+      "cell": [
+        371.0,
+        628.0
+      ],
+      "id": 256,
+      "object_type": "HA_GardenRock01",
+      "position_pointers": [
+        "/objects/255/cell"
+      ],
+      "source_pointer": "/objects/255",
+      "unique_id": "HA_GardenRock01 1130"
+    },
+    {
+      "angle_radians": 2.2151052951812744,
+      "category": "石头",
+      "cell": [
+        222.0,
+        645.0
+      ],
+      "id": 257,
+      "object_type": "OK_GardenRock01",
+      "position_pointers": [
+        "/objects/256/cell"
+      ],
+      "source_pointer": "/objects/256",
+      "unique_id": "OK_GardenRock01 1131"
+    },
+    {
+      "angle_radians": 4.651189804077148,
+      "category": "石头",
+      "cell": [
+        251.0,
+        426.0
+      ],
+      "id": 258,
+      "object_type": "HA_GardenRock01",
+      "position_pointers": [
+        "/objects/257/cell"
+      ],
+      "source_pointer": "/objects/257",
+      "unique_id": "HA_GardenRock01 1132"
+    },
+    {
+      "angle_radians": 6.272125720977783,
+      "category": "石头",
+      "cell": [
+        199.0,
+        355.0
+      ],
+      "id": 259,
+      "object_type": "OK_GardenRock01",
+      "position_pointers": [
+        "/objects/258/cell"
+      ],
+      "source_pointer": "/objects/258",
+      "unique_id": "OK_GardenRock01 1133"
+    },
+    {
+      "angle_radians": 3.614899158477783,
+      "category": "石头",
+      "cell": [
+        450.0,
+        594.0
+      ],
+      "id": 260,
+      "object_type": "HA_GardenRock01",
+      "position_pointers": [
+        "/objects/259/cell"
+      ],
+      "source_pointer": "/objects/259",
+      "unique_id": "HA_GardenRock01 1134"
+    },
+    {
+      "angle_radians": 2.637392997741699,
+      "category": "石头",
+      "cell": [
+        261.0,
+        409.0
+      ],
+      "id": 261,
+      "object_type": "OK_GardenRock01",
+      "position_pointers": [
+        "/objects/260/cell"
+      ],
+      "source_pointer": "/objects/260",
+      "unique_id": "OK_GardenRock01 1135"
+    },
+    {
+      "angle_radians": 3.3139617443084717,
+      "category": "石头",
+      "cell": [
+        440.0,
+        409.0
+      ],
+      "id": 262,
+      "object_type": "HA_GardenRock01",
+      "position_pointers": [
+        "/objects/261/cell"
+      ],
+      "source_pointer": "/objects/261",
+      "unique_id": "HA_GardenRock01 1136"
+    },
+    {
+      "angle_radians": 0.8766825795173645,
+      "category": "石头",
+      "cell": [
+        356.0,
+        595.0
+      ],
+      "id": 263,
+      "object_type": "OK_GardenRock01",
+      "position_pointers": [
+        "/objects/262/cell"
+      ],
+      "source_pointer": "/objects/262",
+      "unique_id": "OK_GardenRock01 1137"
+    },
+    {
+      "angle_radians": 1.3013262748718262,
+      "category": "石头",
+      "cell": [
+        309.0,
+        633.0
+      ],
+      "id": 264,
+      "object_type": "HA_GardenRock01",
+      "position_pointers": [
+        "/objects/263/cell"
+      ],
+      "source_pointer": "/objects/263",
+      "unique_id": "HA_GardenRock01 1138"
+    },
+    {
+      "angle_radians": 1.2691562175750732,
+      "category": "石头",
+      "cell": [
+        408.0,
+        504.0
+      ],
+      "id": 265,
+      "object_type": "OK_GardenRock01",
+      "position_pointers": [
+        "/objects/264/cell"
+      ],
+      "source_pointer": "/objects/264",
+      "unique_id": "OK_GardenRock01 1139"
+    },
+    {
+      "angle_radians": 0.6195291876792908,
+      "category": "树木",
+      "cell": [
+        302.0,
+        695.0
+      ],
+      "id": 266,
+      "object_type": "CC_Tree01",
+      "position_pointers": [
+        "/objects/265/cell"
+      ],
+      "source_pointer": "/objects/265",
+      "unique_id": "CC_Tree01 1140"
+    },
+    {
+      "angle_radians": 3.345172882080078,
+      "category": "树木",
+      "cell": [
+        498.0,
+        440.0
+      ],
+      "id": 267,
+      "object_type": "CC_Tree02",
+      "position_pointers": [
+        "/objects/266/cell"
+      ],
+      "source_pointer": "/objects/266",
+      "unique_id": "CC_Tree02 1141"
+    },
+    {
+      "angle_radians": 1.5056610107421875,
+      "category": "树木",
+      "cell": [
+        466.0,
+        418.0
+      ],
+      "id": 268,
+      "object_type": "CC_Tree03",
+      "position_pointers": [
+        "/objects/267/cell"
+      ],
+      "source_pointer": "/objects/267",
+      "unique_id": "CC_Tree03 1142"
+    },
+    {
+      "angle_radians": 4.928849220275879,
+      "category": "树木",
+      "cell": [
+        102.0,
+        521.0
+      ],
+      "id": 269,
+      "object_type": "HB_Tree03",
+      "position_pointers": [
+        "/objects/268/cell"
+      ],
+      "source_pointer": "/objects/268",
+      "unique_id": "HB_Tree03 1143"
+    },
+    {
+      "angle_radians": 0.28385379910469055,
+      "category": "树木",
+      "cell": [
+        228.0,
+        462.0
+      ],
+      "id": 270,
+      "object_type": "HB_Tree07",
+      "position_pointers": [
+        "/objects/269/cell"
+      ],
+      "source_pointer": "/objects/269",
+      "unique_id": "HB_Tree07 1144"
+    },
+    {
+      "angle_radians": 5.247312068939209,
+      "category": "树木",
+      "cell": [
+        257.0,
+        367.0
+      ],
+      "id": 271,
+      "object_type": "HB_Tree10",
+      "position_pointers": [
+        "/objects/270/cell"
+      ],
+      "source_pointer": "/objects/270",
+      "unique_id": "HB_Tree10 1145"
+    },
+    {
+      "angle_radians": 1.2984575033187866,
+      "category": "灌木",
+      "cell": [
+        165.0,
+        616.0
+      ],
+      "id": 272,
+      "object_type": "YU_Bush01",
+      "position_pointers": [
+        "/objects/271/cell"
+      ],
+      "source_pointer": "/objects/271",
+      "unique_id": "YU_Bush01 1146"
+    },
+    {
+      "angle_radians": 0.10341387242078781,
+      "category": "灌木",
+      "cell": [
+        384.0,
+        382.0
+      ],
+      "id": 273,
+      "object_type": "YU_Bush03",
+      "position_pointers": [
+        "/objects/272/cell"
+      ],
+      "source_pointer": "/objects/272",
+      "unique_id": "YU_Bush03 1147"
+    },
+    {
+      "angle_radians": 5.319779872894287,
+      "category": "树木",
+      "cell": [
+        83.0,
+        572.0
+      ],
+      "id": 274,
+      "object_type": "CC_Tree01",
+      "position_pointers": [
+        "/objects/273/cell"
+      ],
+      "source_pointer": "/objects/273",
+      "unique_id": "CC_Tree01 1148"
+    },
+    {
+      "angle_radians": 4.915008544921875,
+      "category": "树木",
+      "cell": [
+        91.0,
+        533.0
+      ],
+      "id": 275,
+      "object_type": "CC_Tree02",
+      "position_pointers": [
+        "/objects/274/cell"
+      ],
+      "source_pointer": "/objects/274",
+      "unique_id": "CC_Tree02 1149"
+    },
+    {
+      "angle_radians": 2.3201417922973633,
+      "category": "树木",
+      "cell": [
+        257.0,
+        609.0
+      ],
+      "id": 276,
+      "object_type": "CC_Tree03",
+      "position_pointers": [
+        "/objects/275/cell"
+      ],
+      "source_pointer": "/objects/275",
+      "unique_id": "CC_Tree03 1150"
+    },
+    {
+      "angle_radians": 1.7558517456054688,
+      "category": "树木",
+      "cell": [
+        255.0,
+        673.0
+      ],
+      "id": 277,
+      "object_type": "HB_Tree03",
+      "position_pointers": [
+        "/objects/276/cell"
+      ],
+      "source_pointer": "/objects/276",
+      "unique_id": "HB_Tree03 1151"
+    },
+    {
+      "angle_radians": 0.9463340044021606,
+      "category": "树木",
+      "cell": [
+        371.0,
+        728.0
+      ],
+      "id": 278,
+      "object_type": "CC_Tree01",
+      "position_pointers": [
+        "/objects/277/cell"
+      ],
+      "source_pointer": "/objects/277",
+      "unique_id": "CC_Tree01 1152"
+    },
+    {
+      "angle_radians": 1.980588674545288,
+      "category": "树木",
+      "cell": [
+        198.0,
+        264.0
+      ],
+      "id": 279,
+      "object_type": "CC_Tree02",
+      "position_pointers": [
+        "/objects/278/cell"
+      ],
+      "source_pointer": "/objects/278",
+      "unique_id": "CC_Tree02 1153"
+    },
+    {
+      "angle_radians": 0.8532484173774719,
+      "category": "树木",
+      "cell": [
+        102.0,
+        652.0
+      ],
+      "id": 280,
+      "object_type": "CC_Tree03",
+      "position_pointers": [
+        "/objects/279/cell"
+      ],
+      "source_pointer": "/objects/279",
+      "unique_id": "CC_Tree03 1154"
+    },
+    {
+      "angle_radians": 0.021719053387641907,
+      "category": "树木",
+      "cell": [
+        480.0,
+        673.0
+      ],
+      "id": 281,
+      "object_type": "HB_Tree03",
+      "position_pointers": [
+        "/objects/280/cell"
+      ],
+      "source_pointer": "/objects/280",
+      "unique_id": "HB_Tree03 1155"
+    },
+    {
+      "angle_radians": 5.043066024780273,
+      "category": "树木",
+      "cell": [
+        164.0,
+        679.0
+      ],
+      "id": 282,
+      "object_type": "HB_Tree07",
+      "position_pointers": [
+        "/objects/281/cell"
+      ],
+      "source_pointer": "/objects/281",
+      "unique_id": "HB_Tree07 1156"
+    },
+    {
+      "angle_radians": 3.9629557132720947,
+      "category": "树木",
+      "cell": [
+        672.0,
+        119.0
+      ],
+      "id": 283,
+      "object_type": "HB_Tree10",
+      "position_pointers": [
+        "/objects/282/cell"
+      ],
+      "source_pointer": "/objects/282",
+      "unique_id": "HB_Tree10 1157"
+    },
+    {
+      "angle_radians": 4.963335990905762,
+      "category": "灌木",
+      "cell": [
+        769.0,
+        263.0
+      ],
+      "id": 284,
+      "object_type": "YU_Bush01",
+      "position_pointers": [
+        "/objects/283/cell"
+      ],
+      "source_pointer": "/objects/283",
+      "unique_id": "YU_Bush01 1158"
+    },
+    {
+      "angle_radians": 0.3260458707809448,
+      "category": "灌木",
+      "cell": [
+        238.0,
+        207.0
+      ],
+      "id": 285,
+      "object_type": "YU_Bush03",
+      "position_pointers": [
+        "/objects/284/cell"
+      ],
+      "source_pointer": "/objects/284",
+      "unique_id": "YU_Bush03 1159"
+    },
+    {
+      "angle_radians": 3.987684488296509,
+      "category": "树木",
+      "cell": [
+        389.0,
+        687.0
+      ],
+      "id": 286,
+      "object_type": "CC_Tree01",
+      "position_pointers": [
+        "/objects/285/cell"
+      ],
+      "source_pointer": "/objects/285",
+      "unique_id": "CC_Tree01 1160"
+    },
+    {
+      "angle_radians": 4.004374027252197,
+      "category": "树木",
+      "cell": [
+        417.0,
+        156.0
+      ],
+      "id": 287,
+      "object_type": "CC_Tree02",
+      "position_pointers": [
+        "/objects/286/cell"
+      ],
+      "source_pointer": "/objects/286",
+      "unique_id": "CC_Tree02 1161"
+    },
+    {
+      "angle_radians": 1.2836707830429077,
+      "category": "树木",
+      "cell": [
+        732.0,
+        133.0
+      ],
+      "id": 288,
+      "object_type": "CC_Tree03",
+      "position_pointers": [
+        "/objects/287/cell"
+      ],
+      "source_pointer": "/objects/287",
+      "unique_id": "CC_Tree03 1162"
+    },
+    {
+      "angle_radians": 5.628658294677734,
+      "category": "树木",
+      "cell": [
+        558.0,
+        585.0
+      ],
+      "id": 289,
+      "object_type": "HB_Tree03",
+      "position_pointers": [
+        "/objects/288/cell"
+      ],
+      "source_pointer": "/objects/288",
+      "unique_id": "HB_Tree03 1163"
+    },
+    {
+      "angle_radians": 4.167744159698486,
+      "category": "树木",
+      "cell": [
+        164.0,
+        276.0
+      ],
+      "id": 290,
+      "object_type": "HB_Tree07",
+      "position_pointers": [
+        "/objects/289/cell"
+      ],
+      "source_pointer": "/objects/289",
+      "unique_id": "HB_Tree07 1164"
+    },
+    {
+      "angle_radians": 3.8945913314819336,
+      "category": "树木",
+      "cell": [
+        454.0,
+        666.0
+      ],
+      "id": 291,
+      "object_type": "HB_Tree10",
+      "position_pointers": [
+        "/objects/290/cell"
+      ],
+      "source_pointer": "/objects/290",
+      "unique_id": "HB_Tree10 1165"
+    },
+    {
+      "angle_radians": 5.495108127593994,
+      "category": "灌木",
+      "cell": [
+        791.0,
+        250.0
+      ],
+      "id": 292,
+      "object_type": "YU_Bush01",
+      "position_pointers": [
+        "/objects/291/cell"
+      ],
+      "source_pointer": "/objects/291",
+      "unique_id": "YU_Bush01 1166"
+    },
+    {
+      "angle_radians": 0.7729073762893677,
+      "category": "灌木",
+      "cell": [
+        723.0,
+        293.0
+      ],
+      "id": 293,
+      "object_type": "YU_Bush03",
+      "position_pointers": [
+        "/objects/292/cell"
+      ],
+      "source_pointer": "/objects/292",
+      "unique_id": "YU_Bush03 1167"
+    },
+    {
+      "angle_radians": 2.945401668548584,
+      "category": "树木",
+      "cell": [
+        746.0,
+        137.0
+      ],
+      "id": 294,
+      "object_type": "CC_Tree01",
+      "position_pointers": [
+        "/objects/293/cell"
+      ],
+      "source_pointer": "/objects/293",
+      "unique_id": "CC_Tree01 1168"
+    },
+    {
+      "angle_radians": 2.771822929382324,
+      "category": "树木",
+      "cell": [
+        448.0,
+        148.0
+      ],
+      "id": 295,
+      "object_type": "CC_Tree02",
+      "position_pointers": [
+        "/objects/294/cell"
+      ],
+      "source_pointer": "/objects/294",
+      "unique_id": "CC_Tree02 1169"
+    },
+    {
+      "angle_radians": 5.935393333435059,
+      "category": "树木",
+      "cell": [
+        233.0,
+        705.0
+      ],
+      "id": 296,
+      "object_type": "CC_Tree03",
+      "position_pointers": [
+        "/objects/295/cell"
+      ],
+      "source_pointer": "/objects/295",
+      "unique_id": "CC_Tree03 1170"
+    },
+    {
+      "angle_radians": 2.707608699798584,
+      "category": "树木",
+      "cell": [
+        329.0,
+        730.0
+      ],
+      "id": 297,
+      "object_type": "HB_Tree03",
+      "position_pointers": [
+        "/objects/296/cell"
+      ],
+      "source_pointer": "/objects/296",
+      "unique_id": "HB_Tree03 1171"
+    },
+    {
+      "angle_radians": 4.516170501708984,
+      "category": "树木",
+      "cell": [
+        261.0,
+        173.0
+      ],
+      "id": 298,
+      "object_type": "HB_Tree07",
+      "position_pointers": [
+        "/objects/297/cell"
+      ],
+      "source_pointer": "/objects/297",
+      "unique_id": "HB_Tree07 1172"
+    },
+    {
+      "angle_radians": 2.1905837059020996,
+      "category": "树木",
+      "cell": [
+        54.0,
+        627.0
+      ],
+      "id": 299,
+      "object_type": "HB_Tree10",
+      "position_pointers": [
+        "/objects/298/cell"
+      ],
+      "source_pointer": "/objects/298",
+      "unique_id": "HB_Tree10 1173"
+    },
+    {
+      "angle_radians": 3.55844783782959,
+      "category": "灌木",
+      "cell": [
+        471.0,
+        154.0
+      ],
+      "id": 300,
+      "object_type": "YU_Bush01",
+      "position_pointers": [
+        "/objects/299/cell"
+      ],
+      "source_pointer": "/objects/299",
+      "unique_id": "YU_Bush01 1174"
+    },
+    {
+      "angle_radians": 5.973898887634277,
+      "category": "灌木",
+      "cell": [
+        44.0,
+        488.0
+      ],
+      "id": 301,
+      "object_type": "YU_Bush03",
+      "position_pointers": [
+        "/objects/300/cell"
+      ],
+      "source_pointer": "/objects/300",
+      "unique_id": "YU_Bush03 1175"
+    },
+    {
+      "angle_radians": 5.808654308319092,
+      "category": "树木",
+      "cell": [
+        48.0,
+        371.0
+      ],
+      "id": 302,
+      "object_type": "CC_Tree01",
+      "position_pointers": [
+        "/objects/301/cell"
+      ],
+      "source_pointer": "/objects/301",
+      "unique_id": "CC_Tree01 1176"
+    },
+    {
+      "angle_radians": 5.591330528259277,
+      "category": "树木",
+      "cell": [
+        691.0,
+        330.0
+      ],
+      "id": 303,
+      "object_type": "CC_Tree02",
+      "position_pointers": [
+        "/objects/302/cell"
+      ],
+      "source_pointer": "/objects/302",
+      "unique_id": "CC_Tree02 1177"
+    },
+    {
+      "angle_radians": 5.328111171722412,
+      "category": "树木",
+      "cell": [
+        635.0,
+        470.0
+      ],
+      "id": 304,
+      "object_type": "CC_Tree03",
+      "position_pointers": [
+        "/objects/303/cell"
+      ],
+      "source_pointer": "/objects/303",
+      "unique_id": "CC_Tree03 1178"
+    },
+    {
+      "angle_radians": 3.875338077545166,
+      "category": "树木",
+      "cell": [
+        350.0,
+        138.0
+      ],
+      "id": 305,
+      "object_type": "HB_Tree03",
+      "position_pointers": [
+        "/objects/304/cell"
+      ],
+      "source_pointer": "/objects/304",
+      "unique_id": "HB_Tree03 1179"
+    },
+    {
+      "angle_radians": 1.296014666557312,
+      "category": "树木",
+      "cell": [
+        82.0,
+        643.0
+      ],
+      "id": 306,
+      "object_type": "HB_Tree07",
+      "position_pointers": [
+        "/objects/305/cell"
+      ],
+      "source_pointer": "/objects/305",
+      "unique_id": "HB_Tree07 1180"
+    },
+    {
+      "angle_radians": 0.2481623888015747,
+      "category": "树木",
+      "cell": [
+        103.0,
+        324.0
+      ],
+      "id": 307,
+      "object_type": "HB_Tree10",
+      "position_pointers": [
+        "/objects/306/cell"
+      ],
+      "source_pointer": "/objects/306",
+      "unique_id": "HB_Tree10 1181"
+    },
+    {
+      "angle_radians": 5.5333147048950195,
+      "category": "灌木",
+      "cell": [
+        668.0,
+        102.0
+      ],
+      "id": 308,
+      "object_type": "YU_Bush01",
+      "position_pointers": [
+        "/objects/307/cell"
+      ],
+      "source_pointer": "/objects/307",
+      "unique_id": "YU_Bush01 1182"
+    },
+    {
+      "angle_radians": 3.568387508392334,
+      "category": "灌木",
+      "cell": [
+        175.0,
+        268.0
+      ],
+      "id": 309,
+      "object_type": "YU_Bush03",
+      "position_pointers": [
+        "/objects/308/cell"
+      ],
+      "source_pointer": "/objects/308",
+      "unique_id": "YU_Bush03 1183"
+    },
+    {
+      "angle_radians": 2.2954654693603516,
+      "category": "树木",
+      "cell": [
+        565.0,
+        132.0
+      ],
+      "id": 310,
+      "object_type": "CC_Tree01",
+      "position_pointers": [
+        "/objects/309/cell"
+      ],
+      "source_pointer": "/objects/309",
+      "unique_id": "CC_Tree01 1184"
+    },
+    {
+      "angle_radians": 3.341113567352295,
+      "category": "树木",
+      "cell": [
+        487.0,
+        148.0
+      ],
+      "id": 311,
+      "object_type": "CC_Tree02",
+      "position_pointers": [
+        "/objects/310/cell"
+      ],
+      "source_pointer": "/objects/310",
+      "unique_id": "CC_Tree02 1185"
+    },
+    {
+      "angle_radians": 1.167027473449707,
+      "category": "树木",
+      "cell": [
+        40.0,
+        457.0
+      ],
+      "id": 312,
+      "object_type": "CC_Tree03",
+      "position_pointers": [
+        "/objects/311/cell"
+      ],
+      "source_pointer": "/objects/311",
+      "unique_id": "CC_Tree03 1186"
+    },
+    {
+      "angle_radians": 1.6505569219589233,
+      "category": "树木",
+      "cell": [
+        241.0,
+        185.0
+      ],
+      "id": 313,
+      "object_type": "HB_Tree03",
+      "position_pointers": [
+        "/objects/312/cell"
+      ],
+      "source_pointer": "/objects/312",
+      "unique_id": "HB_Tree03 1187"
+    },
+    {
+      "angle_radians": 1.2216507196426392,
+      "category": "树木",
+      "cell": [
+        53.0,
+        549.0
+      ],
+      "id": 314,
+      "object_type": "HB_Tree07",
+      "position_pointers": [
+        "/objects/313/cell"
+      ],
+      "source_pointer": "/objects/313",
+      "unique_id": "HB_Tree07 1188"
+    },
+    {
+      "angle_radians": 4.971283435821533,
+      "category": "树木",
+      "cell": [
+        613.0,
+        501.0
+      ],
+      "id": 315,
+      "object_type": "HB_Tree10",
+      "position_pointers": [
+        "/objects/314/cell"
+      ],
+      "source_pointer": "/objects/314",
+      "unique_id": "HB_Tree10 1189"
+    },
+    {
+      "angle_radians": 2.6931731700897217,
+      "category": "灌木",
+      "cell": [
+        689.0,
+        342.0
+      ],
+      "id": 316,
+      "object_type": "YU_Bush01",
+      "position_pointers": [
+        "/objects/315/cell"
+      ],
+      "source_pointer": "/objects/315",
+      "unique_id": "YU_Bush01 1190"
+    },
+    {
+      "angle_radians": 4.815990447998047,
+      "category": "灌木",
+      "cell": [
+        720.0,
+        123.0
+      ],
+      "id": 317,
+      "object_type": "YU_Bush03",
+      "position_pointers": [
+        "/objects/316/cell"
+      ],
+      "source_pointer": "/objects/316",
+      "unique_id": "YU_Bush03 1191"
+    },
+    {
+      "angle_radians": 0.22372712194919586,
+      "category": "树木",
+      "cell": [
+        215.0,
+        265.0
+      ],
+      "id": 318,
+      "object_type": "CC_Tree01",
+      "position_pointers": [
+        "/objects/317/cell"
+      ],
+      "source_pointer": "/objects/317",
+      "unique_id": "CC_Tree01 1192"
+    },
+    {
+      "angle_radians": 0.8207058906555176,
+      "category": "树木",
+      "cell": [
+        794.0,
+        231.0
+      ],
+      "id": 319,
+      "object_type": "CC_Tree02",
+      "position_pointers": [
+        "/objects/318/cell"
+      ],
+      "source_pointer": "/objects/318",
+      "unique_id": "CC_Tree02 1193"
+    },
+    {
+      "angle_radians": 4.346431255340576,
+      "category": "树木",
+      "cell": [
+        613.0,
+        118.0
+      ],
+      "id": 320,
+      "object_type": "CC_Tree03",
+      "position_pointers": [
+        "/objects/319/cell"
+      ],
+      "source_pointer": "/objects/319",
+      "unique_id": "CC_Tree03 1194"
+    },
+    {
+      "angle_radians": 5.177576065063477,
+      "category": "树木",
+      "cell": [
+        386.0,
+        698.0
+      ],
+      "id": 321,
+      "object_type": "HB_Tree03",
+      "position_pointers": [
+        "/objects/320/cell"
+      ],
+      "source_pointer": "/objects/320",
+      "unique_id": "HB_Tree03 1195"
+    },
+    {
+      "angle_radians": 2.5303235054016113,
+      "category": "树木",
+      "cell": [
+        150.0,
+        286.0
+      ],
+      "id": 322,
+      "object_type": "HB_Tree07",
+      "position_pointers": [
+        "/objects/321/cell"
+      ],
+      "source_pointer": "/objects/321",
+      "unique_id": "HB_Tree07 1196"
+    },
+    {
+      "angle_radians": 4.036215782165527,
+      "category": "树木",
+      "cell": [
+        209.0,
+        704.0
+      ],
+      "id": 323,
+      "object_type": "HB_Tree10",
+      "position_pointers": [
+        "/objects/322/cell"
+      ],
+      "source_pointer": "/objects/322",
+      "unique_id": "HB_Tree10 1197"
+    },
+    {
+      "angle_radians": 2.643995761871338,
+      "category": "灌木",
+      "cell": [
+        50.0,
+        538.0
+      ],
+      "id": 324,
+      "object_type": "YU_Bush01",
+      "position_pointers": [
+        "/objects/323/cell"
+      ],
+      "source_pointer": "/objects/323",
+      "unique_id": "YU_Bush01 1198"
+    },
+    {
+      "angle_radians": 5.696434497833252,
+      "category": "灌木",
+      "cell": [
+        657.0,
+        136.0
+      ],
+      "id": 325,
+      "object_type": "YU_Bush03",
+      "position_pointers": [
+        "/objects/324/cell"
+      ],
+      "source_pointer": "/objects/324",
+      "unique_id": "YU_Bush03 1199"
+    },
+    {
+      "angle_radians": 2.669994592666626,
+      "category": "树木",
+      "cell": [
+        314.0,
+        724.0
+      ],
+      "id": 326,
+      "object_type": "CC_Tree01",
+      "position_pointers": [
+        "/objects/325/cell"
+      ],
+      "source_pointer": "/objects/325",
+      "unique_id": "CC_Tree01 1200"
+    },
+    {
+      "angle_radians": 6.110755920410156,
+      "category": "树木",
+      "cell": [
+        201.0,
+        693.0
+      ],
+      "id": 327,
+      "object_type": "CC_Tree02",
+      "position_pointers": [
+        "/objects/326/cell"
+      ],
+      "source_pointer": "/objects/326",
+      "unique_id": "CC_Tree02 1201"
+    },
+    {
+      "angle_radians": 6.187536239624023,
+      "category": "树木",
+      "cell": [
+        673.0,
+        372.0
+      ],
+      "id": 328,
+      "object_type": "CC_Tree03",
+      "position_pointers": [
+        "/objects/327/cell"
+      ],
+      "source_pointer": "/objects/327",
+      "unique_id": "CC_Tree03 1202"
+    },
+    {
+      "angle_radians": 0.7382308840751648,
+      "category": "树木",
+      "cell": [
+        629.0,
+        129.0
+      ],
+      "id": 329,
+      "object_type": "HB_Tree03",
+      "position_pointers": [
+        "/objects/328/cell"
+      ],
+      "source_pointer": "/objects/328",
+      "unique_id": "HB_Tree03 1203"
+    },
+    {
+      "angle_radians": 2.669581413269043,
+      "category": "树木",
+      "cell": [
+        658.0,
+        427.0
+      ],
+      "id": 330,
+      "object_type": "HB_Tree07",
+      "position_pointers": [
+        "/objects/329/cell"
+      ],
+      "source_pointer": "/objects/329",
+      "unique_id": "HB_Tree07 1204"
+    },
+    {
+      "angle_radians": 5.2696027755737305,
+      "category": "树木",
+      "cell": [
+        521.0,
+        608.0
+      ],
+      "id": 331,
+      "object_type": "HB_Tree10",
+      "position_pointers": [
+        "/objects/330/cell"
+      ],
+      "source_pointer": "/objects/330",
+      "unique_id": "HB_Tree10 1205"
+    },
+    {
+      "angle_radians": 1.6318751573562622,
+      "category": "灌木",
+      "cell": [
+        46.0,
+        516.0
+      ],
+      "id": 332,
+      "object_type": "YU_Bush01",
+      "position_pointers": [
+        "/objects/331/cell"
+      ],
+      "source_pointer": "/objects/331",
+      "unique_id": "YU_Bush01 1206"
+    },
+    {
+      "angle_radians": 0.7376821041107178,
+      "category": "灌木",
+      "cell": [
+        658.0,
+        441.0
+      ],
+      "id": 333,
+      "object_type": "YU_Bush03",
+      "position_pointers": [
+        "/objects/332/cell"
+      ],
+      "source_pointer": "/objects/332",
+      "unique_id": "YU_Bush03 1207"
+    },
+    {
+      "angle_radians": 1.7330925464630127,
+      "category": "树木",
+      "cell": [
+        638.0,
+        491.0
+      ],
+      "id": 334,
+      "object_type": "CC_Tree01",
+      "position_pointers": [
+        "/objects/333/cell"
+      ],
+      "source_pointer": "/objects/333",
+      "unique_id": "CC_Tree01 1208"
+    },
+    {
+      "angle_radians": 1.1148093938827515,
+      "category": "树木",
+      "cell": [
+        776.0,
+        143.0
+      ],
+      "id": 335,
+      "object_type": "CC_Tree02",
+      "position_pointers": [
+        "/objects/334/cell"
+      ],
+      "source_pointer": "/objects/334",
+      "unique_id": "CC_Tree02 1209"
+    },
+    {
+      "angle_radians": 2.1558315753936768,
+      "category": "树木",
+      "cell": [
+        709.0,
+        320.0
+      ],
+      "id": 336,
+      "object_type": "CC_Tree03",
+      "position_pointers": [
+        "/objects/335/cell"
+      ],
+      "source_pointer": "/objects/335",
+      "unique_id": "CC_Tree03 1210"
+    },
+    {
+      "angle_radians": 4.840266227722168,
+      "category": "树木",
+      "cell": [
+        647.0,
+        459.0
+      ],
+      "id": 337,
+      "object_type": "HB_Tree03",
+      "position_pointers": [
+        "/objects/336/cell"
+      ],
+      "source_pointer": "/objects/336",
+      "unique_id": "HB_Tree03 1211"
+    },
+    {
+      "angle_radians": 1.6569567918777466,
+      "category": "树木",
+      "cell": [
+        793.0,
+        219.0
+      ],
+      "id": 338,
+      "object_type": "HB_Tree07",
+      "position_pointers": [
+        "/objects/337/cell"
+      ],
+      "source_pointer": "/objects/337",
+      "unique_id": "HB_Tree07 1212"
+    },
+    {
+      "angle_radians": 4.833144187927246,
+      "category": "树木",
+      "cell": [
+        672.0,
+        138.0
+      ],
+      "id": 339,
+      "object_type": "HB_Tree10",
+      "position_pointers": [
+        "/objects/338/cell"
+      ],
+      "source_pointer": "/objects/338",
+      "unique_id": "HB_Tree10 1213"
+    },
+    {
+      "angle_radians": 3.9699947834014893,
+      "category": "灌木",
+      "cell": [
+        489.0,
+        664.0
+      ],
+      "id": 340,
+      "object_type": "YU_Bush01",
+      "position_pointers": [
+        "/objects/339/cell"
+      ],
+      "source_pointer": "/objects/339",
+      "unique_id": "YU_Bush01 1214"
+    },
+    {
+      "angle_radians": 5.772071361541748,
+      "category": "灌木",
+      "cell": [
+        64.0,
+        636.0
+      ],
+      "id": 341,
+      "object_type": "YU_Bush03",
+      "position_pointers": [
+        "/objects/340/cell"
+      ],
+      "source_pointer": "/objects/340",
+      "unique_id": "YU_Bush03 1215"
+    },
+    {
+      "angle_radians": 0.17041602730751038,
+      "category": "树木",
+      "cell": [
+        717.0,
+        312.0
+      ],
+      "id": 342,
+      "object_type": "CC_Tree01",
+      "position_pointers": [
+        "/objects/341/cell"
+      ],
+      "source_pointer": "/objects/341",
+      "unique_id": "CC_Tree01 1216"
+    },
+    {
+      "angle_radians": 5.304603576660156,
+      "category": "树木",
+      "cell": [
+        678.0,
+        96.0
+      ],
+      "id": 343,
+      "object_type": "CC_Tree02",
+      "position_pointers": [
+        "/objects/342/cell"
+      ],
+      "source_pointer": "/objects/342",
+      "unique_id": "CC_Tree02 1217"
+    },
+    {
+      "angle_radians": 3.5706071853637695,
+      "category": "树木",
+      "cell": [
+        787.0,
+        184.0
+      ],
+      "id": 344,
+      "object_type": "CC_Tree03",
+      "position_pointers": [
+        "/objects/343/cell"
+      ],
+      "source_pointer": "/objects/343",
+      "unique_id": "CC_Tree03 1218"
+    },
+    {
+      "angle_radians": 1.8813738822937012,
+      "category": "树木",
+      "cell": [
+        149.0,
+        680.0
+      ],
+      "id": 345,
+      "object_type": "HB_Tree03",
+      "position_pointers": [
+        "/objects/344/cell"
+      ],
+      "source_pointer": "/objects/344",
+      "unique_id": "HB_Tree03 1219"
+    },
+    {
+      "angle_radians": 5.372145175933838,
+      "category": "树木",
+      "cell": [
+        57.0,
+        568.0
+      ],
+      "id": 346,
+      "object_type": "HB_Tree07",
+      "position_pointers": [
+        "/objects/345/cell"
+      ],
+      "source_pointer": "/objects/345",
+      "unique_id": "HB_Tree07 1220"
+    },
+    {
+      "angle_radians": 0.2112823724746704,
+      "category": "树木",
+      "cell": [
+        114.0,
+        664.0
+      ],
+      "id": 347,
+      "object_type": "HB_Tree10",
+      "position_pointers": [
+        "/objects/346/cell"
+      ],
+      "source_pointer": "/objects/346",
+      "unique_id": "HB_Tree10 1221"
+    },
+    {
+      "angle_radians": 1.9106837511062622,
+      "category": "灌木",
+      "cell": [
+        536.0,
+        598.0
+      ],
+      "id": 348,
+      "object_type": "YU_Bush01",
+      "position_pointers": [
+        "/objects/347/cell"
+      ],
+      "source_pointer": "/objects/347",
+      "unique_id": "YU_Bush01 1222"
+    },
+    {
+      "angle_radians": 2.565729856491089,
+      "category": "灌木",
+      "cell": [
+        765.0,
+        139.0
+      ],
+      "id": 349,
+      "object_type": "YU_Bush03",
+      "position_pointers": [
+        "/objects/348/cell"
+      ],
+      "source_pointer": "/objects/348",
+      "unique_id": "YU_Bush03 1223"
+    },
+    {
+      "angle_radians": 0.3800680935382843,
+      "category": "树木",
+      "cell": [
+        348.0,
+        731.0
+      ],
+      "id": 350,
+      "object_type": "CC_Tree01",
+      "position_pointers": [
+        "/objects/349/cell"
+      ],
+      "source_pointer": "/objects/349",
+      "unique_id": "CC_Tree01 1224"
+    },
+    {
+      "angle_radians": 4.287097454071045,
+      "category": "树木",
+      "cell": [
+        238.0,
+        229.0
+      ],
+      "id": 351,
+      "object_type": "CC_Tree02",
+      "position_pointers": [
+        "/objects/350/cell"
+      ],
+      "source_pointer": "/objects/350",
+      "unique_id": "CC_Tree02 1225"
+    },
+    {
+      "angle_radians": 1.537471055984497,
+      "category": "树木",
+      "cell": [
+        574.0,
+        586.0
+      ],
+      "id": 352,
+      "object_type": "CC_Tree03",
+      "position_pointers": [
+        "/objects/351/cell"
+      ],
+      "source_pointer": "/objects/351",
+      "unique_id": "CC_Tree03 1226"
+    },
+    {
+      "angle_radians": 3.8804404735565186,
+      "category": "树木",
+      "cell": [
+        702.0,
+        114.0
+      ],
+      "id": 353,
+      "object_type": "HB_Tree03",
+      "position_pointers": [
+        "/objects/352/cell"
+      ],
+      "source_pointer": "/objects/352",
+      "unique_id": "HB_Tree03 1227"
+    },
+    {
+      "angle_radians": 5.806068420410156,
+      "category": "树木",
+      "cell": [
+        123.0,
+        324.0
+      ],
+      "id": 354,
+      "object_type": "HB_Tree07",
+      "position_pointers": [
+        "/objects/353/cell"
+      ],
+      "source_pointer": "/objects/353",
+      "unique_id": "HB_Tree07 1228"
+    },
+    {
+      "angle_radians": 0.1894923746585846,
+      "category": "树木",
+      "cell": [
+        630.0,
+        502.0
+      ],
+      "id": 355,
+      "object_type": "HB_Tree10",
+      "position_pointers": [
+        "/objects/354/cell"
+      ],
+      "source_pointer": "/objects/354",
+      "unique_id": "HB_Tree10 1229"
+    },
+    {
+      "angle_radians": 2.1025404930114746,
+      "category": "灌木",
+      "cell": [
+        336.0,
+        149.0
+      ],
+      "id": 356,
+      "object_type": "YU_Bush01",
+      "position_pointers": [
+        "/objects/355/cell"
+      ],
+      "source_pointer": "/objects/355",
+      "unique_id": "YU_Bush01 1230"
+    },
+    {
+      "angle_radians": 1.13968825340271,
+      "category": "灌木",
+      "cell": [
+        235.0,
+        196.0
+      ],
+      "id": 357,
+      "object_type": "YU_Bush03",
+      "position_pointers": [
+        "/objects/356/cell"
+      ],
+      "source_pointer": "/objects/356",
+      "unique_id": "YU_Bush03 1231"
+    },
+    {
+      "angle_radians": 3.9623172283172607,
+      "category": "树木",
+      "cell": [
+        41.0,
+        446.0
+      ],
+      "id": 358,
+      "object_type": "CC_Tree01",
+      "position_pointers": [
+        "/objects/357/cell"
+      ],
+      "source_pointer": "/objects/357",
+      "unique_id": "CC_Tree01 1232"
+    },
+    {
+      "angle_radians": 2.5703933238983154,
+      "category": "树木",
+      "cell": [
+        154.0,
+        297.0
+      ],
+      "id": 359,
+      "object_type": "CC_Tree02",
+      "position_pointers": [
+        "/objects/358/cell"
+      ],
+      "source_pointer": "/objects/358",
+      "unique_id": "CC_Tree02 1233"
+    },
+    {
+      "angle_radians": 3.6002895832061768,
+      "category": "树木",
+      "cell": [
+        430.0,
+        663.0
+      ],
+      "id": 360,
+      "object_type": "CC_Tree03",
+      "position_pointers": [
+        "/objects/359/cell"
+      ],
+      "source_pointer": "/objects/359",
+      "unique_id": "CC_Tree03 1234"
+    },
+    {
+      "angle_radians": 2.396815538406372,
+      "category": "树木",
+      "cell": [
+        695.0,
+        95.0
+      ],
+      "id": 361,
+      "object_type": "HB_Tree03",
+      "position_pointers": [
+        "/objects/360/cell"
+      ],
+      "source_pointer": "/objects/360",
+      "unique_id": "HB_Tree03 1235"
+    },
+    {
+      "angle_radians": 4.365975856781006,
+      "category": "树木",
+      "cell": [
+        792.0,
+        201.0
+      ],
+      "id": 362,
+      "object_type": "HB_Tree07",
+      "position_pointers": [
+        "/objects/361/cell"
+      ],
+      "source_pointer": "/objects/361",
+      "unique_id": "HB_Tree07 1236"
+    },
+    {
+      "angle_radians": 1.3191044330596924,
+      "category": "树木",
+      "cell": [
+        603.0,
+        537.0
+      ],
+      "id": 363,
+      "object_type": "HB_Tree10",
+      "position_pointers": [
+        "/objects/362/cell"
+      ],
+      "source_pointer": "/objects/362",
+      "unique_id": "HB_Tree10 1237"
+    },
+    {
+      "angle_radians": 4.193320274353027,
+      "category": "灌木",
+      "cell": [
+        782.0,
+        166.0
+      ],
+      "id": 364,
+      "object_type": "YU_Bush01",
+      "position_pointers": [
+        "/objects/363/cell"
+      ],
+      "source_pointer": "/objects/363",
+      "unique_id": "YU_Bush01 1238"
+    },
+    {
+      "angle_radians": 5.64153528213501,
+      "category": "灌木",
+      "cell": [
+        88.0,
+        335.0
+      ],
+      "id": 365,
+      "object_type": "YU_Bush03",
+      "position_pointers": [
+        "/objects/364/cell"
+      ],
+      "source_pointer": "/objects/364",
+      "unique_id": "YU_Bush03 1239"
+    },
+    {
+      "angle_radians": 5.582860946655273,
+      "category": "树木",
+      "cell": [
+        381.0,
+        145.0
+      ],
+      "id": 366,
+      "object_type": "CC_Tree01",
+      "position_pointers": [
+        "/objects/365/cell"
+      ],
+      "source_pointer": "/objects/365",
+      "unique_id": "CC_Tree01 1240"
+    },
+    {
+      "angle_radians": 4.677951335906982,
+      "category": "树木",
+      "cell": [
+        183.0,
+        682.0
+      ],
+      "id": 367,
+      "object_type": "CC_Tree02",
+      "position_pointers": [
+        "/objects/366/cell"
+      ],
+      "source_pointer": "/objects/366",
+      "unique_id": "CC_Tree02 1241"
+    },
+    {
+      "angle_radians": 3.4133386611938477,
+      "category": "树木",
+      "cell": [
+        219.0,
+        436.0
+      ],
+      "id": 368,
+      "object_type": "CC_Tree01",
+      "position_pointers": [
+        "/objects/367/cell"
+      ],
+      "source_pointer": "/objects/367",
+      "unique_id": "CC_Tree01 1242"
+    },
+    {
+      "angle_radians": 4.924989700317383,
+      "category": "树木",
+      "cell": [
+        83.0,
+        443.0
+      ],
+      "id": 369,
+      "object_type": "CC_Tree02",
+      "position_pointers": [
+        "/objects/368/cell"
+      ],
+      "source_pointer": "/objects/368",
+      "unique_id": "CC_Tree02 1243"
+    },
+    {
+      "angle_radians": 2.066425323486328,
+      "category": "树木",
+      "cell": [
+        683.0,
+        110.0
+      ],
+      "id": 370,
+      "object_type": "CC_Tree03",
+      "position_pointers": [
+        "/objects/369/cell"
+      ],
+      "source_pointer": "/objects/369",
+      "unique_id": "CC_Tree03 1244"
+    },
+    {
+      "angle_radians": 4.5907158851623535,
+      "category": "树木",
+      "cell": [
+        690.0,
+        155.0
+      ],
+      "id": 371,
+      "object_type": "HB_Tree03",
+      "position_pointers": [
+        "/objects/370/cell"
+      ],
+      "source_pointer": "/objects/370",
+      "unique_id": "HB_Tree03 1245"
+    },
+    {
+      "angle_radians": 2.191864013671875,
+      "category": "树木",
+      "cell": [
+        492.0,
+        298.0
+      ],
+      "id": 372,
+      "object_type": "HB_Tree07",
+      "position_pointers": [
+        "/objects/371/cell"
+      ],
+      "source_pointer": "/objects/371",
+      "unique_id": "HB_Tree07 1246"
+    },
+    {
+      "angle_radians": 2.221405029296875,
+      "category": "树木",
+      "cell": [
+        703.0,
+        196.0
+      ],
+      "id": 373,
+      "object_type": "HB_Tree10",
+      "position_pointers": [
+        "/objects/372/cell"
+      ],
+      "source_pointer": "/objects/372",
+      "unique_id": "HB_Tree10 1247"
+    },
+    {
+      "angle_radians": 3.740910291671753,
+      "category": "灌木",
+      "cell": [
+        464.0,
+        456.0
+      ],
+      "id": 374,
+      "object_type": "YU_Bush01",
+      "position_pointers": [
+        "/objects/373/cell"
+      ],
+      "source_pointer": "/objects/373",
+      "unique_id": "YU_Bush01 1248"
+    },
+    {
+      "angle_radians": 3.6292526721954346,
+      "category": "灌木",
+      "cell": [
+        220.0,
+        594.0
+      ],
+      "id": 375,
+      "object_type": "YU_Bush03",
+      "position_pointers": [
+        "/objects/374/cell"
+      ],
+      "source_pointer": "/objects/374",
+      "unique_id": "YU_Bush03 1249"
+    },
+    {
+      "angle_radians": 4.750437259674072,
+      "category": "树木",
+      "cell": [
+        410.0,
+        176.0
+      ],
+      "id": 376,
+      "object_type": "CC_Tree01",
+      "position_pointers": [
+        "/objects/375/cell"
+      ],
+      "source_pointer": "/objects/375",
+      "unique_id": "CC_Tree01 1250"
+    },
+    {
+      "angle_radians": 0.6104719638824463,
+      "category": "树木",
+      "cell": [
+        597.0,
+        272.0
+      ],
+      "id": 377,
+      "object_type": "CC_Tree02",
+      "position_pointers": [
+        "/objects/376/cell"
+      ],
+      "source_pointer": "/objects/376",
+      "unique_id": "CC_Tree02 1251"
+    },
+    {
+      "angle_radians": 3.18965482711792,
+      "category": "树木",
+      "cell": [
+        622.0,
+        329.0
+      ],
+      "id": 378,
+      "object_type": "CC_Tree03",
+      "position_pointers": [
+        "/objects/377/cell"
+      ],
+      "source_pointer": "/objects/377",
+      "unique_id": "CC_Tree03 1252"
+    },
+    {
+      "angle_radians": 5.911093711853027,
+      "category": "树木",
+      "cell": [
+        644.0,
+        147.0
+      ],
+      "id": 379,
+      "object_type": "HB_Tree03",
+      "position_pointers": [
+        "/objects/378/cell"
+      ],
+      "source_pointer": "/objects/378",
+      "unique_id": "HB_Tree03 1253"
+    },
+    {
+      "angle_radians": 1.5533206462860107,
+      "category": "树木",
+      "cell": [
+        470.0,
+        361.0
+      ],
+      "id": 380,
+      "object_type": "HB_Tree07",
+      "position_pointers": [
+        "/objects/379/cell"
+      ],
+      "source_pointer": "/objects/379",
+      "unique_id": "HB_Tree07 1254"
+    },
+    {
+      "angle_radians": 4.6278886795043945,
+      "category": "树木",
+      "cell": [
+        181.0,
+        490.0
+      ],
+      "id": 381,
+      "object_type": "HB_Tree10",
+      "position_pointers": [
+        "/objects/380/cell"
+      ],
+      "source_pointer": "/objects/380",
+      "unique_id": "HB_Tree10 1255"
+    },
+    {
+      "angle_radians": 4.04714822769165,
+      "category": "灌木",
+      "cell": [
+        313.0,
+        201.0
+      ],
+      "id": 382,
+      "object_type": "YU_Bush01",
+      "position_pointers": [
+        "/objects/381/cell"
+      ],
+      "source_pointer": "/objects/381",
+      "unique_id": "YU_Bush01 1256"
+    },
+    {
+      "angle_radians": 4.943063259124756,
+      "category": "灌木",
+      "cell": [
+        555.0,
+        273.0
+      ],
+      "id": 383,
+      "object_type": "YU_Bush03",
+      "position_pointers": [
+        "/objects/382/cell"
+      ],
+      "source_pointer": "/objects/382",
+      "unique_id": "YU_Bush03 1257"
+    },
+    {
+      "angle_radians": 5.055293560028076,
+      "category": "树木",
+      "cell": [
+        264.0,
+        539.0
+      ],
+      "id": 384,
+      "object_type": "CC_Tree01",
+      "position_pointers": [
+        "/objects/383/cell"
+      ],
+      "source_pointer": "/objects/383",
+      "unique_id": "CC_Tree01 1258"
+    },
+    {
+      "angle_radians": 1.7687379121780396,
+      "category": "树木",
+      "cell": [
+        688.0,
+        248.0
+      ],
+      "id": 385,
+      "object_type": "CC_Tree02",
+      "position_pointers": [
+        "/objects/384/cell"
+      ],
+      "source_pointer": "/objects/384",
+      "unique_id": "CC_Tree02 1259"
+    },
+    {
+      "angle_radians": 5.852453231811523,
+      "category": "树木",
+      "cell": [
+        428.0,
+        489.0
+      ],
+      "id": 386,
+      "object_type": "CC_Tree03",
+      "position_pointers": [
+        "/objects/385/cell"
+      ],
+      "source_pointer": "/objects/385",
+      "unique_id": "CC_Tree03 1260"
+    },
+    {
+      "angle_radians": 5.496816635131836,
+      "category": "树木",
+      "cell": [
+        431.0,
+        226.0
+      ],
+      "id": 387,
+      "object_type": "HB_Tree03",
+      "position_pointers": [
+        "/objects/386/cell"
+      ],
+      "source_pointer": "/objects/386",
+      "unique_id": "HB_Tree03 1261"
+    },
+    {
+      "angle_radians": 5.0900115966796875,
+      "category": "树木",
+      "cell": [
+        533.0,
+        161.0
+      ],
+      "id": 388,
+      "object_type": "HB_Tree07",
+      "position_pointers": [
+        "/objects/387/cell"
+      ],
+      "source_pointer": "/objects/387",
+      "unique_id": "HB_Tree07 1262"
+    },
+    {
+      "angle_radians": 3.8140387535095215,
+      "category": "树木",
+      "cell": [
+        116.0,
+        600.0
+      ],
+      "id": 389,
+      "object_type": "HB_Tree10",
+      "position_pointers": [
+        "/objects/388/cell"
+      ],
+      "source_pointer": "/objects/388",
+      "unique_id": "HB_Tree10 1263"
+    },
+    {
+      "angle_radians": 5.050858020782471,
+      "category": "灌木",
+      "cell": [
+        439.0,
+        308.0
+      ],
+      "id": 390,
+      "object_type": "YU_Bush01",
+      "position_pointers": [
+        "/objects/389/cell"
+      ],
+      "source_pointer": "/objects/389",
+      "unique_id": "YU_Bush01 1264"
+    },
+    {
+      "angle_radians": 1.2189902067184448,
+      "category": "灌木",
+      "cell": [
+        222.0,
+        317.0
+      ],
+      "id": 391,
+      "object_type": "YU_Bush03",
+      "position_pointers": [
+        "/objects/390/cell"
+      ],
+      "source_pointer": "/objects/390",
+      "unique_id": "YU_Bush03 1265"
+    },
+    {
+      "angle_radians": 0.3638179302215576,
+      "category": "树木",
+      "cell": [
+        228.0,
+        403.0
+      ],
+      "id": 392,
+      "object_type": "CC_Tree01",
+      "position_pointers": [
+        "/objects/391/cell"
+      ],
+      "source_pointer": "/objects/391",
+      "unique_id": "CC_Tree01 1266"
+    },
+    {
+      "angle_radians": 4.150240421295166,
+      "category": "树木",
+      "cell": [
+        167.0,
+        306.0
+      ],
+      "id": 393,
+      "object_type": "CC_Tree02",
+      "position_pointers": [
+        "/objects/392/cell"
+      ],
+      "source_pointer": "/objects/392",
+      "unique_id": "CC_Tree02 1267"
+    },
+    {
+      "angle_radians": 0.7519388794898987,
+      "category": "树木",
+      "cell": [
+        143.0,
+        344.0
+      ],
+      "id": 394,
+      "object_type": "CC_Tree03",
+      "position_pointers": [
+        "/objects/393/cell"
+      ],
+      "source_pointer": "/objects/393",
+      "unique_id": "CC_Tree03 1268"
+    },
+    {
+      "angle_radians": 4.985000133514404,
+      "category": "树木",
+      "cell": [
+        310.0,
+        457.0
+      ],
+      "id": 395,
+      "object_type": "HB_Tree03",
+      "position_pointers": [
+        "/objects/394/cell"
+      ],
+      "source_pointer": "/objects/394",
+      "unique_id": "HB_Tree03 1269"
+    },
+    {
+      "angle_radians": 2.3629696369171143,
+      "category": "树木",
+      "cell": [
+        767.0,
+        163.0
+      ],
+      "id": 396,
+      "object_type": "HB_Tree07",
+      "position_pointers": [
+        "/objects/395/cell"
+      ],
+      "source_pointer": "/objects/395",
+      "unique_id": "HB_Tree07 1270"
+    },
+    {
+      "angle_radians": 5.361943244934082,
+      "category": "树木",
+      "cell": [
+        463.0,
+        168.0
+      ],
+      "id": 397,
+      "object_type": "HB_Tree10",
+      "position_pointers": [
+        "/objects/396/cell"
+      ],
+      "source_pointer": "/objects/396",
+      "unique_id": "HB_Tree10 1271"
+    },
+    {
+      "angle_radians": 0.4675733745098114,
+      "category": "灌木",
+      "cell": [
+        437.0,
+        384.0
+      ],
+      "id": 398,
+      "object_type": "YU_Bush01",
+      "position_pointers": [
+        "/objects/397/cell"
+      ],
+      "source_pointer": "/objects/397",
+      "unique_id": "YU_Bush01 1272"
+    },
+    {
+      "angle_radians": 5.8508195877075195,
+      "category": "灌木",
+      "cell": [
+        305.0,
+        336.0
+      ],
+      "id": 399,
+      "object_type": "YU_Bush03",
+      "position_pointers": [
+        "/objects/398/cell"
+      ],
+      "source_pointer": "/objects/398",
+      "unique_id": "YU_Bush03 1273"
+    },
+    {
+      "angle_radians": 3.9516544342041016,
+      "category": "树木",
+      "cell": [
+        677.0,
+        330.0
+      ],
+      "id": 400,
+      "object_type": "CC_Tree01",
+      "position_pointers": [
+        "/objects/399/cell"
+      ],
+      "source_pointer": "/objects/399",
+      "unique_id": "CC_Tree01 1274"
+    },
+    {
+      "angle_radians": 0.19179752469062805,
+      "category": "树木",
+      "cell": [
+        515.0,
+        410.0
+      ],
+      "id": 401,
+      "object_type": "CC_Tree02",
+      "position_pointers": [
+        "/objects/400/cell"
+      ],
+      "source_pointer": "/objects/400",
+      "unique_id": "CC_Tree02 1275"
+    },
+    {
+      "angle_radians": 2.770314931869507,
+      "category": "树木",
+      "cell": [
+        352.0,
+        207.0
+      ],
+      "id": 402,
+      "object_type": "CC_Tree03",
+      "position_pointers": [
+        "/objects/401/cell"
+      ],
+      "source_pointer": "/objects/401",
+      "unique_id": "CC_Tree03 1276"
+    },
+    {
+      "angle_radians": 4.320433139801025,
+      "category": "树木",
+      "cell": [
+        132.0,
+        637.0
+      ],
+      "id": 403,
+      "object_type": "HB_Tree03",
+      "position_pointers": [
+        "/objects/402/cell"
+      ],
+      "source_pointer": "/objects/402",
+      "unique_id": "HB_Tree03 1277"
+    },
+    {
+      "angle_radians": 3.831853151321411,
+      "category": "树木",
+      "cell": [
+        407.0,
+        317.0
+      ],
+      "id": 404,
+      "object_type": "HB_Tree07",
+      "position_pointers": [
+        "/objects/403/cell"
+      ],
+      "source_pointer": "/objects/403",
+      "unique_id": "HB_Tree07 1278"
+    },
+    {
+      "angle_radians": 1.3489408493041992,
+      "category": "树木",
+      "cell": [
+        171.0,
+        575.0
+      ],
+      "id": 405,
+      "object_type": "HB_Tree10",
+      "position_pointers": [
+        "/objects/404/cell"
+      ],
+      "source_pointer": "/objects/404",
+      "unique_id": "HB_Tree10 1279"
+    },
+    {
+      "angle_radians": 3.8529858589172363,
+      "category": "灌木",
+      "cell": [
+        117.0,
+        537.0
+      ],
+      "id": 406,
+      "object_type": "YU_Bush01",
+      "position_pointers": [
+        "/objects/405/cell"
+      ],
+      "source_pointer": "/objects/405",
+      "unique_id": "YU_Bush01 1280"
+    },
+    {
+      "angle_radians": 4.621354103088379,
+      "category": "灌木",
+      "cell": [
+        616.0,
+        367.0
+      ],
+      "id": 407,
+      "object_type": "YU_Bush03",
+      "position_pointers": [
+        "/objects/406/cell"
+      ],
+      "source_pointer": "/objects/406",
+      "unique_id": "YU_Bush03 1281"
+    },
+    {
+      "angle_radians": 1.6466455459594727,
+      "category": "树木",
+      "cell": [
+        369.0,
+        235.0
+      ],
+      "id": 408,
+      "object_type": "CC_Tree01",
+      "position_pointers": [
+        "/objects/407/cell"
+      ],
+      "source_pointer": "/objects/407",
+      "unique_id": "CC_Tree01 1282"
+    },
+    {
+      "angle_radians": 5.96996545791626,
+      "category": "树木",
+      "cell": [
+        159.0,
+        658.0
+      ],
+      "id": 409,
+      "object_type": "CC_Tree02",
+      "position_pointers": [
+        "/objects/408/cell"
+      ],
+      "source_pointer": "/objects/408",
+      "unique_id": "CC_Tree02 1283"
+    },
+    {
+      "angle_radians": 3.5415525436401367,
+      "category": "树木",
+      "cell": [
+        722.0,
+        157.0
+      ],
+      "id": 410,
+      "object_type": "CC_Tree03",
+      "position_pointers": [
+        "/objects/409/cell"
+      ],
+      "source_pointer": "/objects/409",
+      "unique_id": "CC_Tree03 1284"
+    },
+    {
+      "angle_radians": 2.4873604774475098,
+      "category": "树木",
+      "cell": [
+        513.0,
+        374.0
+      ],
+      "id": 411,
+      "object_type": "HB_Tree03",
+      "position_pointers": [
+        "/objects/410/cell"
+      ],
+      "source_pointer": "/objects/410",
+      "unique_id": "HB_Tree03 1285"
+    },
+    {
+      "angle_radians": 4.019112586975098,
+      "category": "树木",
+      "cell": [
+        535.0,
+        249.0
+      ],
+      "id": 412,
+      "object_type": "HB_Tree07",
+      "position_pointers": [
+        "/objects/411/cell"
+      ],
+      "source_pointer": "/objects/411",
+      "unique_id": "HB_Tree07 1286"
+    },
+    {
+      "angle_radians": 3.9183731079101562,
+      "category": "树木",
+      "cell": [
+        360.0,
+        149.0
+      ],
+      "id": 413,
+      "object_type": "HB_Tree10",
+      "position_pointers": [
+        "/objects/412/cell"
+      ],
+      "source_pointer": "/objects/412",
+      "unique_id": "HB_Tree10 1287"
+    },
+    {
+      "angle_radians": 0.3902190327644348,
+      "category": "灌木",
+      "cell": [
+        283.0,
+        303.0
+      ],
+      "id": 414,
+      "object_type": "YU_Bush01",
+      "position_pointers": [
+        "/objects/413/cell"
+      ],
+      "source_pointer": "/objects/413",
+      "unique_id": "YU_Bush01 1288"
+    },
+    {
+      "angle_radians": 2.407017230987549,
+      "category": "灌木",
+      "cell": [
+        753.0,
+        200.0
+      ],
+      "id": 415,
+      "object_type": "YU_Bush03",
+      "position_pointers": [
+        "/objects/414/cell"
+      ],
+      "source_pointer": "/objects/414",
+      "unique_id": "YU_Bush03 1289"
+    },
+    {
+      "angle_radians": -2.356194496154785,
+      "category": "航点",
+      "cell": [
+        62.0,
+        613.0
+      ],
+      "id": 416,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/415/cell"
+      ],
+      "source_pointer": "/objects/415",
+      "unique_id": "dual-p1-bar",
+      "waypoint_name": "dual-p1-bar"
+    },
+    {
+      "angle_radians": -2.356194496154785,
+      "category": "航点",
+      "cell": [
+        102.0,
+        593.0
+      ],
+      "id": 417,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/416/cell"
+      ],
+      "source_pointer": "/objects/416",
+      "unique_id": "dual-p1-wf",
+      "waypoint_name": "dual-p1-wf"
+    },
+    {
+      "angle_radians": -2.356194496154785,
+      "category": "航点",
+      "cell": [
+        208.0,
+        679.0
+      ],
+      "id": 418,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/417/cell"
+      ],
+      "source_pointer": "/objects/417",
+      "unique_id": "dual-p1-air",
+      "waypoint_name": "dual-p1-air"
+    },
+    {
+      "angle_radians": -2.356194496154785,
+      "category": "航点",
+      "cell": [
+        411.0,
+        593.0
+      ],
+      "id": 419,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/418/cell"
+      ],
+      "source_pointer": "/objects/418",
+      "unique_id": "dual-p2-bar",
+      "waypoint_name": "dual-p2-bar"
+    },
+    {
+      "angle_radians": -2.356194496154785,
+      "category": "航点",
+      "cell": [
+        260.0,
+        659.0
+      ],
+      "id": 420,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/419/cell"
+      ],
+      "source_pointer": "/objects/419",
+      "unique_id": "dual-p2-wf",
+      "waypoint_name": "dual-p2-wf"
+    },
+    {
+      "angle_radians": -2.356194496154785,
+      "category": "航点",
+      "cell": [
+        379.0,
+        613.0
+      ],
+      "id": 421,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/420/cell"
+      ],
+      "source_pointer": "/objects/420",
+      "unique_id": "dual-p2-air",
+      "waypoint_name": "dual-p2-air"
+    },
+    {
+      "angle_radians": -2.356194496154785,
+      "category": "航点",
+      "cell": [
+        458.0,
+        471.0
+      ],
+      "id": 422,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/421/cell"
+      ],
+      "source_pointer": "/objects/421",
+      "unique_id": "dual-p3-bar",
+      "waypoint_name": "dual-p3-bar"
+    },
+    {
+      "angle_radians": -2.356194496154785,
+      "category": "航点",
+      "cell": [
+        430.0,
+        475.0
+      ],
+      "id": 423,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/422/cell"
+      ],
+      "source_pointer": "/objects/422",
+      "unique_id": "dual-p3-wf",
+      "waypoint_name": "dual-p3-wf"
+    },
+    {
+      "angle_radians": -2.356194496154785,
+      "category": "航点",
+      "cell": [
+        465.0,
+        499.0
+      ],
+      "id": 424,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/423/cell"
+      ],
+      "source_pointer": "/objects/423",
+      "unique_id": "dual-p3-air",
+      "waypoint_name": "dual-p3-air"
+    },
+    {
+      "angle_radians": -2.356194496154785,
+      "category": "航点",
+      "cell": [
+        417.0,
+        344.0
+      ],
+      "id": 425,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/424/cell"
+      ],
+      "source_pointer": "/objects/424",
+      "unique_id": "dual-p4-bar",
+      "waypoint_name": "dual-p4-bar"
+    },
+    {
+      "angle_radians": -2.356194496154785,
+      "category": "航点",
+      "cell": [
+        328.0,
+        584.0
+      ],
+      "id": 426,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/425/cell"
+      ],
+      "source_pointer": "/objects/425",
+      "unique_id": "dual-p4-wf",
+      "waypoint_name": "dual-p4-wf"
+    },
+    {
+      "angle_radians": -2.356194496154785,
+      "category": "航点",
+      "cell": [
+        402.0,
+        467.0
+      ],
+      "id": 427,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/426/cell"
+      ],
+      "source_pointer": "/objects/426",
+      "unique_id": "dual-p4-air",
+      "waypoint_name": "dual-p4-air"
+    },
+    {
+      "angle_radians": -2.356194496154785,
+      "category": "航点",
+      "cell": [
+        192.0,
+        369.0
+      ],
+      "id": 428,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/427/cell"
+      ],
+      "source_pointer": "/objects/427",
+      "unique_id": "dual-p5-bar",
+      "waypoint_name": "dual-p5-bar"
+    },
+    {
+      "angle_radians": -2.356194496154785,
+      "category": "航点",
+      "cell": [
+        70.0,
+        350.0
+      ],
+      "id": 429,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/428/cell"
+      ],
+      "source_pointer": "/objects/428",
+      "unique_id": "dual-p5-wf",
+      "waypoint_name": "dual-p5-wf"
+    },
+    {
+      "angle_radians": -2.356194496154785,
+      "category": "航点",
+      "cell": [
+        98.0,
+        349.0
+      ],
+      "id": 430,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/429/cell"
+      ],
+      "source_pointer": "/objects/429",
+      "unique_id": "dual-p5-air",
+      "waypoint_name": "dual-p5-air"
+    },
+    {
+      "angle_radians": -2.356194496154785,
+      "category": "航点",
+      "cell": [
+        101.0,
+        405.0
+      ],
+      "id": 431,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/430/cell"
+      ],
+      "source_pointer": "/objects/430",
+      "unique_id": "dual-p6-bar",
+      "waypoint_name": "dual-p6-bar"
+    },
+    {
+      "angle_radians": -2.356194496154785,
+      "category": "航点",
+      "cell": [
+        73.0,
+        428.0
+      ],
+      "id": 432,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/431/cell"
+      ],
+      "source_pointer": "/objects/431",
+      "unique_id": "dual-p6-wf",
+      "waypoint_name": "dual-p6-wf"
+    },
+    {
+      "angle_radians": -2.356194496154785,
+      "category": "航点",
+      "cell": [
+        325.0,
+        345.0
+      ],
+      "id": 433,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/432/cell"
+      ],
+      "source_pointer": "/objects/432",
+      "unique_id": "dual-p6-air",
+      "waypoint_name": "dual-p6-air"
+    },
+    {
+      "angle_radians": -2.356194496154785,
+      "category": "航点",
+      "cell": [
+        704.0,
+        152.0
+      ],
+      "id": 434,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/433/cell"
+      ],
+      "source_pointer": "/objects/433",
+      "unique_id": "dual-civilian-bar",
+      "waypoint_name": "dual-civilian-bar"
+    },
+    {
+      "angle_radians": -2.356194496154785,
+      "category": "航点",
+      "cell": [
+        736.0,
+        151.0
+      ],
+      "id": 435,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/434/cell"
+      ],
+      "source_pointer": "/objects/434",
+      "unique_id": "dual-civilian-wf",
+      "waypoint_name": "dual-civilian-wf"
+    },
+    {
+      "angle_radians": -2.356194496154785,
+      "category": "航点",
+      "cell": [
+        639.0,
+        189.0
+      ],
+      "id": 436,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/435/cell"
+      ],
+      "source_pointer": "/objects/435",
+      "unique_id": "dual-civilian-air",
+      "waypoint_name": "dual-civilian-air"
+    },
+    {
+      "angle_radians": -2.356194496154785,
+      "category": "航点",
+      "cell": [
+        510.0,
+        396.0
+      ],
+      "id": 437,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/436/cell"
+      ],
+      "source_pointer": "/objects/436",
+      "unique_id": "dual-creeps-bar",
+      "waypoint_name": "dual-creeps-bar"
+    },
+    {
+      "angle_radians": -2.356194496154785,
+      "category": "航点",
+      "cell": [
+        518.0,
+        306.0
+      ],
+      "id": 438,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/437/cell"
+      ],
+      "source_pointer": "/objects/437",
+      "unique_id": "dual-creeps-wf",
+      "waypoint_name": "dual-creeps-wf"
+    },
+    {
+      "angle_radians": -2.356194496154785,
+      "category": "航点",
+      "cell": [
+        767.0,
+        193.0
+      ],
+      "id": 439,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/438/cell"
+      ],
+      "source_pointer": "/objects/438",
+      "unique_id": "dual-creeps-air",
+      "waypoint_name": "dual-creeps-air"
+    },
+    {
+      "angle_radians": 2.4805495738983154,
+      "category": "航点",
+      "cell": [
+        146.0,
+        640.0
+      ],
+      "id": 440,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/439/cell"
+      ],
+      "source_pointer": "/objects/439",
+      "unique_id": "SWJ1",
+      "waypoint_name": "SWJ1"
+    },
+    {
+      "angle_radians": 2.4805495738983154,
+      "category": "航点",
+      "cell": [
+        129.0,
+        668.0
+      ],
+      "id": 441,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/440/cell"
+      ],
+      "source_pointer": "/objects/440",
+      "unique_id": "PPJ1",
+      "waypoint_name": "PPJ1"
+    },
+    {
+      "angle_radians": 2.4805495738983154,
+      "category": "航点",
+      "cell": [
+        357.0,
+        642.0
+      ],
+      "id": 442,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/441/cell"
+      ],
+      "source_pointer": "/objects/441",
+      "unique_id": "SWJ2",
+      "waypoint_name": "SWJ2"
+    },
+    {
+      "angle_radians": 2.4805495738983154,
+      "category": "航点",
+      "cell": [
+        434.0,
+        649.0
+      ],
+      "id": 443,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/442/cell"
+      ],
+      "source_pointer": "/objects/442",
+      "unique_id": "PPJ2",
+      "waypoint_name": "PPJ2"
+    },
+    {
+      "angle_radians": 2.4805495738983154,
+      "category": "航点",
+      "cell": [
+        500.0,
+        566.0
+      ],
+      "id": 444,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/443/cell"
+      ],
+      "source_pointer": "/objects/443",
+      "unique_id": "SWJ3",
+      "waypoint_name": "SWJ3"
+    },
+    {
+      "angle_radians": 2.4805495738983154,
+      "category": "航点",
+      "cell": [
+        507.0,
+        608.0
+      ],
+      "id": 445,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/444/cell"
+      ],
+      "source_pointer": "/objects/444",
+      "unique_id": "PPJ3",
+      "waypoint_name": "PPJ3"
+    },
+    {
+      "angle_radians": 2.4805495738983154,
+      "category": "航点",
+      "cell": [
+        540.0,
+        516.0
+      ],
+      "id": 446,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/445/cell"
+      ],
+      "source_pointer": "/objects/445",
+      "unique_id": "SWJ4",
+      "waypoint_name": "SWJ4"
+    },
+    {
+      "angle_radians": 2.4805495738983154,
+      "category": "航点",
+      "cell": [
+        576.0,
+        488.0
+      ],
+      "id": 447,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/446/cell"
+      ],
+      "source_pointer": "/objects/446",
+      "unique_id": "PPJ4",
+      "waypoint_name": "PPJ4"
+    },
+    {
+      "angle_radians": 2.4805495738983154,
+      "category": "航点",
+      "cell": [
+        250.0,
+        286.0
+      ],
+      "id": 448,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/447/cell"
+      ],
+      "source_pointer": "/objects/447",
+      "unique_id": "SW53",
+      "waypoint_name": "SW53"
+    },
+    {
+      "angle_radians": 2.4805495738983154,
+      "category": "航点",
+      "cell": [
+        209.0,
+        331.0
+      ],
+      "id": 449,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/448/cell"
+      ],
+      "source_pointer": "/objects/448",
+      "unique_id": "SWA51",
+      "waypoint_name": "SWA51"
+    },
+    {
+      "angle_radians": 2.4805495738983154,
+      "category": "航点",
+      "cell": [
+        126.0,
+        338.0
+      ],
+      "id": 450,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/449/cell"
+      ],
+      "source_pointer": "/objects/449",
+      "unique_id": "SWA52",
+      "waypoint_name": "SWA52"
+    },
+    {
+      "angle_radians": 2.4805495738983154,
+      "category": "航点",
+      "cell": [
+        252.0,
+        221.0
+      ],
+      "id": 451,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/450/cell"
+      ],
+      "source_pointer": "/objects/450",
+      "unique_id": "PP51",
+      "waypoint_name": "PP51"
+    },
+    {
+      "angle_radians": 2.4805495738983154,
+      "category": "航点",
+      "cell": [
+        280.0,
+        230.0
+      ],
+      "id": 452,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/451/cell"
+      ],
+      "source_pointer": "/objects/451",
+      "unique_id": "PP52",
+      "waypoint_name": "PP52"
+    },
+    {
+      "angle_radians": 2.4805495738983154,
+      "category": "航点",
+      "cell": [
+        308.0,
+        215.0
+      ],
+      "id": 453,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/452/cell"
+      ],
+      "source_pointer": "/objects/452",
+      "unique_id": "PP53",
+      "waypoint_name": "PP53"
+    },
+    {
+      "angle_radians": 2.4805495738983154,
+      "category": "航点",
+      "cell": [
+        439.0,
+        210.0
+      ],
+      "id": 454,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/453/cell"
+      ],
+      "source_pointer": "/objects/453",
+      "unique_id": "SW63",
+      "waypoint_name": "SW63"
+    },
+    {
+      "angle_radians": 2.4805495738983154,
+      "category": "航点",
+      "cell": [
+        392.0,
+        264.0
+      ],
+      "id": 455,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/454/cell"
+      ],
+      "source_pointer": "/objects/454",
+      "unique_id": "SWA61",
+      "waypoint_name": "SWA61"
+    },
+    {
+      "angle_radians": 2.4805495738983154,
+      "category": "航点",
+      "cell": [
+        362.0,
+        287.0
+      ],
+      "id": 456,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/455/cell"
+      ],
+      "source_pointer": "/objects/455",
+      "unique_id": "SWA62",
+      "waypoint_name": "SWA62"
+    },
+    {
+      "angle_radians": 2.4805495738983154,
+      "category": "航点",
+      "cell": [
+        364.0,
+        135.0
+      ],
+      "id": 457,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/456/cell"
+      ],
+      "source_pointer": "/objects/456",
+      "unique_id": "PP61",
+      "waypoint_name": "PP61"
+    },
+    {
+      "angle_radians": 2.4805495738983154,
+      "category": "航点",
+      "cell": [
+        424.0,
+        179.0
+      ],
+      "id": 458,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/457/cell"
+      ],
+      "source_pointer": "/objects/457",
+      "unique_id": "PP62",
+      "waypoint_name": "PP62"
+    },
+    {
+      "angle_radians": 2.4805495738983154,
+      "category": "航点",
+      "cell": [
+        411.0,
+        207.0
+      ],
+      "id": 459,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/458/cell"
+      ],
+      "source_pointer": "/objects/458",
+      "unique_id": "PP63",
+      "waypoint_name": "PP63"
+    },
+    {
+      "angle_radians": 2.4805495738983154,
+      "category": "航点",
+      "cell": [
+        639.0,
+        161.0
+      ],
+      "id": 460,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/459/cell"
+      ],
+      "source_pointer": "/objects/459",
+      "unique_id": "SWA71",
+      "waypoint_name": "SWA71"
+    },
+    {
+      "angle_radians": 2.4805495738983154,
+      "category": "航点",
+      "cell": [
+        686.0,
+        124.0
+      ],
+      "id": 461,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/460/cell"
+      ],
+      "source_pointer": "/objects/460",
+      "unique_id": "SWA72",
+      "waypoint_name": "SWA72"
+    },
+    {
+      "angle_radians": 2.4805495738983154,
+      "category": "航点",
+      "cell": [
+        545.0,
+        119.0
+      ],
+      "id": 462,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/461/cell"
+      ],
+      "source_pointer": "/objects/461",
+      "unique_id": "PP71",
+      "waypoint_name": "PP71"
+    },
+    {
+      "angle_radians": 2.4805495738983154,
+      "category": "航点",
+      "cell": [
+        517.0,
+        136.0
+      ],
+      "id": 463,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/462/cell"
+      ],
+      "source_pointer": "/objects/462",
+      "unique_id": "PP72",
+      "waypoint_name": "PP72"
+    },
+    {
+      "angle_radians": 2.4805495738983154,
+      "category": "航点",
+      "cell": [
+        643.0,
+        131.0
+      ],
+      "id": 464,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/463/cell"
+      ],
+      "source_pointer": "/objects/463",
+      "unique_id": "PP73",
+      "waypoint_name": "PP73"
+    },
+    {
+      "angle_radians": 2.4805495738983154,
+      "category": "航点",
+      "cell": [
+        628.0,
+        353.0
+      ],
+      "id": 465,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/464/cell"
+      ],
+      "source_pointer": "/objects/464",
+      "unique_id": "SW83",
+      "waypoint_name": "SW83"
+    },
+    {
+      "angle_radians": 2.4805495738983154,
+      "category": "航点",
+      "cell": [
+        713.0,
+        260.0
+      ],
+      "id": 466,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/465/cell"
+      ],
+      "source_pointer": "/objects/465",
+      "unique_id": "SWA81",
+      "waypoint_name": "SWA81"
+    },
+    {
+      "angle_radians": 2.4805495738983154,
+      "category": "航点",
+      "cell": [
+        653.0,
+        275.0
+      ],
+      "id": 467,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/466/cell"
+      ],
+      "source_pointer": "/objects/466",
+      "unique_id": "SWA82",
+      "waypoint_name": "SWA82"
+    },
+    {
+      "angle_radians": 2.4805495738983154,
+      "category": "航点",
+      "cell": [
+        684.0,
+        358.0
+      ],
+      "id": 468,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/467/cell"
+      ],
+      "source_pointer": "/objects/467",
+      "unique_id": "PP81",
+      "waypoint_name": "PP81"
+    },
+    {
+      "angle_radians": 2.4805495738983154,
+      "category": "航点",
+      "cell": [
+        656.0,
+        351.0
+      ],
+      "id": 469,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/468/cell"
+      ],
+      "source_pointer": "/objects/468",
+      "unique_id": "PP82",
+      "waypoint_name": "PP82"
+    },
+    {
+      "angle_radians": 2.4805495738983154,
+      "category": "航点",
+      "cell": [
+        645.0,
+        413.0
+      ],
+      "id": 470,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/469/cell"
+      ],
+      "source_pointer": "/objects/469",
+      "unique_id": "PP83",
+      "waypoint_name": "PP83"
+    },
+    {
+      "angle_radians": 2.4805495738983154,
+      "category": "航点",
+      "cell": [
+        189.0,
+        278.0
+      ],
+      "id": 471,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/470/cell"
+      ],
+      "source_pointer": "/objects/470",
+      "unique_id": "gift-alt-PP51-1",
+      "waypoint_name": "gift-alt-PP51-1"
+    },
+    {
+      "angle_radians": 2.4805495738983154,
+      "category": "航点",
+      "cell": [
+        217.0,
+        279.0
+      ],
+      "id": 472,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/471/cell"
+      ],
+      "source_pointer": "/objects/471",
+      "unique_id": "gift-alt-PP52-1",
+      "waypoint_name": "gift-alt-PP52-1"
+    },
+    {
+      "angle_radians": 2.4805495738983154,
+      "category": "航点",
+      "cell": [
+        181.0,
+        306.0
+      ],
+      "id": 473,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/472/cell"
+      ],
+      "source_pointer": "/objects/472",
+      "unique_id": "gift-alt-PP53-1",
+      "waypoint_name": "gift-alt-PP53-1"
+    },
+    {
+      "angle_radians": 2.4805495738983154,
+      "category": "航点",
+      "cell": [
+        431.0,
+        151.0
+      ],
+      "id": 474,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/473/cell"
+      ],
+      "source_pointer": "/objects/473",
+      "unique_id": "gift-alt-PP61-1",
+      "waypoint_name": "gift-alt-PP61-1"
+    },
+    {
+      "angle_radians": 2.4805495738983154,
+      "category": "航点",
+      "cell": [
+        338.0,
+        207.0
+      ],
+      "id": 475,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/474/cell"
+      ],
+      "source_pointer": "/objects/474",
+      "unique_id": "gift-alt-PP62-1",
+      "waypoint_name": "gift-alt-PP62-1"
+    },
+    {
+      "angle_radians": 2.4805495738983154,
+      "category": "航点",
+      "cell": [
+        452.0,
+        182.0
+      ],
+      "id": 476,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/475/cell"
+      ],
+      "source_pointer": "/objects/475",
+      "unique_id": "gift-alt-PP63-1",
+      "waypoint_name": "gift-alt-PP63-1"
+    },
+    {
+      "angle_radians": 2.4805495738983154,
+      "category": "航点",
+      "cell": [
+        560.0,
+        147.0
+      ],
+      "id": 477,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/476/cell"
+      ],
+      "source_pointer": "/objects/476",
+      "unique_id": "gift-alt-PP71-1",
+      "waypoint_name": "gift-alt-PP71-1"
+    },
+    {
+      "angle_radians": 2.4805495738983154,
+      "category": "航点",
+      "cell": [
+        519.0,
+        164.0
+      ],
+      "id": 478,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/477/cell"
+      ],
+      "source_pointer": "/objects/477",
+      "unique_id": "gift-alt-PP72-1",
+      "waypoint_name": "gift-alt-PP72-1"
+    },
+    {
+      "angle_radians": 2.4805495738983154,
+      "category": "航点",
+      "cell": [
+        554.0,
+        175.0
+      ],
+      "id": 479,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/478/cell"
+      ],
+      "source_pointer": "/objects/478",
+      "unique_id": "gift-alt-PP73-1",
+      "waypoint_name": "gift-alt-PP73-1"
+    },
+    {
+      "angle_radians": 2.4805495738983154,
+      "category": "航点",
+      "cell": [
+        695.0,
+        316.0
+      ],
+      "id": 480,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/479/cell"
+      ],
+      "source_pointer": "/objects/479",
+      "unique_id": "gift-alt-PP81-1",
+      "waypoint_name": "gift-alt-PP81-1"
+    },
+    {
+      "angle_radians": 2.4805495738983154,
+      "category": "航点",
+      "cell": [
+        709.0,
+        288.0
+      ],
+      "id": 481,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/480/cell"
+      ],
+      "source_pointer": "/objects/480",
+      "unique_id": "gift-alt-PP82-1",
+      "waypoint_name": "gift-alt-PP82-1"
+    },
+    {
+      "angle_radians": 2.4805495738983154,
+      "category": "航点",
+      "cell": [
+        644.0,
+        441.0
+      ],
+      "id": 482,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/481/cell"
+      ],
+      "source_pointer": "/objects/481",
+      "unique_id": "gift-alt-PP83-1",
+      "waypoint_name": "gift-alt-PP83-1"
+    },
+    {
+      "angle_radians": 2.4805495738983154,
+      "category": "航点",
+      "cell": [
+        118.0,
+        640.0
+      ],
+      "id": 483,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/482/cell"
+      ],
+      "source_pointer": "/objects/482",
+      "unique_id": "gift-alt-PPJ1-1",
+      "waypoint_name": "gift-alt-PPJ1-1"
+    },
+    {
+      "angle_radians": 2.4805495738983154,
+      "category": "航点",
+      "cell": [
+        468.0,
+        659.0
+      ],
+      "id": 484,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/483/cell"
+      ],
+      "source_pointer": "/objects/483",
+      "unique_id": "gift-alt-PPJ2-1",
+      "waypoint_name": "gift-alt-PPJ2-1"
+    },
+    {
+      "angle_radians": 2.4805495738983154,
+      "category": "航点",
+      "cell": [
+        588.0,
+        583.0
+      ],
+      "id": 485,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/484/cell"
+      ],
+      "source_pointer": "/objects/484",
+      "unique_id": "gift-alt-PPJ3-1",
+      "waypoint_name": "gift-alt-PPJ3-1"
+    },
+    {
+      "angle_radians": 2.4805495738983154,
+      "category": "航点",
+      "cell": [
+        574.0,
+        460.0
+      ],
+      "id": 486,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/485/cell"
+      ],
+      "source_pointer": "/objects/485",
+      "unique_id": "gift-alt-PPJ4-1",
+      "waypoint_name": "gift-alt-PPJ4-1"
+    },
+    {
+      "angle_radians": 2.4805495738983154,
+      "category": "航点",
+      "cell": [
+        176.0,
+        334.0
+      ],
+      "id": 487,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/486/cell"
+      ],
+      "source_pointer": "/objects/486",
+      "unique_id": "gift-alt-SW53-1",
+      "waypoint_name": "gift-alt-SW53-1"
+    },
+    {
+      "angle_radians": 2.4805495738983154,
+      "category": "航点",
+      "cell": [
+        392.0,
+        236.0
+      ],
+      "id": 488,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/487/cell"
+      ],
+      "source_pointer": "/objects/487",
+      "unique_id": "gift-alt-SW63-1",
+      "waypoint_name": "gift-alt-SW63-1"
+    },
+    {
+      "angle_radians": 2.4805495738983154,
+      "category": "航点",
+      "cell": [
+        681.0,
+        275.0
+      ],
+      "id": 489,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/488/cell"
+      ],
+      "source_pointer": "/objects/488",
+      "unique_id": "gift-alt-SW83-1",
+      "waypoint_name": "gift-alt-SW83-1"
+    },
+    {
+      "angle_radians": 2.4805495738983154,
+      "category": "航点",
+      "cell": [
+        306.0,
+        289.0
+      ],
+      "id": 490,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/489/cell"
+      ],
+      "source_pointer": "/objects/489",
+      "unique_id": "gift-alt-SWA51-1",
+      "waypoint_name": "gift-alt-SWA51-1"
+    },
+    {
+      "angle_radians": 2.4805495738983154,
+      "category": "航点",
+      "cell": [
+        334.0,
+        289.0
+      ],
+      "id": 491,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/490/cell"
+      ],
+      "source_pointer": "/objects/490",
+      "unique_id": "gift-alt-SWA52-1",
+      "waypoint_name": "gift-alt-SWA52-1"
+    },
+    {
+      "angle_radians": 2.4805495738983154,
+      "category": "航点",
+      "cell": [
+        513.0,
+        192.0
+      ],
+      "id": 492,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/491/cell"
+      ],
+      "source_pointer": "/objects/491",
+      "unique_id": "gift-alt-SWA61-1",
+      "waypoint_name": "gift-alt-SWA61-1"
+    },
+    {
+      "angle_radians": 2.4805495738983154,
+      "category": "航点",
+      "cell": [
+        514.0,
+        220.0
+      ],
+      "id": 493,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/492/cell"
+      ],
+      "source_pointer": "/objects/492",
+      "unique_id": "gift-alt-SWA62-1",
+      "waypoint_name": "gift-alt-SWA62-1"
+    },
+    {
+      "angle_radians": 2.4805495738983154,
+      "category": "航点",
+      "cell": [
+        555.0,
+        203.0
+      ],
+      "id": 494,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/493/cell"
+      ],
+      "source_pointer": "/objects/493",
+      "unique_id": "gift-alt-SWA71-1",
+      "waypoint_name": "gift-alt-SWA71-1"
+    },
+    {
+      "angle_radians": 2.4805495738983154,
+      "category": "航点",
+      "cell": [
+        671.0,
+        152.0
+      ],
+      "id": 495,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/494/cell"
+      ],
+      "source_pointer": "/objects/494",
+      "unique_id": "gift-alt-SWA72-1",
+      "waypoint_name": "gift-alt-SWA72-1"
+    },
+    {
+      "angle_radians": 2.4805495738983154,
+      "category": "航点",
+      "cell": [
+        772.0,
+        249.0
+      ],
+      "id": 496,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/495/cell"
+      ],
+      "source_pointer": "/objects/495",
+      "unique_id": "gift-alt-SWA81-1",
+      "waypoint_name": "gift-alt-SWA81-1"
+    },
+    {
+      "angle_radians": 2.4805495738983154,
+      "category": "航点",
+      "cell": [
+        757.0,
+        221.0
+      ],
+      "id": 497,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/496/cell"
+      ],
+      "source_pointer": "/objects/496",
+      "unique_id": "gift-alt-SWA82-1",
+      "waypoint_name": "gift-alt-SWA82-1"
+    },
+    {
+      "angle_radians": 2.4805495738983154,
+      "category": "航点",
+      "cell": [
+        90.0,
+        629.0
+      ],
+      "id": 498,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/497/cell"
+      ],
+      "source_pointer": "/objects/497",
+      "unique_id": "gift-alt-SWJ1-1",
+      "waypoint_name": "gift-alt-SWJ1-1"
+    },
+    {
+      "angle_radians": 2.4805495738983154,
+      "category": "航点",
+      "cell": [
+        437.0,
+        621.0
+      ],
+      "id": 499,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/498/cell"
+      ],
+      "source_pointer": "/objects/498",
+      "unique_id": "gift-alt-SWJ2-1",
+      "waypoint_name": "gift-alt-SWJ2-1"
+    },
+    {
+      "angle_radians": 2.4805495738983154,
+      "category": "航点",
+      "cell": [
+        472.0,
+        577.0
+      ],
+      "id": 500,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/499/cell"
+      ],
+      "source_pointer": "/objects/499",
+      "unique_id": "gift-alt-SWJ3-1",
+      "waypoint_name": "gift-alt-SWJ3-1"
+    },
+    {
+      "angle_radians": 2.4805495738983154,
+      "category": "航点",
+      "cell": [
+        574.0,
+        432.0
+      ],
+      "id": 501,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/500/cell"
+      ],
+      "source_pointer": "/objects/500",
+      "unique_id": "gift-alt-SWJ4-1",
+      "waypoint_name": "gift-alt-SWJ4-1"
+    },
+    {
+      "angle_radians": -2.356194496154785,
+      "category": "航点",
+      "cell": [
+        555.0,
+        231.0
+      ],
+      "id": 502,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/501/cell"
+      ],
+      "source_pointer": "/objects/501",
+      "unique_id": "gift-alt-dual-civilian-air-1",
+      "waypoint_name": "gift-alt-dual-civilian-air-1"
+    },
+    {
+      "angle_radians": -2.356194496154785,
+      "category": "航点",
+      "cell": [
+        541.0,
+        263.0
+      ],
+      "id": 503,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/502/cell"
+      ],
+      "source_pointer": "/objects/502",
+      "unique_id": "gift-alt-dual-civilian-bar-1",
+      "waypoint_name": "gift-alt-dual-civilian-bar-1"
+    },
+    {
+      "angle_radians": -2.356194496154785,
+      "category": "航点",
+      "cell": [
+        546.0,
+        291.0
+      ],
+      "id": 504,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/503/cell"
+      ],
+      "source_pointer": "/objects/503",
+      "unique_id": "gift-alt-dual-civilian-wf-1",
+      "waypoint_name": "gift-alt-dual-civilian-wf-1"
+    },
+    {
+      "angle_radians": -2.356194496154785,
+      "category": "航点",
+      "cell": [
+        548.0,
+        322.0
+      ],
+      "id": 505,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/504/cell"
+      ],
+      "source_pointer": "/objects/504",
+      "unique_id": "gift-alt-dual-creeps-air-1",
+      "waypoint_name": "gift-alt-dual-creeps-air-1"
+    },
+    {
+      "angle_radians": -2.356194496154785,
+      "category": "航点",
+      "cell": [
+        511.0,
+        424.0
+      ],
+      "id": 506,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/505/cell"
+      ],
+      "source_pointer": "/objects/505",
+      "unique_id": "gift-alt-dual-creeps-bar-1",
+      "waypoint_name": "gift-alt-dual-creeps-bar-1"
+    },
+    {
+      "angle_radians": -2.356194496154785,
+      "category": "航点",
+      "cell": [
+        490.0,
+        313.0
+      ],
+      "id": 507,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/506/cell"
+      ],
+      "source_pointer": "/objects/506",
+      "unique_id": "gift-alt-dual-creeps-wf-1",
+      "waypoint_name": "gift-alt-dual-creeps-wf-1"
+    },
+    {
+      "angle_radians": -2.356194496154785,
+      "category": "航点",
+      "cell": [
+        141.0,
+        611.0
+      ],
+      "id": 508,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/507/cell"
+      ],
+      "source_pointer": "/objects/507",
+      "unique_id": "gift-alt-dual-p1-air-1",
+      "waypoint_name": "gift-alt-dual-p1-air-1"
+    },
+    {
+      "angle_radians": -2.356194496154785,
+      "category": "航点",
+      "cell": [
+        179.0,
+        608.0
+      ],
+      "id": 509,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/508/cell"
+      ],
+      "source_pointer": "/objects/508",
+      "unique_id": "gift-alt-dual-p1-bar-1",
+      "waypoint_name": "gift-alt-dual-p1-bar-1"
+    },
+    {
+      "angle_radians": -2.356194496154785,
+      "category": "航点",
+      "cell": [
+        130.0,
+        583.0
+      ],
+      "id": 510,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/509/cell"
+      ],
+      "source_pointer": "/objects/509",
+      "unique_id": "gift-alt-dual-p1-wf-1",
+      "waypoint_name": "gift-alt-dual-p1-wf-1"
+    },
+    {
+      "angle_radians": -2.356194496154785,
+      "category": "航点",
+      "cell": [
+        293.0,
+        648.0
+      ],
+      "id": 511,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/510/cell"
+      ],
+      "source_pointer": "/objects/510",
+      "unique_id": "gift-alt-dual-p2-air-1",
+      "waypoint_name": "gift-alt-dual-p2-air-1"
+    },
+    {
+      "angle_radians": -2.356194496154785,
+      "category": "航点",
+      "cell": [
+        310.0,
+        613.0
+      ],
+      "id": 512,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/511/cell"
+      ],
+      "source_pointer": "/objects/511",
+      "unique_id": "gift-alt-dual-p2-bar-1",
+      "waypoint_name": "gift-alt-dual-p2-bar-1"
+    },
+    {
+      "angle_radians": -2.356194496154785,
+      "category": "航点",
+      "cell": [
+        439.0,
+        580.0
+      ],
+      "id": 513,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/512/cell"
+      ],
+      "source_pointer": "/objects/512",
+      "unique_id": "gift-alt-dual-p2-wf-1",
+      "waypoint_name": "gift-alt-dual-p2-wf-1"
+    },
+    {
+      "angle_radians": -2.356194496154785,
+      "category": "航点",
+      "cell": [
+        430.0,
+        503.0
+      ],
+      "id": 514,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/513/cell"
+      ],
+      "source_pointer": "/objects/513",
+      "unique_id": "gift-alt-dual-p3-air-1",
+      "waypoint_name": "gift-alt-dual-p3-air-1"
+    },
+    {
+      "angle_radians": -2.356194496154785,
+      "category": "航点",
+      "cell": [
+        394.0,
+        507.0
+      ],
+      "id": 515,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/514/cell"
+      ],
+      "source_pointer": "/objects/514",
+      "unique_id": "gift-alt-dual-p3-bar-1",
+      "waypoint_name": "gift-alt-dual-p3-bar-1"
+    },
+    {
+      "angle_radians": -2.356194496154785,
+      "category": "航点",
+      "cell": [
+        473.0,
+        442.0
+      ],
+      "id": 516,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/515/cell"
+      ],
+      "source_pointer": "/objects/515",
+      "unique_id": "gift-alt-dual-p3-wf-1",
+      "waypoint_name": "gift-alt-dual-p3-wf-1"
+    },
+    {
+      "angle_radians": -2.356194496154785,
+      "category": "航点",
+      "cell": [
+        456.0,
+        361.0
+      ],
+      "id": 517,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/516/cell"
+      ],
+      "source_pointer": "/objects/516",
+      "unique_id": "gift-alt-dual-p4-air-1",
+      "waypoint_name": "gift-alt-dual-p4-air-1"
+    },
+    {
+      "angle_radians": -2.356194496154785,
+      "category": "航点",
+      "cell": [
+        378.0,
+        396.0
+      ],
+      "id": 518,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/517/cell"
+      ],
+      "source_pointer": "/objects/517",
+      "unique_id": "gift-alt-dual-p4-bar-1",
+      "waypoint_name": "gift-alt-dual-p4-bar-1"
+    },
+    {
+      "angle_radians": -2.356194496154785,
+      "category": "航点",
+      "cell": [
+        428.0,
+        294.0
+      ],
+      "id": 519,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/518/cell"
+      ],
+      "source_pointer": "/objects/518",
+      "unique_id": "gift-alt-dual-p4-wf-1",
+      "waypoint_name": "gift-alt-dual-p4-wf-1"
+    },
+    {
+      "angle_radians": -2.356194496154785,
+      "category": "航点",
+      "cell": [
+        143.0,
+        366.0
+      ],
+      "id": 520,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/519/cell"
+      ],
+      "source_pointer": "/objects/519",
+      "unique_id": "gift-alt-dual-p5-air-1",
+      "waypoint_name": "gift-alt-dual-p5-air-1"
+    },
+    {
+      "angle_radians": -2.356194496154785,
+      "category": "航点",
+      "cell": [
+        291.0,
+        342.0
+      ],
+      "id": 521,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/520/cell"
+      ],
+      "source_pointer": "/objects/520",
+      "unique_id": "gift-alt-dual-p5-bar-1",
+      "waypoint_name": "gift-alt-dual-p5-bar-1"
+    },
+    {
+      "angle_radians": -2.356194496154785,
+      "category": "航点",
+      "cell": [
+        337.0,
+        317.0
+      ],
+      "id": 522,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/521/cell"
+      ],
+      "source_pointer": "/objects/521",
+      "unique_id": "gift-alt-dual-p5-wf-1",
+      "waypoint_name": "gift-alt-dual-p5-wf-1"
+    },
+    {
+      "angle_radians": -2.356194496154785,
+      "category": "航点",
+      "cell": [
+        115.0,
+        377.0
+      ],
+      "id": 523,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/522/cell"
+      ],
+      "source_pointer": "/objects/522",
+      "unique_id": "gift-alt-dual-p6-air-1",
+      "waypoint_name": "gift-alt-dual-p6-air-1"
+    },
+    {
+      "angle_radians": -2.356194496154785,
+      "category": "航点",
+      "cell": [
+        141.0,
+        457.0
+      ],
+      "id": 524,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/523/cell"
+      ],
+      "source_pointer": "/objects/523",
+      "unique_id": "gift-alt-dual-p6-bar-1",
+      "waypoint_name": "gift-alt-dual-p6-bar-1"
+    },
+    {
+      "angle_radians": -2.356194496154785,
+      "category": "航点",
+      "cell": [
+        167.0,
+        485.0
+      ],
+      "id": 525,
+      "object_type": "*Waypoints/Waypoint",
+      "position_pointers": [
+        "/objects/524/cell"
+      ],
+      "source_pointer": "/objects/524",
+      "unique_id": "gift-alt-dual-p6-wf-1",
+      "waypoint_name": "gift-alt-dual-p6-wf-1"
+    },
+    {
+      "category": "斜坡",
+      "cell": [
+        247.4,
+        592.6
+      ],
+      "id": 526,
+      "position_pointers": [
+        "/ramps/0/x",
+        "/ramps/0/y"
+      ],
+      "source_pointer": "/ramps/0"
+    },
+    {
+      "category": "斜坡",
+      "cell": [
+        582.9,
+        110.8
+      ],
+      "id": 527,
+      "position_pointers": [
+        "/ramps/1/x",
+        "/ramps/1/y"
+      ],
+      "source_pointer": "/ramps/1"
+    },
+    {
+      "category": "斜坡",
+      "cell": [
+        401.75209008877886,
+        142.930366661854
+      ],
+      "id": 528,
+      "position_pointers": [
+        "/ramps/2/x",
+        "/ramps/2/y"
+      ],
+      "source_pointer": "/ramps/2"
+    },
+    {
+      "category": "斜坡",
+      "cell": [
+        281.8,
+        176.0
+      ],
+      "id": 529,
+      "position_pointers": [
+        "/ramps/3/x",
+        "/ramps/3/y"
+      ],
+      "source_pointer": "/ramps/3"
+    },
+    {
+      "category": "斜坡",
+      "cell": [
+        218.6,
+        240.2
+      ],
+      "id": 530,
+      "position_pointers": [
+        "/ramps/4/x",
+        "/ramps/4/y"
+      ],
+      "source_pointer": "/ramps/4"
+    },
+    {
+      "category": "斜坡",
+      "cell": [
+        757.4,
+        283.7
+      ],
+      "id": 531,
+      "position_pointers": [
+        "/ramps/5/x",
+        "/ramps/5/y"
+      ],
+      "source_pointer": "/ramps/5"
+    },
+    {
+      "category": "斜坡",
+      "cell": [
+        130.4,
+        300.5
+      ],
+      "id": 532,
+      "position_pointers": [
+        "/ramps/6/x",
+        "/ramps/6/y"
+      ],
+      "source_pointer": "/ramps/6"
+    },
+    {
+      "category": "斜坡",
+      "cell": [
+        237.9,
+        374.8
+      ],
+      "id": 533,
+      "position_pointers": [
+        "/ramps/7/x",
+        "/ramps/7/y"
+      ],
+      "source_pointer": "/ramps/7"
+    },
+    {
+      "category": "斜坡",
+      "cell": [
+        671.3,
+        395.9
+      ],
+      "id": 534,
+      "position_pointers": [
+        "/ramps/8/x",
+        "/ramps/8/y"
+      ],
+      "source_pointer": "/ramps/8"
+    },
+    {
+      "category": "斜坡",
+      "cell": [
+        415.4,
+        399.1
+      ],
+      "id": 535,
+      "position_pointers": [
+        "/ramps/9/x",
+        "/ramps/9/y"
+      ],
+      "source_pointer": "/ramps/9"
+    },
+    {
+      "category": "斜坡",
+      "cell": [
+        43.0,
+        402.2
+      ],
+      "id": 536,
+      "position_pointers": [
+        "/ramps/10/x",
+        "/ramps/10/y"
+      ],
+      "source_pointer": "/ramps/10"
+    },
+    {
+      "category": "斜坡",
+      "cell": [
+        118.7,
+        511.1
+      ],
+      "id": 537,
+      "position_pointers": [
+        "/ramps/11/x",
+        "/ramps/11/y"
+      ],
+      "source_pointer": "/ramps/11"
+    },
+    {
+      "category": "斜坡",
+      "cell": [
+        620.1,
+        524.3
+      ],
+      "id": 538,
+      "position_pointers": [
+        "/ramps/12/x",
+        "/ramps/12/y"
+      ],
+      "source_pointer": "/ramps/12"
+    },
+    {
+      "category": "斜坡",
+      "cell": [
+        529.2,
+        550.1
+      ],
+      "id": 539,
+      "position_pointers": [
+        "/ramps/13/x",
+        "/ramps/13/y"
+      ],
+      "source_pointer": "/ramps/13"
+    },
+    {
+      "category": "斜坡",
+      "cell": [
+        199.1,
+        632.4
+      ],
+      "id": 540,
+      "position_pointers": [
+        "/ramps/14/x",
+        "/ramps/14/y"
+      ],
+      "source_pointer": "/ramps/14"
+    },
+    {
+      "category": "斜坡",
+      "cell": [
+        504.4,
+        642.8
+      ],
+      "id": 541,
+      "position_pointers": [
+        "/ramps/15/x",
+        "/ramps/15/y"
+      ],
+      "source_pointer": "/ramps/15"
+    },
+    {
+      "category": "斜坡",
+      "cell": [
+        411.5,
+        677.1
+      ],
+      "id": 542,
+      "position_pointers": [
+        "/ramps/16/x",
+        "/ramps/16/y"
+      ],
+      "source_pointer": "/ramps/16"
+    },
+    {
+      "category": "斜坡",
+      "cell": [
+        337.8,
+        693.4
+      ],
+      "id": 543,
+      "position_pointers": [
+        "/ramps/17/x",
+        "/ramps/17/y"
+      ],
+      "source_pointer": "/ramps/17"
+    },
+    {
+      "category": "斜坡",
+      "cell": [
+        264.8,
+        714.0
+      ],
+      "id": 544,
+      "position_pointers": [
+        "/ramps/18/x",
+        "/ramps/18/y"
+      ],
+      "source_pointer": "/ramps/18"
+    },
+    {
+      "category": "斜坡",
+      "cell": [
+        282.0,
+        419.0
+      ],
+      "id": 545,
+      "position_pointers": [
+        "/ramps/19/x",
+        "/ramps/19/y"
+      ],
+      "source_pointer": "/ramps/19"
+    },
+    {
+      "category": "斜坡",
+      "cell": [
+        428.0,
+        532.0
+      ],
+      "id": 546,
+      "position_pointers": [
+        "/ramps/20/x",
+        "/ramps/20/y"
+      ],
+      "source_pointer": "/ramps/20"
+    }
+  ],
+  "layout": "source/layout.json",
+  "map_id": "海南",
+  "numbering": "Objects in layout order, then ramps. Moving coordinates preserves IDs; inserting, deleting or reordering entries can change IDs.",
+  "recipe_layout": "histories/v11/layout.json",
+  "schema_version": 1,
+  "version": "T0.3.7",
+  "viewport": {
+    "grid_cells": [
+      840,
+      840
+    ],
+    "grid_size": 840,
+    "off_grid_entries": 0,
+    "origin_cell": [
+      0.0,
+      0.0
+    ],
+    "span_cells": 840.0
+  }
+}

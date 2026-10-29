@@ -1,0 +1,222 @@
+{
+  "schema_version": 1,
+  "map_name": "群峰拱野",
+  "blueprint": "北京",
+  "label": "区中心",
+  "coordinate_system": "WGS84",
+  "source": "https://geo.datav.aliyun.com/areas_v3/bound/110000_full.json",
+  "source_field": "properties.center (administrative center, not polygon centroid)",
+  "conversion": "GCJ-02 approximately inverted to WGS84 by six iterations, matching terrain boundary ingestion",
+  "retrieved_date": "2026-10-29",
+  "points": [
+    {
+      "adcode": "110101",
+      "name": "东城区",
+      "level": "district",
+      "center_wgs84": [
+        116.41251575769543,
+        39.91614182396087
+      ],
+      "center_gcj02": [
+        116.418757,
+        39.917544
+      ]
+    },
+    {
+      "adcode": "110102",
+      "name": "西城区",
+      "level": "district",
+      "center_wgs84": [
+        116.36058955670512,
+        39.91393928719318
+      ],
+      "center_gcj02": [
+        116.366794,
+        39.915309
+      ]
+    },
+    {
+      "adcode": "110105",
+      "name": "朝阳区",
+      "level": "district",
+      "center_wgs84": [
+        116.48032697042629,
+        39.92020923909865
+      ],
+      "center_gcj02": [
+        116.486409,
+        39.921489
+      ]
+    },
+    {
+      "adcode": "110106",
+      "name": "丰台区",
+      "level": "district",
+      "center_wgs84": [
+        116.28092933005087,
+        39.86241023844018
+      ],
+      "center_gcj02": [
+        116.286968,
+        39.863642
+      ]
+    },
+    {
+      "adcode": "110107",
+      "name": "石景山区",
+      "level": "district",
+      "center_wgs84": [
+        116.18931555089422,
+        39.913324722971915
+      ],
+      "center_gcj02": [
+        116.195445,
+        39.914601
+      ]
+    },
+    {
+      "adcode": "110108",
+      "name": "海淀区",
+      "level": "district",
+      "center_wgs84": [
+        116.30422811044936,
+        39.954804616829364
+      ],
+      "center_gcj02": [
+        116.310316,
+        39.956074
+      ]
+    },
+    {
+      "adcode": "110109",
+      "name": "门头沟区",
+      "level": "district",
+      "center_wgs84": [
+        116.09905324948721,
+        39.935784735975346
+      ],
+      "center_gcj02": [
+        116.105381,
+        39.937183
+      ]
+    },
+    {
+      "adcode": "110111",
+      "name": "房山区",
+      "level": "district",
+      "center_wgs84": [
+        116.13290086050739,
+        39.734174485685486
+      ],
+      "center_gcj02": [
+        116.139157,
+        39.735535
+      ]
+    },
+    {
+      "adcode": "110112",
+      "name": "通州区",
+      "level": "district",
+      "center_wgs84": [
+        116.65272927707986,
+        39.90139099171983
+      ],
+      "center_gcj02": [
+        116.658603,
+        39.902486
+      ]
+    },
+    {
+      "adcode": "110113",
+      "name": "顺义区",
+      "level": "district",
+      "center_wgs84": [
+        116.6476365758136,
+        40.12783772365567
+      ],
+      "center_gcj02": [
+        116.653525,
+        40.128936
+      ]
+    },
+    {
+      "adcode": "110114",
+      "name": "昌平区",
+      "level": "district",
+      "center_wgs84": [
+        116.22982206693507,
+        40.21683952702308
+      ],
+      "center_gcj02": [
+        116.235906,
+        40.218085
+      ]
+    },
+    {
+      "adcode": "110115",
+      "name": "大兴区",
+      "level": "district",
+      "center_wgs84": [
+        116.33191276669405,
+        39.7276028903736
+      ],
+      "center_gcj02": [
+        116.338033,
+        39.728908
+      ]
+    },
+    {
+      "adcode": "110116",
+      "name": "怀柔区",
+      "level": "district",
+      "center_wgs84": [
+        116.63124662928784,
+        40.32316527089906
+      ],
+      "center_gcj02": [
+        116.637122,
+        40.324272
+      ]
+    },
+    {
+      "adcode": "110117",
+      "name": "平谷区",
+      "level": "district",
+      "center_wgs84": [
+        117.10577035352529,
+        40.14335093406984
+      ],
+      "center_gcj02": [
+        117.112335,
+        40.144783
+      ]
+    },
+    {
+      "adcode": "110118",
+      "name": "密云区",
+      "level": "district",
+      "center_wgs84": [
+        116.8373080614255,
+        40.376183872614554
+      ],
+      "center_gcj02": [
+        116.843352,
+        40.377362
+      ]
+    },
+    {
+      "adcode": "110119",
+      "name": "延庆区",
+      "level": "district",
+      "center_wgs84": [
+        115.97887729569089,
+        40.46408458410315
+      ],
+      "center_gcj02": [
+        115.985006,
+        40.465325
+      ]
+    }
+  ],
+  "excluded_features": []
+}

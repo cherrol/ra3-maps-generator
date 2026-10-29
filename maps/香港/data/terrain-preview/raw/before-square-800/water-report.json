@@ -1,0 +1,41 @@
+{
+  "date": "2026-10-29",
+  "map_id": "香港",
+  "map_name": "群岬叠帆",
+  "mode": "map-local-compact-water-design",
+  "designed_shorelines_are_not_measured": true,
+  "include_rivers": false,
+  "source_selection_report": "raw/before-water-shaping-water-report.json",
+  "water_cells_in_input": 288009,
+  "water_cells_in_game_frame": 251711,
+  "component_count_in_game_frame": 1,
+  "components_in_game_frame": [
+    {
+      "area_cells": 251711,
+      "bbox_game_cells": [
+        0,
+        0,
+        799,
+        583
+      ],
+      "bbox_fill_fraction": 0.5388,
+      "bbox_aspect_ratio": 1.3699,
+      "raster_perimeter": 9194,
+      "compactness_4pi_area_over_perimeter_squared": 0.0374,
+      "maximum_manhattan_interior_radius_cells": 125,
+      "touches_game_frame": true
+    }
+  ],
+  "design_lake_groups": [],
+  "water_exactly_ocean_union_original_large_lakes": false,
+  "original_geographic_arrays_preserved": true,
+  "existing_land_layers_preserved": true,
+  "original_final_thresholds_preserved": true,
+  "reference": "raw/reference-before-water-shaping.npz",
+  "active_shoreline_refinement": "shoreline-refinement-report.json",
+  "land_protrusions_removed_input_cells": 9151,
+  "land_protrusions_removed_game_cells": 8605,
+  "small_island_and_waterbody_transition_plan": "shoreline-transition-plan.json",
+  "existing_water_preserved_during_land_refinement": true,
+  "full_perimeter_passability_status": "preview design requirement; implement and verify height/navigation during playable-map authoring"
+}

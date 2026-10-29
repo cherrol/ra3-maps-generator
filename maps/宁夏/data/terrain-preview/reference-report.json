@@ -1,0 +1,119 @@
+{
+  "blueprint": "宁夏",
+  "boundary_conversion": "GCJ-02 approximately inverted to WGS84, six iterations",
+  "boundary_source": "https://geo.datav.aliyun.com/areas_v3/bound/640000.json",
+  "bounds_wgs84": [
+    104.13672576867968,
+    35.11348035823131,
+    107.80207460335868,
+    39.50596983854667
+  ],
+  "date": "2026-10-29",
+  "dem_attribution": "Mapzen / AWS Terrain Tiles; SRTM and GMTED2010 courtesy USGS; see tilezen/joerd docs/attribution.md",
+  "dem_source": "https://registry.opendata.aws/terrain-tiles/",
+  "elevation_max_m": 3428.6203995268916,
+  "elevation_min_m": 893.8916521991608,
+  "grid": [
+    560,
+    840
+  ],
+  "limitation": "reference cartography at sampled resolution; sampled maxima and polygon areas are not surveyed values",
+  "map_name": "沙岸绿畴",
+  "no_province_based_terrain_clipping": true,
+  "north_up": true,
+  "terrain_zoom": 8,
+  "tiles_validated": [
+    {
+      "crc32": 3944205596,
+      "x": 202,
+      "y": 97,
+      "z": 8
+    },
+    {
+      "crc32": 2946865259,
+      "x": 202,
+      "y": 98,
+      "z": 8
+    },
+    {
+      "crc32": 1671839884,
+      "x": 202,
+      "y": 99,
+      "z": 8
+    },
+    {
+      "crc32": 257920968,
+      "x": 202,
+      "y": 100,
+      "z": 8
+    },
+    {
+      "crc32": 1823456119,
+      "x": 202,
+      "y": 101,
+      "z": 8
+    },
+    {
+      "crc32": 2185181726,
+      "x": 203,
+      "y": 97,
+      "z": 8
+    },
+    {
+      "crc32": 4158328824,
+      "x": 203,
+      "y": 98,
+      "z": 8
+    },
+    {
+      "crc32": 3795163340,
+      "x": 203,
+      "y": 99,
+      "z": 8
+    },
+    {
+      "crc32": 820559391,
+      "x": 203,
+      "y": 100,
+      "z": 8
+    },
+    {
+      "crc32": 2028548962,
+      "x": 203,
+      "y": 101,
+      "z": 8
+    },
+    {
+      "crc32": 619552085,
+      "x": 204,
+      "y": 97,
+      "z": 8
+    },
+    {
+      "crc32": 1268973816,
+      "x": 204,
+      "y": 98,
+      "z": 8
+    },
+    {
+      "crc32": 4235137434,
+      "x": 204,
+      "y": 99,
+      "z": 8
+    },
+    {
+      "crc32": 1035089525,
+      "x": 204,
+      "y": 100,
+      "z": 8
+    },
+    {
+      "crc32": 536254127,
+      "x": 204,
+      "y": 101,
+      "z": 8
+    }
+  ],
+  "water_display_policy": "water-policy.json",
+  "water_source": "Natural Earth 1:10m ocean and lakes; selected OSM reservoir polygons; minimum lake area 80 km2"
+}

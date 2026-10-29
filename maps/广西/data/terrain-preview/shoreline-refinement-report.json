@@ -1,0 +1,138 @@
+{
+  "added_land_cells": 0,
+  "all_nonwater_arrays_byte_identical": true,
+  "design_land": {
+    "cells": 476410,
+    "component_count": 1,
+    "components": [
+      {
+        "area_cells": 476410,
+        "bbox_aspect_ratio": 1.25,
+        "bounds": [
+          0,
+          0,
+          800,
+          640
+        ],
+        "compactness": 0.5612526080456751,
+        "index": 0,
+        "maximum_interior_radius_cells": 673.6666666666666,
+        "perimeter": 3266,
+        "touches_frame": true
+      }
+    ]
+  },
+  "design_water": {
+    "cells": 35590,
+    "component_count": 2,
+    "components": [
+      {
+        "area_cells": 19377,
+        "bbox_aspect_ratio": 2.357142857142857,
+        "bounds": [
+          288,
+          528,
+          552,
+          640
+        ],
+        "compactness": 0.34509433587647065,
+        "index": 0,
+        "maximum_interior_radius_cells": 97.0,
+        "perimeter": 840,
+        "touches_frame": true
+      },
+      {
+        "area_cells": 16213,
+        "bbox_aspect_ratio": 1.6363636363636365,
+        "bounds": [
+          602,
+          519,
+          800,
+          640
+        ],
+        "compactness": 0.4538618105827696,
+        "index": 1,
+        "maximum_interior_radius_cells": 110.0,
+        "perimeter": 670,
+        "touches_frame": true
+      }
+    ]
+  },
+  "existing_water_preserved": true,
+  "input_cells": [
+    800,
+    640
+  ],
+  "land_open_radius_input_cells": 10,
+  "main_land_and_each_preserved_compact_island_stable_under_opening": true,
+  "map_id": "广西",
+  "method": "morphological opening of land to retract narrow peninsulas, necks and pointed spurs",
+  "preserved_compact_small_islands": [],
+  "removed_land_cells": 168,
+  "small_shore_transition_policy": {
+    "bidirectional": true,
+    "continuous": true,
+    "few_exits_do_not_satisfy": true,
+    "scope": "entire perimeter of retained small islands and small waterbodies",
+    "status": "design requirement; implement and verify terrain height/navigation when producing playable maps"
+  },
+  "source": "maps/广西/data/terrain-preview/raw/reference-before-shoreline-refinement.npz",
+  "source_land": {
+    "cells": 476578,
+    "component_count": 1,
+    "components": [
+      {
+        "area_cells": 476578,
+        "bbox_aspect_ratio": 1.25,
+        "bounds": [
+          0,
+          0,
+          800,
+          640
+        ],
+        "compactness": 0.5539623343391721,
+        "index": 0,
+        "maximum_interior_radius_cells": 673.6666666666666,
+        "perimeter": 3288,
+        "touches_frame": true
+      }
+    ]
+  },
+  "source_water": {
+    "cells": 35422,
+    "component_count": 2,
+    "components": [
+      {
+        "area_cells": 19256,
+        "bbox_aspect_ratio": 2.357142857142857,
+        "bounds": [
+          288,
+          528,
+          552,
+          640
+        ],
+        "compactness": 0.33023903909470836,
+        "index": 0,
+        "maximum_interior_radius_cells": 95.33333333333333,
+        "perimeter": 856,
+        "touches_frame": true
+      },
+      {
+        "area_cells": 16166,
+        "bbox_aspect_ratio": 1.6363636363636365,
+        "bounds": [
+          602,
+          519,
+          800,
+          640
+        ],
+        "compactness": 0.44454839499608373,
+        "index": 1,
+        "maximum_interior_radius_cells": 110.0,
+        "perimeter": 676,
+        "touches_frame": true
+      }
+    ]
+  },
+  "date": "2026-10-29"
+}

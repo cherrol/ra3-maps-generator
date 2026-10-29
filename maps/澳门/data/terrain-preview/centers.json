@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "map_name": "潮汀流光",
+  "blueprint": "澳门",
+  "label": "分区中心",
+  "coordinate_system": "WGS84",
+  "source": "https://geo.datav.aliyun.com/areas_v3/bound/820000_full.json",
+  "source_field": "properties.center (administrative center, not polygon centroid)",
+  "conversion": "GCJ-02 approximately inverted to WGS84 by six iterations, matching terrain boundary ingestion",
+  "retrieved_date": "2026-10-29",
+  "points": [
+    {
+      "adcode": "820001",
+      "name": "花地玛堂区",
+      "level": "district",
+      "center_wgs84": [
+        113.54780196499284,
+        22.21082188429244
+      ],
+      "center_gcj02": [
+        113.5528956,
+        22.20787
+      ]
+    },
+    {
+      "adcode": "820002",
+      "name": "花王堂区",
+      "level": "district",
+      "center_wgs84": [
+        113.54385715965672,
+        22.202147760556343
+      ],
+      "center_gcj02": [
+        113.5489608,
+        22.1992075
+      ]
+    },
+    {
+      "adcode": "820003",
+      "name": "望德堂区",
+      "level": "district",
+      "center_wgs84": [
+        113.54508284819609,
+        22.196661916671474
+      ],
+      "center_gcj02": [
+        113.5501828,
+        22.19372083
+      ]
+    },
+    {
+      "adcode": "820004",
+      "name": "大堂区",
+      "level": "district",
+      "center_wgs84": [
+        113.54855705570691,
+        22.191486192609062
+      ],
+      "center_gcj02": [
+        113.5536475,
+        22.18853944
+      ]
+    },
+    {
+      "adcode": "820005",
+      "name": "风顺堂区",
+      "level": "district",
+      "center_wgs84": [
+        113.53680476042291,
+        22.190287433970568
+      ],
+      "center_gcj02": [
+        113.5419278,
+        22.18736806
+      ]
+    },
+    {
+      "adcode": "820006",
+      "name": "嘉模堂区",
+      "level": "district",
+      "center_wgs84": [
+        113.55362876802701,
+        22.156703455362543
+      ],
+      "center_gcj02": [
+        113.5587044,
+        22.15375944
+      ]
+    },
+    {
+      "adcode": "820007",
+      "name": "路凼填海区",
+      "level": "district",
+      "center_wgs84": [
+        113.56454828323733,
+        22.139585847339337
+      ],
+      "center_gcj02": [
+        113.5695992,
+        22.13663
+      ]
+    },
+    {
+      "adcode": "820008",
+      "name": "圣方济各堂区",
+      "level": "district",
+      "center_wgs84": [
+        113.55488345440399,
+        22.126420764075178
+      ],
+      "center_gcj02": [
+        113.5599542,
+        22.12348639
+      ]
+    }
+  ],
+  "excluded_features": []
+}

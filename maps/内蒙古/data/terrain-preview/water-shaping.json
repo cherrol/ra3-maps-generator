@@ -1,0 +1,51 @@
+{
+  "id": "内蒙古",
+  "source": "maps/内蒙古/data/terrain-preview/raw/reference-before-water-shaping.npz",
+  "output": "maps/内蒙古/data/terrain-preview/input.npz",
+  "report": "maps/内蒙古/data/terrain-preview/water-shaping-report.json",
+  "ocean": {
+    "open_radius": 8,
+    "close_radius": 5,
+    "min_component_area": 400
+  },
+  "lake": {
+    "default_action": "drop",
+    "groups": [
+      {
+        "name": "内蒙古-湖区1",
+        "bounds": [
+          203,
+          0,
+          357,
+          95
+        ],
+        "action": "hull",
+        "open_radius": 8,
+        "close_radius": 0,
+        "min_area": 400
+      },
+      {
+        "name": "内蒙古-湖区3",
+        "bounds": [
+          567,
+          177,
+          597,
+          208
+        ],
+        "action": "hull",
+        "open_radius": 6,
+        "close_radius": 0,
+        "min_area": 250
+      }
+    ]
+  },
+  "schema_version": 1,
+  "date": "2026-10-29",
+  "scope": "game terrain preview water design; preserve original elevation, geographic boundary and raw masks",
+  "coordinate_system": "input grid origin northwest; x east, y south; half-open bounds",
+  "rebuild": [
+    "work/terrain-preview-water/process maps/内蒙古/data/terrain-preview/water-shaping.json",
+    "cargo run --release --locked --offline -- terrain-preview 内蒙古 maps/内蒙古/data/terrain-preview/input.npz"
+  ],
+  "frame_trim_note": "remove water bodies that become tiny or narrow remnants in the final playable crop"
+}

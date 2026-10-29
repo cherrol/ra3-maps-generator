@@ -1,0 +1,56 @@
+{
+  "date": "2026-10-29",
+  "map_id": "广西",
+  "map_name": "碧嶂回澜",
+  "mode": "map-local-compact-water-design",
+  "designed_shorelines_are_not_measured": true,
+  "include_rivers": false,
+  "source_selection_report": "raw/before-water-shaping-water-report.json",
+  "water_cells_in_input": 35422,
+  "water_cells_in_game_frame": 27605,
+  "component_count_in_game_frame": 2,
+  "components_in_game_frame": [
+    {
+      "area_cells": 15951,
+      "bbox_game_cells": [
+        323,
+        535,
+        559,
+        631
+      ],
+      "bbox_fill_fraction": 0.6939,
+      "bbox_aspect_ratio": 2.4433,
+      "raster_perimeter": 726,
+      "compactness_4pi_area_over_perimeter_squared": 0.3803,
+      "maximum_manhattan_interior_radius_cells": 48,
+      "touches_game_frame": true
+    },
+    {
+      "area_cells": 11654,
+      "bbox_game_cells": [
+        613,
+        527,
+        799,
+        631
+      ],
+      "bbox_fill_fraction": 0.5935,
+      "bbox_aspect_ratio": 1.781,
+      "raster_perimeter": 614,
+      "compactness_4pi_area_over_perimeter_squared": 0.3885,
+      "maximum_manhattan_interior_radius_cells": 41,
+      "touches_game_frame": true
+    }
+  ],
+  "design_lake_groups": [],
+  "water_exactly_ocean_union_original_large_lakes": false,
+  "original_geographic_arrays_preserved": true,
+  "existing_land_layers_preserved": true,
+  "original_final_thresholds_preserved": true,
+  "reference": "raw/reference-before-water-shaping.npz",
+  "active_shoreline_refinement": "shoreline-refinement-report.json",
+  "land_protrusions_removed_input_cells": 168,
+  "land_protrusions_removed_game_cells": 161,
+  "small_island_and_waterbody_transition_plan": "shoreline-transition-plan.json",
+  "existing_water_preserved_during_land_refinement": true,
+  "full_perimeter_passability_status": "preview design requirement; implement and verify height/navigation during playable-map authoring"
+}

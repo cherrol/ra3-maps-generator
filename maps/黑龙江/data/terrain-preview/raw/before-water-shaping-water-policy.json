@@ -1,0 +1,30 @@
+{
+  "include_rivers": false,
+  "preserve_ocean": true,
+  "minimum_lake_area_km2": 80,
+  "lake_area_method": "spherical polygon area; whole waterbody minus holes before frame clipping",
+  "ocean_channel_open_radius_cells": 3,
+  "lakes": [
+    {
+      "name": "兴凯湖",
+      "area_km2": 4036.3695325664216
+    },
+    {
+      "name": "查干湖",
+      "area_km2": 211.41100743488363
+    },
+    {
+      "name": "松花湖",
+      "area_km2": 175.69662734405478
+    },
+    {
+      "name": "结雅水库",
+      "area_km2": 3269.487461249251
+    },
+    {
+      "name": "松花湖",
+      "area_km2": 217.79044886687052
+    }
+  ],
+  "date": "2026-10-29"
+}

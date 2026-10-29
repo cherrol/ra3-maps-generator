@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "map_name": "雪脊擎天",
+  "blueprint": "西藏",
+  "label": "地级行政中心",
+  "coordinate_system": "WGS84",
+  "source": "https://geo.datav.aliyun.com/areas_v3/bound/540000_full.json",
+  "source_field": "properties.center (administrative center, not polygon centroid)",
+  "conversion": "GCJ-02 approximately inverted to WGS84 by six iterations, matching terrain boundary ingestion",
+  "retrieved_date": "2026-10-29",
+  "points": [
+    {
+      "adcode": "540100",
+      "name": "拉萨市",
+      "level": "city",
+      "center_wgs84": [
+        91.13066645973566,
+        29.663078888624653
+      ],
+      "center_gcj02": [
+        91.132212,
+        29.660361
+      ]
+    },
+    {
+      "adcode": "540200",
+      "name": "日喀则市",
+      "level": "city",
+      "center_wgs84": [
+        88.88311512531047,
+        29.270783777502036
+      ],
+      "center_gcj02": [
+        88.885148,
+        29.267519
+      ]
+    },
+    {
+      "adcode": "540300",
+      "name": "昌都市",
+      "level": "city",
+      "center_wgs84": [
+        97.1779275523352,
+        31.13921295375918
+      ],
+      "center_gcj02": [
+        97.178452,
+        31.136875
+      ]
+    },
+    {
+      "adcode": "540400",
+      "name": "林芝市",
+      "level": "city",
+      "center_wgs84": [
+        94.3611828375383,
+        29.65738140717587
+      ],
+      "center_gcj02": [
+        94.362348,
+        29.654693
+      ]
+    },
+    {
+      "adcode": "540500",
+      "name": "山南市",
+      "level": "city",
+      "center_wgs84": [
+        91.76530749049338,
+        29.239099791053384
+      ],
+      "center_gcj02": [
+        91.766529,
+        29.236023
+      ]
+    },
+    {
+      "adcode": "540600",
+      "name": "那曲市",
+      "level": "city",
+      "center_wgs84": [
+        92.05892184432872,
+        31.478228568706488
+      ],
+      "center_gcj02": [
+        92.060214,
+        31.476004
+      ]
+    },
+    {
+      "adcode": "542500",
+      "name": "阿里地区",
+      "level": "city",
+      "center_wgs84": [
+        80.103280657801,
+        32.50566736962016
+      ],
+      "center_gcj02": [
+        80.105498,
+        32.503187
+      ]
+    }
+  ],
+  "excluded_features": []
+}

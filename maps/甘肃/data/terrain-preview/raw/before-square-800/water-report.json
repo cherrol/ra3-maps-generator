@@ -1,0 +1,64 @@
+{
+  "date": "2026-10-29",
+  "map_id": "甘肃",
+  "map_name": "沙廊残照",
+  "mode": "map-local-compact-water-design",
+  "designed_shorelines_are_not_measured": true,
+  "include_rivers": false,
+  "source_selection_report": "raw/before-water-shaping-water-report.json",
+  "water_cells_in_input": 1490,
+  "water_cells_in_game_frame": 1490,
+  "component_count_in_game_frame": 1,
+  "components_in_game_frame": [
+    {
+      "area_cells": 1490,
+      "bbox_game_cells": [
+        358,
+        345,
+        410,
+        385
+      ],
+      "bbox_fill_fraction": 0.6857,
+      "bbox_aspect_ratio": 1.2927,
+      "raster_perimeter": 188,
+      "compactness_4pi_area_over_perimeter_squared": 0.5298,
+      "maximum_manhattan_interior_radius_cells": 18,
+      "touches_game_frame": false
+    }
+  ],
+  "design_lake_groups": [
+    {
+      "action": "hull",
+      "close_radius": 0,
+      "name": "甘肃-湖区1",
+      "open_radius": 8,
+      "result": {
+        "cells": 1490,
+        "component_count": 1,
+        "components": [
+          {
+            "area_cells": 1490,
+            "bbox_aspect_ratio": 1.2926829268292683,
+            "bounds": [
+              378,
+              365,
+              431,
+              406
+            ],
+            "compactness": 0.5297615497791752,
+            "index": 0,
+            "maximum_interior_radius_cells": 17.0,
+            "perimeter": 188,
+            "touches_frame": false
+          }
+        ]
+      },
+      "source_cells": 1339
+    }
+  ],
+  "water_exactly_ocean_union_original_large_lakes": false,
+  "original_geographic_arrays_preserved": true,
+  "existing_land_layers_preserved": true,
+  "original_final_thresholds_preserved": true,
+  "reference": "raw/reference-before-water-shaping.npz"
+}

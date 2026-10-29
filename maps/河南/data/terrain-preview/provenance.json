@@ -1,0 +1,23 @@
+{
+  "date": "2026-10-29",
+  "region": "河南",
+  "north_up": true,
+  "dem": {
+    "source": "https://registry.opendata.aws/terrain-tiles/",
+    "attribution": "Mapzen / AWS Terrain Tiles; USGS SRTM and GMTED2010",
+    "usage": "cached RGB Terrarium tiles, decoded to metres and bilinearly sampled"
+  },
+  "boundary": {
+    "source": "https://geo.datav.aliyun.com/areas_v3/bound/410000.json",
+    "coordinate_conversion": "GCJ-02 approximately inverted to WGS84, six iterations"
+  },
+  "water": {
+    "source": "Natural Earth 1:10m lakes, with cached OSM supplements",
+    "global_inputs": [
+      "work/china-terrain-preview/sources/lakes.geojson",
+      "work/china-terrain-preview/sources/extra-reservoirs.geojson"
+    ],
+    "shoreline": "game design derived from reference polygons; not surveyed shorelines"
+  },
+  "playable_map": "preview frame is independent; playable inputs preserved byte for byte"
+}

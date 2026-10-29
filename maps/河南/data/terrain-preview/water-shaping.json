@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "id": "河南",
+  "date": "2026-10-29",
+  "source": "maps/河南/data/terrain-preview/raw/reference-before-water-shaping.npz",
+  "output": "maps/河南/data/terrain-preview/input.npz",
+  "report": "maps/河南/data/terrain-preview/water-shaping-report.json",
+  "ocean": {
+    "action": "drop"
+  },
+  "lake": {
+    "default_action": "drop",
+    "groups": [
+      {
+        "name": "丹江口水库：近邻支汊填合与岸线圆整",
+        "bounds": [
+          100,
+          545,
+          200,
+          645
+        ],
+        "action": "smooth",
+        "close_radius": 16,
+        "open_radius": 6,
+        "min_area": 180,
+        "maximum_added_area_ratio": 1.5
+      },
+      {
+        "name": "东平湖：圆整小型湖面",
+        "bounds": [
+          745,
+          60,
+          772,
+          102
+        ],
+        "action": "smooth",
+        "close_radius": 3,
+        "open_radius": 4,
+        "min_area": 100,
+        "maximum_added_area_ratio": 1.2
+      },
+      {
+        "name": "东南侧参考湖面：去除窄汊",
+        "bounds": [
+          770,
+          650,
+          800,
+          695
+        ],
+        "action": "smooth",
+        "close_radius": 3,
+        "open_radius": 4,
+        "min_area": 100,
+        "maximum_added_area_ratio": 1.2
+      }
+    ]
+  },
+  "notes": [
+    "按整个游戏矩形处理，包括河南省界外的真实湖面",
+    "清除无法保留的碎水和游戏框外边缘残片；真实高程及来源水域保留",
+    "新增水面属于局部游戏岸线设计，不代表真实水体面积"
+  ]
+}

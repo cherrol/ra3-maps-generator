@@ -1,0 +1,26 @@
+{
+  "include_rivers": false,
+  "large_lake_cells": 422,
+  "minimum_lake_area_km2": 80,
+  "ocean_cells": 45886,
+  "ocean_channel_open_radius_cells": 3,
+  "retained_lakes": [
+    {
+      "area_km2": 135.13150553741767,
+      "cells_in_input_frame": 153,
+      "name": "东平湖"
+    },
+    {
+      "area_km2": 135.41668529986785,
+      "cells_in_input_frame": 161,
+      "name": "密云水库"
+    },
+    {
+      "area_km2": 91.8388931802006,
+      "cells_in_input_frame": 108,
+      "name": "官厅水库"
+    }
+  ],
+  "water_cells": 46308,
+  "water_mask_equals_ocean_union_large_lakes": true
+}

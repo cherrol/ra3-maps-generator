@@ -1,0 +1,87 @@
+{
+  "bounds_wgs84": [
+    108.55753391749414,
+    18.115332731241566,
+    111.09645256265432,
+    20.19585803247779
+  ],
+  "coordinate_system": "WGS84",
+  "game_cells": [
+    800,
+    800
+  ],
+  "image": "preview--center--line.png",
+  "image_crc32": 1255409971,
+  "label": "地级行政中心",
+  "map_name": "翠屿浮光",
+  "outside_frame": [
+    {
+      "adcode": "460300",
+      "center_wgs84": [
+        112.3438983001613,
+        16.832659756926304
+      ],
+      "name": "三沙市"
+    }
+  ],
+  "points": [
+    {
+      "adcode": "460100",
+      "center_wgs84": [
+        110.32682875263704,
+        20.034028098242036
+      ],
+      "image_pixel": [
+        585,
+        174
+      ],
+      "label_box": [
+        563,
+        182,
+        45,
+        20
+      ],
+      "name": "海口市"
+    },
+    {
+      "adcode": "460400",
+      "center_wgs84": [
+        109.5727659775022,
+        19.519451445629052
+      ],
+      "image_pixel": [
+        347,
+        372
+      ],
+      "label_box": [
+        325,
+        380,
+        45,
+        20
+      ],
+      "name": "儋州市"
+    },
+    {
+      "adcode": "460200",
+      "center_wgs84": [
+        109.50416162354304,
+        18.24955289816051
+      ],
+      "image_pixel": [
+        326,
+        860
+      ],
+      "label_box": [
+        304,
+        868,
+        45,
+        20
+      ],
+      "name": "三亚市"
+    }
+  ],
+  "schema_version": 1,
+  "source": "https://geo.datav.aliyun.com/areas_v3/bound/460000_full.json",
+  "total_centers": 4,
+  "visible_centers": 3
+}

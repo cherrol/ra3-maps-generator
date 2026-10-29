@@ -1,0 +1,101 @@
+{
+  "blueprint": "天津",
+  "boundary_conversion": "GCJ-02 approximately inverted to WGS84, six iterations",
+  "boundary_source": "https://geo.datav.aliyun.com/areas_v3/bound/120000.json",
+  "bounds_wgs84": [
+    116.6366137920391,
+    38.50190797989327,
+    118.12475448112954,
+    40.30447817419677
+  ],
+  "date": "2026-10-29",
+  "dem_attribution": "Mapzen / AWS Terrain Tiles; SRTM and GMTED2010 courtesy USGS; see tilezen/joerd docs/attribution.md",
+  "dem_source": "https://registry.opendata.aws/terrain-tiles/",
+  "elevation_max_m": 1139.108272343438,
+  "elevation_min_m": -110.1538429204082,
+  "grid": [
+    536,
+    840
+  ],
+  "limitation": "reference cartography at sampled resolution; sampled maxima and polygon areas are not surveyed values",
+  "map_name": "百流归汐",
+  "no_province_based_terrain_clipping": true,
+  "north_up": true,
+  "terrain_zoom": 9,
+  "tiles_validated": [
+    {
+      "crc32": 4223745032,
+      "x": 421,
+      "y": 193,
+      "z": 9
+    },
+    {
+      "crc32": 2200017679,
+      "x": 421,
+      "y": 194,
+      "z": 9
+    },
+    {
+      "crc32": 3407444305,
+      "x": 421,
+      "y": 195,
+      "z": 9
+    },
+    {
+      "crc32": 1543116824,
+      "x": 421,
+      "y": 196,
+      "z": 9
+    },
+    {
+      "crc32": 2290832315,
+      "x": 422,
+      "y": 193,
+      "z": 9
+    },
+    {
+      "crc32": 748921624,
+      "x": 422,
+      "y": 194,
+      "z": 9
+    },
+    {
+      "crc32": 1751370490,
+      "x": 422,
+      "y": 195,
+      "z": 9
+    },
+    {
+      "crc32": 2562768874,
+      "x": 422,
+      "y": 196,
+      "z": 9
+    },
+    {
+      "crc32": 2694333919,
+      "x": 423,
+      "y": 193,
+      "z": 9
+    },
+    {
+      "crc32": 2557107360,
+      "x": 423,
+      "y": 194,
+      "z": 9
+    },
+    {
+      "crc32": 400596705,
+      "x": 423,
+      "y": 195,
+      "z": 9
+    },
+    {
+      "crc32": 3145399405,
+      "x": 423,
+      "y": 196,
+      "z": 9
+    }
+  ],
+  "water_display_policy": "water-policy.json",
+  "water_source": "Natural Earth 1:10m ocean and lakes; selected OSM reservoir polygons; minimum lake area 80 km2"
+}

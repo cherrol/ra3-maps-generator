@@ -1,0 +1,65 @@
+{
+  "date": "2026-10-29",
+  "map_id": "海南",
+  "map_name": "翠屿浮光",
+  "game_cells": [
+    800,
+    800
+  ],
+  "include_rivers": false,
+  "water_policy": {
+    "design_shaping": {
+      "active_reference": "raw/reference-before-shoreline-refinement.npz",
+      "designed_shorelines_are_not_measured": true,
+      "merge_nearby_reservoir_branches": true,
+      "real_water_selection_retained_as_reference": true,
+      "recipe": "water-shaping.json",
+      "reference": "raw/reference-before-water-shaping.npz",
+      "remove_unmergeable_small_or_narrow_water": true,
+      "removed_water_target": "valid adjoining land layer from unchanged DEM",
+      "report": "water-shaping-report.json",
+      "shoreline_refinement": "shoreline-refinement.json"
+    },
+    "include_rivers": false,
+    "lake_area_method": "spherical polygon area, subtract holes; whole waterbody before frame clipping",
+    "minimum_lake_area_km2": 80,
+    "mode": "map-local-compact-water-design",
+    "ocean_channel_open_radius_cells": 3,
+    "preserve_ocean": true
+  },
+  "water_cells_in_game_frame": 288081,
+  "component_count_in_game_frame": 2,
+  "components_in_game_frame": [
+    {
+      "area_cells": 284800,
+      "bbox_game_cells": [
+        0,
+        0,
+        799,
+        799
+      ],
+      "raster_perimeter": 6618,
+      "bbox_fill_fraction": 0.445,
+      "bbox_aspect_ratio": 1.0,
+      "touches_game_frame": true
+    },
+    {
+      "area_cells": 3281,
+      "bbox_game_cells": [
+        287,
+        302,
+        354,
+        373
+      ],
+      "raster_perimeter": 280,
+      "bbox_fill_fraction": 0.6701388888888888,
+      "bbox_aspect_ratio": 0.9444444444444444,
+      "touches_game_frame": false
+    }
+  ],
+  "input_water_cells": 282665,
+  "original_input_and_water_policy_unchanged": true,
+  "designed_shorelines_are_not_measured": true,
+  "source_selection_and_design_report": "raw/before-square-800/water-report.json",
+  "square_verification": "square-verification.json"
+}

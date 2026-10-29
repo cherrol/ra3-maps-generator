@@ -1,0 +1,131 @@
+{
+  "schema_version": 1,
+  "map_name": "万壑悬瀑",
+  "blueprint": "贵州",
+  "label": "地级行政中心",
+  "coordinate_system": "WGS84",
+  "source": "https://geo.datav.aliyun.com/areas_v3/bound/520000_full.json",
+  "source_field": "properties.center (administrative center, not polygon centroid)",
+  "conversion": "GCJ-02 approximately inverted to WGS84 by six iterations, matching terrain boundary ingestion",
+  "retrieved_date": "2026-10-29",
+  "points": [
+    {
+      "adcode": "520100",
+      "name": "贵阳市",
+      "level": "city",
+      "center_wgs84": [
+        106.70971373346424,
+        26.58187069881344
+      ],
+      "center_gcj02": [
+        106.713478,
+        26.578343
+      ]
+    },
+    {
+      "adcode": "520200",
+      "name": "六盘水市",
+      "level": "city",
+      "center_wgs84": [
+        104.84421855255657,
+        26.588287832497468
+      ],
+      "center_gcj02": [
+        104.846743,
+        26.584643
+      ]
+    },
+    {
+      "adcode": "520300",
+      "name": "遵义市",
+      "level": "city",
+      "center_wgs84": [
+        106.93342960840477,
+        27.710147334339815
+      ],
+      "center_gcj02": [
+        106.937265,
+        27.706626
+      ]
+    },
+    {
+      "adcode": "520400",
+      "name": "安顺市",
+      "level": "city",
+      "center_wgs84": [
+        105.92885946084185,
+        26.24910164758568
+      ],
+      "center_gcj02": [
+        105.932188,
+        26.245544
+      ]
+    },
+    {
+      "adcode": "520500",
+      "name": "毕节市",
+      "level": "city",
+      "center_wgs84": [
+        105.28179601823355,
+        27.30506964650331
+      ],
+      "center_gcj02": [
+        105.28501,
+        27.301693
+      ]
+    },
+    {
+      "adcode": "520600",
+      "name": "铜仁市",
+      "level": "city",
+      "center_wgs84": [
+        109.18697295795394,
+        27.7216122962179
+      ],
+      "center_gcj02": [
+        109.191555,
+        27.718346
+      ]
+    },
+    {
+      "adcode": "522300",
+      "name": "黔西南布依族苗族自治州",
+      "level": "city",
+      "center_wgs84": [
+        104.89551597662928,
+        25.09122823626727
+      ],
+      "center_gcj02": [
+        104.897971,
+        25.08812
+      ]
+    },
+    {
+      "adcode": "522600",
+      "name": "黔东南苗族侗族自治州",
+      "level": "city",
+      "center_wgs84": [
+        107.9733780952961,
+        26.58691507638553
+      ],
+      "center_gcj02": [
+        107.977488,
+        26.583352
+      ]
+    },
+    {
+      "adcode": "522700",
+      "name": "黔南布依族苗族自治州",
+      "level": "city",
+      "center_wgs84": [
+        107.5129633465842,
+        26.261636052340616
+      ],
+      "center_gcj02": [
+        107.517156,
+        26.258219
+      ]
+    }
+  ],
+  "excluded_features": []
+}

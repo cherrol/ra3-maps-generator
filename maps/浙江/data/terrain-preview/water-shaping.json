@@ -1,0 +1,64 @@
+{
+  "id": "浙江",
+  "source": "maps/浙江/data/terrain-preview/raw/reference-before-water-shaping.npz",
+  "output": "maps/浙江/data/terrain-preview/input.npz",
+  "report": "maps/浙江/data/terrain-preview/water-shaping-report.json",
+  "ocean": {
+    "open_radius": 8,
+    "close_radius": 5,
+    "min_component_area": 400
+  },
+  "lake": {
+    "default_action": "drop",
+    "groups": [
+      {
+        "name": "浙江-湖区1",
+        "bounds": [
+          333,
+          0,
+          448,
+          73
+        ],
+        "action": "smooth",
+        "open_radius": 5,
+        "close_radius": 4,
+        "min_area": 400
+      },
+      {
+        "name": "浙江-湖区2",
+        "bounds": [
+          123,
+          281,
+          222,
+          361
+        ],
+        "action": "hull",
+        "open_radius": 8,
+        "close_radius": 0,
+        "min_area": 400
+      },
+      {
+        "name": "浙江-湖区3",
+        "bounds": [
+          158,
+          25,
+          188,
+          46
+        ],
+        "action": "hull",
+        "open_radius": 5,
+        "close_radius": 0,
+        "min_area": 250
+      }
+    ]
+  },
+  "schema_version": 1,
+  "date": "2026-10-29",
+  "scope": "game terrain preview water design; preserve original elevation, geographic boundary and raw masks",
+  "coordinate_system": "input grid origin northwest; x east, y south; half-open bounds",
+  "rebuild": [
+    "work/terrain-preview-water/process maps/浙江/data/terrain-preview/water-shaping.json",
+    "cargo run --release --locked --offline -- terrain-preview 浙江 maps/浙江/data/terrain-preview/input.npz"
+  ],
+  "frame_trim_note": "remove water bodies that become tiny or narrow remnants in the final playable crop"
+}

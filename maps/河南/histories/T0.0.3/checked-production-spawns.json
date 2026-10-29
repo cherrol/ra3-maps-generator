@@ -1,0 +1,145 @@
+{
+  "ingame_test": "not run",
+  "placements": [
+    {
+      "cell": [
+        35,
+        705
+      ],
+      "from": [
+        35,
+        705
+      ],
+      "moved": false,
+      "object_index": 2,
+      "padding": 6,
+      "surface": "land",
+      "type": "*Waypoints/Waypoint",
+      "waypoint": "dual-p1-wf"
+    },
+    {
+      "cell": [
+        190,
+        711
+      ],
+      "from": [
+        185,
+        715
+      ],
+      "moved": true,
+      "object_index": 6,
+      "padding": 6,
+      "surface": "land",
+      "type": "*Waypoints/Waypoint",
+      "waypoint": "dual-p2-wf"
+    },
+    {
+      "cell": [
+        529,
+        793
+      ],
+      "from": [
+        526,
+        793
+      ],
+      "moved": true,
+      "object_index": 10,
+      "padding": 6,
+      "surface": "land",
+      "type": "*Waypoints/Waypoint",
+      "waypoint": "dual-p3-wf"
+    },
+    {
+      "cell": [
+        734,
+        695
+      ],
+      "from": [
+        734,
+        695
+      ],
+      "moved": false,
+      "object_index": 14,
+      "padding": 6,
+      "surface": "land",
+      "type": "*Waypoints/Waypoint",
+      "waypoint": "dual-p4-wf"
+    },
+    {
+      "cell": [
+        129,
+        142
+      ],
+      "from": [
+        129,
+        149
+      ],
+      "moved": true,
+      "object_index": 18,
+      "padding": 6,
+      "surface": "land",
+      "type": "*Waypoints/Waypoint",
+      "waypoint": "dual-p5-wf"
+    },
+    {
+      "cell": [
+        329,
+        148
+      ],
+      "from": [
+        329,
+        148
+      ],
+      "moved": false,
+      "object_index": 22,
+      "padding": 6,
+      "surface": "land",
+      "type": "*Waypoints/Waypoint",
+      "waypoint": "dual-p6-wf"
+    },
+    {
+      "cell": [
+        529,
+        150
+      ],
+      "from": [
+        533,
+        150
+      ],
+      "moved": true,
+      "object_index": 26,
+      "padding": 6,
+      "surface": "land",
+      "type": "*Waypoints/Waypoint",
+      "waypoint": "dual-civilian-wf"
+    },
+    {
+      "cell": [
+        746,
+        151
+      ],
+      "from": [
+        746,
+        151
+      ],
+      "moved": false,
+      "object_index": 30,
+      "padding": 6,
+      "surface": "land",
+      "type": "*Waypoints/Waypoint",
+      "waypoint": "dual-creeps-wf"
+    }
+  ],
+  "policy": {
+    "full_footprint": true,
+    "naval_yard": {
+      "padding": 8,
+      "surface": "water"
+    },
+    "war_factory": {
+      "padding": 6,
+      "surface": "land"
+    }
+  },
+  "policy_source": "templates/rules/common-T0.5.1.json#/production_placement"
+}

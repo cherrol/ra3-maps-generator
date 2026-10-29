@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-29",
+  "map_name": "沙岸绿畴",
+  "geographic_prototype_internal": "宁夏",
+  "dem": "https://registry.opendata.aws/terrain-tiles/",
+  "format": "https://github.com/tilezen/joerd/blob/master/docs/formats.md",
+  "terrain_zoom": 8,
+  "tile_references": "tiles.json",
+  "dem_attribution": "Mapzen / AWS Terrain Tiles; SRTM and GMTED2010 courtesy USGS; https://github.com/tilezen/joerd/blob/master/docs/attribution.md",
+  "boundary": "https://geo.datav.aliyun.com/areas_v3/bound/640000.json",
+  "boundary_conversion": "GCJ-02 approximately inverted to WGS84 by six iterations",
+  "ocean": "https://github.com/nvkelso/natural-earth-vector/blob/master/geojson/ne_10m_ocean.geojson",
+  "lakes": "https://github.com/nvkelso/natural-earth-vector/blob/master/geojson/ne_10m_lakes.geojson",
+  "supplemental_reservoirs": "© OpenStreetMap contributors, https://www.openstreetmap.org/copyright; queried reference responses in work/china-terrain-preview/sources/osm/",
+  "water_policy": "water-policy.json",
+  "scope": "entire rectangle including real terrain outside the geographic outline",
+  "reference_npz": "input.npz",
+  "generated_npz": "terrain.npz"
+}

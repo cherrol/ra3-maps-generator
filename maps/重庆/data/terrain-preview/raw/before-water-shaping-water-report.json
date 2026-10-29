@@ -1,0 +1,16 @@
+{
+  "include_rivers": false,
+  "large_lake_cells": 1425,
+  "minimum_lake_area_km2": 80,
+  "ocean_cells": 0,
+  "ocean_channel_open_radius_cells": 3,
+  "retained_lakes": [
+    {
+      "area_km2": 612.2912822390497,
+      "cells_in_input_frame": 1425,
+      "name": "三峡水库"
+    }
+  ],
+  "water_cells": 1425,
+  "water_mask_equals_ocean_union_large_lakes": true
+}

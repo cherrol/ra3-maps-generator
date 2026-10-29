@@ -1,0 +1,101 @@
+{
+  "include_rivers": false,
+  "large_lake_cells": 7858,
+  "minimum_lake_area_km2": 80,
+  "ocean_cells": 2731,
+  "ocean_channel_open_radius_cells": 3,
+  "retained_lakes": [
+    {
+      "area_km2": 2078.0503248057275,
+      "cells_in_input_frame": 3446,
+      "name": "鄱阳湖"
+    },
+    {
+      "area_km2": 301.1819328872862,
+      "cells_in_input_frame": 501,
+      "name": "大官湖"
+    },
+    {
+      "area_km2": 368.4396916799114,
+      "cells_in_input_frame": 614,
+      "name": "龙感湖"
+    },
+    {
+      "area_km2": 450.7575925363982,
+      "cells_in_input_frame": 463,
+      "name": "梁子湖"
+    },
+    {
+      "area_km2": 213.31218791086872,
+      "cells_in_input_frame": 353,
+      "name": "鄱湖"
+    },
+    {
+      "area_km2": 305.51549676356007,
+      "cells_in_input_frame": 114,
+      "name": "洪湖"
+    },
+    {
+      "area_km2": 156.0512182488839,
+      "cells_in_input_frame": 59,
+      "name": null
+    },
+    {
+      "area_km2": 269.44088494433527,
+      "cells_in_input_frame": 451,
+      "name": "黄塘湖"
+    },
+    {
+      "area_km2": 175.91669375486262,
+      "cells_in_input_frame": 289,
+      "name": null
+    },
+    {
+      "area_km2": 172.24443229365366,
+      "cells_in_input_frame": 288,
+      "name": null
+    },
+    {
+      "area_km2": 185.830221688486,
+      "cells_in_input_frame": 305,
+      "name": null
+    },
+    {
+      "area_km2": 127.14666014593698,
+      "cells_in_input_frame": 210,
+      "name": null
+    },
+    {
+      "area_km2": 115.09969826366525,
+      "cells_in_input_frame": 144,
+      "name": null
+    },
+    {
+      "area_km2": 146.20155942137148,
+      "cells_in_input_frame": 23,
+      "name": "武昌湖"
+    },
+    {
+      "area_km2": 587.7819930245125,
+      "cells_in_input_frame": 4,
+      "name": "新安江水库"
+    },
+    {
+      "area_km2": 443.9758173948906,
+      "cells_in_input_frame": 6,
+      "name": "千岛湖"
+    },
+    {
+      "area_km2": 294.21054799574625,
+      "cells_in_input_frame": 472,
+      "name": "柘林水库"
+    },
+    {
+      "area_km2": 143.92217333750742,
+      "cells_in_input_frame": 116,
+      "name": "东江水库"
+    }
+  ],
+  "water_cells": 10589,
+  "water_mask_equals_ocean_union_large_lakes": true
+}

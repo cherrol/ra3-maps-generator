@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-29",
+  "map_id": "四川",
+  "map_name": "重岚藏野",
+  "mode": "map-local-compact-water-design",
+  "designed_shorelines_are_not_measured": true,
+  "include_rivers": false,
+  "source_selection_report": "raw/before-water-shaping-water-report.json",
+  "water_cells_in_input": 0,
+  "water_cells_in_game_frame": 0,
+  "component_count_in_game_frame": 0,
+  "components_in_game_frame": [],
+  "design_lake_groups": [],
+  "water_exactly_ocean_union_original_large_lakes": false,
+  "original_geographic_arrays_preserved": true,
+  "existing_land_layers_preserved": true,
+  "original_final_thresholds_preserved": true,
+  "reference": "raw/reference-before-water-shaping.npz"
+}

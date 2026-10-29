@@ -1,0 +1,236 @@
+{
+  "date": "2026-10-29",
+  "map_id": "江西",
+  "map_name": "赤崖涵碧",
+  "mode": "map-local-compact-water-design",
+  "designed_shorelines_are_not_measured": true,
+  "include_rivers": false,
+  "source_selection_report": "raw/before-water-shaping-water-report.json",
+  "water_cells_in_input": 15071,
+  "water_cells_in_game_frame": 13451,
+  "component_count_in_game_frame": 5,
+  "components_in_game_frame": [
+    {
+      "area_cells": 7909,
+      "bbox_game_cells": [
+        299,
+        51,
+        398,
+        186
+      ],
+      "bbox_fill_fraction": 0.5815,
+      "bbox_aspect_ratio": 1.36,
+      "raster_perimeter": 472,
+      "compactness_4pi_area_over_perimeter_squared": 0.4461,
+      "maximum_manhattan_interior_radius_cells": 47,
+      "touches_game_frame": false
+    },
+    {
+      "area_cells": 1994,
+      "bbox_game_cells": [
+        302,
+        0,
+        386,
+        32
+      ],
+      "bbox_fill_fraction": 0.7109,
+      "bbox_aspect_ratio": 2.5758,
+      "raster_perimeter": 236,
+      "compactness_4pi_area_over_perimeter_squared": 0.4499,
+      "maximum_manhattan_interior_radius_cells": 17,
+      "touches_game_frame": true
+    },
+    {
+      "area_cells": 1386,
+      "bbox_game_cells": [
+        49,
+        0,
+        95,
+        36
+      ],
+      "bbox_fill_fraction": 0.797,
+      "bbox_aspect_ratio": 1.2703,
+      "raster_perimeter": 168,
+      "compactness_4pi_area_over_perimeter_squared": 0.6171,
+      "maximum_manhattan_interior_radius_cells": 19,
+      "touches_game_frame": true
+    },
+    {
+      "area_cells": 1122,
+      "bbox_game_cells": [
+        188,
+        103,
+        247,
+        128
+      ],
+      "bbox_fill_fraction": 0.7192,
+      "bbox_aspect_ratio": 2.3077,
+      "raster_perimeter": 172,
+      "compactness_4pi_area_over_perimeter_squared": 0.4766,
+      "maximum_manhattan_interior_radius_cells": 12,
+      "touches_game_frame": false
+    },
+    {
+      "area_cells": 1040,
+      "bbox_game_cells": [
+        320,
+        210,
+        365,
+        241
+      ],
+      "bbox_fill_fraction": 0.7065,
+      "bbox_aspect_ratio": 1.4375,
+      "raster_perimeter": 156,
+      "compactness_4pi_area_over_perimeter_squared": 0.537,
+      "maximum_manhattan_interior_radius_cells": 16,
+      "touches_game_frame": false
+    }
+  ],
+  "design_lake_groups": [
+    {
+      "action": "hull",
+      "close_radius": 0,
+      "name": "江西-湖区1",
+      "open_radius": 8,
+      "result": {
+        "cells": 7909,
+        "component_count": 1,
+        "components": [
+          {
+            "area_cells": 7909,
+            "bbox_aspect_ratio": 1.36,
+            "bounds": [
+              319,
+              71,
+              419,
+              207
+            ],
+            "compactness": 0.44611563303005014,
+            "index": 0,
+            "maximum_interior_radius_cells": 35.666666666666664,
+            "perimeter": 472,
+            "touches_frame": false
+          }
+        ]
+      },
+      "source_cells": 3445
+    },
+    {
+      "action": "hull",
+      "close_radius": 0,
+      "name": "江西-湖区2",
+      "open_radius": 8,
+      "result": {
+        "cells": 3150,
+        "component_count": 1,
+        "components": [
+          {
+            "area_cells": 3150,
+            "bbox_aspect_ratio": 1.8113207547169812,
+            "bounds": [
+              322,
+              0,
+              418,
+              53
+            ],
+            "compactness": 0.44574644650276335,
+            "index": 0,
+            "maximum_interior_radius_cells": 22.0,
+            "perimeter": 298,
+            "touches_frame": true
+          }
+        ]
+      },
+      "source_cells": 1491
+    },
+    {
+      "action": "hull",
+      "close_radius": 0,
+      "name": "江西-湖区4",
+      "open_radius": 8,
+      "result": {
+        "cells": 1850,
+        "component_count": 1,
+        "components": [
+          {
+            "area_cells": 1850,
+            "bbox_aspect_ratio": 1.2127659574468086,
+            "bounds": [
+              69,
+              0,
+              116,
+              57
+            ],
+            "compactness": 0.537347116229763,
+            "index": 0,
+            "maximum_interior_radius_cells": 20.0,
+            "perimeter": 208,
+            "touches_frame": true
+          }
+        ]
+      },
+      "source_cells": 884
+    },
+    {
+      "action": "hull",
+      "close_radius": 0,
+      "name": "江西-湖区5",
+      "open_radius": 5,
+      "result": {
+        "cells": 1122,
+        "component_count": 1,
+        "components": [
+          {
+            "area_cells": 1122,
+            "bbox_aspect_ratio": 2.3076923076923075,
+            "bounds": [
+              208,
+              123,
+              268,
+              149
+            ],
+            "compactness": 0.4765909893628648,
+            "index": 0,
+            "maximum_interior_radius_cells": 12.0,
+            "perimeter": 172,
+            "touches_frame": false
+          }
+        ]
+      },
+      "source_cells": 440
+    },
+    {
+      "action": "hull",
+      "close_radius": 0,
+      "name": "江西-湖区6",
+      "open_radius": 6,
+      "result": {
+        "cells": 1040,
+        "component_count": 1,
+        "components": [
+          {
+            "area_cells": 1040,
+            "bbox_aspect_ratio": 1.4375,
+            "bounds": [
+              340,
+              230,
+              386,
+              262
+            ],
+            "compactness": 0.5370243852290244,
+            "index": 0,
+            "maximum_interior_radius_cells": 14.666666666666666,
+            "perimeter": 156,
+            "touches_frame": false
+          }
+        ]
+      },
+      "source_cells": 515
+    }
+  ],
+  "water_exactly_ocean_union_original_large_lakes": false,
+  "original_geographic_arrays_preserved": true,
+  "existing_land_layers_preserved": true,
+  "original_final_thresholds_preserved": true,
+  "reference": "raw/reference-before-water-shaping.npz"
+}

@@ -1,0 +1,131 @@
+{
+  "date": "2026-10-29",
+  "passed": true,
+  "map_id": "广东",
+  "map_name": "千流叩海",
+  "game_cells": [
+    800,
+    800
+  ],
+  "previous_game_cells": [
+    800,
+    632
+  ],
+  "full_grid_cells": [
+    840,
+    840
+  ],
+  "image_dimensions": {
+    "source.png": [
+      1104,
+      1002
+    ],
+    "preview.png": [
+      1104,
+      1002
+    ],
+    "preview--line.png": [
+      1104,
+      1002
+    ],
+    "preview--center--line.png": [
+      1104,
+      1002
+    ]
+  },
+  "north_up": true,
+  "geographic_playable_bounds_unchanged": true,
+  "original_input_sha256": "1d11ae0456f60b6e543ba9872ab2548568324b5d8f2e6f8297220561ed526f1b",
+  "original_input_bytes_unchanged": true,
+  "original_elevation_thresholds_unchanged": true,
+  "original_game_layer_heights_unchanged": true,
+  "elevation_bilinear_from_original_input": true,
+  "land_layers_nearest_neighbor_from_approved_preview": true,
+  "all_surviving_resampled_land_layer_ids_preserved": true,
+  "input_water_nearest_neighbor_reprojection_verified": true,
+  "water_policy_unchanged": true,
+  "same_view_and_water_all_four_images": true,
+  "png_and_npz_crc_valid": true,
+  "public_image_water_pixels_checked": 1280000,
+  "province_fully_inside_game_frame": true,
+  "surrounding_real_terrain_included": true,
+  "game_heights_match_layers": true,
+  "land_layer_count": 3,
+  "land_layer_cell_counts": {
+    "2": 191883,
+    "3": 33137,
+    "1": 187762
+  },
+  "water_cells": 227218,
+  "water_component_count": 2,
+  "water_components": [
+    {
+      "area_cells": 226075,
+      "bbox_game_cells": [
+        0,
+        288,
+        799,
+        799
+      ],
+      "raster_perimeter": 3510,
+      "bbox_fill_fraction": 0.55194091796875,
+      "bbox_aspect_ratio": 1.5625,
+      "touches_game_frame": true
+    },
+    {
+      "area_cells": 1143,
+      "bbox_game_cells": [
+        500,
+        225,
+        534,
+        270
+      ],
+      "raster_perimeter": 162,
+      "bbox_fill_fraction": 0.7099378881987578,
+      "bbox_aspect_ratio": 0.7608695652173914,
+      "touches_game_frame": false
+    }
+  ],
+  "centers_at_projected_coordinates": true,
+  "center_labels_nonoverlapping": true,
+  "center_source_bytes_unchanged": true,
+  "before_square_reference": "raw/before-square-800/terrain.npz",
+  "scope": "terrain preview only; existing playable inputs and Henan are excluded",
+  "components": [
+    {
+      "area_cells": 226075,
+      "bbox_game_cells": [
+        0,
+        288,
+        799,
+        799
+      ],
+      "raster_perimeter": 3510,
+      "bbox_fill_fraction": 0.55194091796875,
+      "bbox_aspect_ratio": 1.5625,
+      "touches_game_frame": true
+    },
+    {
+      "area_cells": 1143,
+      "bbox_game_cells": [
+        500,
+        225,
+        534,
+        270
+      ],
+      "raster_perimeter": 162,
+      "bbox_fill_fraction": 0.7099378881987578,
+      "bbox_aspect_ratio": 0.7608695652173914,
+      "touches_game_frame": false
+    }
+  ],
+  "layer_counts": {
+    "2": 191883,
+    "3": 33137,
+    "1": 187762,
+    "0": 227218
+  },
+  "original_selection_and_design_reports": "raw/before-square-800/water-report.json",
+  "full_perimeter_transition_design": "shoreline-transition-plan.json",
+  "playable_passability_verified": false
+}

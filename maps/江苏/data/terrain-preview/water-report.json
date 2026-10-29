@@ -1,0 +1,195 @@
+{
+  "date": "2026-10-29",
+  "map_id": "江苏",
+  "map_name": "平畴织水",
+  "game_cells": [
+    800,
+    800
+  ],
+  "include_rivers": false,
+  "water_policy": {
+    "design_shaping": {
+      "active_reference": "raw/reference-before-shoreline-refinement.npz",
+      "designed_shorelines_are_not_measured": true,
+      "merge_nearby_reservoir_branches": true,
+      "real_water_selection_retained_as_reference": true,
+      "recipe": "water-shaping.json",
+      "reference": "raw/reference-before-water-shaping.npz",
+      "remove_unmergeable_small_or_narrow_water": true,
+      "removed_water_target": "valid adjoining land layer from unchanged DEM",
+      "report": "water-shaping-report.json",
+      "shoreline_refinement": "shoreline-refinement.json"
+    },
+    "include_rivers": false,
+    "lake_area_method": "spherical polygon area; whole waterbody minus holes before frame clipping",
+    "minimum_lake_area_km2": 80,
+    "mode": "map-local-compact-water-design",
+    "ocean_channel_open_radius_cells": 3,
+    "preserve_ocean": true
+  },
+  "water_cells_in_game_frame": 156360,
+  "component_count_in_game_frame": 12,
+  "components_in_game_frame": [
+    {
+      "area_cells": 128296,
+      "bbox_game_cells": [
+        403,
+        0,
+        799,
+        799
+      ],
+      "raster_perimeter": 2688,
+      "bbox_fill_fraction": 0.40395465994962215,
+      "bbox_aspect_ratio": 0.49625,
+      "touches_game_frame": true
+    },
+    {
+      "area_cells": 13463,
+      "bbox_game_cells": [
+        206,
+        271,
+        359,
+        413
+      ],
+      "raster_perimeter": 594,
+      "bbox_fill_fraction": 0.6113432022522932,
+      "bbox_aspect_ratio": 1.0769230769230769,
+      "touches_game_frame": false
+    },
+    {
+      "area_cells": 5951,
+      "bbox_game_cells": [
+        504,
+        655,
+        582,
+        766
+      ],
+      "raster_perimeter": 412,
+      "bbox_fill_fraction": 0.6725813743218807,
+      "bbox_aspect_ratio": 0.7053571428571429,
+      "touches_game_frame": false
+    },
+    {
+      "area_cells": 1824,
+      "bbox_game_cells": [
+        135,
+        622,
+        204,
+        672
+      ],
+      "raster_perimeter": 274,
+      "bbox_fill_fraction": 0.5109243697478991,
+      "bbox_aspect_ratio": 1.3725490196078431,
+      "touches_game_frame": false
+    },
+    {
+      "area_cells": 1759,
+      "bbox_game_cells": [
+        389,
+        378,
+        434,
+        442
+      ],
+      "raster_perimeter": 236,
+      "bbox_fill_fraction": 0.5882943143812709,
+      "bbox_aspect_ratio": 0.7076923076923077,
+      "touches_game_frame": false
+    },
+    {
+      "area_cells": 1281,
+      "bbox_game_cells": [
+        696,
+        634,
+        746,
+        681
+      ],
+      "raster_perimeter": 198,
+      "bbox_fill_fraction": 0.5232843137254902,
+      "bbox_aspect_ratio": 1.0625,
+      "touches_game_frame": false
+    },
+    {
+      "area_cells": 900,
+      "bbox_game_cells": [
+        335,
+        651,
+        372,
+        682
+      ],
+      "raster_perimeter": 140,
+      "bbox_fill_fraction": 0.7401315789473685,
+      "bbox_aspect_ratio": 1.1875,
+      "touches_game_frame": false
+    },
+    {
+      "area_cells": 842,
+      "bbox_game_cells": [
+        64,
+        476,
+        88,
+        525
+      ],
+      "raster_perimeter": 150,
+      "bbox_fill_fraction": 0.6736,
+      "bbox_aspect_ratio": 0.5,
+      "touches_game_frame": false
+    },
+    {
+      "area_cells": 824,
+      "bbox_game_cells": [
+        112,
+        76,
+        142,
+        117
+      ],
+      "raster_perimeter": 146,
+      "bbox_fill_fraction": 0.6328725038402457,
+      "bbox_aspect_ratio": 0.7380952380952381,
+      "touches_game_frame": false
+    },
+    {
+      "area_cells": 488,
+      "bbox_game_cells": [
+        631,
+        582,
+        652,
+        613
+      ],
+      "raster_perimeter": 110,
+      "bbox_fill_fraction": 0.6931818181818182,
+      "bbox_aspect_ratio": 0.6875,
+      "touches_game_frame": false
+    },
+    {
+      "area_cells": 370,
+      "bbox_game_cells": [
+        614,
+        665,
+        638,
+        685
+      ],
+      "raster_perimeter": 92,
+      "bbox_fill_fraction": 0.7047619047619048,
+      "bbox_aspect_ratio": 1.1904761904761905,
+      "touches_game_frame": false
+    },
+    {
+      "area_cells": 362,
+      "bbox_game_cells": [
+        480,
+        630,
+        497,
+        661
+      ],
+      "raster_perimeter": 102,
+      "bbox_fill_fraction": 0.6284722222222222,
+      "bbox_aspect_ratio": 0.5625,
+      "touches_game_frame": false
+    }
+  ],
+  "input_water_cells": 170529,
+  "original_input_and_water_policy_unchanged": true,
+  "designed_shorelines_are_not_measured": true,
+  "source_selection_and_design_report": "raw/before-square-800/water-report.json",
+  "square_verification": "square-verification.json"
+}

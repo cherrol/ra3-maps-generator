@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "map_name": "冰源澄镜",
+  "blueprint": "青海",
+  "label": "地级行政中心",
+  "coordinate_system": "WGS84",
+  "source": "https://geo.datav.aliyun.com/areas_v3/bound/630000_full.json",
+  "source_field": "properties.center (administrative center, not polygon centroid)",
+  "conversion": "GCJ-02 approximately inverted to WGS84 by six iterations, matching terrain boundary ingestion",
+  "retrieved_date": "2026-10-29",
+  "points": [
+    {
+      "adcode": "630100",
+      "name": "西宁市",
+      "level": "city",
+      "center_wgs84": [
+        101.77698146599835,
+        36.62325499198237
+      ],
+      "center_gcj02": [
+        101.778916,
+        36.623178
+      ]
+    },
+    {
+      "adcode": "630200",
+      "name": "海东市",
+      "level": "city",
+      "center_wgs84": [
+        102.10119833715265,
+        36.50285082430441
+      ],
+      "center_gcj02": [
+        102.10327,
+        36.502916
+      ]
+    },
+    {
+      "adcode": "632200",
+      "name": "海北藏族自治州",
+      "level": "city",
+      "center_wgs84": [
+        100.8996053262516,
+        36.9594773644883
+      ],
+      "center_gcj02": [
+        100.901059,
+        36.959435
+      ]
+    },
+    {
+      "adcode": "632300",
+      "name": "黄南藏族自治州",
+      "level": "city",
+      "center_wgs84": [
+        102.0180934732148,
+        35.51815062569503
+      ],
+      "center_gcj02": [
+        102.019988,
+        35.517744
+      ]
+    },
+    {
+      "adcode": "632500",
+      "name": "海南藏族自治州",
+      "level": "city",
+      "center_wgs84": [
+        100.61826783069479,
+        36.28075855694193
+      ],
+      "center_gcj02": [
+        100.619542,
+        36.280353
+      ]
+    },
+    {
+      "adcode": "632600",
+      "name": "果洛藏族自治州",
+      "level": "city",
+      "center_wgs84": [
+        100.2408012062894,
+        34.47507595294616
+      ],
+      "center_gcj02": [
+        100.242143,
+        34.4736
+      ]
+    },
+    {
+      "adcode": "632700",
+      "name": "玉树藏族自治州",
+      "level": "city",
+      "center_wgs84": [
+        97.0080843955295,
+        33.00618263891301
+      ],
+      "center_gcj02": [
+        97.008522,
+        33.004049
+      ]
+    },
+    {
+      "adcode": "632800",
+      "name": "海西蒙古族藏族自治州",
+      "level": "city",
+      "center_wgs84": [
+        97.36998261000065,
+        37.37418446046124
+      ],
+      "center_gcj02": [
+        97.370785,
+        37.374663
+      ]
+    }
+  ],
+  "excluded_features": []
+}

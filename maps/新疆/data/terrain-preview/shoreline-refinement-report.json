@@ -1,0 +1,273 @@
+{
+  "added_land_cells": 0,
+  "all_nonwater_arrays_byte_identical": true,
+  "design_land": {
+    "cells": 602263,
+    "component_count": 1,
+    "components": [
+      {
+        "area_cells": 602263,
+        "bbox_aspect_ratio": 1.141304347826087,
+        "bounds": [
+          0,
+          0,
+          840,
+          736
+        ],
+        "compactness": 0.36111412022758366,
+        "index": 0,
+        "maximum_interior_radius_cells": 686.3333333333334,
+        "perimeter": 4578,
+        "touches_frame": true
+      }
+    ]
+  },
+  "design_water": {
+    "cells": 15977,
+    "component_count": 6,
+    "components": [
+      {
+        "area_cells": 9763,
+        "bbox_aspect_ratio": 2.3176470588235296,
+        "bounds": [
+          21,
+          132,
+          218,
+          217
+        ],
+        "compactness": 0.38568695081984244,
+        "index": 0,
+        "maximum_interior_radius_cells": 35.333333333333336,
+        "perimeter": 564,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 3341,
+        "bbox_aspect_ratio": 1.7647058823529411,
+        "bounds": [
+          354,
+          0,
+          405,
+          90
+        ],
+        "compactness": 0.5279443214950706,
+        "index": 1,
+        "maximum_interior_radius_cells": 24.0,
+        "perimeter": 282,
+        "touches_frame": true
+      },
+      {
+        "area_cells": 1190,
+        "bbox_aspect_ratio": 2.5185185185185186,
+        "bounds": [
+          122,
+          322,
+          190,
+          349
+        ],
+        "compactness": 0.41423770169217217,
+        "index": 2,
+        "maximum_interior_radius_cells": 12.0,
+        "perimeter": 190,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 796,
+        "bbox_aspect_ratio": 1.7741935483870968,
+        "bounds": [
+          663,
+          61,
+          718,
+          92
+        ],
+        "compactness": 0.2225620997025165,
+        "index": 3,
+        "maximum_interior_radius_cells": 9.333333333333334,
+        "perimeter": 212,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 540,
+        "bbox_aspect_ratio": 1.2916666666666667,
+        "bounds": [
+          297,
+          149,
+          321,
+          180
+        ],
+        "compactness": 0.5608132340292523,
+        "index": 4,
+        "maximum_interior_radius_cells": 10.666666666666666,
+        "perimeter": 110,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 347,
+        "bbox_aspect_ratio": 1.2857142857142858,
+        "bounds": [
+          697,
+          16,
+          724,
+          37
+        ],
+        "compactness": 0.4731478519078378,
+        "index": 5,
+        "maximum_interior_radius_cells": 8.0,
+        "perimeter": 96,
+        "touches_frame": false
+      }
+    ]
+  },
+  "existing_water_preserved": true,
+  "input_cells": [
+    840,
+    736
+  ],
+  "land_open_radius_input_cells": 8,
+  "main_land_and_each_preserved_compact_island_stable_under_opening": true,
+  "map_id": "新疆",
+  "method": "morphological opening of land to retract narrow peninsulas, necks and pointed spurs",
+  "preserved_compact_small_islands": [],
+  "removed_land_cells": 89,
+  "small_shore_transition_policy": {
+    "bidirectional": true,
+    "continuous": true,
+    "few_exits_do_not_satisfy": true,
+    "scope": "entire perimeter of retained small islands and small waterbodies",
+    "status": "design requirement; implement and verify terrain height/navigation when producing playable maps"
+  },
+  "source": "maps/新疆/data/terrain-preview/raw/reference-before-shoreline-refinement.npz",
+  "source_land": {
+    "cells": 602352,
+    "component_count": 1,
+    "components": [
+      {
+        "area_cells": 602352,
+        "bbox_aspect_ratio": 1.141304347826087,
+        "bounds": [
+          0,
+          0,
+          840,
+          736
+        ],
+        "compactness": 0.35959479945696615,
+        "index": 0,
+        "maximum_interior_radius_cells": 686.3333333333334,
+        "perimeter": 4588,
+        "touches_frame": true
+      }
+    ]
+  },
+  "source_water": {
+    "cells": 15888,
+    "component_count": 7,
+    "components": [
+      {
+        "area_cells": 9763,
+        "bbox_aspect_ratio": 2.3176470588235296,
+        "bounds": [
+          21,
+          132,
+          218,
+          217
+        ],
+        "compactness": 0.38568695081984244,
+        "index": 0,
+        "maximum_interior_radius_cells": 35.333333333333336,
+        "perimeter": 564,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 3290,
+        "bbox_aspect_ratio": 1.7254901960784315,
+        "bounds": [
+          354,
+          2,
+          405,
+          90
+        ],
+        "compactness": 0.534953668563243,
+        "index": 1,
+        "maximum_interior_radius_cells": 24.0,
+        "perimeter": 278,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 1190,
+        "bbox_aspect_ratio": 2.5185185185185186,
+        "bounds": [
+          122,
+          322,
+          190,
+          349
+        ],
+        "compactness": 0.41423770169217217,
+        "index": 2,
+        "maximum_interior_radius_cells": 12.0,
+        "perimeter": 190,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 540,
+        "bbox_aspect_ratio": 1.2916666666666667,
+        "bounds": [
+          297,
+          149,
+          321,
+          180
+        ],
+        "compactness": 0.5608132340292523,
+        "index": 3,
+        "maximum_interior_radius_cells": 10.666666666666666,
+        "perimeter": 110,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 490,
+        "bbox_aspect_ratio": 1.0357142857142858,
+        "bounds": [
+          663,
+          61,
+          692,
+          89
+        ],
+        "compactness": 0.47380129278516425,
+        "index": 4,
+        "maximum_interior_radius_cells": 9.333333333333334,
+        "perimeter": 114,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 347,
+        "bbox_aspect_ratio": 1.2857142857142858,
+        "bounds": [
+          697,
+          16,
+          724,
+          37
+        ],
+        "compactness": 0.4731478519078378,
+        "index": 5,
+        "maximum_interior_radius_cells": 8.0,
+        "perimeter": 96,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 268,
+        "bbox_aspect_ratio": 1.3333333333333333,
+        "bounds": [
+          700,
+          68,
+          718,
+          92
+        ],
+        "compactness": 0.4772941219739595,
+        "index": 6,
+        "maximum_interior_radius_cells": 7.0,
+        "perimeter": 84,
+        "touches_frame": false
+      }
+    ]
+  },
+  "date": "2026-10-29"
+}

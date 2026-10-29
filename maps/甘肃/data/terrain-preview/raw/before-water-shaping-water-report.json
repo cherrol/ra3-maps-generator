@@ -1,0 +1,61 @@
+{
+  "include_rivers": false,
+  "large_lake_cells": 2135,
+  "minimum_lake_area_km2": 80,
+  "ocean_cells": 0,
+  "ocean_channel_open_radius_cells": 3,
+  "retained_lakes": [
+    {
+      "area_km2": 603.546773629048,
+      "cells_in_input_frame": 175,
+      "name": "鄂陵湖"
+    },
+    {
+      "area_km2": 544.3767202625293,
+      "cells_in_input_frame": 155,
+      "name": "扎陵湖"
+    },
+    {
+      "area_km2": 195.6761899048556,
+      "cells_in_input_frame": 66,
+      "name": "烏梁素海"
+    },
+    {
+      "area_km2": 207.477213921582,
+      "cells_in_input_frame": 60,
+      "name": "多尔改错湖"
+    },
+    {
+      "area_km2": 189.96195912497092,
+      "cells_in_input_frame": 57,
+      "name": null
+    },
+    {
+      "area_km2": 273.6459903409165,
+      "cells_in_input_frame": 76,
+      "name": "库赛湖"
+    },
+    {
+      "area_km2": 256.2780358057349,
+      "cells_in_input_frame": 65,
+      "name": "卓乃湖"
+    },
+    {
+      "area_km2": 4457.427307317892,
+      "cells_in_input_frame": 1339,
+      "name": "青海湖"
+    },
+    {
+      "area_km2": 120.33416141668718,
+      "cells_in_input_frame": 34,
+      "name": "刘家峡水库"
+    },
+    {
+      "area_km2": 387.3357481734623,
+      "cells_in_input_frame": 108,
+      "name": "龙羊峡水库"
+    }
+  ],
+  "water_cells": 2135,
+  "water_mask_equals_ocean_union_large_lakes": true
+}

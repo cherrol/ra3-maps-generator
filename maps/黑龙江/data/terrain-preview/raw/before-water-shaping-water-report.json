@@ -1,0 +1,36 @@
+{
+  "include_rivers": false,
+  "large_lake_cells": 2181,
+  "minimum_lake_area_km2": 80,
+  "ocean_cells": 1913,
+  "ocean_channel_open_radius_cells": 3,
+  "retained_lakes": [
+    {
+      "area_km2": 4036.3695325664216,
+      "cells_in_input_frame": 1871,
+      "name": "兴凯湖"
+    },
+    {
+      "area_km2": 211.41100743488363,
+      "cells_in_input_frame": 99,
+      "name": "查干湖"
+    },
+    {
+      "area_km2": 175.69662734405478,
+      "cells_in_input_frame": 80,
+      "name": "松花湖"
+    },
+    {
+      "area_km2": 3269.487461249251,
+      "cells_in_input_frame": 75,
+      "name": "结雅水库"
+    },
+    {
+      "area_km2": 217.79044886687052,
+      "cells_in_input_frame": 98,
+      "name": "松花湖"
+    }
+  ],
+  "water_cells": 4094,
+  "water_mask_equals_ocean_union_large_lakes": true
+}

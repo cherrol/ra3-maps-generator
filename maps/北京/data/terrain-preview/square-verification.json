@@ -1,0 +1,95 @@
+{
+  "date": "2026-10-29",
+  "passed": true,
+  "map_id": "北京",
+  "map_name": "群峰拱野",
+  "game_cells": [
+    800,
+    800
+  ],
+  "previous_game_cells": [
+    784,
+    800
+  ],
+  "full_grid_cells": [
+    840,
+    840
+  ],
+  "image_dimensions": {
+    "source.png": [
+      1104,
+      1002
+    ],
+    "preview.png": [
+      1104,
+      1002
+    ],
+    "preview--line.png": [
+      1104,
+      1002
+    ],
+    "preview--center--line.png": [
+      1104,
+      1002
+    ]
+  },
+  "north_up": true,
+  "geographic_playable_bounds_unchanged": true,
+  "original_input_sha256": "2c406d9149c56c881736e7146b578e5b04fb4019a801c634e8a37d00e6419415",
+  "original_input_bytes_unchanged": true,
+  "original_elevation_thresholds_unchanged": true,
+  "original_game_layer_heights_unchanged": true,
+  "elevation_bilinear_from_original_input": true,
+  "land_layers_nearest_neighbor_from_approved_preview": true,
+  "all_surviving_resampled_land_layer_ids_preserved": true,
+  "input_water_nearest_neighbor_reprojection_verified": true,
+  "water_policy_unchanged": true,
+  "same_view_and_water_all_four_images": true,
+  "png_and_npz_crc_valid": true,
+  "public_image_water_pixels_checked": 1280000,
+  "province_fully_inside_game_frame": true,
+  "surrounding_real_terrain_included": true,
+  "game_heights_match_layers": true,
+  "land_layer_count": 4,
+  "land_layer_cell_counts": {
+    "4": 6422,
+    "3": 292561,
+    "2": 85302,
+    "1": 248693
+  },
+  "water_cells": 7022,
+  "water_component_count": 2,
+  "water_components": [
+    {
+      "area_cells": 5136,
+      "bbox_game_cells": [
+        526,
+        235,
+        632,
+        306
+      ],
+      "raster_perimeter": 358,
+      "bbox_fill_fraction": 0.6666666666666666,
+      "bbox_aspect_ratio": 1.4861111111111112,
+      "touches_game_frame": false
+    },
+    {
+      "area_cells": 1886,
+      "bbox_game_cells": [
+        62,
+        347,
+        118,
+        399
+      ],
+      "raster_perimeter": 220,
+      "bbox_fill_fraction": 0.6242965905329361,
+      "bbox_aspect_ratio": 1.0754716981132075,
+      "touches_game_frame": false
+    }
+  ],
+  "centers_at_projected_coordinates": true,
+  "center_labels_nonoverlapping": true,
+  "center_source_bytes_unchanged": true,
+  "before_square_reference": "raw/before-square-800/terrain.npz",
+  "scope": "terrain preview only; existing playable inputs and Henan are excluded"
+}

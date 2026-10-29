@@ -1,0 +1,15 @@
+{
+  "algorithm": "oriented coastline scanline; OSM land on left, water on right; Natural Earth fallback for rows with no coastline crossings",
+  "attribution": "© OpenStreetMap contributors; https://www.openstreetmap.org/copyright",
+  "include_rivers": false,
+  "inconsistent_crossings": 0,
+  "minimum_lake_area_km2": 80,
+  "ocean_cells": 295970,
+  "ocean_channel_open_radius_cells": 3,
+  "ocean_source": "OpenStreetMap natural=coastline",
+  "osm_ways": 1718,
+  "rows_using_broad_context_fallback": 0,
+  "source_doc": "https://wiki.openstreetmap.org/wiki/Tag:natural%3Dcoastline",
+  "source_file": "raw/osm-coastlines.json",
+  "water_cells": 295970
+}

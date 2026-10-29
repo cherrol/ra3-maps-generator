@@ -1,0 +1,107 @@
+{
+  "date": "2026-10-29",
+  "passed": true,
+  "map_id": "青海",
+  "map_name": "冰源澄镜",
+  "game_cells": [
+    800,
+    800
+  ],
+  "previous_game_cells": [
+    800,
+    544
+  ],
+  "full_grid_cells": [
+    840,
+    840
+  ],
+  "image_dimensions": {
+    "source.png": [
+      1104,
+      1002
+    ],
+    "preview.png": [
+      1104,
+      1002
+    ],
+    "preview--line.png": [
+      1104,
+      1002
+    ],
+    "preview--center--line.png": [
+      1104,
+      1002
+    ]
+  },
+  "north_up": true,
+  "geographic_playable_bounds_unchanged": true,
+  "original_input_sha256": "9ce368fbef17903885139e257faeba9d4a253b4981d9b60fc325793129037c8b",
+  "original_input_bytes_unchanged": true,
+  "original_elevation_thresholds_unchanged": true,
+  "original_game_layer_heights_unchanged": true,
+  "elevation_bilinear_from_original_input": true,
+  "land_layers_nearest_neighbor_from_approved_preview": true,
+  "all_surviving_resampled_land_layer_ids_preserved": true,
+  "input_water_nearest_neighbor_reprojection_verified": true,
+  "water_policy_unchanged": true,
+  "same_view_and_water_all_four_images": true,
+  "png_and_npz_crc_valid": true,
+  "public_image_water_pixels_checked": 1280000,
+  "province_fully_inside_game_frame": true,
+  "surrounding_real_terrain_included": true,
+  "game_heights_match_layers": true,
+  "land_layer_count": 3,
+  "land_layer_cell_counts": {
+    "4": 583004,
+    "3": 6773,
+    "5": 45389
+  },
+  "water_cells": 4834,
+  "water_component_count": 3,
+  "water_components": [
+    {
+      "area_cells": 2671,
+      "bbox_game_cells": [
+        602,
+        210,
+        661,
+        280
+      ],
+      "raster_perimeter": 278,
+      "bbox_fill_fraction": 0.6269953051643192,
+      "bbox_aspect_ratio": 0.8450704225352113,
+      "touches_game_frame": false
+    },
+    {
+      "area_cells": 1185,
+      "bbox_game_cells": [
+        22,
+        579,
+        61,
+        623
+      ],
+      "raster_perimeter": 170,
+      "bbox_fill_fraction": 0.6583333333333333,
+      "bbox_aspect_ratio": 0.8888888888888888,
+      "touches_game_frame": false
+    },
+    {
+      "area_cells": 978,
+      "bbox_game_cells": [
+        451,
+        434,
+        493,
+        464
+      ],
+      "raster_perimeter": 148,
+      "bbox_fill_fraction": 0.7336834208552138,
+      "bbox_aspect_ratio": 1.3870967741935485,
+      "touches_game_frame": false
+    }
+  ],
+  "centers_at_projected_coordinates": true,
+  "center_labels_nonoverlapping": true,
+  "center_source_bytes_unchanged": true,
+  "before_square_reference": "raw/before-square-800/terrain.npz",
+  "scope": "terrain preview only; existing playable inputs and Henan are excluded"
+}

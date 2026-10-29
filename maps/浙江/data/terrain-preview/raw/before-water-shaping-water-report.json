@@ -1,0 +1,31 @@
+{
+  "include_rivers": false,
+  "large_lake_cells": 7688,
+  "minimum_lake_area_km2": 80,
+  "ocean_cells": 213516,
+  "ocean_channel_open_radius_cells": 3,
+  "retained_lakes": [
+    {
+      "area_km2": 2509.392683401246,
+      "cells_in_input_frame": 5379,
+      "name": "太湖"
+    },
+    {
+      "area_km2": 123.35047452243803,
+      "cells_in_input_frame": 363,
+      "name": null
+    },
+    {
+      "area_km2": 587.7819930245125,
+      "cells_in_input_frame": 1695,
+      "name": "新安江水库"
+    },
+    {
+      "area_km2": 443.9758173948906,
+      "cells_in_input_frame": 1263,
+      "name": "千岛湖"
+    }
+  ],
+  "water_cells": 221204,
+  "water_mask_equals_ocean_union_large_lakes": true
+}

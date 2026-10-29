@@ -1,0 +1,85 @@
+{
+  "date": "2026-10-29",
+  "map_id": "辽宁",
+  "map_name": "岩湾初曙",
+  "mode": "map-local-compact-water-design",
+  "designed_shorelines_are_not_measured": true,
+  "include_rivers": false,
+  "source_selection_report": "raw/before-water-shaping-water-report.json",
+  "water_cells_in_input": 144973,
+  "water_cells_in_game_frame": 129376,
+  "component_count_in_game_frame": 2,
+  "components_in_game_frame": [
+    {
+      "area_cells": 128759,
+      "bbox_game_cells": [
+        0,
+        391,
+        754,
+        727
+      ],
+      "bbox_fill_fraction": 0.5061,
+      "bbox_aspect_ratio": 2.2404,
+      "raster_perimeter": 3070,
+      "compactness_4pi_area_over_perimeter_squared": 0.1717,
+      "maximum_manhattan_interior_radius_cells": 112,
+      "touches_game_frame": true
+    },
+    {
+      "area_cells": 617,
+      "bbox_game_cells": [
+        697,
+        435,
+        733,
+        462
+      ],
+      "bbox_fill_fraction": 0.5956,
+      "bbox_aspect_ratio": 1.3214,
+      "raster_perimeter": 130,
+      "compactness_4pi_area_over_perimeter_squared": 0.4588,
+      "maximum_manhattan_interior_radius_cells": 12,
+      "touches_game_frame": false
+    }
+  ],
+  "design_lake_groups": [
+    {
+      "action": "hull",
+      "close_radius": 0,
+      "name": "辽宁-湖区1",
+      "open_radius": 6,
+      "result": {
+        "cells": 617,
+        "component_count": 1,
+        "components": [
+          {
+            "area_cells": 617,
+            "bbox_aspect_ratio": 1.3214285714285714,
+            "bounds": [
+              717,
+              455,
+              754,
+              483
+            ],
+            "compactness": 0.45878406325796506,
+            "index": 0,
+            "maximum_interior_radius_cells": 10.666666666666666,
+            "perimeter": 130,
+            "touches_frame": false
+          }
+        ]
+      },
+      "source_cells": 310
+    }
+  ],
+  "water_exactly_ocean_union_original_large_lakes": false,
+  "original_geographic_arrays_preserved": true,
+  "existing_land_layers_preserved": true,
+  "original_final_thresholds_preserved": true,
+  "reference": "raw/reference-before-water-shaping.npz",
+  "active_shoreline_refinement": "shoreline-refinement-report.json",
+  "land_protrusions_removed_input_cells": 391,
+  "land_protrusions_removed_game_cells": 380,
+  "small_island_and_waterbody_transition_plan": "shoreline-transition-plan.json",
+  "existing_water_preserved_during_land_refinement": true,
+  "full_perimeter_passability_status": "preview design requirement; implement and verify height/navigation during playable-map authoring"
+}

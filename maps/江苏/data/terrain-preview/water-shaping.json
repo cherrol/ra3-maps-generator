@@ -1,0 +1,142 @@
+{
+  "id": "江苏",
+  "source": "maps/江苏/data/terrain-preview/raw/reference-before-water-shaping.npz",
+  "output": "maps/江苏/data/terrain-preview/input.npz",
+  "report": "maps/江苏/data/terrain-preview/water-shaping-report.json",
+  "ocean": {
+    "open_radius": 8,
+    "close_radius": 5,
+    "min_component_area": 400
+  },
+  "lake": {
+    "default_action": "drop",
+    "groups": [
+      {
+        "name": "江苏-湖区1",
+        "bounds": [
+          524,
+          628,
+          623,
+          733
+        ],
+        "action": "smooth",
+        "open_radius": 5,
+        "close_radius": 4,
+        "min_area": 400
+      },
+      {
+        "name": "江苏-湖区2",
+        "bounds": [
+          222,
+          271,
+          380,
+          406
+        ],
+        "action": "hull",
+        "open_radius": 8,
+        "close_radius": 0,
+        "min_area": 400
+      },
+      {
+        "name": "江苏-湖区3",
+        "bounds": [
+          375,
+          344,
+          455,
+          438
+        ],
+        "action": "smooth",
+        "open_radius": 5,
+        "close_radius": 4,
+        "min_area": 400
+      },
+      {
+        "name": "江苏-湖区4",
+        "bounds": [
+          155,
+          598,
+          249,
+          646
+        ],
+        "action": "smooth",
+        "open_radius": 5,
+        "close_radius": 4,
+        "min_area": 400
+      },
+      {
+        "name": "江苏-湖区5",
+        "bounds": [
+          131,
+          86,
+          163,
+          133
+        ],
+        "action": "hull",
+        "open_radius": 6,
+        "close_radius": 0,
+        "min_area": 400
+      },
+      {
+        "name": "江苏-湖区6",
+        "bounds": [
+          353,
+          625,
+          393,
+          655
+        ],
+        "action": "hull",
+        "open_radius": 6,
+        "close_radius": 0,
+        "min_area": 400
+      },
+      {
+        "name": "江苏-湖区7",
+        "bounds": [
+          499,
+          599,
+          518,
+          640
+        ],
+        "action": "smooth",
+        "open_radius": 5,
+        "close_radius": 4,
+        "min_area": 250
+      },
+      {
+        "name": "江苏-湖区8",
+        "bounds": [
+          83,
+          461,
+          110,
+          515
+        ],
+        "action": "hull",
+        "open_radius": 5,
+        "close_radius": 0,
+        "min_area": 400
+      },
+      {
+        "name": "江苏-湖区9",
+        "bounds": [
+          628,
+          638,
+          660,
+          660
+        ],
+        "action": "hull",
+        "open_radius": 5,
+        "close_radius": 0,
+        "min_area": 250
+      }
+    ]
+  },
+  "schema_version": 1,
+  "date": "2026-10-29",
+  "scope": "game terrain preview water design; preserve original elevation, geographic boundary and raw masks",
+  "coordinate_system": "input grid origin northwest; x east, y south; half-open bounds",
+  "rebuild": [
+    "work/terrain-preview-water/process maps/江苏/data/terrain-preview/water-shaping.json",
+    "cargo run --release --locked --offline -- terrain-preview 江苏 maps/江苏/data/terrain-preview/input.npz"
+  ],
+  "frame_trim_note": "remove water bodies that become tiny or narrow remnants in the final playable crop"
+}

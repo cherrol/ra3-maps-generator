@@ -1,0 +1,170 @@
+{
+  "added_cells": 117,
+  "design_lakes": {
+    "cells": 0,
+    "component_count": 0,
+    "components": []
+  },
+  "design_ocean": {
+    "cells": 295484,
+    "component_count": 1,
+    "components": [
+      {
+        "area_cells": 295484,
+        "bbox_aspect_ratio": 1.0096153846153846,
+        "bounds": [
+          0,
+          0,
+          832,
+          840
+        ],
+        "compactness": 0.08016041261179345,
+        "index": 0,
+        "maximum_interior_radius_cells": 240.66666666666666,
+        "perimeter": 6806,
+        "touches_frame": true
+      }
+    ]
+  },
+  "design_water": {
+    "cells": 295484,
+    "component_count": 1,
+    "components": [
+      {
+        "area_cells": 295484,
+        "bbox_aspect_ratio": 1.0096153846153846,
+        "bounds": [
+          0,
+          0,
+          832,
+          840
+        ],
+        "compactness": 0.08016041261179345,
+        "index": 0,
+        "maximum_interior_radius_cells": 240.66666666666666,
+        "perimeter": 6806,
+        "touches_frame": true
+      }
+    ]
+  },
+  "groups": [],
+  "id": "上海",
+  "input_cells": [
+    832,
+    840
+  ],
+  "non_water_arrays_byte_identical": true,
+  "removed_cells": 1409,
+  "restored_unseeded_land_hole_cells": 0,
+  "shoreline_kind": "game-terrain-preview-design",
+  "source": "maps/上海/data/terrain-preview/raw/reference-before-water-shaping.npz",
+  "source_lakes": {
+    "cells": 1088,
+    "component_count": 2,
+    "components": [
+      {
+        "area_cells": 1076,
+        "bbox_aspect_ratio": 1.9090909090909092,
+        "bounds": [
+          0,
+          288,
+          33,
+          351
+        ],
+        "compactness": 0.2556033039896119,
+        "index": 0,
+        "maximum_interior_radius_cells": 16.0,
+        "perimeter": 230,
+        "touches_frame": true
+      },
+      {
+        "area_cells": 12,
+        "bbox_aspect_ratio": 2.0,
+        "bounds": [
+          0,
+          287,
+          3,
+          293
+        ],
+        "compactness": 0.46542113386515455,
+        "index": 1,
+        "maximum_interior_radius_cells": 2.0,
+        "perimeter": 18,
+        "touches_frame": true
+      }
+    ]
+  },
+  "source_ocean": {
+    "cells": 295688,
+    "component_count": 1,
+    "components": [
+      {
+        "area_cells": 295688,
+        "bbox_aspect_ratio": 1.0096153846153846,
+        "bounds": [
+          0,
+          0,
+          832,
+          840
+        ],
+        "compactness": 0.07946673519686999,
+        "index": 0,
+        "maximum_interior_radius_cells": 240.66666666666666,
+        "perimeter": 6838,
+        "touches_frame": true
+      }
+    ]
+  },
+  "source_water": {
+    "cells": 296776,
+    "component_count": 3,
+    "components": [
+      {
+        "area_cells": 295688,
+        "bbox_aspect_ratio": 1.0096153846153846,
+        "bounds": [
+          0,
+          0,
+          832,
+          840
+        ],
+        "compactness": 0.07946673519686999,
+        "index": 0,
+        "maximum_interior_radius_cells": 240.66666666666666,
+        "perimeter": 6838,
+        "touches_frame": true
+      },
+      {
+        "area_cells": 1076,
+        "bbox_aspect_ratio": 1.9090909090909092,
+        "bounds": [
+          0,
+          288,
+          33,
+          351
+        ],
+        "compactness": 0.2556033039896119,
+        "index": 1,
+        "maximum_interior_radius_cells": 16.0,
+        "perimeter": 230,
+        "touches_frame": true
+      },
+      {
+        "area_cells": 12,
+        "bbox_aspect_ratio": 2.0,
+        "bounds": [
+          0,
+          287,
+          3,
+          293
+        ],
+        "compactness": 0.46542113386515455,
+        "index": 2,
+        "maximum_interior_radius_cells": 2.0,
+        "perimeter": 18,
+        "touches_frame": true
+      }
+    ]
+  },
+  "date": "2026-10-29"
+}

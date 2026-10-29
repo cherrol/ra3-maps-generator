@@ -1,0 +1,304 @@
+{
+  "added_land_cells": 0,
+  "all_nonwater_arrays_byte_identical": true,
+  "design_land": {
+    "cells": 90255,
+    "component_count": 6,
+    "components": [
+      {
+        "area_cells": 82124,
+        "bbox_aspect_ratio": 1.9379310344827587,
+        "bounds": [
+          119,
+          133,
+          409,
+          695
+        ],
+        "compactness": 0.3354445809264872,
+        "index": 0,
+        "maximum_interior_radius_cells": 103.66666666666667,
+        "perimeter": 1754,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 6199,
+        "bbox_aspect_ratio": 1.8484848484848484,
+        "bounds": [
+          0,
+          0,
+          66,
+          122
+        ],
+        "compactness": 0.398737389889706,
+        "index": 1,
+        "maximum_interior_radius_cells": 61.0,
+        "perimeter": 442,
+        "touches_frame": true
+      },
+      {
+        "area_cells": 585,
+        "bbox_aspect_ratio": 1.36,
+        "bounds": [
+          685,
+          281,
+          719,
+          306
+        ],
+        "compactness": 0.5279608452599911,
+        "index": 2,
+        "maximum_interior_radius_cells": 11.666666666666666,
+        "perimeter": 118,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 500,
+        "bbox_aspect_ratio": 1.2608695652173914,
+        "bounds": [
+          67,
+          77,
+          90,
+          106
+        ],
+        "compactness": 0.559201255533961,
+        "index": 3,
+        "maximum_interior_radius_cells": 11.333333333333334,
+        "perimeter": 106,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 495,
+        "bbox_aspect_ratio": 1.0740740740740742,
+        "bounds": [
+          32,
+          406,
+          61,
+          433
+        ],
+        "compactness": 0.4958827689818073,
+        "index": 4,
+        "maximum_interior_radius_cells": 10.333333333333334,
+        "perimeter": 112,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 352,
+        "bbox_aspect_ratio": 1.0476190476190477,
+        "bounds": [
+          744,
+          273,
+          766,
+          294
+        ],
+        "compactness": 0.5226089858523663,
+        "index": 5,
+        "maximum_interior_radius_cells": 9.333333333333334,
+        "perimeter": 92,
+        "touches_frame": false
+      }
+    ]
+  },
+  "design_water": {
+    "cells": 521265,
+    "component_count": 1,
+    "components": [
+      {
+        "area_cells": 521265,
+        "bbox_aspect_ratio": 1.1538461538461537,
+        "bounds": [
+          0,
+          0,
+          840,
+          728
+        ],
+        "compactness": 0.22265326487509401,
+        "index": 0,
+        "maximum_interior_radius_cells": 462.0,
+        "perimeter": 5424,
+        "touches_frame": true
+      }
+    ]
+  },
+  "existing_water_preserved": true,
+  "input_cells": [
+    840,
+    728
+  ],
+  "land_open_radius_input_cells": 10,
+  "main_land_and_each_preserved_compact_island_stable_under_opening": true,
+  "map_id": "台湾",
+  "method": "morphological opening of land to retract narrow peninsulas, necks and pointed spurs",
+  "preserved_compact_small_islands": [
+    {
+      "bounds": [
+        685,
+        281,
+        719,
+        306
+      ],
+      "retained_area_cells": 585,
+      "rounding_radius": 4
+    },
+    {
+      "bounds": [
+        32,
+        406,
+        61,
+        433
+      ],
+      "retained_area_cells": 495,
+      "rounding_radius": 4
+    },
+    {
+      "bounds": [
+        744,
+        273,
+        766,
+        294
+      ],
+      "retained_area_cells": 352,
+      "rounding_radius": 4
+    }
+  ],
+  "removed_land_cells": 836,
+  "small_shore_transition_policy": {
+    "bidirectional": true,
+    "continuous": true,
+    "few_exits_do_not_satisfy": true,
+    "scope": "entire perimeter of retained small islands and small waterbodies",
+    "status": "design requirement; implement and verify terrain height/navigation when producing playable maps"
+  },
+  "source": "maps/台湾/data/terrain-preview/raw/reference-before-shoreline-refinement.npz",
+  "source_land": {
+    "cells": 91091,
+    "component_count": 7,
+    "components": [
+      {
+        "area_cells": 82330,
+        "bbox_aspect_ratio": 1.902027027027027,
+        "bounds": [
+          119,
+          133,
+          415,
+          696
+        ],
+        "compactness": 0.32507103899390655,
+        "index": 0,
+        "maximum_interior_radius_cells": 103.66666666666667,
+        "perimeter": 1784,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 7086,
+        "bbox_aspect_ratio": 1.3516483516483517,
+        "bounds": [
+          0,
+          0,
+          91,
+          123
+        ],
+        "compactness": 0.2628845377751476,
+        "index": 1,
+        "maximum_interior_radius_cells": 61.0,
+        "perimeter": 582,
+        "touches_frame": true
+      },
+      {
+        "area_cells": 585,
+        "bbox_aspect_ratio": 1.36,
+        "bounds": [
+          685,
+          281,
+          719,
+          306
+        ],
+        "compactness": 0.5279608452599911,
+        "index": 2,
+        "maximum_interior_radius_cells": 11.666666666666666,
+        "perimeter": 118,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 495,
+        "bbox_aspect_ratio": 1.0740740740740742,
+        "bounds": [
+          32,
+          406,
+          61,
+          433
+        ],
+        "compactness": 0.4958827689818073,
+        "index": 3,
+        "maximum_interior_radius_cells": 10.333333333333334,
+        "perimeter": 112,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 352,
+        "bbox_aspect_ratio": 1.0476190476190477,
+        "bounds": [
+          744,
+          273,
+          766,
+          294
+        ],
+        "compactness": 0.5226089858523663,
+        "index": 4,
+        "maximum_interior_radius_cells": 9.333333333333334,
+        "perimeter": 92,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 149,
+        "bbox_aspect_ratio": 2.2,
+        "bounds": [
+          0,
+          128,
+          10,
+          150
+        ],
+        "compactness": 0.45712627478992107,
+        "index": 5,
+        "maximum_interior_radius_cells": 8.0,
+        "perimeter": 64,
+        "touches_frame": true
+      },
+      {
+        "area_cells": 94,
+        "bbox_aspect_ratio": 2.5714285714285716,
+        "bounds": [
+          833,
+          225,
+          840,
+          243
+        ],
+        "compactness": 0.43684868259976417,
+        "index": 6,
+        "maximum_interior_radius_cells": 6.333333333333333,
+        "perimeter": 52,
+        "touches_frame": true
+      }
+    ]
+  },
+  "source_water": {
+    "cells": 520429,
+    "component_count": 1,
+    "components": [
+      {
+        "area_cells": 520429,
+        "bbox_aspect_ratio": 1.1538461538461537,
+        "bounds": [
+          0,
+          0,
+          840,
+          728
+        ],
+        "compactness": 0.21416553957805787,
+        "index": 0,
+        "maximum_interior_radius_cells": 462.0,
+        "perimeter": 5526,
+        "touches_frame": true
+      }
+    ]
+  },
+  "date": "2026-10-29"
+}

@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "id": "青海",
+  "date": "2026-10-29",
+  "source": "maps/青海/data/terrain-preview/raw/reference-before-shoreline-refinement.npz",
+  "output": "maps/青海/data/terrain-preview/input.npz",
+  "report": "maps/青海/data/terrain-preview/shoreline-refinement-report.json",
+  "land_open_radius": 8,
+  "purpose": "retract thin land protrusions and narrow necks into water while retaining broad land cores",
+  "rebuild": [
+    "work/terrain-preview-shores/process maps/青海/data/terrain-preview/shoreline-refinement.json",
+    "cargo run --release --locked --offline -- terrain-preview 青海 maps/青海/data/terrain-preview/input.npz"
+  ],
+  "compact_island_radius": 4,
+  "compact_island_max_area": 2452
+}

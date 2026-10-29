@@ -1,0 +1,63 @@
+{
+  "date": "2026-10-29",
+  "map_id": "北京",
+  "map_name": "群峰拱野",
+  "game_cells": [
+    800,
+    800
+  ],
+  "include_rivers": false,
+  "water_policy": {
+    "design_shaping": {
+      "designed_shorelines_are_not_measured": true,
+      "merge_nearby_reservoir_branches": true,
+      "real_water_selection_retained_as_reference": true,
+      "recipe": "water-shaping.json",
+      "reference": "raw/reference-before-water-shaping.npz",
+      "remove_unmergeable_small_or_narrow_water": true,
+      "removed_water_target": "valid adjoining land layer from unchanged DEM",
+      "report": "water-shaping-report.json"
+    },
+    "include_rivers": false,
+    "lake_area_method": "spherical polygon area; whole waterbody minus holes before frame clipping",
+    "minimum_lake_area_km2": 80,
+    "mode": "map-local-compact-water-design",
+    "ocean_channel_open_radius_cells": 3,
+    "preserve_ocean": true
+  },
+  "water_cells_in_game_frame": 7022,
+  "component_count_in_game_frame": 2,
+  "components_in_game_frame": [
+    {
+      "area_cells": 5136,
+      "bbox_game_cells": [
+        526,
+        235,
+        632,
+        306
+      ],
+      "raster_perimeter": 358,
+      "bbox_fill_fraction": 0.6666666666666666,
+      "bbox_aspect_ratio": 1.4861111111111112,
+      "touches_game_frame": false
+    },
+    {
+      "area_cells": 1886,
+      "bbox_game_cells": [
+        62,
+        347,
+        118,
+        399
+      ],
+      "raster_perimeter": 220,
+      "bbox_fill_fraction": 0.6242965905329361,
+      "bbox_aspect_ratio": 1.0754716981132075,
+      "touches_game_frame": false
+    }
+  ],
+  "input_water_cells": 6901,
+  "original_input_and_water_policy_unchanged": true,
+  "designed_shorelines_are_not_measured": true,
+  "source_selection_and_design_report": "raw/before-square-800/water-report.json",
+  "square_verification": "square-verification.json"
+}

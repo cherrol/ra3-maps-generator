@@ -1,0 +1,201 @@
+{
+  "include_rivers": false,
+  "large_lake_cells": 8205,
+  "minimum_lake_area_km2": 80,
+  "ocean_cells": 0,
+  "ocean_channel_open_radius_cells": 3,
+  "retained_lakes": [
+    {
+      "area_km2": 17550.930173720222,
+      "cells_in_input_frame": 3296,
+      "name": "巴尔喀什湖"
+    },
+    {
+      "area_km2": 1002.6346338082064,
+      "cells_in_input_frame": 173,
+      "name": "博斯腾湖"
+    },
+    {
+      "area_km2": 1549.10189172732,
+      "cells_in_input_frame": 305,
+      "name": "哈尔乌苏湖"
+    },
+    {
+      "area_km2": 613.0885548891878,
+      "cells_in_input_frame": 98,
+      "name": "阿雅克库木湖"
+    },
+    {
+      "area_km2": 544.3767202625293,
+      "cells_in_input_frame": 3,
+      "name": "扎陵湖"
+    },
+    {
+      "area_km2": 297.9566791914104,
+      "cells_in_input_frame": 46,
+      "name": "可可西里湖"
+    },
+    {
+      "area_km2": 299.99358969027674,
+      "cells_in_input_frame": 16,
+      "name": "班公错"
+    },
+    {
+      "area_km2": 749.5688938375799,
+      "cells_in_input_frame": 141,
+      "name": "萨瑟克湖"
+    },
+    {
+      "area_km2": 207.477213921582,
+      "cells_in_input_frame": 35,
+      "name": "多尔改错湖"
+    },
+    {
+      "area_km2": 82.33025028658007,
+      "cells_in_input_frame": 14,
+      "name": null
+    },
+    {
+      "area_km2": 599.9091035143625,
+      "cells_in_input_frame": 109,
+      "name": "艾比湖"
+    },
+    {
+      "area_km2": 461.1282955356159,
+      "cells_in_input_frame": 91,
+      "name": "马尔卡湖"
+    },
+    {
+      "area_km2": 290.172467621419,
+      "cells_in_input_frame": 56,
+      "name": "阿奇特湖"
+    },
+    {
+      "area_km2": 347.7693160564146,
+      "cells_in_input_frame": 57,
+      "name": "阿其克庫勒湖"
+    },
+    {
+      "area_km2": 189.96195912497092,
+      "cells_in_input_frame": 28,
+      "name": null
+    },
+    {
+      "area_km2": 245.4827383034409,
+      "cells_in_input_frame": 38,
+      "name": "尕斯库乐湖"
+    },
+    {
+      "area_km2": 273.6459903409165,
+      "cells_in_input_frame": 43,
+      "name": "库赛湖"
+    },
+    {
+      "area_km2": 256.2780358057349,
+      "cells_in_input_frame": 40,
+      "name": "卓乃湖"
+    },
+    {
+      "area_km2": 215.69116735706348,
+      "cells_in_input_frame": 35,
+      "name": null
+    },
+    {
+      "area_km2": 338.6574541264049,
+      "cells_in_input_frame": 56,
+      "name": null
+    },
+    {
+      "area_km2": 394.67184559947606,
+      "cells_in_input_frame": 60,
+      "name": null
+    },
+    {
+      "area_km2": 198.2374016248592,
+      "cells_in_input_frame": 31,
+      "name": null
+    },
+    {
+      "area_km2": 268.62242414582164,
+      "cells_in_input_frame": 43,
+      "name": null
+    },
+    {
+      "area_km2": 264.9968320961726,
+      "cells_in_input_frame": 43,
+      "name": null
+    },
+    {
+      "area_km2": 148.3069753281731,
+      "cells_in_input_frame": 21,
+      "name": null
+    },
+    {
+      "area_km2": 309.10240446866254,
+      "cells_in_input_frame": 49,
+      "name": "鲁玛江东错"
+    },
+    {
+      "area_km2": 254.9993769897031,
+      "cells_in_input_frame": 39,
+      "name": "郭扎错"
+    },
+    {
+      "area_km2": 80.80844684847311,
+      "cells_in_input_frame": 12,
+      "name": null
+    },
+    {
+      "area_km2": 156.1544038695595,
+      "cells_in_input_frame": 24,
+      "name": "阿克赛钦湖"
+    },
+    {
+      "area_km2": 4195.224926838787,
+      "cells_in_input_frame": 805,
+      "name": "斋桑泊"
+    },
+    {
+      "area_km2": 610.1331516902978,
+      "cells_in_input_frame": 67,
+      "name": "托克托古尔水库"
+    },
+    {
+      "area_km2": 403.63742880292807,
+      "cells_in_input_frame": 46,
+      "name": "德尔贝拉水库"
+    },
+    {
+      "area_km2": 933.398725167154,
+      "cells_in_input_frame": 173,
+      "name": "卡普恰盖水库"
+    },
+    {
+      "area_km2": 6252.129907975083,
+      "cells_in_input_frame": 1099,
+      "name": "伊塞克湖"
+    },
+    {
+      "area_km2": 2833.872368964394,
+      "cells_in_input_frame": 532,
+      "name": "阿拉湖"
+    },
+    {
+      "area_km2": 1349.9761323398366,
+      "cells_in_input_frame": 270,
+      "name": "吉爾吉斯湖"
+    },
+    {
+      "area_km2": 937.447717831912,
+      "cells_in_input_frame": 183,
+      "name": "哈尔湖"
+    },
+    {
+      "area_km2": 137.80177062355935,
+      "cells_in_input_frame": 28,
+      "name": "艾拉格湖"
+    }
+  ],
+  "water_cells": 8205,
+  "water_mask_equals_ocean_union_large_lakes": true
+}

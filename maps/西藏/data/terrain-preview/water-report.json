@@ -1,0 +1,76 @@
+{
+  "date": "2026-10-29",
+  "map_id": "西藏",
+  "map_name": "雪脊擎天",
+  "game_cells": [
+    800,
+    800
+  ],
+  "include_rivers": false,
+  "water_policy": {
+    "design_shaping": {
+      "designed_shorelines_are_not_measured": true,
+      "merge_nearby_reservoir_branches": true,
+      "real_water_selection_retained_as_reference": true,
+      "recipe": "water-shaping.json",
+      "reference": "raw/reference-before-water-shaping.npz",
+      "remove_unmergeable_small_or_narrow_water": true,
+      "removed_water_target": "valid adjoining land layer from unchanged DEM",
+      "report": "water-shaping-report.json"
+    },
+    "include_rivers": false,
+    "lake_area_method": "spherical polygon area; whole waterbody minus holes before frame clipping",
+    "minimum_lake_area_km2": 80,
+    "mode": "map-local-compact-water-design",
+    "ocean_channel_open_radius_cells": 3,
+    "preserve_ocean": true
+  },
+  "water_cells_in_game_frame": 1857,
+  "component_count_in_game_frame": 3,
+  "components_in_game_frame": [
+    {
+      "area_cells": 785,
+      "bbox_game_cells": [
+        393,
+        378,
+        420,
+        417
+      ],
+      "raster_perimeter": 136,
+      "bbox_fill_fraction": 0.7008928571428571,
+      "bbox_aspect_ratio": 0.7,
+      "touches_game_frame": false
+    },
+    {
+      "area_cells": 545,
+      "bbox_game_cells": [
+        438,
+        236,
+        462,
+        268
+      ],
+      "raster_perimeter": 116,
+      "bbox_fill_fraction": 0.6606060606060606,
+      "bbox_aspect_ratio": 0.7575757575757576,
+      "touches_game_frame": false
+    },
+    {
+      "area_cells": 527,
+      "bbox_game_cells": [
+        458,
+        462,
+        481,
+        492
+      ],
+      "raster_perimeter": 110,
+      "bbox_fill_fraction": 0.7083333333333334,
+      "bbox_aspect_ratio": 0.7741935483870968,
+      "touches_game_frame": false
+    }
+  ],
+  "input_water_cells": 1024,
+  "original_input_and_water_policy_unchanged": true,
+  "designed_shorelines_are_not_measured": true,
+  "source_selection_and_design_report": "raw/before-square-800/water-report.json",
+  "square_verification": "square-verification.json"
+}

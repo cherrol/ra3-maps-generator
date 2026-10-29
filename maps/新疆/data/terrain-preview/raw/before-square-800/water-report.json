@@ -1,0 +1,313 @@
+{
+  "date": "2026-10-29",
+  "map_id": "新疆",
+  "map_name": "雪岭环沙",
+  "mode": "map-local-compact-water-design",
+  "designed_shorelines_are_not_measured": true,
+  "include_rivers": false,
+  "source_selection_report": "raw/before-water-shaping-water-report.json",
+  "water_cells_in_input": 15888,
+  "water_cells_in_game_frame": 15464,
+  "component_count_in_game_frame": 6,
+  "components_in_game_frame": [
+    {
+      "area_cells": 9763,
+      "bbox_game_cells": [
+        1,
+        112,
+        197,
+        196
+      ],
+      "bbox_fill_fraction": 0.583,
+      "bbox_aspect_ratio": 2.3176,
+      "raster_perimeter": 564,
+      "compactness_4pi_area_over_perimeter_squared": 0.3857,
+      "maximum_manhattan_interior_radius_cells": 38,
+      "touches_game_frame": false
+    },
+    {
+      "area_cells": 2867,
+      "bbox_game_cells": [
+        334,
+        0,
+        384,
+        69
+      ],
+      "bbox_fill_fraction": 0.8031,
+      "bbox_aspect_ratio": 1.3725,
+      "raster_perimeter": 242,
+      "compactness_4pi_area_over_perimeter_squared": 0.6152,
+      "maximum_manhattan_interior_radius_cells": 25,
+      "touches_game_frame": true
+    },
+    {
+      "area_cells": 1190,
+      "bbox_game_cells": [
+        102,
+        302,
+        169,
+        328
+      ],
+      "bbox_fill_fraction": 0.6481,
+      "bbox_aspect_ratio": 2.5185,
+      "raster_perimeter": 190,
+      "compactness_4pi_area_over_perimeter_squared": 0.4142,
+      "maximum_manhattan_interior_radius_cells": 12,
+      "touches_game_frame": false
+    },
+    {
+      "area_cells": 796,
+      "bbox_game_cells": [
+        643,
+        41,
+        697,
+        71
+      ],
+      "bbox_fill_fraction": 0.4669,
+      "bbox_aspect_ratio": 1.7742,
+      "raster_perimeter": 212,
+      "compactness_4pi_area_over_perimeter_squared": 0.2226,
+      "maximum_manhattan_interior_radius_cells": 12,
+      "touches_game_frame": false
+    },
+    {
+      "area_cells": 540,
+      "bbox_game_cells": [
+        277,
+        129,
+        300,
+        159
+      ],
+      "bbox_fill_fraction": 0.7258,
+      "bbox_aspect_ratio": 1.2917,
+      "raster_perimeter": 110,
+      "compactness_4pi_area_over_perimeter_squared": 0.5608,
+      "maximum_manhattan_interior_radius_cells": 12,
+      "touches_game_frame": false
+    },
+    {
+      "area_cells": 308,
+      "bbox_game_cells": [
+        677,
+        0,
+        703,
+        16
+      ],
+      "bbox_fill_fraction": 0.671,
+      "bbox_aspect_ratio": 1.5882,
+      "raster_perimeter": 88,
+      "compactness_4pi_area_over_perimeter_squared": 0.4998,
+      "maximum_manhattan_interior_radius_cells": 9,
+      "touches_game_frame": true
+    }
+  ],
+  "design_lake_groups": [
+    {
+      "action": "hull",
+      "close_radius": 0,
+      "name": "新疆-湖区1",
+      "open_radius": 10,
+      "result": {
+        "cells": 9763,
+        "component_count": 1,
+        "components": [
+          {
+            "area_cells": 9763,
+            "bbox_aspect_ratio": 2.3176470588235296,
+            "bounds": [
+              21,
+              132,
+              218,
+              217
+            ],
+            "compactness": 0.38568695081984244,
+            "index": 0,
+            "maximum_interior_radius_cells": 35.333333333333336,
+            "perimeter": 564,
+            "touches_frame": false
+          }
+        ]
+      },
+      "source_cells": 3296
+    },
+    {
+      "action": "hull",
+      "close_radius": 0,
+      "name": "新疆-湖区2",
+      "open_radius": 5,
+      "result": {
+        "cells": 1190,
+        "component_count": 1,
+        "components": [
+          {
+            "area_cells": 1190,
+            "bbox_aspect_ratio": 2.5185185185185186,
+            "bounds": [
+              122,
+              322,
+              190,
+              349
+            ],
+            "compactness": 0.41423770169217217,
+            "index": 0,
+            "maximum_interior_radius_cells": 12.0,
+            "perimeter": 190,
+            "touches_frame": false
+          }
+        ]
+      },
+      "source_cells": 1099
+    },
+    {
+      "action": "hull",
+      "close_radius": 0,
+      "name": "新疆-湖区3",
+      "open_radius": 5,
+      "result": {
+        "cells": 540,
+        "component_count": 1,
+        "components": [
+          {
+            "area_cells": 540,
+            "bbox_aspect_ratio": 1.2916666666666667,
+            "bounds": [
+              297,
+              149,
+              321,
+              180
+            ],
+            "compactness": 0.5608132340292523,
+            "index": 0,
+            "maximum_interior_radius_cells": 10.666666666666666,
+            "perimeter": 110,
+            "touches_frame": false
+          }
+        ]
+      },
+      "source_cells": 532
+    },
+    {
+      "action": "hull",
+      "close_radius": 0,
+      "name": "新疆-湖区4",
+      "open_radius": 8,
+      "result": {
+        "cells": 3290,
+        "component_count": 1,
+        "components": [
+          {
+            "area_cells": 3290,
+            "bbox_aspect_ratio": 1.7254901960784315,
+            "bounds": [
+              354,
+              2,
+              405,
+              90
+            ],
+            "compactness": 0.534953668563243,
+            "index": 0,
+            "maximum_interior_radius_cells": 24.0,
+            "perimeter": 278,
+            "touches_frame": false
+          }
+        ]
+      },
+      "source_cells": 804
+    },
+    {
+      "action": "hull",
+      "close_radius": 0,
+      "name": "新疆-湖区5",
+      "open_radius": 5,
+      "result": {
+        "cells": 490,
+        "component_count": 1,
+        "components": [
+          {
+            "area_cells": 490,
+            "bbox_aspect_ratio": 1.0357142857142858,
+            "bounds": [
+              663,
+              61,
+              692,
+              89
+            ],
+            "compactness": 0.47380129278516425,
+            "index": 0,
+            "maximum_interior_radius_cells": 9.333333333333334,
+            "perimeter": 114,
+            "touches_frame": false
+          }
+        ]
+      },
+      "source_cells": 305
+    },
+    {
+      "action": "hull",
+      "close_radius": 0,
+      "name": "新疆-湖区6",
+      "open_radius": 5,
+      "result": {
+        "cells": 347,
+        "component_count": 1,
+        "components": [
+          {
+            "area_cells": 347,
+            "bbox_aspect_ratio": 1.2857142857142858,
+            "bounds": [
+              697,
+              16,
+              724,
+              37
+            ],
+            "compactness": 0.4731478519078378,
+            "index": 0,
+            "maximum_interior_radius_cells": 8.0,
+            "perimeter": 96,
+            "touches_frame": false
+          }
+        ]
+      },
+      "source_cells": 298
+    },
+    {
+      "action": "hull",
+      "close_radius": 0,
+      "name": "新疆-湖区10",
+      "open_radius": 5,
+      "result": {
+        "cells": 268,
+        "component_count": 1,
+        "components": [
+          {
+            "area_cells": 268,
+            "bbox_aspect_ratio": 1.3333333333333333,
+            "bounds": [
+              700,
+              68,
+              718,
+              92
+            ],
+            "compactness": 0.4772941219739595,
+            "index": 0,
+            "maximum_interior_radius_cells": 7.0,
+            "perimeter": 84,
+            "touches_frame": false
+          }
+        ]
+      },
+      "source_cells": 183
+    }
+  ],
+  "water_exactly_ocean_union_original_large_lakes": false,
+  "original_geographic_arrays_preserved": true,
+  "existing_land_layers_preserved": true,
+  "original_final_thresholds_preserved": true,
+  "reference": "raw/reference-before-water-shaping.npz",
+  "active_shoreline_refinement": "shoreline-refinement-report.json",
+  "land_protrusions_removed_input_cells": 89,
+  "land_protrusions_removed_game_cells": 38,
+  "small_island_and_waterbody_transition_plan": "shoreline-transition-plan.json",
+  "existing_water_preserved_during_land_refinement": true,
+  "full_perimeter_passability_status": "preview design requirement; implement and verify height/navigation during playable-map authoring"
+}

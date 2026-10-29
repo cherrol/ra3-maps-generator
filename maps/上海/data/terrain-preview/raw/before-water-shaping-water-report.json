@@ -1,0 +1,16 @@
+{
+  "include_rivers": false,
+  "large_lake_cells": 1088,
+  "minimum_lake_area_km2": 80,
+  "ocean_cells": 295688,
+  "ocean_channel_open_radius_cells": 3,
+  "retained_lakes": [
+    {
+      "area_km2": 120.69874772256738,
+      "cells_in_input_frame": 1088,
+      "name": null
+    }
+  ],
+  "water_cells": 296776,
+  "water_mask_equals_ocean_union_large_lakes": true
+}

@@ -1,0 +1,157 @@
+{
+  "schema_version": 1,
+  "map_name": "赤崖涵碧",
+  "blueprint": "江西",
+  "label": "地级行政中心",
+  "coordinate_system": "WGS84",
+  "source": "https://geo.datav.aliyun.com/areas_v3/bound/360000_full.json",
+  "source_field": "properties.center (administrative center, not polygon centroid)",
+  "conversion": "GCJ-02 approximately inverted to WGS84 by six iterations, matching terrain boundary ingestion",
+  "retrieved_date": "2026-10-29",
+  "points": [
+    {
+      "adcode": "360100",
+      "name": "南昌市",
+      "level": "city",
+      "center_wgs84": [
+        115.88730022652743,
+        28.67985724683088
+      ],
+      "center_gcj02": [
+        115.892151,
+        28.676493
+      ]
+    },
+    {
+      "adcode": "360200",
+      "name": "景德镇市",
+      "level": "city",
+      "center_wgs84": [
+        117.20939063512525,
+        29.295237043584024
+      ],
+      "center_gcj02": [
+        117.214664,
+        29.29256
+      ]
+    },
+    {
+      "adcode": "360300",
+      "name": "萍乡市",
+      "level": "city",
+      "center_wgs84": [
+        113.84686475783307,
+        27.626344492601845
+      ],
+      "center_gcj02": [
+        113.852186,
+        27.622946
+      ]
+    },
+    {
+      "adcode": "360400",
+      "name": "九江市",
+      "level": "city",
+      "center_wgs84": [
+        115.98775755404304,
+        29.714613142134347
+      ],
+      "center_gcj02": [
+        115.992811,
+        29.712034
+      ]
+    },
+    {
+      "adcode": "360500",
+      "name": "新余市",
+      "level": "city",
+      "center_wgs84": [
+        114.92597859418373,
+        27.814283352620272
+      ],
+      "center_gcj02": [
+        114.930835,
+        27.810834
+      ]
+    },
+    {
+      "adcode": "360600",
+      "name": "鹰潭市",
+      "level": "city",
+      "center_wgs84": [
+        117.02868127185207,
+        28.241856811153575
+      ],
+      "center_gcj02": [
+        117.033838,
+        28.238638
+      ]
+    },
+    {
+      "adcode": "360700",
+      "name": "赣州市",
+      "level": "city",
+      "center_wgs84": [
+        114.93554798374133,
+        25.85416590070541
+      ],
+      "center_gcj02": [
+        114.940278,
+        25.85097
+      ]
+    },
+    {
+      "adcode": "360800",
+      "name": "吉安市",
+      "level": "city",
+      "center_wgs84": [
+        114.98142805277433,
+        27.11508488605671
+      ],
+      "center_gcj02": [
+        114.986373,
+        27.111699
+      ]
+    },
+    {
+      "adcode": "360900",
+      "name": "宜春市",
+      "level": "city",
+      "center_wgs84": [
+        114.38581880159849,
+        27.807402629126962
+      ],
+      "center_gcj02": [
+        114.391136,
+        27.8043
+      ]
+    },
+    {
+      "adcode": "361000",
+      "name": "抚州市",
+      "level": "city",
+      "center_wgs84": [
+        116.35335062387023,
+        27.98699815453265
+      ],
+      "center_gcj02": [
+        116.358351,
+        27.98385
+      ]
+    },
+    {
+      "adcode": "361100",
+      "name": "上饶市",
+      "level": "city",
+      "center_wgs84": [
+        117.96615955174275,
+        28.447777531705317
+      ],
+      "center_gcj02": [
+        117.971185,
+        28.44442
+      ]
+    }
+  ],
+  "excluded_features": []
+}

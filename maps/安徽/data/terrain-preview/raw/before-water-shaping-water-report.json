@@ -1,0 +1,131 @@
+{
+  "include_rivers": false,
+  "large_lake_cells": 15545,
+  "minimum_lake_area_km2": 80,
+  "ocean_cells": 2126,
+  "ocean_channel_open_radius_cells": 3,
+  "retained_lakes": [
+    {
+      "area_km2": 2351.226985969607,
+      "cells_in_input_frame": 4387,
+      "name": "洪泽湖"
+    },
+    {
+      "area_km2": 2078.0503248057275,
+      "cells_in_input_frame": 1173,
+      "name": "鄱阳湖"
+    },
+    {
+      "area_km2": 301.1819328872862,
+      "cells_in_input_frame": 550,
+      "name": "大官湖"
+    },
+    {
+      "area_km2": 368.4396916799114,
+      "cells_in_input_frame": 660,
+      "name": "龙感湖"
+    },
+    {
+      "area_km2": 847.2117384417836,
+      "cells_in_input_frame": 1565,
+      "name": "高邮湖"
+    },
+    {
+      "area_km2": 213.31218791086872,
+      "cells_in_input_frame": 382,
+      "name": "鄱湖"
+    },
+    {
+      "area_km2": 312.0321598555198,
+      "cells_in_input_frame": 569,
+      "name": "石臼湖"
+    },
+    {
+      "area_km2": 788.9000241817677,
+      "cells_in_input_frame": 1444,
+      "name": "巢湖"
+    },
+    {
+      "area_km2": 156.0512182488839,
+      "cells_in_input_frame": 236,
+      "name": null
+    },
+    {
+      "area_km2": 168.24642445336758,
+      "cells_in_input_frame": 165,
+      "name": null
+    },
+    {
+      "area_km2": 334.41889027108203,
+      "cells_in_input_frame": 631,
+      "name": "微山湖"
+    },
+    {
+      "area_km2": 200.7101388017492,
+      "cells_in_input_frame": 84,
+      "name": null
+    },
+    {
+      "area_km2": 103.97708389591185,
+      "cells_in_input_frame": 187,
+      "name": null
+    },
+    {
+      "area_km2": 195.863225868085,
+      "cells_in_input_frame": 260,
+      "name": "滆湖"
+    },
+    {
+      "area_km2": 172.24443229365366,
+      "cells_in_input_frame": 311,
+      "name": null
+    },
+    {
+      "area_km2": 123.35047452243803,
+      "cells_in_input_frame": 229,
+      "name": null
+    },
+    {
+      "area_km2": 104.84480332936374,
+      "cells_in_input_frame": 195,
+      "name": "駱馬湖"
+    },
+    {
+      "area_km2": 143.00308437148598,
+      "cells_in_input_frame": 272,
+      "name": null
+    },
+    {
+      "area_km2": 88.9274616271865,
+      "cells_in_input_frame": 159,
+      "name": null
+    },
+    {
+      "area_km2": 146.20155942137148,
+      "cells_in_input_frame": 265,
+      "name": "武昌湖"
+    },
+    {
+      "area_km2": 101.43544002492904,
+      "cells_in_input_frame": 183,
+      "name": null
+    },
+    {
+      "area_km2": 587.7819930245125,
+      "cells_in_input_frame": 1044,
+      "name": "新安江水库"
+    },
+    {
+      "area_km2": 443.9758173948906,
+      "cells_in_input_frame": 790,
+      "name": "千岛湖"
+    },
+    {
+      "area_km2": 294.21054799574625,
+      "cells_in_input_frame": 438,
+      "name": "柘林水库"
+    }
+  ],
+  "water_cells": 17671,
+  "water_mask_equals_ocean_union_large_lakes": true
+}

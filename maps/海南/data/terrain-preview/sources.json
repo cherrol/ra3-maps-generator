@@ -1,0 +1,23 @@
+{
+  "date": "2026-10-28",
+  "map_name": "翠屿浮光",
+  "input": "data/terrain-preview/input.npz",
+  "parameters": "data/terrain-preview/parameters.json",
+  "reference_scope": "entire rectangle; province outline is reference only",
+  "height_policy": "national-bands-with-local-fallback",
+  "dem_source": "https://registry.opendata.aws/terrain-tiles/",
+  "format_documentation": "https://github.com/tilezen/joerd/blob/master/docs/formats.md",
+  "attribution": "Mapzen / AWS Terrain Tiles; SRTM / GMTED2010 courtesy USGS; see https://github.com/tilezen/joerd/blob/master/docs/attribution.md",
+  "raw_source_preserved": true,
+  "original_playable_map_unchanged": true,
+  "boundary": "raw/boundary-original.json, originally data/main_boundary.json; approximately inverse GCJ-02 to WGS84",
+  "dem_tiles": "raw/terrarium/8/",
+  "water": "Natural Earth ocean polygons + lake/reservoir polygons with estimated whole-waterbody area >= 80 km2; rivers omitted",
+  "natural_earth": "https://www.naturalearthdata.com/downloads/10m-physical-vectors/",
+  "legacy_manual_layer_shapes": "preserved as historical inputs; not used for this preview regeneration",
+  "water_reference": "input.npz water_mask = ocean_mask union large_lake_mask",
+  "unfiltered_water_reference": "raw/reference-before-water-filter.npz",
+  "water_policy": "water-policy.json",
+  "water_report": "water-report.json",
+  "ocean_source": "https://github.com/nvkelso/natural-earth-vector/blob/master/geojson/ne_10m_ocean.geojson"
+}

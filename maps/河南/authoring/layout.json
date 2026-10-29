@@ -2,231 +2,449 @@
   "schema_version": 1,
   "base_cells": [
     [
-      97.0,
-      753.0
+      92.0,
+      789.0
     ],
     [
-      289.0,
-      753.0
+      269.0,
+      786.0
     ],
     [
-      418.0,
-      754.0
+      442.0,
+      793.0
     ],
     [
-      694.0,
-      760.0
+      634.0,
+      738.0
     ],
     [
-      90.0,
-      55.0
+      72.0,
+      51.0
     ],
     [
-      343.0,
-      55.0
-    ],
-    [
-      570.0,
+      357.0,
       63.0
     ],
     [
-      762.0,
-      63.0
+      557.0,
+      70.0
+    ],
+    [
+      718.0,
+      66.0
     ]
   ],
   "base_pad_cells": [],
   "ore_cells": [
     [
-      57.0,
-      709.0
+      50.0,
+      758.0
     ],
     [
-      155.0,
+      149.0,
+      788.0
+    ],
+    [
+      92.0,
+      699.0
+    ],
+    [
+      226.0,
       757.0
     ],
     [
-      231.0,
-      757.0
+      326.0,
+      785.0
     ],
     [
-      320.0,
-      710.0
+      269.0,
+      696.0
     ],
     [
-      358.0,
-      754.0
+      383.0,
+      788.0
     ],
     [
-      376.0,
-      712.0
+      501.0,
+      788.0
+    ],
+    [
+      406.0,
+      725.0
+    ],
+    [
+      575.0,
+      737.0
+    ],
+    [
+      685.0,
+      720.0
     ],
     [
       634.0,
-      754.0
-    ],
-    [
-      754.0,
-      754.0
+      648.0
     ],
     [
       50.0,
       100.0
     ],
     [
-      150.0,
-      55.0
+      130.0,
+      50.0
     ],
     [
-      283.0,
-      55.0
+      170.0,
+      70.0
     ],
     [
-      403.0,
-      55.0
+      298.0,
+      62.0
     ],
     [
-      540.0,
-      115.0
+      414.0,
+      58.0
     ],
     [
-      630.0,
-      63.0
+      379.0,
+      136.0
     ],
     [
-      702.0,
-      63.0
+      528.0,
+      114.0
     ],
     [
-      780.0,
-      120.0
+      614.0,
+      70.0
     ],
     [
-      570.0,
-      360.0
-    ],
-    [
-      700.0,
-      330.0
-    ],
-    [
-      570.0,
-      220.0
-    ],
-    [
-      710.0,
+      557.0,
       160.0
     ],
     [
-      650.0,
-      250.0
+      659.0,
+      66.0
     ],
     [
-      310.0,
-      540.0
+      777.0,
+      54.0
     ],
     [
-      95.0,
-      690.0
+      718.0,
+      156.0
     ],
     [
-      650.0,
-      450.0
-    ]
-  ],
-  "ore_angles": [
-    0.832981288433075,
-    -3.0727362632751465,
-    -0.06885649263858795,
-    3.141592653589793,
-    3.1415927410125732,
-    0.6108652353286743,
-    3.1415927410125732,
-    3.041923999786377,
-    -0.8441540002822876,
-    3.141592653589793,
-    0.0,
-    3.141592653589793,
-    -1.047518014907837,
-    3.141592653589793,
-    0.0,
-    -1.5707963705062866,
-    1.5707963267948966,
-    1.5707963267948966,
-    1.5707963267948966,
-    1.5707963267948966,
-    0.0,
-    0.0,
-    0.0,
-    0.0
-  ],
-  "ore_kind": [],
-  "ore_owner": [],
-  "derrick_cells": [
-    [
-      555.0,
-      575.0
+      78.0,
+      545.0
     ],
     [
-      745.0,
-      575.0
+      50.0,
+      381.0
     ],
     [
       230.0,
-      90.0
+      488.0
     ],
     [
-      65.0,
-      290.0
+      150.0,
+      170.0
     ],
     [
-      600.0,
+      94.0,
+      334.0
+    ],
+    [
+      162.0,
+      315.0
+    ],
+    [
+      285.0,
+      582.0
+    ],
+    [
+      375.0,
+      451.0
+    ],
+    [
+      375.0,
+      556.0
+    ],
+    [
+      423.0,
+      216.0
+    ],
+    [
+      429.0,
+      392.0
+    ],
+    [
+      476.0,
       280.0
     ],
     [
-      300.0,
-      600.0
+      516.0,
+      668.0
+    ],
+    [
+      512.0,
+      486.0
+    ],
+    [
+      586.0,
+      640.0
+    ],
+    [
+      520.0,
+      218.0
+    ],
+    [
+      512.0,
+      402.0
+    ],
+    [
+      558.0,
+      338.0
+    ],
+    [
+      634.0,
+      564.0
+    ],
+    [
+      634.0,
+      398.0
+    ],
+    [
+      680.0,
+      542.0
+    ],
+    [
+      634.0,
+      156.0
+    ],
+    [
+      634.0,
+      322.0
+    ],
+    [
+      680.0,
+      270.0
+    ]
+  ],
+  "ore_angles": [
+    0.0,
+    -3.141592653589793,
+    -2.748893571891069,
+    0.0,
+    -3.141592653589793,
+    -1.5707963267948966,
+    0.0,
+    2.945243112740431,
+    -3.141592653589793,
+    0.0,
+    -2.1598449493429825,
+    -1.5707963267948966,
+    -0.39269908169872414,
+    1.7671458676442586,
+    0.19634954084936207,
+    0.0,
+    -3.141592653589793,
+    -2.1598449493429825,
+    -1.5707963267948966,
+    -3.141592653589793,
+    1.5707963267948966,
+    0.0,
+    -2.945243112740431,
+    1.5707963267948966,
+    -1.5707963267948966,
+    -1.5707963267948966,
+    -2.356194490192345,
+    0.9817477042468103,
+    1.5707963267948966,
+    1.9634954084936207,
+    -0.19634954084936207,
+    -1.1780972450961724,
+    -0.39269908169872414,
+    1.1780972450961724,
+    1.5707963267948966,
+    0.7853981633974483,
+    -0.5890486225480862,
+    -1.3744467859455345,
+    -1.3744467859455345,
+    -1.5707963267948966,
+    2.945243112740431,
+    1.5707963267948966,
+    -1.5707963267948966,
+    -1.5707963267948966,
+    -1.3744467859455345,
+    2.356194490192345,
+    -3.141592653589793,
+    1.5707963267948966
+  ],
+  "ore_kind": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "ore_owner": [
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1
+  ],
+  "derrick_cells": [
+    [
+      208.0,
+      258.0
+    ],
+    [
+      348.0,
+      316.0
+    ],
+    [
+      590.0,
+      280.0
+    ],
+    [
+      182.0,
+      668.0
+    ],
+    [
+      404.0,
+      588.0
+    ],
+    [
+      670.0,
+      576.0
     ]
   ],
   "house_cells": [],
   "post_cells": [
     [
-      465.0,
-      275.0
+      270.0,
+      614.0
     ],
     [
-      350.0,
-      525.0
+      520.0,
+      540.0
     ]
   ],
   "garage_cells": [
     [
-      610.0,
-      680.0
+      100.0,
+      180.0
     ],
     [
-      320.0,
-      310.0
+      720.0,
+      220.0
     ]
   ],
   "airport_cells": [],
   "hospital_cells": [
     [
-      495.0,
-      420.0
+      168.0,
+      384.0
     ],
     [
-      60.0,
-      260.0
+      600.0,
+      388.0
     ]
   ],
   "academy_cells": [
     [
-      620.0,
-      405.0
+      110.0,
+      430.0
     ],
     [
-      200.0,
-      380.0
+      730.0,
+      430.0
     ]
   ],
   "shipyard_cells": [],
@@ -250,8 +468,8 @@
       "uy": 0,
       "w": 40,
       "width": 24,
-      "x": 245,
-      "y": 340
+      "x": 241,
+      "y": 350
     },
     {
       "auto": true,
@@ -267,11 +485,11 @@
       "span": 40,
       "style": "mountain",
       "surface_style": "mountain",
-      "ux": -0.8,
-      "uy": -0.6,
+      "ux": -1,
+      "uy": 0,
       "w": 40,
       "width": 24,
-      "x": 410,
+      "x": 422,
       "y": 350
     },
     {
@@ -292,7 +510,7 @@
       "uy": 0,
       "w": 40,
       "width": 24,
-      "x": 300,
+      "x": 298,
       "y": 420
     },
     {
@@ -313,29 +531,8 @@
       "uy": 0,
       "w": 40,
       "width": 24,
-      "x": 368,
-      "y": 460
-    },
-    {
-      "auto": true,
-      "h": 40,
-      "layers": [
-        210,
-        350
-      ],
-      "pair": [
-        210,
-        350
-      ],
-      "span": 40,
-      "style": "mountain",
-      "surface_style": "mountain",
-      "ux": -1,
-      "uy": 0,
-      "w": 40,
-      "width": 24,
-      "x": 200,
-      "y": 710
+      "x": 363,
+      "y": 500
     },
     {
       "auto": true,
@@ -355,29 +552,8 @@
       "uy": 0,
       "w": 40,
       "width": 24,
-      "x": 353,
+      "x": 352,
       "y": 650
-    },
-    {
-      "auto": true,
-      "h": 40,
-      "layers": [
-        210,
-        280
-      ],
-      "pair": [
-        210,
-        280
-      ],
-      "span": 40,
-      "style": "mountain",
-      "surface_style": "mountain",
-      "ux": 0,
-      "uy": 1,
-      "w": 40,
-      "width": 24,
-      "x": 680,
-      "y": 730
     },
     {
       "auto": true,
@@ -399,13 +575,181 @@
       "width": 24,
       "x": 128,
       "y": 273
+    },
+    {
+      "auto": true,
+      "h": 40,
+      "layers": [
+        210,
+        350
+      ],
+      "pair": [
+        210,
+        350
+      ],
+      "span": 40,
+      "style": "mountain",
+      "surface_style": "mountain",
+      "ux": 0,
+      "uy": -1,
+      "w": 40,
+      "width": 24,
+      "x": 352,
+      "y": 205
+    },
+    {
+      "auto": true,
+      "h": 40,
+      "layers": [
+        280,
+        350
+      ],
+      "pair": [
+        280,
+        350
+      ],
+      "span": 40,
+      "style": "mountain",
+      "surface_style": "mountain",
+      "ux": -1,
+      "uy": 0,
+      "w": 40,
+      "width": 24,
+      "x": 452,
+      "y": 100
+    },
+    {
+      "auto": true,
+      "h": 40,
+      "layers": [
+        210,
+        280
+      ],
+      "pair": [
+        210,
+        280
+      ],
+      "span": 40,
+      "style": "mountain",
+      "surface_style": "mountain",
+      "ux": 0,
+      "uy": -1,
+      "w": 40,
+      "width": 24,
+      "x": 480,
+      "y": 157
+    },
+    {
+      "auto": true,
+      "h": 40,
+      "layers": [
+        210,
+        280
+      ],
+      "pair": [
+        210,
+        280
+      ],
+      "span": 40,
+      "style": "mountain",
+      "surface_style": "mountain",
+      "ux": 0,
+      "uy": 1,
+      "w": 40,
+      "width": 24,
+      "x": 480,
+      "y": 728
+    },
+    {
+      "auto": true,
+      "h": 40,
+      "layers": [
+        210,
+        280
+      ],
+      "pair": [
+        210,
+        280
+      ],
+      "span": 40,
+      "style": "mountain",
+      "surface_style": "mountain",
+      "ux": -1,
+      "uy": 0,
+      "w": 40,
+      "width": 24,
+      "x": 746,
+      "y": 788
+    },
+    {
+      "auto": true,
+      "h": 40,
+      "layers": [
+        280,
+        350
+      ],
+      "pair": [
+        280,
+        350
+      ],
+      "span": 40,
+      "style": "mountain",
+      "surface_style": "mountain",
+      "ux": 0,
+      "uy": 1,
+      "w": 40,
+      "width": 24,
+      "x": 35,
+      "y": 610
+    },
+    {
+      "auto": true,
+      "h": 40,
+      "layers": [
+        280,
+        350
+      ],
+      "pair": [
+        280,
+        350
+      ],
+      "span": 40,
+      "style": "mountain",
+      "surface_style": "mountain",
+      "ux": 0,
+      "uy": -1,
+      "w": 40,
+      "width": 24,
+      "x": 35,
+      "y": 555
+    },
+    {
+      "auto": true,
+      "h": 40,
+      "layers": [
+        210,
+        280
+      ],
+      "pair": [
+        210,
+        280
+      ],
+      "span": 40,
+      "style": "mountain",
+      "surface_style": "mountain",
+      "ux": -1,
+      "uy": 0,
+      "w": 40,
+      "width": 24,
+      "x": 220,
+      "y": 550
     }
   ],
   "objects": [
     {
       "cell": [
-        97.0,
-        753.0
+        92.0,
+        789.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -496,8 +840,8 @@
     },
     {
       "cell": [
-        29.0,
-        697.0
+        63.0,
+        689.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -588,8 +932,8 @@
     },
     {
       "cell": [
-        39.0,
-        669.0
+        35.0,
+        705.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -680,8 +1024,8 @@
     },
     {
       "cell": [
-        67.0,
-        681.0
+        63.0,
+        717.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -772,162 +1116,8 @@
     },
     {
       "cell": [
-        57.0,
-        709.0
-      ],
-      "version": 3,
-      "angle": -0.8329813,
-      "road_type": 0,
-      "type_name": "OreNode",
-      "props": [
-        {
-          "key": "objectInitialHealth",
-          "type": "int",
-          "value": 100
-        },
-        {
-          "key": "objectEnabled",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectIndestructible",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectUnsellable",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectPowered",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectRecruitableAI",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectTargetable",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectSleeping",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectBasePriority",
-          "type": "int",
-          "value": 40
-        },
-        {
-          "key": "objectBasePhase",
-          "type": "int",
-          "value": 1
-        },
-        {
-          "key": "originalOwner",
-          "type": "ascii",
-          "value": "PlyrNeutral/teamPlyrNeutral"
-        },
-        {
-          "key": "uniqueID",
-          "type": "ascii",
-          "value": "henan-5"
-        },
-        {
-          "key": "objectLayer",
-          "type": "ascii",
-          "value": ""
-        }
-      ]
-    },
-    {
-      "cell": [
-        155.0,
-        757.0
-      ],
-      "version": 3,
-      "angle": 3.0727363,
-      "road_type": 0,
-      "type_name": "OreNode",
-      "props": [
-        {
-          "key": "objectInitialHealth",
-          "type": "int",
-          "value": 100
-        },
-        {
-          "key": "objectEnabled",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectIndestructible",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectUnsellable",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectPowered",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectRecruitableAI",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectTargetable",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectSleeping",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectBasePriority",
-          "type": "int",
-          "value": 40
-        },
-        {
-          "key": "objectBasePhase",
-          "type": "int",
-          "value": 1
-        },
-        {
-          "key": "originalOwner",
-          "type": "ascii",
-          "value": "PlyrNeutral/teamPlyrNeutral"
-        },
-        {
-          "key": "uniqueID",
-          "type": "ascii",
-          "value": "henan-6"
-        },
-        {
-          "key": "objectLayer",
-          "type": "ascii",
-          "value": ""
-        }
-      ]
-    },
-    {
-      "cell": [
-        289.0,
-        753.0
+        269.0,
+        786.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -1018,8 +1208,8 @@
     },
     {
       "cell": [
-        233.0,
-        682.0
+        218.0,
+        715.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -1110,8 +1300,8 @@
     },
     {
       "cell": [
-        205.0,
-        682.0
+        190.0,
+        711.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -1202,8 +1392,8 @@
     },
     {
       "cell": [
-        348.0,
-        696.0
+        328.0,
+        729.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -1294,162 +1484,8 @@
     },
     {
       "cell": [
-        231.0,
-        757.0
-      ],
-      "version": 3,
-      "angle": 0.06885649,
-      "road_type": 0,
-      "type_name": "OreNode",
-      "props": [
-        {
-          "key": "objectInitialHealth",
-          "type": "int",
-          "value": 100
-        },
-        {
-          "key": "objectEnabled",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectIndestructible",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectUnsellable",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectPowered",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectRecruitableAI",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectTargetable",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectSleeping",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectBasePriority",
-          "type": "int",
-          "value": 40
-        },
-        {
-          "key": "objectBasePhase",
-          "type": "int",
-          "value": 1
-        },
-        {
-          "key": "originalOwner",
-          "type": "ascii",
-          "value": "PlyrNeutral/teamPlyrNeutral"
-        },
-        {
-          "key": "uniqueID",
-          "type": "ascii",
-          "value": "henan-11"
-        },
-        {
-          "key": "objectLayer",
-          "type": "ascii",
-          "value": ""
-        }
-      ]
-    },
-    {
-      "cell": [
-        320.0,
-        710.0
-      ],
-      "version": 3,
-      "angle": -3.1415927,
-      "road_type": 0,
-      "type_name": "OreNode",
-      "props": [
-        {
-          "key": "objectInitialHealth",
-          "type": "int",
-          "value": 100
-        },
-        {
-          "key": "objectEnabled",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectIndestructible",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectUnsellable",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectPowered",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectRecruitableAI",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectTargetable",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectSleeping",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectBasePriority",
-          "type": "int",
-          "value": 40
-        },
-        {
-          "key": "objectBasePhase",
-          "type": "int",
-          "value": 1
-        },
-        {
-          "key": "originalOwner",
-          "type": "ascii",
-          "value": "PlyrNeutral/teamPlyrNeutral"
-        },
-        {
-          "key": "uniqueID",
-          "type": "ascii",
-          "value": "henan-12"
-        },
-        {
-          "key": "objectLayer",
-          "type": "ascii",
-          "value": ""
-        }
-      ]
-    },
-    {
-      "cell": [
-        418.0,
-        754.0
+        442.0,
+        793.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -1540,8 +1576,8 @@
     },
     {
       "cell": [
-        446.0,
-        683.0
+        456.0,
+        722.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -1632,8 +1668,8 @@
     },
     {
       "cell": [
-        502.0,
-        754.0
+        529.0,
+        793.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -1724,8 +1760,8 @@
     },
     {
       "cell": [
-        474.0,
-        754.0
+        473.0,
+        793.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -1816,162 +1852,8 @@
     },
     {
       "cell": [
-        358.0,
-        754.0
-      ],
-      "version": 3,
-      "angle": -3.1415927,
-      "road_type": 0,
-      "type_name": "OreNode",
-      "props": [
-        {
-          "key": "objectInitialHealth",
-          "type": "int",
-          "value": 100
-        },
-        {
-          "key": "objectEnabled",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectIndestructible",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectUnsellable",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectPowered",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectRecruitableAI",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectTargetable",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectSleeping",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectBasePriority",
-          "type": "int",
-          "value": 40
-        },
-        {
-          "key": "objectBasePhase",
-          "type": "int",
-          "value": 1
-        },
-        {
-          "key": "originalOwner",
-          "type": "ascii",
-          "value": "PlyrNeutral/teamPlyrNeutral"
-        },
-        {
-          "key": "uniqueID",
-          "type": "ascii",
-          "value": "henan-17"
-        },
-        {
-          "key": "objectLayer",
-          "type": "ascii",
-          "value": ""
-        }
-      ]
-    },
-    {
-      "cell": [
-        376.0,
-        712.0
-      ],
-      "version": 3,
-      "angle": -0.61086524,
-      "road_type": 0,
-      "type_name": "OreNode",
-      "props": [
-        {
-          "key": "objectInitialHealth",
-          "type": "int",
-          "value": 100
-        },
-        {
-          "key": "objectEnabled",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectIndestructible",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectUnsellable",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectPowered",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectRecruitableAI",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectTargetable",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectSleeping",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectBasePriority",
-          "type": "int",
-          "value": 40
-        },
-        {
-          "key": "objectBasePhase",
-          "type": "int",
-          "value": 1
-        },
-        {
-          "key": "originalOwner",
-          "type": "ascii",
-          "value": "PlyrNeutral/teamPlyrNeutral"
-        },
-        {
-          "key": "uniqueID",
-          "type": "ascii",
-          "value": "henan-18"
-        },
-        {
-          "key": "objectLayer",
-          "type": "ascii",
-          "value": ""
-        }
-      ]
-    },
-    {
-      "cell": [
-        694.0,
-        760.0
+        634.0,
+        738.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -2062,8 +1944,8 @@
     },
     {
       "cell": [
-        736.0,
-        675.0
+        676.0,
+        653.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -2154,8 +2036,8 @@
     },
     {
       "cell": [
-        794.0,
-        717.0
+        734.0,
+        695.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -2246,8 +2128,8 @@
     },
     {
       "cell": [
-        653.0,
-        678.0
+        593.0,
+        668.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -2338,162 +2220,8 @@
     },
     {
       "cell": [
-        634.0,
-        754.0
-      ],
-      "version": 3,
-      "angle": -3.1415927,
-      "road_type": 0,
-      "type_name": "OreNode",
-      "props": [
-        {
-          "key": "objectInitialHealth",
-          "type": "int",
-          "value": 100
-        },
-        {
-          "key": "objectEnabled",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectIndestructible",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectUnsellable",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectPowered",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectRecruitableAI",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectTargetable",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectSleeping",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectBasePriority",
-          "type": "int",
-          "value": 40
-        },
-        {
-          "key": "objectBasePhase",
-          "type": "int",
-          "value": 1
-        },
-        {
-          "key": "originalOwner",
-          "type": "ascii",
-          "value": "PlyrNeutral/teamPlyrNeutral"
-        },
-        {
-          "key": "uniqueID",
-          "type": "ascii",
-          "value": "henan-23"
-        },
-        {
-          "key": "objectLayer",
-          "type": "ascii",
-          "value": ""
-        }
-      ]
-    },
-    {
-      "cell": [
-        754.0,
-        754.0
-      ],
-      "version": 3,
-      "angle": -3.041924,
-      "road_type": 0,
-      "type_name": "OreNode",
-      "props": [
-        {
-          "key": "objectInitialHealth",
-          "type": "int",
-          "value": 100
-        },
-        {
-          "key": "objectEnabled",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectIndestructible",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectUnsellable",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectPowered",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectRecruitableAI",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectTargetable",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectSleeping",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectBasePriority",
-          "type": "int",
-          "value": 40
-        },
-        {
-          "key": "objectBasePhase",
-          "type": "int",
-          "value": 1
-        },
-        {
-          "key": "originalOwner",
-          "type": "ascii",
-          "value": "PlyrNeutral/teamPlyrNeutral"
-        },
-        {
-          "key": "uniqueID",
-          "type": "ascii",
-          "value": "henan-24"
-        },
-        {
-          "key": "objectLayer",
-          "type": "ascii",
-          "value": ""
-        }
-      ]
-    },
-    {
-      "cell": [
-        90.0,
-        55.0
+        72.0,
+        51.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -2584,8 +2312,8 @@
     },
     {
       "cell": [
-        191.0,
-        83.0
+        173.0,
+        98.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -2676,8 +2404,8 @@
     },
     {
       "cell": [
-        147.0,
-        153.0
+        129.0,
+        142.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -2768,8 +2496,8 @@
     },
     {
       "cell": [
-        119.0,
-        140.0
+        87.0,
+        150.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -2860,162 +2588,8 @@
     },
     {
       "cell": [
-        50.0,
-        100.0
-      ],
-      "version": 3,
-      "angle": 0.844154,
-      "road_type": 0,
-      "type_name": "OreNode",
-      "props": [
-        {
-          "key": "objectInitialHealth",
-          "type": "int",
-          "value": 100
-        },
-        {
-          "key": "objectEnabled",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectIndestructible",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectUnsellable",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectPowered",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectRecruitableAI",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectTargetable",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectSleeping",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectBasePriority",
-          "type": "int",
-          "value": 40
-        },
-        {
-          "key": "objectBasePhase",
-          "type": "int",
-          "value": 1
-        },
-        {
-          "key": "originalOwner",
-          "type": "ascii",
-          "value": "PlyrNeutral/teamPlyrNeutral"
-        },
-        {
-          "key": "uniqueID",
-          "type": "ascii",
-          "value": "henan-29"
-        },
-        {
-          "key": "objectLayer",
-          "type": "ascii",
-          "value": ""
-        }
-      ]
-    },
-    {
-      "cell": [
-        150.0,
-        55.0
-      ],
-      "version": 3,
-      "angle": -3.1415927,
-      "road_type": 0,
-      "type_name": "OreNode",
-      "props": [
-        {
-          "key": "objectInitialHealth",
-          "type": "int",
-          "value": 100
-        },
-        {
-          "key": "objectEnabled",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectIndestructible",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectUnsellable",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectPowered",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectRecruitableAI",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectTargetable",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectSleeping",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectBasePriority",
-          "type": "int",
-          "value": 40
-        },
-        {
-          "key": "objectBasePhase",
-          "type": "int",
-          "value": 1
-        },
-        {
-          "key": "originalOwner",
-          "type": "ascii",
-          "value": "PlyrNeutral/teamPlyrNeutral"
-        },
-        {
-          "key": "uniqueID",
-          "type": "ascii",
-          "value": "henan-30"
-        },
-        {
-          "key": "objectLayer",
-          "type": "ascii",
-          "value": ""
-        }
-      ]
-    },
-    {
-      "cell": [
-        343.0,
-        55.0
+        357.0,
+        63.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -3106,8 +2680,8 @@
     },
     {
       "cell": [
-        259.0,
-        83.0
+        273.0,
+        91.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -3198,8 +2772,8 @@
     },
     {
       "cell": [
-        315.0,
-        140.0
+        329.0,
+        148.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -3290,8 +2864,8 @@
     },
     {
       "cell": [
-        255.0,
-        55.0
+        269.0,
+        63.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -3382,162 +2956,8 @@
     },
     {
       "cell": [
-        283.0,
-        55.0
-      ],
-      "version": 3,
-      "angle": -0.0,
-      "road_type": 0,
-      "type_name": "OreNode",
-      "props": [
-        {
-          "key": "objectInitialHealth",
-          "type": "int",
-          "value": 100
-        },
-        {
-          "key": "objectEnabled",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectIndestructible",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectUnsellable",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectPowered",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectRecruitableAI",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectTargetable",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectSleeping",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectBasePriority",
-          "type": "int",
-          "value": 40
-        },
-        {
-          "key": "objectBasePhase",
-          "type": "int",
-          "value": 1
-        },
-        {
-          "key": "originalOwner",
-          "type": "ascii",
-          "value": "PlyrNeutral/teamPlyrNeutral"
-        },
-        {
-          "key": "uniqueID",
-          "type": "ascii",
-          "value": "henan-35"
-        },
-        {
-          "key": "objectLayer",
-          "type": "ascii",
-          "value": ""
-        }
-      ]
-    },
-    {
-      "cell": [
-        403.0,
-        55.0
-      ],
-      "version": 3,
-      "angle": -3.1415927,
-      "road_type": 0,
-      "type_name": "OreNode",
-      "props": [
-        {
-          "key": "objectInitialHealth",
-          "type": "int",
-          "value": 100
-        },
-        {
-          "key": "objectEnabled",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectIndestructible",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectUnsellable",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectPowered",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectRecruitableAI",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectTargetable",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectSleeping",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectBasePriority",
-          "type": "int",
-          "value": 40
-        },
-        {
-          "key": "objectBasePhase",
-          "type": "int",
-          "value": 1
-        },
-        {
-          "key": "originalOwner",
-          "type": "ascii",
-          "value": "PlyrNeutral/teamPlyrNeutral"
-        },
-        {
-          "key": "uniqueID",
-          "type": "ascii",
-          "value": "henan-36"
-        },
-        {
-          "key": "objectLayer",
-          "type": "ascii",
-          "value": ""
-        }
-      ]
-    },
-    {
-      "cell": [
-        570.0,
-        63.0
+        557.0,
+        70.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -3628,8 +3048,8 @@
     },
     {
       "cell": [
-        512.0,
-        122.0
+        495.0,
+        126.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -3720,8 +3140,8 @@
     },
     {
       "cell": [
-        546.0,
-        143.0
+        529.0,
+        150.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -3812,8 +3232,8 @@
     },
     {
       "cell": [
-        494.0,
-        89.0
+        481.0,
+        96.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -3904,162 +3324,8 @@
     },
     {
       "cell": [
-        540.0,
-        115.0
-      ],
-      "version": 3,
-      "angle": 1.047518,
-      "road_type": 0,
-      "type_name": "OreNode",
-      "props": [
-        {
-          "key": "objectInitialHealth",
-          "type": "int",
-          "value": 100
-        },
-        {
-          "key": "objectEnabled",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectIndestructible",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectUnsellable",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectPowered",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectRecruitableAI",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectTargetable",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectSleeping",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectBasePriority",
-          "type": "int",
-          "value": 40
-        },
-        {
-          "key": "objectBasePhase",
-          "type": "int",
-          "value": 1
-        },
-        {
-          "key": "originalOwner",
-          "type": "ascii",
-          "value": "PlyrNeutral/teamPlyrNeutral"
-        },
-        {
-          "key": "uniqueID",
-          "type": "ascii",
-          "value": "henan-41"
-        },
-        {
-          "key": "objectLayer",
-          "type": "ascii",
-          "value": ""
-        }
-      ]
-    },
-    {
-      "cell": [
-        630.0,
-        63.0
-      ],
-      "version": 3,
-      "angle": -3.1415927,
-      "road_type": 0,
-      "type_name": "OreNode",
-      "props": [
-        {
-          "key": "objectInitialHealth",
-          "type": "int",
-          "value": 100
-        },
-        {
-          "key": "objectEnabled",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectIndestructible",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectUnsellable",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectPowered",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectRecruitableAI",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectTargetable",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectSleeping",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectBasePriority",
-          "type": "int",
-          "value": 40
-        },
-        {
-          "key": "objectBasePhase",
-          "type": "int",
-          "value": 1
-        },
-        {
-          "key": "originalOwner",
-          "type": "ascii",
-          "value": "PlyrNeutral/teamPlyrNeutral"
-        },
-        {
-          "key": "uniqueID",
-          "type": "ascii",
-          "value": "henan-42"
-        },
-        {
-          "key": "objectLayer",
-          "type": "ascii",
-          "value": ""
-        }
-      ]
-    },
-    {
-      "cell": [
-        762.0,
-        63.0
+        718.0,
+        66.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -4150,8 +3416,8 @@
     },
     {
       "cell": [
-        678.0,
-        35.0
+        634.0,
+        38.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -4242,8 +3508,8 @@
     },
     {
       "cell": [
-        790.0,
-        148.0
+        746.0,
+        151.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -4334,8 +3600,8 @@
     },
     {
       "cell": [
-        762.0,
-        148.0
+        690.0,
+        151.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -4426,162 +3692,8 @@
     },
     {
       "cell": [
-        702.0,
-        63.0
-      ],
-      "version": 3,
-      "angle": -0.0,
-      "road_type": 0,
-      "type_name": "OreNode",
-      "props": [
-        {
-          "key": "objectInitialHealth",
-          "type": "int",
-          "value": 100
-        },
-        {
-          "key": "objectEnabled",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectIndestructible",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectUnsellable",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectPowered",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectRecruitableAI",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectTargetable",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectSleeping",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectBasePriority",
-          "type": "int",
-          "value": 40
-        },
-        {
-          "key": "objectBasePhase",
-          "type": "int",
-          "value": 1
-        },
-        {
-          "key": "originalOwner",
-          "type": "ascii",
-          "value": "PlyrNeutral/teamPlyrNeutral"
-        },
-        {
-          "key": "uniqueID",
-          "type": "ascii",
-          "value": "henan-47"
-        },
-        {
-          "key": "objectLayer",
-          "type": "ascii",
-          "value": ""
-        }
-      ]
-    },
-    {
-      "cell": [
-        780.0,
-        120.0
-      ],
-      "version": 3,
-      "angle": 1.5707964,
-      "road_type": 0,
-      "type_name": "OreNode",
-      "props": [
-        {
-          "key": "objectInitialHealth",
-          "type": "int",
-          "value": 100
-        },
-        {
-          "key": "objectEnabled",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectIndestructible",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectUnsellable",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectPowered",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectRecruitableAI",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectTargetable",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectSleeping",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectBasePriority",
-          "type": "int",
-          "value": 40
-        },
-        {
-          "key": "objectBasePhase",
-          "type": "int",
-          "value": 1
-        },
-        {
-          "key": "originalOwner",
-          "type": "ascii",
-          "value": "PlyrNeutral/teamPlyrNeutral"
-        },
-        {
-          "key": "uniqueID",
-          "type": "ascii",
-          "value": "henan-48"
-        },
-        {
-          "key": "objectLayer",
-          "type": "ascii",
-          "value": ""
-        }
-      ]
-    },
-    {
-      "cell": [
-        570.0,
-        63.0
+        557.0,
+        70.0
       ],
       "version": 3,
       "angle": -0.7853982,
@@ -4662,8 +3774,8 @@
     },
     {
       "cell": [
-        762.0,
-        63.0
+        718.0,
+        66.0
       ],
       "version": 3,
       "angle": -0.7853982,
@@ -4744,11 +3856,11 @@
     },
     {
       "cell": [
-        570.0,
-        360.0
+        50.0,
+        758.0
       ],
       "version": 3,
-      "angle": -1.5707964,
+      "angle": -0.0,
       "road_type": 0,
       "type_name": "OreNode",
       "props": [
@@ -4810,7 +3922,7 @@
         {
           "key": "uniqueID",
           "type": "ascii",
-          "value": "henan-51"
+          "value": "henan-marked-P1-ore1"
         },
         {
           "key": "objectLayer",
@@ -4821,11 +3933,11 @@
     },
     {
       "cell": [
-        700.0,
-        330.0
+        149.0,
+        788.0
       ],
       "version": 3,
-      "angle": -1.5707964,
+      "angle": 3.1415927,
       "road_type": 0,
       "type_name": "OreNode",
       "props": [
@@ -4887,7 +3999,7 @@
         {
           "key": "uniqueID",
           "type": "ascii",
-          "value": "henan-52"
+          "value": "henan-marked-P1-ore2"
         },
         {
           "key": "objectLayer",
@@ -4898,11 +4010,11 @@
     },
     {
       "cell": [
-        570.0,
-        220.0
+        92.0,
+        699.0
       ],
       "version": 3,
-      "angle": -1.5707964,
+      "angle": 2.7488935,
       "road_type": 0,
       "type_name": "OreNode",
       "props": [
@@ -4964,7 +4076,7 @@
         {
           "key": "uniqueID",
           "type": "ascii",
-          "value": "henan-53"
+          "value": "henan-marked-P1-ore3"
         },
         {
           "key": "objectLayer",
@@ -4975,7 +4087,1316 @@
     },
     {
       "cell": [
-        710.0,
+        226.0,
+        757.0
+      ],
+      "version": 3,
+      "angle": -0.0,
+      "road_type": 0,
+      "type_name": "OreNode",
+      "props": [
+        {
+          "key": "objectInitialHealth",
+          "type": "int",
+          "value": 100
+        },
+        {
+          "key": "objectEnabled",
+          "type": "bool",
+          "value": 1
+        },
+        {
+          "key": "objectIndestructible",
+          "type": "bool",
+          "value": 0
+        },
+        {
+          "key": "objectUnsellable",
+          "type": "bool",
+          "value": 0
+        },
+        {
+          "key": "objectPowered",
+          "type": "bool",
+          "value": 1
+        },
+        {
+          "key": "objectRecruitableAI",
+          "type": "bool",
+          "value": 1
+        },
+        {
+          "key": "objectTargetable",
+          "type": "bool",
+          "value": 0
+        },
+        {
+          "key": "objectSleeping",
+          "type": "bool",
+          "value": 0
+        },
+        {
+          "key": "objectBasePriority",
+          "type": "int",
+          "value": 40
+        },
+        {
+          "key": "objectBasePhase",
+          "type": "int",
+          "value": 1
+        },
+        {
+          "key": "originalOwner",
+          "type": "ascii",
+          "value": "PlyrNeutral/teamPlyrNeutral"
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "henan-marked-P2-ore1"
+        },
+        {
+          "key": "objectLayer",
+          "type": "ascii",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "cell": [
+        326.0,
+        785.0
+      ],
+      "version": 3,
+      "angle": 3.1415927,
+      "road_type": 0,
+      "type_name": "OreNode",
+      "props": [
+        {
+          "key": "objectInitialHealth",
+          "type": "int",
+          "value": 100
+        },
+        {
+          "key": "objectEnabled",
+          "type": "bool",
+          "value": 1
+        },
+        {
+          "key": "objectIndestructible",
+          "type": "bool",
+          "value": 0
+        },
+        {
+          "key": "objectUnsellable",
+          "type": "bool",
+          "value": 0
+        },
+        {
+          "key": "objectPowered",
+          "type": "bool",
+          "value": 1
+        },
+        {
+          "key": "objectRecruitableAI",
+          "type": "bool",
+          "value": 1
+        },
+        {
+          "key": "objectTargetable",
+          "type": "bool",
+          "value": 0
+        },
+        {
+          "key": "objectSleeping",
+          "type": "bool",
+          "value": 0
+        },
+        {
+          "key": "objectBasePriority",
+          "type": "int",
+          "value": 40
+        },
+        {
+          "key": "objectBasePhase",
+          "type": "int",
+          "value": 1
+        },
+        {
+          "key": "originalOwner",
+          "type": "ascii",
+          "value": "PlyrNeutral/teamPlyrNeutral"
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "henan-marked-P2-ore2"
+        },
+        {
+          "key": "objectLayer",
+          "type": "ascii",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "cell": [
+        269.0,
+        696.0
+      ],
+      "version": 3,
+      "angle": 1.5707964,
+      "road_type": 0,
+      "type_name": "OreNode",
+      "props": [
+        {
+          "key": "objectInitialHealth",
+          "type": "int",
+          "value": 100
+        },
+        {
+          "key": "objectEnabled",
+          "type": "bool",
+          "value": 1
+        },
+        {
+          "key": "objectIndestructible",
+          "type": "bool",
+          "value": 0
+        },
+        {
+          "key": "objectUnsellable",
+          "type": "bool",
+          "value": 0
+        },
+        {
+          "key": "objectPowered",
+          "type": "bool",
+          "value": 1
+        },
+        {
+          "key": "objectRecruitableAI",
+          "type": "bool",
+          "value": 1
+        },
+        {
+          "key": "objectTargetable",
+          "type": "bool",
+          "value": 0
+        },
+        {
+          "key": "objectSleeping",
+          "type": "bool",
+          "value": 0
+        },
+        {
+          "key": "objectBasePriority",
+          "type": "int",
+          "value": 40
+        },
+        {
+          "key": "objectBasePhase",
+          "type": "int",
+          "value": 1
+        },
+        {
+          "key": "originalOwner",
+          "type": "ascii",
+          "value": "PlyrNeutral/teamPlyrNeutral"
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "henan-marked-P2-ore3"
+        },
+        {
+          "key": "objectLayer",
+          "type": "ascii",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "cell": [
+        383.0,
+        788.0
+      ],
+      "version": 3,
+      "angle": -0.0,
+      "road_type": 0,
+      "type_name": "OreNode",
+      "props": [
+        {
+          "key": "objectInitialHealth",
+          "type": "int",
+          "value": 100
+        },
+        {
+          "key": "objectEnabled",
+          "type": "bool",
+          "value": 1
+        },
+        {
+          "key": "objectIndestructible",
+          "type": "bool",
+          "value": 0
+        },
+        {
+          "key": "objectUnsellable",
+          "type": "bool",
+          "value": 0
+        },
+        {
+          "key": "objectPowered",
+          "type": "bool",
+          "value": 1
+        },
+        {
+          "key": "objectRecruitableAI",
+          "type": "bool",
+          "value": 1
+        },
+        {
+          "key": "objectTargetable",
+          "type": "bool",
+          "value": 0
+        },
+        {
+          "key": "objectSleeping",
+          "type": "bool",
+          "value": 0
+        },
+        {
+          "key": "objectBasePriority",
+          "type": "int",
+          "value": 40
+        },
+        {
+          "key": "objectBasePhase",
+          "type": "int",
+          "value": 1
+        },
+        {
+          "key": "originalOwner",
+          "type": "ascii",
+          "value": "PlyrNeutral/teamPlyrNeutral"
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "henan-marked-P3-ore1"
+        },
+        {
+          "key": "objectLayer",
+          "type": "ascii",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "cell": [
+        501.0,
+        788.0
+      ],
+      "version": 3,
+      "angle": -2.9452431,
+      "road_type": 0,
+      "type_name": "OreNode",
+      "props": [
+        {
+          "key": "objectInitialHealth",
+          "type": "int",
+          "value": 100
+        },
+        {
+          "key": "objectEnabled",
+          "type": "bool",
+          "value": 1
+        },
+        {
+          "key": "objectIndestructible",
+          "type": "bool",
+          "value": 0
+        },
+        {
+          "key": "objectUnsellable",
+          "type": "bool",
+          "value": 0
+        },
+        {
+          "key": "objectPowered",
+          "type": "bool",
+          "value": 1
+        },
+        {
+          "key": "objectRecruitableAI",
+          "type": "bool",
+          "value": 1
+        },
+        {
+          "key": "objectTargetable",
+          "type": "bool",
+          "value": 0
+        },
+        {
+          "key": "objectSleeping",
+          "type": "bool",
+          "value": 0
+        },
+        {
+          "key": "objectBasePriority",
+          "type": "int",
+          "value": 40
+        },
+        {
+          "key": "objectBasePhase",
+          "type": "int",
+          "value": 1
+        },
+        {
+          "key": "originalOwner",
+          "type": "ascii",
+          "value": "PlyrNeutral/teamPlyrNeutral"
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "henan-marked-P3-ore2"
+        },
+        {
+          "key": "objectLayer",
+          "type": "ascii",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "cell": [
+        406.0,
+        725.0
+      ],
+      "version": 3,
+      "angle": 3.1415927,
+      "road_type": 0,
+      "type_name": "OreNode",
+      "props": [
+        {
+          "key": "objectInitialHealth",
+          "type": "int",
+          "value": 100
+        },
+        {
+          "key": "objectEnabled",
+          "type": "bool",
+          "value": 1
+        },
+        {
+          "key": "objectIndestructible",
+          "type": "bool",
+          "value": 0
+        },
+        {
+          "key": "objectUnsellable",
+          "type": "bool",
+          "value": 0
+        },
+        {
+          "key": "objectPowered",
+          "type": "bool",
+          "value": 1
+        },
+        {
+          "key": "objectRecruitableAI",
+          "type": "bool",
+          "value": 1
+        },
+        {
+          "key": "objectTargetable",
+          "type": "bool",
+          "value": 0
+        },
+        {
+          "key": "objectSleeping",
+          "type": "bool",
+          "value": 0
+        },
+        {
+          "key": "objectBasePriority",
+          "type": "int",
+          "value": 40
+        },
+        {
+          "key": "objectBasePhase",
+          "type": "int",
+          "value": 1
+        },
+        {
+          "key": "originalOwner",
+          "type": "ascii",
+          "value": "PlyrNeutral/teamPlyrNeutral"
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "henan-marked-P3-ore3"
+        },
+        {
+          "key": "objectLayer",
+          "type": "ascii",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "cell": [
+        575.0,
+        737.0
+      ],
+      "version": 3,
+      "angle": -0.0,
+      "road_type": 0,
+      "type_name": "OreNode",
+      "props": [
+        {
+          "key": "objectInitialHealth",
+          "type": "int",
+          "value": 100
+        },
+        {
+          "key": "objectEnabled",
+          "type": "bool",
+          "value": 1
+        },
+        {
+          "key": "objectIndestructible",
+          "type": "bool",
+          "value": 0
+        },
+        {
+          "key": "objectUnsellable",
+          "type": "bool",
+          "value": 0
+        },
+        {
+          "key": "objectPowered",
+          "type": "bool",
+          "value": 1
+        },
+        {
+          "key": "objectRecruitableAI",
+          "type": "bool",
+          "value": 1
+        },
+        {
+          "key": "objectTargetable",
+          "type": "bool",
+          "value": 0
+        },
+        {
+          "key": "objectSleeping",
+          "type": "bool",
+          "value": 0
+        },
+        {
+          "key": "objectBasePriority",
+          "type": "int",
+          "value": 40
+        },
+        {
+          "key": "objectBasePhase",
+          "type": "int",
+          "value": 1
+        },
+        {
+          "key": "originalOwner",
+          "type": "ascii",
+          "value": "PlyrNeutral/teamPlyrNeutral"
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "henan-marked-P4-ore1"
+        },
+        {
+          "key": "objectLayer",
+          "type": "ascii",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "cell": [
+        685.0,
+        720.0
+      ],
+      "version": 3,
+      "angle": 2.1598449,
+      "road_type": 0,
+      "type_name": "OreNode",
+      "props": [
+        {
+          "key": "objectInitialHealth",
+          "type": "int",
+          "value": 100
+        },
+        {
+          "key": "objectEnabled",
+          "type": "bool",
+          "value": 1
+        },
+        {
+          "key": "objectIndestructible",
+          "type": "bool",
+          "value": 0
+        },
+        {
+          "key": "objectUnsellable",
+          "type": "bool",
+          "value": 0
+        },
+        {
+          "key": "objectPowered",
+          "type": "bool",
+          "value": 1
+        },
+        {
+          "key": "objectRecruitableAI",
+          "type": "bool",
+          "value": 1
+        },
+        {
+          "key": "objectTargetable",
+          "type": "bool",
+          "value": 0
+        },
+        {
+          "key": "objectSleeping",
+          "type": "bool",
+          "value": 0
+        },
+        {
+          "key": "objectBasePriority",
+          "type": "int",
+          "value": 40
+        },
+        {
+          "key": "objectBasePhase",
+          "type": "int",
+          "value": 1
+        },
+        {
+          "key": "originalOwner",
+          "type": "ascii",
+          "value": "PlyrNeutral/teamPlyrNeutral"
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "henan-marked-P4-ore2"
+        },
+        {
+          "key": "objectLayer",
+          "type": "ascii",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "cell": [
+        634.0,
+        648.0
+      ],
+      "version": 3,
+      "angle": 1.5707964,
+      "road_type": 0,
+      "type_name": "OreNode",
+      "props": [
+        {
+          "key": "objectInitialHealth",
+          "type": "int",
+          "value": 100
+        },
+        {
+          "key": "objectEnabled",
+          "type": "bool",
+          "value": 1
+        },
+        {
+          "key": "objectIndestructible",
+          "type": "bool",
+          "value": 0
+        },
+        {
+          "key": "objectUnsellable",
+          "type": "bool",
+          "value": 0
+        },
+        {
+          "key": "objectPowered",
+          "type": "bool",
+          "value": 1
+        },
+        {
+          "key": "objectRecruitableAI",
+          "type": "bool",
+          "value": 1
+        },
+        {
+          "key": "objectTargetable",
+          "type": "bool",
+          "value": 0
+        },
+        {
+          "key": "objectSleeping",
+          "type": "bool",
+          "value": 0
+        },
+        {
+          "key": "objectBasePriority",
+          "type": "int",
+          "value": 40
+        },
+        {
+          "key": "objectBasePhase",
+          "type": "int",
+          "value": 1
+        },
+        {
+          "key": "originalOwner",
+          "type": "ascii",
+          "value": "PlyrNeutral/teamPlyrNeutral"
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "henan-marked-P4-ore3"
+        },
+        {
+          "key": "objectLayer",
+          "type": "ascii",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "cell": [
+        50.0,
+        100.0
+      ],
+      "version": 3,
+      "angle": 0.3926991,
+      "road_type": 0,
+      "type_name": "OreNode",
+      "props": [
+        {
+          "key": "objectInitialHealth",
+          "type": "int",
+          "value": 100
+        },
+        {
+          "key": "objectEnabled",
+          "type": "bool",
+          "value": 1
+        },
+        {
+          "key": "objectIndestructible",
+          "type": "bool",
+          "value": 0
+        },
+        {
+          "key": "objectUnsellable",
+          "type": "bool",
+          "value": 0
+        },
+        {
+          "key": "objectPowered",
+          "type": "bool",
+          "value": 1
+        },
+        {
+          "key": "objectRecruitableAI",
+          "type": "bool",
+          "value": 1
+        },
+        {
+          "key": "objectTargetable",
+          "type": "bool",
+          "value": 0
+        },
+        {
+          "key": "objectSleeping",
+          "type": "bool",
+          "value": 0
+        },
+        {
+          "key": "objectBasePriority",
+          "type": "int",
+          "value": 40
+        },
+        {
+          "key": "objectBasePhase",
+          "type": "int",
+          "value": 1
+        },
+        {
+          "key": "originalOwner",
+          "type": "ascii",
+          "value": "PlyrNeutral/teamPlyrNeutral"
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "henan-marked-P5-ore1"
+        },
+        {
+          "key": "objectLayer",
+          "type": "ascii",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "cell": [
+        130.0,
+        50.0
+      ],
+      "version": 3,
+      "angle": -1.7671459,
+      "road_type": 0,
+      "type_name": "OreNode",
+      "props": [
+        {
+          "key": "objectInitialHealth",
+          "type": "int",
+          "value": 100
+        },
+        {
+          "key": "objectEnabled",
+          "type": "bool",
+          "value": 1
+        },
+        {
+          "key": "objectIndestructible",
+          "type": "bool",
+          "value": 0
+        },
+        {
+          "key": "objectUnsellable",
+          "type": "bool",
+          "value": 0
+        },
+        {
+          "key": "objectPowered",
+          "type": "bool",
+          "value": 1
+        },
+        {
+          "key": "objectRecruitableAI",
+          "type": "bool",
+          "value": 1
+        },
+        {
+          "key": "objectTargetable",
+          "type": "bool",
+          "value": 0
+        },
+        {
+          "key": "objectSleeping",
+          "type": "bool",
+          "value": 0
+        },
+        {
+          "key": "objectBasePriority",
+          "type": "int",
+          "value": 40
+        },
+        {
+          "key": "objectBasePhase",
+          "type": "int",
+          "value": 1
+        },
+        {
+          "key": "originalOwner",
+          "type": "ascii",
+          "value": "PlyrNeutral/teamPlyrNeutral"
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "henan-marked-P5-ore2"
+        },
+        {
+          "key": "objectLayer",
+          "type": "ascii",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "cell": [
+        170.0,
+        70.0
+      ],
+      "version": 3,
+      "angle": -0.19634955,
+      "road_type": 0,
+      "type_name": "OreNode",
+      "props": [
+        {
+          "key": "objectInitialHealth",
+          "type": "int",
+          "value": 100
+        },
+        {
+          "key": "objectEnabled",
+          "type": "bool",
+          "value": 1
+        },
+        {
+          "key": "objectIndestructible",
+          "type": "bool",
+          "value": 0
+        },
+        {
+          "key": "objectUnsellable",
+          "type": "bool",
+          "value": 0
+        },
+        {
+          "key": "objectPowered",
+          "type": "bool",
+          "value": 1
+        },
+        {
+          "key": "objectRecruitableAI",
+          "type": "bool",
+          "value": 1
+        },
+        {
+          "key": "objectTargetable",
+          "type": "bool",
+          "value": 0
+        },
+        {
+          "key": "objectSleeping",
+          "type": "bool",
+          "value": 0
+        },
+        {
+          "key": "objectBasePriority",
+          "type": "int",
+          "value": 40
+        },
+        {
+          "key": "objectBasePhase",
+          "type": "int",
+          "value": 1
+        },
+        {
+          "key": "originalOwner",
+          "type": "ascii",
+          "value": "PlyrNeutral/teamPlyrNeutral"
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "henan-marked-P5-ore3"
+        },
+        {
+          "key": "objectLayer",
+          "type": "ascii",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "cell": [
+        298.0,
+        62.0
+      ],
+      "version": 3,
+      "angle": -0.0,
+      "road_type": 0,
+      "type_name": "OreNode",
+      "props": [
+        {
+          "key": "objectInitialHealth",
+          "type": "int",
+          "value": 100
+        },
+        {
+          "key": "objectEnabled",
+          "type": "bool",
+          "value": 1
+        },
+        {
+          "key": "objectIndestructible",
+          "type": "bool",
+          "value": 0
+        },
+        {
+          "key": "objectUnsellable",
+          "type": "bool",
+          "value": 0
+        },
+        {
+          "key": "objectPowered",
+          "type": "bool",
+          "value": 1
+        },
+        {
+          "key": "objectRecruitableAI",
+          "type": "bool",
+          "value": 1
+        },
+        {
+          "key": "objectTargetable",
+          "type": "bool",
+          "value": 0
+        },
+        {
+          "key": "objectSleeping",
+          "type": "bool",
+          "value": 0
+        },
+        {
+          "key": "objectBasePriority",
+          "type": "int",
+          "value": 40
+        },
+        {
+          "key": "objectBasePhase",
+          "type": "int",
+          "value": 1
+        },
+        {
+          "key": "originalOwner",
+          "type": "ascii",
+          "value": "PlyrNeutral/teamPlyrNeutral"
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "henan-marked-P6-ore1"
+        },
+        {
+          "key": "objectLayer",
+          "type": "ascii",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "cell": [
+        414.0,
+        58.0
+      ],
+      "version": 3,
+      "angle": 3.1415927,
+      "road_type": 0,
+      "type_name": "OreNode",
+      "props": [
+        {
+          "key": "objectInitialHealth",
+          "type": "int",
+          "value": 100
+        },
+        {
+          "key": "objectEnabled",
+          "type": "bool",
+          "value": 1
+        },
+        {
+          "key": "objectIndestructible",
+          "type": "bool",
+          "value": 0
+        },
+        {
+          "key": "objectUnsellable",
+          "type": "bool",
+          "value": 0
+        },
+        {
+          "key": "objectPowered",
+          "type": "bool",
+          "value": 1
+        },
+        {
+          "key": "objectRecruitableAI",
+          "type": "bool",
+          "value": 1
+        },
+        {
+          "key": "objectTargetable",
+          "type": "bool",
+          "value": 0
+        },
+        {
+          "key": "objectSleeping",
+          "type": "bool",
+          "value": 0
+        },
+        {
+          "key": "objectBasePriority",
+          "type": "int",
+          "value": 40
+        },
+        {
+          "key": "objectBasePhase",
+          "type": "int",
+          "value": 1
+        },
+        {
+          "key": "originalOwner",
+          "type": "ascii",
+          "value": "PlyrNeutral/teamPlyrNeutral"
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "henan-marked-P6-ore2"
+        },
+        {
+          "key": "objectLayer",
+          "type": "ascii",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "cell": [
+        379.0,
+        136.0
+      ],
+      "version": 3,
+      "angle": 2.1598449,
+      "road_type": 0,
+      "type_name": "OreNode",
+      "props": [
+        {
+          "key": "objectInitialHealth",
+          "type": "int",
+          "value": 100
+        },
+        {
+          "key": "objectEnabled",
+          "type": "bool",
+          "value": 1
+        },
+        {
+          "key": "objectIndestructible",
+          "type": "bool",
+          "value": 0
+        },
+        {
+          "key": "objectUnsellable",
+          "type": "bool",
+          "value": 0
+        },
+        {
+          "key": "objectPowered",
+          "type": "bool",
+          "value": 1
+        },
+        {
+          "key": "objectRecruitableAI",
+          "type": "bool",
+          "value": 1
+        },
+        {
+          "key": "objectTargetable",
+          "type": "bool",
+          "value": 0
+        },
+        {
+          "key": "objectSleeping",
+          "type": "bool",
+          "value": 0
+        },
+        {
+          "key": "objectBasePriority",
+          "type": "int",
+          "value": 40
+        },
+        {
+          "key": "objectBasePhase",
+          "type": "int",
+          "value": 1
+        },
+        {
+          "key": "originalOwner",
+          "type": "ascii",
+          "value": "PlyrNeutral/teamPlyrNeutral"
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "henan-marked-P6-ore3"
+        },
+        {
+          "key": "objectLayer",
+          "type": "ascii",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "cell": [
+        528.0,
+        114.0
+      ],
+      "version": 3,
+      "angle": 1.5707964,
+      "road_type": 0,
+      "type_name": "OreNode",
+      "props": [
+        {
+          "key": "objectInitialHealth",
+          "type": "int",
+          "value": 100
+        },
+        {
+          "key": "objectEnabled",
+          "type": "bool",
+          "value": 1
+        },
+        {
+          "key": "objectIndestructible",
+          "type": "bool",
+          "value": 0
+        },
+        {
+          "key": "objectUnsellable",
+          "type": "bool",
+          "value": 0
+        },
+        {
+          "key": "objectPowered",
+          "type": "bool",
+          "value": 1
+        },
+        {
+          "key": "objectRecruitableAI",
+          "type": "bool",
+          "value": 1
+        },
+        {
+          "key": "objectTargetable",
+          "type": "bool",
+          "value": 0
+        },
+        {
+          "key": "objectSleeping",
+          "type": "bool",
+          "value": 0
+        },
+        {
+          "key": "objectBasePriority",
+          "type": "int",
+          "value": 40
+        },
+        {
+          "key": "objectBasePhase",
+          "type": "int",
+          "value": 1
+        },
+        {
+          "key": "originalOwner",
+          "type": "ascii",
+          "value": "PlyrNeutral/teamPlyrNeutral"
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "henan-marked-P7-ore1"
+        },
+        {
+          "key": "objectLayer",
+          "type": "ascii",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "cell": [
+        614.0,
+        70.0
+      ],
+      "version": 3,
+      "angle": 3.1415927,
+      "road_type": 0,
+      "type_name": "OreNode",
+      "props": [
+        {
+          "key": "objectInitialHealth",
+          "type": "int",
+          "value": 100
+        },
+        {
+          "key": "objectEnabled",
+          "type": "bool",
+          "value": 1
+        },
+        {
+          "key": "objectIndestructible",
+          "type": "bool",
+          "value": 0
+        },
+        {
+          "key": "objectUnsellable",
+          "type": "bool",
+          "value": 0
+        },
+        {
+          "key": "objectPowered",
+          "type": "bool",
+          "value": 1
+        },
+        {
+          "key": "objectRecruitableAI",
+          "type": "bool",
+          "value": 1
+        },
+        {
+          "key": "objectTargetable",
+          "type": "bool",
+          "value": 0
+        },
+        {
+          "key": "objectSleeping",
+          "type": "bool",
+          "value": 0
+        },
+        {
+          "key": "objectBasePriority",
+          "type": "int",
+          "value": 40
+        },
+        {
+          "key": "objectBasePhase",
+          "type": "int",
+          "value": 1
+        },
+        {
+          "key": "originalOwner",
+          "type": "ascii",
+          "value": "PlyrNeutral/teamPlyrNeutral"
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "henan-marked-P7-ore2"
+        },
+        {
+          "key": "objectLayer",
+          "type": "ascii",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "cell": [
+        557.0,
         160.0
       ],
       "version": 3,
@@ -5041,7 +5462,7 @@
         {
           "key": "uniqueID",
           "type": "ascii",
-          "value": "henan-54"
+          "value": "henan-marked-P7-ore3"
         },
         {
           "key": "objectLayer",
@@ -5052,11 +5473,11 @@
     },
     {
       "cell": [
-        650.0,
-        250.0
+        659.0,
+        66.0
       ],
       "version": 3,
-      "angle": 0.0,
+      "angle": -0.0,
       "road_type": 0,
       "type_name": "OreNode",
       "props": [
@@ -5118,7 +5539,7 @@
         {
           "key": "uniqueID",
           "type": "ascii",
-          "value": "henan-55"
+          "value": "henan-marked-P8-ore1"
         },
         {
           "key": "objectLayer",
@@ -5129,11 +5550,11 @@
     },
     {
       "cell": [
-        310.0,
-        540.0
+        777.0,
+        54.0
       ],
       "version": 3,
-      "angle": 0.0,
+      "angle": 2.9452431,
       "road_type": 0,
       "type_name": "OreNode",
       "props": [
@@ -5195,7 +5616,7 @@
         {
           "key": "uniqueID",
           "type": "ascii",
-          "value": "henan-56"
+          "value": "henan-marked-P8-ore2"
         },
         {
           "key": "objectLayer",
@@ -5206,11 +5627,11 @@
     },
     {
       "cell": [
-        95.0,
-        690.0
+        718.0,
+        156.0
       ],
       "version": 3,
-      "angle": 0.0,
+      "angle": -1.5707964,
       "road_type": 0,
       "type_name": "OreNode",
       "props": [
@@ -5272,7 +5693,7 @@
         {
           "key": "uniqueID",
           "type": "ascii",
-          "value": "henan-57"
+          "value": "henan-marked-P8-ore3"
         },
         {
           "key": "objectLayer",
@@ -5283,11 +5704,11 @@
     },
     {
       "cell": [
-        650.0,
-        450.0
+        78.0,
+        545.0
       ],
       "version": 3,
-      "angle": 0.0,
+      "angle": 1.5707964,
       "road_type": 0,
       "type_name": "OreNode",
       "props": [
@@ -5349,7 +5770,7 @@
         {
           "key": "uniqueID",
           "type": "ascii",
-          "value": "henan-58"
+          "value": "henan-marked-P1-ore4"
         },
         {
           "key": "objectLayer",
@@ -5360,13 +5781,13 @@
     },
     {
       "cell": [
-        555.0,
-        575.0
+        50.0,
+        381.0
       ],
       "version": 3,
-      "angle": 0.7853982,
+      "angle": 1.5707964,
       "road_type": 0,
-      "type_name": "OilDerrick",
+      "type_name": "OreNode",
       "props": [
         {
           "key": "objectInitialHealth",
@@ -5426,84 +5847,7 @@
         {
           "key": "uniqueID",
           "type": "ascii",
-          "value": "henan-59"
-        },
-        {
-          "key": "objectLayer",
-          "type": "ascii",
-          "value": ""
-        }
-      ]
-    },
-    {
-      "cell": [
-        745.0,
-        575.0
-      ],
-      "version": 3,
-      "angle": 0.7853982,
-      "road_type": 0,
-      "type_name": "OilDerrick",
-      "props": [
-        {
-          "key": "objectInitialHealth",
-          "type": "int",
-          "value": 100
-        },
-        {
-          "key": "objectEnabled",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectIndestructible",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectUnsellable",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectPowered",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectRecruitableAI",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectTargetable",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectSleeping",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectBasePriority",
-          "type": "int",
-          "value": 40
-        },
-        {
-          "key": "objectBasePhase",
-          "type": "int",
-          "value": 1
-        },
-        {
-          "key": "originalOwner",
-          "type": "ascii",
-          "value": "PlyrNeutral/teamPlyrNeutral"
-        },
-        {
-          "key": "uniqueID",
-          "type": "ascii",
-          "value": "henan-60"
+          "value": "henan-marked-P1-ore5"
         },
         {
           "key": "objectLayer",
@@ -5515,12 +5859,12 @@
     {
       "cell": [
         230.0,
-        90.0
+        488.0
       ],
       "version": 3,
-      "angle": 0.7853982,
+      "angle": 2.3561945,
       "road_type": 0,
-      "type_name": "OilDerrick",
+      "type_name": "OreNode",
       "props": [
         {
           "key": "objectInitialHealth",
@@ -5580,7 +5924,7 @@
         {
           "key": "uniqueID",
           "type": "ascii",
-          "value": "henan-61"
+          "value": "henan-marked-P1-ore6"
         },
         {
           "key": "objectLayer",
@@ -5591,13 +5935,13 @@
     },
     {
       "cell": [
-        65.0,
-        290.0
+        150.0,
+        170.0
       ],
       "version": 3,
-      "angle": 0.7853982,
+      "angle": -0.9817477,
       "road_type": 0,
-      "type_name": "OilDerrick",
+      "type_name": "OreNode",
       "props": [
         {
           "key": "objectInitialHealth",
@@ -5657,7 +6001,7 @@
         {
           "key": "uniqueID",
           "type": "ascii",
-          "value": "henan-62"
+          "value": "henan-marked-P5-ore4"
         },
         {
           "key": "objectLayer",
@@ -5668,13 +6012,552 @@
     },
     {
       "cell": [
-        600.0,
+        94.0,
+        334.0
+      ],
+      "version": 3,
+      "angle": -1.5707964,
+      "road_type": 0,
+      "type_name": "OreNode",
+      "props": [
+        {
+          "key": "objectInitialHealth",
+          "type": "int",
+          "value": 100
+        },
+        {
+          "key": "objectEnabled",
+          "type": "bool",
+          "value": 1
+        },
+        {
+          "key": "objectIndestructible",
+          "type": "bool",
+          "value": 0
+        },
+        {
+          "key": "objectUnsellable",
+          "type": "bool",
+          "value": 0
+        },
+        {
+          "key": "objectPowered",
+          "type": "bool",
+          "value": 1
+        },
+        {
+          "key": "objectRecruitableAI",
+          "type": "bool",
+          "value": 1
+        },
+        {
+          "key": "objectTargetable",
+          "type": "bool",
+          "value": 0
+        },
+        {
+          "key": "objectSleeping",
+          "type": "bool",
+          "value": 0
+        },
+        {
+          "key": "objectBasePriority",
+          "type": "int",
+          "value": 40
+        },
+        {
+          "key": "objectBasePhase",
+          "type": "int",
+          "value": 1
+        },
+        {
+          "key": "originalOwner",
+          "type": "ascii",
+          "value": "PlyrNeutral/teamPlyrNeutral"
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "henan-marked-P5-ore5"
+        },
+        {
+          "key": "objectLayer",
+          "type": "ascii",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "cell": [
+        162.0,
+        315.0
+      ],
+      "version": 3,
+      "angle": -1.9634954,
+      "road_type": 0,
+      "type_name": "OreNode",
+      "props": [
+        {
+          "key": "objectInitialHealth",
+          "type": "int",
+          "value": 100
+        },
+        {
+          "key": "objectEnabled",
+          "type": "bool",
+          "value": 1
+        },
+        {
+          "key": "objectIndestructible",
+          "type": "bool",
+          "value": 0
+        },
+        {
+          "key": "objectUnsellable",
+          "type": "bool",
+          "value": 0
+        },
+        {
+          "key": "objectPowered",
+          "type": "bool",
+          "value": 1
+        },
+        {
+          "key": "objectRecruitableAI",
+          "type": "bool",
+          "value": 1
+        },
+        {
+          "key": "objectTargetable",
+          "type": "bool",
+          "value": 0
+        },
+        {
+          "key": "objectSleeping",
+          "type": "bool",
+          "value": 0
+        },
+        {
+          "key": "objectBasePriority",
+          "type": "int",
+          "value": 40
+        },
+        {
+          "key": "objectBasePhase",
+          "type": "int",
+          "value": 1
+        },
+        {
+          "key": "originalOwner",
+          "type": "ascii",
+          "value": "PlyrNeutral/teamPlyrNeutral"
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "henan-marked-P5-ore6"
+        },
+        {
+          "key": "objectLayer",
+          "type": "ascii",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "cell": [
+        285.0,
+        582.0
+      ],
+      "version": 3,
+      "angle": 0.19634955,
+      "road_type": 0,
+      "type_name": "OreNode",
+      "props": [
+        {
+          "key": "objectInitialHealth",
+          "type": "int",
+          "value": 100
+        },
+        {
+          "key": "objectEnabled",
+          "type": "bool",
+          "value": 1
+        },
+        {
+          "key": "objectIndestructible",
+          "type": "bool",
+          "value": 0
+        },
+        {
+          "key": "objectUnsellable",
+          "type": "bool",
+          "value": 0
+        },
+        {
+          "key": "objectPowered",
+          "type": "bool",
+          "value": 1
+        },
+        {
+          "key": "objectRecruitableAI",
+          "type": "bool",
+          "value": 1
+        },
+        {
+          "key": "objectTargetable",
+          "type": "bool",
+          "value": 0
+        },
+        {
+          "key": "objectSleeping",
+          "type": "bool",
+          "value": 0
+        },
+        {
+          "key": "objectBasePriority",
+          "type": "int",
+          "value": 40
+        },
+        {
+          "key": "objectBasePhase",
+          "type": "int",
+          "value": 1
+        },
+        {
+          "key": "originalOwner",
+          "type": "ascii",
+          "value": "PlyrNeutral/teamPlyrNeutral"
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "henan-marked-P2-ore4"
+        },
+        {
+          "key": "objectLayer",
+          "type": "ascii",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "cell": [
+        375.0,
+        451.0
+      ],
+      "version": 3,
+      "angle": 1.1780972,
+      "road_type": 0,
+      "type_name": "OreNode",
+      "props": [
+        {
+          "key": "objectInitialHealth",
+          "type": "int",
+          "value": 100
+        },
+        {
+          "key": "objectEnabled",
+          "type": "bool",
+          "value": 1
+        },
+        {
+          "key": "objectIndestructible",
+          "type": "bool",
+          "value": 0
+        },
+        {
+          "key": "objectUnsellable",
+          "type": "bool",
+          "value": 0
+        },
+        {
+          "key": "objectPowered",
+          "type": "bool",
+          "value": 1
+        },
+        {
+          "key": "objectRecruitableAI",
+          "type": "bool",
+          "value": 1
+        },
+        {
+          "key": "objectTargetable",
+          "type": "bool",
+          "value": 0
+        },
+        {
+          "key": "objectSleeping",
+          "type": "bool",
+          "value": 0
+        },
+        {
+          "key": "objectBasePriority",
+          "type": "int",
+          "value": 40
+        },
+        {
+          "key": "objectBasePhase",
+          "type": "int",
+          "value": 1
+        },
+        {
+          "key": "originalOwner",
+          "type": "ascii",
+          "value": "PlyrNeutral/teamPlyrNeutral"
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "henan-marked-P2-ore5"
+        },
+        {
+          "key": "objectLayer",
+          "type": "ascii",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "cell": [
+        375.0,
+        556.0
+      ],
+      "version": 3,
+      "angle": 0.3926991,
+      "road_type": 0,
+      "type_name": "OreNode",
+      "props": [
+        {
+          "key": "objectInitialHealth",
+          "type": "int",
+          "value": 100
+        },
+        {
+          "key": "objectEnabled",
+          "type": "bool",
+          "value": 1
+        },
+        {
+          "key": "objectIndestructible",
+          "type": "bool",
+          "value": 0
+        },
+        {
+          "key": "objectUnsellable",
+          "type": "bool",
+          "value": 0
+        },
+        {
+          "key": "objectPowered",
+          "type": "bool",
+          "value": 1
+        },
+        {
+          "key": "objectRecruitableAI",
+          "type": "bool",
+          "value": 1
+        },
+        {
+          "key": "objectTargetable",
+          "type": "bool",
+          "value": 0
+        },
+        {
+          "key": "objectSleeping",
+          "type": "bool",
+          "value": 0
+        },
+        {
+          "key": "objectBasePriority",
+          "type": "int",
+          "value": 40
+        },
+        {
+          "key": "objectBasePhase",
+          "type": "int",
+          "value": 1
+        },
+        {
+          "key": "originalOwner",
+          "type": "ascii",
+          "value": "PlyrNeutral/teamPlyrNeutral"
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "henan-marked-P2-ore6"
+        },
+        {
+          "key": "objectLayer",
+          "type": "ascii",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "cell": [
+        423.0,
+        216.0
+      ],
+      "version": 3,
+      "angle": -1.1780972,
+      "road_type": 0,
+      "type_name": "OreNode",
+      "props": [
+        {
+          "key": "objectInitialHealth",
+          "type": "int",
+          "value": 100
+        },
+        {
+          "key": "objectEnabled",
+          "type": "bool",
+          "value": 1
+        },
+        {
+          "key": "objectIndestructible",
+          "type": "bool",
+          "value": 0
+        },
+        {
+          "key": "objectUnsellable",
+          "type": "bool",
+          "value": 0
+        },
+        {
+          "key": "objectPowered",
+          "type": "bool",
+          "value": 1
+        },
+        {
+          "key": "objectRecruitableAI",
+          "type": "bool",
+          "value": 1
+        },
+        {
+          "key": "objectTargetable",
+          "type": "bool",
+          "value": 0
+        },
+        {
+          "key": "objectSleeping",
+          "type": "bool",
+          "value": 0
+        },
+        {
+          "key": "objectBasePriority",
+          "type": "int",
+          "value": 40
+        },
+        {
+          "key": "objectBasePhase",
+          "type": "int",
+          "value": 1
+        },
+        {
+          "key": "originalOwner",
+          "type": "ascii",
+          "value": "PlyrNeutral/teamPlyrNeutral"
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "henan-marked-P6-ore4"
+        },
+        {
+          "key": "objectLayer",
+          "type": "ascii",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "cell": [
+        429.0,
+        392.0
+      ],
+      "version": 3,
+      "angle": -1.5707964,
+      "road_type": 0,
+      "type_name": "OreNode",
+      "props": [
+        {
+          "key": "objectInitialHealth",
+          "type": "int",
+          "value": 100
+        },
+        {
+          "key": "objectEnabled",
+          "type": "bool",
+          "value": 1
+        },
+        {
+          "key": "objectIndestructible",
+          "type": "bool",
+          "value": 0
+        },
+        {
+          "key": "objectUnsellable",
+          "type": "bool",
+          "value": 0
+        },
+        {
+          "key": "objectPowered",
+          "type": "bool",
+          "value": 1
+        },
+        {
+          "key": "objectRecruitableAI",
+          "type": "bool",
+          "value": 1
+        },
+        {
+          "key": "objectTargetable",
+          "type": "bool",
+          "value": 0
+        },
+        {
+          "key": "objectSleeping",
+          "type": "bool",
+          "value": 0
+        },
+        {
+          "key": "objectBasePriority",
+          "type": "int",
+          "value": 40
+        },
+        {
+          "key": "objectBasePhase",
+          "type": "int",
+          "value": 1
+        },
+        {
+          "key": "originalOwner",
+          "type": "ascii",
+          "value": "PlyrNeutral/teamPlyrNeutral"
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "henan-marked-P6-ore5"
+        },
+        {
+          "key": "objectLayer",
+          "type": "ascii",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "cell": [
+        476.0,
         280.0
       ],
       "version": 3,
-      "angle": 0.7853982,
+      "angle": -0.7853982,
       "road_type": 0,
-      "type_name": "OilDerrick",
+      "type_name": "OreNode",
       "props": [
         {
           "key": "objectInitialHealth",
@@ -5734,7 +6617,7 @@
         {
           "key": "uniqueID",
           "type": "ascii",
-          "value": "henan-63"
+          "value": "henan-marked-P6-ore6"
         },
         {
           "key": "objectLayer",
@@ -5745,13 +6628,13 @@
     },
     {
       "cell": [
-        300.0,
-        600.0
+        516.0,
+        668.0
       ],
       "version": 3,
-      "angle": 0.7853982,
+      "angle": 0.5890486,
       "road_type": 0,
-      "type_name": "OilDerrick",
+      "type_name": "OreNode",
       "props": [
         {
           "key": "objectInitialHealth",
@@ -5811,7 +6694,7 @@
         {
           "key": "uniqueID",
           "type": "ascii",
-          "value": "henan-64"
+          "value": "henan-marked-P3-ore4"
         },
         {
           "key": "objectLayer",
@@ -5822,13 +6705,13 @@
     },
     {
       "cell": [
-        495.0,
-        420.0
+        512.0,
+        486.0
       ],
       "version": 3,
-      "angle": 0.7853982,
+      "angle": 1.3744467,
       "road_type": 0,
-      "type_name": "HospitalTechStructure",
+      "type_name": "OreNode",
       "props": [
         {
           "key": "objectInitialHealth",
@@ -5888,546 +6771,7 @@
         {
           "key": "uniqueID",
           "type": "ascii",
-          "value": "henan-65"
-        },
-        {
-          "key": "objectLayer",
-          "type": "ascii",
-          "value": ""
-        }
-      ]
-    },
-    {
-      "cell": [
-        60.0,
-        260.0
-      ],
-      "version": 3,
-      "angle": 0.7853982,
-      "road_type": 0,
-      "type_name": "HospitalTechStructure",
-      "props": [
-        {
-          "key": "objectInitialHealth",
-          "type": "int",
-          "value": 100
-        },
-        {
-          "key": "objectEnabled",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectIndestructible",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectUnsellable",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectPowered",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectRecruitableAI",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectTargetable",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectSleeping",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectBasePriority",
-          "type": "int",
-          "value": 40
-        },
-        {
-          "key": "objectBasePhase",
-          "type": "int",
-          "value": 1
-        },
-        {
-          "key": "originalOwner",
-          "type": "ascii",
-          "value": "PlyrNeutral/teamPlyrNeutral"
-        },
-        {
-          "key": "uniqueID",
-          "type": "ascii",
-          "value": "henan-66"
-        },
-        {
-          "key": "objectLayer",
-          "type": "ascii",
-          "value": ""
-        }
-      ]
-    },
-    {
-      "cell": [
-        620.0,
-        405.0
-      ],
-      "version": 3,
-      "angle": 0.7853982,
-      "road_type": 0,
-      "type_name": "VeterancyTechStructure",
-      "props": [
-        {
-          "key": "objectInitialHealth",
-          "type": "int",
-          "value": 100
-        },
-        {
-          "key": "objectEnabled",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectIndestructible",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectUnsellable",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectPowered",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectRecruitableAI",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectTargetable",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectSleeping",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectBasePriority",
-          "type": "int",
-          "value": 40
-        },
-        {
-          "key": "objectBasePhase",
-          "type": "int",
-          "value": 1
-        },
-        {
-          "key": "originalOwner",
-          "type": "ascii",
-          "value": "PlyrNeutral/teamPlyrNeutral"
-        },
-        {
-          "key": "uniqueID",
-          "type": "ascii",
-          "value": "henan-67"
-        },
-        {
-          "key": "objectLayer",
-          "type": "ascii",
-          "value": ""
-        }
-      ]
-    },
-    {
-      "cell": [
-        200.0,
-        380.0
-      ],
-      "version": 3,
-      "angle": 0.7853982,
-      "road_type": 0,
-      "type_name": "VeterancyTechStructure",
-      "props": [
-        {
-          "key": "objectInitialHealth",
-          "type": "int",
-          "value": 100
-        },
-        {
-          "key": "objectEnabled",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectIndestructible",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectUnsellable",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectPowered",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectRecruitableAI",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectTargetable",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectSleeping",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectBasePriority",
-          "type": "int",
-          "value": 40
-        },
-        {
-          "key": "objectBasePhase",
-          "type": "int",
-          "value": 1
-        },
-        {
-          "key": "originalOwner",
-          "type": "ascii",
-          "value": "PlyrNeutral/teamPlyrNeutral"
-        },
-        {
-          "key": "uniqueID",
-          "type": "ascii",
-          "value": "henan-68"
-        },
-        {
-          "key": "objectLayer",
-          "type": "ascii",
-          "value": ""
-        }
-      ]
-    },
-    {
-      "cell": [
-        465.0,
-        275.0
-      ],
-      "version": 3,
-      "angle": 0.7853982,
-      "road_type": 0,
-      "type_name": "ObservationPostTechStructure",
-      "props": [
-        {
-          "key": "objectInitialHealth",
-          "type": "int",
-          "value": 100
-        },
-        {
-          "key": "objectEnabled",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectIndestructible",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectUnsellable",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectPowered",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectRecruitableAI",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectTargetable",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectSleeping",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectBasePriority",
-          "type": "int",
-          "value": 40
-        },
-        {
-          "key": "objectBasePhase",
-          "type": "int",
-          "value": 1
-        },
-        {
-          "key": "originalOwner",
-          "type": "ascii",
-          "value": "PlyrNeutral/teamPlyrNeutral"
-        },
-        {
-          "key": "uniqueID",
-          "type": "ascii",
-          "value": "henan-69"
-        },
-        {
-          "key": "objectLayer",
-          "type": "ascii",
-          "value": ""
-        }
-      ]
-    },
-    {
-      "cell": [
-        350.0,
-        525.0
-      ],
-      "version": 3,
-      "angle": 0.7853982,
-      "road_type": 0,
-      "type_name": "ObservationPostTechStructure",
-      "props": [
-        {
-          "key": "objectInitialHealth",
-          "type": "int",
-          "value": 100
-        },
-        {
-          "key": "objectEnabled",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectIndestructible",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectUnsellable",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectPowered",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectRecruitableAI",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectTargetable",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectSleeping",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectBasePriority",
-          "type": "int",
-          "value": 40
-        },
-        {
-          "key": "objectBasePhase",
-          "type": "int",
-          "value": 1
-        },
-        {
-          "key": "originalOwner",
-          "type": "ascii",
-          "value": "PlyrNeutral/teamPlyrNeutral"
-        },
-        {
-          "key": "uniqueID",
-          "type": "ascii",
-          "value": "henan-70"
-        },
-        {
-          "key": "objectLayer",
-          "type": "ascii",
-          "value": ""
-        }
-      ]
-    },
-    {
-      "cell": [
-        610.0,
-        680.0
-      ],
-      "version": 3,
-      "angle": 0.7853982,
-      "road_type": 0,
-      "type_name": "GarageTechStructure",
-      "props": [
-        {
-          "key": "objectInitialHealth",
-          "type": "int",
-          "value": 100
-        },
-        {
-          "key": "objectEnabled",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectIndestructible",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectUnsellable",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectPowered",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectRecruitableAI",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectTargetable",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectSleeping",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectBasePriority",
-          "type": "int",
-          "value": 40
-        },
-        {
-          "key": "objectBasePhase",
-          "type": "int",
-          "value": 1
-        },
-        {
-          "key": "originalOwner",
-          "type": "ascii",
-          "value": "PlyrNeutral/teamPlyrNeutral"
-        },
-        {
-          "key": "uniqueID",
-          "type": "ascii",
-          "value": "henan-71"
-        },
-        {
-          "key": "objectLayer",
-          "type": "ascii",
-          "value": ""
-        }
-      ]
-    },
-    {
-      "cell": [
-        320.0,
-        310.0
-      ],
-      "version": 3,
-      "angle": 0.7853982,
-      "road_type": 0,
-      "type_name": "GarageTechStructure",
-      "props": [
-        {
-          "key": "objectInitialHealth",
-          "type": "int",
-          "value": 100
-        },
-        {
-          "key": "objectEnabled",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectIndestructible",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectUnsellable",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectPowered",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectRecruitableAI",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectTargetable",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectSleeping",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectBasePriority",
-          "type": "int",
-          "value": 40
-        },
-        {
-          "key": "objectBasePhase",
-          "type": "int",
-          "value": 1
-        },
-        {
-          "key": "originalOwner",
-          "type": "ascii",
-          "value": "PlyrNeutral/teamPlyrNeutral"
-        },
-        {
-          "key": "uniqueID",
-          "type": "ascii",
-          "value": "henan-72"
+          "value": "henan-marked-P3-ore5"
         },
         {
           "key": "objectLayer",
@@ -6439,12 +6783,12 @@
     {
       "cell": [
         586.0,
-        488.0
+        640.0
       ],
       "version": 3,
-      "angle": 0.0,
+      "angle": 1.3744467,
       "road_type": 0,
-      "type_name": "CC_Tree01",
+      "type_name": "OreNode",
       "props": [
         {
           "key": "objectInitialHealth",
@@ -6504,29 +6848,24 @@
         {
           "key": "uniqueID",
           "type": "ascii",
-          "value": "henan-grove-1"
+          "value": "henan-marked-P3-ore6"
         },
         {
           "key": "objectLayer",
           "type": "ascii",
           "value": ""
-        },
-        {
-          "key": "objectPrototypeScale",
-          "type": "float",
-          "value": 1.93
         }
       ]
     },
     {
       "cell": [
-        595.0,
-        485.0
+        520.0,
+        218.0
       ],
       "version": 3,
-      "angle": 0.89,
+      "angle": 1.5707964,
       "road_type": 0,
-      "type_name": "CC_Tree02",
+      "type_name": "OreNode",
       "props": [
         {
           "key": "objectInitialHealth",
@@ -6586,29 +6925,24 @@
         {
           "key": "uniqueID",
           "type": "ascii",
-          "value": "henan-grove-2"
+          "value": "henan-marked-P7-ore4"
         },
         {
           "key": "objectLayer",
           "type": "ascii",
           "value": ""
-        },
-        {
-          "key": "objectPrototypeScale",
-          "type": "float",
-          "value": 2.05
         }
       ]
     },
     {
       "cell": [
-        607.0,
-        486.0
+        512.0,
+        402.0
       ],
       "version": 3,
-      "angle": 1.78,
+      "angle": -2.9452431,
       "road_type": 0,
-      "type_name": "CC_Tree03",
+      "type_name": "OreNode",
       "props": [
         {
           "key": "objectInitialHealth",
@@ -6668,29 +7002,24 @@
         {
           "key": "uniqueID",
           "type": "ascii",
-          "value": "henan-grove-3"
+          "value": "henan-marked-P7-ore5"
         },
         {
           "key": "objectLayer",
           "type": "ascii",
           "value": ""
-        },
-        {
-          "key": "objectPrototypeScale",
-          "type": "float",
-          "value": 2.17
         }
       ]
     },
     {
       "cell": [
-        615.0,
-        494.0
+        558.0,
+        338.0
       ],
       "version": 3,
-      "angle": 2.67,
+      "angle": -1.5707964,
       "road_type": 0,
-      "type_name": "YU_Bush01",
+      "type_name": "OreNode",
       "props": [
         {
           "key": "objectInitialHealth",
@@ -6750,29 +7079,24 @@
         {
           "key": "uniqueID",
           "type": "ascii",
-          "value": "henan-grove-4"
+          "value": "henan-marked-P7-ore6"
         },
         {
           "key": "objectLayer",
           "type": "ascii",
           "value": ""
-        },
-        {
-          "key": "objectPrototypeScale",
-          "type": "float",
-          "value": 1.69
         }
       ]
     },
     {
       "cell": [
-        595.0,
-        497.0
+        634.0,
+        564.0
       ],
       "version": 3,
-      "angle": 3.56,
+      "angle": 1.5707964,
       "road_type": 0,
-      "type_name": "CC_Tree01",
+      "type_name": "OreNode",
       "props": [
         {
           "key": "objectInitialHealth",
@@ -6832,29 +7156,24 @@
         {
           "key": "uniqueID",
           "type": "ascii",
-          "value": "henan-grove-5"
+          "value": "henan-marked-P4-ore4"
         },
         {
           "key": "objectLayer",
           "type": "ascii",
           "value": ""
-        },
-        {
-          "key": "objectPrototypeScale",
-          "type": "float",
-          "value": 1.93
         }
       ]
     },
     {
       "cell": [
-        605.0,
-        501.0
+        634.0,
+        398.0
       ],
       "version": 3,
-      "angle": 4.45,
+      "angle": 1.5707964,
       "road_type": 0,
-      "type_name": "CC_Tree02",
+      "type_name": "OreNode",
       "props": [
         {
           "key": "objectInitialHealth",
@@ -6914,29 +7233,24 @@
         {
           "key": "uniqueID",
           "type": "ascii",
-          "value": "henan-grove-6"
+          "value": "henan-marked-P4-ore5"
         },
         {
           "key": "objectLayer",
           "type": "ascii",
           "value": ""
-        },
-        {
-          "key": "objectPrototypeScale",
-          "type": "float",
-          "value": 2.05
         }
       ]
     },
     {
       "cell": [
-        614.0,
-        505.0
+        680.0,
+        542.0
       ],
       "version": 3,
-      "angle": 5.34,
+      "angle": 1.3744467,
       "road_type": 0,
-      "type_name": "CC_Tree03",
+      "type_name": "OreNode",
       "props": [
         {
           "key": "objectInitialHealth",
@@ -6996,29 +7310,24 @@
         {
           "key": "uniqueID",
           "type": "ascii",
-          "value": "henan-grove-7"
+          "value": "henan-marked-P4-ore6"
         },
         {
           "key": "objectLayer",
           "type": "ascii",
           "value": ""
-        },
-        {
-          "key": "objectPrototypeScale",
-          "type": "float",
-          "value": 2.17
         }
       ]
     },
     {
       "cell": [
-        611.0,
-        515.0
+        634.0,
+        156.0
       ],
       "version": 3,
-      "angle": 6.23,
+      "angle": -2.3561945,
       "road_type": 0,
-      "type_name": "YU_Bush01",
+      "type_name": "OreNode",
       "props": [
         {
           "key": "objectInitialHealth",
@@ -7078,29 +7387,24 @@
         {
           "key": "uniqueID",
           "type": "ascii",
-          "value": "henan-grove-8"
+          "value": "henan-marked-P8-ore4"
         },
         {
           "key": "objectLayer",
           "type": "ascii",
           "value": ""
-        },
-        {
-          "key": "objectPrototypeScale",
-          "type": "float",
-          "value": 1.69
         }
       ]
     },
     {
       "cell": [
-        766.0,
-        198.0
+        634.0,
+        322.0
       ],
       "version": 3,
-      "angle": 0.8368147,
+      "angle": 3.1415927,
       "road_type": 0,
-      "type_name": "CC_Tree01",
+      "type_name": "OreNode",
       "props": [
         {
           "key": "objectInitialHealth",
@@ -7160,29 +7464,24 @@
         {
           "key": "uniqueID",
           "type": "ascii",
-          "value": "henan-grove-9"
+          "value": "henan-marked-P8-ore5"
         },
         {
           "key": "objectLayer",
           "type": "ascii",
           "value": ""
-        },
-        {
-          "key": "objectPrototypeScale",
-          "type": "float",
-          "value": 1.93
         }
       ]
     },
     {
       "cell": [
-        775.0,
-        195.0
+        680.0,
+        270.0
       ],
       "version": 3,
-      "angle": 1.7268147,
+      "angle": -1.5707964,
       "road_type": 0,
-      "type_name": "CC_Tree02",
+      "type_name": "OreNode",
       "props": [
         {
           "key": "objectInitialHealth",
@@ -7242,29 +7541,24 @@
         {
           "key": "uniqueID",
           "type": "ascii",
-          "value": "henan-grove-10"
+          "value": "henan-marked-P8-ore6"
         },
         {
           "key": "objectLayer",
           "type": "ascii",
           "value": ""
-        },
-        {
-          "key": "objectPrototypeScale",
-          "type": "float",
-          "value": 2.05
         }
       ]
     },
     {
       "cell": [
-        787.0,
-        196.0
+        208.0,
+        258.0
       ],
       "version": 3,
-      "angle": 2.6168146,
+      "angle": 0.7853982,
       "road_type": 0,
-      "type_name": "CC_Tree03",
+      "type_name": "OilDerrick",
       "props": [
         {
           "key": "objectInitialHealth",
@@ -7324,29 +7618,24 @@
         {
           "key": "uniqueID",
           "type": "ascii",
-          "value": "henan-grove-11"
+          "value": "henan-marked-tech-1"
         },
         {
           "key": "objectLayer",
           "type": "ascii",
           "value": ""
-        },
-        {
-          "key": "objectPrototypeScale",
-          "type": "float",
-          "value": 2.17
         }
       ]
     },
     {
       "cell": [
-        795.0,
-        204.0
+        348.0,
+        316.0
       ],
       "version": 3,
-      "angle": 3.5068147,
+      "angle": 0.7853982,
       "road_type": 0,
-      "type_name": "YU_Bush01",
+      "type_name": "OilDerrick",
       "props": [
         {
           "key": "objectInitialHealth",
@@ -7406,685 +7695,24 @@
         {
           "key": "uniqueID",
           "type": "ascii",
-          "value": "henan-grove-12"
+          "value": "henan-marked-tech-2"
         },
         {
           "key": "objectLayer",
           "type": "ascii",
           "value": ""
-        },
-        {
-          "key": "objectPrototypeScale",
-          "type": "float",
-          "value": 1.69
         }
       ]
     },
     {
       "cell": [
-        765.0,
-        210.0
-      ],
-      "version": 3,
-      "angle": 4.396815,
-      "road_type": 0,
-      "type_name": "CC_Tree01",
-      "props": [
-        {
-          "key": "objectInitialHealth",
-          "type": "int",
-          "value": 100
-        },
-        {
-          "key": "objectEnabled",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectIndestructible",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectUnsellable",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectPowered",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectRecruitableAI",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectTargetable",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectSleeping",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectBasePriority",
-          "type": "int",
-          "value": 40
-        },
-        {
-          "key": "objectBasePhase",
-          "type": "int",
-          "value": 1
-        },
-        {
-          "key": "originalOwner",
-          "type": "ascii",
-          "value": "PlyrNeutral/teamPlyrNeutral"
-        },
-        {
-          "key": "uniqueID",
-          "type": "ascii",
-          "value": "henan-grove-13"
-        },
-        {
-          "key": "objectLayer",
-          "type": "ascii",
-          "value": ""
-        },
-        {
-          "key": "objectPrototypeScale",
-          "type": "float",
-          "value": 1.93
-        }
-      ]
-    },
-    {
-      "cell": [
-        775.0,
-        207.0
-      ],
-      "version": 3,
-      "angle": 5.2868147,
-      "road_type": 0,
-      "type_name": "CC_Tree02",
-      "props": [
-        {
-          "key": "objectInitialHealth",
-          "type": "int",
-          "value": 100
-        },
-        {
-          "key": "objectEnabled",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectIndestructible",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectUnsellable",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectPowered",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectRecruitableAI",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectTargetable",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectSleeping",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectBasePriority",
-          "type": "int",
-          "value": 40
-        },
-        {
-          "key": "objectBasePhase",
-          "type": "int",
-          "value": 1
-        },
-        {
-          "key": "originalOwner",
-          "type": "ascii",
-          "value": "PlyrNeutral/teamPlyrNeutral"
-        },
-        {
-          "key": "uniqueID",
-          "type": "ascii",
-          "value": "henan-grove-14"
-        },
-        {
-          "key": "objectLayer",
-          "type": "ascii",
-          "value": ""
-        },
-        {
-          "key": "objectPrototypeScale",
-          "type": "float",
-          "value": 2.05
-        }
-      ]
-    },
-    {
-      "cell": [
-        785.0,
-        211.0
-      ],
-      "version": 3,
-      "angle": 6.1768146,
-      "road_type": 0,
-      "type_name": "CC_Tree03",
-      "props": [
-        {
-          "key": "objectInitialHealth",
-          "type": "int",
-          "value": 100
-        },
-        {
-          "key": "objectEnabled",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectIndestructible",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectUnsellable",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectPowered",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectRecruitableAI",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectTargetable",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectSleeping",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectBasePriority",
-          "type": "int",
-          "value": 40
-        },
-        {
-          "key": "objectBasePhase",
-          "type": "int",
-          "value": 1
-        },
-        {
-          "key": "originalOwner",
-          "type": "ascii",
-          "value": "PlyrNeutral/teamPlyrNeutral"
-        },
-        {
-          "key": "uniqueID",
-          "type": "ascii",
-          "value": "henan-grove-15"
-        },
-        {
-          "key": "objectLayer",
-          "type": "ascii",
-          "value": ""
-        },
-        {
-          "key": "objectPrototypeScale",
-          "type": "float",
-          "value": 2.17
-        }
-      ]
-    },
-    {
-      "cell": [
-        794.0,
-        215.0
-      ],
-      "version": 3,
-      "angle": 0.78362936,
-      "road_type": 0,
-      "type_name": "YU_Bush01",
-      "props": [
-        {
-          "key": "objectInitialHealth",
-          "type": "int",
-          "value": 100
-        },
-        {
-          "key": "objectEnabled",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectIndestructible",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectUnsellable",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectPowered",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectRecruitableAI",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectTargetable",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectSleeping",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectBasePriority",
-          "type": "int",
-          "value": 40
-        },
-        {
-          "key": "objectBasePhase",
-          "type": "int",
-          "value": 1
-        },
-        {
-          "key": "originalOwner",
-          "type": "ascii",
-          "value": "PlyrNeutral/teamPlyrNeutral"
-        },
-        {
-          "key": "uniqueID",
-          "type": "ascii",
-          "value": "henan-grove-16"
-        },
-        {
-          "key": "objectLayer",
-          "type": "ascii",
-          "value": ""
-        },
-        {
-          "key": "objectPrototypeScale",
-          "type": "float",
-          "value": 1.69
-        }
-      ]
-    },
-    {
-      "cell": [
-        768.0,
-        222.0
-      ],
-      "version": 3,
-      "angle": 1.6736294,
-      "road_type": 0,
-      "type_name": "CC_Tree01",
-      "props": [
-        {
-          "key": "objectInitialHealth",
-          "type": "int",
-          "value": 100
-        },
-        {
-          "key": "objectEnabled",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectIndestructible",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectUnsellable",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectPowered",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectRecruitableAI",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectTargetable",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectSleeping",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectBasePriority",
-          "type": "int",
-          "value": 40
-        },
-        {
-          "key": "objectBasePhase",
-          "type": "int",
-          "value": 1
-        },
-        {
-          "key": "originalOwner",
-          "type": "ascii",
-          "value": "PlyrNeutral/teamPlyrNeutral"
-        },
-        {
-          "key": "uniqueID",
-          "type": "ascii",
-          "value": "henan-grove-17"
-        },
-        {
-          "key": "objectLayer",
-          "type": "ascii",
-          "value": ""
-        },
-        {
-          "key": "objectPrototypeScale",
-          "type": "float",
-          "value": 1.93
-        }
-      ]
-    },
-    {
-      "cell": [
-        780.0,
-        224.0
-      ],
-      "version": 3,
-      "angle": 2.5636294,
-      "road_type": 0,
-      "type_name": "CC_Tree02",
-      "props": [
-        {
-          "key": "objectInitialHealth",
-          "type": "int",
-          "value": 100
-        },
-        {
-          "key": "objectEnabled",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectIndestructible",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectUnsellable",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectPowered",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectRecruitableAI",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectTargetable",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectSleeping",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectBasePriority",
-          "type": "int",
-          "value": 40
-        },
-        {
-          "key": "objectBasePhase",
-          "type": "int",
-          "value": 1
-        },
-        {
-          "key": "originalOwner",
-          "type": "ascii",
-          "value": "PlyrNeutral/teamPlyrNeutral"
-        },
-        {
-          "key": "uniqueID",
-          "type": "ascii",
-          "value": "henan-grove-18"
-        },
-        {
-          "key": "objectLayer",
-          "type": "ascii",
-          "value": ""
-        },
-        {
-          "key": "objectPrototypeScale",
-          "type": "float",
-          "value": 2.05
-        }
-      ]
-    },
-    {
-      "cell": [
-        791.0,
-        225.0
-      ],
-      "version": 3,
-      "angle": 3.4536295,
-      "road_type": 0,
-      "type_name": "CC_Tree03",
-      "props": [
-        {
-          "key": "objectInitialHealth",
-          "type": "int",
-          "value": 100
-        },
-        {
-          "key": "objectEnabled",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectIndestructible",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectUnsellable",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectPowered",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectRecruitableAI",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectTargetable",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectSleeping",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectBasePriority",
-          "type": "int",
-          "value": 40
-        },
-        {
-          "key": "objectBasePhase",
-          "type": "int",
-          "value": 1
-        },
-        {
-          "key": "originalOwner",
-          "type": "ascii",
-          "value": "PlyrNeutral/teamPlyrNeutral"
-        },
-        {
-          "key": "uniqueID",
-          "type": "ascii",
-          "value": "henan-grove-19"
-        },
-        {
-          "key": "objectLayer",
-          "type": "ascii",
-          "value": ""
-        },
-        {
-          "key": "objectPrototypeScale",
-          "type": "float",
-          "value": 2.17
-        }
-      ]
-    },
-    {
-      "cell": [
-        781.0,
-        283.0
-      ],
-      "version": 3,
-      "angle": 4.3436294,
-      "road_type": 0,
-      "type_name": "YU_Bush01",
-      "props": [
-        {
-          "key": "objectInitialHealth",
-          "type": "int",
-          "value": 100
-        },
-        {
-          "key": "objectEnabled",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectIndestructible",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectUnsellable",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectPowered",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectRecruitableAI",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectTargetable",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectSleeping",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectBasePriority",
-          "type": "int",
-          "value": 40
-        },
-        {
-          "key": "objectBasePhase",
-          "type": "int",
-          "value": 1
-        },
-        {
-          "key": "originalOwner",
-          "type": "ascii",
-          "value": "PlyrNeutral/teamPlyrNeutral"
-        },
-        {
-          "key": "uniqueID",
-          "type": "ascii",
-          "value": "henan-grove-20"
-        },
-        {
-          "key": "objectLayer",
-          "type": "ascii",
-          "value": ""
-        },
-        {
-          "key": "objectPrototypeScale",
-          "type": "float",
-          "value": 1.69
-        }
-      ]
-    },
-    {
-      "cell": [
-        790.0,
+        590.0,
         280.0
       ],
       "version": 3,
-      "angle": 5.233629,
+      "angle": 0.7853982,
       "road_type": 0,
-      "type_name": "CC_Tree01",
+      "type_name": "OilDerrick",
       "props": [
         {
           "key": "objectInitialHealth",
@@ -8144,29 +7772,24 @@
         {
           "key": "uniqueID",
           "type": "ascii",
-          "value": "henan-grove-21"
+          "value": "henan-marked-tech-3"
         },
         {
           "key": "objectLayer",
           "type": "ascii",
           "value": ""
-        },
-        {
-          "key": "objectPrototypeScale",
-          "type": "float",
-          "value": 1.93
         }
       ]
     },
     {
       "cell": [
-        802.0,
-        281.0
+        182.0,
+        668.0
       ],
       "version": 3,
-      "angle": 6.1236296,
+      "angle": 0.7853982,
       "road_type": 0,
-      "type_name": "CC_Tree02",
+      "type_name": "OilDerrick",
       "props": [
         {
           "key": "objectInitialHealth",
@@ -8226,29 +7849,24 @@
         {
           "key": "uniqueID",
           "type": "ascii",
-          "value": "henan-grove-22"
+          "value": "henan-marked-tech-4"
         },
         {
           "key": "objectLayer",
           "type": "ascii",
           "value": ""
-        },
-        {
-          "key": "objectPrototypeScale",
-          "type": "float",
-          "value": 2.05
         }
       ]
     },
     {
       "cell": [
-        780.0,
-        295.0
+        404.0,
+        588.0
       ],
       "version": 3,
-      "angle": 0.7304441,
+      "angle": 0.7853982,
       "road_type": 0,
-      "type_name": "CC_Tree03",
+      "type_name": "OilDerrick",
       "props": [
         {
           "key": "objectInitialHealth",
@@ -8308,29 +7926,24 @@
         {
           "key": "uniqueID",
           "type": "ascii",
-          "value": "henan-grove-23"
+          "value": "henan-marked-tech-5"
         },
         {
           "key": "objectLayer",
           "type": "ascii",
           "value": ""
-        },
-        {
-          "key": "objectPrototypeScale",
-          "type": "float",
-          "value": 2.17
         }
       ]
     },
     {
       "cell": [
-        790.0,
-        292.0
+        670.0,
+        576.0
       ],
       "version": 3,
-      "angle": 1.620444,
+      "angle": 0.7853982,
       "road_type": 0,
-      "type_name": "YU_Bush01",
+      "type_name": "OilDerrick",
       "props": [
         {
           "key": "objectInitialHealth",
@@ -8390,29 +8003,24 @@
         {
           "key": "uniqueID",
           "type": "ascii",
-          "value": "henan-grove-24"
+          "value": "henan-marked-tech-6"
         },
         {
           "key": "objectLayer",
           "type": "ascii",
           "value": ""
-        },
-        {
-          "key": "objectPrototypeScale",
-          "type": "float",
-          "value": 1.69
         }
       ]
     },
     {
       "cell": [
-        800.0,
-        296.0
+        168.0,
+        384.0
       ],
       "version": 3,
-      "angle": 2.5104442,
+      "angle": 0.7853982,
       "road_type": 0,
-      "type_name": "CC_Tree01",
+      "type_name": "HospitalTechStructure",
       "props": [
         {
           "key": "objectInitialHealth",
@@ -8472,29 +8080,24 @@
         {
           "key": "uniqueID",
           "type": "ascii",
-          "value": "henan-grove-25"
+          "value": "henan-marked-tech-7"
         },
         {
           "key": "objectLayer",
           "type": "ascii",
           "value": ""
-        },
-        {
-          "key": "objectPrototypeScale",
-          "type": "float",
-          "value": 1.93
         }
       ]
     },
     {
       "cell": [
-        809.0,
-        300.0
+        600.0,
+        388.0
       ],
       "version": 3,
-      "angle": 3.400444,
+      "angle": 0.7853982,
       "road_type": 0,
-      "type_name": "CC_Tree02",
+      "type_name": "HospitalTechStructure",
       "props": [
         {
           "key": "objectInitialHealth",
@@ -8554,29 +8157,24 @@
         {
           "key": "uniqueID",
           "type": "ascii",
-          "value": "henan-grove-26"
+          "value": "henan-marked-tech-8"
         },
         {
           "key": "objectLayer",
           "type": "ascii",
           "value": ""
-        },
-        {
-          "key": "objectPrototypeScale",
-          "type": "float",
-          "value": 2.05
         }
       ]
     },
     {
       "cell": [
-        783.0,
-        307.0
+        110.0,
+        430.0
       ],
       "version": 3,
-      "angle": 4.290444,
+      "angle": 0.7853982,
       "road_type": 0,
-      "type_name": "CC_Tree03",
+      "type_name": "VeterancyTechStructure",
       "props": [
         {
           "key": "objectInitialHealth",
@@ -8636,29 +8234,24 @@
         {
           "key": "uniqueID",
           "type": "ascii",
-          "value": "henan-grove-27"
+          "value": "henan-marked-tech-9"
         },
         {
           "key": "objectLayer",
           "type": "ascii",
           "value": ""
-        },
-        {
-          "key": "objectPrototypeScale",
-          "type": "float",
-          "value": 2.17
         }
       ]
     },
     {
       "cell": [
-        795.0,
-        309.0
+        730.0,
+        430.0
       ],
       "version": 3,
-      "angle": 5.1804442,
+      "angle": 0.7853982,
       "road_type": 0,
-      "type_name": "YU_Bush01",
+      "type_name": "VeterancyTechStructure",
       "props": [
         {
           "key": "objectInitialHealth",
@@ -8718,29 +8311,24 @@
         {
           "key": "uniqueID",
           "type": "ascii",
-          "value": "henan-grove-28"
+          "value": "henan-marked-tech-10"
         },
         {
           "key": "objectLayer",
           "type": "ascii",
           "value": ""
-        },
-        {
-          "key": "objectPrototypeScale",
-          "type": "float",
-          "value": 1.69
         }
       ]
     },
     {
       "cell": [
-        806.0,
-        310.0
+        270.0,
+        614.0
       ],
       "version": 3,
-      "angle": 6.070444,
+      "angle": 0.7853982,
       "road_type": 0,
-      "type_name": "CC_Tree01",
+      "type_name": "ObservationPostTechStructure",
       "props": [
         {
           "key": "objectInitialHealth",
@@ -8800,29 +8388,24 @@
         {
           "key": "uniqueID",
           "type": "ascii",
-          "value": "henan-grove-29"
+          "value": "henan-marked-tech-11"
         },
         {
           "key": "objectLayer",
           "type": "ascii",
           "value": ""
-        },
-        {
-          "key": "objectPrototypeScale",
-          "type": "float",
-          "value": 1.93
         }
       ]
     },
     {
       "cell": [
-        786.0,
-        408.0
+        520.0,
+        540.0
       ],
       "version": 3,
-      "angle": 0.6772588,
+      "angle": 0.7853982,
       "road_type": 0,
-      "type_name": "CC_Tree02",
+      "type_name": "ObservationPostTechStructure",
       "props": [
         {
           "key": "objectInitialHealth",
@@ -8882,29 +8465,24 @@
         {
           "key": "uniqueID",
           "type": "ascii",
-          "value": "henan-grove-30"
+          "value": "henan-marked-tech-12"
         },
         {
           "key": "objectLayer",
           "type": "ascii",
           "value": ""
-        },
-        {
-          "key": "objectPrototypeScale",
-          "type": "float",
-          "value": 2.05
         }
       ]
     },
     {
       "cell": [
-        795.0,
-        405.0
+        100.0,
+        180.0
       ],
       "version": 3,
-      "angle": 1.5672587,
+      "angle": 0.7853982,
       "road_type": 0,
-      "type_name": "CC_Tree03",
+      "type_name": "GarageTechStructure",
       "props": [
         {
           "key": "objectInitialHealth",
@@ -8964,603 +8542,24 @@
         {
           "key": "uniqueID",
           "type": "ascii",
-          "value": "henan-grove-31"
+          "value": "henan-marked-tech-13"
         },
         {
           "key": "objectLayer",
           "type": "ascii",
           "value": ""
-        },
-        {
-          "key": "objectPrototypeScale",
-          "type": "float",
-          "value": 2.17
-        }
-      ]
-    },
-    {
-      "cell": [
-        807.0,
-        406.0
-      ],
-      "version": 3,
-      "angle": 2.4572587,
-      "road_type": 0,
-      "type_name": "YU_Bush01",
-      "props": [
-        {
-          "key": "objectInitialHealth",
-          "type": "int",
-          "value": 100
-        },
-        {
-          "key": "objectEnabled",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectIndestructible",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectUnsellable",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectPowered",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectRecruitableAI",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectTargetable",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectSleeping",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectBasePriority",
-          "type": "int",
-          "value": 40
-        },
-        {
-          "key": "objectBasePhase",
-          "type": "int",
-          "value": 1
-        },
-        {
-          "key": "originalOwner",
-          "type": "ascii",
-          "value": "PlyrNeutral/teamPlyrNeutral"
-        },
-        {
-          "key": "uniqueID",
-          "type": "ascii",
-          "value": "henan-grove-32"
-        },
-        {
-          "key": "objectLayer",
-          "type": "ascii",
-          "value": ""
-        },
-        {
-          "key": "objectPrototypeScale",
-          "type": "float",
-          "value": 1.69
-        }
-      ]
-    },
-    {
-      "cell": [
-        785.0,
-        420.0
-      ],
-      "version": 3,
-      "angle": 3.3472588,
-      "road_type": 0,
-      "type_name": "CC_Tree01",
-      "props": [
-        {
-          "key": "objectInitialHealth",
-          "type": "int",
-          "value": 100
-        },
-        {
-          "key": "objectEnabled",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectIndestructible",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectUnsellable",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectPowered",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectRecruitableAI",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectTargetable",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectSleeping",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectBasePriority",
-          "type": "int",
-          "value": 40
-        },
-        {
-          "key": "objectBasePhase",
-          "type": "int",
-          "value": 1
-        },
-        {
-          "key": "originalOwner",
-          "type": "ascii",
-          "value": "PlyrNeutral/teamPlyrNeutral"
-        },
-        {
-          "key": "uniqueID",
-          "type": "ascii",
-          "value": "henan-grove-33"
-        },
-        {
-          "key": "objectLayer",
-          "type": "ascii",
-          "value": ""
-        },
-        {
-          "key": "objectPrototypeScale",
-          "type": "float",
-          "value": 1.93
-        }
-      ]
-    },
-    {
-      "cell": [
-        795.0,
-        417.0
-      ],
-      "version": 3,
-      "angle": 4.237259,
-      "road_type": 0,
-      "type_name": "CC_Tree02",
-      "props": [
-        {
-          "key": "objectInitialHealth",
-          "type": "int",
-          "value": 100
-        },
-        {
-          "key": "objectEnabled",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectIndestructible",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectUnsellable",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectPowered",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectRecruitableAI",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectTargetable",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectSleeping",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectBasePriority",
-          "type": "int",
-          "value": 40
-        },
-        {
-          "key": "objectBasePhase",
-          "type": "int",
-          "value": 1
-        },
-        {
-          "key": "originalOwner",
-          "type": "ascii",
-          "value": "PlyrNeutral/teamPlyrNeutral"
-        },
-        {
-          "key": "uniqueID",
-          "type": "ascii",
-          "value": "henan-grove-34"
-        },
-        {
-          "key": "objectLayer",
-          "type": "ascii",
-          "value": ""
-        },
-        {
-          "key": "objectPrototypeScale",
-          "type": "float",
-          "value": 2.05
-        }
-      ]
-    },
-    {
-      "cell": [
-        805.0,
-        421.0
-      ],
-      "version": 3,
-      "angle": 5.127259,
-      "road_type": 0,
-      "type_name": "CC_Tree03",
-      "props": [
-        {
-          "key": "objectInitialHealth",
-          "type": "int",
-          "value": 100
-        },
-        {
-          "key": "objectEnabled",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectIndestructible",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectUnsellable",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectPowered",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectRecruitableAI",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectTargetable",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectSleeping",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectBasePriority",
-          "type": "int",
-          "value": 40
-        },
-        {
-          "key": "objectBasePhase",
-          "type": "int",
-          "value": 1
-        },
-        {
-          "key": "originalOwner",
-          "type": "ascii",
-          "value": "PlyrNeutral/teamPlyrNeutral"
-        },
-        {
-          "key": "uniqueID",
-          "type": "ascii",
-          "value": "henan-grove-35"
-        },
-        {
-          "key": "objectLayer",
-          "type": "ascii",
-          "value": ""
-        },
-        {
-          "key": "objectPrototypeScale",
-          "type": "float",
-          "value": 2.17
-        }
-      ]
-    },
-    {
-      "cell": [
-        800.0,
-        434.0
-      ],
-      "version": 3,
-      "angle": 6.0172586,
-      "road_type": 0,
-      "type_name": "YU_Bush01",
-      "props": [
-        {
-          "key": "objectInitialHealth",
-          "type": "int",
-          "value": 100
-        },
-        {
-          "key": "objectEnabled",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectIndestructible",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectUnsellable",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectPowered",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectRecruitableAI",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectTargetable",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectSleeping",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectBasePriority",
-          "type": "int",
-          "value": 40
-        },
-        {
-          "key": "objectBasePhase",
-          "type": "int",
-          "value": 1
-        },
-        {
-          "key": "originalOwner",
-          "type": "ascii",
-          "value": "PlyrNeutral/teamPlyrNeutral"
-        },
-        {
-          "key": "uniqueID",
-          "type": "ascii",
-          "value": "henan-grove-36"
-        },
-        {
-          "key": "objectLayer",
-          "type": "ascii",
-          "value": ""
-        },
-        {
-          "key": "objectPrototypeScale",
-          "type": "float",
-          "value": 1.69
-        }
-      ]
-    },
-    {
-      "cell": [
-        734.0,
-        505.0
-      ],
-      "version": 3,
-      "angle": 0.62407345,
-      "road_type": 0,
-      "type_name": "CC_Tree01",
-      "props": [
-        {
-          "key": "objectInitialHealth",
-          "type": "int",
-          "value": 100
-        },
-        {
-          "key": "objectEnabled",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectIndestructible",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectUnsellable",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectPowered",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectRecruitableAI",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectTargetable",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectSleeping",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectBasePriority",
-          "type": "int",
-          "value": 40
-        },
-        {
-          "key": "objectBasePhase",
-          "type": "int",
-          "value": 1
-        },
-        {
-          "key": "originalOwner",
-          "type": "ascii",
-          "value": "PlyrNeutral/teamPlyrNeutral"
-        },
-        {
-          "key": "uniqueID",
-          "type": "ascii",
-          "value": "henan-grove-37"
-        },
-        {
-          "key": "objectLayer",
-          "type": "ascii",
-          "value": ""
-        },
-        {
-          "key": "objectPrototypeScale",
-          "type": "float",
-          "value": 1.93
-        }
-      ]
-    },
-    {
-      "cell": [
-        708.0,
-        512.0
-      ],
-      "version": 3,
-      "angle": 1.5140735,
-      "road_type": 0,
-      "type_name": "CC_Tree02",
-      "props": [
-        {
-          "key": "objectInitialHealth",
-          "type": "int",
-          "value": 100
-        },
-        {
-          "key": "objectEnabled",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectIndestructible",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectUnsellable",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectPowered",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectRecruitableAI",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectTargetable",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectSleeping",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectBasePriority",
-          "type": "int",
-          "value": 40
-        },
-        {
-          "key": "objectBasePhase",
-          "type": "int",
-          "value": 1
-        },
-        {
-          "key": "originalOwner",
-          "type": "ascii",
-          "value": "PlyrNeutral/teamPlyrNeutral"
-        },
-        {
-          "key": "uniqueID",
-          "type": "ascii",
-          "value": "henan-grove-38"
-        },
-        {
-          "key": "objectLayer",
-          "type": "ascii",
-          "value": ""
-        },
-        {
-          "key": "objectPrototypeScale",
-          "type": "float",
-          "value": 2.05
         }
       ]
     },
     {
       "cell": [
         720.0,
-        514.0
+        220.0
       ],
       "version": 3,
-      "angle": 2.4040735,
+      "angle": 0.7853982,
       "road_type": 0,
-      "type_name": "CC_Tree03",
+      "type_name": "GarageTechStructure",
       "props": [
         {
           "key": "objectInitialHealth",
@@ -9620,926 +8619,19 @@
         {
           "key": "uniqueID",
           "type": "ascii",
-          "value": "henan-grove-39"
+          "value": "henan-marked-tech-14"
         },
         {
           "key": "objectLayer",
           "type": "ascii",
           "value": ""
-        },
-        {
-          "key": "objectPrototypeScale",
-          "type": "float",
-          "value": 2.17
         }
       ]
     },
     {
       "cell": [
-        731.0,
-        515.0
-      ],
-      "version": 3,
-      "angle": 3.2940736,
-      "road_type": 0,
-      "type_name": "YU_Bush01",
-      "props": [
-        {
-          "key": "objectInitialHealth",
-          "type": "int",
-          "value": 100
-        },
-        {
-          "key": "objectEnabled",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectIndestructible",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectUnsellable",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectPowered",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectRecruitableAI",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectTargetable",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectSleeping",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectBasePriority",
-          "type": "int",
-          "value": 40
-        },
-        {
-          "key": "objectBasePhase",
-          "type": "int",
-          "value": 1
-        },
-        {
-          "key": "originalOwner",
-          "type": "ascii",
-          "value": "PlyrNeutral/teamPlyrNeutral"
-        },
-        {
-          "key": "uniqueID",
-          "type": "ascii",
-          "value": "henan-grove-40"
-        },
-        {
-          "key": "objectLayer",
-          "type": "ascii",
-          "value": ""
-        },
-        {
-          "key": "objectPrototypeScale",
-          "type": "float",
-          "value": 1.69
-        }
-      ]
-    },
-    {
-      "cell": [
-        36.0,
-        443.0
-      ],
-      "version": 3,
-      "angle": 4.1840734,
-      "road_type": 0,
-      "type_name": "CC_Tree01",
-      "props": [
-        {
-          "key": "objectInitialHealth",
-          "type": "int",
-          "value": 100
-        },
-        {
-          "key": "objectEnabled",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectIndestructible",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectUnsellable",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectPowered",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectRecruitableAI",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectTargetable",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectSleeping",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectBasePriority",
-          "type": "int",
-          "value": 40
-        },
-        {
-          "key": "objectBasePhase",
-          "type": "int",
-          "value": 1
-        },
-        {
-          "key": "originalOwner",
-          "type": "ascii",
-          "value": "PlyrNeutral/teamPlyrNeutral"
-        },
-        {
-          "key": "uniqueID",
-          "type": "ascii",
-          "value": "henan-grove-41"
-        },
-        {
-          "key": "objectLayer",
-          "type": "ascii",
-          "value": ""
-        },
-        {
-          "key": "objectPrototypeScale",
-          "type": "float",
-          "value": 1.93
-        }
-      ]
-    },
-    {
-      "cell": [
-        35.0,
-        455.0
-      ],
-      "version": 3,
-      "angle": 5.0740733,
-      "road_type": 0,
-      "type_name": "CC_Tree02",
-      "props": [
-        {
-          "key": "objectInitialHealth",
-          "type": "int",
-          "value": 100
-        },
-        {
-          "key": "objectEnabled",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectIndestructible",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectUnsellable",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectPowered",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectRecruitableAI",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectTargetable",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectSleeping",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectBasePriority",
-          "type": "int",
-          "value": 40
-        },
-        {
-          "key": "objectBasePhase",
-          "type": "int",
-          "value": 1
-        },
-        {
-          "key": "originalOwner",
-          "type": "ascii",
-          "value": "PlyrNeutral/teamPlyrNeutral"
-        },
-        {
-          "key": "uniqueID",
-          "type": "ascii",
-          "value": "henan-grove-42"
-        },
-        {
-          "key": "objectLayer",
-          "type": "ascii",
-          "value": ""
-        },
-        {
-          "key": "objectPrototypeScale",
-          "type": "float",
-          "value": 2.05
-        }
-      ]
-    },
-    {
-      "cell": [
-        45.0,
-        452.0
-      ],
-      "version": 3,
-      "angle": 5.9640737,
-      "road_type": 0,
-      "type_name": "CC_Tree03",
-      "props": [
-        {
-          "key": "objectInitialHealth",
-          "type": "int",
-          "value": 100
-        },
-        {
-          "key": "objectEnabled",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectIndestructible",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectUnsellable",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectPowered",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectRecruitableAI",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectTargetable",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectSleeping",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectBasePriority",
-          "type": "int",
-          "value": 40
-        },
-        {
-          "key": "objectBasePhase",
-          "type": "int",
-          "value": 1
-        },
-        {
-          "key": "originalOwner",
-          "type": "ascii",
-          "value": "PlyrNeutral/teamPlyrNeutral"
-        },
-        {
-          "key": "uniqueID",
-          "type": "ascii",
-          "value": "henan-grove-43"
-        },
-        {
-          "key": "objectLayer",
-          "type": "ascii",
-          "value": ""
-        },
-        {
-          "key": "objectPrototypeScale",
-          "type": "float",
-          "value": 2.17
-        }
-      ]
-    },
-    {
-      "cell": [
-        55.0,
-        456.0
-      ],
-      "version": 3,
-      "angle": 0.57088816,
-      "road_type": 0,
-      "type_name": "YU_Bush01",
-      "props": [
-        {
-          "key": "objectInitialHealth",
-          "type": "int",
-          "value": 100
-        },
-        {
-          "key": "objectEnabled",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectIndestructible",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectUnsellable",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectPowered",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectRecruitableAI",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectTargetable",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectSleeping",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectBasePriority",
-          "type": "int",
-          "value": 40
-        },
-        {
-          "key": "objectBasePhase",
-          "type": "int",
-          "value": 1
-        },
-        {
-          "key": "originalOwner",
-          "type": "ascii",
-          "value": "PlyrNeutral/teamPlyrNeutral"
-        },
-        {
-          "key": "uniqueID",
-          "type": "ascii",
-          "value": "henan-grove-44"
-        },
-        {
-          "key": "objectLayer",
-          "type": "ascii",
-          "value": ""
-        },
-        {
-          "key": "objectPrototypeScale",
-          "type": "float",
-          "value": 1.69
-        }
-      ]
-    },
-    {
-      "cell": [
-        64.0,
-        460.0
-      ],
-      "version": 3,
-      "angle": 1.4608881,
-      "road_type": 0,
-      "type_name": "CC_Tree01",
-      "props": [
-        {
-          "key": "objectInitialHealth",
-          "type": "int",
-          "value": 100
-        },
-        {
-          "key": "objectEnabled",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectIndestructible",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectUnsellable",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectPowered",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectRecruitableAI",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectTargetable",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectSleeping",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectBasePriority",
-          "type": "int",
-          "value": 40
-        },
-        {
-          "key": "objectBasePhase",
-          "type": "int",
-          "value": 1
-        },
-        {
-          "key": "originalOwner",
-          "type": "ascii",
-          "value": "PlyrNeutral/teamPlyrNeutral"
-        },
-        {
-          "key": "uniqueID",
-          "type": "ascii",
-          "value": "henan-grove-45"
-        },
-        {
-          "key": "objectLayer",
-          "type": "ascii",
-          "value": ""
-        },
-        {
-          "key": "objectPrototypeScale",
-          "type": "float",
-          "value": 1.93
-        }
-      ]
-    },
-    {
-      "cell": [
-        38.0,
-        467.0
-      ],
-      "version": 3,
-      "angle": 2.3508883,
-      "road_type": 0,
-      "type_name": "CC_Tree02",
-      "props": [
-        {
-          "key": "objectInitialHealth",
-          "type": "int",
-          "value": 100
-        },
-        {
-          "key": "objectEnabled",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectIndestructible",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectUnsellable",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectPowered",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectRecruitableAI",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectTargetable",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectSleeping",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectBasePriority",
-          "type": "int",
-          "value": 40
-        },
-        {
-          "key": "objectBasePhase",
-          "type": "int",
-          "value": 1
-        },
-        {
-          "key": "originalOwner",
-          "type": "ascii",
-          "value": "PlyrNeutral/teamPlyrNeutral"
-        },
-        {
-          "key": "uniqueID",
-          "type": "ascii",
-          "value": "henan-grove-46"
-        },
-        {
-          "key": "objectLayer",
-          "type": "ascii",
-          "value": ""
-        },
-        {
-          "key": "objectPrototypeScale",
-          "type": "float",
-          "value": 2.05
-        }
-      ]
-    },
-    {
-      "cell": [
-        50.0,
-        469.0
-      ],
-      "version": 3,
-      "angle": 3.240888,
-      "road_type": 0,
-      "type_name": "CC_Tree03",
-      "props": [
-        {
-          "key": "objectInitialHealth",
-          "type": "int",
-          "value": 100
-        },
-        {
-          "key": "objectEnabled",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectIndestructible",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectUnsellable",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectPowered",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectRecruitableAI",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectTargetable",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectSleeping",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectBasePriority",
-          "type": "int",
-          "value": 40
-        },
-        {
-          "key": "objectBasePhase",
-          "type": "int",
-          "value": 1
-        },
-        {
-          "key": "originalOwner",
-          "type": "ascii",
-          "value": "PlyrNeutral/teamPlyrNeutral"
-        },
-        {
-          "key": "uniqueID",
-          "type": "ascii",
-          "value": "henan-grove-47"
-        },
-        {
-          "key": "objectLayer",
-          "type": "ascii",
-          "value": ""
-        },
-        {
-          "key": "objectPrototypeScale",
-          "type": "float",
-          "value": 2.17
-        }
-      ]
-    },
-    {
-      "cell": [
-        61.0,
-        470.0
-      ],
-      "version": 3,
-      "angle": 4.130888,
-      "road_type": 0,
-      "type_name": "YU_Bush01",
-      "props": [
-        {
-          "key": "objectInitialHealth",
-          "type": "int",
-          "value": 100
-        },
-        {
-          "key": "objectEnabled",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectIndestructible",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectUnsellable",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectPowered",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectRecruitableAI",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectTargetable",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectSleeping",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectBasePriority",
-          "type": "int",
-          "value": 40
-        },
-        {
-          "key": "objectBasePhase",
-          "type": "int",
-          "value": 1
-        },
-        {
-          "key": "originalOwner",
-          "type": "ascii",
-          "value": "PlyrNeutral/teamPlyrNeutral"
-        },
-        {
-          "key": "uniqueID",
-          "type": "ascii",
-          "value": "henan-grove-48"
-        },
-        {
-          "key": "objectLayer",
-          "type": "ascii",
-          "value": ""
-        },
-        {
-          "key": "objectPrototypeScale",
-          "type": "float",
-          "value": 1.69
-        }
-      ]
-    },
-    {
-      "cell": [
-        420.0,
-        534.0
-      ],
-      "version": 3,
-      "angle": 5.0208883,
-      "road_type": 0,
-      "type_name": "CC_Tree01",
-      "props": [
-        {
-          "key": "objectInitialHealth",
-          "type": "int",
-          "value": 100
-        },
-        {
-          "key": "objectEnabled",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectIndestructible",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectUnsellable",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectPowered",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectRecruitableAI",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectTargetable",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectSleeping",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectBasePriority",
-          "type": "int",
-          "value": 40
-        },
-        {
-          "key": "objectBasePhase",
-          "type": "int",
-          "value": 1
-        },
-        {
-          "key": "originalOwner",
-          "type": "ascii",
-          "value": "PlyrNeutral/teamPlyrNeutral"
-        },
-        {
-          "key": "uniqueID",
-          "type": "ascii",
-          "value": "henan-grove-49"
-        },
-        {
-          "key": "objectLayer",
-          "type": "ascii",
-          "value": ""
-        },
-        {
-          "key": "objectPrototypeScale",
-          "type": "float",
-          "value": 1.93
-        }
-      ]
-    },
-    {
-      "cell": [
-        456.0,
-        573.0
-      ],
-      "version": 3,
-      "angle": 5.910888,
-      "road_type": 0,
-      "type_name": "CC_Tree02",
-      "props": [
-        {
-          "key": "objectInitialHealth",
-          "type": "int",
-          "value": 100
-        },
-        {
-          "key": "objectEnabled",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectIndestructible",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectUnsellable",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectPowered",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectRecruitableAI",
-          "type": "bool",
-          "value": 1
-        },
-        {
-          "key": "objectTargetable",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectSleeping",
-          "type": "bool",
-          "value": 0
-        },
-        {
-          "key": "objectBasePriority",
-          "type": "int",
-          "value": 40
-        },
-        {
-          "key": "objectBasePhase",
-          "type": "int",
-          "value": 1
-        },
-        {
-          "key": "originalOwner",
-          "type": "ascii",
-          "value": "PlyrNeutral/teamPlyrNeutral"
-        },
-        {
-          "key": "uniqueID",
-          "type": "ascii",
-          "value": "henan-grove-50"
-        },
-        {
-          "key": "objectLayer",
-          "type": "ascii",
-          "value": ""
-        },
-        {
-          "key": "objectPrototypeScale",
-          "type": "float",
-          "value": 2.05
-        }
-      ]
-    },
-    {
-      "cell": [
-        41.0,
-        753.0
+        92.0,
+        761.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -10630,8 +8722,8 @@
     },
     {
       "cell": [
-        69.0,
-        768.0
+        64.0,
+        789.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -10722,8 +8814,8 @@
     },
     {
       "cell": [
-        289.0,
-        680.0
+        269.0,
+        758.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -10814,8 +8906,8 @@
     },
     {
       "cell": [
-        261.0,
-        701.0
+        241.0,
+        786.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -10906,8 +8998,8 @@
     },
     {
       "cell": [
-        437.0,
-        726.0
+        442.0,
+        765.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -10998,8 +9090,8 @@
     },
     {
       "cell": [
-        446.0,
-        754.0
+        414.0,
+        793.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -11090,8 +9182,8 @@
     },
     {
       "cell": [
-        738.0,
-        703.0
+        634.0,
+        710.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -11182,8 +9274,8 @@
     },
     {
       "cell": [
-        710.0,
-        708.0
+        606.0,
+        738.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -11274,8 +9366,8 @@
     },
     {
       "cell": [
-        118.0,
-        112.0
+        29.0,
+        36.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -11366,8 +9458,8 @@
     },
     {
       "cell": [
-        49.0,
-        128.0
+        106.0,
+        107.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -11458,8 +9550,8 @@
     },
     {
       "cell": [
-        80.0,
-        142.0
+        100.0,
+        51.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -11550,8 +9642,8 @@
     },
     {
       "cell": [
-        90.0,
-        27.0
+        78.0,
+        92.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -11642,8 +9734,8 @@
     },
     {
       "cell": [
-        107.0,
-        84.0
+        29.0,
+        64.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -11734,8 +9826,8 @@
     },
     {
       "cell": [
-        34.0,
-        55.0
+        106.0,
+        79.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -11826,8 +9918,8 @@
     },
     {
       "cell": [
-        315.0,
-        112.0
+        357.0,
+        35.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -11918,8 +10010,8 @@
     },
     {
       "cell": [
-        399.0,
-        85.0
+        329.0,
+        63.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -12010,8 +10102,8 @@
     },
     {
       "cell": [
-        399.0,
-        113.0
+        385.0,
+        63.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -12102,8 +10194,8 @@
     },
     {
       "cell": [
-        343.0,
-        27.0
+        357.0,
+        104.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -12194,8 +10286,8 @@
     },
     {
       "cell": [
-        315.0,
-        84.0
+        329.0,
+        91.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -12286,8 +10378,8 @@
     },
     {
       "cell": [
-        343.0,
-        111.0
+        385.0,
+        91.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -12378,8 +10470,8 @@
     },
     {
       "cell": [
-        619.0,
-        92.0
+        557.0,
+        42.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -12470,8 +10562,8 @@
     },
     {
       "cell": [
-        626.0,
-        33.0
+        529.0,
+        70.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -12562,8 +10654,8 @@
     },
     {
       "cell": [
-        570.0,
-        35.0
+        585.0,
+        90.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -12654,8 +10746,8 @@
     },
     {
       "cell": [
-        591.0,
-        92.0
+        557.0,
+        98.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -12746,8 +10838,8 @@
     },
     {
       "cell": [
-        522.0,
-        81.0
+        585.0,
+        62.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -12838,8 +10930,8 @@
     },
     {
       "cell": [
-        809.0,
-        88.0
+        718.0,
+        38.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -12930,8 +11022,8 @@
     },
     {
       "cell": [
-        706.0,
-        34.0
+        690.0,
+        66.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -13022,8 +11114,8 @@
     },
     {
       "cell": [
-        810.0,
-        116.0
+        746.0,
+        66.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -13114,8 +11206,8 @@
     },
     {
       "cell": [
-        762.0,
-        35.0
+        718.0,
+        107.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -13206,8 +11298,8 @@
     },
     {
       "cell": [
-        750.0,
-        92.0
+        690.0,
+        94.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -13298,8 +11390,8 @@
     },
     {
       "cell": [
-        790.0,
-        32.0
+        746.0,
+        103.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -13390,8 +11482,8 @@
     },
     {
       "cell": [
-        62.0,
-        41.0
+        78.0,
+        120.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -13482,8 +11574,8 @@
     },
     {
       "cell": [
-        135.0,
-        84.0
+        29.0,
+        128.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -13574,8 +11666,8 @@
     },
     {
       "cell": [
-        90.0,
-        112.0
+        134.0,
+        79.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -13666,8 +11758,8 @@
     },
     {
       "cell": [
-        343.0,
-        83.0
+        329.0,
+        119.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -13758,8 +11850,8 @@
     },
     {
       "cell": [
-        371.0,
-        84.0
+        301.0,
+        91.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -13850,8 +11942,8 @@
     },
     {
       "cell": [
-        287.0,
-        84.0
+        413.0,
+        91.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -13942,8 +12034,8 @@
     },
     {
       "cell": [
-        542.0,
-        53.0
+        585.0,
+        118.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -14034,8 +12126,8 @@
     },
     {
       "cell": [
-        598.0,
-        33.0
+        557.0,
+        126.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -14126,8 +12218,8 @@
     },
     {
       "cell": [
-        514.0,
-        53.0
+        585.0,
+        34.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -14218,8 +12310,8 @@
     },
     {
       "cell": [
-        790.0,
-        60.0
+        690.0,
+        122.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -14310,8 +12402,8 @@
     },
     {
       "cell": [
-        734.0,
-        34.0
+        662.0,
+        94.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -14402,8 +12494,8 @@
     },
     {
       "cell": [
-        722.0,
-        92.0
+        774.0,
+        104.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -14494,8 +12586,8 @@
     },
     {
       "cell": [
-        114.0,
-        724.0
+        36.0,
+        789.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -14586,8 +12678,8 @@
     },
     {
       "cell": [
-        348.0,
-        724.0
+        213.0,
+        787.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -14678,8 +12770,8 @@
     },
     {
       "cell": [
-        390.0,
-        762.0
+        414.0,
+        765.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -14770,8 +12862,8 @@
     },
     {
       "cell": [
-        652.0,
-        706.0
+        606.0,
+        710.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -14862,8 +12954,8 @@
     },
     {
       "cell": [
-        163.0,
-        85.0
+        59.0,
+        149.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -14954,8 +13046,8 @@
     },
     {
       "cell": [
-        371.0,
-        112.0
+        329.0,
+        35.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -15046,8 +13138,8 @@
     },
     {
       "cell": [
-        750.0,
-        120.0
+        690.0,
+        38.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -15138,8 +13230,8 @@
     },
     {
       "cell": [
-        149.0,
-        115.0
+        157.0,
+        127.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -15230,8 +13322,8 @@
     },
     {
       "cell": [
-        178.0,
-        55.0
+        158.0,
+        42.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -15322,8 +13414,8 @@
     },
     {
       "cell": [
-        287.0,
-        112.0
+        301.0,
+        34.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -15414,8 +13506,8 @@
     },
     {
       "cell": [
-        343.0,
-        139.0
+        385.0,
+        35.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -15506,8 +13598,8 @@
     },
     {
       "cell": [
-        574.0,
-        120.0
+        529.0,
+        42.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -15598,8 +13690,8 @@
     },
     {
       "cell": [
-        602.0,
-        120.0
+        487.0,
+        68.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -15690,8 +13782,8 @@
     },
     {
       "cell": [
-        722.0,
-        120.0
+        662.0,
+        38.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -15782,8 +13874,8 @@
     },
     {
       "cell": [
-        694.0,
-        92.0
+        746.0,
+        38.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -15874,8 +13966,8 @@
     },
     {
       "cell": [
-        29.0,
-        725.0
+        92.0,
+        733.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -15966,8 +14058,8 @@
     },
     {
       "cell": [
-        317.0,
-        680.0
+        269.0,
+        730.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -16058,8 +14150,8 @@
     },
     {
       "cell": [
-        418.0,
-        698.0
+        472.0,
+        752.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -16150,8 +14242,8 @@
     },
     {
       "cell": [
-        708.0,
-        680.0
+        634.0,
+        682.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -16242,8 +14334,8 @@
     },
     {
       "cell": [
-        647.0,
-        91.0
+        467.0,
+        124.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -16334,8 +14426,8 @@
     },
     {
       "cell": [
-        630.0,
-        120.0
+        501.0,
+        173.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -16426,8 +14518,8 @@
     },
     {
       "cell": [
-        486.0,
-        61.0
+        529.0,
+        178.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -16518,8 +14610,8 @@
     },
     {
       "cell": [
-        674.0,
-        63.0
+        662.0,
+        151.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -16610,8 +14702,8 @@
     },
     {
       "cell": [
-        694.0,
-        120.0
+        634.0,
+        98.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -16702,8 +14794,8 @@
     },
     {
       "cell": [
-        666.0,
-        119.0
+        774.0,
+        151.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -16794,8 +14886,8 @@
     },
     {
       "cell": [
-        183.0,
-        753.0
+        35.0,
+        677.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -16886,7 +14978,7 @@
     },
     {
       "cell": [
-        97.0,
+        63.0,
         661.0
       ],
       "version": 3,
@@ -16978,8 +15070,8 @@
     },
     {
       "cell": [
-        69.0,
-        653.0
+        35.0,
+        649.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -17070,8 +15162,8 @@
     },
     {
       "cell": [
-        261.0,
-        673.0
+        328.0,
+        701.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -17162,8 +15254,8 @@
     },
     {
       "cell": [
-        289.0,
-        652.0
+        218.0,
+        687.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -17254,8 +15346,8 @@
     },
     {
       "cell": [
-        261.0,
-        645.0
+        162.0,
+        713.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -17346,8 +15438,8 @@
     },
     {
       "cell": [
-        465.0,
-        711.0
+        516.0,
+        760.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -17438,8 +15530,8 @@
     },
     {
       "cell": [
-        493.0,
-        725.0
+        449.0,
+        694.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -17530,8 +15622,8 @@
     },
     {
       "cell": [
-        418.0,
-        666.0
+        557.0,
+        799.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -17622,8 +15714,8 @@
     },
     {
       "cell": [
-        766.0,
-        701.0
+        565.0,
+        668.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -17714,8 +15806,8 @@
     },
     {
       "cell": [
-        694.0,
-        652.0
+        676.0,
+        625.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -17806,8 +15898,8 @@
     },
     {
       "cell": [
-        803.0,
-        760.0
+        734.0,
+        667.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -17898,8 +15990,8 @@
     },
     {
       "cell": [
-        177.0,
-        113.0
+        72.0,
+        178.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -17990,8 +16082,8 @@
     },
     {
       "cell": [
-        52.0,
-        156.0
+        201.0,
+        98.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -18082,8 +16174,8 @@
     },
     {
       "cell": [
-        108.0,
-        168.0
+        178.0,
+        155.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -18174,8 +16266,8 @@
     },
     {
       "cell": [
-        431.0,
-        55.0
+        269.0,
+        35.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -18266,8 +16358,8 @@
     },
     {
       "cell": [
-        427.0,
-        83.0
+        245.0,
+        91.0
       ],
       "version": 3,
       "angle": 0.0,
@@ -18358,8 +16450,8 @@
     },
     {
       "cell": [
-        371.0,
-        140.0
+        301.0,
+        148.0
       ],
       "version": 3,
       "angle": 0.0,

@@ -1,0 +1,20 @@
+{
+  "include_rivers": false,
+  "preserve_ocean": true,
+  "minimum_lake_area_km2": 80,
+  "lake_area_method": "spherical polygon area, subtract holes; whole waterbody before frame clipping",
+  "source_water_display": "same filtered water mask in all three images; original reference retained",
+  "source_ocean": "https://github.com/nvkelso/natural-earth-vector/blob/master/geojson/ne_10m_ocean.geojson",
+  "ocean_source_sha256": "f9696a1337c746a0f6c8c13bc60d0f230d2ef8d105198d5657726c8f8e763fc2",
+  "ocean_mask_method": "Natural Earth ocean polygon clipped to reference frame; no DEM-negative pit or river-line inference; remove narrow channels with morphological opening radius 3 cells",
+  "lake_sources": "existing Natural Earth / OSM polygons plus matching OSM reservoir polygons",
+  "lakes": [
+    {
+      "name": "丹江口水库",
+      "area_km2": 772.255,
+      "retained": true,
+      "osm_id": null
+    }
+  ],
+  "ocean_channel_open_radius_cells": 3
+}

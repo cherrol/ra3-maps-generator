@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "id": "福建",
+  "date": "2026-10-29",
+  "source": "maps/福建/data/terrain-preview/raw/reference-before-shoreline-refinement.npz",
+  "output": "maps/福建/data/terrain-preview/input.npz",
+  "report": "maps/福建/data/terrain-preview/shoreline-refinement-report.json",
+  "land_open_radius": 10,
+  "purpose": "retract thin land protrusions and narrow necks into water while retaining broad land cores",
+  "rebuild": [
+    "work/terrain-preview-shores/process maps/福建/data/terrain-preview/shoreline-refinement.json",
+    "cargo run --release --locked --offline -- terrain-preview 福建 maps/福建/data/terrain-preview/input.npz"
+  ],
+  "compact_island_radius": 4,
+  "compact_island_max_area": 3259
+}

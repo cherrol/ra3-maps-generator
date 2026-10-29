@@ -1,0 +1,184 @@
+{
+  "date": "2026-10-29",
+  "map_id": "青海",
+  "map_name": "冰源澄镜",
+  "mode": "map-local-compact-water-design",
+  "designed_shorelines_are_not_measured": true,
+  "include_rivers": false,
+  "source_selection_report": "raw/before-water-shaping-water-report.json",
+  "water_cells_in_input": 3640,
+  "water_cells_in_game_frame": 3285,
+  "component_count_in_game_frame": 3,
+  "components_in_game_frame": [
+    {
+      "area_cells": 1816,
+      "bbox_game_cells": [
+        602,
+        143,
+        661,
+        190
+      ],
+      "bbox_fill_fraction": 0.6306,
+      "bbox_aspect_ratio": 1.25,
+      "raster_perimeter": 228,
+      "compactness_4pi_area_over_perimeter_squared": 0.439,
+      "maximum_manhattan_interior_radius_cells": 21,
+      "touches_game_frame": false
+    },
+    {
+      "area_cells": 804,
+      "bbox_game_cells": [
+        22,
+        394,
+        61,
+        423
+      ],
+      "bbox_fill_fraction": 0.67,
+      "bbox_aspect_ratio": 1.3333,
+      "raster_perimeter": 140,
+      "compactness_4pi_area_over_perimeter_squared": 0.5155,
+      "maximum_manhattan_interior_radius_cells": 13,
+      "touches_game_frame": false
+    },
+    {
+      "area_cells": 665,
+      "bbox_game_cells": [
+        451,
+        295,
+        493,
+        315
+      ],
+      "bbox_fill_fraction": 0.7364,
+      "bbox_aspect_ratio": 2.0476,
+      "raster_perimeter": 128,
+      "compactness_4pi_area_over_perimeter_squared": 0.51,
+      "maximum_manhattan_interior_radius_cells": 11,
+      "touches_game_frame": false
+    }
+  ],
+  "design_lake_groups": [
+    {
+      "action": "smooth",
+      "close_radius": 4,
+      "name": "青海-湖区1",
+      "open_radius": 5,
+      "result": {
+        "cells": 1797,
+        "component_count": 1,
+        "components": [
+          {
+            "area_cells": 1797,
+            "bbox_aspect_ratio": 1.25,
+            "bounds": [
+              622,
+              163,
+              682,
+              211
+            ],
+            "compactness": 0.41954830547717437,
+            "index": 0,
+            "maximum_interior_radius_cells": 18.666666666666668,
+            "perimeter": 232,
+            "touches_frame": false
+          }
+        ]
+      },
+      "source_cells": 1851
+    },
+    {
+      "action": "hull",
+      "close_radius": 0,
+      "name": "青海-湖区2",
+      "open_radius": 5,
+      "result": {
+        "cells": 374,
+        "component_count": 1,
+        "components": [
+          {
+            "area_cells": 374,
+            "bbox_aspect_ratio": 1.25,
+            "bounds": [
+              0,
+              538,
+              20,
+              563
+            ],
+            "compactness": 0.5802250135518927,
+            "index": 0,
+            "maximum_interior_radius_cells": 12.0,
+            "perimeter": 90,
+            "touches_frame": true
+          }
+        ]
+      },
+      "source_cells": 354
+    },
+    {
+      "action": "hull",
+      "close_radius": 0,
+      "name": "青海-湖区4",
+      "open_radius": 5,
+      "result": {
+        "cells": 665,
+        "component_count": 1,
+        "components": [
+          {
+            "area_cells": 665,
+            "bbox_aspect_ratio": 2.0476190476190474,
+            "bounds": [
+              471,
+              315,
+              514,
+              336
+            ],
+            "compactness": 0.5100486119719757,
+            "index": 0,
+            "maximum_interior_radius_cells": 10.666666666666666,
+            "perimeter": 128,
+            "touches_frame": false
+          }
+        ]
+      },
+      "source_cells": 459
+    },
+    {
+      "action": "hull",
+      "close_radius": 0,
+      "name": "青海-湖区5",
+      "open_radius": 6,
+      "result": {
+        "cells": 804,
+        "component_count": 1,
+        "components": [
+          {
+            "area_cells": 804,
+            "bbox_aspect_ratio": 1.3333333333333333,
+            "bounds": [
+              42,
+              414,
+              82,
+              444
+            ],
+            "compactness": 0.5154776517318763,
+            "index": 0,
+            "maximum_interior_radius_cells": 12.0,
+            "perimeter": 140,
+            "touches_frame": false
+          }
+        ]
+      },
+      "source_cells": 329
+    }
+  ],
+  "water_exactly_ocean_union_original_large_lakes": false,
+  "original_geographic_arrays_preserved": true,
+  "existing_land_layers_preserved": true,
+  "original_final_thresholds_preserved": true,
+  "reference": "raw/reference-before-water-shaping.npz",
+  "active_shoreline_refinement": "shoreline-refinement-report.json",
+  "land_protrusions_removed_input_cells": 19,
+  "land_protrusions_removed_game_cells": 19,
+  "small_island_and_waterbody_transition_plan": "shoreline-transition-plan.json",
+  "existing_water_preserved_during_land_refinement": true,
+  "full_perimeter_passability_status": "preview design requirement; implement and verify height/navigation during playable-map authoring"
+}

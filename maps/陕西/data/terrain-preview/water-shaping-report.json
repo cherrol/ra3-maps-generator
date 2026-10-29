@@ -1,0 +1,198 @@
+{
+  "added_cells": 506,
+  "design_lakes": {
+    "cells": 790,
+    "component_count": 1,
+    "components": [
+      {
+        "area_cells": 790,
+        "bbox_aspect_ratio": 2.0952380952380953,
+        "bounds": [
+          596,
+          679,
+          640,
+          700
+        ],
+        "compactness": 0.5874220583043637,
+        "index": 0,
+        "maximum_interior_radius_cells": 10.333333333333334,
+        "perimeter": 130,
+        "touches_frame": true
+      }
+    ]
+  },
+  "design_ocean": {
+    "cells": 0,
+    "component_count": 0,
+    "components": []
+  },
+  "design_water": {
+    "cells": 790,
+    "component_count": 1,
+    "components": [
+      {
+        "area_cells": 790,
+        "bbox_aspect_ratio": 2.0952380952380953,
+        "bounds": [
+          596,
+          679,
+          640,
+          700
+        ],
+        "compactness": 0.5874220583043637,
+        "index": 0,
+        "maximum_interior_radius_cells": 10.333333333333334,
+        "perimeter": 130,
+        "touches_frame": true
+      }
+    ]
+  },
+  "groups": [
+    {
+      "action": "hull",
+      "close_radius": 0,
+      "name": "陕西-湖区1",
+      "open_radius": 5,
+      "result": {
+        "cells": 790,
+        "component_count": 1,
+        "components": [
+          {
+            "area_cells": 790,
+            "bbox_aspect_ratio": 2.0952380952380953,
+            "bounds": [
+              596,
+              679,
+              640,
+              700
+            ],
+            "compactness": 0.5874220583043637,
+            "index": 0,
+            "maximum_interior_radius_cells": 10.333333333333334,
+            "perimeter": 130,
+            "touches_frame": true
+          }
+        ]
+      },
+      "source_cells": 297
+    }
+  ],
+  "id": "陕西",
+  "input_cells": [
+    640,
+    800
+  ],
+  "non_water_arrays_byte_identical": true,
+  "removed_cells": 88,
+  "restored_unseeded_land_hole_cells": 0,
+  "shoreline_kind": "game-terrain-preview-design",
+  "source": "maps/陕西/data/terrain-preview/raw/reference-before-water-shaping.npz",
+  "source_lakes": {
+    "cells": 372,
+    "component_count": 3,
+    "components": [
+      {
+        "area_cells": 289,
+        "bbox_aspect_ratio": 2.1818181818181817,
+        "bounds": [
+          592,
+          678,
+          640,
+          700
+        ],
+        "compactness": 0.08900306606092052,
+        "index": 0,
+        "maximum_interior_radius_cells": 3.0,
+        "perimeter": 202,
+        "touches_frame": true
+      },
+      {
+        "area_cells": 75,
+        "bbox_aspect_ratio": 1.7142857142857142,
+        "bounds": [
+          616,
+          648,
+          640,
+          662
+        ],
+        "compactness": 0.14016623974969333,
+        "index": 1,
+        "maximum_interior_radius_cells": 2.3333333333333335,
+        "perimeter": 82,
+        "touches_frame": true
+      },
+      {
+        "area_cells": 8,
+        "bbox_aspect_ratio": 2.5,
+        "bounds": [
+          638,
+          679,
+          640,
+          684
+        ],
+        "compactness": 0.5129130863003744,
+        "index": 2,
+        "maximum_interior_radius_cells": 2.0,
+        "perimeter": 14,
+        "touches_frame": true
+      }
+    ]
+  },
+  "source_ocean": {
+    "cells": 0,
+    "component_count": 0,
+    "components": []
+  },
+  "source_water": {
+    "cells": 372,
+    "component_count": 3,
+    "components": [
+      {
+        "area_cells": 289,
+        "bbox_aspect_ratio": 2.1818181818181817,
+        "bounds": [
+          592,
+          678,
+          640,
+          700
+        ],
+        "compactness": 0.08900306606092052,
+        "index": 0,
+        "maximum_interior_radius_cells": 3.0,
+        "perimeter": 202,
+        "touches_frame": true
+      },
+      {
+        "area_cells": 75,
+        "bbox_aspect_ratio": 1.7142857142857142,
+        "bounds": [
+          616,
+          648,
+          640,
+          662
+        ],
+        "compactness": 0.14016623974969333,
+        "index": 1,
+        "maximum_interior_radius_cells": 2.3333333333333335,
+        "perimeter": 82,
+        "touches_frame": true
+      },
+      {
+        "area_cells": 8,
+        "bbox_aspect_ratio": 2.5,
+        "bounds": [
+          638,
+          679,
+          640,
+          684
+        ],
+        "compactness": 0.5129130863003744,
+        "index": 2,
+        "maximum_interior_radius_cells": 2.0,
+        "perimeter": 14,
+        "touches_frame": true
+      }
+    ]
+  },
+  "date": "2026-10-29"
+}

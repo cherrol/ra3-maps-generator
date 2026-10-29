@@ -1,0 +1,162 @@
+{
+  "date": "2026-10-29",
+  "map_id": "西藏",
+  "map_name": "雪脊擎天",
+  "mode": "map-local-compact-water-design",
+  "designed_shorelines_are_not_measured": true,
+  "include_rivers": false,
+  "source_selection_report": "raw/before-water-shaping-water-report.json",
+  "water_cells_in_input": 1024,
+  "water_cells_in_game_frame": 1024,
+  "component_count_in_game_frame": 3,
+  "components_in_game_frame": [
+    {
+      "area_cells": 433,
+      "bbox_game_cells": [
+        393,
+        208,
+        420,
+        229
+      ],
+      "bbox_fill_fraction": 0.7029,
+      "bbox_aspect_ratio": 1.2727,
+      "raster_perimeter": 100,
+      "compactness_4pi_area_over_perimeter_squared": 0.5441,
+      "maximum_manhattan_interior_radius_cells": 10,
+      "touches_game_frame": false
+    },
+    {
+      "area_cells": 300,
+      "bbox_game_cells": [
+        438,
+        130,
+        462,
+        147
+      ],
+      "bbox_fill_fraction": 0.6667,
+      "bbox_aspect_ratio": 1.3889,
+      "raster_perimeter": 86,
+      "compactness_4pi_area_over_perimeter_squared": 0.5097,
+      "maximum_manhattan_interior_radius_cells": 8,
+      "touches_game_frame": false
+    },
+    {
+      "area_cells": 291,
+      "bbox_game_cells": [
+        458,
+        254,
+        481,
+        270
+      ],
+      "bbox_fill_fraction": 0.7132,
+      "bbox_aspect_ratio": 1.4118,
+      "raster_perimeter": 82,
+      "compactness_4pi_area_over_perimeter_squared": 0.5438,
+      "maximum_manhattan_interior_radius_cells": 8,
+      "touches_game_frame": false
+    }
+  ],
+  "design_lake_groups": [
+    {
+      "action": "hull",
+      "close_radius": 0,
+      "name": "西藏-湖区1",
+      "open_radius": 5,
+      "result": {
+        "cells": 291,
+        "component_count": 1,
+        "components": [
+          {
+            "area_cells": 291,
+            "bbox_aspect_ratio": 1.411764705882353,
+            "bounds": [
+              478,
+              274,
+              502,
+              291
+            ],
+            "compactness": 0.54384501022881,
+            "index": 0,
+            "maximum_interior_radius_cells": 7.666666666666667,
+            "perimeter": 82,
+            "touches_frame": false
+          }
+        ]
+      },
+      "source_cells": 305
+    },
+    {
+      "action": "hull",
+      "close_radius": 0,
+      "name": "西藏-湖区2",
+      "open_radius": 5,
+      "result": {
+        "cells": 433,
+        "component_count": 1,
+        "components": [
+          {
+            "area_cells": 433,
+            "bbox_aspect_ratio": 1.2727272727272727,
+            "bounds": [
+              413,
+              228,
+              441,
+              250
+            ],
+            "compactness": 0.5441238476017521,
+            "index": 0,
+            "maximum_interior_radius_cells": 9.666666666666666,
+            "perimeter": 100,
+            "touches_frame": false
+          }
+        ]
+      },
+      "source_cells": 303
+    },
+    {
+      "action": "hull",
+      "close_radius": 0,
+      "name": "西藏-湖区4",
+      "open_radius": 5,
+      "result": {
+        "cells": 0,
+        "component_count": 0,
+        "components": []
+      },
+      "source_cells": 160
+    },
+    {
+      "action": "hull",
+      "close_radius": 0,
+      "name": "西藏-湖区13",
+      "open_radius": 5,
+      "result": {
+        "cells": 300,
+        "component_count": 1,
+        "components": [
+          {
+            "area_cells": 300,
+            "bbox_aspect_ratio": 1.3888888888888888,
+            "bounds": [
+              458,
+              150,
+              483,
+              168
+            ],
+            "compactness": 0.5097229832757912,
+            "index": 0,
+            "maximum_interior_radius_cells": 7.333333333333333,
+            "perimeter": 86,
+            "touches_frame": false
+          }
+        ]
+      },
+      "source_cells": 142
+    }
+  ],
+  "water_exactly_ocean_union_original_large_lakes": false,
+  "original_geographic_arrays_preserved": true,
+  "existing_land_layers_preserved": true,
+  "original_final_thresholds_preserved": true,
+  "reference": "raw/reference-before-water-shaping.npz"
+}

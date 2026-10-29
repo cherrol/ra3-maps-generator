@@ -1,0 +1,74 @@
+{
+  "include_rivers": false,
+  "preserve_ocean": true,
+  "minimum_lake_area_km2": 80,
+  "lake_area_method": "spherical polygon area, subtract holes; whole waterbody before frame clipping",
+  "source_water_display": "same filtered water mask in all three images; original reference retained",
+  "source_ocean": "https://github.com/nvkelso/natural-earth-vector/blob/master/geojson/ne_10m_ocean.geojson",
+  "ocean_source_sha256": "f9696a1337c746a0f6c8c13bc60d0f230d2ef8d105198d5657726c8f8e763fc2",
+  "ocean_mask_method": "Natural Earth ocean polygon clipped to reference frame; no DEM-negative pit or river-line inference; remove narrow channels with morphological opening radius 3 cells",
+  "lake_sources": "existing Natural Earth / OSM polygons plus matching OSM reservoir polygons",
+  "lakes": [
+    {
+      "name": "滇池",
+      "area_km2": 299.652,
+      "retained": true,
+      "osm_id": 254775
+    },
+    {
+      "name": "洱海",
+      "area_km2": 245.824,
+      "retained": true,
+      "osm_id": 254433
+    },
+    {
+      "name": "抚仙湖",
+      "area_km2": 215.461,
+      "retained": true,
+      "osm_id": 13499
+    },
+    {
+      "name": "程海",
+      "area_km2": 74.259,
+      "retained": false,
+      "osm_id": 5898267
+    },
+    {
+      "name": "泸沽湖",
+      "area_km2": 50.521,
+      "retained": false,
+      "osm_id": 13495
+    },
+    {
+      "name": "星云湖",
+      "area_km2": 34.047,
+      "retained": false,
+      "osm_id": 1950338
+    },
+    {
+      "name": "杞麓湖",
+      "area_km2": 35.955,
+      "retained": false,
+      "osm_id": 1950320
+    },
+    {
+      "name": "阳宗海",
+      "area_km2": 30.814,
+      "retained": false,
+      "osm_id": 10343626
+    },
+    {
+      "name": "异龙湖",
+      "area_km2": 29.668,
+      "retained": false,
+      "osm_id": 359277
+    },
+    {
+      "name": "龙滩水库",
+      "area_km2": 270.063,
+      "retained": true,
+      "osm_id": 5572584
+    }
+  ],
+  "ocean_channel_open_radius_cells": 3
+}

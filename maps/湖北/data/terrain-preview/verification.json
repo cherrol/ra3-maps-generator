@@ -1,0 +1,160 @@
+{
+  "date": "2026-10-29",
+  "passed": true,
+  "map_id": "湖北",
+  "map_name": "百汊涵天",
+  "game_cells": [
+    800,
+    800
+  ],
+  "previous_game_cells": [
+    800,
+    512
+  ],
+  "full_grid_cells": [
+    840,
+    840
+  ],
+  "image_dimensions": {
+    "source.png": [
+      1104,
+      1002
+    ],
+    "preview.png": [
+      1104,
+      1002
+    ],
+    "preview--line.png": [
+      1104,
+      1002
+    ],
+    "preview--center--line.png": [
+      1104,
+      1002
+    ]
+  },
+  "north_up": true,
+  "geographic_playable_bounds_unchanged": true,
+  "original_input_sha256": "f5bffd531297569ceff1d96490129970943f2d5cc31cc65523601793415e1cfd",
+  "original_input_bytes_unchanged": true,
+  "original_elevation_thresholds_unchanged": true,
+  "original_game_layer_heights_unchanged": true,
+  "elevation_bilinear_from_original_input": true,
+  "land_layers_nearest_neighbor_from_approved_preview": true,
+  "all_surviving_resampled_land_layer_ids_preserved": true,
+  "input_water_nearest_neighbor_reprojection_verified": true,
+  "water_policy_unchanged": true,
+  "same_view_and_water_all_four_images": true,
+  "png_and_npz_crc_valid": true,
+  "public_image_water_pixels_checked": 1280000,
+  "province_fully_inside_game_frame": true,
+  "surrounding_real_terrain_included": true,
+  "game_heights_match_layers": true,
+  "land_layer_count": 4,
+  "land_layer_cell_counts": {
+    "3": 223051,
+    "2": 81470,
+    "1": 315086,
+    "4": 5914
+  },
+  "water_cells": 14479,
+  "water_component_count": 7,
+  "water_components": [
+    {
+      "area_cells": 5112,
+      "bbox_game_cells": [
+        573,
+        511,
+        664,
+        643
+      ],
+      "raster_perimeter": 472,
+      "bbox_fill_fraction": 0.41778358940830335,
+      "bbox_aspect_ratio": 0.6917293233082706,
+      "touches_game_frame": false
+    },
+    {
+      "area_cells": 4490,
+      "bbox_game_cells": [
+        274,
+        50,
+        340,
+        146
+      ],
+      "raster_perimeter": 328,
+      "bbox_fill_fraction": 0.6908755193106632,
+      "bbox_aspect_ratio": 0.6907216494845361,
+      "touches_game_frame": false
+    },
+    {
+      "area_cells": 1299,
+      "bbox_game_cells": [
+        685,
+        723,
+        732,
+        763
+      ],
+      "raster_perimeter": 178,
+      "bbox_fill_fraction": 0.6600609756097561,
+      "bbox_aspect_ratio": 1.170731707317073,
+      "touches_game_frame": false
+    },
+    {
+      "area_cells": 1188,
+      "bbox_game_cells": [
+        455,
+        712,
+        482,
+        769
+      ],
+      "raster_perimeter": 172,
+      "bbox_fill_fraction": 0.7315270935960592,
+      "bbox_aspect_ratio": 0.4827586206896552,
+      "touches_game_frame": false
+    },
+    {
+      "area_cells": 943,
+      "bbox_game_cells": [
+        623,
+        459,
+        658,
+        508
+      ],
+      "raster_perimeter": 172,
+      "bbox_fill_fraction": 0.5238888888888888,
+      "bbox_aspect_ratio": 0.72,
+      "touches_game_frame": false
+    },
+    {
+      "area_cells": 827,
+      "bbox_game_cells": [
+        778,
+        586,
+        799,
+        638
+      ],
+      "raster_perimeter": 150,
+      "bbox_fill_fraction": 0.70926243567753,
+      "bbox_aspect_ratio": 0.41509433962264153,
+      "touches_game_frame": true
+    },
+    {
+      "area_cells": 620,
+      "bbox_game_cells": [
+        499,
+        622,
+        523,
+        660
+      ],
+      "raster_perimeter": 128,
+      "bbox_fill_fraction": 0.6358974358974359,
+      "bbox_aspect_ratio": 0.6410256410256411,
+      "touches_game_frame": false
+    }
+  ],
+  "centers_at_projected_coordinates": true,
+  "center_labels_nonoverlapping": true,
+  "center_source_bytes_unchanged": true,
+  "before_square_reference": "raw/before-square-800/terrain.npz",
+  "scope": "terrain preview only; existing playable inputs and Henan are excluded"
+}

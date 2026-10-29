@@ -1,0 +1,18 @@
+{
+  "include_rivers": false,
+  "preserve_ocean": true,
+  "minimum_lake_area_km2": 80,
+  "lake_area_method": "spherical polygon area; whole waterbody minus holes before frame clipping",
+  "ocean_channel_open_radius_cells": 3,
+  "lakes": [
+    {
+      "name": "密云水库",
+      "area_km2": 135.41668529986785
+    },
+    {
+      "name": "官厅水库",
+      "area_km2": 91.83889318020061
+    }
+  ],
+  "date": "2026-10-29"
+}

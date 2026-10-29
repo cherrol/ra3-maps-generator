@@ -1,0 +1,179 @@
+{
+  "blueprint": "四川",
+  "boundary_conversion": "GCJ-02 approximately inverted to WGS84, six iterations",
+  "boundary_source": "https://geo.datav.aliyun.com/areas_v3/bound/510000.json",
+  "bounds_wgs84": [
+    97.01085523293766,
+    25.762431673953248,
+    108.8807546753859,
+    34.60099011464797
+  ],
+  "date": "2026-10-29",
+  "dem_attribution": "Mapzen / AWS Terrain Tiles; SRTM and GMTED2010 courtesy USGS; see tilezen/joerd docs/attribution.md",
+  "dem_source": "https://registry.opendata.aws/terrain-tiles/",
+  "elevation_max_m": 6943.079945370757,
+  "elevation_min_m": 80.79966687830307,
+  "grid": [
+    840,
+    720
+  ],
+  "limitation": "reference cartography at sampled resolution; sampled maxima and polygon areas are not surveyed values",
+  "map_name": "重岚藏野",
+  "no_province_based_terrain_clipping": true,
+  "north_up": true,
+  "terrain_zoom": 7,
+  "tiles_validated": [
+    {
+      "crc32": 426283759,
+      "x": 98,
+      "y": 50,
+      "z": 7
+    },
+    {
+      "crc32": 3678720734,
+      "x": 98,
+      "y": 51,
+      "z": 7
+    },
+    {
+      "crc32": 1223914249,
+      "x": 98,
+      "y": 52,
+      "z": 7
+    },
+    {
+      "crc32": 2307590954,
+      "x": 98,
+      "y": 53,
+      "z": 7
+    },
+    {
+      "crc32": 2281819866,
+      "x": 98,
+      "y": 54,
+      "z": 7
+    },
+    {
+      "crc32": 706103554,
+      "x": 99,
+      "y": 50,
+      "z": 7
+    },
+    {
+      "crc32": 1841915445,
+      "x": 99,
+      "y": 51,
+      "z": 7
+    },
+    {
+      "crc32": 177012685,
+      "x": 99,
+      "y": 52,
+      "z": 7
+    },
+    {
+      "crc32": 1025488594,
+      "x": 99,
+      "y": 53,
+      "z": 7
+    },
+    {
+      "crc32": 1815054719,
+      "x": 99,
+      "y": 54,
+      "z": 7
+    },
+    {
+      "crc32": 3339281007,
+      "x": 100,
+      "y": 50,
+      "z": 7
+    },
+    {
+      "crc32": 776598869,
+      "x": 100,
+      "y": 51,
+      "z": 7
+    },
+    {
+      "crc32": 851027089,
+      "x": 100,
+      "y": 52,
+      "z": 7
+    },
+    {
+      "crc32": 2997559723,
+      "x": 100,
+      "y": 53,
+      "z": 7
+    },
+    {
+      "crc32": 4246052828,
+      "x": 100,
+      "y": 54,
+      "z": 7
+    },
+    {
+      "crc32": 4029055463,
+      "x": 101,
+      "y": 50,
+      "z": 7
+    },
+    {
+      "crc32": 2709968988,
+      "x": 101,
+      "y": 51,
+      "z": 7
+    },
+    {
+      "crc32": 3438152927,
+      "x": 101,
+      "y": 52,
+      "z": 7
+    },
+    {
+      "crc32": 2238186359,
+      "x": 101,
+      "y": 53,
+      "z": 7
+    },
+    {
+      "crc32": 3383213714,
+      "x": 101,
+      "y": 54,
+      "z": 7
+    },
+    {
+      "crc32": 1647698244,
+      "x": 102,
+      "y": 50,
+      "z": 7
+    },
+    {
+      "crc32": 2309996684,
+      "x": 102,
+      "y": 51,
+      "z": 7
+    },
+    {
+      "crc32": 1796647052,
+      "x": 102,
+      "y": 52,
+      "z": 7
+    },
+    {
+      "crc32": 4131904933,
+      "x": 102,
+      "y": 53,
+      "z": 7
+    },
+    {
+      "crc32": 460547014,
+      "x": 102,
+      "y": 54,
+      "z": 7
+    }
+  ],
+  "water_display_policy": "water-policy.json",
+  "water_source": "Natural Earth 1:10m ocean and lakes; selected OSM reservoir polygons; minimum lake area 80 km2"
+}

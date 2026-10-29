@@ -3,7 +3,7 @@
   "frame": {
     "border": 20,
     "cell_size": 10.0,
-    "height": 808,
+    "height": 840,
     "width": 840,
     "z_scale": 0.0390625
   },
@@ -14,7 +14,7 @@
     ],
     [
       839,
-      807
+      839
     ]
   ],
   "grid_transform": {
@@ -29,7 +29,7 @@
   "origin": "northwest full-grid sample (0,0)",
   "playable_cells": [
     800,
-    768
+    800
   ],
   "playable_sample_bounds": [
     [
@@ -38,7 +38,7 @@
     ],
     [
       819,
-      787
+      819
     ]
   ],
   "schema_version": 1,
@@ -49,7 +49,7 @@
   },
   "world_origin_grid": [
     20,
-    787
+    819
   ],
   "world_transform": {
     "x": "(grid_x-border)*cell_size",

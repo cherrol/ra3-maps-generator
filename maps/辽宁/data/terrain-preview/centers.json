@@ -1,0 +1,196 @@
+{
+  "schema_version": 1,
+  "map_name": "岩湾初曙",
+  "blueprint": "辽宁",
+  "label": "地级行政中心",
+  "coordinate_system": "WGS84",
+  "source": "https://geo.datav.aliyun.com/areas_v3/bound/210000_full.json",
+  "source_field": "properties.center (administrative center, not polygon centroid)",
+  "conversion": "GCJ-02 approximately inverted to WGS84 by six iterations, matching terrain boundary ingestion",
+  "retrieved_date": "2026-10-29",
+  "points": [
+    {
+      "adcode": "210100",
+      "name": "沈阳市",
+      "level": "city",
+      "center_wgs84": [
+        123.42295274081985,
+        41.79432991115221
+      ],
+      "center_gcj02": [
+        123.429096,
+        41.796767
+      ]
+    },
+    {
+      "adcode": "210200",
+      "name": "大连市",
+      "level": "city",
+      "center_wgs84": [
+        121.61367938484234,
+        38.91381355546901
+      ],
+      "center_gcj02": [
+        121.618622,
+        38.91459
+      ]
+    },
+    {
+      "adcode": "210300",
+      "name": "鞍山市",
+      "level": "city",
+      "center_wgs84": [
+        122.99015225669896,
+        41.108718956605
+      ],
+      "center_gcj02": [
+        122.995632,
+        41.110626
+      ]
+    },
+    {
+      "adcode": "210400",
+      "name": "抚顺市",
+      "level": "city",
+      "center_wgs84": [
+        123.91540647607326,
+        41.87386278733732
+      ],
+      "center_gcj02": [
+        123.921109,
+        41.875956
+      ]
+    },
+    {
+      "adcode": "210500",
+      "name": "本溪市",
+      "level": "city",
+      "center_wgs84": [
+        123.7646312953413,
+        41.295816325731494
+      ],
+      "center_gcj02": [
+        123.770519,
+        41.297909
+      ]
+    },
+    {
+      "adcode": "210600",
+      "name": "丹东市",
+      "level": "city",
+      "center_wgs84": [
+        124.37721914682423,
+        40.12271118148497
+      ],
+      "center_gcj02": [
+        124.383044,
+        40.124296
+      ]
+    },
+    {
+      "adcode": "210700",
+      "name": "锦州市",
+      "level": "city",
+      "center_wgs84": [
+        121.13010055139281,
+        41.1172056237153
+      ],
+      "center_gcj02": [
+        121.135742,
+        41.119269
+      ]
+    },
+    {
+      "adcode": "210800",
+      "name": "营口市",
+      "level": "city",
+      "center_wgs84": [
+        122.22997370824417,
+        40.66586389776338
+      ],
+      "center_gcj02": [
+        122.235151,
+        40.667432
+      ]
+    },
+    {
+      "adcode": "210900",
+      "name": "阜新市",
+      "level": "city",
+      "center_wgs84": [
+        121.64361094965298,
+        42.00973217021936
+      ],
+      "center_gcj02": [
+        121.648962,
+        42.011796
+      ]
+    },
+    {
+      "adcode": "211000",
+      "name": "辽阳市",
+      "level": "city",
+      "center_wgs84": [
+        123.17571748871637,
+        41.267252121344264
+      ],
+      "center_gcj02": [
+        123.18152,
+        41.269402
+      ]
+    },
+    {
+      "adcode": "211100",
+      "name": "盘锦市",
+      "level": "city",
+      "center_wgs84": [
+        122.06408664052933,
+        41.12239883843859
+      ],
+      "center_gcj02": [
+        122.06957,
+        41.124484
+      ]
+    },
+    {
+      "adcode": "211200",
+      "name": "铁岭市",
+      "level": "city",
+      "center_wgs84": [
+        123.83841160672179,
+        42.288462149494705
+      ],
+      "center_gcj02": [
+        123.844279,
+        42.290585
+      ]
+    },
+    {
+      "adcode": "211300",
+      "name": "朝阳市",
+      "level": "city",
+      "center_wgs84": [
+        120.44547967969295,
+        41.57446063525097
+      ],
+      "center_gcj02": [
+        120.451176,
+        41.576758
+      ]
+    },
+    {
+      "adcode": "211400",
+      "name": "葫芦岛市",
+      "level": "city",
+      "center_wgs84": [
+        120.85124617584665,
+        40.75411662744626
+      ],
+      "center_gcj02": [
+        120.856394,
+        40.755572
+      ]
+    }
+  ],
+  "excluded_features": []
+}

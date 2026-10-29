@@ -1,0 +1,64 @@
+{
+  "date": "2026-10-29",
+  "map_id": "云南",
+  "map_name": "层峦织彩",
+  "mode": "map-local-compact-water-design",
+  "designed_shorelines_are_not_measured": true,
+  "include_rivers": false,
+  "source_selection_report": "raw/before-water-shaping-water-report.json",
+  "water_cells_in_input": 865,
+  "water_cells_in_game_frame": 972,
+  "component_count_in_game_frame": 1,
+  "components_in_game_frame": [
+    {
+      "area_cells": 972,
+      "bbox_game_cells": [
+        454,
+        424,
+        485,
+        476
+      ],
+      "bbox_fill_fraction": 0.5731,
+      "bbox_aspect_ratio": 1.6562,
+      "raster_perimeter": 170,
+      "compactness_4pi_area_over_perimeter_squared": 0.4226,
+      "maximum_manhattan_interior_radius_cells": 13,
+      "touches_game_frame": false
+    }
+  ],
+  "design_lake_groups": [
+    {
+      "action": "hull",
+      "close_radius": 0,
+      "name": "滇池与相邻湖区局部合并",
+      "open_radius": 6,
+      "result": {
+        "cells": 865,
+        "component_count": 1,
+        "components": [
+          {
+            "area_cells": 865,
+            "bbox_aspect_ratio": 1.6666666666666667,
+            "bounds": [
+              451,
+              423,
+              481,
+              473
+            ],
+            "compactness": 0.4246058820867455,
+            "index": 0,
+            "maximum_interior_radius_cells": 10.333333333333334,
+            "perimeter": 160,
+            "touches_frame": false
+          }
+        ]
+      },
+      "source_cells": 368
+    }
+  ],
+  "water_exactly_ocean_union_original_large_lakes": false,
+  "original_geographic_arrays_preserved": true,
+  "existing_land_layers_preserved": true,
+  "original_final_thresholds_preserved": true,
+  "reference": "raw/reference-before-water-shaping.npz"
+}

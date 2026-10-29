@@ -1,0 +1,209 @@
+{
+  "blueprint": "江西",
+  "boundary_conversion": "GCJ-02 approximately inverted to WGS84, six iterations",
+  "boundary_source": "https://geo.datav.aliyun.com/areas_v3/bound/360000.json",
+  "bounds_wgs84": [
+    113.3901556444056,
+    24.31983172774555,
+    118.6601555683749,
+    30.248457009813215
+  ],
+  "date": "2026-10-29",
+  "dem_attribution": "Mapzen / AWS Terrain Tiles; SRTM and GMTED2010 courtesy USGS; see tilezen/joerd docs/attribution.md",
+  "dem_source": "https://registry.opendata.aws/terrain-tiles/",
+  "elevation_max_m": 2101.773002076592,
+  "elevation_min_m": -251.32062616018757,
+  "grid": [
+    664,
+    840
+  ],
+  "limitation": "reference cartography at sampled resolution; sampled maxima and polygon areas are not surveyed values",
+  "map_name": "赤崖涵碧",
+  "no_province_based_terrain_clipping": true,
+  "north_up": true,
+  "terrain_zoom": 8,
+  "tiles_validated": [
+    {
+      "crc32": 2700907630,
+      "x": 208,
+      "y": 105,
+      "z": 8
+    },
+    {
+      "crc32": 3658143796,
+      "x": 208,
+      "y": 106,
+      "z": 8
+    },
+    {
+      "crc32": 2877362165,
+      "x": 208,
+      "y": 107,
+      "z": 8
+    },
+    {
+      "crc32": 283508635,
+      "x": 208,
+      "y": 108,
+      "z": 8
+    },
+    {
+      "crc32": 1401034801,
+      "x": 208,
+      "y": 109,
+      "z": 8
+    },
+    {
+      "crc32": 2345724044,
+      "x": 208,
+      "y": 110,
+      "z": 8
+    },
+    {
+      "crc32": 4155089638,
+      "x": 209,
+      "y": 105,
+      "z": 8
+    },
+    {
+      "crc32": 1244139865,
+      "x": 209,
+      "y": 106,
+      "z": 8
+    },
+    {
+      "crc32": 4105633970,
+      "x": 209,
+      "y": 107,
+      "z": 8
+    },
+    {
+      "crc32": 865807354,
+      "x": 209,
+      "y": 108,
+      "z": 8
+    },
+    {
+      "crc32": 3835468799,
+      "x": 209,
+      "y": 109,
+      "z": 8
+    },
+    {
+      "crc32": 802533748,
+      "x": 209,
+      "y": 110,
+      "z": 8
+    },
+    {
+      "crc32": 1581851283,
+      "x": 210,
+      "y": 105,
+      "z": 8
+    },
+    {
+      "crc32": 3624902132,
+      "x": 210,
+      "y": 106,
+      "z": 8
+    },
+    {
+      "crc32": 992144479,
+      "x": 210,
+      "y": 107,
+      "z": 8
+    },
+    {
+      "crc32": 2340009486,
+      "x": 210,
+      "y": 108,
+      "z": 8
+    },
+    {
+      "crc32": 176937007,
+      "x": 210,
+      "y": 109,
+      "z": 8
+    },
+    {
+      "crc32": 2119155421,
+      "x": 210,
+      "y": 110,
+      "z": 8
+    },
+    {
+      "crc32": 3571189787,
+      "x": 211,
+      "y": 105,
+      "z": 8
+    },
+    {
+      "crc32": 4274259155,
+      "x": 211,
+      "y": 106,
+      "z": 8
+    },
+    {
+      "crc32": 2046115462,
+      "x": 211,
+      "y": 107,
+      "z": 8
+    },
+    {
+      "crc32": 1400190494,
+      "x": 211,
+      "y": 108,
+      "z": 8
+    },
+    {
+      "crc32": 2748737557,
+      "x": 211,
+      "y": 109,
+      "z": 8
+    },
+    {
+      "crc32": 3424430168,
+      "x": 211,
+      "y": 110,
+      "z": 8
+    },
+    {
+      "crc32": 470176590,
+      "x": 212,
+      "y": 105,
+      "z": 8
+    },
+    {
+      "crc32": 883063851,
+      "x": 212,
+      "y": 106,
+      "z": 8
+    },
+    {
+      "crc32": 687256540,
+      "x": 212,
+      "y": 107,
+      "z": 8
+    },
+    {
+      "crc32": 3759340980,
+      "x": 212,
+      "y": 108,
+      "z": 8
+    },
+    {
+      "crc32": 1165126586,
+      "x": 212,
+      "y": 109,
+      "z": 8
+    },
+    {
+      "crc32": 218889125,
+      "x": 212,
+      "y": 110,
+      "z": 8
+    }
+  ],
+  "water_display_policy": "water-policy.json",
+  "water_source": "Natural Earth 1:10m ocean and lakes; selected OSM reservoir polygons; minimum lake area 80 km2"
+}

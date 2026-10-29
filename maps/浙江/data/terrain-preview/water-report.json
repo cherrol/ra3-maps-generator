@@ -1,0 +1,91 @@
+{
+  "date": "2026-10-29",
+  "map_id": "浙江",
+  "map_name": "翠岫千湾",
+  "game_cells": [
+    800,
+    800
+  ],
+  "include_rivers": false,
+  "water_policy": {
+    "design_shaping": {
+      "active_reference": "raw/reference-before-shoreline-refinement.npz",
+      "designed_shorelines_are_not_measured": true,
+      "merge_nearby_reservoir_branches": true,
+      "real_water_selection_retained_as_reference": true,
+      "recipe": "water-shaping.json",
+      "reference": "raw/reference-before-water-shaping.npz",
+      "remove_unmergeable_small_or_narrow_water": true,
+      "removed_water_target": "valid adjoining land layer from unchanged DEM",
+      "report": "water-shaping-report.json",
+      "shoreline_refinement": "shoreline-refinement.json"
+    },
+    "include_rivers": false,
+    "lake_area_method": "spherical polygon area; whole waterbody minus holes before frame clipping",
+    "minimum_lake_area_km2": 80,
+    "mode": "map-local-compact-water-design",
+    "ocean_channel_open_radius_cells": 3,
+    "preserve_ocean": true
+  },
+  "water_cells_in_game_frame": 199068,
+  "component_count_in_game_frame": 4,
+  "components_in_game_frame": [
+    {
+      "area_cells": 189354,
+      "bbox_game_cells": [
+        395,
+        0,
+        799,
+        799
+      ],
+      "raster_perimeter": 3540,
+      "bbox_fill_fraction": 0.5844259259259259,
+      "bbox_aspect_ratio": 0.50625,
+      "touches_game_frame": true
+    },
+    {
+      "area_cells": 5754,
+      "bbox_game_cells": [
+        104,
+        273,
+        200,
+        353
+      ],
+      "raster_perimeter": 356,
+      "bbox_fill_fraction": 0.7323405880106911,
+      "bbox_aspect_ratio": 1.1975308641975309,
+      "touches_game_frame": false
+    },
+    {
+      "area_cells": 3552,
+      "bbox_game_cells": [
+        314,
+        0,
+        405,
+        54
+      ],
+      "raster_perimeter": 312,
+      "bbox_fill_fraction": 0.7019762845849803,
+      "bbox_aspect_ratio": 1.6727272727272726,
+      "touches_game_frame": true
+    },
+    {
+      "area_cells": 408,
+      "bbox_game_cells": [
+        140,
+        5,
+        167,
+        26
+      ],
+      "raster_perimeter": 100,
+      "bbox_fill_fraction": 0.6623376623376623,
+      "bbox_aspect_ratio": 1.2727272727272727,
+      "touches_game_frame": false
+    }
+  ],
+  "input_water_cells": 220924,
+  "original_input_and_water_policy_unchanged": true,
+  "designed_shorelines_are_not_measured": true,
+  "source_selection_and_design_report": "raw/before-square-800/water-report.json",
+  "square_verification": "square-verification.json"
+}

@@ -1,0 +1,417 @@
+{
+  "added_cells": 590,
+  "design_lakes": {
+    "cells": 1912,
+    "component_count": 2,
+    "components": [
+      {
+        "area_cells": 1728,
+        "bbox_aspect_ratio": 1.5098039215686274,
+        "bounds": [
+          112,
+          586,
+          189,
+          637
+        ],
+        "compactness": 0.25820081357446667,
+        "index": 0,
+        "maximum_interior_radius_cells": 12.333333333333334,
+        "perimeter": 290,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 184,
+        "bbox_aspect_ratio": 1.0625,
+        "bounds": [
+          751,
+          79,
+          767,
+          96
+        ],
+        "compactness": 0.5308108799453828,
+        "index": 1,
+        "maximum_interior_radius_cells": 6.666666666666667,
+        "perimeter": 66,
+        "touches_frame": false
+      }
+    ]
+  },
+  "design_ocean": {
+    "cells": 0,
+    "component_count": 0,
+    "components": []
+  },
+  "design_water": {
+    "cells": 1912,
+    "component_count": 2,
+    "components": [
+      {
+        "area_cells": 1728,
+        "bbox_aspect_ratio": 1.5098039215686274,
+        "bounds": [
+          112,
+          586,
+          189,
+          637
+        ],
+        "compactness": 0.25820081357446667,
+        "index": 0,
+        "maximum_interior_radius_cells": 12.333333333333334,
+        "perimeter": 290,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 184,
+        "bbox_aspect_ratio": 1.0625,
+        "bounds": [
+          751,
+          79,
+          767,
+          96
+        ],
+        "compactness": 0.5308108799453828,
+        "index": 1,
+        "maximum_interior_radius_cells": 6.666666666666667,
+        "perimeter": 66,
+        "touches_frame": false
+      }
+    ]
+  },
+  "groups": [
+    {
+      "action": "smooth",
+      "close_radius": 16,
+      "name": "丹江口水库：近邻支汊填合与岸线圆整",
+      "open_radius": 6,
+      "result": {
+        "cells": 1728,
+        "component_count": 1,
+        "components": [
+          {
+            "area_cells": 1728,
+            "bbox_aspect_ratio": 1.5098039215686274,
+            "bounds": [
+              112,
+              586,
+              189,
+              637
+            ],
+            "compactness": 0.25820081357446667,
+            "index": 0,
+            "maximum_interior_radius_cells": 12.333333333333334,
+            "perimeter": 290,
+            "touches_frame": false
+          }
+        ]
+      },
+      "source_cells": 1490
+    },
+    {
+      "action": "smooth",
+      "close_radius": 3,
+      "name": "东平湖：圆整小型湖面",
+      "open_radius": 4,
+      "result": {
+        "cells": 184,
+        "component_count": 1,
+        "components": [
+          {
+            "area_cells": 184,
+            "bbox_aspect_ratio": 1.0625,
+            "bounds": [
+              751,
+              79,
+              767,
+              96
+            ],
+            "compactness": 0.5308108799453828,
+            "index": 0,
+            "maximum_interior_radius_cells": 6.666666666666667,
+            "perimeter": 66,
+            "touches_frame": false
+          }
+        ]
+      },
+      "source_cells": 272
+    },
+    {
+      "action": "smooth",
+      "close_radius": 3,
+      "name": "东南侧参考湖面：去除窄汊",
+      "open_radius": 4,
+      "result": {
+        "cells": 0,
+        "component_count": 0,
+        "components": []
+      },
+      "source_cells": 171
+    }
+  ],
+  "id": "河南",
+  "input_cells": [
+    840,
+    840
+  ],
+  "non_water_arrays_byte_identical": true,
+  "removed_cells": 626,
+  "restored_unseeded_land_hole_cells": 0,
+  "shoreline_kind": "game-terrain-preview-design",
+  "source": "maps/河南/data/terrain-preview/raw/reference-before-water-shaping.npz",
+  "source_lakes": {
+    "cells": 1948,
+    "component_count": 8,
+    "components": [
+      {
+        "area_cells": 1489,
+        "bbox_aspect_ratio": 1.0116279069767442,
+        "bounds": [
+          105,
+          551,
+          192,
+          637
+        ],
+        "compactness": 0.05339015089932435,
+        "index": 0,
+        "maximum_interior_radius_cells": 10.0,
+        "perimeter": 592,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 272,
+        "bbox_aspect_ratio": 1.8333333333333333,
+        "bounds": [
+          749,
+          64,
+          767,
+          97
+        ],
+        "compactness": 0.2824837030665864,
+        "index": 1,
+        "maximum_interior_radius_cells": 6.333333333333333,
+        "perimeter": 110,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 170,
+        "bbox_aspect_ratio": 1.7777777777777777,
+        "bounds": [
+          773,
+          658,
+          791,
+          690
+        ],
+        "compactness": 0.19751137245202102,
+        "index": 2,
+        "maximum_interior_radius_cells": 3.3333333333333335,
+        "perimeter": 104,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 13,
+        "bbox_aspect_ratio": 1.0,
+        "bounds": [
+          835,
+          639,
+          840,
+          644
+        ],
+        "compactness": 0.4084070449666731,
+        "index": 3,
+        "maximum_interior_radius_cells": 2.0,
+        "perimeter": 20,
+        "touches_frame": true
+      },
+      {
+        "area_cells": 1,
+        "bbox_aspect_ratio": 1.0,
+        "bounds": [
+          133,
+          550,
+          134,
+          551
+        ],
+        "compactness": 0.7853981633974483,
+        "index": 4,
+        "maximum_interior_radius_cells": 1.0,
+        "perimeter": 4,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 1,
+        "bbox_aspect_ratio": 1.0,
+        "bounds": [
+          776,
+          671,
+          777,
+          672
+        ],
+        "compactness": 0.7853981633974483,
+        "index": 5,
+        "maximum_interior_radius_cells": 1.0,
+        "perimeter": 4,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 1,
+        "bbox_aspect_ratio": 1.0,
+        "bounds": [
+          71,
+          838,
+          72,
+          839
+        ],
+        "compactness": 0.7853981633974483,
+        "index": 6,
+        "maximum_interior_radius_cells": 1.0,
+        "perimeter": 4,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 1,
+        "bbox_aspect_ratio": 1.0,
+        "bounds": [
+          72,
+          839,
+          73,
+          840
+        ],
+        "compactness": 0.7853981633974483,
+        "index": 7,
+        "maximum_interior_radius_cells": 1.0,
+        "perimeter": 4,
+        "touches_frame": true
+      }
+    ]
+  },
+  "source_ocean": {
+    "cells": 0,
+    "component_count": 0,
+    "components": []
+  },
+  "source_water": {
+    "cells": 1948,
+    "component_count": 8,
+    "components": [
+      {
+        "area_cells": 1489,
+        "bbox_aspect_ratio": 1.0116279069767442,
+        "bounds": [
+          105,
+          551,
+          192,
+          637
+        ],
+        "compactness": 0.05339015089932435,
+        "index": 0,
+        "maximum_interior_radius_cells": 10.0,
+        "perimeter": 592,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 272,
+        "bbox_aspect_ratio": 1.8333333333333333,
+        "bounds": [
+          749,
+          64,
+          767,
+          97
+        ],
+        "compactness": 0.2824837030665864,
+        "index": 1,
+        "maximum_interior_radius_cells": 6.333333333333333,
+        "perimeter": 110,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 170,
+        "bbox_aspect_ratio": 1.7777777777777777,
+        "bounds": [
+          773,
+          658,
+          791,
+          690
+        ],
+        "compactness": 0.19751137245202102,
+        "index": 2,
+        "maximum_interior_radius_cells": 3.3333333333333335,
+        "perimeter": 104,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 13,
+        "bbox_aspect_ratio": 1.0,
+        "bounds": [
+          835,
+          639,
+          840,
+          644
+        ],
+        "compactness": 0.4084070449666731,
+        "index": 3,
+        "maximum_interior_radius_cells": 2.0,
+        "perimeter": 20,
+        "touches_frame": true
+      },
+      {
+        "area_cells": 1,
+        "bbox_aspect_ratio": 1.0,
+        "bounds": [
+          133,
+          550,
+          134,
+          551
+        ],
+        "compactness": 0.7853981633974483,
+        "index": 4,
+        "maximum_interior_radius_cells": 1.0,
+        "perimeter": 4,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 1,
+        "bbox_aspect_ratio": 1.0,
+        "bounds": [
+          776,
+          671,
+          777,
+          672
+        ],
+        "compactness": 0.7853981633974483,
+        "index": 5,
+        "maximum_interior_radius_cells": 1.0,
+        "perimeter": 4,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 1,
+        "bbox_aspect_ratio": 1.0,
+        "bounds": [
+          71,
+          838,
+          72,
+          839
+        ],
+        "compactness": 0.7853981633974483,
+        "index": 6,
+        "maximum_interior_radius_cells": 1.0,
+        "perimeter": 4,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 1,
+        "bbox_aspect_ratio": 1.0,
+        "bounds": [
+          72,
+          839,
+          73,
+          840
+        ],
+        "compactness": 0.7853981633974483,
+        "index": 7,
+        "maximum_interior_radius_cells": 1.0,
+        "perimeter": 4,
+        "touches_frame": true
+      }
+    ]
+  }
+}

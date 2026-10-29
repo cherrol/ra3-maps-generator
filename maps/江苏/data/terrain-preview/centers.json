@@ -1,0 +1,183 @@
+{
+  "schema_version": 1,
+  "map_name": "平畴织水",
+  "blueprint": "江苏",
+  "label": "地级行政中心",
+  "coordinate_system": "WGS84",
+  "source": "https://geo.datav.aliyun.com/areas_v3/bound/320000_full.json",
+  "source_field": "properties.center (administrative center, not polygon centroid)",
+  "conversion": "GCJ-02 approximately inverted to WGS84 by six iterations, matching terrain boundary ingestion",
+  "retrieved_date": "2026-10-29",
+  "points": [
+    {
+      "adcode": "320100",
+      "name": "南京市",
+      "level": "city",
+      "center_wgs84": [
+        118.76219124368833,
+        32.043580509887754
+      ],
+      "center_gcj02": [
+        118.767413,
+        32.041544
+      ]
+    },
+    {
+      "adcode": "320200",
+      "name": "无锡市",
+      "level": "city",
+      "center_wgs84": [
+        120.29706602830369,
+        31.57663393051478
+      ],
+      "center_gcj02": [
+        120.301663,
+        31.574729
+      ]
+    },
+    {
+      "adcode": "320300",
+      "name": "徐州市",
+      "level": "city",
+      "center_wgs84": [
+        117.17902741866861,
+        34.26300266278224
+      ],
+      "center_gcj02": [
+        117.184811,
+        34.261792
+      ]
+    },
+    {
+      "adcode": "320400",
+      "name": "常州市",
+      "level": "city",
+      "center_wgs84": [
+        119.9422833663007,
+        31.77486074541019
+      ],
+      "center_gcj02": [
+        119.946973,
+        31.772752
+      ]
+    },
+    {
+      "adcode": "320500",
+      "name": "苏州市",
+      "level": "city",
+      "center_wgs84": [
+        120.61541112438505,
+        31.301559315939084
+      ],
+      "center_gcj02": [
+        120.619585,
+        31.299379
+      ]
+    },
+    {
+      "adcode": "320600",
+      "name": "南通市",
+      "level": "city",
+      "center_wgs84": [
+        120.86035433287701,
+        32.01835838374781
+      ],
+      "center_gcj02": [
+        120.864608,
+        32.016212
+      ]
+    },
+    {
+      "adcode": "320700",
+      "name": "连云港市",
+      "level": "city",
+      "center_wgs84": [
+        119.17319543162137,
+        34.60097334547511
+      ],
+      "center_gcj02": [
+        119.178821,
+        34.600018
+      ]
+    },
+    {
+      "adcode": "320800",
+      "name": "淮安市",
+      "level": "city",
+      "center_wgs84": [
+        119.01580683538651,
+        33.598903709026054
+      ],
+      "center_gcj02": [
+        119.021265,
+        33.597506
+      ]
+    },
+    {
+      "adcode": "320900",
+      "name": "盐城市",
+      "level": "city",
+      "center_wgs84": [
+        120.13497067125195,
+        33.379003908949535
+      ],
+      "center_gcj02": [
+        120.139998,
+        33.377631
+      ]
+    },
+    {
+      "adcode": "321000",
+      "name": "扬州市",
+      "level": "city",
+      "center_wgs84": [
+        119.41552514202324,
+        32.39503994743623
+      ],
+      "center_gcj02": [
+        119.421003,
+        32.393159
+      ]
+    },
+    {
+      "adcode": "321100",
+      "name": "镇江市",
+      "level": "city",
+      "center_wgs84": [
+        119.4473522439738,
+        32.20631593170877
+      ],
+      "center_gcj02": [
+        119.452753,
+        32.204402
+      ]
+    },
+    {
+      "adcode": "321200",
+      "name": "泰州市",
+      "level": "city",
+      "center_wgs84": [
+        119.91043559737072,
+        32.48710784163516
+      ],
+      "center_gcj02": [
+        119.915176,
+        32.484882
+      ]
+    },
+    {
+      "adcode": "321300",
+      "name": "宿迁市",
+      "level": "city",
+      "center_wgs84": [
+        118.26965918052814,
+        33.96435973679625
+      ],
+      "center_gcj02": [
+        118.275162,
+        33.963008
+      ]
+    }
+  ],
+  "excluded_features": []
+}

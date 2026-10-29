@@ -8,7 +8,7 @@ __pycache__/
 /target/
 /archive/
 
-# Track playable-map inputs and version archives. Current previews and raw geography stay ignored.
+# Track playable-map inputs, preview reproduction data and version archives.
 /maps/*
 !/maps/.default
 !/maps/*/
@@ -49,3 +49,88 @@ __pycache__/
 !/maps/*/authoring/policy.json
 !/maps/*/authoring/coordinate-id-map.json
 !/maps/*/authoring/resource-distribution.json
+
+# Current terrain-design images and their reproduction inputs.
+!/maps/*/README.md
+!/maps/*/source.png
+!/maps/*/preview.png
+!/maps/*/preview--line.png
+!/maps/*/preview--center--line.png
+!/maps/*/data/
+/maps/*/data/*
+!/maps/*/data/terrain-preview/
+/maps/*/data/terrain-preview/*
+!/maps/*/data/terrain-preview/batch-verification-2026-10-29.json
+!/maps/*/data/terrain-preview/centers-report.json
+!/maps/*/data/terrain-preview/centers-verification.json
+!/maps/*/data/terrain-preview/centers.json
+!/maps/*/data/terrain-preview/coast-report.json
+!/maps/*/data/terrain-preview/coordinate-system.json
+!/maps/*/data/terrain-preview/ingest.json
+!/maps/*/data/terrain-preview/input.npz
+!/maps/*/data/terrain-preview/parameters.json
+!/maps/*/data/terrain-preview/provenance.json
+!/maps/*/data/terrain-preview/reference-report.json
+!/maps/*/data/terrain-preview/reference.npz
+!/maps/*/data/terrain-preview/report.json
+!/maps/*/data/terrain-preview/shoreline-refinement-report.json
+!/maps/*/data/terrain-preview/shoreline-refinement.json
+!/maps/*/data/terrain-preview/shoreline-transition-plan.json
+!/maps/*/data/terrain-preview/size-verification.json
+!/maps/*/data/terrain-preview/sources.json
+!/maps/*/data/terrain-preview/square-verification.json
+!/maps/*/data/terrain-preview/terrain.npz
+!/maps/*/data/terrain-preview/tiles.json
+!/maps/*/data/terrain-preview/verification.json
+!/maps/*/data/terrain-preview/water-policy.json
+!/maps/*/data/terrain-preview/water-report.json
+!/maps/*/data/terrain-preview/water-shaping-report.json
+!/maps/*/data/terrain-preview/water-shaping.json
+!/maps/*/data/terrain-preview/water-verification.json
+
+# Retain referenced design snapshots; downloaded raster tiles and logs stay ignored.
+!/maps/*/data/terrain-preview/raw/
+/maps/*/data/terrain-preview/raw/*
+!/maps/*/data/terrain-preview/raw/before-water-shaping-water-policy.json
+!/maps/*/data/terrain-preview/raw/before-water-shaping-water-report.json
+!/maps/*/data/terrain-preview/raw/osm-coastlines.json
+!/maps/*/data/terrain-preview/raw/reference-before-shoreline-refinement.npz
+!/maps/*/data/terrain-preview/raw/reference-before-water-filter.npz
+!/maps/*/data/terrain-preview/raw/reference-before-water-shaping.npz
+!/maps/*/data/terrain-preview/raw/report-before-shoreline-refinement.json
+!/maps/*/data/terrain-preview/raw/report-before-water-shaping.json
+!/maps/*/data/terrain-preview/raw/terrain-before-shoreline-refinement.npz
+!/maps/*/data/terrain-preview/raw/terrain-before-water-shaping.npz
+!/maps/台湾/data/terrain-preview/raw/Kaohsiung City Government-office.json
+!/maps/台湾/data/terrain-preview/raw/Taipei City Hall-office.json
+!/maps/台湾/data/terrain-preview/raw/南投縣-office.json
+!/maps/台湾/data/terrain-preview/raw/嘉義市-office.json
+!/maps/台湾/data/terrain-preview/raw/嘉義縣-office.json
+!/maps/台湾/data/terrain-preview/raw/基隆市政府大樓-office.json
+!/maps/台湾/data/terrain-preview/raw/宜蘭縣-office.json
+!/maps/台湾/data/terrain-preview/raw/屏東縣-office.json
+!/maps/台湾/data/terrain-preview/raw/彰化縣-office.json
+!/maps/台湾/data/terrain-preview/raw/新北市-office.json
+!/maps/台湾/data/terrain-preview/raw/新竹市-office.json
+!/maps/台湾/data/terrain-preview/raw/新竹縣-office.json
+!/maps/台湾/data/terrain-preview/raw/澎湖縣-office.json
+!/maps/台湾/data/terrain-preview/raw/臺中市政府臺灣大道市政大樓-office.json
+!/maps/台湾/data/terrain-preview/raw/臺南市-office.json
+!/maps/台湾/data/terrain-preview/raw/臺東縣-office.json
+!/maps/台湾/data/terrain-preview/raw/花蓮縣-office.json
+!/maps/台湾/data/terrain-preview/raw/苗栗縣-office.json
+!/maps/台湾/data/terrain-preview/raw/連江縣-office.json
+!/maps/台湾/data/terrain-preview/raw/金門縣-office.json
+!/maps/台湾/data/terrain-preview/raw/雲林縣-office.json
+!/maps/*/data/terrain-preview/raw/before-square-800/
+/maps/*/data/terrain-preview/raw/before-square-800/*
+!/maps/*/data/terrain-preview/raw/before-square-800/land-reference-report.json
+!/maps/*/data/terrain-preview/raw/before-square-800/land-reference.npz
+!/maps/*/data/terrain-preview/raw/before-square-800/terrain.npz
+!/maps/*/data/terrain-preview/raw/before-square-800/water-report.json
+
+# Version-bound pictures of the actual playable native map.
+!/maps/*/histories/[TV][0-9]*/preview.png
+!/maps/*/histories/[TV][0-9]*/preview--layout.png
+!/maps/*/histories/[TV][0-9]*/preview--terrain.png
+!/maps/*/histories/[TV][0-9]*/preview--passability.png

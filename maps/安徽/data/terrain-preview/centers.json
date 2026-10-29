@@ -1,0 +1,222 @@
+{
+  "schema_version": 1,
+  "map_name": "云崖分流",
+  "blueprint": "安徽",
+  "label": "地级行政中心",
+  "coordinate_system": "WGS84",
+  "source": "https://geo.datav.aliyun.com/areas_v3/bound/340000_full.json",
+  "source_field": "properties.center (administrative center, not polygon centroid)",
+  "conversion": "GCJ-02 approximately inverted to WGS84 by six iterations, matching terrain boundary ingestion",
+  "retrieved_date": "2026-10-29",
+  "points": [
+    {
+      "adcode": "340100",
+      "name": "合肥市",
+      "level": "city",
+      "center_wgs84": [
+        117.27752976106203,
+        31.863192222309006
+      ],
+      "center_gcj02": [
+        117.283042,
+        31.86119
+      ]
+    },
+    {
+      "adcode": "340200",
+      "name": "芜湖市",
+      "level": "city",
+      "center_wgs84": [
+        118.37105201188399,
+        31.328178610067496
+      ],
+      "center_gcj02": [
+        118.376451,
+        31.326319
+      ]
+    },
+    {
+      "adcode": "340300",
+      "name": "蚌埠市",
+      "level": "city",
+      "center_wgs84": [
+        117.3574280354673,
+        32.94139142298586
+      ],
+      "center_gcj02": [
+        117.363228,
+        32.939667
+      ]
+    },
+    {
+      "adcode": "340400",
+      "name": "淮南市",
+      "level": "city",
+      "center_wgs84": [
+        117.0128463814109,
+        32.64957572645003
+      ],
+      "center_gcj02": [
+        117.018329,
+        32.647574
+      ]
+    },
+    {
+      "adcode": "340500",
+      "name": "马鞍山市",
+      "level": "city",
+      "center_wgs84": [
+        118.5027097476968,
+        31.69134262396914
+      ],
+      "center_gcj02": [
+        118.507906,
+        31.689362
+      ]
+    },
+    {
+      "adcode": "340600",
+      "name": "淮北市",
+      "level": "city",
+      "center_wgs84": [
+        116.78925402234104,
+        33.97311753420359
+      ],
+      "center_gcj02": [
+        116.794664,
+        33.971707
+      ]
+    },
+    {
+      "adcode": "340700",
+      "name": "铜陵市",
+      "level": "city",
+      "center_wgs84": [
+        117.81123518890196,
+        30.93223521701137
+      ],
+      "center_gcj02": [
+        117.816576,
+        30.929935
+      ]
+    },
+    {
+      "adcode": "340800",
+      "name": "安庆市",
+      "level": "city",
+      "center_wgs84": [
+        117.03816950504671,
+        30.511173727563474
+      ],
+      "center_gcj02": [
+        117.043551,
+        30.50883
+      ]
+    },
+    {
+      "adcode": "341000",
+      "name": "黄山市",
+      "level": "city",
+      "center_wgs84": [
+        118.31216605492604,
+        29.711685988516066
+      ],
+      "center_gcj02": [
+        118.317325,
+        29.709239
+      ]
+    },
+    {
+      "adcode": "341100",
+      "name": "滁州市",
+      "level": "city",
+      "center_wgs84": [
+        118.31087390856482,
+        32.30564549979279
+      ],
+      "center_gcj02": [
+        118.316264,
+        32.303627
+      ]
+    },
+    {
+      "adcode": "341200",
+      "name": "阜阳市",
+      "level": "city",
+      "center_wgs84": [
+        115.81435797533565,
+        32.89896199220453
+      ],
+      "center_gcj02": [
+        115.819729,
+        32.896969
+      ]
+    },
+    {
+      "adcode": "341300",
+      "name": "宿州市",
+      "level": "city",
+      "center_wgs84": [
+        116.97864694807886,
+        33.635420504349945
+      ],
+      "center_gcj02": [
+        116.984084,
+        33.633891
+      ]
+    },
+    {
+      "adcode": "341500",
+      "name": "六安市",
+      "level": "city",
+      "center_wgs84": [
+        116.50253465868526,
+        31.754906335319724
+      ],
+      "center_gcj02": [
+        116.507676,
+        31.752889
+      ]
+    },
+    {
+      "adcode": "341600",
+      "name": "亳州市",
+      "level": "city",
+      "center_wgs84": [
+        115.7773949951579,
+        33.87077451365583
+      ],
+      "center_gcj02": [
+        115.782939,
+        33.869338
+      ]
+    },
+    {
+      "adcode": "341700",
+      "name": "池州市",
+      "level": "city",
+      "center_wgs84": [
+        117.48366430767857,
+        30.658377363304783
+      ],
+      "center_gcj02": [
+        117.489157,
+        30.656037
+      ]
+    },
+    {
+      "adcode": "341800",
+      "name": "宣城市",
+      "level": "city",
+      "center_wgs84": [
+        118.75286994860035,
+        30.947881561453407
+      ],
+      "center_gcj02": [
+        118.757995,
+        30.945667
+      ]
+    }
+  ],
+  "excluded_features": []
+}

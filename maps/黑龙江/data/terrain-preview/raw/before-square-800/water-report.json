@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-29",
+  "map_id": "黑龙江",
+  "map_name": "雪野沉星",
+  "mode": "map-local-compact-water-design",
+  "designed_shorelines_are_not_measured": true,
+  "include_rivers": false,
+  "source_selection_report": "raw/before-water-shaping-water-report.json",
+  "water_cells_in_input": 1845,
+  "water_cells_in_game_frame": 1853,
+  "component_count_in_game_frame": 1,
+  "components_in_game_frame": [
+    {
+      "area_cells": 1853,
+      "bbox_game_cells": [
+        564,
+        647,
+        607,
+        706
+      ],
+      "bbox_fill_fraction": 0.7019,
+      "bbox_aspect_ratio": 1.3636,
+      "raster_perimeter": 218,
+      "compactness_4pi_area_over_perimeter_squared": 0.49,
+      "maximum_manhattan_interior_radius_cells": 21,
+      "touches_game_frame": false
+    }
+  ],
+  "design_lake_groups": [
+    {
+      "action": "smooth",
+      "close_radius": 4,
+      "name": "黑龙江-湖区1",
+      "open_radius": 5,
+      "result": {
+        "cells": 1845,
+        "component_count": 1,
+        "components": [
+          {
+            "area_cells": 1845,
+            "bbox_aspect_ratio": 1.3636363636363635,
+            "bounds": [
+              584,
+              667,
+              628,
+              727
+            ],
+            "compactness": 0.4878577936093905,
+            "index": 0,
+            "maximum_interior_radius_cells": 19.333333333333332,
+            "perimeter": 218,
+            "touches_frame": false
+          }
+        ]
+      },
+      "source_cells": 1871
+    }
+  ],
+  "water_exactly_ocean_union_original_large_lakes": false,
+  "original_geographic_arrays_preserved": true,
+  "existing_land_layers_preserved": true,
+  "original_final_thresholds_preserved": true,
+  "reference": "raw/reference-before-water-shaping.npz",
+  "active_shoreline_refinement": "shoreline-refinement-report.json",
+  "land_protrusions_removed_input_cells": 8,
+  "land_protrusions_removed_game_cells": 8,
+  "small_island_and_waterbody_transition_plan": "shoreline-transition-plan.json",
+  "existing_water_preserved_during_land_refinement": true,
+  "full_perimeter_passability_status": "preview design requirement; implement and verify height/navigation during playable-map authoring"
+}

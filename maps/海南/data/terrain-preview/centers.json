@@ -1,0 +1,142 @@
+{
+  "schema_version": 1,
+  "map_name": "翠屿浮光",
+  "blueprint": "海南",
+  "label": "地级行政中心",
+  "coordinate_system": "WGS84",
+  "source": "https://geo.datav.aliyun.com/areas_v3/bound/460000_full.json",
+  "source_field": "properties.center (administrative center, not polygon centroid)",
+  "conversion": "GCJ-02 approximately inverted to WGS84 by six iterations, matching terrain boundary ingestion",
+  "retrieved_date": "2026-10-29",
+  "points": [
+    {
+      "adcode": "460100",
+      "name": "海口市",
+      "level": "city",
+      "center_wgs84": [
+        110.32682875263703,
+        20.034028098242036
+      ],
+      "center_gcj02": [
+        110.33119,
+        20.031971
+      ]
+    },
+    {
+      "adcode": "460200",
+      "name": "三亚市",
+      "level": "city",
+      "center_wgs84": [
+        109.50416162354304,
+        18.24955289816051
+      ],
+      "center_gcj02": [
+        109.508268,
+        18.247872
+      ]
+    },
+    {
+      "adcode": "460300",
+      "name": "三沙市",
+      "level": "city",
+      "center_wgs84": [
+        112.3438983001613,
+        16.832659756926304
+      ],
+      "center_gcj02": [
+        112.34882,
+        16.831039
+      ]
+    },
+    {
+      "adcode": "460400",
+      "name": "儋州市",
+      "level": "city",
+      "center_wgs84": [
+        109.57276597750221,
+        19.519451445629052
+      ],
+      "center_gcj02": [
+        109.576782,
+        19.517486
+      ]
+    }
+  ],
+  "excluded_features": [
+    {
+      "name": "五指山市",
+      "adcode": 469001,
+      "level": "city"
+    },
+    {
+      "name": "琼海市",
+      "adcode": 469002,
+      "level": "city"
+    },
+    {
+      "name": "文昌市",
+      "adcode": 469005,
+      "level": "city"
+    },
+    {
+      "name": "万宁市",
+      "adcode": 469006,
+      "level": "city"
+    },
+    {
+      "name": "东方市",
+      "adcode": 469007,
+      "level": "city"
+    },
+    {
+      "name": "定安县",
+      "adcode": 469021,
+      "level": "city"
+    },
+    {
+      "name": "屯昌县",
+      "adcode": 469022,
+      "level": "city"
+    },
+    {
+      "name": "澄迈县",
+      "adcode": 469023,
+      "level": "city"
+    },
+    {
+      "name": "临高县",
+      "adcode": 469024,
+      "level": "city"
+    },
+    {
+      "name": "白沙黎族自治县",
+      "adcode": 469025,
+      "level": "city"
+    },
+    {
+      "name": "昌江黎族自治县",
+      "adcode": 469026,
+      "level": "city"
+    },
+    {
+      "name": "乐东黎族自治县",
+      "adcode": 469027,
+      "level": "city"
+    },
+    {
+      "name": "陵水黎族自治县",
+      "adcode": 469028,
+      "level": "city"
+    },
+    {
+      "name": "保亭黎族苗族自治县",
+      "adcode": 469029,
+      "level": "city"
+    },
+    {
+      "name": "琼中黎族苗族自治县",
+      "adcode": 469030,
+      "level": "city"
+    }
+  ]
+}

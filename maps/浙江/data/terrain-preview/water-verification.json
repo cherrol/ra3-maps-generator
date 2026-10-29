@@ -1,0 +1,183 @@
+{
+  "date": "2026-10-29",
+  "passed": true,
+  "map_id": "浙江",
+  "map_name": "翠岫千湾",
+  "game_cells": [
+    800,
+    800
+  ],
+  "previous_game_cells": [
+    800,
+    768
+  ],
+  "full_grid_cells": [
+    840,
+    840
+  ],
+  "image_dimensions": {
+    "source.png": [
+      1104,
+      1002
+    ],
+    "preview.png": [
+      1104,
+      1002
+    ],
+    "preview--line.png": [
+      1104,
+      1002
+    ],
+    "preview--center--line.png": [
+      1104,
+      1002
+    ]
+  },
+  "north_up": true,
+  "geographic_playable_bounds_unchanged": true,
+  "original_input_sha256": "e773af72eb7d8c07bc34d7650eb7ed1ef720dc6bcd0915e8b777d858bb665231",
+  "original_input_bytes_unchanged": true,
+  "original_elevation_thresholds_unchanged": true,
+  "original_game_layer_heights_unchanged": true,
+  "elevation_bilinear_from_original_input": true,
+  "land_layers_nearest_neighbor_from_approved_preview": true,
+  "all_surviving_resampled_land_layer_ids_preserved": true,
+  "input_water_nearest_neighbor_reprojection_verified": true,
+  "water_policy_unchanged": true,
+  "same_view_and_water_all_four_images": true,
+  "png_and_npz_crc_valid": true,
+  "public_image_water_pixels_checked": 1280000,
+  "province_fully_inside_game_frame": true,
+  "surrounding_real_terrain_included": true,
+  "game_heights_match_layers": true,
+  "land_layer_count": 3,
+  "land_layer_cell_counts": {
+    "1": 193713,
+    "2": 173352,
+    "3": 73867
+  },
+  "water_cells": 199068,
+  "water_component_count": 4,
+  "water_components": [
+    {
+      "area_cells": 189354,
+      "bbox_game_cells": [
+        395,
+        0,
+        799,
+        799
+      ],
+      "raster_perimeter": 3540,
+      "bbox_fill_fraction": 0.5844259259259259,
+      "bbox_aspect_ratio": 0.50625,
+      "touches_game_frame": true
+    },
+    {
+      "area_cells": 5754,
+      "bbox_game_cells": [
+        104,
+        273,
+        200,
+        353
+      ],
+      "raster_perimeter": 356,
+      "bbox_fill_fraction": 0.7323405880106911,
+      "bbox_aspect_ratio": 1.1975308641975309,
+      "touches_game_frame": false
+    },
+    {
+      "area_cells": 3552,
+      "bbox_game_cells": [
+        314,
+        0,
+        405,
+        54
+      ],
+      "raster_perimeter": 312,
+      "bbox_fill_fraction": 0.7019762845849803,
+      "bbox_aspect_ratio": 1.6727272727272726,
+      "touches_game_frame": true
+    },
+    {
+      "area_cells": 408,
+      "bbox_game_cells": [
+        140,
+        5,
+        167,
+        26
+      ],
+      "raster_perimeter": 100,
+      "bbox_fill_fraction": 0.6623376623376623,
+      "bbox_aspect_ratio": 1.2727272727272727,
+      "touches_game_frame": false
+    }
+  ],
+  "centers_at_projected_coordinates": true,
+  "center_labels_nonoverlapping": true,
+  "center_source_bytes_unchanged": true,
+  "before_square_reference": "raw/before-square-800/terrain.npz",
+  "scope": "terrain preview only; existing playable inputs and Henan are excluded",
+  "components": [
+    {
+      "area_cells": 189354,
+      "bbox_game_cells": [
+        395,
+        0,
+        799,
+        799
+      ],
+      "raster_perimeter": 3540,
+      "bbox_fill_fraction": 0.5844259259259259,
+      "bbox_aspect_ratio": 0.50625,
+      "touches_game_frame": true
+    },
+    {
+      "area_cells": 5754,
+      "bbox_game_cells": [
+        104,
+        273,
+        200,
+        353
+      ],
+      "raster_perimeter": 356,
+      "bbox_fill_fraction": 0.7323405880106911,
+      "bbox_aspect_ratio": 1.1975308641975309,
+      "touches_game_frame": false
+    },
+    {
+      "area_cells": 3552,
+      "bbox_game_cells": [
+        314,
+        0,
+        405,
+        54
+      ],
+      "raster_perimeter": 312,
+      "bbox_fill_fraction": 0.7019762845849803,
+      "bbox_aspect_ratio": 1.6727272727272726,
+      "touches_game_frame": true
+    },
+    {
+      "area_cells": 408,
+      "bbox_game_cells": [
+        140,
+        5,
+        167,
+        26
+      ],
+      "raster_perimeter": 100,
+      "bbox_fill_fraction": 0.6623376623376623,
+      "bbox_aspect_ratio": 1.2727272727272727,
+      "touches_game_frame": false
+    }
+  ],
+  "layer_counts": {
+    "1": 193713,
+    "0": 199068,
+    "2": 173352,
+    "3": 73867
+  },
+  "original_selection_and_design_reports": "raw/before-square-800/water-report.json",
+  "full_perimeter_transition_design": "shoreline-transition-plan.json",
+  "playable_passability_verified": false
+}

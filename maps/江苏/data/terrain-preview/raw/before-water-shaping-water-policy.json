@@ -1,0 +1,62 @@
+{
+  "include_rivers": false,
+  "preserve_ocean": true,
+  "minimum_lake_area_km2": 80,
+  "lake_area_method": "spherical polygon area; whole waterbody minus holes before frame clipping",
+  "ocean_channel_open_radius_cells": 3,
+  "lakes": [
+    {
+      "name": "洪泽湖",
+      "area_km2": 2351.226985969607
+    },
+    {
+      "name": "太湖",
+      "area_km2": 2509.392683401246
+    },
+    {
+      "name": "高邮湖",
+      "area_km2": 847.2117384417836
+    },
+    {
+      "name": "石臼湖",
+      "area_km2": 312.0321598555198
+    },
+    {
+      "name": "巢湖",
+      "area_km2": 788.9000241817677
+    },
+    {
+      "name": "微山湖",
+      "area_km2": 334.41889027108203
+    },
+    {
+      "name": "未命名湖泊",
+      "area_km2": 103.97708389591185
+    },
+    {
+      "name": "滆湖",
+      "area_km2": 195.863225868085
+    },
+    {
+      "name": "未命名湖泊",
+      "area_km2": 123.35047452243803
+    },
+    {
+      "name": "未命名湖泊",
+      "area_km2": 120.69874772256738
+    },
+    {
+      "name": "駱馬湖",
+      "area_km2": 104.84480332936374
+    },
+    {
+      "name": "未命名湖泊",
+      "area_km2": 143.00308437148598
+    },
+    {
+      "name": "未命名湖泊",
+      "area_km2": 88.9274616271865
+    }
+  ],
+  "date": "2026-10-29"
+}

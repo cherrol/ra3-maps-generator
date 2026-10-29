@@ -1,0 +1,239 @@
+{
+  "blueprint": "山东",
+  "boundary_conversion": "GCJ-02 approximately inverted to WGS84, six iterations",
+  "boundary_source": "https://geo.datav.aliyun.com/areas_v3/bound/370000.json",
+  "bounds_wgs84": [
+    114.57476613402434,
+    34.19717805753266,
+    122.94984704876046,
+    38.58270367066859
+  ],
+  "date": "2026-10-29",
+  "dem_attribution": "Mapzen / AWS Terrain Tiles; SRTM and GMTED2010 courtesy USGS; see tilezen/joerd docs/attribution.md",
+  "dem_source": "https://registry.opendata.aws/terrain-tiles/",
+  "elevation_max_m": 1442.7219427098025,
+  "elevation_min_m": -219.3115719595551,
+  "grid": [
+    840,
+    544
+  ],
+  "limitation": "reference cartography at sampled resolution; sampled maxima and polygon areas are not surveyed values",
+  "map_name": "横丘向海",
+  "no_province_based_terrain_clipping": true,
+  "north_up": true,
+  "terrain_zoom": 8,
+  "tiles_validated": [
+    {
+      "crc32": 4010050255,
+      "x": 209,
+      "y": 98,
+      "z": 8
+    },
+    {
+      "crc32": 2988388485,
+      "x": 209,
+      "y": 99,
+      "z": 8
+    },
+    {
+      "crc32": 1524009475,
+      "x": 209,
+      "y": 100,
+      "z": 8
+    },
+    {
+      "crc32": 3947463616,
+      "x": 209,
+      "y": 101,
+      "z": 8
+    },
+    {
+      "crc32": 3482150841,
+      "x": 209,
+      "y": 102,
+      "z": 8
+    },
+    {
+      "crc32": 3533389759,
+      "x": 210,
+      "y": 98,
+      "z": 8
+    },
+    {
+      "crc32": 1130905233,
+      "x": 210,
+      "y": 99,
+      "z": 8
+    },
+    {
+      "crc32": 2367472242,
+      "x": 210,
+      "y": 100,
+      "z": 8
+    },
+    {
+      "crc32": 2951122038,
+      "x": 210,
+      "y": 101,
+      "z": 8
+    },
+    {
+      "crc32": 23233760,
+      "x": 210,
+      "y": 102,
+      "z": 8
+    },
+    {
+      "crc32": 3321610728,
+      "x": 211,
+      "y": 98,
+      "z": 8
+    },
+    {
+      "crc32": 1473784181,
+      "x": 211,
+      "y": 99,
+      "z": 8
+    },
+    {
+      "crc32": 2740502937,
+      "x": 211,
+      "y": 100,
+      "z": 8
+    },
+    {
+      "crc32": 1960668397,
+      "x": 211,
+      "y": 101,
+      "z": 8
+    },
+    {
+      "crc32": 2071745767,
+      "x": 211,
+      "y": 102,
+      "z": 8
+    },
+    {
+      "crc32": 2223770344,
+      "x": 212,
+      "y": 98,
+      "z": 8
+    },
+    {
+      "crc32": 2693137039,
+      "x": 212,
+      "y": 99,
+      "z": 8
+    },
+    {
+      "crc32": 688049433,
+      "x": 212,
+      "y": 100,
+      "z": 8
+    },
+    {
+      "crc32": 229052308,
+      "x": 212,
+      "y": 101,
+      "z": 8
+    },
+    {
+      "crc32": 560212827,
+      "x": 212,
+      "y": 102,
+      "z": 8
+    },
+    {
+      "crc32": 376036589,
+      "x": 213,
+      "y": 98,
+      "z": 8
+    },
+    {
+      "crc32": 3077942514,
+      "x": 213,
+      "y": 99,
+      "z": 8
+    },
+    {
+      "crc32": 2538319403,
+      "x": 213,
+      "y": 100,
+      "z": 8
+    },
+    {
+      "crc32": 274831118,
+      "x": 213,
+      "y": 101,
+      "z": 8
+    },
+    {
+      "crc32": 3683164665,
+      "x": 213,
+      "y": 102,
+      "z": 8
+    },
+    {
+      "crc32": 1248407162,
+      "x": 214,
+      "y": 98,
+      "z": 8
+    },
+    {
+      "crc32": 3992301499,
+      "x": 214,
+      "y": 99,
+      "z": 8
+    },
+    {
+      "crc32": 1648126308,
+      "x": 214,
+      "y": 100,
+      "z": 8
+    },
+    {
+      "crc32": 3553321748,
+      "x": 214,
+      "y": 101,
+      "z": 8
+    },
+    {
+      "crc32": 2577875926,
+      "x": 214,
+      "y": 102,
+      "z": 8
+    },
+    {
+      "crc32": 2492099424,
+      "x": 215,
+      "y": 98,
+      "z": 8
+    },
+    {
+      "crc32": 1441775759,
+      "x": 215,
+      "y": 99,
+      "z": 8
+    },
+    {
+      "crc32": 528666965,
+      "x": 215,
+      "y": 100,
+      "z": 8
+    },
+    {
+      "crc32": 1530714011,
+      "x": 215,
+      "y": 101,
+      "z": 8
+    },
+    {
+      "crc32": 2984146577,
+      "x": 215,
+      "y": 102,
+      "z": 8
+    }
+  ],
+  "water_display_policy": "water-policy.json",
+  "water_source": "Natural Earth 1:10m ocean and lakes; selected OSM reservoir polygons; minimum lake area 80 km2"
+}

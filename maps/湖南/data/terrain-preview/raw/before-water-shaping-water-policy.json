@@ -1,0 +1,54 @@
+{
+  "include_rivers": false,
+  "preserve_ocean": true,
+  "minimum_lake_area_km2": 80,
+  "lake_area_method": "spherical polygon area; whole waterbody minus holes before frame clipping",
+  "ocean_channel_open_radius_cells": 3,
+  "lakes": [
+    {
+      "name": "梁子湖",
+      "area_km2": 450.7575925363982
+    },
+    {
+      "name": "洪湖",
+      "area_km2": 305.51549676356007
+    },
+    {
+      "name": "黄塘湖",
+      "area_km2": 269.44088494433527
+    },
+    {
+      "name": "未命名湖泊",
+      "area_km2": 175.91669375486262
+    },
+    {
+      "name": "未命名湖泊",
+      "area_km2": 307.3255172855844
+    },
+    {
+      "name": "洞庭湖",
+      "area_km2": 772.0957047370157
+    },
+    {
+      "name": "未命名湖泊",
+      "area_km2": 144.69511035295844
+    },
+    {
+      "name": "未命名湖泊",
+      "area_km2": 115.09969826366525
+    },
+    {
+      "name": "三峡水库",
+      "area_km2": 612.2912822390497
+    },
+    {
+      "name": "柘溪水库",
+      "area_km2": 94.19777205898046
+    },
+    {
+      "name": "东江水库",
+      "area_km2": 143.92217333750742
+    }
+  ],
+  "date": "2026-10-29"
+}

@@ -1,0 +1,24 @@
+{
+  "id": "贵州",
+  "source": "maps/贵州/data/terrain-preview/raw/reference-before-water-shaping.npz",
+  "output": "maps/贵州/data/terrain-preview/input.npz",
+  "report": "maps/贵州/data/terrain-preview/water-shaping-report.json",
+  "ocean": {
+    "open_radius": 8,
+    "close_radius": 5,
+    "min_component_area": 400
+  },
+  "lake": {
+    "default_action": "drop",
+    "groups": []
+  },
+  "schema_version": 1,
+  "date": "2026-10-29",
+  "scope": "game terrain preview water design; preserve original elevation, geographic boundary and raw masks",
+  "coordinate_system": "input grid origin northwest; x east, y south; half-open bounds",
+  "rebuild": [
+    "work/terrain-preview-water/process maps/贵州/data/terrain-preview/water-shaping.json",
+    "cargo run --release --locked --offline -- terrain-preview 贵州 maps/贵州/data/terrain-preview/input.npz"
+  ],
+  "frame_trim_note": "remove water bodies that become tiny or narrow remnants in the final playable crop"
+}

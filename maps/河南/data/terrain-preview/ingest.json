@@ -1,0 +1,30 @@
+{
+  "map_name": "沃野奔流",
+  "blueprint": "河南",
+  "code": 410000,
+  "grid": [
+    840,
+    840
+  ],
+  "playable_cells": [
+    800,
+    800
+  ],
+  "bounds_wgs84": [
+    110.17153573292381,
+    31.234682447626675,
+    116.82860851408523,
+    36.51664022911056
+  ],
+  "playable_bounds_wgs84": [
+    110.33003746580862,
+    31.360443347185814,
+    116.67010678120043,
+    36.39087932955142
+  ],
+  "border_cells": 20,
+  "north_up": true,
+  "terrain_zoom": 8,
+  "date": "2026-10-29",
+  "geographic_frame_source": "work/geographic-storage/metadata-before/maps/河南/data/terrain-preview/report.json"
+}

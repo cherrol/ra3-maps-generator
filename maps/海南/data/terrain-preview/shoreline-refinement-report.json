@@ -1,0 +1,138 @@
+{
+  "added_land_cells": 0,
+  "all_nonwater_arrays_byte_identical": true,
+  "design_land": {
+    "cells": 274135,
+    "component_count": 1,
+    "components": [
+      {
+        "area_cells": 274135,
+        "bbox_aspect_ratio": 1.175986842105263,
+        "bounds": [
+          39,
+          43,
+          754,
+          651
+        ],
+        "compactness": 0.3253413422964419,
+        "index": 0,
+        "maximum_interior_radius_cells": 160.66666666666666,
+        "perimeter": 3254,
+        "touches_frame": false
+      }
+    ]
+  },
+  "design_water": {
+    "cells": 282665,
+    "component_count": 2,
+    "components": [
+      {
+        "area_cells": 280111,
+        "bbox_aspect_ratio": 1.1494252873563218,
+        "bounds": [
+          0,
+          0,
+          800,
+          696
+        ],
+        "compactness": 0.09777718442107672,
+        "index": 0,
+        "maximum_interior_radius_cells": 287.6666666666667,
+        "perimeter": 6000,
+        "touches_frame": true
+      },
+      {
+        "area_cells": 2554,
+        "bbox_aspect_ratio": 1.0847457627118644,
+        "bounds": [
+          293,
+          268,
+          357,
+          327
+        ],
+        "compactness": 0.5303475204751359,
+        "index": 1,
+        "maximum_interior_radius_cells": 24.333333333333332,
+        "perimeter": 246,
+        "touches_frame": false
+      }
+    ]
+  },
+  "existing_water_preserved": true,
+  "input_cells": [
+    800,
+    696
+  ],
+  "land_open_radius_input_cells": 10,
+  "main_land_and_each_preserved_compact_island_stable_under_opening": true,
+  "map_id": "海南",
+  "method": "morphological opening of land to retract narrow peninsulas, necks and pointed spurs",
+  "preserved_compact_small_islands": [],
+  "removed_land_cells": 593,
+  "small_shore_transition_policy": {
+    "bidirectional": true,
+    "continuous": true,
+    "few_exits_do_not_satisfy": true,
+    "scope": "entire perimeter of retained small islands and small waterbodies",
+    "status": "design requirement; implement and verify terrain height/navigation when producing playable maps"
+  },
+  "source": "maps/海南/data/terrain-preview/raw/reference-before-shoreline-refinement.npz",
+  "source_land": {
+    "cells": 274728,
+    "component_count": 1,
+    "components": [
+      {
+        "area_cells": 274728,
+        "bbox_aspect_ratio": 1.1629032258064516,
+        "bounds": [
+          38,
+          37,
+          759,
+          657
+        ],
+        "compactness": 0.30910063512978164,
+        "index": 0,
+        "maximum_interior_radius_cells": 160.66666666666666,
+        "perimeter": 3342,
+        "touches_frame": false
+      }
+    ]
+  },
+  "source_water": {
+    "cells": 282072,
+    "component_count": 2,
+    "components": [
+      {
+        "area_cells": 279518,
+        "bbox_aspect_ratio": 1.1494252873563218,
+        "bounds": [
+          0,
+          0,
+          800,
+          696
+        ],
+        "compactness": 0.09476988567006202,
+        "index": 0,
+        "maximum_interior_radius_cells": 286.0,
+        "perimeter": 6088,
+        "touches_frame": true
+      },
+      {
+        "area_cells": 2554,
+        "bbox_aspect_ratio": 1.0847457627118644,
+        "bounds": [
+          293,
+          268,
+          357,
+          327
+        ],
+        "compactness": 0.5303475204751359,
+        "index": 1,
+        "maximum_interior_radius_cells": 24.333333333333332,
+        "perimeter": 246,
+        "touches_frame": false
+      }
+    ]
+  },
+  "date": "2026-10-29"
+}

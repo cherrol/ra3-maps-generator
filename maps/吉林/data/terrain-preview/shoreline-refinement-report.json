@@ -1,0 +1,138 @@
+{
+  "added_land_cells": 0,
+  "all_nonwater_arrays_byte_identical": true,
+  "design_land": {
+    "cells": 526680,
+    "component_count": 1,
+    "components": [
+      {
+        "area_cells": 526680,
+        "bbox_aspect_ratio": 1.2650602409638554,
+        "bounds": [
+          0,
+          0,
+          840,
+          664
+        ],
+        "compactness": 0.6561387749084254,
+        "index": 0,
+        "maximum_interior_radius_cells": 550.0,
+        "perimeter": 3176,
+        "touches_frame": true
+      }
+    ]
+  },
+  "design_water": {
+    "cells": 31080,
+    "component_count": 2,
+    "components": [
+      {
+        "area_cells": 30521,
+        "bbox_aspect_ratio": 1.4148936170212767,
+        "bounds": [
+          652,
+          398,
+          840,
+          664
+        ],
+        "compactness": 0.41965542173725107,
+        "index": 0,
+        "maximum_interior_radius_cells": 161.33333333333334,
+        "perimeter": 956,
+        "touches_frame": true
+      },
+      {
+        "area_cells": 559,
+        "bbox_aspect_ratio": 1.3076923076923077,
+        "bounds": [
+          437,
+          313,
+          463,
+          347
+        ],
+        "compactness": 0.4878195259324151,
+        "index": 1,
+        "maximum_interior_radius_cells": 9.333333333333334,
+        "perimeter": 120,
+        "touches_frame": false
+      }
+    ]
+  },
+  "existing_water_preserved": true,
+  "input_cells": [
+    840,
+    664
+  ],
+  "land_open_radius_input_cells": 10,
+  "main_land_and_each_preserved_compact_island_stable_under_opening": true,
+  "map_id": "吉林",
+  "method": "morphological opening of land to retract narrow peninsulas, necks and pointed spurs",
+  "preserved_compact_small_islands": [],
+  "removed_land_cells": 65,
+  "small_shore_transition_policy": {
+    "bidirectional": true,
+    "continuous": true,
+    "few_exits_do_not_satisfy": true,
+    "scope": "entire perimeter of retained small islands and small waterbodies",
+    "status": "design requirement; implement and verify terrain height/navigation when producing playable maps"
+  },
+  "source": "maps/吉林/data/terrain-preview/raw/reference-before-shoreline-refinement.npz",
+  "source_land": {
+    "cells": 526745,
+    "component_count": 1,
+    "components": [
+      {
+        "area_cells": 526745,
+        "bbox_aspect_ratio": 1.2650602409638554,
+        "bounds": [
+          0,
+          0,
+          840,
+          664
+        ],
+        "compactness": 0.6529263080143003,
+        "index": 0,
+        "maximum_interior_radius_cells": 550.0,
+        "perimeter": 3184,
+        "touches_frame": true
+      }
+    ]
+  },
+  "source_water": {
+    "cells": 31015,
+    "component_count": 2,
+    "components": [
+      {
+        "area_cells": 30456,
+        "bbox_aspect_ratio": 1.4148936170212767,
+        "bounds": [
+          652,
+          398,
+          840,
+          664
+        ],
+        "compactness": 0.4118401278289403,
+        "index": 0,
+        "maximum_interior_radius_cells": 161.0,
+        "perimeter": 964,
+        "touches_frame": true
+      },
+      {
+        "area_cells": 559,
+        "bbox_aspect_ratio": 1.3076923076923077,
+        "bounds": [
+          437,
+          313,
+          463,
+          347
+        ],
+        "compactness": 0.4878195259324151,
+        "index": 1,
+        "maximum_interior_radius_cells": 9.333333333333334,
+        "perimeter": 120,
+        "touches_frame": false
+      }
+    ]
+  },
+  "date": "2026-10-29"
+}

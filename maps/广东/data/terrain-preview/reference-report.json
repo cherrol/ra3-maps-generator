@@ -1,0 +1,46 @@
+{
+  "boundary_conversion": "GCJ-02 approximately inverted to WGS84 by six iterations",
+  "boundary_source": "original local data/main_boundary.json (DataV provincial outline)",
+  "dem_attribution": "Mapzen/AWS Terrain Tiles; SRTM/GMTED courtesy USGS; see tilezen/joerd docs/attribution.md",
+  "dem_source": "https://registry.opendata.aws/terrain-tiles/",
+  "download_date": "2026-10-28",
+  "elevation_max_m": 1908.9246464734429,
+  "elevation_min_m": -2365.035014958246,
+  "grid": [
+    800,
+    640
+  ],
+  "lake_rendering": "Natural Earth and OSM polygons, unchanged outlines rasterized at grid resolution",
+  "lakes_source": "https://github.com/nvkelso/natural-earth-vector/blob/master/geojson/ne_10m_lakes.geojson",
+  "map_name": "千流叩海",
+  "osm_attribution": "© OpenStreetMap contributors; https://www.openstreetmap.org/copyright",
+  "percentiles_m": [
+    -118.50695653627052,
+    -40.82868414634672,
+    60.76055540617573,
+    287.40100088774125,
+    541.2454057676584,
+    712.6663648495381,
+    1057.6120579797055
+  ],
+  "river_rendering": "Natural Earth 1:10m centerlines, rasterized at minimum one cell for legibility; schematic width, not measured width",
+  "river_samples": {
+    "Bei": 1171,
+    "Dong": 1379,
+    "Duliu": 18,
+    "Gan": 596,
+    "Hongshui": 98,
+    "Jiulong": 245,
+    "Liu": 356,
+    "Quan": 353,
+    "Rong": 136,
+    "Xi": 1470,
+    "Xiang": 113,
+    "Xun": 578,
+    "Yu": 520
+  },
+  "rivers_source": "https://github.com/nvkelso/natural-earth-vector/blob/master/geojson/ne_10m_rivers_lake_centerlines.geojson",
+  "terrain_tiles_zoom": 8,
+  "water_cells": 193611,
+  "report_role": "Historical reference acquisition; current water display is defined by water-policy.json and water-report.json"
+}

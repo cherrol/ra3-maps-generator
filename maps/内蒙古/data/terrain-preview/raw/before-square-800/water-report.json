@@ -1,0 +1,128 @@
+{
+  "date": "2026-10-29",
+  "map_id": "内蒙古",
+  "map_name": "苍野长风",
+  "mode": "map-local-compact-water-design",
+  "designed_shorelines_are_not_measured": true,
+  "include_rivers": false,
+  "source_selection_report": "raw/before-water-shaping-water-report.json",
+  "water_cells_in_input": 29138,
+  "water_cells_in_game_frame": 24885,
+  "component_count_in_game_frame": 3,
+  "components_in_game_frame": [
+    {
+      "area_cells": 17309,
+      "bbox_game_cells": [
+        563,
+        485,
+        799,
+        623
+      ],
+      "bbox_fill_fraction": 0.5254,
+      "bbox_aspect_ratio": 1.705,
+      "raster_perimeter": 994,
+      "compactness_4pi_area_over_perimeter_squared": 0.2201,
+      "maximum_manhattan_interior_radius_cells": 47,
+      "touches_game_frame": true
+    },
+    {
+      "area_cells": 7182,
+      "bbox_game_cells": [
+        183,
+        0,
+        327,
+        74
+      ],
+      "bbox_fill_fraction": 0.6604,
+      "bbox_aspect_ratio": 1.9333,
+      "raster_perimeter": 440,
+      "compactness_4pi_area_over_perimeter_squared": 0.4662,
+      "maximum_manhattan_interior_radius_cells": 37,
+      "touches_game_frame": true
+    },
+    {
+      "area_cells": 394,
+      "bbox_game_cells": [
+        548,
+        159,
+        574,
+        185
+      ],
+      "bbox_fill_fraction": 0.5405,
+      "bbox_aspect_ratio": 1.0,
+      "raster_perimeter": 108,
+      "compactness_4pi_area_over_perimeter_squared": 0.4245,
+      "maximum_manhattan_interior_radius_cells": 10,
+      "touches_game_frame": false
+    }
+  ],
+  "design_lake_groups": [
+    {
+      "action": "hull",
+      "close_radius": 0,
+      "name": "内蒙古-湖区1",
+      "open_radius": 8,
+      "result": {
+        "cells": 9414,
+        "component_count": 1,
+        "components": [
+          {
+            "area_cells": 9414,
+            "bbox_aspect_ratio": 1.6210526315789473,
+            "bounds": [
+              203,
+              0,
+              357,
+              95
+            ],
+            "compactness": 0.47700768118085696,
+            "index": 0,
+            "maximum_interior_radius_cells": 40.0,
+            "perimeter": 498,
+            "touches_frame": true
+          }
+        ]
+      },
+      "source_cells": 2966
+    },
+    {
+      "action": "hull",
+      "close_radius": 0,
+      "name": "内蒙古-湖区3",
+      "open_radius": 6,
+      "result": {
+        "cells": 394,
+        "component_count": 1,
+        "components": [
+          {
+            "area_cells": 394,
+            "bbox_aspect_ratio": 1.0,
+            "bounds": [
+              568,
+              179,
+              595,
+              206
+            ],
+            "compactness": 0.42448131190479366,
+            "index": 0,
+            "maximum_interior_radius_cells": 7.666666666666667,
+            "perimeter": 108,
+            "touches_frame": false
+          }
+        ]
+      },
+      "source_cells": 305
+    }
+  ],
+  "water_exactly_ocean_union_original_large_lakes": false,
+  "original_geographic_arrays_preserved": true,
+  "existing_land_layers_preserved": true,
+  "original_final_thresholds_preserved": true,
+  "reference": "raw/reference-before-water-shaping.npz",
+  "active_shoreline_refinement": "shoreline-refinement-report.json",
+  "land_protrusions_removed_input_cells": 533,
+  "land_protrusions_removed_game_cells": 183,
+  "small_island_and_waterbody_transition_plan": "shoreline-transition-plan.json",
+  "existing_water_preserved_during_land_refinement": true,
+  "full_perimeter_passability_status": "preview design requirement; implement and verify height/navigation during playable-map authoring"
+}

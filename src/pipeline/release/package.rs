@@ -39,6 +39,9 @@ fn validate_package(files: &[(String, Vec<u8>)], runtime: bool) -> Result<MapFil
     let hm = crate::formats::map::HeightMap::parse(map.get("HeightMapData")?)?;
     let bt =
         crate::formats::map::BlendTiles::parse(map.get("BlendTileData")?, hm.width, hm.height)?;
+    if runtime {
+        crate::resources::terrain_package::validate_texture_limit(&map)?;
+    }
     crate::formats::map::objects(map.get("ObjectsList")?, &map.table)?;
     if bt
         .tiles

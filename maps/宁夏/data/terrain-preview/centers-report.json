@@ -1,0 +1,114 @@
+{
+  "bounds_wgs84": [
+    104.26763108420393,
+    35.21806344109596,
+    107.67116928783443,
+    39.40138675568202
+  ],
+  "coordinate_system": "WGS84",
+  "game_cells": [
+    800,
+    800
+  ],
+  "image": "preview--center--line.png",
+  "image_crc32": 2348467343,
+  "label": "地级行政中心",
+  "map_name": "沙岸绿畴",
+  "outside_frame": [],
+  "points": [
+    {
+      "adcode": "640100",
+      "center_wgs84": [
+        106.27376495558386,
+        38.465908710823264
+      ],
+      "image_pixel": [
+        499,
+        290
+      ],
+      "label_box": [
+        477,
+        298,
+        45,
+        20
+      ],
+      "name": "银川市"
+    },
+    {
+      "adcode": "640300",
+      "center_wgs84": [
+        106.19500469020242,
+        37.98561342168089
+      ],
+      "image_pixel": [
+        481,
+        382
+      ],
+      "label_box": [
+        459,
+        390,
+        45,
+        20
+      ],
+      "name": "吴忠市"
+    },
+    {
+      "adcode": "640200",
+      "center_wgs84": [
+        106.37147857081668,
+        39.01248299299672
+      ],
+      "image_pixel": [
+        522,
+        186
+      ],
+      "label_box": [
+        493,
+        194,
+        58,
+        20
+      ],
+      "name": "石嘴山市"
+    },
+    {
+      "adcode": "640500",
+      "center_wgs84": [
+        105.185788737751,
+        37.51437478463002
+      ],
+      "image_pixel": [
+        243,
+        472
+      ],
+      "label_box": [
+        221,
+        480,
+        45,
+        20
+      ],
+      "name": "中卫市"
+    },
+    {
+      "adcode": "640400",
+      "center_wgs84": [
+        106.28101531040454,
+        36.00473046215797
+      ],
+      "image_pixel": [
+        501,
+        761
+      ],
+      "label_box": [
+        479,
+        769,
+        45,
+        20
+      ],
+      "name": "固原市"
+    }
+  ],
+  "schema_version": 1,
+  "source": "https://geo.datav.aliyun.com/areas_v3/bound/640000_full.json",
+  "total_centers": 5,
+  "visible_centers": 5
+}

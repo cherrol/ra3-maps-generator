@@ -1,0 +1,26 @@
+{
+  "include_rivers": false,
+  "preserve_ocean": true,
+  "minimum_lake_area_km2": 80,
+  "lake_area_method": "spherical polygon area; whole waterbody minus holes before frame clipping",
+  "ocean_channel_open_radius_cells": 3,
+  "lakes": [
+    {
+      "name": "太湖",
+      "area_km2": 2509.392683401246
+    },
+    {
+      "name": "未命名湖泊",
+      "area_km2": 123.35047452243803
+    },
+    {
+      "name": "新安江水库",
+      "area_km2": 587.7819930245125
+    },
+    {
+      "name": "千岛湖",
+      "area_km2": 443.97581739489067
+    }
+  ],
+  "date": "2026-10-29"
+}

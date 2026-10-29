@@ -1,0 +1,77 @@
+{
+  "id": "青海",
+  "source": "maps/青海/data/terrain-preview/raw/reference-before-water-shaping.npz",
+  "output": "maps/青海/data/terrain-preview/input.npz",
+  "report": "maps/青海/data/terrain-preview/water-shaping-report.json",
+  "ocean": {
+    "open_radius": 8,
+    "close_radius": 5,
+    "min_component_area": 400
+  },
+  "lake": {
+    "default_action": "drop",
+    "groups": [
+      {
+        "name": "青海-湖区1",
+        "bounds": [
+          616,
+          163,
+          682,
+          211
+        ],
+        "action": "smooth",
+        "open_radius": 5,
+        "close_radius": 4,
+        "min_area": 400
+      },
+      {
+        "name": "青海-湖区2",
+        "bounds": [
+          0,
+          538,
+          21,
+          564
+        ],
+        "action": "hull",
+        "open_radius": 5,
+        "close_radius": 0,
+        "min_area": 250
+      },
+      {
+        "name": "青海-湖区4",
+        "bounds": [
+          468,
+          314,
+          516,
+          336
+        ],
+        "action": "hull",
+        "open_radius": 5,
+        "close_radius": 0,
+        "min_area": 400
+      },
+      {
+        "name": "青海-湖区5",
+        "bounds": [
+          40,
+          412,
+          82,
+          445
+        ],
+        "action": "hull",
+        "open_radius": 6,
+        "close_radius": 0,
+        "min_area": 400
+      }
+    ]
+  },
+  "schema_version": 1,
+  "date": "2026-10-29",
+  "scope": "game terrain preview water design; preserve original elevation, geographic boundary and raw masks",
+  "coordinate_system": "input grid origin northwest; x east, y south; half-open bounds",
+  "rebuild": [
+    "work/terrain-preview-water/process maps/青海/data/terrain-preview/water-shaping.json",
+    "cargo run --release --locked --offline -- terrain-preview 青海 maps/青海/data/terrain-preview/input.npz"
+  ],
+  "frame_trim_note": "remove water bodies that become tiny or narrow remnants in the final playable crop"
+}

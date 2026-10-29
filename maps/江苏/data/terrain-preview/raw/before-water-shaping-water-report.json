@@ -1,0 +1,76 @@
+{
+  "include_rivers": false,
+  "large_lake_cells": 18298,
+  "minimum_lake_area_km2": 80,
+  "ocean_cells": 150234,
+  "ocean_channel_open_radius_cells": 3,
+  "retained_lakes": [
+    {
+      "area_km2": 2351.226985969607,
+      "cells_in_input_frame": 5417,
+      "name": "洪泽湖"
+    },
+    {
+      "area_km2": 2509.392683401246,
+      "cells_in_input_frame": 5651,
+      "name": "太湖"
+    },
+    {
+      "area_km2": 847.2117384417836,
+      "cells_in_input_frame": 1957,
+      "name": "高邮湖"
+    },
+    {
+      "area_km2": 312.0321598555198,
+      "cells_in_input_frame": 705,
+      "name": "石臼湖"
+    },
+    {
+      "area_km2": 788.9000241817677,
+      "cells_in_input_frame": 1784,
+      "name": "巢湖"
+    },
+    {
+      "area_km2": 334.41889027108203,
+      "cells_in_input_frame": 784,
+      "name": "微山湖"
+    },
+    {
+      "area_km2": 103.97708389591185,
+      "cells_in_input_frame": 233,
+      "name": null
+    },
+    {
+      "area_km2": 195.863225868085,
+      "cells_in_input_frame": 443,
+      "name": "滆湖"
+    },
+    {
+      "area_km2": 123.35047452243803,
+      "cells_in_input_frame": 274,
+      "name": null
+    },
+    {
+      "area_km2": 120.69874772256738,
+      "cells_in_input_frame": 275,
+      "name": null
+    },
+    {
+      "area_km2": 104.84480332936374,
+      "cells_in_input_frame": 246,
+      "name": "駱馬湖"
+    },
+    {
+      "area_km2": 143.00308437148598,
+      "cells_in_input_frame": 324,
+      "name": null
+    },
+    {
+      "area_km2": 88.9274616271865,
+      "cells_in_input_frame": 205,
+      "name": null
+    }
+  ],
+  "water_cells": 168532,
+  "water_mask_equals_ocean_union_large_lakes": true
+}

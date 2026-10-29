@@ -1,0 +1,10 @@
+{
+  "date": "2026-10-29",
+  "include_rivers": false,
+  "lake_area_method": "spherical polygon area; whole waterbody minus holes before frame clipping",
+  "lakes": [],
+  "minimum_lake_area_km2": 80,
+  "ocean_channel_open_radius_cells": 3,
+  "ocean_source": "OpenStreetMap detailed coastline with Natural Earth broad-context fallback",
+  "preserve_ocean": true
+}

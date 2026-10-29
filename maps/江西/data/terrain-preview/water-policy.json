@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-29",
+  "mode": "map-local-compact-water-design",
+  "include_rivers": false,
+  "preserve_ocean": true,
+  "source_selection_policy": "raw/before-water-shaping-water-policy.json",
+  "source_selection_applies_to": "preserved geographic mask before game-preview shoreline design",
+  "design_recipe": "water-shaping.json",
+  "design_report": "water-shaping-report.json",
+  "source_water_display": "same design water mask in all existing preview images; original elevation and geographic masks preserved",
+  "real_shoreline_claim": false
+}

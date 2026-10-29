@@ -1,0 +1,139 @@
+{
+  "added_cells": 719,
+  "design_lakes": {
+    "cells": 0,
+    "component_count": 0,
+    "components": []
+  },
+  "design_ocean": {
+    "cells": 207959,
+    "component_count": 1,
+    "components": [
+      {
+        "area_cells": 207959,
+        "bbox_aspect_ratio": 1.5909090909090908,
+        "bounds": [
+          0,
+          0,
+          528,
+          840
+        ],
+        "compactness": 0.043241277078753394,
+        "index": 0,
+        "maximum_interior_radius_cells": 182.33333333333334,
+        "perimeter": 7774,
+        "touches_frame": true
+      }
+    ]
+  },
+  "design_water": {
+    "cells": 207959,
+    "component_count": 1,
+    "components": [
+      {
+        "area_cells": 207959,
+        "bbox_aspect_ratio": 1.5909090909090908,
+        "bounds": [
+          0,
+          0,
+          528,
+          840
+        ],
+        "compactness": 0.043241277078753394,
+        "index": 0,
+        "maximum_interior_radius_cells": 182.33333333333334,
+        "perimeter": 7774,
+        "touches_frame": true
+      }
+    ]
+  },
+  "groups": [],
+  "id": "澳门",
+  "input_cells": [
+    528,
+    840
+  ],
+  "non_water_arrays_byte_identical": true,
+  "removed_cells": 3853,
+  "restored_unseeded_land_hole_cells": 0,
+  "shoreline_kind": "game-terrain-preview-design",
+  "source": "maps/澳门/data/terrain-preview/raw/reference-before-water-shaping.npz",
+  "source_lakes": {
+    "cells": 0,
+    "component_count": 0,
+    "components": []
+  },
+  "source_ocean": {
+    "cells": 211093,
+    "component_count": 2,
+    "components": [
+      {
+        "area_cells": 210952,
+        "bbox_aspect_ratio": 1.5909090909090908,
+        "bounds": [
+          0,
+          0,
+          528,
+          840
+        ],
+        "compactness": 0.033167938053845124,
+        "index": 0,
+        "maximum_interior_radius_cells": 182.33333333333334,
+        "perimeter": 8940,
+        "touches_frame": true
+      },
+      {
+        "area_cells": 141,
+        "bbox_aspect_ratio": 1.3846153846153846,
+        "bounds": [
+          354,
+          582,
+          367,
+          600
+        ],
+        "compactness": 0.38318733923543324,
+        "index": 1,
+        "maximum_interior_radius_cells": 5.0,
+        "perimeter": 68,
+        "touches_frame": false
+      }
+    ]
+  },
+  "source_water": {
+    "cells": 211093,
+    "component_count": 2,
+    "components": [
+      {
+        "area_cells": 210952,
+        "bbox_aspect_ratio": 1.5909090909090908,
+        "bounds": [
+          0,
+          0,
+          528,
+          840
+        ],
+        "compactness": 0.033167938053845124,
+        "index": 0,
+        "maximum_interior_radius_cells": 182.33333333333334,
+        "perimeter": 8940,
+        "touches_frame": true
+      },
+      {
+        "area_cells": 141,
+        "bbox_aspect_ratio": 1.3846153846153846,
+        "bounds": [
+          354,
+          582,
+          367,
+          600
+        ],
+        "compactness": 0.38318733923543324,
+        "index": 1,
+        "maximum_interior_radius_cells": 5.0,
+        "perimeter": 68,
+        "touches_frame": false
+      }
+    ]
+  },
+  "date": "2026-10-29"
+}

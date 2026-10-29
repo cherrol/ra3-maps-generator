@@ -1,0 +1,247 @@
+{
+  "schema_version": 1,
+  "map_name": "雪岭环沙",
+  "blueprint": "新疆",
+  "label": "地级行政中心",
+  "coordinate_system": "WGS84",
+  "source": "https://geo.datav.aliyun.com/areas_v3/bound/650000_full.json",
+  "source_field": "properties.center (administrative center, not polygon centroid)",
+  "conversion": "GCJ-02 approximately inverted to WGS84 by six iterations, matching terrain boundary ingestion",
+  "retrieved_date": "2026-10-29",
+  "points": [
+    {
+      "adcode": "650100",
+      "name": "乌鲁木齐市",
+      "level": "city",
+      "center_wgs84": [
+        87.61488664164459,
+        43.79159498028323
+      ],
+      "center_gcj02": [
+        87.617733,
+        43.792818
+      ]
+    },
+    {
+      "adcode": "650200",
+      "name": "克拉玛依市",
+      "level": "city",
+      "center_wgs84": [
+        84.87152414475086,
+        45.595069707447074
+      ],
+      "center_gcj02": [
+        84.873946,
+        45.595886
+      ]
+    },
+    {
+      "adcode": "650400",
+      "name": "吐鲁番市",
+      "level": "city",
+      "center_wgs84": [
+        89.18121522405781,
+        42.94604710953006
+      ],
+      "center_gcj02": [
+        89.184078,
+        42.947613
+      ]
+    },
+    {
+      "adcode": "650500",
+      "name": "哈密市",
+      "level": "city",
+      "center_wgs84": [
+        93.51154776506252,
+        42.83172131523252
+      ],
+      "center_gcj02": [
+        93.51316,
+        42.833248
+      ]
+    },
+    {
+      "adcode": "652300",
+      "name": "昌吉回族自治州",
+      "level": "city",
+      "center_wgs84": [
+        87.30092145769102,
+        44.01327396137206
+      ],
+      "center_gcj02": [
+        87.304012,
+        44.014577
+      ]
+    },
+    {
+      "adcode": "652700",
+      "name": "博尔塔拉蒙古自治州",
+      "level": "city",
+      "center_wgs84": [
+        82.07148837853987,
+        44.90223043951487
+      ],
+      "center_gcj02": [
+        82.074778,
+        44.903258
+      ]
+    },
+    {
+      "adcode": "652800",
+      "name": "巴音郭楞蒙古自治州",
+      "level": "city",
+      "center_wgs84": [
+        86.14832388671063,
+        41.7670524919224
+      ],
+      "center_gcj02": [
+        86.150969,
+        41.768552
+      ]
+    },
+    {
+      "adcode": "652900",
+      "name": "阿克苏地区",
+      "level": "city",
+      "center_wgs84": [
+        80.26289845983904,
+        41.16972851906733
+      ],
+      "center_gcj02": [
+        80.265068,
+        41.170712
+      ]
+    },
+    {
+      "adcode": "653000",
+      "name": "克孜勒苏柯尔克孜自治州",
+      "level": "city",
+      "center_wgs84": [
+        76.16979209990278,
+        39.71302133340393
+      ],
+      "center_gcj02": [
+        76.172825,
+        39.713431
+      ]
+    },
+    {
+      "adcode": "653100",
+      "name": "喀什地区",
+      "level": "city",
+      "center_wgs84": [
+        75.98619493076463,
+        39.4674486705116
+      ],
+      "center_gcj02": [
+        75.989138,
+        39.467664
+      ]
+    },
+    {
+      "adcode": "653200",
+      "name": "和田地区",
+      "level": "city",
+      "center_wgs84": [
+        79.92341167997833,
+        37.11102846785622
+      ],
+      "center_gcj02": [
+        79.92533,
+        37.110687
+      ]
+    },
+    {
+      "adcode": "654000",
+      "name": "伊犁哈萨克自治州",
+      "level": "city",
+      "center_wgs84": [
+        81.31492657480842,
+        43.92062810240099
+      ],
+      "center_gcj02": [
+        81.317946,
+        43.92186
+      ]
+    },
+    {
+      "adcode": "654200",
+      "name": "塔城地区",
+      "level": "city",
+      "center_wgs84": [
+        82.98255709527469,
+        46.745584137323135
+      ],
+      "center_gcj02": [
+        82.985732,
+        46.746301
+      ]
+    },
+    {
+      "adcode": "654300",
+      "name": "阿勒泰地区",
+      "level": "city",
+      "center_wgs84": [
+        88.13626391492858,
+        47.84708363203728
+      ],
+      "center_gcj02": [
+        88.13963,
+        47.848393
+      ]
+    }
+  ],
+  "excluded_features": [
+    {
+      "name": "石河子市",
+      "adcode": 659001,
+      "level": "city"
+    },
+    {
+      "name": "阿拉尔市",
+      "adcode": 659002,
+      "level": "city"
+    },
+    {
+      "name": "图木舒克市",
+      "adcode": 659003,
+      "level": "city"
+    },
+    {
+      "name": "五家渠市",
+      "adcode": 659004,
+      "level": "city"
+    },
+    {
+      "name": "北屯市",
+      "adcode": 659005,
+      "level": "city"
+    },
+    {
+      "name": "铁门关市",
+      "adcode": 659006,
+      "level": "city"
+    },
+    {
+      "name": "双河市",
+      "adcode": 659007,
+      "level": "city"
+    },
+    {
+      "name": "可克达拉市",
+      "adcode": 659008,
+      "level": "city"
+    },
+    {
+      "name": "昆玉市",
+      "adcode": 659009,
+      "level": "city"
+    },
+    {
+      "name": "胡杨河市",
+      "adcode": 659010,
+      "level": "city"
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "added_land_cells": 0,
+  "all_nonwater_arrays_byte_identical": true,
+  "design_land": {
+    "cells": 643267,
+    "component_count": 1,
+    "components": [
+      {
+        "area_cells": 643267,
+        "bbox_aspect_ratio": 1.09375,
+        "bounds": [
+          0,
+          0,
+          768,
+          840
+        ],
+        "compactness": 0.6854891020918111,
+        "index": 0,
+        "maximum_interior_radius_cells": 864.6666666666666,
+        "perimeter": 3434,
+        "touches_frame": true
+      }
+    ]
+  },
+  "design_water": {
+    "cells": 1853,
+    "component_count": 1,
+    "components": [
+      {
+        "area_cells": 1853,
+        "bbox_aspect_ratio": 1.3636363636363635,
+        "bounds": [
+          584,
+          667,
+          628,
+          727
+        ],
+        "compactness": 0.4899731661562063,
+        "index": 0,
+        "maximum_interior_radius_cells": 19.666666666666668,
+        "perimeter": 218,
+        "touches_frame": false
+      }
+    ]
+  },
+  "existing_water_preserved": true,
+  "input_cells": [
+    768,
+    840
+  ],
+  "land_open_radius_input_cells": 8,
+  "main_land_and_each_preserved_compact_island_stable_under_opening": true,
+  "map_id": "黑龙江",
+  "method": "morphological opening of land to retract narrow peninsulas, necks and pointed spurs",
+  "preserved_compact_small_islands": [],
+  "removed_land_cells": 8,
+  "small_shore_transition_policy": {
+    "bidirectional": true,
+    "continuous": true,
+    "few_exits_do_not_satisfy": true,
+    "scope": "entire perimeter of retained small islands and small waterbodies",
+    "status": "design requirement; implement and verify terrain height/navigation when producing playable maps"
+  },
+  "source": "maps/黑龙江/data/terrain-preview/raw/reference-before-shoreline-refinement.npz",
+  "source_land": {
+    "cells": 643275,
+    "component_count": 1,
+    "components": [
+      {
+        "area_cells": 643275,
+        "bbox_aspect_ratio": 1.09375,
+        "bounds": [
+          0,
+          0,
+          768,
+          840
+        ],
+        "compactness": 0.6854976271876372,
+        "index": 0,
+        "maximum_interior_radius_cells": 864.6666666666666,
+        "perimeter": 3434,
+        "touches_frame": true
+      }
+    ]
+  },
+  "source_water": {
+    "cells": 1845,
+    "component_count": 1,
+    "components": [
+      {
+        "area_cells": 1845,
+        "bbox_aspect_ratio": 1.3636363636363635,
+        "bounds": [
+          584,
+          667,
+          628,
+          727
+        ],
+        "compactness": 0.4878577936093905,
+        "index": 0,
+        "maximum_interior_radius_cells": 19.333333333333332,
+        "perimeter": 218,
+        "touches_frame": false
+      }
+    ]
+  },
+  "date": "2026-10-29"
+}

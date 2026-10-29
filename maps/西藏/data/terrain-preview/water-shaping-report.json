@@ -1,0 +1,2336 @@
+{
+  "added_cells": 358,
+  "design_lakes": {
+    "cells": 1024,
+    "component_count": 3,
+    "components": [
+      {
+        "area_cells": 433,
+        "bbox_aspect_ratio": 1.2727272727272727,
+        "bounds": [
+          413,
+          228,
+          441,
+          250
+        ],
+        "compactness": 0.5441238476017521,
+        "index": 0,
+        "maximum_interior_radius_cells": 9.666666666666666,
+        "perimeter": 100,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 300,
+        "bbox_aspect_ratio": 1.3888888888888888,
+        "bounds": [
+          458,
+          150,
+          483,
+          168
+        ],
+        "compactness": 0.5097229832757912,
+        "index": 1,
+        "maximum_interior_radius_cells": 7.333333333333333,
+        "perimeter": 86,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 291,
+        "bbox_aspect_ratio": 1.411764705882353,
+        "bounds": [
+          478,
+          274,
+          502,
+          291
+        ],
+        "compactness": 0.54384501022881,
+        "index": 2,
+        "maximum_interior_radius_cells": 7.666666666666667,
+        "perimeter": 82,
+        "touches_frame": false
+      }
+    ]
+  },
+  "design_ocean": {
+    "cells": 0,
+    "component_count": 0,
+    "components": []
+  },
+  "design_water": {
+    "cells": 1024,
+    "component_count": 3,
+    "components": [
+      {
+        "area_cells": 433,
+        "bbox_aspect_ratio": 1.2727272727272727,
+        "bounds": [
+          413,
+          228,
+          441,
+          250
+        ],
+        "compactness": 0.5441238476017521,
+        "index": 0,
+        "maximum_interior_radius_cells": 9.666666666666666,
+        "perimeter": 100,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 300,
+        "bbox_aspect_ratio": 1.3888888888888888,
+        "bounds": [
+          458,
+          150,
+          483,
+          168
+        ],
+        "compactness": 0.5097229832757912,
+        "index": 1,
+        "maximum_interior_radius_cells": 7.333333333333333,
+        "perimeter": 86,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 291,
+        "bbox_aspect_ratio": 1.411764705882353,
+        "bounds": [
+          478,
+          274,
+          502,
+          291
+        ],
+        "compactness": 0.54384501022881,
+        "index": 2,
+        "maximum_interior_radius_cells": 7.666666666666667,
+        "perimeter": 82,
+        "touches_frame": false
+      }
+    ]
+  },
+  "groups": [
+    {
+      "action": "hull",
+      "close_radius": 0,
+      "name": "西藏-湖区1",
+      "open_radius": 5,
+      "result": {
+        "cells": 291,
+        "component_count": 1,
+        "components": [
+          {
+            "area_cells": 291,
+            "bbox_aspect_ratio": 1.411764705882353,
+            "bounds": [
+              478,
+              274,
+              502,
+              291
+            ],
+            "compactness": 0.54384501022881,
+            "index": 0,
+            "maximum_interior_radius_cells": 7.666666666666667,
+            "perimeter": 82,
+            "touches_frame": false
+          }
+        ]
+      },
+      "source_cells": 305
+    },
+    {
+      "action": "hull",
+      "close_radius": 0,
+      "name": "西藏-湖区2",
+      "open_radius": 5,
+      "result": {
+        "cells": 433,
+        "component_count": 1,
+        "components": [
+          {
+            "area_cells": 433,
+            "bbox_aspect_ratio": 1.2727272727272727,
+            "bounds": [
+              413,
+              228,
+              441,
+              250
+            ],
+            "compactness": 0.5441238476017521,
+            "index": 0,
+            "maximum_interior_radius_cells": 9.666666666666666,
+            "perimeter": 100,
+            "touches_frame": false
+          }
+        ]
+      },
+      "source_cells": 303
+    },
+    {
+      "action": "hull",
+      "close_radius": 0,
+      "name": "西藏-湖区4",
+      "open_radius": 5,
+      "result": {
+        "cells": 0,
+        "component_count": 0,
+        "components": []
+      },
+      "source_cells": 160
+    },
+    {
+      "action": "hull",
+      "close_radius": 0,
+      "name": "西藏-湖区13",
+      "open_radius": 5,
+      "result": {
+        "cells": 300,
+        "component_count": 1,
+        "components": [
+          {
+            "area_cells": 300,
+            "bbox_aspect_ratio": 1.3888888888888888,
+            "bounds": [
+              458,
+              150,
+              483,
+              168
+            ],
+            "compactness": 0.5097229832757912,
+            "index": 0,
+            "maximum_interior_radius_cells": 7.333333333333333,
+            "perimeter": 86,
+            "touches_frame": false
+          }
+        ]
+      },
+      "source_cells": 142
+    }
+  ],
+  "id": "西藏",
+  "input_cells": [
+    840,
+    480
+  ],
+  "non_water_arrays_byte_identical": true,
+  "removed_cells": 2294,
+  "restored_unseeded_land_hole_cells": 0,
+  "shoreline_kind": "game-terrain-preview-design",
+  "source": "maps/西藏/data/terrain-preview/raw/reference-before-water-shaping.npz",
+  "source_lakes": {
+    "cells": 2960,
+    "component_count": 70,
+    "components": [
+      {
+        "area_cells": 305,
+        "bbox_aspect_ratio": 1.45,
+        "bounds": [
+          478,
+          273,
+          507,
+          293
+        ],
+        "compactness": 0.2752616372723031,
+        "index": 0,
+        "maximum_interior_radius_cells": 6.0,
+        "perimeter": 118,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 258,
+        "bbox_aspect_ratio": 1.8235294117647058,
+        "bounds": [
+          412,
+          228,
+          443,
+          245
+        ],
+        "compactness": 0.23284427021722684,
+        "index": 1,
+        "maximum_interior_radius_cells": 6.0,
+        "perimeter": 118,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 160,
+        "bbox_aspect_ratio": 1.4666666666666666,
+        "bounds": [
+          289,
+          267,
+          311,
+          282
+        ],
+        "compactness": 0.3141592653589793,
+        "index": 2,
+        "maximum_interior_radius_cells": 4.666666666666667,
+        "perimeter": 80,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 134,
+        "bbox_aspect_ratio": 1.6875,
+        "bounds": [
+          329,
+          254,
+          345,
+          281
+        ],
+        "compactness": 0.22767626586318673,
+        "index": 3,
+        "maximum_interior_radius_cells": 3.0,
+        "perimeter": 86,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 107,
+        "bbox_aspect_ratio": 1.0769230769230769,
+        "bounds": [
+          756,
+          85,
+          769,
+          99
+        ],
+        "compactness": 0.3282718886075272,
+        "index": 4,
+        "maximum_interior_radius_cells": 4.0,
+        "perimeter": 64,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 93,
+        "bbox_aspect_ratio": 1.8888888888888888,
+        "bounds": [
+          737,
+          88,
+          754,
+          97
+        ],
+        "compactness": 0.40077930971721637,
+        "index": 5,
+        "maximum_interior_radius_cells": 4.0,
+        "perimeter": 54,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 88,
+        "bbox_aspect_ratio": 2.2222222222222223,
+        "bounds": [
+          193,
+          241,
+          213,
+          250
+        ],
+        "compactness": 0.23915238193417107,
+        "index": 6,
+        "maximum_interior_radius_cells": 2.6666666666666665,
+        "perimeter": 68,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 88,
+        "bbox_aspect_ratio": 1.1111111111111112,
+        "bounds": [
+          486,
+          353,
+          506,
+          371
+        ],
+        "compactness": 0.0850908444185601,
+        "index": 7,
+        "maximum_interior_radius_cells": 2.0,
+        "perimeter": 114,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 82,
+        "bbox_aspect_ratio": 1.4,
+        "bounds": [
+          392,
+          256,
+          413,
+          271
+        ],
+        "compactness": 0.19877360925490972,
+        "index": 8,
+        "maximum_interior_radius_cells": 2.6666666666666665,
+        "perimeter": 72,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 74,
+        "bbox_aspect_ratio": 2.5,
+        "bounds": [
+          236,
+          261,
+          251,
+          267
+        ],
+        "compactness": 0.48032614951579483,
+        "index": 9,
+        "maximum_interior_radius_cells": 3.0,
+        "perimeter": 44,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 68,
+        "bbox_aspect_ratio": 1.6363636363636365,
+        "bounds": [
+          478,
+          93,
+          496,
+          104
+        ],
+        "compactness": 0.14794203631863292,
+        "index": 10,
+        "maximum_interior_radius_cells": 2.3333333333333335,
+        "perimeter": 76,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 68,
+        "bbox_aspect_ratio": 1.1818181818181819,
+        "bounds": [
+          352,
+          264,
+          365,
+          275
+        ],
+        "compactness": 0.37088246604879505,
+        "index": 11,
+        "maximum_interior_radius_cells": 3.0,
+        "perimeter": 48,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 64,
+        "bbox_aspect_ratio": 1.1111111111111112,
+        "bounds": [
+          138,
+          280,
+          147,
+          290
+        ],
+        "compactness": 0.5569582543760299,
+        "index": 12,
+        "maximum_interior_radius_cells": 4.0,
+        "perimeter": 38,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 63,
+        "bbox_aspect_ratio": 2.0,
+        "bounds": [
+          474,
+          148,
+          483,
+          166
+        ],
+        "compactness": 0.23533928320589415,
+        "index": 13,
+        "maximum_interior_radius_cells": 2.3333333333333335,
+        "perimeter": 58,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 63,
+        "bbox_aspect_ratio": 1.1818181818181819,
+        "bounds": [
+          457,
+          156,
+          468,
+          169
+        ],
+        "compactness": 0.2927815638700547,
+        "index": 14,
+        "maximum_interior_radius_cells": 2.6666666666666665,
+        "perimeter": 52,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 59,
+        "bbox_aspect_ratio": 3.0,
+        "bounds": [
+          471,
+          76,
+          492,
+          83
+        ],
+        "compactness": 0.13539369361709117,
+        "index": 15,
+        "maximum_interior_radius_cells": 2.0,
+        "perimeter": 74,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 57,
+        "bbox_aspect_ratio": 1.625,
+        "bounds": [
+          385,
+          234,
+          398,
+          242
+        ],
+        "compactness": 0.3385080931089191,
+        "index": 16,
+        "maximum_interior_radius_cells": 2.6666666666666665,
+        "perimeter": 46,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 52,
+        "bbox_aspect_ratio": 2.142857142857143,
+        "bounds": [
+          503,
+          59,
+          518,
+          66
+        ],
+        "compactness": 0.28361600344907856,
+        "index": 17,
+        "maximum_interior_radius_cells": 2.3333333333333335,
+        "perimeter": 48,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 49,
+        "bbox_aspect_ratio": 1.5555555555555556,
+        "bounds": [
+          141,
+          129,
+          155,
+          138
+        ],
+        "compactness": 0.16018526537554614,
+        "index": 18,
+        "maximum_interior_radius_cells": 2.3333333333333335,
+        "perimeter": 62,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 48,
+        "bbox_aspect_ratio": 1.7777777777777777,
+        "bounds": [
+          568,
+          50,
+          584,
+          59
+        ],
+        "compactness": 0.2412743157956961,
+        "index": 19,
+        "maximum_interior_radius_cells": 2.3333333333333335,
+        "perimeter": 50,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 47,
+        "bbox_aspect_ratio": 1.1818181818181819,
+        "bounds": [
+          440,
+          23,
+          453,
+          34
+        ],
+        "compactness": 0.2563452338866672,
+        "index": 20,
+        "maximum_interior_radius_cells": 2.3333333333333335,
+        "perimeter": 48,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 47,
+        "bbox_aspect_ratio": 1.375,
+        "bounds": [
+          128,
+          277,
+          136,
+          288
+        ],
+        "compactness": 0.33481826466829995,
+        "index": 21,
+        "maximum_interior_radius_cells": 2.6666666666666665,
+        "perimeter": 42,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 46,
+        "bbox_aspect_ratio": 1.5384615384615385,
+        "bounds": [
+          26,
+          136,
+          46,
+          149
+        ],
+        "compactness": 0.10556118485400327,
+        "index": 22,
+        "maximum_interior_radius_cells": 1.3333333333333333,
+        "perimeter": 74,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 45,
+        "bbox_aspect_ratio": 2.142857142857143,
+        "bounds": [
+          423,
+          105,
+          438,
+          112
+        ],
+        "compactness": 0.2091296884786105,
+        "index": 23,
+        "maximum_interior_radius_cells": 2.6666666666666665,
+        "perimeter": 52,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 44,
+        "bbox_aspect_ratio": 1.8333333333333333,
+        "bounds": [
+          536,
+          60,
+          547,
+          66
+        ],
+        "compactness": 0.47830476386834214,
+        "index": 24,
+        "maximum_interior_radius_cells": 3.0,
+        "perimeter": 34,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 43,
+        "bbox_aspect_ratio": 2.4,
+        "bounds": [
+          121,
+          85,
+          133,
+          90
+        ],
+        "compactness": 0.374206327158895,
+        "index": 25,
+        "maximum_interior_radius_cells": 2.3333333333333335,
+        "perimeter": 38,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 43,
+        "bbox_aspect_ratio": 1.2222222222222223,
+        "bounds": [
+          414,
+          240,
+          423,
+          251
+        ],
+        "compactness": 0.21614157456697777,
+        "index": 26,
+        "maximum_interior_radius_cells": 2.3333333333333335,
+        "perimeter": 50,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 41,
+        "bbox_aspect_ratio": 2.2,
+        "bounds": [
+          477,
+          378,
+          488,
+          383
+        ],
+        "compactness": 0.39754721850981944,
+        "index": 27,
+        "maximum_interior_radius_cells": 2.3333333333333335,
+        "perimeter": 36,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 36,
+        "bbox_aspect_ratio": 1.8333333333333333,
+        "bounds": [
+          470,
+          52,
+          481,
+          58
+        ],
+        "compactness": 0.3490658503988659,
+        "index": 28,
+        "maximum_interior_radius_cells": 2.3333333333333335,
+        "perimeter": 36,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 36,
+        "bbox_aspect_ratio": 1.6666666666666667,
+        "bounds": [
+          327,
+          298,
+          333,
+          308
+        ],
+        "compactness": 0.44178646691106466,
+        "index": 29,
+        "maximum_interior_radius_cells": 2.6666666666666665,
+        "perimeter": 32,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 35,
+        "bbox_aspect_ratio": 1.125,
+        "bounds": [
+          435,
+          72,
+          444,
+          80
+        ],
+        "compactness": 0.3804696985316358,
+        "index": 30,
+        "maximum_interior_radius_cells": 2.3333333333333335,
+        "perimeter": 34,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 34,
+        "bbox_aspect_ratio": 3.25,
+        "bounds": [
+          542,
+          77,
+          555,
+          81
+        ],
+        "compactness": 0.29588407263726585,
+        "index": 31,
+        "maximum_interior_radius_cells": 2.0,
+        "perimeter": 38,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 33,
+        "bbox_aspect_ratio": 1.1666666666666667,
+        "bounds": [
+          369,
+          226,
+          376,
+          232
+        ],
+        "compactness": 0.6134470862039241,
+        "index": 32,
+        "maximum_interior_radius_cells": 2.6666666666666665,
+        "perimeter": 26,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 31,
+        "bbox_aspect_ratio": 1.3333333333333333,
+        "bounds": [
+          496,
+          218,
+          504,
+          224
+        ],
+        "compactness": 0.49688455235348766,
+        "index": 33,
+        "maximum_interior_radius_cells": 2.3333333333333335,
+        "perimeter": 28,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 30,
+        "bbox_aspect_ratio": 1.3333333333333333,
+        "bounds": [
+          213,
+          255,
+          221,
+          261
+        ],
+        "compactness": 0.48085601840660097,
+        "index": 34,
+        "maximum_interior_radius_cells": 2.6666666666666665,
+        "perimeter": 28,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 28,
+        "bbox_aspect_ratio": 2.25,
+        "bounds": [
+          522,
+          219,
+          526,
+          228
+        ],
+        "compactness": 0.5205005579912083,
+        "index": 35,
+        "maximum_interior_radius_cells": 2.0,
+        "perimeter": 26,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 27,
+        "bbox_aspect_ratio": 1.0,
+        "bounds": [
+          76,
+          76,
+          82,
+          82
+        ],
+        "compactness": 0.5019112523486652,
+        "index": 36,
+        "maximum_interior_radius_cells": 2.3333333333333335,
+        "perimeter": 26,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 27,
+        "bbox_aspect_ratio": 2.5,
+        "bounds": [
+          488,
+          254,
+          492,
+          264
+        ],
+        "compactness": 0.37699111843077515,
+        "index": 37,
+        "maximum_interior_radius_cells": 2.0,
+        "perimeter": 30,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 26,
+        "bbox_aspect_ratio": 1.4,
+        "bounds": [
+          463,
+          202,
+          470,
+          207
+        ],
+        "compactness": 0.48332194670612205,
+        "index": 38,
+        "maximum_interior_radius_cells": 2.3333333333333335,
+        "perimeter": 26,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 26,
+        "bbox_aspect_ratio": 1.1666666666666667,
+        "bounds": [
+          236,
+          253,
+          243,
+          259
+        ],
+        "compactness": 0.48332194670612205,
+        "index": 39,
+        "maximum_interior_radius_cells": 2.0,
+        "perimeter": 26,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 26,
+        "bbox_aspect_ratio": 1.0,
+        "bounds": [
+          321,
+          283,
+          328,
+          290
+        ],
+        "compactness": 0.4167418826190542,
+        "index": 40,
+        "maximum_interior_radius_cells": 2.0,
+        "perimeter": 28,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 25,
+        "bbox_aspect_ratio": 1.6,
+        "bounds": [
+          220,
+          271,
+          225,
+          279
+        ],
+        "compactness": 0.46473264106357887,
+        "index": 41,
+        "maximum_interior_radius_cells": 2.3333333333333335,
+        "perimeter": 26,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 24,
+        "bbox_aspect_ratio": 1.1111111111111112,
+        "bounds": [
+          169,
+          120,
+          179,
+          129
+        ],
+        "compactness": 0.20885934539101117,
+        "index": 42,
+        "maximum_interior_radius_cells": 1.3333333333333333,
+        "perimeter": 38,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 23,
+        "bbox_aspect_ratio": 2.0,
+        "bounds": [
+          265,
+          299,
+          271,
+          311
+        ],
+        "compactness": 0.22301429331038652,
+        "index": 43,
+        "maximum_interior_radius_cells": 1.3333333333333333,
+        "perimeter": 36,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 19,
+        "bbox_aspect_ratio": 1.2,
+        "bounds": [
+          835,
+          0,
+          840,
+          6
+        ],
+        "compactness": 0.493307937340546,
+        "index": 44,
+        "maximum_interior_radius_cells": 2.6666666666666665,
+        "perimeter": 22,
+        "touches_frame": true
+      },
+      {
+        "area_cells": 18,
+        "bbox_aspect_ratio": 3.3333333333333335,
+        "bounds": [
+          302,
+          317,
+          305,
+          327
+        ],
+        "compactness": 0.2885136110439606,
+        "index": 45,
+        "maximum_interior_radius_cells": 1.3333333333333333,
+        "perimeter": 28,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 17,
+        "bbox_aspect_ratio": 3.0,
+        "bounds": [
+          396,
+          232,
+          405,
+          235
+        ],
+        "compactness": 0.2724850770970739,
+        "index": 46,
+        "maximum_interior_radius_cells": 1.3333333333333333,
+        "perimeter": 28,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 16,
+        "bbox_aspect_ratio": 1.25,
+        "bounds": [
+          511,
+          137,
+          515,
+          142
+        ],
+        "compactness": 0.620561511820206,
+        "index": 47,
+        "maximum_interior_radius_cells": 2.0,
+        "perimeter": 18,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 16,
+        "bbox_aspect_ratio": 1.0,
+        "bounds": [
+          468,
+          159,
+          473,
+          164
+        ],
+        "compactness": 0.5026548245743669,
+        "index": 48,
+        "maximum_interior_radius_cells": 1.3333333333333333,
+        "perimeter": 20,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 15,
+        "bbox_aspect_ratio": 1.25,
+        "bounds": [
+          238,
+          247,
+          242,
+          252
+        ],
+        "compactness": 0.5817764173314431,
+        "index": 49,
+        "maximum_interior_radius_cells": 2.0,
+        "perimeter": 18,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 15,
+        "bbox_aspect_ratio": 2.6666666666666665,
+        "bounds": [
+          239,
+          292,
+          242,
+          300
+        ],
+        "compactness": 0.3894536347425363,
+        "index": 50,
+        "maximum_interior_radius_cells": 1.3333333333333333,
+        "perimeter": 22,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 13,
+        "bbox_aspect_ratio": 1.25,
+        "bounds": [
+          665,
+          0,
+          670,
+          4
+        ],
+        "compactness": 0.5042062283539175,
+        "index": 51,
+        "maximum_interior_radius_cells": 2.0,
+        "perimeter": 18,
+        "touches_frame": true
+      },
+      {
+        "area_cells": 3,
+        "bbox_aspect_ratio": 1.0,
+        "bounds": [
+          139,
+          135,
+          141,
+          137
+        ],
+        "compactness": 0.5890486225480862,
+        "index": 52,
+        "maximum_interior_radius_cells": 1.0,
+        "perimeter": 8,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 3,
+        "bbox_aspect_ratio": 3.0,
+        "bounds": [
+          418,
+          252,
+          419,
+          255
+        ],
+        "compactness": 0.5890486225480862,
+        "index": 53,
+        "maximum_interior_radius_cells": 1.0,
+        "perimeter": 8,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 3,
+        "bbox_aspect_ratio": 1.0,
+        "bounds": [
+          484,
+          366,
+          486,
+          368
+        ],
+        "compactness": 0.5890486225480862,
+        "index": 54,
+        "maximum_interior_radius_cells": 1.0,
+        "perimeter": 8,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 2,
+        "bbox_aspect_ratio": 2.0,
+        "bounds": [
+          416,
+          245,
+          417,
+          247
+        ],
+        "compactness": 0.6981317007977318,
+        "index": 55,
+        "maximum_interior_radius_cells": 1.0,
+        "perimeter": 6,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 2,
+        "bbox_aspect_ratio": 2.0,
+        "bounds": [
+          487,
+          352,
+          489,
+          353
+        ],
+        "compactness": 0.6981317007977318,
+        "index": 56,
+        "maximum_interior_radius_cells": 1.0,
+        "perimeter": 6,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 2,
+        "bbox_aspect_ratio": 2.0,
+        "bounds": [
+          490,
+          352,
+          492,
+          353
+        ],
+        "compactness": 0.6981317007977318,
+        "index": 57,
+        "maximum_interior_radius_cells": 1.0,
+        "perimeter": 6,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 2,
+        "bbox_aspect_ratio": 2.0,
+        "bounds": [
+          485,
+          353,
+          487,
+          354
+        ],
+        "compactness": 0.6981317007977318,
+        "index": 58,
+        "maximum_interior_radius_cells": 1.0,
+        "perimeter": 6,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 1,
+        "bbox_aspect_ratio": 1.0,
+        "bounds": [
+          142,
+          130,
+          143,
+          131
+        ],
+        "compactness": 0.7853981633974483,
+        "index": 59,
+        "maximum_interior_radius_cells": 1.0,
+        "perimeter": 4,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 1,
+        "bbox_aspect_ratio": 1.0,
+        "bounds": [
+          456,
+          158,
+          457,
+          159
+        ],
+        "compactness": 0.7853981633974483,
+        "index": 60,
+        "maximum_interior_radius_cells": 1.0,
+        "perimeter": 4,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 1,
+        "bbox_aspect_ratio": 1.0,
+        "bounds": [
+          213,
+          250,
+          214,
+          251
+        ],
+        "compactness": 0.7853981633974483,
+        "index": 61,
+        "maximum_interior_radius_cells": 1.0,
+        "perimeter": 4,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 1,
+        "bbox_aspect_ratio": 1.0,
+        "bounds": [
+          419,
+          251,
+          420,
+          252
+        ],
+        "compactness": 0.7853981633974483,
+        "index": 62,
+        "maximum_interior_radius_cells": 1.0,
+        "perimeter": 4,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 1,
+        "bbox_aspect_ratio": 1.0,
+        "bounds": [
+          484,
+          354,
+          485,
+          355
+        ],
+        "compactness": 0.7853981633974483,
+        "index": 63,
+        "maximum_interior_radius_cells": 1.0,
+        "perimeter": 4,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 1,
+        "bbox_aspect_ratio": 1.0,
+        "bounds": [
+          483,
+          355,
+          484,
+          356
+        ],
+        "compactness": 0.7853981633974483,
+        "index": 64,
+        "maximum_interior_radius_cells": 1.0,
+        "perimeter": 4,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 1,
+        "bbox_aspect_ratio": 1.0,
+        "bounds": [
+          482,
+          356,
+          483,
+          357
+        ],
+        "compactness": 0.7853981633974483,
+        "index": 65,
+        "maximum_interior_radius_cells": 1.0,
+        "perimeter": 4,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 1,
+        "bbox_aspect_ratio": 1.0,
+        "bounds": [
+          497,
+          359,
+          498,
+          360
+        ],
+        "compactness": 0.7853981633974483,
+        "index": 66,
+        "maximum_interior_radius_cells": 1.0,
+        "perimeter": 4,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 1,
+        "bbox_aspect_ratio": 1.0,
+        "bounds": [
+          504,
+          364,
+          505,
+          365
+        ],
+        "compactness": 0.7853981633974483,
+        "index": 67,
+        "maximum_interior_radius_cells": 1.0,
+        "perimeter": 4,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 1,
+        "bbox_aspect_ratio": 1.0,
+        "bounds": [
+          505,
+          365,
+          506,
+          366
+        ],
+        "compactness": 0.7853981633974483,
+        "index": 68,
+        "maximum_interior_radius_cells": 1.0,
+        "perimeter": 4,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 1,
+        "bbox_aspect_ratio": 1.0,
+        "bounds": [
+          506,
+          366,
+          507,
+          367
+        ],
+        "compactness": 0.7853981633974483,
+        "index": 69,
+        "maximum_interior_radius_cells": 1.0,
+        "perimeter": 4,
+        "touches_frame": false
+      }
+    ]
+  },
+  "source_ocean": {
+    "cells": 0,
+    "component_count": 0,
+    "components": []
+  },
+  "source_water": {
+    "cells": 2960,
+    "component_count": 70,
+    "components": [
+      {
+        "area_cells": 305,
+        "bbox_aspect_ratio": 1.45,
+        "bounds": [
+          478,
+          273,
+          507,
+          293
+        ],
+        "compactness": 0.2752616372723031,
+        "index": 0,
+        "maximum_interior_radius_cells": 6.0,
+        "perimeter": 118,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 258,
+        "bbox_aspect_ratio": 1.8235294117647058,
+        "bounds": [
+          412,
+          228,
+          443,
+          245
+        ],
+        "compactness": 0.23284427021722684,
+        "index": 1,
+        "maximum_interior_radius_cells": 6.0,
+        "perimeter": 118,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 160,
+        "bbox_aspect_ratio": 1.4666666666666666,
+        "bounds": [
+          289,
+          267,
+          311,
+          282
+        ],
+        "compactness": 0.3141592653589793,
+        "index": 2,
+        "maximum_interior_radius_cells": 4.666666666666667,
+        "perimeter": 80,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 134,
+        "bbox_aspect_ratio": 1.6875,
+        "bounds": [
+          329,
+          254,
+          345,
+          281
+        ],
+        "compactness": 0.22767626586318673,
+        "index": 3,
+        "maximum_interior_radius_cells": 3.0,
+        "perimeter": 86,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 107,
+        "bbox_aspect_ratio": 1.0769230769230769,
+        "bounds": [
+          756,
+          85,
+          769,
+          99
+        ],
+        "compactness": 0.3282718886075272,
+        "index": 4,
+        "maximum_interior_radius_cells": 4.0,
+        "perimeter": 64,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 93,
+        "bbox_aspect_ratio": 1.8888888888888888,
+        "bounds": [
+          737,
+          88,
+          754,
+          97
+        ],
+        "compactness": 0.40077930971721637,
+        "index": 5,
+        "maximum_interior_radius_cells": 4.0,
+        "perimeter": 54,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 88,
+        "bbox_aspect_ratio": 2.2222222222222223,
+        "bounds": [
+          193,
+          241,
+          213,
+          250
+        ],
+        "compactness": 0.23915238193417107,
+        "index": 6,
+        "maximum_interior_radius_cells": 2.6666666666666665,
+        "perimeter": 68,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 88,
+        "bbox_aspect_ratio": 1.1111111111111112,
+        "bounds": [
+          486,
+          353,
+          506,
+          371
+        ],
+        "compactness": 0.0850908444185601,
+        "index": 7,
+        "maximum_interior_radius_cells": 2.0,
+        "perimeter": 114,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 82,
+        "bbox_aspect_ratio": 1.4,
+        "bounds": [
+          392,
+          256,
+          413,
+          271
+        ],
+        "compactness": 0.19877360925490972,
+        "index": 8,
+        "maximum_interior_radius_cells": 2.6666666666666665,
+        "perimeter": 72,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 74,
+        "bbox_aspect_ratio": 2.5,
+        "bounds": [
+          236,
+          261,
+          251,
+          267
+        ],
+        "compactness": 0.48032614951579483,
+        "index": 9,
+        "maximum_interior_radius_cells": 3.0,
+        "perimeter": 44,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 68,
+        "bbox_aspect_ratio": 1.6363636363636365,
+        "bounds": [
+          478,
+          93,
+          496,
+          104
+        ],
+        "compactness": 0.14794203631863292,
+        "index": 10,
+        "maximum_interior_radius_cells": 2.3333333333333335,
+        "perimeter": 76,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 68,
+        "bbox_aspect_ratio": 1.1818181818181819,
+        "bounds": [
+          352,
+          264,
+          365,
+          275
+        ],
+        "compactness": 0.37088246604879505,
+        "index": 11,
+        "maximum_interior_radius_cells": 3.0,
+        "perimeter": 48,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 64,
+        "bbox_aspect_ratio": 1.1111111111111112,
+        "bounds": [
+          138,
+          280,
+          147,
+          290
+        ],
+        "compactness": 0.5569582543760299,
+        "index": 12,
+        "maximum_interior_radius_cells": 4.0,
+        "perimeter": 38,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 63,
+        "bbox_aspect_ratio": 2.0,
+        "bounds": [
+          474,
+          148,
+          483,
+          166
+        ],
+        "compactness": 0.23533928320589415,
+        "index": 13,
+        "maximum_interior_radius_cells": 2.3333333333333335,
+        "perimeter": 58,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 63,
+        "bbox_aspect_ratio": 1.1818181818181819,
+        "bounds": [
+          457,
+          156,
+          468,
+          169
+        ],
+        "compactness": 0.2927815638700547,
+        "index": 14,
+        "maximum_interior_radius_cells": 2.6666666666666665,
+        "perimeter": 52,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 59,
+        "bbox_aspect_ratio": 3.0,
+        "bounds": [
+          471,
+          76,
+          492,
+          83
+        ],
+        "compactness": 0.13539369361709117,
+        "index": 15,
+        "maximum_interior_radius_cells": 2.0,
+        "perimeter": 74,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 57,
+        "bbox_aspect_ratio": 1.625,
+        "bounds": [
+          385,
+          234,
+          398,
+          242
+        ],
+        "compactness": 0.3385080931089191,
+        "index": 16,
+        "maximum_interior_radius_cells": 2.6666666666666665,
+        "perimeter": 46,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 52,
+        "bbox_aspect_ratio": 2.142857142857143,
+        "bounds": [
+          503,
+          59,
+          518,
+          66
+        ],
+        "compactness": 0.28361600344907856,
+        "index": 17,
+        "maximum_interior_radius_cells": 2.3333333333333335,
+        "perimeter": 48,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 49,
+        "bbox_aspect_ratio": 1.5555555555555556,
+        "bounds": [
+          141,
+          129,
+          155,
+          138
+        ],
+        "compactness": 0.16018526537554614,
+        "index": 18,
+        "maximum_interior_radius_cells": 2.3333333333333335,
+        "perimeter": 62,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 48,
+        "bbox_aspect_ratio": 1.7777777777777777,
+        "bounds": [
+          568,
+          50,
+          584,
+          59
+        ],
+        "compactness": 0.2412743157956961,
+        "index": 19,
+        "maximum_interior_radius_cells": 2.3333333333333335,
+        "perimeter": 50,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 47,
+        "bbox_aspect_ratio": 1.1818181818181819,
+        "bounds": [
+          440,
+          23,
+          453,
+          34
+        ],
+        "compactness": 0.2563452338866672,
+        "index": 20,
+        "maximum_interior_radius_cells": 2.3333333333333335,
+        "perimeter": 48,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 47,
+        "bbox_aspect_ratio": 1.375,
+        "bounds": [
+          128,
+          277,
+          136,
+          288
+        ],
+        "compactness": 0.33481826466829995,
+        "index": 21,
+        "maximum_interior_radius_cells": 2.6666666666666665,
+        "perimeter": 42,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 46,
+        "bbox_aspect_ratio": 1.5384615384615385,
+        "bounds": [
+          26,
+          136,
+          46,
+          149
+        ],
+        "compactness": 0.10556118485400327,
+        "index": 22,
+        "maximum_interior_radius_cells": 1.3333333333333333,
+        "perimeter": 74,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 45,
+        "bbox_aspect_ratio": 2.142857142857143,
+        "bounds": [
+          423,
+          105,
+          438,
+          112
+        ],
+        "compactness": 0.2091296884786105,
+        "index": 23,
+        "maximum_interior_radius_cells": 2.6666666666666665,
+        "perimeter": 52,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 44,
+        "bbox_aspect_ratio": 1.8333333333333333,
+        "bounds": [
+          536,
+          60,
+          547,
+          66
+        ],
+        "compactness": 0.47830476386834214,
+        "index": 24,
+        "maximum_interior_radius_cells": 3.0,
+        "perimeter": 34,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 43,
+        "bbox_aspect_ratio": 2.4,
+        "bounds": [
+          121,
+          85,
+          133,
+          90
+        ],
+        "compactness": 0.374206327158895,
+        "index": 25,
+        "maximum_interior_radius_cells": 2.3333333333333335,
+        "perimeter": 38,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 43,
+        "bbox_aspect_ratio": 1.2222222222222223,
+        "bounds": [
+          414,
+          240,
+          423,
+          251
+        ],
+        "compactness": 0.21614157456697777,
+        "index": 26,
+        "maximum_interior_radius_cells": 2.3333333333333335,
+        "perimeter": 50,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 41,
+        "bbox_aspect_ratio": 2.2,
+        "bounds": [
+          477,
+          378,
+          488,
+          383
+        ],
+        "compactness": 0.39754721850981944,
+        "index": 27,
+        "maximum_interior_radius_cells": 2.3333333333333335,
+        "perimeter": 36,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 36,
+        "bbox_aspect_ratio": 1.8333333333333333,
+        "bounds": [
+          470,
+          52,
+          481,
+          58
+        ],
+        "compactness": 0.3490658503988659,
+        "index": 28,
+        "maximum_interior_radius_cells": 2.3333333333333335,
+        "perimeter": 36,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 36,
+        "bbox_aspect_ratio": 1.6666666666666667,
+        "bounds": [
+          327,
+          298,
+          333,
+          308
+        ],
+        "compactness": 0.44178646691106466,
+        "index": 29,
+        "maximum_interior_radius_cells": 2.6666666666666665,
+        "perimeter": 32,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 35,
+        "bbox_aspect_ratio": 1.125,
+        "bounds": [
+          435,
+          72,
+          444,
+          80
+        ],
+        "compactness": 0.3804696985316358,
+        "index": 30,
+        "maximum_interior_radius_cells": 2.3333333333333335,
+        "perimeter": 34,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 34,
+        "bbox_aspect_ratio": 3.25,
+        "bounds": [
+          542,
+          77,
+          555,
+          81
+        ],
+        "compactness": 0.29588407263726585,
+        "index": 31,
+        "maximum_interior_radius_cells": 2.0,
+        "perimeter": 38,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 33,
+        "bbox_aspect_ratio": 1.1666666666666667,
+        "bounds": [
+          369,
+          226,
+          376,
+          232
+        ],
+        "compactness": 0.6134470862039241,
+        "index": 32,
+        "maximum_interior_radius_cells": 2.6666666666666665,
+        "perimeter": 26,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 31,
+        "bbox_aspect_ratio": 1.3333333333333333,
+        "bounds": [
+          496,
+          218,
+          504,
+          224
+        ],
+        "compactness": 0.49688455235348766,
+        "index": 33,
+        "maximum_interior_radius_cells": 2.3333333333333335,
+        "perimeter": 28,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 30,
+        "bbox_aspect_ratio": 1.3333333333333333,
+        "bounds": [
+          213,
+          255,
+          221,
+          261
+        ],
+        "compactness": 0.48085601840660097,
+        "index": 34,
+        "maximum_interior_radius_cells": 2.6666666666666665,
+        "perimeter": 28,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 28,
+        "bbox_aspect_ratio": 2.25,
+        "bounds": [
+          522,
+          219,
+          526,
+          228
+        ],
+        "compactness": 0.5205005579912083,
+        "index": 35,
+        "maximum_interior_radius_cells": 2.0,
+        "perimeter": 26,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 27,
+        "bbox_aspect_ratio": 1.0,
+        "bounds": [
+          76,
+          76,
+          82,
+          82
+        ],
+        "compactness": 0.5019112523486652,
+        "index": 36,
+        "maximum_interior_radius_cells": 2.3333333333333335,
+        "perimeter": 26,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 27,
+        "bbox_aspect_ratio": 2.5,
+        "bounds": [
+          488,
+          254,
+          492,
+          264
+        ],
+        "compactness": 0.37699111843077515,
+        "index": 37,
+        "maximum_interior_radius_cells": 2.0,
+        "perimeter": 30,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 26,
+        "bbox_aspect_ratio": 1.4,
+        "bounds": [
+          463,
+          202,
+          470,
+          207
+        ],
+        "compactness": 0.48332194670612205,
+        "index": 38,
+        "maximum_interior_radius_cells": 2.3333333333333335,
+        "perimeter": 26,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 26,
+        "bbox_aspect_ratio": 1.1666666666666667,
+        "bounds": [
+          236,
+          253,
+          243,
+          259
+        ],
+        "compactness": 0.48332194670612205,
+        "index": 39,
+        "maximum_interior_radius_cells": 2.0,
+        "perimeter": 26,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 26,
+        "bbox_aspect_ratio": 1.0,
+        "bounds": [
+          321,
+          283,
+          328,
+          290
+        ],
+        "compactness": 0.4167418826190542,
+        "index": 40,
+        "maximum_interior_radius_cells": 2.0,
+        "perimeter": 28,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 25,
+        "bbox_aspect_ratio": 1.6,
+        "bounds": [
+          220,
+          271,
+          225,
+          279
+        ],
+        "compactness": 0.46473264106357887,
+        "index": 41,
+        "maximum_interior_radius_cells": 2.3333333333333335,
+        "perimeter": 26,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 24,
+        "bbox_aspect_ratio": 1.1111111111111112,
+        "bounds": [
+          169,
+          120,
+          179,
+          129
+        ],
+        "compactness": 0.20885934539101117,
+        "index": 42,
+        "maximum_interior_radius_cells": 1.3333333333333333,
+        "perimeter": 38,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 23,
+        "bbox_aspect_ratio": 2.0,
+        "bounds": [
+          265,
+          299,
+          271,
+          311
+        ],
+        "compactness": 0.22301429331038652,
+        "index": 43,
+        "maximum_interior_radius_cells": 1.3333333333333333,
+        "perimeter": 36,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 19,
+        "bbox_aspect_ratio": 1.2,
+        "bounds": [
+          835,
+          0,
+          840,
+          6
+        ],
+        "compactness": 0.493307937340546,
+        "index": 44,
+        "maximum_interior_radius_cells": 2.6666666666666665,
+        "perimeter": 22,
+        "touches_frame": true
+      },
+      {
+        "area_cells": 18,
+        "bbox_aspect_ratio": 3.3333333333333335,
+        "bounds": [
+          302,
+          317,
+          305,
+          327
+        ],
+        "compactness": 0.2885136110439606,
+        "index": 45,
+        "maximum_interior_radius_cells": 1.3333333333333333,
+        "perimeter": 28,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 17,
+        "bbox_aspect_ratio": 3.0,
+        "bounds": [
+          396,
+          232,
+          405,
+          235
+        ],
+        "compactness": 0.2724850770970739,
+        "index": 46,
+        "maximum_interior_radius_cells": 1.3333333333333333,
+        "perimeter": 28,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 16,
+        "bbox_aspect_ratio": 1.25,
+        "bounds": [
+          511,
+          137,
+          515,
+          142
+        ],
+        "compactness": 0.620561511820206,
+        "index": 47,
+        "maximum_interior_radius_cells": 2.0,
+        "perimeter": 18,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 16,
+        "bbox_aspect_ratio": 1.0,
+        "bounds": [
+          468,
+          159,
+          473,
+          164
+        ],
+        "compactness": 0.5026548245743669,
+        "index": 48,
+        "maximum_interior_radius_cells": 1.3333333333333333,
+        "perimeter": 20,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 15,
+        "bbox_aspect_ratio": 1.25,
+        "bounds": [
+          238,
+          247,
+          242,
+          252
+        ],
+        "compactness": 0.5817764173314431,
+        "index": 49,
+        "maximum_interior_radius_cells": 2.0,
+        "perimeter": 18,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 15,
+        "bbox_aspect_ratio": 2.6666666666666665,
+        "bounds": [
+          239,
+          292,
+          242,
+          300
+        ],
+        "compactness": 0.3894536347425363,
+        "index": 50,
+        "maximum_interior_radius_cells": 1.3333333333333333,
+        "perimeter": 22,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 13,
+        "bbox_aspect_ratio": 1.25,
+        "bounds": [
+          665,
+          0,
+          670,
+          4
+        ],
+        "compactness": 0.5042062283539175,
+        "index": 51,
+        "maximum_interior_radius_cells": 2.0,
+        "perimeter": 18,
+        "touches_frame": true
+      },
+      {
+        "area_cells": 3,
+        "bbox_aspect_ratio": 1.0,
+        "bounds": [
+          139,
+          135,
+          141,
+          137
+        ],
+        "compactness": 0.5890486225480862,
+        "index": 52,
+        "maximum_interior_radius_cells": 1.0,
+        "perimeter": 8,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 3,
+        "bbox_aspect_ratio": 3.0,
+        "bounds": [
+          418,
+          252,
+          419,
+          255
+        ],
+        "compactness": 0.5890486225480862,
+        "index": 53,
+        "maximum_interior_radius_cells": 1.0,
+        "perimeter": 8,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 3,
+        "bbox_aspect_ratio": 1.0,
+        "bounds": [
+          484,
+          366,
+          486,
+          368
+        ],
+        "compactness": 0.5890486225480862,
+        "index": 54,
+        "maximum_interior_radius_cells": 1.0,
+        "perimeter": 8,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 2,
+        "bbox_aspect_ratio": 2.0,
+        "bounds": [
+          416,
+          245,
+          417,
+          247
+        ],
+        "compactness": 0.6981317007977318,
+        "index": 55,
+        "maximum_interior_radius_cells": 1.0,
+        "perimeter": 6,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 2,
+        "bbox_aspect_ratio": 2.0,
+        "bounds": [
+          487,
+          352,
+          489,
+          353
+        ],
+        "compactness": 0.6981317007977318,
+        "index": 56,
+        "maximum_interior_radius_cells": 1.0,
+        "perimeter": 6,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 2,
+        "bbox_aspect_ratio": 2.0,
+        "bounds": [
+          490,
+          352,
+          492,
+          353
+        ],
+        "compactness": 0.6981317007977318,
+        "index": 57,
+        "maximum_interior_radius_cells": 1.0,
+        "perimeter": 6,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 2,
+        "bbox_aspect_ratio": 2.0,
+        "bounds": [
+          485,
+          353,
+          487,
+          354
+        ],
+        "compactness": 0.6981317007977318,
+        "index": 58,
+        "maximum_interior_radius_cells": 1.0,
+        "perimeter": 6,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 1,
+        "bbox_aspect_ratio": 1.0,
+        "bounds": [
+          142,
+          130,
+          143,
+          131
+        ],
+        "compactness": 0.7853981633974483,
+        "index": 59,
+        "maximum_interior_radius_cells": 1.0,
+        "perimeter": 4,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 1,
+        "bbox_aspect_ratio": 1.0,
+        "bounds": [
+          456,
+          158,
+          457,
+          159
+        ],
+        "compactness": 0.7853981633974483,
+        "index": 60,
+        "maximum_interior_radius_cells": 1.0,
+        "perimeter": 4,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 1,
+        "bbox_aspect_ratio": 1.0,
+        "bounds": [
+          213,
+          250,
+          214,
+          251
+        ],
+        "compactness": 0.7853981633974483,
+        "index": 61,
+        "maximum_interior_radius_cells": 1.0,
+        "perimeter": 4,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 1,
+        "bbox_aspect_ratio": 1.0,
+        "bounds": [
+          419,
+          251,
+          420,
+          252
+        ],
+        "compactness": 0.7853981633974483,
+        "index": 62,
+        "maximum_interior_radius_cells": 1.0,
+        "perimeter": 4,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 1,
+        "bbox_aspect_ratio": 1.0,
+        "bounds": [
+          484,
+          354,
+          485,
+          355
+        ],
+        "compactness": 0.7853981633974483,
+        "index": 63,
+        "maximum_interior_radius_cells": 1.0,
+        "perimeter": 4,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 1,
+        "bbox_aspect_ratio": 1.0,
+        "bounds": [
+          483,
+          355,
+          484,
+          356
+        ],
+        "compactness": 0.7853981633974483,
+        "index": 64,
+        "maximum_interior_radius_cells": 1.0,
+        "perimeter": 4,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 1,
+        "bbox_aspect_ratio": 1.0,
+        "bounds": [
+          482,
+          356,
+          483,
+          357
+        ],
+        "compactness": 0.7853981633974483,
+        "index": 65,
+        "maximum_interior_radius_cells": 1.0,
+        "perimeter": 4,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 1,
+        "bbox_aspect_ratio": 1.0,
+        "bounds": [
+          497,
+          359,
+          498,
+          360
+        ],
+        "compactness": 0.7853981633974483,
+        "index": 66,
+        "maximum_interior_radius_cells": 1.0,
+        "perimeter": 4,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 1,
+        "bbox_aspect_ratio": 1.0,
+        "bounds": [
+          504,
+          364,
+          505,
+          365
+        ],
+        "compactness": 0.7853981633974483,
+        "index": 67,
+        "maximum_interior_radius_cells": 1.0,
+        "perimeter": 4,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 1,
+        "bbox_aspect_ratio": 1.0,
+        "bounds": [
+          505,
+          365,
+          506,
+          366
+        ],
+        "compactness": 0.7853981633974483,
+        "index": 68,
+        "maximum_interior_radius_cells": 1.0,
+        "perimeter": 4,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 1,
+        "bbox_aspect_ratio": 1.0,
+        "bounds": [
+          506,
+          366,
+          507,
+          367
+        ],
+        "compactness": 0.7853981633974483,
+        "index": 69,
+        "maximum_interior_radius_cells": 1.0,
+        "perimeter": 4,
+        "touches_frame": false
+      }
+    ]
+  },
+  "date": "2026-10-29"
+}

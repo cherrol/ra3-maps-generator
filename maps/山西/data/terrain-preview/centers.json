@@ -1,0 +1,157 @@
+{
+  "schema_version": 1,
+  "map_name": "千壑回声",
+  "blueprint": "山西",
+  "label": "地级行政中心",
+  "coordinate_system": "WGS84",
+  "source": "https://geo.datav.aliyun.com/areas_v3/bound/140000_full.json",
+  "source_field": "properties.center (administrative center, not polygon centroid)",
+  "conversion": "GCJ-02 approximately inverted to WGS84 by six iterations, matching terrain boundary ingestion",
+  "retrieved_date": "2026-10-29",
+  "points": [
+    {
+      "adcode": "140100",
+      "name": "太原市",
+      "level": "city",
+      "center_wgs84": [
+        112.54293464462069,
+        37.85647348232472
+      ],
+      "center_gcj02": [
+        112.549248,
+        37.857014
+      ]
+    },
+    {
+      "adcode": "140200",
+      "name": "大同市",
+      "level": "city",
+      "center_wgs84": [
+        113.28826424390707,
+        40.08912704450799
+      ],
+      "center_gcj02": [
+        113.295259,
+        40.09031
+      ]
+    },
+    {
+      "adcode": "140300",
+      "name": "阳泉市",
+      "level": "city",
+      "center_wgs84": [
+        113.57687721325081,
+        37.86068263942127
+      ],
+      "center_gcj02": [
+        113.583285,
+        37.861188
+      ]
+    },
+    {
+      "adcode": "140400",
+      "name": "长治市",
+      "level": "city",
+      "center_wgs84": [
+        113.10688777366889,
+        36.19094117462501
+      ],
+      "center_gcj02": [
+        113.113556,
+        36.191112
+      ]
+    },
+    {
+      "adcode": "140500",
+      "name": "晋城市",
+      "level": "city",
+      "center_wgs84": [
+        112.84515267654301,
+        35.49795118964643
+      ],
+      "center_gcj02": [
+        112.851274,
+        35.497553
+      ]
+    },
+    {
+      "adcode": "140600",
+      "name": "朔州市",
+      "level": "city",
+      "center_wgs84": [
+        112.42653070454699,
+        39.330092620978476
+      ],
+      "center_gcj02": [
+        112.433387,
+        39.331261
+      ]
+    },
+    {
+      "adcode": "140700",
+      "name": "晋中市",
+      "level": "city",
+      "center_wgs84": [
+        112.72998818719745,
+        37.695822315490716
+      ],
+      "center_gcj02": [
+        112.736465,
+        37.696495
+      ]
+    },
+    {
+      "adcode": "140800",
+      "name": "运城市",
+      "level": "city",
+      "center_wgs84": [
+        110.99818586794083,
+        35.023546055671325
+      ],
+      "center_gcj02": [
+        111.003957,
+        35.022778
+      ]
+    },
+    {
+      "adcode": "140900",
+      "name": "忻州市",
+      "level": "city",
+      "center_wgs84": [
+        112.7269783567015,
+        38.41711443652731
+      ],
+      "center_gcj02": [
+        112.733538,
+        38.41769
+      ]
+    },
+    {
+      "adcode": "141000",
+      "name": "临汾市",
+      "level": "city",
+      "center_wgs84": [
+        111.51173252904026,
+        36.084253138856
+      ],
+      "center_gcj02": [
+        111.517973,
+        36.08415
+      ]
+    },
+    {
+      "adcode": "141100",
+      "name": "吕梁市",
+      "level": "city",
+      "center_wgs84": [
+        111.12795878728203,
+        37.52356532781631
+      ],
+      "center_gcj02": [
+        111.134335,
+        37.524366
+      ]
+    }
+  ],
+  "excluded_features": []
+}

@@ -1,0 +1,99 @@
+{
+  "schema_version": 1,
+  "map_id": "河南",
+  "publish_name": "[CHAI]沃野奔流T0.0.2",
+  "version": "T0.0.2",
+  "source_crc32": 1004161978,
+  "inputs": {
+    "maps/河南/config.json": {
+      "bytes": 8347,
+      "sha256": "0dc2aba7de387f7c088f8716fc21b32e93b0a63bfc48a9f4935f3c990916a6c5"
+    },
+    "maps/河南/version.json": {
+      "bytes": 561,
+      "sha256": "3661821b577ac4c6aa92b3c12926d5f9be02f53441a74340acc7f1658e577df6"
+    },
+    "maps/河南/coordinate-system.json": {
+      "bytes": 1244,
+      "sha256": "95aea7d01425e514f59f941d07e681a31f9fc871782781160e8a1688f6c02571"
+    },
+    "maps/河南/histories/v1/layers.npz": {
+      "bytes": 44082,
+      "sha256": "6a22f251e01d2830ed35f750079bb5207c9f93660c13c1a5b81f3d46acaa316a"
+    },
+    "maps/河南/authoring/source.zip": {
+      "bytes": 268703,
+      "sha256": "856c7867e845542b70e6b5ad6647107d579b471bd7b71bdcebd0461fe52235b5"
+    },
+    "maps/河南/authoring/layout.json": {
+      "bytes": 377607,
+      "sha256": "1a2fc4f2a25397c029b1d74105d42bb0fe3de3a623ab966c774d910c81f21685"
+    },
+    "maps/河南/authoring/baseline.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    }
+  },
+  "source_package_members": {
+    "[CHAI]沃野奔流T0.0.2.map": {
+      "bytes": 316285,
+      "sha256": "b973ad8b46c77a2799da452bf94b06749e6ff0496c87c23f44d41d10470b970b"
+    },
+    "[CHAI]沃野奔流T0.0.2_art.tga": {
+      "bytes": 786476,
+      "sha256": "95fa828844ae24eed96861c724437dc1b660503b70a096d7790cb79ecd520219"
+    },
+    "layout.json": {
+      "bytes": 377606,
+      "sha256": "2c9651dfc830f750597d6eb4794be366f371eecf57aa493b00dc21171e48e50f"
+    },
+    "map.str": {
+      "bytes": 489,
+      "sha256": "7e9873cc546848393bb01b9308e6e0470f2b2ad6ca2daf855b939bd64365dd63"
+    },
+    "map.xml": {
+      "bytes": 160643,
+      "sha256": "a8f09112e1da8208d2cd4ad7fc7243439181ef146414e26e3fa0aa9214986a18"
+    },
+    "overrides.xml": {
+      "bytes": 124,
+      "sha256": "e94193fa1f69987870af8bd457691172bb61d775fc6d8edd6d12b036a2ab6cad"
+    }
+  },
+  "images_and_index": {
+    "preview.png": {
+      "bytes": 129577,
+      "sha256": "d54914023981b1a92a128593a09f4a66fc6caf3cafeed19b5b49ba776efadd2d"
+    },
+    "preview--layout.png": {
+      "bytes": 754419,
+      "sha256": "bf9bdb2222e4a54cba547cb9454f2c9e6099a2cea3bd0d3ac291108f0a490061"
+    },
+    "preview--terrain.png": {
+      "bytes": 27808,
+      "sha256": "1c331503ec75cd179749edc186414bf80ad1919d962f245511268fe60995b7c6"
+    },
+    "preview--passability.png": {
+      "bytes": 28257,
+      "sha256": "69ac20d75aa6c5ca814cf7a7e9fb6e8c3b77844a6a11b8203990fee5041ea4a7"
+    },
+    "layout-index.json": {
+      "bytes": 75983,
+      "sha256": "f51dd78c22e0aa34e04d6c608e05da404d35512aa38ddbd23c3320cb4e68f425"
+    }
+  },
+  "reproduce": "cargo run --release --locked -- build --map 河南 --only preview",
+  "artifact_mapping": {
+    "preview.png": "preview.png",
+    "preview--layout.png": "preview--layout.png",
+    "source/terrain_preview.png": "preview--terrain.png",
+    "source/passability_preview.png": "preview--passability.png",
+    "layout-index.json": "layout-index.json"
+  },
+  "font": {
+    "file_name": "wqy-zenhei.ttc",
+    "bytes": 16791251,
+    "sha256": "79c18ebe7b811951e8311bad7103ebeae8c337ed9988ea69e8a78a66cfe029b9"
+  },
+  "scope": "Pictures rendered from the frozen native package and same-version editable layout; preview generation does not rewrite gameplay files."
+}

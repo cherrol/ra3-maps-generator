@@ -1,0 +1,222 @@
+{
+  "schema_version": 1,
+  "map_name": "浮沙接海",
+  "blueprint": "上海",
+  "label": "区中心",
+  "coordinate_system": "WGS84",
+  "source": "https://geo.datav.aliyun.com/areas_v3/bound/310000_full.json",
+  "source_field": "properties.center (administrative center, not polygon centroid)",
+  "conversion": "GCJ-02 approximately inverted to WGS84 by six iterations, matching terrain boundary ingestion",
+  "retrieved_date": "2026-10-29",
+  "points": [
+    {
+      "adcode": "310101",
+      "name": "黄浦区",
+      "level": "district",
+      "center_wgs84": [
+        121.48583559361278,
+        31.22475027731373
+      ],
+      "center_gcj02": [
+        121.490317,
+        31.222771
+      ]
+    },
+    {
+      "adcode": "310104",
+      "name": "徐汇区",
+      "level": "district",
+      "center_wgs84": [
+        121.43289797331892,
+        31.181852424387742
+      ],
+      "center_gcj02": [
+        121.43752,
+        31.179973
+      ]
+    },
+    {
+      "adcode": "310105",
+      "name": "长宁区",
+      "level": "district",
+      "center_wgs84": [
+        121.4175558196331,
+        31.21996816813682
+      ],
+      "center_gcj02": [
+        121.4222,
+        31.218123
+      ]
+    },
+    {
+      "adcode": "310106",
+      "name": "静安区",
+      "level": "district",
+      "center_wgs84": [
+        121.443617990957,
+        31.23087569103603
+      ],
+      "center_gcj02": [
+        121.448224,
+        31.229003
+      ]
+    },
+    {
+      "adcode": "310107",
+      "name": "普陀区",
+      "level": "district",
+      "center_wgs84": [
+        121.387851523113,
+        31.243534688371792
+      ],
+      "center_gcj02": [
+        121.392499,
+        31.241701
+      ]
+    },
+    {
+      "adcode": "310109",
+      "name": "虹口区",
+      "level": "district",
+      "center_wgs84": [
+        121.48735266109459,
+        31.26293656031781
+      ],
+      "center_gcj02": [
+        121.491832,
+        31.26097
+      ]
+    },
+    {
+      "adcode": "310110",
+      "name": "杨浦区",
+      "level": "district",
+      "center_wgs84": [
+        121.51842797326476,
+        31.272809661225754
+      ],
+      "center_gcj02": [
+        121.522797,
+        31.270755
+      ]
+    },
+    {
+      "adcode": "310112",
+      "name": "闵行区",
+      "level": "district",
+      "center_wgs84": [
+        121.37135349276957,
+        31.1135722519315
+      ],
+      "center_gcj02": [
+        121.375972,
+        31.111658
+      ]
+    },
+    {
+      "adcode": "310113",
+      "name": "宝山区",
+      "level": "district",
+      "center_wgs84": [
+        121.48543609473013,
+        31.400807784900138
+      ],
+      "center_gcj02": [
+        121.489934,
+        31.398896
+      ]
+    },
+    {
+      "adcode": "310114",
+      "name": "嘉定区",
+      "level": "district",
+      "center_wgs84": [
+        121.24589422329419,
+        31.385487026338094
+      ],
+      "center_gcj02": [
+        121.250333,
+        31.383524
+      ]
+    },
+    {
+      "adcode": "310115",
+      "name": "浦东新区",
+      "level": "district",
+      "center_wgs84": [
+        121.56346617003729,
+        31.248112485301508
+      ],
+      "center_gcj02": [
+        121.567706,
+        31.245944
+      ]
+    },
+    {
+      "adcode": "310116",
+      "name": "金山区",
+      "level": "district",
+      "center_wgs84": [
+        121.3262400461767,
+        30.726907356331584
+      ],
+      "center_gcj02": [
+        121.330736,
+        30.724697
+      ]
+    },
+    {
+      "adcode": "310117",
+      "name": "松江区",
+      "level": "district",
+      "center_wgs84": [
+        121.21911769687793,
+        31.03258085117177
+      ],
+      "center_gcj02": [
+        121.223543,
+        31.03047
+      ]
+    },
+    {
+      "adcode": "310118",
+      "name": "青浦区",
+      "level": "district",
+      "center_wgs84": [
+        121.10841180726221,
+        31.153089091622157
+      ],
+      "center_gcj02": [
+        121.113021,
+        31.151209
+      ]
+    },
+    {
+      "adcode": "310120",
+      "name": "奉贤区",
+      "level": "district",
+      "center_wgs84": [
+        121.45391770079337,
+        30.91441358806769
+      ],
+      "center_gcj02": [
+        121.458472,
+        30.912345
+      ]
+    },
+    {
+      "adcode": "310151",
+      "name": "崇明区",
+      "level": "district",
+      "center_wgs84": [
+        121.39283176323579,
+        31.628688648690837
+      ],
+      "center_gcj02": [
+        121.397516,
+        31.626946
+      ]
+    }
+  ],
+  "excluded_features": []
+}

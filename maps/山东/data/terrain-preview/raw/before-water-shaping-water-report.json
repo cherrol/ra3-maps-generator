@@ -1,0 +1,21 @@
+{
+  "include_rivers": false,
+  "large_lake_cells": 580,
+  "minimum_lake_area_km2": 80,
+  "ocean_cells": 160502,
+  "ocean_channel_open_radius_cells": 3,
+  "retained_lakes": [
+    {
+      "area_km2": 334.41889027108203,
+      "cells_in_input_frame": 412,
+      "name": "微山湖"
+    },
+    {
+      "area_km2": 135.13150553741767,
+      "cells_in_input_frame": 168,
+      "name": "东平湖"
+    }
+  ],
+  "water_cells": 161082,
+  "water_mask_equals_ocean_union_large_lakes": true
+}

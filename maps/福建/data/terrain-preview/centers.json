@@ -1,0 +1,131 @@
+{
+  "schema_version": 1,
+  "map_name": "叠嶂听涛",
+  "blueprint": "福建",
+  "label": "地级行政中心",
+  "coordinate_system": "WGS84",
+  "source": "https://geo.datav.aliyun.com/areas_v3/bound/350000_full.json",
+  "source_field": "properties.center (administrative center, not polygon centroid)",
+  "conversion": "GCJ-02 approximately inverted to WGS84 by six iterations, matching terrain boundary ingestion",
+  "retrieved_date": "2026-10-29",
+  "points": [
+    {
+      "adcode": "350100",
+      "name": "福州市",
+      "level": "city",
+      "center_wgs84": [
+        119.30143094583228,
+        26.078398776903335
+      ],
+      "center_gcj02": [
+        119.306239,
+        26.075302
+      ]
+    },
+    {
+      "adcode": "350200",
+      "name": "厦门市",
+      "level": "city",
+      "center_wgs84": [
+        118.10524877408041,
+        24.493122197549358
+      ],
+      "center_gcj02": [
+        118.11022,
+        24.490474
+      ]
+    },
+    {
+      "adcode": "350300",
+      "name": "莆田市",
+      "level": "city",
+      "center_wgs84": [
+        119.0028417500738,
+        25.433803116425363
+      ],
+      "center_gcj02": [
+        119.007558,
+        25.431011
+      ]
+    },
+    {
+      "adcode": "350400",
+      "name": "三明市",
+      "level": "city",
+      "center_wgs84": [
+        117.63011287135522,
+        26.268883907519314
+      ],
+      "center_gcj02": [
+        117.635001,
+        26.265444
+      ]
+    },
+    {
+      "adcode": "350500",
+      "name": "泉州市",
+      "level": "city",
+      "center_wgs84": [
+        118.58497045983533,
+        24.911851523013485
+      ],
+      "center_gcj02": [
+        118.589421,
+        24.908853
+      ]
+    },
+    {
+      "adcode": "350600",
+      "name": "漳州市",
+      "level": "city",
+      "center_wgs84": [
+        117.65699740140711,
+        24.51385838190413
+      ],
+      "center_gcj02": [
+        117.661801,
+        24.510897
+      ]
+    },
+    {
+      "adcode": "350700",
+      "name": "南平市",
+      "level": "city",
+      "center_wgs84": [
+        118.17346164015538,
+        26.638914904971234
+      ],
+      "center_gcj02": [
+        118.178459,
+        26.635627
+      ]
+    },
+    {
+      "adcode": "350800",
+      "name": "龙岩市",
+      "level": "city",
+      "center_wgs84": [
+        117.02487623077992,
+        25.094337222869108
+      ],
+      "center_gcj02": [
+        117.02978,
+        25.091603
+      ]
+    },
+    {
+      "adcode": "350900",
+      "name": "宁德市",
+      "level": "city",
+      "center_wgs84": [
+        119.52241737213278,
+        26.66267165352176
+      ],
+      "center_gcj02": [
+        119.527082,
+        26.65924
+      ]
+    }
+  ],
+  "excluded_features": []
+}

@@ -1,0 +1,140 @@
+{
+  "schema_version": 1,
+  "reference": "user attached red-circle terrain image",
+  "image_pixels": [
+    692,
+    693
+  ],
+  "terrain_image_bounds_pixels": [
+    1,
+    3,
+    691,
+    692
+  ],
+  "image_point_order": "P1-P4 south west to east, P5-P8 north west to east",
+  "circle_centers_pixels": [
+    [
+      63,
+      665
+    ],
+    [
+      216,
+      663
+    ],
+    [
+      365,
+      669
+    ],
+    [
+      574,
+      677
+    ],
+    [
+      46,
+      30
+    ],
+    [
+      292,
+      40
+    ],
+    [
+      464,
+      46
+    ],
+    [
+      603,
+      43
+    ]
+  ],
+  "frame": {
+    "width": 840,
+    "height": 840,
+    "border": 20,
+    "cell_size": 10,
+    "z_scale": 0.0390625
+  },
+  "base_cells": [
+    [
+      92,
+      789
+    ],
+    [
+      269,
+      786
+    ],
+    [
+      442,
+      793
+    ],
+    [
+      634,
+      738
+    ],
+    [
+      72,
+      51
+    ],
+    [
+      357,
+      63
+    ],
+    [
+      557,
+      70
+    ],
+    [
+      718,
+      66
+    ]
+  ],
+  "P4_adjustment": {
+    "user_preference": "保持地形，出生点可略向内侧移动",
+    "marked_cell": [
+      684.3478260869565,
+      802.5834542815675
+    ],
+    "final_cell": [
+      634.0,
+      738.0
+    ],
+    "distance_from_circle_center_cells": 81.88971949287489,
+    "terrain_widening": false
+  },
+  "terrain_source": "data/terrain-preview/terrain.npz",
+  "terrain_policy": "preserve approved levels and water; add explicit mountain passages and continuous all-shore transitions",
+  "team_area_policy": "explicit user north/south circles take precedence over default choice of a balanced orientation; report actual land/water split",
+  "final_base_cells": [
+    [
+      92.0,
+      789.0
+    ],
+    [
+      269.0,
+      786.0
+    ],
+    [
+      442.0,
+      793.0
+    ],
+    [
+      634.0,
+      738.0
+    ],
+    [
+      72.0,
+      51.0
+    ],
+    [
+      357.0,
+      63.0
+    ],
+    [
+      557.0,
+      70.0
+    ],
+    [
+      718.0,
+      66.0
+    ]
+  ]
+}

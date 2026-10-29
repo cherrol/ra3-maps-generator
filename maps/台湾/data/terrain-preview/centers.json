@@ -1,0 +1,279 @@
+{
+  "schema_version": 1,
+  "map_name": "苍峦浮海",
+  "blueprint": "台湾",
+  "label": "县市中心",
+  "coordinate_system": "WGS84",
+  "source": "https://www.openstreetmap.org/copyright",
+  "source_field": "Government office locations from Nominatim/OpenStreetMap, supplemented by the Taoyuan government building coordinate; per-point references retained",
+  "conversion": "Native WGS84; no GCJ-02 inverse applied",
+  "retrieved_date": "2026-10-29",
+  "attribution": "© OpenStreetMap contributors, ODbL; https://www.openstreetmap.org/copyright; Taoyuan coordinate: Wikipedia CC BY-SA",
+  "points": [
+    {
+      "adcode": "63000",
+      "name": "臺北市",
+      "level": "county_city",
+      "center_wgs84": [
+        121.5644506,
+        25.037517
+      ],
+      "coordinate_source": "https://www.openstreetmap.org/way/142113976",
+      "matched_office": "臺北市政府",
+      "raw_response": "raw/Taipei City Hall-office.json"
+    },
+    {
+      "adcode": "65000",
+      "name": "新北市",
+      "level": "county_city",
+      "center_wgs84": [
+        121.4654477,
+        25.0125017
+      ],
+      "coordinate_source": "https://www.openstreetmap.org/relation/4202253",
+      "matched_office": "新北市政府大樓",
+      "raw_response": "raw/新北市-office.json"
+    },
+    {
+      "adcode": "68000",
+      "name": "桃園市",
+      "level": "county_city",
+      "center_wgs84": [
+        121.301025,
+        24.993416
+      ],
+      "coordinate_source": "https://zh.wikipedia.org/wiki/桃園市政府",
+      "coordinate_note": "Government building WGS84 coordinate; Nominatim fuzzy results did not identify the building reliably."
+    },
+    {
+      "adcode": "66000",
+      "name": "臺中市",
+      "level": "county_city",
+      "center_wgs84": [
+        120.6468417,
+        24.1617238
+      ],
+      "coordinate_source": "https://www.openstreetmap.org/way/222413435",
+      "matched_office": "臺中市政府臺灣大道市政大樓",
+      "raw_response": "raw/臺中市政府臺灣大道市政大樓-office.json"
+    },
+    {
+      "adcode": "67000",
+      "name": "臺南市",
+      "level": "county_city",
+      "center_wgs84": [
+        120.1852496,
+        22.9921256
+      ],
+      "coordinate_source": "https://www.openstreetmap.org/way/205717615",
+      "matched_office": "台南市政府永華市政中心",
+      "raw_response": "raw/臺南市-office.json"
+    },
+    {
+      "adcode": "64000",
+      "name": "高雄市",
+      "level": "county_city",
+      "center_wgs84": [
+        120.3118503,
+        22.6208677
+      ],
+      "coordinate_source": "https://www.openstreetmap.org/way/93199585",
+      "matched_office": "高雄市政府四維行政中心",
+      "raw_response": "raw/Kaohsiung City Government-office.json"
+    },
+    {
+      "adcode": "10017",
+      "name": "基隆市",
+      "level": "county_city",
+      "center_wgs84": [
+        121.744407,
+        25.1318686
+      ],
+      "coordinate_source": "https://www.openstreetmap.org/way/931323481",
+      "matched_office": "基隆市政府",
+      "raw_response": "raw/基隆市政府大樓-office.json"
+    },
+    {
+      "adcode": "10018",
+      "name": "新竹市",
+      "level": "county_city",
+      "center_wgs84": [
+        120.9689586,
+        24.8068417
+      ],
+      "coordinate_source": "https://www.openstreetmap.org/way/288160281",
+      "matched_office": "新竹市政府",
+      "raw_response": "raw/新竹市-office.json"
+    },
+    {
+      "adcode": "10020",
+      "name": "嘉義市",
+      "level": "county_city",
+      "center_wgs84": [
+        120.4535581,
+        23.4810744
+      ],
+      "coordinate_source": "https://www.openstreetmap.org/way/226959268",
+      "matched_office": "嘉義市政府",
+      "raw_response": "raw/嘉義市-office.json"
+    },
+    {
+      "adcode": "10002",
+      "name": "宜蘭縣",
+      "level": "county_city",
+      "center_wgs84": [
+        121.7631313,
+        24.7304129
+      ],
+      "coordinate_source": "https://www.openstreetmap.org/node/5992214110",
+      "matched_office": "宜蘭縣政府",
+      "raw_response": "raw/宜蘭縣-office.json"
+    },
+    {
+      "adcode": "10004",
+      "name": "新竹縣",
+      "level": "county_city",
+      "center_wgs84": [
+        121.0135928,
+        24.8273046
+      ],
+      "coordinate_source": "https://www.openstreetmap.org/way/323399480",
+      "matched_office": "新竹縣政府",
+      "raw_response": "raw/新竹縣-office.json"
+    },
+    {
+      "adcode": "10005",
+      "name": "苗栗縣",
+      "level": "county_city",
+      "center_wgs84": [
+        120.8207724,
+        24.5650658
+      ],
+      "coordinate_source": "https://www.openstreetmap.org/way/349540652",
+      "matched_office": "苗栗縣政府",
+      "raw_response": "raw/苗栗縣-office.json"
+    },
+    {
+      "adcode": "10007",
+      "name": "彰化縣",
+      "level": "county_city",
+      "center_wgs84": [
+        120.5448006,
+        24.0755341
+      ],
+      "coordinate_source": "https://www.openstreetmap.org/way/279546748",
+      "matched_office": "彰化縣政府",
+      "raw_response": "raw/彰化縣-office.json"
+    },
+    {
+      "adcode": "10008",
+      "name": "南投縣",
+      "level": "county_city",
+      "center_wgs84": [
+        120.6901162,
+        23.9023775
+      ],
+      "coordinate_source": "https://www.openstreetmap.org/way/292736765",
+      "matched_office": "南投縣政府",
+      "raw_response": "raw/南投縣-office.json"
+    },
+    {
+      "adcode": "10009",
+      "name": "雲林縣",
+      "level": "county_city",
+      "center_wgs84": [
+        120.5264859,
+        23.6990069
+      ],
+      "coordinate_source": "https://www.openstreetmap.org/way/258436345",
+      "matched_office": "雲林縣政府",
+      "raw_response": "raw/雲林縣-office.json"
+    },
+    {
+      "adcode": "10010",
+      "name": "嘉義縣",
+      "level": "county_city",
+      "center_wgs84": [
+        120.2928752,
+        23.4584697
+      ],
+      "coordinate_source": "https://www.openstreetmap.org/way/222486377",
+      "matched_office": "嘉義縣政府",
+      "raw_response": "raw/嘉義縣-office.json"
+    },
+    {
+      "adcode": "10013",
+      "name": "屏東縣",
+      "level": "county_city",
+      "center_wgs84": [
+        120.4884605,
+        22.6826107
+      ],
+      "coordinate_source": "https://www.openstreetmap.org/relation/8761725",
+      "matched_office": "屏東縣政府",
+      "raw_response": "raw/屏東縣-office.json"
+    },
+    {
+      "adcode": "10014",
+      "name": "臺東縣",
+      "level": "county_city",
+      "center_wgs84": [
+        121.1500254,
+        22.7556776
+      ],
+      "coordinate_source": "https://www.openstreetmap.org/way/255749075",
+      "matched_office": "台東縣政府",
+      "raw_response": "raw/臺東縣-office.json"
+    },
+    {
+      "adcode": "10015",
+      "name": "花蓮縣",
+      "level": "county_city",
+      "center_wgs84": [
+        121.6192969,
+        23.9914853
+      ],
+      "coordinate_source": "https://www.openstreetmap.org/relation/11027048",
+      "matched_office": "花蓮縣政府",
+      "raw_response": "raw/花蓮縣-office.json"
+    },
+    {
+      "adcode": "10016",
+      "name": "澎湖縣",
+      "level": "county_city",
+      "center_wgs84": [
+        119.5664626,
+        23.570101
+      ],
+      "coordinate_source": "https://www.openstreetmap.org/way/686997832",
+      "matched_office": "澎湖縣政府",
+      "raw_response": "raw/澎湖縣-office.json"
+    },
+    {
+      "adcode": "09020",
+      "name": "金門縣",
+      "level": "county_city",
+      "center_wgs84": [
+        118.3194712,
+        24.4374257
+      ],
+      "coordinate_source": "https://www.openstreetmap.org/way/321125461",
+      "matched_office": "金門縣政府",
+      "raw_response": "raw/金門縣-office.json"
+    },
+    {
+      "adcode": "09007",
+      "name": "連江縣",
+      "level": "county_city",
+      "center_wgs84": [
+        119.9519632,
+        26.157923
+      ],
+      "coordinate_source": "https://www.openstreetmap.org/way/244965532",
+      "matched_office": "連江縣政府",
+      "raw_response": "raw/連江縣-office.json"
+    }
+  ],
+  "excluded_features": [],
+  "outside_frame_policy": "Retain source records for offshore centers; do not move them into the existing preview frame."
+}

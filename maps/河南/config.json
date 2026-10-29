@@ -1,57 +1,57 @@
 {
   "BASES": [
     [
-      111.06303713636046,
-      31.697052446377565,
+      110.904606247516,
+      31.552228719013502,
       "P1",
       "S",
       "human"
     ],
     [
-      112.51392308219506,
-      31.697052446377565,
+      112.30734658354643,
+      31.571092853947373,
       "P2",
       "S",
       "human"
     ],
     [
-      113.48873707705268,
-      31.69081894454068,
+      113.67838657299993,
+      31.527076539101675,
       "P3",
       "S",
       "human"
     ],
     [
-      115.57438562418992,
-      31.653417933519375,
+      115.20000320869396,
+      31.872919012889312,
       "P4",
       "S",
       "human"
     ],
     [
-      111.0101402529186,
-      36.04803672852278,
+      110.74610451463118,
+      36.19280591274577,
       "P5",
       "N",
       "human"
     ],
     [
-      112.92198475446104,
-      36.04803672852278,
+      113.00475420823952,
+      36.117349373010285,
       "P6",
       "N",
       "human"
     ],
     [
-      114.63735511750508,
-      35.99816871382771,
+      114.5897715370875,
+      36.073333058164586,
       "P7",
       "N",
       "ai"
     ],
     [
-      116.08824106333968,
-      35.99816871382771,
+      115.8657104868101,
+      36.098485238076414,
       "P8",
       "N",
       "ai"
@@ -68,8 +68,8 @@
   "COORDINATE_PIPELINE": {
     "baseline": "authoring/baseline.json",
     "layout": "authoring/layout.json",
-    "source_crc32": 1004161978,
-    "source_name": "[CHAI]沃野奔流T0.0.2",
+    "source_crc32": 1812815932,
+    "source_name": "[CHAI]沃野奔流T0.0.3",
     "source_package": "authoring/source.zip"
   },
   "GRASS_TEXTURES": [
@@ -86,10 +86,10 @@
     "Grass_Geneva03"
   ],
   "GRID": 840,
-  "GRID_HEIGHT": 808,
+  "GRID_HEIGHT": 840,
   "HEIGHT_PRESET": "standard",
   "LAND_Z": 210.0,
-  "LAYERS": "histories/v1/layers.npz",
+  "LAYERS": "histories/v2/layers.npz",
   "LAYER_M": [
     [
       200.0,
@@ -111,15 +111,17 @@
   "LAYER_TEX_PRESET": "mountain",
   "LAYER_TEX_STRICT": true,
   "LAYOUT": "authoring/layout.json",
-  "MAP_DESCRIPTION": "西北山地接东南平原，双湖之间多路争锋。",
+  "MAP_DESCRIPTION": "三层台地、南北八席，沿主线推进与侧翼扩张。",
   "MAP_NAME": "[CHAI]沃野奔流",
   "MAP_STR_INFO": {
     "GameStart": "游戏时间"
   },
   "MAP_STR_INTRO": "\"欢迎来到九州大地·沃野奔流，祝大家玩得开心。\"",
   "PEAK_IMPASSABLE": 235.0,
-  "PREVIEW_SUBTITLE": "800×768 · 南4人 VS 北2人+2个固定AI（苏联、帝国）",
+  "PREVIEW_SUBTITLE": "800×800 · 红圈出生位：南4人 / 北2人+2个固定AI",
   "PREVIEW_TITLE": "九州大地·沃野奔流 {version}",
+  "RAMP_CLEARANCE": {},
+  "RESOURCE_DISTRIBUTION": "authoring/resource-distribution.json",
   "RULESET": "common-T0.5.1",
   "SCHEMA_VERSION": 1,
   "SEA_TEX_BANDS": [
@@ -151,14 +153,14 @@
     "base_min_ore": 2,
     "landing_coasts": [
       [
-        240,
-        235,
+        150,
+        610,
         100
       ],
       [
-        148,
-        575,
-        110
+        760,
+        87,
+        35
       ]
     ],
     "levels": [

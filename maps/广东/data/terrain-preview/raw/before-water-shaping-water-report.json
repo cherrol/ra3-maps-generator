@@ -1,0 +1,17 @@
+{
+  "elevation_bounds_and_province_unchanged": true,
+  "include_rivers": false,
+  "large_lake_cells": 355,
+  "map_name": "千流叩海",
+  "minimum_lake_area_km2": 80,
+  "ocean_cells": 190232,
+  "retained_lakes": [
+    {
+      "area_km2": 351.39456190650554,
+      "cells_in_input_frame": 355,
+      "name": "新丰江水库"
+    }
+  ],
+  "water_cells": 190587,
+  "water_mask_equals_ocean_union_large_lakes": true
+}

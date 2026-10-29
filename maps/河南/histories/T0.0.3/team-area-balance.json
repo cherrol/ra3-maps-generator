@@ -1,0 +1,15 @@
+{
+  "orientation": "south_north",
+  "midline": "y=419.5",
+  "north": {
+    "land": 319815,
+    "water": 185
+  },
+  "south": {
+    "land": 318266,
+    "water": 1734
+  },
+  "explicit_user_positions_override_default_area_rule": true,
+  "land_difference_ratio": 0.004866998045659919,
+  "water_difference_ratio": 8.372972972972972
+}

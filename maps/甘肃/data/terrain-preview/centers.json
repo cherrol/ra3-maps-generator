@@ -1,0 +1,196 @@
+{
+  "schema_version": 1,
+  "map_name": "沙廊残照",
+  "blueprint": "甘肃",
+  "label": "地级行政中心",
+  "coordinate_system": "WGS84",
+  "source": "https://geo.datav.aliyun.com/areas_v3/bound/620000_full.json",
+  "source_field": "properties.center (administrative center, not polygon centroid)",
+  "conversion": "GCJ-02 approximately inverted to WGS84 by six iterations, matching terrain boundary ingestion",
+  "retrieved_date": "2026-10-29",
+  "points": [
+    {
+      "adcode": "620100",
+      "name": "兰州市",
+      "level": "city",
+      "center_wgs84": [
+        103.82112626313604,
+        36.0583421791416
+      ],
+      "center_gcj02": [
+        103.823557,
+        36.058039
+      ]
+    },
+    {
+      "adcode": "620200",
+      "name": "嘉峪关市",
+      "level": "city",
+      "center_wgs84": [
+        98.27672385703772,
+        39.78571024400644
+      ],
+      "center_gcj02": [
+        98.277304,
+        39.786529
+      ]
+    },
+    {
+      "adcode": "620300",
+      "name": "金昌市",
+      "level": "city",
+      "center_wgs84": [
+        102.18589370861913,
+        38.51379767410713
+      ],
+      "center_gcj02": [
+        102.187888,
+        38.514238
+      ]
+    },
+    {
+      "adcode": "620400",
+      "name": "白银市",
+      "level": "city",
+      "center_wgs84": [
+        104.17084845330629,
+        36.54564402635668
+      ],
+      "center_gcj02": [
+        104.173606,
+        36.54568
+      ]
+    },
+    {
+      "adcode": "620500",
+      "name": "天水市",
+      "level": "city",
+      "center_wgs84": [
+        105.72106740351482,
+        34.57985161493017
+      ],
+      "center_gcj02": [
+        105.724998,
+        34.578529
+      ]
+    },
+    {
+      "adcode": "620600",
+      "name": "武威市",
+      "level": "city",
+      "center_wgs84": [
+        102.63299114779487,
+        37.92971739905539
+      ],
+      "center_gcj02": [
+        102.634697,
+        37.929996
+      ]
+    },
+    {
+      "adcode": "620700",
+      "name": "张掖市",
+      "level": "city",
+      "center_wgs84": [
+        100.45377936644444,
+        38.93226330784571
+      ],
+      "center_gcj02": [
+        100.455472,
+        38.932897
+      ]
+    },
+    {
+      "adcode": "620800",
+      "name": "平凉市",
+      "level": "city",
+      "center_wgs84": [
+        106.68042165064938,
+        35.543226562217086
+      ],
+      "center_gcj02": [
+        106.684691,
+        35.54279
+      ]
+    },
+    {
+      "adcode": "620900",
+      "name": "酒泉市",
+      "level": "city",
+      "center_wgs84": [
+        98.51021529016822,
+        39.74324664025748
+      ],
+      "center_gcj02": [
+        98.510795,
+        39.744023
+      ]
+    },
+    {
+      "adcode": "621000",
+      "name": "庆阳市",
+      "level": "city",
+      "center_wgs84": [
+        107.63364443219626,
+        35.73461812794364
+      ],
+      "center_gcj02": [
+        107.638372,
+        35.734218
+      ]
+    },
+    {
+      "adcode": "621100",
+      "name": "定西市",
+      "level": "city",
+      "center_wgs84": [
+        104.62362937045835,
+        35.58012448422071
+      ],
+      "center_gcj02": [
+        104.626294,
+        35.579578
+      ]
+    },
+    {
+      "adcode": "621200",
+      "name": "陇南市",
+      "level": "city",
+      "center_wgs84": [
+        104.92648637348118,
+        33.39055258114733
+      ],
+      "center_gcj02": [
+        104.929379,
+        33.388598
+      ]
+    },
+    {
+      "adcode": "622900",
+      "name": "临夏回族自治州",
+      "level": "city",
+      "center_wgs84": [
+        103.20976296749313,
+        35.599805546880106
+      ],
+      "center_gcj02": [
+        103.212006,
+        35.599446
+      ]
+    },
+    {
+      "adcode": "623000",
+      "name": "甘南藏族自治州",
+      "level": "city",
+      "center_wgs84": [
+        102.909287209221,
+        34.98748818113102
+      ],
+      "center_gcj02": [
+        102.911008,
+        34.986354
+      ]
+    }
+  ],
+  "excluded_features": []
+}

@@ -1,0 +1,36 @@
+{
+  "include_rivers": false,
+  "large_lake_cells": 1948,
+  "minimum_lake_area_km2": 80,
+  "ocean_cells": 0,
+  "ocean_channel_open_radius_cells": 3,
+  "retained_lakes": [
+    {
+      "area_km2": 135.13150553741767,
+      "cells_in_input_frame": 272,
+      "name": "东平湖"
+    },
+    {
+      "area_km2": 143.00308437148598,
+      "cells_in_input_frame": 13,
+      "name": null
+    },
+    {
+      "area_km2": 88.9274616271865,
+      "cells_in_input_frame": 171,
+      "name": null
+    },
+    {
+      "area_km2": 772.2554172230335,
+      "cells_in_input_frame": 1490,
+      "name": "丹江口水库"
+    },
+    {
+      "area_km2": 612.2912822390497,
+      "cells_in_input_frame": 2,
+      "name": "三峡水库"
+    }
+  ],
+  "water_cells": 1948,
+  "water_mask_equals_ocean_union_large_lakes": true
+}

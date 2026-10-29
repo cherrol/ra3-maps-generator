@@ -1,0 +1,32 @@
+{
+  "elevation_bounds_and_province_unchanged": true,
+  "include_rivers": false,
+  "large_lake_cells": 610,
+  "map_name": "层峦织彩",
+  "minimum_lake_area_km2": 80,
+  "ocean_cells": 0,
+  "retained_lakes": [
+    {
+      "area_km2": 299.6523524355066,
+      "cells_in_input_frame": 216,
+      "name": "滇池"
+    },
+    {
+      "area_km2": 245.82409890157976,
+      "cells_in_input_frame": 174,
+      "name": "洱海"
+    },
+    {
+      "area_km2": 215.46146354539067,
+      "cells_in_input_frame": 152,
+      "name": "抚仙湖"
+    },
+    {
+      "area_km2": 270.0627844575008,
+      "cells_in_input_frame": 68,
+      "name": "龙滩水库"
+    }
+  ],
+  "water_cells": 610,
+  "water_mask_equals_ocean_union_large_lakes": true
+}

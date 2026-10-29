@@ -1,0 +1,138 @@
+{
+  "added_land_cells": 0,
+  "all_nonwater_arrays_byte_identical": true,
+  "design_land": {
+    "cells": 296979,
+    "component_count": 1,
+    "components": [
+      {
+        "area_cells": 296979,
+        "bbox_aspect_ratio": 1.4797794117647058,
+        "bounds": [
+          0,
+          0,
+          805,
+          544
+        ],
+        "compactness": 0.3321448971690905,
+        "index": 0,
+        "maximum_interior_radius_cells": 368.6666666666667,
+        "perimeter": 3352,
+        "touches_frame": true
+      }
+    ]
+  },
+  "design_water": {
+    "cells": 159981,
+    "component_count": 2,
+    "components": [
+      {
+        "area_cells": 159606,
+        "bbox_aspect_ratio": 1.0130353817504656,
+        "bounds": [
+          303,
+          0,
+          840,
+          544
+        ],
+        "compactness": 0.19808825534140717,
+        "index": 0,
+        "maximum_interior_radius_cells": 285.0,
+        "perimeter": 3182,
+        "touches_frame": true
+      },
+      {
+        "area_cells": 375,
+        "bbox_aspect_ratio": 1.2857142857142858,
+        "bounds": [
+          256,
+          480,
+          277,
+          507
+        ],
+        "compactness": 0.5113269292952137,
+        "index": 1,
+        "maximum_interior_radius_cells": 9.0,
+        "perimeter": 96,
+        "touches_frame": false
+      }
+    ]
+  },
+  "existing_water_preserved": true,
+  "input_cells": [
+    840,
+    544
+  ],
+  "land_open_radius_input_cells": 10,
+  "main_land_and_each_preserved_compact_island_stable_under_opening": true,
+  "map_id": "山东",
+  "method": "morphological opening of land to retract narrow peninsulas, necks and pointed spurs",
+  "preserved_compact_small_islands": [],
+  "removed_land_cells": 375,
+  "small_shore_transition_policy": {
+    "bidirectional": true,
+    "continuous": true,
+    "few_exits_do_not_satisfy": true,
+    "scope": "entire perimeter of retained small islands and small waterbodies",
+    "status": "design requirement; implement and verify terrain height/navigation when producing playable maps"
+  },
+  "source": "maps/山东/data/terrain-preview/raw/reference-before-shoreline-refinement.npz",
+  "source_land": {
+    "cells": 297354,
+    "component_count": 1,
+    "components": [
+      {
+        "area_cells": 297354,
+        "bbox_aspect_ratio": 1.4816176470588236,
+        "bounds": [
+          0,
+          0,
+          806,
+          544
+        ],
+        "compactness": 0.32134747445086964,
+        "index": 0,
+        "maximum_interior_radius_cells": 368.6666666666667,
+        "perimeter": 3410,
+        "touches_frame": true
+      }
+    ]
+  },
+  "source_water": {
+    "cells": 159606,
+    "component_count": 2,
+    "components": [
+      {
+        "area_cells": 159231,
+        "bbox_aspect_ratio": 1.0130353817504656,
+        "bounds": [
+          303,
+          0,
+          840,
+          544
+        ],
+        "compactness": 0.19061078335000622,
+        "index": 0,
+        "maximum_interior_radius_cells": 284.3333333333333,
+        "perimeter": 3240,
+        "touches_frame": true
+      },
+      {
+        "area_cells": 375,
+        "bbox_aspect_ratio": 1.2857142857142858,
+        "bounds": [
+          256,
+          480,
+          277,
+          507
+        ],
+        "compactness": 0.5113269292952137,
+        "index": 1,
+        "maximum_interior_radius_cells": 9.0,
+        "perimeter": 96,
+        "touches_frame": false
+      }
+    ]
+  },
+  "date": "2026-10-29"
+}

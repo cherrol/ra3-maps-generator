@@ -1,0 +1,50 @@
+{
+  "include_rivers": false,
+  "preserve_ocean": true,
+  "minimum_lake_area_km2": 80,
+  "lake_area_method": "spherical polygon area; whole waterbody minus holes before frame clipping",
+  "ocean_channel_open_radius_cells": 3,
+  "lakes": [
+    {
+      "name": "鄂陵湖",
+      "area_km2": 603.546773629048
+    },
+    {
+      "name": "扎陵湖",
+      "area_km2": 544.3767202625293
+    },
+    {
+      "name": "烏梁素海",
+      "area_km2": 195.67618990485562
+    },
+    {
+      "name": "多尔改错湖",
+      "area_km2": 207.477213921582
+    },
+    {
+      "name": "未命名湖泊",
+      "area_km2": 189.96195912497092
+    },
+    {
+      "name": "库赛湖",
+      "area_km2": 273.6459903409165
+    },
+    {
+      "name": "卓乃湖",
+      "area_km2": 256.2780358057349
+    },
+    {
+      "name": "青海湖",
+      "area_km2": 4457.427307317892
+    },
+    {
+      "name": "刘家峡水库",
+      "area_km2": 120.33416141668718
+    },
+    {
+      "name": "龙羊峡水库",
+      "area_km2": 387.3357481734623
+    }
+  ],
+  "date": "2026-10-29"
+}

@@ -1,0 +1,144 @@
+{
+  "blueprint": "云南",
+  "border_cells": 20,
+  "bounds_wgs84": [
+    97.51608134790794,
+    21.114499616622926,
+    106.20391987279518,
+    29.265499544143676
+  ],
+  "elevation_thresholds_m": [
+    200.0,
+    500.0,
+    1500.0,
+    4000.0
+  ],
+  "final_images": [
+    "source.png",
+    "preview.png",
+    "preview--line.png",
+    "preview--center--line.png"
+  ],
+  "game_cells": [
+    800,
+    800
+  ],
+  "game_layer_heights": [
+    210.0,
+    280.0,
+    350.0,
+    420.0,
+    700.0
+  ],
+  "image_crc32": {
+    "preview--center--line.png": 3028269299,
+    "preview--line.png": 3382593318,
+    "preview.png": 2067487774,
+    "source.png": 2612349019
+  },
+  "layer_policy": {
+    "active_land_layers": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "adjustments": [],
+    "land_layer_cell_counts": [
+      0,
+      10359,
+      23341,
+      270881,
+      299634,
+      15613
+    ],
+    "maximum_land_layers": 5,
+    "minimum_land_layers": 2,
+    "national_thresholds_m": [
+      200.0,
+      500.0,
+      1500.0,
+      4000.0
+    ],
+    "requested_thresholds_m": [
+      200.0,
+      500.0,
+      1500.0,
+      4000.0
+    ],
+    "unused_layers_omitted": true,
+    "water_design_land_reference": {
+      "existing_land_layers_preserved": true,
+      "fill_method": "four-neighbor BFS within playable land first, then fill the production border",
+      "filled_land_cells": 318,
+      "playable_land_seeds_take_priority_over_border": true,
+      "report": "raw/report-before-water-shaping.json",
+      "terrain": "raw/terrain-before-water-shaping.npz"
+    },
+    "water_is_separate": true,
+    "square_resampling": {
+      "reference": "raw/before-square-800/terrain.npz",
+      "source_game_cells": [
+        776,
+        800
+      ],
+      "target_game_cells": [
+        800,
+        800
+      ],
+      "categorical_sampling": "nearest neighbor over unchanged playable geographic bounds",
+      "elevation_sampling": "bilinear from unchanged input.npz",
+      "original_layer_ids_and_thresholds_retained": true
+    }
+  },
+  "map_id": "云南",
+  "map_name": "层峦织彩",
+  "north_up": true,
+  "processing": {
+    "cumulative_close_radius_cells": 6,
+    "cumulative_open_radius_cells": 15,
+    "dem_box_blur_radius_cells": 6,
+    "majority_radius_cells": 5,
+    "minimum_component_area_cells": 2500,
+    "minimum_neck_width_cells": 20,
+    "minimum_peak_area_cells": 900,
+    "peak_open_radius_cells": 6
+  },
+  "reference_crc32": 1239979603,
+  "same_view_for_all_images": true,
+  "schema_version": 1,
+  "scope": "entire rectangle including terrain outside the prototype outline; no province-based clipping",
+  "size_policy": {
+    "border_included_in_size": false,
+    "dimension_multiple": 8,
+    "long_side_cells": 800,
+    "maximum_playable_cells": [
+      800,
+      800
+    ],
+    "source_playable_cells": [
+      736,
+      760
+    ]
+  },
+  "source_reference": "maps/云南/data/terrain-preview/input.npz",
+  "water_policy": {
+    "design_shaping": {
+      "designed_shorelines_are_not_measured": true,
+      "merge_nearby_reservoir_branches": true,
+      "real_water_selection_retained_as_reference": true,
+      "recipe": "water-shaping.json",
+      "reference": "raw/reference-before-water-shaping.npz",
+      "remove_unmergeable_small_or_narrow_water": true,
+      "removed_water_target": "valid adjoining land layer from unchanged DEM",
+      "report": "water-shaping-report.json"
+    },
+    "include_rivers": false,
+    "lake_area_method": "spherical polygon area, subtract holes; whole waterbody before frame clipping",
+    "minimum_lake_area_km2": 80,
+    "mode": "map-local-compact-water-design",
+    "ocean_channel_open_radius_cells": 3,
+    "preserve_ocean": true
+  }
+}

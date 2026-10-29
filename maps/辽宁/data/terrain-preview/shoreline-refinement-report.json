@@ -1,0 +1,138 @@
+{
+  "added_land_cells": 0,
+  "all_nonwater_arrays_byte_identical": true,
+  "design_land": {
+    "cells": 499756,
+    "component_count": 1,
+    "components": [
+      {
+        "area_cells": 499756,
+        "bbox_aspect_ratio": 1.09375,
+        "bounds": [
+          0,
+          0,
+          840,
+          768
+        ],
+        "compactness": 0.2639272842325973,
+        "index": 0,
+        "maximum_interior_radius_cells": 509.6666666666667,
+        "perimeter": 4878,
+        "touches_frame": true
+      }
+    ]
+  },
+  "design_water": {
+    "cells": 145364,
+    "component_count": 2,
+    "components": [
+      {
+        "area_cells": 144747,
+        "bbox_aspect_ratio": 2.1708683473389354,
+        "bounds": [
+          0,
+          411,
+          775,
+          768
+        ],
+        "compactness": 0.182850460077132,
+        "index": 0,
+        "maximum_interior_radius_cells": 168.33333333333334,
+        "perimeter": 3154,
+        "touches_frame": true
+      },
+      {
+        "area_cells": 617,
+        "bbox_aspect_ratio": 1.3214285714285714,
+        "bounds": [
+          717,
+          455,
+          754,
+          483
+        ],
+        "compactness": 0.45878406325796506,
+        "index": 1,
+        "maximum_interior_radius_cells": 10.666666666666666,
+        "perimeter": 130,
+        "touches_frame": false
+      }
+    ]
+  },
+  "existing_water_preserved": true,
+  "input_cells": [
+    840,
+    768
+  ],
+  "land_open_radius_input_cells": 10,
+  "main_land_and_each_preserved_compact_island_stable_under_opening": true,
+  "map_id": "辽宁",
+  "method": "morphological opening of land to retract narrow peninsulas, necks and pointed spurs",
+  "preserved_compact_small_islands": [],
+  "removed_land_cells": 391,
+  "small_shore_transition_policy": {
+    "bidirectional": true,
+    "continuous": true,
+    "few_exits_do_not_satisfy": true,
+    "scope": "entire perimeter of retained small islands and small waterbodies",
+    "status": "design requirement; implement and verify terrain height/navigation when producing playable maps"
+  },
+  "source": "maps/辽宁/data/terrain-preview/raw/reference-before-shoreline-refinement.npz",
+  "source_land": {
+    "cells": 500147,
+    "component_count": 1,
+    "components": [
+      {
+        "area_cells": 500147,
+        "bbox_aspect_ratio": 1.09375,
+        "bounds": [
+          0,
+          0,
+          840,
+          768
+        ],
+        "compactness": 0.25880110950198676,
+        "index": 0,
+        "maximum_interior_radius_cells": 509.6666666666667,
+        "perimeter": 4928,
+        "touches_frame": true
+      }
+    ]
+  },
+  "source_water": {
+    "cells": 144973,
+    "component_count": 2,
+    "components": [
+      {
+        "area_cells": 144356,
+        "bbox_aspect_ratio": 2.1708683473389354,
+        "bounds": [
+          0,
+          411,
+          775,
+          768
+        ],
+        "compactness": 0.1767094148472369,
+        "index": 0,
+        "maximum_interior_radius_cells": 168.33333333333334,
+        "perimeter": 3204,
+        "touches_frame": true
+      },
+      {
+        "area_cells": 617,
+        "bbox_aspect_ratio": 1.3214285714285714,
+        "bounds": [
+          717,
+          455,
+          754,
+          483
+        ],
+        "compactness": 0.45878406325796506,
+        "index": 1,
+        "maximum_interior_radius_cells": 10.666666666666666,
+        "perimeter": 130,
+        "touches_frame": false
+      }
+    ]
+  },
+  "date": "2026-10-29"
+}

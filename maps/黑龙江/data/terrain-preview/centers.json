@@ -1,0 +1,183 @@
+{
+  "schema_version": 1,
+  "map_name": "雪野沉星",
+  "blueprint": "黑龙江",
+  "label": "地级行政中心",
+  "coordinate_system": "WGS84",
+  "source": "https://geo.datav.aliyun.com/areas_v3/bound/230000_full.json",
+  "source_field": "properties.center (administrative center, not polygon centroid)",
+  "conversion": "GCJ-02 approximately inverted to WGS84 by six iterations, matching terrain boundary ingestion",
+  "retrieved_date": "2026-10-29",
+  "points": [
+    {
+      "adcode": "230100",
+      "name": "哈尔滨市",
+      "level": "city",
+      "center_wgs84": [
+        126.63650773975118,
+        45.75502436753707
+      ],
+      "center_gcj02": [
+        126.642464,
+        45.756967
+      ]
+    },
+    {
+      "adcode": "230200",
+      "name": "齐齐哈尔市",
+      "level": "city",
+      "center_wgs84": [
+        123.95131205346316,
+        47.33999755283465
+      ],
+      "center_gcj02": [
+        123.95792,
+        47.342081
+      ]
+    },
+    {
+      "adcode": "230300",
+      "name": "鸡西市",
+      "level": "city",
+      "center_wgs84": [
+        130.9685128694997,
+        45.29788340281504
+      ],
+      "center_gcj02": [
+        130.975966,
+        45.300046
+      ]
+    },
+    {
+      "adcode": "230400",
+      "name": "鹤岗市",
+      "level": "city",
+      "center_wgs84": [
+        130.26968349764638,
+        47.32968125694764
+      ],
+      "center_gcj02": [
+        130.277487,
+        47.332085
+      ]
+    },
+    {
+      "adcode": "230500",
+      "name": "双鸭山市",
+      "level": "city",
+      "center_wgs84": [
+        131.14917479441215,
+        46.64119939392981
+      ],
+      "center_gcj02": [
+        131.157304,
+        46.643442
+      ]
+    },
+    {
+      "adcode": "230600",
+      "name": "大庆市",
+      "level": "city",
+      "center_wgs84": [
+        125.10566657918386,
+        46.5886308756867
+      ],
+      "center_gcj02": [
+        125.11272,
+        46.590734
+      ]
+    },
+    {
+      "adcode": "230700",
+      "name": "伊春市",
+      "level": "city",
+      "center_wgs84": [
+        128.89238324298094,
+        47.722570209231876
+      ],
+      "center_gcj02": [
+        128.899396,
+        47.724775
+      ]
+    },
+    {
+      "adcode": "230800",
+      "name": "佳木斯市",
+      "level": "city",
+      "center_wgs84": [
+        130.353748295053,
+        46.807316448114236
+      ],
+      "center_gcj02": [
+        130.361634,
+        46.809606
+      ]
+    },
+    {
+      "adcode": "230900",
+      "name": "七台河市",
+      "level": "city",
+      "center_wgs84": [
+        131.00785747200666,
+        45.76902647107828
+      ],
+      "center_gcj02": [
+        131.015584,
+        45.771266
+      ]
+    },
+    {
+      "adcode": "231000",
+      "name": "牡丹江市",
+      "level": "city",
+      "center_wgs84": [
+        129.61155480067254,
+        44.58102110592574
+      ],
+      "center_gcj02": [
+        129.618602,
+        44.582962
+      ]
+    },
+    {
+      "adcode": "231100",
+      "name": "黑河市",
+      "level": "city",
+      "center_wgs84": [
+        127.4915799835912,
+        50.24785733453886
+      ],
+      "center_gcj02": [
+        127.499023,
+        50.249585
+      ]
+    },
+    {
+      "adcode": "231200",
+      "name": "绥化市",
+      "level": "city",
+      "center_wgs84": [
+        126.98652804391115,
+        46.63544713595214
+      ],
+      "center_gcj02": [
+        126.99293,
+        46.637393
+      ]
+    },
+    {
+      "adcode": "232700",
+      "name": "大兴安岭地区",
+      "level": "city",
+      "center_wgs84": [
+        124.70382450182633,
+        52.33386350228737
+      ],
+      "center_gcj02": [
+        124.711526,
+        52.335262
+      ]
+    }
+  ],
+  "excluded_features": []
+}

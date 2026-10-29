@@ -1,0 +1,459 @@
+{
+  "date": "2026-10-29",
+  "map_id": "江苏",
+  "map_name": "平畴织水",
+  "mode": "map-local-compact-water-design",
+  "designed_shorelines_are_not_measured": true,
+  "include_rivers": false,
+  "source_selection_report": "raw/before-water-shaping-water-report.json",
+  "water_cells_in_input": 170058,
+  "water_cells_in_game_frame": 145402,
+  "component_count_in_game_frame": 12,
+  "components_in_game_frame": [
+    {
+      "area_cells": 119311,
+      "bbox_game_cells": [
+        403,
+        0,
+        799,
+        743
+      ],
+      "bbox_fill_fraction": 0.4039,
+      "bbox_aspect_ratio": 1.8741,
+      "raster_perimeter": 2576,
+      "compactness_4pi_area_over_perimeter_squared": 0.2259,
+      "maximum_manhattan_interior_radius_cells": 129,
+      "touches_game_frame": true
+    },
+    {
+      "area_cells": 12515,
+      "bbox_game_cells": [
+        206,
+        252,
+        359,
+        384
+      ],
+      "bbox_fill_fraction": 0.611,
+      "bbox_aspect_ratio": 1.1579,
+      "raster_perimeter": 574,
+      "compactness_4pi_area_over_perimeter_squared": 0.4773,
+      "maximum_manhattan_interior_radius_cells": 58,
+      "touches_game_frame": false
+    },
+    {
+      "area_cells": 5534,
+      "bbox_game_cells": [
+        504,
+        609,
+        582,
+        712
+      ],
+      "bbox_fill_fraction": 0.6736,
+      "bbox_aspect_ratio": 1.3165,
+      "raster_perimeter": 396,
+      "compactness_4pi_area_over_perimeter_squared": 0.4435,
+      "maximum_manhattan_interior_radius_cells": 39,
+      "touches_game_frame": false
+    },
+    {
+      "area_cells": 1690,
+      "bbox_game_cells": [
+        135,
+        578,
+        204,
+        625
+      ],
+      "bbox_fill_fraction": 0.503,
+      "bbox_aspect_ratio": 1.4583,
+      "raster_perimeter": 266,
+      "compactness_4pi_area_over_perimeter_squared": 0.3001,
+      "maximum_manhattan_interior_radius_cells": 15,
+      "touches_game_frame": false
+    },
+    {
+      "area_cells": 1634,
+      "bbox_game_cells": [
+        389,
+        352,
+        434,
+        411
+      ],
+      "bbox_fill_fraction": 0.592,
+      "bbox_aspect_ratio": 1.3043,
+      "raster_perimeter": 224,
+      "compactness_4pi_area_over_perimeter_squared": 0.4092,
+      "maximum_manhattan_interior_radius_cells": 18,
+      "touches_game_frame": false
+    },
+    {
+      "area_cells": 1188,
+      "bbox_game_cells": [
+        696,
+        590,
+        746,
+        633
+      ],
+      "bbox_fill_fraction": 0.5294,
+      "bbox_aspect_ratio": 1.1591,
+      "raster_perimeter": 190,
+      "compactness_4pi_area_over_perimeter_squared": 0.4135,
+      "maximum_manhattan_interior_radius_cells": 15,
+      "touches_game_frame": false
+    },
+    {
+      "area_cells": 848,
+      "bbox_game_cells": [
+        335,
+        605,
+        372,
+        634
+      ],
+      "bbox_fill_fraction": 0.7439,
+      "bbox_aspect_ratio": 1.2667,
+      "raster_perimeter": 136,
+      "compactness_4pi_area_over_perimeter_squared": 0.5761,
+      "maximum_manhattan_interior_radius_cells": 15,
+      "touches_game_frame": false
+    },
+    {
+      "area_cells": 779,
+      "bbox_game_cells": [
+        64,
+        443,
+        88,
+        488
+      ],
+      "bbox_fill_fraction": 0.6774,
+      "bbox_aspect_ratio": 1.84,
+      "raster_perimeter": 142,
+      "compactness_4pi_area_over_perimeter_squared": 0.4855,
+      "maximum_manhattan_interior_radius_cells": 12,
+      "touches_game_frame": false
+    },
+    {
+      "area_cells": 766,
+      "bbox_game_cells": [
+        112,
+        71,
+        142,
+        109
+      ],
+      "bbox_fill_fraction": 0.6336,
+      "bbox_aspect_ratio": 1.2581,
+      "raster_perimeter": 140,
+      "compactness_4pi_area_over_perimeter_squared": 0.4911,
+      "maximum_manhattan_interior_radius_cells": 14,
+      "touches_game_frame": false
+    },
+    {
+      "area_cells": 453,
+      "bbox_game_cells": [
+        631,
+        541,
+        652,
+        570
+      ],
+      "bbox_fill_fraction": 0.6864,
+      "bbox_aspect_ratio": 1.3636,
+      "raster_perimeter": 106,
+      "compactness_4pi_area_over_perimeter_squared": 0.5066,
+      "maximum_manhattan_interior_radius_cells": 9,
+      "touches_game_frame": false
+    },
+    {
+      "area_cells": 347,
+      "bbox_game_cells": [
+        614,
+        618,
+        638,
+        637
+      ],
+      "bbox_fill_fraction": 0.694,
+      "bbox_aspect_ratio": 1.25,
+      "raster_perimeter": 90,
+      "compactness_4pi_area_over_perimeter_squared": 0.5383,
+      "maximum_manhattan_interior_radius_cells": 9,
+      "touches_game_frame": false
+    },
+    {
+      "area_cells": 337,
+      "bbox_game_cells": [
+        480,
+        586,
+        497,
+        615
+      ],
+      "bbox_fill_fraction": 0.6241,
+      "bbox_aspect_ratio": 1.6667,
+      "raster_perimeter": 98,
+      "compactness_4pi_area_over_perimeter_squared": 0.4409,
+      "maximum_manhattan_interior_radius_cells": 8,
+      "touches_game_frame": false
+    }
+  ],
+  "design_lake_groups": [
+    {
+      "action": "smooth",
+      "close_radius": 4,
+      "name": "江苏-湖区1",
+      "open_radius": 5,
+      "result": {
+        "cells": 5315,
+        "component_count": 1,
+        "components": [
+          {
+            "area_cells": 5315,
+            "bbox_aspect_ratio": 1.3164556962025316,
+            "bounds": [
+              524,
+              629,
+              603,
+              733
+            ],
+            "compactness": 0.34499101144276345,
+            "index": 0,
+            "maximum_interior_radius_cells": 32.333333333333336,
+            "perimeter": 440,
+            "touches_frame": false
+          }
+        ]
+      },
+      "source_cells": 5651
+    },
+    {
+      "action": "hull",
+      "close_radius": 0,
+      "name": "江苏-湖区2",
+      "open_radius": 8,
+      "result": {
+        "cells": 12515,
+        "component_count": 1,
+        "components": [
+          {
+            "area_cells": 12515,
+            "bbox_aspect_ratio": 1.1578947368421053,
+            "bounds": [
+              226,
+              272,
+              380,
+              405
+            ],
+            "compactness": 0.47732802461698287,
+            "index": 0,
+            "maximum_interior_radius_cells": 48.0,
+            "perimeter": 574,
+            "touches_frame": false
+          }
+        ]
+      },
+      "source_cells": 5432
+    },
+    {
+      "action": "smooth",
+      "close_radius": 4,
+      "name": "江苏-湖区3",
+      "open_radius": 5,
+      "result": {
+        "cells": 1588,
+        "component_count": 1,
+        "components": [
+          {
+            "area_cells": 1588,
+            "bbox_aspect_ratio": 1.3043478260869565,
+            "bounds": [
+              409,
+              372,
+              455,
+              432
+            ],
+            "compactness": 0.37075275965373006,
+            "index": 0,
+            "maximum_interior_radius_cells": 14.0,
+            "perimeter": 232,
+            "touches_frame": false
+          }
+        ]
+      },
+      "source_cells": 1957
+    },
+    {
+      "action": "smooth",
+      "close_radius": 4,
+      "name": "江苏-湖区4",
+      "open_radius": 5,
+      "result": {
+        "cells": 1672,
+        "component_count": 1,
+        "components": [
+          {
+            "area_cells": 1672,
+            "bbox_aspect_ratio": 1.4583333333333333,
+            "bounds": [
+              155,
+              598,
+              225,
+              646
+            ],
+            "compactness": 0.29694968154232204,
+            "index": 0,
+            "maximum_interior_radius_cells": 12.666666666666666,
+            "perimeter": 266,
+            "touches_frame": false
+          }
+        ]
+      },
+      "source_cells": 1784
+    },
+    {
+      "action": "hull",
+      "close_radius": 0,
+      "name": "江苏-湖区5",
+      "open_radius": 6,
+      "result": {
+        "cells": 766,
+        "component_count": 1,
+        "components": [
+          {
+            "area_cells": 766,
+            "bbox_aspect_ratio": 1.2580645161290323,
+            "bounds": [
+              132,
+              91,
+              163,
+              130
+            ],
+            "compactness": 0.49111428013260844,
+            "index": 0,
+            "maximum_interior_radius_cells": 12.666666666666666,
+            "perimeter": 140,
+            "touches_frame": false
+          }
+        ]
+      },
+      "source_cells": 784
+    },
+    {
+      "action": "hull",
+      "close_radius": 0,
+      "name": "江苏-湖区6",
+      "open_radius": 6,
+      "result": {
+        "cells": 848,
+        "component_count": 1,
+        "components": [
+          {
+            "area_cells": 848,
+            "bbox_aspect_ratio": 1.2666666666666666,
+            "bounds": [
+              355,
+              625,
+              393,
+              655
+            ],
+            "compactness": 0.5761398292050486,
+            "index": 0,
+            "maximum_interior_radius_cells": 14.0,
+            "perimeter": 136,
+            "touches_frame": false
+          }
+        ]
+      },
+      "source_cells": 705
+    },
+    {
+      "action": "smooth",
+      "close_radius": 4,
+      "name": "江苏-湖区7",
+      "open_radius": 5,
+      "result": {
+        "cells": 337,
+        "component_count": 1,
+        "components": [
+          {
+            "area_cells": 337,
+            "bbox_aspect_ratio": 1.6666666666666667,
+            "bounds": [
+              500,
+              606,
+              518,
+              636
+            ],
+            "compactness": 0.44094824000823,
+            "index": 0,
+            "maximum_interior_radius_cells": 6.666666666666667,
+            "perimeter": 98,
+            "touches_frame": false
+          }
+        ]
+      },
+      "source_cells": 443
+    },
+    {
+      "action": "hull",
+      "close_radius": 0,
+      "name": "江苏-湖区8",
+      "open_radius": 5,
+      "result": {
+        "cells": 779,
+        "component_count": 1,
+        "components": [
+          {
+            "area_cells": 779,
+            "bbox_aspect_ratio": 1.84,
+            "bounds": [
+              84,
+              463,
+              109,
+              509
+            ],
+            "compactness": 0.48547920594057703,
+            "index": 0,
+            "maximum_interior_radius_cells": 11.333333333333334,
+            "perimeter": 142,
+            "touches_frame": false
+          }
+        ]
+      },
+      "source_cells": 324
+    },
+    {
+      "action": "hull",
+      "close_radius": 0,
+      "name": "江苏-湖区9",
+      "open_radius": 5,
+      "result": {
+        "cells": 347,
+        "component_count": 1,
+        "components": [
+          {
+            "area_cells": 347,
+            "bbox_aspect_ratio": 1.25,
+            "bounds": [
+              634,
+              638,
+              659,
+              658
+            ],
+            "compactness": 0.5383371115040287,
+            "index": 0,
+            "maximum_interior_radius_cells": 9.0,
+            "perimeter": 90,
+            "touches_frame": false
+          }
+        ]
+      },
+      "source_cells": 275
+    }
+  ],
+  "water_exactly_ocean_union_original_large_lakes": false,
+  "original_geographic_arrays_preserved": true,
+  "existing_land_layers_preserved": true,
+  "original_final_thresholds_preserved": true,
+  "reference": "raw/reference-before-water-shaping.npz",
+  "active_shoreline_refinement": "shoreline-refinement-report.json",
+  "land_protrusions_removed_input_cells": 471,
+  "land_protrusions_removed_game_cells": 469,
+  "small_island_and_waterbody_transition_plan": "shoreline-transition-plan.json",
+  "existing_water_preserved_during_land_refinement": true,
+  "full_perimeter_passability_status": "preview design requirement; implement and verify height/navigation during playable-map authoring"
+}

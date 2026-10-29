@@ -1,0 +1,11 @@
+{
+  "detailed_ocean_reference": "coast-report.json",
+  "include_rivers": false,
+  "large_lake_cells": 0,
+  "minimum_lake_area_km2": 80,
+  "ocean_cells": 211093,
+  "ocean_channel_open_radius_cells": 3,
+  "retained_lakes": [],
+  "water_cells": 211093,
+  "water_mask_equals_ocean_union_large_lakes": true
+}

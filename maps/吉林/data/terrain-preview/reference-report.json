@@ -1,0 +1,125 @@
+{
+  "blueprint": "吉林",
+  "boundary_conversion": "GCJ-02 approximately inverted to WGS84, six iterations",
+  "boundary_source": "https://geo.datav.aliyun.com/areas_v3/bound/220000.json",
+  "bounds_wgs84": [
+    121.34586752826664,
+    40.66140245492111,
+    131.60590518634032,
+    46.50513541795155
+  ],
+  "date": "2026-10-29",
+  "dem_attribution": "Mapzen / AWS Terrain Tiles; SRTM and GMTED2010 courtesy USGS; see tilezen/joerd docs/attribution.md",
+  "dem_source": "https://registry.opendata.aws/terrain-tiles/",
+  "elevation_max_m": 2581.6160080640975,
+  "elevation_min_m": -3530.4954631283167,
+  "grid": [
+    840,
+    664
+  ],
+  "limitation": "reference cartography at sampled resolution; sampled maxima and polygon areas are not surveyed values",
+  "map_name": "霜林鸣瀑",
+  "no_province_based_terrain_clipping": true,
+  "north_up": true,
+  "terrain_zoom": 7,
+  "tiles_validated": [
+    {
+      "crc32": 852992355,
+      "x": 107,
+      "y": 45,
+      "z": 7
+    },
+    {
+      "crc32": 40284166,
+      "x": 107,
+      "y": 46,
+      "z": 7
+    },
+    {
+      "crc32": 1057213439,
+      "x": 107,
+      "y": 47,
+      "z": 7
+    },
+    {
+      "crc32": 4255600274,
+      "x": 107,
+      "y": 48,
+      "z": 7
+    },
+    {
+      "crc32": 731983107,
+      "x": 108,
+      "y": 45,
+      "z": 7
+    },
+    {
+      "crc32": 1109242426,
+      "x": 108,
+      "y": 46,
+      "z": 7
+    },
+    {
+      "crc32": 1064852181,
+      "x": 108,
+      "y": 47,
+      "z": 7
+    },
+    {
+      "crc32": 1816845555,
+      "x": 108,
+      "y": 48,
+      "z": 7
+    },
+    {
+      "crc32": 1779759160,
+      "x": 109,
+      "y": 45,
+      "z": 7
+    },
+    {
+      "crc32": 1043219193,
+      "x": 109,
+      "y": 46,
+      "z": 7
+    },
+    {
+      "crc32": 3642887514,
+      "x": 109,
+      "y": 47,
+      "z": 7
+    },
+    {
+      "crc32": 3246128364,
+      "x": 109,
+      "y": 48,
+      "z": 7
+    },
+    {
+      "crc32": 3736152490,
+      "x": 110,
+      "y": 45,
+      "z": 7
+    },
+    {
+      "crc32": 2597053621,
+      "x": 110,
+      "y": 46,
+      "z": 7
+    },
+    {
+      "crc32": 2477543572,
+      "x": 110,
+      "y": 47,
+      "z": 7
+    },
+    {
+      "crc32": 3146186812,
+      "x": 110,
+      "y": 48,
+      "z": 7
+    }
+  ],
+  "water_display_policy": "water-policy.json",
+  "water_source": "Natural Earth 1:10m ocean and lakes; selected OSM reservoir polygons; minimum lake area 80 km2"
+}

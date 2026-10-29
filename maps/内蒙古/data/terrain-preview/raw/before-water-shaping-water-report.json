@@ -1,0 +1,116 @@
+{
+  "include_rivers": false,
+  "large_lake_cells": 4397,
+  "minimum_lake_area_km2": 80,
+  "ocean_cells": 20144,
+  "ocean_channel_open_radius_cells": 3,
+  "retained_lakes": [
+    {
+      "area_km2": 31418.67174915772,
+      "cells_in_input_frame": 2960,
+      "name": "贝加尔湖"
+    },
+    {
+      "area_km2": 2763.9987754466792,
+      "cells_in_input_frame": 384,
+      "name": "库苏古尔湖"
+    },
+    {
+      "area_km2": 2347.5272735190815,
+      "cells_in_input_frame": 307,
+      "name": "呼倫湖"
+    },
+    {
+      "area_km2": 603.2301587336201,
+      "cells_in_input_frame": 76,
+      "name": "贝尔湖"
+    },
+    {
+      "area_km2": 89.12682654003369,
+      "cells_in_input_frame": 13,
+      "name": "下查干湖"
+    },
+    {
+      "area_km2": 195.6761899048556,
+      "cells_in_input_frame": 23,
+      "name": "烏梁素海"
+    },
+    {
+      "area_km2": 211.41100743488363,
+      "cells_in_input_frame": 23,
+      "name": "查干湖"
+    },
+    {
+      "area_km2": 244.2672216893532,
+      "cells_in_input_frame": 31,
+      "name": "达里诺尔"
+    },
+    {
+      "area_km2": 132.41852014079626,
+      "cells_in_input_frame": 18,
+      "name": "古西諾耶湖"
+    },
+    {
+      "area_km2": 94.83617029132655,
+      "cells_in_input_frame": 14,
+      "name": "大耶拉夫諾耶湖"
+    },
+    {
+      "area_km2": 100.95430909926728,
+      "cells_in_input_frame": 16,
+      "name": "阿拉赫列伊湖"
+    },
+    {
+      "area_km2": 192.88668419388375,
+      "cells_in_input_frame": 23,
+      "name": "台尔明湖"
+    },
+    {
+      "area_km2": 181.28418650361257,
+      "cells_in_input_frame": 21,
+      "name": "桑根达来湖"
+    },
+    {
+      "area_km2": 235.25474573312064,
+      "cells_in_input_frame": 31,
+      "name": "乌拉盖戈壁"
+    },
+    {
+      "area_km2": 175.69662734405478,
+      "cells_in_input_frame": 20,
+      "name": "松花湖"
+    },
+    {
+      "area_km2": 4078.275818457903,
+      "cells_in_input_frame": 91,
+      "name": "布拉茨克水庫"
+    },
+    {
+      "area_km2": 164.98690803536246,
+      "cells_in_input_frame": 22,
+      "name": "苏邦水库"
+    },
+    {
+      "area_km2": 4457.427307317892,
+      "cells_in_input_frame": 301,
+      "name": "青海湖"
+    },
+    {
+      "area_km2": 135.41668529986785,
+      "cells_in_input_frame": 13,
+      "name": "密云水库"
+    },
+    {
+      "area_km2": 91.8388931802006,
+      "cells_in_input_frame": 7,
+      "name": "官厅水库"
+    },
+    {
+      "area_km2": 217.79044886687052,
+      "cells_in_input_frame": 15,
+      "name": "松花湖"
+    }
+  ],
+  "water_cells": 24541,
+  "water_mask_equals_ocean_union_large_lakes": true
+}

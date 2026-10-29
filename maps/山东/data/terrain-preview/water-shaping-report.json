@@ -1,0 +1,260 @@
+{
+  "added_cells": 290,
+  "design_lakes": {
+    "cells": 375,
+    "component_count": 1,
+    "components": [
+      {
+        "area_cells": 375,
+        "bbox_aspect_ratio": 1.2857142857142858,
+        "bounds": [
+          256,
+          480,
+          277,
+          507
+        ],
+        "compactness": 0.5113269292952137,
+        "index": 0,
+        "maximum_interior_radius_cells": 9.0,
+        "perimeter": 96,
+        "touches_frame": false
+      }
+    ]
+  },
+  "design_ocean": {
+    "cells": 159231,
+    "component_count": 1,
+    "components": [
+      {
+        "area_cells": 159231,
+        "bbox_aspect_ratio": 1.0130353817504656,
+        "bounds": [
+          303,
+          0,
+          840,
+          544
+        ],
+        "compactness": 0.19061078335000622,
+        "index": 0,
+        "maximum_interior_radius_cells": 284.3333333333333,
+        "perimeter": 3240,
+        "touches_frame": true
+      }
+    ]
+  },
+  "design_water": {
+    "cells": 159606,
+    "component_count": 2,
+    "components": [
+      {
+        "area_cells": 159231,
+        "bbox_aspect_ratio": 1.0130353817504656,
+        "bounds": [
+          303,
+          0,
+          840,
+          544
+        ],
+        "compactness": 0.19061078335000622,
+        "index": 0,
+        "maximum_interior_radius_cells": 284.3333333333333,
+        "perimeter": 3240,
+        "touches_frame": true
+      },
+      {
+        "area_cells": 375,
+        "bbox_aspect_ratio": 1.2857142857142858,
+        "bounds": [
+          256,
+          480,
+          277,
+          507
+        ],
+        "compactness": 0.5113269292952137,
+        "index": 1,
+        "maximum_interior_radius_cells": 9.0,
+        "perimeter": 96,
+        "touches_frame": false
+      }
+    ]
+  },
+  "groups": [
+    {
+      "action": "hull",
+      "close_radius": 0,
+      "name": "山东-湖区1",
+      "open_radius": 5,
+      "result": {
+        "cells": 375,
+        "component_count": 1,
+        "components": [
+          {
+            "area_cells": 375,
+            "bbox_aspect_ratio": 1.2857142857142858,
+            "bounds": [
+              256,
+              480,
+              277,
+              507
+            ],
+            "compactness": 0.5113269292952137,
+            "index": 0,
+            "maximum_interior_radius_cells": 9.0,
+            "perimeter": 96,
+            "touches_frame": false
+          }
+        ]
+      },
+      "source_cells": 412
+    }
+  ],
+  "id": "山东",
+  "input_cells": [
+    840,
+    544
+  ],
+  "non_water_arrays_byte_identical": true,
+  "removed_cells": 1766,
+  "restored_unseeded_land_hole_cells": 0,
+  "shoreline_kind": "game-terrain-preview-design",
+  "source": "maps/山东/data/terrain-preview/raw/reference-before-water-shaping.npz",
+  "source_lakes": {
+    "cells": 580,
+    "component_count": 2,
+    "components": [
+      {
+        "area_cells": 412,
+        "bbox_aspect_ratio": 1.5217391304347827,
+        "bounds": [
+          255,
+          475,
+          278,
+          510
+        ],
+        "compactness": 0.37182883461045524,
+        "index": 0,
+        "maximum_interior_radius_cells": 9.0,
+        "perimeter": 118,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 168,
+        "bbox_aspect_ratio": 1.7857142857142858,
+        "bounds": [
+          154,
+          307,
+          168,
+          332
+        ],
+        "compactness": 0.28544487063444307,
+        "index": 1,
+        "maximum_interior_radius_cells": 4.666666666666667,
+        "perimeter": 86,
+        "touches_frame": false
+      }
+    ]
+  },
+  "source_ocean": {
+    "cells": 160502,
+    "component_count": 2,
+    "components": [
+      {
+        "area_cells": 160468,
+        "bbox_aspect_ratio": 1.0111524163568772,
+        "bounds": [
+          302,
+          0,
+          840,
+          544
+        ],
+        "compactness": 0.14187817825672366,
+        "index": 0,
+        "maximum_interior_radius_cells": 284.0,
+        "perimeter": 3770,
+        "touches_frame": true
+      },
+      {
+        "area_cells": 34,
+        "bbox_aspect_ratio": 1.3333333333333333,
+        "bounds": [
+          620,
+          243,
+          626,
+          251
+        ],
+        "compactness": 0.5449701541941478,
+        "index": 1,
+        "maximum_interior_radius_cells": 3.0,
+        "perimeter": 28,
+        "touches_frame": false
+      }
+    ]
+  },
+  "source_water": {
+    "cells": 161082,
+    "component_count": 4,
+    "components": [
+      {
+        "area_cells": 160468,
+        "bbox_aspect_ratio": 1.0111524163568772,
+        "bounds": [
+          302,
+          0,
+          840,
+          544
+        ],
+        "compactness": 0.14187817825672366,
+        "index": 0,
+        "maximum_interior_radius_cells": 284.0,
+        "perimeter": 3770,
+        "touches_frame": true
+      },
+      {
+        "area_cells": 412,
+        "bbox_aspect_ratio": 1.5217391304347827,
+        "bounds": [
+          255,
+          475,
+          278,
+          510
+        ],
+        "compactness": 0.37182883461045524,
+        "index": 1,
+        "maximum_interior_radius_cells": 9.0,
+        "perimeter": 118,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 168,
+        "bbox_aspect_ratio": 1.7857142857142858,
+        "bounds": [
+          154,
+          307,
+          168,
+          332
+        ],
+        "compactness": 0.28544487063444307,
+        "index": 2,
+        "maximum_interior_radius_cells": 4.666666666666667,
+        "perimeter": 86,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 34,
+        "bbox_aspect_ratio": 1.3333333333333333,
+        "bounds": [
+          620,
+          243,
+          626,
+          251
+        ],
+        "compactness": 0.5449701541941478,
+        "index": 3,
+        "maximum_interior_radius_cells": 3.0,
+        "perimeter": 28,
+        "touches_frame": false
+      }
+    ]
+  },
+  "date": "2026-10-29"
+}

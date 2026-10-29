@@ -1,0 +1,139 @@
+{
+  "added_cells": 131,
+  "design_lakes": {
+    "cells": 0,
+    "component_count": 0,
+    "components": []
+  },
+  "design_ocean": {
+    "cells": 53039,
+    "component_count": 1,
+    "components": [
+      {
+        "area_cells": 53039,
+        "bbox_aspect_ratio": 1.6105769230769231,
+        "bounds": [
+          328,
+          505,
+          536,
+          840
+        ],
+        "compactness": 0.46285259098263626,
+        "index": 0,
+        "maximum_interior_radius_cells": 190.33333333333334,
+        "perimeter": 1200,
+        "touches_frame": true
+      }
+    ]
+  },
+  "design_water": {
+    "cells": 53039,
+    "component_count": 1,
+    "components": [
+      {
+        "area_cells": 53039,
+        "bbox_aspect_ratio": 1.6105769230769231,
+        "bounds": [
+          328,
+          505,
+          536,
+          840
+        ],
+        "compactness": 0.46285259098263626,
+        "index": 0,
+        "maximum_interior_radius_cells": 190.33333333333334,
+        "perimeter": 1200,
+        "touches_frame": true
+      }
+    ]
+  },
+  "groups": [],
+  "id": "天津",
+  "input_cells": [
+    536,
+    840
+  ],
+  "non_water_arrays_byte_identical": true,
+  "removed_cells": 803,
+  "restored_unseeded_land_hole_cells": 0,
+  "shoreline_kind": "game-terrain-preview-design",
+  "source": "maps/天津/data/terrain-preview/raw/reference-before-water-shaping.npz",
+  "source_lakes": {
+    "cells": 0,
+    "component_count": 0,
+    "components": []
+  },
+  "source_ocean": {
+    "cells": 53711,
+    "component_count": 2,
+    "components": [
+      {
+        "area_cells": 53641,
+        "bbox_aspect_ratio": 1.6028708133971292,
+        "bounds": [
+          327,
+          505,
+          536,
+          840
+        ],
+        "compactness": 0.31024998026619727,
+        "index": 0,
+        "maximum_interior_radius_cells": 189.66666666666666,
+        "perimeter": 1474,
+        "touches_frame": true
+      },
+      {
+        "area_cells": 70,
+        "bbox_aspect_ratio": 1.3333333333333333,
+        "bounds": [
+          384,
+          613,
+          393,
+          625
+        ],
+        "compactness": 0.45436257386629236,
+        "index": 1,
+        "maximum_interior_radius_cells": 3.3333333333333335,
+        "perimeter": 44,
+        "touches_frame": false
+      }
+    ]
+  },
+  "source_water": {
+    "cells": 53711,
+    "component_count": 2,
+    "components": [
+      {
+        "area_cells": 53641,
+        "bbox_aspect_ratio": 1.6028708133971292,
+        "bounds": [
+          327,
+          505,
+          536,
+          840
+        ],
+        "compactness": 0.31024998026619727,
+        "index": 0,
+        "maximum_interior_radius_cells": 189.66666666666666,
+        "perimeter": 1474,
+        "touches_frame": true
+      },
+      {
+        "area_cells": 70,
+        "bbox_aspect_ratio": 1.3333333333333333,
+        "bounds": [
+          384,
+          613,
+          393,
+          625
+        ],
+        "compactness": 0.45436257386629236,
+        "index": 1,
+        "maximum_interior_radius_cells": 3.3333333333333335,
+        "perimeter": 44,
+        "touches_frame": false
+      }
+    ]
+  },
+  "date": "2026-10-29"
+}

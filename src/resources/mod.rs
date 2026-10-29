@@ -357,6 +357,21 @@ mod tests {
         )
         .unwrap();
         validate_terrain_package(&m, &result.xml, Some("T0.5.2")).unwrap();
+        let extra_tile =
+            "<Tile BaseTexture=\"unused\" NormalTexture=\"unused\" TextureID=\"4294967295\"/>";
+        let with_unused = result.xml.replace(
+            "</TerrainTextureAtlas>",
+            &format!("{extra_tile}</TerrainTextureAtlas>"),
+        );
+        let pruned = finalize_terrain_package(
+            &p,
+            &mut m,
+            &with_unused,
+            "T0.5.2",
+            TerrainFinalization::CompactLookups,
+        )
+        .unwrap();
+        assert_eq!(pruned.xml, result.xml);
         let once = m.clone();
         let again = finalize_terrain_package(
             &p,

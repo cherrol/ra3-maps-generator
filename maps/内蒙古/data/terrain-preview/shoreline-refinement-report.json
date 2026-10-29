@@ -1,0 +1,168 @@
+{
+  "added_land_cells": 0,
+  "all_nonwater_arrays_byte_identical": true,
+  "design_land": {
+    "cells": 528089,
+    "component_count": 1,
+    "components": [
+      {
+        "area_cells": 528089,
+        "bbox_aspect_ratio": 1.2650602409638554,
+        "bounds": [
+          0,
+          0,
+          840,
+          664
+        ],
+        "compactness": 0.3656771193637903,
+        "index": 0,
+        "maximum_interior_radius_cells": 606.3333333333334,
+        "perimeter": 4260,
+        "touches_frame": true
+      }
+    ]
+  },
+  "design_water": {
+    "cells": 29671,
+    "component_count": 3,
+    "components": [
+      {
+        "area_cells": 19517,
+        "bbox_aspect_ratio": 1.5157232704402517,
+        "bounds": [
+          583,
+          505,
+          824,
+          664
+        ],
+        "compactness": 0.21341913503881707,
+        "index": 0,
+        "maximum_interior_radius_cells": 46.0,
+        "perimeter": 1072,
+        "touches_frame": true
+      },
+      {
+        "area_cells": 9760,
+        "bbox_aspect_ratio": 1.6210526315789473,
+        "bounds": [
+          203,
+          0,
+          357,
+          95
+        ],
+        "compactness": 0.4945395122503892,
+        "index": 1,
+        "maximum_interior_radius_cells": 48.0,
+        "perimeter": 498,
+        "touches_frame": true
+      },
+      {
+        "area_cells": 394,
+        "bbox_aspect_ratio": 1.0,
+        "bounds": [
+          568,
+          179,
+          595,
+          206
+        ],
+        "compactness": 0.42448131190479366,
+        "index": 2,
+        "maximum_interior_radius_cells": 7.666666666666667,
+        "perimeter": 108,
+        "touches_frame": false
+      }
+    ]
+  },
+  "existing_water_preserved": true,
+  "input_cells": [
+    840,
+    664
+  ],
+  "land_open_radius_input_cells": 8,
+  "main_land_and_each_preserved_compact_island_stable_under_opening": true,
+  "map_id": "内蒙古",
+  "method": "morphological opening of land to retract narrow peninsulas, necks and pointed spurs",
+  "preserved_compact_small_islands": [],
+  "removed_land_cells": 533,
+  "small_shore_transition_policy": {
+    "bidirectional": true,
+    "continuous": true,
+    "few_exits_do_not_satisfy": true,
+    "scope": "entire perimeter of retained small islands and small waterbodies",
+    "status": "design requirement; implement and verify terrain height/navigation when producing playable maps"
+  },
+  "source": "maps/内蒙古/data/terrain-preview/raw/reference-before-shoreline-refinement.npz",
+  "source_land": {
+    "cells": 528622,
+    "component_count": 1,
+    "components": [
+      {
+        "area_cells": 528622,
+        "bbox_aspect_ratio": 1.2650602409638554,
+        "bounds": [
+          0,
+          0,
+          840,
+          664
+        ],
+        "compactness": 0.3348533684803423,
+        "index": 0,
+        "maximum_interior_radius_cells": 606.3333333333334,
+        "perimeter": 4454,
+        "touches_frame": true
+      }
+    ]
+  },
+  "source_water": {
+    "cells": 29138,
+    "component_count": 3,
+    "components": [
+      {
+        "area_cells": 19330,
+        "bbox_aspect_ratio": 1.5157232704402517,
+        "bounds": [
+          583,
+          505,
+          824,
+          664
+        ],
+        "compactness": 0.19857815170217588,
+        "index": 0,
+        "maximum_interior_radius_cells": 44.666666666666664,
+        "perimeter": 1106,
+        "touches_frame": true
+      },
+      {
+        "area_cells": 9414,
+        "bbox_aspect_ratio": 1.6210526315789473,
+        "bounds": [
+          203,
+          0,
+          357,
+          95
+        ],
+        "compactness": 0.47700768118085696,
+        "index": 1,
+        "maximum_interior_radius_cells": 40.0,
+        "perimeter": 498,
+        "touches_frame": true
+      },
+      {
+        "area_cells": 394,
+        "bbox_aspect_ratio": 1.0,
+        "bounds": [
+          568,
+          179,
+          595,
+          206
+        ],
+        "compactness": 0.42448131190479366,
+        "index": 2,
+        "maximum_interior_radius_cells": 7.666666666666667,
+        "perimeter": 108,
+        "touches_frame": false
+      }
+    ]
+  },
+  "date": "2026-10-29"
+}

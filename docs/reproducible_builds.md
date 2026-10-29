@@ -27,14 +27,37 @@ CRC32 用于发现误损和版本不一致，不是安全散列，也不证明�
 | 位置 | Git 中保留的输入 |
 |---|---|
 | `maps/<id>/` | `config.json`、`version.json`、所选蓝图原字节镜像 `layers.npz`、本图 `coordinate-system.json`；默认选择为 `maps/.default` |
+| `maps/<id>/` 预览 | `README.md`、`source.png`、`preview.png`、`preview--line.png` 及已有的 `preview--center--line.png` |
+| `data/terrain-preview/` | 当前高程输入 `input.npz` / `reference.npz`、分层 `terrain.npz`、参数、设计坐标、行政中心、来源说明、水域方案和核对报告；白名单同时保留参数与报告引用的 `raw/` JSON/NPZ 快照 |
 | `histories/v<版本>/` | 已有蓝图 `layers.npz`、同版 `layout.json`、`ramps.json` 及历史预览 PNG；当前四图选用 v11 |
 | `histories/legacy/` | 版本无法确认的旧 `layers.npz` 原件 |
 | `authoring/` | 完整 `source.zip`、可编辑 `layout.json`、空间 `baseline.json`、可选 `policy.json`、当前编号对照及 `resource-distribution.json` |
-| `histories/T<版本>/` | 各版 `coordinate-id-map.json`、历史方案与配置/布局/基准快照、所需局部高程 `.u16`、材质 `.u8`、蓝图 NPZ、冻结源与原名历史输入 ZIP |
+| `histories/T<版本>/` | 各版 `coordinate-id-map.json`、历史方案与配置/布局/基准快照、所需局部高程 `.u16`、材质 `.u8`、蓝图 NPZ、冻结源与原名历史输入 ZIP；同版可玩图的预览、地形、通行、布局图片及 `preview-snapshot.json` |
 | `templates/` | 地图骨架、脚本与规则模板、资源标识数据和 WorldBuilder 导出模板 |
 | `tests/fixtures/` | 回归基线、历史素材清单及其最小 ZIP、绑定原样几何的坡口净空参考报告 |
 
-`assets/`、`dist/`、`work/`、`target/` 和 `archive/` 继续忽略。地图根目录的当前预览 PNG、`data/terrain-preview/`、DEM、原始地理资料和下载缓存不因这次白名单进入 Git。`.gitattributes` 将地图、ZIP/NPZ 和局部地形数据标为二进制，避免 Windows 检出时转换字节。若新增输入不属于白名单，先评估并明确补充规则，不使用 `git add -f maps/` 绕过边界。
+`assets/`、`dist/`、`work/`、`target/` 和 `archive/` 继续忽略。当前预览图片、离线复现输入及被引用的设计快照通过精确白名单进入 Git；下载的 Terrarium 栅格瓦片、其他原始地理资料、日志和包含未受控缓存的旧 `manifest.json` 继续忽略。原始瓦片无需再次下载，预览直接读取已保存的高程与掩码 NPZ。`.gitattributes` 将地图、PNG、ZIP/NPZ 和局部地形数据标为二进制，避免 Windows 检出时转换字节。若新增输入不属于白名单，先评估并明确补充规则，不使用 `git add -f maps/` 绕过边界。
+
+## 预览与实际游戏地图
+
+纯地形设计预览在 `maps/<id>/`，实际可玩图图片在 `maps/<id>/histories/T<版本>/`。后者的 `preview.png` 为玩法总览，`preview--layout.png` 标注对象编号，`preview--terrain.png` 和 `preview--passability.png` 分别显示实际原生地形与通行；同目录的 `layout-index.json` 解释编号，`preview-snapshot.json` 绑定配置、可编辑布局、完整原生源包、字体及图片的 SHA256。
+
+实际游戏文件由已经受控的 `maps/<id>/authoring/source.zip` 完整保存，包括同名 `.map`、`_art.tga`、`map.str` 及随包 XML 等文件。可编辑布局和验收基准另存 `authoring/`；采用新源时按下文更新整套同版输入。游戏安装包仍由这些文件构建到 `dist/`，不用再次跟踪整份生成目录。
+
+从工程根目录可直接离线重做设计预览，或从冻结原生源生成可玩图图片：
+
+```sh
+cargo run --release --locked -- terrain-preview 广西 maps/广西/data/terrain-preview/reference.npz
+cargo run --release --locked -- build --map 广西 --only preview
+```
+
+第一条读取本图参数及其 `water_design_land_reference` 依赖；存在 `centers.json` 时同时重绘中心标点图。第二条在 `assets/<id>/<发布名+版本>/` 输出 `preview.png`、`preview--layout.png`、`layout-index.json` 及 `source/terrain_preview.png`、`source/passability_preview.png`。保存可玩图图片时，将这两张 `source/` 图片分别归档为 `preview--terrain.png`、`preview--passability.png`，并同步同版图片和来源指纹。
+
+NPZ 分层数据可以独立核对；要得到逐字节相同的带文字 PNG，还需使用相同字体，可通过 `RA3MAP_FONT` 指定。河南当前只有三张基础预览，没有行政中心图；可玩成品仍使用其冻结原生网格。
+
+2026-10-29 在只复制 Git 文件和本次新增受控资料的隔离目录中，34 张设计预览的 135 张现有 PNG 及全部已有 NPZ 数组逐字节复现；五张可玩图均能从冻结源生成上述图片，完整源包成员也可离线原样恢复。本轮使用 `wqy-zenhei.ttc`，SHA256 为 `79c18ebe7b811951e8311bad7103ebeae8c337ed9988ea69e8a78a66cfe029b9`。
+
+同时补齐河南配置已引用但缺失的 `histories/v1/layers.npz`，字节来自已受控的根 `layers.npz` 镜像；河南、海南、陕西的 `map → verify → preview → accept → dist` 重建通过，原生游戏文件与冻结源一致。广东、广西的图片与源包可恢复，但完整重建仍受既有 XML 资源版本校验拦截：广东 `GameMap` 资源 ID 含 `T0.4.8`，当前版本为 `T0.5.6`；广西含 `T2.2.6`，当前版本为 `T2.3.7`。本次资料纳管保留原包字节，未重新采用源或改写这些资源 ID。
 
 四张现有地图的常规制作读取 `COORDINATE_PIPELINE` 指定的 `authoring/source.zip` 和 `authoring/layout.json`。`histories/v11/layout.json`、`histories/v11/layers.npz` 仍供迁移回归测试复现旧蓝图；四图显式配置 `LAYERS: "histories/v11/layers.npz"`，缺省输入名为 `layers.npz`。根 `layers.npz` 与所选定稿蓝图原件逐字节一致，不从成品地图回读；其他版本资料按 [版本目录约定](blueprint_versions.md) 保留。地图 id 使用真实地形名，默认选择文件填写 `广西`。恢复当前源包时，包内游戏文件放入 `assets/<真实地形名>/<生成发布名+版本>/`，包内 `layout.json` 对应该目录的 `source/layout.json`；恢复不会重做地形、搜索布局或递增地图版本。
 

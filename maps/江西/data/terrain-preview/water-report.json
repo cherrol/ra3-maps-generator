@@ -1,0 +1,102 @@
+{
+  "date": "2026-10-29",
+  "map_id": "江西",
+  "map_name": "赤崖涵碧",
+  "game_cells": [
+    800,
+    800
+  ],
+  "include_rivers": false,
+  "water_policy": {
+    "design_shaping": {
+      "designed_shorelines_are_not_measured": true,
+      "merge_nearby_reservoir_branches": true,
+      "real_water_selection_retained_as_reference": true,
+      "recipe": "water-shaping.json",
+      "reference": "raw/reference-before-water-shaping.npz",
+      "remove_unmergeable_small_or_narrow_water": true,
+      "removed_water_target": "valid adjoining land layer from unchanged DEM",
+      "report": "water-shaping-report.json"
+    },
+    "include_rivers": false,
+    "lake_area_method": "spherical polygon area; whole waterbody minus holes before frame clipping",
+    "minimum_lake_area_km2": 80,
+    "mode": "map-local-compact-water-design",
+    "ocean_channel_open_radius_cells": 3,
+    "preserve_ocean": true
+  },
+  "water_cells_in_game_frame": 17250,
+  "component_count_in_game_frame": 5,
+  "components_in_game_frame": [
+    {
+      "area_cells": 10142,
+      "bbox_game_cells": [
+        383,
+        51,
+        511,
+        186
+      ],
+      "raster_perimeter": 530,
+      "bbox_fill_fraction": 0.5780893752849977,
+      "bbox_aspect_ratio": 0.9485294117647058,
+      "touches_game_frame": false
+    },
+    {
+      "area_cells": 2557,
+      "bbox_game_cells": [
+        387,
+        0,
+        495,
+        32
+      ],
+      "raster_perimeter": 284,
+      "bbox_fill_fraction": 0.7108701695857659,
+      "bbox_aspect_ratio": 3.303030303030303,
+      "touches_game_frame": true
+    },
+    {
+      "area_cells": 1780,
+      "bbox_game_cells": [
+        63,
+        0,
+        122,
+        36
+      ],
+      "raster_perimeter": 194,
+      "bbox_fill_fraction": 0.8018018018018018,
+      "bbox_aspect_ratio": 1.6216216216216217,
+      "touches_game_frame": true
+    },
+    {
+      "area_cells": 1440,
+      "bbox_game_cells": [
+        241,
+        103,
+        317,
+        128
+      ],
+      "raster_perimeter": 206,
+      "bbox_fill_fraction": 0.7192807192807192,
+      "bbox_aspect_ratio": 2.9615384615384617,
+      "touches_game_frame": false
+    },
+    {
+      "area_cells": 1331,
+      "bbox_game_cells": [
+        410,
+        210,
+        468,
+        241
+      ],
+      "raster_perimeter": 182,
+      "bbox_fill_fraction": 0.704978813559322,
+      "bbox_aspect_ratio": 1.84375,
+      "touches_game_frame": false
+    }
+  ],
+  "input_water_cells": 15071,
+  "original_input_and_water_policy_unchanged": true,
+  "designed_shorelines_are_not_measured": true,
+  "source_selection_and_design_report": "raw/before-square-800/water-report.json",
+  "square_verification": "square-verification.json"
+}

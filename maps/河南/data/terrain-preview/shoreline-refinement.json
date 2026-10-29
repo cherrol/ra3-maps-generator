@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "id": "河南",
+  "source": "maps/河南/data/terrain-preview/raw/reference-before-shoreline-refinement.npz",
+  "output": "maps/河南/data/terrain-preview/input.npz",
+  "report": "maps/河南/data/terrain-preview/shoreline-refinement-report.json",
+  "land_open_radius": 6,
+  "compact_island_radius": 3,
+  "compact_island_max_area": 200,
+  "date": "2026-10-29"
+}

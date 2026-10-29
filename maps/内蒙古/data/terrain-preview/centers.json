@@ -1,0 +1,170 @@
+{
+  "schema_version": 1,
+  "map_name": "苍野长风",
+  "blueprint": "内蒙古",
+  "label": "地级行政中心",
+  "coordinate_system": "WGS84",
+  "source": "https://geo.datav.aliyun.com/areas_v3/bound/150000_full.json",
+  "source_field": "properties.center (administrative center, not polygon centroid)",
+  "conversion": "GCJ-02 approximately inverted to WGS84 by six iterations, matching terrain boundary ingestion",
+  "retrieved_date": "2026-10-29",
+  "points": [
+    {
+      "adcode": "150100",
+      "name": "呼和浩特市",
+      "level": "city",
+      "center_wgs84": [
+        111.66403935257239,
+        40.81699520169966
+      ],
+      "center_gcj02": [
+        111.670801,
+        40.818311
+      ]
+    },
+    {
+      "adcode": "150200",
+      "name": "包头市",
+      "level": "city",
+      "center_wgs84": [
+        109.83468731206719,
+        40.65700977034996
+      ],
+      "center_gcj02": [
+        109.840405,
+        40.658168
+      ]
+    },
+    {
+      "adcode": "150300",
+      "name": "乌海市",
+      "level": "city",
+      "center_wgs84": [
+        106.82083800568887,
+        39.67283354342575
+      ],
+      "center_gcj02": [
+        106.825563,
+        39.673734
+      ]
+    },
+    {
+      "adcode": "150400",
+      "name": "赤峰市",
+      "level": "city",
+      "center_wgs84": [
+        118.95055957518488,
+        42.27333408907422
+      ],
+      "center_gcj02": [
+        118.956806,
+        42.275317
+      ]
+    },
+    {
+      "adcode": "150500",
+      "name": "通辽市",
+      "level": "city",
+      "center_wgs84": [
+        122.25757373438256,
+        43.61505305939857
+      ],
+      "center_gcj02": [
+        122.263119,
+        43.617429
+      ]
+    },
+    {
+      "adcode": "150600",
+      "name": "鄂尔多斯市",
+      "level": "city",
+      "center_wgs84": [
+        109.98458873657643,
+        39.8161564942292
+      ],
+      "center_gcj02": [
+        109.99029,
+        39.817179
+      ]
+    },
+    {
+      "adcode": "150700",
+      "name": "呼伦贝尔市",
+      "level": "city",
+      "center_wgs84": [
+        119.75080385819471,
+        49.21338786833246
+      ],
+      "center_gcj02": [
+        119.758168,
+        49.215333
+      ]
+    },
+    {
+      "adcode": "150800",
+      "name": "巴彦淖尔市",
+      "level": "city",
+      "center_wgs84": [
+        107.41135085802118,
+        40.75594204107923
+      ],
+      "center_gcj02": [
+        107.416959,
+        40.757402
+      ]
+    },
+    {
+      "adcode": "150900",
+      "name": "乌兰察布市",
+      "level": "city",
+      "center_wgs84": [
+        113.10724902200305,
+        41.0323047315656
+      ],
+      "center_gcj02": [
+        113.114543,
+        41.034126
+      ]
+    },
+    {
+      "adcode": "152200",
+      "name": "兴安盟",
+      "level": "city",
+      "center_wgs84": [
+        122.06412710893132,
+        46.07424031123533
+      ],
+      "center_gcj02": [
+        122.070317,
+        46.076268
+      ]
+    },
+    {
+      "adcode": "152500",
+      "name": "锡林郭勒盟",
+      "level": "city",
+      "center_wgs84": [
+        116.08410306550806,
+        43.94178555494595
+      ],
+      "center_gcj02": [
+        116.090996,
+        43.944018
+      ]
+    },
+    {
+      "adcode": "152900",
+      "name": "阿拉善盟",
+      "level": "city",
+      "center_wgs84": [
+        105.70220704147215,
+        38.84428532025924
+      ],
+      "center_gcj02": [
+        105.706422,
+        38.844814
+      ]
+    }
+  ],
+  "excluded_features": []
+}

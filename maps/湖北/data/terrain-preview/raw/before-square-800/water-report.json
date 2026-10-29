@@ -1,0 +1,356 @@
+{
+  "date": "2026-10-29",
+  "map_id": "湖北",
+  "map_name": "百汊涵天",
+  "mode": "map-local-compact-water-design",
+  "designed_shorelines_are_not_measured": true,
+  "include_rivers": false,
+  "source_selection_report": "raw/before-water-shaping-water-report.json",
+  "water_cells_in_input": 9751,
+  "water_cells_in_game_frame": 9272,
+  "component_count_in_game_frame": 7,
+  "components_in_game_frame": [
+    {
+      "area_cells": 3267,
+      "bbox_game_cells": [
+        573,
+        327,
+        664,
+        411
+      ],
+      "bbox_fill_fraction": 0.4178,
+      "bbox_aspect_ratio": 1.0824,
+      "raster_perimeter": 368,
+      "compactness_4pi_area_over_perimeter_squared": 0.3032,
+      "maximum_manhattan_interior_radius_cells": 23,
+      "touches_game_frame": false
+    },
+    {
+      "area_cells": 2875,
+      "bbox_game_cells": [
+        274,
+        32,
+        340,
+        93
+      ],
+      "bbox_fill_fraction": 0.6921,
+      "bbox_aspect_ratio": 1.0806,
+      "raster_perimeter": 258,
+      "compactness_4pi_area_over_perimeter_squared": 0.5428,
+      "maximum_manhattan_interior_radius_cells": 30,
+      "touches_game_frame": false
+    },
+    {
+      "area_cells": 838,
+      "bbox_game_cells": [
+        685,
+        463,
+        732,
+        488
+      ],
+      "bbox_fill_fraction": 0.6715,
+      "bbox_aspect_ratio": 1.8462,
+      "raster_perimeter": 148,
+      "compactness_4pi_area_over_perimeter_squared": 0.4808,
+      "maximum_manhattan_interior_radius_cells": 13,
+      "touches_game_frame": false
+    },
+    {
+      "area_cells": 760,
+      "bbox_game_cells": [
+        455,
+        456,
+        482,
+        492
+      ],
+      "bbox_fill_fraction": 0.7336,
+      "bbox_aspect_ratio": 1.3214,
+      "raster_perimeter": 130,
+      "compactness_4pi_area_over_perimeter_squared": 0.5651,
+      "maximum_manhattan_interior_radius_cells": 13,
+      "touches_game_frame": false
+    },
+    {
+      "area_cells": 604,
+      "bbox_game_cells": [
+        623,
+        294,
+        658,
+        325
+      ],
+      "bbox_fill_fraction": 0.5243,
+      "bbox_aspect_ratio": 1.125,
+      "raster_perimeter": 136,
+      "compactness_4pi_area_over_perimeter_squared": 0.4104,
+      "maximum_manhattan_interior_radius_cells": 12,
+      "touches_game_frame": false
+    },
+    {
+      "area_cells": 531,
+      "bbox_game_cells": [
+        778,
+        375,
+        799,
+        408
+      ],
+      "bbox_fill_fraction": 0.7099,
+      "bbox_aspect_ratio": 1.5455,
+      "raster_perimeter": 112,
+      "compactness_4pi_area_over_perimeter_squared": 0.5319,
+      "maximum_manhattan_interior_radius_cells": 11,
+      "touches_game_frame": true
+    },
+    {
+      "area_cells": 397,
+      "bbox_game_cells": [
+        499,
+        398,
+        523,
+        422
+      ],
+      "bbox_fill_fraction": 0.6352,
+      "bbox_aspect_ratio": 1.0,
+      "raster_perimeter": 100,
+      "compactness_4pi_area_over_perimeter_squared": 0.4989,
+      "maximum_manhattan_interior_radius_cells": 11,
+      "touches_game_frame": false
+    }
+  ],
+  "design_lake_groups": [
+    {
+      "action": "hull",
+      "close_radius": 0,
+      "name": "湖北-湖区2",
+      "open_radius": 8,
+      "result": {
+        "cells": 2875,
+        "component_count": 1,
+        "components": [
+          {
+            "area_cells": 2875,
+            "bbox_aspect_ratio": 1.0806451612903225,
+            "bounds": [
+              294,
+              52,
+              361,
+              114
+            ],
+            "compactness": 0.5427605840436666,
+            "index": 0,
+            "maximum_interior_radius_cells": 26.333333333333332,
+            "perimeter": 258,
+            "touches_frame": false
+          }
+        ]
+      },
+      "source_cells": 902
+    },
+    {
+      "action": "hull",
+      "close_radius": 0,
+      "name": "湖北-湖区3",
+      "open_radius": 8,
+      "result": {
+        "cells": 1200,
+        "component_count": 1,
+        "components": [
+          {
+            "area_cells": 1200,
+            "bbox_aspect_ratio": 1.0476190476190477,
+            "bounds": [
+              798,
+              385,
+              840,
+              429
+            ],
+            "compactness": 0.5097229832757912,
+            "index": 0,
+            "maximum_interior_radius_cells": 15.333333333333334,
+            "perimeter": 172,
+            "touches_frame": true
+          }
+        ]
+      },
+      "source_cells": 625
+    },
+    {
+      "action": "hull",
+      "close_radius": 0,
+      "name": "湖北-湖区4",
+      "open_radius": 8,
+      "result": {
+        "cells": 1875,
+        "component_count": 1,
+        "components": [
+          {
+            "area_cells": 1875,
+            "bbox_aspect_ratio": 1.0392156862745099,
+            "bounds": [
+              634,
+              352,
+              685,
+              405
+            ],
+            "compactness": 0.5446085637463814,
+            "index": 0,
+            "maximum_interior_radius_cells": 19.666666666666668,
+            "perimeter": 208,
+            "touches_frame": false
+          }
+        ]
+      },
+      "source_cells": 924
+    },
+    {
+      "action": "hull",
+      "close_radius": 0,
+      "name": "湖北-湖区6",
+      "open_radius": 5,
+      "result": {
+        "cells": 397,
+        "component_count": 1,
+        "components": [
+          {
+            "area_cells": 397,
+            "bbox_aspect_ratio": 1.0,
+            "bounds": [
+              519,
+              418,
+              544,
+              443
+            ],
+            "compactness": 0.49888491339005914,
+            "index": 0,
+            "maximum_interior_radius_cells": 9.0,
+            "perimeter": 100,
+            "touches_frame": false
+          }
+        ]
+      },
+      "source_cells": 350
+    },
+    {
+      "action": "hull",
+      "close_radius": 0,
+      "name": "湖北-湖区7",
+      "open_radius": 6,
+      "result": {
+        "cells": 760,
+        "component_count": 1,
+        "components": [
+          {
+            "area_cells": 760,
+            "bbox_aspect_ratio": 1.3214285714285714,
+            "bounds": [
+              475,
+              476,
+              503,
+              513
+            ],
+            "compactness": 0.565114891533312,
+            "index": 0,
+            "maximum_interior_radius_cells": 13.0,
+            "perimeter": 130,
+            "touches_frame": false
+          }
+        ]
+      },
+      "source_cells": 346
+    },
+    {
+      "action": "hull",
+      "close_radius": 0,
+      "name": "湖北-湖区8",
+      "open_radius": 8,
+      "result": {
+        "cells": 1216,
+        "component_count": 1,
+        "components": [
+          {
+            "area_cells": 1216,
+            "bbox_aspect_ratio": 1.2972972972972974,
+            "bounds": [
+              593,
+              384,
+              630,
+              432
+            ],
+            "compactness": 0.5287441753308219,
+            "index": 0,
+            "maximum_interior_radius_cells": 16.0,
+            "perimeter": 170,
+            "touches_frame": false
+          }
+        ]
+      },
+      "source_cells": 632
+    },
+    {
+      "action": "hull",
+      "close_radius": 0,
+      "name": "湖北-湖区9",
+      "open_radius": 5,
+      "result": {
+        "cells": 838,
+        "component_count": 1,
+        "components": [
+          {
+            "area_cells": 838,
+            "bbox_aspect_ratio": 1.8461538461538463,
+            "bounds": [
+              705,
+              483,
+              753,
+              509
+            ],
+            "compactness": 0.48076235275899315,
+            "index": 0,
+            "maximum_interior_radius_cells": 12.0,
+            "perimeter": 148,
+            "touches_frame": false
+          }
+        ]
+      },
+      "source_cells": 318
+    },
+    {
+      "action": "hull",
+      "close_radius": 0,
+      "name": "湖北-湖区11",
+      "open_radius": 5,
+      "result": {
+        "cells": 590,
+        "component_count": 1,
+        "components": [
+          {
+            "area_cells": 590,
+            "bbox_aspect_ratio": 1.3333333333333333,
+            "bounds": [
+              643,
+              314,
+              679,
+              341
+            ],
+            "compactness": 0.46700419894632855,
+            "index": 0,
+            "maximum_interior_radius_cells": 10.0,
+            "perimeter": 126,
+            "touches_frame": false
+          }
+        ]
+      },
+      "source_cells": 318
+    }
+  ],
+  "water_exactly_ocean_union_original_large_lakes": false,
+  "original_geographic_arrays_preserved": true,
+  "existing_land_layers_preserved": true,
+  "original_final_thresholds_preserved": true,
+  "reference": "raw/reference-before-water-shaping.npz",
+  "active_shoreline_refinement": "shoreline-refinement-report.json",
+  "land_protrusions_removed_input_cells": 196,
+  "land_protrusions_removed_game_cells": 190,
+  "small_island_and_waterbody_transition_plan": "shoreline-transition-plan.json",
+  "existing_water_preserved_during_land_refinement": true,
+  "full_perimeter_passability_status": "preview design requirement; implement and verify height/navigation during playable-map authoring"
+}

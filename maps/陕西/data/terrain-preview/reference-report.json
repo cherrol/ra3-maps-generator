@@ -1,0 +1,43 @@
+{
+  "boundary_conversion": "GCJ-02 approximately inverted to WGS84 by six iterations",
+  "boundary_source": "original local data/main_boundary.json (DataV provincial outline)",
+  "dem_attribution": "Mapzen/AWS Terrain Tiles; SRTM/GMTED courtesy USGS; see tilezen/joerd docs/attribution.md",
+  "dem_source": "https://registry.opendata.aws/terrain-tiles/",
+  "download_date": "2026-10-28",
+  "elevation_max_m": 3624.1632944639496,
+  "elevation_min_m": -54.957747970700225,
+  "grid": [
+    640,
+    800
+  ],
+  "lake_rendering": "Natural Earth and OSM polygons, unchanged outlines rasterized at grid resolution",
+  "lakes_source": "https://github.com/nvkelso/natural-earth-vector/blob/master/geojson/ne_10m_lakes.geojson",
+  "map_name": "千壑横原",
+  "osm_attribution": "© OpenStreetMap contributors; https://www.openstreetmap.org/copyright",
+  "percentiles_m": [
+    575.2181293656773,
+    951.6763267047801,
+    1242.294675769627,
+    1443.0037309576503,
+    1709.741017193815,
+    1892.5060325794557,
+    2236.7868543453696
+  ],
+  "river_rendering": "Natural Earth 1:10m centerlines, rasterized at minimum one cell for legibility; schematic width, not measured width",
+  "river_samples": {
+    "Dali": 725,
+    "Dan": 506,
+    "Fen": 460,
+    "Han": 2214,
+    "Huan": 748,
+    "Huang": 496,
+    "Jialing": 1484,
+    "Jing": 1041,
+    "Wei": 1948,
+    "Wuding": 435
+  },
+  "rivers_source": "https://github.com/nvkelso/natural-earth-vector/blob/master/geojson/ne_10m_rivers_lake_centerlines.geojson",
+  "terrain_tiles_zoom": 8,
+  "water_cells": 5037,
+  "report_role": "Historical reference acquisition; current water display is defined by water-policy.json and water-report.json"
+}

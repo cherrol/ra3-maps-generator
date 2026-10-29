@@ -1,0 +1,17 @@
+{
+  "elevation_bounds_and_province_unchanged": true,
+  "include_rivers": false,
+  "large_lake_cells": 265,
+  "map_name": "碧嶂回澜",
+  "minimum_lake_area_km2": 80,
+  "ocean_cells": 38746,
+  "retained_lakes": [
+    {
+      "area_km2": 270.0627844575008,
+      "cells_in_input_frame": 265,
+      "name": "龙滩水库"
+    }
+  ],
+  "water_cells": 39011,
+  "water_mask_equals_ocean_union_large_lakes": true
+}

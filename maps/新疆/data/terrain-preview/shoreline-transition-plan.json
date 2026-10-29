@@ -1,0 +1,13 @@
+{
+  "map_id": "新疆",
+  "date": "2026-10-29",
+  "geometry_source": "terrain.npz",
+  "scope": "all boundary positions along the entire perimeter of each retained small island and small waterbody",
+  "continuous_perimeter_transition": true,
+  "bidirectional_to_adjacent_tiers": true,
+  "few_exits_or_a_single_ramp_are_insufficient": true,
+  "perimeter_definition": "all interfaces with a different neighboring tier inside the playable frame; the production border is not a passage",
+  "implementation": "continuous terrain transition along the full perimeter, with sufficient width and valid slope and navigation at every segment",
+  "status": "preview design requirement; implement and verify height/navigation during playable-map authoring",
+  "playable_passability_verified": false
+}

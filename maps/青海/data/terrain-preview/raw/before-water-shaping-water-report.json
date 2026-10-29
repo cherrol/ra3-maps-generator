@@ -1,0 +1,141 @@
+{
+  "include_rivers": false,
+  "large_lake_cells": 4964,
+  "minimum_lake_area_km2": 80,
+  "ocean_cells": 0,
+  "ocean_channel_open_radius_cells": 3,
+  "retained_lakes": [
+    {
+      "area_km2": 1578.202644689182,
+      "cells_in_input_frame": 354,
+      "name": "色林错"
+    },
+    {
+      "area_km2": 613.0885548891878,
+      "cells_in_input_frame": 257,
+      "name": "阿雅克库木湖"
+    },
+    {
+      "area_km2": 603.546773629048,
+      "cells_in_input_frame": 240,
+      "name": "鄂陵湖"
+    },
+    {
+      "area_km2": 544.3767202625293,
+      "cells_in_input_frame": 219,
+      "name": "扎陵湖"
+    },
+    {
+      "area_km2": 297.9566791914104,
+      "cells_in_input_frame": 120,
+      "name": "可可西里湖"
+    },
+    {
+      "area_km2": 470.7575436986716,
+      "cells_in_input_frame": 185,
+      "name": null
+    },
+    {
+      "area_km2": 360.5548988738594,
+      "cells_in_input_frame": 145,
+      "name": null
+    },
+    {
+      "area_km2": 180.43592545800465,
+      "cells_in_input_frame": 72,
+      "name": null
+    },
+    {
+      "area_km2": 207.477213921582,
+      "cells_in_input_frame": 84,
+      "name": "多尔改错湖"
+    },
+    {
+      "area_km2": 189.96195912497092,
+      "cells_in_input_frame": 77,
+      "name": null
+    },
+    {
+      "area_km2": 245.4827383034409,
+      "cells_in_input_frame": 102,
+      "name": "尕斯库乐湖"
+    },
+    {
+      "area_km2": 273.6459903409165,
+      "cells_in_input_frame": 113,
+      "name": "库赛湖"
+    },
+    {
+      "area_km2": 256.2780358057349,
+      "cells_in_input_frame": 105,
+      "name": "卓乃湖"
+    },
+    {
+      "area_km2": 215.69116735706348,
+      "cells_in_input_frame": 90,
+      "name": null
+    },
+    {
+      "area_km2": 338.6574541264049,
+      "cells_in_input_frame": 140,
+      "name": null
+    },
+    {
+      "area_km2": 394.67184559947606,
+      "cells_in_input_frame": 158,
+      "name": null
+    },
+    {
+      "area_km2": 198.2374016248592,
+      "cells_in_input_frame": 82,
+      "name": null
+    },
+    {
+      "area_km2": 268.62242414582164,
+      "cells_in_input_frame": 65,
+      "name": null
+    },
+    {
+      "area_km2": 264.9968320961726,
+      "cells_in_input_frame": 109,
+      "name": null
+    },
+    {
+      "area_km2": 176.69796655477603,
+      "cells_in_input_frame": 18,
+      "name": null
+    },
+    {
+      "area_km2": 80.80844684847311,
+      "cells_in_input_frame": 32,
+      "name": null
+    },
+    {
+      "area_km2": 157.27971458929716,
+      "cells_in_input_frame": 62,
+      "name": null
+    },
+    {
+      "area_km2": 183.5239514543025,
+      "cells_in_input_frame": 74,
+      "name": null
+    },
+    {
+      "area_km2": 4457.427307317892,
+      "cells_in_input_frame": 1851,
+      "name": "青海湖"
+    },
+    {
+      "area_km2": 120.33416141668718,
+      "cells_in_input_frame": 50,
+      "name": "刘家峡水库"
+    },
+    {
+      "area_km2": 387.3357481734623,
+      "cells_in_input_frame": 160,
+      "name": "龙羊峡水库"
+    }
+  ],
+  "water_cells": 4964,
+  "water_mask_equals_ocean_union_large_lakes": true
+}

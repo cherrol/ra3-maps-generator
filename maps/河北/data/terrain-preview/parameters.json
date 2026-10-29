@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "map_name": "长岭旷原",
+  "series_title": "九州大地·长岭旷原",
+  "border_cells": 20,
+  "elevation_thresholds_m": [
+    200,
+    500,
+    1500,
+    4000
+  ],
+  "game_layer_heights": [
+    210,
+    280,
+    350,
+    420,
+    700
+  ],
+  "layer_policy": "national-bands-with-local-fallback",
+  "water_policy": {
+    "include_rivers": false,
+    "preserve_ocean": true,
+    "minimum_lake_area_km2": 80,
+    "lake_area_method": "spherical polygon area; whole waterbody minus holes before frame clipping",
+    "ocean_channel_open_radius_cells": 3,
+    "mode": "map-local-compact-water-design",
+    "design_shaping": {
+      "recipe": "water-shaping.json",
+      "report": "water-shaping-report.json",
+      "reference": "raw/reference-before-water-shaping.npz",
+      "merge_nearby_reservoir_branches": true,
+      "remove_unmergeable_small_or_narrow_water": true,
+      "removed_water_target": "valid adjoining land layer from unchanged DEM",
+      "real_water_selection_retained_as_reference": true,
+      "designed_shorelines_are_not_measured": true,
+      "shoreline_refinement": "shoreline-refinement.json",
+      "active_reference": "raw/reference-before-shoreline-refinement.npz"
+    }
+  },
+  "status": "terrain-preview-awaiting-review",
+  "size_policy": {
+    "shape": "square",
+    "playable_cells": [
+      800,
+      800
+    ],
+    "maximum_playable_cells": [
+      800,
+      800
+    ],
+    "long_side_cells": 800,
+    "dimension_multiple": 8,
+    "border_included_in_size": false,
+    "geographic_frame": "preserved; axes resampled independently"
+  },
+  "water_design_land_reference": {
+    "terrain": "raw/before-square-800/land-reference.npz",
+    "report": "raw/before-square-800/land-reference-report.json"
+  },
+  "shoreline_policy": {
+    "refinement_recipe": "shoreline-refinement.json",
+    "refinement_report": "shoreline-refinement-report.json",
+    "remove_thin_land_protrusions": true,
+    "small_islands_and_waterbodies": {
+      "transition_scope": "entire perimeter",
+      "continuous": true,
+      "bidirectional": true,
+      "all_boundary_positions": true,
+      "few_exits_do_not_satisfy": true,
+      "status": "design requirement; playable height/navigation verification required"
+    },
+    "transition_plan": "shoreline-transition-plan.json"
+  }
+}

@@ -27,6 +27,8 @@ cargo run --release --locked -- terrain-preview <蓝图原型或图名> <高程N
 cargo run --release --locked -- terrain-preview-centers <蓝图原型或图名>
 ```
 
+预览图片与离线复现资料一同纳入 Git；实际游戏地图保留完整 `authoring/source.zip`，同版地形、通行和布局图片归档到 `histories/T<版本>/`。文件范围与复现方法见[图片与原生地图](docs/reproducible_builds.md#预览与实际游戏地图)。
+
 可玩制作分两条路径：
 
 | 路径 | 输入与行为 |

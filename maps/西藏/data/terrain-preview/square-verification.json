@@ -1,0 +1,107 @@
+{
+  "date": "2026-10-29",
+  "passed": true,
+  "map_id": "西藏",
+  "map_name": "雪脊擎天",
+  "game_cells": [
+    800,
+    800
+  ],
+  "previous_game_cells": [
+    800,
+    440
+  ],
+  "full_grid_cells": [
+    840,
+    840
+  ],
+  "image_dimensions": {
+    "source.png": [
+      1104,
+      1002
+    ],
+    "preview.png": [
+      1104,
+      1002
+    ],
+    "preview--line.png": [
+      1104,
+      1002
+    ],
+    "preview--center--line.png": [
+      1104,
+      1002
+    ]
+  },
+  "north_up": true,
+  "geographic_playable_bounds_unchanged": true,
+  "original_input_sha256": "edc4bd7ad376b5e8c5712e3c0bb6a11bd6afe011ee9ab7020f4d9c21a4114596",
+  "original_input_bytes_unchanged": true,
+  "original_elevation_thresholds_unchanged": true,
+  "original_game_layer_heights_unchanged": true,
+  "elevation_bilinear_from_original_input": true,
+  "land_layers_nearest_neighbor_from_approved_preview": true,
+  "all_surviving_resampled_land_layer_ids_preserved": true,
+  "input_water_nearest_neighbor_reprojection_verified": true,
+  "water_policy_unchanged": true,
+  "same_view_and_water_all_four_images": true,
+  "png_and_npz_crc_valid": true,
+  "public_image_water_pixels_checked": 1280000,
+  "province_fully_inside_game_frame": true,
+  "surrounding_real_terrain_included": true,
+  "game_heights_match_layers": true,
+  "land_layer_count": 3,
+  "land_layer_cell_counts": {
+    "4": 570762,
+    "3": 37161,
+    "1": 30220
+  },
+  "water_cells": 1857,
+  "water_component_count": 3,
+  "water_components": [
+    {
+      "area_cells": 785,
+      "bbox_game_cells": [
+        393,
+        378,
+        420,
+        417
+      ],
+      "raster_perimeter": 136,
+      "bbox_fill_fraction": 0.7008928571428571,
+      "bbox_aspect_ratio": 0.7,
+      "touches_game_frame": false
+    },
+    {
+      "area_cells": 545,
+      "bbox_game_cells": [
+        438,
+        236,
+        462,
+        268
+      ],
+      "raster_perimeter": 116,
+      "bbox_fill_fraction": 0.6606060606060606,
+      "bbox_aspect_ratio": 0.7575757575757576,
+      "touches_game_frame": false
+    },
+    {
+      "area_cells": 527,
+      "bbox_game_cells": [
+        458,
+        462,
+        481,
+        492
+      ],
+      "raster_perimeter": 110,
+      "bbox_fill_fraction": 0.7083333333333334,
+      "bbox_aspect_ratio": 0.7741935483870968,
+      "touches_game_frame": false
+    }
+  ],
+  "centers_at_projected_coordinates": true,
+  "center_labels_nonoverlapping": true,
+  "center_source_bytes_unchanged": true,
+  "before_square_reference": "raw/before-square-800/terrain.npz",
+  "scope": "terrain preview only; existing playable inputs and Henan are excluded"
+}

@@ -1,0 +1,222 @@
+{
+  "schema_version": 1,
+  "map_name": "百流归汐",
+  "blueprint": "天津",
+  "label": "区中心",
+  "coordinate_system": "WGS84",
+  "source": "https://geo.datav.aliyun.com/areas_v3/bound/120000_full.json",
+  "source_field": "properties.center (administrative center, not polygon centroid)",
+  "conversion": "GCJ-02 approximately inverted to WGS84 by six iterations, matching terrain boundary ingestion",
+  "retrieved_date": "2026-10-29",
+  "points": [
+    {
+      "adcode": "120101",
+      "name": "和平区",
+      "level": "district",
+      "center_wgs84": [
+        117.1895864439409,
+        39.11728199631035
+      ],
+      "center_gcj02": [
+        117.195907,
+        39.118327
+      ]
+    },
+    {
+      "adcode": "120102",
+      "name": "河东区",
+      "level": "district",
+      "center_wgs84": [
+        117.22028891720767,
+        39.121121989579464
+      ],
+      "center_gcj02": [
+        117.226568,
+        39.122125
+      ]
+    },
+    {
+      "adcode": "120103",
+      "name": "河西区",
+      "level": "district",
+      "center_wgs84": [
+        117.21125011412678,
+        39.10089568692214
+      ],
+      "center_gcj02": [
+        117.217536,
+        39.101897
+      ]
+    },
+    {
+      "adcode": "120104",
+      "name": "南开区",
+      "level": "district",
+      "center_wgs84": [
+        117.1577633930293,
+        39.11936914031788
+      ],
+      "center_gcj02": [
+        117.164143,
+        39.120474
+      ]
+    },
+    {
+      "adcode": "120105",
+      "name": "河北区",
+      "level": "district",
+      "center_wgs84": [
+        117.19525322554938,
+        39.15557361786752
+      ],
+      "center_gcj02": [
+        117.201569,
+        39.156632
+      ]
+    },
+    {
+      "adcode": "120106",
+      "name": "红桥区",
+      "level": "district",
+      "center_wgs84": [
+        117.15691292891734,
+        39.173926926533326
+      ],
+      "center_gcj02": [
+        117.163301,
+        39.175066
+      ]
+    },
+    {
+      "adcode": "120110",
+      "name": "东丽区",
+      "level": "district",
+      "center_wgs84": [
+        117.30760174650179,
+        39.086740023120925
+      ],
+      "center_gcj02": [
+        117.313967,
+        39.087764
+      ]
+    },
+    {
+      "adcode": "120111",
+      "name": "西青区",
+      "level": "district",
+      "center_wgs84": [
+        117.00608724106193,
+        39.13843514634097
+      ],
+      "center_gcj02": [
+        117.012247,
+        39.139446
+      ]
+    },
+    {
+      "adcode": "120112",
+      "name": "津南区",
+      "level": "district",
+      "center_wgs84": [
+        117.37602596596008,
+        38.98849741997765
+      ],
+      "center_gcj02": [
+        117.382549,
+        38.989577
+      ]
+    },
+    {
+      "adcode": "120113",
+      "name": "北辰区",
+      "level": "district",
+      "center_wgs84": [
+        117.12838524067277,
+        39.22434352398746
+      ],
+      "center_gcj02": [
+        117.13482,
+        39.225555
+      ]
+    },
+    {
+      "adcode": "120114",
+      "name": "武清区",
+      "level": "district",
+      "center_wgs84": [
+        117.05158778942841,
+        39.37566660187301
+      ],
+      "center_gcj02": [
+        117.057959,
+        39.376925
+      ]
+    },
+    {
+      "adcode": "120115",
+      "name": "宝坻区",
+      "level": "district",
+      "center_wgs84": [
+        117.30166296113445,
+        39.71569459801751
+      ],
+      "center_gcj02": [
+        117.308094,
+        39.716965
+      ]
+    },
+    {
+      "adcode": "120116",
+      "name": "滨海新区",
+      "level": "district",
+      "center_wgs84": [
+        117.64802182384675,
+        39.03204224187201
+      ],
+      "center_gcj02": [
+        117.654173,
+        39.032846
+      ]
+    },
+    {
+      "adcode": "120117",
+      "name": "宁河区",
+      "level": "district",
+      "center_wgs84": [
+        117.82207071840462,
+        39.32785313729925
+      ],
+      "center_gcj02": [
+        117.82828,
+        39.328886
+      ]
+    },
+    {
+      "adcode": "120118",
+      "name": "静海区",
+      "level": "district",
+      "center_wgs84": [
+        116.91947444214051,
+        38.93498278104217
+      ],
+      "center_gcj02": [
+        116.925304,
+        38.935671
+      ]
+    },
+    {
+      "adcode": "120119",
+      "name": "蓟州区",
+      "level": "district",
+      "center_wgs84": [
+        117.40076146614057,
+        40.04390940045465
+      ],
+      "center_gcj02": [
+        117.407449,
+        40.045342
+      ]
+    }
+  ],
+  "excluded_features": []
+}

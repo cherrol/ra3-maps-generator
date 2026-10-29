@@ -1,0 +1,144 @@
+{
+  "schema_version": 1,
+  "map_name": "千壑横原",
+  "blueprint": "陕西",
+  "label": "地级行政中心",
+  "coordinate_system": "WGS84",
+  "source": "https://geo.datav.aliyun.com/areas_v3/bound/610000_full.json",
+  "source_field": "properties.center (administrative center, not polygon centroid)",
+  "conversion": "GCJ-02 approximately inverted to WGS84 by six iterations, matching terrain boundary ingestion",
+  "retrieved_date": "2026-10-29",
+  "points": [
+    {
+      "adcode": "610100",
+      "name": "西安市",
+      "level": "city",
+      "center_wgs84": [
+        108.9433648466798,
+        34.26474454866568
+      ],
+      "center_gcj02": [
+        108.948024,
+        34.263161
+      ]
+    },
+    {
+      "adcode": "610200",
+      "name": "铜川市",
+      "level": "city",
+      "center_wgs84": [
+        108.97478536606468,
+        34.917573439612305
+      ],
+      "center_gcj02": [
+        108.979608,
+        34.916582
+      ]
+    },
+    {
+      "adcode": "610300",
+      "name": "宝鸡市",
+      "level": "city",
+      "center_wgs84": [
+        107.14006257422187,
+        34.37058435220522
+      ],
+      "center_gcj02": [
+        107.14487,
+        34.369315
+      ]
+    },
+    {
+      "adcode": "610400",
+      "name": "咸阳市",
+      "level": "city",
+      "center_wgs84": [
+        108.70046277420478,
+        34.33489164511117
+      ],
+      "center_gcj02": [
+        108.705117,
+        34.333439
+      ]
+    },
+    {
+      "adcode": "610500",
+      "name": "渭南市",
+      "level": "city",
+      "center_wgs84": [
+        109.49769838826121,
+        34.500671744421716
+      ],
+      "center_gcj02": [
+        109.502882,
+        34.499381
+      ]
+    },
+    {
+      "adcode": "610600",
+      "name": "延安市",
+      "level": "city",
+      "center_wgs84": [
+        109.48539113573572,
+        36.59642116979235
+      ],
+      "center_gcj02": [
+        109.49081,
+        36.596537
+      ]
+    },
+    {
+      "adcode": "610700",
+      "name": "汉中市",
+      "level": "city",
+      "center_wgs84": [
+        107.02409510354242,
+        33.079543955126006
+      ],
+      "center_gcj02": [
+        107.028621,
+        33.077668
+      ]
+    },
+    {
+      "adcode": "610800",
+      "name": "榆林市",
+      "level": "city",
+      "center_wgs84": [
+        109.73560792655789,
+        38.28964362663377
+      ],
+      "center_gcj02": [
+        109.741193,
+        38.290162
+      ]
+    },
+    {
+      "adcode": "610900",
+      "name": "安康市",
+      "level": "city",
+      "center_wgs84": [
+        109.02442544562727,
+        32.69238000547001
+      ],
+      "center_gcj02": [
+        109.029273,
+        32.6903
+      ]
+    },
+    {
+      "adcode": "611000",
+      "name": "商洛市",
+      "level": "city",
+      "center_wgs84": [
+        109.93479781687657,
+        33.87000422730969
+      ],
+      "center_gcj02": [
+        109.939776,
+        33.868319
+      ]
+    }
+  ],
+  "excluded_features": []
+}

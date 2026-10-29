@@ -1,0 +1,18 @@
+{
+  "include_rivers": false,
+  "preserve_ocean": true,
+  "minimum_lake_area_km2": 80,
+  "lake_area_method": "spherical polygon area; whole waterbody minus holes before frame clipping",
+  "ocean_channel_open_radius_cells": 3,
+  "lakes": [
+    {
+      "name": "未命名湖泊",
+      "area_km2": 185.83022168848598
+    },
+    {
+      "name": "未命名湖泊",
+      "area_km2": 127.14666014593698
+    }
+  ],
+  "date": "2026-10-29"
+}

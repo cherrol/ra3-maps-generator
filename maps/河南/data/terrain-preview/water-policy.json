@@ -1,0 +1,51 @@
+{
+  "include_rivers": false,
+  "preserve_ocean": true,
+  "minimum_lake_area_km2": 80,
+  "lake_area_method": "spherical polygon area; whole waterbody minus holes before frame clipping",
+  "ocean_channel_open_radius_cells": 3,
+  "design_shaping": {
+    "recipe": "water-shaping.json",
+    "report": "water-shaping-report.json",
+    "reference": "raw/reference-before-water-shaping.npz",
+    "designed_shorelines_are_not_measured": true
+  },
+  "lakes": [
+    {
+      "name": "东平湖",
+      "estimated_polygon_area_km2": 135.13150553741767,
+      "retained": true
+    },
+    {
+      "name": "未命名湖泊",
+      "estimated_polygon_area_km2": 143.00308437148598,
+      "retained": true
+    },
+    {
+      "name": "未命名湖泊",
+      "estimated_polygon_area_km2": 88.9274616271865,
+      "retained": true
+    },
+    {
+      "name": "未命名湖泊",
+      "estimated_polygon_area_km2": 51.61985448535406,
+      "retained": false
+    },
+    {
+      "name": "未命名湖泊",
+      "estimated_polygon_area_km2": 54.66745228081533,
+      "retained": false
+    },
+    {
+      "name": "丹江口水库",
+      "estimated_polygon_area_km2": 772.2554172230335,
+      "retained": true
+    },
+    {
+      "name": "三峡水库",
+      "estimated_polygon_area_km2": 612.2912822390497,
+      "retained": true
+    }
+  ],
+  "date": "2026-10-29"
+}

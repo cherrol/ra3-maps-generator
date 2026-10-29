@@ -1,0 +1,222 @@
+{
+  "schema_version": 1,
+  "map_name": "横丘向海",
+  "blueprint": "山东",
+  "label": "地级行政中心",
+  "coordinate_system": "WGS84",
+  "source": "https://geo.datav.aliyun.com/areas_v3/bound/370000_full.json",
+  "source_field": "properties.center (administrative center, not polygon centroid)",
+  "conversion": "GCJ-02 approximately inverted to WGS84 by six iterations, matching terrain boundary ingestion",
+  "retrieved_date": "2026-10-29",
+  "points": [
+    {
+      "adcode": "370100",
+      "name": "济南市",
+      "level": "city",
+      "center_wgs84": [
+        116.99510112910579,
+        36.67555426807224
+      ],
+      "center_gcj02": [
+        117.000923,
+        36.675807
+      ]
+    },
+    {
+      "adcode": "370200",
+      "name": "青岛市",
+      "level": "city",
+      "center_wgs84": [
+        120.35007043333093,
+        36.08274540914728
+      ],
+      "center_gcj02": [
+        120.355173,
+        36.082982
+      ]
+    },
+    {
+      "adcode": "370300",
+      "name": "淄博市",
+      "level": "city",
+      "center_wgs84": [
+        118.04159549738422,
+        36.81444245583493
+      ],
+      "center_gcj02": [
+        118.047648,
+        36.814939
+      ]
+    },
+    {
+      "adcode": "370400",
+      "name": "枣庄市",
+      "level": "city",
+      "center_wgs84": [
+        117.5522823875175,
+        34.857389532182566
+      ],
+      "center_gcj02": [
+        117.557964,
+        34.856424
+      ]
+    },
+    {
+      "adcode": "370500",
+      "name": "东营市",
+      "level": "city",
+      "center_wgs84": [
+        118.6590797274602,
+        37.43391577141169
+      ],
+      "center_gcj02": [
+        118.66471,
+        37.434564
+      ]
+    },
+    {
+      "adcode": "370600",
+      "name": "烟台市",
+      "level": "city",
+      "center_wgs84": [
+        121.38611496857283,
+        37.53826962411187
+      ],
+      "center_gcj02": [
+        121.391382,
+        37.539297
+      ]
+    },
+    {
+      "adcode": "370700",
+      "name": "潍坊市",
+      "level": "city",
+      "center_wgs84": [
+        119.10110998148623,
+        36.708734992062276
+      ],
+      "center_gcj02": [
+        119.107078,
+        36.70925
+      ]
+    },
+    {
+      "adcode": "370800",
+      "name": "济宁市",
+      "level": "city",
+      "center_wgs84": [
+        116.58195129622158,
+        35.4158372670388
+      ],
+      "center_gcj02": [
+        116.587245,
+        35.415393
+      ]
+    },
+    {
+      "adcode": "370900",
+      "name": "泰安市",
+      "level": "city",
+      "center_wgs84": [
+        117.12298899557328,
+        36.19472965246614
+      ],
+      "center_gcj02": [
+        117.129063,
+        36.194968
+      ]
+    },
+    {
+      "adcode": "371000",
+      "name": "威海市",
+      "level": "city",
+      "center_wgs84": [
+        122.11132607339059,
+        37.50865296254371
+      ],
+      "center_gcj02": [
+        122.116394,
+        37.509691
+      ]
+    },
+    {
+      "adcode": "371100",
+      "name": "日照市",
+      "level": "city",
+      "center_wgs84": [
+        119.45550240812898,
+        35.42866639416002
+      ],
+      "center_gcj02": [
+        119.461208,
+        35.428588
+      ]
+    },
+    {
+      "adcode": "371300",
+      "name": "临沂市",
+      "level": "city",
+      "center_wgs84": [
+        118.32075870161495,
+        35.06578277996509
+      ],
+      "center_gcj02": [
+        118.326443,
+        35.065282
+      ]
+    },
+    {
+      "adcode": "371400",
+      "name": "德州市",
+      "level": "city",
+      "center_wgs84": [
+        116.30164197835032,
+        37.453197786407415
+      ],
+      "center_gcj02": [
+        116.307428,
+        37.453968
+      ]
+    },
+    {
+      "adcode": "371500",
+      "name": "聊城市",
+      "level": "city",
+      "center_wgs84": [
+        115.97471941813122,
+        36.45595631569903
+      ],
+      "center_gcj02": [
+        115.980367,
+        36.456013
+      ]
+    },
+    {
+      "adcode": "371600",
+      "name": "滨州市",
+      "level": "city",
+      "center_wgs84": [
+        118.01094319296429,
+        37.38277377537393
+      ],
+      "center_gcj02": [
+        118.016974,
+        37.383542
+      ]
+    },
+    {
+      "adcode": "371700",
+      "name": "菏泽市",
+      "level": "city",
+      "center_wgs84": [
+        115.46347433203255,
+        35.246867687608436
+      ],
+      "center_gcj02": [
+        115.469381,
+        35.246531
+      ]
+    }
+  ],
+  "excluded_features": []
+}

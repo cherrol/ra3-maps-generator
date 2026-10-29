@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "map_name": "沙岸绿畴",
+  "blueprint": "宁夏",
+  "label": "地级行政中心",
+  "coordinate_system": "WGS84",
+  "source": "https://geo.datav.aliyun.com/areas_v3/bound/640000_full.json",
+  "source_field": "properties.center (administrative center, not polygon centroid)",
+  "conversion": "GCJ-02 approximately inverted to WGS84 by six iterations, matching terrain boundary ingestion",
+  "retrieved_date": "2026-10-29",
+  "points": [
+    {
+      "adcode": "640100",
+      "name": "银川市",
+      "level": "city",
+      "center_wgs84": [
+        106.27376495558386,
+        38.465908710823264
+      ],
+      "center_gcj02": [
+        106.278179,
+        38.46637
+      ]
+    },
+    {
+      "adcode": "640200",
+      "name": "石嘴山市",
+      "level": "city",
+      "center_wgs84": [
+        106.37147857081669,
+        39.01248299299672
+      ],
+      "center_gcj02": [
+        106.376173,
+        39.01333
+      ]
+    },
+    {
+      "adcode": "640300",
+      "name": "吴忠市",
+      "level": "city",
+      "center_wgs84": [
+        106.19500469020242,
+        37.98561342168089
+      ],
+      "center_gcj02": [
+        106.199409,
+        37.986165
+      ]
+    },
+    {
+      "adcode": "640400",
+      "name": "固原市",
+      "level": "city",
+      "center_wgs84": [
+        106.28101531040454,
+        36.00473046215797
+      ],
+      "center_gcj02": [
+        106.285241,
+        36.004561
+      ]
+    },
+    {
+      "adcode": "640500",
+      "name": "中卫市",
+      "level": "city",
+      "center_wgs84": [
+        105.185788737751,
+        37.51437478463002
+      ],
+      "center_gcj02": [
+        105.189568,
+        37.514951
+      ]
+    }
+  ],
+  "excluded_features": []
+}

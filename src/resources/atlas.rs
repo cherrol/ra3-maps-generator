@@ -29,6 +29,13 @@ pub(super) fn terrain_catalog(p: &Project) -> Result<BTreeMap<String, [String; 3
 fn extend_terrain_atlas(p: &Project, xml: &str, map: &MapFile) -> Result<String> {
     let hm = map::HeightMap::parse(map.get("HeightMapData")?)?;
     let bt = map::BlendTiles::parse(map.get("BlendTileData")?, hm.width, hm.height)?;
+    let active: BTreeSet<_> = bt.textures.iter().map(|name| fast_hash(name)).collect();
+    let mut xml = xml.to_owned();
+    for (range, id) in atlas_tiles(&xml)?.into_iter().rev() {
+        if !active.contains(&id) {
+            xml.replace_range(range, "");
+        }
+    }
     let catalog = terrain_catalog(p)?;
     let mut extra = String::new();
     for name in &bt.textures {
@@ -393,7 +400,13 @@ fn sync_terrain_package(
 /// Runtime checks are stricter than historical source import. Reject an
 /// incomplete saved package even if the map decoder and overview accept it.
 pub fn validate_terrain_package(map: &MapFile, xml: &str, version: Option<&str>) -> Result<()> {
+    crate::resources::terrain_package::validate_texture_limit(map)?;
     crate::resources::terrain_package::validate_references(map)?;
+    if atlas_tiles(xml)?.len() > crate::resources::terrain_package::MAX_TEXTURES {
+        return Err(err(
+            "XML terrain atlas exceeds the WorldBuilder limit of 49",
+        ));
+    }
     let expected = texture_tokens(map, xml)?;
     if world_tokens(map)? != expected {
         return Err(err(

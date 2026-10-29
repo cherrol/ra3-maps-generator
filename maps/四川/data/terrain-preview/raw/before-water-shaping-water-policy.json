@@ -1,0 +1,18 @@
+{
+  "include_rivers": false,
+  "preserve_ocean": true,
+  "minimum_lake_area_km2": 80,
+  "lake_area_method": "spherical polygon area; whole waterbody minus holes before frame clipping",
+  "ocean_channel_open_radius_cells": 3,
+  "lakes": [
+    {
+      "name": "三峡水库",
+      "area_km2": 612.2912822390497
+    },
+    {
+      "name": "二滩水库",
+      "area_km2": 86.78217624576219
+    }
+  ],
+  "date": "2026-10-29"
+}

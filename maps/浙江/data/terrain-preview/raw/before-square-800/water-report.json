@@ -1,0 +1,171 @@
+{
+  "date": "2026-10-29",
+  "map_id": "浙江",
+  "map_name": "翠岫千湾",
+  "mode": "map-local-compact-water-design",
+  "designed_shorelines_are_not_measured": true,
+  "include_rivers": false,
+  "source_selection_report": "raw/before-water-shaping-water-report.json",
+  "water_cells_in_input": 219001,
+  "water_cells_in_game_frame": 191072,
+  "component_count_in_game_frame": 4,
+  "components_in_game_frame": [
+    {
+      "area_cells": 181772,
+      "bbox_game_cells": [
+        395,
+        0,
+        799,
+        767
+      ],
+      "bbox_fill_fraction": 0.5844,
+      "bbox_aspect_ratio": 1.8963,
+      "raster_perimeter": 3462,
+      "compactness_4pi_area_over_perimeter_squared": 0.1906,
+      "maximum_manhattan_interior_radius_cells": 145,
+      "touches_game_frame": true
+    },
+    {
+      "area_cells": 5507,
+      "bbox_game_cells": [
+        104,
+        262,
+        200,
+        339
+      ],
+      "bbox_fill_fraction": 0.7279,
+      "bbox_aspect_ratio": 1.2436,
+      "raster_perimeter": 350,
+      "compactness_4pi_area_over_perimeter_squared": 0.5649,
+      "maximum_manhattan_interior_radius_cells": 33,
+      "touches_game_frame": false
+    },
+    {
+      "area_cells": 3411,
+      "bbox_game_cells": [
+        314,
+        0,
+        405,
+        52
+      ],
+      "bbox_fill_fraction": 0.6995,
+      "bbox_aspect_ratio": 1.7358,
+      "raster_perimeter": 308,
+      "compactness_4pi_area_over_perimeter_squared": 0.4518,
+      "maximum_manhattan_interior_radius_cells": 26,
+      "touches_game_frame": true
+    },
+    {
+      "area_cells": 382,
+      "bbox_game_cells": [
+        140,
+        5,
+        167,
+        25
+      ],
+      "bbox_fill_fraction": 0.6497,
+      "bbox_aspect_ratio": 1.3333,
+      "raster_perimeter": 98,
+      "compactness_4pi_area_over_perimeter_squared": 0.4998,
+      "maximum_manhattan_interior_radius_cells": 10,
+      "touches_game_frame": false
+    }
+  ],
+  "design_lake_groups": [
+    {
+      "action": "smooth",
+      "close_radius": 4,
+      "name": "浙江-湖区1",
+      "open_radius": 5,
+      "result": {
+        "cells": 4914,
+        "component_count": 1,
+        "components": [
+          {
+            "area_cells": 4914,
+            "bbox_aspect_ratio": 1.273972602739726,
+            "bounds": [
+              333,
+              0,
+              426,
+              73
+            ],
+            "compactness": 0.4764748857944519,
+            "index": 0,
+            "maximum_interior_radius_cells": 38.0,
+            "perimeter": 360,
+            "touches_frame": true
+          }
+        ]
+      },
+      "source_cells": 5379
+    },
+    {
+      "action": "hull",
+      "close_radius": 0,
+      "name": "浙江-湖区2",
+      "open_radius": 8,
+      "result": {
+        "cells": 5507,
+        "component_count": 1,
+        "components": [
+          {
+            "area_cells": 5507,
+            "bbox_aspect_ratio": 1.2435897435897436,
+            "bounds": [
+              124,
+              282,
+              221,
+              360
+            ],
+            "compactness": 0.5649224732512323,
+            "index": 0,
+            "maximum_interior_radius_cells": 32.666666666666664,
+            "perimeter": 350,
+            "touches_frame": false
+          }
+        ]
+      },
+      "source_cells": 1943
+    },
+    {
+      "action": "hull",
+      "close_radius": 0,
+      "name": "浙江-湖区3",
+      "open_radius": 5,
+      "result": {
+        "cells": 382,
+        "component_count": 1,
+        "components": [
+          {
+            "area_cells": 382,
+            "bbox_aspect_ratio": 1.3333333333333333,
+            "bounds": [
+              160,
+              25,
+              188,
+              46
+            ],
+            "compactness": 0.49982856879271176,
+            "index": 0,
+            "maximum_interior_radius_cells": 9.0,
+            "perimeter": 98,
+            "touches_frame": false
+          }
+        ]
+      },
+      "source_cells": 363
+    }
+  ],
+  "water_exactly_ocean_union_original_large_lakes": false,
+  "original_geographic_arrays_preserved": true,
+  "existing_land_layers_preserved": true,
+  "original_final_thresholds_preserved": true,
+  "reference": "raw/reference-before-water-shaping.npz",
+  "active_shoreline_refinement": "shoreline-refinement-report.json",
+  "land_protrusions_removed_input_cells": 1923,
+  "land_protrusions_removed_game_cells": 1893,
+  "small_island_and_waterbody_transition_plan": "shoreline-transition-plan.json",
+  "existing_water_preserved_during_land_refinement": true,
+  "full_perimeter_passability_status": "preview design requirement; implement and verify height/navigation during playable-map authoring"
+}

@@ -1,0 +1,243 @@
+{
+  "added_land_cells": 0,
+  "all_nonwater_arrays_byte_identical": true,
+  "design_land": {
+    "cells": 402669,
+    "component_count": 5,
+    "components": [
+      {
+        "area_cells": 311329,
+        "bbox_aspect_ratio": 1.147640791476408,
+        "bounds": [
+          0,
+          86,
+          657,
+          840
+        ],
+        "compactness": 0.4912645450268779,
+        "index": 0,
+        "maximum_interior_radius_cells": 366.3333333333333,
+        "perimeter": 2822,
+        "touches_frame": true
+      },
+      {
+        "area_cells": 44025,
+        "bbox_aspect_ratio": 1.7159090909090908,
+        "bounds": [
+          209,
+          49,
+          662,
+          313
+        ],
+        "compactness": 0.26903632751194956,
+        "index": 1,
+        "maximum_interior_radius_cells": 54.333333333333336,
+        "perimeter": 1434,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 43048,
+        "bbox_aspect_ratio": 3.8513513513513513,
+        "bounds": [
+          60,
+          0,
+          630,
+          148
+        ],
+        "compactness": 0.21946412520058975,
+        "index": 2,
+        "maximum_interior_radius_cells": 107.66666666666667,
+        "perimeter": 1570,
+        "touches_frame": true
+      },
+      {
+        "area_cells": 2307,
+        "bbox_aspect_ratio": 1.2428571428571429,
+        "bounds": [
+          465,
+          318,
+          552,
+          388
+        ],
+        "compactness": 0.2940344132350867,
+        "index": 3,
+        "maximum_interior_radius_cells": 13.0,
+        "perimeter": 314,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 1960,
+        "bbox_aspect_ratio": 1.0188679245283019,
+        "bounds": [
+          551,
+          355,
+          604,
+          409
+        ],
+        "compactness": 0.5378217836523709,
+        "index": 4,
+        "maximum_interior_radius_cells": 21.0,
+        "perimeter": 214,
+        "touches_frame": false
+      }
+    ]
+  },
+  "design_water": {
+    "cells": 296211,
+    "component_count": 2,
+    "components": [
+      {
+        "area_cells": 296208,
+        "bbox_aspect_ratio": 1.0096153846153846,
+        "bounds": [
+          0,
+          0,
+          832,
+          840
+        ],
+        "compactness": 0.08232869629937965,
+        "index": 0,
+        "maximum_interior_radius_cells": 241.0,
+        "perimeter": 6724,
+        "touches_frame": true
+      },
+      {
+        "area_cells": 3,
+        "bbox_aspect_ratio": 3.0,
+        "bounds": [
+          551,
+          370,
+          552,
+          373
+        ],
+        "compactness": 0.5890486225480862,
+        "index": 1,
+        "maximum_interior_radius_cells": 1.0,
+        "perimeter": 8,
+        "touches_frame": false
+      }
+    ]
+  },
+  "existing_water_preserved": true,
+  "input_cells": [
+    832,
+    840
+  ],
+  "land_open_radius_input_cells": 10,
+  "main_land_and_each_preserved_compact_island_stable_under_opening": true,
+  "map_id": "上海",
+  "method": "morphological opening of land to retract narrow peninsulas, necks and pointed spurs",
+  "preserved_compact_small_islands": [],
+  "removed_land_cells": 727,
+  "small_shore_transition_policy": {
+    "bidirectional": true,
+    "continuous": true,
+    "few_exits_do_not_satisfy": true,
+    "scope": "entire perimeter of retained small islands and small waterbodies",
+    "status": "design requirement; implement and verify terrain height/navigation when producing playable maps"
+  },
+  "source": "maps/上海/data/terrain-preview/raw/reference-before-shoreline-refinement.npz",
+  "source_land": {
+    "cells": 403396,
+    "component_count": 5,
+    "components": [
+      {
+        "area_cells": 311335,
+        "bbox_aspect_ratio": 1.147640791476408,
+        "bounds": [
+          0,
+          86,
+          657,
+          840
+        ],
+        "compactness": 0.4912740127837208,
+        "index": 0,
+        "maximum_interior_radius_cells": 366.3333333333333,
+        "perimeter": 2822,
+        "touches_frame": true
+      },
+      {
+        "area_cells": 44058,
+        "bbox_aspect_ratio": 1.7196969696969697,
+        "bounds": [
+          208,
+          49,
+          662,
+          313
+        ],
+        "compactness": 0.2662588928765894,
+        "index": 1,
+        "maximum_interior_radius_cells": 54.333333333333336,
+        "perimeter": 1442,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 43080,
+        "bbox_aspect_ratio": 3.864864864864865,
+        "bounds": [
+          59,
+          0,
+          631,
+          148
+        ],
+        "compactness": 0.21630800921979135,
+        "index": 2,
+        "maximum_interior_radius_cells": 107.66666666666667,
+        "perimeter": 1582,
+        "touches_frame": true
+      },
+      {
+        "area_cells": 4739,
+        "bbox_aspect_ratio": 1.6262626262626263,
+        "bounds": [
+          443,
+          310,
+          604,
+          409
+        ],
+        "compactness": 0.1872140182254669,
+        "index": 3,
+        "maximum_interior_radius_cells": 21.0,
+        "perimeter": 564,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 184,
+        "bbox_aspect_ratio": 2.8,
+        "bounds": [
+          0,
+          38,
+          10,
+          66
+        ],
+        "compactness": 0.4003137453327714,
+        "index": 4,
+        "maximum_interior_radius_cells": 9.0,
+        "perimeter": 76,
+        "touches_frame": true
+      }
+    ]
+  },
+  "source_water": {
+    "cells": 295484,
+    "component_count": 1,
+    "components": [
+      {
+        "area_cells": 295484,
+        "bbox_aspect_ratio": 1.0096153846153846,
+        "bounds": [
+          0,
+          0,
+          832,
+          840
+        ],
+        "compactness": 0.08016041261179345,
+        "index": 0,
+        "maximum_interior_radius_cells": 240.66666666666666,
+        "perimeter": 6806,
+        "touches_frame": true
+      }
+    ]
+  },
+  "date": "2026-10-29"
+}

@@ -1,0 +1,66 @@
+[
+  {
+    "seat": 1,
+    "opponent": 5,
+    "ore_id": 60,
+    "own_path_steps": 445,
+    "opponent_path_steps": 541,
+    "both_reachable": true
+  },
+  {
+    "seat": 2,
+    "opponent": 6,
+    "ore_id": 66,
+    "own_path_steps": 432,
+    "opponent_path_steps": 507,
+    "both_reachable": true
+  },
+  {
+    "seat": 3,
+    "opponent": 7,
+    "ore_id": 72,
+    "own_path_steps": 372,
+    "opponent_path_steps": 456,
+    "both_reachable": true
+  },
+  {
+    "seat": 4,
+    "opponent": 8,
+    "ore_id": 78,
+    "own_path_steps": 341,
+    "opponent_path_steps": 411,
+    "both_reachable": true
+  },
+  {
+    "seat": 5,
+    "opponent": 1,
+    "ore_id": 63,
+    "own_path_steps": 450,
+    "opponent_path_steps": 534,
+    "both_reachable": true
+  },
+  {
+    "seat": 6,
+    "opponent": 2,
+    "ore_id": 69,
+    "own_path_steps": 396,
+    "opponent_path_steps": 545,
+    "both_reachable": true
+  },
+  {
+    "seat": 7,
+    "opponent": 3,
+    "ore_id": 75,
+    "own_path_steps": 372,
+    "opponent_path_steps": 462,
+    "both_reachable": true
+  },
+  {
+    "seat": 8,
+    "opponent": 4,
+    "ore_id": 81,
+    "own_path_steps": 335,
+    "opponent_path_steps": 417,
+    "both_reachable": true
+  }
+]

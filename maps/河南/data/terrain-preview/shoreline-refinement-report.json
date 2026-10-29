@@ -1,0 +1,137 @@
+{
+  "added_land_cells": 0,
+  "all_nonwater_arrays_byte_identical": true,
+  "design_land": {
+    "cells": 703681,
+    "component_count": 1,
+    "components": [
+      {
+        "area_cells": 703681,
+        "bbox_aspect_ratio": 1.0,
+        "bounds": [
+          0,
+          0,
+          840,
+          840
+        ],
+        "compactness": 0.6403748663362224,
+        "index": 0,
+        "maximum_interior_radius_cells": 728.0,
+        "perimeter": 3716,
+        "touches_frame": true
+      }
+    ]
+  },
+  "design_water": {
+    "cells": 1919,
+    "component_count": 2,
+    "components": [
+      {
+        "area_cells": 1734,
+        "bbox_aspect_ratio": 1.5098039215686274,
+        "bounds": [
+          112,
+          586,
+          189,
+          637
+        ],
+        "compactness": 0.2590973441771558,
+        "index": 0,
+        "maximum_interior_radius_cells": 12.333333333333334,
+        "perimeter": 290,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 185,
+        "bbox_aspect_ratio": 1.0625,
+        "bounds": [
+          751,
+          79,
+          767,
+          96
+        ],
+        "compactness": 0.5336957216842164,
+        "index": 1,
+        "maximum_interior_radius_cells": 6.666666666666667,
+        "perimeter": 66,
+        "touches_frame": false
+      }
+    ]
+  },
+  "existing_water_preserved": true,
+  "input_cells": [
+    840,
+    840
+  ],
+  "land_open_radius_input_cells": 6,
+  "main_land_and_each_preserved_compact_island_stable_under_opening": true,
+  "map_id": "河南",
+  "method": "morphological opening of land to retract narrow peninsulas, necks and pointed spurs",
+  "preserved_compact_small_islands": [],
+  "removed_land_cells": 7,
+  "small_shore_transition_policy": {
+    "bidirectional": true,
+    "continuous": true,
+    "few_exits_do_not_satisfy": true,
+    "scope": "entire perimeter of retained small islands and small waterbodies",
+    "status": "design requirement; implement and verify terrain height/navigation when producing playable maps"
+  },
+  "source": "maps/河南/data/terrain-preview/raw/reference-before-shoreline-refinement.npz",
+  "source_land": {
+    "cells": 703688,
+    "component_count": 1,
+    "components": [
+      {
+        "area_cells": 703688,
+        "bbox_aspect_ratio": 1.0,
+        "bounds": [
+          0,
+          0,
+          840,
+          840
+        ],
+        "compactness": 0.64038123658647,
+        "index": 0,
+        "maximum_interior_radius_cells": 728.0,
+        "perimeter": 3716,
+        "touches_frame": true
+      }
+    ]
+  },
+  "source_water": {
+    "cells": 1912,
+    "component_count": 2,
+    "components": [
+      {
+        "area_cells": 1728,
+        "bbox_aspect_ratio": 1.5098039215686274,
+        "bounds": [
+          112,
+          586,
+          189,
+          637
+        ],
+        "compactness": 0.25820081357446667,
+        "index": 0,
+        "maximum_interior_radius_cells": 12.333333333333334,
+        "perimeter": 290,
+        "touches_frame": false
+      },
+      {
+        "area_cells": 184,
+        "bbox_aspect_ratio": 1.0625,
+        "bounds": [
+          751,
+          79,
+          767,
+          96
+        ],
+        "compactness": 0.5308108799453828,
+        "index": 1,
+        "maximum_interior_radius_cells": 6.666666666666667,
+        "perimeter": 66,
+        "touches_frame": false
+      }
+    ]
+  }
+}

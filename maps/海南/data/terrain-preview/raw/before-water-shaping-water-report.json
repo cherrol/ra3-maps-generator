@@ -1,0 +1,17 @@
+{
+  "elevation_bounds_and_province_unchanged": true,
+  "include_rivers": false,
+  "large_lake_cells": 784,
+  "map_name": "翠屿浮光",
+  "minimum_lake_area_km2": 80,
+  "ocean_cells": 281571,
+  "retained_lakes": [
+    {
+      "area_km2": 99.03883486060448,
+      "cells_in_input_frame": 784,
+      "name": "松涛水库"
+    }
+  ],
+  "water_cells": 282355,
+  "water_mask_equals_ocean_union_large_lakes": true
+}

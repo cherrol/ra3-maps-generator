@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-28",
+  "map_name": "层峦织彩",
+  "input": "data/terrain-preview/input.npz",
+  "parameters": "data/terrain-preview/parameters.json",
+  "reference_scope": "entire rectangle; province outline is reference only",
+  "height_policy": "national-bands-with-local-fallback",
+  "dem_source": "https://registry.opendata.aws/terrain-tiles/",
+  "format_documentation": "https://github.com/tilezen/joerd/blob/master/docs/formats.md",
+  "attribution": "Mapzen / AWS Terrain Tiles; SRTM / GMTED2010 courtesy USGS; see https://github.com/tilezen/joerd/blob/master/docs/attribution.md",
+  "raw_source_preserved": true,
+  "original_playable_map_unchanged": true,
+  "elevation_and_boundary_reference": "game-area.npz, original georeferenced elevation retained",
+  "water_reference": "input.npz water_mask = ocean_mask union large_lake_mask",
+  "lakes_attribution": "© OpenStreetMap contributors; https://www.openstreetmap.org/copyright",
+  "water": "Natural Earth ocean polygons + lake/reservoir polygons with estimated whole-waterbody area >= 80 km2; rivers omitted",
+  "unfiltered_water_reference": "raw/reference-before-water-filter.npz",
+  "water_policy": "water-policy.json",
+  "water_report": "water-report.json",
+  "ocean_source": "https://github.com/nvkelso/natural-earth-vector/blob/master/geojson/ne_10m_ocean.geojson"
+}

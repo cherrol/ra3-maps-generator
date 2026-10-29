@@ -1,0 +1,204 @@
+{
+  "schema_version": 1,
+  "map_name": "百汊涵天",
+  "blueprint": "湖北",
+  "label": "地级行政中心",
+  "coordinate_system": "WGS84",
+  "source": "https://geo.datav.aliyun.com/areas_v3/bound/420000_full.json",
+  "source_field": "properties.center (administrative center, not polygon centroid)",
+  "conversion": "GCJ-02 approximately inverted to WGS84 by six iterations, matching terrain boundary ingestion",
+  "retrieved_date": "2026-10-29",
+  "points": [
+    {
+      "adcode": "420100",
+      "name": "武汉市",
+      "level": "city",
+      "center_wgs84": [
+        114.29314289477193,
+        30.586786473459057
+      ],
+      "center_gcj02": [
+        114.298572,
+        30.584355
+      ]
+    },
+    {
+      "adcode": "420200",
+      "name": "黄石市",
+      "level": "city",
+      "center_wgs84": [
+        115.07158188645201,
+        30.222433879498077
+      ],
+      "center_gcj02": [
+        115.077048,
+        30.220074
+      ]
+    },
+    {
+      "adcode": "420300",
+      "name": "十堰市",
+      "level": "city",
+      "center_wgs84": [
+        110.78258261737209,
+        32.64906798096192
+      ],
+      "center_gcj02": [
+        110.787916,
+        32.646907
+      ]
+    },
+    {
+      "adcode": "420500",
+      "name": "宜昌市",
+      "level": "city",
+      "center_wgs84": [
+        111.28518515718275,
+        30.70507037021834
+      ],
+      "center_gcj02": [
+        111.290843,
+        30.702636
+      ]
+    },
+    {
+      "adcode": "420600",
+      "name": "襄阳市",
+      "level": "city",
+      "center_wgs84": [
+        112.13808754745355,
+        32.044410172140886
+      ],
+      "center_gcj02": [
+        112.144146,
+        32.042426
+      ]
+    },
+    {
+      "adcode": "420700",
+      "name": "鄂州市",
+      "level": "city",
+      "center_wgs84": [
+        114.88554743293655,
+        30.399225837642593
+      ],
+      "center_gcj02": [
+        114.890593,
+        30.396536
+      ]
+    },
+    {
+      "adcode": "420800",
+      "name": "荆门市",
+      "level": "city",
+      "center_wgs84": [
+        112.19842115071025,
+        31.03763213346805
+      ],
+      "center_gcj02": [
+        112.204251,
+        31.03542
+      ]
+    },
+    {
+      "adcode": "420900",
+      "name": "孝感市",
+      "level": "city",
+      "center_wgs84": [
+        113.92117006945762,
+        30.928896317078195
+      ],
+      "center_gcj02": [
+        113.926655,
+        30.926423
+      ]
+    },
+    {
+      "adcode": "421000",
+      "name": "荆州市",
+      "level": "city",
+      "center_wgs84": [
+        112.2324146214364,
+        30.329410707551084
+      ],
+      "center_gcj02": [
+        112.23813,
+        30.326857
+      ]
+    },
+    {
+      "adcode": "421100",
+      "name": "黄冈市",
+      "level": "city",
+      "center_wgs84": [
+        114.87430513070304,
+        30.450379589008794
+      ],
+      "center_gcj02": [
+        114.879365,
+        30.447711
+      ]
+    },
+    {
+      "adcode": "421200",
+      "name": "咸宁市",
+      "level": "city",
+      "center_wgs84": [
+        114.32355532193742,
+        29.83526193654857
+      ],
+      "center_gcj02": [
+        114.328963,
+        29.832798
+      ]
+    },
+    {
+      "adcode": "421300",
+      "name": "随州市",
+      "level": "city",
+      "center_wgs84": [
+        113.36756741500207,
+        31.719389464012732
+      ],
+      "center_gcj02": [
+        113.37377,
+        31.717497
+      ]
+    },
+    {
+      "adcode": "422800",
+      "name": "恩施土家族苗族自治州",
+      "level": "city",
+      "center_wgs84": [
+        109.48210078705554,
+        30.28566419855177
+      ],
+      "center_gcj02": [
+        109.48699,
+        30.283114
+      ]
+    }
+  ],
+  "excluded_features": [
+    {
+      "name": "仙桃市",
+      "adcode": 429004,
+      "level": "city"
+    },
+    {
+      "name": "潜江市",
+      "adcode": 429005,
+      "level": "city"
+    },
+    {
+      "name": "天门市",
+      "adcode": 429006,
+      "level": "city"
+    },
+    {
+      "name": "神农架林区",
+      "adcode": 429021,
+      "level": "city"
+    }
+  ]
+}

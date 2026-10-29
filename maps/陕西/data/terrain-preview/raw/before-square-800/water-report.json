@@ -1,0 +1,64 @@
+{
+  "date": "2026-10-29",
+  "map_id": "陕西",
+  "map_name": "千壑横原",
+  "mode": "map-local-compact-water-design",
+  "designed_shorelines_are_not_measured": true,
+  "include_rivers": false,
+  "source_selection_report": "raw/before-water-shaping-water-report.json",
+  "water_cells_in_input": 790,
+  "water_cells_in_game_frame": 461,
+  "component_count_in_game_frame": 1,
+  "components_in_game_frame": [
+    {
+      "area_cells": 461,
+      "bbox_game_cells": [
+        607,
+        694,
+        631,
+        715
+      ],
+      "bbox_fill_fraction": 0.8382,
+      "bbox_aspect_ratio": 1.1364,
+      "raster_perimeter": 94,
+      "compactness_4pi_area_over_perimeter_squared": 0.6556,
+      "maximum_manhattan_interior_radius_cells": 11,
+      "touches_game_frame": true
+    }
+  ],
+  "design_lake_groups": [
+    {
+      "action": "hull",
+      "close_radius": 0,
+      "name": "陕西-湖区1",
+      "open_radius": 5,
+      "result": {
+        "cells": 790,
+        "component_count": 1,
+        "components": [
+          {
+            "area_cells": 790,
+            "bbox_aspect_ratio": 2.0952380952380953,
+            "bounds": [
+              596,
+              679,
+              640,
+              700
+            ],
+            "compactness": 0.5874220583043637,
+            "index": 0,
+            "maximum_interior_radius_cells": 10.333333333333334,
+            "perimeter": 130,
+            "touches_frame": true
+          }
+        ]
+      },
+      "source_cells": 297
+    }
+  ],
+  "water_exactly_ocean_union_original_large_lakes": false,
+  "original_geographic_arrays_preserved": true,
+  "existing_land_layers_preserved": true,
+  "original_final_thresholds_preserved": true,
+  "reference": "raw/reference-before-water-shaping.npz"
+}

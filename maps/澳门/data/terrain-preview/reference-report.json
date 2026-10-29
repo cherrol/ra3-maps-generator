@@ -1,0 +1,102 @@
+{
+  "blueprint": "澳门",
+  "boundary_conversion": "GCJ-02 approximately inverted to WGS84, six iterations",
+  "boundary_source": "https://geo.datav.aliyun.com/areas_v3/bound/820000.json",
+  "bounds_wgs84": [
+    113.52472645212548,
+    22.105878933484156,
+    113.60230003474344,
+    22.220297996677292
+  ],
+  "date": "2026-10-29",
+  "dem_attribution": "Mapzen / AWS Terrain Tiles; SRTM and GMTED2010 courtesy USGS; see tilezen/joerd docs/attribution.md",
+  "dem_source": "https://registry.opendata.aws/terrain-tiles/",
+  "detailed_ocean_reference": "coast-report.json",
+  "elevation_max_m": 303.1621740996665,
+  "elevation_min_m": -20.763221098905703,
+  "grid": [
+    528,
+    840
+  ],
+  "limitation": "reference cartography at sampled resolution; sampled maxima and polygon areas are not surveyed values",
+  "map_name": "潮汀流光",
+  "no_province_based_terrain_clipping": true,
+  "north_up": true,
+  "terrain_zoom": 13,
+  "tiles_validated": [
+    {
+      "crc32": 3177034051,
+      "x": 6679,
+      "y": 3577,
+      "z": 13
+    },
+    {
+      "crc32": 1868403977,
+      "x": 6679,
+      "y": 3578,
+      "z": 13
+    },
+    {
+      "crc32": 1510220806,
+      "x": 6679,
+      "y": 3579,
+      "z": 13
+    },
+    {
+      "crc32": 2190368112,
+      "x": 6679,
+      "y": 3580,
+      "z": 13
+    },
+    {
+      "crc32": 1246674979,
+      "x": 6680,
+      "y": 3577,
+      "z": 13
+    },
+    {
+      "crc32": 872454767,
+      "x": 6680,
+      "y": 3578,
+      "z": 13
+    },
+    {
+      "crc32": 2598750533,
+      "x": 6680,
+      "y": 3579,
+      "z": 13
+    },
+    {
+      "crc32": 1700746672,
+      "x": 6680,
+      "y": 3580,
+      "z": 13
+    },
+    {
+      "crc32": 1032312545,
+      "x": 6681,
+      "y": 3577,
+      "z": 13
+    },
+    {
+      "crc32": 2700195536,
+      "x": 6681,
+      "y": 3578,
+      "z": 13
+    },
+    {
+      "crc32": 2637272914,
+      "x": 6681,
+      "y": 3579,
+      "z": 13
+    },
+    {
+      "crc32": 1032312545,
+      "x": 6681,
+      "y": 3580,
+      "z": 13
+    }
+  ],
+  "water_display_policy": "water-policy.json",
+  "water_source": "Natural Earth 1:10m ocean and lakes; selected OSM reservoir polygons; minimum lake area 80 km2"
+}
