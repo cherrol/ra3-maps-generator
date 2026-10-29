@@ -1,0 +1,36 @@
+{
+  "source": "[CHAI]千壑横原T0.7.4",
+  "operation": "repair-shoulder",
+  "ramp_id": 567,
+  "bounds": [
+    393,
+    482,
+    459,
+    537
+  ],
+  "height_file": "histories/T0.7.4/ramp-567-shoulder.u16",
+  "surface_bounds": [
+    393,
+    479,
+    467,
+    539
+  ],
+  "materials": [
+    [
+      212,
+      "Grass_NewYork01"
+    ],
+    [
+      350,
+      "Grass_MtRush04"
+    ]
+  ],
+  "rock_texture": "Rock_Yucatan01",
+  "repaint_materials": [
+    "Dirt_Iceland05",
+    "Dirt_Yucatan06",
+    "Rock_Yucatan01",
+    "Gravel_Yucatan01"
+  ],
+  "note": "收整567号坡口旧迁移高台和尖角，坡顶接回实际台地草地，保持坡心、25格全宽及资源路线"
+}

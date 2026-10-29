@@ -1,0 +1,154 @@
+T0.5.1 原包与 WorldBuilder 重存包对比
+日期：2026-10-23
+
+对比对象
+  dist/[CHAI]叠岭连原/[CHAI]叠岭连原T0.5.1.zip
+  dist/[CHAI]叠岭连原/[CHAI]叠岭连原T0.5.1--rebuild.zip
+
+结论
+  重存版没有修改地形、贴图网格、光照、雾、后处理或对象配置。
+  最值得排查的是原包被删除的 AssetList：重存版恢复了 25 项资源引用。
+  另一个确定的格式问题是原包字符串表未按 ID 严格倒序序列化。
+  本次完成静态二进制与解析后内容对比，未运行游戏或地编；不能将红屏
+  唯一归因于某一项差异。应通过单项替换实验区分资源清单与字符串表问题。
+
+一、文件层
+                               原包             重存包
+  ZIP 字节数                   155604           148096
+  .map 字节数                  154587           128243
+  .map 解压后字节数            8673351          8672847
+  map.xml 字节数               132261           216677
+  顶层区块数                   25               26
+  字符串表条目数               201              173
+  地形尺寸                     840×840          840×840
+  地形纹理种类                 9                9
+  对象数                       520              520
+  脚本列表数                   19               19
+  脚本数                       224              224
+
+  以下文件逐字节相同：
+    map.str（484 字节）
+    overrides.xml（191 字节）
+    NewWorldBuilder.notes.json（34 字节）
+    [CHAI]叠岭连原T0.5.1_art.tga（48923 字节）
+
+  ZIP 外层目录由 T0.5.1 改为 T0.5.1--rebuild，内部 .map 名称仍为 T0.5.1。
+  原 ZIP 使用 UTF-8 文件名；重存 ZIP 使用 GBK 文件名及 Unicode Path 附加字段。
+  两包的 ZIP 时间戳、压缩封装也不同，不能用压缩大小判断地图内容损失。
+
+二、顶层区块
+  区块名                     原 payload -> 重存 payload    结果
+  AssetList                  不存在 -> 204                 新增，v1，25 项
+  GlobalVersion              0 -> 0                        相同
+  HeightMapData              1411236 -> 1411236            相同
+  BlendTileData              7056319 -> 7056319            相同
+  WorldInfo                  423 -> 423                    相同
+  MPPositionList             126 -> 126                    相同
+  SidesList                  3921 -> 3921                  相同
+  LibraryMapLists            266 -> 266                    相同
+  Teams                      1768 -> 1768                  相同
+  PlayerScriptsList          104932 -> 104932              有变化，见下文
+  BuildLists                 534 -> 534                    相同
+  ObjectsList                88230 -> 88230                索引变化，解析内容相同
+  TriggerAreas               4 -> 4                        相同
+  GlobalWaterSettings        8 -> 8                        相同
+  FogSettings                24 -> 24                      相同
+  MissionHotSpots            4 -> 4                        相同
+  MissionObjectives          4 -> 4                        相同
+  StandingWaterAreas         126 -> 126                    相同
+  RiverAreas                 4 -> 4                        相同
+  StandingWaveAreas          4 -> 4                        相同
+  GlobalLighting             452 -> 452                    相同
+  PostEffectsChunk           20 -> 20                      相同
+  EnvironmentData            43 -> 43                      相同
+  NamedCameras               4 -> 4                        相同
+  CameraAnimationList        4 -> 4                        相同
+  WaypointsList              4 -> 4                        相同
+
+  原包已有的 25 个区块中，23 个 payload 逐字节相同；区块版本均未变化。
+  ObjectsList 用各自字符串表解析成对象后逐项相同，包含顺序、位置、朝向、
+  类型、属性值和对象版本。其二进制变化来自字符串表索引重编号。
+
+三、AssetList：首要嫌疑
+  重存版增加的 payload 为：uint32(25) + 25 组 (TypeId, InstanceId)。
+  按 TypeId 分组：
+    0x21e727da：2 项
+    0x8f7dc19b：1 项
+    0x942fff2d：21 项
+    0xd19d90c6：1 项
+  此处未依赖未核实的类型哈希名称解释。
+
+  原包缺少清单可直接追溯至：
+    maps/叠岭连原/repack/src/main.rs:462
+    base.remove("AssetList");
+  这段代码删除的是整个资源清单，而非只移除其中的旧脚本入口。
+
+  进一步对照 repack/inputs 中的 T0.5.0 底包：底包清单为 26 项，重存版
+  的 25 项全部已存在于底包，仅移除一组引用：
+    TypeId = 0x942fff2d，InstanceId = 0x1894b5e9。
+  清单中其余条目与顺序一致。这支持保留并按实际资源更新清单，而不是整块删除。
+
+四、字符串表：确定存在的序列化问题
+  原包顺序：198,197,...,1,199,200,201。
+  末尾追加的三项是：
+    199 SET_REF_TO_NEREST_TEAM_OF_UNNAMED_TYPE_OWNED_BY_PLAYER
+    200 NAMED_OWNED_BY_PLAYER
+    201 UNIT_HAS_UPGRADE
+  重存版清理了 28 个未使用字符串，无新增字符串，重新编号为 173,...,1。
+
+  本地格式规范 docs/ra3_map_format_spec.md 第 3 节及参考实现
+  lib/opensage/AssetNameCollection.cs:25-33 要求从总条目数开始严格倒序。
+  按该参考实现，原包在第一个条目就会校验失败；这不证明游戏采用同一
+  校验方式，但已足以确认原包不符合该序列化约定。
+
+  当前 src/map.rs:77-88 按 self.order 原样写出字符串表，而 id() 新建
+  条目时追加到 order 末尾，是上述非倒序布局的产生路径。
+  当前 MapFile::decode 能接受该布局，自身读写往返成功不能发现此问题。
+
+五、脚本变化
+  对各自字符串表解析后，19 个列表、224 条脚本都保留，没有新增或丢失。
+  部分 ScriptList/ScriptGroup 内的脚本与分组排列发生调整；例如中立列表
+  的 dual-* 脚本提前排列，Player 8 列表中的 sea8-* 脚本提前排列。
+  不应在没有实测的情况下把脚本执行顺序变化视为绝对无影响。
+
+  除排列外，只发现“限时杀敌奖励”组中以下条件参数大小写变化：
+    P1启动判断：3 处
+    P2启动判断：1 处
+    P3启动判断：1 处
+    P4启动判断：3 处
+  共 8 处，将 AlliedSuperWeaponAdvanced、JapanSuperWeaponAdvanced、
+  SovietSuperWeaponAdvanced 转为全小写。
+  仅规范化上述大小写及列表/分组排列后，整个解析脚本树完全相同，包含
+  启用状态、条件、动作、参数、分组和玩家列表归属。
+
+六、map.xml 变化
+  1. MapMetaData.FileName 中残留的两处 t0.5.0 改为 t0.5.1。
+     原打包函数只替换大写 T0.5.0，遗漏了这条小写路径。
+  2. 原包删除了 19 个 GameScriptList，留下相应注释；重存版重新导出
+     19 个列表、224 条脚本的 XML 资产声明。
+  3. 去掉这些声明/注释差异并统一版本路径后，XML 逐行相同。
+     Includes、TerrainTextureAtlas、9 种贴图及法线图路径均相同。
+
+七、红屏原因的判断与验证边界
+  已排除“重存版改变了地形贴图内容或调正常了光照”这一解释：相关
+  二进制 payload 没有任何变化，XML 纹理图集也没有变化。
+  优先调查 AssetList 缺失导致资源加载不完整的可能，同时修正已确定的
+  字符串表倒序问题，并同步 map.xml 路径和脚本资产声明。
+  要确认具体哪项导致发红，需基于原包分别只恢复 AssetList、只修正
+  字符串表进行地编或游戏验证；本次未进行该实测，也未修改源码或原包。
+
+输入 ZIP SHA-256
+  原包：d652781e77902500f665eeff1323e5073aea7bf6935560ed6df06235ae6fe19d
+  重存：83246ba6dad629a7d3702c084c4dbf7ca5461209f7de5765d0b0b922f16e40d1
+
+相同关键区块 SHA-256（均指 payload）
+  HeightMapData
+    111f8daea08c4e116b8574a76fddaaba09856c23791e5a0cca10c5f66dfda7fc
+  BlendTileData
+    b586244805323a31daed48a5577c06569f93eae4b36ef2908667c89f09ea3f93
+  GlobalLighting
+    e40e0c22810bcb8b505d87a11e30c0d7212e02b1b9b6565019eb8a7b7df7328e
+
+比对过程使用仓库 Rust 编解码器解压 EAR/RefPack、解析区块、对象与脚本，
+再用独立内容比对核实脚本排列、参数与 XML 差异。
+临时展开数据：/tmp/ra3-T0.5.1-comparison/

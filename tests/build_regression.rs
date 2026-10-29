@@ -1,8 +1,8 @@
 use ra3maps::{
-    build::{self, Options},
-    map::MapFile,
-    project::{self, Project},
-    refpack,
+    formats::map::MapFile,
+    formats::refpack,
+    pipeline::build::{self, Options},
+    pipeline::project::{self, Project},
 };
 use serde_json::Value;
 use std::{
@@ -11,14 +11,19 @@ use std::{
     process::Command,
     sync::atomic::{AtomicUsize, Ordering},
 };
+mod support;
 static NEXT: AtomicUsize = AtomicUsize::new(0);
 struct Temp(PathBuf);
 impl Temp {
     fn new() -> Self {
         let p = std::env::temp_dir().join(format!(
-            "ra3maps-test-{}-{}",
+            "ra3maps-test-{}-{}-{}",
             std::process::id(),
-            NEXT.fetch_add(1, Ordering::Relaxed)
+            NEXT.fetch_add(1, Ordering::Relaxed),
+            std::time::SystemTime::now()
+                .duration_since(std::time::UNIX_EPOCH)
+                .unwrap()
+                .as_nanos()
         ));
         fs::create_dir(&p).unwrap();
         Self(p)
@@ -43,10 +48,20 @@ fn copy_tree(src: &Path, dst: &Path) {
 // Preserve the original keys of immutable migration fixtures.
 fn historical_id(id: &str) -> &str {
     match id {
-        "千壑横原" => "叠岭连原",
-        "碧嶂回澜" => "夹川汇潮",
-        "千流叩海" => "岭尽生潮",
-        "翠屿浮光" => "环海相望",
+        "陕西" => "叠岭连原",
+        "广西" => "夹川汇潮",
+        "广东" => "岭尽生潮",
+        "海南" => "环海相望",
+        other => other,
+    }
+}
+// Snapshot filenames and map_id values retain the published names they recorded.
+fn fixture_title(id: &str) -> &str {
+    match id {
+        "陕西" => "千壑横原",
+        "广西" => "碧嶂回澜",
+        "广东" => "千流叩海",
+        "海南" => "翠屿浮光",
         other => other,
     }
 }
@@ -56,12 +71,7 @@ fn fixture_root(id: &str) -> Temp {
     copy_tree(&source.join("templates"), &temp.0.join("templates"));
     let dir = temp.0.join("maps").join(id);
     fs::create_dir_all(&dir).unwrap();
-    for f in [
-        "config.json",
-        "version.json",
-        "layout.json",
-        "v11_layers.npz",
-    ] {
+    for f in ["config.json", "version.json"] {
         fs::copy(source.join("maps").join(id).join(f), dir.join(f)).unwrap();
     }
     fs::write(temp.0.join("maps/.default"), id).unwrap();
@@ -69,9 +79,36 @@ fn fixture_root(id: &str) -> Temp {
     // The default accepted profile is exercised separately below.
     let config = dir.join("config.json");
     let mut cfg: Value = serde_json::from_slice(&fs::read(&config).unwrap()).unwrap();
+    support::copy_declared_inputs(&source.join("maps").join(id), &dir, &cfg);
     cfg["TEXTURE_PROFILE"] = Value::String("legacy".into());
+    cfg["RAMP_PROFILE"] = Value::String("legacy".into());
     // These fixtures intentionally reproduce the immutable pre-authoring blueprint.
     cfg.as_object_mut().unwrap().remove("COORDINATE_PIPELINE");
+    // This immutable blueprint predates the current expansion allocation.
+    cfg.as_object_mut().unwrap().remove("RESOURCE_DISTRIBUTION");
+    cfg.as_object_mut().unwrap().remove("RAMP_CLEARANCE");
+    cfg["RAMP_CLEARANCE_REFERENCE"] = "ramp-clearance-reference.json".into();
+    cfg.as_object_mut().unwrap().remove("SPAWN_PLACEMENT");
+    cfg["SPAWN_PLACEMENT_REFERENCE"] = "spawn-placement-reference.json".into();
+    fs::copy(
+        source
+            .join("tests/fixtures")
+            .join(format!("spawn-placement-{id}.json")),
+        dir.join("spawn-placement-reference.json"),
+    )
+    .unwrap();
+    let mut reference: Value = serde_json::from_slice(
+        &fs::read(
+            source
+                .join("tests/fixtures")
+                .join(format!("ramp-clearance-{}.json", fixture_title(id))),
+        )
+        .unwrap(),
+    )
+    .unwrap();
+    assert_eq!(reference["map_id"], fixture_title(id));
+    reference["map_id"] = id.into();
+    project::write_json(&dir.join("ramp-clearance-reference.json"), &reference).unwrap();
     project::write_json(&config, &cfg).unwrap();
     fs::write(temp.0.join("Cargo.toml"), "# isolated test root").unwrap();
     temp
@@ -79,18 +116,25 @@ fn fixture_root(id: &str) -> Temp {
 
 // Undo only the intentional heading overlay when comparing frozen migration
 // scripts. Every other byte of each production create action must still match.
-fn normalized_facing(p: &Project, nodes: &mut [ra3maps::scripts::Node]) {
+fn normalized_facing(p: &Project, nodes: &mut [ra3maps::gameplay::scripts::Node]) {
     use ra3maps::{
-        binary::Reader,
-        scripts::{self, Node},
+        formats::binary::Reader,
+        gameplay::scripts::{self, Node},
     };
     fn selected(n: &Node) -> bool {
         n.command.as_deref() == Some("CREATE_UNNAMED_ON_TEAM_AT_WAYPOINT_WITH_ORIENTATION")
             && scripts::string_arguments(n).unwrap().iter().any(|(t, s)| {
                 *t == 15
-                    && ["barracks", "warfactory", "airfield", "navalyard"]
-                        .iter()
-                        .any(|suffix| s.to_ascii_lowercase().ends_with(suffix))
+                    && ([
+                        "barracks",
+                        "warfactory",
+                        "airfield",
+                        "navalyard",
+                        "powerplant",
+                    ]
+                    .iter()
+                    .any(|suffix| s.to_ascii_lowercase().ends_with(suffix))
+                        || s.to_ascii_lowercase().contains("superweapon"))
             })
     }
     fn collect(nodes: &[Node], out: &mut Vec<Node>) {
@@ -145,7 +189,7 @@ fn normalized_facing(p: &Project, nodes: &mut [ra3maps::scripts::Node]) {
     }
     let mut originals = vec![];
     collect(
-        &ra3maps::scripts::load_rules(p).unwrap().scripts,
+        &ra3maps::gameplay::scripts::load_rules(p).unwrap().scripts,
         &mut originals,
     );
     restore(nodes, &originals);
@@ -154,10 +198,10 @@ fn normalized_facing(p: &Project, nodes: &mut [ra3maps::scripts::Node]) {
 #[test]
 fn ordinary_build_uses_the_accepted_profile_without_changing_gameplay() {
     use ra3maps::{
-        map::{BlendTiles, HeightMap},
-        texture_polish,
+        formats::map::{BlendTiles, HeightMap},
+        terrain::texture_polish,
     };
-    let id = "碧嶂回澜";
+    let id = "广西";
     let temp = fixture_root(id);
     let p = Project::load(&temp.0, id).unwrap();
     build::run(&temp.0, id, &Options::default()).unwrap();
@@ -166,6 +210,8 @@ fn ordinary_build_uses_the_accepted_profile_without_changing_gameplay() {
     // The standalone entry and the automatic build must share the same rules.
     let mut expected = legacy.clone();
     texture_polish::apply(&p, &mut expected, &p.name).unwrap();
+    ra3maps::resources::generate(&mut expected, &p).unwrap();
+    ra3maps::resources::terrain_package::compact(&mut expected).unwrap();
     let config = p.map_dir().join("config.json");
     let mut cfg: Value = serde_json::from_slice(&fs::read(&config).unwrap()).unwrap();
     cfg.as_object_mut().unwrap().remove("TEXTURE_PROFILE");
@@ -173,10 +219,45 @@ fn ordinary_build_uses_the_accepted_profile_without_changing_gameplay() {
     let original_version = fs::read(project::version_path(&temp.0, id)).unwrap();
     build::run(&temp.0, id, &Options::default()).unwrap();
     let actual = MapFile::load(&path).unwrap();
-    assert_eq!(actual.encode().unwrap(), expected.encode().unwrap());
+    assert_eq!(actual.table, expected.table);
+    for chunk in &expected.chunks {
+        let name = &expected.table[&chunk.name_idx];
+        if name != "WorldInfo" {
+            assert!(
+                actual.get(name).unwrap() == chunk,
+                "build and explicit polish differ in {name}"
+            );
+        }
+    }
+    // Build finalization synchronizes the newly appended stock resource names.
+    let expected_world = ra3maps::formats::map::read_props(
+        &mut ra3maps::formats::binary::Reader::new(&expected.get("WorldInfo").unwrap().payload),
+        &expected.table,
+    )
+    .unwrap();
+    let actual_world = ra3maps::formats::map::read_props(
+        &mut ra3maps::formats::binary::Reader::new(&actual.get("WorldInfo").unwrap().payload),
+        &actual.table,
+    )
+    .unwrap();
+    for prop in &expected_world {
+        if prop.key != "terrainTextureStrings" {
+            assert!(
+                actual_world.contains(prop),
+                "unrelated WorldInfo property changed: {}",
+                prop.key
+            );
+        }
+    }
+    let tokens = ra3maps::formats::map::prop(&actual_world, "terrainTextureStrings")
+        .unwrap()
+        .text()
+        .unwrap();
+    assert!(tokens.contains("TRock_Iceland02;TRock_Iceland02_nrm;"));
+    assert!(tokens.contains("TRock_Yucatan03;TRock_Yucatan03_nrm;"));
     for chunk in &legacy.chunks {
         let name = &legacy.table[&chunk.name_idx];
-        if name != "BlendTileData" {
+        if !["BlendTileData", "WorldInfo", "AssetList"].contains(&name.as_str()) {
             assert_eq!(actual.get(name).unwrap(), chunk, "{name}");
         }
     }
@@ -189,12 +270,19 @@ fn ordinary_build_uses_the_accepted_profile_without_changing_gameplay() {
     );
     let old = BlendTiles::parse(legacy.get("BlendTileData").unwrap(), n, n).unwrap();
     let new = BlendTiles::parse(actual.get("BlendTileData").unwrap(), n, n).unwrap();
-    assert_eq!(old.textures, new.textures);
+    assert!(new.textures.starts_with(&old.textures));
+    for primary in ra3maps::terrain::materials::PRIMARY {
+        assert!(new.textures.iter().any(|name| name == primary));
+    }
     assert_ne!(old.tiles, new.tiles);
     let report: Value =
         serde_json::from_slice(&fs::read(p.assets.join("texture-report.json")).unwrap()).unwrap();
     assert_eq!(report["profile"], texture_polish::PROFILE);
     assert_eq!(report["reference_version"], "T2.2.9");
+    assert_eq!(
+        report["palette_revision"],
+        ra3maps::terrain::materials::REVISION
+    );
     let xml = fs::read_to_string(p.assets.join("map.xml")).unwrap();
     // The directory/CLI rename must retain the original resource namespace.
     assert!(xml.contains(&format!("id=\"ra3maps_ea7772f9_{}\"", p.version)));
@@ -231,7 +319,7 @@ fn all_four_native_builds_match_the_checked_map_baselines_without_python() {
     for (id, expected) in shared.as_object().unwrap() {
         baseline[id] = expected.clone();
     }
-    for id in ["千壑横原", "碧嶂回澜", "千流叩海", "翠屿浮光"] {
+    for id in ["陕西", "广西", "广东", "海南"] {
         let temp = fixture_root(id);
         let before = fs::read(project::version_path(&temp.0, id)).unwrap();
         // No shell, interpreter or tool on PATH participates in a native build.
@@ -249,15 +337,49 @@ fn all_four_native_builds_match_the_checked_map_baselines_without_python() {
             String::from_utf8_lossy(&output.stderr)
         );
         let p = Project::load(&temp.0, id).unwrap();
+        assert_eq!(p.assets, temp.0.join("assets").join(id).join(&p.name));
+        assert_eq!(p.dist, temp.0.join("dist").join(id).join(&p.name));
+        assert_eq!(p.release_assets(&p.name).unwrap(), p.assets);
+        assert_eq!(
+            build::zip_path(&p),
+            temp.0.join("dist").join(id).join(format!("{}.zip", p.name))
+        );
+        assert!(!temp.0.join("assets").join(&p.group).exists());
+        assert!(!temp.0.join("dist").join(&p.group).exists());
+        assert!(!temp.0.join("assets").join(id).join(&p.version).exists());
+        assert!(!temp.0.join("dist").join(id).join(&p.version).exists());
+        assert_eq!(
+            fs::read(p.path("layers.npz").unwrap()).unwrap(),
+            fs::read(p.path(p.string("LAYERS", "layers.npz")).unwrap()).unwrap()
+        );
         let bytes = fs::read(p.assets.join(format!("{}.map", p.name))).unwrap();
         let plain = refpack::unpack(&bytes).unwrap();
         let map = MapFile::decode(&plain).unwrap();
-        ra3maps::production_facing::validate(&p, &map).unwrap();
+        ra3maps::gameplay::production_facing::validate(&p, &map).unwrap();
         let facing: Value =
             serde_json::from_slice(&fs::read(p.assets.join("production-facing.json")).unwrap())
                 .unwrap();
         let actions = facing["actions"].as_array().unwrap();
         assert!(!actions.is_empty());
+        for action in actions {
+            let degrees = action["degrees"].as_i64().unwrap();
+            assert!([45, 135, -45, -135].contains(&degrees));
+            assert_eq!(
+                action["radians"].as_f64().unwrap() as f32,
+                (degrees as f32).to_radians()
+            );
+        }
+        if id != "陕西" {
+            for kind in ["powerplant", "superweapon"] {
+                assert!(actions.iter().any(|a| {
+                    a["kind"]
+                        .as_str()
+                        .unwrap()
+                        .to_ascii_lowercase()
+                        .contains(kind)
+                }));
+            }
+        }
         assert!(
             actions
                 .iter()
@@ -266,27 +388,28 @@ fn all_four_native_builds_match_the_checked_map_baselines_without_python() {
         for seat in 1..=8 {
             assert!(actions.iter().any(|a| a["seat"] == seat));
         }
-        if id == "千壑横原" {
-            let scripts = ra3maps::scripts::parse_nodes(
+        if id == "陕西" {
+            let scripts = ra3maps::gameplay::scripts::parse_nodes(
                 &map.get("PlayerScriptsList").unwrap().payload,
                 &map.table,
             )
             .unwrap();
-            ra3maps::gift_clearance::validate(&p, &map).unwrap();
-            let scripts = ra3maps::gift_clearance::authored_scripts(&scripts).unwrap();
-            let scripts = ra3maps::periodic_attack::authored_scripts(&scripts).unwrap();
-            let names = ra3maps::scripts::script_names(&scripts).unwrap();
+            ra3maps::gameplay::gift_clearance::validate(&p, &map).unwrap();
+            let scripts = ra3maps::gameplay::gift_clearance::authored_scripts(&scripts).unwrap();
+            let scripts = ra3maps::gameplay::periodic_attack::authored_scripts(&scripts).unwrap();
+            let names = ra3maps::gameplay::scripts::script_names(&scripts).unwrap();
             assert_eq!(names.len(), 191);
             assert!(names.iter().all(|n| {
                 !["cash-", "atk-", "side-"]
                     .iter()
                     .any(|prefix| n.starts_with(prefix))
             }));
-            let mut teams = ra3maps::binary::Reader::new(&map.get("Teams").unwrap().payload);
+            let mut teams =
+                ra3maps::formats::binary::Reader::new(&map.get("Teams").unwrap().payload);
             for _ in 0..teams.u32().unwrap() {
-                let props = ra3maps::map::read_props(&mut teams, &map.table).unwrap();
-                let name = ra3maps::map::prop(&props, "teamName")
-                    .and_then(ra3maps::map::Value::text)
+                let props = ra3maps::formats::map::read_props(&mut teams, &map.table).unwrap();
+                let name = ra3maps::formats::map::prop(&props, "teamName")
+                    .and_then(ra3maps::formats::map::Value::text)
                     .unwrap();
                 assert!(!name.starts_with("team_atk_"));
             }
@@ -308,20 +431,23 @@ fn all_four_native_builds_match_the_checked_map_baselines_without_python() {
                 normalized = normalized_production_objects(&p, &map);
                 &normalized
             } else if name == "PlayerScriptsList" {
-                let nodes = ra3maps::scripts::parse_nodes(&chunk.payload, &map.table).unwrap();
-                let authored = ra3maps::gift_clearance::authored_scripts(&nodes).unwrap();
-                let mut authored = ra3maps::periodic_attack::authored_scripts(&authored).unwrap();
+                let nodes =
+                    ra3maps::gameplay::scripts::parse_nodes(&chunk.payload, &map.table).unwrap();
+                let authored = ra3maps::gameplay::gift_clearance::authored_scripts(&nodes).unwrap();
+                let mut authored =
+                    ra3maps::gameplay::periodic_attack::authored_scripts(&authored).unwrap();
                 normalized_facing(&p, &mut authored);
-                normalized = ra3maps::scripts::encode_nodes(&authored, &mut map.clone()).unwrap();
+                normalized =
+                    ra3maps::gameplay::scripts::encode_nodes(&authored, &mut map.clone()).unwrap();
                 &normalized
             } else if name == "TriggerAreas" {
                 let mut original = map.clone();
-                ra3maps::gift_clearance::authored_areas(&mut original).unwrap();
+                ra3maps::gameplay::gift_clearance::authored_areas(&mut original).unwrap();
                 normalized = original.get("TriggerAreas").unwrap().payload.clone();
                 &normalized
             } else if name == "Teams" {
                 let mut original = map.clone();
-                ra3maps::periodic_attack::authored_teams(&mut original).unwrap();
+                ra3maps::gameplay::periodic_attack::authored_teams(&mut original).unwrap();
                 normalized = original.get("Teams").unwrap().payload.clone();
                 &normalized
             } else {
@@ -348,7 +474,8 @@ fn all_four_native_builds_match_the_checked_map_baselines_without_python() {
             bytes,
             "{id} deterministic EAR"
         );
-        let zip = ra3maps::archive::unzip(&fs::read(build::zip_path(&p)).unwrap()).unwrap();
+        let zip =
+            ra3maps::formats::archive::unzip(&fs::read(build::zip_path(&p)).unwrap()).unwrap();
         assert_eq!(zip.len(), 5);
         assert!(zip.contains_key(&format!("{}/map.xml", p.name)));
         assert!(zip.contains_key(&format!("{}/overrides.xml", p.name)));
@@ -452,16 +579,17 @@ fn verify_layout_preview(p: &Project) {
 
 fn verify_shared_rules_and_layout(p: &Project, map: &MapFile) {
     use ra3maps::{
-        map::{self, BlendTiles, HeightMap},
-        script_spawns, scripts,
+        formats::map::{self, BlendTiles, HeightMap},
+        gameplay::script_spawns,
+        gameplay::scripts,
         terrain::Layout,
     };
     let rules = scripts::load_rules(p).unwrap();
     assert_eq!(p.string("RULESET", ""), "common-T0.5.1");
     let nodes =
         scripts::parse_nodes(&map.get("PlayerScriptsList").unwrap().payload, &map.table).unwrap();
-    ra3maps::gift_clearance::validate(p, map).unwrap();
-    let mut nodes = ra3maps::gift_clearance::authored_scripts(&nodes).unwrap();
+    ra3maps::gameplay::gift_clearance::validate(p, map).unwrap();
+    let mut nodes = ra3maps::gameplay::gift_clearance::authored_scripts(&nodes).unwrap();
     normalized_facing(p, &mut nodes);
     let names = scripts::script_names(&nodes).unwrap();
     assert_eq!(names.len(), 224);
@@ -481,7 +609,7 @@ fn verify_shared_rules_and_layout(p: &Project, map: &MapFile) {
     assert_eq!(
         objects
             .iter()
-            .filter(|o| !ra3maps::gift_clearance::is_alternate(o))
+            .filter(|o| !ra3maps::gameplay::gift_clearance::is_alternate(o))
             .count(),
         layout.objects.len() + 31
     );
@@ -521,7 +649,7 @@ fn verify_shared_rules_and_layout(p: &Project, map: &MapFile) {
     flooded.elevations[y * hm.width + x + 6] =
         ((p.number("WATER_Z", 200.) - 10.) / p.number("Z_SCALE", 0.0390625)) as u16;
     assert!(
-        ra3maps::production_spawns::validate(p, map, &flooded, &bt, &objects)
+        ra3maps::gameplay::production_spawns::validate(p, map, &flooded, &bt, &objects)
             .unwrap_err()
             .to_string()
             .contains("requires flat land")
@@ -558,12 +686,13 @@ fn verify_shared_rules_and_layout(p: &Project, map: &MapFile) {
 
 fn normalized_production_objects(p: &Project, map: &MapFile) -> Vec<u8> {
     use ra3maps::{
-        map, script_spawns,
-        surface::Surface,
+        formats::map,
+        gameplay::script_spawns,
+        terrain::surface::Surface,
         terrain::{Layout, Terrain},
     };
     let mut objects = map::objects(map.get("ObjectsList").unwrap(), &map.table).unwrap();
-    objects.retain(|o| !ra3maps::gift_clearance::is_alternate(o));
+    objects.retain(|o| !ra3maps::gameplay::gift_clearance::is_alternate(o));
     let layout = Layout::load(p).unwrap();
     let mut t = Terrain::load(p).unwrap();
     t.layout = layout.clone();
@@ -591,10 +720,13 @@ fn normalized_production_objects(p: &Project, map: &MapFile) -> Vec<u8> {
 
 #[test]
 fn production_release_repairs_water_factory_and_preserves_all_other_map_chunks() {
-    use ra3maps::{archive, map, production_spawns, release, terrain::Layout};
-    let temp = fixture_root("碧嶂回澜");
-    build::run(&temp.0, "碧嶂回澜", &Options::default()).unwrap();
-    let p = Project::load(&temp.0, "碧嶂回澜").unwrap();
+    use ra3maps::{
+        formats::archive, formats::map, gameplay::production_spawns, pipeline::release,
+        terrain::Layout,
+    };
+    let temp = fixture_root("广西");
+    build::run(&temp.0, "广西", &Options::default()).unwrap();
+    let p = Project::load(&temp.0, "广西").unwrap();
     let good = MapFile::load(p.assets.join(format!("{}.map", p.name))).unwrap();
     let mut bad = good.clone();
     let mut objects = map::objects(bad.get("ObjectsList").unwrap(), &bad.table).unwrap();
@@ -633,7 +765,7 @@ fn production_release_repairs_water_factory_and_preserves_all_other_map_chunks()
     .unwrap();
     let released = release::repair_production(
         &temp.0,
-        "碧嶂回澜",
+        "广西",
         &source,
         &Options {
             bump: true,
@@ -643,7 +775,13 @@ fn production_release_repairs_water_factory_and_preserves_all_other_map_chunks()
     )
     .unwrap();
     let repaired = MapFile::load(released.assets.join(format!("{}.map", released.name))).unwrap();
-    ra3maps::gift_clearance::validate(&released, &repaired).unwrap();
+    ra3maps::gameplay::gift_clearance::validate(&released, &repaired).unwrap();
+    // A terrain edit must reserve complete primary and fallback foundations,
+    // including their corners, rather than only their waypoint markers.
+    let mut terrain_edit = repaired.clone();
+    ra3maps::terrain::ramps::apply(&released, &mut terrain_edit, &released.name).unwrap();
+    ra3maps::gameplay::gift_clearance::validate(&released, &terrain_edit).unwrap();
+    ra3maps::gameplay::production_facing::validate(&released, &terrain_edit).unwrap();
     for chunk in &good.chunks {
         let name = &good.table[&chunk.name_idx];
         if !["ObjectsList", "TriggerAreas", "PlayerScriptsList"].contains(&name.as_str()) {
@@ -669,34 +807,34 @@ fn production_release_repairs_water_factory_and_preserves_all_other_map_chunks()
     assert!(strings.contains(&format!("版本 {}", released.version)));
     let xml = fs::read_to_string(released.assets.join("map.xml")).unwrap();
     assert!(xml.contains(&format!("DisplayName=\"{}\"", released.name)));
-    assert!(xml.contains(&format!("id=\"ra3maps_ea7772f9_{}\"", p.version)));
+    assert!(xml.contains(&format!("id=\"ra3maps_ea7772f9_{}\"", released.version)));
 }
 #[test]
 fn failed_bump_restores_exact_version_bytes_and_only_removes_new_paths() {
-    let temp = fixture_root("碧嶂回澜");
-    let version = project::version_path(&temp.0, "碧嶂回澜");
+    let temp = fixture_root("广西");
+    let version = project::version_path(&temp.0, "广西");
     let original = fs::read(&version).unwrap();
     let options = Options {
         bump: true,
         only: vec!["verify".into()],
         ..Options::default()
     };
-    assert!(build::run(&temp.0, "碧嶂回澜", &options).is_err());
+    assert!(build::run(&temp.0, "广西", &options).is_err());
     assert_eq!(fs::read(&version).unwrap(), original);
     let st = project::bump(
-        &project::load_version(&temp.0, "碧嶂回澜").unwrap(),
+        &project::load_version(&temp.0, "广西").unwrap(),
         false,
         1,
         "",
     )
     .unwrap();
     project::write_json(&version, &st).unwrap();
-    let next = Project::load(&temp.0, "碧嶂回澜").unwrap();
+    let next = Project::load(&temp.0, "广西").unwrap();
     project::atomic_write(&version, &original).unwrap();
     assert!(!next.assets.exists());
     fs::create_dir_all(&next.assets).unwrap();
     fs::write(next.assets.join("keep.txt"), "existing artifact").unwrap();
-    assert!(build::run(&temp.0, "碧嶂回澜", &options).is_err());
+    assert!(build::run(&temp.0, "广西", &options).is_err());
     assert_eq!(
         fs::read(next.assets.join("keep.txt")).unwrap(),
         b"existing artifact"
@@ -706,8 +844,8 @@ fn failed_bump_restores_exact_version_bytes_and_only_removes_new_paths() {
 
 #[test]
 fn periodic_attack_update_preserves_finished_map_and_installs_exact_pairs() {
-    use ra3maps::{map, periodic_attack, release, scripts};
-    let temp = fixture_root("千壑横原");
+    use ra3maps::{formats::map, gameplay::periodic_attack, gameplay::scripts, pipeline::release};
+    let temp = fixture_root("陕西");
     let rules_path = temp.0.join("templates/rules/千壑横原.json");
     let mut enabled: Value = serde_json::from_slice(&fs::read(&rules_path).unwrap()).unwrap();
     enabled["periodic_attack"] = serde_json::json!({
@@ -720,13 +858,13 @@ fn periodic_attack_update_preserves_finished_map_and_installs_exact_pairs() {
     let mut legacy = enabled.clone();
     legacy.as_object_mut().unwrap().remove("periodic_attack");
     project::write_json(&rules_path, &legacy).unwrap();
-    build::run(&temp.0, "千壑横原", &Options::default()).unwrap();
-    let original = Project::load(&temp.0, "千壑横原").unwrap();
+    build::run(&temp.0, "陕西", &Options::default()).unwrap();
+    let original = Project::load(&temp.0, "陕西").unwrap();
     let before = MapFile::load(original.assets.join(format!("{}.map", original.name))).unwrap();
     project::write_json(&rules_path, &enabled).unwrap();
     let p = release::update_scripts(
         &temp.0,
-        "千壑横原",
+        "陕西",
         &build::zip_path(&original),
         &Options {
             bump: true,
@@ -810,7 +948,7 @@ fn periodic_attack_update_preserves_finished_map_and_installs_exact_pairs() {
     assert!(periodic_attack::validate(&p, &after).is_err());
     let removed = release::update_scripts(
         &temp.0,
-        "千壑横原",
+        "陕西",
         &build::zip_path(&p),
         &Options {
             bump: true,
@@ -867,21 +1005,21 @@ fn periodic_attack_update_preserves_finished_map_and_installs_exact_pairs() {
 }
 #[test]
 fn invalid_stage_is_rejected_before_version_changes() {
-    let temp = fixture_root("翠屿浮光");
-    let path = project::version_path(&temp.0, "翠屿浮光");
+    let temp = fixture_root("海南");
+    let path = project::version_path(&temp.0, "海南");
     let original = fs::read(&path).unwrap();
     let options = Options {
         bump: true,
         only: vec!["typo".into()],
         ..Options::default()
     };
-    assert!(build::run(&temp.0, "翠屿浮光", &options).is_err());
+    assert!(build::run(&temp.0, "海南", &options).is_err());
     assert_eq!(fs::read(path).unwrap(), original);
 }
 #[test]
 fn distribution_validates_all_files_before_touching_existing_package() {
-    let temp = fixture_root("碧嶂回澜");
-    let p = Project::load(&temp.0, "碧嶂回澜").unwrap();
+    let temp = fixture_root("广西");
+    let p = Project::load(&temp.0, "广西").unwrap();
     fs::create_dir_all(&p.dist).unwrap();
     fs::write(p.dist.join("keep.txt"), "existing package").unwrap();
     assert!(build::dist(&p, true).is_err());
@@ -894,12 +1032,12 @@ fn distribution_validates_all_files_before_touching_existing_package() {
 
 #[test]
 fn editing_layout_metadata_without_the_actual_objects_is_rejected() {
-    let temp = fixture_root("碧嶂回澜");
-    let path = temp.0.join("maps/碧嶂回澜/layout.json");
+    let temp = fixture_root("广西");
+    let p = Project::load(&temp.0, "广西").unwrap();
+    let path = p.path(p.string("LAYOUT", "layout.json")).unwrap();
     let mut layout: Value = serde_json::from_slice(&fs::read(&path).unwrap()).unwrap();
     layout["base_cells"][0][0] = serde_json::json!(200.);
     project::write_json(&path, &layout).unwrap();
-    let p = Project::load(&temp.0, "碧嶂回澜").unwrap();
     assert!(
         ra3maps::terrain::Terrain::generate(&p)
             .unwrap_err()

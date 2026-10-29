@@ -1,0 +1,1047 @@
+[
+  {
+    "key": "reserve_overlap:15:EI_Structure_02_Collapse@183.000000,134.000000/16:EI_Structure_01_Collapse@183.000000,134.000000",
+    "rule": "reserve_overlap",
+    "ids": [
+      15,
+      16
+    ],
+    "at": [
+      183.0,
+      134.0
+    ],
+    "metric": 16.0,
+    "detail": "保守占地/预留空间重叠 16.000 格"
+  },
+  {
+    "key": "reserve_overlap:15:EI_Structure_02_Collapse@183.000000,134.000000/17:EI_Structure_01@183.000000,134.000000",
+    "rule": "reserve_overlap",
+    "ids": [
+      15,
+      17
+    ],
+    "at": [
+      183.0,
+      134.0
+    ],
+    "metric": 16.0,
+    "detail": "保守占地/预留空间重叠 16.000 格"
+  },
+  {
+    "key": "reserve_overlap:15:EI_Structure_02_Collapse@183.000000,134.000000/18:EI_Structure_02@183.000000,134.000000",
+    "rule": "reserve_overlap",
+    "ids": [
+      15,
+      18
+    ],
+    "at": [
+      183.0,
+      134.0
+    ],
+    "metric": 16.0,
+    "detail": "保守占地/预留空间重叠 16.000 格"
+  },
+  {
+    "key": "reserve_overlap:15:EI_Structure_02_Collapse@183.000000,134.000000/29:GarageTechStructure_Collapse@183.000000,134.000000",
+    "rule": "reserve_overlap",
+    "ids": [
+      15,
+      29
+    ],
+    "at": [
+      183.0,
+      134.0
+    ],
+    "metric": 16.0,
+    "detail": "保守占地/预留空间重叠 16.000 格"
+  },
+  {
+    "key": "reserve_overlap:15:EI_Structure_02_Collapse@183.000000,134.000000/30:NUObservationPostTechStructure_Collapse@183.000000,134.000000",
+    "rule": "reserve_overlap",
+    "ids": [
+      15,
+      30
+    ],
+    "at": [
+      183.0,
+      134.0
+    ],
+    "metric": 16.0,
+    "detail": "保守占地/预留空间重叠 16.000 格"
+  },
+  {
+    "key": "reserve_overlap:16:EI_Structure_01_Collapse@183.000000,134.000000/17:EI_Structure_01@183.000000,134.000000",
+    "rule": "reserve_overlap",
+    "ids": [
+      16,
+      17
+    ],
+    "at": [
+      183.0,
+      134.0
+    ],
+    "metric": 16.0,
+    "detail": "保守占地/预留空间重叠 16.000 格"
+  },
+  {
+    "key": "reserve_overlap:16:EI_Structure_01_Collapse@183.000000,134.000000/18:EI_Structure_02@183.000000,134.000000",
+    "rule": "reserve_overlap",
+    "ids": [
+      16,
+      18
+    ],
+    "at": [
+      183.0,
+      134.0
+    ],
+    "metric": 16.0,
+    "detail": "保守占地/预留空间重叠 16.000 格"
+  },
+  {
+    "key": "reserve_overlap:16:EI_Structure_01_Collapse@183.000000,134.000000/29:GarageTechStructure_Collapse@183.000000,134.000000",
+    "rule": "reserve_overlap",
+    "ids": [
+      16,
+      29
+    ],
+    "at": [
+      183.0,
+      134.0
+    ],
+    "metric": 16.0,
+    "detail": "保守占地/预留空间重叠 16.000 格"
+  },
+  {
+    "key": "reserve_overlap:16:EI_Structure_01_Collapse@183.000000,134.000000/30:NUObservationPostTechStructure_Collapse@183.000000,134.000000",
+    "rule": "reserve_overlap",
+    "ids": [
+      16,
+      30
+    ],
+    "at": [
+      183.0,
+      134.0
+    ],
+    "metric": 16.0,
+    "detail": "保守占地/预留空间重叠 16.000 格"
+  },
+  {
+    "key": "reserve_overlap:17:EI_Structure_01@183.000000,134.000000/18:EI_Structure_02@183.000000,134.000000",
+    "rule": "reserve_overlap",
+    "ids": [
+      17,
+      18
+    ],
+    "at": [
+      183.0,
+      134.0
+    ],
+    "metric": 16.0,
+    "detail": "保守占地/预留空间重叠 16.000 格"
+  },
+  {
+    "key": "reserve_overlap:17:EI_Structure_01@183.000000,134.000000/29:GarageTechStructure_Collapse@183.000000,134.000000",
+    "rule": "reserve_overlap",
+    "ids": [
+      17,
+      29
+    ],
+    "at": [
+      183.0,
+      134.0
+    ],
+    "metric": 16.0,
+    "detail": "保守占地/预留空间重叠 16.000 格"
+  },
+  {
+    "key": "reserve_overlap:17:EI_Structure_01@183.000000,134.000000/30:NUObservationPostTechStructure_Collapse@183.000000,134.000000",
+    "rule": "reserve_overlap",
+    "ids": [
+      17,
+      30
+    ],
+    "at": [
+      183.0,
+      134.0
+    ],
+    "metric": 16.0,
+    "detail": "保守占地/预留空间重叠 16.000 格"
+  },
+  {
+    "key": "reserve_overlap:18:EI_Structure_02@183.000000,134.000000/29:GarageTechStructure_Collapse@183.000000,134.000000",
+    "rule": "reserve_overlap",
+    "ids": [
+      18,
+      29
+    ],
+    "at": [
+      183.0,
+      134.0
+    ],
+    "metric": 16.0,
+    "detail": "保守占地/预留空间重叠 16.000 格"
+  },
+  {
+    "key": "reserve_overlap:18:EI_Structure_02@183.000000,134.000000/30:NUObservationPostTechStructure_Collapse@183.000000,134.000000",
+    "rule": "reserve_overlap",
+    "ids": [
+      18,
+      30
+    ],
+    "at": [
+      183.0,
+      134.0
+    ],
+    "metric": 16.0,
+    "detail": "保守占地/预留空间重叠 16.000 格"
+  },
+  {
+    "key": "reserve_overlap:23:EI_Structure_02@580.124707,237.034229/68:OreNode@556.000000,248.000000",
+    "rule": "reserve_overlap",
+    "ids": [
+      23,
+      68
+    ],
+    "at": [
+      580.12470703125,
+      237.03422851562505
+    ],
+    "metric": 1.5000069133750173,
+    "detail": "保守占地/预留空间重叠 1.500 格"
+  },
+  {
+    "key": "uneven_footprint:24:EI_Structure_02@242.540723,469.931567",
+    "rule": "uneven_footprint",
+    "ids": [
+      24
+    ],
+    "at": [
+      242.54072265625,
+      469.9315673828125
+    ],
+    "metric": 66.484375,
+    "detail": "完整预留范围高差 66.484"
+  },
+  {
+    "key": "reserve_overlap:24:EI_Structure_02@242.540723,469.931567/72:OreNode@248.000000,444.000000",
+    "rule": "reserve_overlap",
+    "ids": [
+      24,
+      72
+    ],
+    "at": [
+      242.54072265625,
+      469.9315673828125
+    ],
+    "metric": 1.5000019614090085,
+    "detail": "保守占地/预留空间重叠 1.500 格"
+  },
+  {
+    "key": "reserve_overlap:29:GarageTechStructure_Collapse@183.000000,134.000000/30:NUObservationPostTechStructure_Collapse@183.000000,134.000000",
+    "rule": "reserve_overlap",
+    "ids": [
+      29,
+      30
+    ],
+    "at": [
+      183.0,
+      134.0
+    ],
+    "metric": 16.0,
+    "detail": "保守占地/预留空间重叠 16.000 格"
+  },
+  {
+    "key": "reserve_overlap:37:OreNode@760.000000,327.000000/108:OilDerrick@772.000000,307.000000",
+    "rule": "reserve_overlap",
+    "ids": [
+      37,
+      108
+    ],
+    "at": [
+      760.0,
+      327.0
+    ],
+    "metric": 2.676192420618797,
+    "detail": "保守占地/预留空间重叠 2.676 格"
+  },
+  {
+    "key": "uneven_footprint:38:OreNode@778.000000,639.000000",
+    "rule": "uneven_footprint",
+    "ids": [
+      38
+    ],
+    "at": [
+      778.0,
+      639.0
+    ],
+    "metric": 25.390625,
+    "detail": "完整预留范围高差 25.391"
+  },
+  {
+    "key": "uneven_footprint:39:OreNode@732.000000,644.000000",
+    "rule": "uneven_footprint",
+    "ids": [
+      39
+    ],
+    "at": [
+      732.0,
+      644.0
+    ],
+    "metric": 25.390625,
+    "detail": "完整预留范围高差 25.391"
+  },
+  {
+    "key": "uneven_footprint:41:OreNode@444.000000,668.000000",
+    "rule": "uneven_footprint",
+    "ids": [
+      41
+    ],
+    "at": [
+      444.0,
+      668.0
+    ],
+    "metric": 22.7734375,
+    "detail": "完整预留范围高差 22.773"
+  },
+  {
+    "key": "uneven_footprint:44:OreNode@332.000000,780.000000",
+    "rule": "uneven_footprint",
+    "ids": [
+      44
+    ],
+    "at": [
+      332.0,
+      780.0
+    ],
+    "metric": 23.6328125,
+    "detail": "完整预留范围高差 23.633"
+  },
+  {
+    "key": "uneven_footprint:45:OreNode@556.000000,780.000000",
+    "rule": "uneven_footprint",
+    "ids": [
+      45
+    ],
+    "at": [
+      556.0,
+      780.0
+    ],
+    "metric": 25.390625,
+    "detail": "完整预留范围高差 25.391"
+  },
+  {
+    "key": "uneven_footprint:47:OreNode@780.000000,500.000000",
+    "rule": "uneven_footprint",
+    "ids": [
+      47
+    ],
+    "at": [
+      780.0,
+      500.0
+    ],
+    "metric": 24.6484375,
+    "detail": "完整预留范围高差 24.648"
+  },
+  {
+    "key": "uneven_footprint:48:OreNode@612.000000,668.000000",
+    "rule": "uneven_footprint",
+    "ids": [
+      48
+    ],
+    "at": [
+      612.0,
+      668.0
+    ],
+    "metric": 24.8828125,
+    "detail": "完整预留范围高差 24.883"
+  },
+  {
+    "key": "uneven_footprint:58:OilDerrick@780.000000,580.000000",
+    "rule": "uneven_footprint",
+    "ids": [
+      58
+    ],
+    "at": [
+      780.0,
+      580.0
+    ],
+    "metric": 69.453125,
+    "detail": "完整预留范围高差 69.453"
+  },
+  {
+    "key": "uneven_footprint:59:OreNode@444.000000,780.000000",
+    "rule": "uneven_footprint",
+    "ids": [
+      59
+    ],
+    "at": [
+      444.0,
+      780.0
+    ],
+    "metric": 25.390625,
+    "detail": "完整预留范围高差 25.391"
+  },
+  {
+    "key": "uneven_footprint:61:OreNode@248.000000,696.000000",
+    "rule": "uneven_footprint",
+    "ids": [
+      61
+    ],
+    "at": [
+      248.0,
+      696.0
+    ],
+    "metric": 17.5,
+    "detail": "完整预留范围高差 17.500"
+  },
+  {
+    "key": "uneven_footprint:63:OreNode@698.000000,587.000000",
+    "rule": "uneven_footprint",
+    "ids": [
+      63
+    ],
+    "at": [
+      698.0,
+      587.0
+    ],
+    "metric": 24.5703125,
+    "detail": "完整预留范围高差 24.570"
+  },
+  {
+    "key": "uneven_footprint:65:OreNode@528.000000,640.000000",
+    "rule": "uneven_footprint",
+    "ids": [
+      65
+    ],
+    "at": [
+      528.0,
+      640.0
+    ],
+    "metric": 17.8515625,
+    "detail": "完整预留范围高差 17.852"
+  },
+  {
+    "key": "uneven_footprint:66:OreNode@360.000000,696.000000",
+    "rule": "uneven_footprint",
+    "ids": [
+      66
+    ],
+    "at": [
+      360.0,
+      696.0
+    ],
+    "metric": 17.03125,
+    "detail": "完整预留范围高差 17.031"
+  },
+  {
+    "key": "reserve_overlap:89:OreNode@332.000000,388.000000/94:OilDerrick@315.000000,404.000000",
+    "rule": "reserve_overlap",
+    "ids": [
+      89,
+      94
+    ],
+    "at": [
+      332.0,
+      388.0
+    ],
+    "metric": 2.6547649401424955,
+    "detail": "保守占地/预留空间重叠 2.655 格"
+  },
+  {
+    "key": "ramp_lane_step:569:Ramp@69.000000,311.000000/{\"auto\":true,\"h\":25.0,\"layers\":[210.0,280.0],\"pair\":[210.0,280.0],\"span\":25.0,\"style\":\"natural\",\"ux\":-0.4226182617406992,\"uy\":-0.90630778703665,\"w\":25.0,\"width\":25.0,\"x\":69.0,\"y\":311.0}",
+    "rule": "ramp_lane_step",
+    "ids": [
+      569
+    ],
+    "at": [
+      69.0,
+      311.0
+    ],
+    "metric": 60.380330318428946,
+    "detail": "全宽采样：60.380，阈值 6.100"
+  },
+  {
+    "key": "ramp_blocked_samples:569:Ramp@69.000000,311.000000/{\"auto\":true,\"h\":25.0,\"layers\":[210.0,280.0],\"pair\":[210.0,280.0],\"span\":25.0,\"style\":\"natural\",\"ux\":-0.4226182617406992,\"uy\":-0.90630778703665,\"w\":25.0,\"width\":25.0,\"x\":69.0,\"y\":311.0}",
+    "rule": "ramp_blocked_samples",
+    "ids": [
+      569
+    ],
+    "at": [
+      69.0,
+      311.0
+    ],
+    "metric": 15.0,
+    "detail": "全宽采样：15.000，阈值 0.000"
+  },
+  {
+    "key": "ramp_blocked_samples:570:Ramp@17.800000,152.200000/{\"auto\":true,\"h\":25.0,\"layers\":[210.0,280.0],\"pair\":[210.0,280.0],\"span\":25.0,\"ux\":0.4098,\"uy\":-0.9122,\"w\":25.0,\"width\":25.0,\"x\":17.8,\"y\":152.2}",
+    "rule": "ramp_blocked_samples",
+    "ids": [
+      570
+    ],
+    "at": [
+      17.8,
+      152.2
+    ],
+    "metric": 472.0,
+    "detail": "全宽采样：472.000，阈值 0.000"
+  },
+  {
+    "key": "ramp_blocked_samples:571:Ramp@762.800000,287.000000/{\"auto\":true,\"h\":25.0,\"layers\":[210.0,280.0],\"pair\":[210.0,280.0],\"span\":25.0,\"ux\":-0.0783,\"uy\":-0.9969,\"w\":25.0,\"width\":25.0,\"x\":762.8,\"y\":287.0}",
+    "rule": "ramp_blocked_samples",
+    "ids": [
+      571
+    ],
+    "at": [
+      762.8,
+      287.0
+    ],
+    "metric": 7.0,
+    "detail": "全宽采样：7.000，阈值 0.000"
+  },
+  {
+    "key": "ramp_lane_step:576:Ramp@450.600000,282.900000/{\"auto\":true,\"h\":25.0,\"layers\":[210.0,280.0],\"pair\":[210.0,280.0],\"span\":25.0,\"style\":\"natural\",\"ux\":0.8311748710949922,\"uy\":-0.556011091310437,\"w\":25.0,\"width\":25.0,\"x\":450.6,\"y\":282.9}",
+    "rule": "ramp_lane_step",
+    "ids": [
+      576
+    ],
+    "at": [
+      450.6,
+      282.9
+    ],
+    "metric": 47.88359115029712,
+    "detail": "全宽采样：47.884，阈值 6.100"
+  },
+  {
+    "key": "ramp_blocked_samples:576:Ramp@450.600000,282.900000/{\"auto\":true,\"h\":25.0,\"layers\":[210.0,280.0],\"pair\":[210.0,280.0],\"span\":25.0,\"style\":\"natural\",\"ux\":0.8311748710949922,\"uy\":-0.556011091310437,\"w\":25.0,\"width\":25.0,\"x\":450.6,\"y\":282.9}",
+    "rule": "ramp_blocked_samples",
+    "ids": [
+      576
+    ],
+    "at": [
+      450.6,
+      282.9
+    ],
+    "metric": 12.0,
+    "detail": "全宽采样：12.000，阈值 0.000"
+  },
+  {
+    "key": "ramp_lane_step:577:Ramp@591.500000,320.700000/{\"auto\":true,\"h\":25.0,\"layers\":[210.0,280.0],\"pair\":[210.0,280.0],\"span\":25.0,\"style\":\"natural\",\"ux\":0.7113770513369159,\"uy\":-0.7028105653952529,\"w\":25.0,\"width\":25.0,\"x\":591.5,\"y\":320.7}",
+    "rule": "ramp_lane_step",
+    "ids": [
+      577
+    ],
+    "at": [
+      591.5,
+      320.7
+    ],
+    "metric": 51.99543697368824,
+    "detail": "全宽采样：51.995，阈值 6.100"
+  },
+  {
+    "key": "ramp_blocked_samples:577:Ramp@591.500000,320.700000/{\"auto\":true,\"h\":25.0,\"layers\":[210.0,280.0],\"pair\":[210.0,280.0],\"span\":25.0,\"style\":\"natural\",\"ux\":0.7113770513369159,\"uy\":-0.7028105653952529,\"w\":25.0,\"width\":25.0,\"x\":591.5,\"y\":320.7}",
+    "rule": "ramp_blocked_samples",
+    "ids": [
+      577
+    ],
+    "at": [
+      591.5,
+      320.7
+    ],
+    "metric": 18.0,
+    "detail": "全宽采样：18.000，阈值 0.000"
+  },
+  {
+    "key": "ramp_lane_step:579:Ramp@148.300000,408.500000/{\"auto\":true,\"h\":25.0,\"layers\":[210.0,280.0],\"pair\":[210.0,280.0],\"span\":25.0,\"ux\":0.6561,\"uy\":0.7547,\"w\":25.0,\"width\":25.0,\"x\":148.3,\"y\":408.5}",
+    "rule": "ramp_lane_step",
+    "ids": [
+      579
+    ],
+    "at": [
+      148.3,
+      408.5
+    ],
+    "metric": 32.93251831898459,
+    "detail": "全宽采样：32.933，阈值 6.100"
+  },
+  {
+    "key": "ramp_landing:579:Ramp@148.300000,408.500000/{\"auto\":true,\"h\":25.0,\"layers\":[210.0,280.0],\"pair\":[210.0,280.0],\"span\":25.0,\"ux\":0.6561,\"uy\":0.7547,\"w\":25.0,\"width\":25.0,\"x\":148.3,\"y\":408.5}",
+    "rule": "ramp_landing",
+    "ids": [
+      579
+    ],
+    "at": [
+      148.3,
+      408.5
+    ],
+    "metric": 33.27652723833569,
+    "detail": "全宽采样：33.277，阈值 12.000"
+  },
+  {
+    "key": "ramp_blocked_samples:579:Ramp@148.300000,408.500000/{\"auto\":true,\"h\":25.0,\"layers\":[210.0,280.0],\"pair\":[210.0,280.0],\"span\":25.0,\"ux\":0.6561,\"uy\":0.7547,\"w\":25.0,\"width\":25.0,\"x\":148.3,\"y\":408.5}",
+    "rule": "ramp_blocked_samples",
+    "ids": [
+      579
+    ],
+    "at": [
+      148.3,
+      408.5
+    ],
+    "metric": 3.0,
+    "detail": "全宽采样：3.000，阈值 0.000"
+  },
+  {
+    "key": "ramp_lane_step:581:Ramp@240.200000,494.200000/{\"auto\":true,\"h\":25.0,\"layers\":[210.0,280.0],\"pair\":[210.0,280.0],\"span\":25.0,\"ux\":-0.9205,\"uy\":-0.3907,\"w\":25.0,\"width\":25.0,\"x\":240.2,\"y\":494.2}",
+    "rule": "ramp_lane_step",
+    "ids": [
+      581
+    ],
+    "at": [
+      240.2,
+      494.2
+    ],
+    "metric": 56.584518170196816,
+    "detail": "全宽采样：56.585，阈值 6.100"
+  },
+  {
+    "key": "ramp_landing:581:Ramp@240.200000,494.200000/{\"auto\":true,\"h\":25.0,\"layers\":[210.0,280.0],\"pair\":[210.0,280.0],\"span\":25.0,\"ux\":-0.9205,\"uy\":-0.3907,\"w\":25.0,\"width\":25.0,\"x\":240.2,\"y\":494.2}",
+    "rule": "ramp_landing",
+    "ids": [
+      581
+    ],
+    "at": [
+      240.2,
+      494.2
+    ],
+    "metric": 56.977309034994505,
+    "detail": "全宽采样：56.977，阈值 12.000"
+  },
+  {
+    "key": "ramp_blocked_samples:581:Ramp@240.200000,494.200000/{\"auto\":true,\"h\":25.0,\"layers\":[210.0,280.0],\"pair\":[210.0,280.0],\"span\":25.0,\"ux\":-0.9205,\"uy\":-0.3907,\"w\":25.0,\"width\":25.0,\"x\":240.2,\"y\":494.2}",
+    "rule": "ramp_blocked_samples",
+    "ids": [
+      581
+    ],
+    "at": [
+      240.2,
+      494.2
+    ],
+    "metric": 9.0,
+    "detail": "全宽采样：9.000，阈值 0.000"
+  },
+  {
+    "key": "ramp_lane_step:582:Ramp@134.600000,496.800000/{\"auto\":true,\"h\":25.0,\"layers\":[210.0,280.0],\"pair\":[210.0,280.0],\"span\":25.0,\"style\":\"natural\",\"ux\":0.3966123554927038,\"uy\":-0.9179861869715302,\"w\":25.0,\"width\":25.0,\"x\":134.6,\"y\":496.8}",
+    "rule": "ramp_lane_step",
+    "ids": [
+      582
+    ],
+    "at": [
+      134.6,
+      496.8
+    ],
+    "metric": 60.25775819915924,
+    "detail": "全宽采样：60.258，阈值 6.100"
+  },
+  {
+    "key": "ramp_blocked_samples:582:Ramp@134.600000,496.800000/{\"auto\":true,\"h\":25.0,\"layers\":[210.0,280.0],\"pair\":[210.0,280.0],\"span\":25.0,\"style\":\"natural\",\"ux\":0.3966123554927038,\"uy\":-0.9179861869715302,\"w\":25.0,\"width\":25.0,\"x\":134.6,\"y\":496.8}",
+    "rule": "ramp_blocked_samples",
+    "ids": [
+      582
+    ],
+    "at": [
+      134.6,
+      496.8
+    ],
+    "metric": 20.0,
+    "detail": "全宽采样：20.000，阈值 0.000"
+  },
+  {
+    "key": "ramp_lane_step:583:Ramp@411.023840,551.154463/{\"auto\":true,\"h\":25.0,\"layers\":[130.0,210.0],\"pair\":[130.0,210.0],\"span\":25.0,\"style\":\"natural\",\"ux\":-0.8746133665813604,\"uy\":-0.48482105873942705,\"w\":25.0,\"width\":25.0,\"x\":411.02384009974406,\"y\":551.1544631762183}",
+    "rule": "ramp_lane_step",
+    "ids": [
+      583
+    ],
+    "at": [
+      411.02384009974406,
+      551.1544631762183
+    ],
+    "metric": 63.28283776241793,
+    "detail": "全宽采样：63.283，阈值 6.100"
+  },
+  {
+    "key": "ramp_blocked_samples:583:Ramp@411.023840,551.154463/{\"auto\":true,\"h\":25.0,\"layers\":[130.0,210.0],\"pair\":[130.0,210.0],\"span\":25.0,\"style\":\"natural\",\"ux\":-0.8746133665813604,\"uy\":-0.48482105873942705,\"w\":25.0,\"width\":25.0,\"x\":411.02384009974406,\"y\":551.1544631762183}",
+    "rule": "ramp_blocked_samples",
+    "ids": [
+      583
+    ],
+    "at": [
+      411.02384009974406,
+      551.1544631762183
+    ],
+    "metric": 9.0,
+    "detail": "全宽采样：9.000，阈值 0.000"
+  },
+  {
+    "key": "ramp_blocked_samples:584:Ramp@211.500000,618.700000/{\"auto\":true,\"h\":25.0,\"layers\":[130.0,210.0],\"pair\":[130.0,210.0],\"span\":25.0,\"ux\":-0.7431,\"uy\":-0.6691,\"w\":25.0,\"width\":25.0,\"x\":211.5,\"y\":618.7}",
+    "rule": "ramp_blocked_samples",
+    "ids": [
+      584
+    ],
+    "at": [
+      211.5,
+      618.7
+    ],
+    "metric": 1.0,
+    "detail": "全宽采样：1.000，阈值 0.000"
+  },
+  {
+    "key": "resource_unreachable:79:*Waypoints/Waypoint@126.000000,786.000000/56:OilDerrick@756.000000,766.000000/P4",
+    "rule": "resource_unreachable",
+    "ids": [
+      79,
+      56
+    ],
+    "at": [
+      126.0,
+      786.0
+    ],
+    "metric": 1.0,
+    "detail": "P4 到资源 56 未找到静态 water 路线"
+  },
+  {
+    "key": "resource_unreachable:77:*Waypoints/Waypoint@763.000000,754.000000/27:OreNode@172.000000,788.000000/P6",
+    "rule": "resource_unreachable",
+    "ids": [
+      77,
+      27
+    ],
+    "at": [
+      763.0,
+      754.0
+    ],
+    "metric": 1.0,
+    "detail": "P6 到资源 27 未找到静态 water 路线"
+  },
+  {
+    "key": "resource_unreachable:77:*Waypoints/Waypoint@763.000000,754.000000/28:OreNode@164.000000,742.000000/P6",
+    "rule": "resource_unreachable",
+    "ids": [
+      77,
+      28
+    ],
+    "at": [
+      763.0,
+      754.0
+    ],
+    "metric": 1.0,
+    "detail": "P6 到资源 28 未找到静态 water 路线"
+  },
+  {
+    "key": "resource_unreachable:77:*Waypoints/Waypoint@763.000000,754.000000/34:OreNode@789.000000,715.000000/P6",
+    "rule": "resource_unreachable",
+    "ids": [
+      77,
+      34
+    ],
+    "at": [
+      763.0,
+      754.0
+    ],
+    "metric": 1.0,
+    "detail": "P6 到资源 34 未找到静态 water 路线"
+  },
+  {
+    "key": "resource_unreachable:77:*Waypoints/Waypoint@763.000000,754.000000/35:OreNode@733.000000,789.000000/P6",
+    "rule": "resource_unreachable",
+    "ids": [
+      77,
+      35
+    ],
+    "at": [
+      763.0,
+      754.0
+    ],
+    "metric": 1.0,
+    "detail": "P6 到资源 35 未找到静态 water 路线"
+  },
+  {
+    "key": "resource_unreachable:77:*Waypoints/Waypoint@763.000000,754.000000/38:OreNode@778.000000,639.000000/P6",
+    "rule": "resource_unreachable",
+    "ids": [
+      77,
+      38
+    ],
+    "at": [
+      763.0,
+      754.0
+    ],
+    "metric": 1.0,
+    "detail": "P6 到资源 38 未找到静态 water 路线"
+  },
+  {
+    "key": "resource_unreachable:77:*Waypoints/Waypoint@763.000000,754.000000/39:OreNode@732.000000,644.000000/P6",
+    "rule": "resource_unreachable",
+    "ids": [
+      77,
+      39
+    ],
+    "at": [
+      763.0,
+      754.0
+    ],
+    "metric": 1.0,
+    "detail": "P6 到资源 39 未找到静态 water 路线"
+  },
+  {
+    "key": "resource_unreachable:77:*Waypoints/Waypoint@763.000000,754.000000/41:OreNode@444.000000,668.000000/P6",
+    "rule": "resource_unreachable",
+    "ids": [
+      77,
+      41
+    ],
+    "at": [
+      763.0,
+      754.0
+    ],
+    "metric": 1.0,
+    "detail": "P6 到资源 41 未找到静态 water 路线"
+  },
+  {
+    "key": "resource_unreachable:77:*Waypoints/Waypoint@763.000000,754.000000/43:OreNode@584.000000,556.000000/P6",
+    "rule": "resource_unreachable",
+    "ids": [
+      77,
+      43
+    ],
+    "at": [
+      763.0,
+      754.0
+    ],
+    "metric": 1.0,
+    "detail": "P6 到资源 43 未找到静态 water 路线"
+  },
+  {
+    "key": "resource_unreachable:77:*Waypoints/Waypoint@763.000000,754.000000/44:OreNode@332.000000,780.000000/P6",
+    "rule": "resource_unreachable",
+    "ids": [
+      77,
+      44
+    ],
+    "at": [
+      763.0,
+      754.0
+    ],
+    "metric": 1.0,
+    "detail": "P6 到资源 44 未找到静态 water 路线"
+  },
+  {
+    "key": "resource_unreachable:77:*Waypoints/Waypoint@763.000000,754.000000/45:OreNode@556.000000,780.000000/P6",
+    "rule": "resource_unreachable",
+    "ids": [
+      77,
+      45
+    ],
+    "at": [
+      763.0,
+      754.0
+    ],
+    "metric": 1.0,
+    "detail": "P6 到资源 45 未找到静态 water 路线"
+  },
+  {
+    "key": "resource_unreachable:77:*Waypoints/Waypoint@763.000000,754.000000/47:OreNode@780.000000,500.000000/P6",
+    "rule": "resource_unreachable",
+    "ids": [
+      77,
+      47
+    ],
+    "at": [
+      763.0,
+      754.0
+    ],
+    "metric": 1.0,
+    "detail": "P6 到资源 47 未找到静态 water 路线"
+  },
+  {
+    "key": "resource_unreachable:77:*Waypoints/Waypoint@763.000000,754.000000/48:OreNode@612.000000,668.000000/P6",
+    "rule": "resource_unreachable",
+    "ids": [
+      77,
+      48
+    ],
+    "at": [
+      763.0,
+      754.0
+    ],
+    "metric": 1.0,
+    "detail": "P6 到资源 48 未找到静态 water 路线"
+  },
+  {
+    "key": "resource_unreachable:77:*Waypoints/Waypoint@763.000000,754.000000/54:OilDerrick@137.000000,763.000000/P6",
+    "rule": "resource_unreachable",
+    "ids": [
+      77,
+      54
+    ],
+    "at": [
+      763.0,
+      754.0
+    ],
+    "metric": 1.0,
+    "detail": "P6 到资源 54 未找到静态 water 路线"
+  },
+  {
+    "key": "resource_unreachable:77:*Waypoints/Waypoint@763.000000,754.000000/58:OilDerrick@780.000000,580.000000/P6",
+    "rule": "resource_unreachable",
+    "ids": [
+      77,
+      58
+    ],
+    "at": [
+      763.0,
+      754.0
+    ],
+    "metric": 1.0,
+    "detail": "P6 到资源 58 未找到静态 water 路线"
+  },
+  {
+    "key": "resource_unreachable:77:*Waypoints/Waypoint@763.000000,754.000000/59:OreNode@444.000000,780.000000/P6",
+    "rule": "resource_unreachable",
+    "ids": [
+      77,
+      59
+    ],
+    "at": [
+      763.0,
+      754.0
+    ],
+    "metric": 1.0,
+    "detail": "P6 到资源 59 未找到静态 water 路线"
+  },
+  {
+    "key": "resource_unreachable:77:*Waypoints/Waypoint@763.000000,754.000000/60:OreNode@668.000000,500.000000/P6",
+    "rule": "resource_unreachable",
+    "ids": [
+      77,
+      60
+    ],
+    "at": [
+      763.0,
+      754.0
+    ],
+    "metric": 1.0,
+    "detail": "P6 到资源 60 未找到静态 water 路线"
+  },
+  {
+    "key": "resource_unreachable:77:*Waypoints/Waypoint@763.000000,754.000000/61:OreNode@248.000000,696.000000/P6",
+    "rule": "resource_unreachable",
+    "ids": [
+      77,
+      61
+    ],
+    "at": [
+      763.0,
+      754.0
+    ],
+    "metric": 1.0,
+    "detail": "P6 到资源 61 未找到静态 water 路线"
+  },
+  {
+    "key": "resource_unreachable:77:*Waypoints/Waypoint@763.000000,754.000000/63:OreNode@698.000000,587.000000/P6",
+    "rule": "resource_unreachable",
+    "ids": [
+      77,
+      63
+    ],
+    "at": [
+      763.0,
+      754.0
+    ],
+    "metric": 1.0,
+    "detail": "P6 到资源 63 未找到静态 water 路线"
+  },
+  {
+    "key": "resource_unreachable:77:*Waypoints/Waypoint@763.000000,754.000000/65:OreNode@528.000000,640.000000/P6",
+    "rule": "resource_unreachable",
+    "ids": [
+      77,
+      65
+    ],
+    "at": [
+      763.0,
+      754.0
+    ],
+    "metric": 1.0,
+    "detail": "P6 到资源 65 未找到静态 water 路线"
+  },
+  {
+    "key": "resource_unreachable:77:*Waypoints/Waypoint@763.000000,754.000000/66:OreNode@360.000000,696.000000/P6",
+    "rule": "resource_unreachable",
+    "ids": [
+      77,
+      66
+    ],
+    "at": [
+      763.0,
+      754.0
+    ],
+    "metric": 1.0,
+    "detail": "P6 到资源 66 未找到静态 water 路线"
+  },
+  {
+    "key": "resource_unreachable:77:*Waypoints/Waypoint@763.000000,754.000000/109:OilDerrick@404.000000,724.000000/P6",
+    "rule": "resource_unreachable",
+    "ids": [
+      77,
+      109
+    ],
+    "at": [
+      763.0,
+      754.0
+    ],
+    "metric": 1.0,
+    "detail": "P6 到资源 109 未找到静态 water 路线"
+  },
+  {
+    "key": "resource_unreachable:77:*Waypoints/Waypoint@763.000000,754.000000/110:OilDerrick@324.000000,660.000000/P6",
+    "rule": "resource_unreachable",
+    "ids": [
+      77,
+      110
+    ],
+    "at": [
+      763.0,
+      754.0
+    ],
+    "metric": 1.0,
+    "detail": "P6 到资源 110 未找到静态 water 路线"
+  },
+  {
+    "key": "resource_unreachable:77:*Waypoints/Waypoint@763.000000,754.000000/111:OilDerrick@650.000000,473.000000/P6",
+    "rule": "resource_unreachable",
+    "ids": [
+      77,
+      111
+    ],
+    "at": [
+      763.0,
+      754.0
+    ],
+    "metric": 1.0,
+    "detail": "P6 到资源 111 未找到静态 water 路线"
+  },
+  {
+    "key": "resource_unreachable:75:*Waypoints/Waypoint@760.000000,595.000000/56:OilDerrick@756.000000,766.000000/P8",
+    "rule": "resource_unreachable",
+    "ids": [
+      75,
+      56
+    ],
+    "at": [
+      760.0,
+      595.0
+    ],
+    "metric": 1.0,
+    "detail": "P8 到资源 56 未找到静态 water 路线"
+  }
+]

@@ -1,10 +1,10 @@
 use ra3maps::{
-    archive,
-    binary::Writer,
-    build,
-    map::MapFile,
-    project::{self, Project},
-    refpack,
+    formats::archive,
+    formats::binary::Writer,
+    formats::map::MapFile,
+    formats::refpack,
+    pipeline::build,
+    pipeline::project::{self, Project},
 };
 use std::{
     fs,
@@ -12,14 +12,19 @@ use std::{
     process::Command,
     sync::atomic::{AtomicUsize, Ordering},
 };
+mod support;
 static NEXT: AtomicUsize = AtomicUsize::new(0);
 struct Temp(PathBuf);
 impl Temp {
     fn new() -> Self {
         let p = std::env::temp_dir().join(format!(
-            "ra3-repack-{}-{}",
+            "ra3-repack-{}-{}-{}",
             std::process::id(),
-            NEXT.fetch_add(1, Ordering::Relaxed)
+            NEXT.fetch_add(1, Ordering::Relaxed),
+            std::time::SystemTime::now()
+                .duration_since(std::time::UNIX_EPOCH)
+                .unwrap()
+                .as_nanos()
         ));
         fs::create_dir(&p).unwrap();
         Self(p)
@@ -33,18 +38,22 @@ impl Drop for Temp {
 fn setup() -> (Temp, Vec<(String, Vec<u8>)>) {
     let temp = Temp::new();
     let root = Path::new(env!("CARGO_MANIFEST_DIR"));
-    let map_dir = temp.0.join("maps/千壑横原");
+    let map_dir = temp.0.join("maps/陕西");
     fs::create_dir_all(&map_dir).unwrap();
     for name in ["config.json", "version.json"] {
-        fs::copy(root.join("maps/千壑横原").join(name), map_dir.join(name)).unwrap();
+        fs::copy(root.join("maps/陕西").join(name), map_dir.join(name)).unwrap();
     }
     // These tests use the historical WorldBuilder fixture, independently of
     // later public naming migrations in the real recipe.
     let config = map_dir.join("config.json");
     let mut cfg: serde_json::Value = serde_json::from_slice(&fs::read(&config).unwrap()).unwrap();
+    support::copy_declared_inputs(&root.join("maps/陕西"), &map_dir, &cfg);
     cfg["MAP_NAME"] = serde_json::json!("[CHAI]叠岭连原");
     cfg.as_object_mut().unwrap().remove("PUBLISH_NAME");
     cfg.as_object_mut().unwrap().remove("COORDINATE_PIPELINE");
+    // The WorldBuilder fixture predates the current six-stage ore plan.
+    cfg.as_object_mut().unwrap().remove("RESOURCE_DISTRIBUTION");
+    cfg.as_object_mut().unwrap().remove("RAMP_CLEARANCE");
     project::write_json(&config, &cfg).unwrap();
     // Fixed version: the test must remain independent of later real releases.
     project::write_json(
@@ -52,9 +61,8 @@ fn setup() -> (Temp, Vec<(String, Vec<u8>)>) {
         &project::parse_version("T0.5.1").unwrap(),
     )
     .unwrap();
-    let input =
-        fs::read(root.join("maps/千壑横原/repack/inputs/[CHAI]叠岭连原T0.5.1--rebuild.zip"))
-            .unwrap();
+    let input = fs::read(root.join("maps/陕西/histories/T0.5.1/[CHAI]叠岭连原T0.5.1--rebuild.zip"))
+        .unwrap();
     let files = archive::unzip(&input)
         .unwrap()
         .into_iter()
@@ -64,6 +72,274 @@ fn setup() -> (Temp, Vec<(String, Vec<u8>)>) {
 }
 fn source_map(files: &[(String, Vec<u8>)]) -> MapFile {
     MapFile::load_bytes(&files.iter().find(|(n, _)| n.ends_with(".map")).unwrap().1).unwrap()
+}
+
+#[test]
+fn changed_common_ore_policy_invalidates_a_published_repack_proof() {
+    let (temp, files) = setup();
+    let input = temp.0.join("source.zip");
+    fs::write(&input, archive::zip(&files).unwrap()).unwrap();
+    let p = ra3maps::pipeline::release::run(
+        &temp.0,
+        "陕西",
+        &input,
+        &build::Options {
+            bump: true,
+            ..Default::default()
+        },
+    )
+    .unwrap();
+    let bytes = fs::read(p.assets.join(format!("{}.map", p.name))).unwrap();
+    assert!(build::placement_proof(&p, &bytes).unwrap().is_some());
+    project::write_json(
+        &temp.0.join("templates/rules/coordinate-pipeline.json"),
+        &serde_json::json!({"resource_distribution":{"home_radius":110.}}),
+    )
+    .unwrap();
+    assert!(build::placement_proof(&p, &bytes).unwrap().is_none());
+    assert_eq!(
+        fs::read(p.assets.join(format!("{}.map", p.name))).unwrap(),
+        bytes
+    );
+}
+
+#[test]
+fn layout_free_repack_proof_is_bound_to_native_bytes_version_and_coordinate_scale() {
+    let (temp, files) = setup();
+    let input = temp.0.join("source.zip");
+    fs::write(&input, archive::zip(&files).unwrap()).unwrap();
+    let p = ra3maps::pipeline::release::run(
+        &temp.0,
+        "陕西",
+        &input,
+        &build::Options {
+            bump: true,
+            ..Default::default()
+        },
+    )
+    .unwrap();
+    let bytes = fs::read(p.assets.join(format!("{}.map", p.name))).unwrap();
+    assert!(build::placement_proof(&p, &bytes).unwrap().is_some());
+    build::validate_placement(&p, &[(format!("{}.map", p.name), bytes.clone())]).unwrap();
+    let mut other = p.clone();
+    other.version = "T9.9.9".into();
+    assert!(build::placement_proof(&other, &bytes).unwrap().is_none());
+    other = p.clone();
+    other.cfg["CELL"] = serde_json::json!(15.);
+    assert!(build::placement_proof(&other, &bytes).unwrap().is_none());
+    other = p.clone();
+    other.cfg["SPAWN_PLACEMENT"] = serde_json::json!({});
+    assert!(build::placement_proof(&other, &bytes).unwrap().is_none());
+    assert!(
+        build::validate_placement(&other, &[(format!("{}.map", p.name), bytes.clone())]).is_err()
+    );
+    let mut changed = MapFile::load_bytes(&bytes).unwrap();
+    let mut objects =
+        ra3maps::formats::map::objects(changed.get("ObjectsList").unwrap(), &changed.table)
+            .unwrap();
+    objects
+        .iter_mut()
+        .find(|o| o.type_name == "OreNode")
+        .unwrap()
+        .position[0] += 10.;
+    changed.get_mut("ObjectsList").unwrap().payload =
+        ra3maps::formats::map::write_objects(&objects, &changed).unwrap();
+    let changed = refpack::pack(&changed.encode().unwrap()).unwrap();
+    assert!(build::placement_proof(&p, &changed).unwrap().is_none());
+    assert!(build::validate_placement(&p, &[(format!("{}.map", p.name), changed)]).is_err());
+}
+
+#[test]
+fn atlas_repair_preserves_native_map_bytes_and_all_existing_declarations() {
+    let (temp, mut files) = setup();
+    let native = files
+        .iter()
+        .find(|(n, _)| n.ends_with(".map"))
+        .unwrap()
+        .1
+        .clone();
+    let xml = files
+        .iter_mut()
+        .find(|(n, _)| n.ends_with("/map.xml"))
+        .unwrap();
+    let mut original = String::from_utf8(xml.1.clone()).unwrap();
+    // The historical fixture has a damaged display label. Give this case a
+    // valid source-version label so the narrow repair can verify retargeting.
+    let display = original.find("DisplayName=\"").unwrap() + 13;
+    let stop = display + original[display..].find('"').unwrap();
+    original.replace_range(display..stop, "[CHAI]叠岭连原T0.5.1");
+    let a = original.find("<Tile").unwrap();
+    let b = a + original[a..].find("/>").unwrap() + 2;
+    let end = original.find("</TerrainTextureAtlas>").unwrap();
+    xml.1 = format!(
+        "{}{}{}{}",
+        &original[..a],
+        &original[b..end],
+        &original[a..b],
+        &original[end..]
+    )
+    .into_bytes();
+    let flat = files
+        .iter()
+        .map(|(n, b)| (n.rsplit('/').next().unwrap().to_owned(), b.clone()))
+        .collect::<Vec<_>>();
+    assert!(
+        ra3maps::pipeline::release::validate_files(&flat)
+            .unwrap_err()
+            .to_string()
+            .contains("strictly ascending")
+    );
+    let input = temp.0.join("unsorted-atlas.zip");
+    fs::write(&input, archive::zip(&files).unwrap()).unwrap();
+    let next = ra3maps::pipeline::release::repair_terrain_atlas(
+        &temp.0,
+        "陕西",
+        &input,
+        &build::Options {
+            bump: true,
+            note: "atlas regression".into(),
+            ..build::Options::default()
+        },
+    )
+    .unwrap();
+    assert_eq!(
+        fs::read(next.assets.join(format!("{}.map", next.name))).unwrap(),
+        native
+    );
+    let repaired = fs::read_to_string(next.assets.join("map.xml")).unwrap();
+    let extract = |xml: &str| {
+        let start = xml.find("<TerrainTextureAtlas").unwrap();
+        let end = start + xml[start..].find("</TerrainTextureAtlas>").unwrap();
+        xml[start..end].split_whitespace().collect::<String>()
+    };
+    assert_eq!(
+        extract(&repaired),
+        extract(&original).replace("CHAIT0.5.1", "CHAIT0.5.2")
+    );
+    assert!(repaired.contains("DisplayName=\"[CHAI]叠岭连原T0.5.2\""));
+    let mut output = archive::unzip(&fs::read(build::zip_path(&next)).unwrap())
+        .unwrap()
+        .into_iter()
+        .map(|(n, b)| (n.rsplit('/').next().unwrap().to_owned(), b))
+        .collect::<Vec<_>>();
+    ra3maps::pipeline::release::validate_files(&output).unwrap();
+    output.retain(|(n, _)| n != "map.xml");
+    assert!(ra3maps::pipeline::release::validate_files(&output).is_err());
+}
+
+#[test]
+fn terrain_package_repairs_new_rock_preloads_and_publication_rejects_partial_sync() {
+    let (temp, mut files) = setup();
+    let mut map = source_map(&files);
+    let hm = ra3maps::formats::map::HeightMap::parse(map.get("HeightMapData").unwrap()).unwrap();
+    let area = hm.width * hm.height;
+    let tail = 4 + 8 * area + 8 * hm.height * hm.width.div_ceil(8) + area;
+    let data = &mut map.get_mut("BlendTileData").unwrap().payload;
+    let mut reader = ra3maps::formats::binary::Reader::new(&data[tail..]);
+    let cells = reader.u32().unwrap();
+    reader.take(8).unwrap();
+    let count = reader.u32().unwrap();
+    for _ in 0..count {
+        reader.take(16).unwrap();
+        reader.s16().unwrap();
+    }
+    let insert = tail + reader.pos;
+    let mut row = Writer::new();
+    row.u32(cells);
+    row.u32(16);
+    row.u32(4);
+    row.u32(0);
+    row.s16("Rock_Yucatan03").unwrap();
+    data[tail..tail + 4].copy_from_slice(&(cells + 16).to_le_bytes());
+    data[tail + 12..tail + 16].copy_from_slice(&(count + 1).to_le_bytes());
+    data.splice(insert..insert, row.data);
+    data[4..6].copy_from_slice(&u16::try_from(cells * 4).unwrap().to_le_bytes());
+    let xml = files
+        .iter_mut()
+        .find(|(n, _)| n.ends_with("/map.xml"))
+        .unwrap();
+    let mut text = String::from_utf8(xml.1.clone()).unwrap();
+    let id = ra3maps::resources::fast_hash("Rock_Yucatan03");
+    let pos = text.find("TextureID=\"2478562451\"").unwrap();
+    let insert = text[..pos].rfind("<Tile").unwrap();
+    text.insert_str(insert,&format!("<Tile BaseTexture=\"ART:Terrain/TRock_Yucatan03.tga\" NormalTexture=\"ART:Terrain/TRock_Yucatan03_nrm.tga\" TextureID=\"{id}\"/>"));
+    xml.1 = text.into_bytes();
+    files
+        .iter_mut()
+        .find(|(n, _)| n.ends_with(".map"))
+        .unwrap()
+        .1 = refpack::pack(&map.encode().unwrap()).unwrap();
+    let flat = files
+        .iter()
+        .map(|(n, b)| (n.rsplit('/').next().unwrap().to_owned(), b.clone()))
+        .collect::<Vec<_>>();
+    // This was the exact gap in the old publication gate: the atlas is complete,
+    // but neither native WorldInfo nor XML WorldDict declares the new material.
+    ra3maps::pipeline::release::validate_files(&flat).unwrap();
+    assert!(
+        ra3maps::pipeline::release::validate_runtime_files(&flat)
+            .unwrap_err()
+            .to_string()
+            .contains("WorldInfo terrainTextureStrings")
+    );
+    let input = temp.0.join("missing-rock-preload.zip");
+    fs::write(&input, archive::zip(&files).unwrap()).unwrap();
+    let next = ra3maps::pipeline::release::repair_terrain_package(
+        &temp.0,
+        "陕西",
+        &input,
+        &build::Options {
+            bump: true,
+            note: "terrain package regression".into(),
+            ..build::Options::default()
+        },
+    )
+    .unwrap();
+    let repaired = MapFile::load(next.assets.join(format!("{}.map", next.name))).unwrap();
+    for chunk in &map.chunks {
+        let name = &map.table[&chunk.name_idx];
+        if !["BlendTileData", "WorldInfo"].contains(&name.as_str()) {
+            assert_eq!(chunk, repaired.get(name).unwrap(), "{name}");
+        }
+    }
+    let new_bt = repaired.get("BlendTileData").unwrap();
+    assert_eq!(
+        &map.get("BlendTileData").unwrap().payload[..4 + area * 2],
+        &new_bt.payload[..4 + area * 2]
+    );
+    assert_eq!(
+        &map.get("BlendTileData").unwrap().payload[4 + 8 * area..tail],
+        &new_bt.payload[4 + 8 * area..tail]
+    );
+    let xml = fs::read_to_string(next.assets.join("map.xml")).unwrap();
+    assert!(xml.contains("id=\"CHAIT0.5.2\""));
+    assert!(!xml.contains("id=\"CHAIT0.5.1\""));
+    assert!(xml.contains("TRock_Yucatan03;TRock_Yucatan03_nrm;"));
+    ra3maps::resources::validate_terrain_package(&repaired, &xml, Some("T0.5.2")).unwrap();
+    let outputs = build::release_files(&next)
+        .into_iter()
+        .map(|n| {
+            let b = fs::read(next.assets.join(&n)).unwrap();
+            (n, b)
+        })
+        .collect::<Vec<_>>();
+    ra3maps::pipeline::release::validate_runtime_files(&outputs).unwrap();
+    for corrupted in [
+        xml.replace("TRock_Yucatan03;TRock_Yucatan03_nrm;", ""),
+        xml.replace("CHAIT0.5.2", "CHAIT0.5.1"),
+    ] {
+        let mut bad = outputs.clone();
+        bad.iter_mut().find(|(n, _)| n == "map.xml").unwrap().1 = corrupted.into_bytes();
+        assert!(ra3maps::pipeline::release::validate_runtime_files(&bad).is_err());
+    }
+    let zip = fs::read(build::zip_path(&next)).unwrap();
+    fs::write(
+        next.assets.join("map.xml"),
+        xml.replace("TRock_Yucatan03;TRock_Yucatan03_nrm;", ""),
+    )
+    .unwrap();
+    assert!(build::dist(&next, true).is_err());
+    assert_eq!(fs::read(build::zip_path(&next)).unwrap(), zip);
 }
 
 #[test]
@@ -103,7 +379,7 @@ fn repack_repairs_legacy_order_preserves_wb_resources_and_installs_complete_pack
         .arg(&temp.0)
         .args([
             "--map",
-            "千壑横原",
+            "陕西",
             "--bump",
             "--install",
             "--note",
@@ -118,7 +394,7 @@ fn repack_repairs_legacy_order_preserves_wb_resources_and_installs_complete_pack
         "{}",
         String::from_utf8_lossy(&output.stderr)
     );
-    let p = Project::load(&temp.0, "千壑横原").unwrap();
+    let p = Project::load(&temp.0, "陕西").unwrap();
     assert_eq!(p.version, "T0.5.2");
     let files = archive::unzip(&fs::read(build::zip_path(&p)).unwrap()).unwrap();
     assert_eq!(files.len(), 6);
@@ -136,7 +412,7 @@ fn repack_repairs_legacy_order_preserves_wb_resources_and_installs_complete_pack
     }
     let xml = std::str::from_utf8(&files[&format!("{}/map.xml", p.name)]).unwrap();
     assert!(xml.contains("<TerrainTextureAtlas"));
-    assert!(xml.contains("id=\"CHAIT0.5.1\""));
+    assert!(xml.contains("id=\"CHAIT0.5.2\""));
     assert!(xml.contains("t0.5.2.map"));
     assert_eq!(xml.matches("<GameScriptList").count(), 19);
     assert_eq!(fs::read(old.join("sentinel")).unwrap(), b"keep");
@@ -154,11 +430,11 @@ fn broken_wb_resource_package_is_rejected_without_bumping_or_publishing() {
         .1 = refpack::pack(&map.encode().unwrap()).unwrap();
     let input = temp.0.join("broken.zip");
     fs::write(&input, archive::zip(&files).unwrap()).unwrap();
-    let before = fs::read(project::version_path(&temp.0, "千壑横原")).unwrap();
+    let before = fs::read(project::version_path(&temp.0, "陕西")).unwrap();
     let output = Command::new(env!("CARGO_BIN_EXE_ra3maps"))
         .args(["repack", "--root"])
         .arg(&temp.0)
-        .args(["--map", "千壑横原", "--bump"])
+        .args(["--map", "陕西", "--bump"])
         .arg(&input)
         .output()
         .unwrap();
@@ -166,14 +442,9 @@ fn broken_wb_resource_package_is_rejected_without_bumping_or_publishing() {
     assert!(String::from_utf8_lossy(&output.stderr).contains("AssetList"));
     assert_eq!(
         before,
-        fs::read(project::version_path(&temp.0, "千壑横原")).unwrap()
+        fs::read(project::version_path(&temp.0, "陕西")).unwrap()
     );
-    assert!(
-        !temp
-            .0
-            .join("dist/[CHAI]叠岭连原/[CHAI]叠岭连原T0.5.2.zip")
-            .exists()
-    );
+    assert!(!temp.0.join("dist/陕西/[CHAI]叠岭连原T0.5.2.zip").exists());
 }
 
 #[test]
@@ -184,14 +455,14 @@ fn wb_resource_manifest_and_xml_cannot_be_published_separately() {
         .filter(|(name, _)| !name.ends_with('/'))
         .map(|(name, bytes)| (name.rsplit('/').next().unwrap().to_owned(), bytes))
         .collect();
-    ra3maps::release::validate_files(&files).unwrap();
+    ra3maps::pipeline::release::validate_files(&files).unwrap();
     let without_xml: Vec<_> = files
         .iter()
         .filter(|(name, _)| name != "map.xml")
         .cloned()
         .collect();
     assert!(
-        ra3maps::release::validate_files(&without_xml)
+        ra3maps::pipeline::release::validate_files(&without_xml)
             .unwrap_err()
             .to_string()
             .contains("matching map.xml")
@@ -202,7 +473,7 @@ fn wb_resource_manifest_and_xml_cannot_be_published_separately() {
         .cloned()
         .collect();
     assert!(
-        ra3maps::release::validate_files(&without_overrides)
+        ra3maps::pipeline::release::validate_files(&without_overrides)
             .unwrap_err()
             .to_string()
             .contains("missing overrides.xml")
@@ -217,7 +488,7 @@ fn wb_resource_manifest_and_xml_cannot_be_published_separately() {
     map.get_mut("AssetList").unwrap().payload = 0_u32.to_le_bytes().to_vec();
     *map_bytes = refpack::pack(&map.encode().unwrap()).unwrap();
     assert!(
-        ra3maps::release::validate_files(&empty)
+        ra3maps::pipeline::release::validate_files(&empty)
             .unwrap_err()
             .to_string()
             .contains("AssetList is empty")
@@ -244,7 +515,7 @@ fn partially_removed_script_asset_declarations_are_rejected_even_with_decoy_comm
         .replacen("</GameScriptList>", "</GameScriptListReference>", 1)
         + "\n<!-- <GameScriptList id=\"unused\"/> -->\n")
         .into_bytes();
-    let error = ra3maps::release::validate_files(&files)
+    let error = ra3maps::pipeline::release::validate_files(&files)
         .unwrap_err()
         .to_string();
     assert!(
@@ -283,7 +554,7 @@ fn resource_repair_restores_pairing_without_changing_gameplay_or_polished_terrai
     let output = Command::new(env!("CARGO_BIN_EXE_ra3maps"))
         .args(["repair-resources", "--root"])
         .arg(&temp.0)
-        .args(["--map", "千壑横原", "--bump"])
+        .args(["--map", "陕西", "--bump"])
         .arg(input)
         .output()
         .unwrap();
@@ -292,7 +563,7 @@ fn resource_repair_restores_pairing_without_changing_gameplay_or_polished_terrai
         "{}",
         String::from_utf8_lossy(&output.stderr)
     );
-    let p = Project::load(&temp.0, "千壑横原").unwrap();
+    let p = Project::load(&temp.0, "陕西").unwrap();
     let repaired = MapFile::load(p.dist.join(format!("{}.map", p.name))).unwrap();
     assert_eq!(source.table, repaired.table);
     for chunk in &source.chunks {
@@ -301,8 +572,9 @@ fn resource_repair_restores_pairing_without_changing_gameplay_or_polished_terrai
     }
     let xml = fs::read_to_string(p.dist.join("map.xml")).unwrap();
     assert_eq!(xml.matches("<GameScriptList ").count(), 19);
-    let hm = ra3maps::map::HeightMap::parse(repaired.get("HeightMapData").unwrap()).unwrap();
-    let bt = ra3maps::map::BlendTiles::parse(
+    let hm =
+        ra3maps::formats::map::HeightMap::parse(repaired.get("HeightMapData").unwrap()).unwrap();
+    let bt = ra3maps::formats::map::BlendTiles::parse(
         repaired.get("BlendTileData").unwrap(),
         hm.width,
         hm.height,
@@ -325,13 +597,6 @@ fn polishing_finished_wb_map_only_changes_terrain_and_keeps_its_complete_package
     let (temp, files) = setup();
     let source = source_map(&files);
     let root = Path::new(env!("CARGO_MANIFEST_DIR"));
-    for name in ["layout.json", "v11_layers.npz"] {
-        fs::copy(
-            root.join("maps/千壑横原").join(name),
-            temp.0.join("maps/千壑横原").join(name),
-        )
-        .unwrap();
-    }
     fs::create_dir_all(temp.0.join("templates/rules")).unwrap();
     fs::copy(
         root.join("templates/rules/common-T0.5.1.json"),
@@ -348,7 +613,7 @@ fn polishing_finished_wb_map_only_changes_terrain_and_keeps_its_complete_package
     let output = Command::new(env!("CARGO_BIN_EXE_ra3maps"))
         .args(["polish-ramps", "--root"])
         .arg(&temp.0)
-        .args(["--map", "千壑横原", "--bump"])
+        .args(["--map", "陕西", "--bump"])
         .arg(&input)
         .output()
         .unwrap();
@@ -358,7 +623,7 @@ fn polishing_finished_wb_map_only_changes_terrain_and_keeps_its_complete_package
         String::from_utf8_lossy(&output.stdout),
         String::from_utf8_lossy(&output.stderr)
     );
-    let p = Project::load(&temp.0, "千壑横原").unwrap();
+    let p = Project::load(&temp.0, "陕西").unwrap();
     let result = MapFile::load(p.dist.join(format!("{}.map", p.name))).unwrap();
     assert_eq!(result.table, source.table);
     let mut changed = Vec::new();
@@ -372,26 +637,46 @@ fn polishing_finished_wb_map_only_changes_terrain_and_keeps_its_complete_package
     let report: serde_json::Value =
         serde_json::from_slice(&fs::read(p.assets.join("ramp-report.json")).unwrap()).unwrap();
     assert!(report["optimized"].as_u64().unwrap() > 0);
+    assert!(report["ramps"].as_array().unwrap().iter().any(|r| {
+        r["rejected_candidates"]["resource_approaches"]
+            .as_u64()
+            .unwrap()
+            > 0
+    }));
+    for ramp in report["ramps"]
+        .as_array()
+        .unwrap()
+        .iter()
+        .filter(|r| r["status"] == "texture-only")
+    {
+        for field in ["x", "y", "ux", "uy", "span", "width", "landing", "pair"] {
+            assert_eq!(ramp["before"][field], ramp["after"][field]);
+        }
+    }
     assert_eq!(report["protected_footprints_unchanged"], true);
     assert_eq!(
         report["existing_land_and_sea_resource_connections_preserved"],
         true
     );
     let terrain = ra3maps::terrain::Terrain::load(&p).unwrap();
-    let hm = ra3maps::map::HeightMap::parse(result.get("HeightMapData").unwrap()).unwrap();
+    let hm = ra3maps::formats::map::HeightMap::parse(result.get("HeightMapData").unwrap()).unwrap();
     assert_eq!(
         hm.elevations,
         ra3maps::terrain::flip(&terrain.raw, terrain.n)
     );
     let blend = result.get("BlendTileData").unwrap();
-    let bt = ra3maps::map::BlendTiles::parse(blend, terrain.n, terrain.n).unwrap();
-    let old_bt =
-        ra3maps::map::BlendTiles::parse(source.get("BlendTileData").unwrap(), terrain.n, terrain.n)
-            .unwrap();
+    let bt = ra3maps::formats::map::BlendTiles::parse(blend, terrain.n, terrain.n).unwrap();
+    let old_bt = ra3maps::formats::map::BlendTiles::parse(
+        source.get("BlendTileData").unwrap(),
+        terrain.n,
+        terrain.n,
+    )
+    .unwrap();
     assert_eq!(bt.textures, old_bt.textures);
     assert!(bt.blend_descriptions.len() > old_bt.blend_descriptions.len());
     let area = terrain.n * terrain.n;
-    let mut reader = ra3maps::binary::Reader::new(&blend.payload[4 + 2 * area..4 + 6 * area]);
+    let mut reader =
+        ra3maps::formats::binary::Reader::new(&blend.payload[4 + 2 * area..4 + 6 * area]);
     for _ in 0..2 * area {
         assert!(reader.u16().unwrap() as usize <= bt.blend_descriptions.len() / 18);
     }
@@ -404,10 +689,43 @@ fn polishing_finished_wb_map_only_changes_terrain_and_keeps_its_complete_package
     let zipped = archive::unzip(&fs::read(build::zip_path(&p)).unwrap()).unwrap();
     assert_eq!(zipped.len(), 6);
     let xml = fs::read_to_string(p.dist.join("map.xml")).unwrap();
-    assert!(xml.contains("id=\"CHAIT0.5.1\""));
+    assert!(xml.contains("id=\"CHAIT0.5.2\""));
     assert!(xml.contains("t0.5.2.map"));
     assert!(p.assets.join("preview--layout.png").is_file());
     assert!(p.assets.join("ramps--comparison.png").is_file());
+    let mut surface_only = result.clone();
+    ra3maps::terrain::ramps::refresh_surfaces(&p, &mut surface_only, &p.name).unwrap();
+    for chunk in &result.chunks {
+        let name = &result.table[&chunk.name_idx];
+        if name != "BlendTileData" {
+            assert_eq!(surface_only.get(name).unwrap(), chunk);
+        }
+    }
+    let start = 4 + 8 * area;
+    let end = start + 8 * terrain.n * terrain.n.div_ceil(8) + area;
+    assert_eq!(
+        surface_only.get("BlendTileData").unwrap().payload[start..end],
+        blend.payload[start..end]
+    );
+    let files = build::release_files(&p)
+        .into_iter()
+        .map(|name| {
+            let bytes = fs::read(p.assets.join(&name)).unwrap();
+            (name, bytes)
+        })
+        .collect::<Vec<_>>();
+    build::validate_placement(&p, &files).unwrap();
+    let cached = p.source().join("layout.json");
+    let mut layout: ra3maps::terrain::Layout =
+        serde_json::from_slice(&fs::read(&cached).unwrap()).unwrap();
+    layout.ramps.clear();
+    project::write_json(&cached, &layout).unwrap();
+    assert!(
+        build::validate_placement(&p, &files)
+            .unwrap_err()
+            .to_string()
+            .contains("cached ramp layout")
+    );
 }
 
 #[test]
@@ -415,11 +733,6 @@ fn texture_polish_is_deterministic_and_preserves_all_gameplay_and_resource_data(
     let (temp, files) = setup();
     let source = source_map(&files);
     let root = Path::new(env!("CARGO_MANIFEST_DIR"));
-    fs::copy(
-        root.join("maps/千壑横原/layout.json"),
-        temp.0.join("maps/千壑横原/layout.json"),
-    )
-    .unwrap();
     fs::create_dir_all(temp.0.join("templates/rules")).unwrap();
     fs::copy(
         root.join("templates/rules/common-T0.5.1.json"),
@@ -431,13 +744,22 @@ fn texture_polish_is_deterministic_and_preserves_all_gameplay_and_resource_data(
         temp.0.join("templates/rules/千壑横原.json"),
     )
     .unwrap();
-    let original = Project::load(&temp.0, "千壑横原").unwrap();
+    let original = Project::load(&temp.0, "陕西").unwrap();
     let mut first = source.clone();
     let mut second = source.clone();
     let audit =
-        ra3maps::texture_polish::apply(&original, &mut first, "[CHAI]叠岭连原T0.5.1").unwrap();
-    ra3maps::texture_polish::apply(&original, &mut second, "[CHAI]叠岭连原T0.5.1").unwrap();
+        ra3maps::terrain::texture_polish::apply(&original, &mut first, "[CHAI]叠岭连原T0.5.1")
+            .unwrap();
+    ra3maps::terrain::texture_polish::apply(&original, &mut second, "[CHAI]叠岭连原T0.5.1")
+        .unwrap();
     assert_eq!(first.encode().unwrap(), second.encode().unwrap());
+    let painted = first.encode().unwrap();
+    ra3maps::terrain::texture_polish::apply(&original, &mut first, "[CHAI]叠岭连原T0.5.1").unwrap();
+    assert_eq!(
+        first.encode().unwrap(),
+        painted,
+        "repeat polish must reuse material IDs and blends"
+    );
     assert!(audit.report["changed_texture_cells"].as_u64().unwrap() > 0);
     // These stock "grass" images contain large, directional dirt shapes.
     // A legal atlas ID alone does not make them suitable for area fills.
@@ -459,7 +781,7 @@ fn texture_polish_is_deterministic_and_preserves_all_gameplay_and_resource_data(
     let output = Command::new(env!("CARGO_BIN_EXE_ra3maps"))
         .args(["polish-textures", "--root"])
         .arg(&temp.0)
-        .args(["--map", "千壑横原", "--bump"])
+        .args(["--map", "陕西", "--bump"])
         .arg(&input)
         .output()
         .unwrap();
@@ -469,24 +791,27 @@ fn texture_polish_is_deterministic_and_preserves_all_gameplay_and_resource_data(
         String::from_utf8_lossy(&output.stdout),
         String::from_utf8_lossy(&output.stderr)
     );
-    let p = Project::load(&temp.0, "千壑横原").unwrap();
+    let p = Project::load(&temp.0, "陕西").unwrap();
     let result = MapFile::load(p.dist.join(format!("{}.map", p.name))).unwrap();
     assert_eq!(source.table, result.table);
     for chunk in &source.chunks {
         let name = &source.table[&chunk.name_idx];
-        if name != "BlendTileData" {
+        if !["BlendTileData", "WorldInfo"].contains(&name.as_str()) {
             assert_eq!(result.get(name).unwrap(), chunk, "{name}");
         }
     }
-    let hm = ra3maps::map::HeightMap::parse(source.get("HeightMapData").unwrap()).unwrap();
+    let hm = ra3maps::formats::map::HeightMap::parse(source.get("HeightMapData").unwrap()).unwrap();
     let n = hm.width;
     let old = source.get("BlendTileData").unwrap();
     let new = result.get("BlendTileData").unwrap();
     let bitmaps = 4 + 8 * n * n..4 + 8 * n * n + 8 * n * n.div_ceil(8) + n * n;
     assert_eq!(old.payload[bitmaps.clone()], new.payload[bitmaps]);
-    let old_bt = ra3maps::map::BlendTiles::parse(old, n, n).unwrap();
-    let new_bt = ra3maps::map::BlendTiles::parse(new, n, n).unwrap();
-    assert_eq!(old_bt.textures, new_bt.textures);
+    let old_bt = ra3maps::formats::map::BlendTiles::parse(old, n, n).unwrap();
+    let new_bt = ra3maps::formats::map::BlendTiles::parse(new, n, n).unwrap();
+    assert!(new_bt.textures.starts_with(&old_bt.textures));
+    for primary in ra3maps::terrain::materials::PRIMARY {
+        assert!(new_bt.textures.iter().any(|name| name == primary));
+    }
     assert_ne!(old_bt.tiles, new_bt.tiles);
     let descriptions = new_bt.blend_descriptions.len() / 18;
     let mut nonzero = 0;

@@ -9,9 +9,9 @@
 专属模板 `templates/rules/千壑横原.json` 移除 `periodic_attack` 配置。原生 `update-scripts` 在配置撤销时会清理成品中的该模块；普通构建不再生成分钟进攻。保留其他 AI、外交、经济、奖励及赠送建筑脚本，保留 T0.6.2 的赠送朝向，以及地形、对象、编队、资源和避让区域。
 
 ```sh
-cargo run --offline --release -- update-scripts --map 千壑横原 --bump \
+cargo run --offline --release -- update-scripts --map 陕西 --bump \
   --note '取消18条分钟进攻脚本及对应诊断显示，保留其他玩法和赠送建筑朝向' \
-  'dist/[CHAI]千壑横原/[CHAI]千壑横原T0.6.2.zip'
+  'dist/陕西/[CHAI]千壑横原T0.6.2.zip'
 ```
 
 成品回读确认：只修改 `PlayerScriptsList` 区块，其余区块逐字节一致；剩余 352 条脚本与 T0.6.2 完全相同。XML 和文本中不再包含 `minute-attack-*`。发布目录、资源目录、ZIP 和本机游戏安装目录的六个成品文件一致，旧版保留。启用→取消的完整增量发布回归及六项模块测试通过，Clippy 和格式检查通过；未做实机测试。核对文件位于 `work/periodic-attack/T0.6.3/validation.json` 与 `package-install-check.json`。
@@ -44,9 +44,9 @@ P7 为 `PlyrCivilian`，P8 为 `PlyrCreeps`；其他位置为 `Player_1` 至 `Pl
 既有成品用原生 Rust 增量更新，保留优化后的实际地形：
 
 ```sh
-cargo run --release -- update-scripts --map 千壑横原 --bump \
+cargo run --release -- update-scripts --map 陕西 --bump \
   --note '移除旧进攻编队，只发送 AI 进攻地点请求' \
-  'dist/[CHAI]千壑横原/[CHAI]千壑横原T0.6.0.zip'
+  'dist/陕西/[CHAI]千壑横原T0.6.0.zip'
 ```
 
 实际仅修改 `Teams`、`PlayerScriptsList` 两个区块；删除本模块旧编队及旧进攻脚本，其他原脚本和编队完整保留。同步 XML 脚本声明、版本路径、显示名称和诊断文案。对象、高度、斜坡、纹理、通行/建造位图、资源身份、赠送建筑水陆及避让规则均保留。

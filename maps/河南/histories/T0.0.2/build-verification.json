@@ -1,0 +1,20 @@
+{
+  "map": "[CHAI]沃野奔流T0.0.2",
+  "passed": true,
+  "spawn_layout": "south P1-P4 / north P5-P8; user circle regions",
+  "native_sha256": "b973ad8b46c77a2799da452bf94b06749e6ff0496c87c23f44d41d10470b970b",
+  "zip_sha256": "3cbe1ea9bb45ed25703a3a9dc0952bb91777900d3cc650bf72ced41bc7854018",
+  "zip_bytes": 262040,
+  "full_cargo_tests_passed": 187,
+  "cargo_fmt_passed": true,
+  "cargo_clippy_passed": true,
+  "fresh_frozen_build_byte_identical": true,
+  "resource_routes": 304,
+  "shore_edges": 576,
+  "spatial_findings": 0,
+  "source_problem_baseline_count": 0,
+  "local_height_samples_changed": 9051,
+  "user_specified_layout_overrides_default_water_area_balance": true,
+  "ingame_test": "not run",
+  "installed": false
+}

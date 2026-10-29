@@ -1,0 +1,7 @@
+# Preserve map/terrain fixture bytes on Windows and Unix checkouts.
+*.map binary
+*.npz binary
+*.zip binary
+*.u16 binary
+*.u8 binary
+*.tga binary

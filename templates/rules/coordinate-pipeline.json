@@ -8,5 +8,29 @@
   "maximum_walk_step": 12.0,
   "navigation_clearance": 1,
   "maximum_ramp_step": 6.1,
-  "maximum_landing_error": 12.0
+  "maximum_landing_error": 12.0,
+  "spawn_placement": {
+    "near_ore_radius": 62.0,
+    "base_radius": 8.0,
+    "ore_radius": 20.0,
+    "flat_tolerance": 3.0
+  },
+  "resource_distribution": {
+    "mines_per_seat": 6,
+    "home_radius": 100.0,
+    "home_maximum": 3,
+    "route_count": 4,
+    "main_route_max_distance": 65.0,
+    "fourth_progress": [0.10, 0.35],
+    "hotspot_progress": [0.33, 0.67],
+    "secondary_max_distance": 75.0,
+    "secondary_min_main_distance": 35.0
+  },
+  "ramp_clearance": {
+    "approach_extension": 25.0,
+    "gap": 8.0,
+    "refinery_back": 5.0,
+    "refinery_forward": 48.0,
+    "refinery_half_width": 18.0
+  }
 }

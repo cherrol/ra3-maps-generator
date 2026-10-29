@@ -1,8 +1,11 @@
 use ra3maps::{
-    archive,
-    binary::{Reader, Writer},
-    map::{self, Chunk, MapFile, Property, Value},
-    project, refpack, scripts,
+    formats::archive,
+    formats::binary::{Reader, Writer},
+    formats::map::{self, Chunk, MapFile, Property, Value},
+    formats::npy::Npy,
+    formats::refpack,
+    gameplay::scripts,
+    pipeline::project,
 };
 use serde_json::json;
 use std::{collections::BTreeMap, path::Path};
@@ -10,7 +13,7 @@ use std::{collections::BTreeMap, path::Path};
 #[test]
 fn shared_template_preserves_t051_except_the_named_yard_lookup() {
     let source: serde_json::Value =
-        serde_json::from_str(include_str!("../maps/千壑横原/repack/T0.5.1.rules.json")).unwrap();
+        serde_json::from_str(include_str!("../maps/陕西/histories/T0.5.1/rules.json")).unwrap();
     let shared: serde_json::Value =
         serde_json::from_str(include_str!("../templates/rules/common-T0.5.1.json")).unwrap();
     for key in ["SidesList", "Teams", "names"] {
@@ -186,10 +189,12 @@ fn linked_string_table_is_written_in_worldbuilder_order_without_changing_ids() {
 #[test]
 fn xml_release_path_changes_preserve_resource_asset_ids() {
     let xml = "<GameMap id=\"CHAIT0.5.1\"/><TerrainTextureAtlas id=\"CHAIT0.5.1\"/><MapMetaData FileName=\"data\\maps\\testt0.5.1\\testt0.5.1.map\"/>";
-    let next = ra3maps::release::retarget_xml(xml, "T0.5.1", "T0.5.2").unwrap();
+    let next = ra3maps::pipeline::release::retarget_xml(xml, "T0.5.1", "T0.5.2").unwrap();
     assert!(next.contains("<TerrainTextureAtlas id=\"CHAIT0.5.1\""));
     assert!(next.contains("FileName=\"data\\maps\\testt0.5.2\\testt0.5.2.map\""));
-    assert!(ra3maps::release::retarget_xml("FileName=\"oops", "T0.5.1", "T0.5.2").is_err());
+    assert!(
+        ra3maps::pipeline::release::retarget_xml("FileName=\"oops", "T0.5.1", "T0.5.2").is_err()
+    );
 }
 #[test]
 fn properties_preserve_types_order_unicode_and_latin1() {
@@ -293,11 +298,11 @@ fn zip_unicode_names_crc_and_deterministic_output() {
 }
 #[test]
 fn npy_reader_uses_little_endian_shapes_and_scalars() {
-    let a = ra3maps::terrain::npy("<u2", &[2, 2], &[1, 0, 0, 1, 255, 255, 2, 0]);
-    let a = archive::Npy::parse(&a).unwrap();
+    let a = ra3maps::formats::npy::encode("<u2", &[2, 2], &[1, 0, 0, 1, 255, 255, 2, 0]);
+    let a = Npy::parse(&a).unwrap();
     assert_eq!(a.shape, vec![2, 2]);
     assert_eq!(a.numbers().unwrap(), vec![1., 256., 65535., 2.]);
-    let scalar = archive::Npy::parse(&ra3maps::terrain::npy(
+    let scalar = Npy::parse(&ra3maps::formats::npy::encode(
         "<f8",
         &[],
         &0.0390625f64.to_le_bytes(),
@@ -333,5 +338,5 @@ fn recipe_ids_cannot_escape_project() {
     for s in ["", "..", "../escape", "a/b", "a\\b", "/tmp"] {
         assert!(project::safe_component(s).is_err());
     }
-    assert!(project::safe_component("碧嶂回澜").is_ok());
+    assert!(project::safe_component("广西").is_ok());
 }

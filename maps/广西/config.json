@@ -1,0 +1,402 @@
+{
+  "BASES": [
+    [
+      105.936,
+      26.19572,
+      "西北",
+      "W",
+      "human"
+    ],
+    [
+      107.67725,
+      26.17845,
+      "北",
+      "W",
+      "human"
+    ],
+    [
+      109.40252,
+      26.2245,
+      "中北",
+      "W",
+      "human"
+    ],
+    [
+      111.04792,
+      25.44729,
+      "东北",
+      "W",
+      "human"
+    ],
+    [
+      105.5526,
+      21.35973,
+      "西南",
+      "E",
+      "human"
+    ],
+    [
+      111.54314,
+      21.22731,
+      "东南",
+      "E",
+      "human"
+    ],
+    [
+      107.07021,
+      21.88938,
+      "南",
+      "E",
+      "ai"
+    ],
+    [
+      109.67409,
+      21.89514,
+      "南部",
+      "E",
+      "ai"
+    ]
+  ],
+  "BORDER": 20,
+  "CELL": 10.0,
+  "CITY_TEX_R": 30.0,
+  "COORDINATE_PIPELINE": {
+    "baseline": "authoring/baseline.json",
+    "layout": "authoring/layout.json",
+    "source_crc32": 3112087988,
+    "source_name": "[CHAI]碧嶂回澜T2.3.7",
+    "source_package": "authoring/source.zip"
+  },
+  "GRID": 840,
+  "HEIGHT_PRESET": "standard",
+  "LAND_Z": 210.0,
+  "LAYER_M": [
+    [
+      200.0,
+      210.0
+    ],
+    [
+      500.0,
+      280.0
+    ],
+    [
+      1500.0,
+      350.0
+    ],
+    [
+      4000.0,
+      420.0
+    ]
+  ],
+  "LAYER_TEX_PRESET": "mountain",
+  "LAYER_TEX_STRICT": true,
+  "LAYERS": "histories/v11/layers.npz",
+  "LAYOUT": "histories/v11/layout.json",
+  "MAP_DESCRIPTION": "碧色峰丛环绕曲水，清流转过石壁，回澜映出天光。",
+  "MAP_NAME": "[CHAI]碧嶂回澜",
+  "MAP_STR_DEBUG": "\"北侧 Player_1-4 为一队；南侧 Player_5-6 与两个固定 AI（Player_7、Player_8）为一队\"",
+  "MAP_STR_INFO": {
+    "0_1": "P1 西北(北队)",
+    "0_2": "P2 北(北队)",
+    "0_3": "P3 中北(北队)",
+    "1_0": "P4 东北(北队)",
+    "1_1": "P5 西南(南队)",
+    "1_2": "P6 东南(南队·水上)",
+    "1_3": "P7 南(固定AI)",
+    "2_0": "P8 南部(固定AI)",
+    "2_1": "北队自西向东：P1-P2-P3-P4",
+    "2_2": "南队：P5、P6 + 固定位 P7、P8",
+    "2_3": "南部海域为海战区域",
+    "3_0": "地图作者：[CHAI]",
+    "3_1": "北4人 VS 南2人+2个固定AI",
+    "3_2": "版本 {version}",
+    "3_3": "祝游戏愉快",
+    "GameStart": "游戏时间"
+  },
+  "MAP_STR_INTRO": "\"欢迎来到九州大地·碧嶂回澜，祝大家玩得开心。\"",
+  "ORE_CLEAR_RADIUS": 20.0,
+  "PAD_CLEARANCE": 46.0,
+  "PEAK_IMPASSABLE": 235.0,
+  "PREVIEW_FOOTER": "北队（自西向东）：Player1 / Player2 / Player3 / Player4      南队：Player5 / Player6 + 固定位 Player7、Player8（后两位为固定 AI）",
+  "PREVIEW_SUBTITLE": "北4人 VS 南2人+2个固定AI",
+  "PREVIEW_TITLE": "九州大地·碧嶂回澜 {version}",
+  "RESOURCE_ID_SEED": 3933696761,
+  "RESOURCE_MIN_SPACING": 32.0,
+  "RULESET": "common-T0.5.1",
+  "SCHEMA_VERSION": 1,
+  "SERIES_NAME": "九州大地",
+  "SLOPE_IMPASSABLE": 24.0,
+  "TEMPLATE": "8p_template.map",
+  "TERRAIN": {
+    "levels": [
+      210.0,
+      280.0,
+      350.0,
+      420.0
+    ],
+    "ore_border_clear": 30.0,
+    "ore_mouth_r1": 20,
+    "ore_near_max_r": 62.0,
+    "ore_near_min_r": 44.0,
+    "sea_flat": 130.0,
+    "use_v11_layers": true,
+    "v11_plain": true,
+    "v11_smooth": 0
+  },
+  "TERRAIN_ONLY": false,
+  "TEX_SET": [
+    [
+      "Grass_CapeCod01",
+      "TGrass_CapeCod01",
+      "TGrass_CapeCod01_nrm"
+    ],
+    [
+      "Grass_CapeCod03",
+      "TGrass_CapeCod03",
+      "TGrass_CapeCod03_nrm"
+    ],
+    [
+      "Grass_CapeCod05",
+      "TGrass_CapeCod05",
+      "TGrass_CapeCod05_nrm"
+    ],
+    [
+      "Grass_CapeCod07",
+      "TGrass_CapeCod07",
+      "TGrass_CapeCod07_nrm"
+    ],
+    [
+      "Grass_CapeCod09",
+      "TGrass_CapeCod09",
+      "TGrass_CapeCod09_nrm"
+    ],
+    [
+      "Grass_CapeCod12",
+      "TGrass_CapeCod12",
+      "TGrass_CapeCod12_nrm"
+    ],
+    [
+      "Grass_Golf01",
+      "TGrass_Golf01",
+      "TGrass_Golf01_nrm"
+    ],
+    [
+      "Grass_Golf03",
+      "TGrass_Golf03",
+      "TGrass_Golf03_nrm"
+    ],
+    [
+      "Grass_Golf05",
+      "TGrass_Golf05",
+      "TGrass_Golf05_nrm"
+    ],
+    [
+      "Grass_Geneva01",
+      "TGrass_Geneva01",
+      "TGrass_Geneva01_nrm"
+    ],
+    [
+      "Grass_Geneva03",
+      "TGrass_Geneva03",
+      "TGrass_Geneva03_nrm"
+    ],
+    [
+      "Rock_Yucatan01",
+      "TRock_Yucatan01",
+      "TRock_Yucatan01_nrm"
+    ],
+    [
+      "RA3_Elevation1",
+      "RA3_Elevation1",
+      "RA3_Elevation1_NRM"
+    ],
+    [
+      "Transition_Yucatan18",
+      "TTransition_Yucatan18",
+      "TTransition_Yucatan18_nrm"
+    ],
+    [
+      "RA3_Elevation0",
+      "RA3_Elevation0",
+      "RA3_Elevation0_NRM"
+    ],
+    [
+      "Transition_Yucatan14",
+      "TTransition_Yucatan14",
+      "TTransition_Yucatan14_nrm"
+    ],
+    [
+      "Gravel_Yucatan01",
+      "TGravel_Yucatan01",
+      "TGravel_Yucatan01_nrm"
+    ],
+    [
+      "Dirt_Yucatan06",
+      "TDirt_Yucatan06",
+      "TDirt_Yucatan06_nrm"
+    ],
+    [
+      "Transition_Yucatan13",
+      "TTransition_Yucatan13",
+      "TTransition_Yucatan13_nrm"
+    ],
+    [
+      "Transition_Yucatan16",
+      "TTransition_Yucatan16",
+      "TTransition_Yucatan16_nrm"
+    ],
+    [
+      "Transition_Yucatan20",
+      "TTransition_Yucatan20",
+      "TTransition_Yucatan20_nrm"
+    ],
+    [
+      "Transition_Yucatan15",
+      "TTransition_Yucatan15",
+      "TTransition_Yucatan15_nrm"
+    ],
+    [
+      "Transition_Yucatan04",
+      "TTransition_Yucatan04",
+      "TTransition_Yucatan04_nrm"
+    ],
+    [
+      "Dirt_Yucatan03",
+      "TDirt_Yucatan03",
+      "TDirt_Yucatan03_nrm"
+    ],
+    [
+      "Transition_Yucatan03",
+      "TTransition_Yucatan03",
+      "TTransition_Yucatan03_nrm"
+    ],
+    [
+      "Dirt_Yucatan05",
+      "TDirt_Yucatan05",
+      "TDirt_Yucatan05_nrm"
+    ],
+    [
+      "Transition_Yucatan08",
+      "TTransition_Yucatan08",
+      "TTransition_Yucatan08_nrm"
+    ],
+    [
+      "Dirt_Yucatan04",
+      "TDirt_Yucatan04",
+      "TDirt_Yucatan04_nrm"
+    ],
+    [
+      "Rock_Yucatan02",
+      "TRock_Yucatan02",
+      "TRock_Yucatan02_nrm"
+    ],
+    [
+      "RA3_ShallowSeaFloor",
+      "RA3_ShallowSeaFloor",
+      "RA3_ShallowSeaFloor_NRM"
+    ],
+    [
+      "Dirt_Yucatan02",
+      "TDirt_Yucatan02",
+      "TDirt_Yucatan02_nrm"
+    ],
+    [
+      "Dirt_Yucatan01",
+      "TDirt_Yucatan01",
+      "TDirt_Yucatan01_nrm"
+    ],
+    [
+      "Reef_Yucatan02",
+      "TReef_Yucatan02",
+      "TReef_Yucatan02_nrm"
+    ],
+    [
+      "Reef_Havana02",
+      "Reef_Havana02",
+      "Reef_Havana02_NRM"
+    ],
+    [
+      "Reef_Yucatan01",
+      "TReef_Yucatan01",
+      "TReef_Yucatan01_nrm"
+    ],
+    [
+      "Transition_Yucatan02",
+      "TTransition_Yucatan02",
+      "TTransition_Yucatan02_nrm"
+    ],
+    [
+      "Rock_Yucatan04",
+      "TRock_Yucatan04",
+      "TRock_Yucatan04_nrm"
+    ],
+    [
+      "Rock_Yucatan03",
+      "TRock_Yucatan03",
+      "TRock_Yucatan03_nrm"
+    ],
+    [
+      "Transition_Yucatan06",
+      "TTransition_Yucatan06",
+      "TTransition_Yucatan06_nrm"
+    ],
+    [
+      "Transition_Yucatan19",
+      "TTransition_Yucatan19",
+      "TTransition_Yucatan19_nrm"
+    ],
+    [
+      "Transition_Yucatan21",
+      "TTransition_Yucatan21",
+      "TTransition_Yucatan21_nrm"
+    ],
+    [
+      "SteelDeck01",
+      "TMisc_SteelDeck01",
+      "TMisc_SteelDeck01_nrm"
+    ],
+    [
+      "Sand_Hawaii02",
+      "TSand_Hawaii02",
+      "TSand_Hawaii02_NRM"
+    ],
+    [
+      "BB_Gravel01",
+      "BB_Gravel01",
+      "BB_Gravel01_NRM"
+    ],
+    [
+      "Grass_NewYork01",
+      "TGrass_NewYork01",
+      "TGrass_NewYork01_NRM"
+    ],
+    [
+      "Grass_MtRush04",
+      "Grass_MtRush04",
+      "Grass_MtRush04_NRM"
+    ],
+    [
+      "Dirt_Iceland05",
+      "TDirt_Iceland05",
+      "TDirt_Iceland05_NRM"
+    ],
+    [
+      "Pavement_Amsterdam05",
+      "TPave_Amsterdam05",
+      "TPave_Amsterdam05_NRM"
+    ]
+  ],
+  "WATER": {
+    "additive": 0,
+    "bump": "WaterRippleBump",
+    "depth_colors": "LUTDepthTint.tga",
+    "fx": "FXOceanRA3",
+    "height": null,
+    "margin": 200.0,
+    "name": "New Water Area",
+    "sky": "SkyEnv",
+    "uv_scroll": 0.06
+  },
+  "WATER_Z": 200.0,
+  "Z_SCALE": 0.0390625
+}

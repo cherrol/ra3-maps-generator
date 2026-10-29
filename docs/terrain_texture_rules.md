@@ -1,41 +1,52 @@
 # 通用地形纹理规则
 
-2026-10-27，用户确认保留夹川汇潮 T2.2.9 的纹理，并要求将其接入通用流水。规则名为 `classic-natural`。`work/terrain-material-preview/` 的按山坡、台地和水岸重新选材实验未采用，不导入正式流水。
+2026-10-29，用户将已定稿的一至五层主纹理加入公共流水。规则名继续使用 `classic-natural`：前三层沿用千流叩海 T0.5.6 的实际草地搭配，第四层为用户圈选的 4A 棕岩，第五层为 5A 浅灰岩。选材定义统一在 `src/terrain/materials.rs`，报告修订号为 `five-layer-2026-10-29`。既有自然纹理噪声、岸线和混合规则保留；历史 T2.2.9 的第四层草地方案由下表取代。
 
 ## 构建与成品更新
 
-- `build`：在 `map` 阶段完成高度、位图、对象、脚本及资源配套后，自动执行已确认的纹理后处理。后续 `verify`、`accept`、`dist` 使用后处理后的成品。
+- 新蓝图 `build`：在 `map` 阶段完成高度、位图、对象、脚本及资源配套后，自动执行公共纹理后处理。后续 `verify`、`accept`、`dist` 使用同一成品。启用冻结坐标制作源的已有地图仍保留来源纹理，显式使用下一条入口更新。
 - `polish-textures <源ZIP> --map <id> --bump`：对现有成品执行相同函数，保留已经完成的斜坡优化和 WorldBuilder 定稿内容。
 - 配方 `TEXTURE_PROFILE` 缺省或为 `classic-natural` 时自动启用；`legacy` 用于复现历史纹理，其他值拒绝执行。显式 `polish-textures` 始终应用当前通用规则。
-- 普通构建仍由各图自己的蓝图和布局生成地形，不能代替成品局部更新。已有成品只改纹理时应使用后一个入口。
+- 新蓝图构建由各图自己的蓝图和布局生成地形；已启用坐标流水的成品沿用各自冻结原生制作源。已有成品只改纹理时使用后一个入口，避免从旧蓝图重建地形。
 
-## T2.2.9 选材
+## 当前五层主纹理
 
-高度层取当前地图的 `LAYER_M`，缺省使用 `TERRAIN.levels`，不硬编码地图坐标。下表为纹理存在时的首选；缺失时仅在原图图集中选择现有的兼容材质。
+高度层取当前地图的 `LAYER_M`，缺省使用 `TERRAIN.levels`，排序去重后从低到高对应以下五层，不硬编码地图坐标。显式五层配置按最近标高分层；只配置可玩台地的历史成品，高于最高台地且高于 `WATER_Z + PEAK_IMPASSABLE` 的实际山峰使用第五层材质。不会把配置中本来就很高的第四层台地误刷成第五层，也不会改变高度或通行规则。
 
 | 地表 | 材质与分配 |
 |---|---|
 | 最低陆地层 | `Grass_NewYork01`，少量 `Grass_CapeCod05` |
 | 第二层 | `Grass_MtRush04`，少量 `Grass_Geneva01` |
 | 第三层 | `Grass_CapeCod05`，少量 `Dirt_Iceland05` |
-| 第四层及更高 | `Grass_CapeCod12`，少量 `Dirt_Iceland05` |
+| 第四层 | `Rock_Yucatan03`，棕色山岩；不另铺草地或裸土变体 |
+| 第五层及更高山峰 | `Rock_Iceland02`，浅灰山岩；不另铺草地或裸土变体 |
 | 层界 | `Rock_Yucatan01`，邻近碎石或土壤衔接 |
 | 岸线 | `Sand_Hawaii02`，约 3–5 格宽，随后局部土壤衔接 |
 | 近岸到远海 | `Reef_Yucatan02` → `Reef_Yucatan01` → `RA3_ShallowSeaFloor` |
 | 城镇 | 紧凑的 `BB_Gravel01` / `Dirt_Yucatan06` 空地，沿用 T2.2.9 的范围规则 |
 | 斜坡 | `Dirt_Yucatan06` 车道、较窄的 `Gravel_Yucatan01` 边缘；不把相邻陡坎刷成道路 |
 
-纹理变化使用固定种子 2771、9323，尺度 52、17 格；低两层变体阈值为 0.58，高层裸土阈值为 0.72。这些均与 T2.2.9 一致。层界按相邻陆地至少 35 的高差识别。材质边界逐格写入双纹理混合，沿用原图子贴片相位。
+纹理变化使用固定种子 2771、9323，尺度 52、17 格；低两层变体阈值为 0.58，第三层裸土阈值为 0.72；这些沿用 T2.2.9。四五层的内部统一使用选定岩石，不再生成随机草地或土壤斑块。层界按相邻陆地至少 35 的高差识别。材质边界逐格写入双纹理混合，沿用原图子贴片相位。
 
 `Grass_CapeCod01/03/07`、`Grass_Golf01/03/05` 不用于大面积草地填充，避免重复裸土图案与斜条纹；原图图集中的登记保留，不改变资源编号。原贴图与真实渲染核对见 [纹理平铺修复](texture_tiling_fix.md)。
 
+构建自动登记五层主纹理及前三层变体的原生 diffuse/normal 资源。成品更新在图集中追加缺失项，保留已有材质编号与子贴片相位，并由公共封装步骤同步原生 `WorldInfo`、XML `WorldDict`、`TerrainTextureAtlas`；超过 64 个原生材质家族时拒绝发布。`legacy` 构建继续复现原图集，显式 `polish-textures` 则应用当前定稿。
+
 ## 验证与产物
 
-通用实现位于 `src/texture_polish.rs`，常规构建和成品更新共享它。测试对照普通构建与显式更新结果，并逐字节核对非纹理区块及全部玩法位图。历史迁移测试保留 `legacy`，继续核对原始各区块基线。
+通用实现位于 `src/terrain/texture_polish.rs`，常规构建和成品更新共享它。测试对照普通构建与显式更新结果，并逐字节核对非纹理区块及全部玩法位图。历史迁移测试保留 `legacy`，继续核对原始各区块基线。
 
-`texture-report.json` 记录 `profile`、`reference_version`、纹理直方图和保留检查。`textures--comparison.png` 只使用示意颜色；视觉验收应查看 WorldBuilder 真实渲染及游戏实测。
+`texture-report.json` 记录 `profile`、`palette_revision`、五层主纹理名、新增材质家族、纹理直方图和保留检查。`reference_version: T2.2.9` 仅标记保留的自然分布规则来源，当前选材以 `palette_revision` 为准。`textures--comparison.png` 只使用示意颜色；视觉验收应查看 WorldBuilder 真实渲染及游戏实测。
 
-## 本轮发布
+## 山地坡口局部样式
+
+2026-10-28，按用户要求参考 AXAI、NKL、SMAI 山地图，通用 `RAMP_PROFILE` 缺省为 `mountain`，自动采用 `surface_style: mountain`；仅历史复现使用 `legacy`。带此标记的坡口延续上下台地的实际材质，陡侧面保留岩石，替代整块灰白铺面；T2.3.7 按实机反馈取消了此前孤立的短土痕。`polish-textures` 保留这套局部样式；仅更新坡口表面可使用 `polish-ramp-surfaces`，高度和全部玩法位图逐字节保持。其余地表仍沿用上述 `classic-natural` 规则。实现、实际渲染与验收见 [山地坡口](mountain_ramps.md)。
+
+## 2026-10-29 接入范围
+
+本次只更新公共工具链、文档与回归验证，没有递增、重建、安装现有地图，也没有改动冻结制作源或原预览配色。独立预览和用户确认的记录位于 `work/layer-texture-candidates/final-selection.json`；当前实现不依赖 work 目录运行。
+
+## 历史纹理通用化发布
 
 | 地图 | 源版本 | 新版本 |
 |---|---|---|

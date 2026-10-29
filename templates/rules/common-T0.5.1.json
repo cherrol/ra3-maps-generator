@@ -10384,6 +10384,7 @@
   ],
   "production_placement": {
     "facing": "opposing_team_center",
+    "allowed_angles_degrees": [45, 135, -45, -135],
     "full_footprint": true,
     "war_factory": {
       "surface": "land",

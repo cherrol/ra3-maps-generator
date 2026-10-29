@@ -1,0 +1,7471 @@
+{
+  "frame": {
+    "border": 20,
+    "cell_size": 10.0,
+    "height": 808,
+    "width": 840,
+    "z_scale": 0.0390625
+  },
+  "issues": [],
+  "map": "[CHAI]沃野奔流T0.0.1",
+  "native_crc32": 2787141454,
+  "passed": true,
+  "ramp_profiles": [
+    {
+      "blocked_samples": 0,
+      "center": [
+        245.0,
+        340.0
+      ],
+      "endpoint_error": 0.0,
+      "id": 178,
+      "maximum_step": 2.0703125,
+      "pair": [
+        280.0,
+        350.0
+      ],
+      "samples": 1025,
+      "width": 24.0
+    },
+    {
+      "blocked_samples": 0,
+      "center": [
+        410.0,
+        350.0
+      ],
+      "endpoint_error": 0.025000000000005684,
+      "id": 179,
+      "maximum_step": 2.0750000000000455,
+      "pair": [
+        210.0,
+        280.0
+      ],
+      "samples": 1025,
+      "width": 24.0
+    },
+    {
+      "blocked_samples": 0,
+      "center": [
+        300.0,
+        420.0
+      ],
+      "endpoint_error": 0.0,
+      "id": 180,
+      "maximum_step": 2.0703125,
+      "pair": [
+        280.0,
+        350.0
+      ],
+      "samples": 1025,
+      "width": 24.0
+    },
+    {
+      "blocked_samples": 0,
+      "center": [
+        368.0,
+        460.0
+      ],
+      "endpoint_error": 0.0,
+      "id": 181,
+      "maximum_step": 2.0703125,
+      "pair": [
+        210.0,
+        280.0
+      ],
+      "samples": 1025,
+      "width": 24.0
+    },
+    {
+      "blocked_samples": 0,
+      "center": [
+        200.0,
+        710.0
+      ],
+      "endpoint_error": 0.0,
+      "id": 182,
+      "maximum_step": 4.140625,
+      "pair": [
+        210.0,
+        350.0
+      ],
+      "samples": 1025,
+      "width": 24.0
+    },
+    {
+      "blocked_samples": 0,
+      "center": [
+        353.0,
+        650.0
+      ],
+      "endpoint_error": 0.0,
+      "id": 183,
+      "maximum_step": 2.0703125,
+      "pair": [
+        210.0,
+        280.0
+      ],
+      "samples": 1025,
+      "width": 24.0
+    },
+    {
+      "blocked_samples": 0,
+      "center": [
+        680.0,
+        730.0
+      ],
+      "endpoint_error": 0.0,
+      "id": 184,
+      "maximum_step": 2.0703125,
+      "pair": [
+        210.0,
+        280.0
+      ],
+      "samples": 1025,
+      "width": 24.0
+    },
+    {
+      "blocked_samples": 0,
+      "center": [
+        128.0,
+        273.0
+      ],
+      "endpoint_error": 0.0,
+      "id": 185,
+      "maximum_step": 2.0703125,
+      "pair": [
+        280.0,
+        350.0
+      ],
+      "samples": 1025,
+      "width": 24.0
+    }
+  ],
+  "routes": [
+    {
+      "domain": "land",
+      "path_steps": 53,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 1,
+      "start_access": [
+        530,
+        500
+      ],
+      "start_id": 1,
+      "straight_distance_world": 600.0,
+      "target": [
+        470.0,
+        500.0
+      ],
+      "target_access": [
+        477,
+        500
+      ],
+      "target_id": 5,
+      "target_type": "OreNode",
+      "world_distance": 530.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 53,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 1,
+      "start_access": [
+        530,
+        500
+      ],
+      "start_id": 1,
+      "straight_distance_world": 600.0,
+      "target": [
+        590.0,
+        500.0
+      ],
+      "target_access": [
+        583,
+        500
+      ],
+      "target_id": 6,
+      "target_type": "OreNode",
+      "world_distance": 530.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 131,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 1,
+      "start_access": [
+        530,
+        500
+      ],
+      "start_id": 1,
+      "straight_distance_world": 1300.0,
+      "target": [
+        660.0,
+        500.0
+      ],
+      "target_access": [
+        656,
+        495
+      ],
+      "target_id": 11,
+      "target_type": "OreNode",
+      "world_distance": 1310.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 251,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 1,
+      "start_access": [
+        530,
+        500
+      ],
+      "start_id": 1,
+      "straight_distance_world": 2500.0,
+      "target": [
+        780.0,
+        500.0
+      ],
+      "target_access": [
+        776,
+        495
+      ],
+      "target_id": 12,
+      "target_type": "OreNode",
+      "world_distance": 2510.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 171,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 1,
+      "start_access": [
+        530,
+        500
+      ],
+      "start_id": 1,
+      "straight_distance_world": 1392.8388277184122,
+      "target": [
+        480.0,
+        630.0
+      ],
+      "target_access": [
+        483,
+        624
+      ],
+      "target_id": 17,
+      "target_type": "OreNode",
+      "world_distance": 1710.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 191,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 1,
+      "start_access": [
+        530,
+        500
+      ],
+      "start_id": 1,
+      "straight_distance_world": 1476.48230602334,
+      "target": [
+        600.0,
+        630.0
+      ],
+      "target_access": [
+        597,
+        624
+      ],
+      "target_id": 18,
+      "target_type": "OreNode",
+      "world_distance": 1910.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 271,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 1,
+      "start_access": [
+        530,
+        500
+      ],
+      "start_id": 1,
+      "straight_distance_world": 1984.943324127921,
+      "target": [
+        660.0,
+        650.0
+      ],
+      "target_access": [
+        657,
+        644
+      ],
+      "target_id": 23,
+      "target_type": "OreNode",
+      "world_distance": 2710.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 391,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 1,
+      "start_access": [
+        530,
+        500
+      ],
+      "start_id": 1,
+      "straight_distance_world": 2915.4759474226503,
+      "target": [
+        780.0,
+        650.0
+      ],
+      "target_access": [
+        777,
+        644
+      ],
+      "target_id": 24,
+      "target_type": "OreNode",
+      "world_distance": 3910.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 906,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 1,
+      "start_access": [
+        530,
+        500
+      ],
+      "start_id": 1,
+      "straight_distance_world": 6477.846864506755,
+      "target": [
+        50.0,
+        65.0
+      ],
+      "target_access": [
+        56,
+        68
+      ],
+      "target_id": 29,
+      "target_type": "OreNode",
+      "world_distance": 9060.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 786,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 1,
+      "start_access": [
+        530,
+        500
+      ],
+      "start_id": 1,
+      "straight_distance_world": 5646.459067415613,
+      "target": [
+        170.0,
+        65.0
+      ],
+      "target_access": [
+        176,
+        68
+      ],
+      "target_id": 30,
+      "target_type": "OreNode",
+      "world_distance": 7860.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 708,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 1,
+      "start_access": [
+        530,
+        500
+      ],
+      "start_id": 1,
+      "straight_distance_world": 5173.248495867949,
+      "target": [
+        250.0,
+        65.0
+      ],
+      "target_access": [
+        256,
+        68
+      ],
+      "target_id": 35,
+      "target_type": "OreNode",
+      "world_distance": 7080.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 776,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 1,
+      "start_access": [
+        530,
+        500
+      ],
+      "start_id": 1,
+      "straight_distance_world": 4634.921790062914,
+      "target": [
+        370.0,
+        65.0
+      ],
+      "target_access": [
+        364,
+        68
+      ],
+      "target_id": 36,
+      "target_type": "OreNode",
+      "world_distance": 7760.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 643,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 1,
+      "start_access": [
+        530,
+        500
+      ],
+      "start_id": 1,
+      "straight_distance_world": 4622.769732530488,
+      "target": [
+        240.0,
+        140.0
+      ],
+      "target_access": [
+        246,
+        143
+      ],
+      "target_id": 41,
+      "target_type": "OreNode",
+      "world_distance": 6430.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 691,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 1,
+      "start_access": [
+        530,
+        500
+      ],
+      "start_id": 1,
+      "straight_distance_world": 3981.205847478877,
+      "target": [
+        360.0,
+        140.0
+      ],
+      "target_access": [
+        354,
+        143
+      ],
+      "target_id": 42,
+      "target_type": "OreNode",
+      "world_distance": 6910.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 601,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 1,
+      "start_access": [
+        530,
+        500
+      ],
+      "start_id": 1,
+      "straight_distance_world": 4972.926703662542,
+      "target": [
+        50.0,
+        370.0
+      ],
+      "target_access": [
+        56,
+        373
+      ],
+      "target_id": 47,
+      "target_type": "OreNode",
+      "world_distance": 6010.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 481,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 1,
+      "start_access": [
+        530,
+        500
+      ],
+      "start_id": 1,
+      "straight_distance_world": 3827.5318418009274,
+      "target": [
+        170.0,
+        370.0
+      ],
+      "target_access": [
+        176,
+        373
+      ],
+      "target_id": 48,
+      "target_type": "OreNode",
+      "world_distance": 4810.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 171,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 1,
+      "start_access": [
+        530,
+        500
+      ],
+      "start_id": 1,
+      "straight_distance_world": 1456.0219778561036,
+      "target": [
+        570.0,
+        360.0
+      ],
+      "target_access": [
+        564,
+        363
+      ],
+      "target_id": 51,
+      "target_type": "OreNode",
+      "world_distance": 1710.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 331,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 1,
+      "start_access": [
+        530,
+        500
+      ],
+      "start_id": 1,
+      "straight_distance_world": 2404.163056034262,
+      "target": [
+        700.0,
+        330.0
+      ],
+      "target_access": [
+        694,
+        333
+      ],
+      "target_id": 52,
+      "target_type": "OreNode",
+      "world_distance": 3310.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 311,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 1,
+      "start_access": [
+        530,
+        500
+      ],
+      "start_id": 1,
+      "straight_distance_world": 2828.42712474619,
+      "target": [
+        570.0,
+        220.0
+      ],
+      "target_access": [
+        564,
+        223
+      ],
+      "target_id": 53,
+      "target_type": "OreNode",
+      "world_distance": 3110.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 511,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 1,
+      "start_access": [
+        530,
+        500
+      ],
+      "start_id": 1,
+      "straight_distance_world": 3847.076812334269,
+      "target": [
+        710.0,
+        160.0
+      ],
+      "target_access": [
+        704,
+        163
+      ],
+      "target_id": 54,
+      "target_type": "OreNode",
+      "world_distance": 5110.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 451,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 1,
+      "start_access": [
+        530,
+        500
+      ],
+      "start_id": 1,
+      "straight_distance_world": 3962.3225512317895,
+      "target": [
+        600.0,
+        110.0
+      ],
+      "target_access": [
+        594,
+        113
+      ],
+      "target_id": 55,
+      "target_type": "OreNode",
+      "world_distance": 4510.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 251,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 1,
+      "start_access": [
+        530,
+        500
+      ],
+      "start_id": 1,
+      "straight_distance_world": 2236.06797749979,
+      "target": [
+        310.0,
+        540.0
+      ],
+      "target_access": [
+        313,
+        534
+      ],
+      "target_id": 56,
+      "target_type": "OreNode",
+      "world_distance": 2510.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 616,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 1,
+      "start_access": [
+        530,
+        500
+      ],
+      "start_id": 1,
+      "straight_distance_world": 4746.841054849003,
+      "target": [
+        95.0,
+        690.0
+      ],
+      "target_access": [
+        98,
+        684
+      ],
+      "target_id": 57,
+      "target_type": "OreNode",
+      "world_distance": 6160.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 421,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 1,
+      "start_access": [
+        530,
+        500
+      ],
+      "start_id": 1,
+      "straight_distance_world": 3061.0455730027934,
+      "target": [
+        290.0,
+        690.0
+      ],
+      "target_access": [
+        293,
+        684
+      ],
+      "target_id": 58,
+      "target_type": "OreNode",
+      "world_distance": 4210.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 89,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 1,
+      "start_access": [
+        530,
+        500
+      ],
+      "start_id": 1,
+      "straight_distance_world": 790.5694150420949,
+      "target": [
+        555.0,
+        575.0
+      ],
+      "target_access": [
+        550,
+        569
+      ],
+      "target_id": 59,
+      "target_type": "OilDerrick",
+      "world_distance": 890.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 279,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 1,
+      "start_access": [
+        530,
+        500
+      ],
+      "start_id": 1,
+      "straight_distance_world": 2277.05950734714,
+      "target": [
+        745.0,
+        575.0
+      ],
+      "target_access": [
+        740,
+        569
+      ],
+      "target_id": 60,
+      "target_type": "OilDerrick",
+      "world_distance": 2790.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 701,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 1,
+      "start_access": [
+        530,
+        500
+      ],
+      "start_id": 1,
+      "straight_distance_world": 5080.354318352215,
+      "target": [
+        230.0,
+        90.0
+      ],
+      "target_access": [
+        236,
+        95
+      ],
+      "target_id": 61,
+      "target_type": "OilDerrick",
+      "world_distance": 7010.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 671,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 1,
+      "start_access": [
+        530,
+        500
+      ],
+      "start_id": 1,
+      "straight_distance_world": 5102.205405508485,
+      "target": [
+        65.0,
+        290.0
+      ],
+      "target_access": [
+        72,
+        287
+      ],
+      "target_id": 62,
+      "target_type": "OilDerrick",
+      "world_distance": 6710.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 279,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 1,
+      "start_access": [
+        530,
+        500
+      ],
+      "start_id": 1,
+      "straight_distance_world": 2308.679276123039,
+      "target": [
+        600.0,
+        280.0
+      ],
+      "target_access": [
+        594,
+        285
+      ],
+      "target_id": 63,
+      "target_type": "OilDerrick",
+      "world_distance": 2790.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 319,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 1,
+      "start_access": [
+        530,
+        500
+      ],
+      "start_id": 1,
+      "straight_distance_world": 2507.9872407968905,
+      "target": [
+        300.0,
+        600.0
+      ],
+      "target_access": [
+        305,
+        594
+      ],
+      "target_id": 64,
+      "target_type": "OilDerrick",
+      "world_distance": 3190.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 103,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 1,
+      "start_access": [
+        530,
+        500
+      ],
+      "start_id": 1,
+      "straight_distance_world": 873.2124598286491,
+      "target": [
+        495.0,
+        420.0
+      ],
+      "target_access": [
+        503,
+        424
+      ],
+      "target_id": 65,
+      "target_type": "HospitalTechStructure",
+      "world_distance": 1030.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 698,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 1,
+      "start_access": [
+        530,
+        500
+      ],
+      "start_id": 1,
+      "straight_distance_world": 5277.309920783505,
+      "target": [
+        60.0,
+        260.0
+      ],
+      "target_access": [
+        68,
+        264
+      ],
+      "target_id": 66,
+      "target_type": "HospitalTechStructure",
+      "world_distance": 6980.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 173,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 1,
+      "start_access": [
+        530,
+        500
+      ],
+      "start_id": 1,
+      "straight_distance_world": 1308.6252328302403,
+      "target": [
+        620.0,
+        405.0
+      ],
+      "target_access": [
+        612,
+        409
+      ],
+      "target_id": 67,
+      "target_type": "VeterancyTechStructure",
+      "world_distance": 1730.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 438,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 1,
+      "start_access": [
+        530,
+        500
+      ],
+      "start_id": 1,
+      "straight_distance_world": 3511.4099732158875,
+      "target": [
+        200.0,
+        380.0
+      ],
+      "target_access": [
+        208,
+        384
+      ],
+      "target_id": 68,
+      "target_type": "VeterancyTechStructure",
+      "world_distance": 4380.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 278,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 1,
+      "start_access": [
+        530,
+        500
+      ],
+      "start_id": 1,
+      "straight_distance_world": 2342.0076857260738,
+      "target": [
+        465.0,
+        275.0
+      ],
+      "target_access": [
+        473,
+        279
+      ],
+      "target_id": 69,
+      "target_type": "ObservationPostTechStructure",
+      "world_distance": 2780.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 193,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 1,
+      "start_access": [
+        530,
+        500
+      ],
+      "start_id": 1,
+      "straight_distance_world": 1817.2781845386248,
+      "target": [
+        350.0,
+        525.0
+      ],
+      "target_access": [
+        354,
+        517
+      ],
+      "target_id": 70,
+      "target_type": "ObservationPostTechStructure",
+      "world_distance": 1930.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 248,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 1,
+      "start_access": [
+        530,
+        500
+      ],
+      "start_id": 1,
+      "straight_distance_world": 1969.771560359221,
+      "target": [
+        610.0,
+        680.0
+      ],
+      "target_access": [
+        606,
+        672
+      ],
+      "target_id": 71,
+      "target_type": "GarageTechStructure",
+      "world_distance": 2480.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 388,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 1,
+      "start_access": [
+        530,
+        500
+      ],
+      "start_id": 1,
+      "straight_distance_world": 2831.960451701259,
+      "target": [
+        320.0,
+        310.0
+      ],
+      "target_access": [
+        328,
+        314
+      ],
+      "target_id": 72,
+      "target_type": "GarageTechStructure",
+      "world_distance": 3880.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 251,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 2,
+      "start_access": [
+        720,
+        500
+      ],
+      "start_id": 7,
+      "straight_distance_world": 2500.0,
+      "target": [
+        470.0,
+        500.0
+      ],
+      "target_access": [
+        474,
+        495
+      ],
+      "target_id": 5,
+      "target_type": "OreNode",
+      "world_distance": 2510.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 131,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 2,
+      "start_access": [
+        720,
+        500
+      ],
+      "start_id": 7,
+      "straight_distance_world": 1300.0,
+      "target": [
+        590.0,
+        500.0
+      ],
+      "target_access": [
+        594,
+        495
+      ],
+      "target_id": 6,
+      "target_type": "OreNode",
+      "world_distance": 1310.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 53,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 2,
+      "start_access": [
+        720,
+        500
+      ],
+      "start_id": 7,
+      "straight_distance_world": 600.0,
+      "target": [
+        660.0,
+        500.0
+      ],
+      "target_access": [
+        667,
+        500
+      ],
+      "target_id": 11,
+      "target_type": "OreNode",
+      "world_distance": 530.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 53,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 2,
+      "start_access": [
+        720,
+        500
+      ],
+      "start_id": 7,
+      "straight_distance_world": 600.0,
+      "target": [
+        780.0,
+        500.0
+      ],
+      "target_access": [
+        773,
+        500
+      ],
+      "target_id": 12,
+      "target_type": "OreNode",
+      "world_distance": 530.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 361,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 2,
+      "start_access": [
+        720,
+        500
+      ],
+      "start_id": 7,
+      "straight_distance_world": 2729.468812791236,
+      "target": [
+        480.0,
+        630.0
+      ],
+      "target_access": [
+        483,
+        624
+      ],
+      "target_id": 17,
+      "target_type": "OreNode",
+      "world_distance": 3610.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 241,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 2,
+      "start_access": [
+        720,
+        500
+      ],
+      "start_id": 7,
+      "straight_distance_world": 1769.1806012954132,
+      "target": [
+        600.0,
+        630.0
+      ],
+      "target_access": [
+        603,
+        624
+      ],
+      "target_id": 18,
+      "target_type": "OreNode",
+      "world_distance": 2410.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 201,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 2,
+      "start_access": [
+        720,
+        500
+      ],
+      "start_id": 7,
+      "straight_distance_world": 1615.5494421403512,
+      "target": [
+        660.0,
+        650.0
+      ],
+      "target_access": [
+        663,
+        644
+      ],
+      "target_id": 23,
+      "target_type": "OreNode",
+      "world_distance": 2010.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 201,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 2,
+      "start_access": [
+        720,
+        500
+      ],
+      "start_id": 7,
+      "straight_distance_world": 1615.5494421403512,
+      "target": [
+        780.0,
+        650.0
+      ],
+      "target_access": [
+        777,
+        644
+      ],
+      "target_id": 24,
+      "target_type": "OreNode",
+      "world_distance": 2010.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 1096,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 2,
+      "start_access": [
+        720,
+        500
+      ],
+      "start_id": 7,
+      "straight_distance_world": 7988.272654335228,
+      "target": [
+        50.0,
+        65.0
+      ],
+      "target_access": [
+        56,
+        68
+      ],
+      "target_id": 29,
+      "target_type": "OreNode",
+      "world_distance": 10960.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 976,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 2,
+      "start_access": [
+        720,
+        500
+      ],
+      "start_id": 7,
+      "straight_distance_world": 7012.310603502957,
+      "target": [
+        170.0,
+        65.0
+      ],
+      "target_access": [
+        176,
+        68
+      ],
+      "target_id": 30,
+      "target_type": "OreNode",
+      "world_distance": 9760.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 898,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 2,
+      "start_access": [
+        720,
+        500
+      ],
+      "start_id": 7,
+      "straight_distance_world": 6404.100249059192,
+      "target": [
+        250.0,
+        65.0
+      ],
+      "target_access": [
+        256,
+        68
+      ],
+      "target_id": 35,
+      "target_type": "OreNode",
+      "world_distance": 8980.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 966,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 2,
+      "start_access": [
+        720,
+        500
+      ],
+      "start_id": 7,
+      "straight_distance_world": 5583.233829959122,
+      "target": [
+        370.0,
+        65.0
+      ],
+      "target_access": [
+        364,
+        68
+      ],
+      "target_id": 36,
+      "target_type": "OreNode",
+      "world_distance": 9660.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 833,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 2,
+      "start_access": [
+        720,
+        500
+      ],
+      "start_id": 7,
+      "straight_distance_world": 6000.0,
+      "target": [
+        240.0,
+        140.0
+      ],
+      "target_access": [
+        246,
+        143
+      ],
+      "target_id": 41,
+      "target_type": "OreNode",
+      "world_distance": 8330.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 881,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 2,
+      "start_access": [
+        720,
+        500
+      ],
+      "start_id": 7,
+      "straight_distance_world": 5091.168824543142,
+      "target": [
+        360.0,
+        140.0
+      ],
+      "target_access": [
+        354,
+        143
+      ],
+      "target_id": 42,
+      "target_type": "OreNode",
+      "world_distance": 8810.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 791,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 2,
+      "start_access": [
+        720,
+        500
+      ],
+      "start_id": 7,
+      "straight_distance_world": 6824.954212300622,
+      "target": [
+        50.0,
+        370.0
+      ],
+      "target_access": [
+        56,
+        373
+      ],
+      "target_id": 47,
+      "target_type": "OreNode",
+      "world_distance": 7910.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 671,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 2,
+      "start_access": [
+        720,
+        500
+      ],
+      "start_id": 7,
+      "straight_distance_world": 5651.548460377917,
+      "target": [
+        170.0,
+        370.0
+      ],
+      "target_access": [
+        176,
+        373
+      ],
+      "target_id": 48,
+      "target_type": "OreNode",
+      "world_distance": 6710.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 281,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 2,
+      "start_access": [
+        720,
+        500
+      ],
+      "start_id": 7,
+      "straight_distance_world": 2051.828452868319,
+      "target": [
+        570.0,
+        360.0
+      ],
+      "target_access": [
+        576,
+        363
+      ],
+      "target_id": 51,
+      "target_type": "OreNode",
+      "world_distance": 2810.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 181,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 2,
+      "start_access": [
+        720,
+        500
+      ],
+      "start_id": 7,
+      "straight_distance_world": 1711.724276862369,
+      "target": [
+        700.0,
+        330.0
+      ],
+      "target_access": [
+        706,
+        333
+      ],
+      "target_id": 52,
+      "target_type": "OreNode",
+      "world_distance": 1810.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 421,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 2,
+      "start_access": [
+        720,
+        500
+      ],
+      "start_id": 7,
+      "straight_distance_world": 3176.476034853718,
+      "target": [
+        570.0,
+        220.0
+      ],
+      "target_access": [
+        576,
+        223
+      ],
+      "target_id": 53,
+      "target_type": "OreNode",
+      "world_distance": 4210.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 341,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 2,
+      "start_access": [
+        720,
+        500
+      ],
+      "start_id": 7,
+      "straight_distance_world": 3401.4702703389894,
+      "target": [
+        710.0,
+        160.0
+      ],
+      "target_access": [
+        716,
+        163
+      ],
+      "target_id": 54,
+      "target_type": "OreNode",
+      "world_distance": 3410.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 501,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 2,
+      "start_access": [
+        720,
+        500
+      ],
+      "start_id": 7,
+      "straight_distance_world": 4080.441152620633,
+      "target": [
+        600.0,
+        110.0
+      ],
+      "target_access": [
+        606,
+        113
+      ],
+      "target_id": 55,
+      "target_type": "OreNode",
+      "world_distance": 5010.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 441,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 2,
+      "start_access": [
+        720,
+        500
+      ],
+      "start_id": 7,
+      "straight_distance_world": 4119.465984809196,
+      "target": [
+        310.0,
+        540.0
+      ],
+      "target_access": [
+        313,
+        534
+      ],
+      "target_id": 56,
+      "target_type": "OreNode",
+      "world_distance": 4410.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 806,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 2,
+      "start_access": [
+        720,
+        500
+      ],
+      "start_id": 7,
+      "straight_distance_world": 6532.419153728579,
+      "target": [
+        95.0,
+        690.0
+      ],
+      "target_access": [
+        98,
+        684
+      ],
+      "target_id": 57,
+      "target_type": "OreNode",
+      "world_distance": 8060.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 611,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 2,
+      "start_access": [
+        720,
+        500
+      ],
+      "start_id": 7,
+      "straight_distance_world": 4701.063709417263,
+      "target": [
+        290.0,
+        690.0
+      ],
+      "target_access": [
+        293,
+        684
+      ],
+      "target_id": 58,
+      "target_type": "OreNode",
+      "world_distance": 6110.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 229,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 2,
+      "start_access": [
+        720,
+        500
+      ],
+      "start_id": 7,
+      "straight_distance_world": 1812.4568960391857,
+      "target": [
+        555.0,
+        575.0
+      ],
+      "target_access": [
+        560,
+        569
+      ],
+      "target_id": 59,
+      "target_type": "OilDerrick",
+      "world_distance": 2290.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 89,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 2,
+      "start_access": [
+        720,
+        500
+      ],
+      "start_id": 7,
+      "straight_distance_world": 790.5694150420949,
+      "target": [
+        745.0,
+        575.0
+      ],
+      "target_access": [
+        740,
+        569
+      ],
+      "target_id": 60,
+      "target_type": "OilDerrick",
+      "world_distance": 890.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 891,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 2,
+      "start_access": [
+        720,
+        500
+      ],
+      "start_id": 7,
+      "straight_distance_world": 6389.0531379853155,
+      "target": [
+        230.0,
+        90.0
+      ],
+      "target_access": [
+        236,
+        95
+      ],
+      "target_id": 61,
+      "target_type": "OilDerrick",
+      "world_distance": 8910.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 861,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 2,
+      "start_access": [
+        720,
+        500
+      ],
+      "start_id": 7,
+      "straight_distance_world": 6878.408246098802,
+      "target": [
+        65.0,
+        290.0
+      ],
+      "target_access": [
+        72,
+        287
+      ],
+      "target_id": 62,
+      "target_type": "OilDerrick",
+      "world_distance": 8610.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 329,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 2,
+      "start_access": [
+        720,
+        500
+      ],
+      "start_id": 7,
+      "straight_distance_world": 2505.9928172283335,
+      "target": [
+        600.0,
+        280.0
+      ],
+      "target_access": [
+        606,
+        285
+      ],
+      "target_id": 63,
+      "target_type": "OilDerrick",
+      "world_distance": 3290.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 509,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 2,
+      "start_access": [
+        720,
+        500
+      ],
+      "start_id": 7,
+      "straight_distance_world": 4317.4066289845805,
+      "target": [
+        300.0,
+        600.0
+      ],
+      "target_access": [
+        305,
+        594
+      ],
+      "target_id": 64,
+      "target_type": "OilDerrick",
+      "world_distance": 5090.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 293,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 2,
+      "start_access": [
+        720,
+        500
+      ],
+      "start_id": 7,
+      "straight_distance_world": 2387.9907872519107,
+      "target": [
+        495.0,
+        420.0
+      ],
+      "target_access": [
+        503,
+        424
+      ],
+      "target_id": 65,
+      "target_type": "HospitalTechStructure",
+      "world_distance": 2930.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 888,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 2,
+      "start_access": [
+        720,
+        500
+      ],
+      "start_id": 7,
+      "straight_distance_world": 7022.819946431775,
+      "target": [
+        60.0,
+        260.0
+      ],
+      "target_access": [
+        68,
+        264
+      ],
+      "target_id": 66,
+      "target_type": "HospitalTechStructure",
+      "world_distance": 8880.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 183,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 2,
+      "start_access": [
+        720,
+        500
+      ],
+      "start_id": 7,
+      "straight_distance_world": 1379.3114224133724,
+      "target": [
+        620.0,
+        405.0
+      ],
+      "target_access": [
+        628,
+        409
+      ],
+      "target_id": 67,
+      "target_type": "VeterancyTechStructure",
+      "world_distance": 1830.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 628,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 2,
+      "start_access": [
+        720,
+        500
+      ],
+      "start_id": 7,
+      "straight_distance_world": 5336.665625650534,
+      "target": [
+        200.0,
+        380.0
+      ],
+      "target_access": [
+        208,
+        384
+      ],
+      "target_id": 68,
+      "target_type": "VeterancyTechStructure",
+      "world_distance": 6280.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 468,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 2,
+      "start_access": [
+        720,
+        500
+      ],
+      "start_id": 7,
+      "straight_distance_world": 3400.73521462639,
+      "target": [
+        465.0,
+        275.0
+      ],
+      "target_access": [
+        473,
+        279
+      ],
+      "target_id": 69,
+      "target_type": "ObservationPostTechStructure",
+      "world_distance": 4680.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 383,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 2,
+      "start_access": [
+        720,
+        500
+      ],
+      "start_id": 7,
+      "straight_distance_world": 3708.4363281577316,
+      "target": [
+        350.0,
+        525.0
+      ],
+      "target_access": [
+        354,
+        517
+      ],
+      "target_id": 70,
+      "target_type": "ObservationPostTechStructure",
+      "world_distance": 3830.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 278,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 2,
+      "start_access": [
+        720,
+        500
+      ],
+      "start_id": 7,
+      "straight_distance_world": 2109.5023109728986,
+      "target": [
+        610.0,
+        680.0
+      ],
+      "target_access": [
+        614,
+        672
+      ],
+      "target_id": 71,
+      "target_type": "GarageTechStructure",
+      "world_distance": 2780.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 578,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 2,
+      "start_access": [
+        720,
+        500
+      ],
+      "start_id": 7,
+      "straight_distance_world": 4428.317965096905,
+      "target": [
+        320.0,
+        310.0
+      ],
+      "target_access": [
+        328,
+        314
+      ],
+      "target_id": 72,
+      "target_type": "GarageTechStructure",
+      "world_distance": 5780.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 191,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 3,
+      "start_access": [
+        540,
+        630
+      ],
+      "start_id": 13,
+      "straight_distance_world": 1476.48230602334,
+      "target": [
+        470.0,
+        500.0
+      ],
+      "target_access": [
+        476,
+        503
+      ],
+      "target_id": 5,
+      "target_type": "OreNode",
+      "world_distance": 1910.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 171,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 3,
+      "start_access": [
+        540,
+        630
+      ],
+      "start_id": 13,
+      "straight_distance_world": 1392.8388277184122,
+      "target": [
+        590.0,
+        500.0
+      ],
+      "target_access": [
+        584,
+        503
+      ],
+      "target_id": 6,
+      "target_type": "OreNode",
+      "world_distance": 1710.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 241,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 3,
+      "start_access": [
+        540,
+        630
+      ],
+      "start_id": 13,
+      "straight_distance_world": 1769.1806012954132,
+      "target": [
+        660.0,
+        500.0
+      ],
+      "target_access": [
+        654,
+        503
+      ],
+      "target_id": 11,
+      "target_type": "OreNode",
+      "world_distance": 2410.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 361,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 3,
+      "start_access": [
+        540,
+        630
+      ],
+      "start_id": 13,
+      "straight_distance_world": 2729.468812791236,
+      "target": [
+        780.0,
+        500.0
+      ],
+      "target_access": [
+        774,
+        503
+      ],
+      "target_id": 12,
+      "target_type": "OreNode",
+      "world_distance": 3610.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 53,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 3,
+      "start_access": [
+        540,
+        630
+      ],
+      "start_id": 13,
+      "straight_distance_world": 600.0,
+      "target": [
+        480.0,
+        630.0
+      ],
+      "target_access": [
+        487,
+        630
+      ],
+      "target_id": 17,
+      "target_type": "OreNode",
+      "world_distance": 530.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 53,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 3,
+      "start_access": [
+        540,
+        630
+      ],
+      "start_id": 13,
+      "straight_distance_world": 600.0,
+      "target": [
+        600.0,
+        630.0
+      ],
+      "target_access": [
+        593,
+        630
+      ],
+      "target_id": 18,
+      "target_type": "OreNode",
+      "world_distance": 530.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 131,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 3,
+      "start_access": [
+        540,
+        630
+      ],
+      "start_id": 13,
+      "straight_distance_world": 1216.552506059644,
+      "target": [
+        660.0,
+        650.0
+      ],
+      "target_access": [
+        657,
+        644
+      ],
+      "target_id": 23,
+      "target_type": "OreNode",
+      "world_distance": 1310.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 251,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 3,
+      "start_access": [
+        540,
+        630
+      ],
+      "start_id": 13,
+      "straight_distance_world": 2408.318915758459,
+      "target": [
+        780.0,
+        650.0
+      ],
+      "target_access": [
+        777,
+        644
+      ],
+      "target_id": 24,
+      "target_type": "OreNode",
+      "world_distance": 2510.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 1046,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 3,
+      "start_access": [
+        540,
+        630
+      ],
+      "start_id": 13,
+      "straight_distance_world": 7478.803380220662,
+      "target": [
+        50.0,
+        65.0
+      ],
+      "target_access": [
+        56,
+        68
+      ],
+      "target_id": 29,
+      "target_type": "OreNode",
+      "world_distance": 10460.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 926,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 3,
+      "start_access": [
+        540,
+        630
+      ],
+      "start_id": 13,
+      "straight_distance_world": 6753.702688155587,
+      "target": [
+        170.0,
+        65.0
+      ],
+      "target_access": [
+        176,
+        68
+      ],
+      "target_id": 30,
+      "target_type": "OreNode",
+      "world_distance": 9260.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 848,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 3,
+      "start_access": [
+        540,
+        630
+      ],
+      "start_id": 13,
+      "straight_distance_world": 6350.787352761861,
+      "target": [
+        250.0,
+        65.0
+      ],
+      "target_access": [
+        256,
+        68
+      ],
+      "target_id": 35,
+      "target_type": "OreNode",
+      "world_distance": 8480.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 916,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 3,
+      "start_access": [
+        540,
+        630
+      ],
+      "start_id": 13,
+      "straight_distance_world": 5900.211860602973,
+      "target": [
+        370.0,
+        65.0
+      ],
+      "target_access": [
+        364,
+        68
+      ],
+      "target_id": 36,
+      "target_type": "OreNode",
+      "world_distance": 9160.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 783,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 3,
+      "start_access": [
+        540,
+        630
+      ],
+      "start_id": 13,
+      "straight_distance_world": 5745.43296888929,
+      "target": [
+        240.0,
+        140.0
+      ],
+      "target_access": [
+        246,
+        143
+      ],
+      "target_id": 41,
+      "target_type": "OreNode",
+      "world_distance": 7830.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 831,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 3,
+      "start_access": [
+        540,
+        630
+      ],
+      "start_id": 13,
+      "straight_distance_world": 5220.153254455276,
+      "target": [
+        360.0,
+        140.0
+      ],
+      "target_access": [
+        354,
+        143
+      ],
+      "target_id": 42,
+      "target_type": "OreNode",
+      "world_distance": 8310.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 741,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 3,
+      "start_access": [
+        540,
+        630
+      ],
+      "start_id": 13,
+      "straight_distance_world": 5547.071299343465,
+      "target": [
+        50.0,
+        370.0
+      ],
+      "target_access": [
+        56,
+        373
+      ],
+      "target_id": 47,
+      "target_type": "OreNode",
+      "world_distance": 7410.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 621,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 3,
+      "start_access": [
+        540,
+        630
+      ],
+      "start_id": 13,
+      "straight_distance_world": 4522.167621838005,
+      "target": [
+        170.0,
+        370.0
+      ],
+      "target_access": [
+        176,
+        373
+      ],
+      "target_id": 48,
+      "target_type": "OreNode",
+      "world_distance": 6210.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 291,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 3,
+      "start_access": [
+        540,
+        630
+      ],
+      "start_id": 13,
+      "straight_distance_world": 2716.6155414412247,
+      "target": [
+        570.0,
+        360.0
+      ],
+      "target_access": [
+        564,
+        363
+      ],
+      "target_id": 51,
+      "target_type": "OreNode",
+      "world_distance": 2910.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 451,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 3,
+      "start_access": [
+        540,
+        630
+      ],
+      "start_id": 13,
+      "straight_distance_world": 3400.0,
+      "target": [
+        700.0,
+        330.0
+      ],
+      "target_access": [
+        694,
+        333
+      ],
+      "target_id": 52,
+      "target_type": "OreNode",
+      "world_distance": 4510.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 431,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 3,
+      "start_access": [
+        540,
+        630
+      ],
+      "start_id": 13,
+      "straight_distance_world": 4110.960958218893,
+      "target": [
+        570.0,
+        220.0
+      ],
+      "target_access": [
+        564,
+        223
+      ],
+      "target_id": 53,
+      "target_type": "OreNode",
+      "world_distance": 4310.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 631,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 3,
+      "start_access": [
+        540,
+        630
+      ],
+      "start_id": 13,
+      "straight_distance_world": 4997.99959983992,
+      "target": [
+        710.0,
+        160.0
+      ],
+      "target_access": [
+        704,
+        163
+      ],
+      "target_id": 54,
+      "target_type": "OreNode",
+      "world_distance": 6310.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 571,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 3,
+      "start_access": [
+        540,
+        630
+      ],
+      "start_id": 13,
+      "straight_distance_world": 5234.500931320961,
+      "target": [
+        600.0,
+        110.0
+      ],
+      "target_access": [
+        594,
+        113
+      ],
+      "target_id": 55,
+      "target_type": "OreNode",
+      "world_distance": 5710.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 311,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 3,
+      "start_access": [
+        540,
+        630
+      ],
+      "start_id": 13,
+      "straight_distance_world": 2469.817807045694,
+      "target": [
+        310.0,
+        540.0
+      ],
+      "target_access": [
+        316,
+        543
+      ],
+      "target_id": 56,
+      "target_type": "OreNode",
+      "world_distance": 3110.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 552,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 3,
+      "start_access": [
+        540,
+        630
+      ],
+      "start_id": 13,
+      "straight_distance_world": 4490.267252625394,
+      "target": [
+        95.0,
+        690.0
+      ],
+      "target_access": [
+        98,
+        684
+      ],
+      "target_id": 57,
+      "target_type": "OreNode",
+      "world_distance": 5520.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 357,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 3,
+      "start_access": [
+        540,
+        630
+      ],
+      "start_id": 13,
+      "straight_distance_world": 2570.9920264364882,
+      "target": [
+        290.0,
+        690.0
+      ],
+      "target_access": [
+        293,
+        684
+      ],
+      "target_id": 58,
+      "target_type": "OreNode",
+      "world_distance": 3570.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 59,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 3,
+      "start_access": [
+        540,
+        630
+      ],
+      "start_id": 13,
+      "straight_distance_world": 570.087712549569,
+      "target": [
+        555.0,
+        575.0
+      ],
+      "target_access": [
+        549,
+        580
+      ],
+      "target_id": 59,
+      "target_type": "OilDerrick",
+      "world_distance": 590.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 249,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 3,
+      "start_access": [
+        540,
+        630
+      ],
+      "start_id": 13,
+      "straight_distance_world": 2122.4985276791126,
+      "target": [
+        745.0,
+        575.0
+      ],
+      "target_access": [
+        739,
+        580
+      ],
+      "target_id": 60,
+      "target_type": "OilDerrick",
+      "world_distance": 2490.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 841,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 3,
+      "start_access": [
+        540,
+        630
+      ],
+      "start_id": 13,
+      "straight_distance_world": 6226.556030423239,
+      "target": [
+        230.0,
+        90.0
+      ],
+      "target_access": [
+        236,
+        95
+      ],
+      "target_id": 61,
+      "target_type": "OilDerrick",
+      "world_distance": 8410.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 811,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 3,
+      "start_access": [
+        540,
+        630
+      ],
+      "start_id": 13,
+      "straight_distance_world": 5841.446738608511,
+      "target": [
+        65.0,
+        290.0
+      ],
+      "target_access": [
+        72,
+        287
+      ],
+      "target_id": 62,
+      "target_type": "OilDerrick",
+      "world_distance": 8110.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 399,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 3,
+      "start_access": [
+        540,
+        630
+      ],
+      "start_id": 13,
+      "straight_distance_world": 3551.0561809129404,
+      "target": [
+        600.0,
+        280.0
+      ],
+      "target_access": [
+        594,
+        285
+      ],
+      "target_id": 63,
+      "target_type": "OilDerrick",
+      "world_distance": 3990.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 261,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 3,
+      "start_access": [
+        540,
+        630
+      ],
+      "start_id": 13,
+      "straight_distance_world": 2418.677324489565,
+      "target": [
+        300.0,
+        600.0
+      ],
+      "target_access": [
+        307,
+        602
+      ],
+      "target_id": 64,
+      "target_type": "OilDerrick",
+      "world_distance": 2610.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 243,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 3,
+      "start_access": [
+        540,
+        630
+      ],
+      "start_id": 13,
+      "straight_distance_world": 2147.6731594914527,
+      "target": [
+        495.0,
+        420.0
+      ],
+      "target_access": [
+        503,
+        424
+      ],
+      "target_id": 65,
+      "target_type": "HospitalTechStructure",
+      "world_distance": 2430.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 838,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 3,
+      "start_access": [
+        540,
+        630
+      ],
+      "start_id": 13,
+      "straight_distance_world": 6060.528029800704,
+      "target": [
+        60.0,
+        260.0
+      ],
+      "target_access": [
+        68,
+        264
+      ],
+      "target_id": 66,
+      "target_type": "HospitalTechStructure",
+      "world_distance": 8380.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 293,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 3,
+      "start_access": [
+        540,
+        630
+      ],
+      "start_id": 13,
+      "straight_distance_world": 2387.9907872519107,
+      "target": [
+        620.0,
+        405.0
+      ],
+      "target_access": [
+        612,
+        409
+      ],
+      "target_id": 67,
+      "target_type": "VeterancyTechStructure",
+      "world_distance": 2930.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 578,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 3,
+      "start_access": [
+        540,
+        630
+      ],
+      "start_id": 13,
+      "straight_distance_world": 4220.189569201839,
+      "target": [
+        200.0,
+        380.0
+      ],
+      "target_access": [
+        208,
+        384
+      ],
+      "target_id": 68,
+      "target_type": "VeterancyTechStructure",
+      "world_distance": 5780.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 418,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 3,
+      "start_access": [
+        540,
+        630
+      ],
+      "start_id": 13,
+      "straight_distance_world": 3628.3605113053472,
+      "target": [
+        465.0,
+        275.0
+      ],
+      "target_access": [
+        473,
+        279
+      ],
+      "target_id": 69,
+      "target_type": "ObservationPostTechStructure",
+      "world_distance": 4180.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 283,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 3,
+      "start_access": [
+        540,
+        630
+      ],
+      "start_id": 13,
+      "straight_distance_world": 2170.829334609241,
+      "target": [
+        350.0,
+        525.0
+      ],
+      "target_access": [
+        358,
+        529
+      ],
+      "target_id": 70,
+      "target_type": "ObservationPostTechStructure",
+      "world_distance": 2830.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 108,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 3,
+      "start_access": [
+        540,
+        630
+      ],
+      "start_id": 13,
+      "straight_distance_world": 860.2325267042627,
+      "target": [
+        610.0,
+        680.0
+      ],
+      "target_access": [
+        606,
+        672
+      ],
+      "target_id": 71,
+      "target_type": "GarageTechStructure",
+      "world_distance": 1080.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 528,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 3,
+      "start_access": [
+        540,
+        630
+      ],
+      "start_id": 13,
+      "straight_distance_world": 3883.29756778952,
+      "target": [
+        320.0,
+        310.0
+      ],
+      "target_access": [
+        328,
+        314
+      ],
+      "target_id": 72,
+      "target_type": "GarageTechStructure",
+      "world_distance": 5280.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 391,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 4,
+      "start_access": [
+        720,
+        650
+      ],
+      "start_id": 19,
+      "straight_distance_world": 2915.4759474226503,
+      "target": [
+        470.0,
+        500.0
+      ],
+      "target_access": [
+        476,
+        503
+      ],
+      "target_id": 5,
+      "target_type": "OreNode",
+      "world_distance": 3910.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 271,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 4,
+      "start_access": [
+        720,
+        650
+      ],
+      "start_id": 19,
+      "straight_distance_world": 1984.943324127921,
+      "target": [
+        590.0,
+        500.0
+      ],
+      "target_access": [
+        596,
+        503
+      ],
+      "target_id": 6,
+      "target_type": "OreNode",
+      "world_distance": 2710.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 201,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 4,
+      "start_access": [
+        720,
+        650
+      ],
+      "start_id": 19,
+      "straight_distance_world": 1615.5494421403512,
+      "target": [
+        660.0,
+        500.0
+      ],
+      "target_access": [
+        666,
+        503
+      ],
+      "target_id": 11,
+      "target_type": "OreNode",
+      "world_distance": 2010.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 201,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 4,
+      "start_access": [
+        720,
+        650
+      ],
+      "start_id": 19,
+      "straight_distance_world": 1615.5494421403512,
+      "target": [
+        780.0,
+        500.0
+      ],
+      "target_access": [
+        774,
+        503
+      ],
+      "target_id": 12,
+      "target_type": "OreNode",
+      "world_distance": 2010.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 251,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 4,
+      "start_access": [
+        720,
+        650
+      ],
+      "start_id": 19,
+      "straight_distance_world": 2408.318915758459,
+      "target": [
+        480.0,
+        630.0
+      ],
+      "target_access": [
+        486,
+        633
+      ],
+      "target_id": 17,
+      "target_type": "OreNode",
+      "world_distance": 2510.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 131,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 4,
+      "start_access": [
+        720,
+        650
+      ],
+      "start_id": 19,
+      "straight_distance_world": 1216.552506059644,
+      "target": [
+        600.0,
+        630.0
+      ],
+      "target_access": [
+        606,
+        633
+      ],
+      "target_id": 18,
+      "target_type": "OreNode",
+      "world_distance": 1310.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 53,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 4,
+      "start_access": [
+        720,
+        650
+      ],
+      "start_id": 19,
+      "straight_distance_world": 600.0,
+      "target": [
+        660.0,
+        650.0
+      ],
+      "target_access": [
+        667,
+        650
+      ],
+      "target_id": 23,
+      "target_type": "OreNode",
+      "world_distance": 530.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 53,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 4,
+      "start_access": [
+        720,
+        650
+      ],
+      "start_id": 19,
+      "straight_distance_world": 600.0,
+      "target": [
+        780.0,
+        650.0
+      ],
+      "target_access": [
+        773,
+        650
+      ],
+      "target_id": 24,
+      "target_type": "OreNode",
+      "world_distance": 530.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 1246,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 4,
+      "start_access": [
+        720,
+        650
+      ],
+      "start_id": 19,
+      "straight_distance_world": 8894.520785292483,
+      "target": [
+        50.0,
+        65.0
+      ],
+      "target_access": [
+        56,
+        68
+      ],
+      "target_id": 29,
+      "target_type": "OreNode",
+      "world_distance": 12460.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 1126,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 4,
+      "start_access": [
+        720,
+        650
+      ],
+      "start_id": 19,
+      "straight_distance_world": 8029.476944359452,
+      "target": [
+        170.0,
+        65.0
+      ],
+      "target_access": [
+        176,
+        68
+      ],
+      "target_id": 30,
+      "target_type": "OreNode",
+      "world_distance": 11260.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 1048,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 4,
+      "start_access": [
+        720,
+        650
+      ],
+      "start_id": 19,
+      "straight_distance_world": 7504.165509901817,
+      "target": [
+        250.0,
+        65.0
+      ],
+      "target_access": [
+        256,
+        68
+      ],
+      "target_id": 35,
+      "target_type": "OreNode",
+      "world_distance": 10480.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 1116,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 4,
+      "start_access": [
+        720,
+        650
+      ],
+      "start_id": 19,
+      "straight_distance_world": 6817.074152449861,
+      "target": [
+        370.0,
+        65.0
+      ],
+      "target_access": [
+        364,
+        68
+      ],
+      "target_id": 36,
+      "target_type": "OreNode",
+      "world_distance": 11160.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 983,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 4,
+      "start_access": [
+        720,
+        650
+      ],
+      "start_id": 19,
+      "straight_distance_world": 7003.5705179572515,
+      "target": [
+        240.0,
+        140.0
+      ],
+      "target_access": [
+        246,
+        143
+      ],
+      "target_id": 41,
+      "target_type": "OreNode",
+      "world_distance": 9830.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 1031,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 4,
+      "start_access": [
+        720,
+        650
+      ],
+      "start_id": 19,
+      "straight_distance_world": 6242.595614005444,
+      "target": [
+        360.0,
+        140.0
+      ],
+      "target_access": [
+        354,
+        143
+      ],
+      "target_id": 42,
+      "target_type": "OreNode",
+      "world_distance": 10310.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 941,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 4,
+      "start_access": [
+        720,
+        650
+      ],
+      "start_id": 19,
+      "straight_distance_world": 7261.542535852833,
+      "target": [
+        50.0,
+        370.0
+      ],
+      "target_access": [
+        56,
+        373
+      ],
+      "target_id": 47,
+      "target_type": "OreNode",
+      "world_distance": 9410.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 821,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 4,
+      "start_access": [
+        720,
+        650
+      ],
+      "start_id": 19,
+      "straight_distance_world": 6171.709649683789,
+      "target": [
+        170.0,
+        370.0
+      ],
+      "target_access": [
+        176,
+        373
+      ],
+      "target_id": 48,
+      "target_type": "OreNode",
+      "world_distance": 8210.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 431,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 4,
+      "start_access": [
+        720,
+        650
+      ],
+      "start_id": 19,
+      "straight_distance_world": 3264.9655434629017,
+      "target": [
+        570.0,
+        360.0
+      ],
+      "target_access": [
+        576,
+        363
+      ],
+      "target_id": 51,
+      "target_type": "OreNode",
+      "world_distance": 4310.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 331,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 4,
+      "start_access": [
+        720,
+        650
+      ],
+      "start_id": 19,
+      "straight_distance_world": 3206.2439083762797,
+      "target": [
+        700.0,
+        330.0
+      ],
+      "target_access": [
+        706,
+        333
+      ],
+      "target_id": 52,
+      "target_type": "OreNode",
+      "world_distance": 3310.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 571,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 4,
+      "start_access": [
+        720,
+        650
+      ],
+      "start_id": 19,
+      "straight_distance_world": 4554.11901469428,
+      "target": [
+        570.0,
+        220.0
+      ],
+      "target_access": [
+        576,
+        223
+      ],
+      "target_id": 53,
+      "target_type": "OreNode",
+      "world_distance": 5710.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 491,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 4,
+      "start_access": [
+        720,
+        650
+      ],
+      "start_id": 19,
+      "straight_distance_world": 4901.020301937138,
+      "target": [
+        710.0,
+        160.0
+      ],
+      "target_access": [
+        716,
+        163
+      ],
+      "target_id": 54,
+      "target_type": "OreNode",
+      "world_distance": 4910.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 651,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 4,
+      "start_access": [
+        720,
+        650
+      ],
+      "start_id": 19,
+      "straight_distance_world": 5531.726674375732,
+      "target": [
+        600.0,
+        110.0
+      ],
+      "target_access": [
+        606,
+        113
+      ],
+      "target_id": 55,
+      "target_type": "OreNode",
+      "world_distance": 6510.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 511,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 4,
+      "start_access": [
+        720,
+        650
+      ],
+      "start_id": 19,
+      "straight_distance_world": 4244.997055358225,
+      "target": [
+        310.0,
+        540.0
+      ],
+      "target_access": [
+        316,
+        543
+      ],
+      "target_id": 56,
+      "target_type": "OreNode",
+      "world_distance": 5110.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 752,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 4,
+      "start_access": [
+        720,
+        650
+      ],
+      "start_id": 19,
+      "straight_distance_world": 6262.786919575023,
+      "target": [
+        95.0,
+        690.0
+      ],
+      "target_access": [
+        98,
+        684
+      ],
+      "target_id": 57,
+      "target_type": "OreNode",
+      "world_distance": 7520.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 557,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 4,
+      "start_access": [
+        720,
+        650
+      ],
+      "start_id": 19,
+      "straight_distance_world": 4318.564576337837,
+      "target": [
+        290.0,
+        690.0
+      ],
+      "target_access": [
+        293,
+        684
+      ],
+      "target_id": 58,
+      "target_type": "OreNode",
+      "world_distance": 5570.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 229,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 4,
+      "start_access": [
+        720,
+        650
+      ],
+      "start_id": 19,
+      "straight_distance_world": 1812.4568960391857,
+      "target": [
+        555.0,
+        575.0
+      ],
+      "target_access": [
+        561,
+        580
+      ],
+      "target_id": 59,
+      "target_type": "OilDerrick",
+      "world_distance": 2290.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 89,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 4,
+      "start_access": [
+        720,
+        650
+      ],
+      "start_id": 19,
+      "straight_distance_world": 790.5694150420949,
+      "target": [
+        745.0,
+        575.0
+      ],
+      "target_access": [
+        739,
+        580
+      ],
+      "target_id": 60,
+      "target_type": "OilDerrick",
+      "world_distance": 890.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 1041,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 4,
+      "start_access": [
+        720,
+        650
+      ],
+      "start_id": 19,
+      "straight_distance_world": 7441.102068914255,
+      "target": [
+        230.0,
+        90.0
+      ],
+      "target_access": [
+        236,
+        95
+      ],
+      "target_id": 61,
+      "target_type": "OilDerrick",
+      "world_distance": 10410.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 1011,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 4,
+      "start_access": [
+        720,
+        650
+      ],
+      "start_id": 19,
+      "straight_distance_world": 7474.122022017034,
+      "target": [
+        65.0,
+        290.0
+      ],
+      "target_access": [
+        72,
+        287
+      ],
+      "target_id": 62,
+      "target_type": "OilDerrick",
+      "world_distance": 10110.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 479,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 4,
+      "start_access": [
+        720,
+        650
+      ],
+      "start_id": 19,
+      "straight_distance_world": 3889.730067755345,
+      "target": [
+        600.0,
+        280.0
+      ],
+      "target_access": [
+        606,
+        285
+      ],
+      "target_id": 63,
+      "target_type": "OilDerrick",
+      "world_distance": 4790.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 461,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 4,
+      "start_access": [
+        720,
+        650
+      ],
+      "start_id": 19,
+      "straight_distance_world": 4229.65719651132,
+      "target": [
+        300.0,
+        600.0
+      ],
+      "target_access": [
+        307,
+        602
+      ],
+      "target_id": 64,
+      "target_type": "OilDerrick",
+      "world_distance": 4610.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 443,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 4,
+      "start_access": [
+        720,
+        650
+      ],
+      "start_id": 19,
+      "straight_distance_world": 3217.530108639234,
+      "target": [
+        495.0,
+        420.0
+      ],
+      "target_access": [
+        503,
+        424
+      ],
+      "target_id": 65,
+      "target_type": "HospitalTechStructure",
+      "world_distance": 4430.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 1038,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 4,
+      "start_access": [
+        720,
+        650
+      ],
+      "start_id": 19,
+      "straight_distance_world": 7666.159403508383,
+      "target": [
+        60.0,
+        260.0
+      ],
+      "target_access": [
+        68,
+        264
+      ],
+      "target_id": 66,
+      "target_type": "HospitalTechStructure",
+      "world_distance": 10380.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 333,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 4,
+      "start_access": [
+        720,
+        650
+      ],
+      "start_id": 19,
+      "straight_distance_world": 2646.2237244798484,
+      "target": [
+        620.0,
+        405.0
+      ],
+      "target_access": [
+        628,
+        409
+      ],
+      "target_id": 67,
+      "target_type": "VeterancyTechStructure",
+      "world_distance": 3330.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 778,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 4,
+      "start_access": [
+        720,
+        650
+      ],
+      "start_id": 19,
+      "straight_distance_world": 5859.180830116101,
+      "target": [
+        200.0,
+        380.0
+      ],
+      "target_access": [
+        208,
+        384
+      ],
+      "target_id": 68,
+      "target_type": "VeterancyTechStructure",
+      "world_distance": 7780.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 618,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 4,
+      "start_access": [
+        720,
+        650
+      ],
+      "start_id": 19,
+      "straight_distance_world": 4534.864937349293,
+      "target": [
+        465.0,
+        275.0
+      ],
+      "target_access": [
+        473,
+        279
+      ],
+      "target_id": 69,
+      "target_type": "ObservationPostTechStructure",
+      "world_distance": 6180.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 483,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 4,
+      "start_access": [
+        720,
+        650
+      ],
+      "start_id": 19,
+      "straight_distance_world": 3905.444917035702,
+      "target": [
+        350.0,
+        525.0
+      ],
+      "target_access": [
+        358,
+        529
+      ],
+      "target_id": 70,
+      "target_type": "ObservationPostTechStructure",
+      "world_distance": 4830.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 128,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 4,
+      "start_access": [
+        720,
+        650
+      ],
+      "start_id": 19,
+      "straight_distance_world": 1140.175425099138,
+      "target": [
+        610.0,
+        680.0
+      ],
+      "target_access": [
+        614,
+        672
+      ],
+      "target_id": 71,
+      "target_type": "GarageTechStructure",
+      "world_distance": 1280.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 728,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 4,
+      "start_access": [
+        720,
+        650
+      ],
+      "start_id": 19,
+      "straight_distance_world": 5249.761899362675,
+      "target": [
+        320.0,
+        310.0
+      ],
+      "target_access": [
+        328,
+        314
+      ],
+      "target_id": 72,
+      "target_type": "GarageTechStructure",
+      "world_distance": 7280.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 786,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 5,
+      "start_access": [
+        110,
+        65
+      ],
+      "start_id": 25,
+      "straight_distance_world": 5646.459067415613,
+      "target": [
+        470.0,
+        500.0
+      ],
+      "target_access": [
+        467,
+        494
+      ],
+      "target_id": 5,
+      "target_type": "OreNode",
+      "world_distance": 7860.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 906,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 5,
+      "start_access": [
+        110,
+        65
+      ],
+      "start_id": 25,
+      "straight_distance_world": 6477.846864506755,
+      "target": [
+        590.0,
+        500.0
+      ],
+      "target_access": [
+        587,
+        494
+      ],
+      "target_id": 6,
+      "target_type": "OreNode",
+      "world_distance": 9060.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 976,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 5,
+      "start_access": [
+        110,
+        65
+      ],
+      "start_id": 25,
+      "straight_distance_world": 7012.310603502957,
+      "target": [
+        660.0,
+        500.0
+      ],
+      "target_access": [
+        657,
+        494
+      ],
+      "target_id": 11,
+      "target_type": "OreNode",
+      "world_distance": 9760.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 1096,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 5,
+      "start_access": [
+        110,
+        65
+      ],
+      "start_id": 25,
+      "straight_distance_world": 7988.272654335228,
+      "target": [
+        780.0,
+        500.0
+      ],
+      "target_access": [
+        777,
+        494
+      ],
+      "target_id": 12,
+      "target_type": "OreNode",
+      "world_distance": 10960.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 926,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 5,
+      "start_access": [
+        110,
+        65
+      ],
+      "start_id": 25,
+      "straight_distance_world": 6753.702688155587,
+      "target": [
+        480.0,
+        630.0
+      ],
+      "target_access": [
+        477,
+        624
+      ],
+      "target_id": 17,
+      "target_type": "OreNode",
+      "world_distance": 9260.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 1046,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 5,
+      "start_access": [
+        110,
+        65
+      ],
+      "start_id": 25,
+      "straight_distance_world": 7478.803380220662,
+      "target": [
+        600.0,
+        630.0
+      ],
+      "target_access": [
+        597,
+        624
+      ],
+      "target_id": 18,
+      "target_type": "OreNode",
+      "world_distance": 10460.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 1126,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 5,
+      "start_access": [
+        110,
+        65
+      ],
+      "start_id": 25,
+      "straight_distance_world": 8029.476944359452,
+      "target": [
+        660.0,
+        650.0
+      ],
+      "target_access": [
+        657,
+        644
+      ],
+      "target_id": 23,
+      "target_type": "OreNode",
+      "world_distance": 11260.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 1246,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 5,
+      "start_access": [
+        110,
+        65
+      ],
+      "start_id": 25,
+      "straight_distance_world": 8894.520785292483,
+      "target": [
+        780.0,
+        650.0
+      ],
+      "target_access": [
+        777,
+        644
+      ],
+      "target_id": 24,
+      "target_type": "OreNode",
+      "world_distance": 12460.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 53,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 5,
+      "start_access": [
+        110,
+        65
+      ],
+      "start_id": 25,
+      "straight_distance_world": 600.0,
+      "target": [
+        50.0,
+        65.0
+      ],
+      "target_access": [
+        57,
+        65
+      ],
+      "target_id": 29,
+      "target_type": "OreNode",
+      "world_distance": 530.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 53,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 5,
+      "start_access": [
+        110,
+        65
+      ],
+      "start_id": 25,
+      "straight_distance_world": 600.0,
+      "target": [
+        170.0,
+        65.0
+      ],
+      "target_access": [
+        163,
+        65
+      ],
+      "target_id": 30,
+      "target_type": "OreNode",
+      "world_distance": 530.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 141,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 5,
+      "start_access": [
+        110,
+        65
+      ],
+      "start_id": 25,
+      "straight_distance_world": 1400.0,
+      "target": [
+        250.0,
+        65.0
+      ],
+      "target_access": [
+        246,
+        60
+      ],
+      "target_id": 35,
+      "target_type": "OreNode",
+      "world_distance": 1410.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 261,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 5,
+      "start_access": [
+        110,
+        65
+      ],
+      "start_id": 25,
+      "straight_distance_world": 2600.0,
+      "target": [
+        370.0,
+        65.0
+      ],
+      "target_access": [
+        366,
+        60
+      ],
+      "target_id": 36,
+      "target_type": "OreNode",
+      "world_distance": 2610.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 196,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 5,
+      "start_access": [
+        110,
+        65
+      ],
+      "start_id": 25,
+      "straight_distance_world": 1500.8331019803634,
+      "target": [
+        240.0,
+        140.0
+      ],
+      "target_access": [
+        237,
+        134
+      ],
+      "target_id": 41,
+      "target_type": "OreNode",
+      "world_distance": 1960.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 316,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 5,
+      "start_access": [
+        110,
+        65
+      ],
+      "start_id": 25,
+      "straight_distance_world": 2610.076627227638,
+      "target": [
+        360.0,
+        140.0
+      ],
+      "target_access": [
+        357,
+        134
+      ],
+      "target_id": 42,
+      "target_type": "OreNode",
+      "world_distance": 3160.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 476,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 5,
+      "start_access": [
+        110,
+        65
+      ],
+      "start_id": 25,
+      "straight_distance_world": 3108.4562084739105,
+      "target": [
+        50.0,
+        370.0
+      ],
+      "target_access": [
+        53,
+        364
+      ],
+      "target_id": 47,
+      "target_type": "OreNode",
+      "world_distance": 4760.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 358,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 5,
+      "start_access": [
+        110,
+        65
+      ],
+      "start_id": 25,
+      "straight_distance_world": 3108.4562084739105,
+      "target": [
+        170.0,
+        370.0
+      ],
+      "target_access": [
+        170,
+        363
+      ],
+      "target_id": 48,
+      "target_type": "OreNode",
+      "world_distance": 3580.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 746,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 5,
+      "start_access": [
+        110,
+        65
+      ],
+      "start_id": 25,
+      "straight_distance_world": 5464.65918424928,
+      "target": [
+        570.0,
+        360.0
+      ],
+      "target_access": [
+        567,
+        354
+      ],
+      "target_id": 51,
+      "target_type": "OreNode",
+      "world_distance": 7460.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 872,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 5,
+      "start_access": [
+        110,
+        65
+      ],
+      "start_id": 25,
+      "straight_distance_world": 6467.80488264759,
+      "target": [
+        700.0,
+        330.0
+      ],
+      "target_access": [
+        694,
+        333
+      ],
+      "target_id": 52,
+      "target_type": "OreNode",
+      "world_distance": 8720.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 852,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 5,
+      "start_access": [
+        110,
+        65
+      ],
+      "start_id": 25,
+      "straight_distance_world": 4854.1219597369,
+      "target": [
+        570.0,
+        220.0
+      ],
+      "target_access": [
+        564,
+        223
+      ],
+      "target_id": 53,
+      "target_type": "OreNode",
+      "world_distance": 8520.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 1052,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 5,
+      "start_access": [
+        110,
+        65
+      ],
+      "start_id": 25,
+      "straight_distance_world": 6074.742792909014,
+      "target": [
+        710.0,
+        160.0
+      ],
+      "target_access": [
+        704,
+        163
+      ],
+      "target_id": 54,
+      "target_type": "OreNode",
+      "world_distance": 10520.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 992,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 5,
+      "start_access": [
+        110,
+        65
+      ],
+      "start_id": 25,
+      "straight_distance_world": 4920.619879649311,
+      "target": [
+        600.0,
+        110.0
+      ],
+      "target_access": [
+        594,
+        113
+      ],
+      "target_id": 55,
+      "target_type": "OreNode",
+      "world_distance": 9920.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 794,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 5,
+      "start_access": [
+        110,
+        65
+      ],
+      "start_id": 25,
+      "straight_distance_world": 5153.882032022076,
+      "target": [
+        310.0,
+        540.0
+      ],
+      "target_access": [
+        313,
+        534
+      ],
+      "target_id": 56,
+      "target_type": "OreNode",
+      "world_distance": 7940.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 753,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 5,
+      "start_access": [
+        110,
+        65
+      ],
+      "start_id": 25,
+      "straight_distance_world": 6251.799740874622,
+      "target": [
+        95.0,
+        690.0
+      ],
+      "target_access": [
+        95,
+        683
+      ],
+      "target_id": 57,
+      "target_type": "OreNode",
+      "world_distance": 7530.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 946,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 5,
+      "start_access": [
+        110,
+        65
+      ],
+      "start_id": 25,
+      "straight_distance_world": 6504.03720776565,
+      "target": [
+        290.0,
+        690.0
+      ],
+      "target_access": [
+        287,
+        684
+      ],
+      "target_id": 58,
+      "target_type": "OreNode",
+      "world_distance": 9460.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 944,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 5,
+      "start_access": [
+        110,
+        65
+      ],
+      "start_id": 25,
+      "straight_distance_world": 6768.493185340441,
+      "target": [
+        555.0,
+        575.0
+      ],
+      "target_access": [
+        550,
+        569
+      ],
+      "target_id": 59,
+      "target_type": "OilDerrick",
+      "world_distance": 9440.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 1134,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 5,
+      "start_access": [
+        110,
+        65
+      ],
+      "start_id": 25,
+      "straight_distance_world": 8144.4766559920845,
+      "target": [
+        745.0,
+        575.0
+      ],
+      "target_access": [
+        740,
+        569
+      ],
+      "target_id": 60,
+      "target_type": "OilDerrick",
+      "world_distance": 11340.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 134,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 5,
+      "start_access": [
+        110,
+        65
+      ],
+      "start_id": 25,
+      "straight_distance_world": 1225.7650672131263,
+      "target": [
+        230.0,
+        90.0
+      ],
+      "target_access": [
+        225,
+        84
+      ],
+      "target_id": 61,
+      "target_type": "OilDerrick",
+      "world_distance": 1340.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 379,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 5,
+      "start_access": [
+        110,
+        65
+      ],
+      "start_id": 25,
+      "straight_distance_world": 2294.558781116753,
+      "target": [
+        65.0,
+        290.0
+      ],
+      "target_access": [
+        70,
+        284
+      ],
+      "target_id": 62,
+      "target_type": "OilDerrick",
+      "world_distance": 3790.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 820,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 5,
+      "start_access": [
+        110,
+        65
+      ],
+      "start_id": 25,
+      "straight_distance_world": 5350.93449782372,
+      "target": [
+        600.0,
+        280.0
+      ],
+      "target_access": [
+        594,
+        285
+      ],
+      "target_id": 63,
+      "target_type": "OilDerrick",
+      "world_distance": 8200.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 862,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 5,
+      "start_access": [
+        110,
+        65
+      ],
+      "start_id": 25,
+      "straight_distance_world": 5677.367347635698,
+      "target": [
+        300.0,
+        600.0
+      ],
+      "target_access": [
+        305,
+        594
+      ],
+      "target_id": 64,
+      "target_type": "OilDerrick",
+      "world_distance": 8620.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 728,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 5,
+      "start_access": [
+        110,
+        65
+      ],
+      "start_id": 25,
+      "straight_distance_world": 5236.888389110464,
+      "target": [
+        495.0,
+        420.0
+      ],
+      "target_access": [
+        491,
+        412
+      ],
+      "target_id": 65,
+      "target_type": "HospitalTechStructure",
+      "world_distance": 7280.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 356,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 5,
+      "start_access": [
+        110,
+        65
+      ],
+      "start_id": 25,
+      "straight_distance_world": 2013.0822139197394,
+      "target": [
+        60.0,
+        260.0
+      ],
+      "target_access": [
+        68,
+        259
+      ],
+      "target_id": 66,
+      "target_type": "HospitalTechStructure",
+      "world_distance": 3560.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 838,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 5,
+      "start_access": [
+        110,
+        65
+      ],
+      "start_id": 25,
+      "straight_distance_world": 6129.437168288782,
+      "target": [
+        620.0,
+        405.0
+      ],
+      "target_access": [
+        616,
+        397
+      ],
+      "target_id": 67,
+      "target_type": "VeterancyTechStructure",
+      "world_distance": 8380.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 393,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 5,
+      "start_access": [
+        110,
+        65
+      ],
+      "start_id": 25,
+      "straight_distance_world": 3276.049450176233,
+      "target": [
+        200.0,
+        380.0
+      ],
+      "target_access": [
+        196,
+        372
+      ],
+      "target_id": 68,
+      "target_type": "VeterancyTechStructure",
+      "world_distance": 3930.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 689,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 5,
+      "start_access": [
+        110,
+        65
+      ],
+      "start_id": 25,
+      "straight_distance_world": 4124.621194728069,
+      "target": [
+        465.0,
+        275.0
+      ],
+      "target_access": [
+        457,
+        279
+      ],
+      "target_id": 69,
+      "target_type": "ObservationPostTechStructure",
+      "world_distance": 6890.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 736,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 5,
+      "start_access": [
+        110,
+        65
+      ],
+      "start_id": 25,
+      "straight_distance_world": 5188.4487084291395,
+      "target": [
+        350.0,
+        525.0
+      ],
+      "target_access": [
+        354,
+        517
+      ],
+      "target_id": 70,
+      "target_type": "ObservationPostTechStructure",
+      "world_distance": 7360.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 1103,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 5,
+      "start_access": [
+        110,
+        65
+      ],
+      "start_id": 25,
+      "straight_distance_world": 7926.06459726389,
+      "target": [
+        610.0,
+        680.0
+      ],
+      "target_access": [
+        606,
+        672
+      ],
+      "target_id": 71,
+      "target_type": "GarageTechStructure",
+      "world_distance": 11030.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 443,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 5,
+      "start_access": [
+        110,
+        65
+      ],
+      "start_id": 25,
+      "straight_distance_world": 3226.8405600525107,
+      "target": [
+        320.0,
+        310.0
+      ],
+      "target_access": [
+        316,
+        302
+      ],
+      "target_id": 72,
+      "target_type": "GarageTechStructure",
+      "world_distance": 4430.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 656,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 6,
+      "start_access": [
+        310,
+        65
+      ],
+      "start_id": 31,
+      "straight_distance_world": 4634.921790062914,
+      "target": [
+        470.0,
+        500.0
+      ],
+      "target_access": [
+        467,
+        494
+      ],
+      "target_id": 5,
+      "target_type": "OreNode",
+      "world_distance": 6560.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 776,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 6,
+      "start_access": [
+        310,
+        65
+      ],
+      "start_id": 31,
+      "straight_distance_world": 5173.248495867949,
+      "target": [
+        590.0,
+        500.0
+      ],
+      "target_access": [
+        587,
+        494
+      ],
+      "target_id": 6,
+      "target_type": "OreNode",
+      "world_distance": 7760.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 846,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 6,
+      "start_access": [
+        310,
+        65
+      ],
+      "start_id": 31,
+      "straight_distance_world": 5583.233829959122,
+      "target": [
+        660.0,
+        500.0
+      ],
+      "target_access": [
+        657,
+        494
+      ],
+      "target_id": 11,
+      "target_type": "OreNode",
+      "world_distance": 8460.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 966,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 6,
+      "start_access": [
+        310,
+        65
+      ],
+      "start_id": 31,
+      "straight_distance_world": 6404.100249059192,
+      "target": [
+        780.0,
+        500.0
+      ],
+      "target_access": [
+        777,
+        494
+      ],
+      "target_id": 12,
+      "target_type": "OreNode",
+      "world_distance": 9660.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 796,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 6,
+      "start_access": [
+        310,
+        65
+      ],
+      "start_id": 31,
+      "straight_distance_world": 5900.211860602973,
+      "target": [
+        480.0,
+        630.0
+      ],
+      "target_access": [
+        477,
+        624
+      ],
+      "target_id": 17,
+      "target_type": "OreNode",
+      "world_distance": 7960.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 916,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 6,
+      "start_access": [
+        310,
+        65
+      ],
+      "start_id": 31,
+      "straight_distance_world": 6350.787352761861,
+      "target": [
+        600.0,
+        630.0
+      ],
+      "target_access": [
+        597,
+        624
+      ],
+      "target_id": 18,
+      "target_type": "OreNode",
+      "world_distance": 9160.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 996,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 6,
+      "start_access": [
+        310,
+        65
+      ],
+      "start_id": 31,
+      "straight_distance_world": 6817.074152449861,
+      "target": [
+        660.0,
+        650.0
+      ],
+      "target_access": [
+        657,
+        644
+      ],
+      "target_id": 23,
+      "target_type": "OreNode",
+      "world_distance": 9960.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 1116,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 6,
+      "start_access": [
+        310,
+        65
+      ],
+      "start_id": 31,
+      "straight_distance_world": 7504.165509901817,
+      "target": [
+        780.0,
+        650.0
+      ],
+      "target_access": [
+        777,
+        644
+      ],
+      "target_id": 24,
+      "target_type": "OreNode",
+      "world_distance": 11160.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 261,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 6,
+      "start_access": [
+        310,
+        65
+      ],
+      "start_id": 31,
+      "straight_distance_world": 2600.0,
+      "target": [
+        50.0,
+        65.0
+      ],
+      "target_access": [
+        54,
+        60
+      ],
+      "target_id": 29,
+      "target_type": "OreNode",
+      "world_distance": 2610.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 141,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 6,
+      "start_access": [
+        310,
+        65
+      ],
+      "start_id": 31,
+      "straight_distance_world": 1400.0,
+      "target": [
+        170.0,
+        65.0
+      ],
+      "target_access": [
+        174,
+        60
+      ],
+      "target_id": 30,
+      "target_type": "OreNode",
+      "world_distance": 1410.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 53,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 6,
+      "start_access": [
+        310,
+        65
+      ],
+      "start_id": 31,
+      "straight_distance_world": 600.0,
+      "target": [
+        250.0,
+        65.0
+      ],
+      "target_access": [
+        257,
+        65
+      ],
+      "target_id": 35,
+      "target_type": "OreNode",
+      "world_distance": 530.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 53,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 6,
+      "start_access": [
+        310,
+        65
+      ],
+      "start_id": 31,
+      "straight_distance_world": 600.0,
+      "target": [
+        370.0,
+        65.0
+      ],
+      "target_access": [
+        363,
+        65
+      ],
+      "target_id": 36,
+      "target_type": "OreNode",
+      "world_distance": 530.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 136,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 6,
+      "start_access": [
+        310,
+        65
+      ],
+      "start_id": 31,
+      "straight_distance_world": 1025.9142264341594,
+      "target": [
+        240.0,
+        140.0
+      ],
+      "target_access": [
+        243,
+        134
+      ],
+      "target_id": 41,
+      "target_type": "OreNode",
+      "world_distance": 1360.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 116,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 6,
+      "start_access": [
+        310,
+        65
+      ],
+      "start_id": 31,
+      "straight_distance_world": 901.3878188659974,
+      "target": [
+        360.0,
+        140.0
+      ],
+      "target_access": [
+        357,
+        134
+      ],
+      "target_id": 42,
+      "target_type": "OreNode",
+      "world_distance": 1160.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 556,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 6,
+      "start_access": [
+        310,
+        65
+      ],
+      "start_id": 31,
+      "straight_distance_world": 4007.8048854703493,
+      "target": [
+        50.0,
+        370.0
+      ],
+      "target_access": [
+        53,
+        364
+      ],
+      "target_id": 47,
+      "target_type": "OreNode",
+      "world_distance": 5560.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 436,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 6,
+      "start_access": [
+        310,
+        65
+      ],
+      "start_id": 31,
+      "straight_distance_world": 3355.964838909967,
+      "target": [
+        170.0,
+        370.0
+      ],
+      "target_access": [
+        173,
+        364
+      ],
+      "target_id": 48,
+      "target_type": "OreNode",
+      "world_distance": 4360.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 616,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 6,
+      "start_access": [
+        310,
+        65
+      ],
+      "start_id": 31,
+      "straight_distance_world": 3932.238548206352,
+      "target": [
+        570.0,
+        360.0
+      ],
+      "target_access": [
+        567,
+        354
+      ],
+      "target_id": 51,
+      "target_type": "OreNode",
+      "world_distance": 6160.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 742,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 6,
+      "start_access": [
+        310,
+        65
+      ],
+      "start_id": 31,
+      "straight_distance_world": 4715.1352048483195,
+      "target": [
+        700.0,
+        330.0
+      ],
+      "target_access": [
+        694,
+        333
+      ],
+      "target_id": 52,
+      "target_type": "OreNode",
+      "world_distance": 7420.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 722,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 6,
+      "start_access": [
+        310,
+        65
+      ],
+      "start_id": 31,
+      "straight_distance_world": 3026.962173533062,
+      "target": [
+        570.0,
+        220.0
+      ],
+      "target_access": [
+        564,
+        223
+      ],
+      "target_id": 53,
+      "target_type": "OreNode",
+      "world_distance": 7220.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 922,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 6,
+      "start_access": [
+        310,
+        65
+      ],
+      "start_id": 31,
+      "straight_distance_world": 4111.265012134343,
+      "target": [
+        710.0,
+        160.0
+      ],
+      "target_access": [
+        704,
+        163
+      ],
+      "target_id": 54,
+      "target_type": "OreNode",
+      "world_distance": 9220.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 862,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 6,
+      "start_access": [
+        310,
+        65
+      ],
+      "start_id": 31,
+      "straight_distance_world": 2934.7061181658373,
+      "target": [
+        600.0,
+        110.0
+      ],
+      "target_access": [
+        594,
+        113
+      ],
+      "target_id": 55,
+      "target_type": "OreNode",
+      "world_distance": 8620.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 664,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 6,
+      "start_access": [
+        310,
+        65
+      ],
+      "start_id": 31,
+      "straight_distance_world": 4750.0,
+      "target": [
+        310.0,
+        540.0
+      ],
+      "target_access": [
+        313,
+        534
+      ],
+      "target_id": 56,
+      "target_type": "OreNode",
+      "world_distance": 6640.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 833,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 6,
+      "start_access": [
+        310,
+        65
+      ],
+      "start_id": 31,
+      "straight_distance_world": 6609.462913126905,
+      "target": [
+        95.0,
+        690.0
+      ],
+      "target_access": [
+        95,
+        683
+      ],
+      "target_id": 57,
+      "target_type": "OreNode",
+      "world_distance": 8330.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 834,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 6,
+      "start_access": [
+        310,
+        65
+      ],
+      "start_id": 31,
+      "straight_distance_world": 6253.199181219162,
+      "target": [
+        290.0,
+        690.0
+      ],
+      "target_access": [
+        293,
+        684
+      ],
+      "target_id": 58,
+      "target_type": "OreNode",
+      "world_distance": 8340.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 814,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 6,
+      "start_access": [
+        310,
+        65
+      ],
+      "start_id": 31,
+      "straight_distance_world": 5657.958995963119,
+      "target": [
+        555.0,
+        575.0
+      ],
+      "target_access": [
+        550,
+        569
+      ],
+      "target_id": 59,
+      "target_type": "OilDerrick",
+      "world_distance": 8140.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 1004,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 6,
+      "start_access": [
+        310,
+        65
+      ],
+      "start_id": 31,
+      "straight_distance_world": 6703.170891451299,
+      "target": [
+        745.0,
+        575.0
+      ],
+      "target_access": [
+        740,
+        569
+      ],
+      "target_id": 60,
+      "target_type": "OilDerrick",
+      "world_distance": 10040.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 94,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 6,
+      "start_access": [
+        310,
+        65
+      ],
+      "start_id": 31,
+      "straight_distance_world": 838.1527307120105,
+      "target": [
+        230.0,
+        90.0
+      ],
+      "target_access": [
+        235,
+        84
+      ],
+      "target_id": 61,
+      "target_type": "OilDerrick",
+      "world_distance": 940.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 459,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 6,
+      "start_access": [
+        310,
+        65
+      ],
+      "start_id": 31,
+      "straight_distance_world": 3326.4094756959794,
+      "target": [
+        65.0,
+        290.0
+      ],
+      "target_access": [
+        70,
+        284
+      ],
+      "target_id": 62,
+      "target_type": "OilDerrick",
+      "world_distance": 4590.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 690,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 6,
+      "start_access": [
+        310,
+        65
+      ],
+      "start_id": 31,
+      "straight_distance_world": 3610.0554012369394,
+      "target": [
+        600.0,
+        280.0
+      ],
+      "target_access": [
+        594,
+        285
+      ],
+      "target_id": 63,
+      "target_type": "OilDerrick",
+      "world_distance": 6900.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 732,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 6,
+      "start_access": [
+        310,
+        65
+      ],
+      "start_id": 31,
+      "straight_distance_world": 5350.93449782372,
+      "target": [
+        300.0,
+        600.0
+      ],
+      "target_access": [
+        305,
+        594
+      ],
+      "target_id": 64,
+      "target_type": "OilDerrick",
+      "world_distance": 7320.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 598,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 6,
+      "start_access": [
+        310,
+        65
+      ],
+      "start_id": 31,
+      "straight_distance_world": 4003.123780249619,
+      "target": [
+        495.0,
+        420.0
+      ],
+      "target_access": [
+        491,
+        412
+      ],
+      "target_id": 65,
+      "target_type": "HospitalTechStructure",
+      "world_distance": 5980.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 436,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 6,
+      "start_access": [
+        310,
+        65
+      ],
+      "start_id": 31,
+      "straight_distance_world": 3170.567772497538,
+      "target": [
+        60.0,
+        260.0
+      ],
+      "target_access": [
+        68,
+        259
+      ],
+      "target_id": 66,
+      "target_type": "HospitalTechStructure",
+      "world_distance": 4360.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 708,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 6,
+      "start_access": [
+        310,
+        65
+      ],
+      "start_id": 31,
+      "straight_distance_world": 4601.086828130937,
+      "target": [
+        620.0,
+        405.0
+      ],
+      "target_access": [
+        616,
+        397
+      ],
+      "target_id": 67,
+      "target_type": "VeterancyTechStructure",
+      "world_distance": 7080.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 413,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 6,
+      "start_access": [
+        310,
+        65
+      ],
+      "start_id": 31,
+      "straight_distance_world": 3336.5401241405743,
+      "target": [
+        200.0,
+        380.0
+      ],
+      "target_access": [
+        204,
+        372
+      ],
+      "target_id": 68,
+      "target_type": "VeterancyTechStructure",
+      "world_distance": 4130.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 559,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 6,
+      "start_access": [
+        310,
+        65
+      ],
+      "start_id": 31,
+      "straight_distance_world": 2610.076627227638,
+      "target": [
+        465.0,
+        275.0
+      ],
+      "target_access": [
+        457,
+        279
+      ],
+      "target_id": 69,
+      "target_type": "ObservationPostTechStructure",
+      "world_distance": 5590.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 606,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 6,
+      "start_access": [
+        310,
+        65
+      ],
+      "start_id": 31,
+      "straight_distance_world": 4617.358552246078,
+      "target": [
+        350.0,
+        525.0
+      ],
+      "target_access": [
+        354,
+        517
+      ],
+      "target_id": 70,
+      "target_type": "ObservationPostTechStructure",
+      "world_distance": 6060.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 973,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 6,
+      "start_access": [
+        310,
+        65
+      ],
+      "start_id": 31,
+      "straight_distance_world": 6842.696836774226,
+      "target": [
+        610.0,
+        680.0
+      ],
+      "target_access": [
+        606,
+        672
+      ],
+      "target_id": 71,
+      "target_type": "GarageTechStructure",
+      "world_distance": 9730.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 313,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 6,
+      "start_access": [
+        310,
+        65
+      ],
+      "start_id": 31,
+      "straight_distance_world": 2452.0399670478455,
+      "target": [
+        320.0,
+        310.0
+      ],
+      "target_access": [
+        316,
+        302
+      ],
+      "target_id": 72,
+      "target_type": "GarageTechStructure",
+      "world_distance": 3130.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 575,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 7,
+      "start_access": [
+        298,
+        134
+      ],
+      "start_id": 37,
+      "straight_distance_world": 3981.205847478877,
+      "target": [
+        470.0,
+        500.0
+      ],
+      "target_access": [
+        467,
+        494
+      ],
+      "target_id": 5,
+      "target_type": "OreNode",
+      "world_distance": 5750.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 695,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 7,
+      "start_access": [
+        298,
+        134
+      ],
+      "start_id": 37,
+      "straight_distance_world": 4622.769732530488,
+      "target": [
+        590.0,
+        500.0
+      ],
+      "target_access": [
+        587,
+        494
+      ],
+      "target_id": 6,
+      "target_type": "OreNode",
+      "world_distance": 6950.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 765,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 7,
+      "start_access": [
+        298,
+        134
+      ],
+      "start_id": 37,
+      "straight_distance_world": 5091.168824543142,
+      "target": [
+        660.0,
+        500.0
+      ],
+      "target_access": [
+        657,
+        494
+      ],
+      "target_id": 11,
+      "target_type": "OreNode",
+      "world_distance": 7650.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 885,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 7,
+      "start_access": [
+        298,
+        134
+      ],
+      "start_id": 37,
+      "straight_distance_world": 6000.0,
+      "target": [
+        780.0,
+        500.0
+      ],
+      "target_access": [
+        777,
+        494
+      ],
+      "target_id": 12,
+      "target_type": "OreNode",
+      "world_distance": 8850.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 715,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 7,
+      "start_access": [
+        298,
+        134
+      ],
+      "start_id": 37,
+      "straight_distance_world": 5220.153254455276,
+      "target": [
+        480.0,
+        630.0
+      ],
+      "target_access": [
+        477,
+        624
+      ],
+      "target_id": 17,
+      "target_type": "OreNode",
+      "world_distance": 7150.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 835,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 7,
+      "start_access": [
+        298,
+        134
+      ],
+      "start_id": 37,
+      "straight_distance_world": 5745.43296888929,
+      "target": [
+        600.0,
+        630.0
+      ],
+      "target_access": [
+        597,
+        624
+      ],
+      "target_id": 18,
+      "target_type": "OreNode",
+      "world_distance": 8350.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 915,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 7,
+      "start_access": [
+        298,
+        134
+      ],
+      "start_id": 37,
+      "straight_distance_world": 6242.595614005444,
+      "target": [
+        660.0,
+        650.0
+      ],
+      "target_access": [
+        657,
+        644
+      ],
+      "target_id": 23,
+      "target_type": "OreNode",
+      "world_distance": 9150.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 1035,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 7,
+      "start_access": [
+        298,
+        134
+      ],
+      "start_id": 37,
+      "straight_distance_world": 7003.5705179572515,
+      "target": [
+        780.0,
+        650.0
+      ],
+      "target_access": [
+        777,
+        644
+      ],
+      "target_id": 24,
+      "target_type": "OreNode",
+      "world_distance": 10350.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 308,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 7,
+      "start_access": [
+        298,
+        134
+      ],
+      "start_id": 37,
+      "straight_distance_world": 2610.076627227638,
+      "target": [
+        50.0,
+        65.0
+      ],
+      "target_access": [
+        56,
+        68
+      ],
+      "target_id": 29,
+      "target_type": "OreNode",
+      "world_distance": 3080.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 188,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 7,
+      "start_access": [
+        298,
+        134
+      ],
+      "start_id": 37,
+      "straight_distance_world": 1500.8331019803634,
+      "target": [
+        170.0,
+        65.0
+      ],
+      "target_access": [
+        176,
+        68
+      ],
+      "target_id": 30,
+      "target_type": "OreNode",
+      "world_distance": 1880.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 108,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 7,
+      "start_access": [
+        298,
+        134
+      ],
+      "start_id": 37,
+      "straight_distance_world": 901.3878188659974,
+      "target": [
+        250.0,
+        65.0
+      ],
+      "target_access": [
+        256,
+        68
+      ],
+      "target_id": 35,
+      "target_type": "OreNode",
+      "world_distance": 1080.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 132,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 7,
+      "start_access": [
+        298,
+        134
+      ],
+      "start_id": 37,
+      "straight_distance_world": 1025.9142264341594,
+      "target": [
+        370.0,
+        65.0
+      ],
+      "target_access": [
+        364,
+        68
+      ],
+      "target_id": 36,
+      "target_type": "OreNode",
+      "world_distance": 1320.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 55,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 7,
+      "start_access": [
+        298,
+        134
+      ],
+      "start_id": 37,
+      "straight_distance_world": 600.0,
+      "target": [
+        240.0,
+        140.0
+      ],
+      "target_access": [
+        243,
+        134
+      ],
+      "target_id": 41,
+      "target_type": "OreNode",
+      "world_distance": 550.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 61,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 7,
+      "start_access": [
+        298,
+        134
+      ],
+      "start_id": 37,
+      "straight_distance_world": 600.0,
+      "target": [
+        360.0,
+        140.0
+      ],
+      "target_access": [
+        357,
+        134
+      ],
+      "target_id": 42,
+      "target_type": "OreNode",
+      "world_distance": 610.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 475,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 7,
+      "start_access": [
+        298,
+        134
+      ],
+      "start_id": 37,
+      "straight_distance_world": 3397.057550292606,
+      "target": [
+        50.0,
+        370.0
+      ],
+      "target_access": [
+        53,
+        364
+      ],
+      "target_id": 47,
+      "target_type": "OreNode",
+      "world_distance": 4750.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 355,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 7,
+      "start_access": [
+        298,
+        134
+      ],
+      "start_id": 37,
+      "straight_distance_world": 2641.968962724581,
+      "target": [
+        170.0,
+        370.0
+      ],
+      "target_access": [
+        173,
+        364
+      ],
+      "target_id": 48,
+      "target_type": "OreNode",
+      "world_distance": 3550.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 535,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 7,
+      "start_access": [
+        298,
+        134
+      ],
+      "start_id": 37,
+      "straight_distance_world": 3482.8149534535996,
+      "target": [
+        570.0,
+        360.0
+      ],
+      "target_access": [
+        567,
+        354
+      ],
+      "target_id": 51,
+      "target_type": "OreNode",
+      "world_distance": 5350.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 661,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 7,
+      "start_access": [
+        298,
+        134
+      ],
+      "start_id": 37,
+      "straight_distance_world": 4428.317965096905,
+      "target": [
+        700.0,
+        330.0
+      ],
+      "target_access": [
+        694,
+        333
+      ],
+      "target_id": 52,
+      "target_type": "OreNode",
+      "world_distance": 6610.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 641,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 7,
+      "start_access": [
+        298,
+        134
+      ],
+      "start_id": 37,
+      "straight_distance_world": 2816.0255680657447,
+      "target": [
+        570.0,
+        220.0
+      ],
+      "target_access": [
+        564,
+        223
+      ],
+      "target_id": 53,
+      "target_type": "OreNode",
+      "world_distance": 6410.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 841,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 7,
+      "start_access": [
+        298,
+        134
+      ],
+      "start_id": 37,
+      "straight_distance_world": 4104.875150354758,
+      "target": [
+        710.0,
+        160.0
+      ],
+      "target_access": [
+        704,
+        163
+      ],
+      "target_id": 54,
+      "target_type": "OreNode",
+      "world_distance": 8410.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 781,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 7,
+      "start_access": [
+        298,
+        134
+      ],
+      "start_id": 37,
+      "straight_distance_world": 3014.962686336267,
+      "target": [
+        600.0,
+        110.0
+      ],
+      "target_access": [
+        594,
+        113
+      ],
+      "target_id": 55,
+      "target_type": "OreNode",
+      "world_distance": 7810.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 583,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 7,
+      "start_access": [
+        298,
+        134
+      ],
+      "start_id": 37,
+      "straight_distance_world": 4001.2498047485115,
+      "target": [
+        310.0,
+        540.0
+      ],
+      "target_access": [
+        313,
+        534
+      ],
+      "target_id": 56,
+      "target_type": "OreNode",
+      "world_distance": 5830.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 752,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 7,
+      "start_access": [
+        298,
+        134
+      ],
+      "start_id": 37,
+      "straight_distance_world": 5869.625200981745,
+      "target": [
+        95.0,
+        690.0
+      ],
+      "target_access": [
+        95,
+        683
+      ],
+      "target_id": 57,
+      "target_type": "OreNode",
+      "world_distance": 7520.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 753,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 7,
+      "start_access": [
+        298,
+        134
+      ],
+      "start_id": 37,
+      "straight_distance_world": 5500.909015790026,
+      "target": [
+        290.0,
+        690.0
+      ],
+      "target_access": [
+        293,
+        684
+      ],
+      "target_id": 58,
+      "target_type": "OreNode",
+      "world_distance": 7530.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 733,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 7,
+      "start_access": [
+        298,
+        134
+      ],
+      "start_id": 37,
+      "straight_distance_world": 5042.320894191484,
+      "target": [
+        555.0,
+        575.0
+      ],
+      "target_access": [
+        550,
+        569
+      ],
+      "target_id": 59,
+      "target_type": "OilDerrick",
+      "world_distance": 7330.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 923,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 7,
+      "start_access": [
+        298,
+        134
+      ],
+      "start_id": 37,
+      "straight_distance_world": 6222.94142668883,
+      "target": [
+        745.0,
+        575.0
+      ],
+      "target_access": [
+        740,
+        569
+      ],
+      "target_id": 60,
+      "target_type": "OilDerrick",
+      "world_distance": 9230.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 101,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 7,
+      "start_access": [
+        298,
+        134
+      ],
+      "start_id": 37,
+      "straight_distance_world": 860.2325267042627,
+      "target": [
+        230.0,
+        90.0
+      ],
+      "target_access": [
+        236,
+        95
+      ],
+      "target_id": 61,
+      "target_type": "OilDerrick",
+      "world_distance": 1010.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 378,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 7,
+      "start_access": [
+        298,
+        134
+      ],
+      "start_id": 37,
+      "straight_distance_world": 2787.92037189013,
+      "target": [
+        65.0,
+        290.0
+      ],
+      "target_access": [
+        70,
+        284
+      ],
+      "target_id": 62,
+      "target_type": "OilDerrick",
+      "world_distance": 3780.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 609,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 7,
+      "start_access": [
+        298,
+        134
+      ],
+      "start_id": 37,
+      "straight_distance_world": 3310.58907144937,
+      "target": [
+        600.0,
+        280.0
+      ],
+      "target_access": [
+        594,
+        285
+      ],
+      "target_id": 63,
+      "target_type": "OilDerrick",
+      "world_distance": 6090.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 651,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 7,
+      "start_access": [
+        298,
+        134
+      ],
+      "start_id": 37,
+      "straight_distance_world": 4600.0,
+      "target": [
+        300.0,
+        600.0
+      ],
+      "target_access": [
+        305,
+        594
+      ],
+      "target_id": 64,
+      "target_type": "OilDerrick",
+      "world_distance": 6510.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 517,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 7,
+      "start_access": [
+        298,
+        134
+      ],
+      "start_id": 37,
+      "straight_distance_world": 3412.1107836645633,
+      "target": [
+        495.0,
+        420.0
+      ],
+      "target_access": [
+        491,
+        412
+      ],
+      "target_id": 65,
+      "target_type": "HospitalTechStructure",
+      "world_distance": 5170.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 355,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 7,
+      "start_access": [
+        298,
+        134
+      ],
+      "start_id": 37,
+      "straight_distance_world": 2683.2815729997474,
+      "target": [
+        60.0,
+        260.0
+      ],
+      "target_access": [
+        68,
+        259
+      ],
+      "target_id": 66,
+      "target_type": "HospitalTechStructure",
+      "world_distance": 3550.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 627,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 7,
+      "start_access": [
+        298,
+        134
+      ],
+      "start_id": 37,
+      "straight_distance_world": 4154.816482108446,
+      "target": [
+        620.0,
+        405.0
+      ],
+      "target_access": [
+        616,
+        397
+      ],
+      "target_id": 67,
+      "target_type": "VeterancyTechStructure",
+      "world_distance": 6270.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 332,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 7,
+      "start_access": [
+        298,
+        134
+      ],
+      "start_id": 37,
+      "straight_distance_world": 2600.0,
+      "target": [
+        200.0,
+        380.0
+      ],
+      "target_access": [
+        204,
+        372
+      ],
+      "target_id": 68,
+      "target_type": "VeterancyTechStructure",
+      "world_distance": 3320.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 478,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 7,
+      "start_access": [
+        298,
+        134
+      ],
+      "start_id": 37,
+      "straight_distance_world": 2131.9005605327843,
+      "target": [
+        465.0,
+        275.0
+      ],
+      "target_access": [
+        457,
+        279
+      ],
+      "target_id": 69,
+      "target_type": "ObservationPostTechStructure",
+      "world_distance": 4780.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 525,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 7,
+      "start_access": [
+        298,
+        134
+      ],
+      "start_id": 37,
+      "straight_distance_world": 3882.3317735608325,
+      "target": [
+        350.0,
+        525.0
+      ],
+      "target_access": [
+        354,
+        517
+      ],
+      "target_id": 70,
+      "target_type": "ObservationPostTechStructure",
+      "world_distance": 5250.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 892,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 7,
+      "start_access": [
+        298,
+        134
+      ],
+      "start_id": 37,
+      "straight_distance_world": 6226.556030423239,
+      "target": [
+        610.0,
+        680.0
+      ],
+      "target_access": [
+        606,
+        672
+      ],
+      "target_id": 71,
+      "target_type": "GarageTechStructure",
+      "world_distance": 8920.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 232,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 7,
+      "start_access": [
+        298,
+        134
+      ],
+      "start_id": 37,
+      "straight_distance_world": 1711.724276862369,
+      "target": [
+        320.0,
+        310.0
+      ],
+      "target_access": [
+        316,
+        302
+      ],
+      "target_id": 72,
+      "target_type": "GarageTechStructure",
+      "world_distance": 2320.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 491,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 8,
+      "start_access": [
+        108,
+        364
+      ],
+      "start_id": 43,
+      "straight_distance_world": 3827.5318418009274,
+      "target": [
+        470.0,
+        500.0
+      ],
+      "target_access": [
+        467,
+        494
+      ],
+      "target_id": 5,
+      "target_type": "OreNode",
+      "world_distance": 4910.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 611,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 8,
+      "start_access": [
+        108,
+        364
+      ],
+      "start_id": 43,
+      "straight_distance_world": 4972.926703662542,
+      "target": [
+        590.0,
+        500.0
+      ],
+      "target_access": [
+        587,
+        494
+      ],
+      "target_id": 6,
+      "target_type": "OreNode",
+      "world_distance": 6110.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 681,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 8,
+      "start_access": [
+        108,
+        364
+      ],
+      "start_id": 43,
+      "straight_distance_world": 5651.548460377917,
+      "target": [
+        660.0,
+        500.0
+      ],
+      "target_access": [
+        657,
+        494
+      ],
+      "target_id": 11,
+      "target_type": "OreNode",
+      "world_distance": 6810.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 801,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 8,
+      "start_access": [
+        108,
+        364
+      ],
+      "start_id": 43,
+      "straight_distance_world": 6824.954212300622,
+      "target": [
+        780.0,
+        500.0
+      ],
+      "target_access": [
+        777,
+        494
+      ],
+      "target_id": 12,
+      "target_type": "OreNode",
+      "world_distance": 8010.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 631,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 8,
+      "start_access": [
+        108,
+        364
+      ],
+      "start_id": 43,
+      "straight_distance_world": 4522.167621838005,
+      "target": [
+        480.0,
+        630.0
+      ],
+      "target_access": [
+        477,
+        624
+      ],
+      "target_id": 17,
+      "target_type": "OreNode",
+      "world_distance": 6310.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 751,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 8,
+      "start_access": [
+        108,
+        364
+      ],
+      "start_id": 43,
+      "straight_distance_world": 5547.071299343465,
+      "target": [
+        600.0,
+        630.0
+      ],
+      "target_access": [
+        597,
+        624
+      ],
+      "target_id": 18,
+      "target_type": "OreNode",
+      "world_distance": 7510.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 831,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 8,
+      "start_access": [
+        108,
+        364
+      ],
+      "start_id": 43,
+      "straight_distance_world": 6171.709649683789,
+      "target": [
+        660.0,
+        650.0
+      ],
+      "target_access": [
+        657,
+        644
+      ],
+      "target_id": 23,
+      "target_type": "OreNode",
+      "world_distance": 8310.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 951,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 8,
+      "start_access": [
+        108,
+        364
+      ],
+      "start_id": 43,
+      "straight_distance_world": 7261.542535852833,
+      "target": [
+        780.0,
+        650.0
+      ],
+      "target_access": [
+        777,
+        644
+      ],
+      "target_id": 24,
+      "target_type": "OreNode",
+      "world_distance": 9510.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 472,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 8,
+      "start_access": [
+        108,
+        364
+      ],
+      "start_id": 43,
+      "straight_distance_world": 3108.4562084739105,
+      "target": [
+        50.0,
+        65.0
+      ],
+      "target_access": [
+        56,
+        68
+      ],
+      "target_id": 29,
+      "target_type": "OreNode",
+      "world_distance": 4720.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 354,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 8,
+      "start_access": [
+        108,
+        364
+      ],
+      "start_id": 43,
+      "straight_distance_world": 3108.4562084739105,
+      "target": [
+        170.0,
+        65.0
+      ],
+      "target_access": [
+        170,
+        72
+      ],
+      "target_id": 30,
+      "target_type": "OreNode",
+      "world_distance": 3540.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 432,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 8,
+      "start_access": [
+        108,
+        364
+      ],
+      "start_id": 43,
+      "straight_distance_world": 3355.964838909967,
+      "target": [
+        250.0,
+        65.0
+      ],
+      "target_access": [
+        244,
+        68
+      ],
+      "target_id": 35,
+      "target_type": "OreNode",
+      "world_distance": 4320.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 552,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 8,
+      "start_access": [
+        108,
+        364
+      ],
+      "start_id": 43,
+      "straight_distance_world": 4007.8048854703493,
+      "target": [
+        370.0,
+        65.0
+      ],
+      "target_access": [
+        364,
+        68
+      ],
+      "target_id": 36,
+      "target_type": "OreNode",
+      "world_distance": 5520.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 347,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 8,
+      "start_access": [
+        108,
+        364
+      ],
+      "start_id": 43,
+      "straight_distance_world": 2641.968962724581,
+      "target": [
+        240.0,
+        140.0
+      ],
+      "target_access": [
+        234,
+        143
+      ],
+      "target_id": 41,
+      "target_type": "OreNode",
+      "world_distance": 3470.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 467,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 8,
+      "start_access": [
+        108,
+        364
+      ],
+      "start_id": 43,
+      "straight_distance_world": 3397.057550292606,
+      "target": [
+        360.0,
+        140.0
+      ],
+      "target_access": [
+        354,
+        143
+      ],
+      "target_id": 42,
+      "target_type": "OreNode",
+      "world_distance": 4670.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 55,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 8,
+      "start_access": [
+        108,
+        364
+      ],
+      "start_id": 43,
+      "straight_distance_world": 600.0,
+      "target": [
+        50.0,
+        370.0
+      ],
+      "target_access": [
+        53,
+        364
+      ],
+      "target_id": 47,
+      "target_type": "OreNode",
+      "world_distance": 550.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 61,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 8,
+      "start_access": [
+        108,
+        364
+      ],
+      "start_id": 43,
+      "straight_distance_world": 600.0,
+      "target": [
+        170.0,
+        370.0
+      ],
+      "target_access": [
+        167,
+        364
+      ],
+      "target_id": 48,
+      "target_type": "OreNode",
+      "world_distance": 610.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 469,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 8,
+      "start_access": [
+        108,
+        364
+      ],
+      "start_id": 43,
+      "straight_distance_world": 4601.086828130937,
+      "target": [
+        570.0,
+        360.0
+      ],
+      "target_access": [
+        567,
+        354
+      ],
+      "target_id": 51,
+      "target_type": "OreNode",
+      "world_distance": 4690.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 617,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 8,
+      "start_access": [
+        108,
+        364
+      ],
+      "start_id": 43,
+      "straight_distance_world": 5913.543776789007,
+      "target": [
+        700.0,
+        330.0
+      ],
+      "target_access": [
+        694,
+        333
+      ],
+      "target_id": 52,
+      "target_type": "OreNode",
+      "world_distance": 6170.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 597,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 8,
+      "start_access": [
+        108,
+        364
+      ],
+      "start_id": 43,
+      "straight_distance_world": 4838.3881613611775,
+      "target": [
+        570.0,
+        220.0
+      ],
+      "target_access": [
+        564,
+        223
+      ],
+      "target_id": 53,
+      "target_type": "OreNode",
+      "world_distance": 5970.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 797,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 8,
+      "start_access": [
+        108,
+        364
+      ],
+      "start_id": 43,
+      "straight_distance_world": 6356.886030125128,
+      "target": [
+        710.0,
+        160.0
+      ],
+      "target_access": [
+        704,
+        163
+      ],
+      "target_id": 54,
+      "target_type": "OreNode",
+      "world_distance": 7970.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 737,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 8,
+      "start_access": [
+        108,
+        364
+      ],
+      "start_id": 43,
+      "straight_distance_world": 5547.071299343465,
+      "target": [
+        600.0,
+        110.0
+      ],
+      "target_access": [
+        594,
+        113
+      ],
+      "target_id": 55,
+      "target_type": "OreNode",
+      "world_distance": 7370.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 437,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 8,
+      "start_access": [
+        108,
+        364
+      ],
+      "start_id": 43,
+      "straight_distance_world": 2624.8809496813374,
+      "target": [
+        310.0,
+        540.0
+      ],
+      "target_access": [
+        304,
+        543
+      ],
+      "target_id": 56,
+      "target_type": "OreNode",
+      "world_distance": 4370.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 332,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 8,
+      "start_access": [
+        108,
+        364
+      ],
+      "start_id": 43,
+      "straight_distance_world": 3203.513695928269,
+      "target": [
+        95.0,
+        690.0
+      ],
+      "target_access": [
+        95,
+        683
+      ],
+      "target_id": 57,
+      "target_type": "OreNode",
+      "world_distance": 3320.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 525,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 8,
+      "start_access": [
+        108,
+        364
+      ],
+      "start_id": 43,
+      "straight_distance_world": 3671.511950137164,
+      "target": [
+        290.0,
+        690.0
+      ],
+      "target_access": [
+        287,
+        684
+      ],
+      "target_id": 58,
+      "target_type": "OreNode",
+      "world_distance": 5250.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 649,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 8,
+      "start_access": [
+        108,
+        364
+      ],
+      "start_id": 43,
+      "straight_distance_world": 4899.4897693535395,
+      "target": [
+        555.0,
+        575.0
+      ],
+      "target_access": [
+        550,
+        569
+      ],
+      "target_id": 59,
+      "target_type": "OilDerrick",
+      "world_distance": 6490.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 839,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 8,
+      "start_access": [
+        108,
+        364
+      ],
+      "start_id": 43,
+      "straight_distance_world": 6672.7055981812955,
+      "target": [
+        745.0,
+        575.0
+      ],
+      "target_access": [
+        740,
+        569
+      ],
+      "target_id": 60,
+      "target_type": "OilDerrick",
+      "world_distance": 8390.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 385,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 8,
+      "start_access": [
+        108,
+        364
+      ],
+      "start_id": 43,
+      "straight_distance_world": 3046.3092423455637,
+      "target": [
+        230.0,
+        90.0
+      ],
+      "target_access": [
+        224,
+        95
+      ],
+      "target_id": 61,
+      "target_type": "OilDerrick",
+      "world_distance": 3850.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 159,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 8,
+      "start_access": [
+        108,
+        364
+      ],
+      "start_id": 43,
+      "straight_distance_world": 917.877987534291,
+      "target": [
+        65.0,
+        290.0
+      ],
+      "target_access": [
+        72,
+        287
+      ],
+      "target_id": 62,
+      "target_type": "OilDerrick",
+      "world_distance": 1590.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 565,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 8,
+      "start_access": [
+        108,
+        364
+      ],
+      "start_id": 43,
+      "straight_distance_world": 4981.9674828324605,
+      "target": [
+        600.0,
+        280.0
+      ],
+      "target_access": [
+        594,
+        285
+      ],
+      "target_id": 63,
+      "target_type": "OilDerrick",
+      "world_distance": 5650.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 445,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 8,
+      "start_access": [
+        108,
+        364
+      ],
+      "start_id": 43,
+      "straight_distance_world": 2983.28677803526,
+      "target": [
+        300.0,
+        600.0
+      ],
+      "target_access": [
+        295,
+        594
+      ],
+      "target_id": 64,
+      "target_type": "OilDerrick",
+      "world_distance": 4450.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 451,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 8,
+      "start_access": [
+        108,
+        364
+      ],
+      "start_id": 43,
+      "straight_distance_world": 3882.3317735608325,
+      "target": [
+        495.0,
+        420.0
+      ],
+      "target_access": [
+        491,
+        412
+      ],
+      "target_id": 65,
+      "target_type": "HospitalTechStructure",
+      "world_distance": 4510.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 186,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 8,
+      "start_access": [
+        108,
+        364
+      ],
+      "start_id": 43,
+      "straight_distance_world": 1208.3045973594571,
+      "target": [
+        60.0,
+        260.0
+      ],
+      "target_access": [
+        68,
+        264
+      ],
+      "target_id": 66,
+      "target_type": "HospitalTechStructure",
+      "world_distance": 1860.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 561,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 8,
+      "start_access": [
+        108,
+        364
+      ],
+      "start_id": 43,
+      "straight_distance_world": 5111.995696398814,
+      "target": [
+        620.0,
+        405.0
+      ],
+      "target_access": [
+        616,
+        397
+      ],
+      "target_id": 67,
+      "target_type": "VeterancyTechStructure",
+      "world_distance": 5610.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 98,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 8,
+      "start_access": [
+        108,
+        364
+      ],
+      "start_id": 43,
+      "straight_distance_world": 905.5385138137417,
+      "target": [
+        200.0,
+        380.0
+      ],
+      "target_access": [
+        196,
+        372
+      ],
+      "target_id": 68,
+      "target_type": "VeterancyTechStructure",
+      "world_distance": 980.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 434,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 8,
+      "start_access": [
+        108,
+        364
+      ],
+      "start_id": 43,
+      "straight_distance_world": 3674.914965002592,
+      "target": [
+        465.0,
+        275.0
+      ],
+      "target_access": [
+        457,
+        279
+      ],
+      "target_id": 69,
+      "target_type": "ObservationPostTechStructure",
+      "world_distance": 4340.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 441,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 8,
+      "start_access": [
+        108,
+        364
+      ],
+      "start_id": 43,
+      "straight_distance_world": 2857.0089254323307,
+      "target": [
+        350.0,
+        525.0
+      ],
+      "target_access": [
+        354,
+        517
+      ],
+      "target_id": 70,
+      "target_type": "ObservationPostTechStructure",
+      "world_distance": 4410.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 808,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 8,
+      "start_access": [
+        108,
+        364
+      ],
+      "start_id": 43,
+      "straight_distance_world": 5883.026432033092,
+      "target": [
+        610.0,
+        680.0
+      ],
+      "target_access": [
+        606,
+        672
+      ],
+      "target_id": 71,
+      "target_type": "GarageTechStructure",
+      "world_distance": 8080.0
+    },
+    {
+      "domain": "land",
+      "path_steps": 254,
+      "reachable": true,
+      "route_status": "reachable",
+      "seat": 8,
+      "start_access": [
+        108,
+        364
+      ],
+      "start_id": 43,
+      "straight_distance_world": 2184.0329667841556,
+      "target": [
+        320.0,
+        310.0
+      ],
+      "target_access": [
+        312,
+        314
+      ],
+      "target_id": 72,
+      "target_type": "GarageTechStructure",
+      "world_distance": 2540.0
+    }
+  ],
+  "schema_version": 1,
+  "shore_boundary_edges": 576,
+  "shore_boundary_findings": 0,
+  "team_area_balance": {
+    "dividing_line": "0.56 * (x - 419.5) + (y - 403.5) = 0; passes through playable geometric center, northeast/southwest direction",
+    "frame": {
+      "border": 20,
+      "cell_size": 10.0,
+      "height": 808,
+      "width": 840,
+      "z_scale": 0.0390625
+    },
+    "land_cells_by_team": [
+      303730.5771428576,
+      303775.42285714287
+    ],
+    "land_difference_ratio": 0.00014764965288357638,
+    "maximum_difference_ratio": 0.2,
+    "method": "exact polygon clipping of unit terrain cells centered on full-grid samples; excludes border",
+    "negative_side": "P5-P8 northwest",
+    "orientation": "southeast_northwest",
+    "passed": true,
+    "positive_side": "P1-P4 southeast",
+    "schema_version": 1,
+    "water_cells_by_team": [
+      3469.4228571428357,
+      3424.5771428571643
+    ],
+    "water_difference_ratio": 0.013095255973196189
+  }
+}

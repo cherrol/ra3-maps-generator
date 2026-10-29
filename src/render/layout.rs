@@ -2,8 +2,8 @@
 use super::Image;
 use crate::{
     Result,
-    map::{self, Value},
-    project::{Project, write_json},
+    formats::map::{self, Value},
+    pipeline::project::{Project, write_json},
     terrain::{Layout, ObjectSpec, Terrain, number},
 };
 use serde::Serialize;
@@ -236,15 +236,15 @@ fn label_rect(point: (isize, isize), width: isize, side: isize, occupied: &[Rect
     best
 }
 
-fn viewport(entries: &[Entry], grid: usize) -> ([f64; 2], f64) {
+fn viewport(entries: &[Entry], grid: [usize; 2]) -> ([f64; 2], f64) {
     let mut min = [0_f64; 2];
-    let mut max = [grid as f64; 2];
+    let mut max = grid.map(|n| n as f64);
     for entry in entries {
         for axis in 0..2 {
             if entry.cell[axis] < 0. {
                 min[axis] = min[axis].min(entry.cell[axis] - 16.);
             }
-            if entry.cell[axis] >= grid as f64 {
+            if entry.cell[axis] >= grid[axis] as f64 {
                 max[axis] = max[axis].max(entry.cell[axis] + 16.);
             }
         }
@@ -259,19 +259,20 @@ pub(super) fn write(
     font: Option<&fontdue::Font>,
 ) -> Result<()> {
     let entries = entries(&t.layout);
-    let side = (t.n * 4).clamp(2048, 4096);
-    let (origin, span) = viewport(&entries, t.n);
+    let side = (t.n.max(t.height()) * 4).clamp(2048, 4096);
+    let (origin, span) = viewport(&entries, [t.n, t.height()]);
     let scale = side as f64 / span;
     let off_grid = entries
         .iter()
-        .filter(|e| e.cell.iter().any(|v| *v < 0. || *v >= t.n as f64))
+        .filter(|e| !crate::coordinates::Frame::from_project(p).inside(e.cell))
         .count();
     let mut image = Image::new(side + 400, side + TOP as usize + 50, BACKGROUND);
     let terrain_side = (t.n as f64 * scale).round() as usize;
-    let terrain = base.resize(terrain_side, terrain_side);
+    let terrain_height = (t.height() as f64 * scale).round() as usize;
+    let terrain = base.resize(terrain_side, terrain_height);
     let left = (-origin[0] * scale).round() as usize;
     let top = (-origin[1] * scale).round() as usize + TOP as usize;
-    for y in 0..terrain_side {
+    for y in 0..terrain_height {
         let i = ((y + top) * image.width + left) * 3;
         image.rgb[i..i + terrain_side * 3]
             .copy_from_slice(&terrain.rgb[y * terrain_side * 3..(y + 1) * terrain_side * 3]);
@@ -434,7 +435,7 @@ pub(super) fn write(
             "layout": "source/layout.json",
             "recipe_layout": p.string("LAYOUT", "layout.json"),
             "coordinates": "Full-grid cells; x east, y south; row 0 is north. Angles are radians.",
-        "viewport": {"origin_cell": origin, "span_cells": span, "grid_size": t.n, "off_grid_entries": off_grid},
+        "viewport": {"origin_cell": origin, "span_cells": span, "grid_size": t.n, "grid_cells": [t.n, t.height()], "off_grid_entries": off_grid},
             "numbering": "Objects in layout order, then ramps. Moving coordinates preserves IDs; inserting, deleting or reordering entries can change IDs.",
             "entries": entries,
         }),

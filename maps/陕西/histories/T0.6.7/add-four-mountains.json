@@ -1,0 +1,66 @@
+{
+  "source": "[CHAI]千壑横原T0.6.7",
+  "reference": {
+    "map": "[AXAI]4v4_麦格马戈登",
+    "crop": [
+      389,
+      405,
+      487,
+      554
+    ],
+    "heightfield_sha256": "62db0f6da388ed3f907f0345f3b20f93b850bb6bc1baab45c5a7f339a7207f76"
+  },
+  "relief_file": "histories/T0.6.7/axai-mountain-relief.u16",
+  "relief_size": [
+    98,
+    149
+  ],
+  "relief_base": 210,
+  "relief_z_scale": 0.0390625,
+  "mountains": [
+    {
+      "id": "north-center",
+      "bounds": [
+        354,
+        180,
+        424,
+        282
+      ],
+      "height_scale": 1.65,
+      "mirror": false
+    },
+    {
+      "id": "center",
+      "bounds": [
+        342,
+        354,
+        437,
+        418
+      ],
+      "height_scale": 1.7,
+      "mirror": true
+    },
+    {
+      "id": "west",
+      "bounds": [
+        61,
+        406,
+        108,
+        495
+      ],
+      "height_scale": 1.6,
+      "mirror": true
+    },
+    {
+      "id": "east",
+      "bounds": [
+        657,
+        229,
+        721,
+        340
+      ],
+      "height_scale": 1.65,
+      "mirror": false
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "blueprint_crc32": 1532715598,
+  "changed_height_samples": 37715,
+  "command": "cargo run --release --locked --example henan-authoring",
+  "frame": {
+    "border": 20,
+    "cell_size": 10.0,
+    "height": 808,
+    "width": 840,
+    "z_scale": 0.0390625
+  },
+  "playable_cells": [
+    800,
+    768
+  ],
+  "ramp_count": 8,
+  "ramps": "explicit authored positions; mountain profile, full width 24, span 40",
+  "resampled": false,
+  "schema_version": 1,
+  "shore_land_width_cells": "max((approved_height-200)/3, 8)",
+  "shore_water_depth": 130,
+  "shore_water_width_cells": 18,
+  "shorelines": "continuous full-perimeter bidirectional transitions; accepted water mask unchanged",
+  "source": "data/terrain-preview/terrain.npz",
+  "source_crc32": 1886463613
+}

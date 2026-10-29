@@ -1,0 +1,3180 @@
+{
+  "changed_chunks": [
+    "PlayerScriptsList",
+    "ObjectsList",
+    "TriggerAreas"
+  ],
+  "files": [
+    {
+      "crc32": 1806747474,
+      "length": 499528,
+      "name": "[CHAI]翠屿浮光T0.3.7.map"
+    },
+    {
+      "crc32": 848304457,
+      "length": 786476,
+      "name": "[CHAI]翠屿浮光T0.3.7_art.tga"
+    },
+    {
+      "crc32": 353861573,
+      "length": 499,
+      "name": "map.str"
+    },
+    {
+      "crc32": 2897957221,
+      "length": 223524,
+      "name": "map.xml"
+    },
+    {
+      "crc32": 2113619238,
+      "length": 124,
+      "name": "overrides.xml"
+    }
+  ],
+  "fixed_ai_factions_and_starts_checked": true,
+  "object_changes": [
+    {
+      "after": [
+        5400.0,
+        7470.0,
+        0.0
+      ],
+      "before": [
+        6340.0,
+        2860.0,
+        0.0
+      ],
+      "id": 1,
+      "kind": "SovietConstructionYard"
+    },
+    {
+      "after": [
+        7240.0,
+        4350.0,
+        0.0
+      ],
+      "before": [
+        5090.0,
+        1520.0,
+        0.0
+      ],
+      "id": 2,
+      "kind": "JapanConstructionYard"
+    },
+    {
+      "after": [
+        4800.0,
+        7390.0,
+        0.0
+      ],
+      "before": [
+        2830.0,
+        7210.0,
+        0.0
+      ],
+      "id": 13,
+      "kind": "OreNode"
+    },
+    {
+      "after": [
+        5040.0,
+        7750.0,
+        0.0
+      ],
+      "before": [
+        2360.0,
+        7270.0,
+        0.0
+      ],
+      "id": 14,
+      "kind": "OreNode"
+    },
+    {
+      "after": [
+        6280.0,
+        7670.0,
+        0.0
+      ],
+      "before": [
+        1540.0,
+        6440.0,
+        0.0
+      ],
+      "id": 15,
+      "kind": "OreNode"
+    },
+    {
+      "after": [
+        2800.0,
+        7110.0,
+        0.0
+      ],
+      "before": [
+        1160.0,
+        6170.0,
+        0.0
+      ],
+      "id": 16,
+      "kind": "OreNode"
+    },
+    {
+      "after": [
+        3880.0,
+        7470.0,
+        0.0
+      ],
+      "before": [
+        690.0,
+        5870.0,
+        0.0
+      ],
+      "id": 28,
+      "kind": "OreNode"
+    },
+    {
+      "after": [
+        2400.0,
+        7270.0,
+        0.0
+      ],
+      "before": [
+        310.0,
+        5600.0,
+        0.0
+      ],
+      "id": 29,
+      "kind": "OreNode"
+    },
+    {
+      "after": [
+        1200.0,
+        6110.0,
+        0.0
+      ],
+      "before": [
+        4440.0,
+        910.0,
+        0.0
+      ],
+      "id": 30,
+      "kind": "OreNode"
+    },
+    {
+      "after": [
+        1920.0,
+        7070.0,
+        0.0
+      ],
+      "before": [
+        4160.0,
+        540.0,
+        0.0
+      ],
+      "id": 31,
+      "kind": "OreNode"
+    },
+    {
+      "after": [
+        800.0,
+        5990.0,
+        0.0
+      ],
+      "before": [
+        5840.0,
+        7680.0,
+        0.0
+      ],
+      "id": 35,
+      "kind": "OreNode"
+    },
+    {
+      "after": [
+        7160.0,
+        3750.0,
+        0.0
+      ],
+      "before": [
+        5120.0,
+        7690.0,
+        0.0
+      ],
+      "id": 36,
+      "kind": "OreNode"
+    },
+    {
+      "after": [
+        7680.0,
+        4670.0,
+        0.0
+      ],
+      "before": [
+        7310.0,
+        4160.0,
+        0.0
+      ],
+      "id": 37,
+      "kind": "OreNode"
+    },
+    {
+      "after": [
+        6760.0,
+        3590.0,
+        0.0
+      ],
+      "before": [
+        7080.0,
+        4570.0,
+        0.0
+      ],
+      "id": 38,
+      "kind": "OreNode"
+    },
+    {
+      "after": [
+        6440.0,
+        2350.0,
+        0.0
+      ],
+      "before": [
+        6750.0,
+        2550.0,
+        0.0
+      ],
+      "id": 39,
+      "kind": "OreNode"
+    },
+    {
+      "after": [
+        6680.0,
+        2830.0,
+        0.0
+      ],
+      "before": [
+        6880.0,
+        3000.0,
+        0.0
+      ],
+      "id": 40,
+      "kind": "OreNode"
+    },
+    {
+      "after": [
+        6360.0,
+        1830.0,
+        0.0
+      ],
+      "before": [
+        5550.0,
+        1370.0,
+        0.0
+      ],
+      "id": 41,
+      "kind": "OreNode"
+    },
+    {
+      "after": [
+        4920.0,
+        1110.0,
+        0.0
+      ],
+      "before": [
+        5270.0,
+        1000.0,
+        0.0
+      ],
+      "id": 42,
+      "kind": "OreNode"
+    },
+    {
+      "after": [
+        5960.0,
+        1630.0,
+        0.0
+      ],
+      "before": [
+        320.0,
+        1510.0,
+        0.0
+      ],
+      "id": 44,
+      "kind": "OreNode"
+    },
+    {
+      "after": [
+        6000.0,
+        2070.0,
+        0.0
+      ],
+      "before": [
+        7600.0,
+        390.0,
+        0.0
+      ],
+      "id": 45,
+      "kind": "OreNode"
+    },
+    {
+      "after": [
+        3200.0,
+        550.0,
+        0.0
+      ],
+      "before": [
+        2000.0,
+        390.0,
+        0.0
+      ],
+      "id": 46,
+      "kind": "OreNode"
+    },
+    {
+      "after": [
+        4400.0,
+        630.0,
+        0.0
+      ],
+      "before": [
+        7600.0,
+        7110.0,
+        0.0
+      ],
+      "id": 47,
+      "kind": "OreNode"
+    },
+    {
+      "after": [
+        2880.0,
+        270.0,
+        0.0
+      ],
+      "before": [
+        320.0,
+        7670.0,
+        0.0
+      ],
+      "id": 48,
+      "kind": "OreNode"
+    },
+    {
+      "after": [
+        400.0,
+        990.0,
+        0.0
+      ],
+      "before": [
+        4850.0,
+        7310.0,
+        0.0
+      ],
+      "id": 49,
+      "kind": "OreNode"
+    },
+    {
+      "after": [
+        1360.0,
+        510.0,
+        0.0
+      ],
+      "before": [
+        6760.0,
+        1230.0,
+        0.0
+      ],
+      "id": 50,
+      "kind": "OreNode"
+    },
+    {
+      "after": [
+        1840.0,
+        670.0,
+        0.0
+      ],
+      "before": [
+        600.0,
+        390.0,
+        0.0
+      ],
+      "id": 51,
+      "kind": "OreNode"
+    },
+    {
+      "after": [
+        2040.0,
+        2910.0,
+        0.0
+      ],
+      "before": [
+        3120.0,
+        390.0,
+        0.0
+      ],
+      "id": 62,
+      "kind": "OreNode"
+    },
+    {
+      "after": [
+        4440.0,
+        5350.0,
+        0.0
+      ],
+      "before": [
+        7600.0,
+        1790.0,
+        0.0
+      ],
+      "id": 63,
+      "kind": "OreNode"
+    },
+    {
+      "after": [
+        3360.0,
+        2510.0,
+        0.0
+      ],
+      "before": [
+        3580.0,
+        620.0,
+        0.0
+      ],
+      "id": 64,
+      "kind": "OreNode"
+    },
+    {
+      "after": [
+        4640.0,
+        6030.0,
+        0.0
+      ],
+      "before": [
+        6200.0,
+        390.0,
+        0.0
+      ],
+      "id": 65,
+      "kind": "OreNode"
+    },
+    {
+      "after": [
+        4960.0,
+        3310.0,
+        0.0
+      ],
+      "before": [
+        7690.0,
+        3900.0,
+        0.0
+      ],
+      "id": 66,
+      "kind": "OreNode"
+    },
+    {
+      "after": [
+        2640.0,
+        5590.0,
+        0.0
+      ],
+      "before": [
+        1440.0,
+        7670.0,
+        0.0
+      ],
+      "id": 67,
+      "kind": "OreNode"
+    },
+    {
+      "after": [
+        5840.0,
+        3510.0,
+        0.0
+      ],
+      "before": [
+        3680.0,
+        7670.0,
+        0.0
+      ],
+      "id": 68,
+      "kind": "OreNode"
+    },
+    {
+      "after": [
+        6600.0,
+        6230.0,
+        0.0
+      ],
+      "before": [
+        6760.0,
+        7670.0,
+        0.0
+      ],
+      "id": 69,
+      "kind": "OreNode"
+    },
+    {
+      "after": [
+        3120.0,
+        3510.0,
+        0.0
+      ],
+      "before": [
+        3680.0,
+        3750.0,
+        0.0
+      ],
+      "id": 70,
+      "kind": "OreNode"
+    },
+    {
+      "after": [
+        3400.0,
+        3950.0,
+        0.0
+      ],
+      "before": [
+        880.0,
+        3470.0,
+        0.0
+      ],
+      "id": 71,
+      "kind": "OreNode"
+    },
+    {
+      "after": [
+        2720.0,
+        3310.0,
+        0.0
+      ],
+      "before": [
+        5080.0,
+        5150.0,
+        0.0
+      ],
+      "id": 72,
+      "kind": "OreNode"
+    },
+    {
+      "after": [
+        1760.0,
+        3670.0,
+        0.0
+      ],
+      "before": [
+        3120.0,
+        5430.0,
+        0.0
+      ],
+      "id": 73,
+      "kind": "OreNode"
+    },
+    {
+      "after": [
+        5200.0,
+        4110.0,
+        0.0
+      ],
+      "before": [
+        2840.0,
+        2350.0,
+        0.0
+      ],
+      "id": 74,
+      "kind": "OreNode"
+    },
+    {
+      "after": [
+        5240.0,
+        4550.0,
+        0.0
+      ],
+      "before": [
+        5080.0,
+        3190.0,
+        0.0
+      ],
+      "id": 75,
+      "kind": "OreNode"
+    },
+    {
+      "after": [
+        6040.0,
+        5150.0,
+        0.0
+      ],
+      "before": [
+        6200.0,
+        6270.0,
+        0.0
+      ],
+      "id": 76,
+      "kind": "OreNode"
+    },
+    {
+      "after": [
+        5560.0,
+        5270.0,
+        0.0
+      ],
+      "before": [
+        1720.0,
+        4870.0,
+        0.0
+      ],
+      "id": 77,
+      "kind": "OreNode"
+    },
+    {
+      "after": [
+        7240.0,
+        4350.0,
+        0.0
+      ],
+      "before": [
+        5110.0,
+        1550.0,
+        0.0
+      ],
+      "id": 78,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        5400.0,
+        7470.0,
+        0.0
+      ],
+      "before": [
+        6320.0,
+        2830.0,
+        0.0
+      ],
+      "id": 79,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        3280.0,
+        7470.0,
+        0.0
+      ],
+      "before": [
+        6810.0,
+        4060.0,
+        0.0
+      ],
+      "id": 80,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        1560.0,
+        6590.0,
+        0.0
+      ],
+      "before": [
+        5480.0,
+        7390.0,
+        0.0
+      ],
+      "id": 81,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        7040.0,
+        2350.0,
+        0.0
+      ],
+      "before": [
+        4000.0,
+        1090.0,
+        0.0
+      ],
+      "id": 82,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        5400.0,
+        1470.0,
+        0.0
+      ],
+      "before": [
+        870.0,
+        5430.0,
+        0.0
+      ],
+      "id": 83,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        3800.0,
+        590.0,
+        0.0
+      ],
+      "before": [
+        1720.0,
+        6000.0,
+        0.0
+      ],
+      "id": 84,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        1000.0,
+        990.0,
+        0.0
+      ],
+      "before": [
+        2650.0,
+        6770.0,
+        0.0
+      ],
+      "id": 85,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        880.0,
+        3750.0,
+        0.0
+      ],
+      "before": [
+        2280.0,
+        3470.0,
+        0.0
+      ],
+      "id": 86,
+      "kind": "OreNode"
+    },
+    {
+      "after": [
+        4320.0,
+        7310.0,
+        0.0
+      ],
+      "before": [
+        5920.0,
+        4310.0,
+        0.0
+      ],
+      "id": 87,
+      "kind": "OreNode"
+    },
+    {
+      "after": [
+        2080.0,
+        270.0,
+        0.0
+      ],
+      "before": [
+        1160.0,
+        2350.0,
+        0.0
+      ],
+      "id": 88,
+      "kind": "OreNode"
+    },
+    {
+      "after": [
+        400.0,
+        5550.0,
+        0.0
+      ],
+      "before": [
+        3960.0,
+        2350.0,
+        0.0
+      ],
+      "id": 89,
+      "kind": "OreNode"
+    },
+    {
+      "after": [
+        6040.0,
+        5590.0,
+        0.0
+      ],
+      "before": [
+        600.0,
+        4590.0,
+        0.0
+      ],
+      "id": 90,
+      "kind": "OreNode"
+    },
+    {
+      "after": [
+        7080.0,
+        7270.0,
+        0.0
+      ],
+      "before": [
+        5080.0,
+        6270.0,
+        0.0
+      ],
+      "id": 91,
+      "kind": "OreNode"
+    },
+    {
+      "after": [
+        5640.0,
+        6390.0,
+        0.0
+      ],
+      "before": [
+        4240.0,
+        5710.0,
+        0.0
+      ],
+      "id": 92,
+      "kind": "OreNode"
+    },
+    {
+      "after": [
+        7480.0,
+        7110.0,
+        0.0
+      ],
+      "before": [
+        4240.0,
+        4590.0,
+        0.0
+      ],
+      "id": 93,
+      "kind": "OreNode"
+    },
+    {
+      "after": [
+        420.0,
+        2060.0,
+        0.0
+      ],
+      "before": [
+        2500.0,
+        5900.0,
+        0.0
+      ],
+      "id": 416,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        820.0,
+        2260.0,
+        0.0
+      ],
+      "before": [
+        3350.0,
+        5980.0,
+        0.0
+      ],
+      "id": 417,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        1880.0,
+        1400.0,
+        0.0
+      ],
+      "before": [
+        3070.0,
+        6120.0,
+        0.0
+      ],
+      "id": 418,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        3910.0,
+        2260.0,
+        0.0
+      ],
+      "before": [
+        2860.0,
+        5840.0,
+        0.0
+      ],
+      "id": 419,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        2400.0,
+        1600.0,
+        0.0
+      ],
+      "before": [
+        2860.0,
+        5150.0,
+        0.0
+      ],
+      "id": 420,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        3590.0,
+        2060.0,
+        0.0
+      ],
+      "before": [
+        2170.0,
+        5350.0,
+        0.0
+      ],
+      "id": 421,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        4380.0,
+        3480.0,
+        0.0
+      ],
+      "before": [
+        1210.0,
+        4560.0,
+        0.0
+      ],
+      "id": 422,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        4100.0,
+        3440.0,
+        0.0
+      ],
+      "before": [
+        1590.0,
+        4480.0,
+        0.0
+      ],
+      "id": 423,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        4450.0,
+        3200.0,
+        0.0
+      ],
+      "before": [
+        1370.0,
+        4840.0,
+        0.0
+      ],
+      "id": 424,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        3970.0,
+        4750.0,
+        0.0
+      ],
+      "before": [
+        3370.0,
+        1770.0,
+        0.0
+      ],
+      "id": 425,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        3080.0,
+        2350.0,
+        0.0
+      ],
+      "before": [
+        2730.0,
+        1710.0,
+        0.0
+      ],
+      "id": 426,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        3820.0,
+        3520.0,
+        0.0
+      ],
+      "before": [
+        3190.0,
+        1050.0,
+        0.0
+      ],
+      "id": 427,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        1720.0,
+        4500.0,
+        0.0
+      ],
+      "before": [
+        6190.0,
+        6580.0,
+        0.0
+      ],
+      "id": 428,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        500.0,
+        4690.0,
+        0.0
+      ],
+      "before": [
+        5300.0,
+        6840.0,
+        0.0
+      ],
+      "id": 429,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        780.0,
+        4700.0,
+        0.0
+      ],
+      "before": [
+        5580.0,
+        6340.0,
+        0.0
+      ],
+      "id": 430,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        810.0,
+        4140.0,
+        0.0
+      ],
+      "before": [
+        6430.0,
+        5180.0,
+        0.0
+      ],
+      "id": 431,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        530.0,
+        3910.0,
+        0.0
+      ],
+      "before": [
+        6580.0,
+        4610.0,
+        0.0
+      ],
+      "id": 432,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        3050.0,
+        4740.0,
+        0.0
+      ],
+      "before": [
+        6710.0,
+        5030.0,
+        0.0
+      ],
+      "id": 433,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        6840.0,
+        6670.0,
+        0.0
+      ],
+      "before": [
+        5630.0,
+        3870.0,
+        0.0
+      ],
+      "id": 434,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        7160.0,
+        6680.0,
+        0.0
+      ],
+      "before": [
+        5960.0,
+        3320.0,
+        0.0
+      ],
+      "id": 435,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        6190.0,
+        6300.0,
+        0.0
+      ],
+      "before": [
+        5390.0,
+        3460.0,
+        0.0
+      ],
+      "id": 436,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        4900.0,
+        4230.0,
+        0.0
+      ],
+      "before": [
+        4840.0,
+        2740.0,
+        0.0
+      ],
+      "id": 437,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        4980.0,
+        5130.0,
+        0.0
+      ],
+      "before": [
+        4870.0,
+        2150.0,
+        0.0
+      ],
+      "id": 438,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        7470.0,
+        6260.0,
+        0.0
+      ],
+      "before": [
+        4390.0,
+        2390.0,
+        0.0
+      ],
+      "id": 439,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        1260.0,
+        1790.0,
+        0.0
+      ],
+      "before": [
+        2780.0,
+        6120.0,
+        0.0
+      ],
+      "id": 440,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        1090.0,
+        1510.0,
+        0.0
+      ],
+      "before": [
+        2500.0,
+        6180.0,
+        0.0
+      ],
+      "id": 441,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        3370.0,
+        1770.0,
+        0.0
+      ],
+      "before": [
+        1890.0,
+        5350.0,
+        0.0
+      ],
+      "id": 442,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        4140.0,
+        1700.0,
+        0.0
+      ],
+      "before": [
+        2090.0,
+        5630.0,
+        0.0
+      ],
+      "id": 443,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        4800.0,
+        2530.0,
+        0.0
+      ],
+      "before": [
+        930.0,
+        4810.0,
+        0.0
+      ],
+      "id": 444,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        4870.0,
+        2110.0,
+        0.0
+      ],
+      "before": [
+        1610.0,
+        5250.0,
+        0.0
+      ],
+      "id": 445,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        5200.0,
+        3030.0,
+        0.0
+      ],
+      "before": [
+        3360.0,
+        1470.0,
+        0.0
+      ],
+      "id": 446,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        5560.0,
+        3310.0,
+        0.0
+      ],
+      "before": [
+        3810.0,
+        1560.0,
+        0.0
+      ],
+      "id": 447,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        2300.0,
+        5330.0,
+        0.0
+      ],
+      "before": [
+        4990.0,
+        6690.0,
+        0.0
+      ],
+      "id": 448,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        1890.0,
+        4880.0,
+        0.0
+      ],
+      "before": [
+        5730.0,
+        6920.0,
+        0.0
+      ],
+      "id": 449,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        1060.0,
+        4810.0,
+        0.0
+      ],
+      "before": [
+        4710.0,
+        6570.0,
+        0.0
+      ],
+      "id": 450,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        2320.0,
+        5980.0,
+        0.0
+      ],
+      "before": [
+        5580.0,
+        6620.0,
+        0.0
+      ],
+      "id": 451,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        2600.0,
+        5890.0,
+        0.0
+      ],
+      "before": [
+        6230.0,
+        6880.0,
+        0.0
+      ],
+      "id": 452,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        2880.0,
+        6040.0,
+        0.0
+      ],
+      "before": [
+        5300.0,
+        6560.0,
+        0.0
+      ],
+      "id": 453,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        4190.0,
+        6090.0,
+        0.0
+      ],
+      "before": [
+        5960.0,
+        3780.0,
+        0.0
+      ],
+      "id": 454,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        3720.0,
+        5550.0,
+        0.0
+      ],
+      "before": [
+        5900.0,
+        4740.0,
+        0.0
+      ],
+      "id": 455,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        3420.0,
+        5320.0,
+        0.0
+      ],
+      "before": [
+        6270.0,
+        4140.0,
+        0.0
+      ],
+      "id": 456,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        3440.0,
+        6840.0,
+        0.0
+      ],
+      "before": [
+        6240.0,
+        3740.0,
+        0.0
+      ],
+      "id": 457,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        4040.0,
+        6400.0,
+        0.0
+      ],
+      "before": [
+        6180.0,
+        4620.0,
+        0.0
+      ],
+      "id": 458,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        3910.0,
+        6120.0,
+        0.0
+      ],
+      "before": [
+        6430.0,
+        4900.0,
+        0.0
+      ],
+      "id": 459,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        6190.0,
+        6580.0,
+        0.0
+      ],
+      "before": [
+        5120.0,
+        2900.0,
+        0.0
+      ],
+      "id": 460,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        6660.0,
+        6950.0,
+        0.0
+      ],
+      "before": [
+        5680.0,
+        3590.0,
+        0.0
+      ],
+      "id": 461,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        5250.0,
+        7000.0,
+        0.0
+      ],
+      "before": [
+        5770.0,
+        2390.0,
+        0.0
+      ],
+      "id": 462,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        4970.0,
+        6830.0,
+        0.0
+      ],
+      "before": [
+        5670.0,
+        3310.0,
+        0.0
+      ],
+      "id": 463,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        6230.0,
+        6880.0,
+        0.0
+      ],
+      "before": [
+        5490.0,
+        2480.0,
+        0.0
+      ],
+      "id": 464,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        6080.0,
+        4660.0,
+        0.0
+      ],
+      "before": [
+        5190.0,
+        2350.0,
+        0.0
+      ],
+      "id": 465,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        6930.0,
+        5590.0,
+        0.0
+      ],
+      "before": [
+        3810.0,
+        1840.0,
+        0.0
+      ],
+      "id": 466,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        6330.0,
+        5440.0,
+        0.0
+      ],
+      "before": [
+        4680.0,
+        1870.0,
+        0.0
+      ],
+      "id": 467,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        6640.0,
+        4610.0,
+        0.0
+      ],
+      "before": [
+        4370.0,
+        1830.0,
+        0.0
+      ],
+      "id": 468,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        6360.0,
+        4680.0,
+        0.0
+      ],
+      "before": [
+        4090.0,
+        1760.0,
+        0.0
+      ],
+      "id": 469,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        6250.0,
+        4060.0,
+        0.0
+      ],
+      "before": [
+        4670.0,
+        2460.0,
+        0.0
+      ],
+      "id": 470,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        1690.0,
+        5410.0,
+        0.0
+      ],
+      "before": [
+        5580.0,
+        6060.0,
+        0.0
+      ],
+      "id": 471,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        1970.0,
+        5400.0,
+        0.0
+      ],
+      "before": [
+        6510.0,
+        6670.0,
+        0.0
+      ],
+      "id": 472,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        1610.0,
+        5130.0,
+        0.0
+      ],
+      "before": [
+        4800.0,
+        6290.0,
+        0.0
+      ],
+      "id": 473,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        4110.0,
+        6680.0,
+        0.0
+      ],
+      "before": [
+        5350.0,
+        3740.0,
+        0.0
+      ],
+      "id": 474,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        3180.0,
+        6120.0,
+        0.0
+      ],
+      "before": [
+        6150.0,
+        5040.0,
+        0.0
+      ],
+      "id": 475,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        4320.0,
+        6370.0,
+        0.0
+      ],
+      "before": [
+        6710.0,
+        5310.0,
+        0.0
+      ],
+      "id": 476,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        5400.0,
+        6720.0,
+        0.0
+      ],
+      "before": [
+        4560.0,
+        2740.0,
+        0.0
+      ],
+      "id": 477,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        4990.0,
+        6550.0,
+        0.0
+      ],
+      "before": [
+        4940.0,
+        3470.0,
+        0.0
+      ],
+      "id": 478,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        5340.0,
+        6440.0,
+        0.0
+      ],
+      "before": [
+        4450.0,
+        3020.0,
+        0.0
+      ],
+      "id": 479,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        6750.0,
+        5030.0,
+        0.0
+      ],
+      "before": [
+        4280.0,
+        2670.0,
+        0.0
+      ],
+      "id": 480,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        6890.0,
+        5310.0,
+        0.0
+      ],
+      "before": [
+        3530.0,
+        2060.0,
+        0.0
+      ],
+      "id": 481,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        6240.0,
+        3780.0,
+        0.0
+      ],
+      "before": [
+        4170.0,
+        3040.0,
+        0.0
+      ],
+      "id": 482,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        980.0,
+        1790.0,
+        0.0
+      ],
+      "before": [
+        3440.0,
+        6840.0,
+        0.0
+      ],
+      "id": 483,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        4480.0,
+        1600.0,
+        0.0
+      ],
+      "before": [
+        2090.0,
+        4880.0,
+        0.0
+      ],
+      "id": 484,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        5680.0,
+        2360.0,
+        0.0
+      ],
+      "before": [
+        2020.0,
+        4600.0,
+        0.0
+      ],
+      "id": 485,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        5540.0,
+        3590.0,
+        0.0
+      ],
+      "before": [
+        3360.0,
+        2400.0,
+        0.0
+      ],
+      "id": 486,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        1560.0,
+        4850.0,
+        0.0
+      ],
+      "before": [
+        4520.0,
+        6290.0,
+        0.0
+      ],
+      "id": 487,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        3720.0,
+        5830.0,
+        0.0
+      ],
+      "before": [
+        5350.0,
+        4020.0,
+        0.0
+      ],
+      "id": 488,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        6610.0,
+        5440.0,
+        0.0
+      ],
+      "before": [
+        4660.0,
+        3380.0,
+        0.0
+      ],
+      "id": 489,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        2860.0,
+        5300.0,
+        0.0
+      ],
+      "before": [
+        6480.0,
+        6390.0,
+        0.0
+      ],
+      "id": 490,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        3140.0,
+        5300.0,
+        0.0
+      ],
+      "before": [
+        4290.0,
+        6570.0,
+        0.0
+      ],
+      "id": 491,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        4930.0,
+        6270.0,
+        0.0
+      ],
+      "before": [
+        5870.0,
+        5020.0,
+        0.0
+      ],
+      "id": 492,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        4940.0,
+        5990.0,
+        0.0
+      ],
+      "before": [
+        5490.0,
+        4590.0,
+        0.0
+      ],
+      "id": 493,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        5350.0,
+        6160.0,
+        0.0
+      ],
+      "before": [
+        4380.0,
+        3320.0,
+        0.0
+      ],
+      "id": 494,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        6510.0,
+        6670.0,
+        0.0
+      ],
+      "before": [
+        5070.0,
+        3810.0,
+        0.0
+      ],
+      "id": 495,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        7520.0,
+        5700.0,
+        0.0
+      ],
+      "before": [
+        3760.0,
+        2640.0,
+        0.0
+      ],
+      "id": 496,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        7370.0,
+        5980.0,
+        0.0
+      ],
+      "before": [
+        3890.0,
+        2920.0,
+        0.0
+      ],
+      "id": 497,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        700.0,
+        1900.0,
+        0.0
+      ],
+      "before": [
+        3720.0,
+        5830.0,
+        0.0
+      ],
+      "id": 498,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        4170.0,
+        1980.0,
+        0.0
+      ],
+      "before": [
+        2710.0,
+        4770.0,
+        0.0
+      ],
+      "id": 499,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        4520.0,
+        2420.0,
+        0.0
+      ],
+      "before": [
+        930.0,
+        4530.0,
+        0.0
+      ],
+      "id": 500,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        5540.0,
+        3870.0,
+        0.0
+      ],
+      "before": [
+        2900.0,
+        2060.0,
+        0.0
+      ],
+      "id": 501,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        5350.0,
+        5880.0,
+        0.0
+      ],
+      "before": [
+        4640.0,
+        3660.0,
+        0.0
+      ],
+      "id": 502,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        5210.0,
+        5560.0,
+        0.0
+      ],
+      "before": [
+        5160.0,
+        4300.0,
+        0.0
+      ],
+      "id": 503,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        5260.0,
+        5280.0,
+        0.0
+      ],
+      "before": [
+        4880.0,
+        4230.0,
+        0.0
+      ],
+      "id": 504,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        5280.0,
+        4970.0,
+        0.0
+      ],
+      "before": [
+        3480.0,
+        2680.0,
+        0.0
+      ],
+      "id": 505,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        4910.0,
+        3950.0,
+        0.0
+      ],
+      "before": [
+        4300.0,
+        3600.0,
+        0.0
+      ],
+      "id": 506,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        4700.0,
+        5060.0,
+        0.0
+      ],
+      "before": [
+        4020.0,
+        3440.0,
+        0.0
+      ],
+      "id": 507,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        1210.0,
+        2080.0,
+        0.0
+      ],
+      "before": [
+        3910.0,
+        6120.0,
+        0.0
+      ],
+      "id": 508,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        1590.0,
+        2110.0,
+        0.0
+      ],
+      "before": [
+        3140.0,
+        5150.0,
+        0.0
+      ],
+      "id": 509,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        1100.0,
+        2360.0,
+        0.0
+      ],
+      "before": [
+        3720.0,
+        5550.0,
+        0.0
+      ],
+      "id": 510,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        2730.0,
+        1710.0,
+        0.0
+      ],
+      "before": [
+        2390.0,
+        4380.0,
+        0.0
+      ],
+      "id": 511,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        2900.0,
+        2060.0,
+        0.0
+      ],
+      "before": [
+        3420.0,
+        5320.0,
+        0.0
+      ],
+      "id": 512,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        4190.0,
+        2390.0,
+        0.0
+      ],
+      "before": [
+        2990.0,
+        4780.0,
+        0.0
+      ],
+      "id": 513,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        4100.0,
+        3160.0,
+        0.0
+      ],
+      "before": [
+        1130.0,
+        4250.0,
+        0.0
+      ],
+      "id": 514,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        3740.0,
+        3120.0,
+        0.0
+      ],
+      "before": [
+        850.0,
+        4250.0,
+        0.0
+      ],
+      "id": 515,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        4530.0,
+        3770.0,
+        0.0
+      ],
+      "before": [
+        1590.0,
+        4200.0,
+        0.0
+      ],
+      "id": 516,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        4360.0,
+        4580.0,
+        0.0
+      ],
+      "before": [
+        2400.0,
+        1600.0,
+        0.0
+      ],
+      "id": 517,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        3580.0,
+        4230.0,
+        0.0
+      ],
+      "before": [
+        2360.0,
+        1880.0,
+        0.0
+      ],
+      "id": 518,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        4080.0,
+        5250.0,
+        0.0
+      ],
+      "before": [
+        2250.0,
+        1320.0,
+        0.0
+      ],
+      "id": 519,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        1230.0,
+        4530.0,
+        0.0
+      ],
+      "before": [
+        5300.0,
+        5990.0,
+        0.0
+      ],
+      "id": 520,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        2710.0,
+        4770.0,
+        0.0
+      ],
+      "before": [
+        6480.0,
+        6110.0,
+        0.0
+      ],
+      "id": 521,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        3170.0,
+        5020.0,
+        0.0
+      ],
+      "before": [
+        5020.0,
+        5990.0,
+        0.0
+      ],
+      "id": 522,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        950.0,
+        4420.0,
+        0.0
+      ],
+      "before": [
+        6990.0,
+        5400.0,
+        0.0
+      ],
+      "id": 523,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        1210.0,
+        3620.0,
+        0.0
+      ],
+      "before": [
+        6430.0,
+        5460.0,
+        0.0
+      ],
+      "id": 524,
+      "kind": "*Waypoints/Waypoint"
+    },
+    {
+      "after": [
+        1470.0,
+        3340.0,
+        0.0
+      ],
+      "before": [
+        6150.0,
+        5320.0,
+        0.0
+      ],
+      "id": 525,
+      "kind": "*Waypoints/Waypoint"
+    }
+  ],
+  "object_identities_and_owners_preserved": true,
+  "resource_distribution": {
+    "ai_behavior": "Resource incentives only; no runtime AI behavior inferred.",
+    "home_counts": [
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3
+    ],
+    "home_maximum": 3,
+    "home_radius": 100.0,
+    "mine_count": 48,
+    "passed": true,
+    "policy": {
+      "fourth_progress": [
+        0.1,
+        0.35
+      ],
+      "home_maximum": 3,
+      "home_radius": 100.0,
+      "hotspot_progress": [
+        0.33,
+        0.67
+      ],
+      "main_route_max_distance": 65.0,
+      "mines_per_seat": 6,
+      "route_count": 4,
+      "secondary_max_distance": 75.0,
+      "secondary_min_main_distance": 35.0
+    },
+    "routes": 4,
+    "slots": [
+      {
+        "cell": [
+          60.0,
+          720.0
+        ],
+        "home_distance": 60.0,
+        "ordinal": 1,
+        "ore_id": 49,
+        "seat": 1
+      },
+      {
+        "cell": [
+          156.0,
+          768.0
+        ],
+        "home_distance": 60.0,
+        "ordinal": 2,
+        "ore_id": 50,
+        "seat": 1
+      },
+      {
+        "cell": [
+          204.0,
+          752.0
+        ],
+        "home_distance": 89.88882021697692,
+        "ordinal": 3,
+        "ore_id": 51,
+        "seat": 1
+      },
+      {
+        "cell": [
+          224.0,
+          528.0
+        ],
+        "home_distance": 218.3575050232989,
+        "main_progress": 0.3096168881939015,
+        "main_route_distance": 35.77708763999664,
+        "ordinal": 4,
+        "ore_id": 62,
+        "route_id": 1,
+        "seat": 1,
+        "secondary_route_distance": 138.13037319865606
+      },
+      {
+        "cell": [
+          292.0,
+          488.0
+        ],
+        "home_distance": 288.80443209895515,
+        "main_progress": 0.3815480844409695,
+        "main_route_distance": 32.0,
+        "ordinal": 5,
+        "ore_id": 72,
+        "route_id": 1,
+        "seat": 1,
+        "secondary_route_distance": 185.9247159470736
+      },
+      {
+        "cell": [
+          108.0,
+          444.0
+        ],
+        "home_distance": 276.2607463973121,
+        "main_progress": 0.40500390930414387,
+        "main_route_distance": 152.64337522473747,
+        "ordinal": 6,
+        "ore_id": 86,
+        "route_id": 1,
+        "seat": 1,
+        "secondary_route_distance": 2.0
+      },
+      {
+        "cell": [
+          340.0,
+          764.0
+        ],
+        "home_distance": 60.13318551349163,
+        "ordinal": 1,
+        "ore_id": 46,
+        "seat": 2
+      },
+      {
+        "cell": [
+          460.0,
+          756.0
+        ],
+        "home_distance": 60.13318551349163,
+        "ordinal": 2,
+        "ore_id": 47,
+        "seat": 2
+      },
+      {
+        "cell": [
+          308.0,
+          792.0
+        ],
+        "home_distance": 97.40636529508737,
+        "ordinal": 3,
+        "ore_id": 48,
+        "seat": 2
+      },
+      {
+        "cell": [
+          356.0,
+          568.0
+        ],
+        "home_distance": 196.9771560359221,
+        "main_progress": 0.24745762711864408,
+        "main_route_distance": 26.832815729997478,
+        "ordinal": 4,
+        "ore_id": 64,
+        "route_id": 2,
+        "seat": 2,
+        "secondary_route_distance": 192.04166214652486
+      },
+      {
+        "cell": [
+          540.0,
+          408.0
+        ],
+        "home_distance": 378.8192180974983,
+        "main_progress": 0.576271186440678,
+        "main_route_distance": 21.540659228538015,
+        "ordinal": 5,
+        "ore_id": 74,
+        "route_id": 2,
+        "seat": 2,
+        "secondary_route_distance": 316.7080674690811
+      },
+      {
+        "cell": [
+          228.0,
+          792.0
+        ],
+        "home_distance": 174.9514218290323,
+        "main_progress": 0.14152542372881355,
+        "main_route_distance": 152.75143207184672,
+        "ordinal": 6,
+        "ore_id": 88,
+        "route_id": 2,
+        "seat": 2,
+        "secondary_route_distance": 32.0
+      },
+      {
+        "cell": [
+          512.0,
+          708.0
+        ],
+        "home_distance": 60.0,
+        "ordinal": 1,
+        "ore_id": 42,
+        "seat": 3
+      },
+      {
+        "cell": [
+          616.0,
+          656.0
+        ],
+        "home_distance": 58.240879114244144,
+        "ordinal": 2,
+        "ore_id": 44,
+        "seat": 3
+      },
+      {
+        "cell": [
+          620.0,
+          612.0
+        ],
+        "home_distance": 84.8528137423857,
+        "ordinal": 3,
+        "ore_id": 45,
+        "seat": 3
+      },
+      {
+        "cell": [
+          516.0,
+          488.0
+        ],
+        "home_distance": 189.1877374461675,
+        "main_progress": 0.23354564755838642,
+        "main_route_distance": 52.0,
+        "ordinal": 4,
+        "ore_id": 66,
+        "route_id": 3,
+        "seat": 3,
+        "secondary_route_distance": 134.0
+      },
+      {
+        "cell": [
+          332.0,
+          468.0
+        ],
+        "home_distance": 305.9411708155671,
+        "main_progress": 0.5074309978768577,
+        "main_route_distance": 21.213203435596427,
+        "ordinal": 5,
+        "ore_id": 70,
+        "route_id": 3,
+        "seat": 3,
+        "secondary_route_distance": 286.81004166521086
+      },
+      {
+        "cell": [
+          624.0,
+          260.0
+        ],
+        "home_distance": 416.94124286282835,
+        "main_progress": 0.2218683651804671,
+        "main_route_distance": 296.3258341758275,
+        "ordinal": 6,
+        "ore_id": 90,
+        "route_id": 3,
+        "seat": 3,
+        "secondary_route_distance": 74.4043009509531
+      },
+      {
+        "cell": [
+          664.0,
+          584.0
+        ],
+        "home_distance": 60.0,
+        "ordinal": 1,
+        "ore_id": 39,
+        "seat": 4
+      },
+      {
+        "cell": [
+          688.0,
+          536.0
+        ],
+        "home_distance": 60.0,
+        "ordinal": 2,
+        "ore_id": 40,
+        "seat": 4
+      },
+      {
+        "cell": [
+          656.0,
+          636.0
+        ],
+        "home_distance": 85.60373823613078,
+        "ordinal": 3,
+        "ore_id": 41,
+        "seat": 4
+      },
+      {
+        "cell": [
+          604.0,
+          468.0
+        ],
+        "home_distance": 166.90116836020053,
+        "main_progress": 0.31137724550898205,
+        "main_route_distance": 24.0,
+        "ordinal": 4,
+        "ore_id": 68,
+        "route_id": 4,
+        "seat": 4,
+        "secondary_route_distance": 13.0
+      },
+      {
+        "cell": [
+          624.0,
+          304.0
+        ],
+        "home_distance": 297.3213749463701,
+        "main_progress": 0.5317365269461077,
+        "main_route_distance": 24.0,
+        "ordinal": 5,
+        "ore_id": 76,
+        "route_id": 4,
+        "seat": 4,
+        "secondary_route_distance": 16.0
+      },
+      {
+        "cell": [
+          584.0,
+          180.0
+        ],
+        "home_distance": 427.56987733001023,
+        "main_progress": 0.6323353293413174,
+        "main_route_distance": 43.08131845707603,
+        "ordinal": 6,
+        "ore_id": 92,
+        "route_id": 4,
+        "seat": 4,
+        "secondary_route_distance": 0.0
+      },
+      {
+        "cell": [
+          140.0,
+          208.0
+        ],
+        "home_distance": 60.0,
+        "ordinal": 1,
+        "ore_id": 30,
+        "seat": 5
+      },
+      {
+        "cell": [
+          212.0,
+          112.0
+        ],
+        "home_distance": 60.0,
+        "ordinal": 2,
+        "ore_id": 31,
+        "seat": 5
+      },
+      {
+        "cell": [
+          100.0,
+          220.0
+        ],
+        "home_distance": 96.82974749528164,
+        "ordinal": 3,
+        "ore_id": 35,
+        "seat": 5
+      },
+      {
+        "cell": [
+          284.0,
+          260.0
+        ],
+        "home_distance": 147.18695594379278,
+        "main_progress": 0.8205944798301487,
+        "main_route_distance": 39.0,
+        "ordinal": 4,
+        "ore_id": 67,
+        "route_id": 3,
+        "seat": 5,
+        "secondary_route_distance": 147.18695594379278
+      },
+      {
+        "cell": [
+          360.0,
+          424.0
+        ],
+        "home_distance": 321.79496577790025,
+        "main_progress": 0.524416135881104,
+        "main_route_distance": 28.284271247461902,
+        "ordinal": 5,
+        "ore_id": 71,
+        "route_id": 3,
+        "seat": 5,
+        "secondary_route_distance": 292.8839360565888
+      },
+      {
+        "cell": [
+          728.0,
+          92.0
+        ],
+        "home_distance": 556.1726350693641,
+        "main_progress": 0.2218683651804671,
+        "main_route_distance": 491.02443931030564,
+        "ordinal": 6,
+        "ore_id": 91,
+        "route_id": 3,
+        "seat": 5,
+        "secondary_route_distance": 71.28113354878694
+      },
+      {
+        "cell": [
+          300.0,
+          108.0
+        ],
+        "home_distance": 60.0,
+        "ordinal": 1,
+        "ore_id": 16,
+        "seat": 6
+      },
+      {
+        "cell": [
+          408.0,
+          72.0
+        ],
+        "home_distance": 60.0,
+        "ordinal": 2,
+        "ore_id": 28,
+        "seat": 6
+      },
+      {
+        "cell": [
+          260.0,
+          92.0
+        ],
+        "home_distance": 90.24411338142782,
+        "ordinal": 3,
+        "ore_id": 29,
+        "seat": 6
+      },
+      {
+        "cell": [
+          484.0,
+          216.0
+        ],
+        "home_distance": 198.07069445023916,
+        "main_progress": 0.7423728813559322,
+        "main_route_distance": 24.0,
+        "ordinal": 4,
+        "ore_id": 65,
+        "route_id": 2,
+        "seat": 6,
+        "secondary_route_distance": 198.07069445023916
+      },
+      {
+        "cell": [
+          544.0,
+          364.0
+        ],
+        "home_distance": 351.68167424533226,
+        "main_progress": 0.6067796610169491,
+        "main_route_distance": 24.0,
+        "ordinal": 5,
+        "ore_id": 75,
+        "route_id": 2,
+        "seat": 6,
+        "secondary_route_distance": 302.4433831314549
+      },
+      {
+        "cell": [
+          60.0,
+          264.0
+        ],
+        "home_distance": 346.132922444543,
+        "main_progress": 1.0,
+        "main_route_distance": 346.132922444543,
+        "ordinal": 6,
+        "ore_id": 89,
+        "route_id": 2,
+        "seat": 6,
+        "secondary_route_distance": 1.0
+      },
+      {
+        "cell": [
+          500.0,
+          80.0
+        ],
+        "home_distance": 60.530983801686226,
+        "ordinal": 1,
+        "ore_id": 13,
+        "seat": 7
+      },
+      {
+        "cell": [
+          524.0,
+          44.0
+        ],
+        "home_distance": 45.60701700396552,
+        "ordinal": 2,
+        "ore_id": 14,
+        "seat": 7
+      },
+      {
+        "cell": [
+          648.0,
+          52.0
+        ],
+        "home_distance": 90.24411338142782,
+        "ordinal": 3,
+        "ore_id": 15,
+        "seat": 7
+      },
+      {
+        "cell": [
+          464.0,
+          284.0
+        ],
+        "home_distance": 232.7230113246217,
+        "main_progress": 0.7505863956215794,
+        "main_route_distance": 24.0,
+        "ordinal": 4,
+        "ore_id": 63,
+        "route_id": 1,
+        "seat": 7,
+        "secondary_route_distance": 216.0208323287363
+      },
+      {
+        "cell": [
+          196.0,
+          452.0
+        ],
+        "home_distance": 526.2090839200707,
+        "main_progress": 0.40500390930414387,
+        "main_route_distance": 64.28063471995279,
+        "ordinal": 5,
+        "ore_id": 73,
+        "route_id": 1,
+        "seat": 7,
+        "secondary_route_distance": 86.02325267042627
+      },
+      {
+        "cell": [
+          452.0,
+          88.0
+        ],
+        "home_distance": 109.17875251164945,
+        "main_progress": 0.874120406567631,
+        "main_route_distance": 67.89698078707183,
+        "ordinal": 6,
+        "ore_id": 87,
+        "route_id": 1,
+        "seat": 7,
+        "secondary_route_distance": 43.0
+      },
+      {
+        "cell": [
+          736.0,
+          444.0
+        ],
+        "home_distance": 60.530983801686226,
+        "ordinal": 1,
+        "ore_id": 36,
+        "seat": 8
+      },
+      {
+        "cell": [
+          788.0,
+          352.0
+        ],
+        "home_distance": 54.405882034941776,
+        "ordinal": 2,
+        "ore_id": 37,
+        "seat": 8
+      },
+      {
+        "cell": [
+          696.0,
+          460.0
+        ],
+        "home_distance": 89.88882021697692,
+        "ordinal": 3,
+        "ore_id": 38,
+        "seat": 8
+      },
+      {
+        "cell": [
+          680.0,
+          196.0
+        ],
+        "home_distance": 198.59506539690256,
+        "main_progress": 0.7281437125748503,
+        "main_route_distance": 24.0,
+        "ordinal": 4,
+        "ore_id": 69,
+        "route_id": 4,
+        "seat": 8,
+        "secondary_route_distance": 36.0
+      },
+      {
+        "cell": [
+          576.0,
+          292.0
+        ],
+        "home_distance": 191.54111830100607,
+        "main_progress": 0.5461077844311377,
+        "main_route_distance": 24.0,
+        "ordinal": 5,
+        "ore_id": 77,
+        "route_id": 4,
+        "seat": 8,
+        "secondary_route_distance": 64.0
+      },
+      {
+        "cell": [
+          768.0,
+          108.0
+        ],
+        "home_distance": 277.04151313476467,
+        "main_progress": 0.8035928143712575,
+        "main_route_distance": 114.75626344561765,
+        "ordinal": 6,
+        "ore_id": 93,
+        "route_id": 4,
+        "seat": 8,
+        "secondary_route_distance": 59.0592922409336
+      }
+    ]
+  },
+  "script_conditions_actions_and_flags_preserved_except_gift_headings": true,
+  "spawn_placement": {
+    "findings": [],
+    "frame": {
+      "border": 20,
+      "cell_size": 10.0,
+      "height": 840,
+      "width": 840,
+      "z_scale": 0.0390625
+    },
+    "inherited": 0,
+    "orientation": {
+      "accepted": [
+        "south_north"
+      ],
+      "candidates": [
+        [
+          "east_west",
+          false
+        ],
+        [
+          "south_north",
+          true
+        ],
+        [
+          "southeast_northwest",
+          false
+        ]
+      ],
+      "center": [
+        419.5,
+        419.5
+      ]
+    },
+    "passed": true,
+    "policy": {
+      "base_radius": 24.0,
+      "flat_tolerance": 3.0,
+      "near_ore_radius": 62.0,
+      "ore_radius": 20.0
+    },
+    "raw_passed": true,
+    "refinery_policy": {
+      "approach_extension": 25.0,
+      "gap": 8.0,
+      "refinery_back": 5.0,
+      "refinery_forward": 48.0,
+      "refinery_half_width": 18.0
+    },
+    "regressions": [],
+    "schema_version": 1,
+    "seats": [
+      {
+        "base": [
+          120.0,
+          720.0
+        ],
+        "group_key": "P1/84:*Waypoints/Waypoint:447a0000:44778000:bfd453ae:{\"owner\":\"/team\",\"uniqueID\":\"Player_1_Start\",\"waypointName\":\"Player_1_Start\"};48:OreNode:43c80000:44778000:00000000:{\"owner\":\"PlyrNeutral/teamPlyrNeutral\",\"uniqueID\":\"OreNode 38\",\"waypointName\":null};49:OreNode:44aa0000:43ff0000:4016cbe4:{\"owner\":\"PlyrNeutral/teamPlyrNeutral\",\"uniqueID\":\"OreNode 37\",\"waypointName\":null}",
+        "height": 130.0,
+        "ore_ids": [
+          49,
+          50
+        ],
+        "seat": 1,
+        "start_id": 85,
+        "water": true
+      },
+      {
+        "base": [
+          400.0,
+          760.0
+        ],
+        "group_key": "P2/83:*Waypoints/Waypoint:456d8000:44138000:bf293a20:{\"owner\":\"/team\",\"uniqueID\":\"Player_2_Start\",\"waypointName\":\"Player_2_Start\"};45:OreNode:45480000:44098000:00000000:{\"owner\":\"PlyrNeutral/teamPlyrNeutral\",\"uniqueID\":\"OreNode 41\",\"waypointName\":null};46:OreNode:45898000:441d8000:40490fdb:{\"owner\":\"PlyrNeutral/teamPlyrNeutral\",\"uniqueID\":\"OreNode 40\",\"waypointName\":null}",
+        "height": 130.0,
+        "ore_ids": [
+          46,
+          47
+        ],
+        "seat": 2,
+        "start_id": 84,
+        "water": true
+      },
+      {
+        "base": [
+          560.0,
+          672.0
+        ],
+        "group_key": "P3/82:*Waypoints/Waypoint:45a8c000:44b7c000:bf4e8207:{\"owner\":\"/team\",\"uniqueID\":\"Player_3_Start\",\"waypointName\":\"Player_3_Start\"};41:OreNode:4599c000:448ac000:00000000:{\"owner\":\"PlyrNeutral/teamPlyrNeutral\",\"uniqueID\":\"OreNode 45\",\"waypointName\":null};43:OreNode:45ba4000:44cbc000:407b53d1:{\"owner\":\"PlyrNeutral/teamPlyrNeutral\",\"uniqueID\":\"OreNode 43\",\"waypointName\":null}",
+        "height": 130.0,
+        "ore_ids": [
+          42,
+          44
+        ],
+        "seat": 3,
+        "start_id": 83,
+        "water": true
+      },
+      {
+        "base": [
+          724.0,
+          584.0
+        ],
+        "group_key": "P4/81:*Waypoints/Waypoint:45dc0000:4512e000:3fe78143:{\"owner\":\"/team\",\"uniqueID\":\"Player_4_Start\",\"waypointName\":\"Player_4_Start\"};38:OreNode:45c94000:4512e000:00000000:{\"owner\":\"PlyrNeutral/teamPlyrNeutral\",\"uniqueID\":\"OreNode 48\",\"waypointName\":null};39:OreNode:45d0c000:4530e000:00000000:{\"owner\":\"PlyrNeutral/teamPlyrNeutral\",\"uniqueID\":\"OreNode 47\",\"waypointName\":null}",
+        "height": 109.9609375,
+        "ore_ids": [
+          39,
+          40
+        ],
+        "seat": 4,
+        "start_id": 82,
+        "water": true
+      },
+      {
+        "base": [
+          176.0,
+          160.0
+        ],
+        "group_key": "P5/80:*Waypoints/Waypoint:44c30000:45cdf000:bf8f6095:{\"owner\":\"/team\",\"uniqueID\":\"Player_5_Start\",\"waypointName\":\"Player_5_Start\"};29:OreNode:44960000:45bef000:3fc90fdb:{\"owner\":\"PlyrNeutral/teamPlyrNeutral\",\"uniqueID\":\"OreNode 57\",\"waypointName\":null};30:OreNode:44f00000:45dcf000:407b53d1:{\"owner\":\"PlyrNeutral/teamPlyrNeutral\",\"uniqueID\":\"OreNode 56\",\"waypointName\":null}",
+        "height": 130.0,
+        "ore_ids": [
+          30,
+          31
+        ],
+        "seat": 5,
+        "start_id": 81,
+        "water": true
+      },
+      {
+        "base": [
+          348.0,
+          72.0
+        ],
+        "group_key": "P6/79:*Waypoints/Waypoint:454d0000:45e97000:40281119:{\"owner\":\"/team\",\"uniqueID\":\"Player_6_Start\",\"waypointName\":\"Player_6_Start\"};15:OreNode:452f0000:45de3000:3f490fdb:{\"owner\":\"PlyrNeutral/teamPlyrNeutral\",\"uniqueID\":\"OreNode 72\",\"waypointName\":null};27:OreNode:45728000:45e97000:40490fdb:{\"owner\":\"PlyrNeutral/teamPlyrNeutral\",\"uniqueID\":\"OreNode 59\",\"waypointName\":null}",
+        "height": 130.0,
+        "ore_ids": [
+          16,
+          28
+        ],
+        "seat": 6,
+        "start_id": 80,
+        "water": true
+      },
+      {
+        "base": [
+          560.0,
+          72.0
+        ],
+        "group_key": "P7/78:*Waypoints/Waypoint:45a8c000:45e97000:403219c1:{\"owner\":\"/team\",\"uniqueID\":\"Player_7_Start (imported)\",\"waypointName\":\"Player_7_Start (imported)\"};12:OreNode:45960000:45e6f000:4016cbe4:{\"owner\":\"PlyrNeutral/teamPlyrNeutral\",\"uniqueID\":\"OreNode 75\",\"waypointName\":null};13:OreNode:459d8000:45f23000:00000000:{\"owner\":\"PlyrNeutral/teamPlyrNeutral\",\"uniqueID\":\"OreNode 74\",\"waypointName\":null}",
+        "height": 130.0,
+        "ore_ids": [
+          13,
+          14
+        ],
+        "seat": 7,
+        "start_id": 79,
+        "water": true
+      },
+      {
+        "base": [
+          744.0,
+          384.0
+        ],
+        "group_key": "P8/77:*Waypoints/Waypoint:45e24000:4587f000:401ec153:{\"owner\":\"/team\",\"uniqueID\":\"Player_8_Start (imported)\",\"waypointName\":\"Player_8_Start (imported)\"};35:OreNode:45dfc000:456a6000:3f490fdb:{\"owner\":\"PlyrNeutral/teamPlyrNeutral\",\"uniqueID\":\"OreNode 51\",\"waypointName\":null};36:OreNode:45f00000:4591f000:40490fdb:{\"owner\":\"PlyrNeutral/teamPlyrNeutral\",\"uniqueID\":\"OreNode 50\",\"waypointName\":null}",
+        "height": 130.0,
+        "ore_ids": [
+          36,
+          37
+        ],
+        "seat": 8,
+        "start_id": 78,
+        "water": true
+      }
+    ],
+    "status": "strict"
+  },
+  "terrain_and_navigation_byte_exact": true,
+  "version": "T0.3.7"
+}

@@ -1,0 +1,372 @@
+{
+  "geometry_crc32": 1778025833,
+  "map_id": "碧嶂回澜",
+  "policy": {
+    "approach_extension": 25.0,
+    "gap": 8.0,
+    "refinery_back": 5.0,
+    "refinery_forward": 48.0,
+    "refinery_half_width": 18.0
+  },
+  "report": {
+    "checked_objects": 93,
+    "findings": [
+      {
+        "cell": [
+          727.0,
+          261.0
+        ],
+        "conflict": {
+          "approach_gap": -2.262038372425028,
+          "body_gap": -2.167194972325567,
+          "ramp_id": 504,
+          "refinery_gap": null
+        },
+        "height": 280.0,
+        "object_id": 19,
+        "type": "EI_Structure_02"
+      },
+      {
+        "cell": [
+          784.0,
+          395.0
+        ],
+        "conflict": {
+          "approach_gap": 3.6592642301468743,
+          "body_gap": 6.784022526835038,
+          "ramp_id": 498,
+          "refinery_gap": null
+        },
+        "height": 210.0,
+        "object_id": 20,
+        "type": "EI_Structure_02"
+      },
+      {
+        "cell": [
+          706.0,
+          542.0
+        ],
+        "conflict": {
+          "approach_gap": -1.5198367540000177,
+          "body_gap": 21.263654186836103,
+          "ramp_id": 510,
+          "refinery_gap": null
+        },
+        "height": 280.0,
+        "object_id": 21,
+        "type": "EI_Structure_02"
+      },
+      {
+        "cell": [
+          154.0,
+          692.0
+        ],
+        "conflict": {
+          "approach_gap": 23.094260224078575,
+          "body_gap": 37.56830874807016,
+          "ramp_id": 519,
+          "refinery_gap": 0.0
+        },
+        "height": 210.0,
+        "object_id": 26,
+        "type": "OreNode"
+      },
+      {
+        "cell": [
+          179.0,
+          772.0
+        ],
+        "conflict": {
+          "approach_gap": 18.144132712395496,
+          "body_gap": 41.49196721171518,
+          "ramp_id": 519,
+          "refinery_gap": 0.0
+        },
+        "height": 210.0,
+        "object_id": 30,
+        "type": "OreNode"
+      },
+      {
+        "cell": [
+          783.0,
+          788.0
+        ],
+        "conflict": {
+          "approach_gap": 27.95135368237574,
+          "body_gap": 52.92046014247349,
+          "ramp_id": 516,
+          "refinery_gap": 0.0
+        },
+        "height": 122.8515625,
+        "object_id": 31,
+        "type": "OreNode"
+      },
+      {
+        "cell": [
+          274.0,
+          698.0
+        ],
+        "conflict": {
+          "approach_gap": -20.0,
+          "body_gap": -0.5354202362091129,
+          "ramp_id": 517,
+          "refinery_gap": 0.0
+        },
+        "height": 280.0,
+        "object_id": 32,
+        "type": "OreNode"
+      },
+      {
+        "cell": [
+          501.0,
+          662.0
+        ],
+        "conflict": {
+          "approach_gap": 9.335754145233565,
+          "body_gap": 17.784505493195155,
+          "ramp_id": 518,
+          "refinery_gap": 0.0
+        },
+        "height": 210.0,
+        "object_id": 35,
+        "type": "OreNode"
+      },
+      {
+        "cell": [
+          584.0,
+          398.0
+        ],
+        "conflict": {
+          "approach_gap": -8.0,
+          "body_gap": 4.982545445656523,
+          "ramp_id": 507,
+          "refinery_gap": null
+        },
+        "height": 280.0,
+        "object_id": 38,
+        "type": "GarageTechStructure"
+      },
+      {
+        "cell": [
+          781.0,
+          724.0
+        ],
+        "conflict": {
+          "approach_gap": -9.259094580102733,
+          "body_gap": -5.787700380471495,
+          "ramp_id": 516,
+          "refinery_gap": 0.0
+        },
+        "height": 130.0,
+        "object_id": 41,
+        "type": "OreNode"
+      },
+      {
+        "cell": [
+          640.0,
+          780.0
+        ],
+        "conflict": {
+          "approach_gap": -20.0,
+          "body_gap": -15.63014545236684,
+          "ramp_id": 497,
+          "refinery_gap": 0.0
+        },
+        "height": 130.0,
+        "object_id": 43,
+        "type": "OreNode"
+      },
+      {
+        "cell": [
+          388.0,
+          416.0
+        ],
+        "conflict": {
+          "approach_gap": -7.621135227221075,
+          "body_gap": 17.378864772778925,
+          "ramp_id": 505,
+          "refinery_gap": 0.0
+        },
+        "height": 280.0,
+        "object_id": 46,
+        "type": "OreNode"
+      },
+      {
+        "cell": [
+          612.0,
+          360.0
+        ],
+        "conflict": {
+          "approach_gap": 14.00454591643934,
+          "body_gap": 39.00454591643934,
+          "ramp_id": 507,
+          "refinery_gap": 0.0
+        },
+        "height": 280.0,
+        "object_id": 60,
+        "type": "OreNode"
+      },
+      {
+        "cell": [
+          640.0,
+          500.0
+        ],
+        "conflict": {
+          "approach_gap": 17.455458343432966,
+          "body_gap": 17.455458343432966,
+          "ramp_id": 510,
+          "refinery_gap": 0.0
+        },
+        "height": 210.0,
+        "object_id": 64,
+        "type": "OreNode"
+      },
+      {
+        "cell": [
+          332.0,
+          528.0
+        ],
+        "conflict": {
+          "approach_gap": -13.279944883112378,
+          "body_gap": 11.720055116887622,
+          "ramp_id": 511,
+          "refinery_gap": 0.0
+        },
+        "height": 280.0,
+        "object_id": 65,
+        "type": "OreNode"
+      },
+      {
+        "cell": [
+          164.0,
+          192.0
+        ],
+        "conflict": {
+          "approach_gap": -0.3559970258664613,
+          "body_gap": 21.755579946612812,
+          "ramp_id": 500,
+          "refinery_gap": 1.6149239473168824
+        },
+        "height": 350.0,
+        "object_id": 82,
+        "type": "OreNode"
+      },
+      {
+        "cell": [
+          780.0,
+          276.0
+        ],
+        "conflict": {
+          "approach_gap": -16.148725295101343,
+          "body_gap": 8.804856226222096,
+          "ramp_id": 504,
+          "refinery_gap": 0.0
+        },
+        "height": 350.0,
+        "object_id": 84,
+        "type": "OreNode"
+      },
+      {
+        "cell": [
+          164.0,
+          556.0
+        ],
+        "conflict": {
+          "approach_gap": -20.0,
+          "body_gap": -0.4300524765876972,
+          "ramp_id": 512,
+          "refinery_gap": 0.0
+        },
+        "height": 350.0,
+        "object_id": 86,
+        "type": "OreNode"
+      },
+      {
+        "cell": [
+          723.0,
+          443.0
+        ],
+        "conflict": {
+          "approach_gap": 6.587251884218272,
+          "body_gap": 7.604316360586022,
+          "ramp_id": 508,
+          "refinery_gap": null
+        },
+        "height": 210.0,
+        "object_id": 92,
+        "type": "OilDerrick"
+      },
+      {
+        "cell": [
+          460.0,
+          651.0
+        ],
+        "conflict": {
+          "approach_gap": -4.7399126762534465,
+          "body_gap": 20.260087323746554,
+          "ramp_id": 515,
+          "refinery_gap": null
+        },
+        "height": 210.0,
+        "object_id": 94,
+        "type": "OilDerrick"
+      },
+      {
+        "cell": [
+          519.0,
+          409.0
+        ],
+        "conflict": {
+          "approach_gap": -6.0,
+          "body_gap": 6.81356726335607,
+          "ramp_id": 506,
+          "refinery_gap": null
+        },
+        "height": 210.0,
+        "object_id": 100,
+        "type": "OilDerrick"
+      },
+      {
+        "cell": [
+          391.0,
+          502.0
+        ],
+        "conflict": {
+          "approach_gap": -1.5621940228415703,
+          "body_gap": 0.3962291475487856,
+          "ramp_id": 511,
+          "refinery_gap": null
+        },
+        "height": 210.0,
+        "object_id": 103,
+        "type": "AirportTechStructure"
+      },
+      {
+        "cell": [
+          482.0,
+          381.0
+        ],
+        "conflict": {
+          "approach_gap": -8.0,
+          "body_gap": -0.3903366361783114,
+          "ramp_id": 506,
+          "refinery_gap": null
+        },
+        "height": 280.0,
+        "object_id": 105,
+        "type": "VeterancyTechStructure"
+      }
+    ],
+    "geometry_model": "conservative planning reservations, not exact faction meshes",
+    "passed": false,
+    "policy": {
+      "approach_extension": 25.0,
+      "gap": 8.0,
+      "refinery_back": 5.0,
+      "refinery_forward": 48.0,
+      "refinery_half_width": 18.0
+    },
+    "ramps": 24
+  },
+  "schema_version": 1
+}

@@ -1,0 +1,19 @@
+{
+  "source": "[CHAI]千壑横原T0.6.3",
+  "blueprint": "maps/陕西/histories/T0.6.3/layers.npz",
+  "moves": [
+    {
+      "ramp_id": 568,
+      "target_id": 376
+    },
+    {
+      "ramp_id": 567,
+      "target_id": 244
+    }
+  ],
+  "move_buildings": [
+    207
+  ],
+  "center_policy": "exact_target",
+  "relocate_obstructing_decoration": true
+}

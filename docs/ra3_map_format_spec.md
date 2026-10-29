@@ -1,5 +1,7 @@
 # Red Alert 3 (SAGE) `.map` 二进制格式规范
 
+> 本文保留早期研究中的文件名、路径和源码字段。当前蓝图按 `LAYERS` 选择，默认 `layers.npz`，现有四图为 `histories/v11/layers.npz`；版本归档和根镜像约定以 [蓝图与版本资料](blueprint_versions.md) 为准。旧 `v11_*` 开关的算法含义没有因路径整理改变。
+
 > 来源：OpenSAGE 开源项目（https://github.com/OpenSAGE/OpenSAGE，master 分支）
 > 主要参考目录：`src/OpenSage.Game/Data/Map/`、`src/OpenSage.Game/Logic/Map/`、`src/OpenSage.Game/Scripting/`、`src/OpenSage.FileFormats/BinaryReaderExtensions.cs`
 > 适用范围：`SageGame.Ra3` 与 `SageGame.Ra3Uprising`。文中所有未标注"未能确认"的内容均直接来自 OpenSAGE 解析代码。

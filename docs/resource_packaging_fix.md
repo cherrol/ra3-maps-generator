@@ -6,7 +6,7 @@
 
 ## 证据与根因
 
-用户提供的异常 `叠岭连原 T0.5.1.zip` 与正常 `T0.5.1--rebuild.zip`，高度场、地表纹理位图、光照和雾效保持相同，但资源封装不同：异常包缺失 AssetList、删除了 XML 的 19 组 GameScriptList 声明，并保留旧版本 FileName；另有字符串表末尾追加 ID 的历史缺陷。历史逐区块比较保存在 `maps/千壑横原/repack/T0.5.1-rebuild-comparison.txt`。
+用户提供的异常 `叠岭连原 T0.5.1.zip` 与正常 `T0.5.1--rebuild.zip`，高度场、地表纹理位图、光照和雾效保持相同，但资源封装不同：异常包缺失 AssetList、删除了 XML 的 19 组 GameScriptList 声明，并保留旧版本 FileName；另有字符串表末尾追加 ID 的历史缺陷。历史逐区块比较保存在 `maps/陕西/histories/T0.5.1/rebuild-comparison.txt`。
 
 此前字符串表顺序已经修好，但原生 `build` 仍主动删除模板 AssetList，也没有生成匹配地图的完整 XML。验收只在存在 XML 时检查部分一致性，因此三个只含 `.map`、`_art.tga`、`map.str` 的原生包仍然能够发布。单纯重新压缩 ZIP 无法补上缺失的资源声明。
 
@@ -14,7 +14,7 @@
 
 ## 流水线修复
 
-- `src/resources.rs` 从成品实际对象、脚本创建对象、环境、音乐和道路生成资源清单；排除游戏全局预加载对象，避免遗漏脚本依赖。FastHash 和排序经过正常 WorldBuilder 包校准，25 项对照清单逐字节相同。
+- `src/resources/mod.rs` 从成品实际对象、脚本创建对象、环境、音乐和道路生成资源清单；排除游戏全局预加载对象，避免遗漏脚本依赖。FastHash 和排序经过正常 WorldBuilder 包校准，25 项对照清单逐字节相同。
 - 从实际纹理表生成完整 TerrainTextureAtlas，保留原来的贴图家族、diffuse/normal 路径和纹理 ID；同时导出地图对象、航点、元数据、19 组脚本声明及 overrides.xml。未知对象来源会报错，可在配方中补充 `OBJECT_RESOURCE_SOURCES`。
 - `build` 自动生成这些资源，不再删除 AssetList。`repair-resources` 可在保留已完成地图的地形、对象、脚本和斜坡的前提下补齐资源。
 - 发布验收要求有效 AssetList、匹配 XML、完整图集、全部脚本列表和被引用的 overrides.xml；保留字符串表严格倒序校验。原生包包含五个游戏文件；WorldBuilder 保存包还可携带 notes 文件。

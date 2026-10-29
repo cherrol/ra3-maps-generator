@@ -31,12 +31,12 @@
 ## 复现
 
 ```sh
-cargo run --release -- relocate-ramps --map 千壑横原 --bump \
+cargo run --release -- relocate-ramps --map 陕西 --bump \
   --note '在377、220、309位置新增三坡，200号矿挪到752,470' \
-  'dist/[CHAI]千壑横原/[CHAI]千壑横原T0.6.4.zip' \
-  'maps/千壑横原/edits/add-377-220-309.json'
+  'dist/陕西/[CHAI]千壑横原T0.6.4.zip' \
+  'maps/陕西/histories/T0.6.4/add-377-220-309.json'
 ```
 
-方案使用 `moves: []` 和三条 `additions`；`move_buildings: [200]` 是用户授权的矿位避让。`T0.6.4-blueprint.npz` 保存用于本次编辑的来源实际地形。后续定稿编辑沿用 T0.6.5 ZIP 及成品 `source/layout.json`、`source/terrain.npz`，不回退到旧蓝图重建。
+方案使用 `moves: []` 和三条 `additions`；`move_buildings: [200]` 是用户授权的矿位避让。`maps/陕西/histories/T0.6.4/layers.npz` 保存用于本次编辑的来源实际地形。后续定稿编辑沿用 T0.6.5 ZIP 及成品 `source/layout.json`、`source/terrain.npz`，不回退到旧蓝图重建。
 
 成品目录含 `ramp-report.json`、`preview--layout.png`、`ramps-569--comparison.png`、`ramps-570--comparison.png`、`ramps-571--comparison.png`。

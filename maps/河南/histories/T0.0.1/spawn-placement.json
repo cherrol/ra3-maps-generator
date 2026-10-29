@@ -1,0 +1,176 @@
+{
+  "findings": [],
+  "frame": {
+    "border": 20,
+    "cell_size": 10.0,
+    "height": 808,
+    "width": 840,
+    "z_scale": 0.0390625
+  },
+  "inherited": 0,
+  "orientation": {
+    "accepted": [
+      "east_west",
+      "south_north",
+      "southeast_northwest"
+    ],
+    "candidates": [
+      [
+        "east_west",
+        true
+      ],
+      [
+        "south_north",
+        true
+      ],
+      [
+        "southeast_northwest",
+        true
+      ]
+    ],
+    "center": [
+      419.5,
+      403.5
+    ]
+  },
+  "passed": true,
+  "policy": {
+    "base_radius": 24.0,
+    "flat_tolerance": 3.0,
+    "near_ore_radius": 62.0,
+    "ore_radius": 20.0
+  },
+  "raw_passed": true,
+  "refinery_policy": {
+    "approach_extension": 25.0,
+    "gap": 8.0,
+    "refinery_back": 5.0,
+    "refinery_forward": 48.0,
+    "refinery_half_width": 18.0
+  },
+  "regressions": [],
+  "schema_version": 1,
+  "seats": [
+    {
+      "base": [
+        530.0,
+        500.0
+      ],
+      "group_key": "P1/0:*Waypoints/Waypoint:459f6000:45336000:00000000:{\"owner\":\"/team\",\"uniqueID\":\"Player_1_Start\",\"waypointName\":\"Player_1_Start\"};4:OreNode:458ca000:45336000:80000000:{\"owner\":\"PlyrNeutral/teamPlyrNeutral\",\"uniqueID\":\"henan-5\",\"waypointName\":null};5:OreNode:45b22000:45336000:c0490fdb:{\"owner\":\"PlyrNeutral/teamPlyrNeutral\",\"uniqueID\":\"henan-6\",\"waypointName\":null}",
+      "height": 210.0,
+      "ore_ids": [
+        5,
+        6
+      ],
+      "seat": 1,
+      "start_id": 1,
+      "water": false
+    },
+    {
+      "base": [
+        720.0,
+        500.0
+      ],
+      "group_key": "P2/6:*Waypoints/Waypoint:45dac000:45336000:00000000:{\"owner\":\"/team\",\"uniqueID\":\"Player_2_Start\",\"waypointName\":\"Player_2_Start\"};10:OreNode:45c80000:45336000:80000000:{\"owner\":\"PlyrNeutral/teamPlyrNeutral\",\"uniqueID\":\"henan-11\",\"waypointName\":null};11:OreNode:45ed8000:45336000:c0490fdb:{\"owner\":\"PlyrNeutral/teamPlyrNeutral\",\"uniqueID\":\"henan-12\",\"waypointName\":null}",
+      "height": 210.0,
+      "ore_ids": [
+        11,
+        12
+      ],
+      "seat": 2,
+      "start_id": 7,
+      "water": false
+    },
+    {
+      "base": [
+        540.0,
+        630.0
+      ],
+      "group_key": "P3/12:*Waypoints/Waypoint:45a28000:44c44000:00000000:{\"owner\":\"/team\",\"uniqueID\":\"Player_3_Start\",\"waypointName\":\"Player_3_Start\"};16:OreNode:458fc000:44c44000:80000000:{\"owner\":\"PlyrNeutral/teamPlyrNeutral\",\"uniqueID\":\"henan-17\",\"waypointName\":null};17:OreNode:45b54000:44c44000:c0490fdb:{\"owner\":\"PlyrNeutral/teamPlyrNeutral\",\"uniqueID\":\"henan-18\",\"waypointName\":null}",
+      "height": 210.0,
+      "ore_ids": [
+        17,
+        18
+      ],
+      "seat": 3,
+      "start_id": 13,
+      "water": false
+    },
+    {
+      "base": [
+        720.0,
+        650.0
+      ],
+      "group_key": "P4/18:*Waypoints/Waypoint:45dac000:44ab4000:00000000:{\"owner\":\"/team\",\"uniqueID\":\"Player_4_Start\",\"waypointName\":\"Player_4_Start\"};22:OreNode:45c80000:44ab4000:80000000:{\"owner\":\"PlyrNeutral/teamPlyrNeutral\",\"uniqueID\":\"henan-23\",\"waypointName\":null};23:OreNode:45ed8000:44ab4000:c0490fdb:{\"owner\":\"PlyrNeutral/teamPlyrNeutral\",\"uniqueID\":\"henan-24\",\"waypointName\":null}",
+      "height": 210.0,
+      "ore_ids": [
+        23,
+        24
+      ],
+      "seat": 4,
+      "start_id": 19,
+      "water": false
+    },
+    {
+      "base": [
+        110.0,
+        65.0
+      ],
+      "group_key": "P5/24:*Waypoints/Waypoint:44610000:45e1a000:00000000:{\"owner\":\"/team\",\"uniqueID\":\"Player_5_Start\",\"waypointName\":\"Player_5_Start\"};28:OreNode:43960000:45e1a000:80000000:{\"owner\":\"PlyrNeutral/teamPlyrNeutral\",\"uniqueID\":\"henan-29\",\"waypointName\":null};29:OreNode:44bb8000:45e1a000:c0490fdb:{\"owner\":\"PlyrNeutral/teamPlyrNeutral\",\"uniqueID\":\"henan-30\",\"waypointName\":null}",
+      "height": 350.0,
+      "ore_ids": [
+        29,
+        30
+      ],
+      "seat": 5,
+      "start_id": 25,
+      "water": false
+    },
+    {
+      "base": [
+        310.0,
+        65.0
+      ],
+      "group_key": "P6/30:*Waypoints/Waypoint:45354000:45e1a000:00000000:{\"owner\":\"/team\",\"uniqueID\":\"Player_6_Start\",\"waypointName\":\"Player_6_Start\"};34:OreNode:450fc000:45e1a000:80000000:{\"owner\":\"PlyrNeutral/teamPlyrNeutral\",\"uniqueID\":\"henan-35\",\"waypointName\":null};35:OreNode:455ac000:45e1a000:c0490fdb:{\"owner\":\"PlyrNeutral/teamPlyrNeutral\",\"uniqueID\":\"henan-36\",\"waypointName\":null}",
+      "height": 350.0,
+      "ore_ids": [
+        35,
+        36
+      ],
+      "seat": 6,
+      "start_id": 31,
+      "water": false
+    },
+    {
+      "base": [
+        300.0,
+        140.0
+      ],
+      "group_key": "P7/36:*Waypoints/Waypoint:452f0000:45ca3000:00000000:{\"owner\":\"/team\",\"uniqueID\":\"Player_7_Start (imported)\",\"waypointName\":\"Player_7_Start (imported)\"};40:OreNode:45098000:45ca3000:80000000:{\"owner\":\"PlyrNeutral/teamPlyrNeutral\",\"uniqueID\":\"henan-41\",\"waypointName\":null};41:OreNode:45548000:45ca3000:c0490fdb:{\"owner\":\"PlyrNeutral/teamPlyrNeutral\",\"uniqueID\":\"henan-42\",\"waypointName\":null}",
+      "height": 350.0,
+      "ore_ids": [
+        41,
+        42
+      ],
+      "seat": 7,
+      "start_id": 37,
+      "water": false
+    },
+    {
+      "base": [
+        110.0,
+        370.0
+      ],
+      "group_key": "P8/42:*Waypoints/Waypoint:44610000:45825000:00000000:{\"owner\":\"/team\",\"uniqueID\":\"Player_8_Start (imported)\",\"waypointName\":\"Player_8_Start (imported)\"};46:OreNode:43960000:45825000:80000000:{\"owner\":\"PlyrNeutral/teamPlyrNeutral\",\"uniqueID\":\"henan-47\",\"waypointName\":null};47:OreNode:44bb8000:45825000:c0490fdb:{\"owner\":\"PlyrNeutral/teamPlyrNeutral\",\"uniqueID\":\"henan-48\",\"waypointName\":null}",
+      "height": 350.0,
+      "ore_ids": [
+        47,
+        48
+      ],
+      "seat": 8,
+      "start_id": 43,
+      "water": false
+    }
+  ],
+  "status": "strict"
+}

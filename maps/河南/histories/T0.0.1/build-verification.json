@@ -1,0 +1,24 @@
+{
+  "map": "[CHAI]沃野奔流T0.0.1",
+  "playable_cells": [
+    800,
+    768
+  ],
+  "native_sha256": "6efad975b6966920af423d74778ca4f15d5814ff46e89f1f308e078e42558927",
+  "zip_sha256": "22eea173dc6bffbfe3166584ba638575270727ee73cc6a601e4e617ae431a08c",
+  "zip_bytes": 257407,
+  "native_input_only_clean_build": true,
+  "clean_distribution_byte_identical": true,
+  "frozen_rebuild_byte_identical": true,
+  "source_zip": "maps/河南/authoring/source.zip",
+  "spawn_placement_raw_passed": true,
+  "ramp_clearance_raw_passed": true,
+  "native_resource_routes": 304,
+  "shore_boundary_edges": 576,
+  "authoring_issues": 0,
+  "cargo_test_passed": 186,
+  "cargo_fmt_passed": true,
+  "cargo_clippy_passed": true,
+  "ingame_test": "not run",
+  "installed": false
+}

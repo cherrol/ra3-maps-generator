@@ -20,15 +20,15 @@
 原生入口：
 
 ```sh
-cargo run --release -- relocate-ramps --map 千壑横原 --bump \
+cargo run --release -- relocate-ramps --map 陕西 --bump \
   --note '568移到原376；567移到原244，医院挪到506,531' \
-  'dist/[CHAI]千壑横原/[CHAI]千壑横原T0.6.3.zip' \
-  'maps/千壑横原/edits/relocate-567-568.json'
+  'dist/陕西/[CHAI]千壑横原T0.6.3.zip' \
+  'maps/陕西/histories/T0.6.3/relocate-567-568.json'
 ```
 
-方案锁定来源版本和编号；复现时使用对应来源成品及其编号索引、`source/layout.json`。`maps/千壑横原/edits/T0.6.3-blueprint.npz` 保存本次旧坡口还原所用蓝图。T0.6.4 的实际布局和高度存于成品 `source/layout.json`、`source/terrain.npz`，后续继续编辑这张定稿图应沿用 T0.6.4 ZIP 和同目录 source，不回退到原始蓝图重建。
+方案锁定来源版本和编号；复现时使用对应来源成品及其编号索引、`source/layout.json`。`maps/陕西/histories/T0.6.3/layers.npz` 保存本次旧坡口还原所用蓝图。T0.6.4 的实际布局和高度存于成品 `source/layout.json`、`source/terrain.npz`，后续继续编辑这张定稿图应沿用 T0.6.4 ZIP 和同目录 source，不回退到原始蓝图重建。
 
-使用 `src/ramps/relocate.rs` 处理指定坡心、旧口恢复、受保护高度、建筑/装饰避让和局部位图；常规坡道优化逻辑保持。配套 XML 对象坐标按原生 float32 与地编十进制的合理精度匹配，要求唯一位置，拒绝歧义。
+使用 `src/terrain/ramps/relocate.rs` 处理指定坡心、旧口恢复、受保护高度、建筑/装饰避让和局部位图；常规坡道优化逻辑保持。配套 XML 对象坐标按原生 float32 与地编十进制的合理精度匹配，要求唯一位置，拒绝歧义。
 
 ## 验证与安装
 

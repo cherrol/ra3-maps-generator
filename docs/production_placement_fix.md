@@ -6,21 +6,40 @@
 
 | 规则 | 公共配置 | 执行模块与验收 |
 |---|---|---|
-| 赠送避让 | `avoid_existing_buildings`、`avoid_gifted_buildings`、`runtime_occupancy_check` 为真；`fallback_slots: 2` 表示主、备用共两个候选位置 | `src/gift_clearance.rs` 生成主备航点、区域和 `gift-clear-*` 脚本；原条件记录资格，全占保留资格重试，成功后防止重复赠送 |
-| 建筑水陆落点 | `full_footprint: true`；`war_factory.surface: land`，半径 6 格；`naval_yard.surface: water`，半径 8 格 | `src/production_spawns.rs` 检查完整占地、水陆、平坦度、障碍和间距；主备落点同时满足要求 |
-| 赠送建筑朝向 | `facing: opposing_team_center` | `src/production_facing.rs` 按两队实际出生航点计算目标中心，分别设置主备点的生成角度；覆盖赠送兵营、重工、机场、船厂 |
+| 赠送避让 | `avoid_existing_buildings`、`avoid_gifted_buildings`、`runtime_occupancy_check` 为真；`fallback_slots: 2` 表示主、备用共两个候选位置 | `src/gameplay/gift_clearance.rs` 生成主备航点、区域和 `gift-clear-*` 脚本；原条件记录资格，全占保留资格重试，成功后防止重复赠送 |
+| 建筑水陆落点 | `full_footprint: true`；`war_factory.surface: land`，半径 6 格；`naval_yard.surface: water`，半径 8 格 | `src/gameplay/production_spawns.rs` 检查完整占地、水陆、平坦度、障碍和间距；主备落点同时满足要求 |
+| 赠送建筑朝向 | `facing: opposing_team_center`，`allowed_angles_degrees: [45, 135, -45, -135]` | `src/gameplay/production_facing.rs` 按两队实际出生航点计算目标中心，各主备点吸附到最近的允许角度；覆盖赠送兵营、重工、机场、船厂、电厂和超武 |
 
 普通地图构建自动应用三项；已有成品通过 `repair-production --map <id> --bump <源ZIP>` 应用三项，普通 `repack` 只重新封装。成品回读验收同时检查水陆、避让和朝向。报告分别为 `gift-clearance.json`、`production-spawns.json`、`production-facing.json`（增量修复的综合报告也记录后两项中的避让与朝向结果）。
 
-这三项已在当前流水线执行，本次将其统一纳入通用脚本清单与规范；地图内容和版本无需因此改变。以下为实现和历史发布记录。
+以下为当前规则及历史发布记录。
 
-## 当前生产建筑朝向版
+## 当前四角度朝向版
+
+2026-10-28，赠送建筑摆放角度统一限制为 **45、135、-45、-135 度**。保留朝向对方队伍出生区域中心的规则，从每个实际主备落点选择与目标方向夹角最小的允许角度；目标恰在坐标轴上时，固定选择非负分量一侧的象限。原生 ANGLE 仍写弧度，成品回读拒绝任意角度和朝错方向的合法角度。
+
+覆盖赠送兵营、重工、机场、船厂、电厂和超武，包括原有脚本及避让生成的主备动作。四张地图均从各自最新定稿 ZIP 增量修正：
+
+| 地图 | 来源版本 | 修正版 | 核对的生成动作 | 修改角度 |
+|---|---|---|---:|---:|
+| 千壑横原 | T0.6.5 | [T0.6.6](../dist/陕西/[CHAI]千壑横原T0.6.6.zip) | 204 | 200 |
+| 千流叩海 | T0.5.4 | [T0.5.5](../dist/广东/[CHAI]千流叩海T0.5.5.zip) | 280 | 272 |
+| 翠屿浮光 | T0.3.4 | [T0.3.5](../dist/海南/[CHAI]翠屿浮光T0.3.5.zip) | 280 | 268 |
+| 碧嶂回澜 | T2.3.4 | [T2.3.5](../dist/广西/[CHAI]碧嶂回澜T2.3.5.zip) | 280 | 272 |
+
+独立回读确认 1044 个生成动作全部采用允许角度，并逐条从实际出生点和赠送点核对最近朝向。地图仅 `PlayerScriptsList` 变化，逐动作仅 ANGLE 的四字节变化；完整水陆、避让检查和重复修复字节一致性检查通过。高度、对象、斜坡、纹理、位图、触发条件和归属均保持。各修正版已采用为后续坐标制作源，空间检查基准无变化；assets、dist 和 ZIP 共 21 个游戏文件逐字节一致。证据见 `work/diagonal-facing/validation.json`、`package-check.json`。
+
+75 项 Rust 测试、Clippy、格式和差异检查通过。四图坐标流水验收通过，新增/恶化空间检查项均为 0；坐标资料和 WorldBuilder 文件已导出。坐标流水测试的下一版本断言改为从配方版本推导，避免每次地图递增时失效。
+
+本轮生成本地修正版，未安装到游戏目录；游戏内效果待实测。
+
+## 首次生产建筑朝向版
 
 2026-10-27，公共 `production_placement.facing` 设为 `opposing_team_center`。已安装：**千壑横原 T0.6.2、千流叩海 T0.5.3、翠屿浮光 T0.3.3、碧嶂回澜 T2.3.3**。
 
 赠送的兵营、重工、机场和船厂从各自实际生成位置朝向对方队伍的出生区域中心；主、备航点分别计算。两队身份来自配方 `BASES[seat][3]`，目标中心取成品中对方各出生航点的世界坐标平均值，不将南北或东西方向写死。只设置原生创建动作 467 的第 4 个 ANGLE 参数（类型 17，弧度）。超武、电厂、预置建筑和玩家手动建造的建筑未调整。
 
-新模块 `src/production_facing.rs` 在普通构建、回读验收和 `repair-production` 增量发布中执行；同时覆盖使用独立玩法模板的千壑横原。每张实际成品修正 128 个主备生产建筑生成动作，共 512 个；对比来源成品只有 `PlayerScriptsList` 区块变化，而且逐动作比较只改变角度字段。所有对象位置、触发条件、阵营归属、地形、位图、资源身份、主备避让、运行时占用检查及千壑现有 AI 请求均保留。
+新模块 `src/gameplay/production_facing.rs` 在普通构建、回读验收和 `repair-production` 增量发布中执行；同时覆盖使用独立玩法模板的千壑横原。每张实际成品修正 128 个主备生产建筑生成动作，共 512 个；对比来源成品只有 `PlayerScriptsList` 区块变化，而且逐动作比较只改变角度字段。所有对象位置、触发条件、阵营归属、地形、位图、资源身份、主备避让、运行时占用检查及千壑现有 AI 请求均保留。
 
 51 项测试、Clippy、格式和差异检查通过。四图专项独立核对实际出生点、两队方向、每条角度与目标向量的点积，以及再次应用字节一致；水陆与避让专项也通过。证据见 `work/production-facing/validation.json`。assets、dist、ZIP 与游戏安装目录共 21 个文件逐字节一致，保留旧版本，见同目录 `package-install-check.json`。实机效果待复测。
 
@@ -64,7 +83,7 @@
 
 本轮重新打包前三张地图并安装到本机 RA3 Maps 目录。千壑横原的 6 个文件、其余两图各 5 个文件，在 assets、dist、ZIP 和游戏安装目录中逐字节一致。碧嶂回澜已安装的 5 个文件也再次核对一致。已有旧版本保留。
 
-各版本的 `production-spawns.json` 记录完整检查、实际移动和公共规则来源；`source/layout.json` 与编号预览同步到实际成品坐标。默认地图仍为碧嶂回澜。
+各版本的 `production-spawns.json` 记录完整检查、实际移动和公共规则来源；`source/layout.json` 与编号预览同步到实际成品坐标。默认选择为 `广西`（碧嶂回澜）。
 
 ## 保留与验证
 

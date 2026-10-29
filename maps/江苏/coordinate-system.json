@@ -1,0 +1,67 @@
+{
+  "cell_size_world_units": 10.0,
+  "frame": {
+    "border": 20,
+    "cell_size": 10.0,
+    "height": 840,
+    "width": 840,
+    "z_scale": 0.0390625
+  },
+  "full_grid_sample_bounds": [
+    [
+      0,
+      0
+    ],
+    [
+      839,
+      839
+    ]
+  ],
+  "grid_transform": {
+    "x": "world_x/cell_size+border",
+    "y": "height-1-border-world_y/cell_size"
+  },
+  "grid_unit": "cell",
+  "height_transform": "world_height=height_raw*z_scale",
+  "in_playable": "sample domain excludes authored border; world conversion also preserves off-grid coordinates",
+  "map_id": "江苏",
+  "map_name": "平畴织水",
+  "origin": "northwest full-grid sample (0,0)",
+  "parameter_source": {
+    "cell_size_z_scale": "design defaults; use the playable recipe when authoring a finished map",
+    "width_height_border": "terrain preview cache and report"
+  },
+  "playable_cells": [
+    800,
+    800
+  ],
+  "playable_sample_bounds": [
+    [
+      20,
+      20
+    ],
+    [
+      819,
+      819
+    ]
+  ],
+  "schema_version": 1,
+  "scope": "terrain-preview-design",
+  "source": {
+    "kind": "terrain-preview-cache",
+    "path": "maps/江苏/data/terrain-preview/terrain.npz"
+  },
+  "world_origin_grid": [
+    20,
+    819
+  ],
+  "world_transform": {
+    "x": "(grid_x-border)*cell_size",
+    "y": "(height-1-border-grid_y)*cell_size"
+  },
+  "world_unit": "game world unit",
+  "world_x_direction": "east",
+  "world_y_direction": "north",
+  "x_direction": "east",
+  "y_direction": "south"
+}

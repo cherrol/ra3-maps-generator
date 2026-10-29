@@ -1,0 +1,113 @@
+{
+  "source": "[CHAI]千壑横原T0.6.9",
+  "restore_source": "[CHAI]千壑横原T0.6.7",
+  "reference": {
+    "map": "【44gg】正面硬钢（爽）",
+    "map_sha256": "ed63bf243c2d8cd4ca1ae79ca627a9072eabfbd43f52798fa31367185dced341"
+  },
+  "rock_textures": [
+    "Rock_Yucatan03",
+    "Rock_Yucatan02"
+  ],
+  "relief_z_scale": 0.0390625,
+  "relief_base": 200,
+  "mountains": [
+    {
+      "id": "north-center",
+      "bounds": [
+        354,
+        180,
+        424,
+        282
+      ],
+      "reference_crop": [
+        306,
+        145,
+        408,
+        335
+      ],
+      "relief_file": "histories/T0.6.9/44gg-north-center.u16",
+      "material_file": "histories/T0.6.9/44gg-north-center.material.u8",
+      "relief_size": [
+        102,
+        190
+      ],
+      "height_scale": 0.85,
+      "smoothing": 1.8,
+      "mirror": false
+    },
+    {
+      "id": "center",
+      "bounds": [
+        342,
+        354,
+        437,
+        418
+      ],
+      "reference_crop": [
+        355,
+        350,
+        461,
+        432
+      ],
+      "relief_file": "histories/T0.6.9/44gg-center.u16",
+      "material_file": "histories/T0.6.9/44gg-center.material.u8",
+      "relief_size": [
+        106,
+        82
+      ],
+      "height_scale": 1.1,
+      "smoothing": 1.8,
+      "mirror": false
+    },
+    {
+      "id": "west",
+      "bounds": [
+        61,
+        406,
+        108,
+        495
+      ],
+      "reference_crop": [
+        350,
+        340,
+        470,
+        438
+      ],
+      "relief_file": "histories/T0.6.9/44gg-west.u16",
+      "material_file": "histories/T0.6.9/44gg-west.material.u8",
+      "relief_size": [
+        98,
+        120
+      ],
+      "height_scale": 0.9,
+      "smoothing": 1.8,
+      "mirror": true,
+      "reference_rotation_degrees": 90
+    },
+    {
+      "id": "east",
+      "bounds": [
+        657,
+        229,
+        721,
+        340
+      ],
+      "reference_crop": [
+        365,
+        470,
+        465,
+        590
+      ],
+      "relief_file": "histories/T0.6.9/44gg-east.u16",
+      "material_file": "histories/T0.6.9/44gg-east.material.u8",
+      "relief_size": [
+        100,
+        120
+      ],
+      "height_scale": 0.95,
+      "smoothing": 1.8,
+      "mirror": true
+    }
+  ]
+}
