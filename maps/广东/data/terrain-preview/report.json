@@ -31,9 +31,9 @@
     700.0
   ],
   "image_crc32": {
-    "preview--center--line.png": 3538111380,
-    "preview--line.png": 3169559304,
-    "preview.png": 1847567021,
+    "preview--center--line.png": 3688782836,
+    "preview--line.png": 56248182,
+    "preview.png": 4050381976,
     "source.png": 138128652
   },
   "layer_policy": {
@@ -45,8 +45,8 @@
     "adjustments": [],
     "land_layer_cell_counts": [
       0,
-      187762,
-      191883,
+      188648,
+      190997,
       33137,
       0,
       0
@@ -83,12 +83,20 @@
     "water_design_land_reference": {
       "existing_land_layers_preserved": true,
       "fill_method": "four-neighbor BFS within playable land first, then fill the production border",
-      "filled_land_cells": 156,
+      "filled_land_cells": 0,
       "playable_land_seeds_take_priority_over_border": true,
-      "report": "raw/before-square-800/land-reference-report.json",
-      "terrain": "raw/before-square-800/land-reference.npz"
+      "report": "water-layer-reference-report.json",
+      "terrain": "water-layer-reference.npz"
     },
-    "water_is_separate": true
+    "water_is_separate": true,
+    "water_layer_enclosure": {
+      "before_report": "raw/before-water-layer-enclosure/report.json",
+      "before_terrain": "raw/before-water-layer-enclosure/terrain.npz",
+      "changed_land_cells": 886,
+      "rule": "SHORE.SINGLE_LAYER",
+      "shore_band_radius_cells": 12,
+      "verification": "water-layer-verification.json"
+    }
   },
   "map_id": "广东",
   "map_name": "千流叩海",
@@ -145,6 +153,14 @@
     "minimum_lake_area_km2": 80,
     "mode": "map-local-compact-water-design",
     "ocean_channel_open_radius_cells": 3,
-    "preserve_ocean": true
+    "preserve_ocean": true,
+    "single_layer_enclosure": {
+      "before_terrain": "raw/before-water-layer-enclosure/terrain.npz",
+      "full_perimeter": true,
+      "owner_selection": "largest pre-edit shared shoreline length",
+      "rule": "SHORE.SINGLE_LAYER",
+      "shore_band_radius_cells": 12,
+      "verification": "water-layer-verification.json"
+    }
   }
 }

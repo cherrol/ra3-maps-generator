@@ -1,0 +1,82 @@
+{
+  "border_cells": 20,
+  "elevation_thresholds_m": [
+    200,
+    500,
+    1500,
+    4000
+  ],
+  "game_layer_heights": [
+    210,
+    280,
+    350,
+    420,
+    700
+  ],
+  "layer_policy": "national-bands-with-local-fallback",
+  "map_name": "百汊涵天",
+  "schema_version": 1,
+  "series_title": "九州大地·百汊涵天",
+  "shoreline_policy": {
+    "refinement_recipe": "shoreline-refinement.json",
+    "refinement_report": "shoreline-refinement-report.json",
+    "remove_thin_land_protrusions": true,
+    "small_islands_and_waterbodies": {
+      "all_boundary_positions": true,
+      "bidirectional": true,
+      "continuous": true,
+      "few_exits_do_not_satisfy": true,
+      "status": "design requirement; playable height/navigation verification required",
+      "transition_scope": "entire perimeter"
+    },
+    "transition_plan": "shoreline-transition-plan.json"
+  },
+  "size_policy": {
+    "border_included_in_size": false,
+    "dimension_multiple": 8,
+    "geographic_frame": "preserved; axes resampled independently",
+    "long_side_cells": 800,
+    "maximum_playable_cells": [
+      800,
+      800
+    ],
+    "playable_cells": [
+      800,
+      800
+    ],
+    "shape": "square"
+  },
+  "status": "terrain-preview-awaiting-review",
+  "water_design_land_reference": {
+    "report": "water-layer-reference-report.json",
+    "terrain": "water-layer-reference.npz"
+  },
+  "water_policy": {
+    "design_shaping": {
+      "active_reference": "raw/reference-before-shoreline-refinement.npz",
+      "designed_shorelines_are_not_measured": true,
+      "merge_nearby_reservoir_branches": true,
+      "real_water_selection_retained_as_reference": true,
+      "recipe": "water-shaping.json",
+      "reference": "raw/reference-before-water-shaping.npz",
+      "remove_unmergeable_small_or_narrow_water": true,
+      "removed_water_target": "valid adjoining land layer from unchanged DEM",
+      "report": "water-shaping-report.json",
+      "shoreline_refinement": "shoreline-refinement.json"
+    },
+    "include_rivers": false,
+    "lake_area_method": "spherical polygon area; whole waterbody minus holes before frame clipping",
+    "minimum_lake_area_km2": 80,
+    "mode": "map-local-compact-water-design",
+    "ocean_channel_open_radius_cells": 3,
+    "preserve_ocean": true,
+    "single_layer_enclosure": {
+      "before_terrain": "raw/before-water-layer-enclosure/terrain.npz",
+      "full_perimeter": true,
+      "owner_selection": "largest pre-edit shared shoreline length",
+      "rule": "SHORE.SINGLE_LAYER",
+      "shore_band_radius_cells": 12,
+      "verification": "water-layer-verification.json"
+    }
+  }
+}

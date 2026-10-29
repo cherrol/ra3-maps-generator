@@ -31,10 +31,10 @@
     700.0
   ],
   "image_crc32": {
-    "preview--center--line.png": 467503915,
-    "preview--line.png": 488280880,
-    "preview.png": 540498033,
-    "source.png": 1276978853
+    "preview--center--line.png": 2068422738,
+    "preview--line.png": 2232245132,
+    "preview.png": 3101169838,
+    "source.png": 1476800608
   },
   "layer_policy": {
     "active_land_layers": [
@@ -45,9 +45,9 @@
     "adjustments": [],
     "land_layer_cell_counts": [
       0,
-      101936,
-      225148,
-      156425,
+      101857,
+      225259,
+      156314,
       0,
       0
     ],
@@ -85,8 +85,9 @@
       "fill_method": "four-neighbor BFS within playable land first, then fill the production border",
       "filled_land_cells": 0,
       "playable_land_seeds_take_priority_over_border": true,
-      "report": "raw/before-square-800/land-reference-report.json",
-      "terrain": "raw/before-square-800/land-reference.npz"
+      "report": "intrusion-reference-report.json",
+      "terrain": "intrusion-reference.npz",
+      "use_reference_water_mask": true
     },
     "water_is_separate": true
   },
@@ -146,5 +147,11 @@
     "mode": "map-local-compact-water-design",
     "ocean_channel_open_radius_cells": 3,
     "preserve_ocean": true
+  },
+  "terrain_shape_repair": {
+    "baseline": "raw/before-intrusion-repair-2026-10-30",
+    "combat_routes": "not yet designated",
+    "method": "scoped disk opening and adjacent-terrain merges, followed by same-owner shore reconciliation",
+    "report": "intrusion-repair-2026-10-30.json"
   }
 }

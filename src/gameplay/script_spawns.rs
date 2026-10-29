@@ -242,6 +242,64 @@ pub fn append(p: &Project, t: &Terrain, s: &Surface, objects: &mut Vec<MapObject
     println!("共用脚本：按地图地形绑定 {} 个建筑航点", placed.len());
     Ok(())
 }
+
+/// Rebind an existing placement report after all native waypoint repairs finish.
+pub fn refresh_report(p: &Project, map: &MapFile) -> Result<()> {
+    let path = p.assets.join("script_waypoints.json");
+    let bytes = match std::fs::read(&path) {
+        Ok(bytes) => bytes,
+        Err(error) if error.kind() == std::io::ErrorKind::NotFound => return Ok(()),
+        Err(error) => return Err(error.into()),
+    };
+    let mut report: serde_json::Value = serde_json::from_slice(&bytes)?;
+    let hm = HeightMap::parse(map.get("HeightMapData")?)?;
+    let frame = crate::coordinates::Frame::from_heightmap(p, &hm)?;
+    let objects = map::objects(map.get("ObjectsList")?, &map.table)?;
+    let mut waypoints = std::collections::BTreeMap::new();
+    for object in &objects {
+        if object.type_name.contains("Waypoint")
+            && let Some(name) = prop(&object.props, "waypointName").and_then(Value::text)
+        {
+            let cell = frame.grid([object.position[0] as f64, object.position[1] as f64]);
+            if cell.iter().any(|value| !value.is_finite()) || waypoints.insert(name, cell).is_some()
+            {
+                return Err(err(format!("invalid or duplicate report waypoint {name}")));
+            }
+        }
+    }
+    for entry in report
+        .as_array_mut()
+        .ok_or_else(|| err("invalid script waypoint report"))?
+    {
+        let name = entry["waypoint"]
+            .as_str()
+            .ok_or_else(|| err("script waypoint report is missing its waypoint"))?;
+        let cell = *waypoints
+            .get(name)
+            .ok_or_else(|| err(format!("script waypoint report target is missing: {name}")))?;
+        let seat = entry["seat"]
+            .as_u64()
+            .filter(|seat| (1..=8).contains(seat))
+            .ok_or_else(|| err("invalid script waypoint report seat"))?;
+        let ordinary = format!("Player_{seat}_Start");
+        let imported = format!("{ordinary} (imported)");
+        let base = match (
+            waypoints.get(ordinary.as_str()),
+            waypoints.get(imported.as_str()),
+        ) {
+            (Some(base), None) | (None, Some(base)) => *base,
+            _ => {
+                return Err(err(format!(
+                    "script waypoint report requires one start for P{seat}"
+                )));
+            }
+        };
+        entry["cell"] = serde_json::json!(cell.map(|value| value.round_ties_even() as usize));
+        entry["distance_from_base"] = serde_json::json!(distance(base, cell));
+    }
+    project::write_json(&path, &report)
+}
+
 pub fn validate(
     p: &Project,
     map: &MapFile,
@@ -330,7 +388,83 @@ pub fn validate(
 
 #[cfg(test)]
 mod tests {
-    use super::clear;
+    use super::*;
+    use serde_json::json;
+
+    struct ReportFixture {
+        p: Project,
+        map: MapFile,
+    }
+    impl ReportFixture {
+        fn new() -> Self {
+            let root = std::path::Path::new(env!("CARGO_MANIFEST_DIR"));
+            let mut p = Project::load(root, "海南").unwrap();
+            p.assets = std::env::temp_dir().join(format!(
+                "ra3-script-report-{}-{}",
+                std::process::id(),
+                std::time::SystemTime::now()
+                    .duration_since(std::time::UNIX_EPOCH)
+                    .unwrap()
+                    .as_nanos()
+            ));
+            std::fs::create_dir(&p.assets).unwrap();
+            let map = MapFile::load(root.join("templates/8p_template.map")).unwrap();
+            Self { p, map }
+        }
+    }
+    impl Drop for ReportFixture {
+        fn drop(&mut self) {
+            let _ = std::fs::remove_dir_all(&self.p.assets);
+        }
+    }
+
+    #[test]
+    fn final_waypoint_report_uses_native_positions_and_preserves_other_fields() {
+        let mut fixture = ReportFixture::new();
+        let hm = HeightMap::parse(fixture.map.get("HeightMapData").unwrap()).unwrap();
+        let frame = crate::coordinates::Frame::from_heightmap(&fixture.p, &hm).unwrap();
+        let prototype = map::objects(fixture.map.get("ObjectsList").unwrap(), &fixture.map.table)
+            .unwrap()
+            .into_iter()
+            .find(|object| object.type_name.contains("Waypoint"))
+            .unwrap();
+        let objects =
+            [("Player_1_Start", [100., 100.]), ("SWJ1", [130., 140.])].map(|(name, cell)| {
+                let mut object = prototype.clone();
+                let world = frame.world(cell);
+                object.position = [world[0] as f32, world[1] as f32, 0.];
+                map::set(&mut object.props, "waypointName", Value::Ascii(name.into()));
+                object
+            });
+        fixture.map.get_mut("ObjectsList").unwrap().payload =
+            map::write_objects(&objects, &fixture.map).unwrap();
+        let path = fixture.p.assets.join("script_waypoints.json");
+        project::write_json(
+            &path,
+            &json!([{"waypoint":"SWJ1","seat":1,"cell":[101,102],"padding":5,
+                "distance_from_base":2.2,"note":"preserve authored evidence"}]),
+        )
+        .unwrap();
+
+        refresh_report(&fixture.p, &fixture.map).unwrap();
+        let final_report: serde_json::Value =
+            serde_json::from_slice(&std::fs::read(&path).unwrap()).unwrap();
+        assert_eq!(final_report[0]["cell"], json!([130, 140]));
+        assert_eq!(final_report[0]["distance_from_base"], 50.);
+        assert_eq!(final_report[0]["padding"], 5);
+        assert_eq!(final_report[0]["note"], "preserve authored evidence");
+
+        let bytes = std::fs::read(&path).unwrap();
+        refresh_report(&fixture.p, &fixture.map).unwrap();
+        assert_eq!(std::fs::read(&path).unwrap(), bytes);
+    }
+
+    #[test]
+    fn final_waypoint_report_does_not_invent_missing_evidence() {
+        let fixture = ReportFixture::new();
+        refresh_report(&fixture.p, &fixture.map).unwrap();
+        assert!(!fixture.p.assets.join("script_waypoints.json").exists());
+    }
 
     #[test]
     fn building_footprints_leave_space_at_diagonal_corners() {

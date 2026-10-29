@@ -1,0 +1,63 @@
+{
+  "map_id": "山西",
+  "terrain_sha256": "d0753e31f183514551ee2e1d3ebd8fe88b525fa05f52da844fbbc6426f3ef861",
+  "changed_cells": 26,
+  "changed_water_cells": 0,
+  "images": [
+    {
+      "file": "source.png",
+      "sha256": "543a8d431e5b5f63e85c55b843ed34010e919e864567b679d1f3b15a6bef2c4c",
+      "size": [
+        1104,
+        1002
+      ]
+    },
+    {
+      "file": "preview.png",
+      "sha256": "11e821844a66a29ce1d37895adddc2e4feb7ad09b2a806144e7b418f22e9868f",
+      "size": [
+        1104,
+        1002
+      ]
+    },
+    {
+      "file": "preview--line.png",
+      "sha256": "dccd4943bb46d8cd9acd2cceb037aba2eb7cbc45839518c491927b89501504bb",
+      "size": [
+        1104,
+        1002
+      ]
+    },
+    {
+      "file": "preview--center--line.png",
+      "sha256": "91cd9bfa26a6498f14f72d376648addd033b68dbb247a8d2d8ab401d89a7c44a",
+      "size": [
+        1104,
+        1002
+      ]
+    }
+  ],
+  "pixels_checked": 640000,
+  "pixel_mismatches": 0,
+  "closed_waterbodies": [],
+  "waterbodies": [],
+  "errors": [],
+  "independent_checks_passed": true,
+  "date": "2026-10-30",
+  "overall_status": "24处本轮确认问题中本区项已修复；完整交战通行及未定范围仍待核验",
+  "confirmed_failure_sites_repaired": 1,
+  "issue_ids": [
+    6
+  ],
+  "post_repair_interior_extended_candidates": 0,
+  "frame_clipped_extended_candidates_pending": 0,
+  "short_or_rounded_cap_candidates_pending": 762,
+  "all_latest_requirements_passed": false,
+  "combat_route_width_verified": false,
+  "combat_routes": "待核验：预览没有绑定本版的已定交战通路，不推断10格实际通行通过",
+  "gift_buildings": "不适用：本轮纯预览，没有新增赠送落点",
+  "native_navigation_and_shore_transitions": "待可玩制作验收",
+  "repair_report": "intrusion-repair-2026-10-30.json",
+  "width_report": "width-candidates-repair-2026-10-30.json",
+  "previous_acceptance": "acceptance-2026-10-30.json"
+}

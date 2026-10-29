@@ -1,0 +1,61 @@
+{
+  "actual_arrays_and_images_verified": true,
+  "all_applicable_passed": true,
+  "before_terrain_crc32": 3750299561,
+  "candidate_terrain_crc32": 3750299561,
+  "changed": false,
+  "changed_land_cells": 0,
+  "contact_method": "pre-edit four-neighbor shared edges, 10 world units per edge; diagonals excluded; full inner and outer perimeter",
+  "date": "2026-10-29",
+  "image_crc32": {
+    "preview--center--line.png": 3636662710,
+    "preview--line.png": 2776218614,
+    "preview.png": 3638875788,
+    "source.png": 4089080677
+  },
+  "map_id": "甘肃",
+  "original_input_crc32": 840692190,
+  "outside_recorded_band_layers_preserved": true,
+  "playable_passability_status": "待核验：纯预览，缓坡与导航在可玩制作阶段验收",
+  "playable_passability_verified": false,
+  "rule": "SHORE.SINGLE_LAYER",
+  "scope": "all fully enclosed waterbodies in this batch; open/frame-clipped components listed separately",
+  "shore_band_method": "union of Euclidean disks around all land-side shore cells, clipped to playable land",
+  "shore_band_radius_cells": 12,
+  "size_basis": "per-map enclosed components listed below; no global lake-area threshold",
+  "source_image_preserved": true,
+  "water_and_source_arrays_preserved": true,
+  "waterbodies": [
+    {
+      "applicable": true,
+      "bounds_xy_exclusive": [
+        378,
+        457,
+        431,
+        509
+      ],
+      "connected_to_unchanged_owner_land": true,
+      "contacts_after": {
+        "4": {
+          "length_world": 2100,
+          "shared_edges": 210
+        }
+      },
+      "contacts_before": {
+        "4": {
+          "length_world": 2100,
+          "shared_edges": 210
+        }
+      },
+      "id": 0,
+      "owner_layer": 4,
+      "share_of_playable_grid": 0.0029390625,
+      "shore_land_cells": 157,
+      "shore_land_components": 1,
+      "status": "通过",
+      "touches_frame": false,
+      "water_cells": 1881,
+      "whole_perimeter_single_layer": true
+    }
+  ]
+}

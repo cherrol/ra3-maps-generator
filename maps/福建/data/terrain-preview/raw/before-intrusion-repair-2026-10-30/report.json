@@ -1,0 +1,150 @@
+{
+  "blueprint": "福建",
+  "border_cells": 20,
+  "bounds_wgs84": [
+    115.824334444404,
+    23.527662528782322,
+    120.74591303706319,
+    28.339176385400492
+  ],
+  "elevation_thresholds_m": [
+    200.0,
+    500.0,
+    1500.0,
+    4000.0
+  ],
+  "final_images": [
+    "source.png",
+    "preview.png",
+    "preview--line.png",
+    "preview--center--line.png"
+  ],
+  "game_cells": [
+    800,
+    800
+  ],
+  "game_layer_heights": [
+    210.0,
+    280.0,
+    350.0,
+    420.0,
+    700.0
+  ],
+  "image_crc32": {
+    "preview--center--line.png": 467503915,
+    "preview--line.png": 488280880,
+    "preview.png": 540498033,
+    "source.png": 1276978853
+  },
+  "layer_policy": {
+    "active_land_layers": [
+      1,
+      2,
+      3
+    ],
+    "adjustments": [],
+    "land_layer_cell_counts": [
+      0,
+      101936,
+      225148,
+      156425,
+      0,
+      0
+    ],
+    "maximum_land_layers": 5,
+    "minimum_land_layers": 2,
+    "national_thresholds_m": [
+      200.0,
+      500.0,
+      1500.0,
+      4000.0
+    ],
+    "requested_thresholds_m": [
+      200.0,
+      500.0,
+      1500.0,
+      4000.0
+    ],
+    "square_resampling": {
+      "categorical_sampling": "nearest neighbor over unchanged playable geographic bounds",
+      "elevation_sampling": "bilinear from unchanged input.npz",
+      "original_layer_ids_and_thresholds_retained": true,
+      "reference": "raw/before-square-800/terrain.npz",
+      "source_game_cells": [
+        736,
+        800
+      ],
+      "target_game_cells": [
+        800,
+        800
+      ]
+    },
+    "unused_layers_omitted": true,
+    "water_design_land_reference": {
+      "existing_land_layers_preserved": true,
+      "fill_method": "four-neighbor BFS within playable land first, then fill the production border",
+      "filled_land_cells": 0,
+      "playable_land_seeds_take_priority_over_border": true,
+      "report": "raw/before-square-800/land-reference-report.json",
+      "terrain": "raw/before-square-800/land-reference.npz"
+    },
+    "water_is_separate": true
+  },
+  "map_id": "福建",
+  "map_name": "叠嶂听涛",
+  "north_up": true,
+  "processing": {
+    "cumulative_close_radius_cells": 6,
+    "cumulative_open_radius_cells": 15,
+    "dem_box_blur_radius_cells": 6,
+    "majority_radius_cells": 5,
+    "minimum_component_area_cells": 2500,
+    "minimum_neck_width_cells": 20,
+    "minimum_peak_area_cells": 900,
+    "peak_open_radius_cells": 6
+  },
+  "reference_crc32": 163548990,
+  "same_view_for_all_images": true,
+  "schema_version": 1,
+  "scope": "entire rectangle including terrain outside the prototype outline; no province-based clipping",
+  "size_policy": {
+    "border_included_in_size": false,
+    "dimension_multiple": 8,
+    "geographic_frame": "preserved; axes resampled independently",
+    "long_side_cells": 800,
+    "maximum_playable_cells": [
+      800,
+      800
+    ],
+    "playable_cells": [
+      800,
+      800
+    ],
+    "shape": "square",
+    "source_playable_cells": [
+      736,
+      800
+    ]
+  },
+  "source_reference": "maps/福建/data/terrain-preview/input.npz",
+  "water_policy": {
+    "design_shaping": {
+      "active_reference": "raw/reference-before-shoreline-refinement.npz",
+      "designed_shorelines_are_not_measured": true,
+      "merge_nearby_reservoir_branches": true,
+      "real_water_selection_retained_as_reference": true,
+      "recipe": "water-shaping.json",
+      "reference": "raw/reference-before-water-shaping.npz",
+      "remove_unmergeable_small_or_narrow_water": true,
+      "removed_water_target": "valid adjoining land layer from unchanged DEM",
+      "report": "water-shaping-report.json",
+      "shoreline_refinement": "shoreline-refinement.json"
+    },
+    "include_rivers": false,
+    "lake_area_method": "spherical polygon area; whole waterbody minus holes before frame clipping",
+    "minimum_lake_area_km2": 80,
+    "mode": "map-local-compact-water-design",
+    "ocean_channel_open_radius_cells": 3,
+    "preserve_ocean": true
+  }
+}

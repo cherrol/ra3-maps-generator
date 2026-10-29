@@ -1,0 +1,67 @@
+{
+  "schema_version": 2,
+  "date": "2026-10-30",
+  "map_id": "青海",
+  "rule": "SHORE.SINGLE_LAYER",
+  "baseline": "raw/before-intrusion-repair-2026-10-30",
+  "previous_report": "raw/before-intrusion-repair-2026-10-30/water-layer-verification.json",
+  "candidate_terrain_crc32": 3011764356,
+  "all_applicable_passed": true,
+  "actual_arrays_and_images_verified": true,
+  "source_elevation_and_geographic_arrays_preserved": true,
+  "water_and_source_arrays_preserved": true,
+  "changed_water_cells": 0,
+  "image_crc32": {
+    "preview--center--line.png": 2709439362,
+    "preview--line.png": 3444649104,
+    "preview.png": 3825954494,
+    "source.png": 1279531353
+  },
+  "waterbodies": [
+    {
+      "water_cells": 2671,
+      "bounds": [
+        622,
+        230,
+        682,
+        301
+      ],
+      "open": false,
+      "contacts": {
+        "4": 278
+      },
+      "connected_to_unchanged_owner_land": true
+    },
+    {
+      "water_cells": 978,
+      "bounds": [
+        471,
+        454,
+        514,
+        485
+      ],
+      "open": false,
+      "contacts": {
+        "4": 148
+      },
+      "connected_to_unchanged_owner_land": true
+    },
+    {
+      "water_cells": 1185,
+      "bounds": [
+        42,
+        599,
+        82,
+        644
+      ],
+      "open": false,
+      "contacts": {
+        "5": 170
+      },
+      "connected_to_unchanged_owner_land": true
+    }
+  ],
+  "contact_method": "all current four-neighbor shore edges, full outer and inner perimeter; retained enclosed bodies keep the prior dominant owner",
+  "playable_passability_verified": false,
+  "repair_report": "intrusion-repair-2026-10-30.json"
+}

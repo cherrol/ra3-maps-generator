@@ -5,6 +5,7 @@ pub mod gameplay;
 pub mod pipeline;
 pub mod render;
 pub mod resources;
+mod rules;
 pub mod terrain;
 pub mod terrain_preview;
 

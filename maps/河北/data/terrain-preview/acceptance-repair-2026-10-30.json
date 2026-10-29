@@ -1,0 +1,77 @@
+{
+  "map_id": "河北",
+  "terrain_sha256": "2a9bb16afbc8420ce201d236fd0d3c82989a2143a580535e4373a17f86223454",
+  "changed_cells": 74,
+  "changed_water_cells": 0,
+  "images": [
+    {
+      "file": "source.png",
+      "sha256": "cd4a2376914d27a6b84d65f85198d3209cb64a7057272d4884f928a2c67f431f",
+      "size": [
+        1104,
+        1002
+      ]
+    },
+    {
+      "file": "preview.png",
+      "sha256": "fc6af35e4c14475c621a0a0b793b718cf42d1fc1206580b06c0549323c245a32",
+      "size": [
+        1104,
+        1002
+      ]
+    },
+    {
+      "file": "preview--line.png",
+      "sha256": "4c483766f02c1e05064d79f58d776737ecb546aa7173bf60e8deaeee1e6a291d",
+      "size": [
+        1104,
+        1002
+      ]
+    },
+    {
+      "file": "preview--center--line.png",
+      "sha256": "63875408916a6557b56d5c69ecaab987efa5a74035720453d5d39f316ed9f06a",
+      "size": [
+        1104,
+        1002
+      ]
+    }
+  ],
+  "pixels_checked": 640000,
+  "pixel_mismatches": 0,
+  "closed_waterbodies": [],
+  "waterbodies": [
+    {
+      "water_cells": 52494,
+      "bounds": [
+        531,
+        339,
+        820,
+        687
+      ],
+      "open": true,
+      "contacts": {
+        "1": 1104
+      }
+    }
+  ],
+  "errors": [],
+  "independent_checks_passed": true,
+  "date": "2026-10-30",
+  "overall_status": "24处本轮确认问题中本区项已修复；完整交战通行及未定范围仍待核验",
+  "confirmed_failure_sites_repaired": 1,
+  "issue_ids": [
+    12
+  ],
+  "post_repair_interior_extended_candidates": 0,
+  "frame_clipped_extended_candidates_pending": 2,
+  "short_or_rounded_cap_candidates_pending": 483,
+  "all_latest_requirements_passed": false,
+  "combat_route_width_verified": false,
+  "combat_routes": "待核验：预览没有绑定本版的已定交战通路，不推断10格实际通行通过",
+  "gift_buildings": "不适用：本轮纯预览，没有新增赠送落点",
+  "native_navigation_and_shore_transitions": "待可玩制作验收",
+  "repair_report": "intrusion-repair-2026-10-30.json",
+  "width_report": "width-candidates-repair-2026-10-30.json",
+  "previous_acceptance": "acceptance-2026-10-30.json"
+}

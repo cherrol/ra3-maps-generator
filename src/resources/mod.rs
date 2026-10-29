@@ -2,8 +2,10 @@
 //! Hash and manifest ordering are checked against the verified WorldBuilder save.
 mod atlas;
 mod manifest;
+pub mod official;
 mod script_xml;
 pub mod terrain_package;
+pub mod xml_structure;
 use crate::{
     Result, err,
     formats::binary::Reader,
@@ -109,8 +111,19 @@ pub fn generate(map: &mut MapFile, p: &Project) -> Result<Package> {
     let mut sources: BTreeMap<String, Option<String>> = serde_json::from_str(include_str!(
         "../../templates/resources/stock-object-sources.json"
     ))?;
+    if p.cfg
+        .get("OBJECT_RESOURCE_SOURCES")
+        .is_some_and(|value| !value.is_null() && !value.is_object())
+    {
+        return Err(err("OBJECT_RESOURCE_SOURCES must be an object"));
+    }
     if let Some(extra) = p.cfg["OBJECT_RESOURCE_SOURCES"].as_object() {
         for (k, v) in extra {
+            if !v.is_null() && !v.is_string() {
+                return Err(err(format!(
+                    "OBJECT_RESOURCE_SOURCES.{k} must be a source string or null"
+                )));
+            }
             sources.insert(k.clone(), v.as_str().map(str::to_owned));
         }
     }
@@ -120,14 +133,22 @@ pub fn generate(map: &mut MapFile, p: &Project) -> Result<Package> {
         .collect();
     let mut includes = BTreeSet::new();
     for name in runtime_objects(map)? {
-        let source = sources.get(&name).ok_or_else(|| {
-            err(format!(
-                "no registered resource source for {}; declare OBJECT_RESOURCE_SOURCES",
-                name
-            ))
-        })?;
+        let source = sources
+            .get(&name)
+            .cloned()
+            .or_else(|| {
+                official::object(&name)
+                    .and_then(|definition| definition.source.strip_prefix("Xml/"))
+                    .map(|path| Some(format!("DATA:{path}")))
+            })
+            .ok_or_else(|| {
+                err(format!(
+                    "no registered resource source for {}; declare OBJECT_RESOURCE_SOURCES",
+                    name
+                ))
+            })?;
         if let Some(path) = source {
-            includes.insert(path.clone());
+            includes.insert(path);
         }
     }
     let resource_seed = match p.cfg.get("RESOURCE_ID_SEED") {
@@ -296,6 +317,7 @@ pub fn generate(map: &mut MapFile, p: &Project) -> Result<Package> {
     }
     write_script_lists(&mut xml, &players, &nodes)?;
     xml.push_str("</AssetDeclaration>\n");
+    let xml = xml_structure::canonicalize_generated(&xml)?;
     let payload = manifest(map)?;
     let name_idx = map.id("AssetList")?;
     let chunk = Chunk {

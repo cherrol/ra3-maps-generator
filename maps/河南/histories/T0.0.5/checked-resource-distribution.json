@@ -1,0 +1,613 @@
+{
+  "ai_behavior": "Resource incentives only; no runtime AI behavior inferred.",
+  "home_counts": [
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3
+  ],
+  "home_maximum": 3,
+  "home_radius": 100.0,
+  "mine_count": 48,
+  "passed": true,
+  "policy": {
+    "fourth_progress": [
+      0.1,
+      0.35
+    ],
+    "home_maximum": 3,
+    "home_radius": 100.0,
+    "hotspot_progress": [
+      0.33,
+      0.67
+    ],
+    "main_route_max_distance": 65.0,
+    "mines_per_seat": 6,
+    "route_count": 4,
+    "secondary_max_distance": 75.0,
+    "secondary_min_main_distance": 35.0
+  },
+  "routes": 4,
+  "slots": [
+    {
+      "cell": [
+        722.0,
+        84.0
+      ],
+      "home_distance": 60.876925020897694,
+      "ordinal": 1,
+      "ore_id": 35,
+      "seat": 1
+    },
+    {
+      "cell": [
+        762.0,
+        186.0
+      ],
+      "home_distance": 57.0087712549569,
+      "ordinal": 2,
+      "ore_id": 36,
+      "seat": 1
+    },
+    {
+      "cell": [
+        672.0,
+        128.0
+      ],
+      "home_distance": 91.00549433962765,
+      "ordinal": 3,
+      "ore_id": 37,
+      "seat": 1
+    },
+    {
+      "cell": [
+        572.0,
+        128.0
+      ],
+      "home_distance": 191.0026177831079,
+      "main_progress": 0.23067632850241546,
+      "main_route_distance": 1.0,
+      "ordinal": 4,
+      "ore_id": 59,
+      "route_id": 1,
+      "seat": 1,
+      "secondary_route_distance": 47.0
+    },
+    {
+      "cell": [
+        438.0,
+        182.0
+      ],
+      "home_distance": 329.2931824377784,
+      "main_progress": 0.41304347826086957,
+      "main_route_distance": 34.40930106817051,
+      "ordinal": 5,
+      "ore_id": 60,
+      "route_id": 1,
+      "seat": 1,
+      "secondary_route_distance": 24.0
+    },
+    {
+      "cell": [
+        522.0,
+        186.0
+      ],
+      "home_distance": 247.64894508154077,
+      "main_progress": 0.358695652173913,
+      "main_route_distance": 36.069377593742864,
+      "ordinal": 6,
+      "ore_id": 61,
+      "route_id": 1,
+      "seat": 1,
+      "secondary_route_distance": 2.8284271247461903
+    },
+    {
+      "cell": [
+        778.0,
+        236.0
+      ],
+      "home_distance": 58.008620049092706,
+      "ordinal": 1,
+      "ore_id": 38,
+      "seat": 2
+    },
+    {
+      "cell": [
+        778.0,
+        352.0
+      ],
+      "home_distance": 58.008620049092706,
+      "ordinal": 2,
+      "ore_id": 39,
+      "seat": 2
+    },
+    {
+      "cell": [
+        688.0,
+        294.0
+      ],
+      "home_distance": 91.0,
+      "ordinal": 3,
+      "ore_id": 40,
+      "seat": 2
+    },
+    {
+      "cell": [
+        566.0,
+        294.0
+      ],
+      "home_distance": 213.0,
+      "main_progress": 0.23027027027027028,
+      "main_route_distance": 0.0,
+      "ordinal": 4,
+      "ore_id": 65,
+      "route_id": 2,
+      "seat": 2,
+      "secondary_route_distance": 46.0
+    },
+    {
+      "cell": [
+        392.0,
+        256.0
+      ],
+      "home_distance": 388.8611577414232,
+      "main_progress": 0.4454054054054054,
+      "main_route_distance": 17.46424919657298,
+      "ordinal": 5,
+      "ore_id": 66,
+      "route_id": 2,
+      "seat": 2,
+      "secondary_route_distance": 84.0
+    },
+    {
+      "cell": [
+        496.0,
+        340.0
+      ],
+      "home_distance": 286.7141433553636,
+      "main_progress": 0.30594594594594593,
+      "main_route_distance": 46.0,
+      "ordinal": 6,
+      "ore_id": 67,
+      "route_id": 2,
+      "seat": 2,
+      "secondary_route_distance": 0.0
+    },
+    {
+      "cell": [
+        764.0,
+        460.0
+      ],
+      "home_distance": 58.0,
+      "ordinal": 1,
+      "ore_id": 41,
+      "seat": 3
+    },
+    {
+      "cell": [
+        764.0,
+        576.0
+      ],
+      "home_distance": 58.0,
+      "ordinal": 2,
+      "ore_id": 42,
+      "seat": 3
+    },
+    {
+      "cell": [
+        674.0,
+        518.0
+      ],
+      "home_distance": 90.0,
+      "ordinal": 3,
+      "ore_id": 43,
+      "seat": 3
+    },
+    {
+      "cell": [
+        576.0,
+        518.0
+      ],
+      "home_distance": 188.0,
+      "main_progress": 0.2318125770653514,
+      "main_route_distance": 0.0,
+      "ordinal": 4,
+      "ore_id": 71,
+      "route_id": 3,
+      "seat": 3,
+      "secondary_route_distance": 46.0
+    },
+    {
+      "cell": [
+        398.0,
+        542.0
+      ],
+      "home_distance": 366.7860411738702,
+      "main_progress": 0.45129469790382243,
+      "main_route_distance": 24.0,
+      "ordinal": 5,
+      "ore_id": 72,
+      "route_id": 3,
+      "seat": 3,
+      "secondary_route_distance": 22.0
+    },
+    {
+      "cell": [
+        522.0,
+        564.0
+      ],
+      "home_distance": 246.3331078032346,
+      "main_progress": 0.29839704069050554,
+      "main_route_distance": 46.0,
+      "ordinal": 6,
+      "ore_id": 73,
+      "route_id": 3,
+      "seat": 3,
+      "secondary_route_distance": 0.0
+    },
+    {
+      "cell": [
+        756.0,
+        668.0
+      ],
+      "home_distance": 59.0,
+      "ordinal": 1,
+      "ore_id": 44,
+      "seat": 4
+    },
+    {
+      "cell": [
+        708.0,
+        724.0
+      ],
+      "home_distance": 48.093658625644196,
+      "ordinal": 2,
+      "ore_id": 45,
+      "seat": 4
+    },
+    {
+      "cell": [
+        666.0,
+        728.0
+      ],
+      "home_distance": 90.00555538409837,
+      "ordinal": 3,
+      "ore_id": 46,
+      "seat": 4
+    },
+    {
+      "cell": [
+        522.0,
+        722.0
+      ],
+      "home_distance": 234.05341270744162,
+      "main_progress": 0.21828358208955223,
+      "main_route_distance": 5.0,
+      "ordinal": 4,
+      "ore_id": 77,
+      "route_id": 4,
+      "seat": 4,
+      "secondary_route_distance": 41.0
+    },
+    {
+      "cell": [
+        374.0,
+        612.0
+      ],
+      "home_distance": 398.9348317708044,
+      "main_progress": 0.44869402985074625,
+      "main_route_distance": 16.0,
+      "ordinal": 5,
+      "ore_id": 78,
+      "route_id": 4,
+      "seat": 4,
+      "secondary_route_distance": 30.0
+    },
+    {
+      "cell": [
+        460.0,
+        636.0
+      ],
+      "home_distance": 309.67240755353066,
+      "main_progress": 0.355410447761194,
+      "main_route_distance": 37.013511046643494,
+      "ordinal": 6,
+      "ore_id": 79,
+      "route_id": 4,
+      "seat": 4,
+      "secondary_route_distance": 2.8284271247461903
+    },
+    {
+      "cell": [
+        110.0,
+        50.0
+      ],
+      "home_distance": 45.27692569068709,
+      "ordinal": 1,
+      "ore_id": 47,
+      "seat": 5
+    },
+    {
+      "cell": [
+        52.0,
+        114.0
+      ],
+      "home_distance": 60.41522986797286,
+      "ordinal": 2,
+      "ore_id": 48,
+      "seat": 5
+    },
+    {
+      "cell": [
+        154.0,
+        54.0
+      ],
+      "home_distance": 89.00561780022652,
+      "ordinal": 3,
+      "ore_id": 49,
+      "seat": 5
+    },
+    {
+      "cell": [
+        200.0,
+        114.0
+      ],
+      "home_distance": 147.3295625460145,
+      "main_progress": 0.7717391304347826,
+      "main_route_distance": 1.0,
+      "ordinal": 4,
+      "ore_id": 62,
+      "route_id": 1,
+      "seat": 5,
+      "secondary_route_distance": 31.953090617340916
+    },
+    {
+      "cell": [
+        378.0,
+        114.0
+      ],
+      "home_distance": 318.5121661726597,
+      "main_progress": 0.5567632850241546,
+      "main_route_distance": 1.0,
+      "ordinal": 5,
+      "ore_id": 63,
+      "route_id": 1,
+      "seat": 5,
+      "secondary_route_distance": 88.54942122905152
+    },
+    {
+      "cell": [
+        234.0,
+        192.0
+      ],
+      "home_distance": 217.55459085020476,
+      "main_progress": 0.7306763285024155,
+      "main_route_distance": 77.0,
+      "ordinal": 6,
+      "ore_id": 64,
+      "route_id": 1,
+      "seat": 5,
+      "secondary_route_distance": 1.0
+    },
+    {
+      "cell": [
+        84.0,
+        288.0
+      ],
+      "home_distance": 44.701789673345296,
+      "ordinal": 1,
+      "ore_id": 50,
+      "seat": 6
+    },
+    {
+      "cell": [
+        92.0,
+        235.0
+      ],
+      "home_distance": 51.3638978271704,
+      "ordinal": 2,
+      "ore_id": 51,
+      "seat": 6
+    },
+    {
+      "cell": [
+        128.0,
+        320.0
+      ],
+      "home_distance": 99.1072651221897,
+      "ordinal": 3,
+      "ore_id": 52,
+      "seat": 6
+    },
+    {
+      "cell": [
+        168.0,
+        192.0
+      ],
+      "home_distance": 138.67317693050808,
+      "main_progress": 0.7697297297297298,
+      "main_route_distance": 1.0,
+      "ordinal": 4,
+      "ore_id": 68,
+      "route_id": 2,
+      "seat": 6,
+      "secondary_route_distance": 30.364452901377952
+    },
+    {
+      "cell": [
+        308.0,
+        194.0
+      ],
+      "home_distance": 268.61915419418625,
+      "main_progress": 0.6183783783783784,
+      "main_route_distance": 1.0,
+      "ordinal": 5,
+      "ore_id": 69,
+      "route_id": 2,
+      "seat": 6,
+      "secondary_route_distance": 146.0
+    },
+    {
+      "cell": [
+        140.0,
+        360.0
+      ],
+      "home_distance": 134.78223176665387,
+      "main_progress": 1.0,
+      "main_route_distance": 134.5362404707371,
+      "ordinal": 6,
+      "ore_id": 70,
+      "route_id": 2,
+      "seat": 6,
+      "secondary_route_distance": 10.04987562112089
+    },
+    {
+      "cell": [
+        52.0,
+        392.0
+      ],
+      "home_distance": 58.008620049092706,
+      "ordinal": 1,
+      "ore_id": 53,
+      "seat": 7
+    },
+    {
+      "cell": [
+        74.0,
+        502.0
+      ],
+      "home_distance": 56.08029957123981,
+      "ordinal": 2,
+      "ore_id": 54,
+      "seat": 7
+    },
+    {
+      "cell": [
+        142.0,
+        450.0
+      ],
+      "home_distance": 89.0,
+      "ordinal": 3,
+      "ore_id": 55,
+      "seat": 7
+    },
+    {
+      "cell": [
+        224.0,
+        434.0
+      ],
+      "home_distance": 171.74690681348528,
+      "main_progress": 0.7694204685573366,
+      "main_route_distance": 0.0,
+      "ordinal": 4,
+      "ore_id": 74,
+      "route_id": 3,
+      "seat": 7,
+      "secondary_route_distance": 130.0
+    },
+    {
+      "cell": [
+        318.0,
+        532.0
+      ],
+      "home_distance": 277.39682766751315,
+      "main_progress": 0.5561035758323057,
+      "main_route_distance": 23.345235059857504,
+      "ordinal": 5,
+      "ore_id": 75,
+      "route_id": 3,
+      "seat": 7,
+      "secondary_route_distance": 32.0
+    },
+    {
+      "cell": [
+        220.0,
+        592.0
+      ],
+      "home_distance": 219.20994502987313,
+      "main_progress": 0.593094944512947,
+      "main_route_distance": 122.57650672131263,
+      "ordinal": 6,
+      "ore_id": 76,
+      "route_id": 3,
+      "seat": 7,
+      "secondary_route_distance": 28.0
+    },
+    {
+      "cell": [
+        54.0,
+        714.0
+      ],
+      "home_distance": 58.008620049092706,
+      "ordinal": 1,
+      "ore_id": 56,
+      "seat": 8
+    },
+    {
+      "cell": [
+        96.0,
+        788.0
+      ],
+      "home_distance": 44.01136216933077,
+      "ordinal": 2,
+      "ore_id": 57,
+      "seat": 8
+    },
+    {
+      "cell": [
+        144.0,
+        772.0
+      ],
+      "home_distance": 89.0,
+      "ordinal": 3,
+      "ore_id": 58,
+      "seat": 8
+    },
+    {
+      "cell": [
+        188.0,
+        652.0
+      ],
+      "home_distance": 179.13402803487674,
+      "main_progress": 0.7630597014925373,
+      "main_route_distance": 23.345235059857504,
+      "ordinal": 4,
+      "ore_id": 80,
+      "route_id": 4,
+      "seat": 8,
+      "secondary_route_distance": 67.35725647619564
+    },
+    {
+      "cell": [
+        272.0,
+        658.0
+      ],
+      "home_distance": 245.12241839538055,
+      "main_progress": 0.5438432835820896,
+      "main_route_distance": 30.0,
+      "ordinal": 5,
+      "ore_id": 81,
+      "route_id": 4,
+      "seat": 8,
+      "secondary_route_distance": 120.88010589009261
+    },
+    {
+      "cell": [
+        184.0,
+        478.0
+      ],
+      "home_distance": 321.05606986942325,
+      "main_progress": 0.6688432835820896,
+      "main_route_distance": 87.86353054595519,
+      "ordinal": 6,
+      "ore_id": 82,
+      "route_id": 4,
+      "seat": 8,
+      "secondary_route_distance": 43.46262762420146
+    }
+  ]
+}

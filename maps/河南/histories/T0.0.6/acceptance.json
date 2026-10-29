@@ -1,0 +1,109 @@
+{
+  "map": "[CHAI]沃野奔流T0.0.6",
+  "date": "2026-10-30",
+  "native_sha256": "d3c04978b80d7104046384a1469b10ca8eabb4b120c99e3203093fc42027fb64",
+  "native_crc32": 2105502829,
+  "layout_sha256": "d53b1894ec7c6cbef3fda6eec362eaf06f6a03f4116bffe9d058ecee7e5db0a7",
+  "plan_sha256": "8d6f4fe9ae1a7a2549e81239c77ed153326f6236b9130c46be74f69c75e3a128",
+  "policy": {
+    "bucket_size": 32.0,
+    "ore_reserve_radius": 20.0,
+    "building_reserve_radius": 8.0,
+    "oil_reserve_radius": 6.0,
+    "decoration_reserve_radius": 2.0,
+    "flat_tolerance": 12.0,
+    "maximum_walk_step": 12.0,
+    "navigation_clearance": 1,
+    "maximum_ramp_step": 6.1,
+    "maximum_landing_error": 12.0,
+    "terrain_shape": {
+      "combat_route_minimum_width_cells": 10.0,
+      "intrusion_minimum_width_cells": 5.0,
+      "exclude_gift_buildings_from_intrusions": true
+    },
+    "spawn_placement": {
+      "near_ore_radius": 62.0,
+      "base_radius": 8.0,
+      "ore_radius": 20.0,
+      "flat_tolerance": 3.0
+    },
+    "resource_distribution": {
+      "mines_per_seat": 6,
+      "home_radius": 100.0,
+      "home_maximum": 3,
+      "route_count": 4,
+      "main_route_max_distance": 65.0,
+      "fourth_progress": [
+        0.1,
+        0.35
+      ],
+      "hotspot_progress": [
+        0.33,
+        0.67
+      ],
+      "secondary_max_distance": 75.0,
+      "secondary_min_main_distance": 35.0
+    },
+    "ramp_clearance": {
+      "approach_extension": 25.0,
+      "gap": 8.0,
+      "refinery_back": 5.0,
+      "refinery_forward": 48.0,
+      "refinery_half_width": 18.0
+    }
+  },
+  "frame": {
+    "width": 840,
+    "height": 840,
+    "border": 20,
+    "cell_size": 10,
+    "z_scale": 0.0390625
+  },
+  "status": "通过",
+  "applicable_items": {
+    "ore_distribution": "通过",
+    "ramp_clearance": "通过",
+    "shore_perimeter": "通过",
+    "shore_single_layer": "通过",
+    "hotspot_same_target_routes": "通过",
+    "all_building_headings": "通过",
+    "combat_route_width": "通过",
+    "narrow_intrusion_bodies": "通过",
+    "gift_intrusion_exclusion": "通过",
+    "access_convenience": "通过"
+  },
+  "team_area_exception": "explicit user east/west circles; measured separately",
+  "counts": {
+    "ores": 48,
+    "oil": 6,
+    "neutral_tech": 8,
+    "spawns": 8,
+    "ramps": 14,
+    "shoreline_edges": 356,
+    "hotspot_targets": 8,
+    "preplaced_buildings": 16,
+    "ore_heading_checked": 48,
+    "ore_heading_failed": 0,
+    "script_building_actions": 286,
+    "gift_sites": 110,
+    "gift_creation_branches": 280,
+    "full_width_combat_routes": 8,
+    "resource_route_relations": 496
+  },
+  "automated_issue_count": 0,
+  "spawn_findings": 0,
+  "scope": "Native and static geometry only; no game/GUI launched",
+  "notes": [
+    "静态原生模型；未启动游戏或GUI",
+    "保留既有东西出生位和双湖；旧版明确水域面积例外继续列示",
+    "原生高程、材质、位图、水域及坡道区块与T0.0.5逐字节一致"
+  ],
+  "preview_short_candidate_reconciliation": {
+    "report": "preview-width-reconciliation.json",
+    "source_candidates": 138,
+    "reviewed": 138,
+    "pending": 0,
+    "source_evidence_sha256": "803aee5c882ab5457def139f0e26611f8e2526de66b1139eaade88b035854bfe",
+    "maximum_short_boundary_component_diameter_upper_bound_cells": 4.47213595499958
+  }
+}

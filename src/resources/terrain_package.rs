@@ -259,8 +259,8 @@ fn usage(d: &Data) -> Result<Usage> {
 }
 
 /// Compact both blend planes and cliff UV mappings, including references to
-/// secondary-only textures. Keep family IDs stable within the engine limit;
-/// above it, remove only unused families, starting at the end of the table.
+/// secondary-only textures. Remove every unused family and remap the retained
+/// references together; the resulting table must fit the engine limit.
 /// All blend flags, phases and bitmap bytes survive.
 pub fn compact(map: &mut MapFile) -> Result<Report> {
     let mut d = Data::parse(map)?;
@@ -278,15 +278,7 @@ pub fn compact(map: &mut MapFile) -> Result<Report> {
                 .any(|v| *v)
         })
         .collect();
-    let mut remove = d.textures.len().saturating_sub(MAX_TEXTURES);
-    let mut keep = vec![true; d.textures.len()];
-    for i in (0..keep.len()).rev() {
-        if remove > 0 && !family_used[i] {
-            keep[i] = false;
-            remove -= 1;
-        }
-    }
-    if remove > 0 {
+    if family_used.iter().filter(|used| **used).count() > MAX_TEXTURES {
         return Err(err(format!(
             "terrain uses more than {MAX_TEXTURES} texture families; replace a painted texture before publishing"
         )));
@@ -301,7 +293,7 @@ pub fn compact(map: &mut MapFile) -> Result<Report> {
         if !used_tiles[range.clone()].iter().any(|v| *v) {
             unused_textures += 1;
         }
-        if !keep[index] {
+        if !family_used[index] {
             continue;
         }
         for (offset, i) in range.enumerate() {
@@ -475,11 +467,19 @@ mod tests {
             (3, 1, 2, 1)
         );
         assert_eq!(r.unused_textures, 1);
+        assert_eq!(
+            (r.textures_before, r.textures_after, r.removed_textures),
+            (4, 3, 1)
+        );
         let b = Data::parse(&m).unwrap();
         assert_eq!(a.bitmaps, b.bitmaps);
         assert_eq!(a.planes[0], b.planes[0]);
         assert_eq!(
-            a.textures.iter().map(|t| &t.name).collect::<Vec<_>>(),
+            a.textures
+                .iter()
+                .take(3)
+                .map(|t| &t.name)
+                .collect::<Vec<_>>(),
             b.textures.iter().map(|t| &t.name).collect::<Vec<_>>()
         );
         for plane in [1, 2] {

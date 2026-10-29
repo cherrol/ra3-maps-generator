@@ -31,9 +31,9 @@
     700.0
   ],
   "image_crc32": {
-    "preview--center--line.png": 1255409971,
-    "preview--line.png": 1222386780,
-    "preview.png": 532023592,
+    "preview--center--line.png": 3223999735,
+    "preview--line.png": 3731654558,
+    "preview.png": 757096629,
     "source.png": 2896897715
   },
   "layer_policy": {
@@ -45,8 +45,8 @@
     "adjustments": [],
     "land_layer_cell_counts": [
       0,
-      248831,
-      74796,
+      248065,
+      75562,
       28292,
       0,
       0
@@ -83,12 +83,20 @@
     "water_design_land_reference": {
       "existing_land_layers_preserved": true,
       "fill_method": "four-neighbor BFS within playable land first, then fill the production border",
-      "filled_land_cells": 251,
+      "filled_land_cells": 0,
       "playable_land_seeds_take_priority_over_border": true,
-      "report": "raw/before-square-800/land-reference-report.json",
-      "terrain": "raw/before-square-800/land-reference.npz"
+      "report": "water-layer-reference-report.json",
+      "terrain": "water-layer-reference.npz"
     },
-    "water_is_separate": true
+    "water_is_separate": true,
+    "water_layer_enclosure": {
+      "before_report": "raw/before-water-layer-enclosure/report.json",
+      "before_terrain": "raw/before-water-layer-enclosure/terrain.npz",
+      "changed_land_cells": 766,
+      "rule": "SHORE.SINGLE_LAYER",
+      "shore_band_radius_cells": 12,
+      "verification": "water-layer-verification.json"
+    }
   },
   "map_id": "海南",
   "map_name": "翠屿浮光",
@@ -145,6 +153,14 @@
     "minimum_lake_area_km2": 80,
     "mode": "map-local-compact-water-design",
     "ocean_channel_open_radius_cells": 3,
-    "preserve_ocean": true
+    "preserve_ocean": true,
+    "single_layer_enclosure": {
+      "before_terrain": "raw/before-water-layer-enclosure/terrain.npz",
+      "full_perimeter": true,
+      "owner_selection": "largest pre-edit shared shoreline length",
+      "rule": "SHORE.SINGLE_LAYER",
+      "shore_band_radius_cells": 12,
+      "verification": "water-layer-verification.json"
+    }
   }
 }

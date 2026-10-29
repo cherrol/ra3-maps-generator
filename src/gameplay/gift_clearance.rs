@@ -62,13 +62,17 @@ struct Spec {
     padding: usize,
     seat: usize,
 }
-fn kind(name: &str) -> Option<(bool, usize)> {
+pub(crate) fn kind(
+    name: &str,
+    production: &crate::gameplay::production_spawns::PlacementPolicy,
+) -> Option<(bool, usize)> {
+    if let Some(footprint) = production.footprint(name) {
+        return Some(footprint);
+    }
     let s = name.to_ascii_lowercase();
-    if s.ends_with("navalyard") {
-        Some((true, 8))
-    } else if s.ends_with("airfield") {
+    if s.ends_with("airfield") {
         Some((false, 8))
-    } else if s.ends_with("warfactory") || s.ends_with("barracks") || s.contains("superweapon") {
+    } else if s.ends_with("barracks") || s.contains("superweapon") {
         Some((false, 6))
     } else if s.ends_with("powerplant") {
         Some((false, 4))
@@ -83,6 +87,7 @@ fn name(o: &MapObject) -> &str {
 }
 fn specs(p: &Project, nodes: &[Node], objects: &[MapObject]) -> Result<Vec<Spec>> {
     let rules = scripts::load_rules(p)?;
+    let production = crate::gameplay::production_spawns::PlacementPolicy::load(p)?;
     let bases = terrain::Layout::load(p)?.base_cells;
     let mut out = BTreeMap::<String, Spec>::new();
     fn visit(
@@ -90,12 +95,13 @@ fn specs(p: &Project, nodes: &[Node], objects: &[MapObject]) -> Result<Vec<Spec>
         nodes: &[Node],
         objects: &[MapObject],
         rules: &scripts::Rules,
+        production: &crate::gameplay::production_spawns::PlacementPolicy,
         bases: &[[f64; 2]],
         out: &mut BTreeMap<String, Spec>,
     ) -> Result<()> {
         for n in nodes {
             if let Some(c) = &n.children {
-                visit(p, c, objects, rules, bases, out)?;
+                visit(p, c, objects, rules, production, bases, out)?;
             } else if n
                 .command
                 .as_deref()
@@ -104,7 +110,7 @@ fn specs(p: &Project, nodes: &[Node], objects: &[MapObject]) -> Result<Vec<Spec>
                 let args = scripts::string_arguments(n)?;
                 let Some((wet, padding)) = args
                     .iter()
-                    .find_map(|(t, s)| if *t == 15 { kind(s) } else { None })
+                    .find_map(|(t, s)| if *t == 15 { kind(s, production) } else { None })
                 else {
                     continue;
                 };
@@ -164,7 +170,7 @@ fn specs(p: &Project, nodes: &[Node], objects: &[MapObject]) -> Result<Vec<Spec>
         }
         Ok(())
     }
-    visit(p, nodes, objects, &rules, &bases, &mut out)?;
+    visit(p, nodes, objects, &rules, &production, &bases, &mut out)?;
     Ok(out.into_values().collect())
 }
 fn point(p: &Project, o: &MapObject) -> [usize; 2] {
@@ -406,7 +412,10 @@ pub fn apply(p: &Project, map: &mut MapFile) -> Result<Json> {
         .iter()
         .any(|s| s.starts_with(HELPER))
     {
-        if validate(p, map).is_ok() {
+        if validate(p, map).is_ok()
+            && (!crate::gameplay::official_placement::enforced(p)?
+                || crate::gameplay::official_placement::audit(p, map)?["passed"] == true)
+        {
             return Ok(json!({"already_guarded":true}));
         }
         nodes = authored_scripts(&nodes)?;
@@ -425,6 +434,15 @@ pub fn apply(p: &Project, map: &mut MapFile) -> Result<Json> {
     };
     let mut objects = map::objects(map.get("ObjectsList")?, &map.table)?;
     let specs = specs(p, &nodes, &objects)?;
+    let official = crate::gameplay::official_placement::Checker::for_candidates(
+        p,
+        hm.width,
+        &ground.z,
+        &ground.imp,
+        &ground.blocked,
+        &nodes,
+        &objects,
+    )?;
     let bases = terrain::Layout::load(p)?.base_cells;
     let mut slots = BTreeMap::<String, Vec<(String, String)>>::new();
     let mut triggers = areas(map)?
@@ -461,14 +479,20 @@ pub fn apply(p: &Project, map: &mut MapFile) -> Result<Json> {
                 .map(|(_, o)| o.clone())
                 .collect();
             let protected = protected(p, &others, &specs, &q);
+            let official_obstacles = official
+                .as_ref()
+                .map(|checker| checker.planned_obstacles(&others));
             let base = bases[spec.seat - 1];
             let radius = search_radius(p, spec.seat)?;
             let radius = p.usize("PRODUCTION_SPAWN_RADIUS", radius).min(ground.n);
             let distance = |c: [usize; 2]| (c[0] as f64 - base[0]).hypot(c[1] as f64 - base[1]);
             let acceptable = |c: [usize; 2]| {
                 ground.suitable(c, spec)
-                    && clear(c, 8, &protected, q.clearance)
+                    && clear(c, spec.padding.max(8), &protected, q.clearance)
                     && (14.0..=radius as f64).contains(&distance(c))
+                    && official.as_ref().is_none_or(|checker| {
+                        checker.acceptable(&wp, c, official_obstacles.as_ref().unwrap())
+                    })
             };
             let point = if existing.is_some() && acceptable(from) {
                 from
@@ -681,6 +705,15 @@ fn repair_slots(
         imp: terrain::flip(&bt.impassability, hm.width),
         blocked: terrain::flip(&bt.buildability, hm.width),
     };
+    let official = crate::gameplay::official_placement::Checker::for_candidates(
+        p,
+        hm.width,
+        &ground.z,
+        &ground.imp,
+        &ground.blocked,
+        &nodes,
+        &objects,
+    )?;
     let corridor = crate::terrain::ramp_clearance::Policy::default();
     let ramps = crate::terrain::ramp_clearance::ramps(layout, &corridor)?;
     let ore_fields: Vec<_> = objects
@@ -724,7 +757,19 @@ fn repair_slots(
                 .collect();
             let mut protected = protected(p, &others, &all_specs, &q);
             protected.extend(placed.iter().copied());
-            if !relocate && ground.suitable(old, spec) && clear(old, 8, &protected, q.clearance) {
+            let official_obstacles = official
+                .as_ref()
+                .map(|checker| checker.planned_obstacles(&others));
+            let official_clear = |cell| {
+                official.as_ref().is_none_or(|checker| {
+                    checker.acceptable(&wp, cell, official_obstacles.as_ref().unwrap())
+                })
+            };
+            if !relocate
+                && ground.suitable(old, spec)
+                && clear(old, spec.padding.max(8), &protected, q.clearance)
+                && official_clear(old)
+            {
                 continue;
             }
             let base = layout.base_cells[spec.seat - 1];
@@ -770,7 +815,10 @@ fn repair_slots(
                 .iter()
                 .map(|(_, c)| *c)
                 .find(|c| {
-                    if !ground.suitable(*c, spec) || !clear(*c, 8, &protected, q.clearance) {
+                    if !ground.suitable(*c, spec)
+                        || !clear(*c, spec.padding.max(8), &protected, q.clearance)
+                        || !official_clear(*c)
+                    {
                         return false;
                     }
                     let point = c.map(|v| v as f64);
@@ -787,8 +835,14 @@ fn repair_slots(
                     {
                         return false;
                     }
-                    let foundation =
-                        crate::terrain::ramp_clearance::rectangle(point, [1., 0.], -8., 8., 8.);
+                    let padding = spec.padding.max(8) as f64;
+                    let foundation = crate::terrain::ramp_clearance::rectangle(
+                        point,
+                        [1., 0.],
+                        -padding,
+                        padding,
+                        padding,
+                    );
                     ore_fields.iter().all(|field| {
                         crate::terrain::ramp_clearance::polygon_distance(&foundation, field) >= 3.
                     })
@@ -900,7 +954,12 @@ pub fn validate(p: &Project, map: &MapFile) -> Result<()> {
                 .map(|(_, o)| o.clone())
                 .collect::<Vec<_>>();
             if !ground.suitable(c, spec)
-                || !clear(c, 8, &protected(p, &others, &all_specs, &q), q.clearance)
+                || !clear(
+                    c,
+                    spec.padding.max(8),
+                    &protected(p, &others, &all_specs, &q),
+                    q.clearance,
+                )
             {
                 return Err(err(format!("gift slot overlaps an obstruction: {wp}")));
             }
@@ -988,6 +1047,39 @@ pub fn is_alternate(o: &MapObject) -> bool {
 #[cfg(test)]
 mod tests {
     use super::*;
+    #[test]
+    fn gift_footprints_follow_the_shared_production_policy() {
+        let production: crate::gameplay::production_spawns::PlacementPolicy =
+            serde_json::from_value(json!({
+                "full_footprint":true,
+                "war_factory":{"surface":"land","padding":10},
+                "naval_yard":{"surface":"water","padding":12}
+            }))
+            .unwrap();
+        assert_eq!(kind("AlliedWarFactory", &production), Some((false, 10)));
+        assert_eq!(kind("SovietNavalYard", &production), Some((true, 12)));
+        let p = Project::load(std::path::Path::new(env!("CARGO_MANIFEST_DIR")), "海南").unwrap();
+        let mut ground = Ground {
+            p: &p,
+            n: 128,
+            z: vec![212.; 128 * 128],
+            imp: vec![false; 128 * 128],
+            blocked: vec![false; 128 * 128],
+        };
+        let (wet, padding) = kind("AlliedWarFactory", &production).unwrap();
+        let spec = Spec {
+            name: "test".into(),
+            wet,
+            padding,
+            seat: 1,
+        };
+        assert!(ground.suitable([64, 64], &spec));
+        ground.blocked[64 * 128 + 73] = true;
+        assert!(!ground.suitable([64, 64], &spec));
+        let smaller = Spec { padding: 6, ..spec };
+        assert!(ground.suitable([64, 64], &smaller));
+    }
+
     fn arguments(n: &Node) -> Vec<(u32, i32, String)> {
         let b = scripts::unhex(&n.body).unwrap();
         let mut r = Reader::new(&b);

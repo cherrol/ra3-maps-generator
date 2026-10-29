@@ -20,7 +20,7 @@ struct FootprintRule {
 }
 
 #[derive(Clone, Debug, Deserialize, Serialize)]
-struct PlacementPolicy {
+pub(crate) struct PlacementPolicy {
     full_footprint: bool,
     war_factory: FootprintRule,
     naval_yard: FootprintRule,
@@ -28,7 +28,7 @@ struct PlacementPolicy {
 
 impl PlacementPolicy {
     /// Every ruleset, including the map-specific legacy scripts, shares this policy.
-    fn load(p: &Project) -> Result<Self> {
+    pub(crate) fn load(p: &Project) -> Result<Self> {
         #[derive(Deserialize)]
         struct CommonRules {
             production_placement: PlacementPolicy,
@@ -55,6 +55,10 @@ impl PlacementPolicy {
         } else {
             self.war_factory.padding
         }
+    }
+
+    pub(crate) fn footprint(&self, name: &str) -> Option<(bool, usize)> {
+        water_only(name).map(|wet| (wet, self.padding(wet)))
     }
 }
 
@@ -188,17 +192,32 @@ pub fn repair(
         blocked,
         policy: PlacementPolicy::load(p)?,
     };
+    let official = crate::gameplay::official_placement::Checker::for_candidates(
+        p, n, z, impassable, blocked, nodes, objects,
+    )?;
     let mut placements = Vec::new();
     for (index, wet) in bindings(nodes, objects)? {
         let from = cell(p, &objects[index]);
         let mut point = from;
-        if !ground.suitable(from, wet) {
-            let other: Vec<_> = objects
-                .iter()
-                .enumerate()
-                .filter(|(i, _)| *i != index)
-                .map(|(_, o)| o.clone())
-                .collect();
+        let other: Vec<_> = objects
+            .iter()
+            .enumerate()
+            .filter(|(i, _)| *i != index)
+            .map(|(_, o)| o.clone())
+            .collect();
+        let official_obstacles = official
+            .as_ref()
+            .map(|checker| checker.planned_obstacles(&other));
+        let official_clear = |candidate| {
+            official.as_ref().is_none_or(|checker| {
+                checker.acceptable_object(
+                    &objects[index],
+                    candidate,
+                    official_obstacles.as_ref().unwrap(),
+                )
+            })
+        };
+        if !ground.suitable(from, wet) || !official_clear(from) {
             let mut protected = keepouts(p, &other);
             // Saved maps also contain the supplemental power/superweapon points.
             for o in &other {
@@ -239,16 +258,23 @@ pub fn repair(
                 }
             }
             candidates.sort_by(|a, b| a.0.total_cmp(&b.0).then(a.2.cmp(&b.2)).then(a.1.cmp(&b.1)));
+            let mut rejected = None;
             let (_, x, y) = candidates
                 .into_iter()
                 .find(|&(_, x, y)| {
-                    ground.suitable([x, y], wet)
-                        && clear([x, y], ground.policy.padding(wet), &protected)
+                    if !ground.suitable([x,y],wet)||!clear([x,y],ground.policy.padding(wet),&protected){return false;}
+                    if official_clear([x,y]){return true;}
+                    if rejected.is_none(){
+                        let reasons=official.as_ref().map(|checker|checker.object_rejections(&objects[index],[x,y],official_obstacles.as_ref().unwrap()).into_iter().take(3).collect::<Vec<_>>()).unwrap_or_default();
+                        rejected=Some(([x,y],reasons));
+                    }
+                    false
                 })
                 .ok_or_else(|| {
                     err(format!(
-                        "no safe {} for production building near {from:?}",
-                        if wet { "water" } else { "land" }
+                        "no safe {} for production building near {from:?}; object {} {} waypoint {:?}, search radius {radius}, first official rejection {rejected:?}",
+                        if wet { "water" } else { "land" },index+1,objects[index].type_name,
+                        prop(&objects[index].props,"waypointName").and_then(Value::text)
                     ))
                 })?;
             point = [x, y];
@@ -300,6 +326,8 @@ pub fn validate(
 }
 
 pub fn apply(p: &Project, map: &mut MapFile) -> Result<Json> {
+    let strict = crate::gameplay::official_placement::strict_project(p);
+    let p = &strict;
     let hm = HeightMap::parse(map.get("HeightMapData")?)?;
     let bt = BlendTiles::parse(map.get("BlendTileData")?, hm.width, hm.height)?;
     let z: Vec<_> = terrain::flip(&hm.elevations, hm.width)
@@ -326,6 +354,9 @@ pub fn apply(p: &Project, map: &mut MapFile) -> Result<Json> {
     refresh_report(p, map, &mut report)?;
     report["collision_avoidance"] = collision;
     report["facing"] = facing;
+    let official = crate::gameplay::official_placement::audit(p, map)?;
+    crate::gameplay::official_placement::require_passed(&official)?;
+    report["official_placement"] = official;
     Ok(report)
 }
 
@@ -464,10 +495,7 @@ pub fn update_xml(xml: &str, before: &MapFile, after: &MapFile) -> Result<String
         ));
     }
     if !extra.is_empty() {
-        let end = xml
-            .find("</GameMap>")
-            .ok_or_else(|| err("missing GameMap XML"))?;
-        xml.insert_str(end, &extra);
+        xml = crate::resources::xml_structure::insert_waypoints(&xml, &extra)?;
     }
     crate::resources::refresh_script_xml(&xml, after)
 }

@@ -45,6 +45,26 @@ pub struct Options {
     pub wb_install: bool,
     pub wb_root: Option<PathBuf>,
 }
+
+fn stage_enabled(options: &Options, stage: &str) -> bool {
+    !options.skip.iter().any(|s| s == stage)
+        && (options.only.is_empty() || options.only.iter().any(|s| s == stage))
+}
+
+#[derive(Default)]
+struct StageInputs(Option<(Terrain, Surface)>);
+
+impl StageInputs {
+    fn surface(&mut self, p: &Project) -> Result<&(Terrain, Surface)> {
+        if self.0.is_none() {
+            let terrain = Terrain::load(p)?;
+            let surface = Surface::generate(&terrain, p)?;
+            self.0 = Some((terrain, surface));
+        }
+        Ok(self.0.as_ref().unwrap())
+    }
+}
+
 pub fn run(root: &Path, id: &str, options: &Options) -> Result<Project> {
     for stage in options.only.iter().chain(&options.skip) {
         if !STAGES.contains(&stage.as_str()) {
@@ -94,14 +114,13 @@ pub fn run(root: &Path, id: &str, options: &Options) -> Result<Project> {
     let result = (|| {
         p.ensure_dirs()?;
         crate::coordinates::prepare(&p)?;
+        let mut inputs = StageInputs::default();
         for stage in STAGES {
-            if options.skip.iter().any(|s| s == stage)
-                || (!options.only.is_empty() && !options.only.iter().any(|s| s == stage))
-            {
+            if !stage_enabled(options, stage) {
                 continue;
             }
             println!("\n---- {stage} ----");
-            run_stage(&p, stage, options)?;
+            run_stage(&p, stage, options, &mut inputs)?;
         }
         if options.install && crate::pipeline::coordinate_pipeline::enabled(&p) {
             crate::pipeline::coordinate_pipeline::accept(&p)?;
@@ -133,7 +152,7 @@ pub fn run(root: &Path, id: &str, options: &Options) -> Result<Project> {
     }
     Ok(p)
 }
-fn run_stage(p: &Project, stage: &str, options: &Options) -> Result<()> {
+fn run_stage(p: &Project, stage: &str, options: &Options, inputs: &mut StageInputs) -> Result<()> {
     let frozen = crate::pipeline::coordinate_pipeline::enabled(p);
     match stage {
         "terrain" if frozen => crate::pipeline::coordinate_pipeline::prepare(p)?,
@@ -147,20 +166,22 @@ fn run_stage(p: &Project, stage: &str, options: &Options) -> Result<()> {
                 t.layout.ramps.len(),
                 t.layout.ore_cells.len()
             );
+            inputs.0 = None;
         }
         "passability" | "spatial" if frozen => {
             crate::pipeline::coordinate_pipeline::audit(p)?;
         }
         "passability" => {
-            let t = Terrain::load(p)?;
-            let s = Surface::generate(&t, p)?;
-            connectivity(&t, &s, p)?;
+            let (t, s) = inputs.surface(p)?;
+            connectivity(t, s, p)?;
         }
         "map" if frozen => crate::pipeline::coordinate_pipeline::assemble(p)?,
         "map" => {
-            let t = Terrain::load(p)?;
-            let s = Surface::generate(&t, p)?;
-            assemble(p, &t, &s)?;
+            let (t, s) = inputs.surface(p)?;
+            assemble_with_previews(p, t, s, !stage_enabled(options, "preview"))?;
+            // Assembly can move objects and replace the saved layout. Later
+            // previews must load those final inputs rather than the blueprint.
+            inputs.0 = None;
         }
         "verify" => {
             verify(p)?;
@@ -168,9 +189,8 @@ fn run_stage(p: &Project, stage: &str, options: &Options) -> Result<()> {
         "spatial" => {}
         "preview" if frozen => crate::pipeline::coordinate_pipeline::preview(p)?,
         "preview" => {
-            let t = Terrain::load(p)?;
-            let s = Surface::generate(&t, p)?;
-            render::previews(&t, p, &s)?;
+            let (t, s) = inputs.surface(p)?;
+            render::previews(t, p, s)?;
         }
         "coordinates" => {
             crate::coordinates::generate(p)?;
@@ -197,6 +217,81 @@ fn restore_version(path: &Path, bytes: Option<&[u8]>) -> Result<()> {
     }
 }
 pub fn assemble(p: &Project, t: &Terrain, s: &Surface) -> Result<()> {
+    assemble_with_previews(p, t, s, true)
+}
+
+fn assembled_layout(
+    p: &Project,
+    saved: &crate::terrain::Layout,
+    actual: &[map::MapObject],
+) -> Result<crate::terrain::Layout> {
+    if actual.len() < saved.objects.len()
+        || saved
+            .objects
+            .iter()
+            .zip(actual)
+            .any(|(source, object)| source.type_name != object.type_name)
+    {
+        return Err(err(
+            "assembled objects differ from declared layout identities",
+        ));
+    }
+    let mut layout = saved.clone();
+    let mut moves = Vec::new();
+    for (source, object) in layout.objects.iter_mut().zip(actual) {
+        let cell = crate::gameplay::script_spawns::to_cell(p, object);
+        if !source.type_name.contains("Waypoint") && source.cell != cell {
+            moves.push((source.cell, cell));
+        }
+        source.cell = cell;
+    }
+    // Update each declaration from its original coordinate once, including
+    // moves into another object's former position.
+    for group in [
+        &mut layout.ore_cells,
+        &mut layout.derrick_cells,
+        &mut layout.house_cells,
+        &mut layout.post_cells,
+        &mut layout.garage_cells,
+        &mut layout.airport_cells,
+        &mut layout.hospital_cells,
+        &mut layout.academy_cells,
+        &mut layout.shipyard_cells,
+        &mut layout.bridge_cells,
+    ] {
+        for point in group {
+            if let Some((_, cell)) = moves.iter().find(|(before, _)| before == point) {
+                *point = *cell;
+            }
+        }
+    }
+    for object in actual
+        .iter()
+        .filter(|o| crate::gameplay::gift_clearance::is_alternate(o))
+    {
+        if !layout.objects.iter().any(|o| {
+            prop(&o.props, "waypointName").and_then(Value::text)
+                == prop(&object.props, "waypointName").and_then(Value::text)
+        }) {
+            layout.objects.push(crate::terrain::ObjectSpec {
+                cell: crate::gameplay::script_spawns::to_cell(p, object),
+                version: object.version,
+                angle: object.angle,
+                road_type: object.road_type,
+                type_name: object.type_name.clone(),
+                props: object.props.clone(),
+            });
+        }
+    }
+    Ok(layout)
+}
+
+fn assemble_with_previews(
+    p: &Project,
+    t: &Terrain,
+    s: &Surface,
+    write_previews: bool,
+) -> Result<()> {
     crate::coordinates::prepare(p)?;
     let template = p.string("TEMPLATE", "8p_template.map");
     project::safe_component(template)?;
@@ -230,19 +325,6 @@ pub fn assemble(p: &Project, t: &Terrain, s: &Surface) -> Result<()> {
             &mut objects,
         )?;
         project::write_json(&p.assets.join("production-spawns.json"), &report)?;
-        let mut layout = t.layout.clone();
-        for (source, actual) in layout.objects.iter_mut().zip(&objects) {
-            let before = source.cell;
-            source.cell = crate::gameplay::script_spawns::to_cell(p, actual);
-            if before != source.cell {
-                for c in &mut layout.shipyard_cells {
-                    if *c == before {
-                        *c = source.cell;
-                    }
-                }
-            }
-        }
-        project::write_json(&p.source().join("layout.json"), &layout)?;
     }
     // The object layout is declarative. IDs and all property keys are linked here.
     for o in &objects {
@@ -265,29 +347,9 @@ pub fn assemble(p: &Project, t: &Terrain, s: &Surface) -> Result<()> {
         crate::gameplay::production_spawns::refresh_report(p, &m, &mut spawn_report)?;
         project::write_json(&p.assets.join("production-spawns.json"), &spawn_report)?;
         let actual = map::objects(m.get("ObjectsList")?, &m.table)?;
-        let mut layout = t.layout.clone();
-        for (source, object) in layout.objects.iter_mut().zip(&actual) {
-            source.cell = crate::gameplay::script_spawns::to_cell(p, object);
-        }
-        for object in actual
-            .iter()
-            .filter(|o| crate::gameplay::gift_clearance::is_alternate(o))
-        {
-            if !layout.objects.iter().any(|o| {
-                prop(&o.props, "waypointName").and_then(Value::text)
-                    == prop(&object.props, "waypointName").and_then(Value::text)
-            }) {
-                layout.objects.push(crate::terrain::ObjectSpec {
-                    cell: crate::gameplay::script_spawns::to_cell(p, object),
-                    version: object.version,
-                    angle: object.angle,
-                    road_type: object.road_type,
-                    type_name: object.type_name.clone(),
-                    props: object.props.clone(),
-                });
-            }
-        }
+        let layout = assembled_layout(p, &t.layout, &actual)?;
         project::write_json(&p.source().join("layout.json"), &layout)?;
+        crate::gameplay::script_spawns::refresh_report(p, &m)?;
     }
     if !p.flag("TERRAIN_ONLY")
         && let Some(report) = crate::gameplay::periodic_attack::apply(p, &mut m)?
@@ -312,7 +374,7 @@ pub fn assemble(p: &Project, t: &Terrain, s: &Surface) -> Result<()> {
     m.get_mut("StandingWaterAreas")?.payload = water(p)?;
     // Share the accepted finished-map rules with ordinary builds. Apply after
     // objects and gameplay masks are fixed, so only materials vary.
-    let textured = if crate::terrain::texture_polish::enabled(p)? {
+    let mut textured = if crate::terrain::texture_polish::enabled(p)? {
         Some(crate::terrain::texture_polish::apply(p, &mut m, &p.name)?)
     } else {
         None
@@ -333,6 +395,10 @@ pub fn assemble(p: &Project, t: &Terrain, s: &Surface) -> Result<()> {
         &p.version,
         finalization,
     )?;
+    if let Some(textured) = &mut textured {
+        textured.record_finalization(&m, finalized.compaction.as_ref())?;
+    }
+    crate::pipeline::scene::verify(p, &m, Some(&finalized.xml))?;
     fs::write(p.assets.join("map.xml"), finalized.xml)?;
     project::write_json(
         &p.assets.join("terrain-package.json"),
@@ -347,7 +413,11 @@ pub fn assemble(p: &Project, t: &Terrain, s: &Surface) -> Result<()> {
     let path = p.assets.join(format!("{}.map", p.name));
     m.save(&path)?;
     if let Some(textured) = textured {
-        textured.write_artifacts(p)?;
+        if write_previews {
+            textured.write_artifacts(p)?;
+        } else {
+            textured.write_artifacts_without_previews(p)?;
+        }
     }
     render::art(t, p, s)?;
     map_str(p)?;
@@ -420,4 +490,59 @@ fn map_str(p: &Project) -> Result<()> {
     crate::gameplay::periodic_attack::append_strings(p, &mut out)?;
     fs::write(p.assets.join("map.str"), out)?;
     Ok(())
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+    use crate::terrain::Layout;
+    use serde_json::json;
+
+    #[test]
+    fn final_layout_keeps_classifications_when_repaired_objects_swap_positions() {
+        let p = Project {
+            root: PathBuf::new(),
+            id: "test".into(),
+            cfg: json!({"GRID":128,"BORDER":8,"CELL":10.}),
+            state: json!({}),
+            version: "T0.0.1".into(),
+            group: "test".into(),
+            name: "test".into(),
+            assets: PathBuf::new(),
+            dist: PathBuf::new(),
+        };
+        let saved: Layout = serde_json::from_value(json!({
+            "schema_version":1,"base_cells":[],"ore_cells":[],"ore_angles":[],
+            "shipyard_cells":[[32.,32.],[60.,60.]],
+            "hospital_cells":[[80.,80.]],
+            "objects":[
+                {"cell":[32.,32.],"version":1,"angle":0.,"road_type":0,
+                    "type_name":"ShipyardTechStructure","props":[]},
+                {"cell":[60.,60.],"version":1,"angle":0.,"road_type":0,
+                    "type_name":"ShipyardTechStructure","props":[]},
+                {"cell":[80.,80.],"version":1,"angle":0.,"road_type":0,
+                    "type_name":"HospitalTechStructure","props":[]}
+            ]
+        }))
+        .unwrap();
+        let mut actual = saved
+            .objects
+            .iter()
+            .map(|o| o.object(&p))
+            .collect::<Vec<_>>();
+        let first_position = actual[0].position;
+        actual[0].position = actual[1].position;
+        actual[1].position = first_position;
+        let layout = assembled_layout(&p, &saved, &actual).unwrap();
+        assert_eq!(layout.shipyard_cells, vec![[60., 60.], [32., 32.]]);
+        assert_eq!(layout.hospital_cells, saved.hospital_cells);
+        for (object, cell) in layout.objects.iter().zip(&layout.shipyard_cells) {
+            assert_eq!(object.cell, *cell);
+        }
+        // The synchronized classifications must survive the persisted layout.
+        let restored: Layout =
+            serde_json::from_slice(&serde_json::to_vec(&layout).unwrap()).unwrap();
+        assert_eq!(restored.shipyard_cells, layout.shipyard_cells);
+        assert_eq!(saved.shipyard_cells, vec![[32., 32.], [60., 60.]]);
+    }
 }

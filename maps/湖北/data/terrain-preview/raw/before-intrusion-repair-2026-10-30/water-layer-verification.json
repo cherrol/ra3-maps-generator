@@ -1,0 +1,251 @@
+{
+  "actual_arrays_and_images_verified": true,
+  "all_applicable_passed": true,
+  "before_snapshot": "raw/before-water-layer-enclosure",
+  "before_terrain_crc32": 41648214,
+  "candidate_terrain_crc32": 1052458599,
+  "changed": true,
+  "changed_land_cells": 2020,
+  "contact_method": "pre-edit four-neighbor shared edges, 10 world units per edge; diagonals excluded; full inner and outer perimeter",
+  "date": "2026-10-29",
+  "image_crc32": {
+    "preview--center--line.png": 1061425564,
+    "preview--line.png": 686555779,
+    "preview.png": 1068078806,
+    "source.png": 2184779069
+  },
+  "map_id": "湖北",
+  "original_input_crc32": 1526707162,
+  "outside_recorded_band_layers_preserved": true,
+  "playable_passability_status": "待核验：纯预览，缓坡与导航在可玩制作阶段验收",
+  "playable_passability_verified": false,
+  "rule": "SHORE.SINGLE_LAYER",
+  "scope": "all fully enclosed waterbodies in this batch; open/frame-clipped components listed separately",
+  "shore_band_method": "union of Euclidean disks around all land-side shore cells, clipped to playable land",
+  "shore_band_radius_cells": 12,
+  "size_basis": "per-map enclosed components listed below; no global lake-area threshold",
+  "source_image_preserved": true,
+  "water_and_source_arrays_preserved": true,
+  "waterbodies": [
+    {
+      "applicable": true,
+      "bounds_xy_exclusive": [
+        294,
+        70,
+        361,
+        167
+      ],
+      "connected_to_unchanged_owner_land": true,
+      "contacts_after": {
+        "2": {
+          "length_world": 3280,
+          "shared_edges": 328
+        }
+      },
+      "contacts_before": {
+        "1": {
+          "length_world": 780,
+          "shared_edges": 78
+        },
+        "2": {
+          "length_world": 2500,
+          "shared_edges": 250
+        }
+      },
+      "id": 0,
+      "owner_layer": 2,
+      "share_of_playable_grid": 0.007015625,
+      "shore_land_cells": 252,
+      "shore_land_components": 1,
+      "status": "通过",
+      "touches_frame": false,
+      "water_cells": 4490,
+      "whole_perimeter_single_layer": true
+    },
+    {
+      "applicable": true,
+      "bounds_xy_exclusive": [
+        643,
+        479,
+        679,
+        529
+      ],
+      "connected_to_unchanged_owner_land": true,
+      "contacts_after": {
+        "1": {
+          "length_world": 1720,
+          "shared_edges": 172
+        }
+      },
+      "contacts_before": {
+        "1": {
+          "length_world": 1720,
+          "shared_edges": 172
+        }
+      },
+      "id": 1,
+      "owner_layer": 1,
+      "share_of_playable_grid": 0.0014734375,
+      "shore_land_cells": 129,
+      "shore_land_components": 1,
+      "status": "通过",
+      "touches_frame": false,
+      "water_cells": 943,
+      "whole_perimeter_single_layer": true
+    },
+    {
+      "applicable": true,
+      "bounds_xy_exclusive": [
+        593,
+        531,
+        685,
+        664
+      ],
+      "connected_to_unchanged_owner_land": true,
+      "contacts_after": {
+        "1": {
+          "length_world": 4720,
+          "shared_edges": 472
+        }
+      },
+      "contacts_before": {
+        "1": {
+          "length_world": 4720,
+          "shared_edges": 472
+        }
+      },
+      "id": 2,
+      "owner_layer": 1,
+      "share_of_playable_grid": 0.0079875,
+      "shore_land_cells": 365,
+      "shore_land_components": 1,
+      "status": "通过",
+      "touches_frame": false,
+      "water_cells": 5112,
+      "whole_perimeter_single_layer": true
+    },
+    {
+      "applicable": false,
+      "bounds_xy_exclusive": [
+        798,
+        606,
+        820,
+        659
+      ],
+      "contacts_after": {
+        "1": {
+          "length_world": 1000,
+          "shared_edges": 100
+        }
+      },
+      "contacts_before": {
+        "1": {
+          "length_world": 1000,
+          "shared_edges": 100
+        }
+      },
+      "id": 3,
+      "reason": "frame-clipped/open water; not a fully enclosed small waterbody; no artificial closure",
+      "status": "不适用",
+      "touches_frame": true,
+      "water_cells": 827
+    },
+    {
+      "applicable": true,
+      "bounds_xy_exclusive": [
+        519,
+        642,
+        544,
+        681
+      ],
+      "connected_to_unchanged_owner_land": true,
+      "contacts_after": {
+        "1": {
+          "length_world": 1280,
+          "shared_edges": 128
+        }
+      },
+      "contacts_before": {
+        "1": {
+          "length_world": 1280,
+          "shared_edges": 128
+        }
+      },
+      "id": 4,
+      "owner_layer": 1,
+      "share_of_playable_grid": 0.00096875,
+      "shore_land_cells": 97,
+      "shore_land_components": 1,
+      "status": "通过",
+      "touches_frame": false,
+      "water_cells": 620,
+      "whole_perimeter_single_layer": true
+    },
+    {
+      "applicable": true,
+      "bounds_xy_exclusive": [
+        475,
+        732,
+        503,
+        790
+      ],
+      "connected_to_unchanged_owner_land": true,
+      "contacts_after": {
+        "1": {
+          "length_world": 1720,
+          "shared_edges": 172
+        }
+      },
+      "contacts_before": {
+        "1": {
+          "length_world": 1720,
+          "shared_edges": 172
+        }
+      },
+      "id": 5,
+      "owner_layer": 1,
+      "share_of_playable_grid": 0.00185625,
+      "shore_land_cells": 140,
+      "shore_land_components": 1,
+      "status": "通过",
+      "touches_frame": false,
+      "water_cells": 1188,
+      "whole_perimeter_single_layer": true
+    },
+    {
+      "applicable": true,
+      "bounds_xy_exclusive": [
+        705,
+        743,
+        753,
+        784
+      ],
+      "connected_to_unchanged_owner_land": true,
+      "contacts_after": {
+        "2": {
+          "length_world": 1780,
+          "shared_edges": 178
+        }
+      },
+      "contacts_before": {
+        "1": {
+          "length_world": 870,
+          "shared_edges": 87
+        },
+        "2": {
+          "length_world": 910,
+          "shared_edges": 91
+        }
+      },
+      "id": 6,
+      "owner_layer": 2,
+      "share_of_playable_grid": 0.0020296875,
+      "shore_land_cells": 137,
+      "shore_land_components": 1,
+      "status": "通过",
+      "touches_frame": false,
+      "water_cells": 1299,
+      "whole_perimeter_single_layer": true
+    }
+  ]
+}

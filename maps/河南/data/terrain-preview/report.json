@@ -30,8 +30,8 @@
     700.0
   ],
   "image_crc32": {
-    "preview--line.png": 1293542005,
-    "preview.png": 236334357,
+    "preview--line.png": 2431793769,
+    "preview.png": 252352335,
     "source.png": 512579893
   },
   "layer_policy": {
@@ -43,8 +43,8 @@
     "adjustments": [],
     "land_layer_cell_counts": [
       0,
-      379489,
-      94381,
+      378582,
+      95288,
       164211,
       0,
       0
@@ -64,7 +64,23 @@
       4000.0
     ],
     "unused_layers_omitted": true,
-    "water_is_separate": true
+    "water_design_land_reference": {
+      "existing_land_layers_preserved": true,
+      "fill_method": "four-neighbor BFS within playable land first, then fill the production border",
+      "filled_land_cells": 0,
+      "playable_land_seeds_take_priority_over_border": true,
+      "report": "water-layer-reference-report.json",
+      "terrain": "water-layer-reference.npz"
+    },
+    "water_is_separate": true,
+    "water_layer_enclosure": {
+      "before_report": "raw/before-water-layer-enclosure/report.json",
+      "before_terrain": "raw/before-water-layer-enclosure/terrain.npz",
+      "changed_land_cells": 907,
+      "rule": "SHORE.SINGLE_LAYER",
+      "shore_band_radius_cells": 12,
+      "verification": "water-layer-verification.json"
+    }
   },
   "map_id": "河南",
   "map_name": "沃野奔流",
@@ -116,6 +132,14 @@
     "lake_area_method": "spherical polygon area; whole waterbody minus holes before frame clipping",
     "minimum_lake_area_km2": 80,
     "ocean_channel_open_radius_cells": 3,
-    "preserve_ocean": true
+    "preserve_ocean": true,
+    "single_layer_enclosure": {
+      "before_terrain": "raw/before-water-layer-enclosure/terrain.npz",
+      "full_perimeter": true,
+      "owner_selection": "largest pre-edit shared shoreline length",
+      "rule": "SHORE.SINGLE_LAYER",
+      "shore_band_radius_cells": 12,
+      "verification": "water-layer-verification.json"
+    }
   }
 }

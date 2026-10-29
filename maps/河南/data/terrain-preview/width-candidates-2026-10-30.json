@@ -1,0 +1,7411 @@
+{
+  "candidates": [
+    {
+      "bounds_full_grid": [
+        759,
+        79,
+        760,
+        80
+      ],
+      "center_extent_cells": 0.0,
+      "class": 0,
+      "extended_candidate": false,
+      "id": 1,
+      "kind": "水域",
+      "minimum_sampled_width_cells": 2.0,
+      "sections": [
+        {
+          "center": [
+            758.5,
+            79.0
+          ],
+          "class": 0,
+          "direction": [
+            1,
+            0
+          ],
+          "first": [
+            758.0,
+            79.0
+          ],
+          "intersected_cells": 2,
+          "last": [
+            759.0,
+            79.0
+          ],
+          "width_cells": 2.0
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        762,
+        95,
+        763,
+        96
+      ],
+      "center_extent_cells": 0.0,
+      "class": 0,
+      "extended_candidate": false,
+      "id": 2,
+      "kind": "水域",
+      "minimum_sampled_width_cells": 2.0,
+      "sections": [
+        {
+          "center": [
+            761.5,
+            95.0
+          ],
+          "class": 0,
+          "direction": [
+            1,
+            0
+          ],
+          "first": [
+            761.0,
+            95.0
+          ],
+          "intersected_cells": 2,
+          "last": [
+            762.0,
+            95.0
+          ],
+          "width_cells": 2.0
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        152,
+        103,
+        155,
+        105
+      ],
+      "center_extent_cells": 2.0,
+      "class": 2,
+      "extended_candidate": false,
+      "id": 3,
+      "kind": "第2层",
+      "minimum_sampled_width_cells": 2.8284271247461903,
+      "sections": [
+        {
+          "center": [
+            152.0,
+            103.0
+          ],
+          "class": 2,
+          "direction": [
+            1,
+            0
+          ],
+          "first": [
+            151.0,
+            103.0
+          ],
+          "intersected_cells": 3,
+          "last": [
+            153.0,
+            103.0
+          ],
+          "width_cells": 3.0
+        },
+        {
+          "center": [
+            153.0,
+            104.0
+          ],
+          "class": 2,
+          "direction": [
+            1,
+            1
+          ],
+          "first": [
+            152.0,
+            103.0
+          ],
+          "intersected_cells": 3,
+          "last": [
+            154.0,
+            105.0
+          ],
+          "width_cells": 4.242640687119286
+        },
+        {
+          "center": [
+            153.5,
+            103.5
+          ],
+          "class": 2,
+          "direction": [
+            1,
+            1
+          ],
+          "first": [
+            153.0,
+            103.0
+          ],
+          "intersected_cells": 2,
+          "last": [
+            154.0,
+            104.0
+          ],
+          "width_cells": 2.8284271247461903
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        100,
+        139,
+        101,
+        140
+      ],
+      "center_extent_cells": 0.0,
+      "class": 2,
+      "extended_candidate": false,
+      "id": 4,
+      "kind": "第2层",
+      "minimum_sampled_width_cells": 1.0,
+      "sections": [
+        {
+          "center": [
+            100.0,
+            139.0
+          ],
+          "class": 2,
+          "direction": [
+            1,
+            0
+          ],
+          "first": [
+            100.0,
+            139.0
+          ],
+          "intersected_cells": 1,
+          "last": [
+            100.0,
+            139.0
+          ],
+          "width_cells": 1.0
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        101,
+        139,
+        102,
+        140
+      ],
+      "center_extent_cells": 0.0,
+      "class": 3,
+      "extended_candidate": false,
+      "id": 5,
+      "kind": "第3层",
+      "minimum_sampled_width_cells": 1.0,
+      "sections": [
+        {
+          "center": [
+            101.0,
+            139.0
+          ],
+          "class": 3,
+          "direction": [
+            1,
+            0
+          ],
+          "first": [
+            101.0,
+            139.0
+          ],
+          "intersected_cells": 1,
+          "last": [
+            101.0,
+            139.0
+          ],
+          "width_cells": 1.0
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        103,
+        158,
+        104,
+        159
+      ],
+      "center_extent_cells": 0.0,
+      "class": 3,
+      "extended_candidate": false,
+      "id": 6,
+      "kind": "第3层",
+      "minimum_sampled_width_cells": 2.0,
+      "sections": [
+        {
+          "center": [
+            102.5,
+            158.0
+          ],
+          "class": 3,
+          "direction": [
+            1,
+            0
+          ],
+          "first": [
+            102.0,
+            158.0
+          ],
+          "intersected_cells": 2,
+          "last": [
+            103.0,
+            158.0
+          ],
+          "width_cells": 2.0
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        104,
+        158,
+        105,
+        159
+      ],
+      "center_extent_cells": 0.0,
+      "class": 2,
+      "extended_candidate": false,
+      "id": 7,
+      "kind": "第2层",
+      "minimum_sampled_width_cells": 1.0,
+      "sections": [
+        {
+          "center": [
+            104.0,
+            158.0
+          ],
+          "class": 2,
+          "direction": [
+            1,
+            0
+          ],
+          "first": [
+            104.0,
+            158.0
+          ],
+          "intersected_cells": 1,
+          "last": [
+            104.0,
+            158.0
+          ],
+          "width_cells": 1.0
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        126,
+        194,
+        127,
+        195
+      ],
+      "center_extent_cells": 0.0,
+      "class": 2,
+      "extended_candidate": false,
+      "id": 8,
+      "kind": "第2层",
+      "minimum_sampled_width_cells": 4.0,
+      "sections": [
+        {
+          "center": [
+            125.5,
+            194.0
+          ],
+          "class": 2,
+          "direction": [
+            1,
+            0
+          ],
+          "first": [
+            124.0,
+            194.0
+          ],
+          "intersected_cells": 4,
+          "last": [
+            127.0,
+            194.0
+          ],
+          "width_cells": 4.0
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        293,
+        212,
+        294,
+        213
+      ],
+      "center_extent_cells": 0.0,
+      "class": 2,
+      "extended_candidate": false,
+      "id": 9,
+      "kind": "第2层",
+      "minimum_sampled_width_cells": 2.0,
+      "sections": [
+        {
+          "center": [
+            292.5,
+            212.0
+          ],
+          "class": 2,
+          "direction": [
+            1,
+            0
+          ],
+          "first": [
+            292.0,
+            212.0
+          ],
+          "intersected_cells": 2,
+          "last": [
+            293.0,
+            212.0
+          ],
+          "width_cells": 2.0
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        55,
+        215,
+        56,
+        216
+      ],
+      "center_extent_cells": 0.0,
+      "class": 3,
+      "extended_candidate": false,
+      "id": 10,
+      "kind": "第3层",
+      "minimum_sampled_width_cells": 3.0,
+      "sections": [
+        {
+          "center": [
+            55.0,
+            215.0
+          ],
+          "class": 3,
+          "direction": [
+            1,
+            0
+          ],
+          "first": [
+            54.0,
+            215.0
+          ],
+          "intersected_cells": 3,
+          "last": [
+            56.0,
+            215.0
+          ],
+          "width_cells": 3.0
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        307,
+        217,
+        308,
+        218
+      ],
+      "center_extent_cells": 0.0,
+      "class": 3,
+      "extended_candidate": false,
+      "id": 11,
+      "kind": "第3层",
+      "minimum_sampled_width_cells": 2.0,
+      "sections": [
+        {
+          "center": [
+            306.5,
+            217.0
+          ],
+          "class": 3,
+          "direction": [
+            1,
+            0
+          ],
+          "first": [
+            306.0,
+            217.0
+          ],
+          "intersected_cells": 2,
+          "last": [
+            307.0,
+            217.0
+          ],
+          "width_cells": 2.0
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        212,
+        236,
+        213,
+        237
+      ],
+      "center_extent_cells": 0.0,
+      "class": 2,
+      "extended_candidate": false,
+      "id": 12,
+      "kind": "第2层",
+      "minimum_sampled_width_cells": 3.0,
+      "sections": [
+        {
+          "center": [
+            212.0,
+            236.0
+          ],
+          "class": 2,
+          "direction": [
+            1,
+            0
+          ],
+          "first": [
+            211.0,
+            236.0
+          ],
+          "intersected_cells": 3,
+          "last": [
+            213.0,
+            236.0
+          ],
+          "width_cells": 3.0
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        224,
+        333,
+        225,
+        334
+      ],
+      "center_extent_cells": 0.0,
+      "class": 3,
+      "extended_candidate": false,
+      "id": 13,
+      "kind": "第3层",
+      "minimum_sampled_width_cells": 1.0,
+      "sections": [
+        {
+          "center": [
+            224.0,
+            333.0
+          ],
+          "class": 3,
+          "direction": [
+            1,
+            0
+          ],
+          "first": [
+            224.0,
+            333.0
+          ],
+          "intersected_cells": 1,
+          "last": [
+            224.0,
+            333.0
+          ],
+          "width_cells": 1.0
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        187,
+        347,
+        188,
+        348
+      ],
+      "center_extent_cells": 0.0,
+      "class": 2,
+      "extended_candidate": false,
+      "id": 14,
+      "kind": "第2层",
+      "minimum_sampled_width_cells": 1.0,
+      "sections": [
+        {
+          "center": [
+            187.0,
+            347.0
+          ],
+          "class": 2,
+          "direction": [
+            1,
+            0
+          ],
+          "first": [
+            187.0,
+            347.0
+          ],
+          "intersected_cells": 1,
+          "last": [
+            187.0,
+            347.0
+          ],
+          "width_cells": 1.0
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        356,
+        386,
+        357,
+        387
+      ],
+      "center_extent_cells": 0.0,
+      "class": 1,
+      "extended_candidate": false,
+      "id": 15,
+      "kind": "第1层",
+      "minimum_sampled_width_cells": 3.0,
+      "sections": [
+        {
+          "center": [
+            356.0,
+            386.0
+          ],
+          "class": 1,
+          "direction": [
+            1,
+            0
+          ],
+          "first": [
+            355.0,
+            386.0
+          ],
+          "intersected_cells": 3,
+          "last": [
+            357.0,
+            386.0
+          ],
+          "width_cells": 3.0
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        152,
+        495,
+        153,
+        496
+      ],
+      "center_extent_cells": 0.0,
+      "class": 3,
+      "extended_candidate": false,
+      "id": 16,
+      "kind": "第3层",
+      "minimum_sampled_width_cells": 2.0,
+      "sections": [
+        {
+          "center": [
+            151.5,
+            495.0
+          ],
+          "class": 3,
+          "direction": [
+            1,
+            0
+          ],
+          "first": [
+            151.0,
+            495.0
+          ],
+          "intersected_cells": 2,
+          "last": [
+            152.0,
+            495.0
+          ],
+          "width_cells": 2.0
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        302,
+        503,
+        303,
+        504
+      ],
+      "center_extent_cells": 0.0,
+      "class": 1,
+      "extended_candidate": false,
+      "id": 17,
+      "kind": "第1层",
+      "minimum_sampled_width_cells": 1.0,
+      "sections": [
+        {
+          "center": [
+            302.0,
+            503.0
+          ],
+          "class": 1,
+          "direction": [
+            1,
+            0
+          ],
+          "first": [
+            302.0,
+            503.0
+          ],
+          "intersected_cells": 1,
+          "last": [
+            302.0,
+            503.0
+          ],
+          "width_cells": 1.0
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        250,
+        519,
+        251,
+        520
+      ],
+      "center_extent_cells": 0.0,
+      "class": 3,
+      "extended_candidate": false,
+      "id": 18,
+      "kind": "第3层",
+      "minimum_sampled_width_cells": 4.0,
+      "sections": [
+        {
+          "center": [
+            249.5,
+            519.0
+          ],
+          "class": 3,
+          "direction": [
+            1,
+            0
+          ],
+          "first": [
+            248.0,
+            519.0
+          ],
+          "intersected_cells": 4,
+          "last": [
+            251.0,
+            519.0
+          ],
+          "width_cells": 4.0
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        216,
+        537,
+        217,
+        538
+      ],
+      "center_extent_cells": 0.0,
+      "class": 1,
+      "extended_candidate": false,
+      "id": 19,
+      "kind": "第1层",
+      "minimum_sampled_width_cells": 1.0,
+      "sections": [
+        {
+          "center": [
+            216.0,
+            537.0
+          ],
+          "class": 1,
+          "direction": [
+            1,
+            0
+          ],
+          "first": [
+            216.0,
+            537.0
+          ],
+          "intersected_cells": 1,
+          "last": [
+            216.0,
+            537.0
+          ],
+          "width_cells": 1.0
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        258,
+        551,
+        259,
+        552
+      ],
+      "center_extent_cells": 0.0,
+      "class": 2,
+      "extended_candidate": false,
+      "id": 20,
+      "kind": "第2层",
+      "minimum_sampled_width_cells": 2.0,
+      "sections": [
+        {
+          "center": [
+            257.5,
+            551.0
+          ],
+          "class": 2,
+          "direction": [
+            1,
+            0
+          ],
+          "first": [
+            257.0,
+            551.0
+          ],
+          "intersected_cells": 2,
+          "last": [
+            258.0,
+            551.0
+          ],
+          "width_cells": 2.0
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        173,
+        586,
+        174,
+        587
+      ],
+      "center_extent_cells": 0.0,
+      "class": 0,
+      "extended_candidate": false,
+      "id": 21,
+      "kind": "水域",
+      "minimum_sampled_width_cells": 1.0,
+      "sections": [
+        {
+          "center": [
+            173.0,
+            586.0
+          ],
+          "class": 0,
+          "direction": [
+            1,
+            0
+          ],
+          "first": [
+            173.0,
+            586.0
+          ],
+          "intersected_cells": 1,
+          "last": [
+            173.0,
+            586.0
+          ],
+          "width_cells": 1.0
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        118,
+        602,
+        119,
+        603
+      ],
+      "center_extent_cells": 0.0,
+      "class": 0,
+      "extended_candidate": false,
+      "id": 22,
+      "kind": "水域",
+      "minimum_sampled_width_cells": 1.0,
+      "sections": [
+        {
+          "center": [
+            118.0,
+            602.0
+          ],
+          "class": 0,
+          "direction": [
+            1,
+            0
+          ],
+          "first": [
+            118.0,
+            602.0
+          ],
+          "intersected_cells": 1,
+          "last": [
+            118.0,
+            602.0
+          ],
+          "width_cells": 1.0
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        145,
+        616,
+        146,
+        617
+      ],
+      "center_extent_cells": 0.0,
+      "class": 2,
+      "extended_candidate": false,
+      "id": 23,
+      "kind": "第2层",
+      "minimum_sampled_width_cells": 2.0,
+      "sections": [
+        {
+          "center": [
+            144.5,
+            616.0
+          ],
+          "class": 2,
+          "direction": [
+            1,
+            0
+          ],
+          "first": [
+            144.0,
+            616.0
+          ],
+          "intersected_cells": 2,
+          "last": [
+            145.0,
+            616.0
+          ],
+          "width_cells": 2.0
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        394,
+        631,
+        395,
+        632
+      ],
+      "center_extent_cells": 0.0,
+      "class": 2,
+      "extended_candidate": false,
+      "id": 24,
+      "kind": "第2层",
+      "minimum_sampled_width_cells": 2.0,
+      "sections": [
+        {
+          "center": [
+            393.5,
+            631.0
+          ],
+          "class": 2,
+          "direction": [
+            1,
+            0
+          ],
+          "first": [
+            393.0,
+            631.0
+          ],
+          "intersected_cells": 2,
+          "last": [
+            394.0,
+            631.0
+          ],
+          "width_cells": 2.0
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        122,
+        632,
+        123,
+        633
+      ],
+      "center_extent_cells": 0.0,
+      "class": 0,
+      "extended_candidate": false,
+      "id": 25,
+      "kind": "水域",
+      "minimum_sampled_width_cells": 1.0,
+      "sections": [
+        {
+          "center": [
+            122.0,
+            632.0
+          ],
+          "class": 0,
+          "direction": [
+            1,
+            0
+          ],
+          "first": [
+            122.0,
+            632.0
+          ],
+          "intersected_cells": 1,
+          "last": [
+            122.0,
+            632.0
+          ],
+          "width_cells": 1.0
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        123,
+        632,
+        124,
+        633
+      ],
+      "center_extent_cells": 0.0,
+      "class": 2,
+      "extended_candidate": false,
+      "id": 26,
+      "kind": "第2层",
+      "minimum_sampled_width_cells": 1.0,
+      "sections": [
+        {
+          "center": [
+            123.0,
+            632.0
+          ],
+          "class": 2,
+          "direction": [
+            1,
+            0
+          ],
+          "first": [
+            123.0,
+            632.0
+          ],
+          "intersected_cells": 1,
+          "last": [
+            123.0,
+            632.0
+          ],
+          "width_cells": 1.0
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        137,
+        636,
+        138,
+        637
+      ],
+      "center_extent_cells": 0.0,
+      "class": 0,
+      "extended_candidate": false,
+      "id": 27,
+      "kind": "水域",
+      "minimum_sampled_width_cells": 2.0,
+      "sections": [
+        {
+          "center": [
+            136.5,
+            636.0
+          ],
+          "class": 0,
+          "direction": [
+            1,
+            0
+          ],
+          "first": [
+            136.0,
+            636.0
+          ],
+          "intersected_cells": 2,
+          "last": [
+            137.0,
+            636.0
+          ],
+          "width_cells": 2.0
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        108,
+        644,
+        109,
+        645
+      ],
+      "center_extent_cells": 0.0,
+      "class": 2,
+      "extended_candidate": false,
+      "id": 28,
+      "kind": "第2层",
+      "minimum_sampled_width_cells": 1.0,
+      "sections": [
+        {
+          "center": [
+            108.0,
+            644.0
+          ],
+          "class": 2,
+          "direction": [
+            1,
+            0
+          ],
+          "first": [
+            108.0,
+            644.0
+          ],
+          "intersected_cells": 1,
+          "last": [
+            108.0,
+            644.0
+          ],
+          "width_cells": 1.0
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        111,
+        644,
+        112,
+        645
+      ],
+      "center_extent_cells": 0.0,
+      "class": 3,
+      "extended_candidate": false,
+      "id": 29,
+      "kind": "第3层",
+      "minimum_sampled_width_cells": 4.0,
+      "sections": [
+        {
+          "center": [
+            110.5,
+            644.0
+          ],
+          "class": 3,
+          "direction": [
+            1,
+            0
+          ],
+          "first": [
+            109.0,
+            644.0
+          ],
+          "intersected_cells": 4,
+          "last": [
+            112.0,
+            644.0
+          ],
+          "width_cells": 4.0
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        495,
+        730,
+        496,
+        731
+      ],
+      "center_extent_cells": 0.0,
+      "class": 2,
+      "extended_candidate": false,
+      "id": 30,
+      "kind": "第2层",
+      "minimum_sampled_width_cells": 4.0,
+      "sections": [
+        {
+          "center": [
+            494.5,
+            730.0
+          ],
+          "class": 2,
+          "direction": [
+            1,
+            0
+          ],
+          "first": [
+            493.0,
+            730.0
+          ],
+          "intersected_cells": 4,
+          "last": [
+            496.0,
+            730.0
+          ],
+          "width_cells": 4.0
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        596,
+        771,
+        597,
+        772
+      ],
+      "center_extent_cells": 0.0,
+      "class": 1,
+      "extended_candidate": false,
+      "id": 31,
+      "kind": "第1层",
+      "minimum_sampled_width_cells": 4.0,
+      "sections": [
+        {
+          "center": [
+            595.5,
+            771.0
+          ],
+          "class": 1,
+          "direction": [
+            1,
+            0
+          ],
+          "first": [
+            594.0,
+            771.0
+          ],
+          "intersected_cells": 4,
+          "last": [
+            597.0,
+            771.0
+          ],
+          "width_cells": 4.0
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        481,
+        772,
+        482,
+        773
+      ],
+      "center_extent_cells": 0.0,
+      "class": 2,
+      "extended_candidate": false,
+      "id": 32,
+      "kind": "第2层",
+      "minimum_sampled_width_cells": 2.0,
+      "sections": [
+        {
+          "center": [
+            480.5,
+            772.0
+          ],
+          "class": 2,
+          "direction": [
+            1,
+            0
+          ],
+          "first": [
+            480.0,
+            772.0
+          ],
+          "intersected_cells": 2,
+          "last": [
+            481.0,
+            772.0
+          ],
+          "width_cells": 2.0
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        566,
+        792,
+        567,
+        793
+      ],
+      "center_extent_cells": 0.0,
+      "class": 2,
+      "extended_candidate": false,
+      "id": 33,
+      "kind": "第2层",
+      "minimum_sampled_width_cells": 4.0,
+      "sections": [
+        {
+          "center": [
+            565.5,
+            792.0
+          ],
+          "class": 2,
+          "direction": [
+            1,
+            0
+          ],
+          "first": [
+            564.0,
+            792.0
+          ],
+          "intersected_cells": 4,
+          "last": [
+            567.0,
+            792.0
+          ],
+          "width_cells": 4.0
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        41,
+        202,
+        42,
+        203
+      ],
+      "center_extent_cells": 0.0,
+      "class": 3,
+      "extended_candidate": false,
+      "id": 34,
+      "kind": "第3层",
+      "minimum_sampled_width_cells": 2.0,
+      "sections": [
+        {
+          "center": [
+            41.0,
+            201.5
+          ],
+          "class": 3,
+          "direction": [
+            0,
+            1
+          ],
+          "first": [
+            41.0,
+            201.0
+          ],
+          "intersected_cells": 2,
+          "last": [
+            41.0,
+            202.0
+          ],
+          "width_cells": 2.0
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        98,
+        520,
+        99,
+        521
+      ],
+      "center_extent_cells": 0.0,
+      "class": 2,
+      "extended_candidate": false,
+      "id": 35,
+      "kind": "第2层",
+      "minimum_sampled_width_cells": 4.0,
+      "sections": [
+        {
+          "center": [
+            98.0,
+            519.5
+          ],
+          "class": 2,
+          "direction": [
+            0,
+            1
+          ],
+          "first": [
+            98.0,
+            518.0
+          ],
+          "intersected_cells": 4,
+          "last": [
+            98.0,
+            521.0
+          ],
+          "width_cells": 4.0
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        101,
+        535,
+        102,
+        536
+      ],
+      "center_extent_cells": 0.0,
+      "class": 3,
+      "extended_candidate": false,
+      "id": 36,
+      "kind": "第3层",
+      "minimum_sampled_width_cells": 4.0,
+      "sections": [
+        {
+          "center": [
+            101.0,
+            534.5
+          ],
+          "class": 3,
+          "direction": [
+            0,
+            1
+          ],
+          "first": [
+            101.0,
+            533.0
+          ],
+          "intersected_cells": 4,
+          "last": [
+            101.0,
+            536.0
+          ],
+          "width_cells": 4.0
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        112,
+        608,
+        113,
+        609
+      ],
+      "center_extent_cells": 0.0,
+      "class": 0,
+      "extended_candidate": false,
+      "id": 37,
+      "kind": "水域",
+      "minimum_sampled_width_cells": 1.0,
+      "sections": [
+        {
+          "center": [
+            112.0,
+            608.0
+          ],
+          "class": 0,
+          "direction": [
+            0,
+            1
+          ],
+          "first": [
+            112.0,
+            608.0
+          ],
+          "intersected_cells": 1,
+          "last": [
+            112.0,
+            608.0
+          ],
+          "width_cells": 1.0
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        116,
+        622,
+        117,
+        623
+      ],
+      "center_extent_cells": 0.0,
+      "class": 2,
+      "extended_candidate": false,
+      "id": 38,
+      "kind": "第2层",
+      "minimum_sampled_width_cells": 3.0,
+      "sections": [
+        {
+          "center": [
+            116.0,
+            622.0
+          ],
+          "class": 2,
+          "direction": [
+            0,
+            1
+          ],
+          "first": [
+            116.0,
+            621.0
+          ],
+          "intersected_cells": 3,
+          "last": [
+            116.0,
+            623.0
+          ],
+          "width_cells": 3.0
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        116,
+        625,
+        117,
+        626
+      ],
+      "center_extent_cells": 0.0,
+      "class": 0,
+      "extended_candidate": false,
+      "id": 39,
+      "kind": "水域",
+      "minimum_sampled_width_cells": 3.0,
+      "sections": [
+        {
+          "center": [
+            116.0,
+            625.0
+          ],
+          "class": 0,
+          "direction": [
+            0,
+            1
+          ],
+          "first": [
+            116.0,
+            624.0
+          ],
+          "intersected_cells": 3,
+          "last": [
+            116.0,
+            626.0
+          ],
+          "width_cells": 3.0
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        117,
+        249,
+        118,
+        250
+      ],
+      "center_extent_cells": 0.0,
+      "class": 3,
+      "extended_candidate": false,
+      "id": 40,
+      "kind": "第3层",
+      "minimum_sampled_width_cells": 2.0,
+      "sections": [
+        {
+          "center": [
+            117.0,
+            248.5
+          ],
+          "class": 3,
+          "direction": [
+            0,
+            1
+          ],
+          "first": [
+            117.0,
+            248.0
+          ],
+          "intersected_cells": 2,
+          "last": [
+            117.0,
+            249.0
+          ],
+          "width_cells": 2.0
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        138,
+        273,
+        139,
+        274
+      ],
+      "center_extent_cells": 0.0,
+      "class": 2,
+      "extended_candidate": false,
+      "id": 41,
+      "kind": "第2层",
+      "minimum_sampled_width_cells": 4.0,
+      "sections": [
+        {
+          "center": [
+            138.0,
+            272.5
+          ],
+          "class": 2,
+          "direction": [
+            0,
+            1
+          ],
+          "first": [
+            138.0,
+            271.0
+          ],
+          "intersected_cells": 4,
+          "last": [
+            138.0,
+            274.0
+          ],
+          "width_cells": 4.0
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        164,
+        641,
+        167,
+        644
+      ],
+      "center_extent_cells": 2.0,
+      "class": 1,
+      "extended_candidate": false,
+      "id": 42,
+      "kind": "第1层",
+      "minimum_sampled_width_cells": 1.4142135623730951,
+      "sections": [
+        {
+          "center": [
+            164.0,
+            641.5
+          ],
+          "class": 1,
+          "direction": [
+            0,
+            1
+          ],
+          "first": [
+            164.0,
+            641.0
+          ],
+          "intersected_cells": 2,
+          "last": [
+            164.0,
+            642.0
+          ],
+          "width_cells": 2.0
+        },
+        {
+          "center": [
+            164.0,
+            641.0
+          ],
+          "class": 1,
+          "direction": [
+            -1,
+            1
+          ],
+          "first": [
+            164.0,
+            641.0
+          ],
+          "intersected_cells": 1,
+          "last": [
+            164.0,
+            641.0
+          ],
+          "width_cells": 1.4142135623730951
+        },
+        {
+          "center": [
+            164.5,
+            641.5
+          ],
+          "class": 1,
+          "direction": [
+            -1,
+            1
+          ],
+          "first": [
+            165.0,
+            641.0
+          ],
+          "intersected_cells": 2,
+          "last": [
+            164.0,
+            642.0
+          ],
+          "width_cells": 2.8284271247461903
+        },
+        {
+          "center": [
+            165.0,
+            642.5
+          ],
+          "class": 1,
+          "direction": [
+            0,
+            1
+          ],
+          "first": [
+            165.0,
+            641.0
+          ],
+          "intersected_cells": 4,
+          "last": [
+            165.0,
+            644.0
+          ],
+          "width_cells": 4.0
+        },
+        {
+          "center": [
+            166.0,
+            641.0
+          ],
+          "class": 1,
+          "direction": [
+            -1,
+            1
+          ],
+          "first": [
+            167.0,
+            640.0
+          ],
+          "intersected_cells": 3,
+          "last": [
+            165.0,
+            642.0
+          ],
+          "width_cells": 4.242640687119286
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        168,
+        130,
+        169,
+        131
+      ],
+      "center_extent_cells": 0.0,
+      "class": 2,
+      "extended_candidate": false,
+      "id": 43,
+      "kind": "第2层",
+      "minimum_sampled_width_cells": 1.0,
+      "sections": [
+        {
+          "center": [
+            168.0,
+            130.0
+          ],
+          "class": 2,
+          "direction": [
+            0,
+            1
+          ],
+          "first": [
+            168.0,
+            130.0
+          ],
+          "intersected_cells": 1,
+          "last": [
+            168.0,
+            130.0
+          ],
+          "width_cells": 1.0
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        175,
+        338,
+        176,
+        339
+      ],
+      "center_extent_cells": 0.0,
+      "class": 2,
+      "extended_candidate": false,
+      "id": 44,
+      "kind": "第2层",
+      "minimum_sampled_width_cells": 4.0,
+      "sections": [
+        {
+          "center": [
+            175.0,
+            337.5
+          ],
+          "class": 2,
+          "direction": [
+            0,
+            1
+          ],
+          "first": [
+            175.0,
+            336.0
+          ],
+          "intersected_cells": 4,
+          "last": [
+            175.0,
+            339.0
+          ],
+          "width_cells": 4.0
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        188,
+        608,
+        189,
+        609
+      ],
+      "center_extent_cells": 0.0,
+      "class": 0,
+      "extended_candidate": false,
+      "id": 45,
+      "kind": "水域",
+      "minimum_sampled_width_cells": 2.0,
+      "sections": [
+        {
+          "center": [
+            188.0,
+            607.5
+          ],
+          "class": 0,
+          "direction": [
+            0,
+            1
+          ],
+          "first": [
+            188.0,
+            607.0
+          ],
+          "intersected_cells": 2,
+          "last": [
+            188.0,
+            608.0
+          ],
+          "width_cells": 2.0
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        191,
+        581,
+        193,
+        582
+      ],
+      "center_extent_cells": 1.0,
+      "class": 1,
+      "extended_candidate": false,
+      "id": 46,
+      "kind": "第1层",
+      "minimum_sampled_width_cells": 1.0,
+      "sections": [
+        {
+          "center": [
+            191.0,
+            581.0
+          ],
+          "class": 1,
+          "direction": [
+            0,
+            1
+          ],
+          "first": [
+            191.0,
+            581.0
+          ],
+          "intersected_cells": 1,
+          "last": [
+            191.0,
+            581.0
+          ],
+          "width_cells": 1.0
+        },
+        {
+          "center": [
+            192.0,
+            581.0
+          ],
+          "class": 1,
+          "direction": [
+            0,
+            1
+          ],
+          "first": [
+            192.0,
+            580.0
+          ],
+          "intersected_cells": 3,
+          "last": [
+            192.0,
+            582.0
+          ],
+          "width_cells": 3.0
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        201,
+        608,
+        202,
+        609
+      ],
+      "center_extent_cells": 0.0,
+      "class": 2,
+      "extended_candidate": false,
+      "id": 47,
+      "kind": "第2层",
+      "minimum_sampled_width_cells": 2.0,
+      "sections": [
+        {
+          "center": [
+            201.0,
+            607.5
+          ],
+          "class": 2,
+          "direction": [
+            0,
+            1
+          ],
+          "first": [
+            201.0,
+            607.0
+          ],
+          "intersected_cells": 2,
+          "last": [
+            201.0,
+            608.0
+          ],
+          "width_cells": 2.0
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        209,
+        779,
+        210,
+        780
+      ],
+      "center_extent_cells": 0.0,
+      "class": 3,
+      "extended_candidate": false,
+      "id": 48,
+      "kind": "第3层",
+      "minimum_sampled_width_cells": 2.0,
+      "sections": [
+        {
+          "center": [
+            209.0,
+            778.5
+          ],
+          "class": 3,
+          "direction": [
+            0,
+            1
+          ],
+          "first": [
+            209.0,
+            778.0
+          ],
+          "intersected_cells": 2,
+          "last": [
+            209.0,
+            779.0
+          ],
+          "width_cells": 2.0
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        232,
+        374,
+        233,
+        375
+      ],
+      "center_extent_cells": 0.0,
+      "class": 2,
+      "extended_candidate": false,
+      "id": 49,
+      "kind": "第2层",
+      "minimum_sampled_width_cells": 2.0,
+      "sections": [
+        {
+          "center": [
+            232.0,
+            373.5
+          ],
+          "class": 2,
+          "direction": [
+            0,
+            1
+          ],
+          "first": [
+            232.0,
+            373.0
+          ],
+          "intersected_cells": 2,
+          "last": [
+            232.0,
+            374.0
+          ],
+          "width_cells": 2.0
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        235,
+        252,
+        236,
+        253
+      ],
+      "center_extent_cells": 0.0,
+      "class": 3,
+      "extended_candidate": false,
+      "id": 50,
+      "kind": "第3层",
+      "minimum_sampled_width_cells": 1.0,
+      "sections": [
+        {
+          "center": [
+            235.0,
+            252.0
+          ],
+          "class": 3,
+          "direction": [
+            0,
+            1
+          ],
+          "first": [
+            235.0,
+            252.0
+          ],
+          "intersected_cells": 1,
+          "last": [
+            235.0,
+            252.0
+          ],
+          "width_cells": 1.0
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        241,
+        349,
+        242,
+        350
+      ],
+      "center_extent_cells": 0.0,
+      "class": 3,
+      "extended_candidate": false,
+      "id": 51,
+      "kind": "第3层",
+      "minimum_sampled_width_cells": 2.0,
+      "sections": [
+        {
+          "center": [
+            241.0,
+            348.5
+          ],
+          "class": 3,
+          "direction": [
+            0,
+            1
+          ],
+          "first": [
+            241.0,
+            348.0
+          ],
+          "intersected_cells": 2,
+          "last": [
+            241.0,
+            349.0
+          ],
+          "width_cells": 2.0
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        249,
+        479,
+        250,
+        480
+      ],
+      "center_extent_cells": 0.0,
+      "class": 2,
+      "extended_candidate": false,
+      "id": 52,
+      "kind": "第2层",
+      "minimum_sampled_width_cells": 3.0,
+      "sections": [
+        {
+          "center": [
+            249.0,
+            479.0
+          ],
+          "class": 2,
+          "direction": [
+            0,
+            1
+          ],
+          "first": [
+            249.0,
+            478.0
+          ],
+          "intersected_cells": 3,
+          "last": [
+            249.0,
+            480.0
+          ],
+          "width_cells": 3.0
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        264,
+        506,
+        265,
+        507
+      ],
+      "center_extent_cells": 0.0,
+      "class": 3,
+      "extended_candidate": false,
+      "id": 53,
+      "kind": "第3层",
+      "minimum_sampled_width_cells": 2.0,
+      "sections": [
+        {
+          "center": [
+            264.0,
+            505.5
+          ],
+          "class": 3,
+          "direction": [
+            0,
+            1
+          ],
+          "first": [
+            264.0,
+            505.0
+          ],
+          "intersected_cells": 2,
+          "last": [
+            264.0,
+            506.0
+          ],
+          "width_cells": 2.0
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        277,
+        298,
+        278,
+        299
+      ],
+      "center_extent_cells": 0.0,
+      "class": 1,
+      "extended_candidate": false,
+      "id": 54,
+      "kind": "第1层",
+      "minimum_sampled_width_cells": 1.0,
+      "sections": [
+        {
+          "center": [
+            277.0,
+            298.0
+          ],
+          "class": 1,
+          "direction": [
+            0,
+            1
+          ],
+          "first": [
+            277.0,
+            298.0
+          ],
+          "intersected_cells": 1,
+          "last": [
+            277.0,
+            298.0
+          ],
+          "width_cells": 1.0
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        294,
+        439,
+        295,
+        440
+      ],
+      "center_extent_cells": 0.0,
+      "class": 2,
+      "extended_candidate": false,
+      "id": 55,
+      "kind": "第2层",
+      "minimum_sampled_width_cells": 4.0,
+      "sections": [
+        {
+          "center": [
+            294.0,
+            438.5
+          ],
+          "class": 2,
+          "direction": [
+            0,
+            1
+          ],
+          "first": [
+            294.0,
+            437.0
+          ],
+          "intersected_cells": 4,
+          "last": [
+            294.0,
+            440.0
+          ],
+          "width_cells": 4.0
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        295,
+        270,
+        296,
+        271
+      ],
+      "center_extent_cells": 0.0,
+      "class": 2,
+      "extended_candidate": false,
+      "id": 56,
+      "kind": "第2层",
+      "minimum_sampled_width_cells": 4.0,
+      "sections": [
+        {
+          "center": [
+            295.0,
+            269.5
+          ],
+          "class": 2,
+          "direction": [
+            0,
+            1
+          ],
+          "first": [
+            295.0,
+            268.0
+          ],
+          "intersected_cells": 4,
+          "last": [
+            295.0,
+            271.0
+          ],
+          "width_cells": 4.0
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        298,
+        455,
+        299,
+        456
+      ],
+      "center_extent_cells": 0.0,
+      "class": 3,
+      "extended_candidate": false,
+      "id": 57,
+      "kind": "第3层",
+      "minimum_sampled_width_cells": 2.0,
+      "sections": [
+        {
+          "center": [
+            298.0,
+            454.5
+          ],
+          "class": 3,
+          "direction": [
+            0,
+            1
+          ],
+          "first": [
+            298.0,
+            454.0
+          ],
+          "intersected_cells": 2,
+          "last": [
+            298.0,
+            455.0
+          ],
+          "width_cells": 2.0
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        328,
+        440,
+        329,
+        441
+      ],
+      "center_extent_cells": 0.0,
+      "class": 1,
+      "extended_candidate": false,
+      "id": 58,
+      "kind": "第1层",
+      "minimum_sampled_width_cells": 1.0,
+      "sections": [
+        {
+          "center": [
+            328.0,
+            440.0
+          ],
+          "class": 1,
+          "direction": [
+            0,
+            1
+          ],
+          "first": [
+            328.0,
+            440.0
+          ],
+          "intersected_cells": 1,
+          "last": [
+            328.0,
+            440.0
+          ],
+          "width_cells": 1.0
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        346,
+        397,
+        347,
+        398
+      ],
+      "center_extent_cells": 0.0,
+      "class": 1,
+      "extended_candidate": false,
+      "id": 59,
+      "kind": "第1层",
+      "minimum_sampled_width_cells": 3.0,
+      "sections": [
+        {
+          "center": [
+            346.0,
+            397.0
+          ],
+          "class": 1,
+          "direction": [
+            0,
+            1
+          ],
+          "first": [
+            346.0,
+            396.0
+          ],
+          "intersected_cells": 3,
+          "last": [
+            346.0,
+            398.0
+          ],
+          "width_cells": 3.0
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        370,
+        492,
+        371,
+        493
+      ],
+      "center_extent_cells": 0.0,
+      "class": 2,
+      "extended_candidate": false,
+      "id": 60,
+      "kind": "第2层",
+      "minimum_sampled_width_cells": 4.0,
+      "sections": [
+        {
+          "center": [
+            370.0,
+            491.5
+          ],
+          "class": 2,
+          "direction": [
+            0,
+            1
+          ],
+          "first": [
+            370.0,
+            490.0
+          ],
+          "intersected_cells": 4,
+          "last": [
+            370.0,
+            493.0
+          ],
+          "width_cells": 4.0
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        424,
+        345,
+        425,
+        346
+      ],
+      "center_extent_cells": 0.0,
+      "class": 2,
+      "extended_candidate": false,
+      "id": 61,
+      "kind": "第2层",
+      "minimum_sampled_width_cells": 2.0,
+      "sections": [
+        {
+          "center": [
+            424.0,
+            344.5
+          ],
+          "class": 2,
+          "direction": [
+            0,
+            1
+          ],
+          "first": [
+            424.0,
+            344.0
+          ],
+          "intersected_cells": 2,
+          "last": [
+            424.0,
+            345.0
+          ],
+          "width_cells": 2.0
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        427,
+        308,
+        428,
+        309
+      ],
+      "center_extent_cells": 0.0,
+      "class": 2,
+      "extended_candidate": false,
+      "id": 62,
+      "kind": "第2层",
+      "minimum_sampled_width_cells": 4.0,
+      "sections": [
+        {
+          "center": [
+            427.0,
+            307.5
+          ],
+          "class": 2,
+          "direction": [
+            0,
+            1
+          ],
+          "first": [
+            427.0,
+            306.0
+          ],
+          "intersected_cells": 4,
+          "last": [
+            427.0,
+            309.0
+          ],
+          "width_cells": 4.0
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        509,
+        744,
+        510,
+        745
+      ],
+      "center_extent_cells": 0.0,
+      "class": 2,
+      "extended_candidate": false,
+      "id": 63,
+      "kind": "第2层",
+      "minimum_sampled_width_cells": 2.0,
+      "sections": [
+        {
+          "center": [
+            509.0,
+            743.5
+          ],
+          "class": 2,
+          "direction": [
+            0,
+            1
+          ],
+          "first": [
+            509.0,
+            743.0
+          ],
+          "intersected_cells": 2,
+          "last": [
+            509.0,
+            744.0
+          ],
+          "width_cells": 2.0
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        551,
+        778,
+        552,
+        779
+      ],
+      "center_extent_cells": 0.0,
+      "class": 2,
+      "extended_candidate": false,
+      "id": 64,
+      "kind": "第2层",
+      "minimum_sampled_width_cells": 4.0,
+      "sections": [
+        {
+          "center": [
+            551.0,
+            777.5
+          ],
+          "class": 2,
+          "direction": [
+            0,
+            1
+          ],
+          "first": [
+            551.0,
+            776.0
+          ],
+          "intersected_cells": 4,
+          "last": [
+            551.0,
+            779.0
+          ],
+          "width_cells": 4.0
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        751,
+        89,
+        752,
+        90
+      ],
+      "center_extent_cells": 0.0,
+      "class": 0,
+      "extended_candidate": false,
+      "id": 65,
+      "kind": "水域",
+      "minimum_sampled_width_cells": 2.0,
+      "sections": [
+        {
+          "center": [
+            751.0,
+            88.5
+          ],
+          "class": 0,
+          "direction": [
+            0,
+            1
+          ],
+          "first": [
+            751.0,
+            88.0
+          ],
+          "intersected_cells": 2,
+          "last": [
+            751.0,
+            89.0
+          ],
+          "width_cells": 2.0
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        766,
+        91,
+        767,
+        92
+      ],
+      "center_extent_cells": 0.0,
+      "class": 0,
+      "extended_candidate": false,
+      "id": 66,
+      "kind": "水域",
+      "minimum_sampled_width_cells": 2.0,
+      "sections": [
+        {
+          "center": [
+            766.0,
+            90.5
+          ],
+          "class": 0,
+          "direction": [
+            0,
+            1
+          ],
+          "first": [
+            766.0,
+            90.0
+          ],
+          "intersected_cells": 2,
+          "last": [
+            766.0,
+            91.0
+          ],
+          "width_cells": 2.0
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        306,
+        218,
+        307,
+        219
+      ],
+      "center_extent_cells": 0.0,
+      "class": 2,
+      "extended_candidate": false,
+      "id": 67,
+      "kind": "第2层",
+      "minimum_sampled_width_cells": 2.8284271247461903,
+      "sections": [
+        {
+          "center": [
+            305.5,
+            217.5
+          ],
+          "class": 2,
+          "direction": [
+            1,
+            1
+          ],
+          "first": [
+            305.0,
+            217.0
+          ],
+          "intersected_cells": 2,
+          "last": [
+            306.0,
+            218.0
+          ],
+          "width_cells": 2.8284271247461903
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        421,
+        296,
+        422,
+        297
+      ],
+      "center_extent_cells": 0.0,
+      "class": 2,
+      "extended_candidate": false,
+      "id": 68,
+      "kind": "第2层",
+      "minimum_sampled_width_cells": 1.4142135623730951,
+      "sections": [
+        {
+          "center": [
+            421.0,
+            296.0
+          ],
+          "class": 2,
+          "direction": [
+            1,
+            1
+          ],
+          "first": [
+            421.0,
+            296.0
+          ],
+          "intersected_cells": 1,
+          "last": [
+            421.0,
+            296.0
+          ],
+          "width_cells": 1.4142135623730951
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        440,
+        149,
+        442,
+        151
+      ],
+      "center_extent_cells": 1.0,
+      "class": 2,
+      "extended_candidate": false,
+      "id": 69,
+      "kind": "第2层",
+      "minimum_sampled_width_cells": 1.4142135623730951,
+      "sections": [
+        {
+          "center": [
+            440.0,
+            150.0
+          ],
+          "class": 2,
+          "direction": [
+            1,
+            1
+          ],
+          "first": [
+            440.0,
+            150.0
+          ],
+          "intersected_cells": 1,
+          "last": [
+            440.0,
+            150.0
+          ],
+          "width_cells": 1.4142135623730951
+        },
+        {
+          "center": [
+            441.0,
+            149.0
+          ],
+          "class": 2,
+          "direction": [
+            1,
+            1
+          ],
+          "first": [
+            440.0,
+            148.0
+          ],
+          "intersected_cells": 3,
+          "last": [
+            442.0,
+            150.0
+          ],
+          "width_cells": 4.242640687119286
+        },
+        {
+          "center": [
+            440.5,
+            149.5
+          ],
+          "class": 2,
+          "direction": [
+            1,
+            1
+          ],
+          "first": [
+            440.0,
+            149.0
+          ],
+          "intersected_cells": 2,
+          "last": [
+            441.0,
+            150.0
+          ],
+          "width_cells": 2.8284271247461903
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        472,
+        20,
+        474,
+        22
+      ],
+      "center_extent_cells": 1.0,
+      "class": 3,
+      "extended_candidate": false,
+      "id": 70,
+      "kind": "第3层",
+      "minimum_sampled_width_cells": 1.4142135623730951,
+      "sections": [
+        {
+          "center": [
+            472.0,
+            21.0
+          ],
+          "class": 3,
+          "direction": [
+            1,
+            1
+          ],
+          "first": [
+            471.0,
+            20.0
+          ],
+          "intersected_cells": 3,
+          "last": [
+            473.0,
+            22.0
+          ],
+          "width_cells": 4.242640687119286
+        },
+        {
+          "center": [
+            473.0,
+            20.0
+          ],
+          "class": 3,
+          "direction": [
+            1,
+            1
+          ],
+          "first": [
+            473.0,
+            20.0
+          ],
+          "intersected_cells": 1,
+          "last": [
+            473.0,
+            20.0
+          ],
+          "width_cells": 1.4142135623730951
+        },
+        {
+          "center": [
+            472.5,
+            20.5
+          ],
+          "class": 3,
+          "direction": [
+            1,
+            1
+          ],
+          "first": [
+            472.0,
+            20.0
+          ],
+          "intersected_cells": 2,
+          "last": [
+            473.0,
+            21.0
+          ],
+          "width_cells": 2.8284271247461903
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        498,
+        20,
+        500,
+        22
+      ],
+      "center_extent_cells": 1.0,
+      "class": 2,
+      "extended_candidate": false,
+      "id": 71,
+      "kind": "第2层",
+      "minimum_sampled_width_cells": 1.4142135623730951,
+      "sections": [
+        {
+          "center": [
+            498.0,
+            21.0
+          ],
+          "class": 2,
+          "direction": [
+            1,
+            1
+          ],
+          "first": [
+            497.0,
+            20.0
+          ],
+          "intersected_cells": 3,
+          "last": [
+            499.0,
+            22.0
+          ],
+          "width_cells": 4.242640687119286
+        },
+        {
+          "center": [
+            499.0,
+            20.0
+          ],
+          "class": 2,
+          "direction": [
+            1,
+            1
+          ],
+          "first": [
+            499.0,
+            20.0
+          ],
+          "intersected_cells": 1,
+          "last": [
+            499.0,
+            20.0
+          ],
+          "width_cells": 1.4142135623730951
+        },
+        {
+          "center": [
+            498.5,
+            20.5
+          ],
+          "class": 2,
+          "direction": [
+            1,
+            1
+          ],
+          "first": [
+            498.0,
+            20.0
+          ],
+          "intersected_cells": 2,
+          "last": [
+            499.0,
+            21.0
+          ],
+          "width_cells": 2.8284271247461903
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        752,
+        92,
+        754,
+        93
+      ],
+      "center_extent_cells": 1.0,
+      "class": 0,
+      "extended_candidate": false,
+      "id": 72,
+      "kind": "水域",
+      "minimum_sampled_width_cells": 1.4142135623730951,
+      "sections": [
+        {
+          "center": [
+            752.0,
+            92.0
+          ],
+          "class": 0,
+          "direction": [
+            1,
+            1
+          ],
+          "first": [
+            752.0,
+            92.0
+          ],
+          "intersected_cells": 1,
+          "last": [
+            752.0,
+            92.0
+          ],
+          "width_cells": 1.4142135623730951
+        },
+        {
+          "center": [
+            752.5,
+            91.5
+          ],
+          "class": 0,
+          "direction": [
+            1,
+            1
+          ],
+          "first": [
+            752.0,
+            91.0
+          ],
+          "intersected_cells": 2,
+          "last": [
+            753.0,
+            92.0
+          ],
+          "width_cells": 2.8284271247461903
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        762,
+        81,
+        764,
+        82
+      ],
+      "center_extent_cells": 1.0,
+      "class": 0,
+      "extended_candidate": false,
+      "id": 73,
+      "kind": "水域",
+      "minimum_sampled_width_cells": 2.8284271247461903,
+      "sections": [
+        {
+          "center": [
+            762.0,
+            81.0
+          ],
+          "class": 0,
+          "direction": [
+            1,
+            1
+          ],
+          "first": [
+            761.0,
+            80.0
+          ],
+          "intersected_cells": 3,
+          "last": [
+            763.0,
+            82.0
+          ],
+          "width_cells": 4.242640687119286
+        },
+        {
+          "center": [
+            762.5,
+            80.5
+          ],
+          "class": 0,
+          "direction": [
+            1,
+            1
+          ],
+          "first": [
+            762.0,
+            80.0
+          ],
+          "intersected_cells": 2,
+          "last": [
+            763.0,
+            81.0
+          ],
+          "width_cells": 2.8284271247461903
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        818,
+        20,
+        820,
+        22
+      ],
+      "center_extent_cells": 1.0,
+      "class": 1,
+      "extended_candidate": false,
+      "id": 74,
+      "kind": "第1层",
+      "minimum_sampled_width_cells": 1.4142135623730951,
+      "sections": [
+        {
+          "center": [
+            818.0,
+            21.0
+          ],
+          "class": 1,
+          "direction": [
+            1,
+            1
+          ],
+          "first": [
+            817.0,
+            20.0
+          ],
+          "intersected_cells": 3,
+          "last": [
+            819.0,
+            22.0
+          ],
+          "width_cells": 4.242640687119286
+        },
+        {
+          "center": [
+            819.0,
+            20.0
+          ],
+          "class": 1,
+          "direction": [
+            1,
+            1
+          ],
+          "first": [
+            819.0,
+            20.0
+          ],
+          "intersected_cells": 1,
+          "last": [
+            819.0,
+            20.0
+          ],
+          "width_cells": 1.4142135623730951
+        },
+        {
+          "center": [
+            818.5,
+            20.5
+          ],
+          "class": 1,
+          "direction": [
+            1,
+            1
+          ],
+          "first": [
+            818.0,
+            20.0
+          ],
+          "intersected_cells": 2,
+          "last": [
+            819.0,
+            21.0
+          ],
+          "width_cells": 2.8284271247461903
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        229,
+        241,
+        230,
+        242
+      ],
+      "center_extent_cells": 0.0,
+      "class": 3,
+      "extended_candidate": false,
+      "id": 75,
+      "kind": "第3层",
+      "minimum_sampled_width_cells": 4.242640687119286,
+      "sections": [
+        {
+          "center": [
+            229.0,
+            241.0
+          ],
+          "class": 3,
+          "direction": [
+            1,
+            1
+          ],
+          "first": [
+            228.0,
+            240.0
+          ],
+          "intersected_cells": 3,
+          "last": [
+            230.0,
+            242.0
+          ],
+          "width_cells": 4.242640687119286
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        281,
+        305,
+        282,
+        306
+      ],
+      "center_extent_cells": 0.0,
+      "class": 1,
+      "extended_candidate": false,
+      "id": 76,
+      "kind": "第1层",
+      "minimum_sampled_width_cells": 1.4142135623730951,
+      "sections": [
+        {
+          "center": [
+            281.0,
+            305.0
+          ],
+          "class": 1,
+          "direction": [
+            1,
+            1
+          ],
+          "first": [
+            281.0,
+            305.0
+          ],
+          "intersected_cells": 1,
+          "last": [
+            281.0,
+            305.0
+          ],
+          "width_cells": 1.4142135623730951
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        709,
+        752,
+        710,
+        753
+      ],
+      "center_extent_cells": 0.0,
+      "class": 2,
+      "extended_candidate": false,
+      "id": 77,
+      "kind": "第2层",
+      "minimum_sampled_width_cells": 2.8284271247461903,
+      "sections": [
+        {
+          "center": [
+            708.5,
+            751.5
+          ],
+          "class": 2,
+          "direction": [
+            1,
+            1
+          ],
+          "first": [
+            708.0,
+            751.0
+          ],
+          "intersected_cells": 2,
+          "last": [
+            709.0,
+            752.0
+          ],
+          "width_cells": 2.8284271247461903
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        763,
+        818,
+        765,
+        820
+      ],
+      "center_extent_cells": 1.0,
+      "class": 1,
+      "extended_candidate": false,
+      "id": 78,
+      "kind": "第1层",
+      "minimum_sampled_width_cells": 1.4142135623730951,
+      "sections": [
+        {
+          "center": [
+            764.0,
+            818.0
+          ],
+          "class": 1,
+          "direction": [
+            1,
+            1
+          ],
+          "first": [
+            763.0,
+            817.0
+          ],
+          "intersected_cells": 3,
+          "last": [
+            765.0,
+            819.0
+          ],
+          "width_cells": 4.242640687119286
+        },
+        {
+          "center": [
+            763.0,
+            819.0
+          ],
+          "class": 1,
+          "direction": [
+            1,
+            1
+          ],
+          "first": [
+            763.0,
+            819.0
+          ],
+          "intersected_cells": 1,
+          "last": [
+            763.0,
+            819.0
+          ],
+          "width_cells": 1.4142135623730951
+        },
+        {
+          "center": [
+            763.5,
+            818.5
+          ],
+          "class": 1,
+          "direction": [
+            1,
+            1
+          ],
+          "first": [
+            763.0,
+            818.0
+          ],
+          "intersected_cells": 2,
+          "last": [
+            764.0,
+            819.0
+          ],
+          "width_cells": 2.8284271247461903
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        136,
+        268,
+        137,
+        269
+      ],
+      "center_extent_cells": 0.0,
+      "class": 2,
+      "extended_candidate": false,
+      "id": 79,
+      "kind": "第2层",
+      "minimum_sampled_width_cells": 4.242640687119286,
+      "sections": [
+        {
+          "center": [
+            136.0,
+            268.0
+          ],
+          "class": 2,
+          "direction": [
+            1,
+            1
+          ],
+          "first": [
+            135.0,
+            267.0
+          ],
+          "intersected_cells": 3,
+          "last": [
+            137.0,
+            269.0
+          ],
+          "width_cells": 4.242640687119286
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        20,
+        163,
+        22,
+        165
+      ],
+      "center_extent_cells": 1.0,
+      "class": 3,
+      "extended_candidate": false,
+      "id": 80,
+      "kind": "第3层",
+      "minimum_sampled_width_cells": 1.4142135623730951,
+      "sections": [
+        {
+          "center": [
+            21.0,
+            163.0
+          ],
+          "class": 3,
+          "direction": [
+            1,
+            1
+          ],
+          "first": [
+            20.0,
+            162.0
+          ],
+          "intersected_cells": 3,
+          "last": [
+            22.0,
+            164.0
+          ],
+          "width_cells": 4.242640687119286
+        },
+        {
+          "center": [
+            20.0,
+            164.0
+          ],
+          "class": 3,
+          "direction": [
+            1,
+            1
+          ],
+          "first": [
+            20.0,
+            164.0
+          ],
+          "intersected_cells": 1,
+          "last": [
+            20.0,
+            164.0
+          ],
+          "width_cells": 1.4142135623730951
+        },
+        {
+          "center": [
+            20.5,
+            163.5
+          ],
+          "class": 3,
+          "direction": [
+            1,
+            1
+          ],
+          "first": [
+            20.0,
+            163.0
+          ],
+          "intersected_cells": 2,
+          "last": [
+            21.0,
+            164.0
+          ],
+          "width_cells": 2.8284271247461903
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        46,
+        210,
+        47,
+        211
+      ],
+      "center_extent_cells": 0.0,
+      "class": 3,
+      "extended_candidate": false,
+      "id": 81,
+      "kind": "第3层",
+      "minimum_sampled_width_cells": 4.242640687119286,
+      "sections": [
+        {
+          "center": [
+            46.0,
+            210.0
+          ],
+          "class": 3,
+          "direction": [
+            1,
+            1
+          ],
+          "first": [
+            45.0,
+            209.0
+          ],
+          "intersected_cells": 3,
+          "last": [
+            47.0,
+            211.0
+          ],
+          "width_cells": 4.242640687119286
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        177,
+        342,
+        178,
+        343
+      ],
+      "center_extent_cells": 0.0,
+      "class": 2,
+      "extended_candidate": false,
+      "id": 82,
+      "kind": "第2层",
+      "minimum_sampled_width_cells": 4.242640687119286,
+      "sections": [
+        {
+          "center": [
+            177.0,
+            342.0
+          ],
+          "class": 2,
+          "direction": [
+            1,
+            1
+          ],
+          "first": [
+            176.0,
+            341.0
+          ],
+          "intersected_cells": 3,
+          "last": [
+            178.0,
+            343.0
+          ],
+          "width_cells": 4.242640687119286
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        604,
+        818,
+        606,
+        820
+      ],
+      "center_extent_cells": 1.0,
+      "class": 2,
+      "extended_candidate": false,
+      "id": 83,
+      "kind": "第2层",
+      "minimum_sampled_width_cells": 1.4142135623730951,
+      "sections": [
+        {
+          "center": [
+            605.0,
+            818.0
+          ],
+          "class": 2,
+          "direction": [
+            1,
+            1
+          ],
+          "first": [
+            604.0,
+            817.0
+          ],
+          "intersected_cells": 3,
+          "last": [
+            606.0,
+            819.0
+          ],
+          "width_cells": 4.242640687119286
+        },
+        {
+          "center": [
+            604.0,
+            819.0
+          ],
+          "class": 2,
+          "direction": [
+            1,
+            1
+          ],
+          "first": [
+            604.0,
+            819.0
+          ],
+          "intersected_cells": 1,
+          "last": [
+            604.0,
+            819.0
+          ],
+          "width_cells": 1.4142135623730951
+        },
+        {
+          "center": [
+            604.5,
+            818.5
+          ],
+          "class": 2,
+          "direction": [
+            1,
+            1
+          ],
+          "first": [
+            604.0,
+            818.0
+          ],
+          "intersected_cells": 2,
+          "last": [
+            605.0,
+            819.0
+          ],
+          "width_cells": 2.8284271247461903
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        504,
+        735,
+        505,
+        736
+      ],
+      "center_extent_cells": 0.0,
+      "class": 2,
+      "extended_candidate": false,
+      "id": 84,
+      "kind": "第2层",
+      "minimum_sampled_width_cells": 4.242640687119286,
+      "sections": [
+        {
+          "center": [
+            504.0,
+            735.0
+          ],
+          "class": 2,
+          "direction": [
+            1,
+            1
+          ],
+          "first": [
+            503.0,
+            734.0
+          ],
+          "intersected_cells": 3,
+          "last": [
+            505.0,
+            736.0
+          ],
+          "width_cells": 4.242640687119286
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        439,
+        671,
+        440,
+        672
+      ],
+      "center_extent_cells": 0.0,
+      "class": 2,
+      "extended_candidate": false,
+      "id": 85,
+      "kind": "第2层",
+      "minimum_sampled_width_cells": 1.4142135623730951,
+      "sections": [
+        {
+          "center": [
+            439.0,
+            671.0
+          ],
+          "class": 2,
+          "direction": [
+            1,
+            1
+          ],
+          "first": [
+            439.0,
+            671.0
+          ],
+          "intersected_cells": 1,
+          "last": [
+            439.0,
+            671.0
+          ],
+          "width_cells": 1.4142135623730951
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        413,
+        657,
+        414,
+        658
+      ],
+      "center_extent_cells": 0.0,
+      "class": 1,
+      "extended_candidate": false,
+      "id": 86,
+      "kind": "第1层",
+      "minimum_sampled_width_cells": 1.4142135623730951,
+      "sections": [
+        {
+          "center": [
+            413.0,
+            657.0
+          ],
+          "class": 1,
+          "direction": [
+            1,
+            1
+          ],
+          "first": [
+            413.0,
+            657.0
+          ],
+          "intersected_cells": 1,
+          "last": [
+            413.0,
+            657.0
+          ],
+          "width_cells": 1.4142135623730951
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        481,
+        726,
+        482,
+        727
+      ],
+      "center_extent_cells": 0.0,
+      "class": 1,
+      "extended_candidate": false,
+      "id": 87,
+      "kind": "第1层",
+      "minimum_sampled_width_cells": 2.8284271247461903,
+      "sections": [
+        {
+          "center": [
+            480.5,
+            725.5
+          ],
+          "class": 1,
+          "direction": [
+            1,
+            1
+          ],
+          "first": [
+            480.0,
+            725.0
+          ],
+          "intersected_cells": 2,
+          "last": [
+            481.0,
+            726.0
+          ],
+          "width_cells": 2.8284271247461903
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        418,
+        705,
+        419,
+        706
+      ],
+      "center_extent_cells": 0.0,
+      "class": 1,
+      "extended_candidate": false,
+      "id": 88,
+      "kind": "第1层",
+      "minimum_sampled_width_cells": 4.242640687119286,
+      "sections": [
+        {
+          "center": [
+            418.0,
+            705.0
+          ],
+          "class": 1,
+          "direction": [
+            1,
+            1
+          ],
+          "first": [
+            417.0,
+            704.0
+          ],
+          "intersected_cells": 3,
+          "last": [
+            419.0,
+            706.0
+          ],
+          "width_cells": 4.242640687119286
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        20,
+        311,
+        22,
+        313
+      ],
+      "center_extent_cells": 1.0,
+      "class": 2,
+      "extended_candidate": false,
+      "id": 89,
+      "kind": "第2层",
+      "minimum_sampled_width_cells": 1.4142135623730951,
+      "sections": [
+        {
+          "center": [
+            21.0,
+            311.0
+          ],
+          "class": 2,
+          "direction": [
+            1,
+            1
+          ],
+          "first": [
+            20.0,
+            310.0
+          ],
+          "intersected_cells": 3,
+          "last": [
+            22.0,
+            312.0
+          ],
+          "width_cells": 4.242640687119286
+        },
+        {
+          "center": [
+            20.0,
+            312.0
+          ],
+          "class": 2,
+          "direction": [
+            1,
+            1
+          ],
+          "first": [
+            20.0,
+            312.0
+          ],
+          "intersected_cells": 1,
+          "last": [
+            20.0,
+            312.0
+          ],
+          "width_cells": 1.4142135623730951
+        },
+        {
+          "center": [
+            20.5,
+            311.5
+          ],
+          "class": 2,
+          "direction": [
+            1,
+            1
+          ],
+          "first": [
+            20.0,
+            311.0
+          ],
+          "intersected_cells": 2,
+          "last": [
+            21.0,
+            312.0
+          ],
+          "width_cells": 2.8284271247461903
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        124,
+        605,
+        125,
+        606
+      ],
+      "center_extent_cells": 0.0,
+      "class": 0,
+      "extended_candidate": false,
+      "id": 90,
+      "kind": "水域",
+      "minimum_sampled_width_cells": 4.242640687119286,
+      "sections": [
+        {
+          "center": [
+            124.0,
+            605.0
+          ],
+          "class": 0,
+          "direction": [
+            1,
+            1
+          ],
+          "first": [
+            123.0,
+            604.0
+          ],
+          "intersected_cells": 3,
+          "last": [
+            125.0,
+            606.0
+          ],
+          "width_cells": 4.242640687119286
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        118,
+        630,
+        119,
+        631
+      ],
+      "center_extent_cells": 0.0,
+      "class": 0,
+      "extended_candidate": false,
+      "id": 91,
+      "kind": "水域",
+      "minimum_sampled_width_cells": 4.242640687119286,
+      "sections": [
+        {
+          "center": [
+            118.0,
+            630.0
+          ],
+          "class": 0,
+          "direction": [
+            1,
+            1
+          ],
+          "first": [
+            117.0,
+            629.0
+          ],
+          "intersected_cells": 3,
+          "last": [
+            119.0,
+            631.0
+          ],
+          "width_cells": 4.242640687119286
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        179,
+        696,
+        180,
+        697
+      ],
+      "center_extent_cells": 0.0,
+      "class": 2,
+      "extended_candidate": false,
+      "id": 92,
+      "kind": "第2层",
+      "minimum_sampled_width_cells": 2.8284271247461903,
+      "sections": [
+        {
+          "center": [
+            178.5,
+            695.5
+          ],
+          "class": 2,
+          "direction": [
+            1,
+            1
+          ],
+          "first": [
+            178.0,
+            695.0
+          ],
+          "intersected_cells": 2,
+          "last": [
+            179.0,
+            696.0
+          ],
+          "width_cells": 2.8284271247461903
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        163,
+        681,
+        164,
+        682
+      ],
+      "center_extent_cells": 0.0,
+      "class": 1,
+      "extended_candidate": false,
+      "id": 93,
+      "kind": "第1层",
+      "minimum_sampled_width_cells": 1.4142135623730951,
+      "sections": [
+        {
+          "center": [
+            163.0,
+            681.0
+          ],
+          "class": 1,
+          "direction": [
+            1,
+            1
+          ],
+          "first": [
+            163.0,
+            681.0
+          ],
+          "intersected_cells": 1,
+          "last": [
+            163.0,
+            681.0
+          ],
+          "width_cells": 1.4142135623730951
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        180,
+        704,
+        181,
+        705
+      ],
+      "center_extent_cells": 0.0,
+      "class": 1,
+      "extended_candidate": false,
+      "id": 94,
+      "kind": "第1层",
+      "minimum_sampled_width_cells": 1.4142135623730951,
+      "sections": [
+        {
+          "center": [
+            180.0,
+            704.0
+          ],
+          "class": 1,
+          "direction": [
+            1,
+            1
+          ],
+          "first": [
+            180.0,
+            704.0
+          ],
+          "intersected_cells": 1,
+          "last": [
+            180.0,
+            704.0
+          ],
+          "width_cells": 1.4142135623730951
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        180,
+        705,
+        182,
+        706
+      ],
+      "center_extent_cells": 1.0,
+      "class": 3,
+      "extended_candidate": false,
+      "id": 95,
+      "kind": "第3层",
+      "minimum_sampled_width_cells": 1.4142135623730951,
+      "sections": [
+        {
+          "center": [
+            181.0,
+            705.0
+          ],
+          "class": 3,
+          "direction": [
+            1,
+            1
+          ],
+          "first": [
+            181.0,
+            705.0
+          ],
+          "intersected_cells": 1,
+          "last": [
+            181.0,
+            705.0
+          ],
+          "width_cells": 1.4142135623730951
+        },
+        {
+          "center": [
+            180.0,
+            705.0
+          ],
+          "class": 3,
+          "direction": [
+            1,
+            1
+          ],
+          "first": [
+            179.0,
+            704.0
+          ],
+          "intersected_cells": 3,
+          "last": [
+            181.0,
+            706.0
+          ],
+          "width_cells": 4.242640687119286
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        20,
+        549,
+        22,
+        551
+      ],
+      "center_extent_cells": 1.0,
+      "class": 3,
+      "extended_candidate": false,
+      "id": 96,
+      "kind": "第3层",
+      "minimum_sampled_width_cells": 1.4142135623730951,
+      "sections": [
+        {
+          "center": [
+            21.0,
+            549.0
+          ],
+          "class": 3,
+          "direction": [
+            1,
+            1
+          ],
+          "first": [
+            20.0,
+            548.0
+          ],
+          "intersected_cells": 3,
+          "last": [
+            22.0,
+            550.0
+          ],
+          "width_cells": 4.242640687119286
+        },
+        {
+          "center": [
+            20.0,
+            550.0
+          ],
+          "class": 3,
+          "direction": [
+            1,
+            1
+          ],
+          "first": [
+            20.0,
+            550.0
+          ],
+          "intersected_cells": 1,
+          "last": [
+            20.0,
+            550.0
+          ],
+          "width_cells": 1.4142135623730951
+        },
+        {
+          "center": [
+            20.5,
+            549.5
+          ],
+          "class": 3,
+          "direction": [
+            1,
+            1
+          ],
+          "first": [
+            20.0,
+            549.0
+          ],
+          "intersected_cells": 2,
+          "last": [
+            21.0,
+            550.0
+          ],
+          "width_cells": 2.8284271247461903
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        147,
+        696,
+        148,
+        697
+      ],
+      "center_extent_cells": 0.0,
+      "class": 2,
+      "extended_candidate": false,
+      "id": 97,
+      "kind": "第2层",
+      "minimum_sampled_width_cells": 4.242640687119286,
+      "sections": [
+        {
+          "center": [
+            147.0,
+            696.0
+          ],
+          "class": 2,
+          "direction": [
+            1,
+            1
+          ],
+          "first": [
+            146.0,
+            695.0
+          ],
+          "intersected_cells": 3,
+          "last": [
+            148.0,
+            697.0
+          ],
+          "width_cells": 4.242640687119286
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        202,
+        762,
+        204,
+        763
+      ],
+      "center_extent_cells": 1.0,
+      "class": 3,
+      "extended_candidate": false,
+      "id": 98,
+      "kind": "第3层",
+      "minimum_sampled_width_cells": 2.8284271247461903,
+      "sections": [
+        {
+          "center": [
+            202.5,
+            761.5
+          ],
+          "class": 3,
+          "direction": [
+            1,
+            1
+          ],
+          "first": [
+            202.0,
+            761.0
+          ],
+          "intersected_cells": 2,
+          "last": [
+            203.0,
+            762.0
+          ],
+          "width_cells": 2.8284271247461903
+        },
+        {
+          "center": [
+            202.0,
+            762.0
+          ],
+          "class": 3,
+          "direction": [
+            1,
+            1
+          ],
+          "first": [
+            201.0,
+            761.0
+          ],
+          "intersected_cells": 3,
+          "last": [
+            203.0,
+            763.0
+          ],
+          "width_cells": 4.242640687119286
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        200,
+        760,
+        201,
+        761
+      ],
+      "center_extent_cells": 0.0,
+      "class": 1,
+      "extended_candidate": false,
+      "id": 99,
+      "kind": "第1层",
+      "minimum_sampled_width_cells": 2.8284271247461903,
+      "sections": [
+        {
+          "center": [
+            199.5,
+            759.5
+          ],
+          "class": 1,
+          "direction": [
+            1,
+            1
+          ],
+          "first": [
+            199.0,
+            759.0
+          ],
+          "intersected_cells": 2,
+          "last": [
+            200.0,
+            760.0
+          ],
+          "width_cells": 2.8284271247461903
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        20,
+        602,
+        22,
+        604
+      ],
+      "center_extent_cells": 1.0,
+      "class": 2,
+      "extended_candidate": false,
+      "id": 100,
+      "kind": "第2层",
+      "minimum_sampled_width_cells": 1.4142135623730951,
+      "sections": [
+        {
+          "center": [
+            21.0,
+            602.0
+          ],
+          "class": 2,
+          "direction": [
+            1,
+            1
+          ],
+          "first": [
+            20.0,
+            601.0
+          ],
+          "intersected_cells": 3,
+          "last": [
+            22.0,
+            603.0
+          ],
+          "width_cells": 4.242640687119286
+        },
+        {
+          "center": [
+            20.0,
+            603.0
+          ],
+          "class": 2,
+          "direction": [
+            1,
+            1
+          ],
+          "first": [
+            20.0,
+            603.0
+          ],
+          "intersected_cells": 1,
+          "last": [
+            20.0,
+            603.0
+          ],
+          "width_cells": 1.4142135623730951
+        },
+        {
+          "center": [
+            20.5,
+            602.5
+          ],
+          "class": 2,
+          "direction": [
+            1,
+            1
+          ],
+          "first": [
+            20.0,
+            602.0
+          ],
+          "intersected_cells": 2,
+          "last": [
+            21.0,
+            603.0
+          ],
+          "width_cells": 2.8284271247461903
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        191,
+        818,
+        193,
+        820
+      ],
+      "center_extent_cells": 1.0,
+      "class": 1,
+      "extended_candidate": false,
+      "id": 101,
+      "kind": "第1层",
+      "minimum_sampled_width_cells": 1.4142135623730951,
+      "sections": [
+        {
+          "center": [
+            192.0,
+            818.0
+          ],
+          "class": 1,
+          "direction": [
+            1,
+            1
+          ],
+          "first": [
+            191.0,
+            817.0
+          ],
+          "intersected_cells": 3,
+          "last": [
+            193.0,
+            819.0
+          ],
+          "width_cells": 4.242640687119286
+        },
+        {
+          "center": [
+            191.0,
+            819.0
+          ],
+          "class": 1,
+          "direction": [
+            1,
+            1
+          ],
+          "first": [
+            191.0,
+            819.0
+          ],
+          "intersected_cells": 1,
+          "last": [
+            191.0,
+            819.0
+          ],
+          "width_cells": 1.4142135623730951
+        },
+        {
+          "center": [
+            191.5,
+            818.5
+          ],
+          "class": 1,
+          "direction": [
+            1,
+            1
+          ],
+          "first": [
+            191.0,
+            818.0
+          ],
+          "intersected_cells": 2,
+          "last": [
+            192.0,
+            819.0
+          ],
+          "width_cells": 2.8284271247461903
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        20,
+        818,
+        22,
+        820
+      ],
+      "center_extent_cells": 1.0,
+      "class": 3,
+      "extended_candidate": false,
+      "id": 102,
+      "kind": "第3层",
+      "minimum_sampled_width_cells": 1.4142135623730951,
+      "sections": [
+        {
+          "center": [
+            21.0,
+            818.0
+          ],
+          "class": 3,
+          "direction": [
+            1,
+            1
+          ],
+          "first": [
+            20.0,
+            817.0
+          ],
+          "intersected_cells": 3,
+          "last": [
+            22.0,
+            819.0
+          ],
+          "width_cells": 4.242640687119286
+        },
+        {
+          "center": [
+            20.0,
+            819.0
+          ],
+          "class": 3,
+          "direction": [
+            1,
+            1
+          ],
+          "first": [
+            20.0,
+            819.0
+          ],
+          "intersected_cells": 1,
+          "last": [
+            20.0,
+            819.0
+          ],
+          "width_cells": 1.4142135623730951
+        },
+        {
+          "center": [
+            20.5,
+            818.5
+          ],
+          "class": 3,
+          "direction": [
+            1,
+            1
+          ],
+          "first": [
+            20.0,
+            818.0
+          ],
+          "intersected_cells": 2,
+          "last": [
+            21.0,
+            819.0
+          ],
+          "width_cells": 2.8284271247461903
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        20,
+        20,
+        22,
+        22
+      ],
+      "center_extent_cells": 1.0,
+      "class": 3,
+      "extended_candidate": false,
+      "id": 103,
+      "kind": "第3层",
+      "minimum_sampled_width_cells": 1.4142135623730951,
+      "sections": [
+        {
+          "center": [
+            20.0,
+            20.0
+          ],
+          "class": 3,
+          "direction": [
+            -1,
+            1
+          ],
+          "first": [
+            20.0,
+            20.0
+          ],
+          "intersected_cells": 1,
+          "last": [
+            20.0,
+            20.0
+          ],
+          "width_cells": 1.4142135623730951
+        },
+        {
+          "center": [
+            20.5,
+            20.5
+          ],
+          "class": 3,
+          "direction": [
+            -1,
+            1
+          ],
+          "first": [
+            21.0,
+            20.0
+          ],
+          "intersected_cells": 2,
+          "last": [
+            20.0,
+            21.0
+          ],
+          "width_cells": 2.8284271247461903
+        },
+        {
+          "center": [
+            21.0,
+            21.0
+          ],
+          "class": 3,
+          "direction": [
+            -1,
+            1
+          ],
+          "first": [
+            22.0,
+            20.0
+          ],
+          "intersected_cells": 3,
+          "last": [
+            20.0,
+            22.0
+          ],
+          "width_cells": 4.242640687119286
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        20,
+        165,
+        22,
+        167
+      ],
+      "center_extent_cells": 1.0,
+      "class": 2,
+      "extended_candidate": false,
+      "id": 104,
+      "kind": "第2层",
+      "minimum_sampled_width_cells": 1.4142135623730951,
+      "sections": [
+        {
+          "center": [
+            20.0,
+            165.0
+          ],
+          "class": 2,
+          "direction": [
+            -1,
+            1
+          ],
+          "first": [
+            20.0,
+            165.0
+          ],
+          "intersected_cells": 1,
+          "last": [
+            20.0,
+            165.0
+          ],
+          "width_cells": 1.4142135623730951
+        },
+        {
+          "center": [
+            20.5,
+            165.5
+          ],
+          "class": 2,
+          "direction": [
+            -1,
+            1
+          ],
+          "first": [
+            21.0,
+            165.0
+          ],
+          "intersected_cells": 2,
+          "last": [
+            20.0,
+            166.0
+          ],
+          "width_cells": 2.8284271247461903
+        },
+        {
+          "center": [
+            21.0,
+            166.0
+          ],
+          "class": 2,
+          "direction": [
+            -1,
+            1
+          ],
+          "first": [
+            22.0,
+            165.0
+          ],
+          "intersected_cells": 3,
+          "last": [
+            20.0,
+            167.0
+          ],
+          "width_cells": 4.242640687119286
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        165,
+        137,
+        166,
+        138
+      ],
+      "center_extent_cells": 0.0,
+      "class": 2,
+      "extended_candidate": false,
+      "id": 105,
+      "kind": "第2层",
+      "minimum_sampled_width_cells": 2.8284271247461903,
+      "sections": [
+        {
+          "center": [
+            164.5,
+            136.5
+          ],
+          "class": 2,
+          "direction": [
+            -1,
+            1
+          ],
+          "first": [
+            165.0,
+            136.0
+          ],
+          "intersected_cells": 2,
+          "last": [
+            164.0,
+            137.0
+          ],
+          "width_cells": 2.8284271247461903
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        20,
+        313,
+        22,
+        315
+      ],
+      "center_extent_cells": 1.0,
+      "class": 3,
+      "extended_candidate": false,
+      "id": 106,
+      "kind": "第3层",
+      "minimum_sampled_width_cells": 1.4142135623730951,
+      "sections": [
+        {
+          "center": [
+            20.0,
+            313.0
+          ],
+          "class": 3,
+          "direction": [
+            -1,
+            1
+          ],
+          "first": [
+            20.0,
+            313.0
+          ],
+          "intersected_cells": 1,
+          "last": [
+            20.0,
+            313.0
+          ],
+          "width_cells": 1.4142135623730951
+        },
+        {
+          "center": [
+            20.5,
+            313.5
+          ],
+          "class": 3,
+          "direction": [
+            -1,
+            1
+          ],
+          "first": [
+            21.0,
+            313.0
+          ],
+          "intersected_cells": 2,
+          "last": [
+            20.0,
+            314.0
+          ],
+          "width_cells": 2.8284271247461903
+        },
+        {
+          "center": [
+            21.0,
+            314.0
+          ],
+          "class": 3,
+          "direction": [
+            -1,
+            1
+          ],
+          "first": [
+            22.0,
+            313.0
+          ],
+          "intersected_cells": 3,
+          "last": [
+            20.0,
+            315.0
+          ],
+          "width_cells": 4.242640687119286
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        474,
+        20,
+        476,
+        22
+      ],
+      "center_extent_cells": 1.0,
+      "class": 2,
+      "extended_candidate": false,
+      "id": 107,
+      "kind": "第2层",
+      "minimum_sampled_width_cells": 1.4142135623730951,
+      "sections": [
+        {
+          "center": [
+            474.0,
+            20.0
+          ],
+          "class": 2,
+          "direction": [
+            -1,
+            1
+          ],
+          "first": [
+            474.0,
+            20.0
+          ],
+          "intersected_cells": 1,
+          "last": [
+            474.0,
+            20.0
+          ],
+          "width_cells": 1.4142135623730951
+        },
+        {
+          "center": [
+            474.5,
+            20.5
+          ],
+          "class": 2,
+          "direction": [
+            -1,
+            1
+          ],
+          "first": [
+            475.0,
+            20.0
+          ],
+          "intersected_cells": 2,
+          "last": [
+            474.0,
+            21.0
+          ],
+          "width_cells": 2.8284271247461903
+        },
+        {
+          "center": [
+            475.0,
+            21.0
+          ],
+          "class": 2,
+          "direction": [
+            -1,
+            1
+          ],
+          "first": [
+            476.0,
+            20.0
+          ],
+          "intersected_cells": 3,
+          "last": [
+            474.0,
+            22.0
+          ],
+          "width_cells": 4.242640687119286
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        500,
+        20,
+        502,
+        22
+      ],
+      "center_extent_cells": 1.0,
+      "class": 1,
+      "extended_candidate": false,
+      "id": 108,
+      "kind": "第1层",
+      "minimum_sampled_width_cells": 1.4142135623730951,
+      "sections": [
+        {
+          "center": [
+            500.0,
+            20.0
+          ],
+          "class": 1,
+          "direction": [
+            -1,
+            1
+          ],
+          "first": [
+            500.0,
+            20.0
+          ],
+          "intersected_cells": 1,
+          "last": [
+            500.0,
+            20.0
+          ],
+          "width_cells": 1.4142135623730951
+        },
+        {
+          "center": [
+            500.5,
+            20.5
+          ],
+          "class": 1,
+          "direction": [
+            -1,
+            1
+          ],
+          "first": [
+            501.0,
+            20.0
+          ],
+          "intersected_cells": 2,
+          "last": [
+            500.0,
+            21.0
+          ],
+          "width_cells": 2.8284271247461903
+        },
+        {
+          "center": [
+            501.0,
+            21.0
+          ],
+          "class": 1,
+          "direction": [
+            -1,
+            1
+          ],
+          "first": [
+            502.0,
+            20.0
+          ],
+          "intersected_cells": 3,
+          "last": [
+            500.0,
+            22.0
+          ],
+          "width_cells": 4.242640687119286
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        308,
+        218,
+        309,
+        219
+      ],
+      "center_extent_cells": 0.0,
+      "class": 1,
+      "extended_candidate": false,
+      "id": 109,
+      "kind": "第1层",
+      "minimum_sampled_width_cells": 2.8284271247461903,
+      "sections": [
+        {
+          "center": [
+            307.5,
+            217.5
+          ],
+          "class": 1,
+          "direction": [
+            -1,
+            1
+          ],
+          "first": [
+            308.0,
+            217.0
+          ],
+          "intersected_cells": 2,
+          "last": [
+            307.0,
+            218.0
+          ],
+          "width_cells": 2.8284271247461903
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        20,
+        551,
+        22,
+        553
+      ],
+      "center_extent_cells": 1.0,
+      "class": 2,
+      "extended_candidate": false,
+      "id": 110,
+      "kind": "第2层",
+      "minimum_sampled_width_cells": 1.4142135623730951,
+      "sections": [
+        {
+          "center": [
+            20.0,
+            551.0
+          ],
+          "class": 2,
+          "direction": [
+            -1,
+            1
+          ],
+          "first": [
+            20.0,
+            551.0
+          ],
+          "intersected_cells": 1,
+          "last": [
+            20.0,
+            551.0
+          ],
+          "width_cells": 1.4142135623730951
+        },
+        {
+          "center": [
+            20.5,
+            551.5
+          ],
+          "class": 2,
+          "direction": [
+            -1,
+            1
+          ],
+          "first": [
+            21.0,
+            551.0
+          ],
+          "intersected_cells": 2,
+          "last": [
+            20.0,
+            552.0
+          ],
+          "width_cells": 2.8284271247461903
+        },
+        {
+          "center": [
+            21.0,
+            552.0
+          ],
+          "class": 2,
+          "direction": [
+            -1,
+            1
+          ],
+          "first": [
+            22.0,
+            551.0
+          ],
+          "intersected_cells": 3,
+          "last": [
+            20.0,
+            553.0
+          ],
+          "width_cells": 4.242640687119286
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        101,
+        514,
+        102,
+        515
+      ],
+      "center_extent_cells": 0.0,
+      "class": 2,
+      "extended_candidate": false,
+      "id": 111,
+      "kind": "第2层",
+      "minimum_sampled_width_cells": 2.8284271247461903,
+      "sections": [
+        {
+          "center": [
+            100.5,
+            513.5
+          ],
+          "class": 2,
+          "direction": [
+            -1,
+            1
+          ],
+          "first": [
+            101.0,
+            513.0
+          ],
+          "intersected_cells": 2,
+          "last": [
+            100.0,
+            514.0
+          ],
+          "width_cells": 2.8284271247461903
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        20,
+        604,
+        22,
+        606
+      ],
+      "center_extent_cells": 1.0,
+      "class": 3,
+      "extended_candidate": false,
+      "id": 112,
+      "kind": "第3层",
+      "minimum_sampled_width_cells": 1.4142135623730951,
+      "sections": [
+        {
+          "center": [
+            20.0,
+            604.0
+          ],
+          "class": 3,
+          "direction": [
+            -1,
+            1
+          ],
+          "first": [
+            20.0,
+            604.0
+          ],
+          "intersected_cells": 1,
+          "last": [
+            20.0,
+            604.0
+          ],
+          "width_cells": 1.4142135623730951
+        },
+        {
+          "center": [
+            20.5,
+            604.5
+          ],
+          "class": 3,
+          "direction": [
+            -1,
+            1
+          ],
+          "first": [
+            21.0,
+            604.0
+          ],
+          "intersected_cells": 2,
+          "last": [
+            20.0,
+            605.0
+          ],
+          "width_cells": 2.8284271247461903
+        },
+        {
+          "center": [
+            21.0,
+            605.0
+          ],
+          "class": 3,
+          "direction": [
+            -1,
+            1
+          ],
+          "first": [
+            22.0,
+            604.0
+          ],
+          "intersected_cells": 3,
+          "last": [
+            20.0,
+            606.0
+          ],
+          "width_cells": 4.242640687119286
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        114,
+        604,
+        115,
+        605
+      ],
+      "center_extent_cells": 0.0,
+      "class": 0,
+      "extended_candidate": false,
+      "id": 113,
+      "kind": "水域",
+      "minimum_sampled_width_cells": 4.242640687119286,
+      "sections": [
+        {
+          "center": [
+            114.0,
+            604.0
+          ],
+          "class": 0,
+          "direction": [
+            -1,
+            1
+          ],
+          "first": [
+            115.0,
+            603.0
+          ],
+          "intersected_cells": 3,
+          "last": [
+            113.0,
+            605.0
+          ],
+          "width_cells": 4.242640687119286
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        350,
+        389,
+        351,
+        390
+      ],
+      "center_extent_cells": 0.0,
+      "class": 1,
+      "extended_candidate": false,
+      "id": 114,
+      "kind": "第1层",
+      "minimum_sampled_width_cells": 4.242640687119286,
+      "sections": [
+        {
+          "center": [
+            350.0,
+            389.0
+          ],
+          "class": 1,
+          "direction": [
+            -1,
+            1
+          ],
+          "first": [
+            351.0,
+            388.0
+          ],
+          "intersected_cells": 3,
+          "last": [
+            349.0,
+            390.0
+          ],
+          "width_cells": 4.242640687119286
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        293,
+        463,
+        294,
+        464
+      ],
+      "center_extent_cells": 0.0,
+      "class": 3,
+      "extended_candidate": false,
+      "id": 115,
+      "kind": "第3层",
+      "minimum_sampled_width_cells": 4.242640687119286,
+      "sections": [
+        {
+          "center": [
+            293.0,
+            463.0
+          ],
+          "class": 3,
+          "direction": [
+            -1,
+            1
+          ],
+          "first": [
+            294.0,
+            462.0
+          ],
+          "intersected_cells": 3,
+          "last": [
+            292.0,
+            464.0
+          ],
+          "width_cells": 4.242640687119286
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        169,
+        588,
+        170,
+        589
+      ],
+      "center_extent_cells": 0.0,
+      "class": 0,
+      "extended_candidate": false,
+      "id": 116,
+      "kind": "水域",
+      "minimum_sampled_width_cells": 4.242640687119286,
+      "sections": [
+        {
+          "center": [
+            169.0,
+            588.0
+          ],
+          "class": 0,
+          "direction": [
+            -1,
+            1
+          ],
+          "first": [
+            170.0,
+            587.0
+          ],
+          "intersected_cells": 3,
+          "last": [
+            168.0,
+            589.0
+          ],
+          "width_cells": 4.242640687119286
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        157,
+        611,
+        158,
+        612
+      ],
+      "center_extent_cells": 0.0,
+      "class": 2,
+      "extended_candidate": false,
+      "id": 117,
+      "kind": "第2层",
+      "minimum_sampled_width_cells": 4.242640687119286,
+      "sections": [
+        {
+          "center": [
+            157.0,
+            611.0
+          ],
+          "class": 2,
+          "direction": [
+            -1,
+            1
+          ],
+          "first": [
+            158.0,
+            610.0
+          ],
+          "intersected_cells": 3,
+          "last": [
+            156.0,
+            612.0
+          ],
+          "width_cells": 4.242640687119286
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        168,
+        620,
+        169,
+        621
+      ],
+      "center_extent_cells": 0.0,
+      "class": 2,
+      "extended_candidate": false,
+      "id": 118,
+      "kind": "第2层",
+      "minimum_sampled_width_cells": 4.242640687119286,
+      "sections": [
+        {
+          "center": [
+            168.0,
+            620.0
+          ],
+          "class": 2,
+          "direction": [
+            -1,
+            1
+          ],
+          "first": [
+            169.0,
+            619.0
+          ],
+          "intersected_cells": 3,
+          "last": [
+            167.0,
+            621.0
+          ],
+          "width_cells": 4.242640687119286
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        186,
+        612,
+        187,
+        613
+      ],
+      "center_extent_cells": 0.0,
+      "class": 0,
+      "extended_candidate": false,
+      "id": 119,
+      "kind": "水域",
+      "minimum_sampled_width_cells": 4.242640687119286,
+      "sections": [
+        {
+          "center": [
+            186.0,
+            612.0
+          ],
+          "class": 0,
+          "direction": [
+            -1,
+            1
+          ],
+          "first": [
+            187.0,
+            611.0
+          ],
+          "intersected_cells": 3,
+          "last": [
+            185.0,
+            613.0
+          ],
+          "width_cells": 4.242640687119286
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        178,
+        630,
+        179,
+        631
+      ],
+      "center_extent_cells": 0.0,
+      "class": 1,
+      "extended_candidate": false,
+      "id": 120,
+      "kind": "第1层",
+      "minimum_sampled_width_cells": 2.8284271247461903,
+      "sections": [
+        {
+          "center": [
+            177.5,
+            629.5
+          ],
+          "class": 1,
+          "direction": [
+            -1,
+            1
+          ],
+          "first": [
+            178.0,
+            629.0
+          ],
+          "intersected_cells": 2,
+          "last": [
+            177.0,
+            630.0
+          ],
+          "width_cells": 2.8284271247461903
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        755,
+        80,
+        757,
+        82
+      ],
+      "center_extent_cells": 1.0,
+      "class": 0,
+      "extended_candidate": false,
+      "id": 121,
+      "kind": "水域",
+      "minimum_sampled_width_cells": 1.4142135623730951,
+      "sections": [
+        {
+          "center": [
+            755.0,
+            80.0
+          ],
+          "class": 0,
+          "direction": [
+            -1,
+            1
+          ],
+          "first": [
+            755.0,
+            80.0
+          ],
+          "intersected_cells": 1,
+          "last": [
+            755.0,
+            80.0
+          ],
+          "width_cells": 1.4142135623730951
+        },
+        {
+          "center": [
+            755.5,
+            80.5
+          ],
+          "class": 0,
+          "direction": [
+            -1,
+            1
+          ],
+          "first": [
+            756.0,
+            80.0
+          ],
+          "intersected_cells": 2,
+          "last": [
+            755.0,
+            81.0
+          ],
+          "width_cells": 2.8284271247461903
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        765,
+        94,
+        766,
+        95
+      ],
+      "center_extent_cells": 0.0,
+      "class": 0,
+      "extended_candidate": false,
+      "id": 122,
+      "kind": "水域",
+      "minimum_sampled_width_cells": 1.4142135623730951,
+      "sections": [
+        {
+          "center": [
+            764.5,
+            93.5
+          ],
+          "class": 0,
+          "direction": [
+            -1,
+            1
+          ],
+          "first": [
+            765.0,
+            93.0
+          ],
+          "intersected_cells": 2,
+          "last": [
+            764.0,
+            94.0
+          ],
+          "width_cells": 2.8284271247461903
+        },
+        {
+          "center": [
+            765.0,
+            94.0
+          ],
+          "class": 0,
+          "direction": [
+            -1,
+            1
+          ],
+          "first": [
+            765.0,
+            94.0
+          ],
+          "intersected_cells": 1,
+          "last": [
+            765.0,
+            94.0
+          ],
+          "width_cells": 1.4142135623730951
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        178,
+        702,
+        180,
+        704
+      ],
+      "center_extent_cells": 1.0,
+      "class": 2,
+      "extended_candidate": false,
+      "id": 123,
+      "kind": "第2层",
+      "minimum_sampled_width_cells": 1.4142135623730951,
+      "sections": [
+        {
+          "center": [
+            178.0,
+            702.0
+          ],
+          "class": 2,
+          "direction": [
+            -1,
+            1
+          ],
+          "first": [
+            179.0,
+            701.0
+          ],
+          "intersected_cells": 3,
+          "last": [
+            177.0,
+            703.0
+          ],
+          "width_cells": 4.242640687119286
+        },
+        {
+          "center": [
+            178.5,
+            702.5
+          ],
+          "class": 2,
+          "direction": [
+            -1,
+            1
+          ],
+          "first": [
+            179.0,
+            702.0
+          ],
+          "intersected_cells": 2,
+          "last": [
+            178.0,
+            703.0
+          ],
+          "width_cells": 2.8284271247461903
+        },
+        {
+          "center": [
+            179.0,
+            703.0
+          ],
+          "class": 2,
+          "direction": [
+            -1,
+            1
+          ],
+          "first": [
+            179.0,
+            703.0
+          ],
+          "intersected_cells": 1,
+          "last": [
+            179.0,
+            703.0
+          ],
+          "width_cells": 1.4142135623730951
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        354,
+        647,
+        355,
+        648
+      ],
+      "center_extent_cells": 0.0,
+      "class": 2,
+      "extended_candidate": false,
+      "id": 124,
+      "kind": "第2层",
+      "minimum_sampled_width_cells": 4.242640687119286,
+      "sections": [
+        {
+          "center": [
+            354.0,
+            647.0
+          ],
+          "class": 2,
+          "direction": [
+            -1,
+            1
+          ],
+          "first": [
+            355.0,
+            646.0
+          ],
+          "intersected_cells": 3,
+          "last": [
+            353.0,
+            648.0
+          ],
+          "width_cells": 4.242640687119286
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        189,
+        818,
+        191,
+        820
+      ],
+      "center_extent_cells": 1.0,
+      "class": 3,
+      "extended_candidate": false,
+      "id": 125,
+      "kind": "第3层",
+      "minimum_sampled_width_cells": 1.4142135623730951,
+      "sections": [
+        {
+          "center": [
+            189.0,
+            818.0
+          ],
+          "class": 3,
+          "direction": [
+            -1,
+            1
+          ],
+          "first": [
+            190.0,
+            817.0
+          ],
+          "intersected_cells": 3,
+          "last": [
+            188.0,
+            819.0
+          ],
+          "width_cells": 4.242640687119286
+        },
+        {
+          "center": [
+            189.5,
+            818.5
+          ],
+          "class": 3,
+          "direction": [
+            -1,
+            1
+          ],
+          "first": [
+            190.0,
+            818.0
+          ],
+          "intersected_cells": 2,
+          "last": [
+            189.0,
+            819.0
+          ],
+          "width_cells": 2.8284271247461903
+        },
+        {
+          "center": [
+            190.0,
+            819.0
+          ],
+          "class": 3,
+          "direction": [
+            -1,
+            1
+          ],
+          "first": [
+            190.0,
+            819.0
+          ],
+          "intersected_cells": 1,
+          "last": [
+            190.0,
+            819.0
+          ],
+          "width_cells": 1.4142135623730951
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        557,
+        766,
+        558,
+        767
+      ],
+      "center_extent_cells": 0.0,
+      "class": 2,
+      "extended_candidate": false,
+      "id": 126,
+      "kind": "第2层",
+      "minimum_sampled_width_cells": 4.242640687119286,
+      "sections": [
+        {
+          "center": [
+            557.0,
+            766.0
+          ],
+          "class": 2,
+          "direction": [
+            -1,
+            1
+          ],
+          "first": [
+            558.0,
+            765.0
+          ],
+          "intersected_cells": 3,
+          "last": [
+            556.0,
+            767.0
+          ],
+          "width_cells": 4.242640687119286
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        602,
+        818,
+        604,
+        820
+      ],
+      "center_extent_cells": 1.0,
+      "class": 1,
+      "extended_candidate": false,
+      "id": 127,
+      "kind": "第1层",
+      "minimum_sampled_width_cells": 1.4142135623730951,
+      "sections": [
+        {
+          "center": [
+            602.0,
+            818.0
+          ],
+          "class": 1,
+          "direction": [
+            -1,
+            1
+          ],
+          "first": [
+            603.0,
+            817.0
+          ],
+          "intersected_cells": 3,
+          "last": [
+            601.0,
+            819.0
+          ],
+          "width_cells": 4.242640687119286
+        },
+        {
+          "center": [
+            602.5,
+            818.5
+          ],
+          "class": 1,
+          "direction": [
+            -1,
+            1
+          ],
+          "first": [
+            603.0,
+            818.0
+          ],
+          "intersected_cells": 2,
+          "last": [
+            602.0,
+            819.0
+          ],
+          "width_cells": 2.8284271247461903
+        },
+        {
+          "center": [
+            603.0,
+            819.0
+          ],
+          "class": 1,
+          "direction": [
+            -1,
+            1
+          ],
+          "first": [
+            603.0,
+            819.0
+          ],
+          "intersected_cells": 1,
+          "last": [
+            603.0,
+            819.0
+          ],
+          "width_cells": 1.4142135623730951
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        761,
+        818,
+        763,
+        820
+      ],
+      "center_extent_cells": 1.0,
+      "class": 2,
+      "extended_candidate": false,
+      "id": 128,
+      "kind": "第2层",
+      "minimum_sampled_width_cells": 1.4142135623730951,
+      "sections": [
+        {
+          "center": [
+            761.0,
+            818.0
+          ],
+          "class": 2,
+          "direction": [
+            -1,
+            1
+          ],
+          "first": [
+            762.0,
+            817.0
+          ],
+          "intersected_cells": 3,
+          "last": [
+            760.0,
+            819.0
+          ],
+          "width_cells": 4.242640687119286
+        },
+        {
+          "center": [
+            761.5,
+            818.5
+          ],
+          "class": 2,
+          "direction": [
+            -1,
+            1
+          ],
+          "first": [
+            762.0,
+            818.0
+          ],
+          "intersected_cells": 2,
+          "last": [
+            761.0,
+            819.0
+          ],
+          "width_cells": 2.8284271247461903
+        },
+        {
+          "center": [
+            762.0,
+            819.0
+          ],
+          "class": 2,
+          "direction": [
+            -1,
+            1
+          ],
+          "first": [
+            762.0,
+            819.0
+          ],
+          "intersected_cells": 1,
+          "last": [
+            762.0,
+            819.0
+          ],
+          "width_cells": 1.4142135623730951
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        818,
+        818,
+        820,
+        820
+      ],
+      "center_extent_cells": 1.0,
+      "class": 1,
+      "extended_candidate": false,
+      "id": 129,
+      "kind": "第1层",
+      "minimum_sampled_width_cells": 1.4142135623730951,
+      "sections": [
+        {
+          "center": [
+            818.0,
+            818.0
+          ],
+          "class": 1,
+          "direction": [
+            -1,
+            1
+          ],
+          "first": [
+            819.0,
+            817.0
+          ],
+          "intersected_cells": 3,
+          "last": [
+            817.0,
+            819.0
+          ],
+          "width_cells": 4.242640687119286
+        },
+        {
+          "center": [
+            818.5,
+            818.5
+          ],
+          "class": 1,
+          "direction": [
+            -1,
+            1
+          ],
+          "first": [
+            819.0,
+            818.0
+          ],
+          "intersected_cells": 2,
+          "last": [
+            818.0,
+            819.0
+          ],
+          "width_cells": 2.8284271247461903
+        },
+        {
+          "center": [
+            819.0,
+            819.0
+          ],
+          "class": 1,
+          "direction": [
+            -1,
+            1
+          ],
+          "first": [
+            819.0,
+            819.0
+          ],
+          "intersected_cells": 1,
+          "last": [
+            819.0,
+            819.0
+          ],
+          "width_cells": 1.4142135623730951
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        145,
+        616,
+        146,
+        617
+      ],
+      "center_extent_cells": 0.0,
+      "class": 6,
+      "extended_candidate": false,
+      "id": 130,
+      "kind": "陆地整体",
+      "minimum_sampled_width_cells": 2.0,
+      "sections": [
+        {
+          "center": [
+            144.5,
+            616.0
+          ],
+          "class": 6,
+          "direction": [
+            1,
+            0
+          ],
+          "first": [
+            144.0,
+            616.0
+          ],
+          "intersected_cells": 2,
+          "last": [
+            145.0,
+            616.0
+          ],
+          "width_cells": 2.0
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        123,
+        632,
+        124,
+        633
+      ],
+      "center_extent_cells": 0.0,
+      "class": 6,
+      "extended_candidate": false,
+      "id": 131,
+      "kind": "陆地整体",
+      "minimum_sampled_width_cells": 1.0,
+      "sections": [
+        {
+          "center": [
+            123.0,
+            632.0
+          ],
+          "class": 6,
+          "direction": [
+            1,
+            0
+          ],
+          "first": [
+            123.0,
+            632.0
+          ],
+          "intersected_cells": 1,
+          "last": [
+            123.0,
+            632.0
+          ],
+          "width_cells": 1.0
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        116,
+        622,
+        117,
+        623
+      ],
+      "center_extent_cells": 0.0,
+      "class": 6,
+      "extended_candidate": false,
+      "id": 132,
+      "kind": "陆地整体",
+      "minimum_sampled_width_cells": 3.0,
+      "sections": [
+        {
+          "center": [
+            116.0,
+            622.0
+          ],
+          "class": 6,
+          "direction": [
+            0,
+            1
+          ],
+          "first": [
+            116.0,
+            621.0
+          ],
+          "intersected_cells": 3,
+          "last": [
+            116.0,
+            623.0
+          ],
+          "width_cells": 3.0
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        818,
+        20,
+        820,
+        22
+      ],
+      "center_extent_cells": 1.0,
+      "class": 6,
+      "extended_candidate": false,
+      "id": 133,
+      "kind": "陆地整体",
+      "minimum_sampled_width_cells": 1.4142135623730951,
+      "sections": [
+        {
+          "center": [
+            818.0,
+            21.0
+          ],
+          "class": 6,
+          "direction": [
+            1,
+            1
+          ],
+          "first": [
+            817.0,
+            20.0
+          ],
+          "intersected_cells": 3,
+          "last": [
+            819.0,
+            22.0
+          ],
+          "width_cells": 4.242640687119286
+        },
+        {
+          "center": [
+            819.0,
+            20.0
+          ],
+          "class": 6,
+          "direction": [
+            1,
+            1
+          ],
+          "first": [
+            819.0,
+            20.0
+          ],
+          "intersected_cells": 1,
+          "last": [
+            819.0,
+            20.0
+          ],
+          "width_cells": 1.4142135623730951
+        },
+        {
+          "center": [
+            818.5,
+            20.5
+          ],
+          "class": 6,
+          "direction": [
+            1,
+            1
+          ],
+          "first": [
+            818.0,
+            20.0
+          ],
+          "intersected_cells": 2,
+          "last": [
+            819.0,
+            21.0
+          ],
+          "width_cells": 2.8284271247461903
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        20,
+        818,
+        22,
+        820
+      ],
+      "center_extent_cells": 1.0,
+      "class": 6,
+      "extended_candidate": false,
+      "id": 134,
+      "kind": "陆地整体",
+      "minimum_sampled_width_cells": 1.4142135623730951,
+      "sections": [
+        {
+          "center": [
+            21.0,
+            818.0
+          ],
+          "class": 6,
+          "direction": [
+            1,
+            1
+          ],
+          "first": [
+            20.0,
+            817.0
+          ],
+          "intersected_cells": 3,
+          "last": [
+            22.0,
+            819.0
+          ],
+          "width_cells": 4.242640687119286
+        },
+        {
+          "center": [
+            20.0,
+            819.0
+          ],
+          "class": 6,
+          "direction": [
+            1,
+            1
+          ],
+          "first": [
+            20.0,
+            819.0
+          ],
+          "intersected_cells": 1,
+          "last": [
+            20.0,
+            819.0
+          ],
+          "width_cells": 1.4142135623730951
+        },
+        {
+          "center": [
+            20.5,
+            818.5
+          ],
+          "class": 6,
+          "direction": [
+            1,
+            1
+          ],
+          "first": [
+            20.0,
+            818.0
+          ],
+          "intersected_cells": 2,
+          "last": [
+            21.0,
+            819.0
+          ],
+          "width_cells": 2.8284271247461903
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        20,
+        20,
+        22,
+        22
+      ],
+      "center_extent_cells": 1.0,
+      "class": 6,
+      "extended_candidate": false,
+      "id": 135,
+      "kind": "陆地整体",
+      "minimum_sampled_width_cells": 1.4142135623730951,
+      "sections": [
+        {
+          "center": [
+            20.0,
+            20.0
+          ],
+          "class": 6,
+          "direction": [
+            -1,
+            1
+          ],
+          "first": [
+            20.0,
+            20.0
+          ],
+          "intersected_cells": 1,
+          "last": [
+            20.0,
+            20.0
+          ],
+          "width_cells": 1.4142135623730951
+        },
+        {
+          "center": [
+            20.5,
+            20.5
+          ],
+          "class": 6,
+          "direction": [
+            -1,
+            1
+          ],
+          "first": [
+            21.0,
+            20.0
+          ],
+          "intersected_cells": 2,
+          "last": [
+            20.0,
+            21.0
+          ],
+          "width_cells": 2.8284271247461903
+        },
+        {
+          "center": [
+            21.0,
+            21.0
+          ],
+          "class": 6,
+          "direction": [
+            -1,
+            1
+          ],
+          "first": [
+            22.0,
+            20.0
+          ],
+          "intersected_cells": 3,
+          "last": [
+            20.0,
+            22.0
+          ],
+          "width_cells": 4.242640687119286
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        157,
+        611,
+        158,
+        612
+      ],
+      "center_extent_cells": 0.0,
+      "class": 6,
+      "extended_candidate": false,
+      "id": 136,
+      "kind": "陆地整体",
+      "minimum_sampled_width_cells": 4.242640687119286,
+      "sections": [
+        {
+          "center": [
+            157.0,
+            611.0
+          ],
+          "class": 6,
+          "direction": [
+            -1,
+            1
+          ],
+          "first": [
+            158.0,
+            610.0
+          ],
+          "intersected_cells": 3,
+          "last": [
+            156.0,
+            612.0
+          ],
+          "width_cells": 4.242640687119286
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        168,
+        620,
+        169,
+        621
+      ],
+      "center_extent_cells": 0.0,
+      "class": 6,
+      "extended_candidate": false,
+      "id": 137,
+      "kind": "陆地整体",
+      "minimum_sampled_width_cells": 4.242640687119286,
+      "sections": [
+        {
+          "center": [
+            168.0,
+            620.0
+          ],
+          "class": 6,
+          "direction": [
+            -1,
+            1
+          ],
+          "first": [
+            169.0,
+            619.0
+          ],
+          "intersected_cells": 3,
+          "last": [
+            167.0,
+            621.0
+          ],
+          "width_cells": 4.242640687119286
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    },
+    {
+      "bounds_full_grid": [
+        818,
+        818,
+        820,
+        820
+      ],
+      "center_extent_cells": 1.0,
+      "class": 6,
+      "extended_candidate": false,
+      "id": 138,
+      "kind": "陆地整体",
+      "minimum_sampled_width_cells": 1.4142135623730951,
+      "sections": [
+        {
+          "center": [
+            818.0,
+            818.0
+          ],
+          "class": 6,
+          "direction": [
+            -1,
+            1
+          ],
+          "first": [
+            819.0,
+            817.0
+          ],
+          "intersected_cells": 3,
+          "last": [
+            817.0,
+            819.0
+          ],
+          "width_cells": 4.242640687119286
+        },
+        {
+          "center": [
+            818.5,
+            818.5
+          ],
+          "class": 6,
+          "direction": [
+            -1,
+            1
+          ],
+          "first": [
+            819.0,
+            818.0
+          ],
+          "intersected_cells": 2,
+          "last": [
+            818.0,
+            819.0
+          ],
+          "width_cells": 2.8284271247461903
+        },
+        {
+          "center": [
+            819.0,
+            819.0
+          ],
+          "class": 6,
+          "direction": [
+            -1,
+            1
+          ],
+          "first": [
+            819.0,
+            819.0
+          ],
+          "intersected_cells": 1,
+          "last": [
+            819.0,
+            819.0
+          ],
+          "width_cells": 1.4142135623730951
+        }
+      ],
+      "status": "待核验",
+      "triage": "短断面或封端，须区别圆角与细尖尾",
+      "review": {
+        "status": "待核验",
+        "reason": "短断面需区别自然圆整封端与应归并的细尖尾；四向筛查不足以单独认定任意方向最小净宽合格"
+      }
+    }
+  ],
+  "diagnostic_png": "河南.png",
+  "extended_candidates": 0,
+  "frame": [
+    840,
+    840,
+    20
+  ],
+  "input_crc32": 1216003793,
+  "limitations": "No automatic arbitrary-angle intrusion classification; rounded caps and map-clipped boundaries require review. Positive short-width witnesses do not on their own prove an intrusion. No inferred combat routes or building placements.",
+  "map_id": "河南",
+  "method": "four-direction cell-square cross-section witnesses; connected center grouping; >= minimum-width spatial extent is triage only",
+  "minimum_width_cells": 5.0,
+  "short_candidates": 138,
+  "date": "2026-10-30",
+  "terrain_sha256": "e4c77d6bd5bef22359901b3328e6bb528ba3d398cf4a57166144fed931c384ab",
+  "policy": {
+    "combat_route_minimum_width_cells": 10.0,
+    "intrusion_minimum_width_cells": 5.0,
+    "exclude_gift_buildings_from_intrusions": true
+  },
+  "policy_sha256": "e2a689249a33b6d6a56348ac53a7eccc748d886e3591c0dc04c953d5f7d08aa9",
+  "reviewed_failures": [],
+  "review_status": "待核验",
+  "scope": "design-width evidence only; no runtime navigation, combat-route inference, automatic merging or gift placement checks"
+}

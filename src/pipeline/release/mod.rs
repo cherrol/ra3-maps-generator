@@ -349,7 +349,7 @@ fn run_inner(
     } else {
         None
     };
-    let textured = if textures {
+    let mut textured = if textures {
         Some(crate::terrain::texture_polish::apply(
             &original,
             &mut map,
@@ -373,6 +373,9 @@ fn run_inner(
             finalization,
         )?;
         terrain_report = finalized.compaction;
+        if let Some(textured) = &mut textured {
+            textured.record_finalization(&map, terrain_report.as_ref())?;
+        }
         *xml = finalized
             .xml
             .replace(
@@ -439,6 +442,14 @@ fn run_inner(
         }
     }
     validate_runtime_files(&files)?;
+    let mut scene_project = crate::pipeline::scene::incremental_context(&export)?;
+    if production {
+        // A production repair must also enforce the actual packaged geometry
+        // inputs, including local overrides, after every edit has completed.
+        scene_project = crate::gameplay::official_placement::strict_project(&scene_project);
+    }
+    let scene_report = crate::pipeline::scene::analyse_files(&scene_project, &checked, &files)?;
+    crate::pipeline::scene::require_passed(&scene_report)?;
     let zipped = archive::zip(
         &files
             .iter()
@@ -476,6 +487,7 @@ fn run_inner(
             }
         }
         project::write_json(&assets.join("release-report.json"), &report)?;
+        crate::pipeline::scene::verify_prepared(&scene_project, &checked, &files, scene_report)?;
         crate::coordinates::prepare(&export)?;
         project::atomic_write(&zip_path, &zipped)?;
         if let Some(polished) = &polished {
@@ -488,7 +500,7 @@ fn run_inner(
             fs::write(
                 assets.join("README.md"),
                 format!(
-                    "# {name}\n\n基于 {source_name} 同步原生和 XML 材质加载清单、刷新地图/图集版本 ID，并清理未引用或重复的混合记录。保留材质家族编号、逐格材质与混合效果、高度、全部导航位图、对象及脚本。\n\n[发布核对](release-report.json)\n"
+                    "# {name}\n\n基于 {source_name} 清除全部未使用材质、整理混合记录，并同步原生和 XML 加载清单及地图/图集版本 ID。最终地形纹理最多 49 种；保留逐格材质与混合效果、高度、全部导航位图、对象及脚本。\n\n[发布核对](release-report.json)\n"
                 ),
             )?;
         }

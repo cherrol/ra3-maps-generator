@@ -58,6 +58,16 @@ pub(crate) fn run() -> Result<()> {
     };
     let mut args = parse(rest)?;
     match command {
+        "check-xml" => {
+            paths(&args, 1)?;
+            let data = input(&args.positional[0])?;
+            let report = ra3maps::resources::xml_structure::analyse(std::str::from_utf8(&data)?);
+            println!("{}", serde_json::to_string_pretty(&report)?);
+            if report["passed"] != true {
+                return Err(err("XML structural subset check failed"));
+            }
+            return Ok(());
+        }
         "pack" | "unpack" => {
             paths(&args, 2)?;
             let data = input(&args.positional[0])?;
@@ -182,6 +192,13 @@ pub(crate) fn run() -> Result<()> {
         return Ok(());
     }
     let id = project::select(&root, args.map.as_deref())?;
+    if command == "audit-scene" {
+        paths(&args, 0)?;
+        let p = Project::load(&root, &id)?;
+        let report = ra3maps::pipeline::scene::audit_existing(&p)?;
+        println!("{}", serde_json::to_string_pretty(&report)?);
+        return Ok(());
+    }
     if command == "adopt-coordinate-source" {
         paths(&args, 0)?;
         let p = Project::load(&root, &id)?;

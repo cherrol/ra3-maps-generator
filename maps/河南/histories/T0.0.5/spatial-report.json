@@ -1,0 +1,3392 @@
+{
+  "artifacts_crc32": {
+    "README.md": 3775616604,
+    "issues.csv": 2855347691,
+    "routes.csv": 3916138757,
+    "routes.json": 2516471644,
+    "texture-coordinates.csv": 3597980792,
+    "texture-coordinates.json": 3364140119
+  },
+  "baseline_issues": 0,
+  "counts": {
+    "issues_by_rule": {},
+    "objects": 182,
+    "ramps": 14,
+    "reachable_routes": 496,
+    "requires_transport_routes": 0,
+    "routes": 496,
+    "unreachable_routes": 0
+  },
+  "entities": [
+    {
+      "class": "marker",
+      "id": 1,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        763.0,
+        129.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 2,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        763.0,
+        157.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 3,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        735.0,
+        157.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 4,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        791.0,
+        129.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 5,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        779.0,
+        294.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 6,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        779.0,
+        322.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 7,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        751.0,
+        266.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 8,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        807.0,
+        294.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 9,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        764.0,
+        518.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 10,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        764.0,
+        546.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 11,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        736.0,
+        490.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 12,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        792.0,
+        518.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 13,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        756.0,
+        727.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 14,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        770.0,
+        755.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 15,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        784.0,
+        699.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 16,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        784.0,
+        727.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 17,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        65.0,
+        55.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 18,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        37.0,
+        142.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 19,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        65.0,
+        152.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 20,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        80.0,
+        124.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 21,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        48.0,
+        261.5
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 22,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        35.0,
+        190.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 23,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        100.0,
+        318.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 24,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        44.0,
+        331.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 25,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        53.0,
+        450.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 26,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        109.0,
+        450.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 27,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        109.0,
+        422.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 28,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        81.0,
+        414.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 29,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        55.0,
+        772.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 30,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        124.0,
+        800.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 31,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        54.0,
+        686.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 32,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        82.0,
+        704.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "building",
+      "id": 33,
+      "in_playable": true,
+      "kind": "SovietConstructionYard",
+      "physical": 5.0,
+      "point": [
+        53.0,
+        450.0
+      ],
+      "reserve": 8.0
+    },
+    {
+      "class": "building",
+      "id": 34,
+      "in_playable": true,
+      "kind": "JapanConstructionYard",
+      "physical": 5.0,
+      "point": [
+        55.0,
+        772.0
+      ],
+      "reserve": 8.0
+    },
+    {
+      "class": "ore",
+      "id": 35,
+      "in_playable": true,
+      "kind": "OreNode",
+      "physical": 3.0,
+      "point": [
+        722.0,
+        84.0
+      ],
+      "reserve": 20.0
+    },
+    {
+      "class": "ore",
+      "id": 36,
+      "in_playable": true,
+      "kind": "OreNode",
+      "physical": 3.0,
+      "point": [
+        762.0,
+        186.0
+      ],
+      "reserve": 20.0
+    },
+    {
+      "class": "ore",
+      "id": 37,
+      "in_playable": true,
+      "kind": "OreNode",
+      "physical": 3.0,
+      "point": [
+        672.0,
+        128.0
+      ],
+      "reserve": 20.0
+    },
+    {
+      "class": "ore",
+      "id": 38,
+      "in_playable": true,
+      "kind": "OreNode",
+      "physical": 3.0,
+      "point": [
+        778.0,
+        236.0
+      ],
+      "reserve": 20.0
+    },
+    {
+      "class": "ore",
+      "id": 39,
+      "in_playable": true,
+      "kind": "OreNode",
+      "physical": 3.0,
+      "point": [
+        778.0,
+        352.0
+      ],
+      "reserve": 20.0
+    },
+    {
+      "class": "ore",
+      "id": 40,
+      "in_playable": true,
+      "kind": "OreNode",
+      "physical": 3.0,
+      "point": [
+        688.0,
+        294.0
+      ],
+      "reserve": 20.0
+    },
+    {
+      "class": "ore",
+      "id": 41,
+      "in_playable": true,
+      "kind": "OreNode",
+      "physical": 3.0,
+      "point": [
+        764.0,
+        460.0
+      ],
+      "reserve": 20.0
+    },
+    {
+      "class": "ore",
+      "id": 42,
+      "in_playable": true,
+      "kind": "OreNode",
+      "physical": 3.0,
+      "point": [
+        764.0,
+        576.0
+      ],
+      "reserve": 20.0
+    },
+    {
+      "class": "ore",
+      "id": 43,
+      "in_playable": true,
+      "kind": "OreNode",
+      "physical": 3.0,
+      "point": [
+        674.0,
+        518.0
+      ],
+      "reserve": 20.0
+    },
+    {
+      "class": "ore",
+      "id": 44,
+      "in_playable": true,
+      "kind": "OreNode",
+      "physical": 3.0,
+      "point": [
+        756.0,
+        668.0
+      ],
+      "reserve": 20.0
+    },
+    {
+      "class": "ore",
+      "id": 45,
+      "in_playable": true,
+      "kind": "OreNode",
+      "physical": 3.0,
+      "point": [
+        708.0,
+        724.0
+      ],
+      "reserve": 20.0
+    },
+    {
+      "class": "ore",
+      "id": 46,
+      "in_playable": true,
+      "kind": "OreNode",
+      "physical": 3.0,
+      "point": [
+        666.0,
+        728.0
+      ],
+      "reserve": 20.0
+    },
+    {
+      "class": "ore",
+      "id": 47,
+      "in_playable": true,
+      "kind": "OreNode",
+      "physical": 3.0,
+      "point": [
+        110.0,
+        50.0
+      ],
+      "reserve": 20.0
+    },
+    {
+      "class": "ore",
+      "id": 48,
+      "in_playable": true,
+      "kind": "OreNode",
+      "physical": 3.0,
+      "point": [
+        52.0,
+        114.0
+      ],
+      "reserve": 20.0
+    },
+    {
+      "class": "ore",
+      "id": 49,
+      "in_playable": true,
+      "kind": "OreNode",
+      "physical": 3.0,
+      "point": [
+        154.0,
+        54.0
+      ],
+      "reserve": 20.0
+    },
+    {
+      "class": "ore",
+      "id": 50,
+      "in_playable": true,
+      "kind": "OreNode",
+      "physical": 3.0,
+      "point": [
+        84.0,
+        288.0
+      ],
+      "reserve": 20.0
+    },
+    {
+      "class": "ore",
+      "id": 51,
+      "in_playable": true,
+      "kind": "OreNode",
+      "physical": 3.0,
+      "point": [
+        92.0,
+        235.0
+      ],
+      "reserve": 20.0
+    },
+    {
+      "class": "ore",
+      "id": 52,
+      "in_playable": true,
+      "kind": "OreNode",
+      "physical": 3.0,
+      "point": [
+        128.0,
+        320.0
+      ],
+      "reserve": 20.0
+    },
+    {
+      "class": "ore",
+      "id": 53,
+      "in_playable": true,
+      "kind": "OreNode",
+      "physical": 3.0,
+      "point": [
+        52.0,
+        392.0
+      ],
+      "reserve": 20.0
+    },
+    {
+      "class": "ore",
+      "id": 54,
+      "in_playable": true,
+      "kind": "OreNode",
+      "physical": 3.0,
+      "point": [
+        74.0,
+        502.0
+      ],
+      "reserve": 20.0
+    },
+    {
+      "class": "ore",
+      "id": 55,
+      "in_playable": true,
+      "kind": "OreNode",
+      "physical": 3.0,
+      "point": [
+        142.0,
+        450.0
+      ],
+      "reserve": 20.0
+    },
+    {
+      "class": "ore",
+      "id": 56,
+      "in_playable": true,
+      "kind": "OreNode",
+      "physical": 3.0,
+      "point": [
+        54.0,
+        714.0
+      ],
+      "reserve": 20.0
+    },
+    {
+      "class": "ore",
+      "id": 57,
+      "in_playable": true,
+      "kind": "OreNode",
+      "physical": 3.0,
+      "point": [
+        96.0,
+        788.0
+      ],
+      "reserve": 20.0
+    },
+    {
+      "class": "ore",
+      "id": 58,
+      "in_playable": true,
+      "kind": "OreNode",
+      "physical": 3.0,
+      "point": [
+        144.0,
+        772.0
+      ],
+      "reserve": 20.0
+    },
+    {
+      "class": "ore",
+      "id": 59,
+      "in_playable": true,
+      "kind": "OreNode",
+      "physical": 3.0,
+      "point": [
+        572.0,
+        128.0
+      ],
+      "reserve": 20.0
+    },
+    {
+      "class": "ore",
+      "id": 60,
+      "in_playable": true,
+      "kind": "OreNode",
+      "physical": 3.0,
+      "point": [
+        438.0,
+        182.0
+      ],
+      "reserve": 20.0
+    },
+    {
+      "class": "ore",
+      "id": 61,
+      "in_playable": true,
+      "kind": "OreNode",
+      "physical": 3.0,
+      "point": [
+        522.0,
+        186.0
+      ],
+      "reserve": 20.0
+    },
+    {
+      "class": "ore",
+      "id": 62,
+      "in_playable": true,
+      "kind": "OreNode",
+      "physical": 3.0,
+      "point": [
+        200.0,
+        114.0
+      ],
+      "reserve": 20.0
+    },
+    {
+      "class": "ore",
+      "id": 63,
+      "in_playable": true,
+      "kind": "OreNode",
+      "physical": 3.0,
+      "point": [
+        378.0,
+        114.0
+      ],
+      "reserve": 20.0
+    },
+    {
+      "class": "ore",
+      "id": 64,
+      "in_playable": true,
+      "kind": "OreNode",
+      "physical": 3.0,
+      "point": [
+        234.0,
+        192.0
+      ],
+      "reserve": 20.0
+    },
+    {
+      "class": "ore",
+      "id": 65,
+      "in_playable": true,
+      "kind": "OreNode",
+      "physical": 3.0,
+      "point": [
+        566.0,
+        294.0
+      ],
+      "reserve": 20.0
+    },
+    {
+      "class": "ore",
+      "id": 66,
+      "in_playable": true,
+      "kind": "OreNode",
+      "physical": 3.0,
+      "point": [
+        392.0,
+        256.0
+      ],
+      "reserve": 20.0
+    },
+    {
+      "class": "ore",
+      "id": 67,
+      "in_playable": true,
+      "kind": "OreNode",
+      "physical": 3.0,
+      "point": [
+        496.0,
+        340.0
+      ],
+      "reserve": 20.0
+    },
+    {
+      "class": "ore",
+      "id": 68,
+      "in_playable": true,
+      "kind": "OreNode",
+      "physical": 3.0,
+      "point": [
+        168.0,
+        192.0
+      ],
+      "reserve": 20.0
+    },
+    {
+      "class": "ore",
+      "id": 69,
+      "in_playable": true,
+      "kind": "OreNode",
+      "physical": 3.0,
+      "point": [
+        308.0,
+        194.0
+      ],
+      "reserve": 20.0
+    },
+    {
+      "class": "ore",
+      "id": 70,
+      "in_playable": true,
+      "kind": "OreNode",
+      "physical": 3.0,
+      "point": [
+        140.0,
+        360.0
+      ],
+      "reserve": 20.0
+    },
+    {
+      "class": "ore",
+      "id": 71,
+      "in_playable": true,
+      "kind": "OreNode",
+      "physical": 3.0,
+      "point": [
+        576.0,
+        518.0
+      ],
+      "reserve": 20.0
+    },
+    {
+      "class": "ore",
+      "id": 72,
+      "in_playable": true,
+      "kind": "OreNode",
+      "physical": 3.0,
+      "point": [
+        398.0,
+        542.0
+      ],
+      "reserve": 20.0
+    },
+    {
+      "class": "ore",
+      "id": 73,
+      "in_playable": true,
+      "kind": "OreNode",
+      "physical": 3.0,
+      "point": [
+        522.0,
+        564.0
+      ],
+      "reserve": 20.0
+    },
+    {
+      "class": "ore",
+      "id": 74,
+      "in_playable": true,
+      "kind": "OreNode",
+      "physical": 3.0,
+      "point": [
+        224.0,
+        434.0
+      ],
+      "reserve": 20.0
+    },
+    {
+      "class": "ore",
+      "id": 75,
+      "in_playable": true,
+      "kind": "OreNode",
+      "physical": 3.0,
+      "point": [
+        318.0,
+        532.0
+      ],
+      "reserve": 20.0
+    },
+    {
+      "class": "ore",
+      "id": 76,
+      "in_playable": true,
+      "kind": "OreNode",
+      "physical": 3.0,
+      "point": [
+        220.0,
+        592.0
+      ],
+      "reserve": 20.0
+    },
+    {
+      "class": "ore",
+      "id": 77,
+      "in_playable": true,
+      "kind": "OreNode",
+      "physical": 3.0,
+      "point": [
+        522.0,
+        722.0
+      ],
+      "reserve": 20.0
+    },
+    {
+      "class": "ore",
+      "id": 78,
+      "in_playable": true,
+      "kind": "OreNode",
+      "physical": 3.0,
+      "point": [
+        374.0,
+        612.0
+      ],
+      "reserve": 20.0
+    },
+    {
+      "class": "ore",
+      "id": 79,
+      "in_playable": true,
+      "kind": "OreNode",
+      "physical": 3.0,
+      "point": [
+        460.0,
+        636.0
+      ],
+      "reserve": 20.0
+    },
+    {
+      "class": "ore",
+      "id": 80,
+      "in_playable": true,
+      "kind": "OreNode",
+      "physical": 3.0,
+      "point": [
+        188.0,
+        652.0
+      ],
+      "reserve": 20.0
+    },
+    {
+      "class": "ore",
+      "id": 81,
+      "in_playable": true,
+      "kind": "OreNode",
+      "physical": 3.0,
+      "point": [
+        272.0,
+        658.0
+      ],
+      "reserve": 20.0
+    },
+    {
+      "class": "ore",
+      "id": 82,
+      "in_playable": true,
+      "kind": "OreNode",
+      "physical": 3.0,
+      "point": [
+        184.0,
+        478.0
+      ],
+      "reserve": 20.0
+    },
+    {
+      "class": "oil",
+      "id": 83,
+      "in_playable": true,
+      "kind": "OilDerrick",
+      "physical": 4.0,
+      "point": [
+        170.0,
+        256.0
+      ],
+      "reserve": 6.0
+    },
+    {
+      "class": "oil",
+      "id": 84,
+      "in_playable": true,
+      "kind": "OilDerrick",
+      "physical": 4.0,
+      "point": [
+        348.0,
+        316.0
+      ],
+      "reserve": 6.0
+    },
+    {
+      "class": "oil",
+      "id": 85,
+      "in_playable": true,
+      "kind": "OilDerrick",
+      "physical": 4.0,
+      "point": [
+        598.0,
+        278.0
+      ],
+      "reserve": 6.0
+    },
+    {
+      "class": "oil",
+      "id": 86,
+      "in_playable": true,
+      "kind": "OilDerrick",
+      "physical": 4.0,
+      "point": [
+        206.0,
+        716.0
+      ],
+      "reserve": 6.0
+    },
+    {
+      "class": "oil",
+      "id": 87,
+      "in_playable": true,
+      "kind": "OilDerrick",
+      "physical": 4.0,
+      "point": [
+        400.0,
+        578.0
+      ],
+      "reserve": 6.0
+    },
+    {
+      "class": "oil",
+      "id": 88,
+      "in_playable": true,
+      "kind": "OilDerrick",
+      "physical": 4.0,
+      "point": [
+        672.0,
+        580.0
+      ],
+      "reserve": 6.0
+    },
+    {
+      "class": "building",
+      "id": 89,
+      "in_playable": true,
+      "kind": "HospitalTechStructure",
+      "physical": 5.0,
+      "point": [
+        168.0,
+        384.0
+      ],
+      "reserve": 8.0
+    },
+    {
+      "class": "building",
+      "id": 90,
+      "in_playable": true,
+      "kind": "HospitalTechStructure",
+      "physical": 5.0,
+      "point": [
+        600.0,
+        390.0
+      ],
+      "reserve": 8.0
+    },
+    {
+      "class": "building",
+      "id": 91,
+      "in_playable": true,
+      "kind": "VeterancyTechStructure",
+      "physical": 5.0,
+      "point": [
+        174.0,
+        416.0
+      ],
+      "reserve": 8.0
+    },
+    {
+      "class": "building",
+      "id": 92,
+      "in_playable": true,
+      "kind": "VeterancyTechStructure",
+      "physical": 5.0,
+      "point": [
+        728.0,
+        414.0
+      ],
+      "reserve": 8.0
+    },
+    {
+      "class": "building",
+      "id": 93,
+      "in_playable": true,
+      "kind": "ObservationPostTechStructure",
+      "physical": 5.0,
+      "point": [
+        290.0,
+        592.0
+      ],
+      "reserve": 8.0
+    },
+    {
+      "class": "building",
+      "id": 94,
+      "in_playable": true,
+      "kind": "ObservationPostTechStructure",
+      "physical": 5.0,
+      "point": [
+        512.0,
+        530.0
+      ],
+      "reserve": 8.0
+    },
+    {
+      "class": "building",
+      "id": 95,
+      "in_playable": true,
+      "kind": "GarageTechStructure",
+      "physical": 5.0,
+      "point": [
+        176.0,
+        156.0
+      ],
+      "reserve": 8.0
+    },
+    {
+      "class": "building",
+      "id": 96,
+      "in_playable": true,
+      "kind": "GarageTechStructure",
+      "physical": 5.0,
+      "point": [
+        698.0,
+        218.0
+      ],
+      "reserve": 8.0
+    },
+    {
+      "class": "marker",
+      "id": 97,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        778.0,
+        101.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 98,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        735.0,
+        129.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 99,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        779.0,
+        266.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 100,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        751.0,
+        294.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 101,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        764.0,
+        490.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 102,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        736.0,
+        518.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 103,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        756.0,
+        699.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 104,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        742.0,
+        755.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 105,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        108.0,
+        106.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 106,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        37.0,
+        55.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 107,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        136.0,
+        82.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 108,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        80.0,
+        96.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 109,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        37.0,
+        83.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 110,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        108.0,
+        78.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 111,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        63.0,
+        204.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 112,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        112.0,
+        263.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 113,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        63.0,
+        232.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 114,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        44.0,
+        303.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 115,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        72.0,
+        322.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 116,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        35.0,
+        218.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 117,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        53.0,
+        422.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 118,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        38.0,
+        506.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 119,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        81.0,
+        470.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 120,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        46.0,
+        478.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 121,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        81.0,
+        442.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 122,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        55.0,
+        744.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 123,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        83.0,
+        732.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 124,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        111.0,
+        732.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 125,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        98.0,
+        760.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 126,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        35.0,
+        800.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 127,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        63.0,
+        800.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 128,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        108.0,
+        143.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 129,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        37.0,
+        27.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 130,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        147.0,
+        116.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 131,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        72.0,
+        350.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 132,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        100.0,
+        346.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 133,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        91.0,
+        197.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 134,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        109.0,
+        478.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 135,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        66.0,
+        530.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 136,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        109.0,
+        394.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 137,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        139.0,
+        744.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 138,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        27.0,
+        772.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 139,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        27.0,
+        744.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 140,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        707.0,
+        129.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 141,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        723.0,
+        294.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 142,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        708.0,
+        518.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 143,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        714.0,
+        768.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 144,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        164.0,
+        88.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 145,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        119.0,
+        206.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 146,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        110.0,
+        704.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 147,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        119.0,
+        171.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 148,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        182.0,
+        60.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 149,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        140.0,
+        259.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 150,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        147.0,
+        228.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 151,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        80.0,
+        386.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 152,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        59.0,
+        558.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 153,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        83.0,
+        676.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 154,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        139.0,
+        716.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 155,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        778.0,
+        73.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 156,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        807.0,
+        266.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 157,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        792.0,
+        490.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 158,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        728.0,
+        696.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 159,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        137.0,
+        414.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 160,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        137.0,
+        478.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 161,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        170.0,
+        444.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 162,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        55.0,
+        658.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 163,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        152.0,
+        800.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 164,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        56.0,
+        630.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 165,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        791.0,
+        157.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 166,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        790.0,
+        185.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 167,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        707.0,
+        157.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 168,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        807.0,
+        322.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 169,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        751.0,
+        322.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 170,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        723.0,
+        266.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 171,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        792.0,
+        546.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 172,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        736.0,
+        546.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 173,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        736.0,
+        462.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 174,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        798.0,
+        755.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 175,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        770.0,
+        783.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 176,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        784.0,
+        671.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 177,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        147.0,
+        161.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 178,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        175.0,
+        220.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 179,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        196.0,
+        184.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 180,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        44.0,
+        359.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 181,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        134.0,
+        291.0
+      ],
+      "reserve": 0.0
+    },
+    {
+      "class": "marker",
+      "id": 182,
+      "in_playable": true,
+      "kind": "*Waypoints/Waypoint",
+      "physical": 0.0,
+      "point": [
+        156.0,
+        319.0
+      ],
+      "reserve": 0.0
+    }
+  ],
+  "frame": {
+    "border": 20,
+    "cell_size": 10.0,
+    "height": 840,
+    "width": 840,
+    "z_scale": 0.0390625
+  },
+  "geometry_model": "conservative circular reservation/obstacle radii, not extracted game meshes",
+  "inherited_issues": 0,
+  "input_crc32": 842574279,
+  "issues": [],
+  "map": "[CHAI]沃野奔流T0.0.5",
+  "native_crc32": 4161715342,
+  "near_ores": [
+    {
+      "base": [
+        763.0,
+        129.0
+      ],
+      "expected": 2,
+      "ore_ids": [
+        35,
+        36
+      ],
+      "radius": 62.0,
+      "seat": 1
+    },
+    {
+      "base": [
+        779.0,
+        294.0
+      ],
+      "expected": 2,
+      "ore_ids": [
+        38,
+        39
+      ],
+      "radius": 62.0,
+      "seat": 2
+    },
+    {
+      "base": [
+        764.0,
+        518.0
+      ],
+      "expected": 2,
+      "ore_ids": [
+        41,
+        42
+      ],
+      "radius": 62.0,
+      "seat": 3
+    },
+    {
+      "base": [
+        756.0,
+        727.0
+      ],
+      "expected": 2,
+      "ore_ids": [
+        44,
+        45
+      ],
+      "radius": 62.0,
+      "seat": 4
+    },
+    {
+      "base": [
+        65.0,
+        55.0
+      ],
+      "expected": 2,
+      "ore_ids": [
+        47,
+        48
+      ],
+      "radius": 62.0,
+      "seat": 5
+    },
+    {
+      "base": [
+        48.0,
+        261.5
+      ],
+      "expected": 2,
+      "ore_ids": [
+        50,
+        51
+      ],
+      "radius": 62.0,
+      "seat": 6
+    },
+    {
+      "base": [
+        53.0,
+        450.0
+      ],
+      "expected": 2,
+      "ore_ids": [
+        53,
+        54
+      ],
+      "radius": 62.0,
+      "seat": 7
+    },
+    {
+      "base": [
+        55.0,
+        772.0
+      ],
+      "expected": 2,
+      "ore_ids": [
+        56,
+        57
+      ],
+      "radius": 62.0,
+      "seat": 8
+    }
+  ],
+  "passed": true,
+  "policy": {
+    "bucket_size": 32.0,
+    "building_reserve_radius": 8.0,
+    "decoration_reserve_radius": 2.0,
+    "flat_tolerance": 12.0,
+    "maximum_landing_error": 12.0,
+    "maximum_ramp_step": 6.1,
+    "maximum_walk_step": 12.0,
+    "navigation_clearance": 1,
+    "oil_reserve_radius": 6.0,
+    "ore_reserve_radius": 20.0
+  },
+  "ramp_clearance": {
+    "checked_objects": 62,
+    "findings": [],
+    "geometry_model": "conservative planning reservations, not exact faction meshes",
+    "inherited": 0,
+    "passed": true,
+    "policy": {
+      "approach_extension": 25.0,
+      "gap": 8.0,
+      "refinery_back": 5.0,
+      "refinery_forward": 48.0,
+      "refinery_half_width": 18.0
+    },
+    "ramps": 14,
+    "raw_passed": true,
+    "regressions": [],
+    "status": "strict"
+  },
+  "ramp_profiles": [
+    {
+      "blocked_samples": 0,
+      "center": [
+        241.0,
+        350.0
+      ],
+      "endpoint_error": 0.0,
+      "id": 183,
+      "maximum_step": 2.0703125,
+      "pair": [
+        280.0,
+        350.0
+      ],
+      "samples": 1025,
+      "width": 24.0
+    },
+    {
+      "blocked_samples": 0,
+      "center": [
+        422.0,
+        350.0
+      ],
+      "endpoint_error": 0.0,
+      "id": 184,
+      "maximum_step": 2.0703125,
+      "pair": [
+        210.0,
+        280.0
+      ],
+      "samples": 1025,
+      "width": 24.0
+    },
+    {
+      "blocked_samples": 0,
+      "center": [
+        298.0,
+        420.0
+      ],
+      "endpoint_error": 0.0,
+      "id": 185,
+      "maximum_step": 2.0703125,
+      "pair": [
+        280.0,
+        350.0
+      ],
+      "samples": 1025,
+      "width": 24.0
+    },
+    {
+      "blocked_samples": 0,
+      "center": [
+        363.0,
+        500.0
+      ],
+      "endpoint_error": 0.0,
+      "id": 186,
+      "maximum_step": 2.0703125,
+      "pair": [
+        210.0,
+        280.0
+      ],
+      "samples": 1025,
+      "width": 24.0
+    },
+    {
+      "blocked_samples": 0,
+      "center": [
+        352.0,
+        650.0
+      ],
+      "endpoint_error": 0.0,
+      "id": 187,
+      "maximum_step": 2.0703125,
+      "pair": [
+        210.0,
+        280.0
+      ],
+      "samples": 1025,
+      "width": 24.0
+    },
+    {
+      "blocked_samples": 0,
+      "center": [
+        60.0,
+        180.0
+      ],
+      "endpoint_error": 0.0,
+      "id": 188,
+      "maximum_step": 2.0703125,
+      "pair": [
+        280.0,
+        350.0
+      ],
+      "samples": 1025,
+      "width": 24.0
+    },
+    {
+      "blocked_samples": 0,
+      "center": [
+        352.0,
+        205.0
+      ],
+      "endpoint_error": 0.0,
+      "id": 189,
+      "maximum_step": 4.140625,
+      "pair": [
+        210.0,
+        350.0
+      ],
+      "samples": 1025,
+      "width": 24.0
+    },
+    {
+      "blocked_samples": 0,
+      "center": [
+        452.0,
+        100.0
+      ],
+      "endpoint_error": 0.0,
+      "id": 190,
+      "maximum_step": 2.0703125,
+      "pair": [
+        280.0,
+        350.0
+      ],
+      "samples": 1025,
+      "width": 24.0
+    },
+    {
+      "blocked_samples": 0,
+      "center": [
+        480.0,
+        157.0
+      ],
+      "endpoint_error": 0.0,
+      "id": 191,
+      "maximum_step": 2.0703125,
+      "pair": [
+        210.0,
+        280.0
+      ],
+      "samples": 1025,
+      "width": 24.0
+    },
+    {
+      "blocked_samples": 0,
+      "center": [
+        480.0,
+        728.0
+      ],
+      "endpoint_error": 0.0,
+      "id": 192,
+      "maximum_step": 2.0703125,
+      "pair": [
+        210.0,
+        280.0
+      ],
+      "samples": 1025,
+      "width": 24.0
+    },
+    {
+      "blocked_samples": 0,
+      "center": [
+        746.0,
+        788.0
+      ],
+      "endpoint_error": 0.0,
+      "id": 193,
+      "maximum_step": 2.0703125,
+      "pair": [
+        210.0,
+        280.0
+      ],
+      "samples": 1025,
+      "width": 24.0
+    },
+    {
+      "blocked_samples": 0,
+      "center": [
+        35.0,
+        610.0
+      ],
+      "endpoint_error": 0.0,
+      "id": 194,
+      "maximum_step": 2.0703125,
+      "pair": [
+        280.0,
+        350.0
+      ],
+      "samples": 1025,
+      "width": 24.0
+    },
+    {
+      "blocked_samples": 0,
+      "center": [
+        35.0,
+        555.0
+      ],
+      "endpoint_error": 0.0,
+      "id": 195,
+      "maximum_step": 2.0703125,
+      "pair": [
+        280.0,
+        350.0
+      ],
+      "samples": 1025,
+      "width": 24.0
+    },
+    {
+      "blocked_samples": 0,
+      "center": [
+        220.0,
+        550.0
+      ],
+      "endpoint_error": 0.0,
+      "id": 196,
+      "maximum_step": 2.0703125,
+      "pair": [
+        210.0,
+        280.0
+      ],
+      "samples": 1025,
+      "width": 24.0
+    }
+  ],
+  "regressions": [],
+  "resource_distribution": {
+    "ai_behavior": "Resource incentives only; no runtime AI behavior inferred.",
+    "home_counts": [
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3
+    ],
+    "home_maximum": 3,
+    "home_radius": 100.0,
+    "mine_count": 48,
+    "passed": true,
+    "policy": {
+      "fourth_progress": [
+        0.1,
+        0.35
+      ],
+      "home_maximum": 3,
+      "home_radius": 100.0,
+      "hotspot_progress": [
+        0.33,
+        0.67
+      ],
+      "main_route_max_distance": 65.0,
+      "mines_per_seat": 6,
+      "route_count": 4,
+      "secondary_max_distance": 75.0,
+      "secondary_min_main_distance": 35.0
+    },
+    "routes": 4,
+    "slots": [
+      {
+        "cell": [
+          722.0,
+          84.0
+        ],
+        "home_distance": 60.876925020897694,
+        "ordinal": 1,
+        "ore_id": 35,
+        "seat": 1
+      },
+      {
+        "cell": [
+          762.0,
+          186.0
+        ],
+        "home_distance": 57.0087712549569,
+        "ordinal": 2,
+        "ore_id": 36,
+        "seat": 1
+      },
+      {
+        "cell": [
+          672.0,
+          128.0
+        ],
+        "home_distance": 91.00549433962765,
+        "ordinal": 3,
+        "ore_id": 37,
+        "seat": 1
+      },
+      {
+        "cell": [
+          572.0,
+          128.0
+        ],
+        "home_distance": 191.0026177831079,
+        "main_progress": 0.23067632850241546,
+        "main_route_distance": 1.0,
+        "ordinal": 4,
+        "ore_id": 59,
+        "route_id": 1,
+        "seat": 1,
+        "secondary_route_distance": 47.0
+      },
+      {
+        "cell": [
+          438.0,
+          182.0
+        ],
+        "home_distance": 329.2931824377784,
+        "main_progress": 0.41304347826086957,
+        "main_route_distance": 34.40930106817051,
+        "ordinal": 5,
+        "ore_id": 60,
+        "route_id": 1,
+        "seat": 1,
+        "secondary_route_distance": 24.0
+      },
+      {
+        "cell": [
+          522.0,
+          186.0
+        ],
+        "home_distance": 247.64894508154077,
+        "main_progress": 0.358695652173913,
+        "main_route_distance": 36.069377593742864,
+        "ordinal": 6,
+        "ore_id": 61,
+        "route_id": 1,
+        "seat": 1,
+        "secondary_route_distance": 2.8284271247461903
+      },
+      {
+        "cell": [
+          778.0,
+          236.0
+        ],
+        "home_distance": 58.008620049092706,
+        "ordinal": 1,
+        "ore_id": 38,
+        "seat": 2
+      },
+      {
+        "cell": [
+          778.0,
+          352.0
+        ],
+        "home_distance": 58.008620049092706,
+        "ordinal": 2,
+        "ore_id": 39,
+        "seat": 2
+      },
+      {
+        "cell": [
+          688.0,
+          294.0
+        ],
+        "home_distance": 91.0,
+        "ordinal": 3,
+        "ore_id": 40,
+        "seat": 2
+      },
+      {
+        "cell": [
+          566.0,
+          294.0
+        ],
+        "home_distance": 213.0,
+        "main_progress": 0.23027027027027028,
+        "main_route_distance": 0.0,
+        "ordinal": 4,
+        "ore_id": 65,
+        "route_id": 2,
+        "seat": 2,
+        "secondary_route_distance": 46.0
+      },
+      {
+        "cell": [
+          392.0,
+          256.0
+        ],
+        "home_distance": 388.8611577414232,
+        "main_progress": 0.4454054054054054,
+        "main_route_distance": 17.46424919657298,
+        "ordinal": 5,
+        "ore_id": 66,
+        "route_id": 2,
+        "seat": 2,
+        "secondary_route_distance": 84.0
+      },
+      {
+        "cell": [
+          496.0,
+          340.0
+        ],
+        "home_distance": 286.7141433553636,
+        "main_progress": 0.30594594594594593,
+        "main_route_distance": 46.0,
+        "ordinal": 6,
+        "ore_id": 67,
+        "route_id": 2,
+        "seat": 2,
+        "secondary_route_distance": 0.0
+      },
+      {
+        "cell": [
+          764.0,
+          460.0
+        ],
+        "home_distance": 58.0,
+        "ordinal": 1,
+        "ore_id": 41,
+        "seat": 3
+      },
+      {
+        "cell": [
+          764.0,
+          576.0
+        ],
+        "home_distance": 58.0,
+        "ordinal": 2,
+        "ore_id": 42,
+        "seat": 3
+      },
+      {
+        "cell": [
+          674.0,
+          518.0
+        ],
+        "home_distance": 90.0,
+        "ordinal": 3,
+        "ore_id": 43,
+        "seat": 3
+      },
+      {
+        "cell": [
+          576.0,
+          518.0
+        ],
+        "home_distance": 188.0,
+        "main_progress": 0.2318125770653514,
+        "main_route_distance": 0.0,
+        "ordinal": 4,
+        "ore_id": 71,
+        "route_id": 3,
+        "seat": 3,
+        "secondary_route_distance": 46.0
+      },
+      {
+        "cell": [
+          398.0,
+          542.0
+        ],
+        "home_distance": 366.7860411738702,
+        "main_progress": 0.45129469790382243,
+        "main_route_distance": 24.0,
+        "ordinal": 5,
+        "ore_id": 72,
+        "route_id": 3,
+        "seat": 3,
+        "secondary_route_distance": 22.0
+      },
+      {
+        "cell": [
+          522.0,
+          564.0
+        ],
+        "home_distance": 246.3331078032346,
+        "main_progress": 0.29839704069050554,
+        "main_route_distance": 46.0,
+        "ordinal": 6,
+        "ore_id": 73,
+        "route_id": 3,
+        "seat": 3,
+        "secondary_route_distance": 0.0
+      },
+      {
+        "cell": [
+          756.0,
+          668.0
+        ],
+        "home_distance": 59.0,
+        "ordinal": 1,
+        "ore_id": 44,
+        "seat": 4
+      },
+      {
+        "cell": [
+          708.0,
+          724.0
+        ],
+        "home_distance": 48.093658625644196,
+        "ordinal": 2,
+        "ore_id": 45,
+        "seat": 4
+      },
+      {
+        "cell": [
+          666.0,
+          728.0
+        ],
+        "home_distance": 90.00555538409837,
+        "ordinal": 3,
+        "ore_id": 46,
+        "seat": 4
+      },
+      {
+        "cell": [
+          522.0,
+          722.0
+        ],
+        "home_distance": 234.05341270744162,
+        "main_progress": 0.21828358208955223,
+        "main_route_distance": 5.0,
+        "ordinal": 4,
+        "ore_id": 77,
+        "route_id": 4,
+        "seat": 4,
+        "secondary_route_distance": 41.0
+      },
+      {
+        "cell": [
+          374.0,
+          612.0
+        ],
+        "home_distance": 398.9348317708044,
+        "main_progress": 0.44869402985074625,
+        "main_route_distance": 16.0,
+        "ordinal": 5,
+        "ore_id": 78,
+        "route_id": 4,
+        "seat": 4,
+        "secondary_route_distance": 30.0
+      },
+      {
+        "cell": [
+          460.0,
+          636.0
+        ],
+        "home_distance": 309.67240755353066,
+        "main_progress": 0.355410447761194,
+        "main_route_distance": 37.013511046643494,
+        "ordinal": 6,
+        "ore_id": 79,
+        "route_id": 4,
+        "seat": 4,
+        "secondary_route_distance": 2.8284271247461903
+      },
+      {
+        "cell": [
+          110.0,
+          50.0
+        ],
+        "home_distance": 45.27692569068709,
+        "ordinal": 1,
+        "ore_id": 47,
+        "seat": 5
+      },
+      {
+        "cell": [
+          52.0,
+          114.0
+        ],
+        "home_distance": 60.41522986797286,
+        "ordinal": 2,
+        "ore_id": 48,
+        "seat": 5
+      },
+      {
+        "cell": [
+          154.0,
+          54.0
+        ],
+        "home_distance": 89.00561780022652,
+        "ordinal": 3,
+        "ore_id": 49,
+        "seat": 5
+      },
+      {
+        "cell": [
+          200.0,
+          114.0
+        ],
+        "home_distance": 147.3295625460145,
+        "main_progress": 0.7717391304347826,
+        "main_route_distance": 1.0,
+        "ordinal": 4,
+        "ore_id": 62,
+        "route_id": 1,
+        "seat": 5,
+        "secondary_route_distance": 31.953090617340916
+      },
+      {
+        "cell": [
+          378.0,
+          114.0
+        ],
+        "home_distance": 318.5121661726597,
+        "main_progress": 0.5567632850241546,
+        "main_route_distance": 1.0,
+        "ordinal": 5,
+        "ore_id": 63,
+        "route_id": 1,
+        "seat": 5,
+        "secondary_route_distance": 88.54942122905152
+      },
+      {
+        "cell": [
+          234.0,
+          192.0
+        ],
+        "home_distance": 217.55459085020476,
+        "main_progress": 0.7306763285024155,
+        "main_route_distance": 77.0,
+        "ordinal": 6,
+        "ore_id": 64,
+        "route_id": 1,
+        "seat": 5,
+        "secondary_route_distance": 1.0
+      },
+      {
+        "cell": [
+          84.0,
+          288.0
+        ],
+        "home_distance": 44.701789673345296,
+        "ordinal": 1,
+        "ore_id": 50,
+        "seat": 6
+      },
+      {
+        "cell": [
+          92.0,
+          235.0
+        ],
+        "home_distance": 51.3638978271704,
+        "ordinal": 2,
+        "ore_id": 51,
+        "seat": 6
+      },
+      {
+        "cell": [
+          128.0,
+          320.0
+        ],
+        "home_distance": 99.1072651221897,
+        "ordinal": 3,
+        "ore_id": 52,
+        "seat": 6
+      },
+      {
+        "cell": [
+          168.0,
+          192.0
+        ],
+        "home_distance": 138.67317693050808,
+        "main_progress": 0.7697297297297298,
+        "main_route_distance": 1.0,
+        "ordinal": 4,
+        "ore_id": 68,
+        "route_id": 2,
+        "seat": 6,
+        "secondary_route_distance": 30.364452901377952
+      },
+      {
+        "cell": [
+          308.0,
+          194.0
+        ],
+        "home_distance": 268.61915419418625,
+        "main_progress": 0.6183783783783784,
+        "main_route_distance": 1.0,
+        "ordinal": 5,
+        "ore_id": 69,
+        "route_id": 2,
+        "seat": 6,
+        "secondary_route_distance": 146.0
+      },
+      {
+        "cell": [
+          140.0,
+          360.0
+        ],
+        "home_distance": 134.78223176665387,
+        "main_progress": 1.0,
+        "main_route_distance": 134.5362404707371,
+        "ordinal": 6,
+        "ore_id": 70,
+        "route_id": 2,
+        "seat": 6,
+        "secondary_route_distance": 10.04987562112089
+      },
+      {
+        "cell": [
+          52.0,
+          392.0
+        ],
+        "home_distance": 58.008620049092706,
+        "ordinal": 1,
+        "ore_id": 53,
+        "seat": 7
+      },
+      {
+        "cell": [
+          74.0,
+          502.0
+        ],
+        "home_distance": 56.08029957123981,
+        "ordinal": 2,
+        "ore_id": 54,
+        "seat": 7
+      },
+      {
+        "cell": [
+          142.0,
+          450.0
+        ],
+        "home_distance": 89.0,
+        "ordinal": 3,
+        "ore_id": 55,
+        "seat": 7
+      },
+      {
+        "cell": [
+          224.0,
+          434.0
+        ],
+        "home_distance": 171.74690681348528,
+        "main_progress": 0.7694204685573366,
+        "main_route_distance": 0.0,
+        "ordinal": 4,
+        "ore_id": 74,
+        "route_id": 3,
+        "seat": 7,
+        "secondary_route_distance": 130.0
+      },
+      {
+        "cell": [
+          318.0,
+          532.0
+        ],
+        "home_distance": 277.39682766751315,
+        "main_progress": 0.5561035758323057,
+        "main_route_distance": 23.345235059857504,
+        "ordinal": 5,
+        "ore_id": 75,
+        "route_id": 3,
+        "seat": 7,
+        "secondary_route_distance": 32.0
+      },
+      {
+        "cell": [
+          220.0,
+          592.0
+        ],
+        "home_distance": 219.20994502987313,
+        "main_progress": 0.593094944512947,
+        "main_route_distance": 122.57650672131263,
+        "ordinal": 6,
+        "ore_id": 76,
+        "route_id": 3,
+        "seat": 7,
+        "secondary_route_distance": 28.0
+      },
+      {
+        "cell": [
+          54.0,
+          714.0
+        ],
+        "home_distance": 58.008620049092706,
+        "ordinal": 1,
+        "ore_id": 56,
+        "seat": 8
+      },
+      {
+        "cell": [
+          96.0,
+          788.0
+        ],
+        "home_distance": 44.01136216933077,
+        "ordinal": 2,
+        "ore_id": 57,
+        "seat": 8
+      },
+      {
+        "cell": [
+          144.0,
+          772.0
+        ],
+        "home_distance": 89.0,
+        "ordinal": 3,
+        "ore_id": 58,
+        "seat": 8
+      },
+      {
+        "cell": [
+          188.0,
+          652.0
+        ],
+        "home_distance": 179.13402803487674,
+        "main_progress": 0.7630597014925373,
+        "main_route_distance": 23.345235059857504,
+        "ordinal": 4,
+        "ore_id": 80,
+        "route_id": 4,
+        "seat": 8,
+        "secondary_route_distance": 67.35725647619564
+      },
+      {
+        "cell": [
+          272.0,
+          658.0
+        ],
+        "home_distance": 245.12241839538055,
+        "main_progress": 0.5438432835820896,
+        "main_route_distance": 30.0,
+        "ordinal": 5,
+        "ore_id": 81,
+        "route_id": 4,
+        "seat": 8,
+        "secondary_route_distance": 120.88010589009261
+      },
+      {
+        "cell": [
+          184.0,
+          478.0
+        ],
+        "home_distance": 321.05606986942325,
+        "main_progress": 0.6688432835820896,
+        "main_route_distance": 87.86353054595519,
+        "ordinal": 6,
+        "ore_id": 82,
+        "route_id": 4,
+        "seat": 8,
+        "secondary_route_distance": 43.46262762420146
+      }
+    ]
+  },
+  "route_model": "four-neighbor static land/water shortest paths; mixed surface pairs require transport and have no inferred distance; native impassability + object obstacles + clearance + per-edge height step; no inference about runtime AI decisions",
+  "schema_version": 1,
+  "source_crc32": 2439377568,
+  "spawn_placement": {
+    "findings": [],
+    "frame": {
+      "border": 20,
+      "cell_size": 10.0,
+      "height": 840,
+      "width": 840,
+      "z_scale": 0.0390625
+    },
+    "inherited": 0,
+    "orientation": {
+      "accepted": [
+        "east_west"
+      ],
+      "candidates": [
+        [
+          "east_west",
+          true
+        ],
+        [
+          "south_north",
+          false
+        ],
+        [
+          "southeast_northwest",
+          false
+        ]
+      ],
+      "center": [
+        419.5,
+        419.5
+      ]
+    },
+    "passed": true,
+    "policy": {
+      "base_radius": 24.0,
+      "flat_tolerance": 3.0,
+      "near_ore_radius": 62.0,
+      "ore_radius": 20.0
+    },
+    "raw_passed": true,
+    "refinery_policy": {
+      "approach_extension": 25.0,
+      "gap": 8.0,
+      "refinery_back": 5.0,
+      "refinery_forward": 48.0,
+      "refinery_half_width": 18.0
+    },
+    "regressions": [],
+    "schema_version": 1,
+    "seats": [
+      {
+        "base": [
+          763.0,
+          129.0
+        ],
+        "group_key": "P1/0:*Waypoints/Waypoint:45e83000:45d7a000:00000000:{\"owner\":\"/team\",\"uniqueID\":\"Player_1_Start\",\"waypointName\":\"Player_1_Start\"};34:OreNode:45db6000:45e5b000:bfafeddf:{\"owner\":\"PlyrNeutral/teamPlyrNeutral\",\"uniqueID\":\"henan-east-west-P1-ore1\",\"waypointName\":null};35:OreNode:45e7e000:45c5d000:3fc90fdb:{\"owner\":\"PlyrNeutral/teamPlyrNeutral\",\"uniqueID\":\"henan-east-west-P1-ore2\",\"waypointName\":null}",
+        "height": 210.0,
+        "ore_ids": [
+          35,
+          36
+        ],
+        "seat": 1,
+        "start_id": 1,
+        "water": false
+      },
+      {
+        "base": [
+          779.0,
+          294.0
+        ],
+        "group_key": "P2/4:*Waypoints/Waypoint:45ed3000:45a41000:00000000:{\"owner\":\"/team\",\"uniqueID\":\"Player_2_Start\",\"waypointName\":\"Player_2_Start\"};37:OreNode:45ece000:45b63000:bfc90fdb:{\"owner\":\"PlyrNeutral/teamPlyrNeutral\",\"uniqueID\":\"henan-east-west-P2-ore1\",\"waypointName\":null};38:OreNode:45ece000:4591f000:3fc90fdb:{\"owner\":\"PlyrNeutral/teamPlyrNeutral\",\"uniqueID\":\"henan-east-west-P2-ore2\",\"waypointName\":null}",
+        "height": 210.0,
+        "ore_ids": [
+          38,
+          39
+        ],
+        "seat": 2,
+        "start_id": 5,
+        "water": false
+      },
+      {
+        "base": [
+          764.0,
+          518.0
+        ],
+        "group_key": "P3/8:*Waypoints/Waypoint:45e88000:453c2000:00000000:{\"owner\":\"/team\",\"uniqueID\":\"Player_3_Start\",\"waypointName\":\"Player_3_Start\"};40:OreNode:45e88000:45606000:bfc90fdb:{\"owner\":\"PlyrNeutral/teamPlyrNeutral\",\"uniqueID\":\"henan-east-west-P3-ore1\",\"waypointName\":null};41:OreNode:45e88000:4517e000:3fc90fdb:{\"owner\":\"PlyrNeutral/teamPlyrNeutral\",\"uniqueID\":\"henan-east-west-P3-ore2\",\"waypointName\":null}",
+        "height": 210.0,
+        "ore_ids": [
+          41,
+          42
+        ],
+        "seat": 3,
+        "start_id": 9,
+        "water": false
+      },
+      {
+        "base": [
+          756.0,
+          727.0
+        ],
+        "group_key": "P4/12:*Waypoints/Waypoint:45e60000:44660000:00000000:{\"owner\":\"/team\",\"uniqueID\":\"Player_4_Start\",\"waypointName\":\"Player_4_Start\"};43:OreNode:45e60000:44bcc000:bfc90fdb:{\"owner\":\"PlyrNeutral/teamPlyrNeutral\",\"uniqueID\":\"henan-east-west-P4-ore1\",\"waypointName\":null};44:OreNode:45d70000:446d8000:3fafeddf:{\"owner\":\"PlyrNeutral/teamPlyrNeutral\",\"uniqueID\":\"henan-east-west-P4-ore2\",\"waypointName\":null}",
+        "height": 210.0,
+        "ore_ids": [
+          44,
+          45
+        ],
+        "seat": 4,
+        "start_id": 13,
+        "water": false
+      },
+      {
+        "base": [
+          65.0,
+          55.0
+        ],
+        "group_key": "P5/16:*Waypoints/Waypoint:43e10000:45eec000:00000000:{\"owner\":\"/team\",\"uniqueID\":\"Player_5_Start\",\"waypointName\":\"Player_5_Start\"};46:OreNode:44610000:45f05000:bfe231d6:{\"owner\":\"PlyrNeutral/teamPlyrNeutral\",\"uniqueID\":\"henan-east-west-P5-ore1\",\"waypointName\":null};47:OreNode:43a00000:45dc5000:3fc90fdb:{\"owner\":\"PlyrNeutral/teamPlyrNeutral\",\"uniqueID\":\"henan-east-west-P5-ore2\",\"waypointName\":null}",
+        "height": 350.0,
+        "ore_ids": [
+          47,
+          48
+        ],
+        "seat": 5,
+        "start_id": 17,
+        "water": false
+      },
+      {
+        "base": [
+          48.0,
+          261.5
+        ],
+        "group_key": "P6/20:*Waypoints/Waypoint:438c0000:45ae3800:00000000:{\"owner\":\"/team\",\"uniqueID\":\"Player_6_Start\",\"waypointName\":\"Player_6_Start\"};49:OreNode:44200000:45a5f000:40490fdb:{\"owner\":\"PlyrNeutral/teamPlyrNeutral\",\"uniqueID\":\"henan-east-west-P6-ore1\",\"waypointName\":null};50:OreNode:44340000:45b68000:40490fdb:{\"owner\":\"PlyrNeutral/teamPlyrNeutral\",\"uniqueID\":\"henan-east-west-P6-ore2\",\"waypointName\":null}",
+        "height": 280.0,
+        "ore_ids": [
+          50,
+          51
+        ],
+        "seat": 6,
+        "start_id": 21,
+        "water": false
+      },
+      {
+        "base": [
+          53.0,
+          450.0
+        ],
+        "group_key": "P7/24:*Waypoints/Waypoint:43a50000:4566a000:00000000:{\"owner\":\"/team\",\"uniqueID\":\"Player_7_Start (imported)\",\"waypointName\":\"Player_7_Start (imported)\"};52:OreNode:43a00000:45857000:bfc90fdb:{\"owner\":\"PlyrNeutral/teamPlyrNeutral\",\"uniqueID\":\"henan-east-west-P7-ore1\",\"waypointName\":null};53:OreNode:44070000:45462000:3f16cbe4:{\"owner\":\"PlyrNeutral/teamPlyrNeutral\",\"uniqueID\":\"henan-east-west-P7-ore2\",\"waypointName\":null}",
+        "height": 350.0,
+        "ore_ids": [
+          53,
+          54
+        ],
+        "seat": 7,
+        "start_id": 25,
+        "water": false
+      },
+      {
+        "base": [
+          55.0,
+          772.0
+        ],
+        "group_key": "P8/28:*Waypoints/Waypoint:43af0000:43eb0000:00000000:{\"owner\":\"/team\",\"uniqueID\":\"Player_8_Start (imported)\",\"waypointName\":\"Player_8_Start (imported)\"};55:OreNode:43aa0000:44834000:bfc90fdb:{\"owner\":\"PlyrNeutral/teamPlyrNeutral\",\"uniqueID\":\"henan-east-west-P8-ore1\",\"waypointName\":null};56:OreNode:443e0000:439b0000:3fc90fdb:{\"owner\":\"PlyrNeutral/teamPlyrNeutral\",\"uniqueID\":\"henan-east-west-P8-ore2\",\"waypointName\":null}",
+        "height": 350.0,
+        "ore_ids": [
+          56,
+          57
+        ],
+        "seat": 8,
+        "start_id": 29,
+        "water": false
+      }
+    ],
+    "source_crc32": 2439377568,
+    "status": "strict"
+  },
+  "textures": {
+    "grid_points": 705600,
+    "histogram": {
+      "Dirt_Iceland05": 16248,
+      "Dirt_Yucatan06": 7372,
+      "Grass_CapeCod05": 293120,
+      "Grass_Geneva01": 34853,
+      "Grass_MtRush04": 53844,
+      "Grass_NewYork01": 277004,
+      "Gravel_Yucatan01": 7107,
+      "Reef_Yucatan01": 232,
+      "Reef_Yucatan02": 1687,
+      "Rock_Yucatan01": 12291,
+      "Rock_Yucatan03": 756,
+      "Sand_Hawaii02": 1086
+    },
+    "material_runs": 705600
+  }
+}

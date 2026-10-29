@@ -1,0 +1,4837 @@
+{
+  "map": "[CHAI]沃野奔流T0.0.6",
+  "date": "2026-10-30",
+  "native_sha256": "d3c04978b80d7104046384a1469b10ca8eabb4b120c99e3203093fc42027fb64",
+  "native_crc32": 2105502829,
+  "layout_sha256": "d53b1894ec7c6cbef3fda6eec362eaf06f6a03f4116bffe9d058ecee7e5db0a7",
+  "plan_sha256": "8d6f4fe9ae1a7a2549e81239c77ed153326f6236b9130c46be74f69c75e3a128",
+  "policy": {
+    "bucket_size": 32.0,
+    "ore_reserve_radius": 20.0,
+    "building_reserve_radius": 8.0,
+    "oil_reserve_radius": 6.0,
+    "decoration_reserve_radius": 2.0,
+    "flat_tolerance": 12.0,
+    "maximum_walk_step": 12.0,
+    "navigation_clearance": 1,
+    "maximum_ramp_step": 6.1,
+    "maximum_landing_error": 12.0,
+    "terrain_shape": {
+      "combat_route_minimum_width_cells": 10.0,
+      "intrusion_minimum_width_cells": 5.0,
+      "exclude_gift_buildings_from_intrusions": true
+    },
+    "spawn_placement": {
+      "near_ore_radius": 62.0,
+      "base_radius": 8.0,
+      "ore_radius": 20.0,
+      "flat_tolerance": 3.0
+    },
+    "resource_distribution": {
+      "mines_per_seat": 6,
+      "home_radius": 100.0,
+      "home_maximum": 3,
+      "route_count": 4,
+      "main_route_max_distance": 65.0,
+      "fourth_progress": [
+        0.1,
+        0.35
+      ],
+      "hotspot_progress": [
+        0.33,
+        0.67
+      ],
+      "secondary_max_distance": 75.0,
+      "secondary_min_main_distance": 35.0
+    },
+    "ramp_clearance": {
+      "approach_extension": 25.0,
+      "gap": 8.0,
+      "refinery_back": 5.0,
+      "refinery_forward": 48.0,
+      "refinery_half_width": 18.0
+    }
+  },
+  "frame": {
+    "width": 840,
+    "height": 840,
+    "border": 20,
+    "cell_size": 10,
+    "z_scale": 0.0390625
+  },
+  "status": "通过",
+  "actions": [
+    {
+      "changed": false,
+      "degrees": -135,
+      "from_radians": -2.356194496154785,
+      "kind": "alliedbarracks",
+      "opposing_team_center": [
+        352.5,
+        4343.75
+      ],
+      "position": [
+        7140.0,
+        6110.0
+      ],
+      "radians": -2.356194496154785,
+      "seat": 1,
+      "waypoint": "dual-p1-bar"
+    },
+    {
+      "changed": false,
+      "degrees": -135,
+      "from_radians": -2.356194496154785,
+      "kind": "alliedbarracks",
+      "opposing_team_center": [
+        352.5,
+        4343.75
+      ],
+      "position": [
+        7720.0,
+        6390.0
+      ],
+      "radians": -2.356194496154785,
+      "seat": 1,
+      "waypoint": "gift-alt-dual-p1-bar-1"
+    },
+    {
+      "changed": false,
+      "degrees": -135,
+      "from_radians": -2.356194496154785,
+      "kind": "alliedwarfactory",
+      "opposing_team_center": [
+        352.5,
+        4343.75
+      ],
+      "position": [
+        6940.0,
+        6390.0
+      ],
+      "radians": -2.356194496154785,
+      "seat": 1,
+      "waypoint": "dual-p1-wf"
+    },
+    {
+      "changed": false,
+      "degrees": -135,
+      "from_radians": -2.356194496154785,
+      "kind": "alliedwarfactory",
+      "opposing_team_center": [
+        352.5,
+        4343.75
+      ],
+      "position": [
+        6640.0,
+        6610.0
+      ],
+      "radians": -2.356194496154785,
+      "seat": 1,
+      "waypoint": "gift-alt-dual-p1-wf-1"
+    },
+    {
+      "changed": false,
+      "degrees": -135,
+      "from_radians": -2.356194496154785,
+      "kind": "alliedairfield",
+      "opposing_team_center": [
+        352.5,
+        4343.75
+      ],
+      "position": [
+        7720.0,
+        6950.0
+      ],
+      "radians": -2.356194496154785,
+      "seat": 1,
+      "waypoint": "dual-p1-air"
+    },
+    {
+      "changed": false,
+      "degrees": -135,
+      "from_radians": -2.356194496154785,
+      "kind": "alliedairfield",
+      "opposing_team_center": [
+        352.5,
+        4343.75
+      ],
+      "position": [
+        7720.0,
+        6670.0
+      ],
+      "radians": -2.356194496154785,
+      "seat": 1,
+      "waypoint": "gift-alt-dual-p1-air-1"
+    },
+    {
+      "changed": false,
+      "degrees": -135,
+      "from_radians": -2.356194496154785,
+      "kind": "sovietbarracks",
+      "opposing_team_center": [
+        352.5,
+        4343.75
+      ],
+      "position": [
+        7140.0,
+        6110.0
+      ],
+      "radians": -2.356194496154785,
+      "seat": 1,
+      "waypoint": "dual-p1-bar"
+    },
+    {
+      "changed": false,
+      "degrees": -135,
+      "from_radians": -2.356194496154785,
+      "kind": "sovietbarracks",
+      "opposing_team_center": [
+        352.5,
+        4343.75
+      ],
+      "position": [
+        7720.0,
+        6390.0
+      ],
+      "radians": -2.356194496154785,
+      "seat": 1,
+      "waypoint": "gift-alt-dual-p1-bar-1"
+    },
+    {
+      "changed": false,
+      "degrees": -135,
+      "from_radians": -2.356194496154785,
+      "kind": "sovietwarfactory",
+      "opposing_team_center": [
+        352.5,
+        4343.75
+      ],
+      "position": [
+        6940.0,
+        6390.0
+      ],
+      "radians": -2.356194496154785,
+      "seat": 1,
+      "waypoint": "dual-p1-wf"
+    },
+    {
+      "changed": false,
+      "degrees": -135,
+      "from_radians": -2.356194496154785,
+      "kind": "sovietwarfactory",
+      "opposing_team_center": [
+        352.5,
+        4343.75
+      ],
+      "position": [
+        6640.0,
+        6610.0
+      ],
+      "radians": -2.356194496154785,
+      "seat": 1,
+      "waypoint": "gift-alt-dual-p1-wf-1"
+    },
+    {
+      "changed": false,
+      "degrees": -135,
+      "from_radians": -2.356194496154785,
+      "kind": "sovietairfield",
+      "opposing_team_center": [
+        352.5,
+        4343.75
+      ],
+      "position": [
+        7720.0,
+        6950.0
+      ],
+      "radians": -2.356194496154785,
+      "seat": 1,
+      "waypoint": "dual-p1-air"
+    },
+    {
+      "changed": false,
+      "degrees": -135,
+      "from_radians": -2.356194496154785,
+      "kind": "sovietairfield",
+      "opposing_team_center": [
+        352.5,
+        4343.75
+      ],
+      "position": [
+        7720.0,
+        6670.0
+      ],
+      "radians": -2.356194496154785,
+      "seat": 1,
+      "waypoint": "gift-alt-dual-p1-air-1"
+    },
+    {
+      "changed": false,
+      "degrees": -135,
+      "from_radians": -2.356194496154785,
+      "kind": "japanbarracks",
+      "opposing_team_center": [
+        352.5,
+        4343.75
+      ],
+      "position": [
+        7140.0,
+        6110.0
+      ],
+      "radians": -2.356194496154785,
+      "seat": 1,
+      "waypoint": "dual-p1-bar"
+    },
+    {
+      "changed": false,
+      "degrees": -135,
+      "from_radians": -2.356194496154785,
+      "kind": "japanbarracks",
+      "opposing_team_center": [
+        352.5,
+        4343.75
+      ],
+      "position": [
+        7720.0,
+        6390.0
+      ],
+      "radians": -2.356194496154785,
+      "seat": 1,
+      "waypoint": "gift-alt-dual-p1-bar-1"
+    },
+    {
+      "changed": false,
+      "degrees": -135,
+      "from_radians": -2.356194496154785,
+      "kind": "japanwarfactory",
+      "opposing_team_center": [
+        352.5,
+        4343.75
+      ],
+      "position": [
+        6940.0,
+        6390.0
+      ],
+      "radians": -2.356194496154785,
+      "seat": 1,
+      "waypoint": "dual-p1-wf"
+    },
+    {
+      "changed": false,
+      "degrees": -135,
+      "from_radians": -2.356194496154785,
+      "kind": "japanwarfactory",
+      "opposing_team_center": [
+        352.5,
+        4343.75
+      ],
+      "position": [
+        6640.0,
+        6610.0
+      ],
+      "radians": -2.356194496154785,
+      "seat": 1,
+      "waypoint": "gift-alt-dual-p1-wf-1"
+    },
+    {
+      "changed": false,
+      "degrees": -135,
+      "from_radians": -2.356194496154785,
+      "kind": "alliedbarracks",
+      "opposing_team_center": [
+        352.5,
+        4343.75
+      ],
+      "position": [
+        7220.0,
+        4610.0
+      ],
+      "radians": -2.356194496154785,
+      "seat": 2,
+      "waypoint": "dual-p2-bar"
+    },
+    {
+      "changed": false,
+      "degrees": -135,
+      "from_radians": -2.356194496154785,
+      "kind": "alliedbarracks",
+      "opposing_team_center": [
+        352.5,
+        4343.75
+      ],
+      "position": [
+        7020.0,
+        5270.0
+      ],
+      "radians": -2.356194496154785,
+      "seat": 2,
+      "waypoint": "gift-alt-dual-p2-bar-1"
+    },
+    {
+      "changed": false,
+      "degrees": -135,
+      "from_radians": -2.356194496154785,
+      "kind": "alliedwarfactory",
+      "opposing_team_center": [
+        352.5,
+        4343.75
+      ],
+      "position": [
+        7160.0,
+        5830.0
+      ],
+      "radians": -2.356194496154785,
+      "seat": 2,
+      "waypoint": "dual-p2-wf"
+    },
+    {
+      "changed": false,
+      "degrees": -135,
+      "from_radians": -2.356194496154785,
+      "kind": "alliedwarfactory",
+      "opposing_team_center": [
+        352.5,
+        4343.75
+      ],
+      "position": [
+        7020.0,
+        5550.0
+      ],
+      "radians": -2.356194496154785,
+      "seat": 2,
+      "waypoint": "gift-alt-dual-p2-wf-1"
+    },
+    {
+      "changed": false,
+      "degrees": -135,
+      "from_radians": -2.356194496154785,
+      "kind": "alliedairfield",
+      "opposing_team_center": [
+        352.5,
+        4343.75
+      ],
+      "position": [
+        7800.0,
+        4970.0
+      ],
+      "radians": -2.356194496154785,
+      "seat": 2,
+      "waypoint": "dual-p2-air"
+    },
+    {
+      "changed": false,
+      "degrees": -135,
+      "from_radians": -2.356194496154785,
+      "kind": "alliedairfield",
+      "opposing_team_center": [
+        352.5,
+        4343.75
+      ],
+      "position": [
+        7800.0,
+        4390.0
+      ],
+      "radians": -2.356194496154785,
+      "seat": 2,
+      "waypoint": "gift-alt-dual-p2-air-1"
+    },
+    {
+      "changed": false,
+      "degrees": -135,
+      "from_radians": -2.356194496154785,
+      "kind": "sovietbarracks",
+      "opposing_team_center": [
+        352.5,
+        4343.75
+      ],
+      "position": [
+        7220.0,
+        4610.0
+      ],
+      "radians": -2.356194496154785,
+      "seat": 2,
+      "waypoint": "dual-p2-bar"
+    },
+    {
+      "changed": false,
+      "degrees": -135,
+      "from_radians": -2.356194496154785,
+      "kind": "sovietbarracks",
+      "opposing_team_center": [
+        352.5,
+        4343.75
+      ],
+      "position": [
+        7020.0,
+        5270.0
+      ],
+      "radians": -2.356194496154785,
+      "seat": 2,
+      "waypoint": "gift-alt-dual-p2-bar-1"
+    },
+    {
+      "changed": false,
+      "degrees": -135,
+      "from_radians": -2.356194496154785,
+      "kind": "sovietwarfactory",
+      "opposing_team_center": [
+        352.5,
+        4343.75
+      ],
+      "position": [
+        7160.0,
+        5830.0
+      ],
+      "radians": -2.356194496154785,
+      "seat": 2,
+      "waypoint": "dual-p2-wf"
+    },
+    {
+      "changed": false,
+      "degrees": -135,
+      "from_radians": -2.356194496154785,
+      "kind": "sovietwarfactory",
+      "opposing_team_center": [
+        352.5,
+        4343.75
+      ],
+      "position": [
+        7020.0,
+        5550.0
+      ],
+      "radians": -2.356194496154785,
+      "seat": 2,
+      "waypoint": "gift-alt-dual-p2-wf-1"
+    },
+    {
+      "changed": false,
+      "degrees": -135,
+      "from_radians": -2.356194496154785,
+      "kind": "sovietairfield",
+      "opposing_team_center": [
+        352.5,
+        4343.75
+      ],
+      "position": [
+        7800.0,
+        4970.0
+      ],
+      "radians": -2.356194496154785,
+      "seat": 2,
+      "waypoint": "dual-p2-air"
+    },
+    {
+      "changed": false,
+      "degrees": -135,
+      "from_radians": -2.356194496154785,
+      "kind": "sovietairfield",
+      "opposing_team_center": [
+        352.5,
+        4343.75
+      ],
+      "position": [
+        7800.0,
+        4390.0
+      ],
+      "radians": -2.356194496154785,
+      "seat": 2,
+      "waypoint": "gift-alt-dual-p2-air-1"
+    },
+    {
+      "changed": false,
+      "degrees": -135,
+      "from_radians": -2.356194496154785,
+      "kind": "japanbarracks",
+      "opposing_team_center": [
+        352.5,
+        4343.75
+      ],
+      "position": [
+        7220.0,
+        4610.0
+      ],
+      "radians": -2.356194496154785,
+      "seat": 2,
+      "waypoint": "dual-p2-bar"
+    },
+    {
+      "changed": false,
+      "degrees": -135,
+      "from_radians": -2.356194496154785,
+      "kind": "japanbarracks",
+      "opposing_team_center": [
+        352.5,
+        4343.75
+      ],
+      "position": [
+        7020.0,
+        5270.0
+      ],
+      "radians": -2.356194496154785,
+      "seat": 2,
+      "waypoint": "gift-alt-dual-p2-bar-1"
+    },
+    {
+      "changed": false,
+      "degrees": -135,
+      "from_radians": -2.356194496154785,
+      "kind": "japanwarfactory",
+      "opposing_team_center": [
+        352.5,
+        4343.75
+      ],
+      "position": [
+        7160.0,
+        5830.0
+      ],
+      "radians": -2.356194496154785,
+      "seat": 2,
+      "waypoint": "dual-p2-wf"
+    },
+    {
+      "changed": false,
+      "degrees": -135,
+      "from_radians": -2.356194496154785,
+      "kind": "japanwarfactory",
+      "opposing_team_center": [
+        352.5,
+        4343.75
+      ],
+      "position": [
+        7020.0,
+        5550.0
+      ],
+      "radians": -2.356194496154785,
+      "seat": 2,
+      "waypoint": "gift-alt-dual-p2-wf-1"
+    },
+    {
+      "changed": false,
+      "degrees": 135,
+      "from_radians": 2.356194496154785,
+      "kind": "alliedbarracks",
+      "opposing_team_center": [
+        352.5,
+        4343.75
+      ],
+      "position": [
+        7720.0,
+        2470.0
+      ],
+      "radians": 2.356194496154785,
+      "seat": 3,
+      "waypoint": "dual-p3-bar"
+    },
+    {
+      "changed": false,
+      "degrees": 135,
+      "from_radians": 2.356194496154785,
+      "kind": "alliedbarracks",
+      "opposing_team_center": [
+        352.5,
+        4343.75
+      ],
+      "position": [
+        6980.0,
+        2470.0
+      ],
+      "radians": 2.356194496154785,
+      "seat": 3,
+      "waypoint": "gift-alt-dual-p3-bar-1"
+    },
+    {
+      "changed": false,
+      "degrees": 135,
+      "from_radians": 2.356194496154785,
+      "kind": "alliedwarfactory",
+      "opposing_team_center": [
+        352.5,
+        4343.75
+      ],
+      "position": [
+        6880.0,
+        3310.0
+      ],
+      "radians": 2.356194496154785,
+      "seat": 3,
+      "waypoint": "dual-p3-wf"
+    },
+    {
+      "changed": false,
+      "degrees": 135,
+      "from_radians": 2.356194496154785,
+      "kind": "alliedwarfactory",
+      "opposing_team_center": [
+        352.5,
+        4343.75
+      ],
+      "position": [
+        7080.0,
+        3650.0
+      ],
+      "radians": 2.356194496154785,
+      "seat": 3,
+      "waypoint": "gift-alt-dual-p3-wf-1"
+    },
+    {
+      "changed": false,
+      "degrees": 135,
+      "from_radians": 2.356194496154785,
+      "kind": "alliedairfield",
+      "opposing_team_center": [
+        352.5,
+        4343.75
+      ],
+      "position": [
+        7720.0,
+        3030.0
+      ],
+      "radians": 2.356194496154785,
+      "seat": 3,
+      "waypoint": "dual-p3-air"
+    },
+    {
+      "changed": false,
+      "degrees": 135,
+      "from_radians": 2.356194496154785,
+      "kind": "alliedairfield",
+      "opposing_team_center": [
+        352.5,
+        4343.75
+      ],
+      "position": [
+        7720.0,
+        2750.0
+      ],
+      "radians": 2.356194496154785,
+      "seat": 3,
+      "waypoint": "gift-alt-dual-p3-air-1"
+    },
+    {
+      "changed": false,
+      "degrees": 135,
+      "from_radians": 2.356194496154785,
+      "kind": "sovietbarracks",
+      "opposing_team_center": [
+        352.5,
+        4343.75
+      ],
+      "position": [
+        7720.0,
+        2470.0
+      ],
+      "radians": 2.356194496154785,
+      "seat": 3,
+      "waypoint": "dual-p3-bar"
+    },
+    {
+      "changed": false,
+      "degrees": 135,
+      "from_radians": 2.356194496154785,
+      "kind": "sovietbarracks",
+      "opposing_team_center": [
+        352.5,
+        4343.75
+      ],
+      "position": [
+        6980.0,
+        2470.0
+      ],
+      "radians": 2.356194496154785,
+      "seat": 3,
+      "waypoint": "gift-alt-dual-p3-bar-1"
+    },
+    {
+      "changed": false,
+      "degrees": 135,
+      "from_radians": 2.356194496154785,
+      "kind": "sovietwarfactory",
+      "opposing_team_center": [
+        352.5,
+        4343.75
+      ],
+      "position": [
+        6880.0,
+        3310.0
+      ],
+      "radians": 2.356194496154785,
+      "seat": 3,
+      "waypoint": "dual-p3-wf"
+    },
+    {
+      "changed": false,
+      "degrees": 135,
+      "from_radians": 2.356194496154785,
+      "kind": "sovietwarfactory",
+      "opposing_team_center": [
+        352.5,
+        4343.75
+      ],
+      "position": [
+        7080.0,
+        3650.0
+      ],
+      "radians": 2.356194496154785,
+      "seat": 3,
+      "waypoint": "gift-alt-dual-p3-wf-1"
+    },
+    {
+      "changed": false,
+      "degrees": 135,
+      "from_radians": 2.356194496154785,
+      "kind": "sovietairfield",
+      "opposing_team_center": [
+        352.5,
+        4343.75
+      ],
+      "position": [
+        7720.0,
+        3030.0
+      ],
+      "radians": 2.356194496154785,
+      "seat": 3,
+      "waypoint": "dual-p3-air"
+    },
+    {
+      "changed": false,
+      "degrees": 135,
+      "from_radians": 2.356194496154785,
+      "kind": "sovietairfield",
+      "opposing_team_center": [
+        352.5,
+        4343.75
+      ],
+      "position": [
+        7720.0,
+        2750.0
+      ],
+      "radians": 2.356194496154785,
+      "seat": 3,
+      "waypoint": "gift-alt-dual-p3-air-1"
+    },
+    {
+      "changed": false,
+      "degrees": 135,
+      "from_radians": 2.356194496154785,
+      "kind": "japanbarracks",
+      "opposing_team_center": [
+        352.5,
+        4343.75
+      ],
+      "position": [
+        7720.0,
+        2470.0
+      ],
+      "radians": 2.356194496154785,
+      "seat": 3,
+      "waypoint": "dual-p3-bar"
+    },
+    {
+      "changed": false,
+      "degrees": 135,
+      "from_radians": 2.356194496154785,
+      "kind": "japanbarracks",
+      "opposing_team_center": [
+        352.5,
+        4343.75
+      ],
+      "position": [
+        6980.0,
+        2470.0
+      ],
+      "radians": 2.356194496154785,
+      "seat": 3,
+      "waypoint": "gift-alt-dual-p3-bar-1"
+    },
+    {
+      "changed": false,
+      "degrees": 135,
+      "from_radians": 2.356194496154785,
+      "kind": "japanwarfactory",
+      "opposing_team_center": [
+        352.5,
+        4343.75
+      ],
+      "position": [
+        6880.0,
+        3310.0
+      ],
+      "radians": 2.356194496154785,
+      "seat": 3,
+      "waypoint": "dual-p3-wf"
+    },
+    {
+      "changed": false,
+      "degrees": 135,
+      "from_radians": 2.356194496154785,
+      "kind": "japanwarfactory",
+      "opposing_team_center": [
+        352.5,
+        4343.75
+      ],
+      "position": [
+        7080.0,
+        3650.0
+      ],
+      "radians": 2.356194496154785,
+      "seat": 3,
+      "waypoint": "gift-alt-dual-p3-wf-1"
+    },
+    {
+      "changed": false,
+      "degrees": 135,
+      "from_radians": 2.356194496154785,
+      "kind": "alliedbarracks",
+      "opposing_team_center": [
+        352.5,
+        4343.75
+      ],
+      "position": [
+        7480.0,
+        1810.0
+      ],
+      "radians": 2.356194496154785,
+      "seat": 4,
+      "waypoint": "dual-p4-bar"
+    },
+    {
+      "changed": false,
+      "degrees": 135,
+      "from_radians": 2.356194496154785,
+      "kind": "alliedbarracks",
+      "opposing_team_center": [
+        352.5,
+        4343.75
+      ],
+      "position": [
+        6740.0,
+        1510.0
+      ],
+      "radians": 2.356194496154785,
+      "seat": 4,
+      "waypoint": "gift-alt-dual-p4-bar-1"
+    },
+    {
+      "changed": false,
+      "degrees": 135,
+      "from_radians": 2.356194496154785,
+      "kind": "alliedwarfactory",
+      "opposing_team_center": [
+        352.5,
+        4343.75
+      ],
+      "position": [
+        7800.0,
+        1490.0
+      ],
+      "radians": 2.356194496154785,
+      "seat": 4,
+      "waypoint": "dual-p4-wf"
+    },
+    {
+      "changed": false,
+      "degrees": 135,
+      "from_radians": 2.356194496154785,
+      "kind": "alliedwarfactory",
+      "opposing_team_center": [
+        352.5,
+        4343.75
+      ],
+      "position": [
+        7760.0,
+        1770.0
+      ],
+      "radians": 2.356194496154785,
+      "seat": 4,
+      "waypoint": "gift-alt-dual-p4-wf-1"
+    },
+    {
+      "changed": false,
+      "degrees": 135,
+      "from_radians": 2.356194496154785,
+      "kind": "alliedairfield",
+      "opposing_team_center": [
+        352.5,
+        4343.75
+      ],
+      "position": [
+        7640.0,
+        920.0
+      ],
+      "radians": 2.356194496154785,
+      "seat": 4,
+      "waypoint": "dual-p4-air"
+    },
+    {
+      "changed": false,
+      "degrees": 135,
+      "from_radians": 2.356194496154785,
+      "kind": "alliedairfield",
+      "opposing_team_center": [
+        352.5,
+        4343.75
+      ],
+      "position": [
+        7780.0,
+        640.0
+      ],
+      "radians": 2.356194496154785,
+      "seat": 4,
+      "waypoint": "gift-alt-dual-p4-air-1"
+    },
+    {
+      "changed": false,
+      "degrees": 135,
+      "from_radians": 2.356194496154785,
+      "kind": "sovietbarracks",
+      "opposing_team_center": [
+        352.5,
+        4343.75
+      ],
+      "position": [
+        7480.0,
+        1810.0
+      ],
+      "radians": 2.356194496154785,
+      "seat": 4,
+      "waypoint": "dual-p4-bar"
+    },
+    {
+      "changed": false,
+      "degrees": 135,
+      "from_radians": 2.356194496154785,
+      "kind": "sovietbarracks",
+      "opposing_team_center": [
+        352.5,
+        4343.75
+      ],
+      "position": [
+        6740.0,
+        1510.0
+      ],
+      "radians": 2.356194496154785,
+      "seat": 4,
+      "waypoint": "gift-alt-dual-p4-bar-1"
+    },
+    {
+      "changed": false,
+      "degrees": 135,
+      "from_radians": 2.356194496154785,
+      "kind": "sovietwarfactory",
+      "opposing_team_center": [
+        352.5,
+        4343.75
+      ],
+      "position": [
+        7800.0,
+        1490.0
+      ],
+      "radians": 2.356194496154785,
+      "seat": 4,
+      "waypoint": "dual-p4-wf"
+    },
+    {
+      "changed": false,
+      "degrees": 135,
+      "from_radians": 2.356194496154785,
+      "kind": "sovietwarfactory",
+      "opposing_team_center": [
+        352.5,
+        4343.75
+      ],
+      "position": [
+        7760.0,
+        1770.0
+      ],
+      "radians": 2.356194496154785,
+      "seat": 4,
+      "waypoint": "gift-alt-dual-p4-wf-1"
+    },
+    {
+      "changed": false,
+      "degrees": 135,
+      "from_radians": 2.356194496154785,
+      "kind": "sovietairfield",
+      "opposing_team_center": [
+        352.5,
+        4343.75
+      ],
+      "position": [
+        7640.0,
+        920.0
+      ],
+      "radians": 2.356194496154785,
+      "seat": 4,
+      "waypoint": "dual-p4-air"
+    },
+    {
+      "changed": false,
+      "degrees": 135,
+      "from_radians": 2.356194496154785,
+      "kind": "sovietairfield",
+      "opposing_team_center": [
+        352.5,
+        4343.75
+      ],
+      "position": [
+        7780.0,
+        640.0
+      ],
+      "radians": 2.356194496154785,
+      "seat": 4,
+      "waypoint": "gift-alt-dual-p4-air-1"
+    },
+    {
+      "changed": false,
+      "degrees": 135,
+      "from_radians": 2.356194496154785,
+      "kind": "japanbarracks",
+      "opposing_team_center": [
+        352.5,
+        4343.75
+      ],
+      "position": [
+        7480.0,
+        1810.0
+      ],
+      "radians": 2.356194496154785,
+      "seat": 4,
+      "waypoint": "dual-p4-bar"
+    },
+    {
+      "changed": false,
+      "degrees": 135,
+      "from_radians": 2.356194496154785,
+      "kind": "japanbarracks",
+      "opposing_team_center": [
+        352.5,
+        4343.75
+      ],
+      "position": [
+        6740.0,
+        1510.0
+      ],
+      "radians": 2.356194496154785,
+      "seat": 4,
+      "waypoint": "gift-alt-dual-p4-bar-1"
+    },
+    {
+      "changed": false,
+      "degrees": 135,
+      "from_radians": 2.356194496154785,
+      "kind": "japanwarfactory",
+      "opposing_team_center": [
+        352.5,
+        4343.75
+      ],
+      "position": [
+        7800.0,
+        1490.0
+      ],
+      "radians": 2.356194496154785,
+      "seat": 4,
+      "waypoint": "dual-p4-wf"
+    },
+    {
+      "changed": false,
+      "degrees": 135,
+      "from_radians": 2.356194496154785,
+      "kind": "japanwarfactory",
+      "opposing_team_center": [
+        352.5,
+        4343.75
+      ],
+      "position": [
+        7760.0,
+        1770.0
+      ],
+      "radians": 2.356194496154785,
+      "seat": 4,
+      "waypoint": "gift-alt-dual-p4-wf-1"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "alliedbarracks",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        780.0,
+        7030.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 5,
+      "waypoint": "dual-p5-bar"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "alliedbarracks",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        2540.0,
+        6250.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 5,
+      "waypoint": "gift-alt-dual-p5-bar-1"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "alliedwarfactory",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        2740.0,
+        7510.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 5,
+      "waypoint": "dual-p5-wf"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "alliedwarfactory",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        3440.0,
+        7610.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 5,
+      "waypoint": "gift-alt-dual-p5-wf-1"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "alliedairfield",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        2460.0,
+        7790.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 5,
+      "waypoint": "dual-p5-air"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "alliedairfield",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        2360.0,
+        7230.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 5,
+      "waypoint": "gift-alt-dual-p5-air-1"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "sovietbarracks",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        780.0,
+        7030.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 5,
+      "waypoint": "dual-p5-bar"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "sovietbarracks",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        2540.0,
+        6250.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 5,
+      "waypoint": "gift-alt-dual-p5-bar-1"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "sovietwarfactory",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        2740.0,
+        7510.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 5,
+      "waypoint": "dual-p5-wf"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "sovietwarfactory",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        3440.0,
+        7610.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 5,
+      "waypoint": "gift-alt-dual-p5-wf-1"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "sovietairfield",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        2460.0,
+        7790.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 5,
+      "waypoint": "dual-p5-air"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "sovietairfield",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        2360.0,
+        7230.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 5,
+      "waypoint": "gift-alt-dual-p5-air-1"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "japanbarracks",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        780.0,
+        7030.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 5,
+      "waypoint": "dual-p5-bar"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "japanbarracks",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        2540.0,
+        6250.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 5,
+      "waypoint": "gift-alt-dual-p5-bar-1"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "japanwarfactory",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        2740.0,
+        7510.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 5,
+      "waypoint": "dual-p5-wf"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "japanwarfactory",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        3440.0,
+        7610.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 5,
+      "waypoint": "gift-alt-dual-p5-wf-1"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "alliedbarracks",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        2080.0,
+        7230.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 6,
+      "waypoint": "dual-p6-bar"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "alliedbarracks",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        4080.0,
+        5850.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 6,
+      "waypoint": "gift-alt-dual-p6-bar-1"
+    },
+    {
+      "changed": false,
+      "degrees": 45,
+      "from_radians": 0.7853981852531433,
+      "kind": "alliedwarfactory",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        2180.0,
+        3710.0
+      ],
+      "radians": 0.7853981852531433,
+      "seat": 6,
+      "waypoint": "dual-p6-wf"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "alliedwarfactory",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        2840.0,
+        4910.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 6,
+      "waypoint": "gift-alt-dual-p6-wf-1"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "alliedairfield",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        3120.0,
+        4470.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 6,
+      "waypoint": "dual-p6-air"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "alliedairfield",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        240.0,
+        4600.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 6,
+      "waypoint": "gift-alt-dual-p6-air-1"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "sovietbarracks",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        2080.0,
+        7230.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 6,
+      "waypoint": "dual-p6-bar"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "sovietbarracks",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        4080.0,
+        5850.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 6,
+      "waypoint": "gift-alt-dual-p6-bar-1"
+    },
+    {
+      "changed": false,
+      "degrees": 45,
+      "from_radians": 0.7853981852531433,
+      "kind": "sovietwarfactory",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        2180.0,
+        3710.0
+      ],
+      "radians": 0.7853981852531433,
+      "seat": 6,
+      "waypoint": "dual-p6-wf"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "sovietwarfactory",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        2840.0,
+        4910.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 6,
+      "waypoint": "gift-alt-dual-p6-wf-1"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "sovietairfield",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        3120.0,
+        4470.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 6,
+      "waypoint": "dual-p6-air"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "sovietairfield",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        240.0,
+        4600.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 6,
+      "waypoint": "gift-alt-dual-p6-air-1"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "japanbarracks",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        2080.0,
+        7230.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 6,
+      "waypoint": "dual-p6-bar"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "japanbarracks",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        4080.0,
+        5850.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 6,
+      "waypoint": "gift-alt-dual-p6-bar-1"
+    },
+    {
+      "changed": false,
+      "degrees": 45,
+      "from_radians": 0.7853981852531433,
+      "kind": "japanwarfactory",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        2180.0,
+        3710.0
+      ],
+      "radians": 0.7853981852531433,
+      "seat": 6,
+      "waypoint": "dual-p6-wf"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "japanwarfactory",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        2840.0,
+        4910.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 6,
+      "waypoint": "gift-alt-dual-p6-wf-1"
+    },
+    {
+      "changed": false,
+      "degrees": 45,
+      "from_radians": 0.7853981852531433,
+      "kind": "alliedbarracks",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        3740.0,
+        3590.0
+      ],
+      "radians": 0.7853981852531433,
+      "seat": 7,
+      "waypoint": "dual-civilian-bar"
+    },
+    {
+      "changed": false,
+      "degrees": 45,
+      "from_radians": 0.7853981852531433,
+      "kind": "alliedbarracks",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        4020.0,
+        3870.0
+      ],
+      "radians": 0.7853981852531433,
+      "seat": 7,
+      "waypoint": "gift-alt-dual-civilian-bar-1"
+    },
+    {
+      "changed": false,
+      "degrees": 45,
+      "from_radians": 0.7853981852531433,
+      "kind": "alliedwarfactory",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        4020.0,
+        3590.0
+      ],
+      "radians": 0.7853981852531433,
+      "seat": 7,
+      "waypoint": "dual-civilian-wf"
+    },
+    {
+      "changed": false,
+      "degrees": 45,
+      "from_radians": 0.7853981852531433,
+      "kind": "alliedwarfactory",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        1520.0,
+        3750.0
+      ],
+      "radians": 0.7853981852531433,
+      "seat": 7,
+      "waypoint": "gift-alt-dual-civilian-wf-1"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "alliedairfield",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        3460.0,
+        4050.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 7,
+      "waypoint": "dual-civilian-air"
+    },
+    {
+      "changed": false,
+      "degrees": 45,
+      "from_radians": 0.7853981852531433,
+      "kind": "alliedairfield",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        3460.0,
+        3770.0
+      ],
+      "radians": 0.7853981852531433,
+      "seat": 7,
+      "waypoint": "gift-alt-dual-civilian-air-1"
+    },
+    {
+      "changed": false,
+      "degrees": 45,
+      "from_radians": 0.7853981852531433,
+      "kind": "sovietbarracks",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        3740.0,
+        3590.0
+      ],
+      "radians": 0.7853981852531433,
+      "seat": 7,
+      "waypoint": "dual-civilian-bar"
+    },
+    {
+      "changed": false,
+      "degrees": 45,
+      "from_radians": 0.7853981852531433,
+      "kind": "sovietbarracks",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        4020.0,
+        3870.0
+      ],
+      "radians": 0.7853981852531433,
+      "seat": 7,
+      "waypoint": "gift-alt-dual-civilian-bar-1"
+    },
+    {
+      "changed": false,
+      "degrees": 45,
+      "from_radians": 0.7853981852531433,
+      "kind": "sovietwarfactory",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        4020.0,
+        3590.0
+      ],
+      "radians": 0.7853981852531433,
+      "seat": 7,
+      "waypoint": "dual-civilian-wf"
+    },
+    {
+      "changed": false,
+      "degrees": 45,
+      "from_radians": 0.7853981852531433,
+      "kind": "sovietwarfactory",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        1520.0,
+        3750.0
+      ],
+      "radians": 0.7853981852531433,
+      "seat": 7,
+      "waypoint": "gift-alt-dual-civilian-wf-1"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "sovietairfield",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        3460.0,
+        4050.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 7,
+      "waypoint": "dual-civilian-air"
+    },
+    {
+      "changed": false,
+      "degrees": 45,
+      "from_radians": 0.7853981852531433,
+      "kind": "sovietairfield",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        3460.0,
+        3770.0
+      ],
+      "radians": 0.7853981852531433,
+      "seat": 7,
+      "waypoint": "gift-alt-dual-civilian-air-1"
+    },
+    {
+      "changed": false,
+      "degrees": 45,
+      "from_radians": 0.7853981852531433,
+      "kind": "japanbarracks",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        3740.0,
+        3590.0
+      ],
+      "radians": 0.7853981852531433,
+      "seat": 7,
+      "waypoint": "dual-civilian-bar"
+    },
+    {
+      "changed": false,
+      "degrees": 45,
+      "from_radians": 0.7853981852531433,
+      "kind": "japanbarracks",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        4020.0,
+        3870.0
+      ],
+      "radians": 0.7853981852531433,
+      "seat": 7,
+      "waypoint": "gift-alt-dual-civilian-bar-1"
+    },
+    {
+      "changed": false,
+      "degrees": 45,
+      "from_radians": 0.7853981852531433,
+      "kind": "japanwarfactory",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        4020.0,
+        3590.0
+      ],
+      "radians": 0.7853981852531433,
+      "seat": 7,
+      "waypoint": "dual-civilian-wf"
+    },
+    {
+      "changed": false,
+      "degrees": 45,
+      "from_radians": 0.7853981852531433,
+      "kind": "japanwarfactory",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        1520.0,
+        3750.0
+      ],
+      "radians": 0.7853981852531433,
+      "seat": 7,
+      "waypoint": "gift-alt-dual-civilian-wf-1"
+    },
+    {
+      "changed": false,
+      "degrees": 45,
+      "from_radians": 0.7853981852531433,
+      "kind": "alliedbarracks",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        3740.0,
+        390.0
+      ],
+      "radians": 0.7853981852531433,
+      "seat": 8,
+      "waypoint": "dual-creeps-bar"
+    },
+    {
+      "changed": false,
+      "degrees": 45,
+      "from_radians": 0.7853981852531433,
+      "kind": "alliedbarracks",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        3460.0,
+        190.0
+      ],
+      "radians": 0.7853981852531433,
+      "seat": 8,
+      "waypoint": "gift-alt-dual-creeps-bar-1"
+    },
+    {
+      "changed": false,
+      "degrees": 45,
+      "from_radians": 0.7853981852531433,
+      "kind": "alliedwarfactory",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        920.0,
+        1190.0
+      ],
+      "radians": 0.7853981852531433,
+      "seat": 8,
+      "waypoint": "dual-creeps-wf"
+    },
+    {
+      "changed": false,
+      "degrees": 45,
+      "from_radians": 0.7853981852531433,
+      "kind": "alliedwarfactory",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        3740.0,
+        950.0
+      ],
+      "radians": 0.7853981852531433,
+      "seat": 8,
+      "waypoint": "gift-alt-dual-creeps-wf-1"
+    },
+    {
+      "changed": false,
+      "degrees": 45,
+      "from_radians": 0.7853981852531433,
+      "kind": "alliedairfield",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        640.0,
+        1170.0
+      ],
+      "radians": 0.7853981852531433,
+      "seat": 8,
+      "waypoint": "dual-creeps-air"
+    },
+    {
+      "changed": false,
+      "degrees": 45,
+      "from_radians": 0.7853981852531433,
+      "kind": "alliedairfield",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        400.0,
+        1490.0
+      ],
+      "radians": 0.7853981852531433,
+      "seat": 8,
+      "waypoint": "gift-alt-dual-creeps-air-1"
+    },
+    {
+      "changed": false,
+      "degrees": 45,
+      "from_radians": 0.7853981852531433,
+      "kind": "sovietbarracks",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        3740.0,
+        390.0
+      ],
+      "radians": 0.7853981852531433,
+      "seat": 8,
+      "waypoint": "dual-creeps-bar"
+    },
+    {
+      "changed": false,
+      "degrees": 45,
+      "from_radians": 0.7853981852531433,
+      "kind": "sovietbarracks",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        3460.0,
+        190.0
+      ],
+      "radians": 0.7853981852531433,
+      "seat": 8,
+      "waypoint": "gift-alt-dual-creeps-bar-1"
+    },
+    {
+      "changed": false,
+      "degrees": 45,
+      "from_radians": 0.7853981852531433,
+      "kind": "sovietwarfactory",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        920.0,
+        1190.0
+      ],
+      "radians": 0.7853981852531433,
+      "seat": 8,
+      "waypoint": "dual-creeps-wf"
+    },
+    {
+      "changed": false,
+      "degrees": 45,
+      "from_radians": 0.7853981852531433,
+      "kind": "sovietwarfactory",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        3740.0,
+        950.0
+      ],
+      "radians": 0.7853981852531433,
+      "seat": 8,
+      "waypoint": "gift-alt-dual-creeps-wf-1"
+    },
+    {
+      "changed": false,
+      "degrees": 45,
+      "from_radians": 0.7853981852531433,
+      "kind": "sovietairfield",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        640.0,
+        1170.0
+      ],
+      "radians": 0.7853981852531433,
+      "seat": 8,
+      "waypoint": "dual-creeps-air"
+    },
+    {
+      "changed": false,
+      "degrees": 45,
+      "from_radians": 0.7853981852531433,
+      "kind": "sovietairfield",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        400.0,
+        1490.0
+      ],
+      "radians": 0.7853981852531433,
+      "seat": 8,
+      "waypoint": "gift-alt-dual-creeps-air-1"
+    },
+    {
+      "changed": false,
+      "degrees": 45,
+      "from_radians": 0.7853981852531433,
+      "kind": "japanbarracks",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        3740.0,
+        390.0
+      ],
+      "radians": 0.7853981852531433,
+      "seat": 8,
+      "waypoint": "dual-creeps-bar"
+    },
+    {
+      "changed": false,
+      "degrees": 45,
+      "from_radians": 0.7853981852531433,
+      "kind": "japanbarracks",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        3460.0,
+        190.0
+      ],
+      "radians": 0.7853981852531433,
+      "seat": 8,
+      "waypoint": "gift-alt-dual-creeps-bar-1"
+    },
+    {
+      "changed": false,
+      "degrees": 45,
+      "from_radians": 0.7853981852531433,
+      "kind": "japanwarfactory",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        920.0,
+        1190.0
+      ],
+      "radians": 0.7853981852531433,
+      "seat": 8,
+      "waypoint": "dual-creeps-wf"
+    },
+    {
+      "changed": false,
+      "degrees": 45,
+      "from_radians": 0.7853981852531433,
+      "kind": "japanwarfactory",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        3740.0,
+        950.0
+      ],
+      "radians": 0.7853981852531433,
+      "seat": 8,
+      "waypoint": "gift-alt-dual-creeps-wf-1"
+    },
+    {
+      "changed": false,
+      "degrees": -135,
+      "from_radians": -2.356194496154785,
+      "kind": "japansuperweapon",
+      "opposing_team_center": [
+        352.5,
+        4343.75
+      ],
+      "position": [
+        7720.0,
+        7230.0
+      ],
+      "radians": -2.356194496154785,
+      "seat": 1,
+      "waypoint": "SWJ1"
+    },
+    {
+      "changed": false,
+      "degrees": -135,
+      "from_radians": -2.356194496154785,
+      "kind": "japansuperweapon",
+      "opposing_team_center": [
+        352.5,
+        4343.75
+      ],
+      "position": [
+        7680.0,
+        7530.0
+      ],
+      "radians": -2.356194496154785,
+      "seat": 1,
+      "waypoint": "gift-alt-SWJ1-1"
+    },
+    {
+      "changed": false,
+      "degrees": -135,
+      "from_radians": -2.356194496154785,
+      "kind": "japanpowerplant",
+      "opposing_team_center": [
+        352.5,
+        4343.75
+      ],
+      "position": [
+        7140.0,
+        7030.0
+      ],
+      "radians": -2.356194496154785,
+      "seat": 1,
+      "waypoint": "PPJ1"
+    },
+    {
+      "changed": false,
+      "degrees": -135,
+      "from_radians": -2.356194496154785,
+      "kind": "japanpowerplant",
+      "opposing_team_center": [
+        352.5,
+        4343.75
+      ],
+      "position": [
+        6920.0,
+        6750.0
+      ],
+      "radians": -2.356194496154785,
+      "seat": 1,
+      "waypoint": "gift-alt-PPJ1-1"
+    },
+    {
+      "changed": false,
+      "degrees": -135,
+      "from_radians": -2.356194496154785,
+      "kind": "japansuperweapon",
+      "opposing_team_center": [
+        352.5,
+        4343.75
+      ],
+      "position": [
+        7700.0,
+        6110.0
+      ],
+      "radians": -2.356194496154785,
+      "seat": 2,
+      "waypoint": "SWJ2"
+    },
+    {
+      "changed": false,
+      "degrees": -135,
+      "from_radians": -2.356194496154785,
+      "kind": "japansuperweapon",
+      "opposing_team_center": [
+        352.5,
+        4343.75
+      ],
+      "position": [
+        7800.0,
+        5530.0
+      ],
+      "radians": -2.356194496154785,
+      "seat": 2,
+      "waypoint": "gift-alt-SWJ2-1"
+    },
+    {
+      "changed": false,
+      "degrees": -135,
+      "from_radians": -2.356194496154785,
+      "kind": "japanpowerplant",
+      "opposing_team_center": [
+        352.5,
+        4343.75
+      ],
+      "position": [
+        7310.0,
+        5250.0
+      ],
+      "radians": -2.356194496154785,
+      "seat": 2,
+      "waypoint": "PPJ2"
+    },
+    {
+      "changed": false,
+      "degrees": -135,
+      "from_radians": -2.356194496154785,
+      "kind": "japanpowerplant",
+      "opposing_team_center": [
+        352.5,
+        4343.75
+      ],
+      "position": [
+        7020.0,
+        4990.0
+      ],
+      "radians": -2.356194496154785,
+      "seat": 2,
+      "waypoint": "gift-alt-PPJ2-1"
+    },
+    {
+      "changed": false,
+      "degrees": 135,
+      "from_radians": 2.356194496154785,
+      "kind": "japansuperweapon",
+      "opposing_team_center": [
+        352.5,
+        4343.75
+      ],
+      "position": [
+        7160.0,
+        3030.0
+      ],
+      "radians": 2.356194496154785,
+      "seat": 3,
+      "waypoint": "SWJ3"
+    },
+    {
+      "changed": false,
+      "degrees": 135,
+      "from_radians": 2.356194496154785,
+      "kind": "japansuperweapon",
+      "opposing_team_center": [
+        352.5,
+        4343.75
+      ],
+      "position": [
+        7720.0,
+        3310.0
+      ],
+      "radians": 2.356194496154785,
+      "seat": 3,
+      "waypoint": "gift-alt-SWJ3-1"
+    },
+    {
+      "changed": false,
+      "degrees": 135,
+      "from_radians": 2.356194496154785,
+      "kind": "japanpowerplant",
+      "opposing_team_center": [
+        352.5,
+        4343.75
+      ],
+      "position": [
+        6920.0,
+        2750.0
+      ],
+      "radians": 2.356194496154785,
+      "seat": 3,
+      "waypoint": "PPJ3"
+    },
+    {
+      "changed": false,
+      "degrees": 135,
+      "from_radians": 2.356194496154785,
+      "kind": "japanpowerplant",
+      "opposing_team_center": [
+        352.5,
+        4343.75
+      ],
+      "position": [
+        6880.0,
+        3030.0
+      ],
+      "radians": 2.356194496154785,
+      "seat": 3,
+      "waypoint": "gift-alt-PPJ3-1"
+    },
+    {
+      "changed": false,
+      "degrees": 135,
+      "from_radians": 2.356194496154785,
+      "kind": "japansuperweapon",
+      "opposing_team_center": [
+        352.5,
+        4343.75
+      ],
+      "position": [
+        7200.0,
+        1790.0
+      ],
+      "radians": 2.356194496154785,
+      "seat": 4,
+      "waypoint": "SWJ4"
+    },
+    {
+      "changed": false,
+      "degrees": 135,
+      "from_radians": 2.356194496154785,
+      "kind": "japansuperweapon",
+      "opposing_team_center": [
+        352.5,
+        4343.75
+      ],
+      "position": [
+        7020.0,
+        1510.0
+      ],
+      "radians": 2.356194496154785,
+      "seat": 4,
+      "waypoint": "gift-alt-SWJ4-1"
+    },
+    {
+      "changed": false,
+      "degrees": 135,
+      "from_radians": 2.356194496154785,
+      "kind": "japanpowerplant",
+      "opposing_team_center": [
+        352.5,
+        4343.75
+      ],
+      "position": [
+        6740.0,
+        1230.0
+      ],
+      "radians": 2.356194496154785,
+      "seat": 4,
+      "waypoint": "PPJ4"
+    },
+    {
+      "changed": false,
+      "degrees": 135,
+      "from_radians": 2.356194496154785,
+      "kind": "japanpowerplant",
+      "opposing_team_center": [
+        352.5,
+        4343.75
+      ],
+      "position": [
+        6180.0,
+        730.0
+      ],
+      "radians": 2.356194496154785,
+      "seat": 4,
+      "waypoint": "gift-alt-PPJ4-1"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "japansuperweaponadvanced",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        1900.0,
+        7790.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 5,
+      "waypoint": "SWA51"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "japansuperweaponadvanced",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        3020.0,
+        7450.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 5,
+      "waypoint": "gift-alt-SWA51-1"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "sovietsuperweaponadvanced",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        1160.0,
+        7370.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 5,
+      "waypoint": "SWA52"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "sovietsuperweaponadvanced",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        2740.0,
+        7790.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 5,
+      "waypoint": "gift-alt-SWA52-1"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "sovietsuperweapon",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        2180.0,
+        7510.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 5,
+      "waypoint": "SW53"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "sovietsuperweapon",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        1900.0,
+        7510.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 5,
+      "waypoint": "gift-alt-SW53-1"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "alliedpowerplant",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        2180.0,
+        7790.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 5,
+      "waypoint": "PP51"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "alliedpowerplant",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        3720.0,
+        7430.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 5,
+      "waypoint": "gift-alt-PP51-1"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "alliedpowerplant",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        3160.0,
+        7750.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 5,
+      "waypoint": "PP52"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "alliedpowerplant",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        1620.0,
+        7790.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 5,
+      "waypoint": "gift-alt-PP52-1"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "alliedpowerplant",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        3160.0,
+        6890.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 5,
+      "waypoint": "PP53"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "alliedpowerplant",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        2460.0,
+        7510.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 5,
+      "waypoint": "gift-alt-PP53-1"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "alliedsuperweaponadvanced",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        1900.0,
+        7790.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 5,
+      "waypoint": "SWA51"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "alliedsuperweaponadvanced",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        3020.0,
+        7450.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 5,
+      "waypoint": "gift-alt-SWA51-1"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "sovietsuperweaponadvanced",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        1160.0,
+        7370.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 5,
+      "waypoint": "SWA52"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "sovietsuperweaponadvanced",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        2740.0,
+        7790.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 5,
+      "waypoint": "gift-alt-SWA52-1"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "sovietsuperweapon",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        2180.0,
+        7510.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 5,
+      "waypoint": "SW53"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "sovietsuperweapon",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        1900.0,
+        7510.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 5,
+      "waypoint": "gift-alt-SW53-1"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "japanpowerplant",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        2180.0,
+        7790.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 5,
+      "waypoint": "PP51"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "japanpowerplant",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        3720.0,
+        7430.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 5,
+      "waypoint": "gift-alt-PP51-1"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "japanpowerplant",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        3160.0,
+        7750.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 5,
+      "waypoint": "PP52"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "japanpowerplant",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        1620.0,
+        7790.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 5,
+      "waypoint": "gift-alt-PP52-1"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "japanpowerplant",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        3160.0,
+        6890.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 5,
+      "waypoint": "PP53"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "japanpowerplant",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        2460.0,
+        7510.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 5,
+      "waypoint": "gift-alt-PP53-1"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "japansuperweaponadvanced",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        1900.0,
+        7790.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 5,
+      "waypoint": "SWA51"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "japansuperweaponadvanced",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        3020.0,
+        7450.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 5,
+      "waypoint": "gift-alt-SWA51-1"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "alliedsuperweaponadvanced",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        1160.0,
+        7370.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 5,
+      "waypoint": "SWA52"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "alliedsuperweaponadvanced",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        2740.0,
+        7790.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 5,
+      "waypoint": "gift-alt-SWA52-1"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "sovietpowerplant",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        2180.0,
+        7790.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 5,
+      "waypoint": "PP51"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "sovietpowerplant",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        3720.0,
+        7430.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 5,
+      "waypoint": "gift-alt-PP51-1"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "sovietpowerplant",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        3160.0,
+        7750.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 5,
+      "waypoint": "PP52"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "sovietpowerplant",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        1620.0,
+        7790.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 5,
+      "waypoint": "gift-alt-PP52-1"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "sovietpowerplant",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        3160.0,
+        6890.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 5,
+      "waypoint": "PP53"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "sovietpowerplant",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        2460.0,
+        7510.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 5,
+      "waypoint": "gift-alt-PP53-1"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "japansuperweaponadvanced",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        2920.0,
+        7170.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 6,
+      "waypoint": "SWA61"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "japansuperweaponadvanced",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        3820.0,
+        6670.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 6,
+      "waypoint": "gift-alt-SWA61-1"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "sovietsuperweaponadvanced",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        1840.0,
+        6590.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 6,
+      "waypoint": "SWA62"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "sovietsuperweaponadvanced",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        2880.0,
+        6890.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 6,
+      "waypoint": "gift-alt-SWA62-1"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "sovietsuperweapon",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        2640.0,
+        7230.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 6,
+      "waypoint": "SW63"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "sovietsuperweapon",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        3540.0,
+        6770.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 6,
+      "waypoint": "gift-alt-SW63-1"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "alliedpowerplant",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        3680.0,
+        6010.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 6,
+      "waypoint": "PP61"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "alliedpowerplant",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        520.0,
+        4690.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 6,
+      "waypoint": "gift-alt-PP61-1"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "alliedpowerplant",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        3120.0,
+        4750.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 6,
+      "waypoint": "PP62"
+    },
+    {
+      "changed": false,
+      "degrees": 45,
+      "from_radians": 0.7853981852531433,
+      "kind": "alliedpowerplant",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        3740.0,
+        3870.0
+      ],
+      "radians": 0.7853981852531433,
+      "seat": 6,
+      "waypoint": "gift-alt-PP62-1"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "alliedpowerplant",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        2320.0,
+        6950.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 6,
+      "waypoint": "PP63"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "alliedpowerplant",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        2600.0,
+        6950.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 6,
+      "waypoint": "gift-alt-PP63-1"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "alliedsuperweaponadvanced",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        2920.0,
+        7170.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 6,
+      "waypoint": "SWA61"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "alliedsuperweaponadvanced",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        3820.0,
+        6670.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 6,
+      "waypoint": "gift-alt-SWA61-1"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "sovietsuperweaponadvanced",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        1840.0,
+        6590.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 6,
+      "waypoint": "SWA62"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "sovietsuperweaponadvanced",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        2880.0,
+        6890.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 6,
+      "waypoint": "gift-alt-SWA62-1"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "sovietsuperweapon",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        2640.0,
+        7230.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 6,
+      "waypoint": "SW63"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "sovietsuperweapon",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        3540.0,
+        6770.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 6,
+      "waypoint": "gift-alt-SW63-1"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "japanpowerplant",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        3680.0,
+        6010.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 6,
+      "waypoint": "PP61"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "japanpowerplant",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        520.0,
+        4690.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 6,
+      "waypoint": "gift-alt-PP61-1"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "japanpowerplant",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        3120.0,
+        4750.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 6,
+      "waypoint": "PP62"
+    },
+    {
+      "changed": false,
+      "degrees": 45,
+      "from_radians": 0.7853981852531433,
+      "kind": "japanpowerplant",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        3740.0,
+        3870.0
+      ],
+      "radians": 0.7853981852531433,
+      "seat": 6,
+      "waypoint": "gift-alt-PP62-1"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "japanpowerplant",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        2320.0,
+        6950.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 6,
+      "waypoint": "PP63"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "japanpowerplant",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        2600.0,
+        6950.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 6,
+      "waypoint": "gift-alt-PP63-1"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "japansuperweaponadvanced",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        2920.0,
+        7170.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 6,
+      "waypoint": "SWA61"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "japansuperweaponadvanced",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        3820.0,
+        6670.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 6,
+      "waypoint": "gift-alt-SWA61-1"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "alliedsuperweaponadvanced",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        1840.0,
+        6590.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 6,
+      "waypoint": "SWA62"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "alliedsuperweaponadvanced",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        2880.0,
+        6890.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 6,
+      "waypoint": "gift-alt-SWA62-1"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "sovietpowerplant",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        3680.0,
+        6010.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 6,
+      "waypoint": "PP61"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "sovietpowerplant",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        520.0,
+        4690.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 6,
+      "waypoint": "gift-alt-PP61-1"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "sovietpowerplant",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        3120.0,
+        4750.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 6,
+      "waypoint": "PP62"
+    },
+    {
+      "changed": false,
+      "degrees": 45,
+      "from_radians": 0.7853981852531433,
+      "kind": "sovietpowerplant",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        3740.0,
+        3870.0
+      ],
+      "radians": 0.7853981852531433,
+      "seat": 6,
+      "waypoint": "gift-alt-PP62-1"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "sovietpowerplant",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        2320.0,
+        6950.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 6,
+      "waypoint": "PP63"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "sovietpowerplant",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        2600.0,
+        6950.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 6,
+      "waypoint": "gift-alt-PP63-1"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "japansuperweaponadvanced",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        2920.0,
+        7170.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 6,
+      "waypoint": "SWA61"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "japansuperweaponadvanced",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        3820.0,
+        6670.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 6,
+      "waypoint": "gift-alt-SWA61-1"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "sovietsuperweaponadvanced",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        1840.0,
+        6590.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 6,
+      "waypoint": "SWA62"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "sovietsuperweaponadvanced",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        2880.0,
+        6890.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 6,
+      "waypoint": "gift-alt-SWA62-1"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "sovietsuperweapon",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        2640.0,
+        7230.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 6,
+      "waypoint": "SW63"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "sovietsuperweapon",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        3540.0,
+        6770.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 6,
+      "waypoint": "gift-alt-SW63-1"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "alliedpowerplant",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        3680.0,
+        6010.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 6,
+      "waypoint": "PP61"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "alliedpowerplant",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        520.0,
+        4690.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 6,
+      "waypoint": "gift-alt-PP61-1"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "alliedpowerplant",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        3120.0,
+        4750.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 6,
+      "waypoint": "PP62"
+    },
+    {
+      "changed": false,
+      "degrees": 45,
+      "from_radians": 0.7853981852531433,
+      "kind": "alliedpowerplant",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        3740.0,
+        3870.0
+      ],
+      "radians": 0.7853981852531433,
+      "seat": 6,
+      "waypoint": "gift-alt-PP62-1"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "alliedpowerplant",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        2320.0,
+        6950.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 6,
+      "waypoint": "PP63"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "alliedpowerplant",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        2600.0,
+        6950.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 6,
+      "waypoint": "gift-alt-PP63-1"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "alliedsuperweaponadvanced",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        2920.0,
+        7170.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 6,
+      "waypoint": "SWA61"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "alliedsuperweaponadvanced",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        3820.0,
+        6670.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 6,
+      "waypoint": "gift-alt-SWA61-1"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "sovietsuperweaponadvanced",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        1840.0,
+        6590.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 6,
+      "waypoint": "SWA62"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "sovietsuperweaponadvanced",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        2880.0,
+        6890.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 6,
+      "waypoint": "gift-alt-SWA62-1"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "sovietsuperweapon",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        2640.0,
+        7230.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 6,
+      "waypoint": "SW63"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "sovietsuperweapon",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        3540.0,
+        6770.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 6,
+      "waypoint": "gift-alt-SW63-1"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "japanpowerplant",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        3680.0,
+        6010.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 6,
+      "waypoint": "PP61"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "japanpowerplant",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        520.0,
+        4690.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 6,
+      "waypoint": "gift-alt-PP61-1"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "japanpowerplant",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        3120.0,
+        4750.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 6,
+      "waypoint": "PP62"
+    },
+    {
+      "changed": false,
+      "degrees": 45,
+      "from_radians": 0.7853981852531433,
+      "kind": "japanpowerplant",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        3740.0,
+        3870.0
+      ],
+      "radians": 0.7853981852531433,
+      "seat": 6,
+      "waypoint": "gift-alt-PP62-1"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "japanpowerplant",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        2320.0,
+        6950.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 6,
+      "waypoint": "PP63"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "japanpowerplant",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        2600.0,
+        6950.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 6,
+      "waypoint": "gift-alt-PP63-1"
+    },
+    {
+      "changed": false,
+      "degrees": 45,
+      "from_radians": 0.7853981852531433,
+      "kind": "japansuperweaponadvanced",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        200.0,
+        3970.0
+      ],
+      "radians": 0.7853981852531433,
+      "seat": 7,
+      "waypoint": "SWA71"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "japansuperweaponadvanced",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        3840.0,
+        4150.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 7,
+      "waypoint": "gift-alt-SWA71-1"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "alliedsuperweaponadvanced",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        2840.0,
+        4470.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 7,
+      "waypoint": "SWA72"
+    },
+    {
+      "changed": false,
+      "degrees": 45,
+      "from_radians": 0.7853981852531433,
+      "kind": "alliedsuperweaponadvanced",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        3820.0,
+        2110.0
+      ],
+      "radians": 0.7853981852531433,
+      "seat": 7,
+      "waypoint": "gift-alt-SWA72-1"
+    },
+    {
+      "changed": false,
+      "degrees": 45,
+      "from_radians": 0.7853981852531433,
+      "kind": "sovietpowerplant",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        2000.0,
+        3390.0
+      ],
+      "radians": 0.7853981852531433,
+      "seat": 7,
+      "waypoint": "PP71"
+    },
+    {
+      "changed": false,
+      "degrees": 45,
+      "from_radians": 0.7853981852531433,
+      "kind": "sovietpowerplant",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        4060.0,
+        2970.0
+      ],
+      "radians": 0.7853981852531433,
+      "seat": 7,
+      "waypoint": "gift-alt-PP71-1"
+    },
+    {
+      "changed": false,
+      "degrees": 45,
+      "from_radians": 0.7853981852531433,
+      "kind": "sovietpowerplant",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        260.0,
+        3410.0
+      ],
+      "radians": 0.7853981852531433,
+      "seat": 7,
+      "waypoint": "PP72"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "sovietpowerplant",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        800.0,
+        4630.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 7,
+      "waypoint": "gift-alt-PP72-1"
+    },
+    {
+      "changed": false,
+      "degrees": 45,
+      "from_radians": 0.7853981852531433,
+      "kind": "sovietpowerplant",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        640.0,
+        3750.0
+      ],
+      "radians": 0.7853981852531433,
+      "seat": 7,
+      "waypoint": "PP73"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "sovietpowerplant",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        1180.0,
+        4170.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 7,
+      "waypoint": "gift-alt-PP73-1"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "japansuperweaponadvanced",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        2920.0,
+        7170.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 6,
+      "waypoint": "SWA61"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "japansuperweaponadvanced",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        3820.0,
+        6670.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 6,
+      "waypoint": "gift-alt-SWA61-1"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "sovietsuperweaponadvanced",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        1840.0,
+        6590.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 6,
+      "waypoint": "SWA62"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "sovietsuperweaponadvanced",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        2880.0,
+        6890.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 6,
+      "waypoint": "gift-alt-SWA62-1"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "sovietsuperweapon",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        2640.0,
+        7230.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 6,
+      "waypoint": "SW63"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "sovietsuperweapon",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        3540.0,
+        6770.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 6,
+      "waypoint": "gift-alt-SW63-1"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "alliedpowerplant",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        3680.0,
+        6010.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 6,
+      "waypoint": "PP61"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "alliedpowerplant",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        520.0,
+        4690.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 6,
+      "waypoint": "gift-alt-PP61-1"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "alliedpowerplant",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        3120.0,
+        4750.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 6,
+      "waypoint": "PP62"
+    },
+    {
+      "changed": false,
+      "degrees": 45,
+      "from_radians": 0.7853981852531433,
+      "kind": "alliedpowerplant",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        3740.0,
+        3870.0
+      ],
+      "radians": 0.7853981852531433,
+      "seat": 6,
+      "waypoint": "gift-alt-PP62-1"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "alliedpowerplant",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        2320.0,
+        6950.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 6,
+      "waypoint": "PP63"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "alliedpowerplant",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        2600.0,
+        6950.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 6,
+      "waypoint": "gift-alt-PP63-1"
+    },
+    {
+      "changed": false,
+      "degrees": 45,
+      "from_radians": 0.7853981852531433,
+      "kind": "alliedsuperweaponadvanced",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        3460.0,
+        670.0
+      ],
+      "radians": 0.7853981852531433,
+      "seat": 8,
+      "waypoint": "SWA81"
+    },
+    {
+      "changed": false,
+      "degrees": 45,
+      "from_radians": 0.7853981852531433,
+      "kind": "alliedsuperweaponadvanced",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        3460.0,
+        950.0
+      ],
+      "radians": 0.7853981852531433,
+      "seat": 8,
+      "waypoint": "gift-alt-SWA81-1"
+    },
+    {
+      "changed": false,
+      "degrees": 45,
+      "from_radians": 0.7853981852531433,
+      "kind": "sovietsuperweaponadvanced",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        1200.0,
+        930.0
+      ],
+      "radians": 0.7853981852531433,
+      "seat": 8,
+      "waypoint": "SWA82"
+    },
+    {
+      "changed": false,
+      "degrees": 45,
+      "from_radians": 0.7853981852531433,
+      "kind": "sovietsuperweaponadvanced",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        3740.0,
+        670.0
+      ],
+      "radians": 0.7853981852531433,
+      "seat": 8,
+      "waypoint": "gift-alt-SWA82-1"
+    },
+    {
+      "changed": false,
+      "degrees": 45,
+      "from_radians": 0.7853981852531433,
+      "kind": "sovietsuperweapon",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        1480.0,
+        750.0
+      ],
+      "radians": 0.7853981852531433,
+      "seat": 8,
+      "waypoint": "SW83"
+    },
+    {
+      "changed": false,
+      "degrees": 45,
+      "from_radians": 0.7853981852531433,
+      "kind": "sovietsuperweapon",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        4020.0,
+        670.0
+      ],
+      "radians": 0.7853981852531433,
+      "seat": 8,
+      "waypoint": "gift-alt-SW83-1"
+    },
+    {
+      "changed": false,
+      "degrees": 45,
+      "from_radians": 0.7853981852531433,
+      "kind": "japanpowerplant",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        1520.0,
+        470.0
+      ],
+      "radians": 0.7853981852531433,
+      "seat": 8,
+      "waypoint": "PP81"
+    },
+    {
+      "changed": false,
+      "degrees": 45,
+      "from_radians": 0.7853981852531433,
+      "kind": "japanpowerplant",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        4020.0,
+        390.0
+      ],
+      "radians": 0.7853981852531433,
+      "seat": 8,
+      "waypoint": "gift-alt-PP81-1"
+    },
+    {
+      "changed": false,
+      "degrees": 45,
+      "from_radians": 0.7853981852531433,
+      "kind": "japanpowerplant",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        200.0,
+        190.0
+      ],
+      "radians": 0.7853981852531433,
+      "seat": 8,
+      "waypoint": "PP82"
+    },
+    {
+      "changed": false,
+      "degrees": 45,
+      "from_radians": 0.7853981852531433,
+      "kind": "japanpowerplant",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        1200.0,
+        190.0
+      ],
+      "radians": 0.7853981852531433,
+      "seat": 8,
+      "waypoint": "gift-alt-PP82-1"
+    },
+    {
+      "changed": false,
+      "degrees": 45,
+      "from_radians": 0.7853981852531433,
+      "kind": "japanpowerplant",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        480.0,
+        190.0
+      ],
+      "radians": 0.7853981852531433,
+      "seat": 8,
+      "waypoint": "PP83"
+    },
+    {
+      "changed": false,
+      "degrees": 45,
+      "from_radians": 0.7853981852531433,
+      "kind": "japanpowerplant",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        200.0,
+        750.0
+      ],
+      "radians": 0.7853981852531433,
+      "seat": 8,
+      "waypoint": "gift-alt-PP83-1"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "japansuperweaponadvanced",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        2920.0,
+        7170.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 6,
+      "waypoint": "SWA61"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "japansuperweaponadvanced",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        3820.0,
+        6670.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 6,
+      "waypoint": "gift-alt-SWA61-1"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "alliedsuperweaponadvanced",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        1840.0,
+        6590.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 6,
+      "waypoint": "SWA62"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "alliedsuperweaponadvanced",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        2880.0,
+        6890.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 6,
+      "waypoint": "gift-alt-SWA62-1"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "sovietpowerplant",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        3680.0,
+        6010.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 6,
+      "waypoint": "PP61"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "sovietpowerplant",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        520.0,
+        4690.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 6,
+      "waypoint": "gift-alt-PP61-1"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "sovietpowerplant",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        3120.0,
+        4750.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 6,
+      "waypoint": "PP62"
+    },
+    {
+      "changed": false,
+      "degrees": 45,
+      "from_radians": 0.7853981852531433,
+      "kind": "sovietpowerplant",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        3740.0,
+        3870.0
+      ],
+      "radians": 0.7853981852531433,
+      "seat": 6,
+      "waypoint": "gift-alt-PP62-1"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "sovietpowerplant",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        2320.0,
+        6950.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 6,
+      "waypoint": "PP63"
+    },
+    {
+      "changed": false,
+      "degrees": -45,
+      "from_radians": -0.7853981852531433,
+      "kind": "sovietpowerplant",
+      "opposing_team_center": [
+        7455.0,
+        4020.0
+      ],
+      "position": [
+        2600.0,
+        6950.0
+      ],
+      "radians": -0.7853981852531433,
+      "seat": 6,
+      "waypoint": "gift-alt-PP63-1"
+    }
+  ],
+  "allowed_angles_degrees": [
+    45,
+    135,
+    -45,
+    -135
+  ],
+  "coordinates": "actual map waypoints in world coordinates",
+  "direction": "opposing_team_center",
+  "ingame_test": "not run",
+  "selection": "nearest legal angle toward opposing_team_center",
+  "team_source": "BASES[seat][3]",
+  "units": "radians"
+}

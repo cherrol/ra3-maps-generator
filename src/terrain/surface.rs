@@ -108,6 +108,16 @@ pub fn textures(p: &Project) -> Result<Vec<[String; 3]>> {
         .ok_or_else(|| err("missing TEX_SET"))?;
     let mut out = Vec::new();
     for row in a {
+        if let Some(name) = row.as_str() {
+            out.push(
+                crate::resources::official::terrain_row(name).ok_or_else(|| {
+                    err(format!(
+                        "official terrain lacks diffuse/normal resources for {name}"
+                    ))
+                })?,
+            );
+            continue;
+        }
         let mut names = [String::new(), String::new(), String::new()];
         for i in 0..3 {
             names[i] = row[i]
@@ -118,29 +128,34 @@ pub fn textures(p: &Project) -> Result<Vec<[String; 3]>> {
         out.push(names);
     }
     if p.string("LAYER_TEX_PRESET", "") == "mountain" {
-        for row in [
-            [
-                "Grass_NewYork01",
-                "TGrass_NewYork01",
-                "TGrass_NewYork01_NRM",
-            ],
-            ["Grass_MtRush04", "Grass_MtRush04", "Grass_MtRush04_NRM"],
-            ["Dirt_Iceland05", "TDirt_Iceland05", "TDirt_Iceland05_NRM"],
-            [
-                "Pavement_Amsterdam05",
-                "TPave_Amsterdam05",
-                "TPave_Amsterdam05_NRM",
-            ],
+        for name in [
+            "Grass_NewYork01",
+            "Grass_MtRush04",
+            "Dirt_Iceland05",
+            "Pavement_Amsterdam05",
         ] {
-            if !out.iter().any(|v| v[0] == row[0]) {
-                out.push(row.map(str::to_string));
+            if !out.iter().any(|v| v[0] == name) {
+                out.push(
+                    crate::resources::official::terrain_row(name).ok_or_else(|| {
+                        err(format!(
+                            "official terrain lacks diffuse/normal resources for {name}"
+                        ))
+                    })?,
+                );
             }
         }
     }
     if crate::terrain::texture_polish::enabled(p)? {
         for row in crate::terrain::materials::STOCK {
             if !out.iter().any(|v| v[0] == row[0]) {
-                out.push(row.map(str::to_string));
+                out.push(
+                    crate::resources::official::terrain_row(row[0]).ok_or_else(|| {
+                        err(format!(
+                            "official terrain lacks diffuse/normal resources for {}",
+                            row[0]
+                        ))
+                    })?,
+                );
             }
         }
     }

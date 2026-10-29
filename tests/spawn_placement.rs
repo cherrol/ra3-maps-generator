@@ -40,14 +40,18 @@ impl Fixture {
                     .collect(),
                 [0., 1.],
             ),
-            "southeast_northwest" => (
+            "southeast_northwest" | "southwest_northeast" => (
                 640,
                 640,
                 (0..8)
                     .map(|i| {
                         let corner = if i < 4 { 400. } else { 100. };
                         [
-                            corner + (i % 2) as f64 * 140.,
+                            if direction == "southwest_northeast" {
+                                639. - corner - (i % 2) as f64 * 140.
+                            } else {
+                                corner + (i % 2) as f64 * 140.
+                            },
                             corner + ((i % 4) / 2) as f64 * 140.,
                         ]
                     })
@@ -335,14 +339,26 @@ fn full_refinery_fixture() -> Fixture {
 }
 
 #[test]
-fn all_three_opposed_layouts_pass_on_actual_native_maps() {
-    for direction in ["east_west", "south_north", "southeast_northwest"] {
+fn canonical_opposed_layouts_and_legacy_diagnostic_pass_on_actual_native_maps() {
+    for direction in [
+        "east_west",
+        "south_north",
+        "southwest_northeast",
+        "southeast_northwest",
+    ] {
         let fixture = Fixture::new(direction);
         let report =
             spawn_placement::validate(&fixture.project, &fixture.native(), &fixture.layout)
                 .unwrap_or_else(|error| panic!("{direction}: {error}"));
         assert_eq!(report["passed"], true, "{direction}: {report}");
         assert!(report["findings"].as_array().unwrap().is_empty());
+        assert!(
+            report["orientation"]["accepted"]
+                .as_array()
+                .unwrap()
+                .iter()
+                .any(|value| value == direction)
+        );
     }
 }
 

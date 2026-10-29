@@ -1,0 +1,79 @@
+{
+  "map_id": "澳门",
+  "terrain_sha256": "67b3031e7ef7c53e766e10c06fea063e8007a9d798c9d813f5b2c1039d3f2125",
+  "changed_cells": 47,
+  "changed_water_cells": 47,
+  "images": [
+    {
+      "file": "source.png",
+      "sha256": "881d89af538243b6da16ea0f2461840922ce08eac4a1d79d70f9331f3fc2ab94",
+      "size": [
+        1104,
+        1002
+      ]
+    },
+    {
+      "file": "preview.png",
+      "sha256": "5a6a1cceb41059ed0742daab311a75798300b6859856d82677639786d9f58db3",
+      "size": [
+        1104,
+        1002
+      ]
+    },
+    {
+      "file": "preview--line.png",
+      "sha256": "63a40a2cc2707a6cd47350dee848e2d3afd8ac9072bfa6590145e826ccb85b65",
+      "size": [
+        1104,
+        1002
+      ]
+    },
+    {
+      "file": "preview--center--line.png",
+      "sha256": "57dad56c9d1c599e11fae7418402d677368db6936763c5811f6b40b398a058b2",
+      "size": [
+        1104,
+        1002
+      ]
+    }
+  ],
+  "pixels_checked": 640000,
+  "pixel_mismatches": 0,
+  "closed_waterbodies": [],
+  "waterbodies": [
+    {
+      "water_cells": 289455,
+      "bounds": [
+        20,
+        20,
+        820,
+        820
+      ],
+      "open": true,
+      "contacts": {
+        "2": 2612,
+        "1": 4608
+      }
+    }
+  ],
+  "errors": [],
+  "independent_checks_passed": true,
+  "date": "2026-10-30",
+  "overall_status": "24处本轮确认问题中本区项已修复；完整交战通行及未定范围仍待核验",
+  "confirmed_failure_sites_repaired": 2,
+  "issue_ids": [
+    36,
+    75
+  ],
+  "post_repair_interior_extended_candidates": 0,
+  "frame_clipped_extended_candidates_pending": 1,
+  "short_or_rounded_cap_candidates_pending": 1642,
+  "all_latest_requirements_passed": false,
+  "combat_route_width_verified": false,
+  "combat_routes": "待核验：预览没有绑定本版的已定交战通路，不推断10格实际通行通过",
+  "gift_buildings": "不适用：本轮纯预览，没有新增赠送落点",
+  "native_navigation_and_shore_transitions": "待可玩制作验收",
+  "repair_report": "intrusion-repair-2026-10-30.json",
+  "width_report": "width-candidates-repair-2026-10-30.json",
+  "previous_acceptance": "acceptance-2026-10-30.json"
+}

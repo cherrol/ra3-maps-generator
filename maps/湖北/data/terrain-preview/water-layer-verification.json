@@ -1,0 +1,122 @@
+{
+  "schema_version": 2,
+  "date": "2026-10-30",
+  "map_id": "湖北",
+  "rule": "SHORE.SINGLE_LAYER",
+  "baseline": "raw/before-intrusion-repair-2026-10-30",
+  "previous_report": "raw/before-intrusion-repair-2026-10-30/water-layer-verification.json",
+  "candidate_terrain_crc32": 268617697,
+  "all_applicable_passed": true,
+  "actual_arrays_and_images_verified": true,
+  "source_elevation_and_geographic_arrays_preserved": true,
+  "water_and_source_arrays_preserved": false,
+  "changed_water_cells": 49,
+  "image_crc32": {
+    "preview--center--line.png": 186108730,
+    "preview--line.png": 780962789,
+    "preview.png": 1817851012,
+    "source.png": 1335453435
+  },
+  "waterbodies": [
+    {
+      "water_cells": 4490,
+      "bounds": [
+        294,
+        70,
+        361,
+        167
+      ],
+      "open": false,
+      "contacts": {
+        "2": 328
+      },
+      "connected_to_unchanged_owner_land": true
+    },
+    {
+      "water_cells": 917,
+      "bounds": [
+        643,
+        479,
+        679,
+        521
+      ],
+      "open": false,
+      "contacts": {
+        "1": 156
+      },
+      "connected_to_unchanged_owner_land": true
+    },
+    {
+      "water_cells": 5089,
+      "bounds": [
+        593,
+        539,
+        685,
+        664
+      ],
+      "open": false,
+      "contacts": {
+        "1": 456
+      },
+      "connected_to_unchanged_owner_land": true
+    },
+    {
+      "water_cells": 827,
+      "bounds": [
+        798,
+        606,
+        820,
+        659
+      ],
+      "open": true,
+      "contacts": {
+        "1": 100
+      }
+    },
+    {
+      "water_cells": 620,
+      "bounds": [
+        519,
+        642,
+        544,
+        681
+      ],
+      "open": false,
+      "contacts": {
+        "1": 128
+      },
+      "connected_to_unchanged_owner_land": true
+    },
+    {
+      "water_cells": 1188,
+      "bounds": [
+        475,
+        732,
+        503,
+        790
+      ],
+      "open": false,
+      "contacts": {
+        "1": 172
+      },
+      "connected_to_unchanged_owner_land": true
+    },
+    {
+      "water_cells": 1299,
+      "bounds": [
+        705,
+        743,
+        753,
+        784
+      ],
+      "open": false,
+      "contacts": {
+        "2": 178
+      },
+      "connected_to_unchanged_owner_land": true
+    }
+  ],
+  "contact_method": "all current four-neighbor shore edges, full outer and inner perimeter; retained enclosed bodies keep the prior dominant owner",
+  "playable_passability_verified": false,
+  "repair_report": "intrusion-repair-2026-10-30.json"
+}

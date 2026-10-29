@@ -31,9 +31,9 @@
     700.0
   ],
   "image_crc32": {
-    "preview--center--line.png": 1468177739,
-    "preview--line.png": 2909557159,
-    "preview.png": 3784174485,
+    "preview--center--line.png": 3530352419,
+    "preview--line.png": 2213093625,
+    "preview.png": 2315540426,
     "source.png": 113811834
   },
   "layer_policy": {
@@ -47,9 +47,9 @@
     "land_layer_cell_counts": [
       0,
       0,
-      31913,
-      278763,
-      196393,
+      32148,
+      279562,
+      195359,
       115162
     ],
     "maximum_land_layers": 5,
@@ -86,10 +86,19 @@
       "fill_method": "four-neighbor BFS within playable land first, then fill the production border",
       "filled_land_cells": 0,
       "playable_land_seeds_take_priority_over_border": true,
-      "report": "raw/before-square-800/land-reference-report.json",
-      "terrain": "raw/before-square-800/land-reference.npz"
+      "report": "intrusion-reference-report.json",
+      "terrain": "intrusion-reference.npz",
+      "use_reference_water_mask": true
     },
-    "water_is_separate": true
+    "water_is_separate": true,
+    "water_layer_enclosure": {
+      "before_report": "raw/before-water-layer-enclosure/report.json",
+      "before_terrain": "raw/before-water-layer-enclosure/terrain.npz",
+      "changed_land_cells": 2302,
+      "rule": "SHORE.SINGLE_LAYER",
+      "shore_band_radius_cells": 12,
+      "verification": "water-layer-verification.json"
+    }
   },
   "map_id": "新疆",
   "map_name": "雪岭环沙",
@@ -146,6 +155,20 @@
     "minimum_lake_area_km2": 80,
     "mode": "map-local-compact-water-design",
     "ocean_channel_open_radius_cells": 3,
-    "preserve_ocean": true
+    "preserve_ocean": true,
+    "single_layer_enclosure": {
+      "before_terrain": "raw/before-water-layer-enclosure/terrain.npz",
+      "full_perimeter": true,
+      "owner_selection": "largest pre-edit shared shoreline length",
+      "rule": "SHORE.SINGLE_LAYER",
+      "shore_band_radius_cells": 12,
+      "verification": "water-layer-verification.json"
+    }
+  },
+  "terrain_shape_repair": {
+    "baseline": "raw/before-intrusion-repair-2026-10-30",
+    "combat_routes": "not yet designated",
+    "method": "scoped disk opening and adjacent-terrain merges, followed by same-owner shore reconciliation",
+    "report": "intrusion-repair-2026-10-30.json"
   }
 }

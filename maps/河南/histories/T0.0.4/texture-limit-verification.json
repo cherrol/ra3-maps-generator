@@ -1,0 +1,19 @@
+{
+  "all_four_painted_planes_and_all_navigation_build_air_vegetation_bytes_exact": true,
+  "blend_descriptions_exact": true,
+  "changed_chunks": [
+    "BlendTileData",
+    "WorldInfo"
+  ],
+  "height_objects_scripts_teams_asset_list_exact": true,
+  "native_references_valid": true,
+  "old_over_limit_package_rejected": true,
+  "release": "[CHAI]沃野奔流T0.0.4",
+  "removed_unused_textures": [
+    "Rock_Iceland02"
+  ],
+  "source": "[CHAI]沃野奔流T0.0.3",
+  "textures_after": 49,
+  "textures_before": 50,
+  "xml_atlas_tiles": 49
+}

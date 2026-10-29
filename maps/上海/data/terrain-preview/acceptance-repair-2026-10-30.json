@@ -1,0 +1,81 @@
+{
+  "map_id": "上海",
+  "terrain_sha256": "c30f14d73259819ed2be142a2afadba044bf7bbe3fdc8c6e9d9291424fff3c84",
+  "changed_cells": 94,
+  "changed_water_cells": 94,
+  "images": [
+    {
+      "file": "source.png",
+      "sha256": "46179de1808aa9c446d4194ce3710eabe29ada987b2a2def37f596480bcce7a0",
+      "size": [
+        1104,
+        1002
+      ]
+    },
+    {
+      "file": "preview.png",
+      "sha256": "4fc74460e3b2c8e589951a7306c80751c4342b15bb2baa9ae83924e58720b4ac",
+      "size": [
+        1104,
+        1002
+      ]
+    },
+    {
+      "file": "preview--line.png",
+      "sha256": "ee95f9f3dc2f46585c49594101bbe0fa263c235c3b72db7ca278d88a08db6fe8",
+      "size": [
+        1104,
+        1002
+      ]
+    },
+    {
+      "file": "preview--center--line.png",
+      "sha256": "b086f35f203e283a1af770c354c459f5d9c4dfc9d4b6f2f67b8266c796e133eb",
+      "size": [
+        1104,
+        1002
+      ]
+    }
+  ],
+  "pixels_checked": 640000,
+  "pixel_mismatches": 0,
+  "closed_waterbodies": [],
+  "waterbodies": [
+    {
+      "water_cells": 262948,
+      "bounds": [
+        20,
+        20,
+        820,
+        820
+      ],
+      "open": true,
+      "contacts": {
+        "1": 3722,
+        "2": 1011
+      }
+    }
+  ],
+  "errors": [],
+  "independent_checks_passed": true,
+  "date": "2026-10-30",
+  "overall_status": "24处本轮确认问题中本区项已修复；完整交战通行及未定范围仍待核验",
+  "confirmed_failure_sites_repaired": 4,
+  "issue_ids": [
+    12,
+    33,
+    35,
+    36
+  ],
+  "post_repair_interior_extended_candidates": 0,
+  "frame_clipped_extended_candidates_pending": 5,
+  "short_or_rounded_cap_candidates_pending": 178,
+  "all_latest_requirements_passed": false,
+  "combat_route_width_verified": false,
+  "combat_routes": "待核验：预览没有绑定本版的已定交战通路，不推断10格实际通行通过",
+  "gift_buildings": "不适用：本轮纯预览，没有新增赠送落点",
+  "native_navigation_and_shore_transitions": "待可玩制作验收",
+  "repair_report": "intrusion-repair-2026-10-30.json",
+  "width_report": "width-candidates-repair-2026-10-30.json",
+  "previous_acceptance": "acceptance-2026-10-30.json"
+}

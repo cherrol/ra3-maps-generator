@@ -26,6 +26,7 @@ fn verify_native(p: &Project) -> Result<(MapFile, HeightMap, BlendTiles)> {
     let hm = HeightMap::parse(m.get("HeightMapData")?)?;
     let bt = BlendTiles::parse(m.get("BlendTileData")?, hm.width, hm.height)?;
     let objects = map::objects(m.get("ObjectsList")?, &m.table)?;
+    crate::gameplay::ore_facing::verify(p, &m)?;
     if hm.width != p.usize("GRID", 0)
         || hm.height != p.usize("GRID_HEIGHT", hm.width)
         || hm.border as usize != p.usize("BORDER", 0)
@@ -73,6 +74,8 @@ fn verify_native(p: &Project) -> Result<(MapFile, HeightMap, BlendTiles)> {
     }
     scripts::validate(&m)?;
     crate::resources::validate_manifest(&m)?;
+    let xml = crate::pipeline::scene::read_xml(p)?;
+    crate::pipeline::scene::verify(p, &m, xml.as_deref())?;
     let layout = terrain::Layout::load(p)?;
     crate::terrain::ramp_clearance::validate(p, &m, &layout)?;
     let spawns = crate::terrain::spawn_placement::validate(p, &m, &layout)?;
@@ -146,20 +149,21 @@ pub fn accept(p: &Project) -> Result<()> {
     let water = p.number("WATER_Z", 200.);
     let mut failures = Vec::new();
     if !p.flag("TERRAIN_ONLY") {
+        let near_radius = crate::terrain::spawn_placement::policy(p)?.near_ore_radius;
         for (bi, &base) in t.layout.base_cells.iter().enumerate() {
             let near = t
                 .layout
                 .ore_cells
                 .iter()
                 .enumerate()
-                .filter(|(_, c)| (c[0] - base[0]).hypot(c[1] - base[1]) <= 62.)
+                .filter(|(_, c)| (c[0] - base[0]).hypot(c[1] - base[1]) <= near_radius)
                 .collect::<Vec<_>>();
             if near.len() != 2 {
                 failures.push(format!("P{} 近矿 {} 个，要求 2 个", bi + 1, near.len()));
             }
             for (j, ore) in near {
                 let d = (ore[0] - base[0]).hypot(ore[1] - base[1]);
-                if !p.terrain_flag("ore_beside") && !(43.5..=62.).contains(&d) {
+                if !p.terrain_flag("ore_beside") && !(43.5..=near_radius).contains(&d) {
                     failures.push(format!("P{} 近矿距离 {d:.1}", bi + 1));
                 }
                 let ang = t.layout.ore_angles[j];

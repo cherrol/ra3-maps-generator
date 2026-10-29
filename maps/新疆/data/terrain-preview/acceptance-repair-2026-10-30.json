@@ -1,0 +1,203 @@
+{
+  "map_id": "新疆",
+  "terrain_sha256": "06b3223e39d985ea1dbbd755dc745c16452d78a46d418612f9f2f5bc01217ddf",
+  "changed_cells": 27,
+  "changed_water_cells": 0,
+  "images": [
+    {
+      "file": "source.png",
+      "sha256": "466bb6d06e7dd766a71d03e49d0c905f3a5fb8e36a4180ae11e83105d16d303d",
+      "size": [
+        1104,
+        1002
+      ]
+    },
+    {
+      "file": "preview.png",
+      "sha256": "1505d23592f3539f907d3a8ec1d9cc914ab642a10b77591d8784aee923ea90a7",
+      "size": [
+        1104,
+        1002
+      ]
+    },
+    {
+      "file": "preview--line.png",
+      "sha256": "2f2a64dfac5d91890b40ca3d3763e95d96fe1301866774461e061bc13f7e3fc1",
+      "size": [
+        1104,
+        1002
+      ]
+    },
+    {
+      "file": "preview--center--line.png",
+      "sha256": "cfe2c9b801e8f298db5b053bbb8aa5d904ee8ad607c7b945465df883a18f2012",
+      "size": [
+        1104,
+        1002
+      ]
+    }
+  ],
+  "pixels_checked": 640000,
+  "pixel_mismatches": 0,
+  "closed_waterbodies": [
+    {
+      "water_cells": 927,
+      "bounds": [
+        663,
+        67,
+        718,
+        103
+      ],
+      "open": false,
+      "contacts": {
+        "3": 228
+      },
+      "connected_to_unchanged_owner_land": true
+    },
+    {
+      "water_cells": 11202,
+      "bounds": [
+        21,
+        149,
+        218,
+        246
+      ],
+      "open": false,
+      "contacts": {
+        "2": 588
+      },
+      "connected_to_unchanged_owner_land": true
+    },
+    {
+      "water_cells": 624,
+      "bounds": [
+        297,
+        168,
+        321,
+        204
+      ],
+      "open": false,
+      "contacts": {
+        "3": 120
+      },
+      "connected_to_unchanged_owner_land": true
+    },
+    {
+      "water_cells": 1371,
+      "bounds": [
+        122,
+        367,
+        190,
+        398
+      ],
+      "open": false,
+      "contacts": {
+        "4": 198
+      },
+      "connected_to_unchanged_owner_land": true
+    }
+  ],
+  "waterbodies": [
+    {
+      "water_cells": 3293,
+      "bounds": [
+        354,
+        20,
+        405,
+        100
+      ],
+      "open": true,
+      "contacts": {
+        "3": 225
+      }
+    },
+    {
+      "water_cells": 352,
+      "bounds": [
+        697,
+        20,
+        724,
+        40
+      ],
+      "open": true,
+      "contacts": {
+        "3": 74
+      }
+    },
+    {
+      "water_cells": 927,
+      "bounds": [
+        663,
+        67,
+        718,
+        103
+      ],
+      "open": false,
+      "contacts": {
+        "3": 228
+      },
+      "connected_to_unchanged_owner_land": true
+    },
+    {
+      "water_cells": 11202,
+      "bounds": [
+        21,
+        149,
+        218,
+        246
+      ],
+      "open": false,
+      "contacts": {
+        "2": 588
+      },
+      "connected_to_unchanged_owner_land": true
+    },
+    {
+      "water_cells": 624,
+      "bounds": [
+        297,
+        168,
+        321,
+        204
+      ],
+      "open": false,
+      "contacts": {
+        "3": 120
+      },
+      "connected_to_unchanged_owner_land": true
+    },
+    {
+      "water_cells": 1371,
+      "bounds": [
+        122,
+        367,
+        190,
+        398
+      ],
+      "open": false,
+      "contacts": {
+        "4": 198
+      },
+      "connected_to_unchanged_owner_land": true
+    }
+  ],
+  "errors": [],
+  "independent_checks_passed": true,
+  "date": "2026-10-30",
+  "overall_status": "24处本轮确认问题中本区项已修复；完整交战通行及未定范围仍待核验",
+  "confirmed_failure_sites_repaired": 1,
+  "issue_ids": [
+    16
+  ],
+  "post_repair_interior_extended_candidates": 0,
+  "frame_clipped_extended_candidates_pending": 4,
+  "short_or_rounded_cap_candidates_pending": 697,
+  "all_latest_requirements_passed": false,
+  "combat_route_width_verified": false,
+  "combat_routes": "待核验：预览没有绑定本版的已定交战通路，不推断10格实际通行通过",
+  "gift_buildings": "不适用：本轮纯预览，没有新增赠送落点",
+  "native_navigation_and_shore_transitions": "待可玩制作验收",
+  "repair_report": "intrusion-repair-2026-10-30.json",
+  "width_report": "width-candidates-repair-2026-10-30.json",
+  "previous_acceptance": "acceptance-2026-10-30.json"
+}

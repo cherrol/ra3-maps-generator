@@ -11,7 +11,8 @@ use std::collections::BTreeMap;
 
 const COMMAND: &str = "CREATE_UNNAMED_ON_TEAM_AT_WAYPOINT_WITH_ORIENTATION";
 const DIRECTION: &str = "opposing_team_center";
-const ALLOWED_DEGREES: [i32; 4] = [45, 135, -45, -135];
+/// Shared native headings for buildings and OreNode acceptance.
+pub const ALLOWED_DEGREES: [i32; 4] = [45, 135, -45, -135];
 
 fn enabled(p: &Project) -> Result<bool> {
     let common: Json = serde_json::from_slice(&std::fs::read(
@@ -30,7 +31,7 @@ fn enabled(p: &Project) -> Result<bool> {
     Ok(true)
 }
 
-fn gifted_building(kind: &str) -> bool {
+pub(crate) fn gifted_building(kind: &str) -> bool {
     let kind = kind.to_ascii_lowercase();
     [
         "barracks",
@@ -44,7 +45,7 @@ fn gifted_building(kind: &str) -> bool {
         || kind.contains("superweapon")
 }
 
-fn seat(team: &str) -> Result<usize> {
+pub(crate) fn seat(team: &str) -> Result<usize> {
     let owner = team.split('/').next().unwrap().trim_start_matches("team");
     match owner {
         "PlyrCivilian" => Ok(7),
@@ -86,14 +87,18 @@ fn angle_offset(n: &Node) -> Result<usize> {
     Ok(angle)
 }
 
-struct Context {
+pub(crate) struct Context {
     points: BTreeMap<String, [f64; 2]>,
     targets: [[f64; 2]; 8],
 }
 impl Context {
-    fn load(p: &Project, map: &MapFile) -> Result<Self> {
+    pub(crate) fn load(p: &Project, map: &MapFile) -> Result<Self> {
+        Self::from_objects(p, &map::objects(map.get("ObjectsList")?, &map.table)?)
+    }
+
+    pub(crate) fn from_objects(p: &Project, objects: &[map::MapObject]) -> Result<Self> {
         let mut points = BTreeMap::new();
-        for o in map::objects(map.get("ObjectsList")?, &map.table)? {
+        for o in objects {
             if let Some(name) = prop(&o.props, "waypointName").and_then(Value::text)
                 && points
                     .insert(
@@ -142,6 +147,18 @@ impl Context {
             }
         }
         Ok(Self { points, targets })
+    }
+
+    pub(crate) fn candidate_heading(
+        &self,
+        frame: &crate::coordinates::Frame,
+        seat: usize,
+        cell: [f64; 2],
+    ) -> Result<f32> {
+        if !(1..=8).contains(&seat) {
+            return Err(err("official placement requires a valid gift seat"));
+        }
+        heading(frame.world(cell), self.targets[seat - 1])
     }
     fn visit(&self, nodes: &mut [Node], change: bool, entries: &mut Vec<Json>) -> Result<()> {
         for n in nodes {

@@ -31,9 +31,9 @@
     700.0
   ],
   "image_crc32": {
-    "preview--center--line.png": 42845483,
-    "preview--line.png": 2184957306,
-    "preview.png": 3722849725,
+    "preview--center--line.png": 4054694339,
+    "preview--line.png": 305115911,
+    "preview.png": 93533077,
     "source.png": 2863051452
   },
   "layer_policy": {
@@ -46,8 +46,8 @@
     "land_layer_cell_counts": [
       0,
       176038,
-      267636,
-      187044,
+      267066,
+      187614,
       0,
       0
     ],
@@ -85,10 +85,18 @@
       "fill_method": "four-neighbor BFS within playable land first, then fill the production border",
       "filled_land_cells": 0,
       "playable_land_seeds_take_priority_over_border": true,
-      "report": "raw/before-square-800/land-reference-report.json",
-      "terrain": "raw/before-square-800/land-reference.npz"
+      "report": "water-layer-reference-report.json",
+      "terrain": "water-layer-reference.npz"
     },
-    "water_is_separate": true
+    "water_is_separate": true,
+    "water_layer_enclosure": {
+      "before_report": "raw/before-water-layer-enclosure/report.json",
+      "before_terrain": "raw/before-water-layer-enclosure/terrain.npz",
+      "changed_land_cells": 570,
+      "rule": "SHORE.SINGLE_LAYER",
+      "shore_band_radius_cells": 12,
+      "verification": "water-layer-verification.json"
+    }
   },
   "map_id": "湖南",
   "map_name": "群峰抱泽",
@@ -143,6 +151,14 @@
     "minimum_lake_area_km2": 80,
     "mode": "map-local-compact-water-design",
     "ocean_channel_open_radius_cells": 3,
-    "preserve_ocean": true
+    "preserve_ocean": true,
+    "single_layer_enclosure": {
+      "before_terrain": "raw/before-water-layer-enclosure/terrain.npz",
+      "full_perimeter": true,
+      "owner_selection": "largest pre-edit shared shoreline length",
+      "rule": "SHORE.SINGLE_LAYER",
+      "shore_band_radius_cells": 12,
+      "verification": "water-layer-verification.json"
+    }
   }
 }

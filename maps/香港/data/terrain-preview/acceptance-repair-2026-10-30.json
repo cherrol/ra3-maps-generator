@@ -1,0 +1,79 @@
+{
+  "map_id": "香港",
+  "terrain_sha256": "150ed9d17c26812bdfe2bcf3b76d2ba65128f26c343023fd8a098f25bae8f902",
+  "changed_cells": 42,
+  "changed_water_cells": 3,
+  "images": [
+    {
+      "file": "source.png",
+      "sha256": "e03da83807d67875f559fd3a86f4c0f066683e5edd9687ccf23172c4c3beac75",
+      "size": [
+        1104,
+        1002
+      ]
+    },
+    {
+      "file": "preview.png",
+      "sha256": "6e3063623edc0d835a7efb6b1eddf3e74000189368878adc60cecbebab9e92f2",
+      "size": [
+        1104,
+        1002
+      ]
+    },
+    {
+      "file": "preview--line.png",
+      "sha256": "a9ee1e678b79936caab640c2307a334f4165da3d908689498612096fa6dc0871",
+      "size": [
+        1104,
+        1002
+      ]
+    },
+    {
+      "file": "preview--center--line.png",
+      "sha256": "2e8f95cf12e70fd8a59c2d511e3a4acf9fb03fd65c360e761afbb25bb7c2ae28",
+      "size": [
+        1104,
+        1002
+      ]
+    }
+  ],
+  "pixels_checked": 640000,
+  "pixel_mismatches": 0,
+  "closed_waterbodies": [],
+  "waterbodies": [
+    {
+      "water_cells": 344824,
+      "bounds": [
+        20,
+        20,
+        820,
+        820
+      ],
+      "open": true,
+      "contacts": {
+        "1": 8134,
+        "2": 89
+      }
+    }
+  ],
+  "errors": [],
+  "independent_checks_passed": true,
+  "date": "2026-10-30",
+  "overall_status": "24处本轮确认问题中本区项已修复；完整交战通行及未定范围仍待核验",
+  "confirmed_failure_sites_repaired": 2,
+  "issue_ids": [
+    64,
+    125
+  ],
+  "post_repair_interior_extended_candidates": 0,
+  "frame_clipped_extended_candidates_pending": 0,
+  "short_or_rounded_cap_candidates_pending": 1628,
+  "all_latest_requirements_passed": false,
+  "combat_route_width_verified": false,
+  "combat_routes": "待核验：预览没有绑定本版的已定交战通路，不推断10格实际通行通过",
+  "gift_buildings": "不适用：本轮纯预览，没有新增赠送落点",
+  "native_navigation_and_shore_transitions": "待可玩制作验收",
+  "repair_report": "intrusion-repair-2026-10-30.json",
+  "width_report": "width-candidates-repair-2026-10-30.json",
+  "previous_acceptance": "acceptance-2026-10-30.json"
+}

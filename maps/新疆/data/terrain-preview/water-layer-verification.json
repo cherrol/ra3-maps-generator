@@ -1,0 +1,107 @@
+{
+  "schema_version": 2,
+  "date": "2026-10-30",
+  "map_id": "新疆",
+  "rule": "SHORE.SINGLE_LAYER",
+  "baseline": "raw/before-intrusion-repair-2026-10-30",
+  "previous_report": "raw/before-intrusion-repair-2026-10-30/water-layer-verification.json",
+  "candidate_terrain_crc32": 470932547,
+  "all_applicable_passed": true,
+  "actual_arrays_and_images_verified": true,
+  "source_elevation_and_geographic_arrays_preserved": true,
+  "water_and_source_arrays_preserved": true,
+  "changed_water_cells": 0,
+  "image_crc32": {
+    "preview--center--line.png": 3530352419,
+    "preview--line.png": 2213093625,
+    "preview.png": 2315540426,
+    "source.png": 113811834
+  },
+  "waterbodies": [
+    {
+      "water_cells": 3293,
+      "bounds": [
+        354,
+        20,
+        405,
+        100
+      ],
+      "open": true,
+      "contacts": {
+        "3": 225
+      }
+    },
+    {
+      "water_cells": 352,
+      "bounds": [
+        697,
+        20,
+        724,
+        40
+      ],
+      "open": true,
+      "contacts": {
+        "3": 74
+      }
+    },
+    {
+      "water_cells": 927,
+      "bounds": [
+        663,
+        67,
+        718,
+        103
+      ],
+      "open": false,
+      "contacts": {
+        "3": 228
+      },
+      "connected_to_unchanged_owner_land": true
+    },
+    {
+      "water_cells": 11202,
+      "bounds": [
+        21,
+        149,
+        218,
+        246
+      ],
+      "open": false,
+      "contacts": {
+        "2": 588
+      },
+      "connected_to_unchanged_owner_land": true
+    },
+    {
+      "water_cells": 624,
+      "bounds": [
+        297,
+        168,
+        321,
+        204
+      ],
+      "open": false,
+      "contacts": {
+        "3": 120
+      },
+      "connected_to_unchanged_owner_land": true
+    },
+    {
+      "water_cells": 1371,
+      "bounds": [
+        122,
+        367,
+        190,
+        398
+      ],
+      "open": false,
+      "contacts": {
+        "4": 198
+      },
+      "connected_to_unchanged_owner_land": true
+    }
+  ],
+  "contact_method": "all current four-neighbor shore edges, full outer and inner perimeter; retained enclosed bodies keep the prior dominant owner",
+  "playable_passability_verified": false,
+  "repair_report": "intrusion-repair-2026-10-30.json"
+}

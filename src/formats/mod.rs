@@ -4,3 +4,4 @@ pub mod binary;
 pub mod map;
 pub mod npy;
 pub mod refpack;
+pub mod xml;

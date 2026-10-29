@@ -1,0 +1,221 @@
+{
+  "map_id": "湖北",
+  "date": "2026-10-30",
+  "terrain_sha256": "7e099c9b6531d73c56900d84f1de5f71c5413c19d090db962177fc5f7311bc7d",
+  "report_sha256": "4b8b856191c2bc0b696fdd2489e0fab3779919c02219f7f3aa7da590a356fbbf",
+  "frame": {
+    "border": 20,
+    "cell_size": 10.0,
+    "height": 840,
+    "width": 840,
+    "z_scale": 0.0390625
+  },
+  "active_land_layers": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "layer_counts": {
+    "3": 223028,
+    "2": 83490,
+    "1": 313089,
+    "0": 14479,
+    "4": 5914
+  },
+  "images": [
+    {
+      "file": "source.png",
+      "sha256": "b768a6572f32d7ce4af5b382a83358e11db7f50197611f15cb87ce46e252de7b",
+      "crc32": 2184779069,
+      "size": [
+        1104,
+        1002
+      ],
+      "passed": true
+    },
+    {
+      "file": "preview.png",
+      "sha256": "8e1e68ae1dba1c0c2536e8d89624e76f52504899aec33905912c2a447b2c587e",
+      "crc32": 1068078806,
+      "size": [
+        1104,
+        1002
+      ],
+      "passed": true
+    },
+    {
+      "file": "preview--line.png",
+      "sha256": "2b15f7e31a225a3c255941184766b600f42239dbf1f7acfd34430c9ffc8f4808",
+      "crc32": 686555779,
+      "size": [
+        1104,
+        1002
+      ],
+      "passed": true
+    },
+    {
+      "file": "preview--center--line.png",
+      "sha256": "3bf3629a9cb9e179a0d5aa7938d73fc644983accfef327f26c958c94a97b36a7",
+      "crc32": 1061425564,
+      "size": [
+        1104,
+        1002
+      ],
+      "passed": true
+    }
+  ],
+  "preview_pixels_checked": 640000,
+  "preview_pixel_mismatches": 0,
+  "pixel_mismatch_samples": [],
+  "waterbodies": [
+    {
+      "water_cells": 4490,
+      "bounds": [
+        294,
+        70,
+        361,
+        167
+      ],
+      "open": false,
+      "contacts": {
+        "2": 328
+      }
+    },
+    {
+      "water_cells": 943,
+      "bounds": [
+        643,
+        479,
+        679,
+        529
+      ],
+      "open": false,
+      "contacts": {
+        "1": 172
+      }
+    },
+    {
+      "water_cells": 5112,
+      "bounds": [
+        593,
+        531,
+        685,
+        664
+      ],
+      "open": false,
+      "contacts": {
+        "1": 472
+      }
+    },
+    {
+      "water_cells": 827,
+      "bounds": [
+        798,
+        606,
+        820,
+        659
+      ],
+      "open": true,
+      "contacts": {
+        "1": 100
+      }
+    },
+    {
+      "water_cells": 620,
+      "bounds": [
+        519,
+        642,
+        544,
+        681
+      ],
+      "open": false,
+      "contacts": {
+        "1": 128
+      }
+    },
+    {
+      "water_cells": 1188,
+      "bounds": [
+        475,
+        732,
+        503,
+        790
+      ],
+      "open": false,
+      "contacts": {
+        "1": 172
+      }
+    },
+    {
+      "water_cells": 1299,
+      "bounds": [
+        705,
+        743,
+        753,
+        784
+      ],
+      "open": false,
+      "contacts": {
+        "2": 178
+      }
+    }
+  ],
+  "enclosed_waterbodies": 6,
+  "single_layer_errors": [],
+  "existing_image_array_and_shore_checks": "通过",
+  "errors": [],
+  "candidate_widths": "width scan in separate native report",
+  "combat_routes": "待核验：预览未提供绑定本版设计数组的已定交战路线，不推断10格净宽通过",
+  "gift_buildings": "不适用：本次仅验收设计预览；没有预览赠送落点，不等同于现有可玩成品的赠送排除通过",
+  "native_passability_and_shore_transitions": "待可玩制作原生验收，预览色块不证明通行",
+  "overall_status": "失败",
+  "schema_version": 1,
+  "policy": {
+    "combat_route_minimum_width_cells": 10.0,
+    "intrusion_minimum_width_cells": 5.0,
+    "exclude_gift_buildings_from_intrusions": true
+  },
+  "policy_sha256": "e2a689249a33b6d6a56348ac53a7eccc748d886e3591c0dc04c953d5f7d08aa9",
+  "confirmed_width_failures": [
+    {
+      "candidate_id": 17,
+      "kind": "水域",
+      "bounds_full_grid": [
+        666,
+        520,
+        668,
+        529
+      ],
+      "minimum_sampled_width_cells": 1.4142135623730951,
+      "status": "失败"
+    },
+    {
+      "candidate_id": 18,
+      "kind": "水域",
+      "bounds_full_grid": [
+        666,
+        531,
+        668,
+        540
+      ],
+      "minimum_sampled_width_cells": 1.4142135623730951,
+      "status": "失败"
+    }
+  ],
+  "width_evidence": "width-candidates-2026-10-30.json",
+  "width_diagnostic": "width-diagnostics-2026-10-30.png",
+  "extended_candidate_records": 2,
+  "short_candidate_records": 815,
+  "source_arrays_and_images_preserved": true,
+  "checks": {
+    "PREVIEW.GRID": "通过",
+    "PREVIEW.ARRAY_IMAGE_CONSISTENCY": "通过",
+    "SHORE.SINGLE_LAYER": "通过",
+    "TERRAIN.INTRUSIONS": "失败",
+    "TERRAIN.ROUTE_WIDTH": "待核验",
+    "GAMEPLAY.GIFT_TERRAIN": "不适用",
+    "SHORE.NATIVE_PERIMETER": "待可玩制作验收"
+  },
+  "acceptance_boundary": "本轮为34地区设计预览重新验收。普通预览没有绑定本版数组的已定交战路线、坡道及实体阻挡，不能判定10格实际净宽通过；没有赠送建筑落点，赠送排除不适用。可玩成品另验，不借用旧成品路线代替当前预览。四向筛查保留所有短断面及裁切候选，不将无延伸候选等同完整形态通过。"
+}

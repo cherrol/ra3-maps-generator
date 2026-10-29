@@ -10,6 +10,20 @@ use std::{
 
 type LandLayers = (Vec<u8>, Vec<f64>, Vec<f64>, Value);
 
+/// Explicit, versioned design water replaces only the sampled water mask.
+/// `layers` subsequently verifies the same reference's DEM, frame and province.
+pub(super) fn design_water(base: &Path, cfg: &Value, shape: &[usize]) -> Result<Option<Vec<bool>>> {
+    match cfg.get("use_reference_water_mask") {
+        None | Some(Value::Bool(false)) => return Ok(None),
+        Some(Value::Bool(true)) => (),
+        _ => return Err(err("use_reference_water_mask 须为布尔值")),
+    }
+    let files = unzip(&fs::read(reference_path(base, cfg, "terrain")?)?)?;
+    let mask =
+        mask_array(&files, "water_mask", shape)?.ok_or_else(|| err("设计参考缺少 water_mask"))?;
+    Ok(Some(mask))
+}
+
 fn reference_path(base: &Path, cfg: &Value, key: &str) -> Result<PathBuf> {
     let value = cfg[key]
         .as_str()
@@ -155,6 +169,7 @@ pub(super) fn layers(
     policy["land_layer_cell_counts"] = json!(counts);
     policy["water_design_land_reference"] = json!({
         "terrain":cfg["terrain"], "report":cfg["report"],
+        "use_reference_water_mask":cfg["use_reference_water_mask"].as_bool().unwrap_or(false),
         "existing_land_layers_preserved":true,
         "filled_land_cells":old.iter().zip(water).filter(|(l,w)| **l == 0 && !**w).count(),
         "fill_method":"four-neighbor BFS within playable land first, then fill the production border",
@@ -241,6 +256,15 @@ mod tests {
         )
         .unwrap();
         let cfg = json!({"terrain":"terrain.npz","report":"report.json"});
+        assert!(design_water(&base, &cfg, &[5, 7]).unwrap().is_none());
+        let design_cfg =
+            json!({"terrain":"terrain.npz","report":"report.json","use_reference_water_mask":true});
+        assert_eq!(
+            design_water(&base, &design_cfg, &[5, 7]).unwrap().unwrap(),
+            old.iter().map(|&l| l == 0).collect::<Vec<_>>()
+        );
+        assert!(design_water(&base, &design_cfg, &[7, 5]).is_err());
+        assert!(design_water(&base, &json!({"use_reference_water_mask":"true"}), &[5, 7]).is_err());
         let mut water = vec![false; 35];
         water[2] = true;
         let land: Vec<_> = (0..35)

@@ -1,0 +1,247 @@
+{
+  "map_id": "湖北",
+  "terrain_sha256": "5abf7769c46b1abc6a57f6f1b914ea1ce7ff88eddc10808cc6ad8697b3654ebe",
+  "changed_cells": 49,
+  "changed_water_cells": 49,
+  "images": [
+    {
+      "file": "source.png",
+      "sha256": "d7b51dfafd5e48ef3129c1f349410beac5f1a51e3159b7676cdc734a32f49c52",
+      "size": [
+        1104,
+        1002
+      ]
+    },
+    {
+      "file": "preview.png",
+      "sha256": "1c9596686b2f1327fc6b36ab807da7a393f515076029eb7b7e50d29af87ebfa1",
+      "size": [
+        1104,
+        1002
+      ]
+    },
+    {
+      "file": "preview--line.png",
+      "sha256": "816b946840bd9e0570c6e1513b2bcb6e300a3ed91346a0613c24c4e5d8dc84dc",
+      "size": [
+        1104,
+        1002
+      ]
+    },
+    {
+      "file": "preview--center--line.png",
+      "sha256": "dfb218638d0f8314491d2c3dbf4757e1bba2e3d06969c854fd2013f7abe38b63",
+      "size": [
+        1104,
+        1002
+      ]
+    }
+  ],
+  "pixels_checked": 640000,
+  "pixel_mismatches": 0,
+  "closed_waterbodies": [
+    {
+      "water_cells": 4490,
+      "bounds": [
+        294,
+        70,
+        361,
+        167
+      ],
+      "open": false,
+      "contacts": {
+        "2": 328
+      },
+      "connected_to_unchanged_owner_land": true
+    },
+    {
+      "water_cells": 917,
+      "bounds": [
+        643,
+        479,
+        679,
+        521
+      ],
+      "open": false,
+      "contacts": {
+        "1": 156
+      },
+      "connected_to_unchanged_owner_land": true
+    },
+    {
+      "water_cells": 5089,
+      "bounds": [
+        593,
+        539,
+        685,
+        664
+      ],
+      "open": false,
+      "contacts": {
+        "1": 456
+      },
+      "connected_to_unchanged_owner_land": true
+    },
+    {
+      "water_cells": 620,
+      "bounds": [
+        519,
+        642,
+        544,
+        681
+      ],
+      "open": false,
+      "contacts": {
+        "1": 128
+      },
+      "connected_to_unchanged_owner_land": true
+    },
+    {
+      "water_cells": 1188,
+      "bounds": [
+        475,
+        732,
+        503,
+        790
+      ],
+      "open": false,
+      "contacts": {
+        "1": 172
+      },
+      "connected_to_unchanged_owner_land": true
+    },
+    {
+      "water_cells": 1299,
+      "bounds": [
+        705,
+        743,
+        753,
+        784
+      ],
+      "open": false,
+      "contacts": {
+        "2": 178
+      },
+      "connected_to_unchanged_owner_land": true
+    }
+  ],
+  "waterbodies": [
+    {
+      "water_cells": 4490,
+      "bounds": [
+        294,
+        70,
+        361,
+        167
+      ],
+      "open": false,
+      "contacts": {
+        "2": 328
+      },
+      "connected_to_unchanged_owner_land": true
+    },
+    {
+      "water_cells": 917,
+      "bounds": [
+        643,
+        479,
+        679,
+        521
+      ],
+      "open": false,
+      "contacts": {
+        "1": 156
+      },
+      "connected_to_unchanged_owner_land": true
+    },
+    {
+      "water_cells": 5089,
+      "bounds": [
+        593,
+        539,
+        685,
+        664
+      ],
+      "open": false,
+      "contacts": {
+        "1": 456
+      },
+      "connected_to_unchanged_owner_land": true
+    },
+    {
+      "water_cells": 827,
+      "bounds": [
+        798,
+        606,
+        820,
+        659
+      ],
+      "open": true,
+      "contacts": {
+        "1": 100
+      }
+    },
+    {
+      "water_cells": 620,
+      "bounds": [
+        519,
+        642,
+        544,
+        681
+      ],
+      "open": false,
+      "contacts": {
+        "1": 128
+      },
+      "connected_to_unchanged_owner_land": true
+    },
+    {
+      "water_cells": 1188,
+      "bounds": [
+        475,
+        732,
+        503,
+        790
+      ],
+      "open": false,
+      "contacts": {
+        "1": 172
+      },
+      "connected_to_unchanged_owner_land": true
+    },
+    {
+      "water_cells": 1299,
+      "bounds": [
+        705,
+        743,
+        753,
+        784
+      ],
+      "open": false,
+      "contacts": {
+        "2": 178
+      },
+      "connected_to_unchanged_owner_land": true
+    }
+  ],
+  "errors": [],
+  "independent_checks_passed": true,
+  "date": "2026-10-30",
+  "overall_status": "24处本轮确认问题中本区项已修复；完整交战通行及未定范围仍待核验",
+  "confirmed_failure_sites_repaired": 2,
+  "issue_ids": [
+    17,
+    18
+  ],
+  "post_repair_interior_extended_candidates": 0,
+  "frame_clipped_extended_candidates_pending": 0,
+  "short_or_rounded_cap_candidates_pending": 798,
+  "all_latest_requirements_passed": false,
+  "combat_route_width_verified": false,
+  "combat_routes": "待核验：预览没有绑定本版的已定交战通路，不推断10格实际通行通过",
+  "gift_buildings": "不适用：本轮纯预览，没有新增赠送落点",
+  "native_navigation_and_shore_transitions": "待可玩制作验收",
+  "repair_report": "intrusion-repair-2026-10-30.json",
+  "width_report": "width-candidates-repair-2026-10-30.json",
+  "previous_acceptance": "acceptance-2026-10-30.json"
+}

@@ -317,6 +317,19 @@ pub fn generate(
             land[i] = x >= b && x < f.w - b && y >= b && y < f.h - b && !water[i];
         }
     }
+    if let Some(reference) = cfg.get("water_design_land_reference")
+        && let Some(design) = water_design::design_water(
+            &map_dir.join("data/terrain-preview"),
+            reference,
+            &[f.h, f.w],
+        )?
+    {
+        water = design;
+        for (i, cell) in land.iter_mut().enumerate() {
+            let (x, y) = (i % f.w, i / f.w);
+            *cell = x >= b && x < f.w - b && y >= b && y < f.h - b && !water[i];
+        }
+    }
     if !land.iter().any(|&m| m) {
         return Err(err("蓝图游戏范围内没有陆地高程"));
     }
@@ -479,6 +492,7 @@ pub fn generate(
                 "source_playable_cells":[crop[2]-crop[0],crop[3]-crop[1]]},
             "elevation_thresholds_m":thresholds,"game_layer_heights":heights,"processing":parameters,
             "layer_policy":layer_policy,
+            "terrain_shape_repair":cfg.get("terrain_shape_repair").cloned().unwrap_or(Value::Null),
             "water_policy":cfg.get("water_policy").cloned().unwrap_or(Value::Null),
             "scope":"entire rectangle including terrain outside the prototype outline; no province-based clipping",
             "final_images":images.iter().map(|(n,_)|*n).collect::<Vec<_>>(),

@@ -1,0 +1,314 @@
+[
+  {
+    "map_id": "上海",
+    "candidate_id": 12,
+    "kind": "水域",
+    "bounds_full_grid": [
+      555,
+      365,
+      558,
+      378
+    ],
+    "minimum_sampled_width_cells": 1.0,
+    "status": "失败"
+  },
+  {
+    "map_id": "上海",
+    "candidate_id": 33,
+    "kind": "第1层",
+    "bounds_full_grid": [
+      142,
+      64,
+      148,
+      67
+    ],
+    "minimum_sampled_width_cells": 2.8284271247461903,
+    "status": "失败"
+  },
+  {
+    "map_id": "上海",
+    "candidate_id": 35,
+    "kind": "第1层",
+    "bounds_full_grid": [
+      179,
+      146,
+      185,
+      148
+    ],
+    "minimum_sampled_width_cells": 1.0,
+    "status": "失败"
+  },
+  {
+    "map_id": "上海",
+    "candidate_id": 36,
+    "kind": "第1层",
+    "bounds_full_grid": [
+      193,
+      61,
+      199,
+      64
+    ],
+    "minimum_sampled_width_cells": 1.0,
+    "status": "失败"
+  },
+  {
+    "map_id": "内蒙古",
+    "candidate_id": 15,
+    "kind": "第1层",
+    "bounds_full_grid": [
+      671,
+      651,
+      673,
+      658
+    ],
+    "minimum_sampled_width_cells": 1.0,
+    "status": "失败"
+  },
+  {
+    "map_id": "内蒙古",
+    "candidate_id": 35,
+    "kind": "第1层",
+    "bounds_full_grid": [
+      779,
+      785,
+      784,
+      794
+    ],
+    "minimum_sampled_width_cells": 1.0,
+    "status": "失败"
+  },
+  {
+    "map_id": "内蒙古",
+    "candidate_id": 57,
+    "kind": "第1层",
+    "bounds_full_grid": [
+      636,
+      689,
+      642,
+      692
+    ],
+    "minimum_sampled_width_cells": 1.4142135623730951,
+    "status": "失败"
+  },
+  {
+    "map_id": "吉林",
+    "candidate_id": 29,
+    "kind": "第1层",
+    "bounds_full_grid": [
+      739,
+      607,
+      742,
+      615
+    ],
+    "minimum_sampled_width_cells": 1.0,
+    "status": "失败"
+  },
+  {
+    "map_id": "吉林",
+    "candidate_id": 31,
+    "kind": "第2层",
+    "bounds_full_grid": [
+      705,
+      653,
+      708,
+      661
+    ],
+    "minimum_sampled_width_cells": 1.0,
+    "status": "失败"
+  },
+  {
+    "map_id": "山西",
+    "candidate_id": 6,
+    "kind": "第2层",
+    "bounds_full_grid": [
+      145,
+      689,
+      152,
+      691
+    ],
+    "minimum_sampled_width_cells": 1.0,
+    "status": "失败"
+  },
+  {
+    "map_id": "新疆",
+    "candidate_id": 16,
+    "kind": "第2层",
+    "bounds_full_grid": [
+      320,
+      159,
+      323,
+      165
+    ],
+    "minimum_sampled_width_cells": 1.0,
+    "status": "失败"
+  },
+  {
+    "map_id": "河北",
+    "candidate_id": 12,
+    "kind": "第2层",
+    "bounds_full_grid": [
+      448,
+      275,
+      455,
+      280
+    ],
+    "minimum_sampled_width_cells": 1.0,
+    "status": "失败"
+  },
+  {
+    "map_id": "湖北",
+    "candidate_id": 17,
+    "kind": "水域",
+    "bounds_full_grid": [
+      666,
+      520,
+      668,
+      529
+    ],
+    "minimum_sampled_width_cells": 1.4142135623730951,
+    "status": "失败"
+  },
+  {
+    "map_id": "湖北",
+    "candidate_id": 18,
+    "kind": "水域",
+    "bounds_full_grid": [
+      666,
+      531,
+      668,
+      540
+    ],
+    "minimum_sampled_width_cells": 1.4142135623730951,
+    "status": "失败"
+  },
+  {
+    "map_id": "澳门",
+    "candidate_id": 36,
+    "kind": "水域",
+    "bounds_full_grid": [
+      600,
+      410,
+      606,
+      420
+    ],
+    "minimum_sampled_width_cells": 1.0,
+    "status": "失败"
+  },
+  {
+    "map_id": "澳门",
+    "candidate_id": 75,
+    "kind": "第1层",
+    "bounds_full_grid": [
+      189,
+      485,
+      195,
+      487
+    ],
+    "minimum_sampled_width_cells": 1.0,
+    "status": "失败"
+  },
+  {
+    "map_id": "福建",
+    "candidate_id": 18,
+    "kind": "第1层",
+    "bounds_full_grid": [
+      741,
+      228,
+      744,
+      236
+    ],
+    "minimum_sampled_width_cells": 1.0,
+    "status": "失败"
+  },
+  {
+    "map_id": "福建",
+    "candidate_id": 151,
+    "kind": "第1层",
+    "bounds_full_grid": [
+      569,
+      493,
+      579,
+      497
+    ],
+    "minimum_sampled_width_cells": 1.0,
+    "status": "失败"
+  },
+  {
+    "map_id": "福建",
+    "candidate_id": 157,
+    "kind": "第3层",
+    "bounds_full_grid": [
+      618,
+      292,
+      630,
+      293
+    ],
+    "minimum_sampled_width_cells": 4.0,
+    "status": "失败"
+  },
+  {
+    "map_id": "福建",
+    "candidate_id": 167,
+    "kind": "第3层",
+    "bounds_full_grid": [
+      636,
+      292,
+      642,
+      294
+    ],
+    "minimum_sampled_width_cells": 1.4142135623730951,
+    "status": "失败"
+  },
+  {
+    "map_id": "青海",
+    "candidate_id": 10,
+    "kind": "第4层",
+    "bounds_full_grid": [
+      70,
+      385,
+      72,
+      394
+    ],
+    "minimum_sampled_width_cells": 1.0,
+    "status": "失败"
+  },
+  {
+    "map_id": "青海",
+    "candidate_id": 27,
+    "kind": "第5层",
+    "bounds_full_grid": [
+      57,
+      720,
+      59,
+      727
+    ],
+    "minimum_sampled_width_cells": 1.0,
+    "status": "失败"
+  },
+  {
+    "map_id": "香港",
+    "candidate_id": 64,
+    "kind": "第1层",
+    "bounds_full_grid": [
+      342,
+      402,
+      345,
+      408
+    ],
+    "minimum_sampled_width_cells": 1.4142135623730951,
+    "status": "失败"
+  },
+  {
+    "map_id": "香港",
+    "candidate_id": 125,
+    "kind": "第1层",
+    "bounds_full_grid": [
+      197,
+      648,
+      199,
+      654
+    ],
+    "minimum_sampled_width_cells": 1.0,
+    "status": "失败"
+  }
+]

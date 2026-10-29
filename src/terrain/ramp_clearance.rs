@@ -23,11 +23,11 @@ pub struct Policy {
 impl Default for Policy {
     fn default() -> Self {
         Self {
-            approach_extension: 25.,
-            gap: 8.,
-            refinery_back: 5.,
-            refinery_forward: 48.,
-            refinery_half_width: 18.,
+            approach_extension: crate::rules::number("ramp_clearance", "approach_extension"),
+            gap: crate::rules::number("ramp_clearance", "gap"),
+            refinery_back: crate::rules::number("ramp_clearance", "refinery_back"),
+            refinery_forward: crate::rules::number("ramp_clearance", "refinery_forward"),
+            refinery_half_width: crate::rules::number("ramp_clearance", "refinery_half_width"),
         }
     }
 }

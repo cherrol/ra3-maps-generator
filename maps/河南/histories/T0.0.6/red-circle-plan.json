@@ -1,0 +1,196 @@
+{
+  "schema_version": 1,
+  "reference": "user attached latest 754x755 terrain image",
+  "circle_centers_pixels": [
+    [
+      701,
+      64
+    ],
+    [
+      715,
+      259
+    ],
+    [
+      701,
+      470
+    ],
+    [
+      694,
+      667
+    ],
+    [
+      42,
+      44
+    ],
+    [
+      34,
+      236
+    ],
+    [
+      32,
+      406
+    ],
+    [
+      34,
+      710
+    ]
+  ],
+  "image_size": [
+    754,
+    755
+  ],
+  "base_cells": [
+    [
+      763.0,
+      129.0
+    ],
+    [
+      779.0,
+      294.0
+    ],
+    [
+      764.0,
+      518.0
+    ],
+    [
+      756.0,
+      727.0
+    ],
+    [
+      65.0,
+      55.0
+    ],
+    [
+      48.0,
+      261.5
+    ],
+    [
+      53.0,
+      450.0
+    ],
+    [
+      55.0,
+      772.0
+    ]
+  ],
+  "order": "P1-P4 east north to south; P5-P8 west north to south",
+  "user_approved": "保留小湖，出生点在圆圈附近小幅内移",
+  "team_area_policy": "explicit user east/west circles override default balanced orientation; actual water/land split measured independently",
+  "marked_base_cells": [
+    [
+      764,
+      88
+    ],
+    [
+      779,
+      294
+    ],
+    [
+      764,
+      518
+    ],
+    [
+      756,
+      727
+    ],
+    [
+      65,
+      67
+    ],
+    [
+      56,
+      270
+    ],
+    [
+      54,
+      450
+    ],
+    [
+      56,
+      772
+    ]
+  ],
+  "final_base_cells": [
+    [
+      763.0,
+      129.0
+    ],
+    [
+      779.0,
+      294.0
+    ],
+    [
+      764.0,
+      518.0
+    ],
+    [
+      756.0,
+      727.0
+    ],
+    [
+      65.0,
+      55.0
+    ],
+    [
+      48.0,
+      261.5
+    ],
+    [
+      53.0,
+      450.0
+    ],
+    [
+      55.0,
+      772.0
+    ]
+  ],
+  "native_sha256": "92fa436cee1a5f28ae9c9fb9e198de20533b245b246a8767ae214b369d89da70",
+  "movement_cells": [
+    41.012193308819754,
+    0.0,
+    0.0,
+    0.0,
+    12.0,
+    11.672617529928752,
+    1.0,
+    1.0
+  ],
+  "current_release": "[CHAI]沃野奔流T0.0.6",
+  "current_native_sha256": "d3c04978b80d7104046384a1469b10ca8eabb4b120c99e3203093fc42027fb64",
+  "current_base_cells": [
+    [
+      763.0,
+      129.0
+    ],
+    [
+      779.0,
+      294.0
+    ],
+    [
+      764.0,
+      518.0
+    ],
+    [
+      756.0,
+      727.0
+    ],
+    [
+      65.0,
+      55.0
+    ],
+    [
+      48.0,
+      261.5
+    ],
+    [
+      53.0,
+      450.0
+    ],
+    [
+      55.0,
+      772.0
+    ]
+  ],
+  "base_coordinates_unchanged_from": "T0.0.5",
+  "original_plan_preserved": true
+}

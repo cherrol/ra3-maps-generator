@@ -1,0 +1,90 @@
+{
+  "actual_arrays_and_images_verified": true,
+  "all_applicable_passed": true,
+  "before_terrain_crc32": 474419185,
+  "candidate_terrain_crc32": 474419185,
+  "changed": false,
+  "changed_land_cells": 0,
+  "contact_method": "pre-edit four-neighbor shared edges, 10 world units per edge; diagonals excluded; full inner and outer perimeter",
+  "date": "2026-10-29",
+  "image_crc32": {
+    "preview--center--line.png": 4275253114,
+    "preview--line.png": 2747073168,
+    "preview.png": 790931293,
+    "source.png": 1113163335
+  },
+  "map_id": "广西",
+  "original_input_crc32": 1040507517,
+  "outside_recorded_band_layers_preserved": true,
+  "playable_passability_status": "待核验：纯预览，缓坡与导航在可玩制作阶段验收",
+  "playable_passability_verified": false,
+  "rule": "SHORE.SINGLE_LAYER",
+  "scope": "all fully enclosed waterbodies in this batch; open/frame-clipped components listed separately",
+  "shore_band_method": "union of Euclidean disks around all land-side shore cells, clipped to playable land",
+  "shore_band_radius_cells": 12,
+  "size_basis": "per-map enclosed components listed below; no global lake-area threshold",
+  "source_image_preserved": true,
+  "water_and_source_arrays_preserved": true,
+  "waterbodies": [
+    {
+      "applicable": false,
+      "bounds_xy_exclusive": [
+        633,
+        687,
+        820,
+        820
+      ],
+      "contacts_after": {
+        "1": {
+          "length_world": 3640,
+          "shared_edges": 364
+        }
+      },
+      "contacts_before": {
+        "1": {
+          "length_world": 3640,
+          "shared_edges": 364
+        }
+      },
+      "id": 0,
+      "reason": "frame-clipped/open water; not a fully enclosed small waterbody; no artificial closure",
+      "status": "不适用",
+      "touches_frame": true,
+      "water_cells": 14763
+    },
+    {
+      "applicable": false,
+      "bounds_xy_exclusive": [
+        343,
+        697,
+        580,
+        820
+      ],
+      "contacts_after": {
+        "1": {
+          "length_world": 5650,
+          "shared_edges": 565
+        },
+        "2": {
+          "length_world": 20,
+          "shared_edges": 2
+        }
+      },
+      "contacts_before": {
+        "1": {
+          "length_world": 5650,
+          "shared_edges": 565
+        },
+        "2": {
+          "length_world": 20,
+          "shared_edges": 2
+        }
+      },
+      "id": 1,
+      "reason": "frame-clipped/open water; not a fully enclosed small waterbody; no artificial closure",
+      "status": "不适用",
+      "touches_frame": true,
+      "water_cells": 20204
+    }
+  ]
+}

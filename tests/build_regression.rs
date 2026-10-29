@@ -253,8 +253,6 @@ fn ordinary_build_uses_the_accepted_profile_without_changing_gameplay() {
         .unwrap()
         .text()
         .unwrap();
-    assert!(tokens.contains("TRock_Iceland02;TRock_Iceland02_nrm;"));
-    assert!(tokens.contains("TRock_Yucatan03;TRock_Yucatan03_nrm;"));
     for chunk in &legacy.chunks {
         let name = &legacy.table[&chunk.name_idx];
         if !["BlendTileData", "WorldInfo", "AssetList"].contains(&name.as_str()) {
@@ -270,15 +268,40 @@ fn ordinary_build_uses_the_accepted_profile_without_changing_gameplay() {
     );
     let old = BlendTiles::parse(legacy.get("BlendTileData").unwrap(), n, n).unwrap();
     let new = BlendTiles::parse(actual.get("BlendTileData").unwrap(), n, n).unwrap();
-    assert!(new.textures.starts_with(&old.textures));
-    for primary in ra3maps::terrain::materials::PRIMARY {
-        assert!(new.textures.iter().any(|name| name == primary));
+    assert!(new.textures.len() <= ra3maps::resources::terrain_package::MAX_TEXTURES);
+    let mut catalog = ra3maps::terrain::surface::textures(&p).unwrap();
+    catalog.extend(ra3maps::terrain::materials::STOCK.map(|row| row.map(str::to_owned)));
+    let mut expected_tokens = String::new();
+    for name in &new.textures {
+        let row = catalog.iter().find(|row| row[0] == *name).unwrap();
+        expected_tokens.push_str(&format!("{};{};", row[1], row[2]));
     }
+    assert_eq!(tokens, expected_tokens);
+    let mut finalized = actual.clone();
+    let clean = ra3maps::resources::terrain_package::compact(&mut finalized).unwrap();
+    assert_eq!((clean.unused_textures, clean.removed_textures), (0, 0));
+    assert!(!clean.changed);
     assert_ne!(old.tiles, new.tiles);
     let report: Value =
         serde_json::from_slice(&fs::read(p.assets.join("texture-report.json")).unwrap()).unwrap();
     assert_eq!(report["profile"], texture_polish::PROFILE);
     assert_eq!(report["reference_version"], "T2.2.9");
+    assert_eq!(
+        report["finalization"]["texture_families"],
+        serde_json::json!(new.textures)
+    );
+    assert_eq!(
+        report["finalization"]["compaction"]["textures_after"],
+        new.textures.len()
+    );
+    let index: Value =
+        serde_json::from_slice(&fs::read(p.assets.join("layout-index.json")).unwrap()).unwrap();
+    assert_eq!(index["source_map"], format!("{}.map", p.name));
+    assert!(
+        index["provenance"]
+            .as_str()
+            .is_some_and(|text| !text.is_empty())
+    );
     assert_eq!(
         report["palette_revision"],
         ra3maps::terrain::materials::REVISION
@@ -355,6 +378,50 @@ fn all_four_native_builds_match_the_checked_map_baselines_without_python() {
         let bytes = fs::read(p.assets.join(format!("{}.map", p.name))).unwrap();
         let plain = refpack::unpack(&bytes).unwrap();
         let map = MapFile::decode(&plain).unwrap();
+        let frame = ra3maps::coordinates::Frame::from_heightmap(
+            &p,
+            &ra3maps::formats::map::HeightMap::parse(map.get("HeightMapData").unwrap()).unwrap(),
+        )
+        .unwrap();
+        let objects =
+            ra3maps::formats::map::objects(map.get("ObjectsList").unwrap(), &map.table).unwrap();
+        let rules = ra3maps::gameplay::scripts::load_rules(&p).unwrap();
+        if !rules.spawn_waypoints.is_empty() {
+            let waypoint_report: Value =
+                serde_json::from_slice(&fs::read(p.assets.join("script_waypoints.json")).unwrap())
+                    .unwrap();
+            assert_eq!(
+                waypoint_report.as_array().unwrap().len(),
+                rules.spawn_waypoints.len()
+            );
+            for entry in waypoint_report.as_array().unwrap() {
+                let object = objects
+                    .iter()
+                    .find(|o| {
+                        ra3maps::formats::map::prop(&o.props, "waypointName")
+                            .and_then(ra3maps::formats::map::Value::text)
+                            == entry["waypoint"].as_str()
+                    })
+                    .unwrap();
+                let cell = frame.grid([object.position[0] as f64, object.position[1] as f64]);
+                assert_eq!(
+                    serde_json::from_value::<[f64; 2]>(entry["cell"].clone()).unwrap(),
+                    cell,
+                    "{id}: {entry}"
+                );
+            }
+        }
+        let layout: ra3maps::terrain::Layout =
+            serde_json::from_slice(&fs::read(p.source().join("layout.json")).unwrap()).unwrap();
+        for cell in &layout.shipyard_cells {
+            assert!(
+                objects.iter().any(|o| {
+                    (o.type_name == "ShipyardTechStructure" || o.type_name.ends_with("NavalYard"))
+                        && frame.grid([o.position[0] as f64, o.position[1] as f64]) == *cell
+                }),
+                "{id}: stale shipyard classification {cell:?}"
+            );
+        }
         ra3maps::gameplay::production_facing::validate(&p, &map).unwrap();
         let facing: Value =
             serde_json::from_slice(&fs::read(p.assets.join("production-facing.json")).unwrap())
@@ -757,23 +824,38 @@ fn production_release_repairs_water_factory_and_preserves_all_other_map_chunks()
             .unwrap();
     // The source releases exported by other tools may put whitespace before />.
     files.insert(xml_key, xml.replace("/>", " />").into_bytes());
+    let mut overridden = files.clone();
+    overridden.insert(
+        format!("{}/overrides.xml", p.name),
+        b"<AssetDeclaration xmlns='uri:ea.com:eala:asset'><AIData id='AIData' DeepWaterDepth='100'/></AssetDeclaration>".to_vec(),
+    );
+    let overridden_source = temp.0.join("overridden-water-factory.zip");
+    fs::write(
+        &overridden_source,
+        archive::zip(&overridden.into_iter().collect::<Vec<_>>()).unwrap(),
+    )
+    .unwrap();
+    let version_path = project::version_path(&temp.0, "广西");
+    let version_bytes = fs::read(&version_path).unwrap();
+    let options = Options {
+        bump: true,
+        note: "修复赠送建筑落点".into(),
+        ..Options::default()
+    };
+    assert!(
+        release::repair_production(&temp.0, "广西", &overridden_source, &options)
+            .unwrap_err()
+            .to_string()
+            .contains("official placement failed")
+    );
+    assert_eq!(fs::read(version_path).unwrap(), version_bytes);
     let source = temp.0.join("water-factory.zip");
     fs::write(
         &source,
         archive::zip(&files.into_iter().collect::<Vec<_>>()).unwrap(),
     )
     .unwrap();
-    let released = release::repair_production(
-        &temp.0,
-        "广西",
-        &source,
-        &Options {
-            bump: true,
-            note: "修复赠送建筑落点".into(),
-            ..Options::default()
-        },
-    )
-    .unwrap();
+    let released = release::repair_production(&temp.0, "广西", &source, &options).unwrap();
     let repaired = MapFile::load(released.assets.join(format!("{}.map", released.name))).unwrap();
     ra3maps::gameplay::gift_clearance::validate(&released, &repaired).unwrap();
     // A terrain edit must reserve complete primary and fallback foundations,
@@ -802,6 +884,15 @@ fn production_release_repairs_water_factory_and_preserves_all_other_map_chunks()
             .filter(|v| v["moved"] == true)
             .count(),
         1
+    );
+    let scene: Value =
+        serde_json::from_slice(&fs::read(released.assets.join("scene-report.json")).unwrap())
+            .unwrap();
+    assert_eq!(scene["official_placement"]["enforced"], true);
+    assert_eq!(scene["official_placement"]["passed"], true);
+    assert_eq!(
+        scene["effective_bindings"]["placement"]["settings"]["scope"],
+        "production_repair"
     );
     let strings = fs::read_to_string(released.assets.join("map.str")).unwrap();
     assert!(strings.contains(&format!("版本 {}", released.version)));

@@ -7,6 +7,8 @@ __pycache__/
 /work/
 /target/
 /archive/
+# Third-party game data mirror, rebuild with tools/fetch_ea_modding.sh.
+/data/
 
 # Track playable-map inputs, preview reproduction data and version archives.
 /maps/*
@@ -37,6 +39,7 @@ __pycache__/
 !/maps/*/histories/[TV][0-9]*/*.u16
 !/maps/*/histories/[TV][0-9]*/*.u8
 !/maps/*/histories/[TV][0-9]*/*.txt
+!/maps/*/histories/[TV][0-9]*/acceptance.md
 !/maps/*/histories/[TV][0-9]*/source.zip
 !/maps/陕西/histories/T0.5.1/\[CHAI\]叠岭连原T0.5.1--rebuild.zip
 !/maps/*/coordinate-system.json
@@ -87,6 +90,12 @@ __pycache__/
 !/maps/*/data/terrain-preview/water-shaping-report.json
 !/maps/*/data/terrain-preview/water-shaping.json
 !/maps/*/data/terrain-preview/water-verification.json
+!/maps/*/data/terrain-preview/water-layer-reference.npz
+!/maps/*/data/terrain-preview/water-layer-reference-report.json
+!/maps/*/data/terrain-preview/water-layer-verification.json
+!/maps/*/data/terrain-preview/acceptance-*.json
+!/maps/*/data/terrain-preview/width-candidates-*.json
+!/maps/*/data/terrain-preview/width-diagnostics-*.png
 
 # Retain referenced design snapshots; downloaded raster tiles and logs stay ignored.
 !/maps/*/data/terrain-preview/raw/
@@ -128,9 +137,25 @@ __pycache__/
 !/maps/*/data/terrain-preview/raw/before-square-800/land-reference.npz
 !/maps/*/data/terrain-preview/raw/before-square-800/terrain.npz
 !/maps/*/data/terrain-preview/raw/before-square-800/water-report.json
+!/maps/*/data/terrain-preview/raw/before-water-layer-enclosure/
+/maps/*/data/terrain-preview/raw/before-water-layer-enclosure/*
+!/maps/*/data/terrain-preview/raw/before-water-layer-enclosure/terrain.npz
+!/maps/*/data/terrain-preview/raw/before-water-layer-enclosure/report.json
+!/maps/*/data/terrain-preview/raw/before-water-layer-enclosure/parameters.json
 
 # Version-bound pictures of the actual playable native map.
 !/maps/*/histories/[TV][0-9]*/preview.png
 !/maps/*/histories/[TV][0-9]*/preview--layout.png
 !/maps/*/histories/[TV][0-9]*/preview--terrain.png
 !/maps/*/histories/[TV][0-9]*/preview--passability.png
+
+# Reviewed local preview-intrusion repairs and reproducible before/after inputs.
+!/maps/*/data/terrain-preview/intrusion-reference.npz
+!/maps/*/data/terrain-preview/intrusion-reference-report.json
+!/maps/*/data/terrain-preview/intrusion-repair-*.json
+!/maps/*/data/terrain-preview/raw/before-intrusion-repair-2026-10-30/
+/maps/*/data/terrain-preview/raw/before-intrusion-repair-2026-10-30/*
+!/maps/*/data/terrain-preview/raw/before-intrusion-repair-2026-10-30/terrain.npz
+!/maps/*/data/terrain-preview/raw/before-intrusion-repair-2026-10-30/report.json
+!/maps/*/data/terrain-preview/raw/before-intrusion-repair-2026-10-30/parameters.json
+!/maps/*/data/terrain-preview/raw/before-intrusion-repair-2026-10-30/water-layer-verification.json

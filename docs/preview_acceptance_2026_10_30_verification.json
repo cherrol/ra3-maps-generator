@@ -1,0 +1,721 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-30",
+  "scope": "regional design previews, read-only reacceptance against latest rules",
+  "all_latest_requirements_passed": false,
+  "maps_checked": 34,
+  "images_checked": 135,
+  "preview_pixels_checked": 21760000,
+  "existing_array_image_frame_and_water_enclosure_passed": 34,
+  "confirmed_width_failure_regions": 11,
+  "confirmed_width_failure_sections": 24,
+  "pending_regions": 23,
+  "extended_candidate_regions": 17,
+  "extended_candidate_records": 51,
+  "short_candidate_records": 18015,
+  "combat_route_width_verified": false,
+  "combat_route_missing_evidence_regions": 34,
+  "gift_placement_applicable_regions": 0,
+  "protected_files_checked": 1109,
+  "original_inputs_images_and_playable_files_unchanged": true,
+  "policy": {
+    "combat_route_minimum_width_cells": 10.0,
+    "intrusion_minimum_width_cells": 5.0,
+    "exclude_gift_buildings_from_intrusions": true
+  },
+  "policy_sha256": "e2a689249a33b6d6a56348ac53a7eccc748d886e3591c0dc04c953d5f7d08aa9",
+  "tool": "cargo run --release --locked --example preview-acceptance -- . <output-directory>",
+  "method": "Independent standard-library NPZ and PNG readback of every pixel; four-direction cell-square width witnesses and local visual review of all 51 extended candidates; no invented combat layouts. Short caps and clipped contours remain pending.",
+  "reviewed_failures": [
+    {
+      "map_id": "上海",
+      "candidate_id": 12,
+      "kind": "水域",
+      "bounds_full_grid": [
+        555,
+        365,
+        558,
+        378
+      ],
+      "minimum_sampled_width_cells": 1.0,
+      "status": "失败"
+    },
+    {
+      "map_id": "上海",
+      "candidate_id": 33,
+      "kind": "第1层",
+      "bounds_full_grid": [
+        142,
+        64,
+        148,
+        67
+      ],
+      "minimum_sampled_width_cells": 2.8284271247461903,
+      "status": "失败"
+    },
+    {
+      "map_id": "上海",
+      "candidate_id": 35,
+      "kind": "第1层",
+      "bounds_full_grid": [
+        179,
+        146,
+        185,
+        148
+      ],
+      "minimum_sampled_width_cells": 1.0,
+      "status": "失败"
+    },
+    {
+      "map_id": "上海",
+      "candidate_id": 36,
+      "kind": "第1层",
+      "bounds_full_grid": [
+        193,
+        61,
+        199,
+        64
+      ],
+      "minimum_sampled_width_cells": 1.0,
+      "status": "失败"
+    },
+    {
+      "map_id": "内蒙古",
+      "candidate_id": 15,
+      "kind": "第1层",
+      "bounds_full_grid": [
+        671,
+        651,
+        673,
+        658
+      ],
+      "minimum_sampled_width_cells": 1.0,
+      "status": "失败"
+    },
+    {
+      "map_id": "内蒙古",
+      "candidate_id": 35,
+      "kind": "第1层",
+      "bounds_full_grid": [
+        779,
+        785,
+        784,
+        794
+      ],
+      "minimum_sampled_width_cells": 1.0,
+      "status": "失败"
+    },
+    {
+      "map_id": "内蒙古",
+      "candidate_id": 57,
+      "kind": "第1层",
+      "bounds_full_grid": [
+        636,
+        689,
+        642,
+        692
+      ],
+      "minimum_sampled_width_cells": 1.4142135623730951,
+      "status": "失败"
+    },
+    {
+      "map_id": "吉林",
+      "candidate_id": 29,
+      "kind": "第1层",
+      "bounds_full_grid": [
+        739,
+        607,
+        742,
+        615
+      ],
+      "minimum_sampled_width_cells": 1.0,
+      "status": "失败"
+    },
+    {
+      "map_id": "吉林",
+      "candidate_id": 31,
+      "kind": "第2层",
+      "bounds_full_grid": [
+        705,
+        653,
+        708,
+        661
+      ],
+      "minimum_sampled_width_cells": 1.0,
+      "status": "失败"
+    },
+    {
+      "map_id": "山西",
+      "candidate_id": 6,
+      "kind": "第2层",
+      "bounds_full_grid": [
+        145,
+        689,
+        152,
+        691
+      ],
+      "minimum_sampled_width_cells": 1.0,
+      "status": "失败"
+    },
+    {
+      "map_id": "新疆",
+      "candidate_id": 16,
+      "kind": "第2层",
+      "bounds_full_grid": [
+        320,
+        159,
+        323,
+        165
+      ],
+      "minimum_sampled_width_cells": 1.0,
+      "status": "失败"
+    },
+    {
+      "map_id": "河北",
+      "candidate_id": 12,
+      "kind": "第2层",
+      "bounds_full_grid": [
+        448,
+        275,
+        455,
+        280
+      ],
+      "minimum_sampled_width_cells": 1.0,
+      "status": "失败"
+    },
+    {
+      "map_id": "湖北",
+      "candidate_id": 17,
+      "kind": "水域",
+      "bounds_full_grid": [
+        666,
+        520,
+        668,
+        529
+      ],
+      "minimum_sampled_width_cells": 1.4142135623730951,
+      "status": "失败"
+    },
+    {
+      "map_id": "湖北",
+      "candidate_id": 18,
+      "kind": "水域",
+      "bounds_full_grid": [
+        666,
+        531,
+        668,
+        540
+      ],
+      "minimum_sampled_width_cells": 1.4142135623730951,
+      "status": "失败"
+    },
+    {
+      "map_id": "澳门",
+      "candidate_id": 36,
+      "kind": "水域",
+      "bounds_full_grid": [
+        600,
+        410,
+        606,
+        420
+      ],
+      "minimum_sampled_width_cells": 1.0,
+      "status": "失败"
+    },
+    {
+      "map_id": "澳门",
+      "candidate_id": 75,
+      "kind": "第1层",
+      "bounds_full_grid": [
+        189,
+        485,
+        195,
+        487
+      ],
+      "minimum_sampled_width_cells": 1.0,
+      "status": "失败"
+    },
+    {
+      "map_id": "福建",
+      "candidate_id": 18,
+      "kind": "第1层",
+      "bounds_full_grid": [
+        741,
+        228,
+        744,
+        236
+      ],
+      "minimum_sampled_width_cells": 1.0,
+      "status": "失败"
+    },
+    {
+      "map_id": "福建",
+      "candidate_id": 151,
+      "kind": "第1层",
+      "bounds_full_grid": [
+        569,
+        493,
+        579,
+        497
+      ],
+      "minimum_sampled_width_cells": 1.0,
+      "status": "失败"
+    },
+    {
+      "map_id": "福建",
+      "candidate_id": 157,
+      "kind": "第3层",
+      "bounds_full_grid": [
+        618,
+        292,
+        630,
+        293
+      ],
+      "minimum_sampled_width_cells": 4.0,
+      "status": "失败"
+    },
+    {
+      "map_id": "福建",
+      "candidate_id": 167,
+      "kind": "第3层",
+      "bounds_full_grid": [
+        636,
+        292,
+        642,
+        294
+      ],
+      "minimum_sampled_width_cells": 1.4142135623730951,
+      "status": "失败"
+    },
+    {
+      "map_id": "青海",
+      "candidate_id": 10,
+      "kind": "第4层",
+      "bounds_full_grid": [
+        70,
+        385,
+        72,
+        394
+      ],
+      "minimum_sampled_width_cells": 1.0,
+      "status": "失败"
+    },
+    {
+      "map_id": "青海",
+      "candidate_id": 27,
+      "kind": "第5层",
+      "bounds_full_grid": [
+        57,
+        720,
+        59,
+        727
+      ],
+      "minimum_sampled_width_cells": 1.0,
+      "status": "失败"
+    },
+    {
+      "map_id": "香港",
+      "candidate_id": 64,
+      "kind": "第1层",
+      "bounds_full_grid": [
+        342,
+        402,
+        345,
+        408
+      ],
+      "minimum_sampled_width_cells": 1.4142135623730951,
+      "status": "失败"
+    },
+    {
+      "map_id": "香港",
+      "candidate_id": 125,
+      "kind": "第1层",
+      "bounds_full_grid": [
+        197,
+        648,
+        199,
+        654
+      ],
+      "minimum_sampled_width_cells": 1.0,
+      "status": "失败"
+    }
+  ],
+  "maps": [
+    {
+      "map_id": "上海",
+      "status": "失败",
+      "existing_checks": "通过",
+      "images": 4,
+      "confirmed_narrow_sections": 4,
+      "extended_candidates": 9,
+      "short_candidates": 153,
+      "report": "maps/上海/data/terrain-preview/acceptance-2026-10-30.json",
+      "diagnostic": "maps/上海/data/terrain-preview/width-diagnostics-2026-10-30.png"
+    },
+    {
+      "map_id": "云南",
+      "status": "待核验",
+      "existing_checks": "通过",
+      "images": 4,
+      "confirmed_narrow_sections": 0,
+      "extended_candidates": 0,
+      "short_candidates": 196,
+      "report": "maps/云南/data/terrain-preview/acceptance-2026-10-30.json",
+      "diagnostic": "maps/云南/data/terrain-preview/width-diagnostics-2026-10-30.png"
+    },
+    {
+      "map_id": "内蒙古",
+      "status": "失败",
+      "existing_checks": "通过",
+      "images": 4,
+      "confirmed_narrow_sections": 3,
+      "extended_candidates": 3,
+      "short_candidates": 580,
+      "report": "maps/内蒙古/data/terrain-preview/acceptance-2026-10-30.json",
+      "diagnostic": "maps/内蒙古/data/terrain-preview/width-diagnostics-2026-10-30.png"
+    },
+    {
+      "map_id": "北京",
+      "status": "待核验",
+      "existing_checks": "通过",
+      "images": 4,
+      "confirmed_narrow_sections": 0,
+      "extended_candidates": 0,
+      "short_candidates": 143,
+      "report": "maps/北京/data/terrain-preview/acceptance-2026-10-30.json",
+      "diagnostic": "maps/北京/data/terrain-preview/width-diagnostics-2026-10-30.png"
+    },
+    {
+      "map_id": "台湾",
+      "status": "待核验",
+      "existing_checks": "通过",
+      "images": 4,
+      "confirmed_narrow_sections": 0,
+      "extended_candidates": 0,
+      "short_candidates": 319,
+      "report": "maps/台湾/data/terrain-preview/acceptance-2026-10-30.json",
+      "diagnostic": "maps/台湾/data/terrain-preview/width-diagnostics-2026-10-30.png"
+    },
+    {
+      "map_id": "吉林",
+      "status": "失败",
+      "existing_checks": "通过",
+      "images": 4,
+      "confirmed_narrow_sections": 2,
+      "extended_candidates": 4,
+      "short_candidates": 541,
+      "report": "maps/吉林/data/terrain-preview/acceptance-2026-10-30.json",
+      "diagnostic": "maps/吉林/data/terrain-preview/width-diagnostics-2026-10-30.png"
+    },
+    {
+      "map_id": "四川",
+      "status": "待核验",
+      "existing_checks": "通过",
+      "images": 4,
+      "confirmed_narrow_sections": 0,
+      "extended_candidates": 0,
+      "short_candidates": 325,
+      "report": "maps/四川/data/terrain-preview/acceptance-2026-10-30.json",
+      "diagnostic": "maps/四川/data/terrain-preview/width-diagnostics-2026-10-30.png"
+    },
+    {
+      "map_id": "天津",
+      "status": "待核验",
+      "existing_checks": "通过",
+      "images": 4,
+      "confirmed_narrow_sections": 0,
+      "extended_candidates": 2,
+      "short_candidates": 216,
+      "report": "maps/天津/data/terrain-preview/acceptance-2026-10-30.json",
+      "diagnostic": "maps/天津/data/terrain-preview/width-diagnostics-2026-10-30.png"
+    },
+    {
+      "map_id": "宁夏",
+      "status": "待核验",
+      "existing_checks": "通过",
+      "images": 4,
+      "confirmed_narrow_sections": 0,
+      "extended_candidates": 0,
+      "short_candidates": 420,
+      "report": "maps/宁夏/data/terrain-preview/acceptance-2026-10-30.json",
+      "diagnostic": "maps/宁夏/data/terrain-preview/width-diagnostics-2026-10-30.png"
+    },
+    {
+      "map_id": "安徽",
+      "status": "待核验",
+      "existing_checks": "通过",
+      "images": 4,
+      "confirmed_narrow_sections": 0,
+      "extended_candidates": 2,
+      "short_candidates": 406,
+      "report": "maps/安徽/data/terrain-preview/acceptance-2026-10-30.json",
+      "diagnostic": "maps/安徽/data/terrain-preview/width-diagnostics-2026-10-30.png"
+    },
+    {
+      "map_id": "山东",
+      "status": "待核验",
+      "existing_checks": "通过",
+      "images": 4,
+      "confirmed_narrow_sections": 0,
+      "extended_candidates": 0,
+      "short_candidates": 660,
+      "report": "maps/山东/data/terrain-preview/acceptance-2026-10-30.json",
+      "diagnostic": "maps/山东/data/terrain-preview/width-diagnostics-2026-10-30.png"
+    },
+    {
+      "map_id": "山西",
+      "status": "失败",
+      "existing_checks": "通过",
+      "images": 4,
+      "confirmed_narrow_sections": 1,
+      "extended_candidates": 1,
+      "short_candidates": 759,
+      "report": "maps/山西/data/terrain-preview/acceptance-2026-10-30.json",
+      "diagnostic": "maps/山西/data/terrain-preview/width-diagnostics-2026-10-30.png"
+    },
+    {
+      "map_id": "广东",
+      "status": "待核验",
+      "existing_checks": "通过",
+      "images": 4,
+      "confirmed_narrow_sections": 0,
+      "extended_candidates": 0,
+      "short_candidates": 811,
+      "report": "maps/广东/data/terrain-preview/acceptance-2026-10-30.json",
+      "diagnostic": "maps/广东/data/terrain-preview/width-diagnostics-2026-10-30.png"
+    },
+    {
+      "map_id": "广西",
+      "status": "待核验",
+      "existing_checks": "通过",
+      "images": 4,
+      "confirmed_narrow_sections": 0,
+      "extended_candidates": 0,
+      "short_candidates": 783,
+      "report": "maps/广西/data/terrain-preview/acceptance-2026-10-30.json",
+      "diagnostic": "maps/广西/data/terrain-preview/width-diagnostics-2026-10-30.png"
+    },
+    {
+      "map_id": "新疆",
+      "status": "失败",
+      "existing_checks": "通过",
+      "images": 4,
+      "confirmed_narrow_sections": 1,
+      "extended_candidates": 5,
+      "short_candidates": 694,
+      "report": "maps/新疆/data/terrain-preview/acceptance-2026-10-30.json",
+      "diagnostic": "maps/新疆/data/terrain-preview/width-diagnostics-2026-10-30.png"
+    },
+    {
+      "map_id": "江苏",
+      "status": "待核验",
+      "existing_checks": "通过",
+      "images": 4,
+      "confirmed_narrow_sections": 0,
+      "extended_candidates": 1,
+      "short_candidates": 279,
+      "report": "maps/江苏/data/terrain-preview/acceptance-2026-10-30.json",
+      "diagnostic": "maps/江苏/data/terrain-preview/width-diagnostics-2026-10-30.png"
+    },
+    {
+      "map_id": "江西",
+      "status": "待核验",
+      "existing_checks": "通过",
+      "images": 4,
+      "confirmed_narrow_sections": 0,
+      "extended_candidates": 2,
+      "short_candidates": 758,
+      "report": "maps/江西/data/terrain-preview/acceptance-2026-10-30.json",
+      "diagnostic": "maps/江西/data/terrain-preview/width-diagnostics-2026-10-30.png"
+    },
+    {
+      "map_id": "河北",
+      "status": "失败",
+      "existing_checks": "通过",
+      "images": 4,
+      "confirmed_narrow_sections": 1,
+      "extended_candidates": 3,
+      "short_candidates": 489,
+      "report": "maps/河北/data/terrain-preview/acceptance-2026-10-30.json",
+      "diagnostic": "maps/河北/data/terrain-preview/width-diagnostics-2026-10-30.png"
+    },
+    {
+      "map_id": "河南",
+      "status": "待核验",
+      "existing_checks": "通过",
+      "images": 3,
+      "confirmed_narrow_sections": 0,
+      "extended_candidates": 0,
+      "short_candidates": 138,
+      "report": "maps/河南/data/terrain-preview/acceptance-2026-10-30.json",
+      "diagnostic": "maps/河南/data/terrain-preview/width-diagnostics-2026-10-30.png"
+    },
+    {
+      "map_id": "浙江",
+      "status": "待核验",
+      "existing_checks": "通过",
+      "images": 4,
+      "confirmed_narrow_sections": 0,
+      "extended_candidates": 0,
+      "short_candidates": 432,
+      "report": "maps/浙江/data/terrain-preview/acceptance-2026-10-30.json",
+      "diagnostic": "maps/浙江/data/terrain-preview/width-diagnostics-2026-10-30.png"
+    },
+    {
+      "map_id": "海南",
+      "status": "待核验",
+      "existing_checks": "通过",
+      "images": 4,
+      "confirmed_narrow_sections": 0,
+      "extended_candidates": 0,
+      "short_candidates": 732,
+      "report": "maps/海南/data/terrain-preview/acceptance-2026-10-30.json",
+      "diagnostic": "maps/海南/data/terrain-preview/width-diagnostics-2026-10-30.png"
+    },
+    {
+      "map_id": "湖北",
+      "status": "失败",
+      "existing_checks": "通过",
+      "images": 4,
+      "confirmed_narrow_sections": 2,
+      "extended_candidates": 2,
+      "short_candidates": 815,
+      "report": "maps/湖北/data/terrain-preview/acceptance-2026-10-30.json",
+      "diagnostic": "maps/湖北/data/terrain-preview/width-diagnostics-2026-10-30.png"
+    },
+    {
+      "map_id": "湖南",
+      "status": "待核验",
+      "existing_checks": "通过",
+      "images": 4,
+      "confirmed_narrow_sections": 0,
+      "extended_candidates": 2,
+      "short_candidates": 593,
+      "report": "maps/湖南/data/terrain-preview/acceptance-2026-10-30.json",
+      "diagnostic": "maps/湖南/data/terrain-preview/width-diagnostics-2026-10-30.png"
+    },
+    {
+      "map_id": "澳门",
+      "status": "失败",
+      "existing_checks": "通过",
+      "images": 4,
+      "confirmed_narrow_sections": 2,
+      "extended_candidates": 3,
+      "short_candidates": 1646,
+      "report": "maps/澳门/data/terrain-preview/acceptance-2026-10-30.json",
+      "diagnostic": "maps/澳门/data/terrain-preview/width-diagnostics-2026-10-30.png"
+    },
+    {
+      "map_id": "甘肃",
+      "status": "待核验",
+      "existing_checks": "通过",
+      "images": 4,
+      "confirmed_narrow_sections": 0,
+      "extended_candidates": 0,
+      "short_candidates": 425,
+      "report": "maps/甘肃/data/terrain-preview/acceptance-2026-10-30.json",
+      "diagnostic": "maps/甘肃/data/terrain-preview/width-diagnostics-2026-10-30.png"
+    },
+    {
+      "map_id": "福建",
+      "status": "失败",
+      "existing_checks": "通过",
+      "images": 4,
+      "confirmed_narrow_sections": 4,
+      "extended_candidates": 7,
+      "short_candidates": 671,
+      "report": "maps/福建/data/terrain-preview/acceptance-2026-10-30.json",
+      "diagnostic": "maps/福建/data/terrain-preview/width-diagnostics-2026-10-30.png"
+    },
+    {
+      "map_id": "西藏",
+      "status": "待核验",
+      "existing_checks": "通过",
+      "images": 4,
+      "confirmed_narrow_sections": 0,
+      "extended_candidates": 0,
+      "short_candidates": 439,
+      "report": "maps/西藏/data/terrain-preview/acceptance-2026-10-30.json",
+      "diagnostic": "maps/西藏/data/terrain-preview/width-diagnostics-2026-10-30.png"
+    },
+    {
+      "map_id": "贵州",
+      "status": "待核验",
+      "existing_checks": "通过",
+      "images": 4,
+      "confirmed_narrow_sections": 0,
+      "extended_candidates": 0,
+      "short_candidates": 256,
+      "report": "maps/贵州/data/terrain-preview/acceptance-2026-10-30.json",
+      "diagnostic": "maps/贵州/data/terrain-preview/width-diagnostics-2026-10-30.png"
+    },
+    {
+      "map_id": "辽宁",
+      "status": "待核验",
+      "existing_checks": "通过",
+      "images": 4,
+      "confirmed_narrow_sections": 0,
+      "extended_candidates": 0,
+      "short_candidates": 451,
+      "report": "maps/辽宁/data/terrain-preview/acceptance-2026-10-30.json",
+      "diagnostic": "maps/辽宁/data/terrain-preview/width-diagnostics-2026-10-30.png"
+    },
+    {
+      "map_id": "重庆",
+      "status": "待核验",
+      "existing_checks": "通过",
+      "images": 4,
+      "confirmed_narrow_sections": 0,
+      "extended_candidates": 0,
+      "short_candidates": 198,
+      "report": "maps/重庆/data/terrain-preview/acceptance-2026-10-30.json",
+      "diagnostic": "maps/重庆/data/terrain-preview/width-diagnostics-2026-10-30.png"
+    },
+    {
+      "map_id": "陕西",
+      "status": "待核验",
+      "existing_checks": "通过",
+      "images": 4,
+      "confirmed_narrow_sections": 0,
+      "extended_candidates": 1,
+      "short_candidates": 260,
+      "report": "maps/陕西/data/terrain-preview/acceptance-2026-10-30.json",
+      "diagnostic": "maps/陕西/data/terrain-preview/width-diagnostics-2026-10-30.png"
+    },
+    {
+      "map_id": "青海",
+      "status": "失败",
+      "existing_checks": "通过",
+      "images": 4,
+      "confirmed_narrow_sections": 2,
+      "extended_candidates": 2,
+      "short_candidates": 407,
+      "report": "maps/青海/data/terrain-preview/acceptance-2026-10-30.json",
+      "diagnostic": "maps/青海/data/terrain-preview/width-diagnostics-2026-10-30.png"
+    },
+    {
+      "map_id": "香港",
+      "status": "失败",
+      "existing_checks": "通过",
+      "images": 4,
+      "confirmed_narrow_sections": 2,
+      "extended_candidates": 2,
+      "short_candidates": 1627,
+      "report": "maps/香港/data/terrain-preview/acceptance-2026-10-30.json",
+      "diagnostic": "maps/香港/data/terrain-preview/width-diagnostics-2026-10-30.png"
+    },
+    {
+      "map_id": "黑龙江",
+      "status": "待核验",
+      "existing_checks": "通过",
+      "images": 4,
+      "confirmed_narrow_sections": 0,
+      "extended_candidates": 0,
+      "short_candidates": 393,
+      "report": "maps/黑龙江/data/terrain-preview/acceptance-2026-10-30.json",
+      "diagnostic": "maps/黑龙江/data/terrain-preview/width-diagnostics-2026-10-30.png"
+    }
+  ],
+  "protected_input_manifest": "preview-acceptance-2026-10-30/input-hashes.json",
+  "protected_input_manifest_sha256": "1cf84ed36037045aacf970e18391bec6a5d254fab4324c476490da6de77fc2cb"
+}

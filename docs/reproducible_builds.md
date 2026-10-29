@@ -53,6 +53,8 @@ cargo run --release --locked -- build --map 广西 --only preview
 
 第一条读取本图参数及其 `water_design_land_reference` 依赖；存在 `centers.json` 时同时重绘中心标点图。第二条在 `assets/<id>/<发布名+版本>/` 输出 `preview.png`、`preview--layout.png`、`layout-index.json` 及 `source/terrain_preview.png`、`source/passability_preview.png`。保存可玩图图片时，将这两张 `source/` 图片分别归档为 `preview--terrain.png`、`preview--passability.png`，并同步同版图片和来源指纹。
 
+小水域归层后的 10 张设计预览改由本图参数引用 `water-layer-reference.npz` 与对应报告，仍使用上述普通预览命令离线复现。修改前快照和逐水域验收记录也在同图 `data/terrain-preview/` 纳管，详见[全系列归层重绘记录](preview_water_layers.md)。
+
 NPZ 分层数据可以独立核对；要得到逐字节相同的带文字 PNG，还需使用相同字体，可通过 `RA3MAP_FONT` 指定。河南当前只有三张基础预览，没有行政中心图；可玩成品仍使用其冻结原生网格。
 
 2026-10-29 在只复制 Git 文件和本次新增受控资料的隔离目录中，34 张设计预览的 135 张现有 PNG 及全部已有 NPZ 数组逐字节复现；五张可玩图均能从冻结源生成上述图片，完整源包成员也可离线原样恢复。本轮使用 `wqy-zenhei.ttc`，SHA256 为 `79c18ebe7b811951e8311bad7103ebeae8c337ed9988ea69e8a78a66cfe029b9`。

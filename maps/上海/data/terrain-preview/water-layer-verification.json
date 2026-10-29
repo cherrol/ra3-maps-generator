@@ -1,0 +1,39 @@
+{
+  "schema_version": 2,
+  "date": "2026-10-30",
+  "map_id": "上海",
+  "rule": "SHORE.SINGLE_LAYER",
+  "baseline": "raw/before-intrusion-repair-2026-10-30",
+  "previous_report": "raw/before-intrusion-repair-2026-10-30/water-layer-verification.json",
+  "candidate_terrain_crc32": 2723717825,
+  "all_applicable_passed": true,
+  "actual_arrays_and_images_verified": true,
+  "source_elevation_and_geographic_arrays_preserved": true,
+  "water_and_source_arrays_preserved": false,
+  "changed_water_cells": 94,
+  "image_crc32": {
+    "preview--center--line.png": 793651550,
+    "preview--line.png": 819335107,
+    "preview.png": 483449970,
+    "source.png": 3138650566
+  },
+  "waterbodies": [
+    {
+      "water_cells": 262948,
+      "bounds": [
+        20,
+        20,
+        820,
+        820
+      ],
+      "open": true,
+      "contacts": {
+        "1": 3722,
+        "2": 1011
+      }
+    }
+  ],
+  "contact_method": "all current four-neighbor shore edges, full outer and inner perimeter; retained enclosed bodies keep the prior dominant owner",
+  "playable_passability_verified": false,
+  "repair_report": "intrusion-repair-2026-10-30.json"
+}

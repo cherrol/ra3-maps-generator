@@ -1,0 +1,109 @@
+{
+  "map_id": "吉林",
+  "terrain_sha256": "e9093163b639802c2e873de4f526b575f150d8c56717fc57d2006443fab94ab2",
+  "changed_cells": 52,
+  "changed_water_cells": 52,
+  "images": [
+    {
+      "file": "source.png",
+      "sha256": "f6d99ff8cd9607b95490d42709d5855495fa614e7eb1744f0837ed6d9721da02",
+      "size": [
+        1104,
+        1002
+      ]
+    },
+    {
+      "file": "preview.png",
+      "sha256": "80dcd3777b818ce190be633cfa591a37715f920da97946e48ddb2d464912e99a",
+      "size": [
+        1104,
+        1002
+      ]
+    },
+    {
+      "file": "preview--line.png",
+      "sha256": "154c260b6a35c904d764a86ea88c6cd02f204c45104ca882a2fb33dc7b738c29",
+      "size": [
+        1104,
+        1002
+      ]
+    },
+    {
+      "file": "preview--center--line.png",
+      "sha256": "3525546fc61bc937d23b1aacac62106c2deee7c0725eb715b4eaac85527d6330",
+      "size": [
+        1104,
+        1002
+      ]
+    }
+  ],
+  "pixels_checked": 640000,
+  "pixel_mismatches": 0,
+  "closed_waterbodies": [
+    {
+      "water_cells": 718,
+      "bounds": [
+        437,
+        396,
+        463,
+        439
+      ],
+      "open": false,
+      "contacts": {
+        "2": 138
+      },
+      "connected_to_unchanged_owner_land": true
+    }
+  ],
+  "waterbodies": [
+    {
+      "water_cells": 718,
+      "bounds": [
+        437,
+        396,
+        463,
+        439
+      ],
+      "open": false,
+      "contacts": {
+        "2": 138
+      },
+      "connected_to_unchanged_owner_land": true
+    },
+    {
+      "water_cells": 28514,
+      "bounds": [
+        680,
+        535,
+        820,
+        820
+      ],
+      "open": true,
+      "contacts": {
+        "1": 177,
+        "2": 83,
+        "3": 228
+      }
+    }
+  ],
+  "errors": [],
+  "independent_checks_passed": true,
+  "date": "2026-10-30",
+  "overall_status": "24处本轮确认问题中本区项已修复；完整交战通行及未定范围仍待核验",
+  "confirmed_failure_sites_repaired": 2,
+  "issue_ids": [
+    29,
+    31
+  ],
+  "post_repair_interior_extended_candidates": 0,
+  "frame_clipped_extended_candidates_pending": 2,
+  "short_or_rounded_cap_candidates_pending": 551,
+  "all_latest_requirements_passed": false,
+  "combat_route_width_verified": false,
+  "combat_routes": "待核验：预览没有绑定本版的已定交战通路，不推断10格实际通行通过",
+  "gift_buildings": "不适用：本轮纯预览，没有新增赠送落点",
+  "native_navigation_and_shore_transitions": "待可玩制作验收",
+  "repair_report": "intrusion-repair-2026-10-30.json",
+  "width_report": "width-candidates-repair-2026-10-30.json",
+  "previous_acceptance": "acceptance-2026-10-30.json"
+}

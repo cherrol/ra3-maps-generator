@@ -1,0 +1,39 @@
+{
+  "schema_version": 2,
+  "date": "2026-10-30",
+  "map_id": "澳门",
+  "rule": "SHORE.SINGLE_LAYER",
+  "baseline": "raw/before-intrusion-repair-2026-10-30",
+  "previous_report": "raw/before-intrusion-repair-2026-10-30/water-layer-verification.json",
+  "candidate_terrain_crc32": 2883522807,
+  "all_applicable_passed": true,
+  "actual_arrays_and_images_verified": true,
+  "source_elevation_and_geographic_arrays_preserved": true,
+  "water_and_source_arrays_preserved": false,
+  "changed_water_cells": 47,
+  "image_crc32": {
+    "preview--center--line.png": 1617722141,
+    "preview--line.png": 1952589209,
+    "preview.png": 69447370,
+    "source.png": 674124124
+  },
+  "waterbodies": [
+    {
+      "water_cells": 289455,
+      "bounds": [
+        20,
+        20,
+        820,
+        820
+      ],
+      "open": true,
+      "contacts": {
+        "2": 2612,
+        "1": 4608
+      }
+    }
+  ],
+  "contact_method": "all current four-neighbor shore edges, full outer and inner perimeter; retained enclosed bodies keep the prior dominant owner",
+  "playable_passability_verified": false,
+  "repair_report": "intrusion-repair-2026-10-30.json"
+}

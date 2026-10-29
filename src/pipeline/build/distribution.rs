@@ -48,6 +48,12 @@ fn publication_files(p: &Project) -> Result<Vec<(String, Vec<u8>)>> {
         .find(|(name, _)| name.ends_with(".map"))
         .unwrap();
     placement::validate_native(p, bytes, &native)?;
+    let scene_project = if placement::placement_proof(p, bytes)?.is_some() {
+        crate::pipeline::scene::incremental_context(p)?
+    } else {
+        p.clone()
+    };
+    crate::pipeline::scene::verify_files(&scene_project, &native, &files)?;
     Ok(files)
 }
 pub fn dist(p: &Project, zip: bool) -> Result<()> {

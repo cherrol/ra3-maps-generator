@@ -1,0 +1,45 @@
+{
+  "release": "[CHAI]沃野奔流T0.0.6",
+  "date": "2026-10-30",
+  "native_sha256": "d3c04978b80d7104046384a1469b10ca8eabb4b120c99e3203093fc42027fb64",
+  "zip_sha256": "c3f82ac2d094e50c4be5fcdc636853685cb2223e4814dff756c56e96da722e13",
+  "zip_bytes": 234948,
+  "files": [
+    {
+      "file": "[CHAI]沃野奔流T0.0.6.map",
+      "bytes": 294212,
+      "sha256": "d3c04978b80d7104046384a1469b10ca8eabb4b120c99e3203093fc42027fb64"
+    },
+    {
+      "file": "[CHAI]沃野奔流T0.0.6_art.tga",
+      "bytes": 786476,
+      "sha256": "7d4e5de78cbdb4b24632b0509ac0a1940c9e7fb0bca7ed0031b63fd0f3b5b899"
+    },
+    {
+      "file": "map.str",
+      "bytes": 501,
+      "sha256": "5ae0f065c18dd23f519c6cea9ce21333b1ca7e4df74ccdf4fe1479e0f2c2bc7b"
+    },
+    {
+      "file": "map.xml",
+      "bytes": 149089,
+      "sha256": "524f072d00eba243e7a099ee1ece0821aa3702bff9aeadadf1853f463d6234f1"
+    },
+    {
+      "file": "overrides.xml",
+      "bytes": 124,
+      "sha256": "e94193fa1f69987870af8bd457691172bb61d775fc6d8edd6d12b036a2ab6cad"
+    }
+  ],
+  "all_five_files_identical_assets_dist_zip_frozen_source": true,
+  "frozen_rebuild_byte_identical": true,
+  "root_blueprint_mirror_identical": true,
+  "preview_short_candidates_reviewed": 138,
+  "ore_facing": {
+    "checked": 48,
+    "failed": 0
+  },
+  "full_build_and_acceptance_passed": true,
+  "installed": false,
+  "game_launched": false
+}

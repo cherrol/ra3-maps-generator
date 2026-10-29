@@ -808,10 +808,20 @@ fn texture_polish_is_deterministic_and_preserves_all_gameplay_and_resource_data(
     assert_eq!(old.payload[bitmaps.clone()], new.payload[bitmaps]);
     let old_bt = ra3maps::formats::map::BlendTiles::parse(old, n, n).unwrap();
     let new_bt = ra3maps::formats::map::BlendTiles::parse(new, n, n).unwrap();
-    assert!(new_bt.textures.starts_with(&old_bt.textures));
-    for primary in ra3maps::terrain::materials::PRIMARY {
-        assert!(new_bt.textures.iter().any(|name| name == primary));
+    assert!(new_bt.textures.len() <= ra3maps::resources::terrain_package::MAX_TEXTURES);
+    let painted_bt =
+        ra3maps::formats::map::BlendTiles::parse(first.get("BlendTileData").unwrap(), n, n)
+            .unwrap();
+    for (&painted, &actual) in painted_bt.tiles.iter().zip(&new_bt.tiles) {
+        assert_eq!(
+            (&painted_bt.textures[painted as usize / 64], painted % 64),
+            (&new_bt.textures[actual as usize / 64], actual % 64)
+        );
     }
+    let mut finalized = result.clone();
+    let clean = ra3maps::resources::terrain_package::compact(&mut finalized).unwrap();
+    assert_eq!((clean.unused_textures, clean.removed_textures), (0, 0));
+    assert!(!clean.changed);
     assert_ne!(old_bt.tiles, new_bt.tiles);
     let descriptions = new_bt.blend_descriptions.len() / 18;
     let mut nonzero = 0;
@@ -829,6 +839,16 @@ fn texture_polish_is_deterministic_and_preserves_all_gameplay_and_resource_data(
     }
     assert!(p.assets.join("textures--comparison.png").is_file());
     assert!(p.assets.join("texture-report.json").is_file());
+    let texture_report: serde_json::Value =
+        serde_json::from_slice(&fs::read(p.assets.join("texture-report.json")).unwrap()).unwrap();
+    assert_eq!(
+        texture_report["finalization"]["texture_families"],
+        serde_json::json!(new_bt.textures)
+    );
+    assert_eq!(
+        texture_report["finalization"]["compaction"]["textures_after"],
+        new_bt.textures.len()
+    );
     assert!(p.assets.join("source/layout.json").is_file());
     let packaged = archive::unzip(&fs::read(build::zip_path(&p)).unwrap()).unwrap();
     assert_eq!(packaged.len(), 6);

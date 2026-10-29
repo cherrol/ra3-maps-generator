@@ -1,0 +1,770 @@
+[
+  {
+    "id": 35,
+    "seat": 1,
+    "ordinal": 1,
+    "before_cell": [
+      722.0,
+      84.0
+    ],
+    "cell": [
+      724,
+      82
+    ],
+    "movement": 2.8284271247461903,
+    "before_degrees": -78.74999792255016,
+    "degrees": -135
+  },
+  {
+    "id": 36,
+    "seat": 1,
+    "ordinal": 2,
+    "before_cell": [
+      762.0,
+      186.0
+    ],
+    "cell": [
+      762,
+      186
+    ],
+    "movement": 0.0,
+    "before_degrees": 90.00000250447816,
+    "degrees": 135
+  },
+  {
+    "id": 37,
+    "seat": 1,
+    "ordinal": 3,
+    "before_cell": [
+      672.0,
+      128.0
+    ],
+    "cell": [
+      672,
+      128
+    ],
+    "movement": 0.0,
+    "before_degrees": -90.00000250447816,
+    "degrees": -135
+  },
+  {
+    "id": 38,
+    "seat": 2,
+    "ordinal": 1,
+    "before_cell": [
+      778.0,
+      236.0
+    ],
+    "cell": [
+      778,
+      236
+    ],
+    "movement": 0.0,
+    "before_degrees": -90.00000250447816,
+    "degrees": -135
+  },
+  {
+    "id": 39,
+    "seat": 2,
+    "ordinal": 2,
+    "before_cell": [
+      778.0,
+      352.0
+    ],
+    "cell": [
+      778,
+      352
+    ],
+    "movement": 0.0,
+    "before_degrees": 90.00000250447816,
+    "degrees": 135
+  },
+  {
+    "id": 40,
+    "seat": 2,
+    "ordinal": 3,
+    "before_cell": [
+      688.0,
+      294.0
+    ],
+    "cell": [
+      688,
+      294
+    ],
+    "movement": 0.0,
+    "before_degrees": -90.00000250447816,
+    "degrees": -135
+  },
+  {
+    "id": 41,
+    "seat": 3,
+    "ordinal": 1,
+    "before_cell": [
+      764.0,
+      460.0
+    ],
+    "cell": [
+      764,
+      460
+    ],
+    "movement": 0.0,
+    "before_degrees": -90.00000250447816,
+    "degrees": -135
+  },
+  {
+    "id": 42,
+    "seat": 3,
+    "ordinal": 2,
+    "before_cell": [
+      764.0,
+      576.0
+    ],
+    "cell": [
+      764,
+      576
+    ],
+    "movement": 0.0,
+    "before_degrees": 90.00000250447816,
+    "degrees": 135
+  },
+  {
+    "id": 43,
+    "seat": 3,
+    "ordinal": 3,
+    "before_cell": [
+      674.0,
+      518.0
+    ],
+    "cell": [
+      674,
+      518
+    ],
+    "movement": 0.0,
+    "before_degrees": -90.00000250447816,
+    "degrees": -135
+  },
+  {
+    "id": 44,
+    "seat": 4,
+    "ordinal": 1,
+    "before_cell": [
+      756.0,
+      668.0
+    ],
+    "cell": [
+      756,
+      668
+    ],
+    "movement": 0.0,
+    "before_degrees": -90.00000250447816,
+    "degrees": -45
+  },
+  {
+    "id": 45,
+    "seat": 4,
+    "ordinal": 2,
+    "before_cell": [
+      708.0,
+      724.0
+    ],
+    "cell": [
+      708,
+      724
+    ],
+    "movement": 0.0,
+    "before_degrees": 78.74999792255016,
+    "degrees": 45
+  },
+  {
+    "id": 46,
+    "seat": 4,
+    "ordinal": 3,
+    "before_cell": [
+      666.0,
+      728.0
+    ],
+    "cell": [
+      666,
+      728
+    ],
+    "movement": 0.0,
+    "before_degrees": 90.00000250447816,
+    "degrees": 135
+  },
+  {
+    "id": 47,
+    "seat": 5,
+    "ordinal": 1,
+    "before_cell": [
+      110.0,
+      50.0
+    ],
+    "cell": [
+      110,
+      50
+    ],
+    "movement": 0.0,
+    "before_degrees": -101.25000025621699,
+    "degrees": -135
+  },
+  {
+    "id": 48,
+    "seat": 5,
+    "ordinal": 2,
+    "before_cell": [
+      52.0,
+      114.0
+    ],
+    "cell": [
+      70,
+      114
+    ],
+    "movement": 18.0,
+    "before_degrees": 90.00000250447816,
+    "degrees": 135
+  },
+  {
+    "id": 49,
+    "seat": 5,
+    "ordinal": 3,
+    "before_cell": [
+      154.0,
+      54.0
+    ],
+    "cell": [
+      154,
+      54
+    ],
+    "movement": 0.0,
+    "before_degrees": -90.00000250447816,
+    "degrees": -45
+  },
+  {
+    "id": 50,
+    "seat": 6,
+    "ordinal": 1,
+    "before_cell": [
+      84.0,
+      288.0
+    ],
+    "cell": [
+      78,
+      294
+    ],
+    "movement": 8.48528137423857,
+    "before_degrees": 180.00000500895632,
+    "degrees": 45
+  },
+  {
+    "id": 51,
+    "seat": 6,
+    "ordinal": 2,
+    "before_cell": [
+      92.0,
+      235.0
+    ],
+    "cell": [
+      94,
+      227
+    ],
+    "movement": 8.246211251235321,
+    "before_degrees": 180.00000500895632,
+    "degrees": -135
+  },
+  {
+    "id": 52,
+    "seat": 6,
+    "ordinal": 3,
+    "before_cell": [
+      128.0,
+      320.0
+    ],
+    "cell": [
+      128,
+      320
+    ],
+    "movement": 0.0,
+    "before_degrees": 56.24999900397791,
+    "degrees": 45
+  },
+  {
+    "id": 53,
+    "seat": 7,
+    "ordinal": 1,
+    "before_cell": [
+      52.0,
+      392.0
+    ],
+    "cell": [
+      52,
+      392
+    ],
+    "movement": 0.0,
+    "before_degrees": -90.00000250447816,
+    "degrees": -45
+  },
+  {
+    "id": 54,
+    "seat": 7,
+    "ordinal": 2,
+    "before_cell": [
+      74.0,
+      502.0
+    ],
+    "cell": [
+      74,
+      502
+    ],
+    "movement": 0.0,
+    "before_degrees": 33.75000008540567,
+    "degrees": 45
+  },
+  {
+    "id": 55,
+    "seat": 7,
+    "ordinal": 3,
+    "before_cell": [
+      142.0,
+      450.0
+    ],
+    "cell": [
+      142,
+      450
+    ],
+    "movement": 0.0,
+    "before_degrees": 101.25000025621699,
+    "degrees": 135
+  },
+  {
+    "id": 56,
+    "seat": 8,
+    "ordinal": 1,
+    "before_cell": [
+      54.0,
+      714.0
+    ],
+    "cell": [
+      54,
+      714
+    ],
+    "movement": 0.0,
+    "before_degrees": -90.00000250447816,
+    "degrees": -45
+  },
+  {
+    "id": 57,
+    "seat": 8,
+    "ordinal": 2,
+    "before_cell": [
+      96.0,
+      788.0
+    ],
+    "cell": [
+      110,
+      794
+    ],
+    "movement": 15.231546211727817,
+    "before_degrees": 90.00000250447816,
+    "degrees": 135
+  },
+  {
+    "id": 58,
+    "seat": 8,
+    "ordinal": 3,
+    "before_cell": [
+      144.0,
+      772.0
+    ],
+    "cell": [
+      144,
+      772
+    ],
+    "movement": 0.0,
+    "before_degrees": 101.25000025621699,
+    "degrees": 135
+  },
+  {
+    "id": 59,
+    "seat": 1,
+    "ordinal": 4,
+    "before_cell": [
+      572.0,
+      128.0
+    ],
+    "cell": [
+      572,
+      128
+    ],
+    "movement": 0.0,
+    "before_degrees": 180.00000500895632,
+    "degrees": -135
+  },
+  {
+    "id": 60,
+    "seat": 1,
+    "ordinal": 5,
+    "before_cell": [
+      438.0,
+      182.0
+    ],
+    "cell": [
+      438,
+      182
+    ],
+    "movement": 0.0,
+    "before_degrees": -146.25000492355068,
+    "degrees": -135
+  },
+  {
+    "id": 61,
+    "seat": 1,
+    "ordinal": 6,
+    "before_cell": [
+      522.0,
+      186.0
+    ],
+    "cell": [
+      522,
+      186
+    ],
+    "movement": 0.0,
+    "before_degrees": -90.00000250447816,
+    "degrees": -45
+  },
+  {
+    "id": 62,
+    "seat": 5,
+    "ordinal": 4,
+    "before_cell": [
+      200.0,
+      114.0
+    ],
+    "cell": [
+      200,
+      114
+    ],
+    "movement": 0.0,
+    "before_degrees": -22.50000062611954,
+    "degrees": -45
+  },
+  {
+    "id": 63,
+    "seat": 5,
+    "ordinal": 5,
+    "before_cell": [
+      378.0,
+      114.0
+    ],
+    "cell": [
+      378,
+      114
+    ],
+    "movement": 0.0,
+    "before_degrees": 90.00000250447816,
+    "degrees": 135
+  },
+  {
+    "id": 64,
+    "seat": 5,
+    "ordinal": 6,
+    "before_cell": [
+      234.0,
+      192.0
+    ],
+    "cell": [
+      234,
+      192
+    ],
+    "movement": 0.0,
+    "before_degrees": -11.25000031305977,
+    "degrees": 45
+  },
+  {
+    "id": 65,
+    "seat": 2,
+    "ordinal": 4,
+    "before_cell": [
+      566.0,
+      294.0
+    ],
+    "cell": [
+      566,
+      294
+    ],
+    "movement": 0.0,
+    "before_degrees": 180.00000500895632,
+    "degrees": -135
+  },
+  {
+    "id": 66,
+    "seat": 2,
+    "ordinal": 5,
+    "before_cell": [
+      392.0,
+      256.0
+    ],
+    "cell": [
+      398,
+      246
+    ],
+    "movement": 11.661903789690601,
+    "before_degrees": -22.50000062611954,
+    "degrees": -45
+  },
+  {
+    "id": 67,
+    "seat": 2,
+    "ordinal": 6,
+    "before_cell": [
+      496.0,
+      340.0
+    ],
+    "cell": [
+      496,
+      340
+    ],
+    "movement": 0.0,
+    "before_degrees": -90.00000250447816,
+    "degrees": -45
+  },
+  {
+    "id": 68,
+    "seat": 6,
+    "ordinal": 4,
+    "before_cell": [
+      168.0,
+      192.0
+    ],
+    "cell": [
+      168,
+      196
+    ],
+    "movement": 4.0,
+    "before_degrees": -78.74999792255016,
+    "degrees": 135
+  },
+  {
+    "id": 69,
+    "seat": 6,
+    "ordinal": 5,
+    "before_cell": [
+      308.0,
+      194.0
+    ],
+    "cell": [
+      312,
+      176
+    ],
+    "movement": 18.439088914585774,
+    "before_degrees": 90.00000250447816,
+    "degrees": 135
+  },
+  {
+    "id": 70,
+    "seat": 6,
+    "ordinal": 6,
+    "before_cell": [
+      140.0,
+      360.0
+    ],
+    "cell": [
+      138,
+      360
+    ],
+    "movement": 2.0,
+    "before_degrees": -157.49999584510033,
+    "degrees": -135
+  },
+  {
+    "id": 71,
+    "seat": 3,
+    "ordinal": 4,
+    "before_cell": [
+      576.0,
+      518.0
+    ],
+    "cell": [
+      576,
+      518
+    ],
+    "movement": 0.0,
+    "before_degrees": 180.00000500895632,
+    "degrees": -135
+  },
+  {
+    "id": 72,
+    "seat": 3,
+    "ordinal": 5,
+    "before_cell": [
+      398.0,
+      542.0
+    ],
+    "cell": [
+      398,
+      542
+    ],
+    "movement": 0.0,
+    "before_degrees": 180.00000500895632,
+    "degrees": -135
+  },
+  {
+    "id": 73,
+    "seat": 3,
+    "ordinal": 6,
+    "before_cell": [
+      522.0,
+      564.0
+    ],
+    "cell": [
+      522,
+      564
+    ],
+    "movement": 0.0,
+    "before_degrees": -168.75000042702834,
+    "degrees": -135
+  },
+  {
+    "id": 74,
+    "seat": 7,
+    "ordinal": 4,
+    "before_cell": [
+      224.0,
+      434.0
+    ],
+    "cell": [
+      224,
+      420
+    ],
+    "movement": 14.0,
+    "before_degrees": 90.00000250447816,
+    "degrees": 135
+  },
+  {
+    "id": 75,
+    "seat": 7,
+    "ordinal": 5,
+    "before_cell": [
+      318.0,
+      532.0
+    ],
+    "cell": [
+      320,
+      534
+    ],
+    "movement": 2.8284271247461903,
+    "before_degrees": -78.74999792255016,
+    "degrees": -135
+  },
+  {
+    "id": 76,
+    "seat": 7,
+    "ordinal": 6,
+    "before_cell": [
+      220.0,
+      592.0
+    ],
+    "cell": [
+      220,
+      592
+    ],
+    "movement": 0.0,
+    "before_degrees": -45.00000125223908,
+    "degrees": -45
+  },
+  {
+    "id": 77,
+    "seat": 4,
+    "ordinal": 4,
+    "before_cell": [
+      522.0,
+      722.0
+    ],
+    "cell": [
+      522,
+      722
+    ],
+    "movement": 0.0,
+    "before_degrees": 90.00000250447816,
+    "degrees": 45
+  },
+  {
+    "id": 78,
+    "seat": 4,
+    "ordinal": 5,
+    "before_cell": [
+      374.0,
+      612.0
+    ],
+    "cell": [
+      374,
+      612
+    ],
+    "movement": 0.0,
+    "before_degrees": 168.75000042702834,
+    "degrees": 135
+  },
+  {
+    "id": 79,
+    "seat": 4,
+    "ordinal": 6,
+    "before_cell": [
+      460.0,
+      636.0
+    ],
+    "cell": [
+      460,
+      636
+    ],
+    "movement": 0.0,
+    "before_degrees": 157.49999584510033,
+    "degrees": 135
+  },
+  {
+    "id": 80,
+    "seat": 8,
+    "ordinal": 4,
+    "before_cell": [
+      188.0,
+      652.0
+    ],
+    "cell": [
+      188,
+      656
+    ],
+    "movement": 4.0,
+    "before_degrees": -67.50000017081133,
+    "degrees": 45
+  },
+  {
+    "id": 81,
+    "seat": 8,
+    "ordinal": 5,
+    "before_cell": [
+      272.0,
+      658.0
+    ],
+    "cell": [
+      272,
+      658
+    ],
+    "movement": 0.0,
+    "before_degrees": -90.00000250447816,
+    "degrees": -135
+  },
+  {
+    "id": 82,
+    "seat": 8,
+    "ordinal": 6,
+    "before_cell": [
+      184.0,
+      478.0
+    ],
+    "cell": [
+      182,
+      476
+    ],
+    "movement": 2.8284271247461903,
+    "before_degrees": 90.00000250447816,
+    "degrees": 45
+  }
+]

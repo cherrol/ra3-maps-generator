@@ -31,10 +31,10 @@
     700.0
   ],
   "image_crc32": {
-    "preview--center--line.png": 780957436,
-    "preview--line.png": 1721233210,
-    "preview.png": 2658424931,
-    "source.png": 2804801017
+    "preview--center--line.png": 793651550,
+    "preview--line.png": 819335107,
+    "preview.png": 483449970,
+    "source.png": 3138650566
   },
   "layer_policy": {
     "active_land_layers": [
@@ -51,7 +51,7 @@
     ],
     "land_layer_cell_counts": [
       0,
-      198220,
+      198178,
       178874,
       0,
       0,
@@ -91,8 +91,9 @@
       "fill_method": "four-neighbor BFS within playable land first, then fill the production border",
       "filled_land_cells": 0,
       "playable_land_seeds_take_priority_over_border": true,
-      "report": "raw/before-square-800/land-reference-report.json",
-      "terrain": "raw/before-square-800/land-reference.npz"
+      "report": "intrusion-reference-report.json",
+      "terrain": "intrusion-reference.npz",
+      "use_reference_water_mask": true
     },
     "water_is_separate": true
   },
@@ -133,6 +134,12 @@
     ]
   },
   "source_reference": "maps/上海/data/terrain-preview/input.npz",
+  "terrain_shape_repair": {
+    "baseline": "raw/before-intrusion-repair-2026-10-30",
+    "combat_routes": "not yet designated",
+    "method": "scoped disk opening and adjacent-terrain merges, followed by same-owner shore reconciliation",
+    "report": "intrusion-repair-2026-10-30.json"
+  },
   "water_policy": {
     "design_shaping": {
       "active_reference": "raw/reference-before-shoreline-refinement.npz",

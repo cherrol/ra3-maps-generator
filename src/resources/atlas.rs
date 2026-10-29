@@ -10,22 +10,22 @@ use crate::{
 use std::collections::{BTreeMap, BTreeSet};
 
 pub(super) fn terrain_catalog(p: &Project) -> Result<BTreeMap<String, [String; 3]>> {
-    let mut catalog: BTreeMap<_, _> = surface::textures(p)?
-        .into_iter()
+    let mut catalog: BTreeMap<_, _> = super::official::catalog()
+        .terrain
+        .values()
+        .filter_map(|definition| super::official::terrain_row(&definition.id))
         .map(|row| (row[0].clone(), row))
         .collect();
-    // Explicit polish-textures also uses the current palette on legacy recipes.
-    // Definitions alone do not add unused assets to a historical map's atlas.
-    for row in crate::terrain::materials::STOCK {
-        catalog
-            .entry(row[0].to_owned())
-            .or_insert_with(|| row.map(str::to_owned));
+    // Explicit recipe/custom definitions remain overrides. Merely indexing the
+    // full SDK does not register unused terrain in a map's native table/atlas.
+    for row in surface::textures(p)? {
+        catalog.insert(row[0].clone(), row);
     }
     Ok(catalog)
 }
 
-/// Extend the existing terrain atlas in place, keeping its ID, original tiles,
-/// object declarations and script declarations unchanged.
+/// Match the atlas to the native table, retaining active declarations verbatim
+/// and preserving its ID and all object/script declarations.
 fn extend_terrain_atlas(p: &Project, xml: &str, map: &MapFile) -> Result<String> {
     let hm = map::HeightMap::parse(map.get("HeightMapData")?)?;
     let bt = map::BlendTiles::parse(map.get("BlendTileData")?, hm.width, hm.height)?;

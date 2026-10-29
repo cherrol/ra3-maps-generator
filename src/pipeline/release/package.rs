@@ -41,6 +41,7 @@ fn validate_package(files: &[(String, Vec<u8>)], runtime: bool) -> Result<MapFil
         crate::formats::map::BlendTiles::parse(map.get("BlendTileData")?, hm.width, hm.height)?;
     if runtime {
         crate::resources::terrain_package::validate_texture_limit(&map)?;
+        crate::gameplay::ore_facing::validate(&map)?;
     }
     crate::formats::map::objects(map.get("ObjectsList")?, &map.table)?;
     if bt
@@ -59,6 +60,7 @@ fn validate_package(files: &[(String, Vec<u8>)], runtime: bool) -> Result<MapFil
     }
     if let Some((_, xml)) = xml {
         let xml = std::str::from_utf8(xml)?;
+        crate::resources::xml_structure::asset_document(xml)?;
         let declarations = without_xml_comments(xml)?;
         if (declarations.contains("source=\"overrides.xml\"")
             || declarations.contains("source='overrides.xml'"))

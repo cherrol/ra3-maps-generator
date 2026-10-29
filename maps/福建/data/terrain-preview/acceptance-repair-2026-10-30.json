@@ -1,0 +1,81 @@
+{
+  "map_id": "福建",
+  "terrain_sha256": "d7cdb9136bb82e09cd70d020e7702c097250473ce309f0500f9190cbc4def7d8",
+  "changed_cells": 190,
+  "changed_water_cells": 79,
+  "images": [
+    {
+      "file": "source.png",
+      "sha256": "7ad18c9dcadb6013eef874f50ad23dd085b67228c0a3a0fcfba8cef29f96f68a",
+      "size": [
+        1104,
+        1002
+      ]
+    },
+    {
+      "file": "preview.png",
+      "sha256": "49ed2fd25438262729e32e5b42b820c18ceeaf2a76dc0d6285942c1a2fe5770b",
+      "size": [
+        1104,
+        1002
+      ]
+    },
+    {
+      "file": "preview--line.png",
+      "sha256": "1a3103330be3a86d862f79fcf98c139eabe152b29304d060c90ff9fbe84d101e",
+      "size": [
+        1104,
+        1002
+      ]
+    },
+    {
+      "file": "preview--center--line.png",
+      "sha256": "29d8e68e37c0b6c177fe84419b6d143df4224804684a742630a3edc177cbf935",
+      "size": [
+        1104,
+        1002
+      ]
+    }
+  ],
+  "pixels_checked": 640000,
+  "pixel_mismatches": 0,
+  "closed_waterbodies": [],
+  "waterbodies": [
+    {
+      "water_cells": 156570,
+      "bounds": [
+        228,
+        120,
+        820,
+        820
+      ],
+      "open": true,
+      "contacts": {
+        "1": 1923,
+        "2": 219
+      }
+    }
+  ],
+  "errors": [],
+  "independent_checks_passed": true,
+  "date": "2026-10-30",
+  "overall_status": "24处本轮确认问题中本区项已修复；完整交战通行及未定范围仍待核验",
+  "confirmed_failure_sites_repaired": 4,
+  "issue_ids": [
+    18,
+    151,
+    157,
+    167
+  ],
+  "post_repair_interior_extended_candidates": 0,
+  "frame_clipped_extended_candidates_pending": 3,
+  "short_or_rounded_cap_candidates_pending": 682,
+  "all_latest_requirements_passed": false,
+  "combat_route_width_verified": false,
+  "combat_routes": "待核验：预览没有绑定本版的已定交战通路，不推断10格实际通行通过",
+  "gift_buildings": "不适用：本轮纯预览，没有新增赠送落点",
+  "native_navigation_and_shore_transitions": "待可玩制作验收",
+  "repair_report": "intrusion-repair-2026-10-30.json",
+  "width_report": "width-candidates-repair-2026-10-30.json",
+  "previous_acceptance": "acceptance-2026-10-30.json"
+}

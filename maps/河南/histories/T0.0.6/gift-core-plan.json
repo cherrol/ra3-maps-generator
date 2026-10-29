@@ -1,0 +1,5892 @@
+{
+  "method": "Conservative superset exclusion: all gift foundations and access reserves lie within explicit broad principal plateau core rectangles, are fully flat over a 33x33 native square and clear every ore refinery envelope. All areas outside these cores, including protruding tongues, peninsulas and water, are forbidden. Global matching preserves the original seat and all branch identities.",
+  "safe_zones": [
+    {
+      "id": "east-lowland-core",
+      "height": 210,
+      "bounds": [
+        350,
+        20,
+        819,
+        819
+      ]
+    },
+    {
+      "id": "northwest-upper-core",
+      "height": 350,
+      "bounds": [
+        20,
+        20,
+        460,
+        210
+      ]
+    },
+    {
+      "id": "west-central-upper-core",
+      "height": 350,
+      "bounds": [
+        20,
+        330,
+        300,
+        510
+      ]
+    },
+    {
+      "id": "southwest-upper-core",
+      "height": 350,
+      "bounds": [
+        20,
+        630,
+        240,
+        819
+      ]
+    },
+    {
+      "id": "central-intermediate-body",
+      "height": 280,
+      "bounds": [
+        250,
+        310,
+        400,
+        390
+      ]
+    }
+  ],
+  "full_reserve_half_extent": 16,
+  "flat_core_radius": 16,
+  "sites": [
+    {
+      "waypoint": "dual-p1-bar",
+      "object_id": 2,
+      "cell": [
+        734,
+        208
+      ],
+      "safe_zone": "east-lowland-core",
+      "padding": 6,
+      "seat": 1,
+      "actions": [
+        "/0/77/1",
+        "/0/83/1",
+        "/0/89/1"
+      ]
+    },
+    {
+      "waypoint": "gift-alt-dual-p1-bar-1",
+      "object_id": 166,
+      "cell": [
+        792,
+        180
+      ],
+      "safe_zone": "east-lowland-core",
+      "padding": 6,
+      "seat": 1,
+      "actions": [
+        "/0/78/1",
+        "/0/84/1",
+        "/0/90/1"
+      ]
+    },
+    {
+      "waypoint": "dual-p1-wf",
+      "object_id": 3,
+      "cell": [
+        714,
+        180
+      ],
+      "safe_zone": "east-lowland-core",
+      "padding": 6,
+      "seat": 1,
+      "actions": [
+        "/0/79/1",
+        "/0/85/1",
+        "/0/91/1"
+      ]
+    },
+    {
+      "waypoint": "gift-alt-dual-p1-wf-1",
+      "object_id": 167,
+      "cell": [
+        684,
+        158
+      ],
+      "safe_zone": "east-lowland-core",
+      "padding": 6,
+      "seat": 1,
+      "actions": [
+        "/0/80/1",
+        "/0/86/1",
+        "/0/92/1"
+      ]
+    },
+    {
+      "waypoint": "dual-p1-air",
+      "object_id": 4,
+      "cell": [
+        792,
+        124
+      ],
+      "safe_zone": "east-lowland-core",
+      "padding": 8,
+      "seat": 1,
+      "actions": [
+        "/0/81/1",
+        "/0/87/1"
+      ]
+    },
+    {
+      "waypoint": "gift-alt-dual-p1-air-1",
+      "object_id": 165,
+      "cell": [
+        792,
+        152
+      ],
+      "safe_zone": "east-lowland-core",
+      "padding": 8,
+      "seat": 1,
+      "actions": [
+        "/0/82/1",
+        "/0/88/1"
+      ]
+    },
+    {
+      "waypoint": "dual-p2-bar",
+      "object_id": 6,
+      "cell": [
+        742,
+        358
+      ],
+      "safe_zone": "east-lowland-core",
+      "padding": 6,
+      "seat": 2,
+      "actions": [
+        "/0/93/1",
+        "/0/99/1",
+        "/0/105/1"
+      ]
+    },
+    {
+      "waypoint": "gift-alt-dual-p2-bar-1",
+      "object_id": 169,
+      "cell": [
+        722,
+        292
+      ],
+      "safe_zone": "east-lowland-core",
+      "padding": 6,
+      "seat": 2,
+      "actions": [
+        "/0/94/1",
+        "/0/100/1",
+        "/0/106/1"
+      ]
+    },
+    {
+      "waypoint": "dual-p2-wf",
+      "object_id": 7,
+      "cell": [
+        736,
+        236
+      ],
+      "safe_zone": "east-lowland-core",
+      "padding": 6,
+      "seat": 2,
+      "actions": [
+        "/0/95/1",
+        "/0/101/1",
+        "/0/107/1"
+      ]
+    },
+    {
+      "waypoint": "gift-alt-dual-p2-wf-1",
+      "object_id": 170,
+      "cell": [
+        722,
+        264
+      ],
+      "safe_zone": "east-lowland-core",
+      "padding": 6,
+      "seat": 2,
+      "actions": [
+        "/0/96/1",
+        "/0/102/1",
+        "/0/108/1"
+      ]
+    },
+    {
+      "waypoint": "dual-p2-air",
+      "object_id": 8,
+      "cell": [
+        800,
+        322
+      ],
+      "safe_zone": "east-lowland-core",
+      "padding": 8,
+      "seat": 2,
+      "actions": [
+        "/0/97/1",
+        "/0/103/1"
+      ]
+    },
+    {
+      "waypoint": "gift-alt-dual-p2-air-1",
+      "object_id": 168,
+      "cell": [
+        800,
+        380
+      ],
+      "safe_zone": "east-lowland-core",
+      "padding": 8,
+      "seat": 2,
+      "actions": [
+        "/0/98/1",
+        "/0/104/1"
+      ]
+    },
+    {
+      "waypoint": "dual-p3-bar",
+      "object_id": 10,
+      "cell": [
+        792,
+        572
+      ],
+      "safe_zone": "east-lowland-core",
+      "padding": 6,
+      "seat": 3,
+      "actions": [
+        "/0/109/1",
+        "/0/115/1",
+        "/0/121/1"
+      ]
+    },
+    {
+      "waypoint": "gift-alt-dual-p3-bar-1",
+      "object_id": 172,
+      "cell": [
+        718,
+        572
+      ],
+      "safe_zone": "east-lowland-core",
+      "padding": 6,
+      "seat": 3,
+      "actions": [
+        "/0/110/1",
+        "/0/116/1",
+        "/0/122/1"
+      ]
+    },
+    {
+      "waypoint": "dual-p3-wf",
+      "object_id": 11,
+      "cell": [
+        708,
+        488
+      ],
+      "safe_zone": "east-lowland-core",
+      "padding": 6,
+      "seat": 3,
+      "actions": [
+        "/0/111/1",
+        "/0/117/1",
+        "/0/123/1"
+      ]
+    },
+    {
+      "waypoint": "gift-alt-dual-p3-wf-1",
+      "object_id": 173,
+      "cell": [
+        728,
+        454
+      ],
+      "safe_zone": "east-lowland-core",
+      "padding": 6,
+      "seat": 3,
+      "actions": [
+        "/0/112/1",
+        "/0/118/1",
+        "/0/124/1"
+      ]
+    },
+    {
+      "waypoint": "dual-p3-air",
+      "object_id": 12,
+      "cell": [
+        792,
+        516
+      ],
+      "safe_zone": "east-lowland-core",
+      "padding": 8,
+      "seat": 3,
+      "actions": [
+        "/0/113/1",
+        "/0/119/1"
+      ]
+    },
+    {
+      "waypoint": "gift-alt-dual-p3-air-1",
+      "object_id": 171,
+      "cell": [
+        792,
+        544
+      ],
+      "safe_zone": "east-lowland-core",
+      "padding": 8,
+      "seat": 3,
+      "actions": [
+        "/0/114/1",
+        "/0/120/1"
+      ]
+    },
+    {
+      "waypoint": "dual-p4-bar",
+      "object_id": 14,
+      "cell": [
+        768,
+        638
+      ],
+      "safe_zone": "east-lowland-core",
+      "padding": 6,
+      "seat": 4,
+      "actions": [
+        "/0/125/1",
+        "/0/131/1",
+        "/0/137/1"
+      ]
+    },
+    {
+      "waypoint": "gift-alt-dual-p4-bar-1",
+      "object_id": 175,
+      "cell": [
+        694,
+        668
+      ],
+      "safe_zone": "east-lowland-core",
+      "padding": 6,
+      "seat": 4,
+      "actions": [
+        "/0/126/1",
+        "/0/132/1",
+        "/0/138/1"
+      ]
+    },
+    {
+      "waypoint": "dual-p4-wf",
+      "object_id": 15,
+      "cell": [
+        800,
+        670
+      ],
+      "safe_zone": "east-lowland-core",
+      "padding": 6,
+      "seat": 4,
+      "actions": [
+        "/0/127/1",
+        "/0/133/1",
+        "/0/139/1"
+      ]
+    },
+    {
+      "waypoint": "gift-alt-dual-p4-wf-1",
+      "object_id": 176,
+      "cell": [
+        796,
+        642
+      ],
+      "safe_zone": "east-lowland-core",
+      "padding": 6,
+      "seat": 4,
+      "actions": [
+        "/0/128/1",
+        "/0/134/1",
+        "/0/140/1"
+      ]
+    },
+    {
+      "waypoint": "dual-p4-air",
+      "object_id": 16,
+      "cell": [
+        784.0,
+        727.0
+      ],
+      "safe_zone": "east-lowland-core",
+      "padding": 8,
+      "seat": 4,
+      "actions": [
+        "/0/129/1",
+        "/0/135/1"
+      ]
+    },
+    {
+      "waypoint": "gift-alt-dual-p4-air-1",
+      "object_id": 174,
+      "cell": [
+        798.0,
+        755.0
+      ],
+      "safe_zone": "east-lowland-core",
+      "padding": 8,
+      "seat": 4,
+      "actions": [
+        "/0/130/1",
+        "/0/136/1"
+      ]
+    },
+    {
+      "waypoint": "dual-p5-bar",
+      "object_id": 18,
+      "cell": [
+        98,
+        116
+      ],
+      "safe_zone": "northwest-upper-core",
+      "padding": 6,
+      "seat": 5,
+      "actions": [
+        "/0/141/1",
+        "/0/147/1",
+        "/0/153/1"
+      ]
+    },
+    {
+      "waypoint": "gift-alt-dual-p5-bar-1",
+      "object_id": 178,
+      "cell": [
+        274,
+        194
+      ],
+      "safe_zone": "northwest-upper-core",
+      "padding": 6,
+      "seat": 5,
+      "actions": [
+        "/0/142/1",
+        "/0/148/1",
+        "/0/154/1"
+      ]
+    },
+    {
+      "waypoint": "dual-p5-wf",
+      "object_id": 19,
+      "cell": [
+        294,
+        68
+      ],
+      "safe_zone": "northwest-upper-core",
+      "padding": 6,
+      "seat": 5,
+      "actions": [
+        "/0/143/1",
+        "/0/149/1",
+        "/0/155/1"
+      ]
+    },
+    {
+      "waypoint": "gift-alt-dual-p5-wf-1",
+      "object_id": 179,
+      "cell": [
+        364,
+        58
+      ],
+      "safe_zone": "northwest-upper-core",
+      "padding": 6,
+      "seat": 5,
+      "actions": [
+        "/0/144/1",
+        "/0/150/1",
+        "/0/156/1"
+      ]
+    },
+    {
+      "waypoint": "dual-p5-air",
+      "object_id": 20,
+      "cell": [
+        266,
+        40
+      ],
+      "safe_zone": "northwest-upper-core",
+      "padding": 8,
+      "seat": 5,
+      "actions": [
+        "/0/145/1",
+        "/0/151/1"
+      ]
+    },
+    {
+      "waypoint": "gift-alt-dual-p5-air-1",
+      "object_id": 177,
+      "cell": [
+        256,
+        96
+      ],
+      "safe_zone": "northwest-upper-core",
+      "padding": 8,
+      "seat": 5,
+      "actions": [
+        "/0/146/1",
+        "/0/152/1"
+      ]
+    },
+    {
+      "waypoint": "dual-p6-bar",
+      "object_id": 22,
+      "cell": [
+        228,
+        96
+      ],
+      "safe_zone": "northwest-upper-core",
+      "padding": 6,
+      "seat": 6,
+      "actions": [
+        "/0/157/1",
+        "/0/163/1",
+        "/0/169/1"
+      ]
+    },
+    {
+      "waypoint": "gift-alt-dual-p6-bar-1",
+      "object_id": 181,
+      "cell": [
+        428,
+        234
+      ],
+      "safe_zone": "east-lowland-core",
+      "padding": 6,
+      "seat": 6,
+      "actions": [
+        "/0/158/1",
+        "/0/164/1",
+        "/0/170/1"
+      ]
+    },
+    {
+      "waypoint": "dual-p6-wf",
+      "object_id": 23,
+      "cell": [
+        238,
+        448
+      ],
+      "safe_zone": "west-central-upper-core",
+      "padding": 6,
+      "seat": 6,
+      "actions": [
+        "/0/159/1",
+        "/0/165/1",
+        "/0/171/1"
+      ]
+    },
+    {
+      "waypoint": "gift-alt-dual-p6-wf-1",
+      "object_id": 182,
+      "cell": [
+        304,
+        328
+      ],
+      "safe_zone": "central-intermediate-body",
+      "padding": 6,
+      "seat": 6,
+      "actions": [
+        "/0/160/1",
+        "/0/166/1",
+        "/0/172/1"
+      ]
+    },
+    {
+      "waypoint": "dual-p6-air",
+      "object_id": 24,
+      "cell": [
+        332,
+        372
+      ],
+      "safe_zone": "central-intermediate-body",
+      "padding": 8,
+      "seat": 6,
+      "actions": [
+        "/0/161/1",
+        "/0/167/1"
+      ]
+    },
+    {
+      "waypoint": "gift-alt-dual-p6-air-1",
+      "object_id": 180,
+      "cell": [
+        44.0,
+        359.0
+      ],
+      "safe_zone": "west-central-upper-core",
+      "padding": 8,
+      "seat": 6,
+      "actions": [
+        "/0/162/1",
+        "/0/168/1"
+      ]
+    },
+    {
+      "waypoint": "dual-civilian-bar",
+      "object_id": 26,
+      "cell": [
+        394,
+        460
+      ],
+      "safe_zone": "east-lowland-core",
+      "padding": 6,
+      "seat": 7,
+      "actions": [
+        "/0/173/1",
+        "/0/179/1",
+        "/0/185/1"
+      ]
+    },
+    {
+      "waypoint": "gift-alt-dual-civilian-bar-1",
+      "object_id": 160,
+      "cell": [
+        422,
+        432
+      ],
+      "safe_zone": "east-lowland-core",
+      "padding": 6,
+      "seat": 7,
+      "actions": [
+        "/0/174/1",
+        "/0/180/1",
+        "/0/186/1"
+      ]
+    },
+    {
+      "waypoint": "dual-civilian-wf",
+      "object_id": 27,
+      "cell": [
+        422,
+        460
+      ],
+      "safe_zone": "east-lowland-core",
+      "padding": 6,
+      "seat": 7,
+      "actions": [
+        "/0/175/1",
+        "/0/181/1",
+        "/0/187/1"
+      ]
+    },
+    {
+      "waypoint": "gift-alt-dual-civilian-wf-1",
+      "object_id": 161,
+      "cell": [
+        172,
+        444
+      ],
+      "safe_zone": "west-central-upper-core",
+      "padding": 6,
+      "seat": 7,
+      "actions": [
+        "/0/176/1",
+        "/0/182/1",
+        "/0/188/1"
+      ]
+    },
+    {
+      "waypoint": "dual-civilian-air",
+      "object_id": 28,
+      "cell": [
+        366,
+        414
+      ],
+      "safe_zone": "east-lowland-core",
+      "padding": 8,
+      "seat": 7,
+      "actions": [
+        "/0/177/1",
+        "/0/183/1"
+      ]
+    },
+    {
+      "waypoint": "gift-alt-dual-civilian-air-1",
+      "object_id": 159,
+      "cell": [
+        366,
+        442
+      ],
+      "safe_zone": "east-lowland-core",
+      "padding": 8,
+      "seat": 7,
+      "actions": [
+        "/0/178/1",
+        "/0/184/1"
+      ]
+    },
+    {
+      "waypoint": "dual-creeps-bar",
+      "object_id": 30,
+      "cell": [
+        394,
+        780
+      ],
+      "safe_zone": "east-lowland-core",
+      "padding": 6,
+      "seat": 8,
+      "actions": [
+        "/0/189/1",
+        "/0/195/1",
+        "/0/201/1"
+      ]
+    },
+    {
+      "waypoint": "gift-alt-dual-creeps-bar-1",
+      "object_id": 163,
+      "cell": [
+        366,
+        800
+      ],
+      "safe_zone": "east-lowland-core",
+      "padding": 6,
+      "seat": 8,
+      "actions": [
+        "/0/190/1",
+        "/0/196/1",
+        "/0/202/1"
+      ]
+    },
+    {
+      "waypoint": "dual-creeps-wf",
+      "object_id": 31,
+      "cell": [
+        112,
+        700
+      ],
+      "safe_zone": "southwest-upper-core",
+      "padding": 6,
+      "seat": 8,
+      "actions": [
+        "/0/191/1",
+        "/0/197/1",
+        "/0/203/1"
+      ]
+    },
+    {
+      "waypoint": "gift-alt-dual-creeps-wf-1",
+      "object_id": 164,
+      "cell": [
+        394,
+        724
+      ],
+      "safe_zone": "east-lowland-core",
+      "padding": 6,
+      "seat": 8,
+      "actions": [
+        "/0/192/1",
+        "/0/198/1",
+        "/0/204/1"
+      ]
+    },
+    {
+      "waypoint": "dual-creeps-air",
+      "object_id": 32,
+      "cell": [
+        84,
+        702
+      ],
+      "safe_zone": "southwest-upper-core",
+      "padding": 8,
+      "seat": 8,
+      "actions": [
+        "/0/193/1",
+        "/0/199/1"
+      ]
+    },
+    {
+      "waypoint": "gift-alt-dual-creeps-air-1",
+      "object_id": 162,
+      "cell": [
+        60,
+        670
+      ],
+      "safe_zone": "southwest-upper-core",
+      "padding": 8,
+      "seat": 8,
+      "actions": [
+        "/0/194/1",
+        "/0/200/1"
+      ]
+    },
+    {
+      "waypoint": "SWJ1",
+      "object_id": 97,
+      "cell": [
+        792,
+        96
+      ],
+      "safe_zone": "east-lowland-core",
+      "padding": 6,
+      "seat": 1,
+      "actions": [
+        "/0/205/1"
+      ]
+    },
+    {
+      "waypoint": "gift-alt-SWJ1-1",
+      "object_id": 155,
+      "cell": [
+        788,
+        66
+      ],
+      "safe_zone": "east-lowland-core",
+      "padding": 6,
+      "seat": 1,
+      "actions": [
+        "/0/206/1"
+      ]
+    },
+    {
+      "waypoint": "PPJ1",
+      "object_id": 98,
+      "cell": [
+        734,
+        116
+      ],
+      "safe_zone": "east-lowland-core",
+      "padding": 4,
+      "seat": 1,
+      "actions": [
+        "/0/207/1"
+      ]
+    },
+    {
+      "waypoint": "gift-alt-PPJ1-1",
+      "object_id": 140,
+      "cell": [
+        712,
+        144
+      ],
+      "safe_zone": "east-lowland-core",
+      "padding": 4,
+      "seat": 1,
+      "actions": [
+        "/0/208/1"
+      ]
+    },
+    {
+      "waypoint": "SWJ2",
+      "object_id": 99,
+      "cell": [
+        790,
+        208
+      ],
+      "safe_zone": "east-lowland-core",
+      "padding": 6,
+      "seat": 2,
+      "actions": [
+        "/0/209/1"
+      ]
+    },
+    {
+      "waypoint": "gift-alt-SWJ2-1",
+      "object_id": 156,
+      "cell": [
+        800,
+        266
+      ],
+      "safe_zone": "east-lowland-core",
+      "padding": 6,
+      "seat": 2,
+      "actions": [
+        "/0/210/1"
+      ]
+    },
+    {
+      "waypoint": "PPJ2",
+      "object_id": 100,
+      "cell": [
+        751.0,
+        294.0
+      ],
+      "safe_zone": "east-lowland-core",
+      "padding": 4,
+      "seat": 2,
+      "actions": [
+        "/0/211/1"
+      ]
+    },
+    {
+      "waypoint": "gift-alt-PPJ2-1",
+      "object_id": 141,
+      "cell": [
+        722,
+        320
+      ],
+      "safe_zone": "east-lowland-core",
+      "padding": 4,
+      "seat": 2,
+      "actions": [
+        "/0/212/1"
+      ]
+    },
+    {
+      "waypoint": "SWJ3",
+      "object_id": 101,
+      "cell": [
+        736,
+        516
+      ],
+      "safe_zone": "east-lowland-core",
+      "padding": 6,
+      "seat": 3,
+      "actions": [
+        "/0/213/1"
+      ]
+    },
+    {
+      "waypoint": "gift-alt-SWJ3-1",
+      "object_id": 157,
+      "cell": [
+        792,
+        488
+      ],
+      "safe_zone": "east-lowland-core",
+      "padding": 6,
+      "seat": 3,
+      "actions": [
+        "/0/214/1"
+      ]
+    },
+    {
+      "waypoint": "PPJ3",
+      "object_id": 102,
+      "cell": [
+        712,
+        544
+      ],
+      "safe_zone": "east-lowland-core",
+      "padding": 4,
+      "seat": 3,
+      "actions": [
+        "/0/215/1"
+      ]
+    },
+    {
+      "waypoint": "gift-alt-PPJ3-1",
+      "object_id": 142,
+      "cell": [
+        708,
+        516
+      ],
+      "safe_zone": "east-lowland-core",
+      "padding": 4,
+      "seat": 3,
+      "actions": [
+        "/0/216/1"
+      ]
+    },
+    {
+      "waypoint": "SWJ4",
+      "object_id": 103,
+      "cell": [
+        740,
+        640
+      ],
+      "safe_zone": "east-lowland-core",
+      "padding": 6,
+      "seat": 4,
+      "actions": [
+        "/0/217/1"
+      ]
+    },
+    {
+      "waypoint": "gift-alt-SWJ4-1",
+      "object_id": 158,
+      "cell": [
+        722,
+        668
+      ],
+      "safe_zone": "east-lowland-core",
+      "padding": 6,
+      "seat": 4,
+      "actions": [
+        "/0/218/1"
+      ]
+    },
+    {
+      "waypoint": "PPJ4",
+      "object_id": 104,
+      "cell": [
+        694,
+        696
+      ],
+      "safe_zone": "east-lowland-core",
+      "padding": 4,
+      "seat": 4,
+      "actions": [
+        "/0/219/1"
+      ]
+    },
+    {
+      "waypoint": "gift-alt-PPJ4-1",
+      "object_id": 143,
+      "cell": [
+        638,
+        746
+      ],
+      "safe_zone": "east-lowland-core",
+      "padding": 4,
+      "seat": 4,
+      "actions": [
+        "/0/220/1"
+      ]
+    },
+    {
+      "waypoint": "SWA51",
+      "object_id": 106,
+      "cell": [
+        210,
+        40
+      ],
+      "safe_zone": "northwest-upper-core",
+      "padding": 6,
+      "seat": 5,
+      "actions": [
+        "/15/2/1",
+        "/15/14/1",
+        "/15/26/1"
+      ]
+    },
+    {
+      "waypoint": "gift-alt-SWA51-1",
+      "object_id": 147,
+      "cell": [
+        322,
+        74
+      ],
+      "safe_zone": "northwest-upper-core",
+      "padding": 6,
+      "seat": 5,
+      "actions": [
+        "/15/3/1",
+        "/15/15/1",
+        "/15/27/1"
+      ]
+    },
+    {
+      "waypoint": "SWA52",
+      "object_id": 107,
+      "cell": [
+        136.0,
+        82.0
+      ],
+      "safe_zone": "northwest-upper-core",
+      "padding": 6,
+      "seat": 5,
+      "actions": [
+        "/15/4/1",
+        "/15/16/1",
+        "/15/28/1"
+      ]
+    },
+    {
+      "waypoint": "gift-alt-SWA52-1",
+      "object_id": 148,
+      "cell": [
+        294,
+        40
+      ],
+      "safe_zone": "northwest-upper-core",
+      "padding": 6,
+      "seat": 5,
+      "actions": [
+        "/15/5/1",
+        "/15/17/1",
+        "/15/29/1"
+      ]
+    },
+    {
+      "waypoint": "SW53",
+      "object_id": 105,
+      "cell": [
+        238,
+        68
+      ],
+      "safe_zone": "northwest-upper-core",
+      "padding": 6,
+      "seat": 5,
+      "actions": [
+        "/15/6/1",
+        "/15/18/1"
+      ]
+    },
+    {
+      "waypoint": "gift-alt-SW53-1",
+      "object_id": 144,
+      "cell": [
+        210,
+        68
+      ],
+      "safe_zone": "northwest-upper-core",
+      "padding": 6,
+      "seat": 5,
+      "actions": [
+        "/15/7/1",
+        "/15/19/1"
+      ]
+    },
+    {
+      "waypoint": "PP51",
+      "object_id": 108,
+      "cell": [
+        238,
+        40
+      ],
+      "safe_zone": "northwest-upper-core",
+      "padding": 4,
+      "seat": 5,
+      "actions": [
+        "/15/8/1",
+        "/15/20/1",
+        "/15/30/1"
+      ]
+    },
+    {
+      "waypoint": "gift-alt-PP51-1",
+      "object_id": 128,
+      "cell": [
+        392,
+        76
+      ],
+      "safe_zone": "northwest-upper-core",
+      "padding": 4,
+      "seat": 5,
+      "actions": [
+        "/15/9/1",
+        "/15/21/1",
+        "/15/31/1"
+      ]
+    },
+    {
+      "waypoint": "PP52",
+      "object_id": 109,
+      "cell": [
+        336,
+        44
+      ],
+      "safe_zone": "northwest-upper-core",
+      "padding": 4,
+      "seat": 5,
+      "actions": [
+        "/15/10/1",
+        "/15/22/1",
+        "/15/32/1"
+      ]
+    },
+    {
+      "waypoint": "gift-alt-PP52-1",
+      "object_id": 129,
+      "cell": [
+        182,
+        40
+      ],
+      "safe_zone": "northwest-upper-core",
+      "padding": 4,
+      "seat": 5,
+      "actions": [
+        "/15/11/1",
+        "/15/23/1",
+        "/15/33/1"
+      ]
+    },
+    {
+      "waypoint": "PP53",
+      "object_id": 110,
+      "cell": [
+        336,
+        130
+      ],
+      "safe_zone": "northwest-upper-core",
+      "padding": 4,
+      "seat": 5,
+      "actions": [
+        "/15/12/1",
+        "/15/24/1",
+        "/15/34/1"
+      ]
+    },
+    {
+      "waypoint": "gift-alt-PP53-1",
+      "object_id": 130,
+      "cell": [
+        266,
+        68
+      ],
+      "safe_zone": "northwest-upper-core",
+      "padding": 4,
+      "seat": 5,
+      "actions": [
+        "/15/13/1",
+        "/15/25/1",
+        "/15/35/1"
+      ]
+    },
+    {
+      "waypoint": "SWA61",
+      "object_id": 112,
+      "cell": [
+        312,
+        102
+      ],
+      "safe_zone": "northwest-upper-core",
+      "padding": 6,
+      "seat": 6,
+      "actions": [
+        "/16/2/1",
+        "/16/14/1",
+        "/16/26/1",
+        "/17/4/1",
+        "/17/16/1",
+        "/18/13/1",
+        "/18/37/1"
+      ]
+    },
+    {
+      "waypoint": "gift-alt-SWA61-1",
+      "object_id": 149,
+      "cell": [
+        402,
+        152
+      ],
+      "safe_zone": "northwest-upper-core",
+      "padding": 6,
+      "seat": 6,
+      "actions": [
+        "/16/3/1",
+        "/16/15/1",
+        "/16/27/1",
+        "/17/5/1",
+        "/17/17/1",
+        "/18/14/1",
+        "/18/38/1"
+      ]
+    },
+    {
+      "waypoint": "SWA62",
+      "object_id": 113,
+      "cell": [
+        204,
+        160
+      ],
+      "safe_zone": "northwest-upper-core",
+      "padding": 6,
+      "seat": 6,
+      "actions": [
+        "/16/4/1",
+        "/16/16/1",
+        "/16/28/1",
+        "/17/6/1",
+        "/17/18/1",
+        "/18/15/1",
+        "/18/39/1"
+      ]
+    },
+    {
+      "waypoint": "gift-alt-SWA62-1",
+      "object_id": 150,
+      "cell": [
+        308,
+        130
+      ],
+      "safe_zone": "northwest-upper-core",
+      "padding": 6,
+      "seat": 6,
+      "actions": [
+        "/16/5/1",
+        "/16/17/1",
+        "/16/29/1",
+        "/17/7/1",
+        "/17/19/1",
+        "/18/16/1",
+        "/18/40/1"
+      ]
+    },
+    {
+      "waypoint": "SW63",
+      "object_id": 111,
+      "cell": [
+        284,
+        96
+      ],
+      "safe_zone": "northwest-upper-core",
+      "padding": 6,
+      "seat": 6,
+      "actions": [
+        "/16/6/1",
+        "/16/18/1",
+        "/17/8/1",
+        "/17/20/1",
+        "/18/17/1"
+      ]
+    },
+    {
+      "waypoint": "gift-alt-SW63-1",
+      "object_id": 145,
+      "cell": [
+        374,
+        142
+      ],
+      "safe_zone": "northwest-upper-core",
+      "padding": 6,
+      "seat": 6,
+      "actions": [
+        "/16/7/1",
+        "/16/19/1",
+        "/17/9/1",
+        "/17/21/1",
+        "/18/18/1"
+      ]
+    },
+    {
+      "waypoint": "PP61",
+      "object_id": 114,
+      "cell": [
+        388,
+        218
+      ],
+      "safe_zone": "east-lowland-core",
+      "padding": 4,
+      "seat": 6,
+      "actions": [
+        "/16/8/1",
+        "/16/20/1",
+        "/16/30/1",
+        "/17/10/1",
+        "/17/22/1",
+        "/18/19/1",
+        "/18/41/1"
+      ]
+    },
+    {
+      "waypoint": "gift-alt-PP61-1",
+      "object_id": 131,
+      "cell": [
+        72.0,
+        350.0
+      ],
+      "safe_zone": "west-central-upper-core",
+      "padding": 4,
+      "seat": 6,
+      "actions": [
+        "/16/9/1",
+        "/16/21/1",
+        "/16/31/1",
+        "/17/11/1",
+        "/17/23/1",
+        "/18/20/1",
+        "/18/42/1"
+      ]
+    },
+    {
+      "waypoint": "PP62",
+      "object_id": 115,
+      "cell": [
+        332,
+        344
+      ],
+      "safe_zone": "central-intermediate-body",
+      "padding": 4,
+      "seat": 6,
+      "actions": [
+        "/16/10/1",
+        "/16/22/1",
+        "/16/32/1",
+        "/17/12/1",
+        "/17/24/1",
+        "/18/21/1",
+        "/18/43/1"
+      ]
+    },
+    {
+      "waypoint": "gift-alt-PP62-1",
+      "object_id": 132,
+      "cell": [
+        394,
+        432
+      ],
+      "safe_zone": "east-lowland-core",
+      "padding": 4,
+      "seat": 6,
+      "actions": [
+        "/16/11/1",
+        "/16/23/1",
+        "/16/33/1",
+        "/17/13/1",
+        "/17/25/1",
+        "/18/22/1",
+        "/18/44/1"
+      ]
+    },
+    {
+      "waypoint": "PP63",
+      "object_id": 116,
+      "cell": [
+        252,
+        124
+      ],
+      "safe_zone": "northwest-upper-core",
+      "padding": 4,
+      "seat": 6,
+      "actions": [
+        "/16/12/1",
+        "/16/24/1",
+        "/16/34/1",
+        "/17/14/1",
+        "/17/26/1",
+        "/18/23/1",
+        "/18/45/1"
+      ]
+    },
+    {
+      "waypoint": "gift-alt-PP63-1",
+      "object_id": 133,
+      "cell": [
+        280,
+        124
+      ],
+      "safe_zone": "northwest-upper-core",
+      "padding": 4,
+      "seat": 6,
+      "actions": [
+        "/16/13/1",
+        "/16/25/1",
+        "/16/35/1",
+        "/17/15/1",
+        "/17/27/1",
+        "/18/24/1",
+        "/18/46/1"
+      ]
+    },
+    {
+      "waypoint": "SWA71",
+      "object_id": 117,
+      "cell": [
+        40,
+        422
+      ],
+      "safe_zone": "west-central-upper-core",
+      "padding": 6,
+      "seat": 7,
+      "actions": [
+        "/17/28/1"
+      ]
+    },
+    {
+      "waypoint": "gift-alt-SWA71-1",
+      "object_id": 151,
+      "cell": [
+        404,
+        404
+      ],
+      "safe_zone": "east-lowland-core",
+      "padding": 6,
+      "seat": 7,
+      "actions": [
+        "/17/29/1"
+      ]
+    },
+    {
+      "waypoint": "SWA72",
+      "object_id": 118,
+      "cell": [
+        304,
+        372
+      ],
+      "safe_zone": "central-intermediate-body",
+      "padding": 6,
+      "seat": 7,
+      "actions": [
+        "/17/30/1"
+      ]
+    },
+    {
+      "waypoint": "gift-alt-SWA72-1",
+      "object_id": 152,
+      "cell": [
+        402,
+        608
+      ],
+      "safe_zone": "east-lowland-core",
+      "padding": 6,
+      "seat": 7,
+      "actions": [
+        "/17/31/1"
+      ]
+    },
+    {
+      "waypoint": "PP71",
+      "object_id": 119,
+      "cell": [
+        220,
+        480
+      ],
+      "safe_zone": "west-central-upper-core",
+      "padding": 4,
+      "seat": 7,
+      "actions": [
+        "/17/32/1"
+      ]
+    },
+    {
+      "waypoint": "gift-alt-PP71-1",
+      "object_id": 134,
+      "cell": [
+        426,
+        522
+      ],
+      "safe_zone": "east-lowland-core",
+      "padding": 4,
+      "seat": 7,
+      "actions": [
+        "/17/33/1"
+      ]
+    },
+    {
+      "waypoint": "PP72",
+      "object_id": 120,
+      "cell": [
+        46.0,
+        478.0
+      ],
+      "safe_zone": "west-central-upper-core",
+      "padding": 4,
+      "seat": 7,
+      "actions": [
+        "/17/34/1"
+      ]
+    },
+    {
+      "waypoint": "gift-alt-PP72-1",
+      "object_id": 135,
+      "cell": [
+        100,
+        356
+      ],
+      "safe_zone": "west-central-upper-core",
+      "padding": 4,
+      "seat": 7,
+      "actions": [
+        "/17/35/1"
+      ]
+    },
+    {
+      "waypoint": "PP73",
+      "object_id": 121,
+      "cell": [
+        84,
+        444
+      ],
+      "safe_zone": "west-central-upper-core",
+      "padding": 4,
+      "seat": 7,
+      "actions": [
+        "/17/36/1"
+      ]
+    },
+    {
+      "waypoint": "gift-alt-PP73-1",
+      "object_id": 136,
+      "cell": [
+        138,
+        402
+      ],
+      "safe_zone": "west-central-upper-core",
+      "padding": 4,
+      "seat": 7,
+      "actions": [
+        "/17/37/1"
+      ]
+    },
+    {
+      "waypoint": "SWA81",
+      "object_id": 123,
+      "cell": [
+        366,
+        752
+      ],
+      "safe_zone": "east-lowland-core",
+      "padding": 6,
+      "seat": 8,
+      "actions": [
+        "/18/25/1"
+      ]
+    },
+    {
+      "waypoint": "gift-alt-SWA81-1",
+      "object_id": 153,
+      "cell": [
+        366,
+        724
+      ],
+      "safe_zone": "east-lowland-core",
+      "padding": 6,
+      "seat": 8,
+      "actions": [
+        "/18/26/1"
+      ]
+    },
+    {
+      "waypoint": "SWA82",
+      "object_id": 124,
+      "cell": [
+        140,
+        726
+      ],
+      "safe_zone": "southwest-upper-core",
+      "padding": 6,
+      "seat": 8,
+      "actions": [
+        "/18/27/1"
+      ]
+    },
+    {
+      "waypoint": "gift-alt-SWA82-1",
+      "object_id": 154,
+      "cell": [
+        394,
+        752
+      ],
+      "safe_zone": "east-lowland-core",
+      "padding": 6,
+      "seat": 8,
+      "actions": [
+        "/18/28/1"
+      ]
+    },
+    {
+      "waypoint": "SW83",
+      "object_id": 122,
+      "cell": [
+        168,
+        744
+      ],
+      "safe_zone": "southwest-upper-core",
+      "padding": 6,
+      "seat": 8,
+      "actions": [
+        "/18/29/1"
+      ]
+    },
+    {
+      "waypoint": "gift-alt-SW83-1",
+      "object_id": 146,
+      "cell": [
+        422,
+        752
+      ],
+      "safe_zone": "east-lowland-core",
+      "padding": 6,
+      "seat": 8,
+      "actions": [
+        "/18/30/1"
+      ]
+    },
+    {
+      "waypoint": "PP81",
+      "object_id": 125,
+      "cell": [
+        172,
+        772
+      ],
+      "safe_zone": "southwest-upper-core",
+      "padding": 4,
+      "seat": 8,
+      "actions": [
+        "/18/31/1"
+      ]
+    },
+    {
+      "waypoint": "gift-alt-PP81-1",
+      "object_id": 137,
+      "cell": [
+        422,
+        780
+      ],
+      "safe_zone": "east-lowland-core",
+      "padding": 4,
+      "seat": 8,
+      "actions": [
+        "/18/32/1"
+      ]
+    },
+    {
+      "waypoint": "PP82",
+      "object_id": 126,
+      "cell": [
+        40,
+        800
+      ],
+      "safe_zone": "southwest-upper-core",
+      "padding": 4,
+      "seat": 8,
+      "actions": [
+        "/18/33/1"
+      ]
+    },
+    {
+      "waypoint": "gift-alt-PP82-1",
+      "object_id": 138,
+      "cell": [
+        140,
+        800
+      ],
+      "safe_zone": "southwest-upper-core",
+      "padding": 4,
+      "seat": 8,
+      "actions": [
+        "/18/34/1"
+      ]
+    },
+    {
+      "waypoint": "PP83",
+      "object_id": 127,
+      "cell": [
+        68,
+        800
+      ],
+      "safe_zone": "southwest-upper-core",
+      "padding": 4,
+      "seat": 8,
+      "actions": [
+        "/18/35/1"
+      ]
+    },
+    {
+      "waypoint": "gift-alt-PP83-1",
+      "object_id": 139,
+      "cell": [
+        40,
+        744
+      ],
+      "safe_zone": "southwest-upper-core",
+      "padding": 4,
+      "seat": 8,
+      "actions": [
+        "/18/36/1"
+      ]
+    }
+  ],
+  "actions": [
+    {
+      "path": "/0/77/1",
+      "kind": "alliedbarracks",
+      "waypoint": "dual-p1-bar",
+      "owner": "Player_1/teamPlayer_1",
+      "seat": 1,
+      "padding": 6,
+      "native_angle": -2.356194496154785
+    },
+    {
+      "path": "/0/78/1",
+      "kind": "alliedbarracks",
+      "waypoint": "gift-alt-dual-p1-bar-1",
+      "owner": "Player_1/teamPlayer_1",
+      "seat": 1,
+      "padding": 6,
+      "native_angle": -2.356194496154785
+    },
+    {
+      "path": "/0/79/1",
+      "kind": "alliedwarfactory",
+      "waypoint": "dual-p1-wf",
+      "owner": "Player_1/teamPlayer_1",
+      "seat": 1,
+      "padding": 6,
+      "native_angle": -2.356194496154785
+    },
+    {
+      "path": "/0/80/1",
+      "kind": "alliedwarfactory",
+      "waypoint": "gift-alt-dual-p1-wf-1",
+      "owner": "Player_1/teamPlayer_1",
+      "seat": 1,
+      "padding": 6,
+      "native_angle": -2.356194496154785
+    },
+    {
+      "path": "/0/81/1",
+      "kind": "alliedairfield",
+      "waypoint": "dual-p1-air",
+      "owner": "Player_1/teamPlayer_1",
+      "seat": 1,
+      "padding": 8,
+      "native_angle": -2.356194496154785
+    },
+    {
+      "path": "/0/82/1",
+      "kind": "alliedairfield",
+      "waypoint": "gift-alt-dual-p1-air-1",
+      "owner": "Player_1/teamPlayer_1",
+      "seat": 1,
+      "padding": 8,
+      "native_angle": -2.356194496154785
+    },
+    {
+      "path": "/0/83/1",
+      "kind": "sovietbarracks",
+      "waypoint": "dual-p1-bar",
+      "owner": "Player_1/teamPlayer_1",
+      "seat": 1,
+      "padding": 6,
+      "native_angle": -2.356194496154785
+    },
+    {
+      "path": "/0/84/1",
+      "kind": "sovietbarracks",
+      "waypoint": "gift-alt-dual-p1-bar-1",
+      "owner": "Player_1/teamPlayer_1",
+      "seat": 1,
+      "padding": 6,
+      "native_angle": -2.356194496154785
+    },
+    {
+      "path": "/0/85/1",
+      "kind": "sovietwarfactory",
+      "waypoint": "dual-p1-wf",
+      "owner": "Player_1/teamPlayer_1",
+      "seat": 1,
+      "padding": 6,
+      "native_angle": -2.356194496154785
+    },
+    {
+      "path": "/0/86/1",
+      "kind": "sovietwarfactory",
+      "waypoint": "gift-alt-dual-p1-wf-1",
+      "owner": "Player_1/teamPlayer_1",
+      "seat": 1,
+      "padding": 6,
+      "native_angle": -2.356194496154785
+    },
+    {
+      "path": "/0/87/1",
+      "kind": "sovietairfield",
+      "waypoint": "dual-p1-air",
+      "owner": "Player_1/teamPlayer_1",
+      "seat": 1,
+      "padding": 8,
+      "native_angle": -2.356194496154785
+    },
+    {
+      "path": "/0/88/1",
+      "kind": "sovietairfield",
+      "waypoint": "gift-alt-dual-p1-air-1",
+      "owner": "Player_1/teamPlayer_1",
+      "seat": 1,
+      "padding": 8,
+      "native_angle": -2.356194496154785
+    },
+    {
+      "path": "/0/89/1",
+      "kind": "japanbarracks",
+      "waypoint": "dual-p1-bar",
+      "owner": "Player_1/teamPlayer_1",
+      "seat": 1,
+      "padding": 6,
+      "native_angle": -2.356194496154785
+    },
+    {
+      "path": "/0/90/1",
+      "kind": "japanbarracks",
+      "waypoint": "gift-alt-dual-p1-bar-1",
+      "owner": "Player_1/teamPlayer_1",
+      "seat": 1,
+      "padding": 6,
+      "native_angle": -2.356194496154785
+    },
+    {
+      "path": "/0/91/1",
+      "kind": "japanwarfactory",
+      "waypoint": "dual-p1-wf",
+      "owner": "Player_1/teamPlayer_1",
+      "seat": 1,
+      "padding": 6,
+      "native_angle": -2.356194496154785
+    },
+    {
+      "path": "/0/92/1",
+      "kind": "japanwarfactory",
+      "waypoint": "gift-alt-dual-p1-wf-1",
+      "owner": "Player_1/teamPlayer_1",
+      "seat": 1,
+      "padding": 6,
+      "native_angle": -2.356194496154785
+    },
+    {
+      "path": "/0/93/1",
+      "kind": "alliedbarracks",
+      "waypoint": "dual-p2-bar",
+      "owner": "Player_2/teamPlayer_2",
+      "seat": 2,
+      "padding": 6,
+      "native_angle": -2.356194496154785
+    },
+    {
+      "path": "/0/94/1",
+      "kind": "alliedbarracks",
+      "waypoint": "gift-alt-dual-p2-bar-1",
+      "owner": "Player_2/teamPlayer_2",
+      "seat": 2,
+      "padding": 6,
+      "native_angle": -2.356194496154785
+    },
+    {
+      "path": "/0/95/1",
+      "kind": "alliedwarfactory",
+      "waypoint": "dual-p2-wf",
+      "owner": "Player_2/teamPlayer_2",
+      "seat": 2,
+      "padding": 6,
+      "native_angle": -2.356194496154785
+    },
+    {
+      "path": "/0/96/1",
+      "kind": "alliedwarfactory",
+      "waypoint": "gift-alt-dual-p2-wf-1",
+      "owner": "Player_2/teamPlayer_2",
+      "seat": 2,
+      "padding": 6,
+      "native_angle": -2.356194496154785
+    },
+    {
+      "path": "/0/97/1",
+      "kind": "alliedairfield",
+      "waypoint": "dual-p2-air",
+      "owner": "Player_2/teamPlayer_2",
+      "seat": 2,
+      "padding": 8,
+      "native_angle": -2.356194496154785
+    },
+    {
+      "path": "/0/98/1",
+      "kind": "alliedairfield",
+      "waypoint": "gift-alt-dual-p2-air-1",
+      "owner": "Player_2/teamPlayer_2",
+      "seat": 2,
+      "padding": 8,
+      "native_angle": -2.356194496154785
+    },
+    {
+      "path": "/0/99/1",
+      "kind": "sovietbarracks",
+      "waypoint": "dual-p2-bar",
+      "owner": "Player_2/teamPlayer_2",
+      "seat": 2,
+      "padding": 6,
+      "native_angle": -2.356194496154785
+    },
+    {
+      "path": "/0/100/1",
+      "kind": "sovietbarracks",
+      "waypoint": "gift-alt-dual-p2-bar-1",
+      "owner": "Player_2/teamPlayer_2",
+      "seat": 2,
+      "padding": 6,
+      "native_angle": -2.356194496154785
+    },
+    {
+      "path": "/0/101/1",
+      "kind": "sovietwarfactory",
+      "waypoint": "dual-p2-wf",
+      "owner": "Player_2/teamPlayer_2",
+      "seat": 2,
+      "padding": 6,
+      "native_angle": -2.356194496154785
+    },
+    {
+      "path": "/0/102/1",
+      "kind": "sovietwarfactory",
+      "waypoint": "gift-alt-dual-p2-wf-1",
+      "owner": "Player_2/teamPlayer_2",
+      "seat": 2,
+      "padding": 6,
+      "native_angle": -2.356194496154785
+    },
+    {
+      "path": "/0/103/1",
+      "kind": "sovietairfield",
+      "waypoint": "dual-p2-air",
+      "owner": "Player_2/teamPlayer_2",
+      "seat": 2,
+      "padding": 8,
+      "native_angle": -2.356194496154785
+    },
+    {
+      "path": "/0/104/1",
+      "kind": "sovietairfield",
+      "waypoint": "gift-alt-dual-p2-air-1",
+      "owner": "Player_2/teamPlayer_2",
+      "seat": 2,
+      "padding": 8,
+      "native_angle": -2.356194496154785
+    },
+    {
+      "path": "/0/105/1",
+      "kind": "japanbarracks",
+      "waypoint": "dual-p2-bar",
+      "owner": "Player_2/teamPlayer_2",
+      "seat": 2,
+      "padding": 6,
+      "native_angle": -2.356194496154785
+    },
+    {
+      "path": "/0/106/1",
+      "kind": "japanbarracks",
+      "waypoint": "gift-alt-dual-p2-bar-1",
+      "owner": "Player_2/teamPlayer_2",
+      "seat": 2,
+      "padding": 6,
+      "native_angle": -2.356194496154785
+    },
+    {
+      "path": "/0/107/1",
+      "kind": "japanwarfactory",
+      "waypoint": "dual-p2-wf",
+      "owner": "Player_2/teamPlayer_2",
+      "seat": 2,
+      "padding": 6,
+      "native_angle": -2.356194496154785
+    },
+    {
+      "path": "/0/108/1",
+      "kind": "japanwarfactory",
+      "waypoint": "gift-alt-dual-p2-wf-1",
+      "owner": "Player_2/teamPlayer_2",
+      "seat": 2,
+      "padding": 6,
+      "native_angle": -2.356194496154785
+    },
+    {
+      "path": "/0/109/1",
+      "kind": "alliedbarracks",
+      "waypoint": "dual-p3-bar",
+      "owner": "Player_3/teamPlayer_3",
+      "seat": 3,
+      "padding": 6,
+      "native_angle": 2.356194496154785
+    },
+    {
+      "path": "/0/110/1",
+      "kind": "alliedbarracks",
+      "waypoint": "gift-alt-dual-p3-bar-1",
+      "owner": "Player_3/teamPlayer_3",
+      "seat": 3,
+      "padding": 6,
+      "native_angle": 2.356194496154785
+    },
+    {
+      "path": "/0/111/1",
+      "kind": "alliedwarfactory",
+      "waypoint": "dual-p3-wf",
+      "owner": "Player_3/teamPlayer_3",
+      "seat": 3,
+      "padding": 6,
+      "native_angle": 2.356194496154785
+    },
+    {
+      "path": "/0/112/1",
+      "kind": "alliedwarfactory",
+      "waypoint": "gift-alt-dual-p3-wf-1",
+      "owner": "Player_3/teamPlayer_3",
+      "seat": 3,
+      "padding": 6,
+      "native_angle": 2.356194496154785
+    },
+    {
+      "path": "/0/113/1",
+      "kind": "alliedairfield",
+      "waypoint": "dual-p3-air",
+      "owner": "Player_3/teamPlayer_3",
+      "seat": 3,
+      "padding": 8,
+      "native_angle": 2.356194496154785
+    },
+    {
+      "path": "/0/114/1",
+      "kind": "alliedairfield",
+      "waypoint": "gift-alt-dual-p3-air-1",
+      "owner": "Player_3/teamPlayer_3",
+      "seat": 3,
+      "padding": 8,
+      "native_angle": 2.356194496154785
+    },
+    {
+      "path": "/0/115/1",
+      "kind": "sovietbarracks",
+      "waypoint": "dual-p3-bar",
+      "owner": "Player_3/teamPlayer_3",
+      "seat": 3,
+      "padding": 6,
+      "native_angle": 2.356194496154785
+    },
+    {
+      "path": "/0/116/1",
+      "kind": "sovietbarracks",
+      "waypoint": "gift-alt-dual-p3-bar-1",
+      "owner": "Player_3/teamPlayer_3",
+      "seat": 3,
+      "padding": 6,
+      "native_angle": 2.356194496154785
+    },
+    {
+      "path": "/0/117/1",
+      "kind": "sovietwarfactory",
+      "waypoint": "dual-p3-wf",
+      "owner": "Player_3/teamPlayer_3",
+      "seat": 3,
+      "padding": 6,
+      "native_angle": 2.356194496154785
+    },
+    {
+      "path": "/0/118/1",
+      "kind": "sovietwarfactory",
+      "waypoint": "gift-alt-dual-p3-wf-1",
+      "owner": "Player_3/teamPlayer_3",
+      "seat": 3,
+      "padding": 6,
+      "native_angle": 2.356194496154785
+    },
+    {
+      "path": "/0/119/1",
+      "kind": "sovietairfield",
+      "waypoint": "dual-p3-air",
+      "owner": "Player_3/teamPlayer_3",
+      "seat": 3,
+      "padding": 8,
+      "native_angle": 2.356194496154785
+    },
+    {
+      "path": "/0/120/1",
+      "kind": "sovietairfield",
+      "waypoint": "gift-alt-dual-p3-air-1",
+      "owner": "Player_3/teamPlayer_3",
+      "seat": 3,
+      "padding": 8,
+      "native_angle": 2.356194496154785
+    },
+    {
+      "path": "/0/121/1",
+      "kind": "japanbarracks",
+      "waypoint": "dual-p3-bar",
+      "owner": "Player_3/teamPlayer_3",
+      "seat": 3,
+      "padding": 6,
+      "native_angle": 2.356194496154785
+    },
+    {
+      "path": "/0/122/1",
+      "kind": "japanbarracks",
+      "waypoint": "gift-alt-dual-p3-bar-1",
+      "owner": "Player_3/teamPlayer_3",
+      "seat": 3,
+      "padding": 6,
+      "native_angle": 2.356194496154785
+    },
+    {
+      "path": "/0/123/1",
+      "kind": "japanwarfactory",
+      "waypoint": "dual-p3-wf",
+      "owner": "Player_3/teamPlayer_3",
+      "seat": 3,
+      "padding": 6,
+      "native_angle": 2.356194496154785
+    },
+    {
+      "path": "/0/124/1",
+      "kind": "japanwarfactory",
+      "waypoint": "gift-alt-dual-p3-wf-1",
+      "owner": "Player_3/teamPlayer_3",
+      "seat": 3,
+      "padding": 6,
+      "native_angle": 2.356194496154785
+    },
+    {
+      "path": "/0/125/1",
+      "kind": "alliedbarracks",
+      "waypoint": "dual-p4-bar",
+      "owner": "Player_4/teamPlayer_4",
+      "seat": 4,
+      "padding": 6,
+      "native_angle": 2.356194496154785
+    },
+    {
+      "path": "/0/126/1",
+      "kind": "alliedbarracks",
+      "waypoint": "gift-alt-dual-p4-bar-1",
+      "owner": "Player_4/teamPlayer_4",
+      "seat": 4,
+      "padding": 6,
+      "native_angle": 2.356194496154785
+    },
+    {
+      "path": "/0/127/1",
+      "kind": "alliedwarfactory",
+      "waypoint": "dual-p4-wf",
+      "owner": "Player_4/teamPlayer_4",
+      "seat": 4,
+      "padding": 6,
+      "native_angle": 2.356194496154785
+    },
+    {
+      "path": "/0/128/1",
+      "kind": "alliedwarfactory",
+      "waypoint": "gift-alt-dual-p4-wf-1",
+      "owner": "Player_4/teamPlayer_4",
+      "seat": 4,
+      "padding": 6,
+      "native_angle": 2.356194496154785
+    },
+    {
+      "path": "/0/129/1",
+      "kind": "alliedairfield",
+      "waypoint": "dual-p4-air",
+      "owner": "Player_4/teamPlayer_4",
+      "seat": 4,
+      "padding": 8,
+      "native_angle": 2.356194496154785
+    },
+    {
+      "path": "/0/130/1",
+      "kind": "alliedairfield",
+      "waypoint": "gift-alt-dual-p4-air-1",
+      "owner": "Player_4/teamPlayer_4",
+      "seat": 4,
+      "padding": 8,
+      "native_angle": 2.356194496154785
+    },
+    {
+      "path": "/0/131/1",
+      "kind": "sovietbarracks",
+      "waypoint": "dual-p4-bar",
+      "owner": "Player_4/teamPlayer_4",
+      "seat": 4,
+      "padding": 6,
+      "native_angle": 2.356194496154785
+    },
+    {
+      "path": "/0/132/1",
+      "kind": "sovietbarracks",
+      "waypoint": "gift-alt-dual-p4-bar-1",
+      "owner": "Player_4/teamPlayer_4",
+      "seat": 4,
+      "padding": 6,
+      "native_angle": 2.356194496154785
+    },
+    {
+      "path": "/0/133/1",
+      "kind": "sovietwarfactory",
+      "waypoint": "dual-p4-wf",
+      "owner": "Player_4/teamPlayer_4",
+      "seat": 4,
+      "padding": 6,
+      "native_angle": 2.356194496154785
+    },
+    {
+      "path": "/0/134/1",
+      "kind": "sovietwarfactory",
+      "waypoint": "gift-alt-dual-p4-wf-1",
+      "owner": "Player_4/teamPlayer_4",
+      "seat": 4,
+      "padding": 6,
+      "native_angle": 2.356194496154785
+    },
+    {
+      "path": "/0/135/1",
+      "kind": "sovietairfield",
+      "waypoint": "dual-p4-air",
+      "owner": "Player_4/teamPlayer_4",
+      "seat": 4,
+      "padding": 8,
+      "native_angle": 2.356194496154785
+    },
+    {
+      "path": "/0/136/1",
+      "kind": "sovietairfield",
+      "waypoint": "gift-alt-dual-p4-air-1",
+      "owner": "Player_4/teamPlayer_4",
+      "seat": 4,
+      "padding": 8,
+      "native_angle": 2.356194496154785
+    },
+    {
+      "path": "/0/137/1",
+      "kind": "japanbarracks",
+      "waypoint": "dual-p4-bar",
+      "owner": "Player_4/teamPlayer_4",
+      "seat": 4,
+      "padding": 6,
+      "native_angle": 2.356194496154785
+    },
+    {
+      "path": "/0/138/1",
+      "kind": "japanbarracks",
+      "waypoint": "gift-alt-dual-p4-bar-1",
+      "owner": "Player_4/teamPlayer_4",
+      "seat": 4,
+      "padding": 6,
+      "native_angle": 2.356194496154785
+    },
+    {
+      "path": "/0/139/1",
+      "kind": "japanwarfactory",
+      "waypoint": "dual-p4-wf",
+      "owner": "Player_4/teamPlayer_4",
+      "seat": 4,
+      "padding": 6,
+      "native_angle": 2.356194496154785
+    },
+    {
+      "path": "/0/140/1",
+      "kind": "japanwarfactory",
+      "waypoint": "gift-alt-dual-p4-wf-1",
+      "owner": "Player_4/teamPlayer_4",
+      "seat": 4,
+      "padding": 6,
+      "native_angle": 2.356194496154785
+    },
+    {
+      "path": "/0/141/1",
+      "kind": "alliedbarracks",
+      "waypoint": "dual-p5-bar",
+      "owner": "Player_5/teamPlayer_5",
+      "seat": 5,
+      "padding": 6,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/0/142/1",
+      "kind": "alliedbarracks",
+      "waypoint": "gift-alt-dual-p5-bar-1",
+      "owner": "Player_5/teamPlayer_5",
+      "seat": 5,
+      "padding": 6,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/0/143/1",
+      "kind": "alliedwarfactory",
+      "waypoint": "dual-p5-wf",
+      "owner": "Player_5/teamPlayer_5",
+      "seat": 5,
+      "padding": 6,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/0/144/1",
+      "kind": "alliedwarfactory",
+      "waypoint": "gift-alt-dual-p5-wf-1",
+      "owner": "Player_5/teamPlayer_5",
+      "seat": 5,
+      "padding": 6,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/0/145/1",
+      "kind": "alliedairfield",
+      "waypoint": "dual-p5-air",
+      "owner": "Player_5/teamPlayer_5",
+      "seat": 5,
+      "padding": 8,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/0/146/1",
+      "kind": "alliedairfield",
+      "waypoint": "gift-alt-dual-p5-air-1",
+      "owner": "Player_5/teamPlayer_5",
+      "seat": 5,
+      "padding": 8,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/0/147/1",
+      "kind": "sovietbarracks",
+      "waypoint": "dual-p5-bar",
+      "owner": "Player_5/teamPlayer_5",
+      "seat": 5,
+      "padding": 6,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/0/148/1",
+      "kind": "sovietbarracks",
+      "waypoint": "gift-alt-dual-p5-bar-1",
+      "owner": "Player_5/teamPlayer_5",
+      "seat": 5,
+      "padding": 6,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/0/149/1",
+      "kind": "sovietwarfactory",
+      "waypoint": "dual-p5-wf",
+      "owner": "Player_5/teamPlayer_5",
+      "seat": 5,
+      "padding": 6,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/0/150/1",
+      "kind": "sovietwarfactory",
+      "waypoint": "gift-alt-dual-p5-wf-1",
+      "owner": "Player_5/teamPlayer_5",
+      "seat": 5,
+      "padding": 6,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/0/151/1",
+      "kind": "sovietairfield",
+      "waypoint": "dual-p5-air",
+      "owner": "Player_5/teamPlayer_5",
+      "seat": 5,
+      "padding": 8,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/0/152/1",
+      "kind": "sovietairfield",
+      "waypoint": "gift-alt-dual-p5-air-1",
+      "owner": "Player_5/teamPlayer_5",
+      "seat": 5,
+      "padding": 8,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/0/153/1",
+      "kind": "japanbarracks",
+      "waypoint": "dual-p5-bar",
+      "owner": "Player_5/teamPlayer_5",
+      "seat": 5,
+      "padding": 6,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/0/154/1",
+      "kind": "japanbarracks",
+      "waypoint": "gift-alt-dual-p5-bar-1",
+      "owner": "Player_5/teamPlayer_5",
+      "seat": 5,
+      "padding": 6,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/0/155/1",
+      "kind": "japanwarfactory",
+      "waypoint": "dual-p5-wf",
+      "owner": "Player_5/teamPlayer_5",
+      "seat": 5,
+      "padding": 6,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/0/156/1",
+      "kind": "japanwarfactory",
+      "waypoint": "gift-alt-dual-p5-wf-1",
+      "owner": "Player_5/teamPlayer_5",
+      "seat": 5,
+      "padding": 6,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/0/157/1",
+      "kind": "alliedbarracks",
+      "waypoint": "dual-p6-bar",
+      "owner": "Player_6/teamPlayer_6",
+      "seat": 6,
+      "padding": 6,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/0/158/1",
+      "kind": "alliedbarracks",
+      "waypoint": "gift-alt-dual-p6-bar-1",
+      "owner": "Player_6/teamPlayer_6",
+      "seat": 6,
+      "padding": 6,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/0/159/1",
+      "kind": "alliedwarfactory",
+      "waypoint": "dual-p6-wf",
+      "owner": "Player_6/teamPlayer_6",
+      "seat": 6,
+      "padding": 6,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/0/160/1",
+      "kind": "alliedwarfactory",
+      "waypoint": "gift-alt-dual-p6-wf-1",
+      "owner": "Player_6/teamPlayer_6",
+      "seat": 6,
+      "padding": 6,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/0/161/1",
+      "kind": "alliedairfield",
+      "waypoint": "dual-p6-air",
+      "owner": "Player_6/teamPlayer_6",
+      "seat": 6,
+      "padding": 8,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/0/162/1",
+      "kind": "alliedairfield",
+      "waypoint": "gift-alt-dual-p6-air-1",
+      "owner": "Player_6/teamPlayer_6",
+      "seat": 6,
+      "padding": 8,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/0/163/1",
+      "kind": "sovietbarracks",
+      "waypoint": "dual-p6-bar",
+      "owner": "Player_6/teamPlayer_6",
+      "seat": 6,
+      "padding": 6,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/0/164/1",
+      "kind": "sovietbarracks",
+      "waypoint": "gift-alt-dual-p6-bar-1",
+      "owner": "Player_6/teamPlayer_6",
+      "seat": 6,
+      "padding": 6,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/0/165/1",
+      "kind": "sovietwarfactory",
+      "waypoint": "dual-p6-wf",
+      "owner": "Player_6/teamPlayer_6",
+      "seat": 6,
+      "padding": 6,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/0/166/1",
+      "kind": "sovietwarfactory",
+      "waypoint": "gift-alt-dual-p6-wf-1",
+      "owner": "Player_6/teamPlayer_6",
+      "seat": 6,
+      "padding": 6,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/0/167/1",
+      "kind": "sovietairfield",
+      "waypoint": "dual-p6-air",
+      "owner": "Player_6/teamPlayer_6",
+      "seat": 6,
+      "padding": 8,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/0/168/1",
+      "kind": "sovietairfield",
+      "waypoint": "gift-alt-dual-p6-air-1",
+      "owner": "Player_6/teamPlayer_6",
+      "seat": 6,
+      "padding": 8,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/0/169/1",
+      "kind": "japanbarracks",
+      "waypoint": "dual-p6-bar",
+      "owner": "Player_6/teamPlayer_6",
+      "seat": 6,
+      "padding": 6,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/0/170/1",
+      "kind": "japanbarracks",
+      "waypoint": "gift-alt-dual-p6-bar-1",
+      "owner": "Player_6/teamPlayer_6",
+      "seat": 6,
+      "padding": 6,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/0/171/1",
+      "kind": "japanwarfactory",
+      "waypoint": "dual-p6-wf",
+      "owner": "Player_6/teamPlayer_6",
+      "seat": 6,
+      "padding": 6,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/0/172/1",
+      "kind": "japanwarfactory",
+      "waypoint": "gift-alt-dual-p6-wf-1",
+      "owner": "Player_6/teamPlayer_6",
+      "seat": 6,
+      "padding": 6,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/0/173/1",
+      "kind": "alliedbarracks",
+      "waypoint": "dual-civilian-bar",
+      "owner": "PlyrCivilian/teamPlyrCivilian",
+      "seat": 7,
+      "padding": 6,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/0/174/1",
+      "kind": "alliedbarracks",
+      "waypoint": "gift-alt-dual-civilian-bar-1",
+      "owner": "PlyrCivilian/teamPlyrCivilian",
+      "seat": 7,
+      "padding": 6,
+      "native_angle": 0.7853981852531433
+    },
+    {
+      "path": "/0/175/1",
+      "kind": "alliedwarfactory",
+      "waypoint": "dual-civilian-wf",
+      "owner": "PlyrCivilian/teamPlyrCivilian",
+      "seat": 7,
+      "padding": 6,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/0/176/1",
+      "kind": "alliedwarfactory",
+      "waypoint": "gift-alt-dual-civilian-wf-1",
+      "owner": "PlyrCivilian/teamPlyrCivilian",
+      "seat": 7,
+      "padding": 6,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/0/177/1",
+      "kind": "alliedairfield",
+      "waypoint": "dual-civilian-air",
+      "owner": "PlyrCivilian/teamPlyrCivilian",
+      "seat": 7,
+      "padding": 8,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/0/178/1",
+      "kind": "alliedairfield",
+      "waypoint": "gift-alt-dual-civilian-air-1",
+      "owner": "PlyrCivilian/teamPlyrCivilian",
+      "seat": 7,
+      "padding": 8,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/0/179/1",
+      "kind": "sovietbarracks",
+      "waypoint": "dual-civilian-bar",
+      "owner": "PlyrCivilian/teamPlyrCivilian",
+      "seat": 7,
+      "padding": 6,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/0/180/1",
+      "kind": "sovietbarracks",
+      "waypoint": "gift-alt-dual-civilian-bar-1",
+      "owner": "PlyrCivilian/teamPlyrCivilian",
+      "seat": 7,
+      "padding": 6,
+      "native_angle": 0.7853981852531433
+    },
+    {
+      "path": "/0/181/1",
+      "kind": "sovietwarfactory",
+      "waypoint": "dual-civilian-wf",
+      "owner": "PlyrCivilian/teamPlyrCivilian",
+      "seat": 7,
+      "padding": 6,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/0/182/1",
+      "kind": "sovietwarfactory",
+      "waypoint": "gift-alt-dual-civilian-wf-1",
+      "owner": "PlyrCivilian/teamPlyrCivilian",
+      "seat": 7,
+      "padding": 6,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/0/183/1",
+      "kind": "sovietairfield",
+      "waypoint": "dual-civilian-air",
+      "owner": "PlyrCivilian/teamPlyrCivilian",
+      "seat": 7,
+      "padding": 8,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/0/184/1",
+      "kind": "sovietairfield",
+      "waypoint": "gift-alt-dual-civilian-air-1",
+      "owner": "PlyrCivilian/teamPlyrCivilian",
+      "seat": 7,
+      "padding": 8,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/0/185/1",
+      "kind": "japanbarracks",
+      "waypoint": "dual-civilian-bar",
+      "owner": "PlyrCivilian/teamPlyrCivilian",
+      "seat": 7,
+      "padding": 6,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/0/186/1",
+      "kind": "japanbarracks",
+      "waypoint": "gift-alt-dual-civilian-bar-1",
+      "owner": "PlyrCivilian/teamPlyrCivilian",
+      "seat": 7,
+      "padding": 6,
+      "native_angle": 0.7853981852531433
+    },
+    {
+      "path": "/0/187/1",
+      "kind": "japanwarfactory",
+      "waypoint": "dual-civilian-wf",
+      "owner": "PlyrCivilian/teamPlyrCivilian",
+      "seat": 7,
+      "padding": 6,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/0/188/1",
+      "kind": "japanwarfactory",
+      "waypoint": "gift-alt-dual-civilian-wf-1",
+      "owner": "PlyrCivilian/teamPlyrCivilian",
+      "seat": 7,
+      "padding": 6,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/0/189/1",
+      "kind": "alliedbarracks",
+      "waypoint": "dual-creeps-bar",
+      "owner": "PlyrCreeps/teamPlyrCreeps",
+      "seat": 8,
+      "padding": 6,
+      "native_angle": 0.7853981852531433
+    },
+    {
+      "path": "/0/190/1",
+      "kind": "alliedbarracks",
+      "waypoint": "gift-alt-dual-creeps-bar-1",
+      "owner": "PlyrCreeps/teamPlyrCreeps",
+      "seat": 8,
+      "padding": 6,
+      "native_angle": 0.7853981852531433
+    },
+    {
+      "path": "/0/191/1",
+      "kind": "alliedwarfactory",
+      "waypoint": "dual-creeps-wf",
+      "owner": "PlyrCreeps/teamPlyrCreeps",
+      "seat": 8,
+      "padding": 6,
+      "native_angle": 0.7853981852531433
+    },
+    {
+      "path": "/0/192/1",
+      "kind": "alliedwarfactory",
+      "waypoint": "gift-alt-dual-creeps-wf-1",
+      "owner": "PlyrCreeps/teamPlyrCreeps",
+      "seat": 8,
+      "padding": 6,
+      "native_angle": 0.7853981852531433
+    },
+    {
+      "path": "/0/193/1",
+      "kind": "alliedairfield",
+      "waypoint": "dual-creeps-air",
+      "owner": "PlyrCreeps/teamPlyrCreeps",
+      "seat": 8,
+      "padding": 8,
+      "native_angle": 0.7853981852531433
+    },
+    {
+      "path": "/0/194/1",
+      "kind": "alliedairfield",
+      "waypoint": "gift-alt-dual-creeps-air-1",
+      "owner": "PlyrCreeps/teamPlyrCreeps",
+      "seat": 8,
+      "padding": 8,
+      "native_angle": 0.7853981852531433
+    },
+    {
+      "path": "/0/195/1",
+      "kind": "sovietbarracks",
+      "waypoint": "dual-creeps-bar",
+      "owner": "PlyrCreeps/teamPlyrCreeps",
+      "seat": 8,
+      "padding": 6,
+      "native_angle": 0.7853981852531433
+    },
+    {
+      "path": "/0/196/1",
+      "kind": "sovietbarracks",
+      "waypoint": "gift-alt-dual-creeps-bar-1",
+      "owner": "PlyrCreeps/teamPlyrCreeps",
+      "seat": 8,
+      "padding": 6,
+      "native_angle": 0.7853981852531433
+    },
+    {
+      "path": "/0/197/1",
+      "kind": "sovietwarfactory",
+      "waypoint": "dual-creeps-wf",
+      "owner": "PlyrCreeps/teamPlyrCreeps",
+      "seat": 8,
+      "padding": 6,
+      "native_angle": 0.7853981852531433
+    },
+    {
+      "path": "/0/198/1",
+      "kind": "sovietwarfactory",
+      "waypoint": "gift-alt-dual-creeps-wf-1",
+      "owner": "PlyrCreeps/teamPlyrCreeps",
+      "seat": 8,
+      "padding": 6,
+      "native_angle": 0.7853981852531433
+    },
+    {
+      "path": "/0/199/1",
+      "kind": "sovietairfield",
+      "waypoint": "dual-creeps-air",
+      "owner": "PlyrCreeps/teamPlyrCreeps",
+      "seat": 8,
+      "padding": 8,
+      "native_angle": 0.7853981852531433
+    },
+    {
+      "path": "/0/200/1",
+      "kind": "sovietairfield",
+      "waypoint": "gift-alt-dual-creeps-air-1",
+      "owner": "PlyrCreeps/teamPlyrCreeps",
+      "seat": 8,
+      "padding": 8,
+      "native_angle": 0.7853981852531433
+    },
+    {
+      "path": "/0/201/1",
+      "kind": "japanbarracks",
+      "waypoint": "dual-creeps-bar",
+      "owner": "PlyrCreeps/teamPlyrCreeps",
+      "seat": 8,
+      "padding": 6,
+      "native_angle": 0.7853981852531433
+    },
+    {
+      "path": "/0/202/1",
+      "kind": "japanbarracks",
+      "waypoint": "gift-alt-dual-creeps-bar-1",
+      "owner": "PlyrCreeps/teamPlyrCreeps",
+      "seat": 8,
+      "padding": 6,
+      "native_angle": 0.7853981852531433
+    },
+    {
+      "path": "/0/203/1",
+      "kind": "japanwarfactory",
+      "waypoint": "dual-creeps-wf",
+      "owner": "PlyrCreeps/teamPlyrCreeps",
+      "seat": 8,
+      "padding": 6,
+      "native_angle": 0.7853981852531433
+    },
+    {
+      "path": "/0/204/1",
+      "kind": "japanwarfactory",
+      "waypoint": "gift-alt-dual-creeps-wf-1",
+      "owner": "PlyrCreeps/teamPlyrCreeps",
+      "seat": 8,
+      "padding": 6,
+      "native_angle": 0.7853981852531433
+    },
+    {
+      "path": "/0/205/1",
+      "kind": "japansuperweapon",
+      "waypoint": "SWJ1",
+      "owner": "Player_1/teamPlayer_1",
+      "seat": 1,
+      "padding": 6,
+      "native_angle": -2.356194496154785
+    },
+    {
+      "path": "/0/206/1",
+      "kind": "japansuperweapon",
+      "waypoint": "gift-alt-SWJ1-1",
+      "owner": "Player_1/teamPlayer_1",
+      "seat": 1,
+      "padding": 6,
+      "native_angle": -2.356194496154785
+    },
+    {
+      "path": "/0/207/1",
+      "kind": "japanpowerplant",
+      "waypoint": "PPJ1",
+      "owner": "Player_1/teamPlayer_1",
+      "seat": 1,
+      "padding": 4,
+      "native_angle": -2.356194496154785
+    },
+    {
+      "path": "/0/208/1",
+      "kind": "japanpowerplant",
+      "waypoint": "gift-alt-PPJ1-1",
+      "owner": "Player_1/teamPlayer_1",
+      "seat": 1,
+      "padding": 4,
+      "native_angle": -2.356194496154785
+    },
+    {
+      "path": "/0/209/1",
+      "kind": "japansuperweapon",
+      "waypoint": "SWJ2",
+      "owner": "Player_2/teamPlayer_2",
+      "seat": 2,
+      "padding": 6,
+      "native_angle": -2.356194496154785
+    },
+    {
+      "path": "/0/210/1",
+      "kind": "japansuperweapon",
+      "waypoint": "gift-alt-SWJ2-1",
+      "owner": "Player_2/teamPlayer_2",
+      "seat": 2,
+      "padding": 6,
+      "native_angle": -2.356194496154785
+    },
+    {
+      "path": "/0/211/1",
+      "kind": "japanpowerplant",
+      "waypoint": "PPJ2",
+      "owner": "Player_2/teamPlayer_2",
+      "seat": 2,
+      "padding": 4,
+      "native_angle": -2.356194496154785
+    },
+    {
+      "path": "/0/212/1",
+      "kind": "japanpowerplant",
+      "waypoint": "gift-alt-PPJ2-1",
+      "owner": "Player_2/teamPlayer_2",
+      "seat": 2,
+      "padding": 4,
+      "native_angle": -2.356194496154785
+    },
+    {
+      "path": "/0/213/1",
+      "kind": "japansuperweapon",
+      "waypoint": "SWJ3",
+      "owner": "Player_3/teamPlayer_3",
+      "seat": 3,
+      "padding": 6,
+      "native_angle": 2.356194496154785
+    },
+    {
+      "path": "/0/214/1",
+      "kind": "japansuperweapon",
+      "waypoint": "gift-alt-SWJ3-1",
+      "owner": "Player_3/teamPlayer_3",
+      "seat": 3,
+      "padding": 6,
+      "native_angle": 2.356194496154785
+    },
+    {
+      "path": "/0/215/1",
+      "kind": "japanpowerplant",
+      "waypoint": "PPJ3",
+      "owner": "Player_3/teamPlayer_3",
+      "seat": 3,
+      "padding": 4,
+      "native_angle": 2.356194496154785
+    },
+    {
+      "path": "/0/216/1",
+      "kind": "japanpowerplant",
+      "waypoint": "gift-alt-PPJ3-1",
+      "owner": "Player_3/teamPlayer_3",
+      "seat": 3,
+      "padding": 4,
+      "native_angle": 2.356194496154785
+    },
+    {
+      "path": "/0/217/1",
+      "kind": "japansuperweapon",
+      "waypoint": "SWJ4",
+      "owner": "Player_4/teamPlayer_4",
+      "seat": 4,
+      "padding": 6,
+      "native_angle": 2.356194496154785
+    },
+    {
+      "path": "/0/218/1",
+      "kind": "japansuperweapon",
+      "waypoint": "gift-alt-SWJ4-1",
+      "owner": "Player_4/teamPlayer_4",
+      "seat": 4,
+      "padding": 6,
+      "native_angle": 2.356194496154785
+    },
+    {
+      "path": "/0/219/1",
+      "kind": "japanpowerplant",
+      "waypoint": "PPJ4",
+      "owner": "Player_4/teamPlayer_4",
+      "seat": 4,
+      "padding": 4,
+      "native_angle": 2.356194496154785
+    },
+    {
+      "path": "/0/220/1",
+      "kind": "japanpowerplant",
+      "waypoint": "gift-alt-PPJ4-1",
+      "owner": "Player_4/teamPlayer_4",
+      "seat": 4,
+      "padding": 4,
+      "native_angle": 2.356194496154785
+    },
+    {
+      "path": "/15/2/1",
+      "kind": "japansuperweaponadvanced",
+      "waypoint": "SWA51",
+      "owner": "teamPlayer_5",
+      "seat": 5,
+      "padding": 6,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/15/3/1",
+      "kind": "japansuperweaponadvanced",
+      "waypoint": "gift-alt-SWA51-1",
+      "owner": "teamPlayer_5",
+      "seat": 5,
+      "padding": 6,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/15/4/1",
+      "kind": "sovietsuperweaponadvanced",
+      "waypoint": "SWA52",
+      "owner": "teamPlayer_5",
+      "seat": 5,
+      "padding": 6,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/15/5/1",
+      "kind": "sovietsuperweaponadvanced",
+      "waypoint": "gift-alt-SWA52-1",
+      "owner": "teamPlayer_5",
+      "seat": 5,
+      "padding": 6,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/15/6/1",
+      "kind": "sovietsuperweapon",
+      "waypoint": "SW53",
+      "owner": "teamPlayer_5",
+      "seat": 5,
+      "padding": 6,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/15/7/1",
+      "kind": "sovietsuperweapon",
+      "waypoint": "gift-alt-SW53-1",
+      "owner": "teamPlayer_5",
+      "seat": 5,
+      "padding": 6,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/15/8/1",
+      "kind": "alliedpowerplant",
+      "waypoint": "PP51",
+      "owner": "teamPlayer_5",
+      "seat": 5,
+      "padding": 4,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/15/9/1",
+      "kind": "alliedpowerplant",
+      "waypoint": "gift-alt-PP51-1",
+      "owner": "teamPlayer_5",
+      "seat": 5,
+      "padding": 4,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/15/10/1",
+      "kind": "alliedpowerplant",
+      "waypoint": "PP52",
+      "owner": "teamPlayer_5",
+      "seat": 5,
+      "padding": 4,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/15/11/1",
+      "kind": "alliedpowerplant",
+      "waypoint": "gift-alt-PP52-1",
+      "owner": "teamPlayer_5",
+      "seat": 5,
+      "padding": 4,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/15/12/1",
+      "kind": "alliedpowerplant",
+      "waypoint": "PP53",
+      "owner": "teamPlayer_5",
+      "seat": 5,
+      "padding": 4,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/15/13/1",
+      "kind": "alliedpowerplant",
+      "waypoint": "gift-alt-PP53-1",
+      "owner": "teamPlayer_5",
+      "seat": 5,
+      "padding": 4,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/15/14/1",
+      "kind": "alliedsuperweaponadvanced",
+      "waypoint": "SWA51",
+      "owner": "teamPlayer_5",
+      "seat": 5,
+      "padding": 6,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/15/15/1",
+      "kind": "alliedsuperweaponadvanced",
+      "waypoint": "gift-alt-SWA51-1",
+      "owner": "teamPlayer_5",
+      "seat": 5,
+      "padding": 6,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/15/16/1",
+      "kind": "sovietsuperweaponadvanced",
+      "waypoint": "SWA52",
+      "owner": "teamPlayer_5",
+      "seat": 5,
+      "padding": 6,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/15/17/1",
+      "kind": "sovietsuperweaponadvanced",
+      "waypoint": "gift-alt-SWA52-1",
+      "owner": "teamPlayer_5",
+      "seat": 5,
+      "padding": 6,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/15/18/1",
+      "kind": "sovietsuperweapon",
+      "waypoint": "SW53",
+      "owner": "teamPlayer_5",
+      "seat": 5,
+      "padding": 6,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/15/19/1",
+      "kind": "sovietsuperweapon",
+      "waypoint": "gift-alt-SW53-1",
+      "owner": "teamPlayer_5",
+      "seat": 5,
+      "padding": 6,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/15/20/1",
+      "kind": "japanpowerplant",
+      "waypoint": "PP51",
+      "owner": "teamPlayer_5",
+      "seat": 5,
+      "padding": 4,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/15/21/1",
+      "kind": "japanpowerplant",
+      "waypoint": "gift-alt-PP51-1",
+      "owner": "teamPlayer_5",
+      "seat": 5,
+      "padding": 4,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/15/22/1",
+      "kind": "japanpowerplant",
+      "waypoint": "PP52",
+      "owner": "teamPlayer_5",
+      "seat": 5,
+      "padding": 4,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/15/23/1",
+      "kind": "japanpowerplant",
+      "waypoint": "gift-alt-PP52-1",
+      "owner": "teamPlayer_5",
+      "seat": 5,
+      "padding": 4,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/15/24/1",
+      "kind": "japanpowerplant",
+      "waypoint": "PP53",
+      "owner": "teamPlayer_5",
+      "seat": 5,
+      "padding": 4,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/15/25/1",
+      "kind": "japanpowerplant",
+      "waypoint": "gift-alt-PP53-1",
+      "owner": "teamPlayer_5",
+      "seat": 5,
+      "padding": 4,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/15/26/1",
+      "kind": "japansuperweaponadvanced",
+      "waypoint": "SWA51",
+      "owner": "teamPlayer_5",
+      "seat": 5,
+      "padding": 6,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/15/27/1",
+      "kind": "japansuperweaponadvanced",
+      "waypoint": "gift-alt-SWA51-1",
+      "owner": "teamPlayer_5",
+      "seat": 5,
+      "padding": 6,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/15/28/1",
+      "kind": "alliedsuperweaponadvanced",
+      "waypoint": "SWA52",
+      "owner": "teamPlayer_5",
+      "seat": 5,
+      "padding": 6,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/15/29/1",
+      "kind": "alliedsuperweaponadvanced",
+      "waypoint": "gift-alt-SWA52-1",
+      "owner": "teamPlayer_5",
+      "seat": 5,
+      "padding": 6,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/15/30/1",
+      "kind": "sovietpowerplant",
+      "waypoint": "PP51",
+      "owner": "teamPlayer_5",
+      "seat": 5,
+      "padding": 4,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/15/31/1",
+      "kind": "sovietpowerplant",
+      "waypoint": "gift-alt-PP51-1",
+      "owner": "teamPlayer_5",
+      "seat": 5,
+      "padding": 4,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/15/32/1",
+      "kind": "sovietpowerplant",
+      "waypoint": "PP52",
+      "owner": "teamPlayer_5",
+      "seat": 5,
+      "padding": 4,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/15/33/1",
+      "kind": "sovietpowerplant",
+      "waypoint": "gift-alt-PP52-1",
+      "owner": "teamPlayer_5",
+      "seat": 5,
+      "padding": 4,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/15/34/1",
+      "kind": "sovietpowerplant",
+      "waypoint": "PP53",
+      "owner": "teamPlayer_5",
+      "seat": 5,
+      "padding": 4,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/15/35/1",
+      "kind": "sovietpowerplant",
+      "waypoint": "gift-alt-PP53-1",
+      "owner": "teamPlayer_5",
+      "seat": 5,
+      "padding": 4,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/16/2/1",
+      "kind": "japansuperweaponadvanced",
+      "waypoint": "SWA61",
+      "owner": "teamPlayer_6",
+      "seat": 6,
+      "padding": 6,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/16/3/1",
+      "kind": "japansuperweaponadvanced",
+      "waypoint": "gift-alt-SWA61-1",
+      "owner": "teamPlayer_6",
+      "seat": 6,
+      "padding": 6,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/16/4/1",
+      "kind": "sovietsuperweaponadvanced",
+      "waypoint": "SWA62",
+      "owner": "teamPlayer_6",
+      "seat": 6,
+      "padding": 6,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/16/5/1",
+      "kind": "sovietsuperweaponadvanced",
+      "waypoint": "gift-alt-SWA62-1",
+      "owner": "teamPlayer_6",
+      "seat": 6,
+      "padding": 6,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/16/6/1",
+      "kind": "sovietsuperweapon",
+      "waypoint": "SW63",
+      "owner": "teamPlayer_6",
+      "seat": 6,
+      "padding": 6,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/16/7/1",
+      "kind": "sovietsuperweapon",
+      "waypoint": "gift-alt-SW63-1",
+      "owner": "teamPlayer_6",
+      "seat": 6,
+      "padding": 6,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/16/8/1",
+      "kind": "alliedpowerplant",
+      "waypoint": "PP61",
+      "owner": "teamPlayer_6",
+      "seat": 6,
+      "padding": 4,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/16/9/1",
+      "kind": "alliedpowerplant",
+      "waypoint": "gift-alt-PP61-1",
+      "owner": "teamPlayer_6",
+      "seat": 6,
+      "padding": 4,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/16/10/1",
+      "kind": "alliedpowerplant",
+      "waypoint": "PP62",
+      "owner": "teamPlayer_6",
+      "seat": 6,
+      "padding": 4,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/16/11/1",
+      "kind": "alliedpowerplant",
+      "waypoint": "gift-alt-PP62-1",
+      "owner": "teamPlayer_6",
+      "seat": 6,
+      "padding": 4,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/16/12/1",
+      "kind": "alliedpowerplant",
+      "waypoint": "PP63",
+      "owner": "teamPlayer_6",
+      "seat": 6,
+      "padding": 4,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/16/13/1",
+      "kind": "alliedpowerplant",
+      "waypoint": "gift-alt-PP63-1",
+      "owner": "teamPlayer_6",
+      "seat": 6,
+      "padding": 4,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/16/14/1",
+      "kind": "alliedsuperweaponadvanced",
+      "waypoint": "SWA61",
+      "owner": "teamPlayer_6",
+      "seat": 6,
+      "padding": 6,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/16/15/1",
+      "kind": "alliedsuperweaponadvanced",
+      "waypoint": "gift-alt-SWA61-1",
+      "owner": "teamPlayer_6",
+      "seat": 6,
+      "padding": 6,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/16/16/1",
+      "kind": "sovietsuperweaponadvanced",
+      "waypoint": "SWA62",
+      "owner": "teamPlayer_6",
+      "seat": 6,
+      "padding": 6,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/16/17/1",
+      "kind": "sovietsuperweaponadvanced",
+      "waypoint": "gift-alt-SWA62-1",
+      "owner": "teamPlayer_6",
+      "seat": 6,
+      "padding": 6,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/16/18/1",
+      "kind": "sovietsuperweapon",
+      "waypoint": "SW63",
+      "owner": "teamPlayer_6",
+      "seat": 6,
+      "padding": 6,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/16/19/1",
+      "kind": "sovietsuperweapon",
+      "waypoint": "gift-alt-SW63-1",
+      "owner": "teamPlayer_6",
+      "seat": 6,
+      "padding": 6,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/16/20/1",
+      "kind": "japanpowerplant",
+      "waypoint": "PP61",
+      "owner": "teamPlayer_6",
+      "seat": 6,
+      "padding": 4,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/16/21/1",
+      "kind": "japanpowerplant",
+      "waypoint": "gift-alt-PP61-1",
+      "owner": "teamPlayer_6",
+      "seat": 6,
+      "padding": 4,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/16/22/1",
+      "kind": "japanpowerplant",
+      "waypoint": "PP62",
+      "owner": "teamPlayer_6",
+      "seat": 6,
+      "padding": 4,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/16/23/1",
+      "kind": "japanpowerplant",
+      "waypoint": "gift-alt-PP62-1",
+      "owner": "teamPlayer_6",
+      "seat": 6,
+      "padding": 4,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/16/24/1",
+      "kind": "japanpowerplant",
+      "waypoint": "PP63",
+      "owner": "teamPlayer_6",
+      "seat": 6,
+      "padding": 4,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/16/25/1",
+      "kind": "japanpowerplant",
+      "waypoint": "gift-alt-PP63-1",
+      "owner": "teamPlayer_6",
+      "seat": 6,
+      "padding": 4,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/16/26/1",
+      "kind": "japansuperweaponadvanced",
+      "waypoint": "SWA61",
+      "owner": "teamPlayer_6",
+      "seat": 6,
+      "padding": 6,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/16/27/1",
+      "kind": "japansuperweaponadvanced",
+      "waypoint": "gift-alt-SWA61-1",
+      "owner": "teamPlayer_6",
+      "seat": 6,
+      "padding": 6,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/16/28/1",
+      "kind": "alliedsuperweaponadvanced",
+      "waypoint": "SWA62",
+      "owner": "teamPlayer_6",
+      "seat": 6,
+      "padding": 6,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/16/29/1",
+      "kind": "alliedsuperweaponadvanced",
+      "waypoint": "gift-alt-SWA62-1",
+      "owner": "teamPlayer_6",
+      "seat": 6,
+      "padding": 6,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/16/30/1",
+      "kind": "sovietpowerplant",
+      "waypoint": "PP61",
+      "owner": "teamPlayer_6",
+      "seat": 6,
+      "padding": 4,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/16/31/1",
+      "kind": "sovietpowerplant",
+      "waypoint": "gift-alt-PP61-1",
+      "owner": "teamPlayer_6",
+      "seat": 6,
+      "padding": 4,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/16/32/1",
+      "kind": "sovietpowerplant",
+      "waypoint": "PP62",
+      "owner": "teamPlayer_6",
+      "seat": 6,
+      "padding": 4,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/16/33/1",
+      "kind": "sovietpowerplant",
+      "waypoint": "gift-alt-PP62-1",
+      "owner": "teamPlayer_6",
+      "seat": 6,
+      "padding": 4,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/16/34/1",
+      "kind": "sovietpowerplant",
+      "waypoint": "PP63",
+      "owner": "teamPlayer_6",
+      "seat": 6,
+      "padding": 4,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/16/35/1",
+      "kind": "sovietpowerplant",
+      "waypoint": "gift-alt-PP63-1",
+      "owner": "teamPlayer_6",
+      "seat": 6,
+      "padding": 4,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/17/4/1",
+      "kind": "japansuperweaponadvanced",
+      "waypoint": "SWA61",
+      "owner": "teamPlayer_6",
+      "seat": 6,
+      "padding": 6,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/17/5/1",
+      "kind": "japansuperweaponadvanced",
+      "waypoint": "gift-alt-SWA61-1",
+      "owner": "teamPlayer_6",
+      "seat": 6,
+      "padding": 6,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/17/6/1",
+      "kind": "sovietsuperweaponadvanced",
+      "waypoint": "SWA62",
+      "owner": "teamPlayer_6",
+      "seat": 6,
+      "padding": 6,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/17/7/1",
+      "kind": "sovietsuperweaponadvanced",
+      "waypoint": "gift-alt-SWA62-1",
+      "owner": "teamPlayer_6",
+      "seat": 6,
+      "padding": 6,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/17/8/1",
+      "kind": "sovietsuperweapon",
+      "waypoint": "SW63",
+      "owner": "teamPlayer_6",
+      "seat": 6,
+      "padding": 6,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/17/9/1",
+      "kind": "sovietsuperweapon",
+      "waypoint": "gift-alt-SW63-1",
+      "owner": "teamPlayer_6",
+      "seat": 6,
+      "padding": 6,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/17/10/1",
+      "kind": "alliedpowerplant",
+      "waypoint": "PP61",
+      "owner": "teamPlayer_6",
+      "seat": 6,
+      "padding": 4,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/17/11/1",
+      "kind": "alliedpowerplant",
+      "waypoint": "gift-alt-PP61-1",
+      "owner": "teamPlayer_6",
+      "seat": 6,
+      "padding": 4,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/17/12/1",
+      "kind": "alliedpowerplant",
+      "waypoint": "PP62",
+      "owner": "teamPlayer_6",
+      "seat": 6,
+      "padding": 4,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/17/13/1",
+      "kind": "alliedpowerplant",
+      "waypoint": "gift-alt-PP62-1",
+      "owner": "teamPlayer_6",
+      "seat": 6,
+      "padding": 4,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/17/14/1",
+      "kind": "alliedpowerplant",
+      "waypoint": "PP63",
+      "owner": "teamPlayer_6",
+      "seat": 6,
+      "padding": 4,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/17/15/1",
+      "kind": "alliedpowerplant",
+      "waypoint": "gift-alt-PP63-1",
+      "owner": "teamPlayer_6",
+      "seat": 6,
+      "padding": 4,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/17/16/1",
+      "kind": "alliedsuperweaponadvanced",
+      "waypoint": "SWA61",
+      "owner": "teamPlayer_6",
+      "seat": 6,
+      "padding": 6,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/17/17/1",
+      "kind": "alliedsuperweaponadvanced",
+      "waypoint": "gift-alt-SWA61-1",
+      "owner": "teamPlayer_6",
+      "seat": 6,
+      "padding": 6,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/17/18/1",
+      "kind": "sovietsuperweaponadvanced",
+      "waypoint": "SWA62",
+      "owner": "teamPlayer_6",
+      "seat": 6,
+      "padding": 6,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/17/19/1",
+      "kind": "sovietsuperweaponadvanced",
+      "waypoint": "gift-alt-SWA62-1",
+      "owner": "teamPlayer_6",
+      "seat": 6,
+      "padding": 6,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/17/20/1",
+      "kind": "sovietsuperweapon",
+      "waypoint": "SW63",
+      "owner": "teamPlayer_6",
+      "seat": 6,
+      "padding": 6,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/17/21/1",
+      "kind": "sovietsuperweapon",
+      "waypoint": "gift-alt-SW63-1",
+      "owner": "teamPlayer_6",
+      "seat": 6,
+      "padding": 6,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/17/22/1",
+      "kind": "japanpowerplant",
+      "waypoint": "PP61",
+      "owner": "teamPlayer_6",
+      "seat": 6,
+      "padding": 4,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/17/23/1",
+      "kind": "japanpowerplant",
+      "waypoint": "gift-alt-PP61-1",
+      "owner": "teamPlayer_6",
+      "seat": 6,
+      "padding": 4,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/17/24/1",
+      "kind": "japanpowerplant",
+      "waypoint": "PP62",
+      "owner": "teamPlayer_6",
+      "seat": 6,
+      "padding": 4,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/17/25/1",
+      "kind": "japanpowerplant",
+      "waypoint": "gift-alt-PP62-1",
+      "owner": "teamPlayer_6",
+      "seat": 6,
+      "padding": 4,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/17/26/1",
+      "kind": "japanpowerplant",
+      "waypoint": "PP63",
+      "owner": "teamPlayer_6",
+      "seat": 6,
+      "padding": 4,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/17/27/1",
+      "kind": "japanpowerplant",
+      "waypoint": "gift-alt-PP63-1",
+      "owner": "teamPlayer_6",
+      "seat": 6,
+      "padding": 4,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/17/28/1",
+      "kind": "japansuperweaponadvanced",
+      "waypoint": "SWA71",
+      "owner": "teamPlyrCivilian",
+      "seat": 7,
+      "padding": 6,
+      "native_angle": 0.7853981852531433
+    },
+    {
+      "path": "/17/29/1",
+      "kind": "japansuperweaponadvanced",
+      "waypoint": "gift-alt-SWA71-1",
+      "owner": "teamPlyrCivilian",
+      "seat": 7,
+      "padding": 6,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/17/30/1",
+      "kind": "alliedsuperweaponadvanced",
+      "waypoint": "SWA72",
+      "owner": "teamPlyrCivilian",
+      "seat": 7,
+      "padding": 6,
+      "native_angle": 0.7853981852531433
+    },
+    {
+      "path": "/17/31/1",
+      "kind": "alliedsuperweaponadvanced",
+      "waypoint": "gift-alt-SWA72-1",
+      "owner": "teamPlyrCivilian",
+      "seat": 7,
+      "padding": 6,
+      "native_angle": 0.7853981852531433
+    },
+    {
+      "path": "/17/32/1",
+      "kind": "sovietpowerplant",
+      "waypoint": "PP71",
+      "owner": "teamPlyrCivilian",
+      "seat": 7,
+      "padding": 4,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/17/33/1",
+      "kind": "sovietpowerplant",
+      "waypoint": "gift-alt-PP71-1",
+      "owner": "teamPlyrCivilian",
+      "seat": 7,
+      "padding": 4,
+      "native_angle": 0.7853981852531433
+    },
+    {
+      "path": "/17/34/1",
+      "kind": "sovietpowerplant",
+      "waypoint": "PP72",
+      "owner": "teamPlyrCivilian",
+      "seat": 7,
+      "padding": 4,
+      "native_angle": 0.7853981852531433
+    },
+    {
+      "path": "/17/35/1",
+      "kind": "sovietpowerplant",
+      "waypoint": "gift-alt-PP72-1",
+      "owner": "teamPlyrCivilian",
+      "seat": 7,
+      "padding": 4,
+      "native_angle": 0.7853981852531433
+    },
+    {
+      "path": "/17/36/1",
+      "kind": "sovietpowerplant",
+      "waypoint": "PP73",
+      "owner": "teamPlyrCivilian",
+      "seat": 7,
+      "padding": 4,
+      "native_angle": 0.7853981852531433
+    },
+    {
+      "path": "/17/37/1",
+      "kind": "sovietpowerplant",
+      "waypoint": "gift-alt-PP73-1",
+      "owner": "teamPlyrCivilian",
+      "seat": 7,
+      "padding": 4,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/18/13/1",
+      "kind": "japansuperweaponadvanced",
+      "waypoint": "SWA61",
+      "owner": "teamPlayer_6",
+      "seat": 6,
+      "padding": 6,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/18/14/1",
+      "kind": "japansuperweaponadvanced",
+      "waypoint": "gift-alt-SWA61-1",
+      "owner": "teamPlayer_6",
+      "seat": 6,
+      "padding": 6,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/18/15/1",
+      "kind": "sovietsuperweaponadvanced",
+      "waypoint": "SWA62",
+      "owner": "teamPlayer_6",
+      "seat": 6,
+      "padding": 6,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/18/16/1",
+      "kind": "sovietsuperweaponadvanced",
+      "waypoint": "gift-alt-SWA62-1",
+      "owner": "teamPlayer_6",
+      "seat": 6,
+      "padding": 6,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/18/17/1",
+      "kind": "sovietsuperweapon",
+      "waypoint": "SW63",
+      "owner": "teamPlayer_6",
+      "seat": 6,
+      "padding": 6,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/18/18/1",
+      "kind": "sovietsuperweapon",
+      "waypoint": "gift-alt-SW63-1",
+      "owner": "teamPlayer_6",
+      "seat": 6,
+      "padding": 6,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/18/19/1",
+      "kind": "alliedpowerplant",
+      "waypoint": "PP61",
+      "owner": "teamPlayer_6",
+      "seat": 6,
+      "padding": 4,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/18/20/1",
+      "kind": "alliedpowerplant",
+      "waypoint": "gift-alt-PP61-1",
+      "owner": "teamPlayer_6",
+      "seat": 6,
+      "padding": 4,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/18/21/1",
+      "kind": "alliedpowerplant",
+      "waypoint": "PP62",
+      "owner": "teamPlayer_6",
+      "seat": 6,
+      "padding": 4,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/18/22/1",
+      "kind": "alliedpowerplant",
+      "waypoint": "gift-alt-PP62-1",
+      "owner": "teamPlayer_6",
+      "seat": 6,
+      "padding": 4,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/18/23/1",
+      "kind": "alliedpowerplant",
+      "waypoint": "PP63",
+      "owner": "teamPlayer_6",
+      "seat": 6,
+      "padding": 4,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/18/24/1",
+      "kind": "alliedpowerplant",
+      "waypoint": "gift-alt-PP63-1",
+      "owner": "teamPlayer_6",
+      "seat": 6,
+      "padding": 4,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/18/25/1",
+      "kind": "alliedsuperweaponadvanced",
+      "waypoint": "SWA81",
+      "owner": "teamPlyrCreeps",
+      "seat": 8,
+      "padding": 6,
+      "native_angle": 0.7853981852531433
+    },
+    {
+      "path": "/18/26/1",
+      "kind": "alliedsuperweaponadvanced",
+      "waypoint": "gift-alt-SWA81-1",
+      "owner": "teamPlyrCreeps",
+      "seat": 8,
+      "padding": 6,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/18/27/1",
+      "kind": "sovietsuperweaponadvanced",
+      "waypoint": "SWA82",
+      "owner": "teamPlyrCreeps",
+      "seat": 8,
+      "padding": 6,
+      "native_angle": 0.7853981852531433
+    },
+    {
+      "path": "/18/28/1",
+      "kind": "sovietsuperweaponadvanced",
+      "waypoint": "gift-alt-SWA82-1",
+      "owner": "teamPlyrCreeps",
+      "seat": 8,
+      "padding": 6,
+      "native_angle": 0.7853981852531433
+    },
+    {
+      "path": "/18/29/1",
+      "kind": "sovietsuperweapon",
+      "waypoint": "SW83",
+      "owner": "teamPlyrCreeps",
+      "seat": 8,
+      "padding": 6,
+      "native_angle": 0.7853981852531433
+    },
+    {
+      "path": "/18/30/1",
+      "kind": "sovietsuperweapon",
+      "waypoint": "gift-alt-SW83-1",
+      "owner": "teamPlyrCreeps",
+      "seat": 8,
+      "padding": 6,
+      "native_angle": 0.7853981852531433
+    },
+    {
+      "path": "/18/31/1",
+      "kind": "japanpowerplant",
+      "waypoint": "PP81",
+      "owner": "teamPlyrCreeps",
+      "seat": 8,
+      "padding": 4,
+      "native_angle": 0.7853981852531433
+    },
+    {
+      "path": "/18/32/1",
+      "kind": "japanpowerplant",
+      "waypoint": "gift-alt-PP81-1",
+      "owner": "teamPlyrCreeps",
+      "seat": 8,
+      "padding": 4,
+      "native_angle": 0.7853981852531433
+    },
+    {
+      "path": "/18/33/1",
+      "kind": "japanpowerplant",
+      "waypoint": "PP82",
+      "owner": "teamPlyrCreeps",
+      "seat": 8,
+      "padding": 4,
+      "native_angle": 0.7853981852531433
+    },
+    {
+      "path": "/18/34/1",
+      "kind": "japanpowerplant",
+      "waypoint": "gift-alt-PP82-1",
+      "owner": "teamPlyrCreeps",
+      "seat": 8,
+      "padding": 4,
+      "native_angle": 0.7853981852531433
+    },
+    {
+      "path": "/18/35/1",
+      "kind": "japanpowerplant",
+      "waypoint": "PP83",
+      "owner": "teamPlyrCreeps",
+      "seat": 8,
+      "padding": 4,
+      "native_angle": 0.7853981852531433
+    },
+    {
+      "path": "/18/36/1",
+      "kind": "japanpowerplant",
+      "waypoint": "gift-alt-PP83-1",
+      "owner": "teamPlyrCreeps",
+      "seat": 8,
+      "padding": 4,
+      "native_angle": 0.7853981852531433
+    },
+    {
+      "path": "/18/37/1",
+      "kind": "japansuperweaponadvanced",
+      "waypoint": "SWA61",
+      "owner": "teamPlayer_6",
+      "seat": 6,
+      "padding": 6,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/18/38/1",
+      "kind": "japansuperweaponadvanced",
+      "waypoint": "gift-alt-SWA61-1",
+      "owner": "teamPlayer_6",
+      "seat": 6,
+      "padding": 6,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/18/39/1",
+      "kind": "alliedsuperweaponadvanced",
+      "waypoint": "SWA62",
+      "owner": "teamPlayer_6",
+      "seat": 6,
+      "padding": 6,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/18/40/1",
+      "kind": "alliedsuperweaponadvanced",
+      "waypoint": "gift-alt-SWA62-1",
+      "owner": "teamPlayer_6",
+      "seat": 6,
+      "padding": 6,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/18/41/1",
+      "kind": "sovietpowerplant",
+      "waypoint": "PP61",
+      "owner": "teamPlayer_6",
+      "seat": 6,
+      "padding": 4,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/18/42/1",
+      "kind": "sovietpowerplant",
+      "waypoint": "gift-alt-PP61-1",
+      "owner": "teamPlayer_6",
+      "seat": 6,
+      "padding": 4,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/18/43/1",
+      "kind": "sovietpowerplant",
+      "waypoint": "PP62",
+      "owner": "teamPlayer_6",
+      "seat": 6,
+      "padding": 4,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/18/44/1",
+      "kind": "sovietpowerplant",
+      "waypoint": "gift-alt-PP62-1",
+      "owner": "teamPlayer_6",
+      "seat": 6,
+      "padding": 4,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/18/45/1",
+      "kind": "sovietpowerplant",
+      "waypoint": "PP63",
+      "owner": "teamPlayer_6",
+      "seat": 6,
+      "padding": 4,
+      "native_angle": -0.7853981852531433
+    },
+    {
+      "path": "/18/46/1",
+      "kind": "sovietpowerplant",
+      "waypoint": "gift-alt-PP63-1",
+      "owner": "teamPlayer_6",
+      "seat": 6,
+      "padding": 4,
+      "native_angle": -0.7853981852531433
+    }
+  ],
+  "changes": [
+    {
+      "id": 2,
+      "waypoint": "dual-p1-bar",
+      "seat": 1,
+      "before": [
+        763.0,
+        157.0
+      ],
+      "after": [
+        734,
+        208
+      ],
+      "movement_cells": 58.66856057549052,
+      "safe_zone": "east-lowland-core"
+    },
+    {
+      "id": 166,
+      "waypoint": "gift-alt-dual-p1-bar-1",
+      "seat": 1,
+      "before": [
+        790.0,
+        185.0
+      ],
+      "after": [
+        792,
+        180
+      ],
+      "movement_cells": 5.385164807134504,
+      "safe_zone": "east-lowland-core"
+    },
+    {
+      "id": 3,
+      "waypoint": "dual-p1-wf",
+      "seat": 1,
+      "before": [
+        735.0,
+        157.0
+      ],
+      "after": [
+        714,
+        180
+      ],
+      "movement_cells": 31.144823004794873,
+      "safe_zone": "east-lowland-core"
+    },
+    {
+      "id": 167,
+      "waypoint": "gift-alt-dual-p1-wf-1",
+      "seat": 1,
+      "before": [
+        707.0,
+        157.0
+      ],
+      "after": [
+        684,
+        158
+      ],
+      "movement_cells": 23.021728866442675,
+      "safe_zone": "east-lowland-core"
+    },
+    {
+      "id": 4,
+      "waypoint": "dual-p1-air",
+      "seat": 1,
+      "before": [
+        791.0,
+        129.0
+      ],
+      "after": [
+        792,
+        124
+      ],
+      "movement_cells": 5.0990195135927845,
+      "safe_zone": "east-lowland-core"
+    },
+    {
+      "id": 165,
+      "waypoint": "gift-alt-dual-p1-air-1",
+      "seat": 1,
+      "before": [
+        791.0,
+        157.0
+      ],
+      "after": [
+        792,
+        152
+      ],
+      "movement_cells": 5.0990195135927845,
+      "safe_zone": "east-lowland-core"
+    },
+    {
+      "id": 6,
+      "waypoint": "dual-p2-bar",
+      "seat": 2,
+      "before": [
+        779.0,
+        322.0
+      ],
+      "after": [
+        742,
+        358
+      ],
+      "movement_cells": 51.62363799656123,
+      "safe_zone": "east-lowland-core"
+    },
+    {
+      "id": 169,
+      "waypoint": "gift-alt-dual-p2-bar-1",
+      "seat": 2,
+      "before": [
+        751.0,
+        322.0
+      ],
+      "after": [
+        722,
+        292
+      ],
+      "movement_cells": 41.72529209005013,
+      "safe_zone": "east-lowland-core"
+    },
+    {
+      "id": 7,
+      "waypoint": "dual-p2-wf",
+      "seat": 2,
+      "before": [
+        751.0,
+        266.0
+      ],
+      "after": [
+        736,
+        236
+      ],
+      "movement_cells": 33.54101966249684,
+      "safe_zone": "east-lowland-core"
+    },
+    {
+      "id": 170,
+      "waypoint": "gift-alt-dual-p2-wf-1",
+      "seat": 2,
+      "before": [
+        723.0,
+        266.0
+      ],
+      "after": [
+        722,
+        264
+      ],
+      "movement_cells": 2.23606797749979,
+      "safe_zone": "east-lowland-core"
+    },
+    {
+      "id": 8,
+      "waypoint": "dual-p2-air",
+      "seat": 2,
+      "before": [
+        807.0,
+        294.0
+      ],
+      "after": [
+        800,
+        322
+      ],
+      "movement_cells": 28.861739379323623,
+      "safe_zone": "east-lowland-core"
+    },
+    {
+      "id": 168,
+      "waypoint": "gift-alt-dual-p2-air-1",
+      "seat": 2,
+      "before": [
+        807.0,
+        322.0
+      ],
+      "after": [
+        800,
+        380
+      ],
+      "movement_cells": 58.42088667591412,
+      "safe_zone": "east-lowland-core"
+    },
+    {
+      "id": 10,
+      "waypoint": "dual-p3-bar",
+      "seat": 3,
+      "before": [
+        764.0,
+        546.0
+      ],
+      "after": [
+        792,
+        572
+      ],
+      "movement_cells": 38.2099463490856,
+      "safe_zone": "east-lowland-core"
+    },
+    {
+      "id": 172,
+      "waypoint": "gift-alt-dual-p3-bar-1",
+      "seat": 3,
+      "before": [
+        736.0,
+        546.0
+      ],
+      "after": [
+        718,
+        572
+      ],
+      "movement_cells": 31.622776601683793,
+      "safe_zone": "east-lowland-core"
+    },
+    {
+      "id": 11,
+      "waypoint": "dual-p3-wf",
+      "seat": 3,
+      "before": [
+        736.0,
+        490.0
+      ],
+      "after": [
+        708,
+        488
+      ],
+      "movement_cells": 28.071337695236398,
+      "safe_zone": "east-lowland-core"
+    },
+    {
+      "id": 173,
+      "waypoint": "gift-alt-dual-p3-wf-1",
+      "seat": 3,
+      "before": [
+        736.0,
+        462.0
+      ],
+      "after": [
+        728,
+        454
+      ],
+      "movement_cells": 11.313708498984761,
+      "safe_zone": "east-lowland-core"
+    },
+    {
+      "id": 12,
+      "waypoint": "dual-p3-air",
+      "seat": 3,
+      "before": [
+        792.0,
+        518.0
+      ],
+      "after": [
+        792,
+        516
+      ],
+      "movement_cells": 2.0,
+      "safe_zone": "east-lowland-core"
+    },
+    {
+      "id": 171,
+      "waypoint": "gift-alt-dual-p3-air-1",
+      "seat": 3,
+      "before": [
+        792.0,
+        546.0
+      ],
+      "after": [
+        792,
+        544
+      ],
+      "movement_cells": 2.0,
+      "safe_zone": "east-lowland-core"
+    },
+    {
+      "id": 14,
+      "waypoint": "dual-p4-bar",
+      "seat": 4,
+      "before": [
+        770.0,
+        755.0
+      ],
+      "after": [
+        768,
+        638
+      ],
+      "movement_cells": 117.01709276853532,
+      "safe_zone": "east-lowland-core"
+    },
+    {
+      "id": 175,
+      "waypoint": "gift-alt-dual-p4-bar-1",
+      "seat": 4,
+      "before": [
+        770.0,
+        783.0
+      ],
+      "after": [
+        694,
+        668
+      ],
+      "movement_cells": 137.84411485442533,
+      "safe_zone": "east-lowland-core"
+    },
+    {
+      "id": 15,
+      "waypoint": "dual-p4-wf",
+      "seat": 4,
+      "before": [
+        784.0,
+        699.0
+      ],
+      "after": [
+        800,
+        670
+      ],
+      "movement_cells": 33.12099032335839,
+      "safe_zone": "east-lowland-core"
+    },
+    {
+      "id": 176,
+      "waypoint": "gift-alt-dual-p4-wf-1",
+      "seat": 4,
+      "before": [
+        784.0,
+        671.0
+      ],
+      "after": [
+        796,
+        642
+      ],
+      "movement_cells": 31.38470965295043,
+      "safe_zone": "east-lowland-core"
+    },
+    {
+      "id": 18,
+      "waypoint": "dual-p5-bar",
+      "seat": 5,
+      "before": [
+        37.0,
+        142.0
+      ],
+      "after": [
+        98,
+        116
+      ],
+      "movement_cells": 66.30987860040162,
+      "safe_zone": "northwest-upper-core"
+    },
+    {
+      "id": 178,
+      "waypoint": "gift-alt-dual-p5-bar-1",
+      "seat": 5,
+      "before": [
+        213.0,
+        220.0
+      ],
+      "after": [
+        274,
+        194
+      ],
+      "movement_cells": 66.30987860040162,
+      "safe_zone": "northwest-upper-core"
+    },
+    {
+      "id": 19,
+      "waypoint": "dual-p5-wf",
+      "seat": 5,
+      "before": [
+        65.0,
+        152.0
+      ],
+      "after": [
+        294,
+        68
+      ],
+      "movement_cells": 243.92006887503126,
+      "safe_zone": "northwest-upper-core"
+    },
+    {
+      "id": 179,
+      "waypoint": "gift-alt-dual-p5-wf-1",
+      "seat": 5,
+      "before": [
+        196.0,
+        184.0
+      ],
+      "after": [
+        364,
+        58
+      ],
+      "movement_cells": 210.0,
+      "safe_zone": "northwest-upper-core"
+    },
+    {
+      "id": 20,
+      "waypoint": "dual-p5-air",
+      "seat": 5,
+      "before": [
+        182.0,
+        32.0
+      ],
+      "after": [
+        266,
+        40
+      ],
+      "movement_cells": 84.38009243891595,
+      "safe_zone": "northwest-upper-core"
+    },
+    {
+      "id": 177,
+      "waypoint": "gift-alt-dual-p5-air-1",
+      "seat": 5,
+      "before": [
+        147.0,
+        161.0
+      ],
+      "after": [
+        256,
+        96
+      ],
+      "movement_cells": 126.90941651429968,
+      "safe_zone": "northwest-upper-core"
+    },
+    {
+      "id": 22,
+      "waypoint": "dual-p6-bar",
+      "seat": 6,
+      "before": [
+        35.0,
+        190.0
+      ],
+      "after": [
+        228,
+        96
+      ],
+      "movement_cells": 214.67417171145672,
+      "safe_zone": "northwest-upper-core"
+    },
+    {
+      "id": 181,
+      "waypoint": "gift-alt-dual-p6-bar-1",
+      "seat": 6,
+      "before": [
+        134.0,
+        291.0
+      ],
+      "after": [
+        428,
+        234
+      ],
+      "movement_cells": 299.47453981933086,
+      "safe_zone": "east-lowland-core"
+    },
+    {
+      "id": 23,
+      "waypoint": "dual-p6-wf",
+      "seat": 6,
+      "before": [
+        166.0,
+        347.0
+      ],
+      "after": [
+        238,
+        448
+      ],
+      "movement_cells": 124.03628501370073,
+      "safe_zone": "west-central-upper-core"
+    },
+    {
+      "id": 182,
+      "waypoint": "gift-alt-dual-p6-wf-1",
+      "seat": 6,
+      "before": [
+        156.0,
+        319.0
+      ],
+      "after": [
+        304,
+        328
+      ],
+      "movement_cells": 148.27339613025663,
+      "safe_zone": "central-intermediate-body"
+    },
+    {
+      "id": 24,
+      "waypoint": "dual-p6-air",
+      "seat": 6,
+      "before": [
+        44.0,
+        331.0
+      ],
+      "after": [
+        332,
+        372
+      ],
+      "movement_cells": 290.90376415577714,
+      "safe_zone": "central-intermediate-body"
+    },
+    {
+      "id": 26,
+      "waypoint": "dual-civilian-bar",
+      "seat": 7,
+      "before": [
+        109.0,
+        450.0
+      ],
+      "after": [
+        394,
+        460
+      ],
+      "movement_cells": 285.17538463198395,
+      "safe_zone": "east-lowland-core"
+    },
+    {
+      "id": 160,
+      "waypoint": "gift-alt-dual-civilian-bar-1",
+      "seat": 7,
+      "before": [
+        137.0,
+        478.0
+      ],
+      "after": [
+        422,
+        432
+      ],
+      "movement_cells": 288.6884133456,
+      "safe_zone": "east-lowland-core"
+    },
+    {
+      "id": 27,
+      "waypoint": "dual-civilian-wf",
+      "seat": 7,
+      "before": [
+        109.0,
+        422.0
+      ],
+      "after": [
+        422,
+        460
+      ],
+      "movement_cells": 315.29827148273426,
+      "safe_zone": "east-lowland-core"
+    },
+    {
+      "id": 161,
+      "waypoint": "gift-alt-dual-civilian-wf-1",
+      "seat": 7,
+      "before": [
+        170.0,
+        444.0
+      ],
+      "after": [
+        172,
+        444
+      ],
+      "movement_cells": 2.0,
+      "safe_zone": "west-central-upper-core"
+    },
+    {
+      "id": 28,
+      "waypoint": "dual-civilian-air",
+      "seat": 7,
+      "before": [
+        81.0,
+        414.0
+      ],
+      "after": [
+        366,
+        414
+      ],
+      "movement_cells": 285.0,
+      "safe_zone": "east-lowland-core"
+    },
+    {
+      "id": 159,
+      "waypoint": "gift-alt-dual-civilian-air-1",
+      "seat": 7,
+      "before": [
+        137.0,
+        414.0
+      ],
+      "after": [
+        366,
+        442
+      ],
+      "movement_cells": 230.70543990118657,
+      "safe_zone": "east-lowland-core"
+    },
+    {
+      "id": 30,
+      "waypoint": "dual-creeps-bar",
+      "seat": 8,
+      "before": [
+        172.0,
+        772.0
+      ],
+      "after": [
+        394,
+        780
+      ],
+      "movement_cells": 222.14409737825582,
+      "safe_zone": "east-lowland-core"
+    },
+    {
+      "id": 163,
+      "waypoint": "gift-alt-dual-creeps-bar-1",
+      "seat": 8,
+      "before": [
+        152.0,
+        800.0
+      ],
+      "after": [
+        366,
+        800
+      ],
+      "movement_cells": 214.0,
+      "safe_zone": "east-lowland-core"
+    },
+    {
+      "id": 31,
+      "waypoint": "dual-creeps-wf",
+      "seat": 8,
+      "before": [
+        54.0,
+        686.0
+      ],
+      "after": [
+        112,
+        700
+      ],
+      "movement_cells": 59.665735560705194,
+      "safe_zone": "southwest-upper-core"
+    },
+    {
+      "id": 164,
+      "waypoint": "gift-alt-dual-creeps-wf-1",
+      "seat": 8,
+      "before": [
+        56.0,
+        630.0
+      ],
+      "after": [
+        394,
+        724
+      ],
+      "movement_cells": 350.8275929855005,
+      "safe_zone": "east-lowland-core"
+    },
+    {
+      "id": 32,
+      "waypoint": "dual-creeps-air",
+      "seat": 8,
+      "before": [
+        82.0,
+        704.0
+      ],
+      "after": [
+        84,
+        702
+      ],
+      "movement_cells": 2.8284271247461903,
+      "safe_zone": "southwest-upper-core"
+    },
+    {
+      "id": 162,
+      "waypoint": "gift-alt-dual-creeps-air-1",
+      "seat": 8,
+      "before": [
+        55.0,
+        658.0
+      ],
+      "after": [
+        60,
+        670
+      ],
+      "movement_cells": 13.0,
+      "safe_zone": "southwest-upper-core"
+    },
+    {
+      "id": 97,
+      "waypoint": "SWJ1",
+      "seat": 1,
+      "before": [
+        778.0,
+        101.0
+      ],
+      "after": [
+        792,
+        96
+      ],
+      "movement_cells": 14.866068747318506,
+      "safe_zone": "east-lowland-core"
+    },
+    {
+      "id": 155,
+      "waypoint": "gift-alt-SWJ1-1",
+      "seat": 1,
+      "before": [
+        778.0,
+        73.0
+      ],
+      "after": [
+        788,
+        66
+      ],
+      "movement_cells": 12.206555615733702,
+      "safe_zone": "east-lowland-core"
+    },
+    {
+      "id": 98,
+      "waypoint": "PPJ1",
+      "seat": 1,
+      "before": [
+        735.0,
+        129.0
+      ],
+      "after": [
+        734,
+        116
+      ],
+      "movement_cells": 13.038404810405298,
+      "safe_zone": "east-lowland-core"
+    },
+    {
+      "id": 140,
+      "waypoint": "gift-alt-PPJ1-1",
+      "seat": 1,
+      "before": [
+        707.0,
+        129.0
+      ],
+      "after": [
+        712,
+        144
+      ],
+      "movement_cells": 15.811388300841896,
+      "safe_zone": "east-lowland-core"
+    },
+    {
+      "id": 99,
+      "waypoint": "SWJ2",
+      "seat": 2,
+      "before": [
+        779.0,
+        266.0
+      ],
+      "after": [
+        790,
+        208
+      ],
+      "movement_cells": 59.033888572581766,
+      "safe_zone": "east-lowland-core"
+    },
+    {
+      "id": 156,
+      "waypoint": "gift-alt-SWJ2-1",
+      "seat": 2,
+      "before": [
+        807.0,
+        266.0
+      ],
+      "after": [
+        800,
+        266
+      ],
+      "movement_cells": 7.0,
+      "safe_zone": "east-lowland-core"
+    },
+    {
+      "id": 141,
+      "waypoint": "gift-alt-PPJ2-1",
+      "seat": 2,
+      "before": [
+        723.0,
+        294.0
+      ],
+      "after": [
+        722,
+        320
+      ],
+      "movement_cells": 26.019223662515376,
+      "safe_zone": "east-lowland-core"
+    },
+    {
+      "id": 101,
+      "waypoint": "SWJ3",
+      "seat": 3,
+      "before": [
+        764.0,
+        490.0
+      ],
+      "after": [
+        736,
+        516
+      ],
+      "movement_cells": 38.2099463490856,
+      "safe_zone": "east-lowland-core"
+    },
+    {
+      "id": 157,
+      "waypoint": "gift-alt-SWJ3-1",
+      "seat": 3,
+      "before": [
+        792.0,
+        490.0
+      ],
+      "after": [
+        792,
+        488
+      ],
+      "movement_cells": 2.0,
+      "safe_zone": "east-lowland-core"
+    },
+    {
+      "id": 102,
+      "waypoint": "PPJ3",
+      "seat": 3,
+      "before": [
+        736.0,
+        518.0
+      ],
+      "after": [
+        712,
+        544
+      ],
+      "movement_cells": 35.38361202590826,
+      "safe_zone": "east-lowland-core"
+    },
+    {
+      "id": 142,
+      "waypoint": "gift-alt-PPJ3-1",
+      "seat": 3,
+      "before": [
+        708.0,
+        518.0
+      ],
+      "after": [
+        708,
+        516
+      ],
+      "movement_cells": 2.0,
+      "safe_zone": "east-lowland-core"
+    },
+    {
+      "id": 103,
+      "waypoint": "SWJ4",
+      "seat": 4,
+      "before": [
+        756.0,
+        699.0
+      ],
+      "after": [
+        740,
+        640
+      ],
+      "movement_cells": 61.1310068623117,
+      "safe_zone": "east-lowland-core"
+    },
+    {
+      "id": 158,
+      "waypoint": "gift-alt-SWJ4-1",
+      "seat": 4,
+      "before": [
+        728.0,
+        696.0
+      ],
+      "after": [
+        722,
+        668
+      ],
+      "movement_cells": 28.635642126552707,
+      "safe_zone": "east-lowland-core"
+    },
+    {
+      "id": 104,
+      "waypoint": "PPJ4",
+      "seat": 4,
+      "before": [
+        742.0,
+        755.0
+      ],
+      "after": [
+        694,
+        696
+      ],
+      "movement_cells": 76.05918747922567,
+      "safe_zone": "east-lowland-core"
+    },
+    {
+      "id": 143,
+      "waypoint": "gift-alt-PPJ4-1",
+      "seat": 4,
+      "before": [
+        714.0,
+        768.0
+      ],
+      "after": [
+        638,
+        746
+      ],
+      "movement_cells": 79.12016177940993,
+      "safe_zone": "east-lowland-core"
+    },
+    {
+      "id": 106,
+      "waypoint": "SWA51",
+      "seat": 5,
+      "before": [
+        37.0,
+        55.0
+      ],
+      "after": [
+        210,
+        40
+      ],
+      "movement_cells": 173.64907140552177,
+      "safe_zone": "northwest-upper-core"
+    },
+    {
+      "id": 147,
+      "waypoint": "gift-alt-SWA51-1",
+      "seat": 5,
+      "before": [
+        119.0,
+        171.0
+      ],
+      "after": [
+        322,
+        74
+      ],
+      "movement_cells": 224.98444390668436,
+      "safe_zone": "northwest-upper-core"
+    },
+    {
+      "id": 148,
+      "waypoint": "gift-alt-SWA52-1",
+      "seat": 5,
+      "before": [
+        182.0,
+        60.0
+      ],
+      "after": [
+        294,
+        40
+      ],
+      "movement_cells": 113.77170122662314,
+      "safe_zone": "northwest-upper-core"
+    },
+    {
+      "id": 105,
+      "waypoint": "SW53",
+      "seat": 5,
+      "before": [
+        108.0,
+        106.0
+      ],
+      "after": [
+        238,
+        68
+      ],
+      "movement_cells": 135.4400236266961,
+      "safe_zone": "northwest-upper-core"
+    },
+    {
+      "id": 144,
+      "waypoint": "gift-alt-SW53-1",
+      "seat": 5,
+      "before": [
+        164.0,
+        88.0
+      ],
+      "after": [
+        210,
+        68
+      ],
+      "movement_cells": 50.15974481593781,
+      "safe_zone": "northwest-upper-core"
+    },
+    {
+      "id": 108,
+      "waypoint": "PP51",
+      "seat": 5,
+      "before": [
+        80.0,
+        27.0
+      ],
+      "after": [
+        238,
+        40
+      ],
+      "movement_cells": 158.5339080449353,
+      "safe_zone": "northwest-upper-core"
+    },
+    {
+      "id": 128,
+      "waypoint": "gift-alt-PP51-1",
+      "seat": 5,
+      "before": [
+        108.0,
+        143.0
+      ],
+      "after": [
+        392,
+        76
+      ],
+      "movement_cells": 291.79616172938256,
+      "safe_zone": "northwest-upper-core"
+    },
+    {
+      "id": 109,
+      "waypoint": "PP52",
+      "seat": 5,
+      "before": [
+        37.0,
+        83.0
+      ],
+      "after": [
+        336,
+        44
+      ],
+      "movement_cells": 301.53275112332324,
+      "safe_zone": "northwest-upper-core"
+    },
+    {
+      "id": 129,
+      "waypoint": "gift-alt-PP52-1",
+      "seat": 5,
+      "before": [
+        37.0,
+        27.0
+      ],
+      "after": [
+        182,
+        40
+      ],
+      "movement_cells": 145.58159224297555,
+      "safe_zone": "northwest-upper-core"
+    },
+    {
+      "id": 110,
+      "waypoint": "PP53",
+      "seat": 5,
+      "before": [
+        108.0,
+        78.0
+      ],
+      "after": [
+        336,
+        130
+      ],
+      "movement_cells": 233.85465571589546,
+      "safe_zone": "northwest-upper-core"
+    },
+    {
+      "id": 130,
+      "waypoint": "gift-alt-PP53-1",
+      "seat": 5,
+      "before": [
+        147.0,
+        116.0
+      ],
+      "after": [
+        266,
+        68
+      ],
+      "movement_cells": 128.3160161476345,
+      "safe_zone": "northwest-upper-core"
+    },
+    {
+      "id": 112,
+      "waypoint": "SWA61",
+      "seat": 6,
+      "before": [
+        112.0,
+        263.0
+      ],
+      "after": [
+        312,
+        102
+      ],
+      "movement_cells": 256.7508519946915,
+      "safe_zone": "northwest-upper-core"
+    },
+    {
+      "id": 149,
+      "waypoint": "gift-alt-SWA61-1",
+      "seat": 6,
+      "before": [
+        140.0,
+        259.0
+      ],
+      "after": [
+        402,
+        152
+      ],
+      "movement_cells": 283.0070670495703,
+      "safe_zone": "northwest-upper-core"
+    },
+    {
+      "id": 113,
+      "waypoint": "SWA62",
+      "seat": 6,
+      "before": [
+        63.0,
+        232.0
+      ],
+      "after": [
+        204,
+        160
+      ],
+      "movement_cells": 158.31929762350515,
+      "safe_zone": "northwest-upper-core"
+    },
+    {
+      "id": 150,
+      "waypoint": "gift-alt-SWA62-1",
+      "seat": 6,
+      "before": [
+        147.0,
+        228.0
+      ],
+      "after": [
+        308,
+        130
+      ],
+      "movement_cells": 188.48076824970764,
+      "safe_zone": "northwest-upper-core"
+    },
+    {
+      "id": 111,
+      "waypoint": "SW63",
+      "seat": 6,
+      "before": [
+        63.0,
+        204.0
+      ],
+      "after": [
+        284,
+        96
+      ],
+      "movement_cells": 245.97764126033894,
+      "safe_zone": "northwest-upper-core"
+    },
+    {
+      "id": 145,
+      "waypoint": "gift-alt-SW63-1",
+      "seat": 6,
+      "before": [
+        198.0,
+        248.0
+      ],
+      "after": [
+        374,
+        142
+      ],
+      "movement_cells": 205.4555913086816,
+      "safe_zone": "northwest-upper-core"
+    },
+    {
+      "id": 114,
+      "waypoint": "PP61",
+      "seat": 6,
+      "before": [
+        44.0,
+        303.0
+      ],
+      "after": [
+        388,
+        218
+      ],
+      "movement_cells": 354.3458762282976,
+      "safe_zone": "east-lowland-core"
+    },
+    {
+      "id": 115,
+      "waypoint": "PP62",
+      "seat": 6,
+      "before": [
+        72.0,
+        322.0
+      ],
+      "after": [
+        332,
+        344
+      ],
+      "movement_cells": 260.9291091465266,
+      "safe_zone": "central-intermediate-body"
+    },
+    {
+      "id": 132,
+      "waypoint": "gift-alt-PP62-1",
+      "seat": 6,
+      "before": [
+        100.0,
+        346.0
+      ],
+      "after": [
+        394,
+        432
+      ],
+      "movement_cells": 306.32009401931174,
+      "safe_zone": "east-lowland-core"
+    },
+    {
+      "id": 116,
+      "waypoint": "PP63",
+      "seat": 6,
+      "before": [
+        35.0,
+        218.0
+      ],
+      "after": [
+        252,
+        124
+      ],
+      "movement_cells": 236.48467180770933,
+      "safe_zone": "northwest-upper-core"
+    },
+    {
+      "id": 133,
+      "waypoint": "gift-alt-PP63-1",
+      "seat": 6,
+      "before": [
+        91.0,
+        197.0
+      ],
+      "after": [
+        280,
+        124
+      ],
+      "movement_cells": 202.6079958935481,
+      "safe_zone": "northwest-upper-core"
+    },
+    {
+      "id": 117,
+      "waypoint": "SWA71",
+      "seat": 7,
+      "before": [
+        53.0,
+        422.0
+      ],
+      "after": [
+        40,
+        422
+      ],
+      "movement_cells": 13.0,
+      "safe_zone": "west-central-upper-core"
+    },
+    {
+      "id": 151,
+      "waypoint": "gift-alt-SWA71-1",
+      "seat": 7,
+      "before": [
+        80.0,
+        386.0
+      ],
+      "after": [
+        404,
+        404
+      ],
+      "movement_cells": 324.49961479175903,
+      "safe_zone": "east-lowland-core"
+    },
+    {
+      "id": 118,
+      "waypoint": "SWA72",
+      "seat": 7,
+      "before": [
+        38.0,
+        506.0
+      ],
+      "after": [
+        304,
+        372
+      ],
+      "movement_cells": 297.8455975837145,
+      "safe_zone": "central-intermediate-body"
+    },
+    {
+      "id": 152,
+      "waypoint": "gift-alt-SWA72-1",
+      "seat": 7,
+      "before": [
+        59.0,
+        558.0
+      ],
+      "after": [
+        402,
+        608
+      ],
+      "movement_cells": 346.62515777133086,
+      "safe_zone": "east-lowland-core"
+    },
+    {
+      "id": 119,
+      "waypoint": "PP71",
+      "seat": 7,
+      "before": [
+        81.0,
+        470.0
+      ],
+      "after": [
+        220,
+        480
+      ],
+      "movement_cells": 139.35924798878617,
+      "safe_zone": "west-central-upper-core"
+    },
+    {
+      "id": 134,
+      "waypoint": "gift-alt-PP71-1",
+      "seat": 7,
+      "before": [
+        109.0,
+        478.0
+      ],
+      "after": [
+        426,
+        522
+      ],
+      "movement_cells": 320.0390601161052,
+      "safe_zone": "east-lowland-core"
+    },
+    {
+      "id": 135,
+      "waypoint": "gift-alt-PP72-1",
+      "seat": 7,
+      "before": [
+        66.0,
+        530.0
+      ],
+      "after": [
+        100,
+        356
+      ],
+      "movement_cells": 177.29072169744248,
+      "safe_zone": "west-central-upper-core"
+    },
+    {
+      "id": 121,
+      "waypoint": "PP73",
+      "seat": 7,
+      "before": [
+        81.0,
+        442.0
+      ],
+      "after": [
+        84,
+        444
+      ],
+      "movement_cells": 3.605551275463989,
+      "safe_zone": "west-central-upper-core"
+    },
+    {
+      "id": 136,
+      "waypoint": "gift-alt-PP73-1",
+      "seat": 7,
+      "before": [
+        109.0,
+        394.0
+      ],
+      "after": [
+        138,
+        402
+      ],
+      "movement_cells": 30.083217912982647,
+      "safe_zone": "west-central-upper-core"
+    },
+    {
+      "id": 123,
+      "waypoint": "SWA81",
+      "seat": 8,
+      "before": [
+        83.0,
+        732.0
+      ],
+      "after": [
+        366,
+        752
+      ],
+      "movement_cells": 283.70583356709466,
+      "safe_zone": "east-lowland-core"
+    },
+    {
+      "id": 153,
+      "waypoint": "gift-alt-SWA81-1",
+      "seat": 8,
+      "before": [
+        83.0,
+        676.0
+      ],
+      "after": [
+        366,
+        724
+      ],
+      "movement_cells": 287.04180880143576,
+      "safe_zone": "east-lowland-core"
+    },
+    {
+      "id": 124,
+      "waypoint": "SWA82",
+      "seat": 8,
+      "before": [
+        111.0,
+        732.0
+      ],
+      "after": [
+        140,
+        726
+      ],
+      "movement_cells": 29.614185789921695,
+      "safe_zone": "southwest-upper-core"
+    },
+    {
+      "id": 154,
+      "waypoint": "gift-alt-SWA82-1",
+      "seat": 8,
+      "before": [
+        139.0,
+        716.0
+      ],
+      "after": [
+        394,
+        752
+      ],
+      "movement_cells": 257.5286391840721,
+      "safe_zone": "east-lowland-core"
+    },
+    {
+      "id": 122,
+      "waypoint": "SW83",
+      "seat": 8,
+      "before": [
+        55.0,
+        744.0
+      ],
+      "after": [
+        168,
+        744
+      ],
+      "movement_cells": 113.0,
+      "safe_zone": "southwest-upper-core"
+    },
+    {
+      "id": 146,
+      "waypoint": "gift-alt-SW83-1",
+      "seat": 8,
+      "before": [
+        110.0,
+        704.0
+      ],
+      "after": [
+        422,
+        752
+      ],
+      "movement_cells": 315.67071451118176,
+      "safe_zone": "east-lowland-core"
+    },
+    {
+      "id": 125,
+      "waypoint": "PP81",
+      "seat": 8,
+      "before": [
+        98.0,
+        760.0
+      ],
+      "after": [
+        172,
+        772
+      ],
+      "movement_cells": 74.96665925596525,
+      "safe_zone": "southwest-upper-core"
+    },
+    {
+      "id": 137,
+      "waypoint": "gift-alt-PP81-1",
+      "seat": 8,
+      "before": [
+        139.0,
+        744.0
+      ],
+      "after": [
+        422,
+        780
+      ],
+      "movement_cells": 285.2805636562014,
+      "safe_zone": "east-lowland-core"
+    },
+    {
+      "id": 126,
+      "waypoint": "PP82",
+      "seat": 8,
+      "before": [
+        35.0,
+        800.0
+      ],
+      "after": [
+        40,
+        800
+      ],
+      "movement_cells": 5.0,
+      "safe_zone": "southwest-upper-core"
+    },
+    {
+      "id": 138,
+      "waypoint": "gift-alt-PP82-1",
+      "seat": 8,
+      "before": [
+        27.0,
+        772.0
+      ],
+      "after": [
+        140,
+        800
+      ],
+      "movement_cells": 116.41735265844177,
+      "safe_zone": "southwest-upper-core"
+    },
+    {
+      "id": 127,
+      "waypoint": "PP83",
+      "seat": 8,
+      "before": [
+        63.0,
+        800.0
+      ],
+      "after": [
+        68,
+        800
+      ],
+      "movement_cells": 5.0,
+      "safe_zone": "southwest-upper-core"
+    },
+    {
+      "id": 139,
+      "waypoint": "gift-alt-PP83-1",
+      "seat": 8,
+      "before": [
+        27.0,
+        744.0
+      ],
+      "after": [
+        40,
+        744
+      ],
+      "movement_cells": 13.0,
+      "safe_zone": "southwest-upper-core"
+    }
+  ],
+  "checked_sites": 110,
+  "checked_actions": 280,
+  "slot_lattice": [
+    {
+      "zone": "east-lowland-core",
+      "phase": [
+        12,
+        12
+      ],
+      "slots": 191,
+      "candidate_centers": 33172
+    },
+    {
+      "zone": "northwest-upper-core",
+      "phase": [
+        0,
+        12
+      ],
+      "slots": 24,
+      "candidate_centers": 3664
+    },
+    {
+      "zone": "west-central-upper-core",
+      "phase": [
+        4,
+        24
+      ],
+      "slots": 5,
+      "candidate_centers": 410
+    },
+    {
+      "zone": "southwest-upper-core",
+      "phase": [
+        4,
+        2
+      ],
+      "slots": 6,
+      "candidate_centers": 511
+    },
+    {
+      "zone": "central-intermediate-body",
+      "phase": [
+        2,
+        18
+      ],
+      "slots": 3,
+      "candidate_centers": 394
+    }
+  ],
+  "refinement": {
+    "total_movement_before": 14860.556571982761,
+    "total_movement_after": 13487.324538538727,
+    "iterations": 3
+  }
+}

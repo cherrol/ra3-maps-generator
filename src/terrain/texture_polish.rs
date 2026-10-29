@@ -28,7 +28,24 @@ pub struct Polished {
     names: Vec<String>,
     impassable: Vec<bool>,
     build_block: Vec<bool>,
+    source_chunks: BTreeMap<String, (u16, usize, u32)>,
     pub report: Value,
+}
+
+fn chunk_fingerprints(map: &MapFile) -> BTreeMap<String, (u16, usize, u32)> {
+    map.chunks
+        .iter()
+        .map(|chunk| {
+            (
+                map.table[&chunk.name_idx].clone(),
+                (
+                    chunk.version,
+                    chunk.payload.len(),
+                    crc32fast::hash(&chunk.payload),
+                ),
+            )
+        })
+        .collect()
 }
 
 fn pick(names: &[String], candidates: &[&str], fallback: u16) -> u16 {
@@ -315,6 +332,8 @@ pub fn apply(p: &Project, map: &mut MapFile, source_name: &str) -> Result<Polish
     crate::gameplay::script_spawns::validate(p, map, &hm, &checked, &objects)?;
     let changed = before.iter().zip(&after).filter(|(a, b)| a != b).count();
     let report = json!({"source":source_name,"profile":PROFILE,"reference_version":"T2.2.9",
+        "scope":"texture-polish-before-terrain-package-finalization",
+        "preservation_scope":"Preservation flags and modified_chunks compare only the input and output of texture_polish::apply; final package changes are reported separately in finalization.",
         "palette_revision":crate::terrain::materials::REVISION,
         "layer_primary_textures":crate::terrain::materials::PRIMARY,
         "added_texture_families":added,
@@ -339,6 +358,7 @@ pub fn apply(p: &Project, map: &mut MapFile, source_name: &str) -> Result<Polish
         names: bt.textures,
         impassable,
         build_block,
+        source_chunks: chunk_fingerprints(&source),
         report,
     })
 }
@@ -371,6 +391,44 @@ fn color(name: &str) -> [u8; 3] {
 }
 
 impl Polished {
+    /// Bind the polish-stage report to the actual map after package cleanup.
+    /// Cleanup can remap texture families and update chunks outside BlendTileData.
+    pub fn record_finalization(
+        &mut self,
+        map: &MapFile,
+        compaction: Option<&crate::resources::terrain_package::Report>,
+    ) -> Result<()> {
+        let hm = HeightMap::parse(map.get("HeightMapData")?)?;
+        let bt = BlendTiles::parse(map.get("BlendTileData")?, hm.width, hm.height)?;
+        let final_chunks = chunk_fingerprints(map);
+        let changed_chunks = self
+            .source_chunks
+            .keys()
+            .chain(final_chunks.keys())
+            .filter(|name| self.source_chunks.get(*name) != final_chunks.get(*name))
+            .collect::<std::collections::BTreeSet<_>>();
+        let mapping = self
+            .names
+            .iter()
+            .enumerate()
+            .map(|(id, name)| {
+                json!({"name":name,"polish_family_id":id,
+                    "final_family_id":bt.textures.iter().position(|final_name| final_name == name)})
+            })
+            .collect::<Vec<_>>();
+        self.report["finalization"] = json!({
+            "scope":"native map after terrain-package finalization",
+            "modified_chunks_since_polish_input":changed_chunks,
+            "texture_table_unchanged":self.names == bt.textures,
+            "texture_id_mapping":mapping,
+            "texture_families":bt.textures,
+            "after":histogram(&bt.tiles, &bt.textures),
+            "compaction":compaction,
+            "runtime_resource_ids":"Package finalization owns map and atlas version IDs; the polish-stage preservation flag does not cover them."
+        });
+        Ok(())
+    }
+
     fn image(&self, tiles: &[u16]) -> Image {
         let n = self.terrain.n;
         let h = self.terrain.height();
@@ -406,27 +464,31 @@ impl Polished {
         im
     }
     pub fn write_artifacts(&self, p: &Project) -> Result<()> {
+        self.write_artifacts_inner(p, true)
+    }
+
+    /// A full build renders its ordinary previews in the subsequent preview stage.
+    /// Keep all other polish artifacts, including the actual source snapshot.
+    pub fn write_artifacts_without_previews(&self, p: &Project) -> Result<()> {
+        self.write_artifacts_inner(p, false)
+    }
+
+    fn write_artifacts_inner(&self, p: &Project, previews: bool) -> Result<()> {
         self.terrain.save(p)?;
         project::write_json(&p.assets.join("texture-report.json"), &self.report)?;
-        let n = self.terrain.n;
-        let h = self.terrain.height();
-        let surface = Surface {
-            chosen: self.after.iter().map(|v| v / 64).collect(),
-            impassable: self.impassable.clone(),
-            build_block: self.build_block.clone(),
-            layer_edge: vec![false; n * h],
-            shore: vec![false; n * h],
-            textures: vec![],
-        };
-        render::previews(&self.terrain, p, &surface)?;
-        let index_path = p.assets.join("layout-index.json");
-        let mut index: Value = serde_json::from_slice(&fs::read(&index_path)?)?;
-        index["layout"] = json!("source/layout.json");
-        index["source_map"] = json!(format!("{}.map", p.name));
-        index["provenance"] = json!(
-            "Actual objects and ramp definitions carried from the source release; only materials were repainted."
-        );
-        project::write_json(&index_path, &index)?;
+        if previews {
+            let n = self.terrain.n;
+            let h = self.terrain.height();
+            let surface = Surface {
+                chosen: self.after.iter().map(|v| v / 64).collect(),
+                impassable: self.impassable.clone(),
+                build_block: self.build_block.clone(),
+                layer_edge: vec![false; n * h],
+                shore: vec![false; n * h],
+                textures: vec![],
+            };
+            render::previews(&self.terrain, p, &surface)?;
+        }
         let before = self.image(&self.before);
         let after = self.image(&self.after);
         before.png(&p.assets.join("textures--before.png"))?;
@@ -481,7 +543,7 @@ impl Polished {
         fs::write(
             p.assets.join("README.md"),
             format!(
-                "# {}\n\n基于 {} 应用公共五层主纹理：前三层草地、第四层棕岩、第五层浅灰岩，保留成品地形与斜坡。前三层保留已确认的少量变体；缺失的公共原生材质追加登记，已有编号不变。\n\n[纹理前后对比](textures--comparison.png) · [美化后材质分布](textures--after.png) · [纹理核对](texture-report.json) · [全要素编号](preview--layout.png)\n\n对比使用真实材质编号和示意颜色，并非游戏截图；尚未进行实机测试。高度、全部通行与建造位图、对象、脚本及原有资源身份保持；材质加载清单同步更新。若附有斜坡报告，它属于沿用的历史记录。\n",
+                "# {}\n\n基于 {} 应用公共五层主纹理：前三层草地、第四层棕岩、第五层浅灰岩，保留成品地形与斜坡。前三层保留已确认的少量变体；先追加缺失的公共原生材质，再由封装收尾清理未使用项并同步编号。\n\n[纹理前后对比](textures--comparison.png) · [美化后材质分布](textures--after.png) · [纹理核对](texture-report.json) · [全要素编号](preview--layout.png)\n\n对比使用真实材质分配和示意颜色，并非游戏截图；尚未进行实机测试。高度、全部通行与建造位图、对象及脚本保持；地形材质编号、加载清单和地图／图集版本由公共封装同步。报告的保留结论限定纹理绘制阶段，收尾结果单列。若附有斜坡报告，它属于沿用的历史记录。\n",
                 p.name,
                 self.report["source"].as_str().unwrap()
             ),
@@ -495,6 +557,167 @@ mod tests {
     use super::*;
     use crate::terrain::materials::{PRIMARY, STOCK};
     use std::path::Path;
+
+    struct Fixture(Project);
+
+    impl Drop for Fixture {
+        fn drop(&mut self) {
+            let _ = fs::remove_dir_all(&self.0.root);
+        }
+    }
+
+    fn fixture() -> (Fixture, Polished, MapFile) {
+        use crate::formats::map::Chunk;
+        use std::sync::atomic::{AtomicUsize, Ordering};
+        static NEXT: AtomicUsize = AtomicUsize::new(0);
+        let root = std::env::temp_dir().join(format!(
+            "ra3-texture-artifacts-{}-{}",
+            std::process::id(),
+            NEXT.fetch_add(1, Ordering::Relaxed)
+        ));
+        let p = Project {
+            assets: root.join("assets/texture-fixture/texture-fixtureT0.0.1"),
+            dist: root.join("dist/texture-fixture/texture-fixtureT0.0.1"),
+            root,
+            id: "texture-fixture".into(),
+            cfg: json!({"GRID":16,"BORDER":1,"CELL":10.,"Z_SCALE":1.}),
+            state: json!({"stage":"T","major":0,"minor":0,"patch":1}),
+            version: "T0.0.1".into(),
+            group: "texture-fixture".into(),
+            name: "texture-fixtureT0.0.1".into(),
+        };
+        project::write_json(&p.map_dir().join("version.json"), &p.state).unwrap();
+        let terrain = Terrain {
+            n: 16,
+            raw: vec![210; 256],
+            land: vec![true; 256],
+            z: vec![210.; 256],
+            slope: vec![0.; 256],
+            layout: serde_json::from_value(json!({
+                "schema_version":1,"base_cells":[],"ore_cells":[],
+                "ore_angles":[],"objects":[]
+            }))
+            .unwrap(),
+        };
+        let names = vec!["Unused".into(), "Grass_NewYork01".into()];
+        let surface = Surface {
+            chosen: vec![1; 256],
+            impassable: vec![false; 256],
+            build_block: vec![false; 256],
+            layer_edge: vec![false; 256],
+            shore: vec![false; 256],
+            textures: names
+                .iter()
+                .map(|name: &String| [name.clone(), String::new(), String::new()])
+                .collect(),
+        };
+        let map = MapFile {
+            order: vec![],
+            table: [(1, "HeightMapData"), (2, "BlendTileData"), (3, "WorldInfo")]
+                .map(|(id, name)| (id, name.into()))
+                .into(),
+            chunks: vec![
+                Chunk {
+                    name_idx: 1,
+                    version: 6,
+                    payload: terrain.heightmap(&p).encode().unwrap(),
+                },
+                Chunk {
+                    name_idx: 2,
+                    version: 27,
+                    payload: surface.encode(16, &[]).unwrap(),
+                },
+                Chunk {
+                    name_idx: 3,
+                    version: 1,
+                    payload: vec![],
+                },
+            ],
+        };
+        let polished = Polished {
+            terrain,
+            before: vec![64; 256],
+            after: vec![64; 256],
+            names,
+            impassable: surface.impassable,
+            build_block: surface.build_block,
+            source_chunks: chunk_fingerprints(&map),
+            report: json!({"source":p.name,"modified_chunks":["BlendTileData"],
+                "existing_atlas_and_resource_ids_unchanged":true}),
+        };
+        (Fixture(p), polished, map)
+    }
+
+    #[test]
+    fn finalized_report_separates_polish_claims_from_compaction_and_loading_changes() {
+        let (_fixture, mut polished, mut map) = fixture();
+        let compaction = crate::resources::terrain_package::compact(&mut map).unwrap();
+        map.get_mut("WorldInfo").unwrap().payload = vec![1, 2, 3];
+        polished
+            .record_finalization(&map, Some(&compaction))
+            .unwrap();
+        let report = &polished.report;
+        assert_eq!(report["modified_chunks"], json!(["BlendTileData"]));
+        assert_eq!(report["existing_atlas_and_resource_ids_unchanged"], true);
+        let finalization = &report["finalization"];
+        assert_eq!(
+            finalization["modified_chunks_since_polish_input"],
+            json!(["BlendTileData", "WorldInfo"])
+        );
+        assert_eq!(finalization["texture_table_unchanged"], false);
+        assert_eq!(finalization["compaction"]["removed_textures"], 1);
+        assert_eq!(
+            finalization["texture_id_mapping"][0]["final_family_id"],
+            Value::Null
+        );
+        assert_eq!(finalization["texture_id_mapping"][1]["final_family_id"], 0);
+        assert_eq!(finalization["texture_families"], json!(["Grass_NewYork01"]));
+        assert_eq!(finalization["after"]["Grass_NewYork01"], 256);
+    }
+
+    #[test]
+    fn deferred_preview_preserves_existing_outputs_and_standalone_still_writes_index() {
+        let (fixture, polished, _map) = fixture();
+        let p = &fixture.0;
+        fs::create_dir_all(&p.assets).unwrap();
+        fs::write(p.assets.join("preview.png"), b"previous preview").unwrap();
+        polished.write_artifacts_without_previews(p).unwrap();
+        assert_eq!(
+            fs::read(p.assets.join("preview.png")).unwrap(),
+            b"previous preview"
+        );
+        assert!(!p.assets.join("layout-index.json").exists());
+        for file in [
+            "texture-report.json",
+            "textures--after.png",
+            "textures--comparison.png",
+            "source/layout.json",
+            "source/terrain.npz",
+        ] {
+            assert!(p.assets.join(file).is_file(), "missing {file}");
+        }
+
+        polished.write_artifacts(p).unwrap();
+        assert_ne!(
+            fs::read(p.assets.join("preview.png")).unwrap(),
+            b"previous preview"
+        );
+        let index: Value =
+            serde_json::from_slice(&fs::read(p.assets.join("layout-index.json")).unwrap()).unwrap();
+        assert_eq!(index["source_map"], format!("{}.map", p.name));
+        assert!(
+            index["provenance"]
+                .as_str()
+                .unwrap()
+                .contains("source/layout.json")
+        );
+        assert!(
+            !index["provenance"]
+                .as_str()
+                .unwrap()
+                .contains("only materials")
+        );
+    }
 
     #[test]
     fn five_plateaus_keep_grass_variants_and_two_distinct_rock_interiors() {

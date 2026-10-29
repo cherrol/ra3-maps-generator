@@ -1,7 +1,4 @@
 {
-  "schema_version": 1,
-  "map_name": "群峰拱野",
-  "series_title": "九州大地·群峰拱野",
   "border_cells": 20,
   "elevation_thresholds_m": [
     200,
@@ -17,42 +14,53 @@
     700
   ],
   "layer_policy": "national-bands-with-local-fallback",
-  "water_policy": {
-    "include_rivers": false,
-    "preserve_ocean": true,
-    "minimum_lake_area_km2": 80,
-    "lake_area_method": "spherical polygon area; whole waterbody minus holes before frame clipping",
-    "ocean_channel_open_radius_cells": 3,
-    "mode": "map-local-compact-water-design",
-    "design_shaping": {
-      "recipe": "water-shaping.json",
-      "report": "water-shaping-report.json",
-      "reference": "raw/reference-before-water-shaping.npz",
-      "merge_nearby_reservoir_branches": true,
-      "remove_unmergeable_small_or_narrow_water": true,
-      "removed_water_target": "valid adjoining land layer from unchanged DEM",
-      "real_water_selection_retained_as_reference": true,
-      "designed_shorelines_are_not_measured": true
-    }
-  },
-  "status": "terrain-preview-awaiting-review",
+  "map_name": "群峰拱野",
+  "schema_version": 1,
+  "series_title": "九州大地·群峰拱野",
   "size_policy": {
-    "shape": "square",
-    "playable_cells": [
-      800,
-      800
-    ],
+    "border_included_in_size": false,
+    "dimension_multiple": 8,
+    "geographic_frame": "preserved; axes resampled independently",
+    "long_side_cells": 800,
     "maximum_playable_cells": [
       800,
       800
     ],
-    "long_side_cells": 800,
-    "dimension_multiple": 8,
-    "border_included_in_size": false,
-    "geographic_frame": "preserved; axes resampled independently"
+    "playable_cells": [
+      800,
+      800
+    ],
+    "shape": "square"
   },
+  "status": "terrain-preview-awaiting-review",
   "water_design_land_reference": {
-    "terrain": "raw/before-square-800/land-reference.npz",
-    "report": "raw/before-square-800/land-reference-report.json"
+    "report": "water-layer-reference-report.json",
+    "terrain": "water-layer-reference.npz"
+  },
+  "water_policy": {
+    "design_shaping": {
+      "designed_shorelines_are_not_measured": true,
+      "merge_nearby_reservoir_branches": true,
+      "real_water_selection_retained_as_reference": true,
+      "recipe": "water-shaping.json",
+      "reference": "raw/reference-before-water-shaping.npz",
+      "remove_unmergeable_small_or_narrow_water": true,
+      "removed_water_target": "valid adjoining land layer from unchanged DEM",
+      "report": "water-shaping-report.json"
+    },
+    "include_rivers": false,
+    "lake_area_method": "spherical polygon area; whole waterbody minus holes before frame clipping",
+    "minimum_lake_area_km2": 80,
+    "mode": "map-local-compact-water-design",
+    "ocean_channel_open_radius_cells": 3,
+    "preserve_ocean": true,
+    "single_layer_enclosure": {
+      "before_terrain": "raw/before-water-layer-enclosure/terrain.npz",
+      "full_perimeter": true,
+      "owner_selection": "largest pre-edit shared shoreline length",
+      "rule": "SHORE.SINGLE_LAYER",
+      "shore_band_radius_cells": 12,
+      "verification": "water-layer-verification.json"
+    }
   }
 }

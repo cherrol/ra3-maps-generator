@@ -1,0 +1,12 @@
+{
+  "map": "[CHAI]沃野奔流T0.0.5",
+  "native_sha256": "92fa436cee1a5f28ae9c9fb9e198de20533b245b246a8767ae214b369d89da70",
+  "source": "T0.0.4 authoring/source.zip",
+  "complete_script_tree_equal_except_oriented_creation_angle": true,
+  "changed_heading_actions": 124,
+  "trigger_conditions_ownership_factions_enable_flags_names_and_other_actions_preserved": true,
+  "fixed_ai_seats": {
+    "P7": "SovietConstructionYard",
+    "P8": "JapanConstructionYard"
+  }
+}

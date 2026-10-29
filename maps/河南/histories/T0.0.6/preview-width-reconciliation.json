@@ -1,0 +1,8579 @@
+{
+  "map": "河南",
+  "release": "[CHAI]沃野奔流T0.0.6",
+  "date": "2026-10-30",
+  "terrain_sha256": "e4c77d6bd5bef22359901b3328e6bb528ba3d398cf4a57166144fed931c384ab",
+  "source_evidence_sha256": "803aee5c882ab5457def139f0e26611f8e2526de66b1139eaade88b035854bfe",
+  "method": "Play-frame-clipped full two-dimensional five-cell square support; 8-connected eroded cores are compared inside every original 4-connected body to detect thin necks. Removed boundary components use rotation-invariant principal-axis length and width, not just four sampled directions. Every supplied short section is tied to its actual class/body and residual geometry.",
+  "source_short_candidates": 138,
+  "models": [
+    {
+      "class": 0,
+      "components": [
+        {
+          "component": 1,
+          "cells": 185,
+          "five_cell_core_components": [
+            1
+          ]
+        },
+        {
+          "component": 2,
+          "cells": 1734,
+          "five_cell_core_components": [
+            2
+          ]
+        }
+      ],
+      "core_components": 2,
+      "residuals": [
+        {
+          "cells": 2,
+          "principal_length_cells": 2.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 0.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            758,
+            79,
+            759,
+            79
+          ],
+          "bounding_diameter_upper_bound_cells": 2.23606797749979
+        },
+        {
+          "cells": 2,
+          "principal_length_cells": 2.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 90.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            751,
+            88,
+            751,
+            89
+          ],
+          "bounding_diameter_upper_bound_cells": 2.23606797749979
+        },
+        {
+          "cells": 2,
+          "principal_length_cells": 2.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 90.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            766,
+            90,
+            766,
+            91
+          ],
+          "bounding_diameter_upper_bound_cells": 2.23606797749979
+        },
+        {
+          "cells": 2,
+          "principal_length_cells": 2.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 0.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            761,
+            95,
+            762,
+            95
+          ],
+          "bounding_diameter_upper_bound_cells": 2.23606797749979
+        },
+        {
+          "cells": 1,
+          "principal_length_cells": 1.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 0.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            173,
+            586,
+            173,
+            586
+          ],
+          "bounding_diameter_upper_bound_cells": 1.4142135623730951
+        },
+        {
+          "cells": 1,
+          "principal_length_cells": 1.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 0.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            118,
+            602,
+            118,
+            602
+          ],
+          "bounding_diameter_upper_bound_cells": 1.4142135623730951
+        },
+        {
+          "cells": 2,
+          "principal_length_cells": 2.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 90.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            188,
+            607,
+            188,
+            608
+          ],
+          "bounding_diameter_upper_bound_cells": 2.23606797749979
+        },
+        {
+          "cells": 1,
+          "principal_length_cells": 1.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 0.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            112,
+            608,
+            112,
+            608
+          ],
+          "bounding_diameter_upper_bound_cells": 1.4142135623730951
+        },
+        {
+          "cells": 3,
+          "principal_length_cells": 3.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 90.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            116,
+            624,
+            116,
+            626
+          ],
+          "bounding_diameter_upper_bound_cells": 3.1622776601683795
+        },
+        {
+          "cells": 1,
+          "principal_length_cells": 1.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 0.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            122,
+            632,
+            122,
+            632
+          ],
+          "bounding_diameter_upper_bound_cells": 1.4142135623730951
+        },
+        {
+          "cells": 2,
+          "principal_length_cells": 2.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 0.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            136,
+            636,
+            137,
+            636
+          ],
+          "bounding_diameter_upper_bound_cells": 2.23606797749979
+        }
+      ]
+    },
+    {
+      "class": 1,
+      "components": [
+        {
+          "component": 1,
+          "cells": 378582,
+          "five_cell_core_components": [
+            1
+          ]
+        }
+      ],
+      "core_components": 1,
+      "residuals": [
+        {
+          "cells": 1,
+          "principal_length_cells": 1.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 0.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            277,
+            298,
+            277,
+            298
+          ],
+          "bounding_diameter_upper_bound_cells": 1.4142135623730951
+        },
+        {
+          "cells": 3,
+          "principal_length_cells": 3.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 0.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            355,
+            386,
+            357,
+            386
+          ],
+          "bounding_diameter_upper_bound_cells": 3.1622776601683795
+        },
+        {
+          "cells": 3,
+          "principal_length_cells": 3.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 90.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            346,
+            396,
+            346,
+            398
+          ],
+          "bounding_diameter_upper_bound_cells": 3.1622776601683795
+        },
+        {
+          "cells": 1,
+          "principal_length_cells": 1.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 0.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            328,
+            440,
+            328,
+            440
+          ],
+          "bounding_diameter_upper_bound_cells": 1.4142135623730951
+        },
+        {
+          "cells": 1,
+          "principal_length_cells": 1.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 0.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            302,
+            503,
+            302,
+            503
+          ],
+          "bounding_diameter_upper_bound_cells": 1.4142135623730951
+        },
+        {
+          "cells": 1,
+          "principal_length_cells": 1.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 0.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            216,
+            537,
+            216,
+            537
+          ],
+          "bounding_diameter_upper_bound_cells": 1.4142135623730951
+        },
+        {
+          "cells": 4,
+          "principal_length_cells": 3.0,
+          "principal_width_cells": 2.0,
+          "principal_angle_degrees": 90.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            191,
+            580,
+            192,
+            582
+          ],
+          "bounding_diameter_upper_bound_cells": 3.605551275463989
+        },
+        {
+          "cells": 6,
+          "principal_length_cells": 4.3461560827163,
+          "principal_width_cells": 2.396892577083372,
+          "principal_angle_degrees": 77.06682160295274,
+          "extended_thin_residual": false,
+          "bounds": [
+            164,
+            641,
+            165,
+            644
+          ],
+          "bounding_diameter_upper_bound_cells": 4.47213595499958
+        },
+        {
+          "cells": 4,
+          "principal_length_cells": 4.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 0.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            594,
+            771,
+            597,
+            771
+          ],
+          "bounding_diameter_upper_bound_cells": 4.123105625617661
+        }
+      ]
+    },
+    {
+      "class": 2,
+      "components": [
+        {
+          "component": 1,
+          "cells": 6168,
+          "five_cell_core_components": [
+            1
+          ]
+        },
+        {
+          "component": 2,
+          "cells": 15911,
+          "five_cell_core_components": [
+            2
+          ]
+        },
+        {
+          "component": 3,
+          "cells": 54536,
+          "five_cell_core_components": [
+            3
+          ]
+        },
+        {
+          "component": 4,
+          "cells": 8496,
+          "five_cell_core_components": [
+            4
+          ]
+        },
+        {
+          "component": 5,
+          "cells": 10177,
+          "five_cell_core_components": [
+            5
+          ]
+        }
+      ],
+      "core_components": 5,
+      "residuals": [
+        {
+          "cells": 3,
+          "principal_length_cells": 3.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 0.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            151,
+            103,
+            153,
+            103
+          ],
+          "bounding_diameter_upper_bound_cells": 3.1622776601683795
+        },
+        {
+          "cells": 1,
+          "principal_length_cells": 1.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 0.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            168,
+            130,
+            168,
+            130
+          ],
+          "bounding_diameter_upper_bound_cells": 1.4142135623730951
+        },
+        {
+          "cells": 1,
+          "principal_length_cells": 1.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 0.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            100,
+            139,
+            100,
+            139
+          ],
+          "bounding_diameter_upper_bound_cells": 1.4142135623730951
+        },
+        {
+          "cells": 1,
+          "principal_length_cells": 1.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 0.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            104,
+            158,
+            104,
+            158
+          ],
+          "bounding_diameter_upper_bound_cells": 1.4142135623730951
+        },
+        {
+          "cells": 4,
+          "principal_length_cells": 4.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 0.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            124,
+            194,
+            127,
+            194
+          ],
+          "bounding_diameter_upper_bound_cells": 4.123105625617661
+        },
+        {
+          "cells": 2,
+          "principal_length_cells": 2.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 0.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            292,
+            212,
+            293,
+            212
+          ],
+          "bounding_diameter_upper_bound_cells": 2.23606797749979
+        },
+        {
+          "cells": 3,
+          "principal_length_cells": 3.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 0.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            211,
+            236,
+            213,
+            236
+          ],
+          "bounding_diameter_upper_bound_cells": 3.1622776601683795
+        },
+        {
+          "cells": 4,
+          "principal_length_cells": 4.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 90.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            295,
+            268,
+            295,
+            271
+          ],
+          "bounding_diameter_upper_bound_cells": 4.123105625617661
+        },
+        {
+          "cells": 4,
+          "principal_length_cells": 4.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 90.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            138,
+            271,
+            138,
+            274
+          ],
+          "bounding_diameter_upper_bound_cells": 4.123105625617661
+        },
+        {
+          "cells": 4,
+          "principal_length_cells": 4.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 90.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            427,
+            306,
+            427,
+            309
+          ],
+          "bounding_diameter_upper_bound_cells": 4.123105625617661
+        },
+        {
+          "cells": 4,
+          "principal_length_cells": 4.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 90.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            175,
+            336,
+            175,
+            339
+          ],
+          "bounding_diameter_upper_bound_cells": 4.123105625617661
+        },
+        {
+          "cells": 2,
+          "principal_length_cells": 2.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 90.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            424,
+            344,
+            424,
+            345
+          ],
+          "bounding_diameter_upper_bound_cells": 2.23606797749979
+        },
+        {
+          "cells": 1,
+          "principal_length_cells": 1.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 0.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            187,
+            347,
+            187,
+            347
+          ],
+          "bounding_diameter_upper_bound_cells": 1.4142135623730951
+        },
+        {
+          "cells": 2,
+          "principal_length_cells": 2.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 90.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            232,
+            373,
+            232,
+            374
+          ],
+          "bounding_diameter_upper_bound_cells": 2.23606797749979
+        },
+        {
+          "cells": 4,
+          "principal_length_cells": 4.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 90.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            294,
+            437,
+            294,
+            440
+          ],
+          "bounding_diameter_upper_bound_cells": 4.123105625617661
+        },
+        {
+          "cells": 3,
+          "principal_length_cells": 3.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 90.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            249,
+            478,
+            249,
+            480
+          ],
+          "bounding_diameter_upper_bound_cells": 3.1622776601683795
+        },
+        {
+          "cells": 4,
+          "principal_length_cells": 4.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 90.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            370,
+            490,
+            370,
+            493
+          ],
+          "bounding_diameter_upper_bound_cells": 4.123105625617661
+        },
+        {
+          "cells": 4,
+          "principal_length_cells": 4.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 90.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            98,
+            518,
+            98,
+            521
+          ],
+          "bounding_diameter_upper_bound_cells": 4.123105625617661
+        },
+        {
+          "cells": 2,
+          "principal_length_cells": 2.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 0.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            257,
+            551,
+            258,
+            551
+          ],
+          "bounding_diameter_upper_bound_cells": 2.23606797749979
+        },
+        {
+          "cells": 2,
+          "principal_length_cells": 2.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 90.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            201,
+            607,
+            201,
+            608
+          ],
+          "bounding_diameter_upper_bound_cells": 2.23606797749979
+        },
+        {
+          "cells": 2,
+          "principal_length_cells": 2.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 0.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            144,
+            616,
+            145,
+            616
+          ],
+          "bounding_diameter_upper_bound_cells": 2.23606797749979
+        },
+        {
+          "cells": 3,
+          "principal_length_cells": 3.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 90.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            116,
+            621,
+            116,
+            623
+          ],
+          "bounding_diameter_upper_bound_cells": 3.1622776601683795
+        },
+        {
+          "cells": 2,
+          "principal_length_cells": 2.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 0.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            393,
+            631,
+            394,
+            631
+          ],
+          "bounding_diameter_upper_bound_cells": 2.23606797749979
+        },
+        {
+          "cells": 1,
+          "principal_length_cells": 1.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 0.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            123,
+            632,
+            123,
+            632
+          ],
+          "bounding_diameter_upper_bound_cells": 1.4142135623730951
+        },
+        {
+          "cells": 1,
+          "principal_length_cells": 1.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 0.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            108,
+            644,
+            108,
+            644
+          ],
+          "bounding_diameter_upper_bound_cells": 1.4142135623730951
+        },
+        {
+          "cells": 4,
+          "principal_length_cells": 4.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 0.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            493,
+            730,
+            496,
+            730
+          ],
+          "bounding_diameter_upper_bound_cells": 4.123105625617661
+        },
+        {
+          "cells": 2,
+          "principal_length_cells": 2.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 90.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            509,
+            743,
+            509,
+            744
+          ],
+          "bounding_diameter_upper_bound_cells": 2.23606797749979
+        },
+        {
+          "cells": 2,
+          "principal_length_cells": 2.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 0.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            480,
+            772,
+            481,
+            772
+          ],
+          "bounding_diameter_upper_bound_cells": 2.23606797749979
+        },
+        {
+          "cells": 4,
+          "principal_length_cells": 4.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 90.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            551,
+            776,
+            551,
+            779
+          ],
+          "bounding_diameter_upper_bound_cells": 4.123105625617661
+        },
+        {
+          "cells": 4,
+          "principal_length_cells": 4.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 0.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            564,
+            792,
+            567,
+            792
+          ],
+          "bounding_diameter_upper_bound_cells": 4.123105625617661
+        }
+      ]
+    },
+    {
+      "class": 3,
+      "components": [
+        {
+          "component": 1,
+          "cells": 135229,
+          "five_cell_core_components": [
+            1
+          ]
+        },
+        {
+          "component": 2,
+          "cells": 28982,
+          "five_cell_core_components": [
+            2
+          ]
+        }
+      ],
+      "core_components": 2,
+      "residuals": [
+        {
+          "cells": 1,
+          "principal_length_cells": 1.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 0.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            101,
+            139,
+            101,
+            139
+          ],
+          "bounding_diameter_upper_bound_cells": 1.4142135623730951
+        },
+        {
+          "cells": 2,
+          "principal_length_cells": 2.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 0.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            102,
+            158,
+            103,
+            158
+          ],
+          "bounding_diameter_upper_bound_cells": 2.23606797749979
+        },
+        {
+          "cells": 2,
+          "principal_length_cells": 2.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 90.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            41,
+            201,
+            41,
+            202
+          ],
+          "bounding_diameter_upper_bound_cells": 2.23606797749979
+        },
+        {
+          "cells": 3,
+          "principal_length_cells": 3.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 0.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            54,
+            215,
+            56,
+            215
+          ],
+          "bounding_diameter_upper_bound_cells": 3.1622776601683795
+        },
+        {
+          "cells": 2,
+          "principal_length_cells": 2.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 0.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            306,
+            217,
+            307,
+            217
+          ],
+          "bounding_diameter_upper_bound_cells": 2.23606797749979
+        },
+        {
+          "cells": 2,
+          "principal_length_cells": 2.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 90.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            117,
+            248,
+            117,
+            249
+          ],
+          "bounding_diameter_upper_bound_cells": 2.23606797749979
+        },
+        {
+          "cells": 1,
+          "principal_length_cells": 1.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 0.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            235,
+            252,
+            235,
+            252
+          ],
+          "bounding_diameter_upper_bound_cells": 1.4142135623730951
+        },
+        {
+          "cells": 1,
+          "principal_length_cells": 1.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 0.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            224,
+            333,
+            224,
+            333
+          ],
+          "bounding_diameter_upper_bound_cells": 1.4142135623730951
+        },
+        {
+          "cells": 2,
+          "principal_length_cells": 2.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 90.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            241,
+            348,
+            241,
+            349
+          ],
+          "bounding_diameter_upper_bound_cells": 2.23606797749979
+        },
+        {
+          "cells": 2,
+          "principal_length_cells": 2.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 90.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            298,
+            454,
+            298,
+            455
+          ],
+          "bounding_diameter_upper_bound_cells": 2.23606797749979
+        },
+        {
+          "cells": 2,
+          "principal_length_cells": 2.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 0.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            151,
+            495,
+            152,
+            495
+          ],
+          "bounding_diameter_upper_bound_cells": 2.23606797749979
+        },
+        {
+          "cells": 2,
+          "principal_length_cells": 2.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 90.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            264,
+            505,
+            264,
+            506
+          ],
+          "bounding_diameter_upper_bound_cells": 2.23606797749979
+        },
+        {
+          "cells": 4,
+          "principal_length_cells": 4.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 0.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            248,
+            519,
+            251,
+            519
+          ],
+          "bounding_diameter_upper_bound_cells": 4.123105625617661
+        },
+        {
+          "cells": 4,
+          "principal_length_cells": 4.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 90.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            101,
+            533,
+            101,
+            536
+          ],
+          "bounding_diameter_upper_bound_cells": 4.123105625617661
+        },
+        {
+          "cells": 4,
+          "principal_length_cells": 4.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 0.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            109,
+            644,
+            112,
+            644
+          ],
+          "bounding_diameter_upper_bound_cells": 4.123105625617661
+        },
+        {
+          "cells": 2,
+          "principal_length_cells": 2.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 90.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            209,
+            778,
+            209,
+            779
+          ],
+          "bounding_diameter_upper_bound_cells": 2.23606797749979
+        }
+      ]
+    },
+    {
+      "class": 6,
+      "components": [
+        {
+          "component": 1,
+          "cells": 638081,
+          "five_cell_core_components": [
+            1
+          ]
+        }
+      ],
+      "core_components": 1,
+      "residuals": [
+        {
+          "cells": 2,
+          "principal_length_cells": 2.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 0.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            144,
+            616,
+            145,
+            616
+          ],
+          "bounding_diameter_upper_bound_cells": 2.23606797749979
+        },
+        {
+          "cells": 3,
+          "principal_length_cells": 3.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 90.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            116,
+            621,
+            116,
+            623
+          ],
+          "bounding_diameter_upper_bound_cells": 3.1622776601683795
+        },
+        {
+          "cells": 1,
+          "principal_length_cells": 1.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 0.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            123,
+            632,
+            123,
+            632
+          ],
+          "bounding_diameter_upper_bound_cells": 1.4142135623730951
+        }
+      ]
+    }
+  ],
+  "failures": [],
+  "reviews": [
+    {
+      "candidate_id": 1,
+      "class": 0,
+      "bounds_full_grid": [
+        759,
+        79,
+        760,
+        80
+      ],
+      "source_sampled_minimum_width": 2.0,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          758,
+          79
+        ],
+        [
+          759,
+          79
+        ],
+        [
+          757,
+          80
+        ],
+        [
+          758,
+          80
+        ],
+        [
+          759,
+          80
+        ],
+        [
+          760,
+          80
+        ]
+      ],
+      "original_components": [
+        1
+      ],
+      "residual_diagnostics": [
+        {
+          "cells": 2,
+          "principal_length_cells": 2.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 0.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            758,
+            79,
+            759,
+            79
+          ]
+        }
+      ],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 2,
+      "class": 0,
+      "bounds_full_grid": [
+        762,
+        95,
+        763,
+        96
+      ],
+      "source_sampled_minimum_width": 2.0,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          760,
+          94
+        ],
+        [
+          761,
+          94
+        ],
+        [
+          762,
+          94
+        ],
+        [
+          763,
+          94
+        ],
+        [
+          761,
+          95
+        ],
+        [
+          762,
+          95
+        ]
+      ],
+      "original_components": [
+        1
+      ],
+      "residual_diagnostics": [
+        {
+          "cells": 2,
+          "principal_length_cells": 2.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 0.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            761,
+            95,
+            762,
+            95
+          ]
+        }
+      ],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 3,
+      "class": 2,
+      "bounds_full_grid": [
+        152,
+        103,
+        155,
+        105
+      ],
+      "source_sampled_minimum_width": 2.8284271247461903,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          151,
+          103
+        ],
+        [
+          152,
+          103
+        ],
+        [
+          153,
+          103
+        ],
+        [
+          151,
+          104
+        ],
+        [
+          152,
+          104
+        ],
+        [
+          153,
+          104
+        ],
+        [
+          154,
+          104
+        ],
+        [
+          152,
+          105
+        ],
+        [
+          153,
+          105
+        ],
+        [
+          154,
+          105
+        ]
+      ],
+      "original_components": [
+        2
+      ],
+      "residual_diagnostics": [
+        {
+          "cells": 3,
+          "principal_length_cells": 3.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 0.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            151,
+            103,
+            153,
+            103
+          ]
+        }
+      ],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 4,
+      "class": 2,
+      "bounds_full_grid": [
+        100,
+        139,
+        101,
+        140
+      ],
+      "source_sampled_minimum_width": 1.0,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          100,
+          139
+        ],
+        [
+          99,
+          140
+        ],
+        [
+          100,
+          140
+        ],
+        [
+          101,
+          140
+        ]
+      ],
+      "original_components": [
+        2
+      ],
+      "residual_diagnostics": [
+        {
+          "cells": 1,
+          "principal_length_cells": 1.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 0.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            100,
+            139,
+            100,
+            139
+          ]
+        }
+      ],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 5,
+      "class": 3,
+      "bounds_full_grid": [
+        101,
+        139,
+        102,
+        140
+      ],
+      "source_sampled_minimum_width": 1.0,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          100,
+          138
+        ],
+        [
+          101,
+          138
+        ],
+        [
+          102,
+          138
+        ],
+        [
+          101,
+          139
+        ]
+      ],
+      "original_components": [
+        1
+      ],
+      "residual_diagnostics": [
+        {
+          "cells": 1,
+          "principal_length_cells": 1.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 0.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            101,
+            139,
+            101,
+            139
+          ]
+        }
+      ],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 6,
+      "class": 3,
+      "bounds_full_grid": [
+        103,
+        158,
+        104,
+        159
+      ],
+      "source_sampled_minimum_width": 2.0,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          102,
+          158
+        ],
+        [
+          103,
+          158
+        ],
+        [
+          101,
+          159
+        ],
+        [
+          102,
+          159
+        ],
+        [
+          103,
+          159
+        ],
+        [
+          104,
+          159
+        ]
+      ],
+      "original_components": [
+        1
+      ],
+      "residual_diagnostics": [
+        {
+          "cells": 2,
+          "principal_length_cells": 2.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 0.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            102,
+            158,
+            103,
+            158
+          ]
+        }
+      ],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 7,
+      "class": 2,
+      "bounds_full_grid": [
+        104,
+        158,
+        105,
+        159
+      ],
+      "source_sampled_minimum_width": 1.0,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          103,
+          157
+        ],
+        [
+          104,
+          157
+        ],
+        [
+          105,
+          157
+        ],
+        [
+          104,
+          158
+        ]
+      ],
+      "original_components": [
+        2
+      ],
+      "residual_diagnostics": [
+        {
+          "cells": 1,
+          "principal_length_cells": 1.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 0.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            104,
+            158,
+            104,
+            158
+          ]
+        }
+      ],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 8,
+      "class": 2,
+      "bounds_full_grid": [
+        126,
+        194,
+        127,
+        195
+      ],
+      "source_sampled_minimum_width": 4.0,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          124,
+          194
+        ],
+        [
+          125,
+          194
+        ],
+        [
+          126,
+          194
+        ],
+        [
+          127,
+          194
+        ],
+        [
+          124,
+          195
+        ],
+        [
+          125,
+          195
+        ],
+        [
+          126,
+          195
+        ],
+        [
+          127,
+          195
+        ]
+      ],
+      "original_components": [
+        2
+      ],
+      "residual_diagnostics": [
+        {
+          "cells": 4,
+          "principal_length_cells": 4.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 0.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            124,
+            194,
+            127,
+            194
+          ]
+        }
+      ],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 9,
+      "class": 2,
+      "bounds_full_grid": [
+        293,
+        212,
+        294,
+        213
+      ],
+      "source_sampled_minimum_width": 2.0,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          292,
+          212
+        ],
+        [
+          293,
+          212
+        ],
+        [
+          291,
+          213
+        ],
+        [
+          292,
+          213
+        ],
+        [
+          293,
+          213
+        ],
+        [
+          294,
+          213
+        ]
+      ],
+      "original_components": [
+        3
+      ],
+      "residual_diagnostics": [
+        {
+          "cells": 2,
+          "principal_length_cells": 2.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 0.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            292,
+            212,
+            293,
+            212
+          ]
+        }
+      ],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 10,
+      "class": 3,
+      "bounds_full_grid": [
+        55,
+        215,
+        56,
+        216
+      ],
+      "source_sampled_minimum_width": 3.0,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          54,
+          214
+        ],
+        [
+          55,
+          214
+        ],
+        [
+          56,
+          214
+        ],
+        [
+          54,
+          215
+        ],
+        [
+          55,
+          215
+        ],
+        [
+          56,
+          215
+        ]
+      ],
+      "original_components": [
+        1
+      ],
+      "residual_diagnostics": [
+        {
+          "cells": 3,
+          "principal_length_cells": 3.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 0.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            54,
+            215,
+            56,
+            215
+          ]
+        }
+      ],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 11,
+      "class": 3,
+      "bounds_full_grid": [
+        307,
+        217,
+        308,
+        218
+      ],
+      "source_sampled_minimum_width": 2.0,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          305,
+          216
+        ],
+        [
+          306,
+          216
+        ],
+        [
+          307,
+          216
+        ],
+        [
+          308,
+          216
+        ],
+        [
+          306,
+          217
+        ],
+        [
+          307,
+          217
+        ]
+      ],
+      "original_components": [
+        1
+      ],
+      "residual_diagnostics": [
+        {
+          "cells": 2,
+          "principal_length_cells": 2.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 0.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            306,
+            217,
+            307,
+            217
+          ]
+        }
+      ],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 12,
+      "class": 2,
+      "bounds_full_grid": [
+        212,
+        236,
+        213,
+        237
+      ],
+      "source_sampled_minimum_width": 3.0,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          211,
+          235
+        ],
+        [
+          212,
+          235
+        ],
+        [
+          213,
+          235
+        ],
+        [
+          211,
+          236
+        ],
+        [
+          212,
+          236
+        ],
+        [
+          213,
+          236
+        ]
+      ],
+      "original_components": [
+        3
+      ],
+      "residual_diagnostics": [
+        {
+          "cells": 3,
+          "principal_length_cells": 3.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 0.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            211,
+            236,
+            213,
+            236
+          ]
+        }
+      ],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 13,
+      "class": 3,
+      "bounds_full_grid": [
+        224,
+        333,
+        225,
+        334
+      ],
+      "source_sampled_minimum_width": 1.0,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          224,
+          333
+        ],
+        [
+          223,
+          334
+        ],
+        [
+          224,
+          334
+        ],
+        [
+          225,
+          334
+        ]
+      ],
+      "original_components": [
+        1
+      ],
+      "residual_diagnostics": [
+        {
+          "cells": 1,
+          "principal_length_cells": 1.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 0.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            224,
+            333,
+            224,
+            333
+          ]
+        }
+      ],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 14,
+      "class": 2,
+      "bounds_full_grid": [
+        187,
+        347,
+        188,
+        348
+      ],
+      "source_sampled_minimum_width": 1.0,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          186,
+          346
+        ],
+        [
+          187,
+          346
+        ],
+        [
+          188,
+          346
+        ],
+        [
+          187,
+          347
+        ]
+      ],
+      "original_components": [
+        3
+      ],
+      "residual_diagnostics": [
+        {
+          "cells": 1,
+          "principal_length_cells": 1.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 0.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            187,
+            347,
+            187,
+            347
+          ]
+        }
+      ],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 15,
+      "class": 1,
+      "bounds_full_grid": [
+        356,
+        386,
+        357,
+        387
+      ],
+      "source_sampled_minimum_width": 3.0,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          355,
+          386
+        ],
+        [
+          356,
+          386
+        ],
+        [
+          357,
+          386
+        ],
+        [
+          355,
+          387
+        ],
+        [
+          356,
+          387
+        ],
+        [
+          357,
+          387
+        ]
+      ],
+      "original_components": [
+        1
+      ],
+      "residual_diagnostics": [
+        {
+          "cells": 3,
+          "principal_length_cells": 3.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 0.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            355,
+            386,
+            357,
+            386
+          ]
+        }
+      ],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 16,
+      "class": 3,
+      "bounds_full_grid": [
+        152,
+        495,
+        153,
+        496
+      ],
+      "source_sampled_minimum_width": 2.0,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          150,
+          494
+        ],
+        [
+          151,
+          494
+        ],
+        [
+          152,
+          494
+        ],
+        [
+          153,
+          494
+        ],
+        [
+          151,
+          495
+        ],
+        [
+          152,
+          495
+        ]
+      ],
+      "original_components": [
+        1
+      ],
+      "residual_diagnostics": [
+        {
+          "cells": 2,
+          "principal_length_cells": 2.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 0.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            151,
+            495,
+            152,
+            495
+          ]
+        }
+      ],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 17,
+      "class": 1,
+      "bounds_full_grid": [
+        302,
+        503,
+        303,
+        504
+      ],
+      "source_sampled_minimum_width": 1.0,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          302,
+          503
+        ],
+        [
+          301,
+          504
+        ],
+        [
+          302,
+          504
+        ],
+        [
+          303,
+          504
+        ]
+      ],
+      "original_components": [
+        1
+      ],
+      "residual_diagnostics": [
+        {
+          "cells": 1,
+          "principal_length_cells": 1.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 0.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            302,
+            503,
+            302,
+            503
+          ]
+        }
+      ],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 18,
+      "class": 3,
+      "bounds_full_grid": [
+        250,
+        519,
+        251,
+        520
+      ],
+      "source_sampled_minimum_width": 4.0,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          248,
+          518
+        ],
+        [
+          249,
+          518
+        ],
+        [
+          250,
+          518
+        ],
+        [
+          251,
+          518
+        ],
+        [
+          248,
+          519
+        ],
+        [
+          249,
+          519
+        ],
+        [
+          250,
+          519
+        ],
+        [
+          251,
+          519
+        ]
+      ],
+      "original_components": [
+        1
+      ],
+      "residual_diagnostics": [
+        {
+          "cells": 4,
+          "principal_length_cells": 4.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 0.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            248,
+            519,
+            251,
+            519
+          ]
+        }
+      ],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 19,
+      "class": 1,
+      "bounds_full_grid": [
+        216,
+        537,
+        217,
+        538
+      ],
+      "source_sampled_minimum_width": 1.0,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          216,
+          537
+        ],
+        [
+          215,
+          538
+        ],
+        [
+          216,
+          538
+        ],
+        [
+          217,
+          538
+        ]
+      ],
+      "original_components": [
+        1
+      ],
+      "residual_diagnostics": [
+        {
+          "cells": 1,
+          "principal_length_cells": 1.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 0.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            216,
+            537,
+            216,
+            537
+          ]
+        }
+      ],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 20,
+      "class": 2,
+      "bounds_full_grid": [
+        258,
+        551,
+        259,
+        552
+      ],
+      "source_sampled_minimum_width": 2.0,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          256,
+          550
+        ],
+        [
+          257,
+          550
+        ],
+        [
+          258,
+          550
+        ],
+        [
+          259,
+          550
+        ],
+        [
+          257,
+          551
+        ],
+        [
+          258,
+          551
+        ]
+      ],
+      "original_components": [
+        3
+      ],
+      "residual_diagnostics": [
+        {
+          "cells": 2,
+          "principal_length_cells": 2.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 0.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            257,
+            551,
+            258,
+            551
+          ]
+        }
+      ],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 21,
+      "class": 0,
+      "bounds_full_grid": [
+        173,
+        586,
+        174,
+        587
+      ],
+      "source_sampled_minimum_width": 1.0,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          173,
+          586
+        ],
+        [
+          172,
+          587
+        ],
+        [
+          173,
+          587
+        ],
+        [
+          174,
+          587
+        ]
+      ],
+      "original_components": [
+        2
+      ],
+      "residual_diagnostics": [
+        {
+          "cells": 1,
+          "principal_length_cells": 1.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 0.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            173,
+            586,
+            173,
+            586
+          ]
+        }
+      ],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 22,
+      "class": 0,
+      "bounds_full_grid": [
+        118,
+        602,
+        119,
+        603
+      ],
+      "source_sampled_minimum_width": 1.0,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          118,
+          602
+        ],
+        [
+          117,
+          603
+        ],
+        [
+          118,
+          603
+        ],
+        [
+          119,
+          603
+        ]
+      ],
+      "original_components": [
+        2
+      ],
+      "residual_diagnostics": [
+        {
+          "cells": 1,
+          "principal_length_cells": 1.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 0.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            118,
+            602,
+            118,
+            602
+          ]
+        }
+      ],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 23,
+      "class": 2,
+      "bounds_full_grid": [
+        145,
+        616,
+        146,
+        617
+      ],
+      "source_sampled_minimum_width": 2.0,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          143,
+          615
+        ],
+        [
+          144,
+          615
+        ],
+        [
+          145,
+          615
+        ],
+        [
+          146,
+          615
+        ],
+        [
+          144,
+          616
+        ],
+        [
+          145,
+          616
+        ]
+      ],
+      "original_components": [
+        3
+      ],
+      "residual_diagnostics": [
+        {
+          "cells": 2,
+          "principal_length_cells": 2.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 0.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            144,
+            616,
+            145,
+            616
+          ]
+        }
+      ],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 24,
+      "class": 2,
+      "bounds_full_grid": [
+        394,
+        631,
+        395,
+        632
+      ],
+      "source_sampled_minimum_width": 2.0,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          393,
+          631
+        ],
+        [
+          394,
+          631
+        ],
+        [
+          392,
+          632
+        ],
+        [
+          393,
+          632
+        ],
+        [
+          394,
+          632
+        ],
+        [
+          395,
+          632
+        ]
+      ],
+      "original_components": [
+        4
+      ],
+      "residual_diagnostics": [
+        {
+          "cells": 2,
+          "principal_length_cells": 2.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 0.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            393,
+            631,
+            394,
+            631
+          ]
+        }
+      ],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 25,
+      "class": 0,
+      "bounds_full_grid": [
+        122,
+        632,
+        123,
+        633
+      ],
+      "source_sampled_minimum_width": 1.0,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          121,
+          631
+        ],
+        [
+          122,
+          631
+        ],
+        [
+          123,
+          631
+        ],
+        [
+          122,
+          632
+        ]
+      ],
+      "original_components": [
+        2
+      ],
+      "residual_diagnostics": [
+        {
+          "cells": 1,
+          "principal_length_cells": 1.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 0.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            122,
+            632,
+            122,
+            632
+          ]
+        }
+      ],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 26,
+      "class": 2,
+      "bounds_full_grid": [
+        123,
+        632,
+        124,
+        633
+      ],
+      "source_sampled_minimum_width": 1.0,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          123,
+          632
+        ],
+        [
+          122,
+          633
+        ],
+        [
+          123,
+          633
+        ],
+        [
+          124,
+          633
+        ]
+      ],
+      "original_components": [
+        3
+      ],
+      "residual_diagnostics": [
+        {
+          "cells": 1,
+          "principal_length_cells": 1.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 0.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            123,
+            632,
+            123,
+            632
+          ]
+        }
+      ],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 27,
+      "class": 0,
+      "bounds_full_grid": [
+        137,
+        636,
+        138,
+        637
+      ],
+      "source_sampled_minimum_width": 2.0,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          135,
+          635
+        ],
+        [
+          136,
+          635
+        ],
+        [
+          137,
+          635
+        ],
+        [
+          138,
+          635
+        ],
+        [
+          136,
+          636
+        ],
+        [
+          137,
+          636
+        ]
+      ],
+      "original_components": [
+        2
+      ],
+      "residual_diagnostics": [
+        {
+          "cells": 2,
+          "principal_length_cells": 2.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 0.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            136,
+            636,
+            137,
+            636
+          ]
+        }
+      ],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 28,
+      "class": 2,
+      "bounds_full_grid": [
+        108,
+        644,
+        109,
+        645
+      ],
+      "source_sampled_minimum_width": 1.0,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          107,
+          643
+        ],
+        [
+          108,
+          643
+        ],
+        [
+          109,
+          643
+        ],
+        [
+          108,
+          644
+        ]
+      ],
+      "original_components": [
+        3
+      ],
+      "residual_diagnostics": [
+        {
+          "cells": 1,
+          "principal_length_cells": 1.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 0.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            108,
+            644,
+            108,
+            644
+          ]
+        }
+      ],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 29,
+      "class": 3,
+      "bounds_full_grid": [
+        111,
+        644,
+        112,
+        645
+      ],
+      "source_sampled_minimum_width": 4.0,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          109,
+          644
+        ],
+        [
+          110,
+          644
+        ],
+        [
+          111,
+          644
+        ],
+        [
+          112,
+          644
+        ],
+        [
+          109,
+          645
+        ],
+        [
+          110,
+          645
+        ],
+        [
+          111,
+          645
+        ],
+        [
+          112,
+          645
+        ]
+      ],
+      "original_components": [
+        2
+      ],
+      "residual_diagnostics": [
+        {
+          "cells": 4,
+          "principal_length_cells": 4.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 0.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            109,
+            644,
+            112,
+            644
+          ]
+        }
+      ],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 30,
+      "class": 2,
+      "bounds_full_grid": [
+        495,
+        730,
+        496,
+        731
+      ],
+      "source_sampled_minimum_width": 4.0,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          493,
+          730
+        ],
+        [
+          494,
+          730
+        ],
+        [
+          495,
+          730
+        ],
+        [
+          496,
+          730
+        ],
+        [
+          493,
+          731
+        ],
+        [
+          494,
+          731
+        ],
+        [
+          495,
+          731
+        ],
+        [
+          496,
+          731
+        ]
+      ],
+      "original_components": [
+        4
+      ],
+      "residual_diagnostics": [
+        {
+          "cells": 4,
+          "principal_length_cells": 4.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 0.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            493,
+            730,
+            496,
+            730
+          ]
+        }
+      ],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 31,
+      "class": 1,
+      "bounds_full_grid": [
+        596,
+        771,
+        597,
+        772
+      ],
+      "source_sampled_minimum_width": 4.0,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          594,
+          770
+        ],
+        [
+          595,
+          770
+        ],
+        [
+          596,
+          770
+        ],
+        [
+          597,
+          770
+        ],
+        [
+          594,
+          771
+        ],
+        [
+          595,
+          771
+        ],
+        [
+          596,
+          771
+        ],
+        [
+          597,
+          771
+        ]
+      ],
+      "original_components": [
+        1
+      ],
+      "residual_diagnostics": [
+        {
+          "cells": 4,
+          "principal_length_cells": 4.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 0.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            594,
+            771,
+            597,
+            771
+          ]
+        }
+      ],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 32,
+      "class": 2,
+      "bounds_full_grid": [
+        481,
+        772,
+        482,
+        773
+      ],
+      "source_sampled_minimum_width": 2.0,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          479,
+          771
+        ],
+        [
+          480,
+          771
+        ],
+        [
+          481,
+          771
+        ],
+        [
+          482,
+          771
+        ],
+        [
+          480,
+          772
+        ],
+        [
+          481,
+          772
+        ]
+      ],
+      "original_components": [
+        4
+      ],
+      "residual_diagnostics": [
+        {
+          "cells": 2,
+          "principal_length_cells": 2.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 0.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            480,
+            772,
+            481,
+            772
+          ]
+        }
+      ],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 33,
+      "class": 2,
+      "bounds_full_grid": [
+        566,
+        792,
+        567,
+        793
+      ],
+      "source_sampled_minimum_width": 4.0,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          564,
+          791
+        ],
+        [
+          565,
+          791
+        ],
+        [
+          566,
+          791
+        ],
+        [
+          567,
+          791
+        ],
+        [
+          564,
+          792
+        ],
+        [
+          565,
+          792
+        ],
+        [
+          566,
+          792
+        ],
+        [
+          567,
+          792
+        ]
+      ],
+      "original_components": [
+        5
+      ],
+      "residual_diagnostics": [
+        {
+          "cells": 4,
+          "principal_length_cells": 4.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 0.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            564,
+            792,
+            567,
+            792
+          ]
+        }
+      ],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 34,
+      "class": 3,
+      "bounds_full_grid": [
+        41,
+        202,
+        42,
+        203
+      ],
+      "source_sampled_minimum_width": 2.0,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          42,
+          200
+        ],
+        [
+          41,
+          201
+        ],
+        [
+          42,
+          201
+        ],
+        [
+          41,
+          202
+        ],
+        [
+          42,
+          202
+        ],
+        [
+          42,
+          203
+        ]
+      ],
+      "original_components": [
+        1
+      ],
+      "residual_diagnostics": [
+        {
+          "cells": 2,
+          "principal_length_cells": 2.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 90.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            41,
+            201,
+            41,
+            202
+          ]
+        }
+      ],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 35,
+      "class": 2,
+      "bounds_full_grid": [
+        98,
+        520,
+        99,
+        521
+      ],
+      "source_sampled_minimum_width": 4.0,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          98,
+          518
+        ],
+        [
+          99,
+          518
+        ],
+        [
+          98,
+          519
+        ],
+        [
+          99,
+          519
+        ],
+        [
+          98,
+          520
+        ],
+        [
+          99,
+          520
+        ],
+        [
+          98,
+          521
+        ],
+        [
+          99,
+          521
+        ]
+      ],
+      "original_components": [
+        3
+      ],
+      "residual_diagnostics": [
+        {
+          "cells": 4,
+          "principal_length_cells": 4.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 90.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            98,
+            518,
+            98,
+            521
+          ]
+        }
+      ],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 36,
+      "class": 3,
+      "bounds_full_grid": [
+        101,
+        535,
+        102,
+        536
+      ],
+      "source_sampled_minimum_width": 4.0,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          100,
+          533
+        ],
+        [
+          101,
+          533
+        ],
+        [
+          100,
+          534
+        ],
+        [
+          101,
+          534
+        ],
+        [
+          100,
+          535
+        ],
+        [
+          101,
+          535
+        ],
+        [
+          100,
+          536
+        ],
+        [
+          101,
+          536
+        ]
+      ],
+      "original_components": [
+        1
+      ],
+      "residual_diagnostics": [
+        {
+          "cells": 4,
+          "principal_length_cells": 4.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 90.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            101,
+            533,
+            101,
+            536
+          ]
+        }
+      ],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 37,
+      "class": 0,
+      "bounds_full_grid": [
+        112,
+        608,
+        113,
+        609
+      ],
+      "source_sampled_minimum_width": 1.0,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          113,
+          607
+        ],
+        [
+          112,
+          608
+        ],
+        [
+          113,
+          608
+        ],
+        [
+          113,
+          609
+        ]
+      ],
+      "original_components": [
+        2
+      ],
+      "residual_diagnostics": [
+        {
+          "cells": 1,
+          "principal_length_cells": 1.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 0.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            112,
+            608,
+            112,
+            608
+          ]
+        }
+      ],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 38,
+      "class": 2,
+      "bounds_full_grid": [
+        116,
+        622,
+        117,
+        623
+      ],
+      "source_sampled_minimum_width": 3.0,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          115,
+          621
+        ],
+        [
+          116,
+          621
+        ],
+        [
+          115,
+          622
+        ],
+        [
+          116,
+          622
+        ],
+        [
+          115,
+          623
+        ],
+        [
+          116,
+          623
+        ]
+      ],
+      "original_components": [
+        3
+      ],
+      "residual_diagnostics": [
+        {
+          "cells": 3,
+          "principal_length_cells": 3.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 90.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            116,
+            621,
+            116,
+            623
+          ]
+        }
+      ],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 39,
+      "class": 0,
+      "bounds_full_grid": [
+        116,
+        625,
+        117,
+        626
+      ],
+      "source_sampled_minimum_width": 3.0,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          116,
+          624
+        ],
+        [
+          117,
+          624
+        ],
+        [
+          116,
+          625
+        ],
+        [
+          117,
+          625
+        ],
+        [
+          116,
+          626
+        ],
+        [
+          117,
+          626
+        ]
+      ],
+      "original_components": [
+        2
+      ],
+      "residual_diagnostics": [
+        {
+          "cells": 3,
+          "principal_length_cells": 3.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 90.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            116,
+            624,
+            116,
+            626
+          ]
+        }
+      ],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 40,
+      "class": 3,
+      "bounds_full_grid": [
+        117,
+        249,
+        118,
+        250
+      ],
+      "source_sampled_minimum_width": 2.0,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          118,
+          247
+        ],
+        [
+          117,
+          248
+        ],
+        [
+          118,
+          248
+        ],
+        [
+          117,
+          249
+        ],
+        [
+          118,
+          249
+        ],
+        [
+          118,
+          250
+        ]
+      ],
+      "original_components": [
+        1
+      ],
+      "residual_diagnostics": [
+        {
+          "cells": 2,
+          "principal_length_cells": 2.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 90.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            117,
+            248,
+            117,
+            249
+          ]
+        }
+      ],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 41,
+      "class": 2,
+      "bounds_full_grid": [
+        138,
+        273,
+        139,
+        274
+      ],
+      "source_sampled_minimum_width": 4.0,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          137,
+          271
+        ],
+        [
+          138,
+          271
+        ],
+        [
+          137,
+          272
+        ],
+        [
+          138,
+          272
+        ],
+        [
+          137,
+          273
+        ],
+        [
+          138,
+          273
+        ],
+        [
+          137,
+          274
+        ],
+        [
+          138,
+          274
+        ]
+      ],
+      "original_components": [
+        2
+      ],
+      "residual_diagnostics": [
+        {
+          "cells": 4,
+          "principal_length_cells": 4.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 90.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            138,
+            271,
+            138,
+            274
+          ]
+        }
+      ],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 42,
+      "class": 1,
+      "bounds_full_grid": [
+        164,
+        641,
+        167,
+        644
+      ],
+      "source_sampled_minimum_width": 1.4142135623730951,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          167,
+          640
+        ],
+        [
+          164,
+          641
+        ],
+        [
+          165,
+          641
+        ],
+        [
+          166,
+          641
+        ],
+        [
+          167,
+          641
+        ],
+        [
+          164,
+          642
+        ],
+        [
+          165,
+          642
+        ],
+        [
+          166,
+          642
+        ],
+        [
+          167,
+          642
+        ],
+        [
+          165,
+          643
+        ],
+        [
+          166,
+          643
+        ],
+        [
+          165,
+          644
+        ],
+        [
+          166,
+          644
+        ]
+      ],
+      "original_components": [
+        1
+      ],
+      "residual_diagnostics": [
+        {
+          "cells": 6,
+          "principal_length_cells": 4.3461560827163,
+          "principal_width_cells": 2.396892577083372,
+          "principal_angle_degrees": 77.06682160295274,
+          "extended_thin_residual": false,
+          "bounds": [
+            164,
+            641,
+            165,
+            644
+          ]
+        }
+      ],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 43,
+      "class": 2,
+      "bounds_full_grid": [
+        168,
+        130,
+        169,
+        131
+      ],
+      "source_sampled_minimum_width": 1.0,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          167,
+          129
+        ],
+        [
+          167,
+          130
+        ],
+        [
+          168,
+          130
+        ],
+        [
+          167,
+          131
+        ]
+      ],
+      "original_components": [
+        2
+      ],
+      "residual_diagnostics": [
+        {
+          "cells": 1,
+          "principal_length_cells": 1.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 0.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            168,
+            130,
+            168,
+            130
+          ]
+        }
+      ],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 44,
+      "class": 2,
+      "bounds_full_grid": [
+        175,
+        338,
+        176,
+        339
+      ],
+      "source_sampled_minimum_width": 4.0,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          175,
+          336
+        ],
+        [
+          176,
+          336
+        ],
+        [
+          175,
+          337
+        ],
+        [
+          176,
+          337
+        ],
+        [
+          175,
+          338
+        ],
+        [
+          176,
+          338
+        ],
+        [
+          175,
+          339
+        ],
+        [
+          176,
+          339
+        ]
+      ],
+      "original_components": [
+        3
+      ],
+      "residual_diagnostics": [
+        {
+          "cells": 4,
+          "principal_length_cells": 4.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 90.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            175,
+            336,
+            175,
+            339
+          ]
+        }
+      ],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 45,
+      "class": 0,
+      "bounds_full_grid": [
+        188,
+        608,
+        189,
+        609
+      ],
+      "source_sampled_minimum_width": 2.0,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          187,
+          606
+        ],
+        [
+          187,
+          607
+        ],
+        [
+          188,
+          607
+        ],
+        [
+          187,
+          608
+        ],
+        [
+          188,
+          608
+        ],
+        [
+          187,
+          609
+        ]
+      ],
+      "original_components": [
+        2
+      ],
+      "residual_diagnostics": [
+        {
+          "cells": 2,
+          "principal_length_cells": 2.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 90.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            188,
+            607,
+            188,
+            608
+          ]
+        }
+      ],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 46,
+      "class": 1,
+      "bounds_full_grid": [
+        191,
+        581,
+        193,
+        582
+      ],
+      "source_sampled_minimum_width": 1.0,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          192,
+          580
+        ],
+        [
+          193,
+          580
+        ],
+        [
+          191,
+          581
+        ],
+        [
+          192,
+          581
+        ],
+        [
+          193,
+          581
+        ],
+        [
+          192,
+          582
+        ],
+        [
+          193,
+          582
+        ]
+      ],
+      "original_components": [
+        1
+      ],
+      "residual_diagnostics": [
+        {
+          "cells": 4,
+          "principal_length_cells": 3.0,
+          "principal_width_cells": 2.0,
+          "principal_angle_degrees": 90.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            191,
+            580,
+            192,
+            582
+          ]
+        }
+      ],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 47,
+      "class": 2,
+      "bounds_full_grid": [
+        201,
+        608,
+        202,
+        609
+      ],
+      "source_sampled_minimum_width": 2.0,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          200,
+          606
+        ],
+        [
+          200,
+          607
+        ],
+        [
+          201,
+          607
+        ],
+        [
+          200,
+          608
+        ],
+        [
+          201,
+          608
+        ],
+        [
+          200,
+          609
+        ]
+      ],
+      "original_components": [
+        3
+      ],
+      "residual_diagnostics": [
+        {
+          "cells": 2,
+          "principal_length_cells": 2.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 90.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            201,
+            607,
+            201,
+            608
+          ]
+        }
+      ],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 48,
+      "class": 3,
+      "bounds_full_grid": [
+        209,
+        779,
+        210,
+        780
+      ],
+      "source_sampled_minimum_width": 2.0,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          208,
+          777
+        ],
+        [
+          208,
+          778
+        ],
+        [
+          209,
+          778
+        ],
+        [
+          208,
+          779
+        ],
+        [
+          209,
+          779
+        ],
+        [
+          208,
+          780
+        ]
+      ],
+      "original_components": [
+        2
+      ],
+      "residual_diagnostics": [
+        {
+          "cells": 2,
+          "principal_length_cells": 2.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 90.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            209,
+            778,
+            209,
+            779
+          ]
+        }
+      ],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 49,
+      "class": 2,
+      "bounds_full_grid": [
+        232,
+        374,
+        233,
+        375
+      ],
+      "source_sampled_minimum_width": 2.0,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          233,
+          372
+        ],
+        [
+          232,
+          373
+        ],
+        [
+          233,
+          373
+        ],
+        [
+          232,
+          374
+        ],
+        [
+          233,
+          374
+        ],
+        [
+          233,
+          375
+        ]
+      ],
+      "original_components": [
+        3
+      ],
+      "residual_diagnostics": [
+        {
+          "cells": 2,
+          "principal_length_cells": 2.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 90.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            232,
+            373,
+            232,
+            374
+          ]
+        }
+      ],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 50,
+      "class": 3,
+      "bounds_full_grid": [
+        235,
+        252,
+        236,
+        253
+      ],
+      "source_sampled_minimum_width": 1.0,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          234,
+          251
+        ],
+        [
+          234,
+          252
+        ],
+        [
+          235,
+          252
+        ],
+        [
+          234,
+          253
+        ]
+      ],
+      "original_components": [
+        1
+      ],
+      "residual_diagnostics": [
+        {
+          "cells": 1,
+          "principal_length_cells": 1.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 0.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            235,
+            252,
+            235,
+            252
+          ]
+        }
+      ],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 51,
+      "class": 3,
+      "bounds_full_grid": [
+        241,
+        349,
+        242,
+        350
+      ],
+      "source_sampled_minimum_width": 2.0,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          240,
+          347
+        ],
+        [
+          240,
+          348
+        ],
+        [
+          241,
+          348
+        ],
+        [
+          240,
+          349
+        ],
+        [
+          241,
+          349
+        ],
+        [
+          240,
+          350
+        ]
+      ],
+      "original_components": [
+        1
+      ],
+      "residual_diagnostics": [
+        {
+          "cells": 2,
+          "principal_length_cells": 2.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 90.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            241,
+            348,
+            241,
+            349
+          ]
+        }
+      ],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 52,
+      "class": 2,
+      "bounds_full_grid": [
+        249,
+        479,
+        250,
+        480
+      ],
+      "source_sampled_minimum_width": 3.0,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          249,
+          478
+        ],
+        [
+          250,
+          478
+        ],
+        [
+          249,
+          479
+        ],
+        [
+          250,
+          479
+        ],
+        [
+          249,
+          480
+        ],
+        [
+          250,
+          480
+        ]
+      ],
+      "original_components": [
+        3
+      ],
+      "residual_diagnostics": [
+        {
+          "cells": 3,
+          "principal_length_cells": 3.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 90.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            249,
+            478,
+            249,
+            480
+          ]
+        }
+      ],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 53,
+      "class": 3,
+      "bounds_full_grid": [
+        264,
+        506,
+        265,
+        507
+      ],
+      "source_sampled_minimum_width": 2.0,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          263,
+          504
+        ],
+        [
+          263,
+          505
+        ],
+        [
+          264,
+          505
+        ],
+        [
+          263,
+          506
+        ],
+        [
+          264,
+          506
+        ],
+        [
+          263,
+          507
+        ]
+      ],
+      "original_components": [
+        1
+      ],
+      "residual_diagnostics": [
+        {
+          "cells": 2,
+          "principal_length_cells": 2.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 90.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            264,
+            505,
+            264,
+            506
+          ]
+        }
+      ],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 54,
+      "class": 1,
+      "bounds_full_grid": [
+        277,
+        298,
+        278,
+        299
+      ],
+      "source_sampled_minimum_width": 1.0,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          278,
+          297
+        ],
+        [
+          277,
+          298
+        ],
+        [
+          278,
+          298
+        ],
+        [
+          278,
+          299
+        ]
+      ],
+      "original_components": [
+        1
+      ],
+      "residual_diagnostics": [
+        {
+          "cells": 1,
+          "principal_length_cells": 1.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 0.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            277,
+            298,
+            277,
+            298
+          ]
+        }
+      ],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 55,
+      "class": 2,
+      "bounds_full_grid": [
+        294,
+        439,
+        295,
+        440
+      ],
+      "source_sampled_minimum_width": 4.0,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          294,
+          437
+        ],
+        [
+          295,
+          437
+        ],
+        [
+          294,
+          438
+        ],
+        [
+          295,
+          438
+        ],
+        [
+          294,
+          439
+        ],
+        [
+          295,
+          439
+        ],
+        [
+          294,
+          440
+        ],
+        [
+          295,
+          440
+        ]
+      ],
+      "original_components": [
+        3
+      ],
+      "residual_diagnostics": [
+        {
+          "cells": 4,
+          "principal_length_cells": 4.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 90.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            294,
+            437,
+            294,
+            440
+          ]
+        }
+      ],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 56,
+      "class": 2,
+      "bounds_full_grid": [
+        295,
+        270,
+        296,
+        271
+      ],
+      "source_sampled_minimum_width": 4.0,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          294,
+          268
+        ],
+        [
+          295,
+          268
+        ],
+        [
+          294,
+          269
+        ],
+        [
+          295,
+          269
+        ],
+        [
+          294,
+          270
+        ],
+        [
+          295,
+          270
+        ],
+        [
+          294,
+          271
+        ],
+        [
+          295,
+          271
+        ]
+      ],
+      "original_components": [
+        3
+      ],
+      "residual_diagnostics": [
+        {
+          "cells": 4,
+          "principal_length_cells": 4.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 90.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            295,
+            268,
+            295,
+            271
+          ]
+        }
+      ],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 57,
+      "class": 3,
+      "bounds_full_grid": [
+        298,
+        455,
+        299,
+        456
+      ],
+      "source_sampled_minimum_width": 2.0,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          297,
+          453
+        ],
+        [
+          297,
+          454
+        ],
+        [
+          298,
+          454
+        ],
+        [
+          297,
+          455
+        ],
+        [
+          298,
+          455
+        ],
+        [
+          297,
+          456
+        ]
+      ],
+      "original_components": [
+        1
+      ],
+      "residual_diagnostics": [
+        {
+          "cells": 2,
+          "principal_length_cells": 2.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 90.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            298,
+            454,
+            298,
+            455
+          ]
+        }
+      ],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 58,
+      "class": 1,
+      "bounds_full_grid": [
+        328,
+        440,
+        329,
+        441
+      ],
+      "source_sampled_minimum_width": 1.0,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          329,
+          439
+        ],
+        [
+          328,
+          440
+        ],
+        [
+          329,
+          440
+        ],
+        [
+          329,
+          441
+        ]
+      ],
+      "original_components": [
+        1
+      ],
+      "residual_diagnostics": [
+        {
+          "cells": 1,
+          "principal_length_cells": 1.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 0.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            328,
+            440,
+            328,
+            440
+          ]
+        }
+      ],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 59,
+      "class": 1,
+      "bounds_full_grid": [
+        346,
+        397,
+        347,
+        398
+      ],
+      "source_sampled_minimum_width": 3.0,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          346,
+          396
+        ],
+        [
+          347,
+          396
+        ],
+        [
+          346,
+          397
+        ],
+        [
+          347,
+          397
+        ],
+        [
+          346,
+          398
+        ],
+        [
+          347,
+          398
+        ]
+      ],
+      "original_components": [
+        1
+      ],
+      "residual_diagnostics": [
+        {
+          "cells": 3,
+          "principal_length_cells": 3.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 90.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            346,
+            396,
+            346,
+            398
+          ]
+        }
+      ],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 60,
+      "class": 2,
+      "bounds_full_grid": [
+        370,
+        492,
+        371,
+        493
+      ],
+      "source_sampled_minimum_width": 4.0,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          369,
+          490
+        ],
+        [
+          370,
+          490
+        ],
+        [
+          369,
+          491
+        ],
+        [
+          370,
+          491
+        ],
+        [
+          369,
+          492
+        ],
+        [
+          370,
+          492
+        ],
+        [
+          369,
+          493
+        ],
+        [
+          370,
+          493
+        ]
+      ],
+      "original_components": [
+        3
+      ],
+      "residual_diagnostics": [
+        {
+          "cells": 4,
+          "principal_length_cells": 4.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 90.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            370,
+            490,
+            370,
+            493
+          ]
+        }
+      ],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 61,
+      "class": 2,
+      "bounds_full_grid": [
+        424,
+        345,
+        425,
+        346
+      ],
+      "source_sampled_minimum_width": 2.0,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          423,
+          343
+        ],
+        [
+          423,
+          344
+        ],
+        [
+          424,
+          344
+        ],
+        [
+          423,
+          345
+        ],
+        [
+          424,
+          345
+        ],
+        [
+          423,
+          346
+        ]
+      ],
+      "original_components": [
+        3
+      ],
+      "residual_diagnostics": [
+        {
+          "cells": 2,
+          "principal_length_cells": 2.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 90.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            424,
+            344,
+            424,
+            345
+          ]
+        }
+      ],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 62,
+      "class": 2,
+      "bounds_full_grid": [
+        427,
+        308,
+        428,
+        309
+      ],
+      "source_sampled_minimum_width": 4.0,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          426,
+          306
+        ],
+        [
+          427,
+          306
+        ],
+        [
+          426,
+          307
+        ],
+        [
+          427,
+          307
+        ],
+        [
+          426,
+          308
+        ],
+        [
+          427,
+          308
+        ],
+        [
+          426,
+          309
+        ],
+        [
+          427,
+          309
+        ]
+      ],
+      "original_components": [
+        3
+      ],
+      "residual_diagnostics": [
+        {
+          "cells": 4,
+          "principal_length_cells": 4.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 90.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            427,
+            306,
+            427,
+            309
+          ]
+        }
+      ],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 63,
+      "class": 2,
+      "bounds_full_grid": [
+        509,
+        744,
+        510,
+        745
+      ],
+      "source_sampled_minimum_width": 2.0,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          508,
+          742
+        ],
+        [
+          508,
+          743
+        ],
+        [
+          509,
+          743
+        ],
+        [
+          508,
+          744
+        ],
+        [
+          509,
+          744
+        ],
+        [
+          508,
+          745
+        ]
+      ],
+      "original_components": [
+        4
+      ],
+      "residual_diagnostics": [
+        {
+          "cells": 2,
+          "principal_length_cells": 2.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 90.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            509,
+            743,
+            509,
+            744
+          ]
+        }
+      ],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 64,
+      "class": 2,
+      "bounds_full_grid": [
+        551,
+        778,
+        552,
+        779
+      ],
+      "source_sampled_minimum_width": 4.0,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          551,
+          776
+        ],
+        [
+          552,
+          776
+        ],
+        [
+          551,
+          777
+        ],
+        [
+          552,
+          777
+        ],
+        [
+          551,
+          778
+        ],
+        [
+          552,
+          778
+        ],
+        [
+          551,
+          779
+        ],
+        [
+          552,
+          779
+        ]
+      ],
+      "original_components": [
+        5
+      ],
+      "residual_diagnostics": [
+        {
+          "cells": 4,
+          "principal_length_cells": 4.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 90.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            551,
+            776,
+            551,
+            779
+          ]
+        }
+      ],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 65,
+      "class": 0,
+      "bounds_full_grid": [
+        751,
+        89,
+        752,
+        90
+      ],
+      "source_sampled_minimum_width": 2.0,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          752,
+          87
+        ],
+        [
+          751,
+          88
+        ],
+        [
+          752,
+          88
+        ],
+        [
+          751,
+          89
+        ],
+        [
+          752,
+          89
+        ],
+        [
+          752,
+          90
+        ]
+      ],
+      "original_components": [
+        1
+      ],
+      "residual_diagnostics": [
+        {
+          "cells": 2,
+          "principal_length_cells": 2.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 90.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            751,
+            88,
+            751,
+            89
+          ]
+        }
+      ],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 66,
+      "class": 0,
+      "bounds_full_grid": [
+        766,
+        91,
+        767,
+        92
+      ],
+      "source_sampled_minimum_width": 2.0,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          765,
+          89
+        ],
+        [
+          765,
+          90
+        ],
+        [
+          766,
+          90
+        ],
+        [
+          765,
+          91
+        ],
+        [
+          766,
+          91
+        ],
+        [
+          765,
+          92
+        ]
+      ],
+      "original_components": [
+        1
+      ],
+      "residual_diagnostics": [
+        {
+          "cells": 2,
+          "principal_length_cells": 2.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 90.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            766,
+            90,
+            766,
+            91
+          ]
+        }
+      ],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 67,
+      "class": 2,
+      "bounds_full_grid": [
+        306,
+        218,
+        307,
+        219
+      ],
+      "source_sampled_minimum_width": 2.8284271247461903,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          304,
+          217
+        ],
+        [
+          305,
+          217
+        ],
+        [
+          304,
+          218
+        ],
+        [
+          305,
+          218
+        ],
+        [
+          306,
+          218
+        ],
+        [
+          304,
+          219
+        ],
+        [
+          305,
+          219
+        ],
+        [
+          306,
+          219
+        ]
+      ],
+      "original_components": [
+        3
+      ],
+      "residual_diagnostics": [],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 68,
+      "class": 2,
+      "bounds_full_grid": [
+        421,
+        296,
+        422,
+        297
+      ],
+      "source_sampled_minimum_width": 1.4142135623730951,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          420,
+          296
+        ],
+        [
+          421,
+          296
+        ],
+        [
+          420,
+          297
+        ],
+        [
+          421,
+          297
+        ]
+      ],
+      "original_components": [
+        3
+      ],
+      "residual_diagnostics": [],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 69,
+      "class": 2,
+      "bounds_full_grid": [
+        440,
+        149,
+        442,
+        151
+      ],
+      "source_sampled_minimum_width": 1.4142135623730951,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          440,
+          148
+        ],
+        [
+          441,
+          148
+        ],
+        [
+          442,
+          148
+        ],
+        [
+          440,
+          149
+        ],
+        [
+          441,
+          149
+        ],
+        [
+          442,
+          149
+        ],
+        [
+          440,
+          150
+        ],
+        [
+          441,
+          150
+        ],
+        [
+          442,
+          150
+        ]
+      ],
+      "original_components": [
+        1
+      ],
+      "residual_diagnostics": [],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 70,
+      "class": 3,
+      "bounds_full_grid": [
+        472,
+        20,
+        474,
+        22
+      ],
+      "source_sampled_minimum_width": 1.4142135623730951,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          471,
+          20
+        ],
+        [
+          472,
+          20
+        ],
+        [
+          473,
+          20
+        ],
+        [
+          471,
+          21
+        ],
+        [
+          472,
+          21
+        ],
+        [
+          473,
+          21
+        ],
+        [
+          471,
+          22
+        ],
+        [
+          472,
+          22
+        ],
+        [
+          473,
+          22
+        ]
+      ],
+      "original_components": [
+        1
+      ],
+      "residual_diagnostics": [],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 71,
+      "class": 2,
+      "bounds_full_grid": [
+        498,
+        20,
+        500,
+        22
+      ],
+      "source_sampled_minimum_width": 1.4142135623730951,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          497,
+          20
+        ],
+        [
+          498,
+          20
+        ],
+        [
+          499,
+          20
+        ],
+        [
+          497,
+          21
+        ],
+        [
+          498,
+          21
+        ],
+        [
+          499,
+          21
+        ],
+        [
+          497,
+          22
+        ],
+        [
+          498,
+          22
+        ],
+        [
+          499,
+          22
+        ]
+      ],
+      "original_components": [
+        1
+      ],
+      "residual_diagnostics": [],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 72,
+      "class": 0,
+      "bounds_full_grid": [
+        752,
+        92,
+        754,
+        93
+      ],
+      "source_sampled_minimum_width": 1.4142135623730951,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          752,
+          90
+        ],
+        [
+          753,
+          90
+        ],
+        [
+          754,
+          90
+        ],
+        [
+          752,
+          91
+        ],
+        [
+          753,
+          91
+        ],
+        [
+          754,
+          91
+        ],
+        [
+          752,
+          92
+        ],
+        [
+          753,
+          92
+        ],
+        [
+          754,
+          92
+        ]
+      ],
+      "original_components": [
+        1
+      ],
+      "residual_diagnostics": [],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 73,
+      "class": 0,
+      "bounds_full_grid": [
+        762,
+        81,
+        764,
+        82
+      ],
+      "source_sampled_minimum_width": 2.8284271247461903,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          761,
+          80
+        ],
+        [
+          762,
+          80
+        ],
+        [
+          761,
+          81
+        ],
+        [
+          762,
+          81
+        ],
+        [
+          763,
+          81
+        ],
+        [
+          761,
+          82
+        ],
+        [
+          762,
+          82
+        ],
+        [
+          763,
+          82
+        ]
+      ],
+      "original_components": [
+        1
+      ],
+      "residual_diagnostics": [],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 74,
+      "class": 1,
+      "bounds_full_grid": [
+        818,
+        20,
+        820,
+        22
+      ],
+      "source_sampled_minimum_width": 1.4142135623730951,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          817,
+          20
+        ],
+        [
+          818,
+          20
+        ],
+        [
+          819,
+          20
+        ],
+        [
+          817,
+          21
+        ],
+        [
+          818,
+          21
+        ],
+        [
+          819,
+          21
+        ],
+        [
+          817,
+          22
+        ],
+        [
+          818,
+          22
+        ],
+        [
+          819,
+          22
+        ]
+      ],
+      "original_components": [
+        1
+      ],
+      "residual_diagnostics": [],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 75,
+      "class": 3,
+      "bounds_full_grid": [
+        229,
+        241,
+        230,
+        242
+      ],
+      "source_sampled_minimum_width": 4.242640687119286,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          228,
+          240
+        ],
+        [
+          228,
+          241
+        ],
+        [
+          229,
+          241
+        ],
+        [
+          228,
+          242
+        ],
+        [
+          229,
+          242
+        ],
+        [
+          230,
+          242
+        ]
+      ],
+      "original_components": [
+        1
+      ],
+      "residual_diagnostics": [],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 76,
+      "class": 1,
+      "bounds_full_grid": [
+        281,
+        305,
+        282,
+        306
+      ],
+      "source_sampled_minimum_width": 1.4142135623730951,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          281,
+          304
+        ],
+        [
+          282,
+          304
+        ],
+        [
+          281,
+          305
+        ],
+        [
+          282,
+          305
+        ]
+      ],
+      "original_components": [
+        1
+      ],
+      "residual_diagnostics": [],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 77,
+      "class": 2,
+      "bounds_full_grid": [
+        709,
+        752,
+        710,
+        753
+      ],
+      "source_sampled_minimum_width": 2.8284271247461903,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          707,
+          751
+        ],
+        [
+          708,
+          751
+        ],
+        [
+          707,
+          752
+        ],
+        [
+          708,
+          752
+        ],
+        [
+          709,
+          752
+        ],
+        [
+          707,
+          753
+        ],
+        [
+          708,
+          753
+        ],
+        [
+          709,
+          753
+        ]
+      ],
+      "original_components": [
+        5
+      ],
+      "residual_diagnostics": [],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 78,
+      "class": 1,
+      "bounds_full_grid": [
+        763,
+        818,
+        765,
+        820
+      ],
+      "source_sampled_minimum_width": 1.4142135623730951,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          763,
+          817
+        ],
+        [
+          764,
+          817
+        ],
+        [
+          765,
+          817
+        ],
+        [
+          763,
+          818
+        ],
+        [
+          764,
+          818
+        ],
+        [
+          765,
+          818
+        ],
+        [
+          763,
+          819
+        ],
+        [
+          764,
+          819
+        ],
+        [
+          765,
+          819
+        ]
+      ],
+      "original_components": [
+        1
+      ],
+      "residual_diagnostics": [],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 79,
+      "class": 2,
+      "bounds_full_grid": [
+        136,
+        268,
+        137,
+        269
+      ],
+      "source_sampled_minimum_width": 4.242640687119286,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          135,
+          267
+        ],
+        [
+          135,
+          268
+        ],
+        [
+          136,
+          268
+        ],
+        [
+          135,
+          269
+        ],
+        [
+          136,
+          269
+        ],
+        [
+          137,
+          269
+        ]
+      ],
+      "original_components": [
+        2
+      ],
+      "residual_diagnostics": [],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 80,
+      "class": 3,
+      "bounds_full_grid": [
+        20,
+        163,
+        22,
+        165
+      ],
+      "source_sampled_minimum_width": 1.4142135623730951,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          20,
+          162
+        ],
+        [
+          21,
+          162
+        ],
+        [
+          22,
+          162
+        ],
+        [
+          20,
+          163
+        ],
+        [
+          21,
+          163
+        ],
+        [
+          22,
+          163
+        ],
+        [
+          20,
+          164
+        ],
+        [
+          21,
+          164
+        ],
+        [
+          22,
+          164
+        ]
+      ],
+      "original_components": [
+        1
+      ],
+      "residual_diagnostics": [],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 81,
+      "class": 3,
+      "bounds_full_grid": [
+        46,
+        210,
+        47,
+        211
+      ],
+      "source_sampled_minimum_width": 4.242640687119286,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          45,
+          209
+        ],
+        [
+          46,
+          209
+        ],
+        [
+          47,
+          209
+        ],
+        [
+          46,
+          210
+        ],
+        [
+          47,
+          210
+        ],
+        [
+          47,
+          211
+        ]
+      ],
+      "original_components": [
+        1
+      ],
+      "residual_diagnostics": [],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 82,
+      "class": 2,
+      "bounds_full_grid": [
+        177,
+        342,
+        178,
+        343
+      ],
+      "source_sampled_minimum_width": 4.242640687119286,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          176,
+          341
+        ],
+        [
+          177,
+          341
+        ],
+        [
+          178,
+          341
+        ],
+        [
+          177,
+          342
+        ],
+        [
+          178,
+          342
+        ],
+        [
+          178,
+          343
+        ]
+      ],
+      "original_components": [
+        3
+      ],
+      "residual_diagnostics": [],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 83,
+      "class": 2,
+      "bounds_full_grid": [
+        604,
+        818,
+        606,
+        820
+      ],
+      "source_sampled_minimum_width": 1.4142135623730951,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          604,
+          817
+        ],
+        [
+          605,
+          817
+        ],
+        [
+          606,
+          817
+        ],
+        [
+          604,
+          818
+        ],
+        [
+          605,
+          818
+        ],
+        [
+          606,
+          818
+        ],
+        [
+          604,
+          819
+        ],
+        [
+          605,
+          819
+        ],
+        [
+          606,
+          819
+        ]
+      ],
+      "original_components": [
+        5
+      ],
+      "residual_diagnostics": [],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 84,
+      "class": 2,
+      "bounds_full_grid": [
+        504,
+        735,
+        505,
+        736
+      ],
+      "source_sampled_minimum_width": 4.242640687119286,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          503,
+          734
+        ],
+        [
+          503,
+          735
+        ],
+        [
+          504,
+          735
+        ],
+        [
+          503,
+          736
+        ],
+        [
+          504,
+          736
+        ],
+        [
+          505,
+          736
+        ]
+      ],
+      "original_components": [
+        4
+      ],
+      "residual_diagnostics": [],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 85,
+      "class": 2,
+      "bounds_full_grid": [
+        439,
+        671,
+        440,
+        672
+      ],
+      "source_sampled_minimum_width": 1.4142135623730951,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          438,
+          671
+        ],
+        [
+          439,
+          671
+        ],
+        [
+          438,
+          672
+        ],
+        [
+          439,
+          672
+        ]
+      ],
+      "original_components": [
+        4
+      ],
+      "residual_diagnostics": [],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 86,
+      "class": 1,
+      "bounds_full_grid": [
+        413,
+        657,
+        414,
+        658
+      ],
+      "source_sampled_minimum_width": 1.4142135623730951,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          413,
+          656
+        ],
+        [
+          414,
+          656
+        ],
+        [
+          413,
+          657
+        ],
+        [
+          414,
+          657
+        ]
+      ],
+      "original_components": [
+        1
+      ],
+      "residual_diagnostics": [],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 87,
+      "class": 1,
+      "bounds_full_grid": [
+        481,
+        726,
+        482,
+        727
+      ],
+      "source_sampled_minimum_width": 2.8284271247461903,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          480,
+          724
+        ],
+        [
+          481,
+          724
+        ],
+        [
+          482,
+          724
+        ],
+        [
+          480,
+          725
+        ],
+        [
+          481,
+          725
+        ],
+        [
+          482,
+          725
+        ],
+        [
+          481,
+          726
+        ],
+        [
+          482,
+          726
+        ]
+      ],
+      "original_components": [
+        1
+      ],
+      "residual_diagnostics": [],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 88,
+      "class": 1,
+      "bounds_full_grid": [
+        418,
+        705,
+        419,
+        706
+      ],
+      "source_sampled_minimum_width": 4.242640687119286,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          417,
+          704
+        ],
+        [
+          417,
+          705
+        ],
+        [
+          418,
+          705
+        ],
+        [
+          417,
+          706
+        ],
+        [
+          418,
+          706
+        ],
+        [
+          419,
+          706
+        ]
+      ],
+      "original_components": [
+        1
+      ],
+      "residual_diagnostics": [],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 89,
+      "class": 2,
+      "bounds_full_grid": [
+        20,
+        311,
+        22,
+        313
+      ],
+      "source_sampled_minimum_width": 1.4142135623730951,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          20,
+          310
+        ],
+        [
+          21,
+          310
+        ],
+        [
+          22,
+          310
+        ],
+        [
+          20,
+          311
+        ],
+        [
+          21,
+          311
+        ],
+        [
+          22,
+          311
+        ],
+        [
+          20,
+          312
+        ],
+        [
+          21,
+          312
+        ],
+        [
+          22,
+          312
+        ]
+      ],
+      "original_components": [
+        2
+      ],
+      "residual_diagnostics": [],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 90,
+      "class": 0,
+      "bounds_full_grid": [
+        124,
+        605,
+        125,
+        606
+      ],
+      "source_sampled_minimum_width": 4.242640687119286,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          123,
+          604
+        ],
+        [
+          123,
+          605
+        ],
+        [
+          124,
+          605
+        ],
+        [
+          123,
+          606
+        ],
+        [
+          124,
+          606
+        ],
+        [
+          125,
+          606
+        ]
+      ],
+      "original_components": [
+        2
+      ],
+      "residual_diagnostics": [],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 91,
+      "class": 0,
+      "bounds_full_grid": [
+        118,
+        630,
+        119,
+        631
+      ],
+      "source_sampled_minimum_width": 4.242640687119286,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          117,
+          629
+        ],
+        [
+          118,
+          629
+        ],
+        [
+          119,
+          629
+        ],
+        [
+          118,
+          630
+        ],
+        [
+          119,
+          630
+        ],
+        [
+          119,
+          631
+        ]
+      ],
+      "original_components": [
+        2
+      ],
+      "residual_diagnostics": [],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 92,
+      "class": 2,
+      "bounds_full_grid": [
+        179,
+        696,
+        180,
+        697
+      ],
+      "source_sampled_minimum_width": 2.8284271247461903,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          177,
+          695
+        ],
+        [
+          178,
+          695
+        ],
+        [
+          177,
+          696
+        ],
+        [
+          178,
+          696
+        ],
+        [
+          179,
+          696
+        ],
+        [
+          177,
+          697
+        ],
+        [
+          178,
+          697
+        ],
+        [
+          179,
+          697
+        ]
+      ],
+      "original_components": [
+        3
+      ],
+      "residual_diagnostics": [],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 93,
+      "class": 1,
+      "bounds_full_grid": [
+        163,
+        681,
+        164,
+        682
+      ],
+      "source_sampled_minimum_width": 1.4142135623730951,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          163,
+          680
+        ],
+        [
+          164,
+          680
+        ],
+        [
+          163,
+          681
+        ],
+        [
+          164,
+          681
+        ]
+      ],
+      "original_components": [
+        1
+      ],
+      "residual_diagnostics": [],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 94,
+      "class": 1,
+      "bounds_full_grid": [
+        180,
+        704,
+        181,
+        705
+      ],
+      "source_sampled_minimum_width": 1.4142135623730951,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          180,
+          703
+        ],
+        [
+          181,
+          703
+        ],
+        [
+          180,
+          704
+        ],
+        [
+          181,
+          704
+        ]
+      ],
+      "original_components": [
+        1
+      ],
+      "residual_diagnostics": [],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 95,
+      "class": 3,
+      "bounds_full_grid": [
+        180,
+        705,
+        182,
+        706
+      ],
+      "source_sampled_minimum_width": 1.4142135623730951,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          179,
+          704
+        ],
+        [
+          179,
+          705
+        ],
+        [
+          180,
+          705
+        ],
+        [
+          181,
+          705
+        ],
+        [
+          179,
+          706
+        ],
+        [
+          180,
+          706
+        ],
+        [
+          181,
+          706
+        ]
+      ],
+      "original_components": [
+        2
+      ],
+      "residual_diagnostics": [],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 96,
+      "class": 3,
+      "bounds_full_grid": [
+        20,
+        549,
+        22,
+        551
+      ],
+      "source_sampled_minimum_width": 1.4142135623730951,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          20,
+          548
+        ],
+        [
+          21,
+          548
+        ],
+        [
+          22,
+          548
+        ],
+        [
+          20,
+          549
+        ],
+        [
+          21,
+          549
+        ],
+        [
+          22,
+          549
+        ],
+        [
+          20,
+          550
+        ],
+        [
+          21,
+          550
+        ],
+        [
+          22,
+          550
+        ]
+      ],
+      "original_components": [
+        1
+      ],
+      "residual_diagnostics": [],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 97,
+      "class": 2,
+      "bounds_full_grid": [
+        147,
+        696,
+        148,
+        697
+      ],
+      "source_sampled_minimum_width": 4.242640687119286,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          146,
+          695
+        ],
+        [
+          147,
+          695
+        ],
+        [
+          148,
+          695
+        ],
+        [
+          147,
+          696
+        ],
+        [
+          148,
+          696
+        ],
+        [
+          148,
+          697
+        ]
+      ],
+      "original_components": [
+        3
+      ],
+      "residual_diagnostics": [],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 98,
+      "class": 3,
+      "bounds_full_grid": [
+        202,
+        762,
+        204,
+        763
+      ],
+      "source_sampled_minimum_width": 2.8284271247461903,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          201,
+          761
+        ],
+        [
+          202,
+          761
+        ],
+        [
+          201,
+          762
+        ],
+        [
+          202,
+          762
+        ],
+        [
+          203,
+          762
+        ],
+        [
+          201,
+          763
+        ],
+        [
+          202,
+          763
+        ],
+        [
+          203,
+          763
+        ]
+      ],
+      "original_components": [
+        2
+      ],
+      "residual_diagnostics": [],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 99,
+      "class": 1,
+      "bounds_full_grid": [
+        200,
+        760,
+        201,
+        761
+      ],
+      "source_sampled_minimum_width": 2.8284271247461903,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          199,
+          758
+        ],
+        [
+          200,
+          758
+        ],
+        [
+          201,
+          758
+        ],
+        [
+          199,
+          759
+        ],
+        [
+          200,
+          759
+        ],
+        [
+          201,
+          759
+        ],
+        [
+          200,
+          760
+        ],
+        [
+          201,
+          760
+        ]
+      ],
+      "original_components": [
+        1
+      ],
+      "residual_diagnostics": [],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 100,
+      "class": 2,
+      "bounds_full_grid": [
+        20,
+        602,
+        22,
+        604
+      ],
+      "source_sampled_minimum_width": 1.4142135623730951,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          20,
+          601
+        ],
+        [
+          21,
+          601
+        ],
+        [
+          22,
+          601
+        ],
+        [
+          20,
+          602
+        ],
+        [
+          21,
+          602
+        ],
+        [
+          22,
+          602
+        ],
+        [
+          20,
+          603
+        ],
+        [
+          21,
+          603
+        ],
+        [
+          22,
+          603
+        ]
+      ],
+      "original_components": [
+        3
+      ],
+      "residual_diagnostics": [],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 101,
+      "class": 1,
+      "bounds_full_grid": [
+        191,
+        818,
+        193,
+        820
+      ],
+      "source_sampled_minimum_width": 1.4142135623730951,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          191,
+          817
+        ],
+        [
+          192,
+          817
+        ],
+        [
+          193,
+          817
+        ],
+        [
+          191,
+          818
+        ],
+        [
+          192,
+          818
+        ],
+        [
+          193,
+          818
+        ],
+        [
+          191,
+          819
+        ],
+        [
+          192,
+          819
+        ],
+        [
+          193,
+          819
+        ]
+      ],
+      "original_components": [
+        1
+      ],
+      "residual_diagnostics": [],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 102,
+      "class": 3,
+      "bounds_full_grid": [
+        20,
+        818,
+        22,
+        820
+      ],
+      "source_sampled_minimum_width": 1.4142135623730951,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          20,
+          817
+        ],
+        [
+          21,
+          817
+        ],
+        [
+          22,
+          817
+        ],
+        [
+          20,
+          818
+        ],
+        [
+          21,
+          818
+        ],
+        [
+          22,
+          818
+        ],
+        [
+          20,
+          819
+        ],
+        [
+          21,
+          819
+        ],
+        [
+          22,
+          819
+        ]
+      ],
+      "original_components": [
+        2
+      ],
+      "residual_diagnostics": [],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 103,
+      "class": 3,
+      "bounds_full_grid": [
+        20,
+        20,
+        22,
+        22
+      ],
+      "source_sampled_minimum_width": 1.4142135623730951,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          20,
+          20
+        ],
+        [
+          21,
+          20
+        ],
+        [
+          22,
+          20
+        ],
+        [
+          20,
+          21
+        ],
+        [
+          21,
+          21
+        ],
+        [
+          22,
+          21
+        ],
+        [
+          20,
+          22
+        ],
+        [
+          21,
+          22
+        ],
+        [
+          22,
+          22
+        ]
+      ],
+      "original_components": [
+        1
+      ],
+      "residual_diagnostics": [],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 104,
+      "class": 2,
+      "bounds_full_grid": [
+        20,
+        165,
+        22,
+        167
+      ],
+      "source_sampled_minimum_width": 1.4142135623730951,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          20,
+          165
+        ],
+        [
+          21,
+          165
+        ],
+        [
+          22,
+          165
+        ],
+        [
+          20,
+          166
+        ],
+        [
+          21,
+          166
+        ],
+        [
+          22,
+          166
+        ],
+        [
+          20,
+          167
+        ],
+        [
+          21,
+          167
+        ],
+        [
+          22,
+          167
+        ]
+      ],
+      "original_components": [
+        2
+      ],
+      "residual_diagnostics": [],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 105,
+      "class": 2,
+      "bounds_full_grid": [
+        165,
+        137,
+        166,
+        138
+      ],
+      "source_sampled_minimum_width": 2.8284271247461903,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          163,
+          135
+        ],
+        [
+          164,
+          135
+        ],
+        [
+          165,
+          135
+        ],
+        [
+          163,
+          136
+        ],
+        [
+          164,
+          136
+        ],
+        [
+          165,
+          136
+        ],
+        [
+          163,
+          137
+        ],
+        [
+          164,
+          137
+        ]
+      ],
+      "original_components": [
+        2
+      ],
+      "residual_diagnostics": [],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 106,
+      "class": 3,
+      "bounds_full_grid": [
+        20,
+        313,
+        22,
+        315
+      ],
+      "source_sampled_minimum_width": 1.4142135623730951,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          20,
+          313
+        ],
+        [
+          21,
+          313
+        ],
+        [
+          22,
+          313
+        ],
+        [
+          20,
+          314
+        ],
+        [
+          21,
+          314
+        ],
+        [
+          22,
+          314
+        ],
+        [
+          20,
+          315
+        ],
+        [
+          21,
+          315
+        ],
+        [
+          22,
+          315
+        ]
+      ],
+      "original_components": [
+        1
+      ],
+      "residual_diagnostics": [],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 107,
+      "class": 2,
+      "bounds_full_grid": [
+        474,
+        20,
+        476,
+        22
+      ],
+      "source_sampled_minimum_width": 1.4142135623730951,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          474,
+          20
+        ],
+        [
+          475,
+          20
+        ],
+        [
+          476,
+          20
+        ],
+        [
+          474,
+          21
+        ],
+        [
+          475,
+          21
+        ],
+        [
+          476,
+          21
+        ],
+        [
+          474,
+          22
+        ],
+        [
+          475,
+          22
+        ],
+        [
+          476,
+          22
+        ]
+      ],
+      "original_components": [
+        1
+      ],
+      "residual_diagnostics": [],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 108,
+      "class": 1,
+      "bounds_full_grid": [
+        500,
+        20,
+        502,
+        22
+      ],
+      "source_sampled_minimum_width": 1.4142135623730951,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          500,
+          20
+        ],
+        [
+          501,
+          20
+        ],
+        [
+          502,
+          20
+        ],
+        [
+          500,
+          21
+        ],
+        [
+          501,
+          21
+        ],
+        [
+          502,
+          21
+        ],
+        [
+          500,
+          22
+        ],
+        [
+          501,
+          22
+        ],
+        [
+          502,
+          22
+        ]
+      ],
+      "original_components": [
+        1
+      ],
+      "residual_diagnostics": [],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 109,
+      "class": 1,
+      "bounds_full_grid": [
+        308,
+        218,
+        309,
+        219
+      ],
+      "source_sampled_minimum_width": 2.8284271247461903,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          308,
+          217
+        ],
+        [
+          309,
+          217
+        ],
+        [
+          307,
+          218
+        ],
+        [
+          308,
+          218
+        ],
+        [
+          309,
+          218
+        ],
+        [
+          307,
+          219
+        ],
+        [
+          308,
+          219
+        ],
+        [
+          309,
+          219
+        ]
+      ],
+      "original_components": [
+        1
+      ],
+      "residual_diagnostics": [],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 110,
+      "class": 2,
+      "bounds_full_grid": [
+        20,
+        551,
+        22,
+        553
+      ],
+      "source_sampled_minimum_width": 1.4142135623730951,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          20,
+          551
+        ],
+        [
+          21,
+          551
+        ],
+        [
+          22,
+          551
+        ],
+        [
+          20,
+          552
+        ],
+        [
+          21,
+          552
+        ],
+        [
+          22,
+          552
+        ],
+        [
+          20,
+          553
+        ],
+        [
+          21,
+          553
+        ],
+        [
+          22,
+          553
+        ]
+      ],
+      "original_components": [
+        3
+      ],
+      "residual_diagnostics": [],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 111,
+      "class": 2,
+      "bounds_full_grid": [
+        101,
+        514,
+        102,
+        515
+      ],
+      "source_sampled_minimum_width": 2.8284271247461903,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          101,
+          513
+        ],
+        [
+          102,
+          513
+        ],
+        [
+          100,
+          514
+        ],
+        [
+          101,
+          514
+        ],
+        [
+          102,
+          514
+        ],
+        [
+          100,
+          515
+        ],
+        [
+          101,
+          515
+        ],
+        [
+          102,
+          515
+        ]
+      ],
+      "original_components": [
+        3
+      ],
+      "residual_diagnostics": [],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 112,
+      "class": 3,
+      "bounds_full_grid": [
+        20,
+        604,
+        22,
+        606
+      ],
+      "source_sampled_minimum_width": 1.4142135623730951,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          20,
+          604
+        ],
+        [
+          21,
+          604
+        ],
+        [
+          22,
+          604
+        ],
+        [
+          20,
+          605
+        ],
+        [
+          21,
+          605
+        ],
+        [
+          22,
+          605
+        ],
+        [
+          20,
+          606
+        ],
+        [
+          21,
+          606
+        ],
+        [
+          22,
+          606
+        ]
+      ],
+      "original_components": [
+        2
+      ],
+      "residual_diagnostics": [],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 113,
+      "class": 0,
+      "bounds_full_grid": [
+        114,
+        604,
+        115,
+        605
+      ],
+      "source_sampled_minimum_width": 4.242640687119286,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          115,
+          603
+        ],
+        [
+          114,
+          604
+        ],
+        [
+          115,
+          604
+        ],
+        [
+          113,
+          605
+        ],
+        [
+          114,
+          605
+        ],
+        [
+          115,
+          605
+        ]
+      ],
+      "original_components": [
+        2
+      ],
+      "residual_diagnostics": [],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 114,
+      "class": 1,
+      "bounds_full_grid": [
+        350,
+        389,
+        351,
+        390
+      ],
+      "source_sampled_minimum_width": 4.242640687119286,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          351,
+          388
+        ],
+        [
+          350,
+          389
+        ],
+        [
+          351,
+          389
+        ],
+        [
+          349,
+          390
+        ],
+        [
+          350,
+          390
+        ],
+        [
+          351,
+          390
+        ]
+      ],
+      "original_components": [
+        1
+      ],
+      "residual_diagnostics": [],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 115,
+      "class": 3,
+      "bounds_full_grid": [
+        293,
+        463,
+        294,
+        464
+      ],
+      "source_sampled_minimum_width": 4.242640687119286,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          292,
+          462
+        ],
+        [
+          293,
+          462
+        ],
+        [
+          294,
+          462
+        ],
+        [
+          292,
+          463
+        ],
+        [
+          293,
+          463
+        ],
+        [
+          292,
+          464
+        ]
+      ],
+      "original_components": [
+        1
+      ],
+      "residual_diagnostics": [],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 116,
+      "class": 0,
+      "bounds_full_grid": [
+        169,
+        588,
+        170,
+        589
+      ],
+      "source_sampled_minimum_width": 4.242640687119286,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          170,
+          587
+        ],
+        [
+          169,
+          588
+        ],
+        [
+          170,
+          588
+        ],
+        [
+          168,
+          589
+        ],
+        [
+          169,
+          589
+        ],
+        [
+          170,
+          589
+        ]
+      ],
+      "original_components": [
+        2
+      ],
+      "residual_diagnostics": [],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 117,
+      "class": 2,
+      "bounds_full_grid": [
+        157,
+        611,
+        158,
+        612
+      ],
+      "source_sampled_minimum_width": 4.242640687119286,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          156,
+          610
+        ],
+        [
+          157,
+          610
+        ],
+        [
+          158,
+          610
+        ],
+        [
+          156,
+          611
+        ],
+        [
+          157,
+          611
+        ],
+        [
+          156,
+          612
+        ]
+      ],
+      "original_components": [
+        3
+      ],
+      "residual_diagnostics": [],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 118,
+      "class": 2,
+      "bounds_full_grid": [
+        168,
+        620,
+        169,
+        621
+      ],
+      "source_sampled_minimum_width": 4.242640687119286,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          169,
+          619
+        ],
+        [
+          168,
+          620
+        ],
+        [
+          169,
+          620
+        ],
+        [
+          167,
+          621
+        ],
+        [
+          168,
+          621
+        ],
+        [
+          169,
+          621
+        ]
+      ],
+      "original_components": [
+        3
+      ],
+      "residual_diagnostics": [],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 119,
+      "class": 0,
+      "bounds_full_grid": [
+        186,
+        612,
+        187,
+        613
+      ],
+      "source_sampled_minimum_width": 4.242640687119286,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          185,
+          611
+        ],
+        [
+          186,
+          611
+        ],
+        [
+          187,
+          611
+        ],
+        [
+          185,
+          612
+        ],
+        [
+          186,
+          612
+        ],
+        [
+          185,
+          613
+        ]
+      ],
+      "original_components": [
+        2
+      ],
+      "residual_diagnostics": [],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 120,
+      "class": 1,
+      "bounds_full_grid": [
+        178,
+        630,
+        179,
+        631
+      ],
+      "source_sampled_minimum_width": 2.8284271247461903,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          178,
+          629
+        ],
+        [
+          179,
+          629
+        ],
+        [
+          177,
+          630
+        ],
+        [
+          178,
+          630
+        ],
+        [
+          179,
+          630
+        ],
+        [
+          177,
+          631
+        ],
+        [
+          178,
+          631
+        ],
+        [
+          179,
+          631
+        ]
+      ],
+      "original_components": [
+        1
+      ],
+      "residual_diagnostics": [],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 121,
+      "class": 0,
+      "bounds_full_grid": [
+        755,
+        80,
+        757,
+        82
+      ],
+      "source_sampled_minimum_width": 1.4142135623730951,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          755,
+          80
+        ],
+        [
+          756,
+          80
+        ],
+        [
+          757,
+          80
+        ],
+        [
+          755,
+          81
+        ],
+        [
+          756,
+          81
+        ],
+        [
+          757,
+          81
+        ],
+        [
+          755,
+          82
+        ],
+        [
+          756,
+          82
+        ],
+        [
+          757,
+          82
+        ]
+      ],
+      "original_components": [
+        1
+      ],
+      "residual_diagnostics": [],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 122,
+      "class": 0,
+      "bounds_full_grid": [
+        765,
+        94,
+        766,
+        95
+      ],
+      "source_sampled_minimum_width": 1.4142135623730951,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          763,
+          92
+        ],
+        [
+          764,
+          92
+        ],
+        [
+          765,
+          92
+        ],
+        [
+          763,
+          93
+        ],
+        [
+          764,
+          93
+        ],
+        [
+          765,
+          93
+        ],
+        [
+          763,
+          94
+        ],
+        [
+          764,
+          94
+        ],
+        [
+          765,
+          94
+        ]
+      ],
+      "original_components": [
+        1
+      ],
+      "residual_diagnostics": [],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 123,
+      "class": 2,
+      "bounds_full_grid": [
+        178,
+        702,
+        180,
+        704
+      ],
+      "source_sampled_minimum_width": 1.4142135623730951,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          177,
+          701
+        ],
+        [
+          178,
+          701
+        ],
+        [
+          179,
+          701
+        ],
+        [
+          177,
+          702
+        ],
+        [
+          178,
+          702
+        ],
+        [
+          179,
+          702
+        ],
+        [
+          177,
+          703
+        ],
+        [
+          178,
+          703
+        ],
+        [
+          179,
+          703
+        ]
+      ],
+      "original_components": [
+        3
+      ],
+      "residual_diagnostics": [],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 124,
+      "class": 2,
+      "bounds_full_grid": [
+        354,
+        647,
+        355,
+        648
+      ],
+      "source_sampled_minimum_width": 4.242640687119286,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          355,
+          646
+        ],
+        [
+          354,
+          647
+        ],
+        [
+          355,
+          647
+        ],
+        [
+          353,
+          648
+        ],
+        [
+          354,
+          648
+        ],
+        [
+          355,
+          648
+        ]
+      ],
+      "original_components": [
+        4
+      ],
+      "residual_diagnostics": [],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 125,
+      "class": 3,
+      "bounds_full_grid": [
+        189,
+        818,
+        191,
+        820
+      ],
+      "source_sampled_minimum_width": 1.4142135623730951,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          188,
+          817
+        ],
+        [
+          189,
+          817
+        ],
+        [
+          190,
+          817
+        ],
+        [
+          188,
+          818
+        ],
+        [
+          189,
+          818
+        ],
+        [
+          190,
+          818
+        ],
+        [
+          188,
+          819
+        ],
+        [
+          189,
+          819
+        ],
+        [
+          190,
+          819
+        ]
+      ],
+      "original_components": [
+        2
+      ],
+      "residual_diagnostics": [],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 126,
+      "class": 2,
+      "bounds_full_grid": [
+        557,
+        766,
+        558,
+        767
+      ],
+      "source_sampled_minimum_width": 4.242640687119286,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          558,
+          765
+        ],
+        [
+          557,
+          766
+        ],
+        [
+          558,
+          766
+        ],
+        [
+          556,
+          767
+        ],
+        [
+          557,
+          767
+        ],
+        [
+          558,
+          767
+        ]
+      ],
+      "original_components": [
+        5
+      ],
+      "residual_diagnostics": [],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 127,
+      "class": 1,
+      "bounds_full_grid": [
+        602,
+        818,
+        604,
+        820
+      ],
+      "source_sampled_minimum_width": 1.4142135623730951,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          601,
+          817
+        ],
+        [
+          602,
+          817
+        ],
+        [
+          603,
+          817
+        ],
+        [
+          601,
+          818
+        ],
+        [
+          602,
+          818
+        ],
+        [
+          603,
+          818
+        ],
+        [
+          601,
+          819
+        ],
+        [
+          602,
+          819
+        ],
+        [
+          603,
+          819
+        ]
+      ],
+      "original_components": [
+        1
+      ],
+      "residual_diagnostics": [],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 128,
+      "class": 2,
+      "bounds_full_grid": [
+        761,
+        818,
+        763,
+        820
+      ],
+      "source_sampled_minimum_width": 1.4142135623730951,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          760,
+          817
+        ],
+        [
+          761,
+          817
+        ],
+        [
+          762,
+          817
+        ],
+        [
+          760,
+          818
+        ],
+        [
+          761,
+          818
+        ],
+        [
+          762,
+          818
+        ],
+        [
+          760,
+          819
+        ],
+        [
+          761,
+          819
+        ],
+        [
+          762,
+          819
+        ]
+      ],
+      "original_components": [
+        5
+      ],
+      "residual_diagnostics": [],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 129,
+      "class": 1,
+      "bounds_full_grid": [
+        818,
+        818,
+        820,
+        820
+      ],
+      "source_sampled_minimum_width": 1.4142135623730951,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          817,
+          817
+        ],
+        [
+          818,
+          817
+        ],
+        [
+          819,
+          817
+        ],
+        [
+          817,
+          818
+        ],
+        [
+          818,
+          818
+        ],
+        [
+          819,
+          818
+        ],
+        [
+          817,
+          819
+        ],
+        [
+          818,
+          819
+        ],
+        [
+          819,
+          819
+        ]
+      ],
+      "original_components": [
+        1
+      ],
+      "residual_diagnostics": [],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 130,
+      "class": 6,
+      "bounds_full_grid": [
+        145,
+        616,
+        146,
+        617
+      ],
+      "source_sampled_minimum_width": 2.0,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          143,
+          615
+        ],
+        [
+          144,
+          615
+        ],
+        [
+          145,
+          615
+        ],
+        [
+          146,
+          615
+        ],
+        [
+          144,
+          616
+        ],
+        [
+          145,
+          616
+        ]
+      ],
+      "original_components": [
+        1
+      ],
+      "residual_diagnostics": [
+        {
+          "cells": 2,
+          "principal_length_cells": 2.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 0.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            144,
+            616,
+            145,
+            616
+          ]
+        }
+      ],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 131,
+      "class": 6,
+      "bounds_full_grid": [
+        123,
+        632,
+        124,
+        633
+      ],
+      "source_sampled_minimum_width": 1.0,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          123,
+          632
+        ],
+        [
+          122,
+          633
+        ],
+        [
+          123,
+          633
+        ],
+        [
+          124,
+          633
+        ]
+      ],
+      "original_components": [
+        1
+      ],
+      "residual_diagnostics": [
+        {
+          "cells": 1,
+          "principal_length_cells": 1.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 0.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            123,
+            632,
+            123,
+            632
+          ]
+        }
+      ],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 132,
+      "class": 6,
+      "bounds_full_grid": [
+        116,
+        622,
+        117,
+        623
+      ],
+      "source_sampled_minimum_width": 3.0,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          115,
+          621
+        ],
+        [
+          116,
+          621
+        ],
+        [
+          115,
+          622
+        ],
+        [
+          116,
+          622
+        ],
+        [
+          115,
+          623
+        ],
+        [
+          116,
+          623
+        ]
+      ],
+      "original_components": [
+        1
+      ],
+      "residual_diagnostics": [
+        {
+          "cells": 3,
+          "principal_length_cells": 3.0,
+          "principal_width_cells": 1.0,
+          "principal_angle_degrees": 90.0,
+          "extended_thin_residual": false,
+          "bounds": [
+            116,
+            621,
+            116,
+            623
+          ]
+        }
+      ],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 133,
+      "class": 6,
+      "bounds_full_grid": [
+        818,
+        20,
+        820,
+        22
+      ],
+      "source_sampled_minimum_width": 1.4142135623730951,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          817,
+          20
+        ],
+        [
+          818,
+          20
+        ],
+        [
+          819,
+          20
+        ],
+        [
+          817,
+          21
+        ],
+        [
+          818,
+          21
+        ],
+        [
+          819,
+          21
+        ],
+        [
+          817,
+          22
+        ],
+        [
+          818,
+          22
+        ],
+        [
+          819,
+          22
+        ]
+      ],
+      "original_components": [
+        1
+      ],
+      "residual_diagnostics": [],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 134,
+      "class": 6,
+      "bounds_full_grid": [
+        20,
+        818,
+        22,
+        820
+      ],
+      "source_sampled_minimum_width": 1.4142135623730951,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          20,
+          817
+        ],
+        [
+          21,
+          817
+        ],
+        [
+          22,
+          817
+        ],
+        [
+          20,
+          818
+        ],
+        [
+          21,
+          818
+        ],
+        [
+          22,
+          818
+        ],
+        [
+          20,
+          819
+        ],
+        [
+          21,
+          819
+        ],
+        [
+          22,
+          819
+        ]
+      ],
+      "original_components": [
+        1
+      ],
+      "residual_diagnostics": [],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 135,
+      "class": 6,
+      "bounds_full_grid": [
+        20,
+        20,
+        22,
+        22
+      ],
+      "source_sampled_minimum_width": 1.4142135623730951,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          20,
+          20
+        ],
+        [
+          21,
+          20
+        ],
+        [
+          22,
+          20
+        ],
+        [
+          20,
+          21
+        ],
+        [
+          21,
+          21
+        ],
+        [
+          22,
+          21
+        ],
+        [
+          20,
+          22
+        ],
+        [
+          21,
+          22
+        ],
+        [
+          22,
+          22
+        ]
+      ],
+      "original_components": [
+        1
+      ],
+      "residual_diagnostics": [],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 136,
+      "class": 6,
+      "bounds_full_grid": [
+        157,
+        611,
+        158,
+        612
+      ],
+      "source_sampled_minimum_width": 4.242640687119286,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          156,
+          610
+        ],
+        [
+          157,
+          610
+        ],
+        [
+          158,
+          610
+        ],
+        [
+          156,
+          611
+        ],
+        [
+          157,
+          611
+        ],
+        [
+          156,
+          612
+        ]
+      ],
+      "original_components": [
+        1
+      ],
+      "residual_diagnostics": [],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 137,
+      "class": 6,
+      "bounds_full_grid": [
+        168,
+        620,
+        169,
+        621
+      ],
+      "source_sampled_minimum_width": 4.242640687119286,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          169,
+          619
+        ],
+        [
+          168,
+          620
+        ],
+        [
+          169,
+          620
+        ],
+        [
+          167,
+          621
+        ],
+        [
+          168,
+          621
+        ],
+        [
+          169,
+          621
+        ]
+      ],
+      "original_components": [
+        1
+      ],
+      "residual_diagnostics": [],
+      "relevant_failures": []
+    },
+    {
+      "candidate_id": 138,
+      "class": 6,
+      "bounds_full_grid": [
+        818,
+        818,
+        820,
+        820
+      ],
+      "source_sampled_minimum_width": 1.4142135623730951,
+      "status": "通过",
+      "review": "二维五格支撑保留主体的斜切／切向短断面，或与同一主体相接的短圆整栅格封端；全域旋转主轴残差及腐蚀核心连通检查未发现对应细长主体／窄颈。可玩交战路线和赠送落点另绑定本版原生验收。",
+      "sampled_cells": [
+        [
+          817,
+          817
+        ],
+        [
+          818,
+          817
+        ],
+        [
+          819,
+          817
+        ],
+        [
+          817,
+          818
+        ],
+        [
+          818,
+          818
+        ],
+        [
+          819,
+          818
+        ],
+        [
+          817,
+          819
+        ],
+        [
+          818,
+          819
+        ],
+        [
+          819,
+          819
+        ]
+      ],
+      "original_components": [
+        1
+      ],
+      "residual_diagnostics": [],
+      "relevant_failures": []
+    }
+  ],
+  "status": "通过",
+  "maximum_removed_boundary_component_diameter_upper_bound_cells": 4.47213595499958,
+  "native_sha256": "d3c04978b80d7104046384a1469b10ca8eabb4b120c99e3203093fc42027fb64",
+  "original_preview_scope_preserved": true
+}

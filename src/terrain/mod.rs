@@ -5,6 +5,7 @@ mod layout;
 pub use grid::{disk, distance, edge, flip, gradient};
 pub use layout::{Layout, ObjectSpec};
 pub mod materials;
+pub mod mobility;
 pub mod native_cell_edits;
 pub mod ramp_clearance;
 pub mod ramps;

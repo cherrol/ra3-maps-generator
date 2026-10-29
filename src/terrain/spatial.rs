@@ -28,6 +28,40 @@ pub struct Policy {
     pub maximum_landing_error: f64,
     pub navigation_clearance: usize,
 }
+
+/// Resolve the same common policy for new blueprints and frozen native sources.
+pub fn policy(p: &Project) -> Result<Policy> {
+    let path = p.root.join("templates/rules/coordinate-pipeline.json");
+    let mut data: Json = match fs::read(path) {
+        Ok(bytes) => serde_json::from_slice(&bytes)?,
+        Err(error) if error.kind() == std::io::ErrorKind::NotFound => serde_json::from_str(
+            include_str!("../../templates/rules/coordinate-pipeline.json"),
+        )?,
+        Err(error) => return Err(error.into()),
+    };
+    if let Some(value) = p.cfg["COORDINATE_PIPELINE"].get("policy")
+        && !value.is_null()
+    {
+        let name = value
+            .as_str()
+            .ok_or_else(|| err("spatial policy path must be a string"))?;
+        let overrides: Json = serde_json::from_slice(&fs::read(p.path(name)?)?)?;
+        let fields = overrides
+            .as_object()
+            .ok_or_else(|| err("spatial policy overrides must be an object"))?;
+        let common = data
+            .as_object_mut()
+            .ok_or_else(|| err("common spatial policy must be an object"))?;
+        common.extend(
+            fields
+                .iter()
+                .map(|(key, value)| (key.clone(), value.clone())),
+        );
+    }
+    let policy: Policy = serde_json::from_value(data)?;
+    policy.validate()?;
+    Ok(policy)
+}
 impl Policy {
     pub fn validate(&self) -> Result<()> {
         if [
@@ -365,6 +399,7 @@ impl Scene {
     }
     fn walkable(&self, water: bool) -> Vec<bool> {
         let w = self.frame.width;
+        let h = self.frame.height;
         let mut open = (0..self.z.len())
             .map(|i| {
                 !self.imp[i]
@@ -388,7 +423,7 @@ impl Scene {
                 }
                 let x = i % w;
                 let y = i / w;
-                open[i] = (y.saturating_sub(radius)..=(y + radius).min(w - 1)).all(|yy| {
+                open[i] = (y.saturating_sub(radius)..=(y + radius).min(h - 1)).all(|yy| {
                     (x.saturating_sub(radius)..=(x + radius).min(w - 1))
                         .all(|xx| before[yy * w + xx])
                 });
@@ -475,7 +510,7 @@ impl Scene {
         let mut q = VecDeque::from([start]);
         dist[start] = 0;
         while let Some(i) = q.pop_front() {
-            for j in crate::terrain::grid::neighbors(i, self.frame.width) {
+            for j in crate::terrain::grid::neighbors_rect(i, self.frame.width, self.frame.height) {
                 if open[j]
                     && dist[j] == u32::MAX
                     && (self.z[i] - self.z[j]).abs() <= self.policy.maximum_walk_step
@@ -578,8 +613,8 @@ impl Scene {
         Ok((rows, issues))
     }
     pub fn near_ores(&self, p: &Project, layout: &Layout) -> Result<(Vec<Json>, Vec<Issue>)> {
-        let limit = p.terrain_number("ore_near_max_r", 62.);
-        let expected = p.terrain_number("base_min_ore", 2.) as usize;
+        let limit = crate::terrain::spawn_placement::policy(p)?.near_ore_radius;
+        let expected = 2;
         let mut rows = Vec::new();
         let mut issues = Vec::new();
         for (seat, base) in layout.base_cells.iter().enumerate() {
@@ -726,6 +761,52 @@ pub fn materials(p: &Project, m: &MapFile) -> Result<Json> {
 #[cfg(test)]
 mod tests {
     use super::*;
+    #[test]
+    fn common_policy_loader_handles_blueprints_overrides_and_invalid_types() {
+        use std::path::PathBuf;
+        let root = std::env::temp_dir().join(format!("ra3-spatial-policy-{}", std::process::id()));
+        struct Cleanup(PathBuf);
+        impl Drop for Cleanup {
+            fn drop(&mut self) {
+                let _ = fs::remove_dir_all(&self.0);
+            }
+        }
+        let _cleanup = Cleanup(root.clone());
+        let mut p = Project {
+            root,
+            id: "policy-test".into(),
+            cfg: json!({}),
+            state: json!({}),
+            version: "T0.0.1".into(),
+            group: "policy-test".into(),
+            name: "policy-testT0.0.1".into(),
+            assets: PathBuf::new(),
+            dist: PathBuf::new(),
+        };
+        let defaults = policy(&p).unwrap();
+        assert_eq!(defaults.navigation_clearance, 1);
+        fs::create_dir_all(p.map_dir()).unwrap();
+        p.cfg["COORDINATE_PIPELINE"] = json!({"policy":"policy.json"});
+        fs::write(
+            p.map_dir().join("policy.json"),
+            br#"{"navigation_clearance":2,"maximum_walk_step":4.5}"#,
+        )
+        .unwrap();
+        let selected = policy(&p).unwrap();
+        assert_eq!(selected.navigation_clearance, 2);
+        assert_eq!(selected.maximum_walk_step, 4.5);
+        assert_eq!(selected.ore_reserve_radius, defaults.ore_reserve_radius);
+        for invalid in [
+            br#"{"navigation_clearance":"two"}"#.as_slice(),
+            b"[]",
+            br#"{"maximum_walk_step":-1}"#,
+        ] {
+            fs::write(p.map_dir().join("policy.json"), invalid).unwrap();
+            assert!(policy(&p).is_err());
+        }
+        p.cfg["COORDINATE_PIPELINE"]["policy"] = json!(false);
+        assert!(policy(&p).is_err());
+    }
     fn scene(n: usize) -> Scene {
         let policy = Policy {
             bucket_size: 4.,
@@ -755,6 +836,50 @@ mod tests {
             policy,
             water: 200.,
         }
+    }
+    #[test]
+    fn near_ore_audit_uses_the_spawn_policy_override_and_always_requires_two() {
+        let mut p =
+            Project::load(std::path::Path::new(env!("CARGO_MANIFEST_DIR")), "海南").unwrap();
+        p.cfg["TERRAIN"]["ore_near_max_r"] = json!(62.);
+        p.cfg["TERRAIN"]["base_min_ore"] = json!(1);
+        p.cfg["SPAWN_PLACEMENT"] = json!({"near_ore_radius":75.});
+        let mut s = scene(200);
+        for (id, class, point) in [
+            (1, "waypoint", [100., 100.]),
+            (2, "ore", [150., 100.]),
+            (3, "ore", [170., 100.]),
+        ] {
+            s.entities.push(Entity {
+                id,
+                kind: if class == "ore" {
+                    "OreNode"
+                } else {
+                    "Waypoint"
+                }
+                .into(),
+                class: class.into(),
+                point,
+                reserve: 1.,
+                physical: 1.,
+                in_playable: true,
+            });
+        }
+        let layout: Layout = serde_json::from_value(json!({
+            "schema_version":1,"base_cells":[[100.,100.]],"ore_cells":[],
+            "ore_angles":[],"objects":[]
+        }))
+        .unwrap();
+        let (rows, issues) = s.near_ores(&p, &layout).unwrap();
+        assert!(issues.is_empty());
+        assert_eq!(rows[0]["radius"], 75.);
+        assert_eq!(rows[0]["expected"], 2);
+        assert_eq!(rows[0]["ore_ids"], json!([2, 3]));
+
+        s.entities.pop();
+        let (_, issues) = s.near_ores(&p, &layout).unwrap();
+        assert_eq!(issues.len(), 1);
+        assert_eq!(issues[0].rule, "near_ore_quota");
     }
     #[test]
     fn spatial_buckets_preserve_intersections_across_negative_and_bucket_edges() {
@@ -793,6 +918,45 @@ mod tests {
         s.imp[8 * 9 + 4] = true;
         let d = s.distances(2 * 9 + 2, &s.walkable(false));
         assert_eq!(d[2 * 9 + 6], u32::MAX);
+    }
+    #[test]
+    fn rectangular_routes_reach_the_last_row_without_wrapping_or_leaving_the_grid() {
+        for (width, height) in [(5, 11), (11, 5)] {
+            let mut s = scene(1);
+            s.frame.width = width;
+            s.frame.height = height;
+            s.z = vec![212.; width * height];
+            s.imp = vec![false; width * height];
+            s.build = vec![false; width * height];
+            for y in 0..height - 1 {
+                s.imp[y * width + width / 2] = true;
+            }
+            let distances = s.distances(0, &s.walkable(false));
+            assert_eq!(
+                distances[width - 1],
+                (2 * (height - 1) + width - 1) as u32,
+                "{width}x{height}: the only opening is in the final row"
+            );
+            s.imp[(height - 1) * width + width / 2] = true;
+            assert_eq!(s.distances(0, &s.walkable(false))[width - 1], u32::MAX);
+        }
+    }
+    #[test]
+    fn rectangular_clearance_checks_the_full_height_for_tall_and_wide_maps() {
+        for (width, height) in [(5, 11), (11, 5)] {
+            let mut s = scene(1);
+            s.frame.width = width;
+            s.frame.height = height;
+            s.z = vec![212.; width * height];
+            s.imp = vec![false; width * height];
+            s.build = vec![false; width * height];
+            s.policy.navigation_clearance = 1;
+            s.imp[(height - 2) * width + 2] = true;
+            let open = s.walkable(false);
+            assert!(!open[(height - 1) * width + 2]);
+            assert!(!open[(height - 3) * width + 2]);
+            assert!(open[width - 1]);
+        }
     }
     #[test]
     fn routing_does_not_cross_unflagged_height_cliffs_or_cut_diagonal_corners() {

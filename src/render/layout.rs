@@ -433,6 +433,8 @@ pub(super) fn write(
             "map_id": p.id,
             "version": p.version,
             "layout": "source/layout.json",
+            "source_map": format!("{}.map", p.name),
+            "provenance": "Object and ramp definitions from this release's source/layout.json; source_map identifies the corresponding native map.",
             "recipe_layout": p.string("LAYOUT", "layout.json"),
             "coordinates": "Full-grid cells; x east, y south; row 0 is north. Angles are radians.",
         "viewport": {"origin_cell": origin, "span_cells": span, "grid_size": t.n, "grid_cells": [t.n, t.height()], "off_grid_entries": off_grid},

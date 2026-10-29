@@ -86,7 +86,7 @@ impl Frame {
     pub fn write_system(&self, p: &Project, dir: &Path) -> Result<Json> {
         let metadata = self.metadata(p)?;
         fs::create_dir_all(dir)?;
-        project::write_json(&dir.join("coordinate-system.json"), &metadata)?;
+        write_declaration(&dir.join("coordinate-system.json"), &metadata)?;
         Ok(metadata)
     }
     pub fn world(&self, p: [f64; 2]) -> [f64; 2] {
@@ -101,6 +101,21 @@ impl Frame {
             self.height as f64 - 1. - self.border as f64 - p[1] / self.cell_size,
         ]
     }
+    /// Rotate an object's local world-unit offset by its native heading, then
+    /// convert through the same per-map frame used for every native object.
+    pub fn local_to_grid(
+        &self,
+        grid_center: [f64; 2],
+        heading_radians: f64,
+        offset: [f64; 2],
+    ) -> [f64; 2] {
+        let center = self.world(grid_center);
+        let (sin, cos) = heading_radians.sin_cos();
+        self.grid([
+            center[0] + cos * offset[0] - sin * offset[1],
+            center[1] + sin * offset[0] + cos * offset[1],
+        ])
+    }
     pub fn inside(&self, p: [f64; 2]) -> bool {
         p[0] >= 0. && p[1] >= 0. && p[0] < self.width as f64 && p[1] < self.height as f64
     }
@@ -110,6 +125,18 @@ impl Frame {
             && p[0] < (self.width - self.border) as f64
             && p[1] < (self.height - self.border) as f64
     }
+}
+
+fn write_declaration(path: &Path, metadata: &Json) -> Result<()> {
+    let mut bytes = serde_json::to_vec_pretty(metadata)?;
+    bytes.push(b'\n');
+    match fs::read(path) {
+        Ok(current) if current == bytes => return Ok(()),
+        Ok(_) => {}
+        Err(error) if error.kind() == std::io::ErrorKind::NotFound => {}
+        Err(error) => return Err(error.into()),
+    }
+    project::atomic_write(path, &bytes)
 }
 
 /// Establish the map's coordinate frame before placing resources or objects.
@@ -123,7 +150,7 @@ pub fn prepare(p: &Project) -> Result<Frame> {
         let fields = metadata.as_object_mut().unwrap();
         fields.remove("release_name");
         fields.remove("version");
-        project::write_json(&p.map_dir().join("coordinate-system.json"), &metadata)?;
+        write_declaration(&p.map_dir().join("coordinate-system.json"), &metadata)?;
     }
     Ok(frame)
 }
@@ -186,6 +213,34 @@ mod tests {
         assert!(frame.playable([120., 72.]));
         assert!(!frame.playable([121., 72.]));
         assert!(!frame.inside([70., 80.]));
+        let local = frame.local_to_grid([38.25, 51.75], std::f64::consts::FRAC_PI_2, [15., 7.5]);
+        assert!((local[0] - 37.25).abs() < 1e-9);
+        assert!((local[1] - 49.75).abs() < 1e-9);
+    }
+
+    #[test]
+    fn repeated_preparation_does_not_rewrite_identical_declarations() {
+        let fixture = project_fixture();
+        let p = &fixture.0;
+        project::write_json(&project::version_path(&p.root, &p.id), &p.state).unwrap();
+        prepare(p).unwrap();
+        let paths = [
+            p.map_dir().join("coordinate-system.json"),
+            p.source().join("coordinate-system.json"),
+        ];
+        let time = std::time::SystemTime::UNIX_EPOCH + std::time::Duration::from_secs(123456);
+        for path in &paths {
+            fs::OpenOptions::new()
+                .write(true)
+                .open(path)
+                .unwrap()
+                .set_times(fs::FileTimes::new().set_modified(time))
+                .unwrap();
+        }
+        prepare(p).unwrap();
+        for path in &paths {
+            assert_eq!(fs::metadata(path).unwrap().modified().unwrap(), time);
+        }
     }
 
     #[test]

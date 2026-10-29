@@ -1,0 +1,122 @@
+{
+  "map_id": "内蒙古",
+  "terrain_sha256": "28e67f69b051e6761a20aa031f8a0ca75052a68781d1f66b7fa8e403635a7580",
+  "changed_cells": 64,
+  "changed_water_cells": 26,
+  "images": [
+    {
+      "file": "source.png",
+      "sha256": "f664b0e1e3a9edbca2870c0c0f2b3383cdef35d14fba1250fc0d2eeb6faaaee5",
+      "size": [
+        1104,
+        1002
+      ]
+    },
+    {
+      "file": "preview.png",
+      "sha256": "1d3897dc7f36711b0f3d847bd44aafb59c957134ef6639ce406d69ffae814939",
+      "size": [
+        1104,
+        1002
+      ]
+    },
+    {
+      "file": "preview--line.png",
+      "sha256": "0b82fa200c7d644c601b400362fc60b6051112f5a8790201d9b8eb0ee383e897",
+      "size": [
+        1104,
+        1002
+      ]
+    },
+    {
+      "file": "preview--center--line.png",
+      "sha256": "851c340fc28bf8588a1cd2a31bfc7e0c86cc8e24b343383b005c396b5eee65af",
+      "size": [
+        1104,
+        1002
+      ]
+    }
+  ],
+  "pixels_checked": 640000,
+  "pixel_mismatches": 0,
+  "closed_waterbodies": [
+    {
+      "water_cells": 504,
+      "bounds": [
+        568,
+        224,
+        595,
+        258
+      ],
+      "open": false,
+      "contacts": {
+        "3": 122
+      },
+      "connected_to_unchanged_owner_land": true
+    }
+  ],
+  "waterbodies": [
+    {
+      "water_cells": 9207,
+      "bounds": [
+        203,
+        20,
+        348,
+        116
+      ],
+      "open": true,
+      "contacts": {
+        "3": 337
+      }
+    },
+    {
+      "water_cells": 504,
+      "bounds": [
+        568,
+        224,
+        595,
+        258
+      ],
+      "open": false,
+      "contacts": {
+        "3": 122
+      },
+      "connected_to_unchanged_owner_land": true
+    },
+    {
+      "water_cells": 22226,
+      "bounds": [
+        583,
+        642,
+        820,
+        820
+      ],
+      "open": true,
+      "contacts": {
+        "1": 718,
+        "2": 255
+      }
+    }
+  ],
+  "errors": [],
+  "independent_checks_passed": true,
+  "date": "2026-10-30",
+  "overall_status": "24处本轮确认问题中本区项已修复；完整交战通行及未定范围仍待核验",
+  "confirmed_failure_sites_repaired": 3,
+  "issue_ids": [
+    15,
+    35,
+    57
+  ],
+  "post_repair_interior_extended_candidates": 0,
+  "frame_clipped_extended_candidates_pending": 0,
+  "short_or_rounded_cap_candidates_pending": 588,
+  "all_latest_requirements_passed": false,
+  "combat_route_width_verified": false,
+  "combat_routes": "待核验：预览没有绑定本版的已定交战通路，不推断10格实际通行通过",
+  "gift_buildings": "不适用：本轮纯预览，没有新增赠送落点",
+  "native_navigation_and_shore_transitions": "待可玩制作验收",
+  "repair_report": "intrusion-repair-2026-10-30.json",
+  "width_report": "width-candidates-repair-2026-10-30.json",
+  "previous_acceptance": "acceptance-2026-10-30.json"
+}

@@ -3,65 +3,47 @@ name: ra3-pipeline
 description: 原生 Rust 地图构建、成品增量编辑、验收、冻结制作源、版本、发布与安装。
 ---
 
-# 地图流水线
+# 原生制作与发布流水
 
-地图 id 使用真实地形名，例如 `--map 陕西`；`RA3MAP_ID` 与 `maps/.default` 同样填写真实 id（当前默认 `广西`）。输入在 `maps/<id>/`，制作资料在 `assets/<id>/<生成发布名+版本>/`，成品目录在 `dist/<id>/<生成发布名+版本>/`；ZIP 位于 `dist/<id>/<生成发布名+版本>.zip`。例如 `assets/陕西/[CHAI]千壑横原T0.7.8/`、`dist/陕西/[CHAI]千壑横原T0.7.8/`、`dist/陕西/[CHAI]千壑横原T0.7.8.zip`。目录身份不改变 `MAP_NAME` / `PUBLISH_NAME`、规则模板名、包内文件名或游戏安装目录。
+先查[公共约束总表](../../../docs/map_rules.md)确定规则来源、适用范围、生效参数及自动／人工验收项；本技能负责执行顺序，不另设阈值或方位。地图目录和 CLI id 用[系列映射](../../../docs/九州大地命名.md)中的真实地形名，包内游戏名称和 ZIP 继续用生成发布名。
 
-使用 `cargo run --release --locked -- <命令>`。地图 id 按 `--map`、`RA3MAP_ID`、`maps/.default` 选择，必要时加 `--root`。首次检出先按 [可复现构建](../../../docs/reproducible_builds.md) 恢复并核对受控输入；运行时无需 Python。
+## 输入与范围
 
-## 两条制作路径
+新图读取本图 `LAYERS`、`LAYOUT` 和声明式配方；预览缓存须先整理为构建输入。冻结成品读取 `COORDINATE_PIPELINE` 引用的完整原生 ZIP、布局、基准与 CRC，保留来源中本轮范围外的高度、材质、位图、身份和脚本。参数、来源及 Frame 的职责见[坐标流水](../../../docs/coordinate_pipeline.md)与[Rust 配方](../../../docs/rust_migration.md)。
 
-| 路径 | 真实输入 |
-|---|---|
-| 新图 | `maps/<id>/config.json`、`LAYERS` 指定的蓝图（默认 `layers.npz`，含 GRID×GRID 的 `base_z` 与 `z_scale`）及 `LAYOUT`（默认 `layout.json`）；预览缓存不是可直接构建的蓝图 |
-| 冻结成品 | `COORDINATE_PIPELINE` 引用的完整源 ZIP、同版布局及基准；现有四图为 `authoring/source.zip`、`authoring/layout.json`、`authoring/baseline.json`，旧蓝图只作参考 |
+所选蓝图原字节镜像、设计帧／可玩帧区分、历史复现、版本快照与冻结源衔接只按[版本资料](../../../docs/blueprint_versions.md)执行。首次检出所需输入由[离线恢复](../../../docs/reproducible_builds.md)准备，不能用缓存代替缺失来源。
 
-先准备本图 `coordinates::Frame`。稳定声明为 `maps/<id>/coordinate-system.json`；版本声明写入 `assets/.../source/`、`coordinates/` 及 `coordinates.zip`。宽高、边框来自实际网格，格长与高度比例取本图配方；资源在格坐标内计算后使用同一 Frame 正逆转换，不按 PNG 像素或其他地图常数换算。预览设计帧另存 `data/terrain-preview/`，不覆盖已有可玩图 Frame。
-
-## 构建与门禁
+## 构建与成品编辑
 
 ```sh
 cargo run --release --locked -- build --map <id>
-cargo run --release --locked -- build --map <id> --bump --note '调整布局'
-cargo run --release --locked -- build --map <id> --only map --only verify
+cargo run --release --locked -- build --map <id> --bump --note '本轮修改'
 cargo run --release --locked -- accept --map <id>
 ```
 
-完整阶段为 `terrain → passability → map → verify → spatial → preview → coordinates → accept → readme → dist → wb`，以代码 `STAGES` 为准。`--only`/`--skip` 可重复，不补前置产物；冻结路径执行空间增量审计，新图的 `spatial` 尚无独立审计，仍有 `verify`/`accept` 和公共坡口门禁。
+阶段顺序以 `src/pipeline/build/mod.rs::STAGES` 为准。`--only`／`--skip` 不补前置产物。普通坐标编辑直接修改配置指定布局中的原生对象，再 `build --bump`；其他编辑按任务选 `polish-textures`、`polish-ramps`、`polish-ramp-surfaces`、`relocate-ramps`、`repair-production`、`repair-terrain-package` 等完整成品入口。普通 `repack` 不应用地形或玩法修复。
 
-公共 `templates/rules/coordinate-pipeline.json#/ramp_clearance` 检查坡面全宽、端口和沿轴双向通行区及完整矿场/中立建筑预留，当前默认两端延伸 25 格、净距 8 格。新图及显式 `RAMP_CLEARANCE` 执行零冲突；默认冻结成品按 CRC 绑定源包留档旧问题并拦截新增/恶化。打包、安装、采用源和增量发布同样检查，不能通过重设基准掩盖本轮问题。详见 [坡口规则](../../../docs/ramp_clearance.md)。
+公共模块执行出生组、分级布矿、资源通路、坡口、脚本、纹理及完整资源封装检查。新图与显式严格策略要求零问题；冻结图仅继承原来源问题并拦截本轮新增／恶化。`raw_passed` 和 `passed` 分别记录零问题与本轮门禁结果。面积均衡仍按出生点规范独立验收。定稿交付同时执行[公共地图交付验收](../../../docs/map_acceptance.md)，逐项汇总布矿、坡口、整圈岸线、热点双方实际路程、建筑朝向的适用范围、状态与同版证据。布矿与坡口读取实际报告；岸线逐段覆盖、热点逐矿比较双方到同一目标的同域实际路程。缺少独立证据记待核验，不以 CLI 通过代替完整验收，不将待核验或失败方案作为本轮定稿发布、安装或采用源；冻结兼容复现明确标注继承未验。
 
-公共 `spawn_placement` 自动检查出生点对置侧别、每座基地两矿、完整预留及同层/水域连通，同样覆盖构建、回读、发布、安装和采用源。新图严格零问题；默认冻结源逐项继承已有问题，新增/恶化拦截；显式 `SPAWN_PLACEMENT` 要求严格验收。报告区分 `raw_passed` 与 `passed`，策略/来源变化使旧通过缓存失效。规则及报告入口见[公共出生点规则](../../../docs/spawn_placement.md)；现有四张成品本轮暂不调整。
+[建筑四向规范](../../../docs/production_placement_fix.md#所有建筑的四向约束)和同项验收覆盖全部建筑及矿脉 `OreNode`；按[朝向验收](../../../docs/map_acceptance.md#建筑朝向如何验)核对原生角度和全部创建／转向动作，分别记录建筑、矿脉及动作的完整清单、非法项及旋转后占地。公共 `ore_facing` 在回读及发布入口检查矿脉，其他自动覆盖范围查规范；未覆盖项必须独立回读。漏查矿脉不得记朝向通过，非法角度记失败，缺证据记待核验，不以赠送或矿脉局部通过推断全体合格。
 
-公共[分级布矿](../../../docs/resource_distribution.md)采用 `templates/rules/coordinate-pipeline.json#/resource_distribution`：每位 6 个阶段，共 48 矿，家区 100 格内 3 矿，随后进入主线前段、热点与次线。新图必须提供 `RESOURCE_DISTRIBUTION` 本图计划；回读、坐标制作、成品发布和采用来源检查实际矿位及全部阶段。公共参数和计划内容绑定空间缓存、发布证明，不能复用旧规则的通过结果。
+岸线验收同时核对[小水域单层包裹](../../../docs/terrain_preview.md#小水域的单层包裹)：跨层水域须有调整前各层接岸长度、最多接触层的归属依据及调整后全周同层证据。当前无此项公共自动门禁，按交付验收独立核对，不能以 `accept` 通过代替；局部归层后联动重验受影响的占地及通路。
 
-已有未配置计划的冻结源仅在矿位和出生点保持原样时沿用；移动这些位置需先补齐公共分级计划。普通矿口朝向修正不触发矿位重布。公共规则升级本身不修改成品字节、不递增地图版本；纯地形及精确绑定的历史复现保持原边界。
+斜坡数量不限，交付应方便玩家通往交战区及矿、油井、医院等中立资源。定稿、安装或采用新来源前，按[通行便利验收](../../../docs/map_acceptance.md#交战区与资源通行便利如何验)独立汇总各出生点的实际路线、绕行与瓶颈处理证据；坡口零冲突、资源可达或实际坡数均不能替代便利性结论，当前没有完整公共自动门禁。
 
-资源封装应同时保持原生清单、XML、纹理图集和脚本资产声明一致；不能删除清单或只拷 `.map` 绕过门禁。未知原生区块、有效资源身份和已有配套文件按成品入口保留。
+定稿、发布、安装或采用新来源前，按[交战路线宽度与伸入地形验收](../../../docs/map_acceptance.md#交战路线宽度与伸入地形如何验)读取公共 `terrain_shape` 参数，分别汇总交战段不足拓宽、细长伸入不足就近归并、全部赠送主备／条件分支完整占地避开伸入区域的证据。宽度达标不解除赠送排除；三项尚无完整公共自动门禁，不能据可达、赠送避让或 CLI 通过代替。纯预览与原生回读分开，冻结成品仅在明确制作范围内调整。
 
-## 增量编辑与采用制作源
+同时汇总[赠送生产建筑靠近基地验收](../../../docs/map_acceptance.md#赠送生产建筑靠近基地如何验)的适用范围、结论及同版证据；选址含义只按[所属基地原则](../../../docs/production_placement_fix.md#赠送生产建筑靠近所属基地)，不在流水另设距离阈值，不以 `repair-production` 或 `accept` 通过代替该项独立核查。
 
-冻结成品只修改矿、医院等对象坐标或允许的朝向时，直接修改配置指定布局的 `objects[编号−1].cell/angle`，用 `build --bump` 计算和验收本轮差异；分类清单由对象身份派生，不用 `repack` 搬动物件。
+## 定稿、版本与安装
 
-其他原生成品编辑沿用最新完整 ZIP。按任务选择 `repack`、`polish-textures`、`polish-ramps`、`polish-ramp-surfaces`、`relocate-ramps`、`repair-production` 或对应修复入口；普通 `repack` 只重新封装，不应用地形/玩法修复。具体范围见 [坐标流水](../../../docs/coordinate_pipeline.md)、[纹理规则](../../../docs/terrain_texture_rules.md)、[山地斜坡](../../../docs/mountain_ramps.md)。
-
-核对相对旧源的实际差异、空间结果和新版本 `source/layout.json` 后，再显式采用并补齐同版资料：
+先核对实际变化、完整游戏文件、同版 `source/layout.json`、空间结果及各项交付验收记录；变更影响旧证据时重验，证明相关输入未变方可沿用并重新绑定本版候选。满足本轮适用要求后，再显式采用：
 
 ```sh
 cargo run --release --locked -- adopt-coordinate-source --map <id>
 cargo run --release --locked -- build --map <id>
 ```
 
-增量发布不自动完成坐标/WB 导出或采用新源；普通重封装缺少布局快照时先补齐实际同版布局。采用会更新基准，不能替代对本轮变化的检查。
+增量发布不自动完成采用源、坐标或 WB 导出；采用会更新基准，不能代替本轮差异检查。内容变化递增版本；不改变地图字节的工具链或规范更新不递增地图版本。构建提交前失败按事务恢复旧版本与根镜像，仅清理本轮新产物，保护旧版和其他地图。
 
-地图内容变化递增版本；地图字节不变的工具链重构不递增。构建在版本和产物写入前预读所选蓝图；阶段、验证与根镜像同步均在提交前的回滚事务中。提交前失败恢复原版号及根镜像，仅清理本轮新建版本产物，不删除旧版本或其他地图。成功后提交本地版本、同版成品与根镜像，再执行可选安装；安装失败明确报告“构建已完成，安装失败”，不回滚本地成果。增量发布同样先同步根镜像后安装，安装失败报告“发布已完成，安装失败”，保留已提交发布结果。
-
-`assets/` 保存制作资料，`dist/` 保存完整成品目录与确定性 ZIP。安装在已有授权范围内用 `--install`，目标为 `APPDATA/Red Alert 3/Maps/<发布名>/`。WB 默认导出资料，复制到地编另加 `--wb --wb-root <目录>` 或配置 `RA3MAP_WB_ROOT`。
-
-验证命令及 CI 输入见 [README](../../../README.md#验证)。生产流程不包含实机检查，不把启动游戏或 GUI 测试加入构建/发布步骤。
-
-## 蓝图与版本资料
-
-蓝图输入由 `LAYERS` 选择，默认 `layers.npz`；根 `layers.npz` 始终与当前选定定稿蓝图原件逐字节一致，不从 `.map` 回读生成。四张现有图显式使用 `histories/v11/layers.npz`，同版历史布局在 `histories/v11/layout.json`；冻结生产来源仍为 `authoring/source.zip`。预览 `terrain.npz` 不直接替代构建蓝图。当前版本构建在本地提交前同步根镜像，增量发布在可选安装前同步；采用制作源也同步所选蓝图。历史版本操作不覆盖当前副本，来源字节相同时不重写。
-
-蓝图版本按本图 `histories/v1/`、`histories/v2/`、`histories/v3/`、`histories/v11/` 保存，成品版本资料也保存在 `histories/T<版本>/`，各版编号对照为 `histories/<T版本>/coordinate-id-map.json`。编辑方案、蓝图/布局/配置/基准快照和高程材质配套按版本一起归档，活动引用同步新路径；原始游戏输入 ZIP 保留原文件名，制作源快照使用 `histories/T<版本>/source.zip`，所有 ZIP 字节保持。广东无法确认版本的旧 `layers.npz` 保留于 `histories/legacy/layers.npz`，另建所选版本根镜像。详见 [蓝图与版本资料](../../../docs/blueprint_versions.md)，不改变旧 `v11_*` 开关的算法语义。
+`assets/<id>/<发布名>/` 保存制作资料，`dist/<id>/<发布名>/` 及同名 ZIP 保存完整游戏成品。已有授权范围内用 `--install` 安装到 `APPDATA/Red Alert 3/Maps/<发布名>/`；安装失败保留已提交本地成果并明确报告。WB 默认导出资料，复制地编目录须使用已授权目标。生产流程不包含启动游戏或 GUI 测试。

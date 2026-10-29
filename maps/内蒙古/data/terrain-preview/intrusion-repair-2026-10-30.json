@@ -1,0 +1,2453 @@
+{
+  "baseline": "raw/before-intrusion-repair-2026-10-30",
+  "changed_cells": 64,
+  "changed_full_grid_indices": [
+    543318,
+    546671,
+    546672,
+    546675,
+    546676,
+    547511,
+    547512,
+    547513,
+    547514,
+    547515,
+    547516,
+    548351,
+    548352,
+    548353,
+    548354,
+    548355,
+    549191,
+    549192,
+    550031,
+    550032,
+    550871,
+    550872,
+    551711,
+    551712,
+    552551,
+    579395,
+    579396,
+    579397,
+    579398,
+    579399,
+    579400,
+    579401,
+    580237,
+    580238,
+    580239,
+    580240,
+    580241,
+    581077,
+    581078,
+    581079,
+    584436,
+    660179,
+    660180,
+    661019,
+    661020,
+    661860,
+    661861,
+    661862,
+    662700,
+    662701,
+    662702,
+    662703,
+    663540,
+    663541,
+    663542,
+    664380,
+    664381,
+    664382,
+    665221,
+    665222,
+    666061,
+    666062,
+    666901,
+    666902
+  ],
+  "changed_water_cells": 26,
+  "combat_route_width_verified": false,
+  "date": "2026-10-30",
+  "detached_fragment_merges": [],
+  "gift_placement_applicable": false,
+  "map_id": "内蒙古",
+  "native_playable_data_modified": false,
+  "policy": {
+    "combat_route_minimum_width_cells": 10.0,
+    "exclude_gift_buildings_from_intrusions": true,
+    "intrusion_minimum_width_cells": 5.0
+  },
+  "reviewed_sites": [
+    {
+      "before": {
+        "bounds_full_grid": [
+          671,
+          651,
+          673,
+          658
+        ],
+        "center_extent_cells": 6.0,
+        "class": 1,
+        "extended_candidate": true,
+        "id": 15,
+        "kind": "第1层",
+        "minimum_sampled_width_cells": 1.0,
+        "review": {
+          "method": "核对本版分层局部放大图及原始宽度断面；确有细长尾部、层间窄连接或水域窄颈",
+          "repaired": false,
+          "required_action": "在明确修订任务中就近归并不足部分；若属于后续交战路线则须按10格要求补足，联动复验保留水体归属和岸线",
+          "status": "失败"
+        },
+        "sections": [
+          {
+            "center": [
+              671.5,
+              653.0
+            ],
+            "class": 1,
+            "direction": [
+              1,
+              0
+            ],
+            "first": [
+              671.0,
+              653.0
+            ],
+            "intersected_cells": 2,
+            "last": [
+              672.0,
+              653.0
+            ],
+            "width_cells": 2.0
+          },
+          {
+            "center": [
+              671.5,
+              651.5
+            ],
+            "class": 1,
+            "direction": [
+              1,
+              1
+            ],
+            "first": [
+              671.0,
+              651.0
+            ],
+            "intersected_cells": 2,
+            "last": [
+              672.0,
+              652.0
+            ],
+            "width_cells": 2.8284271247461903
+          },
+          {
+            "center": [
+              671.5,
+              652.5
+            ],
+            "class": 1,
+            "direction": [
+              1,
+              1
+            ],
+            "first": [
+              671.0,
+              652.0
+            ],
+            "intersected_cells": 2,
+            "last": [
+              672.0,
+              653.0
+            ],
+            "width_cells": 2.8284271247461903
+          },
+          {
+            "center": [
+              671.5,
+              654.0
+            ],
+            "class": 1,
+            "direction": [
+              1,
+              0
+            ],
+            "first": [
+              671.0,
+              654.0
+            ],
+            "intersected_cells": 2,
+            "last": [
+              672.0,
+              654.0
+            ],
+            "width_cells": 2.0
+          },
+          {
+            "center": [
+              671.5,
+              653.5
+            ],
+            "class": 1,
+            "direction": [
+              1,
+              1
+            ],
+            "first": [
+              671.0,
+              653.0
+            ],
+            "intersected_cells": 2,
+            "last": [
+              672.0,
+              654.0
+            ],
+            "width_cells": 2.8284271247461903
+          },
+          {
+            "center": [
+              672.0,
+              651.0
+            ],
+            "class": 1,
+            "direction": [
+              1,
+              1
+            ],
+            "first": [
+              671.0,
+              650.0
+            ],
+            "intersected_cells": 3,
+            "last": [
+              673.0,
+              652.0
+            ],
+            "width_cells": 4.242640687119286
+          },
+          {
+            "center": [
+              671.5,
+              655.0
+            ],
+            "class": 1,
+            "direction": [
+              1,
+              0
+            ],
+            "first": [
+              671.0,
+              655.0
+            ],
+            "intersected_cells": 2,
+            "last": [
+              672.0,
+              655.0
+            ],
+            "width_cells": 2.0
+          },
+          {
+            "center": [
+              671.5,
+              654.5
+            ],
+            "class": 1,
+            "direction": [
+              1,
+              1
+            ],
+            "first": [
+              671.0,
+              654.0
+            ],
+            "intersected_cells": 2,
+            "last": [
+              672.0,
+              655.0
+            ],
+            "width_cells": 2.8284271247461903
+          },
+          {
+            "center": [
+              671.5,
+              654.5
+            ],
+            "class": 1,
+            "direction": [
+              -1,
+              1
+            ],
+            "first": [
+              672.0,
+              654.0
+            ],
+            "intersected_cells": 2,
+            "last": [
+              671.0,
+              655.0
+            ],
+            "width_cells": 2.8284271247461903
+          },
+          {
+            "center": [
+              671.0,
+              656.0
+            ],
+            "class": 1,
+            "direction": [
+              1,
+              1
+            ],
+            "first": [
+              671.0,
+              656.0
+            ],
+            "intersected_cells": 1,
+            "last": [
+              671.0,
+              656.0
+            ],
+            "width_cells": 1.4142135623730951
+          },
+          {
+            "center": [
+              671.5,
+              656.0
+            ],
+            "class": 1,
+            "direction": [
+              1,
+              0
+            ],
+            "first": [
+              671.0,
+              656.0
+            ],
+            "intersected_cells": 2,
+            "last": [
+              672.0,
+              656.0
+            ],
+            "width_cells": 2.0
+          },
+          {
+            "center": [
+              671.5,
+              655.5
+            ],
+            "class": 1,
+            "direction": [
+              1,
+              1
+            ],
+            "first": [
+              671.0,
+              655.0
+            ],
+            "intersected_cells": 2,
+            "last": [
+              672.0,
+              656.0
+            ],
+            "width_cells": 2.8284271247461903
+          },
+          {
+            "center": [
+              671.5,
+              655.5
+            ],
+            "class": 1,
+            "direction": [
+              -1,
+              1
+            ],
+            "first": [
+              672.0,
+              655.0
+            ],
+            "intersected_cells": 2,
+            "last": [
+              671.0,
+              656.0
+            ],
+            "width_cells": 2.8284271247461903
+          },
+          {
+            "center": [
+              671.0,
+              657.0
+            ],
+            "class": 1,
+            "direction": [
+              1,
+              0
+            ],
+            "first": [
+              671.0,
+              657.0
+            ],
+            "intersected_cells": 1,
+            "last": [
+              671.0,
+              657.0
+            ],
+            "width_cells": 1.0
+          },
+          {
+            "center": [
+              671.0,
+              657.0
+            ],
+            "class": 1,
+            "direction": [
+              1,
+              1
+            ],
+            "first": [
+              671.0,
+              657.0
+            ],
+            "intersected_cells": 1,
+            "last": [
+              671.0,
+              657.0
+            ],
+            "width_cells": 1.4142135623730951
+          },
+          {
+            "center": [
+              671.5,
+              656.5
+            ],
+            "class": 1,
+            "direction": [
+              -1,
+              1
+            ],
+            "first": [
+              672.0,
+              656.0
+            ],
+            "intersected_cells": 2,
+            "last": [
+              671.0,
+              657.0
+            ],
+            "width_cells": 2.8284271247461903
+          }
+        ],
+        "status": "待核验",
+        "triage": "延伸窄段，须核对伸入形态与用途"
+      },
+      "candidate_id": 15,
+      "design_opening_radius_cells": 3,
+      "merges": [
+        {
+          "cells": 1,
+          "changed_full_grid_indices": [
+            543318
+          ],
+          "from": 1,
+          "shared_edges_before": [
+            2,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "to": 0
+        },
+        {
+          "cells": 24,
+          "changed_full_grid_indices": [
+            546671,
+            546672,
+            547511,
+            547512,
+            548351,
+            547513,
+            548352,
+            549191,
+            547514,
+            548353,
+            549192,
+            550031,
+            547515,
+            548354,
+            550032,
+            550871,
+            547516,
+            546675,
+            548355,
+            550872,
+            551711,
+            546676,
+            551712,
+            552551
+          ],
+          "from": 1,
+          "shared_edges_before": [
+            13,
+            0,
+            9,
+            0,
+            0,
+            0
+          ],
+          "to": 0
+        }
+      ],
+      "scope_xy_exclusive": [
+        665,
+        645,
+        679,
+        664
+      ],
+      "after_width_witnesses": [
+        {
+          "sample_xy": [
+            672,
+            653
+          ],
+          "direction": [
+            1,
+            0
+          ],
+          "before_width_cells": 2.0,
+          "after_class": 0,
+          "after_same_class_width_cells": 0.0,
+          "status": "归并到相邻区域"
+        },
+        {
+          "sample_xy": [
+            672,
+            652
+          ],
+          "direction": [
+            1,
+            1
+          ],
+          "before_width_cells": 2.8284271247461903,
+          "after_class": 0,
+          "after_same_class_width_cells": 0.0,
+          "status": "归并到相邻区域"
+        },
+        {
+          "sample_xy": [
+            672,
+            653
+          ],
+          "direction": [
+            1,
+            1
+          ],
+          "before_width_cells": 2.8284271247461903,
+          "after_class": 0,
+          "after_same_class_width_cells": 0.0,
+          "status": "归并到相邻区域"
+        },
+        {
+          "sample_xy": [
+            672,
+            654
+          ],
+          "direction": [
+            1,
+            0
+          ],
+          "before_width_cells": 2.0,
+          "after_class": 0,
+          "after_same_class_width_cells": 0.0,
+          "status": "归并到相邻区域"
+        },
+        {
+          "sample_xy": [
+            672,
+            654
+          ],
+          "direction": [
+            1,
+            1
+          ],
+          "before_width_cells": 2.8284271247461903,
+          "after_class": 0,
+          "after_same_class_width_cells": 0.0,
+          "status": "归并到相邻区域"
+        },
+        {
+          "sample_xy": [
+            672,
+            651
+          ],
+          "direction": [
+            1,
+            1
+          ],
+          "before_width_cells": 4.242640687119286,
+          "after_class": 0,
+          "after_same_class_width_cells": 0.0,
+          "status": "归并到相邻区域"
+        },
+        {
+          "sample_xy": [
+            672,
+            655
+          ],
+          "direction": [
+            1,
+            0
+          ],
+          "before_width_cells": 2.0,
+          "after_class": 0,
+          "after_same_class_width_cells": 0.0,
+          "status": "归并到相邻区域"
+        },
+        {
+          "sample_xy": [
+            672,
+            655
+          ],
+          "direction": [
+            1,
+            1
+          ],
+          "before_width_cells": 2.8284271247461903,
+          "after_class": 0,
+          "after_same_class_width_cells": 0.0,
+          "status": "归并到相邻区域"
+        },
+        {
+          "sample_xy": [
+            672,
+            655
+          ],
+          "direction": [
+            -1,
+            1
+          ],
+          "before_width_cells": 2.8284271247461903,
+          "after_class": 0,
+          "after_same_class_width_cells": 0.0,
+          "status": "归并到相邻区域"
+        },
+        {
+          "sample_xy": [
+            671,
+            656
+          ],
+          "direction": [
+            1,
+            1
+          ],
+          "before_width_cells": 1.4142135623730951,
+          "after_class": 0,
+          "after_same_class_width_cells": 0.0,
+          "status": "归并到相邻区域"
+        },
+        {
+          "sample_xy": [
+            672,
+            656
+          ],
+          "direction": [
+            1,
+            0
+          ],
+          "before_width_cells": 2.0,
+          "after_class": 0,
+          "after_same_class_width_cells": 0.0,
+          "status": "归并到相邻区域"
+        },
+        {
+          "sample_xy": [
+            672,
+            656
+          ],
+          "direction": [
+            1,
+            1
+          ],
+          "before_width_cells": 2.8284271247461903,
+          "after_class": 0,
+          "after_same_class_width_cells": 0.0,
+          "status": "归并到相邻区域"
+        },
+        {
+          "sample_xy": [
+            672,
+            656
+          ],
+          "direction": [
+            -1,
+            1
+          ],
+          "before_width_cells": 2.8284271247461903,
+          "after_class": 0,
+          "after_same_class_width_cells": 0.0,
+          "status": "归并到相邻区域"
+        },
+        {
+          "sample_xy": [
+            671,
+            657
+          ],
+          "direction": [
+            1,
+            0
+          ],
+          "before_width_cells": 1.0,
+          "after_class": 0,
+          "after_same_class_width_cells": 0.0,
+          "status": "归并到相邻区域"
+        },
+        {
+          "sample_xy": [
+            671,
+            657
+          ],
+          "direction": [
+            1,
+            1
+          ],
+          "before_width_cells": 1.4142135623730951,
+          "after_class": 0,
+          "after_same_class_width_cells": 0.0,
+          "status": "归并到相邻区域"
+        },
+        {
+          "sample_xy": [
+            672,
+            657
+          ],
+          "direction": [
+            -1,
+            1
+          ],
+          "before_width_cells": 2.8284271247461903,
+          "after_class": 0,
+          "after_same_class_width_cells": 0.0,
+          "status": "归并到相邻区域"
+        }
+      ],
+      "post_repair_extended_candidates_in_scope": [],
+      "reviewed_issue_status": "已消除"
+    },
+    {
+      "before": {
+        "bounds_full_grid": [
+          779,
+          785,
+          784,
+          794
+        ],
+        "center_extent_cells": 8.0,
+        "class": 1,
+        "extended_candidate": true,
+        "id": 35,
+        "kind": "第1层",
+        "minimum_sampled_width_cells": 1.0,
+        "review": {
+          "method": "核对本版分层局部放大图及原始宽度断面；确有细长尾部、层间窄连接或水域窄颈",
+          "repaired": false,
+          "required_action": "在明确修订任务中就近归并不足部分；若属于后续交战路线则须按10格要求补足，联动复验保留水体归属和岸线",
+          "status": "失败"
+        },
+        "sections": [
+          {
+            "center": [
+              779.5,
+              785.0
+            ],
+            "class": 1,
+            "direction": [
+              1,
+              0
+            ],
+            "first": [
+              779.0,
+              785.0
+            ],
+            "intersected_cells": 2,
+            "last": [
+              780.0,
+              785.0
+            ],
+            "width_cells": 2.0
+          },
+          {
+            "center": [
+              779.0,
+              785.0
+            ],
+            "class": 1,
+            "direction": [
+              -1,
+              1
+            ],
+            "first": [
+              779.0,
+              785.0
+            ],
+            "intersected_cells": 1,
+            "last": [
+              779.0,
+              785.0
+            ],
+            "width_cells": 1.4142135623730951
+          },
+          {
+            "center": [
+              780.0,
+              785.0
+            ],
+            "class": 1,
+            "direction": [
+              1,
+              1
+            ],
+            "first": [
+              780.0,
+              785.0
+            ],
+            "intersected_cells": 1,
+            "last": [
+              780.0,
+              785.0
+            ],
+            "width_cells": 1.4142135623730951
+          },
+          {
+            "center": [
+              779.0,
+              785.5
+            ],
+            "class": 1,
+            "direction": [
+              0,
+              1
+            ],
+            "first": [
+              779.0,
+              785.0
+            ],
+            "intersected_cells": 2,
+            "last": [
+              779.0,
+              786.0
+            ],
+            "width_cells": 2.0
+          },
+          {
+            "center": [
+              779.5,
+              786.0
+            ],
+            "class": 1,
+            "direction": [
+              1,
+              0
+            ],
+            "first": [
+              779.0,
+              786.0
+            ],
+            "intersected_cells": 2,
+            "last": [
+              780.0,
+              786.0
+            ],
+            "width_cells": 2.0
+          },
+          {
+            "center": [
+              779.5,
+              785.5
+            ],
+            "class": 1,
+            "direction": [
+              -1,
+              1
+            ],
+            "first": [
+              780.0,
+              785.0
+            ],
+            "intersected_cells": 2,
+            "last": [
+              779.0,
+              786.0
+            ],
+            "width_cells": 2.8284271247461903
+          },
+          {
+            "center": [
+              780.0,
+              786.0
+            ],
+            "class": 1,
+            "direction": [
+              -1,
+              1
+            ],
+            "first": [
+              780.0,
+              786.0
+            ],
+            "intersected_cells": 1,
+            "last": [
+              780.0,
+              786.0
+            ],
+            "width_cells": 1.4142135623730951
+          },
+          {
+            "center": [
+              780.0,
+              787.0
+            ],
+            "class": 1,
+            "direction": [
+              -1,
+              1
+            ],
+            "first": [
+              780.0,
+              787.0
+            ],
+            "intersected_cells": 1,
+            "last": [
+              780.0,
+              787.0
+            ],
+            "width_cells": 1.4142135623730951
+          },
+          {
+            "center": [
+              781.0,
+              787.0
+            ],
+            "class": 1,
+            "direction": [
+              1,
+              0
+            ],
+            "first": [
+              780.0,
+              787.0
+            ],
+            "intersected_cells": 3,
+            "last": [
+              782.0,
+              787.0
+            ],
+            "width_cells": 3.0
+          },
+          {
+            "center": [
+              780.5,
+              787.5
+            ],
+            "class": 1,
+            "direction": [
+              -1,
+              1
+            ],
+            "first": [
+              781.0,
+              787.0
+            ],
+            "intersected_cells": 2,
+            "last": [
+              780.0,
+              788.0
+            ],
+            "width_cells": 2.8284271247461903
+          },
+          {
+            "center": [
+              781.0,
+              788.0
+            ],
+            "class": 1,
+            "direction": [
+              -1,
+              1
+            ],
+            "first": [
+              782.0,
+              787.0
+            ],
+            "intersected_cells": 3,
+            "last": [
+              780.0,
+              789.0
+            ],
+            "width_cells": 4.242640687119286
+          },
+          {
+            "center": [
+              781.5,
+              788.0
+            ],
+            "class": 1,
+            "direction": [
+              1,
+              0
+            ],
+            "first": [
+              780.0,
+              788.0
+            ],
+            "intersected_cells": 4,
+            "last": [
+              783.0,
+              788.0
+            ],
+            "width_cells": 4.0
+          },
+          {
+            "center": [
+              781.0,
+              789.0
+            ],
+            "class": 1,
+            "direction": [
+              1,
+              0
+            ],
+            "first": [
+              780.0,
+              789.0
+            ],
+            "intersected_cells": 3,
+            "last": [
+              782.0,
+              789.0
+            ],
+            "width_cells": 3.0
+          },
+          {
+            "center": [
+              781.0,
+              789.0
+            ],
+            "class": 1,
+            "direction": [
+              1,
+              1
+            ],
+            "first": [
+              780.0,
+              788.0
+            ],
+            "intersected_cells": 3,
+            "last": [
+              782.0,
+              790.0
+            ],
+            "width_cells": 4.242640687119286
+          },
+          {
+            "center": [
+              781.0,
+              789.0
+            ],
+            "class": 1,
+            "direction": [
+              -1,
+              1
+            ],
+            "first": [
+              782.0,
+              788.0
+            ],
+            "intersected_cells": 3,
+            "last": [
+              780.0,
+              790.0
+            ],
+            "width_cells": 4.242640687119286
+          },
+          {
+            "center": [
+              782.0,
+              789.0
+            ],
+            "class": 1,
+            "direction": [
+              -1,
+              1
+            ],
+            "first": [
+              783.0,
+              788.0
+            ],
+            "intersected_cells": 3,
+            "last": [
+              781.0,
+              790.0
+            ],
+            "width_cells": 4.242640687119286
+          },
+          {
+            "center": [
+              783.0,
+              788.0
+            ],
+            "class": 1,
+            "direction": [
+              0,
+              1
+            ],
+            "first": [
+              783.0,
+              788.0
+            ],
+            "intersected_cells": 1,
+            "last": [
+              783.0,
+              788.0
+            ],
+            "width_cells": 1.0
+          },
+          {
+            "center": [
+              782.5,
+              787.5
+            ],
+            "class": 1,
+            "direction": [
+              1,
+              1
+            ],
+            "first": [
+              782.0,
+              787.0
+            ],
+            "intersected_cells": 2,
+            "last": [
+              783.0,
+              788.0
+            ],
+            "width_cells": 2.8284271247461903
+          },
+          {
+            "center": [
+              781.0,
+              790.0
+            ],
+            "class": 1,
+            "direction": [
+              1,
+              0
+            ],
+            "first": [
+              780.0,
+              790.0
+            ],
+            "intersected_cells": 3,
+            "last": [
+              782.0,
+              790.0
+            ],
+            "width_cells": 3.0
+          },
+          {
+            "center": [
+              781.0,
+              790.0
+            ],
+            "class": 1,
+            "direction": [
+              1,
+              1
+            ],
+            "first": [
+              780.0,
+              789.0
+            ],
+            "intersected_cells": 3,
+            "last": [
+              782.0,
+              791.0
+            ],
+            "width_cells": 4.242640687119286
+          },
+          {
+            "center": [
+              781.0,
+              791.0
+            ],
+            "class": 1,
+            "direction": [
+              1,
+              1
+            ],
+            "first": [
+              780.0,
+              790.0
+            ],
+            "intersected_cells": 3,
+            "last": [
+              782.0,
+              792.0
+            ],
+            "width_cells": 4.242640687119286
+          },
+          {
+            "center": [
+              781.5,
+              791.0
+            ],
+            "class": 1,
+            "direction": [
+              1,
+              0
+            ],
+            "first": [
+              781.0,
+              791.0
+            ],
+            "intersected_cells": 2,
+            "last": [
+              782.0,
+              791.0
+            ],
+            "width_cells": 2.0
+          },
+          {
+            "center": [
+              781.5,
+              790.5
+            ],
+            "class": 1,
+            "direction": [
+              -1,
+              1
+            ],
+            "first": [
+              782.0,
+              790.0
+            ],
+            "intersected_cells": 2,
+            "last": [
+              781.0,
+              791.0
+            ],
+            "width_cells": 2.8284271247461903
+          },
+          {
+            "center": [
+              781.5,
+              792.0
+            ],
+            "class": 1,
+            "direction": [
+              1,
+              0
+            ],
+            "first": [
+              781.0,
+              792.0
+            ],
+            "intersected_cells": 2,
+            "last": [
+              782.0,
+              792.0
+            ],
+            "width_cells": 2.0
+          },
+          {
+            "center": [
+              781.5,
+              791.5
+            ],
+            "class": 1,
+            "direction": [
+              -1,
+              1
+            ],
+            "first": [
+              782.0,
+              791.0
+            ],
+            "intersected_cells": 2,
+            "last": [
+              781.0,
+              792.0
+            ],
+            "width_cells": 2.8284271247461903
+          },
+          {
+            "center": [
+              781.0,
+              793.0
+            ],
+            "class": 1,
+            "direction": [
+              1,
+              1
+            ],
+            "first": [
+              781.0,
+              793.0
+            ],
+            "intersected_cells": 1,
+            "last": [
+              781.0,
+              793.0
+            ],
+            "width_cells": 1.4142135623730951
+          },
+          {
+            "center": [
+              781.5,
+              793.0
+            ],
+            "class": 1,
+            "direction": [
+              1,
+              0
+            ],
+            "first": [
+              781.0,
+              793.0
+            ],
+            "intersected_cells": 2,
+            "last": [
+              782.0,
+              793.0
+            ],
+            "width_cells": 2.0
+          },
+          {
+            "center": [
+              781.5,
+              792.5
+            ],
+            "class": 1,
+            "direction": [
+              1,
+              1
+            ],
+            "first": [
+              781.0,
+              792.0
+            ],
+            "intersected_cells": 2,
+            "last": [
+              782.0,
+              793.0
+            ],
+            "width_cells": 2.8284271247461903
+          },
+          {
+            "center": [
+              781.5,
+              792.5
+            ],
+            "class": 1,
+            "direction": [
+              -1,
+              1
+            ],
+            "first": [
+              782.0,
+              792.0
+            ],
+            "intersected_cells": 2,
+            "last": [
+              781.0,
+              793.0
+            ],
+            "width_cells": 2.8284271247461903
+          },
+          {
+            "center": [
+              782.0,
+              793.0
+            ],
+            "class": 1,
+            "direction": [
+              -1,
+              1
+            ],
+            "first": [
+              782.0,
+              793.0
+            ],
+            "intersected_cells": 1,
+            "last": [
+              782.0,
+              793.0
+            ],
+            "width_cells": 1.4142135623730951
+          }
+        ],
+        "status": "待核验",
+        "triage": "延伸窄段，须核对伸入形态与用途"
+      },
+      "candidate_id": 35,
+      "design_opening_radius_cells": 3,
+      "merges": [
+        {
+          "cells": 23,
+          "changed_full_grid_indices": [
+            660179,
+            660180,
+            661019,
+            661020,
+            661860,
+            661861,
+            662700,
+            661862,
+            662701,
+            663540,
+            662702,
+            663541,
+            664380,
+            662703,
+            663542,
+            664381,
+            664382,
+            665221,
+            665222,
+            666061,
+            666062,
+            666901,
+            666902
+          ],
+          "from": 1,
+          "shared_edges_before": [
+            14,
+            0,
+            14,
+            0,
+            0,
+            0
+          ],
+          "to": 2
+        }
+      ],
+      "scope_xy_exclusive": [
+        773,
+        779,
+        790,
+        800
+      ],
+      "after_width_witnesses": [
+        {
+          "sample_xy": [
+            780,
+            785
+          ],
+          "direction": [
+            1,
+            0
+          ],
+          "before_width_cells": 2.0,
+          "after_class": 2,
+          "after_same_class_width_cells": 0.0,
+          "status": "归并到相邻区域"
+        },
+        {
+          "sample_xy": [
+            779,
+            785
+          ],
+          "direction": [
+            -1,
+            1
+          ],
+          "before_width_cells": 1.4142135623730951,
+          "after_class": 2,
+          "after_same_class_width_cells": 0.0,
+          "status": "归并到相邻区域"
+        },
+        {
+          "sample_xy": [
+            780,
+            785
+          ],
+          "direction": [
+            1,
+            1
+          ],
+          "before_width_cells": 1.4142135623730951,
+          "after_class": 2,
+          "after_same_class_width_cells": 0.0,
+          "status": "归并到相邻区域"
+        },
+        {
+          "sample_xy": [
+            779,
+            786
+          ],
+          "direction": [
+            0,
+            1
+          ],
+          "before_width_cells": 2.0,
+          "after_class": 2,
+          "after_same_class_width_cells": 0.0,
+          "status": "归并到相邻区域"
+        },
+        {
+          "sample_xy": [
+            780,
+            786
+          ],
+          "direction": [
+            1,
+            0
+          ],
+          "before_width_cells": 2.0,
+          "after_class": 2,
+          "after_same_class_width_cells": 0.0,
+          "status": "归并到相邻区域"
+        },
+        {
+          "sample_xy": [
+            780,
+            786
+          ],
+          "direction": [
+            -1,
+            1
+          ],
+          "before_width_cells": 2.8284271247461903,
+          "after_class": 2,
+          "after_same_class_width_cells": 0.0,
+          "status": "归并到相邻区域"
+        },
+        {
+          "sample_xy": [
+            780,
+            786
+          ],
+          "direction": [
+            -1,
+            1
+          ],
+          "before_width_cells": 1.4142135623730951,
+          "after_class": 2,
+          "after_same_class_width_cells": 0.0,
+          "status": "归并到相邻区域"
+        },
+        {
+          "sample_xy": [
+            780,
+            787
+          ],
+          "direction": [
+            -1,
+            1
+          ],
+          "before_width_cells": 1.4142135623730951,
+          "after_class": 2,
+          "after_same_class_width_cells": 0.0,
+          "status": "归并到相邻区域"
+        },
+        {
+          "sample_xy": [
+            781,
+            787
+          ],
+          "direction": [
+            1,
+            0
+          ],
+          "before_width_cells": 3.0,
+          "after_class": 2,
+          "after_same_class_width_cells": 0.0,
+          "status": "归并到相邻区域"
+        },
+        {
+          "sample_xy": [
+            781,
+            788
+          ],
+          "direction": [
+            -1,
+            1
+          ],
+          "before_width_cells": 2.8284271247461903,
+          "after_class": 2,
+          "after_same_class_width_cells": 0.0,
+          "status": "归并到相邻区域"
+        },
+        {
+          "sample_xy": [
+            781,
+            788
+          ],
+          "direction": [
+            -1,
+            1
+          ],
+          "before_width_cells": 4.242640687119286,
+          "after_class": 2,
+          "after_same_class_width_cells": 0.0,
+          "status": "归并到相邻区域"
+        },
+        {
+          "sample_xy": [
+            782,
+            788
+          ],
+          "direction": [
+            1,
+            0
+          ],
+          "before_width_cells": 4.0,
+          "after_class": 2,
+          "after_same_class_width_cells": 0.0,
+          "status": "归并到相邻区域"
+        },
+        {
+          "sample_xy": [
+            781,
+            789
+          ],
+          "direction": [
+            1,
+            0
+          ],
+          "before_width_cells": 3.0,
+          "after_class": 2,
+          "after_same_class_width_cells": 0.0,
+          "status": "归并到相邻区域"
+        },
+        {
+          "sample_xy": [
+            781,
+            789
+          ],
+          "direction": [
+            1,
+            1
+          ],
+          "before_width_cells": 4.242640687119286,
+          "after_class": 2,
+          "after_same_class_width_cells": 0.0,
+          "status": "归并到相邻区域"
+        },
+        {
+          "sample_xy": [
+            781,
+            789
+          ],
+          "direction": [
+            -1,
+            1
+          ],
+          "before_width_cells": 4.242640687119286,
+          "after_class": 2,
+          "after_same_class_width_cells": 0.0,
+          "status": "归并到相邻区域"
+        },
+        {
+          "sample_xy": [
+            782,
+            789
+          ],
+          "direction": [
+            -1,
+            1
+          ],
+          "before_width_cells": 4.242640687119286,
+          "after_class": 2,
+          "after_same_class_width_cells": 0.0,
+          "status": "归并到相邻区域"
+        },
+        {
+          "sample_xy": [
+            783,
+            788
+          ],
+          "direction": [
+            0,
+            1
+          ],
+          "before_width_cells": 1.0,
+          "after_class": 2,
+          "after_same_class_width_cells": 0.0,
+          "status": "归并到相邻区域"
+        },
+        {
+          "sample_xy": [
+            783,
+            788
+          ],
+          "direction": [
+            1,
+            1
+          ],
+          "before_width_cells": 2.8284271247461903,
+          "after_class": 2,
+          "after_same_class_width_cells": 0.0,
+          "status": "归并到相邻区域"
+        },
+        {
+          "sample_xy": [
+            781,
+            790
+          ],
+          "direction": [
+            1,
+            0
+          ],
+          "before_width_cells": 3.0,
+          "after_class": 2,
+          "after_same_class_width_cells": 0.0,
+          "status": "归并到相邻区域"
+        },
+        {
+          "sample_xy": [
+            781,
+            790
+          ],
+          "direction": [
+            1,
+            1
+          ],
+          "before_width_cells": 4.242640687119286,
+          "after_class": 2,
+          "after_same_class_width_cells": 0.0,
+          "status": "归并到相邻区域"
+        },
+        {
+          "sample_xy": [
+            781,
+            791
+          ],
+          "direction": [
+            1,
+            1
+          ],
+          "before_width_cells": 4.242640687119286,
+          "after_class": 2,
+          "after_same_class_width_cells": 0.0,
+          "status": "归并到相邻区域"
+        },
+        {
+          "sample_xy": [
+            782,
+            791
+          ],
+          "direction": [
+            1,
+            0
+          ],
+          "before_width_cells": 2.0,
+          "after_class": 2,
+          "after_same_class_width_cells": 0.0,
+          "status": "归并到相邻区域"
+        },
+        {
+          "sample_xy": [
+            782,
+            791
+          ],
+          "direction": [
+            -1,
+            1
+          ],
+          "before_width_cells": 2.8284271247461903,
+          "after_class": 2,
+          "after_same_class_width_cells": 0.0,
+          "status": "归并到相邻区域"
+        },
+        {
+          "sample_xy": [
+            782,
+            792
+          ],
+          "direction": [
+            1,
+            0
+          ],
+          "before_width_cells": 2.0,
+          "after_class": 2,
+          "after_same_class_width_cells": 0.0,
+          "status": "归并到相邻区域"
+        },
+        {
+          "sample_xy": [
+            782,
+            792
+          ],
+          "direction": [
+            -1,
+            1
+          ],
+          "before_width_cells": 2.8284271247461903,
+          "after_class": 2,
+          "after_same_class_width_cells": 0.0,
+          "status": "归并到相邻区域"
+        },
+        {
+          "sample_xy": [
+            781,
+            793
+          ],
+          "direction": [
+            1,
+            1
+          ],
+          "before_width_cells": 1.4142135623730951,
+          "after_class": 2,
+          "after_same_class_width_cells": 0.0,
+          "status": "归并到相邻区域"
+        },
+        {
+          "sample_xy": [
+            782,
+            793
+          ],
+          "direction": [
+            1,
+            0
+          ],
+          "before_width_cells": 2.0,
+          "after_class": 2,
+          "after_same_class_width_cells": 0.0,
+          "status": "归并到相邻区域"
+        },
+        {
+          "sample_xy": [
+            782,
+            793
+          ],
+          "direction": [
+            1,
+            1
+          ],
+          "before_width_cells": 2.8284271247461903,
+          "after_class": 2,
+          "after_same_class_width_cells": 0.0,
+          "status": "归并到相邻区域"
+        },
+        {
+          "sample_xy": [
+            782,
+            793
+          ],
+          "direction": [
+            -1,
+            1
+          ],
+          "before_width_cells": 2.8284271247461903,
+          "after_class": 2,
+          "after_same_class_width_cells": 0.0,
+          "status": "归并到相邻区域"
+        },
+        {
+          "sample_xy": [
+            782,
+            793
+          ],
+          "direction": [
+            -1,
+            1
+          ],
+          "before_width_cells": 1.4142135623730951,
+          "after_class": 2,
+          "after_same_class_width_cells": 0.0,
+          "status": "归并到相邻区域"
+        }
+      ],
+      "post_repair_extended_candidates_in_scope": [],
+      "reviewed_issue_status": "已消除"
+    },
+    {
+      "before": {
+        "bounds_full_grid": [
+          636,
+          689,
+          642,
+          692
+        ],
+        "center_extent_cells": 5.0,
+        "class": 1,
+        "extended_candidate": true,
+        "id": 57,
+        "kind": "第1层",
+        "minimum_sampled_width_cells": 1.4142135623730951,
+        "review": {
+          "method": "核对本版分层局部放大图及原始宽度断面；确有细长尾部、层间窄连接或水域窄颈",
+          "repaired": false,
+          "required_action": "在明确修订任务中就近归并不足部分；若属于后续交战路线则须按10格要求补足，联动复验保留水体归属和岸线",
+          "status": "失败"
+        },
+        "sections": [
+          {
+            "center": [
+              637.0,
+              690.5
+            ],
+            "class": 1,
+            "direction": [
+              0,
+              1
+            ],
+            "first": [
+              637.0,
+              689.0
+            ],
+            "intersected_cells": 4,
+            "last": [
+              637.0,
+              692.0
+            ],
+            "width_cells": 4.0
+          },
+          {
+            "center": [
+              636.0,
+              690.0
+            ],
+            "class": 1,
+            "direction": [
+              1,
+              1
+            ],
+            "first": [
+              635.0,
+              689.0
+            ],
+            "intersected_cells": 3,
+            "last": [
+              637.0,
+              691.0
+            ],
+            "width_cells": 4.242640687119286
+          },
+          {
+            "center": [
+              637.0,
+              690.0
+            ],
+            "class": 1,
+            "direction": [
+              1,
+              1
+            ],
+            "first": [
+              636.0,
+              689.0
+            ],
+            "intersected_cells": 3,
+            "last": [
+              638.0,
+              691.0
+            ],
+            "width_cells": 4.242640687119286
+          },
+          {
+            "center": [
+              638.0,
+              690.0
+            ],
+            "class": 1,
+            "direction": [
+              0,
+              1
+            ],
+            "first": [
+              638.0,
+              689.0
+            ],
+            "intersected_cells": 3,
+            "last": [
+              638.0,
+              691.0
+            ],
+            "width_cells": 3.0
+          },
+          {
+            "center": [
+              638.0,
+              690.0
+            ],
+            "class": 1,
+            "direction": [
+              1,
+              1
+            ],
+            "first": [
+              637.0,
+              689.0
+            ],
+            "intersected_cells": 3,
+            "last": [
+              639.0,
+              691.0
+            ],
+            "width_cells": 4.242640687119286
+          },
+          {
+            "center": [
+              639.0,
+              690.0
+            ],
+            "class": 1,
+            "direction": [
+              0,
+              1
+            ],
+            "first": [
+              639.0,
+              689.0
+            ],
+            "intersected_cells": 3,
+            "last": [
+              639.0,
+              691.0
+            ],
+            "width_cells": 3.0
+          },
+          {
+            "center": [
+              638.5,
+              689.5
+            ],
+            "class": 1,
+            "direction": [
+              1,
+              1
+            ],
+            "first": [
+              638.0,
+              689.0
+            ],
+            "intersected_cells": 2,
+            "last": [
+              639.0,
+              690.0
+            ],
+            "width_cells": 2.8284271247461903
+          },
+          {
+            "center": [
+              640.0,
+              689.5
+            ],
+            "class": 1,
+            "direction": [
+              0,
+              1
+            ],
+            "first": [
+              640.0,
+              689.0
+            ],
+            "intersected_cells": 2,
+            "last": [
+              640.0,
+              690.0
+            ],
+            "width_cells": 2.0
+          },
+          {
+            "center": [
+              639.5,
+              689.5
+            ],
+            "class": 1,
+            "direction": [
+              1,
+              1
+            ],
+            "first": [
+              639.0,
+              689.0
+            ],
+            "intersected_cells": 2,
+            "last": [
+              640.0,
+              690.0
+            ],
+            "width_cells": 2.8284271247461903
+          },
+          {
+            "center": [
+              640.0,
+              690.0
+            ],
+            "class": 1,
+            "direction": [
+              -1,
+              1
+            ],
+            "first": [
+              641.0,
+              689.0
+            ],
+            "intersected_cells": 3,
+            "last": [
+              639.0,
+              691.0
+            ],
+            "width_cells": 4.242640687119286
+          },
+          {
+            "center": [
+              641.0,
+              689.0
+            ],
+            "class": 1,
+            "direction": [
+              1,
+              1
+            ],
+            "first": [
+              641.0,
+              689.0
+            ],
+            "intersected_cells": 1,
+            "last": [
+              641.0,
+              689.0
+            ],
+            "width_cells": 1.4142135623730951
+          },
+          {
+            "center": [
+              641.0,
+              689.5
+            ],
+            "class": 1,
+            "direction": [
+              0,
+              1
+            ],
+            "first": [
+              641.0,
+              689.0
+            ],
+            "intersected_cells": 2,
+            "last": [
+              641.0,
+              690.0
+            ],
+            "width_cells": 2.0
+          },
+          {
+            "center": [
+              640.5,
+              689.5
+            ],
+            "class": 1,
+            "direction": [
+              1,
+              1
+            ],
+            "first": [
+              640.0,
+              689.0
+            ],
+            "intersected_cells": 2,
+            "last": [
+              641.0,
+              690.0
+            ],
+            "width_cells": 2.8284271247461903
+          },
+          {
+            "center": [
+              641.0,
+              690.0
+            ],
+            "class": 1,
+            "direction": [
+              -1,
+              1
+            ],
+            "first": [
+              641.0,
+              690.0
+            ],
+            "intersected_cells": 1,
+            "last": [
+              641.0,
+              690.0
+            ],
+            "width_cells": 1.4142135623730951
+          }
+        ],
+        "status": "待核验",
+        "triage": "延伸窄段，须核对伸入形态与用途"
+      },
+      "candidate_id": 57,
+      "design_opening_radius_cells": 3,
+      "merges": [
+        {
+          "cells": 15,
+          "changed_full_grid_indices": [
+            579395,
+            579396,
+            579397,
+            579398,
+            580237,
+            579399,
+            580238,
+            581077,
+            579400,
+            580239,
+            581078,
+            579401,
+            580240,
+            581079,
+            580241
+          ],
+          "from": 1,
+          "shared_edges_before": [
+            7,
+            0,
+            7,
+            0,
+            0,
+            0
+          ],
+          "to": 2
+        },
+        {
+          "cells": 1,
+          "changed_full_grid_indices": [
+            584436
+          ],
+          "from": 1,
+          "shared_edges_before": [
+            2,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "to": 0
+        }
+      ],
+      "scope_xy_exclusive": [
+        630,
+        683,
+        648,
+        698
+      ],
+      "after_width_witnesses": [
+        {
+          "sample_xy": [
+            637,
+            691
+          ],
+          "direction": [
+            0,
+            1
+          ],
+          "before_width_cells": 4.0,
+          "after_class": 2,
+          "after_same_class_width_cells": 0.0,
+          "status": "归并到相邻区域"
+        },
+        {
+          "sample_xy": [
+            636,
+            690
+          ],
+          "direction": [
+            1,
+            1
+          ],
+          "before_width_cells": 4.242640687119286,
+          "after_class": 1,
+          "after_same_class_width_cells": 1.4142135623730951,
+          "status": "仅剩短封端／圆角；前后图人工复核，不是延伸细条"
+        },
+        {
+          "sample_xy": [
+            637,
+            690
+          ],
+          "direction": [
+            1,
+            1
+          ],
+          "before_width_cells": 4.242640687119286,
+          "after_class": 2,
+          "after_same_class_width_cells": 0.0,
+          "status": "归并到相邻区域"
+        },
+        {
+          "sample_xy": [
+            638,
+            690
+          ],
+          "direction": [
+            0,
+            1
+          ],
+          "before_width_cells": 3.0,
+          "after_class": 2,
+          "after_same_class_width_cells": 0.0,
+          "status": "归并到相邻区域"
+        },
+        {
+          "sample_xy": [
+            638,
+            690
+          ],
+          "direction": [
+            1,
+            1
+          ],
+          "before_width_cells": 4.242640687119286,
+          "after_class": 2,
+          "after_same_class_width_cells": 0.0,
+          "status": "归并到相邻区域"
+        },
+        {
+          "sample_xy": [
+            639,
+            690
+          ],
+          "direction": [
+            0,
+            1
+          ],
+          "before_width_cells": 3.0,
+          "after_class": 2,
+          "after_same_class_width_cells": 0.0,
+          "status": "归并到相邻区域"
+        },
+        {
+          "sample_xy": [
+            639,
+            690
+          ],
+          "direction": [
+            1,
+            1
+          ],
+          "before_width_cells": 2.8284271247461903,
+          "after_class": 2,
+          "after_same_class_width_cells": 0.0,
+          "status": "归并到相邻区域"
+        },
+        {
+          "sample_xy": [
+            640,
+            690
+          ],
+          "direction": [
+            0,
+            1
+          ],
+          "before_width_cells": 2.0,
+          "after_class": 2,
+          "after_same_class_width_cells": 0.0,
+          "status": "归并到相邻区域"
+        },
+        {
+          "sample_xy": [
+            640,
+            690
+          ],
+          "direction": [
+            1,
+            1
+          ],
+          "before_width_cells": 2.8284271247461903,
+          "after_class": 2,
+          "after_same_class_width_cells": 0.0,
+          "status": "归并到相邻区域"
+        },
+        {
+          "sample_xy": [
+            640,
+            690
+          ],
+          "direction": [
+            -1,
+            1
+          ],
+          "before_width_cells": 4.242640687119286,
+          "after_class": 2,
+          "after_same_class_width_cells": 0.0,
+          "status": "归并到相邻区域"
+        },
+        {
+          "sample_xy": [
+            641,
+            689
+          ],
+          "direction": [
+            1,
+            1
+          ],
+          "before_width_cells": 1.4142135623730951,
+          "after_class": 2,
+          "after_same_class_width_cells": 0.0,
+          "status": "归并到相邻区域"
+        },
+        {
+          "sample_xy": [
+            641,
+            690
+          ],
+          "direction": [
+            0,
+            1
+          ],
+          "before_width_cells": 2.0,
+          "after_class": 2,
+          "after_same_class_width_cells": 0.0,
+          "status": "归并到相邻区域"
+        },
+        {
+          "sample_xy": [
+            641,
+            690
+          ],
+          "direction": [
+            1,
+            1
+          ],
+          "before_width_cells": 2.8284271247461903,
+          "after_class": 2,
+          "after_same_class_width_cells": 0.0,
+          "status": "归并到相邻区域"
+        },
+        {
+          "sample_xy": [
+            641,
+            690
+          ],
+          "direction": [
+            -1,
+            1
+          ],
+          "before_width_cells": 1.4142135623730951,
+          "after_class": 2,
+          "after_same_class_width_cells": 0.0,
+          "status": "归并到相邻区域"
+        }
+      ],
+      "post_repair_extended_candidates_in_scope": [],
+      "reviewed_issue_status": "已消除"
+    }
+  ],
+  "shore_reconciliation": [],
+  "terrain_crc32": 2490101445,
+  "post_repair_width_screen": {
+    "file": "width-candidates-repair-2026-10-30.json",
+    "extended_candidates": 0,
+    "all_remaining_extended_candidates_touch_frame": true,
+    "interior_extended_candidates": 0,
+    "full_arbitrary_angle_width_certified": false
+  },
+  "independent_checks_passed": true
+}

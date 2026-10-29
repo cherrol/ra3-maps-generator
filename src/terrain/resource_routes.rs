@@ -26,15 +26,24 @@ pub struct Policy {
 impl Default for Policy {
     fn default() -> Self {
         Self {
-            mines_per_seat: 6,
-            home_radius: 100.,
-            home_maximum: 3,
-            route_count: 4,
-            main_route_max_distance: 65.,
-            fourth_progress: [0.10, 0.35],
-            hotspot_progress: [0.33, 0.67],
-            secondary_max_distance: 75.,
-            secondary_min_main_distance: 35.,
+            mines_per_seat: crate::rules::count("resource_distribution", "mines_per_seat"),
+            home_radius: crate::rules::number("resource_distribution", "home_radius"),
+            home_maximum: crate::rules::count("resource_distribution", "home_maximum"),
+            route_count: crate::rules::count("resource_distribution", "route_count"),
+            main_route_max_distance: crate::rules::number(
+                "resource_distribution",
+                "main_route_max_distance",
+            ),
+            fourth_progress: crate::rules::range("resource_distribution", "fourth_progress"),
+            hotspot_progress: crate::rules::range("resource_distribution", "hotspot_progress"),
+            secondary_max_distance: crate::rules::number(
+                "resource_distribution",
+                "secondary_max_distance",
+            ),
+            secondary_min_main_distance: crate::rules::number(
+                "resource_distribution",
+                "secondary_min_main_distance",
+            ),
         }
     }
 }

@@ -1,0 +1,167 @@
+{
+  "map_id": "青海",
+  "date": "2026-10-30",
+  "terrain_sha256": "4482503b3a52c261fdc1f8c767d6492cd9ec3859826df453b6371ec2ea3d12c7",
+  "report_sha256": "b72e9c0655cc1bde51dd27be2e25cca4a3c8e1b61fec6cb8d51544c01ce077c3",
+  "frame": {
+    "border": 20,
+    "cell_size": 10.0,
+    "height": 840,
+    "width": 840,
+    "z_scale": 0.0390625
+  },
+  "active_land_layers": [
+    3,
+    4,
+    5
+  ],
+  "layer_counts": {
+    "4": 583004,
+    "3": 6773,
+    "0": 4834,
+    "5": 45389
+  },
+  "images": [
+    {
+      "file": "source.png",
+      "sha256": "e09452d19fd9d1551cde47845f15bc22e21b25c17c33fc420acf93969e6f1102",
+      "crc32": 1279531353,
+      "size": [
+        1104,
+        1002
+      ],
+      "passed": true
+    },
+    {
+      "file": "preview.png",
+      "sha256": "181d2b90e8d03a5e8ef4b8953275d3f5e3d7942b470b09698686701d01302947",
+      "crc32": 144350971,
+      "size": [
+        1104,
+        1002
+      ],
+      "passed": true
+    },
+    {
+      "file": "preview--line.png",
+      "sha256": "af19b2c78fae7c81c7a9b385f1da5c4b61b129abc50a62edf81ccc2b0897de37",
+      "crc32": 1299717296,
+      "size": [
+        1104,
+        1002
+      ],
+      "passed": true
+    },
+    {
+      "file": "preview--center--line.png",
+      "sha256": "6d2f9ac1f94f10bdc81b7fce3e26a6a0cc514a65dfd5df3ee0d40c9cbd43b641",
+      "crc32": 658793608,
+      "size": [
+        1104,
+        1002
+      ],
+      "passed": true
+    }
+  ],
+  "preview_pixels_checked": 640000,
+  "preview_pixel_mismatches": 0,
+  "pixel_mismatch_samples": [],
+  "waterbodies": [
+    {
+      "water_cells": 2671,
+      "bounds": [
+        622,
+        230,
+        682,
+        301
+      ],
+      "open": false,
+      "contacts": {
+        "4": 278
+      }
+    },
+    {
+      "water_cells": 978,
+      "bounds": [
+        471,
+        454,
+        514,
+        485
+      ],
+      "open": false,
+      "contacts": {
+        "4": 148
+      }
+    },
+    {
+      "water_cells": 1185,
+      "bounds": [
+        42,
+        599,
+        82,
+        644
+      ],
+      "open": false,
+      "contacts": {
+        "5": 170
+      }
+    }
+  ],
+  "enclosed_waterbodies": 3,
+  "single_layer_errors": [],
+  "existing_image_array_and_shore_checks": "通过",
+  "errors": [],
+  "candidate_widths": "width scan in separate native report",
+  "combat_routes": "待核验：预览未提供绑定本版设计数组的已定交战路线，不推断10格净宽通过",
+  "gift_buildings": "不适用：本次仅验收设计预览；没有预览赠送落点，不等同于现有可玩成品的赠送排除通过",
+  "native_passability_and_shore_transitions": "待可玩制作原生验收，预览色块不证明通行",
+  "overall_status": "失败",
+  "schema_version": 1,
+  "policy": {
+    "combat_route_minimum_width_cells": 10.0,
+    "intrusion_minimum_width_cells": 5.0,
+    "exclude_gift_buildings_from_intrusions": true
+  },
+  "policy_sha256": "e2a689249a33b6d6a56348ac53a7eccc748d886e3591c0dc04c953d5f7d08aa9",
+  "confirmed_width_failures": [
+    {
+      "candidate_id": 10,
+      "kind": "第4层",
+      "bounds_full_grid": [
+        70,
+        385,
+        72,
+        394
+      ],
+      "minimum_sampled_width_cells": 1.0,
+      "status": "失败"
+    },
+    {
+      "candidate_id": 27,
+      "kind": "第5层",
+      "bounds_full_grid": [
+        57,
+        720,
+        59,
+        727
+      ],
+      "minimum_sampled_width_cells": 1.0,
+      "status": "失败"
+    }
+  ],
+  "width_evidence": "width-candidates-2026-10-30.json",
+  "width_diagnostic": "width-diagnostics-2026-10-30.png",
+  "extended_candidate_records": 2,
+  "short_candidate_records": 407,
+  "source_arrays_and_images_preserved": true,
+  "checks": {
+    "PREVIEW.GRID": "通过",
+    "PREVIEW.ARRAY_IMAGE_CONSISTENCY": "通过",
+    "SHORE.SINGLE_LAYER": "通过",
+    "TERRAIN.INTRUSIONS": "失败",
+    "TERRAIN.ROUTE_WIDTH": "待核验",
+    "GAMEPLAY.GIFT_TERRAIN": "不适用",
+    "SHORE.NATIVE_PERIMETER": "待可玩制作验收"
+  },
+  "acceptance_boundary": "本轮为34地区设计预览重新验收。普通预览没有绑定本版数组的已定交战路线、坡道及实体阻挡，不能判定10格实际净宽通过；没有赠送建筑落点，赠送排除不适用。可玩成品另验，不借用旧成品路线代替当前预览。四向筛查保留所有短断面及裁切候选，不将无延伸候选等同完整形态通过。"
+}

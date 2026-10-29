@@ -12,6 +12,8 @@ cargo run --release --locked -- coordinates --map <id>
 
 每张图在资源落点前建立独立 `coordinates::Frame`。格坐标原点是完整高度网格西北采样点 `(0,0)`，X 向东、Y 向南；游戏世界坐标 X 向东、Y 向北。资源位置先在格坐标内计算，再用本图 Frame 换算为原生对象坐标；读回时使用同一 Frame 的逆变换，不能按 PNG 像素、其他地图的固定尺寸或单位猜算。
 
+官方资产的局部几何和出口偏移同样经 `Frame.local_to_grid` 按实际原生朝向旋转换算，沿用本图格长和翻 Y 关系，不增加另一套坐标帧。重复建立声明时，字节相同则复用已有文件，不重复写盘。来源、版本导出和设计预览声明各自的用途与范围继续保留。
+
 以 `W=width`、`H=height`、`B=border`、`C=cell_size`、`S=z_scale` 表示本图参数：
 
 ```text

@@ -4,6 +4,7 @@
 
 > 来源：OpenSAGE 开源项目（https://github.com/OpenSAGE/OpenSAGE，master 分支）
 > 主要参考目录：`src/OpenSage.Game/Data/Map/`、`src/OpenSage.Game/Logic/Map/`、`src/OpenSage.Game/Scripting/`、`src/OpenSage.FileFormats/BinaryReaderExtensions.cs`
+> 本地对照数据：196 张官方 `.map` 源文件及其 `map.xml` 在 [EA 官方 RA3 数据镜像](ea-modding/README.md) 的 `data/ea-modding/red-alert-3/Xml/Maps/`，可以用来核对字节；模板与字段定义看同镜像的 `Schemas/`。
 > 适用范围：`SageGame.Ra3` 与 `SageGame.Ra3Uprising`。文中所有未标注"未能确认"的内容均直接来自 OpenSAGE 解析代码。
 >
 > **字节序：除非特别说明，全部为小端（little-endian）。无任何对齐/填充。**
@@ -922,7 +923,8 @@ p.flipud(img)，并且**对象标注与出生点标签的 y
 | 三层 | **420** | ✓ | 本轮新增（`levels` 第四档） |
 | **高山** | **480 ~ 1000** | ✗ | 由真实 DEM（>850 m）生成，连片、不可通行 |
 
-**(1) 平台默认是"陡坎 + 少量斜坡口"**
+**(1) 平台采用“陡坎 + 按通行需求布置的斜坡口”**
+斜坡数量不限制，按玩家通往交战区与矿、油井、医院等中立资源的需要布置；现行规则及验收见[斜坡数量与通行布局](mountain_ramps.md#斜坡数量与通行布局)，下述旧实现中的 N 不表示数量上限。
 不再全局做坡度限制（那样会把所有边界抹成缓坡、到处是中间高度）。
 做法：量化到精确层高 → 边界天然是陡坎（坡度超限 → 自动不可通行）→
 只在 N 个"口子"（`ramp_openings`，选在外侧地形最平坦处，半径 `ramp_half_width`）做缓坡。

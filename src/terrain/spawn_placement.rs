@@ -25,10 +25,10 @@ pub struct Policy {
 impl Default for Policy {
     fn default() -> Self {
         Self {
-            base_radius: 8.,
-            ore_radius: 20.,
-            flat_tolerance: 3.,
-            near_ore_radius: 62.,
+            base_radius: crate::rules::number("spawn_placement", "base_radius"),
+            ore_radius: crate::rules::number("spawn_placement", "ore_radius"),
+            flat_tolerance: crate::rules::number("spawn_placement", "flat_tolerance"),
+            near_ore_radius: crate::rules::number("spawn_placement", "near_ore_radius"),
         }
     }
 }
@@ -765,11 +765,22 @@ pub fn report(p: &Project, m: &MapFile, layout: &Layout, policy: &Policy) -> Res
             })
         })
     };
-    let orientations = [
+    let mut orientations = vec![
         ("east_west", matches(&[0])),
         ("south_north", matches(&[1])),
+        // Preserve the diagnostic field used by immutable source reports.
         ("southeast_northwest", matches(&[0, 1])),
     ];
+    let southwest = positions.iter().enumerate().all(|(i, point)| {
+        if i < 4 {
+            point[0] < center[0] && point[1] > center[1]
+        } else {
+            point[0] > center[0] && point[1] < center[1]
+        }
+    });
+    if southwest {
+        orientations.push(("southwest_northeast", true));
+    }
     let accepted = orientations
         .iter()
         .filter(|(_, passed)| *passed)
@@ -784,7 +795,7 @@ pub fn report(p: &Project, m: &MapFile, layout: &Layout, policy: &Policy) -> Res
             format!("orientation/{}", scene.stamp(&scene.bases)),
             1.,
             vec![],
-            "P1-P4 must all be east/south/southeast, with P5-P8 on the opposite side",
+            "P1-P4 must all be east/south/southwest, with P5-P8 on the opposite side",
         ));
     }
     let mut seats = Vec::new();

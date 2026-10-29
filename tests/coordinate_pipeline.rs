@@ -122,6 +122,79 @@ fn changed_common_ore_policy_invalidates_an_existing_spatial_cache() {
             .contains("main route")
     );
 }
+
+#[test]
+fn explicit_ramp_strictness_cannot_reuse_an_inherited_spatial_cache() {
+    let root = fixture();
+    let mut p = load(&root);
+    p.cfg.as_object_mut().unwrap().remove("RAMP_CLEARANCE");
+    let path = root.0.join("templates/rules/coordinate-pipeline.json");
+    let mut common: Value = serde_json::from_slice(&fs::read(&path).unwrap()).unwrap();
+    common["ramp_clearance"]["gap"] = json!(1000.);
+    project::write_json(&path, &common).unwrap();
+    let cached = pipeline::audit(&p).unwrap();
+    assert_eq!(cached["ramp_clearance"]["status"], "compared_with_source");
+    assert_eq!(cached["ramp_clearance"]["passed"], true);
+    assert_eq!(cached["ramp_clearance"]["raw_passed"], false);
+    let inherited_policy =
+        serde_json::to_value(ra3maps::terrain::ramp_clearance::policy(&p).unwrap()).unwrap();
+    p.cfg["RAMP_CLEARANCE"] = json!({});
+    assert_eq!(
+        inherited_policy,
+        serde_json::to_value(ra3maps::terrain::ramp_clearance::policy(&p).unwrap()).unwrap()
+    );
+    assert!(
+        pipeline::audit(&p)
+            .unwrap_err()
+            .to_string()
+            .contains("ramp approach clearance rejected")
+    );
+}
+
+#[test]
+fn ramp_reference_path_and_contents_invalidate_a_successful_spatial_cache() {
+    let root = fixture();
+    let mut p = load(&root);
+    p.cfg.as_object_mut().unwrap().remove("RAMP_CLEARANCE");
+    let files = source_files(&p);
+    let native = MapFile::load_bytes(&files[&format!("{}.map", p.name)]).unwrap();
+    let layout: Layout = serde_json::from_slice(&files["layout.json"]).unwrap();
+    let reference = ra3maps::terrain::ramp_clearance::reference(&p, &native, &layout).unwrap();
+    for name in ["ramp-reference.json", "other-ramp-reference.json"] {
+        project::write_json(&p.path(name).unwrap(), &reference).unwrap();
+    }
+    let inherited = pipeline::audit(&p).unwrap();
+    p.cfg["RAMP_CLEARANCE_REFERENCE"] = json!("ramp-reference.json");
+    let first = pipeline::audit(&p).unwrap();
+    assert_eq!(
+        first["ramp_clearance"]["status"],
+        "immutable_historical_reference"
+    );
+    assert_ne!(first["input_crc32"], inherited["input_crc32"]);
+    p.cfg["RAMP_CLEARANCE_REFERENCE"] = json!("other-ramp-reference.json");
+    let second = pipeline::audit(&p).unwrap();
+    assert_ne!(second["input_crc32"], first["input_crc32"]);
+    let path = p.path("other-ramp-reference.json").unwrap();
+    let mut altered = reference.clone();
+    altered["geometry_crc32"] = json!(0);
+    assert_ne!(altered, reference);
+    project::write_json(&path, &altered).unwrap();
+    assert!(
+        pipeline::audit(&p)
+            .unwrap_err()
+            .to_string()
+            .contains("historical ramp clearance reference differs")
+    );
+    fs::remove_file(path).unwrap();
+    assert!(pipeline::audit(&p).is_err());
+    // Explicit strict mode takes precedence over the historical reference.
+    p.cfg["RAMP_CLEARANCE"] = json!({});
+    assert_eq!(
+        pipeline::audit(&p).unwrap()["ramp_clearance"]["status"],
+        "strict"
+    );
+}
+
 fn next_version(p: &Project) -> String {
     project::format_version(&project::bump(&p.state, false, 1, "").unwrap()).unwrap()
 }

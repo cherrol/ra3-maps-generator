@@ -1,0 +1,24 @@
+{
+  "schema_version": 2,
+  "date": "2026-10-30",
+  "map_id": "山西",
+  "rule": "SHORE.SINGLE_LAYER",
+  "baseline": "raw/before-intrusion-repair-2026-10-30",
+  "previous_report": "raw/before-intrusion-repair-2026-10-30/water-layer-verification.json",
+  "candidate_terrain_crc32": 7247433,
+  "all_applicable_passed": true,
+  "actual_arrays_and_images_verified": true,
+  "source_elevation_and_geographic_arrays_preserved": true,
+  "water_and_source_arrays_preserved": true,
+  "changed_water_cells": 0,
+  "image_crc32": {
+    "preview--center--line.png": 1939764028,
+    "preview--line.png": 2025998444,
+    "preview.png": 3028734548,
+    "source.png": 2635085905
+  },
+  "waterbodies": [],
+  "contact_method": "all current four-neighbor shore edges, full outer and inner perimeter; retained enclosed bodies keep the prior dominant owner",
+  "playable_passability_verified": false,
+  "repair_report": "intrusion-repair-2026-10-30.json"
+}

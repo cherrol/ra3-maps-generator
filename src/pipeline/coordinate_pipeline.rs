@@ -18,8 +18,6 @@ struct Settings {
     source_package: String,
     layout: String,
     baseline: String,
-    #[serde(default)]
-    policy: Option<String>,
     source_name: String,
     source_crc32: u32,
 }
@@ -28,6 +26,12 @@ struct Source {
     files: Vec<(String, Vec<u8>)>,
     map: Arc<MapFile>,
     layout: Layout,
+}
+struct Projection {
+    source: Source,
+    layout: Layout,
+    map: Arc<MapFile>,
+    terrain_xml: Option<String>,
 }
 pub fn enabled(p: &Project) -> bool {
     p.cfg["COORDINATE_PIPELINE"].is_object()
@@ -245,7 +249,7 @@ pub fn layout(p: &Project) -> Result<Layout> {
     let s = source(p)?;
     layout_with_source(p, &s)
 }
-fn projected(p: &Project) -> Result<(Source, Layout, Arc<MapFile>)> {
+fn projected(p: &Project) -> Result<Projection> {
     let s = source(p)?;
     let layout = layout_with_source(p, &s)?;
     let mut m = Arc::clone(&s.map);
@@ -284,21 +288,29 @@ fn projected(p: &Project) -> Result<(Source, Layout, Arc<MapFile>)> {
     if moved_waypoint {
         crate::gameplay::production_facing::apply(p, Arc::make_mut(&mut m))?;
     }
-    if p.name != s.settings.source_name {
+    let terrain_xml = if p.name != s.settings.source_name {
         let xml = s
             .files
             .iter()
             .find(|(n, _)| n == "map.xml")
             .ok_or_else(|| err("coordinate source has no map.xml"))?;
-        crate::resources::finalize_terrain_package(
+        let finalized = crate::resources::finalize_terrain_package(
             p,
             Arc::make_mut(&mut m),
             std::str::from_utf8(&xml.1)?,
             &p.version,
             crate::resources::TerrainFinalization::PreserveLookups,
         )?;
-    }
-    Ok((s, layout, m))
+        Some(finalized.xml)
+    } else {
+        None
+    };
+    Ok(Projection {
+        source: s,
+        layout,
+        map: m,
+        terrain_xml,
+    })
 }
 fn native_terrain(p: &Project, m: &MapFile, layout: Layout) -> Result<Terrain> {
     let hm = HeightMap::parse(m.get("HeightMapData")?)?;
@@ -335,23 +347,11 @@ fn native_surface(t: &Terrain, m: &MapFile) -> Result<Surface> {
             .collect(),
     })
 }
-fn policy(p: &Project, s: &Settings) -> Result<Policy> {
-    let mut data: Json = serde_json::from_slice(&fs::read(
-        p.root.join("templates/rules/coordinate-pipeline.json"),
-    )?)?;
-    if let Some(path) = &s.policy {
-        let overrides: Json = serde_json::from_slice(&fs::read(p.path(path)?)?)?;
-        let fields = overrides
-            .as_object()
-            .ok_or_else(|| err("spatial policy overrides must be an object"))?;
-        for (key, value) in fields {
-            data[key] = value.clone();
-        }
-    }
-    Ok(serde_json::from_value(data)?)
+fn policy(p: &Project, _s: &Settings) -> Result<Policy> {
+    crate::terrain::spatial::policy(p)
 }
 pub(crate) fn spatial_policy(p: &Project) -> Result<Policy> {
-    policy(p, &settings(p)?)
+    crate::terrain::spatial::policy(p)
 }
 fn source_clearance(p: &Project, m: &MapFile, layout: &Layout, s: &Source) -> Result<Option<Json>> {
     let mut checked =
@@ -454,16 +454,31 @@ fn analyse(
     Ok((report, issues))
 }
 pub fn audit(p: &Project) -> Result<Json> {
-    let (s, layout, m) = projected(p)?;
+    audit_projected(p, &projected(p)?)
+}
+fn audit_projected(p: &Project, projection: &Projection) -> Result<Json> {
+    let Projection {
+        source: s,
+        layout,
+        map: m,
+        ..
+    } = projection;
     let baseline_bytes = fs::read(p.path(&s.settings.baseline)?)?;
     let mut key = crc32fast::Hasher::new();
-    key.update(b"coordinate-audit-v10-common-ore-allocation");
+    key.update(b"coordinate-audit-v12-rectangular-spatial-policy");
     key.update(&serde_json::to_vec(
         &crate::terrain::resource_routes::binding(p)?,
     )?);
     key.update(&serde_json::to_vec(
         &crate::terrain::ramp_clearance::policy(p)?,
     )?);
+    key.update(&serde_json::to_vec(&p.cfg.get("RAMP_CLEARANCE"))?);
+    key.update(&serde_json::to_vec(&p.cfg.get("RAMP_CLEARANCE_REFERENCE"))?);
+    if p.cfg.get("RAMP_CLEARANCE").is_none()
+        && let Some(reference) = p.cfg["RAMP_CLEARANCE_REFERENCE"].as_str()
+    {
+        key.update(&fs::read(p.path(reference)?)?);
+    }
     key.update(&serde_json::to_vec(
         &crate::terrain::spawn_placement::policy(p)?,
     )?);
@@ -482,7 +497,7 @@ pub fn audit(p: &Project) -> Result<Json> {
     }
     key.update(p.name.as_bytes());
     key.update(&m.encode()?);
-    key.update(&serde_json::to_vec(&layout)?);
+    key.update(&serde_json::to_vec(layout)?);
     key.update(&serde_json::to_vec(&policy(p, &s.settings)?)?);
     key.update(&baseline_bytes);
     let input_crc32 = key.finalize();
@@ -503,7 +518,7 @@ pub fn audit(p: &Project) -> Result<Json> {
         }
         return Ok(cached);
     }
-    let (mut report, issues) = analyse(p, &m, &layout, Some(&s))?;
+    let (mut report, issues) = analyse(p, m, layout, Some(s))?;
     let baseline: Vec<Issue> = serde_json::from_slice(&baseline_bytes)?;
     let regressions = spatial::regressions(&issues, &baseline);
     report["regressions"] = serde_json::to_value(&regressions)?;
@@ -614,13 +629,19 @@ fn reports_archive(p: &Project) -> Result<()> {
 }
 pub fn prepare(p: &Project) -> Result<()> {
     crate::coordinates::prepare(p)?;
-    let (_, layout, m) = projected(p)?;
+    let Projection { layout, map: m, .. } = projected(p)?;
     native_terrain(p, &m, layout)?.save(p)
 }
 pub fn assemble(p: &Project) -> Result<()> {
     crate::coordinates::prepare(p)?;
-    audit(p)?;
-    let (s, layout, m) = projected(p)?;
+    let projection = projected(p)?;
+    audit_projected(p, &projection)?;
+    let Projection {
+        source: s,
+        layout,
+        map: m,
+        terrain_xml,
+    } = projection;
     let original = map::objects(s.map.get("ObjectsList")?, &s.map.table)?;
     let actual = map::objects(m.get("ObjectsList")?, &m.table)?;
     let changed = original != actual;
@@ -654,28 +675,18 @@ pub fn assemble(p: &Project) -> Result<()> {
                 .clone()
         } else if n == "map.xml" && (changed || p.name != s.settings.source_name) {
             let xml = crate::gameplay::production_spawns::update_xml(
-                std::str::from_utf8(bytes)?,
+                terrain_xml
+                    .as_deref()
+                    .ok_or_else(|| err("missing finalized coordinate XML"))?,
                 &s.map,
                 &m,
             )?;
-            let mut native = m.as_ref().clone();
-            let finalized = crate::resources::finalize_terrain_package(
-                p,
-                &mut native,
-                &xml,
-                &p.version,
-                crate::resources::TerrainFinalization::PreserveLookups,
-            )?;
-            crate::pipeline::release::retarget_xml(
-                &finalized.xml,
-                &s.settings.source_name,
-                &p.name,
-            )?
-            .replace(
-                &format!("DisplayName=\"{}\"", s.settings.source_name),
-                &format!("DisplayName=\"{}\"", p.name),
-            )
-            .into_bytes()
+            crate::pipeline::release::retarget_xml(&xml, &s.settings.source_name, &p.name)?
+                .replace(
+                    &format!("DisplayName=\"{}\"", s.settings.source_name),
+                    &format!("DisplayName=\"{}\"", p.name),
+                )
+                .into_bytes()
         } else if n == "map.str" && p.name != s.settings.source_name {
             std::str::from_utf8(bytes)?
                 .replace(&s.settings.source_name, &p.name)
@@ -686,6 +697,7 @@ pub fn assemble(p: &Project) -> Result<()> {
         files.push((out, value));
     }
     crate::pipeline::release::validate_runtime_files(&files)?;
+    crate::pipeline::scene::verify_files(p, &m, &files)?;
     // Check all inputs before writing any game file; identical rebuilds keep exact bytes.
     for (n, bytes) in files {
         project::atomic_write(&p.assets.join(n), &bytes)?;
@@ -694,8 +706,14 @@ pub fn assemble(p: &Project) -> Result<()> {
     Ok(())
 }
 pub fn verify(p: &Project) -> Result<MapFile> {
-    let (source, layout, expected) = projected(p)?;
+    let Projection {
+        source,
+        layout,
+        map: expected,
+        ..
+    } = projected(p)?;
     let m = MapFile::load(map_path(p))?;
+    crate::gameplay::ore_facing::verify(p, &m)?;
     if m.encode()? != expected.encode()? {
         return Err(err(
             "native map differs from coordinate inputs; adopt the current complete package before rebuilding",
@@ -716,6 +734,8 @@ pub fn verify(p: &Project) -> Result<MapFile> {
     crate::terrain::resource_routes::validate(p, &m)?;
     source_clearance(p, &m, &layout, &source)?;
     source_spawns(p, &m, &layout, &source)?;
+    let xml = crate::pipeline::scene::read_xml(p)?;
+    crate::pipeline::scene::verify(p, &m, xml.as_deref())?;
     Ok(m)
 }
 pub fn accept(p: &Project) -> Result<()> {
@@ -728,7 +748,7 @@ pub fn accept(p: &Project) -> Result<()> {
     Ok(())
 }
 pub fn preview(p: &Project) -> Result<()> {
-    let (_, layout, m) = projected(p)?;
+    let Projection { layout, map: m, .. } = projected(p)?;
     let t = native_terrain(p, &m, layout)?;
     render::previews(&t, p, &native_surface(&t, &m)?)?;
     Ok(())
@@ -817,6 +837,18 @@ pub fn adopt(p: &Project) -> Result<()> {
             serde_json::to_value(crate::terrain::ramp_clearance::policy(p)?)?;
     }
     let (_, issues) = analyse(&audit_project, &m, &layout, previous.as_ref())?;
+    let mut scene_project = p.clone();
+    if initial {
+        scene_project
+            .cfg
+            .as_object_mut()
+            .unwrap()
+            .remove("COORDINATE_PIPELINE");
+    }
+    if build::placement_proof(&scene_project, bytes)?.is_some() {
+        scene_project = crate::pipeline::scene::incremental_context(&scene_project)?;
+    }
+    crate::pipeline::scene::verify_files(&scene_project, &m, &files)?;
     let selected_layers = crate::terrain::layers::SelectedLayers::load(p)?;
     let source_crc32 = crc32fast::hash(bytes);
     files.push(("layout.json".into(), serde_json::to_vec_pretty(&layout)?));
