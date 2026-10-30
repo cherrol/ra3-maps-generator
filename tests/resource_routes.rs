@@ -282,10 +282,9 @@ fn effective_near_ore_radius_and_public_or_plan_changes_invalidate_bindings() {
             .contains("opening ores")
     );
     p.cfg.as_object_mut().unwrap().remove("SPAWN_PLACEMENT");
-    let original =
-        Path::new(env!("CARGO_MANIFEST_DIR")).join("templates/rules/coordinate-pipeline.json");
+    let original = Path::new(env!("CARGO_MANIFEST_DIR")).join("rules/coordinate-pipeline.json");
     let mut common: Value = serde_json::from_slice(&fs::read(original).unwrap()).unwrap();
-    let public = p.root.join("templates/rules/coordinate-pipeline.json");
+    let public = p.root.join("rules/coordinate-pipeline.json");
     project::write_json(&public, &common).unwrap();
     assert_eq!(resource_routes::binding(&p).unwrap(), binding);
     common["resource_distribution"]["main_route_max_distance"] = json!(1.);

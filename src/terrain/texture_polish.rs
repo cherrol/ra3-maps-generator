@@ -54,6 +54,50 @@ fn pick(names: &[String], candidates: &[&str], fallback: u16) -> u16 {
         .map_or(fallback, |i| i as u16)
 }
 
+/// Height units per cell above which a cell is a steep face (45 degrees at ten
+/// world units per cell). The measured gradient also covers the four- to
+/// six-cell side cuts of a pass, which a single 35-unit step test missed; those
+/// shoulders used to keep the upper grass and read as bright green walls.
+const FACE_SLOPE: f64 = 8.;
+/// Minimum descent from a face cell for the one-cell toe band.
+const TOE_DROP: f64 = 8.;
+/// Keep the beach and its transition free of face materials.
+const FACE_SHORE_CLEARANCE: f64 = 4.;
+
+/// Steep faces and their one-cell toe. The toe stays one cell wide: a wider
+/// soil band followed the diagonal level edges as a staircase of dirt patches.
+fn faces(t: &Terrain, wet: &[bool]) -> (Vec<bool>, Vec<bool>) {
+    let n = t.n;
+    let h = t.height();
+    let face: Vec<_> = (0..n * h)
+        .map(|i| !wet[i] && t.slope[i] >= FACE_SLOPE)
+        .collect();
+    let toe = (0..n * h)
+        .map(|i| {
+            if wet[i] || face[i] {
+                return false;
+            }
+            let x = i % n;
+            let y = i / n;
+            (-1..=1).any(|dy| {
+                (-1..=1).any(|dx| {
+                    if dx == 0 && dy == 0 {
+                        return false;
+                    }
+                    let xx = x as isize + dx;
+                    let yy = y as isize + dy;
+                    if xx < 0 || yy < 0 || xx >= n as isize || yy >= h as isize {
+                        return false;
+                    }
+                    let j = yy as usize * n + xx as usize;
+                    face[j] && t.z[j] - t.z[i] >= TOE_DROP
+                })
+            })
+        })
+        .collect();
+    (face, toe)
+}
+
 fn paint(t: &Terrain, p: &Project, names: &[String], before: &[u16]) -> Vec<u16> {
     let n = t.n;
     let h = t.height();
@@ -111,14 +155,7 @@ fn paint(t: &Terrain, p: &Project, names: &[String], before: &[u16]) -> Vec<u16>
     let shallows = pick(names, &["Reef_Yucatan02", "Reef_Havana02"], reef);
     let levels = crate::terrain::materials::levels(p);
     let peak = water + p.number("PEAK_IMPASSABLE", 235.);
-    let cliff: Vec<_> = (0..n * h)
-        .map(|i| {
-            !wet[i]
-                && crate::terrain::grid::neighbors_rect(i, n, h)
-                    .any(|j| !wet[j] && (t.z[j] - t.z[i]).abs() >= 35.)
-        })
-        .collect();
-    let to_cliff = terrain::distance(&cliff, n);
+    let (face, toe) = faces(t, &wet);
     let mut out = vec![0; n * h];
     for i in 0..n * h {
         if wet[i] {
@@ -151,10 +188,10 @@ fn paint(t: &Terrain, p: &Project, names: &[String], before: &[u16]) -> Vec<u16>
         } else if to_water[i] <= 5. + 2. * detail[i] && field[i] > 0.53 {
             material = dirt;
         }
-        if to_cliff[i] < 0.6 + detail[i] * 0.8 {
+        if to_water[i] > FACE_SHORE_CLEARANCE && face[i] {
             material = rock;
-        } else if to_cliff[i] < 2. + detail[i] * 1.8 {
-            material = if field[i] > 0.5 { gravel } else { dirt };
+        } else if to_water[i] > FACE_SHORE_CLEARANCE && toe[i] {
+            material = if field[i] > 0.45 { gravel } else { dirt };
         }
         out[i] = material;
     }
@@ -739,6 +776,68 @@ mod tests {
                 .unwrap()
                 .contains("only materials")
         );
+    }
+
+    fn stock_names(p: &Project) -> Vec<String> {
+        let mut names: Vec<String> = p.cfg["TEX_SET"]
+            .as_array()
+            .unwrap()
+            .iter()
+            .filter_map(|row| row.as_array()?.first()?.as_str().map(str::to_owned))
+            .collect();
+        for primary in PRIMARY {
+            if !names.iter().any(|name| name == primary) {
+                names.push(primary.to_owned());
+            }
+        }
+        names
+    }
+
+    #[test]
+    fn multi_cell_pass_shoulders_take_rock_and_keep_a_single_toe_cell() {
+        let p = Project::load(Path::new(env!("CARGO_MANIFEST_DIR")), "河南").unwrap();
+        let n = 96;
+        // Upper plateau, a six-cell shoulder (about 10 units per cell) and the
+        // lower plateau. The old single-step rule called none of it a cliff.
+        let z: Vec<_> = (0..n * n)
+            .map(|i| {
+                let y = i / n;
+                if y < 20 {
+                    350.
+                } else if y < 26 {
+                    350. - 70. * (y - 19) as f64 / 7.
+                } else {
+                    280.
+                }
+            })
+            .collect();
+        let t = Terrain {
+            n,
+            raw: vec![0; n * n],
+            slope: terrain::gradient(&z, n),
+            land: vec![true; n * n],
+            z,
+            layout: serde_json::from_value(json!({"schema_version":1,"base_cells":[],
+                "ore_cells":[],"ore_angles":[],"objects":[]}))
+            .unwrap(),
+        };
+        let names = stock_names(&p);
+        let before = vec![0; n * n];
+        let out = paint(&t, &p, &names, &before);
+        let name = |y: usize, x: usize| names[out[y * n + x] as usize].as_str();
+        for y in 20..26 {
+            for x in 12..n - 12 {
+                assert_eq!(name(y, x), "Rock_Yucatan01", "shoulder ({x},{y})");
+            }
+        }
+        // Exactly one toe row below the shoulder, not a wide soil band.
+        for x in 12..n - 12 {
+            assert!(["Gravel_Yucatan01", "Dirt_Yucatan06"].contains(&name(26, x)));
+            assert!(!["Gravel_Yucatan01", "Dirt_Yucatan06"].contains(&name(28, x)));
+        }
+        // Flats keep their layer material.
+        assert!(name(10, 48).starts_with("Grass_"));
+        assert!(name(40, 48).starts_with("Grass_"));
     }
 
     #[test]

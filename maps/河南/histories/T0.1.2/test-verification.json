@@ -1,0 +1,32 @@
+{
+ "version": "T0.1.2",
+ "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.41 x86_64",
+ "rustc": "rustc 1.99.1 (58cf8f9c3 2026-10-13)",
+ "checked_at": "2026-10-30T20:34:00+08:00",
+ "full_test_command": "cargo test --locked --no-fail-fast -- --test-threads=4",
+ "full_test_exit_code": 0,
+ "test_program_summaries": 28,
+ "passed": 328,
+ "failed": 0,
+ "ignored": 0,
+ "clippy_command": "cargo clippy --locked --all-targets -- -D warnings",
+ "clippy_exit_code": 0,
+ "frozen_rebuild_test": "cargo test --locked --test build_regression (current_frozen_map_rebuild_preserves_bytes_and_passes_complete_validation) passed",
+ "adoption_command": "./target/release/ra3maps adopt-coordinate-source --map 河南",
+ "adoption_exit_code": 0,
+ "material_tests": "cargo test --release --lib texture_polish: 5 passed (incl. multi_cell_pass_shoulders_take_rock_and_keep_a_single_toe_cell)",
+ "candidate_equals_published": true,
+ "limits": "Local Linux execution only; no Windows CI, game or WorldBuilder launch. In-game close view of the new rock/soil placement is still unverified.",
+ "logs": {
+  "full-tests.log": {
+   "path": "maps/河南/histories/T0.1.2/validation-logs/full-tests.log",
+   "bytes": 36810,
+   "sha256": "e089d04c9365636c51e4f87d44e4a89e3d39a470d290ae0137136666d671b6b5"
+  },
+  "clippy.log": {
+   "path": "maps/河南/histories/T0.1.2/validation-logs/clippy.log",
+   "bytes": 146,
+   "sha256": "907701071071165fceb773382a8a298d568040db787a236b51a39e1ca439e394"
+  }
+ }
+}

@@ -156,3 +156,129 @@ mod tests {
         assert_eq!(sample(&heights, 2, 3., 2.), 40.);
     }
 }
+
+/// Exact squared Euclidean distance to blocked sample centres on a rectangular grid.
+/// Existing `distance` remains the compatibility chamfer transform used by authoring.
+/// No obstacle means infinity; callers measuring occupied grid squares must subtract
+/// their half diagonal from the square root to obtain a conservative radius.
+pub fn exact_squared_distance(mask: &[bool], width: usize) -> crate::Result<Vec<f64>> {
+    if width == 0 || mask.is_empty() || !mask.len().is_multiple_of(width) {
+        return Err(crate::err(
+            "exact distance requires a nonempty rectangular grid",
+        ));
+    }
+    let height = mask.len() / width;
+    let mut horizontal = vec![f64::INFINITY; mask.len()];
+    for (source, target) in mask.chunks(width).zip(horizontal.chunks_mut(width)) {
+        let values = source
+            .iter()
+            .map(|&blocked| if blocked { 0. } else { f64::INFINITY })
+            .collect::<Vec<_>>();
+        squared_distance_line(&values, target);
+    }
+    let mut result = vec![f64::INFINITY; mask.len()];
+    let mut column = vec![0.; height];
+    let mut transformed = vec![0.; height];
+    for x in 0..width {
+        for y in 0..height {
+            column[y] = horizontal[y * width + x];
+        }
+        squared_distance_line(&column, &mut transformed);
+        for y in 0..height {
+            result[y * width + x] = transformed[y];
+        }
+    }
+    Ok(result)
+}
+
+// Lower envelope of parabolas f[i] + (x-i)^2; finite sites only avoid INF-INF.
+fn squared_distance_line(values: &[f64], out: &mut [f64]) {
+    let mut sites = Vec::<usize>::with_capacity(values.len());
+    let mut boundaries = Vec::<f64>::with_capacity(values.len() + 1);
+    for (q, &value) in values
+        .iter()
+        .enumerate()
+        .filter(|(_, value)| value.is_finite())
+    {
+        let mut boundary = f64::NEG_INFINITY;
+        while let Some(&last) = sites.last() {
+            let qf = q as f64;
+            let lastf = last as f64;
+            boundary = ((value + qf * qf) - (values[last] + lastf * lastf)) / (2. * (qf - lastf));
+            if boundary > *boundaries.last().expect("each site has a boundary") {
+                break;
+            }
+            sites.pop();
+            boundaries.pop();
+        }
+        if sites.is_empty() {
+            boundary = f64::NEG_INFINITY;
+        }
+        sites.push(q);
+        boundaries.push(boundary);
+    }
+    if sites.is_empty() {
+        out.fill(f64::INFINITY);
+        return;
+    }
+    let mut site = 0;
+    for (x, value) in out.iter_mut().enumerate() {
+        while site + 1 < sites.len() && boundaries[site + 1] < x as f64 {
+            site += 1;
+        }
+        *value = (x as f64 - sites[site] as f64).powi(2) + values[sites[site]];
+    }
+}
+
+#[cfg(test)]
+mod exact_distance_tests {
+    use super::*;
+    #[test]
+    fn exact_transform_matches_brute_force_on_rectangular_and_single_axis_grids() {
+        for (width, height) in [(1, 9), (9, 1), (7, 5), (5, 7), (11, 8)] {
+            for seed in 0..8 {
+                let mask = (0..width * height)
+                    .map(|i| (i * 13 + seed * 7) % 17 < 3)
+                    .collect::<Vec<_>>();
+                let exact = exact_squared_distance(&mask, width).unwrap();
+                for (i, &actual) in exact.iter().enumerate() {
+                    let expected = mask
+                        .iter()
+                        .enumerate()
+                        .filter(|(_, yes)| **yes)
+                        .map(|(j, _)| {
+                            let dx = (i % width) as f64 - (j % width) as f64;
+                            let dy = (i / width) as f64 - (j / width) as f64;
+                            dx * dx + dy * dy
+                        })
+                        .fold(f64::INFINITY, f64::min);
+                    assert_eq!(actual, expected, "{width}x{height}, seed {seed}, cell {i}");
+                }
+            }
+        }
+    }
+    #[test]
+    fn no_obstacles_and_all_obstacles_are_explicit_and_invalid_shapes_fail() {
+        assert!(
+            exact_squared_distance(&[false; 15], 5)
+                .unwrap()
+                .iter()
+                .all(|v| v.is_infinite())
+        );
+        assert_eq!(
+            exact_squared_distance(&[true; 15], 5).unwrap(),
+            vec![0.; 15]
+        );
+        assert!(exact_squared_distance(&[], 1).is_err());
+        assert!(exact_squared_distance(&[true], 0).is_err());
+        assert!(exact_squared_distance(&[true; 5], 2).is_err());
+    }
+    #[test]
+    fn diagonal_direction_uses_true_euclidean_distance_instead_of_chamfer() {
+        let mut mask = vec![false; 100];
+        mask[0] = true;
+        let exact = exact_squared_distance(&mask, 10).unwrap();
+        assert_eq!(exact[2 * 10 + 5], 29.);
+        assert!(distance(&mask, 10)[2 * 10 + 5] > exact[2 * 10 + 5].sqrt());
+    }
+}

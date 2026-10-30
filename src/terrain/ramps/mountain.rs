@@ -1,5 +1,5 @@
 //! Mountain passes: a steady central grade, tapered side cuts and local materials.
-//! Reference measurements and WorldBuilder views: docs/mountain_ramps.md.
+//! Reference measurements and WorldBuilder views: docs/spec/mountain_ramps.md.
 use super::*;
 
 /// A constant central grade with short, tangent-continuous landings. Keeping the

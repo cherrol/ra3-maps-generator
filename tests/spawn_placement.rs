@@ -81,7 +81,7 @@ impl Fixture {
             root: root.clone(),
             id: "test".into(),
             cfg: json!({
-                "GRID":width,"BORDER":8,"CELL":2.5,"Z_SCALE":1.,"WATER_Z":200.,
+                "GRID":width,"GRID_HEIGHT":height,"BORDER":8,"CELL":2.5,"Z_SCALE":1.,"WATER_Z":200.,
                 "RAMP_CLEARANCE":{"refinery_back":1.,"refinery_forward":4.,"refinery_half_width":1.}
             }),
             state: json!({}),
@@ -116,6 +116,24 @@ impl Fixture {
     }
 
     fn set_bases(&mut self, bases: Vec<[f64; 2]>, axis: [f64; 2]) {
+        // The fixture explicitly declares its intended sides; production must
+        // not infer these identities from seat ranges or current coordinates.
+        let teams = ["A", "A", "A", "A", "B", "B", "B", "B"];
+        self.project.cfg["BASES"] = json!(
+            bases
+                .iter()
+                .enumerate()
+                .map(|(i, base)| {
+                    json!([
+                        base[0],
+                        base[1],
+                        format!("P{}", i + 1),
+                        teams[i],
+                        if i < 6 { "human" } else { "ai" }
+                    ])
+                })
+                .collect::<Vec<_>>()
+        );
         self.layout.base_cells = bases.clone();
         self.layout.objects.clear();
         self.layout.ore_cells.clear();
@@ -336,6 +354,22 @@ fn full_refinery_fixture() -> Fixture {
         fixture.layout.ore_angles[index] = -f64::from(angle);
     }
     fixture
+}
+
+#[test]
+fn absent_explicit_teams_are_not_inferred_from_seat_ranges_or_positions() {
+    let mut fixture = Fixture::new("west_east");
+    assert_eq!(fixture.report()["passed"], true);
+    fixture.project.cfg.as_object_mut().unwrap().remove("BASES");
+    let error = spawn_placement::report(
+        &fixture.project,
+        &fixture.native(),
+        &fixture.layout,
+        &spawn_placement::policy(&fixture.project).unwrap(),
+    )
+    .unwrap_err()
+    .to_string();
+    assert!(error.contains("teams require BASES"), "{error}");
 }
 
 #[test]

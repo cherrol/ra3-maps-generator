@@ -1,0 +1,1880 @@
+{
+  "candidate_selection": "nearest static base access, then base distance, in the same connected land domain, two-cell search grid; every slot also preserves the public 16-cell runtime blocker and 3-cell clearance, complete geometry plus three-cell separation; public final access and strict geometry checked before saving",
+  "moves": [
+    {
+      "after": [
+        718.0,
+        270.0
+      ],
+      "before": [
+        720.0,
+        272.0
+      ],
+      "distance_from_base_cells": 30.066592756745816,
+      "fixed_safe_candidates": 3334,
+      "primary": true,
+      "production": true,
+      "seat": 7,
+      "static_foundation_access_steps": 27,
+      "waypoint": "dual-civilian-air"
+    },
+    {
+      "after": [
+        782.0,
+        702.0
+      ],
+      "before": [
+        777.0,
+        703.0
+      ],
+      "distance_from_base_cells": 37.656340767525464,
+      "fixed_safe_candidates": 3345,
+      "primary": true,
+      "production": true,
+      "seat": 6,
+      "static_foundation_access_steps": 49,
+      "waypoint": "dual-p6-air"
+    },
+    {
+      "after": [
+        722.0,
+        74.0
+      ],
+      "before": [
+        740.0,
+        133.0
+      ],
+      "distance_from_base_cells": 35.84689665786984,
+      "fixed_safe_candidates": 3349,
+      "primary": true,
+      "production": true,
+      "seat": 5,
+      "static_foundation_access_steps": 46,
+      "waypoint": "dual-p5-air"
+    },
+    {
+      "after": [
+        690.0,
+        278.0
+      ],
+      "before": [
+        723.0,
+        244.0
+      ],
+      "distance_from_base_cells": 37.20215047547655,
+      "fixed_safe_candidates": 3494,
+      "primary": true,
+      "production": true,
+      "seat": 7,
+      "static_foundation_access_steps": 45,
+      "waypoint": "dual-civilian-wf"
+    },
+    {
+      "after": [
+        734.0,
+        44.0
+      ],
+      "before": [
+        791.0,
+        97.0
+      ],
+      "distance_from_base_cells": 61.29437168288782,
+      "fixed_safe_candidates": 3512,
+      "primary": true,
+      "production": true,
+      "seat": 5,
+      "static_foundation_access_steps": 64,
+      "waypoint": "dual-p5-wf"
+    },
+    {
+      "after": [
+        718.0,
+        242.0
+      ],
+      "before": [
+        692.0,
+        287.0
+      ],
+      "distance_from_base_cells": 58.034472514187634,
+      "fixed_safe_candidates": 3605,
+      "primary": true,
+      "production": true,
+      "seat": 7,
+      "static_foundation_access_steps": 55,
+      "waypoint": "dual-civilian-bar"
+    },
+    {
+      "after": [
+        700.0,
+        642.0
+      ],
+      "before": [
+        805.0,
+        681.0
+      ],
+      "distance_from_base_cells": 69.52697318307479,
+      "fixed_safe_candidates": 3625,
+      "primary": true,
+      "production": true,
+      "seat": 6,
+      "static_foundation_access_steps": 95,
+      "waypoint": "dual-p6-wf"
+    },
+    {
+      "after": [
+        798.0,
+        96.0
+      ],
+      "before": [
+        726.0,
+        77.0
+      ],
+      "distance_from_base_cells": 58.69412236331676,
+      "fixed_safe_candidates": 3626,
+      "primary": true,
+      "production": true,
+      "seat": 5,
+      "static_foundation_access_steps": 84,
+      "waypoint": "dual-p5-bar"
+    },
+    {
+      "after": [
+        682.0,
+        734.0
+      ],
+      "before": [
+        735.0,
+        723.0
+      ],
+      "distance_from_base_cells": 74.09453421137081,
+      "fixed_safe_candidates": 3661,
+      "primary": true,
+      "production": true,
+      "seat": 6,
+      "static_foundation_access_steps": 103,
+      "waypoint": "dual-p6-bar"
+    },
+    {
+      "after": [
+        780.0,
+        458.0
+      ],
+      "before": [
+        778.0,
+        465.0
+      ],
+      "distance_from_base_cells": 30.805843601498726,
+      "fixed_safe_candidates": 4193,
+      "primary": true,
+      "production": true,
+      "seat": 8,
+      "static_foundation_access_steps": 37,
+      "waypoint": "dual-creeps-air"
+    },
+    {
+      "after": [
+        112.0,
+        416.0
+      ],
+      "before": [
+        112.0,
+        419.0
+      ],
+      "distance_from_base_cells": 28.0178514522438,
+      "fixed_safe_candidates": 4274,
+      "primary": true,
+      "production": true,
+      "seat": 3,
+      "static_foundation_access_steps": 29,
+      "waypoint": "dual-p3-bar"
+    },
+    {
+      "after": [
+        780.0,
+        486.0
+      ],
+      "before": [
+        806.0,
+        461.0
+      ],
+      "distance_from_base_cells": 36.61966684720111,
+      "fixed_safe_candidates": 4500,
+      "primary": true,
+      "production": true,
+      "seat": 8,
+      "static_foundation_access_steps": 65,
+      "waypoint": "dual-creeps-wf"
+    },
+    {
+      "after": [
+        806.0,
+        388.0
+      ],
+      "before": [
+        768.0,
+        493.0
+      ],
+      "distance_from_base_cells": 95.2102935611481,
+      "fixed_safe_candidates": 4543,
+      "primary": true,
+      "production": true,
+      "seat": 8,
+      "static_foundation_access_steps": 133,
+      "waypoint": "dual-creeps-bar"
+    },
+    {
+      "after": [
+        144.0,
+        140.0
+      ],
+      "before": [
+        117.0,
+        110.0
+      ],
+      "distance_from_base_cells": 30.01666203960727,
+      "fixed_safe_candidates": 7754,
+      "primary": true,
+      "production": true,
+      "seat": 1,
+      "static_foundation_access_steps": 31,
+      "waypoint": "dual-p1-air"
+    },
+    {
+      "after": [
+        140.0,
+        384.0
+      ],
+      "before": [
+        140.0,
+        387.0
+      ],
+      "distance_from_base_cells": 31.0,
+      "fixed_safe_candidates": 8087,
+      "primary": true,
+      "production": true,
+      "seat": 3,
+      "static_foundation_access_steps": 31,
+      "waypoint": "dual-p3-air"
+    },
+    {
+      "after": [
+        116.0,
+        110.0
+      ],
+      "before": [
+        173.0,
+        121.0
+      ],
+      "distance_from_base_cells": 29.0,
+      "fixed_safe_candidates": 8251,
+      "primary": true,
+      "production": true,
+      "seat": 1,
+      "static_foundation_access_steps": 29,
+      "waypoint": "dual-p1-wf"
+    },
+    {
+      "after": [
+        110.0,
+        388.0
+      ],
+      "before": [
+        112.0,
+        391.0
+      ],
+      "distance_from_base_cells": 40.36087214122113,
+      "fixed_safe_candidates": 8265,
+      "primary": true,
+      "production": true,
+      "seat": 3,
+      "static_foundation_access_steps": 57,
+      "waypoint": "dual-p3-wf"
+    },
+    {
+      "after": [
+        116.0,
+        138.0
+      ],
+      "before": [
+        141.0,
+        138.0
+      ],
+      "distance_from_base_cells": 40.311288741492746,
+      "fixed_safe_candidates": 8372,
+      "primary": true,
+      "production": true,
+      "seat": 1,
+      "static_foundation_access_steps": 57,
+      "waypoint": "dual-p1-bar"
+    },
+    {
+      "after": [
+        140.0,
+        230.0
+      ],
+      "before": [
+        140.0,
+        232.0
+      ],
+      "distance_from_base_cells": 30.0,
+      "fixed_safe_candidates": 8558,
+      "primary": true,
+      "production": true,
+      "seat": 2,
+      "static_foundation_access_steps": 30,
+      "waypoint": "dual-p2-air"
+    },
+    {
+      "after": [
+        170.0,
+        666.0
+      ],
+      "before": [
+        170.0,
+        663.0
+      ],
+      "distance_from_base_cells": 31.0,
+      "fixed_safe_candidates": 8838,
+      "primary": true,
+      "production": true,
+      "seat": 4,
+      "static_foundation_access_steps": 31,
+      "waypoint": "dual-p4-air"
+    },
+    {
+      "after": [
+        140.0,
+        288.0
+      ],
+      "before": [
+        112.0,
+        249.0
+      ],
+      "distance_from_base_cells": 28.0,
+      "fixed_safe_candidates": 8958,
+      "primary": true,
+      "production": true,
+      "seat": 2,
+      "static_foundation_access_steps": 28,
+      "waypoint": "dual-p2-wf"
+    },
+    {
+      "after": [
+        112.0,
+        242.0
+      ],
+      "before": [
+        137.0,
+        288.0
+      ],
+      "distance_from_base_cells": 33.28663395418648,
+      "fixed_safe_candidates": 9094,
+      "primary": true,
+      "production": true,
+      "seat": 2,
+      "static_foundation_access_steps": 46,
+      "waypoint": "dual-p2-bar"
+    },
+    {
+      "after": [
+        162.0,
+        606.0
+      ],
+      "before": [
+        198.0,
+        624.0
+      ],
+      "distance_from_base_cells": 30.083217912982647,
+      "fixed_safe_candidates": 9311,
+      "primary": true,
+      "production": true,
+      "seat": 4,
+      "static_foundation_access_steps": 37,
+      "waypoint": "dual-p4-wf"
+    },
+    {
+      "after": [
+        206.0,
+        576.0
+      ],
+      "before": [
+        166.0,
+        607.0
+      ],
+      "distance_from_base_cells": 69.1158447825099,
+      "fixed_safe_candidates": 9332,
+      "primary": true,
+      "production": true,
+      "seat": 4,
+      "static_foundation_access_steps": 95,
+      "waypoint": "dual-p4-bar"
+    },
+    {
+      "after": [
+        746.0,
+        356.0
+      ],
+      "before": [
+        728.0,
+        371.0
+      ],
+      "distance_from_base_cells": 61.741396161732524,
+      "fixed_safe_candidates": 2704,
+      "primary": true,
+      "production": false,
+      "seat": 7,
+      "static_foundation_access_steps": 99,
+      "waypoint": "PP73"
+    },
+    {
+      "after": [
+        746.0,
+        264.0
+      ],
+      "before": [
+        747.0,
+        343.0
+      ],
+      "distance_from_base_cells": 44.40720662234904,
+      "fixed_safe_candidates": 3605,
+      "primary": true,
+      "production": false,
+      "seat": 7,
+      "static_foundation_access_steps": 61,
+      "waypoint": "PP71"
+    },
+    {
+      "after": [
+        678.0,
+        324.0
+      ],
+      "before": [
+        664.0,
+        313.0
+      ],
+      "distance_from_base_cells": 48.373546489791295,
+      "fixed_safe_candidates": 3605,
+      "primary": true,
+      "production": false,
+      "seat": 7,
+      "static_foundation_access_steps": 67,
+      "waypoint": "PP72"
+    },
+    {
+      "after": [
+        690.0,
+        250.0
+      ],
+      "before": [
+        692.0,
+        315.0
+      ],
+      "distance_from_base_cells": 58.309518948453004,
+      "fixed_safe_candidates": 3605,
+      "primary": true,
+      "production": false,
+      "seat": 7,
+      "static_foundation_access_steps": 73,
+      "waypoint": "SWA71"
+    },
+    {
+      "after": [
+        662.0,
+        278.0
+      ],
+      "before": [
+        768.0,
+        274.0
+      ],
+      "distance_from_base_cells": 62.03224967708329,
+      "fixed_safe_candidates": 3605,
+      "primary": true,
+      "production": false,
+      "seat": 7,
+      "static_foundation_access_steps": 73,
+      "waypoint": "SWA72"
+    },
+    {
+      "after": [
+        746.0,
+        186.0
+      ],
+      "before": [
+        698.0,
+        88.0
+      ],
+      "distance_from_base_cells": 81.2219182240853,
+      "fixed_safe_candidates": 3626,
+      "primary": true,
+      "production": false,
+      "seat": 5,
+      "static_foundation_access_steps": 92,
+      "waypoint": "PP51"
+    },
+    {
+      "after": [
+        762.0,
+        32.0
+      ],
+      "before": [
+        801.0,
+        160.0
+      ],
+      "distance_from_base_cells": 76.24303246854758,
+      "fixed_safe_candidates": 3626,
+      "primary": true,
+      "production": false,
+      "seat": 5,
+      "static_foundation_access_steps": 104,
+      "waypoint": "PP52"
+    },
+    {
+      "after": [
+        666.0,
+        78.0
+      ],
+      "before": [
+        768.0,
+        35.0
+      ],
+      "distance_from_base_cells": 78.77182237323191,
+      "fixed_safe_candidates": 3626,
+      "primary": true,
+      "production": false,
+      "seat": 5,
+      "static_foundation_access_steps": 116,
+      "waypoint": "PP53"
+    },
+    {
+      "after": [
+        746.0,
+        214.0
+      ],
+      "before": [
+        740.0,
+        49.0
+      ],
+      "distance_from_base_cells": 109.16501271011697,
+      "fixed_safe_candidates": 3626,
+      "primary": true,
+      "production": false,
+      "seat": 5,
+      "static_foundation_access_steps": 120,
+      "waypoint": "SW53"
+    },
+    {
+      "after": [
+        800.0,
+        32.0
+      ],
+      "before": [
+        712.0,
+        142.0
+      ],
+      "distance_from_base_cells": 94.49338601193207,
+      "fixed_safe_candidates": 3626,
+      "primary": true,
+      "production": false,
+      "seat": 5,
+      "static_foundation_access_steps": 142,
+      "waypoint": "SWA51"
+    },
+    {
+      "after": [
+        718.0,
+        208.0
+      ],
+      "before": [
+        730.0,
+        170.0
+      ],
+      "distance_from_base_cells": 105.32331175955302,
+      "fixed_safe_candidates": 3626,
+      "primary": true,
+      "production": false,
+      "seat": 5,
+      "static_foundation_access_steps": 142,
+      "waypoint": "SWA52"
+    },
+    {
+      "after": [
+        654.0,
+        722.0
+      ],
+      "before": [
+        701.0,
+        647.0
+      ],
+      "distance_from_base_cells": 94.92101980067429,
+      "fixed_safe_candidates": 3661,
+      "primary": true,
+      "production": false,
+      "seat": 6,
+      "static_foundation_access_steps": 121,
+      "waypoint": "PP61"
+    },
+    {
+      "after": [
+        792.0,
+        616.0
+      ],
+      "before": [
+        784.0,
+        620.0
+      ],
+      "distance_from_base_cells": 91.92388155425118,
+      "fixed_safe_candidates": 3661,
+      "primary": true,
+      "production": false,
+      "seat": 6,
+      "static_foundation_access_steps": 141,
+      "waypoint": "PP62"
+    },
+    {
+      "after": [
+        644.0,
+        654.0
+      ],
+      "before": [
+        671.0,
+        705.0
+      ],
+      "distance_from_base_cells": 109.00458705944443,
+      "fixed_safe_candidates": 3661,
+      "primary": true,
+      "production": false,
+      "seat": 6,
+      "static_foundation_access_steps": 141,
+      "waypoint": "PP63"
+    },
+    {
+      "after": [
+        654.0,
+        750.0
+      ],
+      "before": [
+        729.0,
+        660.0
+      ],
+      "distance_from_base_cells": 106.3296760081587,
+      "fixed_safe_candidates": 3661,
+      "primary": true,
+      "production": false,
+      "seat": 6,
+      "static_foundation_access_steps": 147,
+      "waypoint": "SW63"
+    },
+    {
+      "after": [
+        626.0,
+        744.0
+      ],
+      "before": [
+        699.0,
+        726.0
+      ],
+      "distance_from_base_cells": 128.69343417595164,
+      "fixed_safe_candidates": 3661,
+      "primary": true,
+      "production": false,
+      "seat": 6,
+      "static_foundation_access_steps": 169,
+      "waypoint": "SWA61"
+    },
+    {
+      "after": [
+        794.0,
+        588.0
+      ],
+      "before": [
+        750.0,
+        632.0
+      ],
+      "distance_from_base_cells": 117.6860229593982,
+      "fixed_safe_candidates": 3661,
+      "primary": true,
+      "production": false,
+      "seat": 6,
+      "static_foundation_access_steps": 171,
+      "waypoint": "SWA62"
+    },
+    {
+      "after": [
+        84.0,
+        416.0
+      ],
+      "before": [
+        167.0,
+        458.0
+      ],
+      "distance_from_base_cells": 56.00892785976178,
+      "fixed_safe_candidates": 4274,
+      "primary": true,
+      "production": false,
+      "seat": 3,
+      "static_foundation_access_steps": 57,
+      "waypoint": "PPJ3"
+    },
+    {
+      "after": [
+        652.0,
+        420.0
+      ],
+      "before": [
+        703.0,
+        488.0
+      ],
+      "distance_from_base_cells": 107.83784122468327,
+      "fixed_safe_candidates": 4543,
+      "primary": true,
+      "production": false,
+      "seat": 8,
+      "static_foundation_access_steps": 137,
+      "waypoint": "PP81"
+    },
+    {
+      "after": [
+        738.0,
+        514.0
+      ],
+      "before": [
+        805.0,
+        433.0
+      ],
+      "distance_from_base_cells": 50.44799302251776,
+      "fixed_safe_candidates": 4543,
+      "primary": true,
+      "production": false,
+      "seat": 8,
+      "static_foundation_access_steps": 157,
+      "waypoint": "PP82"
+    },
+    {
+      "after": [
+        624.0,
+        430.0
+      ],
+      "before": [
+        724.0,
+        527.0
+      ],
+      "distance_from_base_cells": 130.77079184588584,
+      "fixed_safe_candidates": 4543,
+      "primary": true,
+      "production": false,
+      "seat": 8,
+      "static_foundation_access_steps": 175,
+      "waypoint": "PP83"
+    },
+    {
+      "after": [
+        748.0,
+        584.0
+      ],
+      "before": [
+        723.0,
+        422.0
+      ],
+      "distance_from_base_cells": 119.01680553602503,
+      "fixed_safe_candidates": 4543,
+      "primary": true,
+      "production": false,
+      "seat": 8,
+      "static_foundation_access_steps": 177,
+      "waypoint": "SW83"
+    },
+    {
+      "after": [
+        748.0,
+        612.0
+      ],
+      "before": [
+        731.0,
+        499.0
+      ],
+      "distance_from_base_cells": 147.0136048126159,
+      "fixed_safe_candidates": 4543,
+      "primary": true,
+      "production": false,
+      "seat": 8,
+      "static_foundation_access_steps": 205,
+      "waypoint": "SWA81"
+    },
+    {
+      "after": [
+        720.0,
+        592.0
+      ],
+      "before": [
+        796.0,
+        493.0
+      ],
+      "distance_from_base_cells": 130.49521064008442,
+      "fixed_safe_candidates": 4543,
+      "primary": true,
+      "production": false,
+      "seat": 8,
+      "static_foundation_access_steps": 211,
+      "waypoint": "SWA82"
+    },
+    {
+      "after": [
+        144.0,
+        168.0
+      ],
+      "before": [
+        113.0,
+        138.0
+      ],
+      "distance_from_base_cells": 58.008620049092706,
+      "fixed_safe_candidates": 8372,
+      "primary": true,
+      "production": false,
+      "seat": 1,
+      "static_foundation_access_steps": 59,
+      "waypoint": "PPJ1"
+    },
+    {
+      "after": [
+        172.0,
+        150.0
+      ],
+      "before": [
+        169.0,
+        149.0
+      ],
+      "distance_from_base_cells": 48.25971404805462,
+      "fixed_safe_candidates": 8372,
+      "primary": true,
+      "production": false,
+      "seat": 1,
+      "static_foundation_access_steps": 67,
+      "waypoint": "SWJ1"
+    },
+    {
+      "after": [
+        140.0,
+        356.0
+      ],
+      "before": [
+        168.0,
+        382.0
+      ],
+      "distance_from_base_cells": 59.0,
+      "fixed_safe_candidates": 8386,
+      "primary": true,
+      "production": false,
+      "seat": 3,
+      "static_foundation_access_steps": 59,
+      "waypoint": "SWJ3"
+    },
+    {
+      "after": [
+        140.0,
+        316.0
+      ],
+      "before": [
+        112.0,
+        221.0
+      ],
+      "distance_from_base_cells": 56.0,
+      "fixed_safe_candidates": 9094,
+      "primary": true,
+      "production": false,
+      "seat": 2,
+      "static_foundation_access_steps": 56,
+      "waypoint": "PPJ2"
+    },
+    {
+      "after": [
+        140.0,
+        202.0
+      ],
+      "before": [
+        168.0,
+        271.0
+      ],
+      "distance_from_base_cells": 58.0,
+      "fixed_safe_candidates": 9094,
+      "primary": true,
+      "production": false,
+      "seat": 2,
+      "static_foundation_access_steps": 58,
+      "waypoint": "SWJ2"
+    },
+    {
+      "after": [
+        210.0,
+        694.0
+      ],
+      "before": [
+        207.0,
+        596.0
+      ],
+      "distance_from_base_cells": 71.28113354878694,
+      "fixed_safe_candidates": 9332,
+      "primary": true,
+      "production": false,
+      "seat": 4,
+      "static_foundation_access_steps": 99,
+      "waypoint": "PPJ4"
+    },
+    {
+      "after": [
+        94.0,
+        582.0
+      ],
+      "before": [
+        133.0,
+        668.0
+      ],
+      "distance_from_base_cells": 92.65527507918802,
+      "fixed_safe_candidates": 9332,
+      "primary": true,
+      "production": false,
+      "seat": 4,
+      "static_foundation_access_steps": 129,
+      "waypoint": "SWJ4"
+    },
+    {
+      "after": [
+        648.0,
+        330.0
+      ],
+      "before": [
+        692.0,
+        259.0
+      ],
+      "distance_from_base_cells": 78.0,
+      "fixed_safe_candidates": 3334,
+      "primary": false,
+      "production": true,
+      "seat": 7,
+      "static_foundation_access_steps": 103,
+      "waypoint": "gift-alt-dual-civilian-air-1"
+    },
+    {
+      "after": [
+        650.0,
+        780.0
+      ],
+      "before": [
+        656.0,
+        677.0
+      ],
+      "distance_from_base_cells": 127.47548783981962,
+      "fixed_safe_candidates": 3345,
+      "primary": false,
+      "production": true,
+      "seat": 6,
+      "static_foundation_access_steps": 181,
+      "waypoint": "gift-alt-dual-p6-air-1"
+    },
+    {
+      "after": [
+        686.0,
+        50.0
+      ],
+      "before": [
+        758.0,
+        186.0
+      ],
+      "distance_from_base_cells": 77.07788269017254,
+      "fixed_safe_candidates": 3349,
+      "primary": false,
+      "production": true,
+      "seat": 5,
+      "static_foundation_access_steps": 164,
+      "waypoint": "gift-alt-dual-p5-air-1"
+    },
+    {
+      "after": [
+        662.0,
+        248.0
+      ],
+      "before": [
+        751.0,
+        246.0
+      ],
+      "distance_from_base_cells": 77.89736837660179,
+      "fixed_safe_candidates": 3494,
+      "primary": false,
+      "production": true,
+      "seat": 7,
+      "static_foundation_access_steps": 103,
+      "waypoint": "gift-alt-dual-civilian-wf-1"
+    },
+    {
+      "after": [
+        594.0,
+        114.0
+      ],
+      "before": [
+        797.0,
+        34.0
+      ],
+      "distance_from_base_cells": 146.27713423498562,
+      "fixed_safe_candidates": 3512,
+      "primary": false,
+      "production": true,
+      "seat": 5,
+      "static_foundation_access_steps": 156,
+      "waypoint": "gift-alt-dual-p5-wf-1"
+    },
+    {
+      "after": [
+        634.0,
+        262.0
+      ],
+      "before": [
+        664.0,
+        285.0
+      ],
+      "distance_from_base_cells": 94.02127418834527,
+      "fixed_safe_candidates": 3605,
+      "primary": false,
+      "production": true,
+      "seat": 7,
+      "static_foundation_access_steps": 117,
+      "waypoint": "gift-alt-dual-civilian-bar-1"
+    },
+    {
+      "after": [
+        624.0,
+        614.0
+      ],
+      "before": [
+        673.0,
+        647.0
+      ],
+      "distance_from_base_cells": 145.60906565183365,
+      "fixed_safe_candidates": 3625,
+      "primary": false,
+      "production": true,
+      "seat": 6,
+      "static_foundation_access_steps": 199,
+      "waypoint": "gift-alt-dual-p6-wf-1"
+    },
+    {
+      "after": [
+        594.0,
+        142.0
+      ],
+      "before": [
+        659.0,
+        88.0
+      ],
+      "distance_from_base_cells": 150.6154042586614,
+      "fixed_safe_candidates": 3626,
+      "primary": false,
+      "production": true,
+      "seat": 5,
+      "static_foundation_access_steps": 184,
+      "waypoint": "gift-alt-dual-p5-bar-1"
+    },
+    {
+      "after": [
+        622.0,
+        772.0
+      ],
+      "before": [
+        671.0,
+        733.0
+      ],
+      "distance_from_base_cells": 145.11374848717816,
+      "fixed_safe_candidates": 3661,
+      "primary": false,
+      "production": true,
+      "seat": 6,
+      "static_foundation_access_steps": 201,
+      "waypoint": "gift-alt-dual-p6-bar-1"
+    },
+    {
+      "after": [
+        696.0,
+        498.0
+      ],
+      "before": [
+        695.0,
+        408.0
+      ],
+      "distance_from_base_cells": 63.28506932918696,
+      "fixed_safe_candidates": 4193,
+      "primary": false,
+      "production": true,
+      "seat": 8,
+      "static_foundation_access_steps": 217,
+      "waypoint": "gift-alt-dual-creeps-air-1"
+    },
+    {
+      "after": [
+        170.0,
+        466.0
+      ],
+      "before": [
+        84.0,
+        419.0
+      ],
+      "distance_from_base_cells": 59.16924876994806,
+      "fixed_safe_candidates": 4274,
+      "primary": false,
+      "production": true,
+      "seat": 3,
+      "static_foundation_access_steps": 81,
+      "waypoint": "gift-alt-dual-p3-bar-1"
+    },
+    {
+      "after": [
+        580.0,
+        444.0
+      ],
+      "before": [
+        804.0,
+        521.0
+      ],
+      "distance_from_base_cells": 171.29214809792072,
+      "fixed_safe_candidates": 4500,
+      "primary": false,
+      "production": true,
+      "seat": 8,
+      "static_foundation_access_steps": 233,
+      "waypoint": "gift-alt-dual-creeps-wf-1"
+    },
+    {
+      "after": [
+        686.0,
+        582.0
+      ],
+      "before": [
+        771.0,
+        381.0
+      ],
+      "distance_from_base_cells": 133.3604139165742,
+      "fixed_safe_candidates": 4543,
+      "primary": false,
+      "production": true,
+      "seat": 8,
+      "static_foundation_access_steps": 235,
+      "waypoint": "gift-alt-dual-creeps-bar-1"
+    },
+    {
+      "after": [
+        114.0,
+        168.0
+      ],
+      "before": [
+        141.0,
+        166.0
+      ],
+      "distance_from_base_cells": 65.76473218982953,
+      "fixed_safe_candidates": 7754,
+      "primary": false,
+      "production": true,
+      "seat": 1,
+      "static_foundation_access_steps": 89,
+      "waypoint": "gift-alt-dual-p1-air-1"
+    },
+    {
+      "after": [
+        170.0,
+        378.0
+      ],
+      "before": [
+        140.0,
+        359.0
+      ],
+      "distance_from_base_cells": 47.634021455258214,
+      "fixed_safe_candidates": 8087,
+      "primary": false,
+      "production": true,
+      "seat": 3,
+      "static_foundation_access_steps": 67,
+      "waypoint": "gift-alt-dual-p3-air-1"
+    },
+    {
+      "after": [
+        86.0,
+        74.0
+      ],
+      "before": [
+        113.0,
+        166.0
+      ],
+      "distance_from_base_cells": 69.1158447825099,
+      "fixed_safe_candidates": 8251,
+      "primary": false,
+      "production": true,
+      "seat": 1,
+      "static_foundation_access_steps": 95,
+      "waypoint": "gift-alt-dual-p1-wf-1"
+    },
+    {
+      "after": [
+        110.0,
+        360.0
+      ],
+      "before": [
+        112.0,
+        363.0
+      ],
+      "distance_from_base_cells": 62.64982043070834,
+      "fixed_safe_candidates": 8265,
+      "primary": false,
+      "production": true,
+      "seat": 3,
+      "static_foundation_access_steps": 85,
+      "waypoint": "gift-alt-dual-p3-wf-1"
+    },
+    {
+      "after": [
+        172.0,
+        178.0
+      ],
+      "before": [
+        89.0,
+        94.0
+      ],
+      "distance_from_base_cells": 73.16419889536138,
+      "fixed_safe_candidates": 8372,
+      "primary": false,
+      "production": true,
+      "seat": 1,
+      "static_foundation_access_steps": 95,
+      "waypoint": "gift-alt-dual-p1-bar-1"
+    },
+    {
+      "after": [
+        170.0,
+        302.0
+      ],
+      "before": [
+        165.0,
+        299.0
+      ],
+      "distance_from_base_cells": 51.61395160225576,
+      "fixed_safe_candidates": 8558,
+      "primary": false,
+      "production": true,
+      "seat": 2,
+      "static_foundation_access_steps": 72,
+      "waypoint": "gift-alt-dual-p2-air-1"
+    },
+    {
+      "after": [
+        82.0,
+        620.0
+      ],
+      "before": [
+        84.0,
+        623.0
+      ],
+      "distance_from_base_cells": 89.26925562588724,
+      "fixed_safe_candidates": 8838,
+      "primary": false,
+      "production": true,
+      "seat": 4,
+      "static_foundation_access_steps": 153,
+      "waypoint": "gift-alt-dual-p4-air-1"
+    },
+    {
+      "after": [
+        110.0,
+        214.0
+      ],
+      "before": [
+        134.0,
+        316.0
+      ],
+      "distance_from_base_cells": 54.91812087098393,
+      "fixed_safe_candidates": 8958,
+      "primary": false,
+      "production": true,
+      "seat": 2,
+      "static_foundation_access_steps": 76,
+      "waypoint": "gift-alt-dual-p2-wf-1"
+    },
+    {
+      "after": [
+        112.0,
+        320.0
+      ],
+      "before": [
+        140.0,
+        204.0
+      ],
+      "distance_from_base_cells": 66.2117814289874,
+      "fixed_safe_candidates": 9094,
+      "primary": false,
+      "production": true,
+      "seat": 2,
+      "static_foundation_access_steps": 88,
+      "waypoint": "gift-alt-dual-p2-bar-1"
+    },
+    {
+      "after": [
+        54.0,
+        602.0
+      ],
+      "before": [
+        226.0,
+        680.0
+      ],
+      "distance_from_base_cells": 120.60265337047937,
+      "fixed_safe_candidates": 9311,
+      "primary": false,
+      "production": true,
+      "seat": 4,
+      "static_foundation_access_steps": 173,
+      "waypoint": "gift-alt-dual-p4-wf-1"
+    },
+    {
+      "after": [
+        340.0,
+        624.0
+      ],
+      "before": [
+        198.0,
+        689.0
+      ],
+      "distance_from_base_cells": 170.35551062410633,
+      "fixed_safe_candidates": 9332,
+      "primary": false,
+      "production": true,
+      "seat": 4,
+      "static_foundation_access_steps": 207,
+      "waypoint": "gift-alt-dual-p4-bar-1"
+    },
+    {
+      "after": [
+        664.0,
+        358.0
+      ],
+      "before": [
+        669.0,
+        371.0
+      ],
+      "distance_from_base_cells": 80.62257748298549,
+      "fixed_safe_candidates": 2704,
+      "primary": false,
+      "production": false,
+      "seat": 7,
+      "static_foundation_access_steps": 115,
+      "waypoint": "gift-alt-PP73-1"
+    },
+    {
+      "after": [
+        620.0,
+        328.0
+      ],
+      "before": [
+        775.0,
+        351.0
+      ],
+      "distance_from_base_cells": 103.84603988597736,
+      "fixed_safe_candidates": 3605,
+      "primary": false,
+      "production": false,
+      "seat": 7,
+      "static_foundation_access_steps": 129,
+      "waypoint": "gift-alt-PP71-1"
+    },
+    {
+      "after": [
+        658.0,
+        220.0
+      ],
+      "before": [
+        636.0,
+        320.0
+      ],
+      "distance_from_base_cells": 101.21264743103995,
+      "fixed_safe_candidates": 3605,
+      "primary": false,
+      "production": false,
+      "seat": 7,
+      "static_foundation_access_steps": 135,
+      "waypoint": "gift-alt-PP72-1"
+    },
+    {
+      "after": [
+        798.0,
+        352.0
+      ],
+      "before": [
+        668.0,
+        343.0
+      ],
+      "distance_from_base_cells": 93.74433316206373,
+      "fixed_safe_candidates": 3605,
+      "primary": false,
+      "production": false,
+      "seat": 7,
+      "static_foundation_access_steps": 147,
+      "waypoint": "gift-alt-SWA71-1"
+    },
+    {
+      "after": [
+        588.0,
+        328.0
+      ],
+      "before": [
+        796.0,
+        279.0
+      ],
+      "distance_from_base_cells": 134.937022347464,
+      "fixed_safe_candidates": 3605,
+      "primary": false,
+      "production": false,
+      "seat": 7,
+      "static_foundation_access_steps": 161,
+      "waypoint": "gift-alt-SWA72-1"
+    },
+    {
+      "after": [
+        564.0,
+        168.0
+      ],
+      "before": [
+        676.0,
+        60.0
+      ],
+      "distance_from_base_cells": 186.93581786270923,
+      "fixed_safe_candidates": 3626,
+      "primary": false,
+      "production": false,
+      "seat": 5,
+      "static_foundation_access_steps": 252,
+      "waypoint": "gift-alt-PP51-1"
+    },
+    {
+      "after": [
+        576.0,
+        208.0
+      ],
+      "before": [
+        801.0,
+        188.0
+      ],
+      "distance_from_base_cells": 193.6620768245554,
+      "fixed_safe_candidates": 3626,
+      "primary": false,
+      "production": false,
+      "seat": 5,
+      "static_foundation_access_steps": 268,
+      "waypoint": "gift-alt-PP52-1"
+    },
+    {
+      "after": [
+        560.0,
+        140.0
+      ],
+      "before": [
+        676.0,
+        32.0
+      ],
+      "distance_from_base_cells": 183.3712082089225,
+      "fixed_safe_candidates": 3626,
+      "primary": false,
+      "production": false,
+      "seat": 5,
+      "static_foundation_access_steps": 284,
+      "waypoint": "gift-alt-PP53-1"
+    },
+    {
+      "after": [
+        566.0,
+        112.0
+      ],
+      "before": [
+        704.0,
+        42.0
+      ],
+      "distance_from_base_cells": 174.14074767268,
+      "fixed_safe_candidates": 3626,
+      "primary": false,
+      "production": false,
+      "seat": 5,
+      "static_foundation_access_steps": 306,
+      "waypoint": "gift-alt-SW53-1"
+    },
+    {
+      "after": [
+        532.0,
+        142.0
+      ],
+      "before": [
+        702.0,
+        170.0
+      ],
+      "distance_from_base_cells": 211.26523613694707,
+      "fixed_safe_candidates": 3626,
+      "primary": false,
+      "production": false,
+      "seat": 5,
+      "static_foundation_access_steps": 310,
+      "waypoint": "gift-alt-SWA51-1"
+    },
+    {
+      "after": [
+        558.0,
+        236.0
+      ],
+      "before": [
+        730.0,
+        198.0
+      ],
+      "distance_from_base_cells": 224.24317157942625,
+      "fixed_safe_candidates": 3626,
+      "primary": false,
+      "production": false,
+      "seat": 5,
+      "static_foundation_access_steps": 314,
+      "waypoint": "gift-alt-SWA52-1"
+    },
+    {
+      "after": [
+        594.0,
+        754.0
+      ],
+      "before": [
+        694.0,
+        619.0
+      ],
+      "distance_from_base_cells": 162.1172415260018,
+      "fixed_safe_candidates": 3661,
+      "primary": false,
+      "production": false,
+      "seat": 6,
+      "static_foundation_access_steps": 211,
+      "waypoint": "gift-alt-PP61-1"
+    },
+    {
+      "after": [
+        622.0,
+        800.0
+      ],
+      "before": [
+        792.0,
+        592.0
+      ],
+      "distance_from_base_cells": 161.72198366332265,
+      "fixed_safe_candidates": 3661,
+      "primary": false,
+      "production": false,
+      "seat": 6,
+      "static_foundation_access_steps": 229,
+      "waypoint": "gift-alt-PP62-1"
+    },
+    {
+      "after": [
+        620.0,
+        586.0
+      ],
+      "before": [
+        643.0,
+        723.0
+      ],
+      "distance_from_base_cells": 165.8493292117879,
+      "fixed_safe_candidates": 3661,
+      "primary": false,
+      "production": false,
+      "seat": 6,
+      "static_foundation_access_steps": 231,
+      "waypoint": "gift-alt-PP63-1"
+    },
+    {
+      "after": [
+        594.0,
+        782.0
+      ],
+      "before": [
+        722.0,
+        619.0
+      ],
+      "distance_from_base_cells": 174.26990560621763,
+      "fixed_safe_candidates": 3661,
+      "primary": false,
+      "production": false,
+      "seat": 6,
+      "static_foundation_access_steps": 239,
+      "waypoint": "gift-alt-SW63-1"
+    },
+    {
+      "after": [
+        592.0,
+        592.0
+      ],
+      "before": [
+        659.0,
+        761.0
+      ],
+      "distance_from_base_cells": 184.43969204051496,
+      "fixed_safe_candidates": 3661,
+      "primary": false,
+      "production": false,
+      "seat": 6,
+      "static_foundation_access_steps": 253,
+      "waypoint": "gift-alt-SWA61-1"
+    },
+    {
+      "after": [
+        564.0,
+        594.0
+      ],
+      "before": [
+        750.0,
+        604.0
+      ],
+      "distance_from_base_cells": 207.27276714513172,
+      "fixed_safe_candidates": 3661,
+      "primary": false,
+      "production": false,
+      "seat": 6,
+      "static_foundation_access_steps": 279,
+      "waypoint": "gift-alt-SWA62-1"
+    },
+    {
+      "after": [
+        56.0,
+        416.0
+      ],
+      "before": [
+        167.0,
+        486.0
+      ],
+      "distance_from_base_cells": 84.00595217006948,
+      "fixed_safe_candidates": 4274,
+      "primary": false,
+      "production": false,
+      "seat": 3,
+      "static_foundation_access_steps": 85,
+      "waypoint": "gift-alt-PPJ3-1"
+    },
+    {
+      "after": [
+        738.0,
+        640.0
+      ],
+      "before": [
+        657.0,
+        450.0
+      ],
+      "distance_from_base_cells": 175.410946066658,
+      "fixed_safe_candidates": 4543,
+      "primary": false,
+      "production": false,
+      "seat": 8,
+      "static_foundation_access_steps": 241,
+      "waypoint": "gift-alt-PP81-1"
+    },
+    {
+      "after": [
+        552.0,
+        440.0
+      ],
+      "before": [
+        806.0,
+        405.0
+      ],
+      "distance_from_base_cells": 199.5720421301541,
+      "fixed_safe_candidates": 4543,
+      "primary": false,
+      "production": false,
+      "seat": 8,
+      "static_foundation_access_steps": 257,
+      "waypoint": "gift-alt-PP82-1"
+    },
+    {
+      "after": [
+        562.0,
+        412.0
+      ],
+      "before": [
+        745.0,
+        576.0
+      ],
+      "distance_from_base_cells": 195.3279293905508,
+      "fixed_safe_candidates": 4543,
+      "primary": false,
+      "production": false,
+      "seat": 8,
+      "static_foundation_access_steps": 275,
+      "waypoint": "gift-alt-PP83-1"
+    },
+    {
+      "after": [
+        524.0,
+        440.0
+      ],
+      "before": [
+        667.0,
+        422.0
+      ],
+      "distance_from_base_cells": 227.37853900489378,
+      "fixed_safe_candidates": 4543,
+      "primary": false,
+      "production": false,
+      "seat": 8,
+      "static_foundation_access_steps": 285,
+      "waypoint": "gift-alt-SW83-1"
+    },
+    {
+      "after": [
+        566.0,
+        484.0
+      ],
+      "before": [
+        675.0,
+        512.0
+      ],
+      "distance_from_base_cells": 184.97837711473198,
+      "fixed_safe_candidates": 4543,
+      "primary": false,
+      "production": false,
+      "seat": 8,
+      "static_foundation_access_steps": 287,
+      "waypoint": "gift-alt-SWA81-1"
+    },
+    {
+      "after": [
+        534.0,
+        412.0
+      ],
+      "before": [
+        809.0,
+        552.0
+      ],
+      "distance_from_base_cells": 222.40728405337808,
+      "fixed_safe_candidates": 4543,
+      "primary": false,
+      "production": false,
+      "seat": 8,
+      "static_foundation_access_steps": 303,
+      "waypoint": "gift-alt-SWA82-1"
+    },
+    {
+      "after": [
+        200.0,
+        156.0
+      ],
+      "before": [
+        85.0,
+        138.0
+      ],
+      "distance_from_base_cells": 71.7007670809734,
+      "fixed_safe_candidates": 8372,
+      "primary": false,
+      "production": false,
+      "seat": 1,
+      "static_foundation_access_steps": 101,
+      "waypoint": "gift-alt-PPJ1-1"
+    },
+    {
+      "after": [
+        178.0,
+        38.0
+      ],
+      "before": [
+        197.0,
+        149.0
+      ],
+      "distance_from_base_cells": 79.20227269466452,
+      "fixed_safe_candidates": 8372,
+      "primary": false,
+      "production": false,
+      "seat": 1,
+      "static_foundation_access_steps": 105,
+      "waypoint": "gift-alt-SWJ1-1"
+    },
+    {
+      "after": [
+        82.0,
+        388.0
+      ],
+      "before": [
+        168.0,
+        354.0
+      ],
+      "distance_from_base_cells": 63.97655820689325,
+      "fixed_safe_candidates": 8386,
+      "primary": false,
+      "production": false,
+      "seat": 3,
+      "static_foundation_access_steps": 85,
+      "waypoint": "gift-alt-SWJ3-1"
+    },
+    {
+      "after": [
+        82.0,
+        226.0
+      ],
+      "before": [
+        84.0,
+        221.0
+      ],
+      "distance_from_base_cells": 67.23094525588644,
+      "fixed_safe_candidates": 9094,
+      "primary": false,
+      "production": false,
+      "seat": 2,
+      "static_foundation_access_steps": 92,
+      "waypoint": "gift-alt-PPJ2-1"
+    },
+    {
+      "after": [
+        168.0,
+        330.0
+      ],
+      "before": [
+        196.0,
+        292.0
+      ],
+      "distance_from_base_cells": 75.39230729988306,
+      "fixed_safe_candidates": 9094,
+      "primary": false,
+      "production": false,
+      "seat": 2,
+      "static_foundation_access_steps": 98,
+      "waypoint": "gift-alt-SWJ2-1"
+    },
+    {
+      "after": [
+        44.0,
+        630.0
+      ],
+      "before": [
+        207.0,
+        568.0
+      ],
+      "distance_from_base_cells": 126.09916732476864,
+      "fixed_safe_candidates": 9332,
+      "primary": false,
+      "production": false,
+      "seat": 4,
+      "static_foundation_access_steps": 211,
+      "waypoint": "gift-alt-PPJ4-1"
+    },
+    {
+      "after": [
+        322.0,
+        654.0
+      ],
+      "before": [
+        133.0,
+        696.0
+      ],
+      "distance_from_base_cells": 153.18289721767243,
+      "fixed_safe_candidates": 9332,
+      "primary": false,
+      "production": false,
+      "seat": 4,
+      "static_foundation_access_steps": 215,
+      "waypoint": "gift-alt-SWJ4-1"
+    }
+  ],
+  "native_after_crc32": 1175487319,
+  "native_before_crc32": 295080980,
+  "order": "all production primaries, other primaries, then all backups; scarcity and footprint size within each rank",
+  "scope": "all official conditional/primary/fallback foundations and complete rotated exits; existing source/native geometry, ore and ramp identities retained",
+  "terrain_changed": false
+}

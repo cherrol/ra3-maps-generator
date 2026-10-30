@@ -65,7 +65,12 @@ pub fn copy_current_project(destination: &Path) -> ra3maps::pipeline::project::P
     let original = Project::load(source, "河南").unwrap();
     let recipe = destination.join("maps/河南");
     fs::create_dir_all(&recipe).unwrap();
-    tree(&source.join("templates"), &destination.join("templates"));
+    // Shared inputs live beside `maps/`: the map skeleton under templates/ and
+    // the executable rules under rules/. Both are read relative to the project
+    // root, so an isolated fixture must carry them.
+    for directory in ["templates", "rules"] {
+        tree(&source.join(directory), &destination.join(directory));
+    }
     for name in ["config.json", "version.json", "layers.npz"] {
         fs::copy(original.map_dir().join(name), recipe.join(name)).unwrap();
     }

@@ -30,13 +30,9 @@ fn current_spawn_relocation_preserves_conditions_identities_terrain_and_resource
     let root = std::env::temp_dir().join(format!("ra3-spawn-relocation-{}", std::process::id()));
     let dir = root.join("maps/河南");
     fs::create_dir_all(dir.join("authoring")).unwrap();
-    fs::create_dir_all(root.join("templates/rules")).unwrap();
+    fs::create_dir_all(root.join("rules")).unwrap();
     for file in ["common-T0.5.1.json", "coordinate-pipeline.json"] {
-        fs::copy(
-            repo.join("templates/rules").join(file),
-            root.join("templates/rules").join(file),
-        )
-        .unwrap();
+        fs::copy(repo.join("rules").join(file), root.join("rules").join(file)).unwrap();
     }
     let (current, mut native) = support::current_map();
     let source = current.map_dir();

@@ -110,9 +110,8 @@ fn leaf(command: &str, opcode: u32, args: &[Arg], condition: bool) -> Result<Nod
     struct Registry {
         commands: BTreeMap<String, Signature>,
     }
-    let registry: Registry = serde_json::from_str(include_str!(
-        "../../templates/rules/periodic-command-signatures.json"
-    ))?;
+    let registry: Registry =
+        serde_json::from_str(include_str!("../../rules/periodic-command-signatures.json"))?;
     let signature = registry
         .commands
         .get(command)
@@ -525,7 +524,7 @@ mod tests {
     #[test]
     fn boot_truth_matches_original_binary_and_invalid_native_signatures_fail() {
         let original: Json =
-            serde_json::from_str(include_str!("../../templates/rules/common-T0.5.1.json")).unwrap();
+            serde_json::from_str(include_str!("../../rules/common-T0.5.1.json")).unwrap();
         let nodes: Vec<Node> = serde_json::from_value(original["scripts"].clone()).unwrap();
         let mut all = vec![];
         leaves(&nodes, &mut all);

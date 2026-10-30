@@ -1,0 +1,1229 @@
+{
+  "combat_front": "the four main routes through the middle thirds of their paired bases",
+  "objects": [
+    {
+      "access": [
+        {
+          "domain": "land",
+          "path_steps": 294,
+          "reachable": true,
+          "route_status": "reachable",
+          "seat": 1,
+          "start_access": [
+            145,
+            110
+          ],
+          "start_id": 1,
+          "straight_distance_world": 2638.6549603917524,
+          "target": [
+            405.0,
+            65.0
+          ],
+          "target_access": [
+            399,
+            70
+          ],
+          "target_id": 59,
+          "target_type": "OilDerrick",
+          "world_distance": 2940.0
+        },
+        {
+          "domain": "land",
+          "path_steps": 449,
+          "reachable": true,
+          "route_status": "reachable",
+          "seat": 2,
+          "start_access": [
+            140,
+            260
+          ],
+          "start_id": 2,
+          "straight_distance_world": 3290.13677527242,
+          "target": [
+            405.0,
+            65.0
+          ],
+          "target_access": [
+            399,
+            70
+          ],
+          "target_id": 59,
+          "target_type": "OilDerrick",
+          "world_distance": 4490.0
+        },
+        {
+          "domain": "land",
+          "path_steps": 604,
+          "reachable": true,
+          "route_status": "reachable",
+          "seat": 3,
+          "start_access": [
+            140,
+            415
+          ],
+          "start_id": 3,
+          "straight_distance_world": 4390.045557850169,
+          "target": [
+            405.0,
+            65.0
+          ],
+          "target_access": [
+            399,
+            70
+          ],
+          "target_id": 59,
+          "target_type": "OilDerrick",
+          "world_distance": 6040.0
+        },
+        {
+          "domain": "land",
+          "path_steps": 860,
+          "reachable": true,
+          "route_status": "reachable",
+          "seat": 4,
+          "start_access": [
+            170,
+            635
+          ],
+          "start_id": 4,
+          "straight_distance_world": 6165.427803486145,
+          "target": [
+            405.0,
+            65.0
+          ],
+          "target_access": [
+            399,
+            70
+          ],
+          "target_id": 59,
+          "target_type": "OilDerrick",
+          "world_distance": 8600.0
+        },
+        {
+          "domain": "land",
+          "path_steps": 364,
+          "reachable": true,
+          "route_status": "reachable",
+          "seat": 5,
+          "start_access": [
+            740,
+            105
+          ],
+          "start_id": 5,
+          "straight_distance_world": 3373.796081567468,
+          "target": [
+            405.0,
+            65.0
+          ],
+          "target_access": [
+            411,
+            70
+          ],
+          "target_id": 59,
+          "target_type": "OilDerrick",
+          "world_distance": 3640.0
+        },
+        {
+          "domain": "land",
+          "path_steps": 959,
+          "reachable": true,
+          "route_status": "reachable",
+          "seat": 6,
+          "start_access": [
+            745,
+            695
+          ],
+          "start_id": 6,
+          "straight_distance_world": 7158.9105316381765,
+          "target": [
+            405.0,
+            65.0
+          ],
+          "target_access": [
+            411,
+            70
+          ],
+          "target_id": 59,
+          "target_type": "OilDerrick",
+          "world_distance": 9590.0
+        },
+        {
+          "domain": "land",
+          "path_steps": 531,
+          "reachable": true,
+          "route_status": "reachable",
+          "seat": 7,
+          "start_access": [
+            718,
+            294
+          ],
+          "start_id": 7,
+          "straight_distance_world": 3930.0127226257173,
+          "target": [
+            405.0,
+            65.0
+          ],
+          "target_access": [
+            411,
+            70
+          ],
+          "target_id": 59,
+          "target_type": "OilDerrick",
+          "world_distance": 5310.0
+        },
+        {
+          "domain": "land",
+          "path_steps": 726,
+          "reachable": true,
+          "route_status": "reachable",
+          "seat": 8,
+          "start_access": [
+            748,
+            459
+          ],
+          "start_id": 8,
+          "straight_distance_world": 5282.2817039608935,
+          "target": [
+            405.0,
+            65.0
+          ],
+          "target_access": [
+            411,
+            70
+          ],
+          "target_id": 59,
+          "target_type": "OilDerrick",
+          "world_distance": 7260.0
+        }
+      ],
+      "base_distance_cells": 263.86549603917524,
+      "cell": [
+        405.0,
+        65.0
+      ],
+      "kind": "OilDerrick",
+      "nearest_seat": 1,
+      "object_id": 59
+    },
+    {
+      "access": [
+        {
+          "domain": "land",
+          "path_steps": 549,
+          "reachable": true,
+          "route_status": "reachable",
+          "seat": 1,
+          "start_access": [
+            145,
+            110
+          ],
+          "start_id": 1,
+          "straight_distance_world": 4000.0,
+          "target": [
+            465.0,
+            350.0
+          ],
+          "target_access": [
+            460,
+            344
+          ],
+          "target_id": 60,
+          "target_type": "OilDerrick",
+          "world_distance": 5490.0
+        },
+        {
+          "domain": "land",
+          "path_steps": 404,
+          "reachable": true,
+          "route_status": "reachable",
+          "seat": 2,
+          "start_access": [
+            140,
+            260
+          ],
+          "start_id": 2,
+          "straight_distance_world": 3372.3137457834496,
+          "target": [
+            465.0,
+            350.0
+          ],
+          "target_access": [
+            460,
+            344
+          ],
+          "target_id": 60,
+          "target_type": "OilDerrick",
+          "world_distance": 4040.0
+        },
+        {
+          "domain": "land",
+          "path_steps": 457,
+          "reachable": true,
+          "route_status": "reachable",
+          "seat": 3,
+          "start_access": [
+            140,
+            415
+          ],
+          "start_id": 3,
+          "straight_distance_world": 3314.3626838353102,
+          "target": [
+            465.0,
+            350.0
+          ],
+          "target_access": [
+            459,
+            355
+          ],
+          "target_id": 60,
+          "target_type": "OilDerrick",
+          "world_distance": 4570.0
+        },
+        {
+          "domain": "land",
+          "path_steps": 569,
+          "reachable": true,
+          "route_status": "reachable",
+          "seat": 4,
+          "start_access": [
+            170,
+            635
+          ],
+          "start_id": 4,
+          "straight_distance_world": 4101.828860398737,
+          "target": [
+            465.0,
+            350.0
+          ],
+          "target_access": [
+            459,
+            355
+          ],
+          "target_id": 60,
+          "target_type": "OilDerrick",
+          "world_distance": 5690.0
+        },
+        {
+          "domain": "land",
+          "path_steps": 509,
+          "reachable": true,
+          "route_status": "reachable",
+          "seat": 5,
+          "start_access": [
+            740,
+            105
+          ],
+          "start_id": 5,
+          "straight_distance_world": 3683.0693721405796,
+          "target": [
+            465.0,
+            350.0
+          ],
+          "target_access": [
+            470,
+            344
+          ],
+          "target_id": 60,
+          "target_type": "OilDerrick",
+          "world_distance": 5090.0
+        },
+        {
+          "domain": "land",
+          "path_steps": 646,
+          "reachable": true,
+          "route_status": "reachable",
+          "seat": 6,
+          "start_access": [
+            745,
+            695
+          ],
+          "start_id": 6,
+          "straight_distance_world": 4443.253312607779,
+          "target": [
+            465.0,
+            350.0
+          ],
+          "target_access": [
+            459,
+            355
+          ],
+          "target_id": 60,
+          "target_type": "OilDerrick",
+          "world_distance": 6460.0
+        },
+        {
+          "domain": "land",
+          "path_steps": 298,
+          "reachable": true,
+          "route_status": "reachable",
+          "seat": 7,
+          "start_access": [
+            718,
+            294
+          ],
+          "start_id": 7,
+          "straight_distance_world": 2598.557292037257,
+          "target": [
+            465.0,
+            350.0
+          ],
+          "target_access": [
+            470,
+            344
+          ],
+          "target_id": 60,
+          "target_type": "OilDerrick",
+          "world_distance": 2980.0
+        },
+        {
+          "domain": "land",
+          "path_steps": 419,
+          "reachable": true,
+          "route_status": "reachable",
+          "seat": 8,
+          "start_access": [
+            748,
+            459
+          ],
+          "start_id": 8,
+          "straight_distance_world": 3073.2718721258616,
+          "target": [
+            465.0,
+            350.0
+          ],
+          "target_access": [
+            459,
+            355
+          ],
+          "target_id": 60,
+          "target_type": "OilDerrick",
+          "world_distance": 4190.0
+        }
+      ],
+      "base_distance_cells": 259.8557292037257,
+      "cell": [
+        465.0,
+        350.0
+      ],
+      "kind": "OilDerrick",
+      "nearest_seat": 7,
+      "object_id": 60
+    },
+    {
+      "access": [
+        {
+          "domain": "land",
+          "path_steps": 549,
+          "reachable": true,
+          "route_status": "reachable",
+          "seat": 1,
+          "start_access": [
+            145,
+            110
+          ],
+          "start_id": 1,
+          "straight_distance_world": 3920.4591567825314,
+          "target": [
+            385.0,
+            420.0
+          ],
+          "target_access": [
+            390,
+            414
+          ],
+          "target_id": 61,
+          "target_type": "OilDerrick",
+          "world_distance": 5490.0
+        },
+        {
+          "domain": "land",
+          "path_steps": 404,
+          "reachable": true,
+          "route_status": "reachable",
+          "seat": 2,
+          "start_access": [
+            140,
+            260
+          ],
+          "start_id": 2,
+          "straight_distance_world": 2926.1749776799065,
+          "target": [
+            385.0,
+            420.0
+          ],
+          "target_access": [
+            390,
+            414
+          ],
+          "target_id": 61,
+          "target_type": "OilDerrick",
+          "world_distance": 4040.0
+        },
+        {
+          "domain": "land",
+          "path_steps": 307,
+          "reachable": true,
+          "route_status": "reachable",
+          "seat": 3,
+          "start_access": [
+            140,
+            415
+          ],
+          "start_id": 3,
+          "straight_distance_world": 2450.510150968569,
+          "target": [
+            385.0,
+            420.0
+          ],
+          "target_access": [
+            379,
+            425
+          ],
+          "target_id": 61,
+          "target_type": "OilDerrick",
+          "world_distance": 3070.0
+        },
+        {
+          "domain": "land",
+          "path_steps": 419,
+          "reachable": true,
+          "route_status": "reachable",
+          "seat": 4,
+          "start_access": [
+            170,
+            635
+          ],
+          "start_id": 4,
+          "straight_distance_world": 3040.5591591021544,
+          "target": [
+            385.0,
+            420.0
+          ],
+          "target_access": [
+            379,
+            425
+          ],
+          "target_id": 61,
+          "target_type": "OilDerrick",
+          "world_distance": 4190.0
+        },
+        {
+          "domain": "land",
+          "path_steps": 659,
+          "reachable": true,
+          "route_status": "reachable",
+          "seat": 5,
+          "start_access": [
+            740,
+            105
+          ],
+          "start_id": 5,
+          "straight_distance_world": 4746.050990033715,
+          "target": [
+            385.0,
+            420.0
+          ],
+          "target_access": [
+            390,
+            414
+          ],
+          "target_id": 61,
+          "target_type": "OilDerrick",
+          "world_distance": 6590.0
+        },
+        {
+          "domain": "land",
+          "path_steps": 624,
+          "reachable": true,
+          "route_status": "reachable",
+          "seat": 6,
+          "start_access": [
+            745,
+            695
+          ],
+          "start_id": 6,
+          "straight_distance_world": 4530.176596999282,
+          "target": [
+            385.0,
+            420.0
+          ],
+          "target_access": [
+            391,
+            425
+          ],
+          "target_id": 61,
+          "target_type": "OilDerrick",
+          "world_distance": 6240.0
+        },
+        {
+          "domain": "land",
+          "path_steps": 448,
+          "reachable": true,
+          "route_status": "reachable",
+          "seat": 7,
+          "start_access": [
+            718,
+            294
+          ],
+          "start_id": 7,
+          "straight_distance_world": 3558.440669731617,
+          "target": [
+            385.0,
+            420.0
+          ],
+          "target_access": [
+            390,
+            414
+          ],
+          "target_id": 61,
+          "target_type": "OilDerrick",
+          "world_distance": 4480.0
+        },
+        {
+          "domain": "land",
+          "path_steps": 397,
+          "reachable": true,
+          "route_status": "reachable",
+          "seat": 8,
+          "start_access": [
+            748,
+            459
+          ],
+          "start_id": 8,
+          "straight_distance_world": 3677.6351096866583,
+          "target": [
+            385.0,
+            420.0
+          ],
+          "target_access": [
+            391,
+            425
+          ],
+          "target_id": 61,
+          "target_type": "OilDerrick",
+          "world_distance": 3970.0
+        }
+      ],
+      "base_distance_cells": 245.05101509685693,
+      "cell": [
+        385.0,
+        420.0
+      ],
+      "kind": "OilDerrick",
+      "nearest_seat": 3,
+      "object_id": 61
+    },
+    {
+      "access": [
+        {
+          "domain": "land",
+          "path_steps": 778,
+          "reachable": true,
+          "route_status": "reachable",
+          "seat": 1,
+          "start_access": [
+            145,
+            110
+          ],
+          "start_id": 1,
+          "straight_distance_world": 5706.356105256664,
+          "target": [
+            380.0,
+            630.0
+          ],
+          "target_access": [
+            374,
+            635
+          ],
+          "target_id": 62,
+          "target_type": "OilDerrick",
+          "world_distance": 7780.0
+        },
+        {
+          "domain": "land",
+          "path_steps": 633,
+          "reachable": true,
+          "route_status": "reachable",
+          "seat": 2,
+          "start_access": [
+            140,
+            260
+          ],
+          "start_id": 2,
+          "straight_distance_world": 4410.2154142399895,
+          "target": [
+            380.0,
+            630.0
+          ],
+          "target_access": [
+            374,
+            635
+          ],
+          "target_id": 62,
+          "target_type": "OilDerrick",
+          "world_distance": 6330.0
+        },
+        {
+          "domain": "land",
+          "path_steps": 478,
+          "reachable": true,
+          "route_status": "reachable",
+          "seat": 3,
+          "start_access": [
+            140,
+            415
+          ],
+          "start_id": 3,
+          "straight_distance_world": 3222.1886971436043,
+          "target": [
+            380.0,
+            630.0
+          ],
+          "target_access": [
+            374,
+            635
+          ],
+          "target_id": 62,
+          "target_type": "OilDerrick",
+          "world_distance": 4780.0
+        },
+        {
+          "domain": "land",
+          "path_steps": 228,
+          "reachable": true,
+          "route_status": "reachable",
+          "seat": 4,
+          "start_access": [
+            170,
+            635
+          ],
+          "start_id": 4,
+          "straight_distance_world": 2100.5951537600004,
+          "target": [
+            380.0,
+            630.0
+          ],
+          "target_access": [
+            374,
+            635
+          ],
+          "target_id": 62,
+          "target_type": "OilDerrick",
+          "world_distance": 2280.0
+        },
+        {
+          "domain": "land",
+          "path_steps": 974,
+          "reachable": true,
+          "route_status": "reachable",
+          "seat": 5,
+          "start_access": [
+            740,
+            105
+          ],
+          "start_id": 5,
+          "straight_distance_world": 6365.728552176884,
+          "target": [
+            380.0,
+            630.0
+          ],
+          "target_access": [
+            386,
+            635
+          ],
+          "target_id": 62,
+          "target_type": "OilDerrick",
+          "world_distance": 9740.0
+        },
+        {
+          "domain": "land",
+          "path_steps": 419,
+          "reachable": true,
+          "route_status": "reachable",
+          "seat": 6,
+          "start_access": [
+            745,
+            695
+          ],
+          "start_id": 6,
+          "straight_distance_world": 3707.424982383325,
+          "target": [
+            380.0,
+            630.0
+          ],
+          "target_access": [
+            386,
+            635
+          ],
+          "target_id": 62,
+          "target_type": "OilDerrick",
+          "world_distance": 4190.0
+        },
+        {
+          "domain": "land",
+          "path_steps": 763,
+          "reachable": true,
+          "route_status": "reachable",
+          "seat": 7,
+          "start_access": [
+            718,
+            294
+          ],
+          "start_id": 7,
+          "straight_distance_world": 4738.143096192854,
+          "target": [
+            380.0,
+            630.0
+          ],
+          "target_access": [
+            386,
+            635
+          ],
+          "target_id": 62,
+          "target_type": "OilDerrick",
+          "world_distance": 7630.0
+        },
+        {
+          "domain": "land",
+          "path_steps": 628,
+          "reachable": true,
+          "route_status": "reachable",
+          "seat": 8,
+          "start_access": [
+            748,
+            459
+          ],
+          "start_id": 8,
+          "straight_distance_world": 4051.2343797909302,
+          "target": [
+            380.0,
+            630.0
+          ],
+          "target_access": [
+            386,
+            635
+          ],
+          "target_id": 62,
+          "target_type": "OilDerrick",
+          "world_distance": 6280.0
+        }
+      ],
+      "base_distance_cells": 210.05951537600004,
+      "cell": [
+        380.0,
+        630.0
+      ],
+      "kind": "OilDerrick",
+      "nearest_seat": 4,
+      "object_id": 62
+    },
+    {
+      "access": [
+        {
+          "domain": "land",
+          "path_steps": 388,
+          "reachable": true,
+          "route_status": "reachable",
+          "seat": 1,
+          "start_access": [
+            145,
+            110
+          ],
+          "start_id": 1,
+          "straight_distance_world": 3493.5655139126848,
+          "target": [
+            490.0,
+            165.0
+          ],
+          "target_access": [
+            486,
+            157
+          ],
+          "target_id": 63,
+          "target_type": "HospitalTechStructure",
+          "world_distance": 3880.0
+        },
+        {
+          "domain": "land",
+          "path_steps": 433,
+          "reachable": true,
+          "route_status": "reachable",
+          "seat": 2,
+          "start_access": [
+            140,
+            260
+          ],
+          "start_id": 2,
+          "straight_distance_world": 3626.6375611577178,
+          "target": [
+            490.0,
+            165.0
+          ],
+          "target_access": [
+            482,
+            169
+          ],
+          "target_id": 63,
+          "target_type": "HospitalTechStructure",
+          "world_distance": 4330.0
+        },
+        {
+          "domain": "land",
+          "path_steps": 588,
+          "reachable": true,
+          "route_status": "reachable",
+          "seat": 3,
+          "start_access": [
+            140,
+            415
+          ],
+          "start_id": 3,
+          "straight_distance_world": 4301.162633521313,
+          "target": [
+            490.0,
+            165.0
+          ],
+          "target_access": [
+            482,
+            169
+          ],
+          "target_id": 63,
+          "target_type": "HospitalTechStructure",
+          "world_distance": 5880.0
+        },
+        {
+          "domain": "land",
+          "path_steps": 789,
+          "reachable": true,
+          "route_status": "reachable",
+          "seat": 4,
+          "start_access": [
+            170,
+            635
+          ],
+          "start_id": 4,
+          "straight_distance_world": 5685.9475903318,
+          "target": [
+            490.0,
+            165.0
+          ],
+          "target_access": [
+            487,
+            173
+          ],
+          "target_id": 63,
+          "target_type": "HospitalTechStructure",
+          "world_distance": 7890.0
+        },
+        {
+          "domain": "land",
+          "path_steps": 343,
+          "reachable": true,
+          "route_status": "reachable",
+          "seat": 5,
+          "start_access": [
+            740,
+            105
+          ],
+          "start_id": 5,
+          "straight_distance_world": 2570.9920264364882,
+          "target": [
+            490.0,
+            165.0
+          ],
+          "target_access": [
+            487,
+            173
+          ],
+          "target_id": 63,
+          "target_type": "HospitalTechStructure",
+          "world_distance": 3430.0
+        },
+        {
+          "domain": "land",
+          "path_steps": 780,
+          "reachable": true,
+          "route_status": "reachable",
+          "seat": 6,
+          "start_access": [
+            745,
+            695
+          ],
+          "start_id": 6,
+          "straight_distance_world": 5881.538914263851,
+          "target": [
+            490.0,
+            165.0
+          ],
+          "target_access": [
+            487,
+            173
+          ],
+          "target_id": 63,
+          "target_type": "HospitalTechStructure",
+          "world_distance": 7800.0
+        },
+        {
+          "domain": "land",
+          "path_steps": 352,
+          "reachable": true,
+          "route_status": "reachable",
+          "seat": 7,
+          "start_access": [
+            718,
+            294
+          ],
+          "start_id": 7,
+          "straight_distance_world": 2666.9270706189172,
+          "target": [
+            490.0,
+            165.0
+          ],
+          "target_access": [
+            487,
+            173
+          ],
+          "target_id": 63,
+          "target_type": "HospitalTechStructure",
+          "world_distance": 3520.0
+        },
+        {
+          "domain": "land",
+          "path_steps": 547,
+          "reachable": true,
+          "route_status": "reachable",
+          "seat": 8,
+          "start_access": [
+            748,
+            459
+          ],
+          "start_id": 8,
+          "straight_distance_world": 3969.886648255842,
+          "target": [
+            490.0,
+            165.0
+          ],
+          "target_access": [
+            487,
+            173
+          ],
+          "target_id": 63,
+          "target_type": "HospitalTechStructure",
+          "world_distance": 5470.0
+        }
+      ],
+      "base_distance_cells": 257.0992026436488,
+      "cell": [
+        490.0,
+        165.0
+      ],
+      "kind": "HospitalTechStructure",
+      "nearest_seat": 5,
+      "object_id": 63
+    },
+    {
+      "access": [
+        {
+          "domain": "land",
+          "path_steps": 715,
+          "reachable": true,
+          "route_status": "reachable",
+          "seat": 1,
+          "start_access": [
+            145,
+            110
+          ],
+          "start_id": 1,
+          "straight_distance_world": 4610.043383743801,
+          "target": [
+            420.0,
+            480.0
+          ],
+          "target_access": [
+            412,
+            484
+          ],
+          "target_id": 64,
+          "target_type": "GarageTechStructure",
+          "world_distance": 7150.0
+        },
+        {
+          "domain": "land",
+          "path_steps": 570,
+          "reachable": true,
+          "route_status": "reachable",
+          "seat": 2,
+          "start_access": [
+            140,
+            260
+          ],
+          "start_id": 2,
+          "straight_distance_world": 3560.898762952971,
+          "target": [
+            420.0,
+            480.0
+          ],
+          "target_access": [
+            412,
+            484
+          ],
+          "target_id": 64,
+          "target_type": "GarageTechStructure",
+          "world_distance": 5700.0
+        },
+        {
+          "domain": "land",
+          "path_steps": 415,
+          "reachable": true,
+          "route_status": "reachable",
+          "seat": 3,
+          "start_access": [
+            140,
+            415
+          ],
+          "start_id": 3,
+          "straight_distance_world": 2874.456470360962,
+          "target": [
+            420.0,
+            480.0
+          ],
+          "target_access": [
+            412,
+            484
+          ],
+          "target_id": 64,
+          "target_type": "GarageTechStructure",
+          "world_distance": 4150.0
+        },
+        {
+          "domain": "land",
+          "path_steps": 393,
+          "reachable": true,
+          "route_status": "reachable",
+          "seat": 4,
+          "start_access": [
+            170,
+            635
+          ],
+          "start_id": 4,
+          "straight_distance_world": 2941.513216016546,
+          "target": [
+            420.0,
+            480.0
+          ],
+          "target_access": [
+            412,
+            484
+          ],
+          "target_id": 64,
+          "target_type": "GarageTechStructure",
+          "world_distance": 3930.0
+        },
+        {
+          "domain": "land",
+          "path_steps": 757,
+          "reachable": true,
+          "route_status": "reachable",
+          "seat": 5,
+          "start_access": [
+            740,
+            105
+          ],
+          "start_id": 5,
+          "straight_distance_world": 4929.756586282937,
+          "target": [
+            420.0,
+            480.0
+          ],
+          "target_access": [
+            428,
+            484
+          ],
+          "target_id": 64,
+          "target_type": "GarageTechStructure",
+          "world_distance": 7570.0
+        },
+        {
+          "domain": "land",
+          "path_steps": 528,
+          "reachable": true,
+          "route_status": "reachable",
+          "seat": 6,
+          "start_access": [
+            745,
+            695
+          ],
+          "start_id": 6,
+          "straight_distance_world": 3896.793553679743,
+          "target": [
+            420.0,
+            480.0
+          ],
+          "target_access": [
+            428,
+            484
+          ],
+          "target_id": 64,
+          "target_type": "GarageTechStructure",
+          "world_distance": 5280.0
+        },
+        {
+          "domain": "land",
+          "path_steps": 546,
+          "reachable": true,
+          "route_status": "reachable",
+          "seat": 7,
+          "start_access": [
+            718,
+            294
+          ],
+          "start_id": 7,
+          "straight_distance_world": 3498.5711369071805,
+          "target": [
+            420.0,
+            480.0
+          ],
+          "target_access": [
+            428,
+            484
+          ],
+          "target_id": 64,
+          "target_type": "GarageTechStructure",
+          "world_distance": 5460.0
+        },
+        {
+          "domain": "land",
+          "path_steps": 411,
+          "reachable": true,
+          "route_status": "reachable",
+          "seat": 8,
+          "start_access": [
+            748,
+            459
+          ],
+          "start_id": 8,
+          "straight_distance_world": 3303.407331831786,
+          "target": [
+            420.0,
+            480.0
+          ],
+          "target_access": [
+            428,
+            484
+          ],
+          "target_id": 64,
+          "target_type": "GarageTechStructure",
+          "world_distance": 4110.0
+        }
+      ],
+      "base_distance_cells": 287.4456470360962,
+      "cell": [
+        420.0,
+        480.0
+      ],
+      "kind": "GarageTechStructure",
+      "nearest_seat": 3,
+      "object_id": 64
+    }
+  ]
+}

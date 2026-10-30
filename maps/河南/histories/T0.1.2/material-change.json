@@ -1,0 +1,292 @@
+{
+ "operation": "polish-textures material-only pass (T0.1.1 -> T0.1.2 candidate)",
+ "source": "[CHAI]沃野奔流T0.1.1",
+ "rule": {
+  "face_slope_units_per_cell": 8.0,
+  "toe_drop_units": 8.0,
+  "toe_width_cells": 1,
+  "shore_clearance_cells": 4
+ },
+ "heights": {
+  "identical": true,
+  "crc32": 3773833044
+ },
+ "gameplay_bitmaps": {
+  "identical": true,
+  "bytes": 706440,
+  "crc32": 1593470479
+ },
+ "chunks": [
+  {
+   "name": "AssetList",
+   "version": 1,
+   "before_bytes": 100,
+   "after_bytes": 100,
+   "before_crc32": 45807182,
+   "after_crc32": 45807182,
+   "identical": true
+  },
+  {
+   "name": "GlobalVersion",
+   "version": 1,
+   "before_bytes": 0,
+   "after_bytes": 0,
+   "before_crc32": 0,
+   "after_crc32": 0,
+   "identical": true
+  },
+  {
+   "name": "HeightMapData",
+   "version": 6,
+   "before_bytes": 1411236,
+   "after_bytes": 1411236,
+   "before_crc32": 1116555934,
+   "after_crc32": 1116555934,
+   "identical": true
+  },
+  {
+   "name": "BlendTileData",
+   "version": 27,
+   "before_bytes": 7108381,
+   "after_bytes": 7103269,
+   "before_crc32": 96146656,
+   "after_crc32": 2676435203,
+   "identical": false
+  },
+  {
+   "name": "WorldInfo",
+   "version": 1,
+   "before_bytes": 531,
+   "after_bytes": 531,
+   "before_crc32": 2427734812,
+   "after_crc32": 2427734812,
+   "identical": true
+  },
+  {
+   "name": "MPPositionList",
+   "version": 0,
+   "before_bytes": 126,
+   "after_bytes": 126,
+   "before_crc32": 2740868529,
+   "after_crc32": 2740868529,
+   "identical": true
+  },
+  {
+   "name": "SidesList",
+   "version": 6,
+   "before_bytes": 3921,
+   "after_bytes": 3921,
+   "before_crc32": 4280188595,
+   "after_crc32": 4280188595,
+   "identical": true
+  },
+  {
+   "name": "LibraryMapLists",
+   "version": 1,
+   "before_bytes": 266,
+   "after_bytes": 266,
+   "before_crc32": 3504370438,
+   "after_crc32": 3504370438,
+   "identical": true
+  },
+  {
+   "name": "Teams",
+   "version": 1,
+   "before_bytes": 1768,
+   "after_bytes": 1768,
+   "before_crc32": 2359901750,
+   "after_crc32": 2359901750,
+   "identical": true
+  },
+  {
+   "name": "PlayerScriptsList",
+   "version": 1,
+   "before_bytes": 437152,
+   "after_bytes": 437152,
+   "before_crc32": 860814963,
+   "after_crc32": 860814963,
+   "identical": true
+  },
+  {
+   "name": "BuildLists",
+   "version": 1,
+   "before_bytes": 535,
+   "after_bytes": 535,
+   "before_crc32": 932242952,
+   "after_crc32": 932242952,
+   "identical": true
+  },
+  {
+   "name": "ObjectsList",
+   "version": 3,
+   "before_bytes": 32296,
+   "after_bytes": 32296,
+   "before_crc32": 3169048703,
+   "after_crc32": 3169048703,
+   "identical": true
+  },
+  {
+   "name": "TriggerAreas",
+   "version": 1,
+   "before_bytes": 7825,
+   "after_bytes": 7825,
+   "before_crc32": 268026159,
+   "after_crc32": 268026159,
+   "identical": true
+  },
+  {
+   "name": "GlobalWaterSettings",
+   "version": 1,
+   "before_bytes": 8,
+   "after_bytes": 8,
+   "before_crc32": 2130512592,
+   "after_crc32": 2130512592,
+   "identical": true
+  },
+  {
+   "name": "FogSettings",
+   "version": 1,
+   "before_bytes": 24,
+   "after_bytes": 24,
+   "before_crc32": 2184336810,
+   "after_crc32": 2184336810,
+   "identical": true
+  },
+  {
+   "name": "MissionHotSpots",
+   "version": 1,
+   "before_bytes": 4,
+   "after_bytes": 4,
+   "before_crc32": 558161692,
+   "after_crc32": 558161692,
+   "identical": true
+  },
+  {
+   "name": "MissionObjectives",
+   "version": 3,
+   "before_bytes": 4,
+   "after_bytes": 4,
+   "before_crc32": 558161692,
+   "after_crc32": 558161692,
+   "identical": true
+  },
+  {
+   "name": "StandingWaterAreas",
+   "version": 2,
+   "before_bytes": 126,
+   "after_bytes": 126,
+   "before_crc32": 3091255278,
+   "after_crc32": 3091255278,
+   "identical": true
+  },
+  {
+   "name": "RiverAreas",
+   "version": 3,
+   "before_bytes": 4,
+   "after_bytes": 4,
+   "before_crc32": 558161692,
+   "after_crc32": 558161692,
+   "identical": true
+  },
+  {
+   "name": "StandingWaveAreas",
+   "version": 4,
+   "before_bytes": 4,
+   "after_bytes": 4,
+   "before_crc32": 558161692,
+   "after_crc32": 558161692,
+   "identical": true
+  },
+  {
+   "name": "GlobalLighting",
+   "version": 11,
+   "before_bytes": 452,
+   "after_bytes": 452,
+   "before_crc32": 855115525,
+   "after_crc32": 855115525,
+   "identical": true
+  },
+  {
+   "name": "PostEffectsChunk",
+   "version": 2,
+   "before_bytes": 20,
+   "after_bytes": 20,
+   "before_crc32": 1165006495,
+   "after_crc32": 1165006495,
+   "identical": true
+  },
+  {
+   "name": "EnvironmentData",
+   "version": 5,
+   "before_bytes": 43,
+   "after_bytes": 43,
+   "before_crc32": 3543822590,
+   "after_crc32": 3543822590,
+   "identical": true
+  },
+  {
+   "name": "NamedCameras",
+   "version": 2,
+   "before_bytes": 4,
+   "after_bytes": 4,
+   "before_crc32": 558161692,
+   "after_crc32": 558161692,
+   "identical": true
+  },
+  {
+   "name": "CameraAnimationList",
+   "version": 3,
+   "before_bytes": 4,
+   "after_bytes": 4,
+   "before_crc32": 558161692,
+   "after_crc32": 558161692,
+   "identical": true
+  },
+  {
+   "name": "WaypointsList",
+   "version": 1,
+   "before_bytes": 4,
+   "after_bytes": 4,
+   "before_crc32": 558161692,
+   "after_crc32": 558161692,
+   "identical": true
+  }
+ ],
+ "changed_primary_cells": 21124,
+ "material_histogram_before": {
+  "Grass_CapeCod05": 293296,
+  "Grass_Geneva01": 38186,
+  "Rock_Yucatan01": 11583,
+  "Gravel_Yucatan01": 6438,
+  "Dirt_Yucatan06": 6808,
+  "Reef_Yucatan02": 1687,
+  "Reef_Yucatan01": 232,
+  "Rock_Yucatan03": 756,
+  "Sand_Hawaii02": 1086,
+  "Grass_NewYork01": 277405,
+  "Grass_MtRush04": 52743,
+  "Dirt_Iceland05": 15380
+ },
+ "material_histogram_after": {
+  "Grass_CapeCod05": 299173,
+  "Grass_Geneva01": 38461,
+  "Rock_Yucatan01": 8799,
+  "Gravel_Yucatan01": 648,
+  "Dirt_Yucatan06": 603,
+  "Reef_Yucatan02": 1687,
+  "Reef_Yucatan01": 232,
+  "Rock_Yucatan03": 1057,
+  "Sand_Hawaii02": 1086,
+  "Grass_NewYork01": 279562,
+  "Grass_MtRush04": 58498,
+  "Dirt_Iceland05": 15794
+ },
+ "blend_descriptions_before": 2888,
+ "blend_descriptions_after": 2604,
+ "blend_payload_bytes_before": 7108381,
+ "blend_payload_bytes_after": 7103269,
+ "material_edges_before": 32820,
+ "hard_seams_before": 646,
+ "material_edges_after": 27915,
+ "hard_seams_after": 551
+}

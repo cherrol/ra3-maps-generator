@@ -1,7 +1,7 @@
 {
   "binding": {
-    "extractor_version": "ea-catalog-v1",
-    "fingerprint": "2867457d3e34766b94a8e48b56dd90625c4f5c01625424045cb61fc3b9c2e0ff",
+    "extractor_version": "ea-catalog-v2",
+    "fingerprint": "34904079bfcb3be9313ca0969b63ad3369afab4c94a18aa170656030b3ec1177",
     "inputs_sha256": {
       "data/ea-modding/manifest.jsonl": "d90d8ae5a223f3b477dec8b665344205545c33c1709230c12179b1d476703446",
       "data/ea-modding/provenance.json": "682cee839f3d55e22991e2ff117519872a1a734862b56afac6d16c51165b206e",
@@ -581,9 +581,10 @@
       "data/ea-modding/red-alert-3/Xml/System/RallyPointMarker.xml": "12978c9fd2efc5e1223c36a806e9c4fbc4f18bca98da0e8a75118bc1db21dde5",
       "data/ea-modding/red-alert-3/Xml/System/ViewMarker.xml": "072c14c49322114318c3be0587e7599fc3062a40ab7843127d2900c0d14fa40e",
       "data/ea-modding/red-alert-3/Xml/Terrain/Terrain.xml": "d2f2140c71c9279a0bd93bb67cd8e7563f8be3c9366460162323a2429624af49",
+      "src/formats/sha256.rs": "8c81461b8f144aa6d01f13aa195c0558757ff393872ad0f1ac664ab4fb74109a",
       "templates/resources/stock-global-objects.json": "f4b92910c18256b6e31d52102640727398d234918ab6595096ffbd123d30d3b9",
       "templates/resources/stock-object-sources.json": "a3a21bffb31266c349a5c88f09765287546494cc27b1ee9d95ced20d48b55d2b",
-      "tools/import_ea_catalog.py": "8300bd7765635ae960b8945c941d9cb172a00c5f698fd3212341db10b9af430b"
+      "xtask/import_ea_catalog.rs": "f54e2005875fdf8d6ab129dedba829968026e6814b85c50f08a8c6484d885053"
     },
     "revision": "3aad8e412961ab543192ae70f8503dc8e178e095",
     "schema_version": 1

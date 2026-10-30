@@ -321,8 +321,9 @@ mod tests {
             std::process::id(),
             NEXT.fetch_add(1, Ordering::Relaxed)
         ));
-        fs::create_dir_all(root.join("docs")).unwrap();
-        fs::write(root.join("docs/九州大地命名.md"),
+        let naming = root.join(crate::terrain_preview::NAMING_DOCUMENT);
+        fs::create_dir_all(naming.parent().unwrap()).unwrap();
+        fs::write(naming,
             "## 全系列定名\n| 地形原型 | 地图名 | 命名画面 |\n|---|---|---|\n| 云南 | 层峦织彩 | 山地 |\n").unwrap();
         let internal = root.join("maps/云南/data/terrain-preview");
         fs::create_dir_all(&internal).unwrap();

@@ -1,0 +1,21 @@
+{
+  "crc32": 790931293,
+  "grid_offset": [
+    20,
+    20
+  ],
+  "ignored_inputs": [
+    "all preview NPZ caches",
+    "old native maps",
+    "old versions",
+    "old layouts"
+  ],
+  "method": "classify exact palette and its boundary shading; extend edge samples into 20-cell border",
+  "pixel_crop": [
+    28,
+    112,
+    800,
+    800
+  ],
+  "source": "maps/广西/preview.png"
+}

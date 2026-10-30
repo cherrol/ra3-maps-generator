@@ -94,9 +94,7 @@ fn policy(p: &Project) -> Result<Policy> {
     struct Root {
         production_placement: Policy,
     }
-    let x: Root = serde_json::from_slice(&std::fs::read(
-        p.root.join("templates/rules/common-T0.5.1.json"),
-    )?)?;
+    let x: Root = serde_json::from_slice(&std::fs::read(p.root.join("rules/common-T0.5.1.json"))?)?;
     let q = x.production_placement;
     if !q.avoid_existing_buildings
         || !q.avoid_gifted_buildings

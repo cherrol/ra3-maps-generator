@@ -1,0 +1,44 @@
+{
+  "added_ramps": [
+    {
+      "auto": true,
+      "h": 40.0,
+      "pair": [
+        210.0,
+        280.0
+      ],
+      "route": 5,
+      "route_kind": "main_path",
+      "span": 40.0,
+      "style": "mountain",
+      "surface_style": "mountain",
+      "ux": 1.0,
+      "uy": 0.0,
+      "w": 40.0,
+      "width": 24.0,
+      "x": 665.5,
+      "y": 548.0
+    },
+    {
+      "auto": true,
+      "h": 40.0,
+      "pair": [
+        210.0,
+        280.0
+      ],
+      "route": 5,
+      "route_kind": "main_path",
+      "span": 40.0,
+      "style": "mountain",
+      "surface_style": "mountain",
+      "ux": -0.9659258262890682,
+      "uy": 0.258819045102521,
+      "w": 40.0,
+      "width": 24.0,
+      "x": 747.5,
+      "y": 548.0
+    }
+  ],
+  "layer_outlines_unchanged_outside_ramp_bodies": true,
+  "purpose": "direct access across the existing eastern level-two island terrace, avoiding a long detour around its north/south perimeter; planned before outer-ore reallocation"
+}

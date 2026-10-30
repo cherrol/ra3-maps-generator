@@ -1,0 +1,270 @@
+{
+  "changed_playable_samples": 15651,
+  "design_layer_mask_changes": 0,
+  "instruction": "不改地形，斜坡可以新增",
+  "native_crc32": 2234449502,
+  "objects_and_scripts_identical_to_current_task_joint_layout": true,
+  "passed": true,
+  "ramps": [
+    {
+      "auto": true,
+      "h": 40.0,
+      "pair": [
+        280.0,
+        350.0
+      ],
+      "route": 1,
+      "route_kind": "main_path",
+      "span": 40.0,
+      "style": "mountain",
+      "surface_style": "mountain",
+      "ux": -1.0,
+      "uy": 1.2246467991473532e-16,
+      "w": 40.0,
+      "width": 24.0,
+      "x": 659.5,
+      "y": 115.0
+    },
+    {
+      "auto": true,
+      "h": 40.0,
+      "pair": [
+        280.0,
+        350.0
+      ],
+      "route": 1,
+      "route_kind": "secondary_path",
+      "span": 40.0,
+      "style": "mountain",
+      "surface_style": "mountain",
+      "ux": -1.0,
+      "uy": 1.2246467991473532e-16,
+      "w": 40.0,
+      "width": 24.0,
+      "x": 489.5,
+      "y": 196.0
+    },
+    {
+      "auto": true,
+      "h": 40.0,
+      "pair": [
+        280.0,
+        350.0
+      ],
+      "route": 2,
+      "route_kind": "main_path",
+      "span": 40.0,
+      "style": "mountain",
+      "surface_style": "mountain",
+      "ux": -0.4999999999999998,
+      "uy": 0.8660254037844387,
+      "w": 40.0,
+      "width": 24.0,
+      "x": 372.5,
+      "y": 301.0
+    },
+    {
+      "auto": true,
+      "h": 40.0,
+      "pair": [
+        210.0,
+        280.0
+      ],
+      "route": 2,
+      "route_kind": "main_path",
+      "span": 40.0,
+      "style": "mountain",
+      "surface_style": "mountain",
+      "ux": -0.4999999999999998,
+      "uy": 0.8660254037844387,
+      "w": 40.0,
+      "width": 24.0,
+      "x": 512.5,
+      "y": 301.0
+    },
+    {
+      "auto": true,
+      "h": 40.0,
+      "pair": [
+        210.0,
+        280.0
+      ],
+      "route": 2,
+      "route_kind": "main_path",
+      "span": 40.0,
+      "style": "mountain",
+      "surface_style": "mountain",
+      "ux": 1.0,
+      "uy": 0.0,
+      "w": 40.0,
+      "width": 24.0,
+      "x": 594.5,
+      "y": 295.0
+    },
+    {
+      "auto": true,
+      "h": 40.0,
+      "pair": [
+        280.0,
+        350.0
+      ],
+      "route": 3,
+      "route_kind": "main_path",
+      "span": 40.0,
+      "style": "mountain",
+      "surface_style": "mountain",
+      "ux": -0.25881904510252063,
+      "uy": 0.9659258262890683,
+      "w": 40.0,
+      "width": 24.0,
+      "x": 276.5,
+      "y": 450.0
+    },
+    {
+      "auto": true,
+      "h": 40.0,
+      "pair": [
+        210.0,
+        280.0
+      ],
+      "route": 3,
+      "route_kind": "main_path",
+      "span": 40.0,
+      "style": "mountain",
+      "surface_style": "mountain",
+      "ux": -0.4999999999999998,
+      "uy": 0.8660254037844387,
+      "w": 40.0,
+      "width": 24.0,
+      "x": 464.5,
+      "y": 469.0
+    },
+    {
+      "auto": true,
+      "h": 40.0,
+      "pair": [
+        280.0,
+        350.0
+      ],
+      "route": 3,
+      "route_kind": "secondary_path",
+      "span": 40.0,
+      "style": "mountain",
+      "surface_style": "mountain",
+      "ux": -0.9659258262890683,
+      "uy": -0.2588190451025208,
+      "w": 40.0,
+      "width": 24.0,
+      "x": 264.5,
+      "y": 528.0
+    },
+    {
+      "auto": true,
+      "h": 40.0,
+      "pair": [
+        210.0,
+        280.0
+      ],
+      "route": 3,
+      "route_kind": "secondary_path",
+      "span": 40.0,
+      "style": "mountain",
+      "surface_style": "mountain",
+      "ux": -0.8660254037844387,
+      "uy": 0.49999999999999994,
+      "w": 40.0,
+      "width": 24.0,
+      "x": 369.5,
+      "y": 528.0
+    },
+    {
+      "auto": true,
+      "h": 40.0,
+      "pair": [
+        210.0,
+        280.0
+      ],
+      "route": 4,
+      "route_kind": "main_path",
+      "span": 40.0,
+      "style": "mountain",
+      "surface_style": "mountain",
+      "ux": -0.9659258262890683,
+      "uy": -0.2588190451025208,
+      "w": 40.0,
+      "width": 24.0,
+      "x": 399.5,
+      "y": 693.0
+    },
+    {
+      "auto": true,
+      "h": 40.0,
+      "pair": [
+        210.0,
+        280.0
+      ],
+      "route": 4,
+      "route_kind": "secondary_path",
+      "span": 40.0,
+      "style": "mountain",
+      "surface_style": "mountain",
+      "ux": -0.4999999999999998,
+      "uy": 0.8660254037844387,
+      "w": 40.0,
+      "width": 24.0,
+      "x": 292.5,
+      "y": 633.0
+    },
+    {
+      "auto": true,
+      "h": 40.0,
+      "pair": [
+        210.0,
+        280.0
+      ],
+      "route": 5,
+      "route_kind": "main_path",
+      "span": 40.0,
+      "style": "mountain",
+      "surface_style": "mountain",
+      "ux": 1.0,
+      "uy": 0.0,
+      "w": 40.0,
+      "width": 24.0,
+      "x": 665.5,
+      "y": 548.0
+    },
+    {
+      "auto": true,
+      "h": 40.0,
+      "pair": [
+        210.0,
+        280.0
+      ],
+      "route": 5,
+      "route_kind": "main_path",
+      "span": 40.0,
+      "style": "mountain",
+      "surface_style": "mountain",
+      "ux": -0.9659258262890682,
+      "uy": 0.258819045102521,
+      "w": 40.0,
+      "width": 24.0,
+      "x": 747.5,
+      "y": 548.0
+    }
+  ],
+  "schema_version": 1,
+  "source": "preview.png",
+  "source_crc32": 790931293,
+  "terrain_source": "fresh palette decode; no NPZ cache or historical native height imported",
+  "unauthorized_height_changes": 0,
+  "unchanged_source_land_heights": [
+    210,
+    280,
+    350,
+    420
+  ],
+  "water_height_rule": "src/terrain_preview/mod.rs: water layer maps to 130; standard water plane 200",
+  "water_mask_changes": 0
+}

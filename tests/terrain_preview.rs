@@ -21,11 +21,15 @@ fn fixture() -> Fixture {
         std::process::id(),
         NEXT.fetch_add(1, Ordering::Relaxed)
     ));
-    fs::create_dir_all(path.join("docs")).unwrap();
+    let naming = path.join(ra3maps::terrain_preview::NAMING_DOCUMENT);
+    fs::create_dir_all(naming.parent().unwrap()).unwrap();
     fs::create_dir_all(path.join("maps")).unwrap();
     fs::write(
-        path.join("docs/九州大地命名.md"),
-        fs::read(Path::new(env!("CARGO_MANIFEST_DIR")).join("docs/九州大地命名.md")).unwrap(),
+        naming,
+        fs::read(
+            Path::new(env!("CARGO_MANIFEST_DIR")).join(ra3maps::terrain_preview::NAMING_DOCUMENT),
+        )
+        .unwrap(),
     )
     .unwrap();
     Fixture(path)

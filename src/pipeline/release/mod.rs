@@ -203,12 +203,59 @@ impl RampMaterialJoins {
     }
 }
 
+/// Point the localized `Map:DisplayName` value at this release. Incremental
+/// edits copy the previous archive, so the value would otherwise keep the
+/// version the strings were first generated with.
+fn retarget_strings(strings: &str, name: &str) -> String {
+    let mut out: Vec<String> = Vec::new();
+    let mut rewrite = false;
+    for line in strings.lines() {
+        let trimmed = line.trim();
+        if rewrite && trimmed.len() >= 2 && trimmed.starts_with('"') && trimmed.ends_with('"') {
+            out.push(format!("\"{name}\""));
+            rewrite = false;
+            continue;
+        }
+        rewrite = trimmed == "Map:DisplayName";
+        out.push(line.to_owned());
+    }
+    let mut text = out.join("\n");
+    if strings.ends_with('\n') {
+        text.push('\n');
+    }
+    text
+}
+
 fn run_inner(
     root: &Path,
     id: &str,
     source: &Path,
     options: &build::Options,
     edit: Edit<'_>,
+) -> Result<Project> {
+    let project = Project::load(root, id)?;
+    crate::pipeline::telemetry::attempt(&project, "incremental-release", |log| {
+        let inputs = crate::pipeline::run_inputs::RunInputs::capture(&project)?;
+        log.inputs(inputs.manifest())?;
+        let source_bytes = fs::read(source)?;
+        let source_hash = crate::formats::sha256::hex(&source_bytes);
+        log.event(
+            "source",
+            serde_json::json!({"path":source,"sha256":source_hash}),
+        )?;
+        log.stage("edit-and-validate", || {
+            run_edit(root, id, source, options, edit, &inputs, &source_hash)
+        })
+    })
+}
+fn run_edit(
+    root: &Path,
+    id: &str,
+    source: &Path,
+    options: &build::Options,
+    edit: Edit<'_>,
+    inputs: &crate::pipeline::run_inputs::RunInputs,
+    source_hash: &str,
 ) -> Result<Project> {
     let polish = matches!(
         edit,
@@ -569,6 +616,13 @@ fn run_inner(
     } else {
         None
     };
+    // Texture polishing repaints the existing archive; the localized display
+    // name in map.str must still follow the new release identity, otherwise the
+    // game's map list keeps showing the version it was first generated with.
+    if textures && let Some(strings) = flat.get_mut("map.str") {
+        let retargeted = retarget_strings(std::str::from_utf8(strings)?, &name);
+        *strings = retargeted.into_bytes();
+    }
     let finalization = if polish || textures || terrain_package {
         crate::resources::TerrainFinalization::CompactLookups
     } else {
@@ -764,6 +818,10 @@ fn run_inner(
     });
     report.as_object_mut().unwrap().extend(placement);
     report["final_production_access"] = final_access;
+    inputs.verify()?;
+    if crate::formats::sha256::hex(&fs::read(source)?) != source_hash {
+        return Err(err("release ZIP source changed during run"));
+    }
     let result = (|| -> Result<()> {
         for dir in [&assets, &dist] {
             fs::create_dir_all(dir)?;
@@ -1090,6 +1148,20 @@ mod tests {
     use super::*;
     use serde_json::json;
     use std::path::PathBuf;
+
+    #[test]
+    fn release_strings_take_the_new_display_name_and_leave_siblings_alone() {
+        let source = "Series:Name\n\"九州大地\"\nEnd\n\nMap:DisplayName\n\"[CHAI]沃野奔流T0.1.1\"\nEnd\n\nMap:Description\n\"河南三层台地\"\nEnd\n";
+        let out = retarget_strings(source, "[CHAI]沃野奔流T0.1.3");
+        assert!(out.contains("Map:DisplayName\n\"[CHAI]沃野奔流T0.1.3\"\nEnd"));
+        assert!(out.contains("Series:Name\n\"九州大地\"\nEnd"));
+        assert!(out.contains("Map:Description\n\"河南三层台地\"\nEnd"));
+        assert!(out.ends_with('\n'));
+        assert_eq!(
+            retarget_strings("no display name\n", "x"),
+            "no display name\n"
+        );
+    }
 
     #[test]
     fn material_join_groups_keep_different_ramp_directions_explicit() {

@@ -1,0 +1,8338 @@
+{
+ "schema_version": 1,
+ "base_cells": [
+  [
+   110.0,
+   700.0
+  ],
+  [
+   260.0,
+   720.0
+  ],
+  [
+   470.0,
+   700.0
+  ],
+  [
+   620.0,
+   680.0
+  ],
+  [
+   180.0,
+   130.0
+  ],
+  [
+   700.0,
+   130.0
+  ],
+  [
+   360.0,
+   130.0
+  ],
+  [
+   520.0,
+   130.0
+  ]
+ ],
+ "base_pad_cells": [],
+ "ore_cells": [
+  [
+   149.59798,
+   660.40202
+  ],
+  [
+   66.866486,
+   743.133514
+  ],
+  [
+   220.40202,
+   680.40202
+  ],
+  [
+   299.59798,
+   759.59798
+  ],
+  [
+   430.40202,
+   660.40202
+  ],
+  [
+   509.59798,
+   739.59798
+  ],
+  [
+   663.133514,
+   636.866486
+  ],
+  [
+   580.40202,
+   719.59798
+  ],
+  [
+   219.59798,
+   90.40202
+  ],
+  [
+   136.866486,
+   173.133514
+  ],
+  [
+   743.133514,
+   86.866486
+  ],
+  [
+   660.40202,
+   169.59798
+  ],
+  [
+   320.40202,
+   90.40202
+  ],
+  [
+   399.59798,
+   169.59798
+  ],
+  [
+   480.40202,
+   90.40202
+  ],
+  [
+   559.59798,
+   169.59798
+  ],
+  [
+   365.0,
+   682.0
+  ],
+  [
+   489.0,
+   595.0
+  ],
+  [
+   372.0,
+   442.0
+  ],
+  [
+   580.0,
+   257.0
+  ],
+  [
+   365.0,
+   730.0
+  ],
+  [
+   535.0,
+   613.0
+  ],
+  [
+   372.0,
+   488.0
+  ],
+  [
+   490.0,
+   362.0
+  ],
+  [
+   333.0,
+   556.0
+  ],
+  [
+   418.0,
+   529.0
+  ],
+  [
+   397.0,
+   359.0
+  ],
+  [
+   588.0,
+   211.0
+  ],
+  [
+   538.0,
+   569.0
+  ],
+  [
+   581.0,
+   581.0
+  ],
+  [
+   554.0,
+   352.0
+  ],
+  [
+   561.0,
+   416.0
+  ],
+  [
+   440.0,
+   201.0
+  ],
+  [
+   290.0,
+   209.0
+  ],
+  [
+   348.0,
+   405.0
+  ],
+  [
+   442.0,
+   59.0
+  ],
+  [
+   640.0,
+   234.0
+  ],
+  [
+   624.0,
+   281.0
+  ],
+  [
+   501.0,
+   405.0
+  ],
+  [
+   505.0,
+   466.0
+  ],
+  [
+   441.0,
+   355.0
+  ],
+  [
+   523.0,
+   315.0
+  ],
+  [
+   372.0,
+   532.0
+  ],
+  [
+   422.0,
+   441.0
+  ],
+  [
+   526.0,
+   268.0
+  ],
+  [
+   473.0,
+   321.0
+  ],
+  [
+   397.0,
+   404.0
+  ],
+  [
+   446.0,
+   403.0
+  ]
+ ],
+ "ore_angles": [
+  2.356194490192345,
+  -0.7853981633974483,
+  0.7853981633974483,
+  -2.356194490192345,
+  0.7853981633974483,
+  -2.356194490192345,
+  2.356194490192345,
+  -0.7853981633974483,
+  2.356194490192345,
+  -0.7853981633974483,
+  2.356194490192345,
+  -0.7853981633974483,
+  0.7853981633974483,
+  -2.356194490192345,
+  0.7853981633974483,
+  -2.356194490192345,
+  0.7853981633974483,
+  0.7853981633974483,
+  0.7853981633974483,
+  0.7853981633974483,
+  0.7853981633974483,
+  0.7853981633974483,
+  0.7853981633974483,
+  0.7853981633974483,
+  -0.7853981633974483,
+  -0.7853981633974483,
+  0.7853981633974483,
+  0.7853981633974483,
+  0.7853981633974483,
+  0.7853981633974483,
+  0.7853981633974483,
+  0.7853981633974483,
+  -0.7853981633974483,
+  -0.7853981633974483,
+  0.7853981633974483,
+  0.7853981633974483,
+  0.7853981633974483,
+  0.7853981633974483,
+  0.7853981633974483,
+  2.356194490192345,
+  0.7853981633974483,
+  0.7853981633974483,
+  -0.7853981633974483,
+  0.7853981633974483,
+  0.7853981633974483,
+  0.7853981633974483,
+  0.7853981633974483,
+  0.7853981633974483
+ ],
+ "ore_kind": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "ore_owner": [
+  -1,
+  -1,
+  -1,
+  -1,
+  -1,
+  -1,
+  -1,
+  -1,
+  -1,
+  -1,
+  -1,
+  -1,
+  -1,
+  -1,
+  -1,
+  -1,
+  -1,
+  -1,
+  -1,
+  -1,
+  -1,
+  -1,
+  -1,
+  -1,
+  -1,
+  -1,
+  -1,
+  -1,
+  -1,
+  -1,
+  -1,
+  -1,
+  -1,
+  -1,
+  -1,
+  -1,
+  -1,
+  -1,
+  -1,
+  -1,
+  -1,
+  -1,
+  -1,
+  -1,
+  -1,
+  -1,
+  -1,
+  -1
+ ],
+ "derrick_cells": [
+  [
+   338.0,
+   456.0
+  ],
+  [
+   356.0,
+   366.0
+  ],
+  [
+   470.0,
+   534.0
+  ],
+  [
+   542.0,
+   456.0
+  ],
+  [
+   386.0,
+   570.0
+  ],
+  [
+   272.0,
+   402.0
+  ]
+ ],
+ "house_cells": [],
+ "post_cells": [
+  [
+   560.0,
+   530.0
+  ],
+  [
+   236.0,
+   470.0
+  ]
+ ],
+ "garage_cells": [
+  [
+   584.0,
+   320.0
+  ],
+  [
+   638.0,
+   470.0
+  ]
+ ],
+ "airport_cells": [],
+ "hospital_cells": [
+  [
+   422.0,
+   320.0
+  ],
+  [
+   302.0,
+   524.0
+  ]
+ ],
+ "academy_cells": [
+  [
+   290.0,
+   326.0
+  ],
+  [
+   602.0,
+   398.0
+  ]
+ ],
+ "shipyard_cells": [],
+ "bridge_cells": [],
+ "ramps": [],
+ "objects": [
+  {
+   "cell": [
+    149.59798,
+    660.40202
+   ],
+   "version": 3,
+   "angle": -2.356194490192345,
+   "road_type": 0,
+   "type_name": "OreNode",
+   "props": [
+    {
+     "key": "objectInitialHealth",
+     "type": "int",
+     "value": 100
+    },
+    {
+     "key": "objectEnabled",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectIndestructible",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectUnsellable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectPowered",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectRecruitableAI",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectTargetable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectSleeping",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectBasePriority",
+     "type": "int",
+     "value": 40
+    },
+    {
+     "key": "objectBasePhase",
+     "type": "int",
+     "value": 1
+    },
+    {
+     "key": "originalOwner",
+     "type": "ascii",
+     "value": "PlyrNeutral/teamPlyrNeutral"
+    },
+    {
+     "key": "uniqueID",
+     "type": "ascii",
+     "value": "qianhe-ore-1"
+    },
+    {
+     "key": "objectLayer",
+     "type": "ascii",
+     "value": ""
+    }
+   ]
+  },
+  {
+   "cell": [
+    66.866486,
+    743.133514
+   ],
+   "version": 3,
+   "angle": 0.7853981633974483,
+   "road_type": 0,
+   "type_name": "OreNode",
+   "props": [
+    {
+     "key": "objectInitialHealth",
+     "type": "int",
+     "value": 100
+    },
+    {
+     "key": "objectEnabled",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectIndestructible",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectUnsellable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectPowered",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectRecruitableAI",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectTargetable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectSleeping",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectBasePriority",
+     "type": "int",
+     "value": 40
+    },
+    {
+     "key": "objectBasePhase",
+     "type": "int",
+     "value": 1
+    },
+    {
+     "key": "originalOwner",
+     "type": "ascii",
+     "value": "PlyrNeutral/teamPlyrNeutral"
+    },
+    {
+     "key": "uniqueID",
+     "type": "ascii",
+     "value": "qianhe-ore-2"
+    },
+    {
+     "key": "objectLayer",
+     "type": "ascii",
+     "value": ""
+    }
+   ]
+  },
+  {
+   "cell": [
+    220.40202,
+    680.40202
+   ],
+   "version": 3,
+   "angle": -0.7853981633974483,
+   "road_type": 0,
+   "type_name": "OreNode",
+   "props": [
+    {
+     "key": "objectInitialHealth",
+     "type": "int",
+     "value": 100
+    },
+    {
+     "key": "objectEnabled",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectIndestructible",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectUnsellable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectPowered",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectRecruitableAI",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectTargetable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectSleeping",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectBasePriority",
+     "type": "int",
+     "value": 40
+    },
+    {
+     "key": "objectBasePhase",
+     "type": "int",
+     "value": 1
+    },
+    {
+     "key": "originalOwner",
+     "type": "ascii",
+     "value": "PlyrNeutral/teamPlyrNeutral"
+    },
+    {
+     "key": "uniqueID",
+     "type": "ascii",
+     "value": "qianhe-ore-3"
+    },
+    {
+     "key": "objectLayer",
+     "type": "ascii",
+     "value": ""
+    }
+   ]
+  },
+  {
+   "cell": [
+    299.59798,
+    759.59798
+   ],
+   "version": 3,
+   "angle": 2.356194490192345,
+   "road_type": 0,
+   "type_name": "OreNode",
+   "props": [
+    {
+     "key": "objectInitialHealth",
+     "type": "int",
+     "value": 100
+    },
+    {
+     "key": "objectEnabled",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectIndestructible",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectUnsellable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectPowered",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectRecruitableAI",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectTargetable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectSleeping",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectBasePriority",
+     "type": "int",
+     "value": 40
+    },
+    {
+     "key": "objectBasePhase",
+     "type": "int",
+     "value": 1
+    },
+    {
+     "key": "originalOwner",
+     "type": "ascii",
+     "value": "PlyrNeutral/teamPlyrNeutral"
+    },
+    {
+     "key": "uniqueID",
+     "type": "ascii",
+     "value": "qianhe-ore-4"
+    },
+    {
+     "key": "objectLayer",
+     "type": "ascii",
+     "value": ""
+    }
+   ]
+  },
+  {
+   "cell": [
+    430.40202,
+    660.40202
+   ],
+   "version": 3,
+   "angle": -0.7853981633974483,
+   "road_type": 0,
+   "type_name": "OreNode",
+   "props": [
+    {
+     "key": "objectInitialHealth",
+     "type": "int",
+     "value": 100
+    },
+    {
+     "key": "objectEnabled",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectIndestructible",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectUnsellable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectPowered",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectRecruitableAI",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectTargetable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectSleeping",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectBasePriority",
+     "type": "int",
+     "value": 40
+    },
+    {
+     "key": "objectBasePhase",
+     "type": "int",
+     "value": 1
+    },
+    {
+     "key": "originalOwner",
+     "type": "ascii",
+     "value": "PlyrNeutral/teamPlyrNeutral"
+    },
+    {
+     "key": "uniqueID",
+     "type": "ascii",
+     "value": "qianhe-ore-5"
+    },
+    {
+     "key": "objectLayer",
+     "type": "ascii",
+     "value": ""
+    }
+   ]
+  },
+  {
+   "cell": [
+    509.59798,
+    739.59798
+   ],
+   "version": 3,
+   "angle": 2.356194490192345,
+   "road_type": 0,
+   "type_name": "OreNode",
+   "props": [
+    {
+     "key": "objectInitialHealth",
+     "type": "int",
+     "value": 100
+    },
+    {
+     "key": "objectEnabled",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectIndestructible",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectUnsellable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectPowered",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectRecruitableAI",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectTargetable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectSleeping",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectBasePriority",
+     "type": "int",
+     "value": 40
+    },
+    {
+     "key": "objectBasePhase",
+     "type": "int",
+     "value": 1
+    },
+    {
+     "key": "originalOwner",
+     "type": "ascii",
+     "value": "PlyrNeutral/teamPlyrNeutral"
+    },
+    {
+     "key": "uniqueID",
+     "type": "ascii",
+     "value": "qianhe-ore-6"
+    },
+    {
+     "key": "objectLayer",
+     "type": "ascii",
+     "value": ""
+    }
+   ]
+  },
+  {
+   "cell": [
+    663.133514,
+    636.866486
+   ],
+   "version": 3,
+   "angle": -2.356194490192345,
+   "road_type": 0,
+   "type_name": "OreNode",
+   "props": [
+    {
+     "key": "objectInitialHealth",
+     "type": "int",
+     "value": 100
+    },
+    {
+     "key": "objectEnabled",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectIndestructible",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectUnsellable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectPowered",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectRecruitableAI",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectTargetable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectSleeping",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectBasePriority",
+     "type": "int",
+     "value": 40
+    },
+    {
+     "key": "objectBasePhase",
+     "type": "int",
+     "value": 1
+    },
+    {
+     "key": "originalOwner",
+     "type": "ascii",
+     "value": "PlyrNeutral/teamPlyrNeutral"
+    },
+    {
+     "key": "uniqueID",
+     "type": "ascii",
+     "value": "qianhe-ore-7"
+    },
+    {
+     "key": "objectLayer",
+     "type": "ascii",
+     "value": ""
+    }
+   ]
+  },
+  {
+   "cell": [
+    580.40202,
+    719.59798
+   ],
+   "version": 3,
+   "angle": 0.7853981633974483,
+   "road_type": 0,
+   "type_name": "OreNode",
+   "props": [
+    {
+     "key": "objectInitialHealth",
+     "type": "int",
+     "value": 100
+    },
+    {
+     "key": "objectEnabled",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectIndestructible",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectUnsellable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectPowered",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectRecruitableAI",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectTargetable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectSleeping",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectBasePriority",
+     "type": "int",
+     "value": 40
+    },
+    {
+     "key": "objectBasePhase",
+     "type": "int",
+     "value": 1
+    },
+    {
+     "key": "originalOwner",
+     "type": "ascii",
+     "value": "PlyrNeutral/teamPlyrNeutral"
+    },
+    {
+     "key": "uniqueID",
+     "type": "ascii",
+     "value": "qianhe-ore-8"
+    },
+    {
+     "key": "objectLayer",
+     "type": "ascii",
+     "value": ""
+    }
+   ]
+  },
+  {
+   "cell": [
+    219.59798,
+    90.40202
+   ],
+   "version": 3,
+   "angle": -2.356194490192345,
+   "road_type": 0,
+   "type_name": "OreNode",
+   "props": [
+    {
+     "key": "objectInitialHealth",
+     "type": "int",
+     "value": 100
+    },
+    {
+     "key": "objectEnabled",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectIndestructible",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectUnsellable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectPowered",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectRecruitableAI",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectTargetable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectSleeping",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectBasePriority",
+     "type": "int",
+     "value": 40
+    },
+    {
+     "key": "objectBasePhase",
+     "type": "int",
+     "value": 1
+    },
+    {
+     "key": "originalOwner",
+     "type": "ascii",
+     "value": "PlyrNeutral/teamPlyrNeutral"
+    },
+    {
+     "key": "uniqueID",
+     "type": "ascii",
+     "value": "qianhe-ore-9"
+    },
+    {
+     "key": "objectLayer",
+     "type": "ascii",
+     "value": ""
+    }
+   ]
+  },
+  {
+   "cell": [
+    136.866486,
+    173.133514
+   ],
+   "version": 3,
+   "angle": 0.7853981633974483,
+   "road_type": 0,
+   "type_name": "OreNode",
+   "props": [
+    {
+     "key": "objectInitialHealth",
+     "type": "int",
+     "value": 100
+    },
+    {
+     "key": "objectEnabled",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectIndestructible",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectUnsellable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectPowered",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectRecruitableAI",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectTargetable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectSleeping",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectBasePriority",
+     "type": "int",
+     "value": 40
+    },
+    {
+     "key": "objectBasePhase",
+     "type": "int",
+     "value": 1
+    },
+    {
+     "key": "originalOwner",
+     "type": "ascii",
+     "value": "PlyrNeutral/teamPlyrNeutral"
+    },
+    {
+     "key": "uniqueID",
+     "type": "ascii",
+     "value": "qianhe-ore-10"
+    },
+    {
+     "key": "objectLayer",
+     "type": "ascii",
+     "value": ""
+    }
+   ]
+  },
+  {
+   "cell": [
+    743.133514,
+    86.866486
+   ],
+   "version": 3,
+   "angle": -2.356194490192345,
+   "road_type": 0,
+   "type_name": "OreNode",
+   "props": [
+    {
+     "key": "objectInitialHealth",
+     "type": "int",
+     "value": 100
+    },
+    {
+     "key": "objectEnabled",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectIndestructible",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectUnsellable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectPowered",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectRecruitableAI",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectTargetable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectSleeping",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectBasePriority",
+     "type": "int",
+     "value": 40
+    },
+    {
+     "key": "objectBasePhase",
+     "type": "int",
+     "value": 1
+    },
+    {
+     "key": "originalOwner",
+     "type": "ascii",
+     "value": "PlyrNeutral/teamPlyrNeutral"
+    },
+    {
+     "key": "uniqueID",
+     "type": "ascii",
+     "value": "qianhe-ore-11"
+    },
+    {
+     "key": "objectLayer",
+     "type": "ascii",
+     "value": ""
+    }
+   ]
+  },
+  {
+   "cell": [
+    660.40202,
+    169.59798
+   ],
+   "version": 3,
+   "angle": 0.7853981633974483,
+   "road_type": 0,
+   "type_name": "OreNode",
+   "props": [
+    {
+     "key": "objectInitialHealth",
+     "type": "int",
+     "value": 100
+    },
+    {
+     "key": "objectEnabled",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectIndestructible",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectUnsellable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectPowered",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectRecruitableAI",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectTargetable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectSleeping",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectBasePriority",
+     "type": "int",
+     "value": 40
+    },
+    {
+     "key": "objectBasePhase",
+     "type": "int",
+     "value": 1
+    },
+    {
+     "key": "originalOwner",
+     "type": "ascii",
+     "value": "PlyrNeutral/teamPlyrNeutral"
+    },
+    {
+     "key": "uniqueID",
+     "type": "ascii",
+     "value": "qianhe-ore-12"
+    },
+    {
+     "key": "objectLayer",
+     "type": "ascii",
+     "value": ""
+    }
+   ]
+  },
+  {
+   "cell": [
+    320.40202,
+    90.40202
+   ],
+   "version": 3,
+   "angle": -0.7853981633974483,
+   "road_type": 0,
+   "type_name": "OreNode",
+   "props": [
+    {
+     "key": "objectInitialHealth",
+     "type": "int",
+     "value": 100
+    },
+    {
+     "key": "objectEnabled",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectIndestructible",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectUnsellable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectPowered",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectRecruitableAI",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectTargetable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectSleeping",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectBasePriority",
+     "type": "int",
+     "value": 40
+    },
+    {
+     "key": "objectBasePhase",
+     "type": "int",
+     "value": 1
+    },
+    {
+     "key": "originalOwner",
+     "type": "ascii",
+     "value": "PlyrNeutral/teamPlyrNeutral"
+    },
+    {
+     "key": "uniqueID",
+     "type": "ascii",
+     "value": "qianhe-ore-13"
+    },
+    {
+     "key": "objectLayer",
+     "type": "ascii",
+     "value": ""
+    }
+   ]
+  },
+  {
+   "cell": [
+    399.59798,
+    169.59798
+   ],
+   "version": 3,
+   "angle": 2.356194490192345,
+   "road_type": 0,
+   "type_name": "OreNode",
+   "props": [
+    {
+     "key": "objectInitialHealth",
+     "type": "int",
+     "value": 100
+    },
+    {
+     "key": "objectEnabled",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectIndestructible",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectUnsellable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectPowered",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectRecruitableAI",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectTargetable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectSleeping",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectBasePriority",
+     "type": "int",
+     "value": 40
+    },
+    {
+     "key": "objectBasePhase",
+     "type": "int",
+     "value": 1
+    },
+    {
+     "key": "originalOwner",
+     "type": "ascii",
+     "value": "PlyrNeutral/teamPlyrNeutral"
+    },
+    {
+     "key": "uniqueID",
+     "type": "ascii",
+     "value": "qianhe-ore-14"
+    },
+    {
+     "key": "objectLayer",
+     "type": "ascii",
+     "value": ""
+    }
+   ]
+  },
+  {
+   "cell": [
+    480.40202,
+    90.40202
+   ],
+   "version": 3,
+   "angle": -0.7853981633974483,
+   "road_type": 0,
+   "type_name": "OreNode",
+   "props": [
+    {
+     "key": "objectInitialHealth",
+     "type": "int",
+     "value": 100
+    },
+    {
+     "key": "objectEnabled",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectIndestructible",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectUnsellable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectPowered",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectRecruitableAI",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectTargetable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectSleeping",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectBasePriority",
+     "type": "int",
+     "value": 40
+    },
+    {
+     "key": "objectBasePhase",
+     "type": "int",
+     "value": 1
+    },
+    {
+     "key": "originalOwner",
+     "type": "ascii",
+     "value": "PlyrNeutral/teamPlyrNeutral"
+    },
+    {
+     "key": "uniqueID",
+     "type": "ascii",
+     "value": "qianhe-ore-15"
+    },
+    {
+     "key": "objectLayer",
+     "type": "ascii",
+     "value": ""
+    }
+   ]
+  },
+  {
+   "cell": [
+    559.59798,
+    169.59798
+   ],
+   "version": 3,
+   "angle": 2.356194490192345,
+   "road_type": 0,
+   "type_name": "OreNode",
+   "props": [
+    {
+     "key": "objectInitialHealth",
+     "type": "int",
+     "value": 100
+    },
+    {
+     "key": "objectEnabled",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectIndestructible",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectUnsellable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectPowered",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectRecruitableAI",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectTargetable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectSleeping",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectBasePriority",
+     "type": "int",
+     "value": 40
+    },
+    {
+     "key": "objectBasePhase",
+     "type": "int",
+     "value": 1
+    },
+    {
+     "key": "originalOwner",
+     "type": "ascii",
+     "value": "PlyrNeutral/teamPlyrNeutral"
+    },
+    {
+     "key": "uniqueID",
+     "type": "ascii",
+     "value": "qianhe-ore-16"
+    },
+    {
+     "key": "objectLayer",
+     "type": "ascii",
+     "value": ""
+    }
+   ]
+  },
+  {
+   "cell": [
+    365.0,
+    682.0
+   ],
+   "version": 3,
+   "angle": -0.7853981633974483,
+   "road_type": 0,
+   "type_name": "OreNode",
+   "props": [
+    {
+     "key": "objectInitialHealth",
+     "type": "int",
+     "value": 100
+    },
+    {
+     "key": "objectEnabled",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectIndestructible",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectUnsellable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectPowered",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectRecruitableAI",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectTargetable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectSleeping",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectBasePriority",
+     "type": "int",
+     "value": 40
+    },
+    {
+     "key": "objectBasePhase",
+     "type": "int",
+     "value": 1
+    },
+    {
+     "key": "originalOwner",
+     "type": "ascii",
+     "value": "PlyrNeutral/teamPlyrNeutral"
+    },
+    {
+     "key": "uniqueID",
+     "type": "ascii",
+     "value": "qianhe-ore-17"
+    },
+    {
+     "key": "objectLayer",
+     "type": "ascii",
+     "value": ""
+    }
+   ]
+  },
+  {
+   "cell": [
+    489.0,
+    595.0
+   ],
+   "version": 3,
+   "angle": -0.7853981633974483,
+   "road_type": 0,
+   "type_name": "OreNode",
+   "props": [
+    {
+     "key": "objectInitialHealth",
+     "type": "int",
+     "value": 100
+    },
+    {
+     "key": "objectEnabled",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectIndestructible",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectUnsellable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectPowered",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectRecruitableAI",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectTargetable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectSleeping",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectBasePriority",
+     "type": "int",
+     "value": 40
+    },
+    {
+     "key": "objectBasePhase",
+     "type": "int",
+     "value": 1
+    },
+    {
+     "key": "originalOwner",
+     "type": "ascii",
+     "value": "PlyrNeutral/teamPlyrNeutral"
+    },
+    {
+     "key": "uniqueID",
+     "type": "ascii",
+     "value": "qianhe-ore-18"
+    },
+    {
+     "key": "objectLayer",
+     "type": "ascii",
+     "value": ""
+    }
+   ]
+  },
+  {
+   "cell": [
+    372.0,
+    442.0
+   ],
+   "version": 3,
+   "angle": -0.7853981633974483,
+   "road_type": 0,
+   "type_name": "OreNode",
+   "props": [
+    {
+     "key": "objectInitialHealth",
+     "type": "int",
+     "value": 100
+    },
+    {
+     "key": "objectEnabled",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectIndestructible",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectUnsellable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectPowered",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectRecruitableAI",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectTargetable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectSleeping",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectBasePriority",
+     "type": "int",
+     "value": 40
+    },
+    {
+     "key": "objectBasePhase",
+     "type": "int",
+     "value": 1
+    },
+    {
+     "key": "originalOwner",
+     "type": "ascii",
+     "value": "PlyrNeutral/teamPlyrNeutral"
+    },
+    {
+     "key": "uniqueID",
+     "type": "ascii",
+     "value": "qianhe-ore-19"
+    },
+    {
+     "key": "objectLayer",
+     "type": "ascii",
+     "value": ""
+    }
+   ]
+  },
+  {
+   "cell": [
+    580.0,
+    257.0
+   ],
+   "version": 3,
+   "angle": -0.7853981633974483,
+   "road_type": 0,
+   "type_name": "OreNode",
+   "props": [
+    {
+     "key": "objectInitialHealth",
+     "type": "int",
+     "value": 100
+    },
+    {
+     "key": "objectEnabled",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectIndestructible",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectUnsellable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectPowered",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectRecruitableAI",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectTargetable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectSleeping",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectBasePriority",
+     "type": "int",
+     "value": 40
+    },
+    {
+     "key": "objectBasePhase",
+     "type": "int",
+     "value": 1
+    },
+    {
+     "key": "originalOwner",
+     "type": "ascii",
+     "value": "PlyrNeutral/teamPlyrNeutral"
+    },
+    {
+     "key": "uniqueID",
+     "type": "ascii",
+     "value": "qianhe-ore-20"
+    },
+    {
+     "key": "objectLayer",
+     "type": "ascii",
+     "value": ""
+    }
+   ]
+  },
+  {
+   "cell": [
+    365.0,
+    730.0
+   ],
+   "version": 3,
+   "angle": -0.7853981633974483,
+   "road_type": 0,
+   "type_name": "OreNode",
+   "props": [
+    {
+     "key": "objectInitialHealth",
+     "type": "int",
+     "value": 100
+    },
+    {
+     "key": "objectEnabled",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectIndestructible",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectUnsellable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectPowered",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectRecruitableAI",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectTargetable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectSleeping",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectBasePriority",
+     "type": "int",
+     "value": 40
+    },
+    {
+     "key": "objectBasePhase",
+     "type": "int",
+     "value": 1
+    },
+    {
+     "key": "originalOwner",
+     "type": "ascii",
+     "value": "PlyrNeutral/teamPlyrNeutral"
+    },
+    {
+     "key": "uniqueID",
+     "type": "ascii",
+     "value": "qianhe-ore-21"
+    },
+    {
+     "key": "objectLayer",
+     "type": "ascii",
+     "value": ""
+    }
+   ]
+  },
+  {
+   "cell": [
+    535.0,
+    613.0
+   ],
+   "version": 3,
+   "angle": -0.7853981633974483,
+   "road_type": 0,
+   "type_name": "OreNode",
+   "props": [
+    {
+     "key": "objectInitialHealth",
+     "type": "int",
+     "value": 100
+    },
+    {
+     "key": "objectEnabled",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectIndestructible",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectUnsellable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectPowered",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectRecruitableAI",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectTargetable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectSleeping",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectBasePriority",
+     "type": "int",
+     "value": 40
+    },
+    {
+     "key": "objectBasePhase",
+     "type": "int",
+     "value": 1
+    },
+    {
+     "key": "originalOwner",
+     "type": "ascii",
+     "value": "PlyrNeutral/teamPlyrNeutral"
+    },
+    {
+     "key": "uniqueID",
+     "type": "ascii",
+     "value": "qianhe-ore-22"
+    },
+    {
+     "key": "objectLayer",
+     "type": "ascii",
+     "value": ""
+    }
+   ]
+  },
+  {
+   "cell": [
+    372.0,
+    488.0
+   ],
+   "version": 3,
+   "angle": -0.7853981633974483,
+   "road_type": 0,
+   "type_name": "OreNode",
+   "props": [
+    {
+     "key": "objectInitialHealth",
+     "type": "int",
+     "value": 100
+    },
+    {
+     "key": "objectEnabled",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectIndestructible",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectUnsellable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectPowered",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectRecruitableAI",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectTargetable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectSleeping",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectBasePriority",
+     "type": "int",
+     "value": 40
+    },
+    {
+     "key": "objectBasePhase",
+     "type": "int",
+     "value": 1
+    },
+    {
+     "key": "originalOwner",
+     "type": "ascii",
+     "value": "PlyrNeutral/teamPlyrNeutral"
+    },
+    {
+     "key": "uniqueID",
+     "type": "ascii",
+     "value": "qianhe-ore-23"
+    },
+    {
+     "key": "objectLayer",
+     "type": "ascii",
+     "value": ""
+    }
+   ]
+  },
+  {
+   "cell": [
+    490.0,
+    362.0
+   ],
+   "version": 3,
+   "angle": -0.7853981633974483,
+   "road_type": 0,
+   "type_name": "OreNode",
+   "props": [
+    {
+     "key": "objectInitialHealth",
+     "type": "int",
+     "value": 100
+    },
+    {
+     "key": "objectEnabled",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectIndestructible",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectUnsellable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectPowered",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectRecruitableAI",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectTargetable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectSleeping",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectBasePriority",
+     "type": "int",
+     "value": 40
+    },
+    {
+     "key": "objectBasePhase",
+     "type": "int",
+     "value": 1
+    },
+    {
+     "key": "originalOwner",
+     "type": "ascii",
+     "value": "PlyrNeutral/teamPlyrNeutral"
+    },
+    {
+     "key": "uniqueID",
+     "type": "ascii",
+     "value": "qianhe-ore-24"
+    },
+    {
+     "key": "objectLayer",
+     "type": "ascii",
+     "value": ""
+    }
+   ]
+  },
+  {
+   "cell": [
+    333.0,
+    556.0
+   ],
+   "version": 3,
+   "angle": 0.7853981633974483,
+   "road_type": 0,
+   "type_name": "OreNode",
+   "props": [
+    {
+     "key": "objectInitialHealth",
+     "type": "int",
+     "value": 100
+    },
+    {
+     "key": "objectEnabled",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectIndestructible",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectUnsellable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectPowered",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectRecruitableAI",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectTargetable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectSleeping",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectBasePriority",
+     "type": "int",
+     "value": 40
+    },
+    {
+     "key": "objectBasePhase",
+     "type": "int",
+     "value": 1
+    },
+    {
+     "key": "originalOwner",
+     "type": "ascii",
+     "value": "PlyrNeutral/teamPlyrNeutral"
+    },
+    {
+     "key": "uniqueID",
+     "type": "ascii",
+     "value": "qianhe-ore-25"
+    },
+    {
+     "key": "objectLayer",
+     "type": "ascii",
+     "value": ""
+    }
+   ]
+  },
+  {
+   "cell": [
+    418.0,
+    529.0
+   ],
+   "version": 3,
+   "angle": 0.7853981633974483,
+   "road_type": 0,
+   "type_name": "OreNode",
+   "props": [
+    {
+     "key": "objectInitialHealth",
+     "type": "int",
+     "value": 100
+    },
+    {
+     "key": "objectEnabled",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectIndestructible",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectUnsellable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectPowered",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectRecruitableAI",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectTargetable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectSleeping",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectBasePriority",
+     "type": "int",
+     "value": 40
+    },
+    {
+     "key": "objectBasePhase",
+     "type": "int",
+     "value": 1
+    },
+    {
+     "key": "originalOwner",
+     "type": "ascii",
+     "value": "PlyrNeutral/teamPlyrNeutral"
+    },
+    {
+     "key": "uniqueID",
+     "type": "ascii",
+     "value": "qianhe-ore-26"
+    },
+    {
+     "key": "objectLayer",
+     "type": "ascii",
+     "value": ""
+    }
+   ]
+  },
+  {
+   "cell": [
+    397.0,
+    359.0
+   ],
+   "version": 3,
+   "angle": -0.7853981633974483,
+   "road_type": 0,
+   "type_name": "OreNode",
+   "props": [
+    {
+     "key": "objectInitialHealth",
+     "type": "int",
+     "value": 100
+    },
+    {
+     "key": "objectEnabled",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectIndestructible",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectUnsellable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectPowered",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectRecruitableAI",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectTargetable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectSleeping",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectBasePriority",
+     "type": "int",
+     "value": 40
+    },
+    {
+     "key": "objectBasePhase",
+     "type": "int",
+     "value": 1
+    },
+    {
+     "key": "originalOwner",
+     "type": "ascii",
+     "value": "PlyrNeutral/teamPlyrNeutral"
+    },
+    {
+     "key": "uniqueID",
+     "type": "ascii",
+     "value": "qianhe-ore-27"
+    },
+    {
+     "key": "objectLayer",
+     "type": "ascii",
+     "value": ""
+    }
+   ]
+  },
+  {
+   "cell": [
+    588.0,
+    211.0
+   ],
+   "version": 3,
+   "angle": -0.7853981633974483,
+   "road_type": 0,
+   "type_name": "OreNode",
+   "props": [
+    {
+     "key": "objectInitialHealth",
+     "type": "int",
+     "value": 100
+    },
+    {
+     "key": "objectEnabled",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectIndestructible",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectUnsellable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectPowered",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectRecruitableAI",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectTargetable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectSleeping",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectBasePriority",
+     "type": "int",
+     "value": 40
+    },
+    {
+     "key": "objectBasePhase",
+     "type": "int",
+     "value": 1
+    },
+    {
+     "key": "originalOwner",
+     "type": "ascii",
+     "value": "PlyrNeutral/teamPlyrNeutral"
+    },
+    {
+     "key": "uniqueID",
+     "type": "ascii",
+     "value": "qianhe-ore-28"
+    },
+    {
+     "key": "objectLayer",
+     "type": "ascii",
+     "value": ""
+    }
+   ]
+  },
+  {
+   "cell": [
+    538.0,
+    569.0
+   ],
+   "version": 3,
+   "angle": -0.7853981633974483,
+   "road_type": 0,
+   "type_name": "OreNode",
+   "props": [
+    {
+     "key": "objectInitialHealth",
+     "type": "int",
+     "value": 100
+    },
+    {
+     "key": "objectEnabled",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectIndestructible",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectUnsellable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectPowered",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectRecruitableAI",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectTargetable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectSleeping",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectBasePriority",
+     "type": "int",
+     "value": 40
+    },
+    {
+     "key": "objectBasePhase",
+     "type": "int",
+     "value": 1
+    },
+    {
+     "key": "originalOwner",
+     "type": "ascii",
+     "value": "PlyrNeutral/teamPlyrNeutral"
+    },
+    {
+     "key": "uniqueID",
+     "type": "ascii",
+     "value": "qianhe-ore-29"
+    },
+    {
+     "key": "objectLayer",
+     "type": "ascii",
+     "value": ""
+    }
+   ]
+  },
+  {
+   "cell": [
+    581.0,
+    581.0
+   ],
+   "version": 3,
+   "angle": -0.7853981633974483,
+   "road_type": 0,
+   "type_name": "OreNode",
+   "props": [
+    {
+     "key": "objectInitialHealth",
+     "type": "int",
+     "value": 100
+    },
+    {
+     "key": "objectEnabled",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectIndestructible",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectUnsellable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectPowered",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectRecruitableAI",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectTargetable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectSleeping",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectBasePriority",
+     "type": "int",
+     "value": 40
+    },
+    {
+     "key": "objectBasePhase",
+     "type": "int",
+     "value": 1
+    },
+    {
+     "key": "originalOwner",
+     "type": "ascii",
+     "value": "PlyrNeutral/teamPlyrNeutral"
+    },
+    {
+     "key": "uniqueID",
+     "type": "ascii",
+     "value": "qianhe-ore-30"
+    },
+    {
+     "key": "objectLayer",
+     "type": "ascii",
+     "value": ""
+    }
+   ]
+  },
+  {
+   "cell": [
+    554.0,
+    352.0
+   ],
+   "version": 3,
+   "angle": -0.7853981633974483,
+   "road_type": 0,
+   "type_name": "OreNode",
+   "props": [
+    {
+     "key": "objectInitialHealth",
+     "type": "int",
+     "value": 100
+    },
+    {
+     "key": "objectEnabled",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectIndestructible",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectUnsellable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectPowered",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectRecruitableAI",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectTargetable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectSleeping",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectBasePriority",
+     "type": "int",
+     "value": 40
+    },
+    {
+     "key": "objectBasePhase",
+     "type": "int",
+     "value": 1
+    },
+    {
+     "key": "originalOwner",
+     "type": "ascii",
+     "value": "PlyrNeutral/teamPlyrNeutral"
+    },
+    {
+     "key": "uniqueID",
+     "type": "ascii",
+     "value": "qianhe-ore-31"
+    },
+    {
+     "key": "objectLayer",
+     "type": "ascii",
+     "value": ""
+    }
+   ]
+  },
+  {
+   "cell": [
+    561.0,
+    416.0
+   ],
+   "version": 3,
+   "angle": -0.7853981633974483,
+   "road_type": 0,
+   "type_name": "OreNode",
+   "props": [
+    {
+     "key": "objectInitialHealth",
+     "type": "int",
+     "value": 100
+    },
+    {
+     "key": "objectEnabled",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectIndestructible",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectUnsellable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectPowered",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectRecruitableAI",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectTargetable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectSleeping",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectBasePriority",
+     "type": "int",
+     "value": 40
+    },
+    {
+     "key": "objectBasePhase",
+     "type": "int",
+     "value": 1
+    },
+    {
+     "key": "originalOwner",
+     "type": "ascii",
+     "value": "PlyrNeutral/teamPlyrNeutral"
+    },
+    {
+     "key": "uniqueID",
+     "type": "ascii",
+     "value": "qianhe-ore-32"
+    },
+    {
+     "key": "objectLayer",
+     "type": "ascii",
+     "value": ""
+    }
+   ]
+  },
+  {
+   "cell": [
+    440.0,
+    201.0
+   ],
+   "version": 3,
+   "angle": 0.7853981633974483,
+   "road_type": 0,
+   "type_name": "OreNode",
+   "props": [
+    {
+     "key": "objectInitialHealth",
+     "type": "int",
+     "value": 100
+    },
+    {
+     "key": "objectEnabled",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectIndestructible",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectUnsellable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectPowered",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectRecruitableAI",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectTargetable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectSleeping",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectBasePriority",
+     "type": "int",
+     "value": 40
+    },
+    {
+     "key": "objectBasePhase",
+     "type": "int",
+     "value": 1
+    },
+    {
+     "key": "originalOwner",
+     "type": "ascii",
+     "value": "PlyrNeutral/teamPlyrNeutral"
+    },
+    {
+     "key": "uniqueID",
+     "type": "ascii",
+     "value": "qianhe-ore-33"
+    },
+    {
+     "key": "objectLayer",
+     "type": "ascii",
+     "value": ""
+    }
+   ]
+  },
+  {
+   "cell": [
+    290.0,
+    209.0
+   ],
+   "version": 3,
+   "angle": 0.7853981633974483,
+   "road_type": 0,
+   "type_name": "OreNode",
+   "props": [
+    {
+     "key": "objectInitialHealth",
+     "type": "int",
+     "value": 100
+    },
+    {
+     "key": "objectEnabled",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectIndestructible",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectUnsellable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectPowered",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectRecruitableAI",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectTargetable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectSleeping",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectBasePriority",
+     "type": "int",
+     "value": 40
+    },
+    {
+     "key": "objectBasePhase",
+     "type": "int",
+     "value": 1
+    },
+    {
+     "key": "originalOwner",
+     "type": "ascii",
+     "value": "PlyrNeutral/teamPlyrNeutral"
+    },
+    {
+     "key": "uniqueID",
+     "type": "ascii",
+     "value": "qianhe-ore-34"
+    },
+    {
+     "key": "objectLayer",
+     "type": "ascii",
+     "value": ""
+    }
+   ]
+  },
+  {
+   "cell": [
+    348.0,
+    405.0
+   ],
+   "version": 3,
+   "angle": -0.7853981633974483,
+   "road_type": 0,
+   "type_name": "OreNode",
+   "props": [
+    {
+     "key": "objectInitialHealth",
+     "type": "int",
+     "value": 100
+    },
+    {
+     "key": "objectEnabled",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectIndestructible",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectUnsellable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectPowered",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectRecruitableAI",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectTargetable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectSleeping",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectBasePriority",
+     "type": "int",
+     "value": 40
+    },
+    {
+     "key": "objectBasePhase",
+     "type": "int",
+     "value": 1
+    },
+    {
+     "key": "originalOwner",
+     "type": "ascii",
+     "value": "PlyrNeutral/teamPlyrNeutral"
+    },
+    {
+     "key": "uniqueID",
+     "type": "ascii",
+     "value": "qianhe-ore-35"
+    },
+    {
+     "key": "objectLayer",
+     "type": "ascii",
+     "value": ""
+    }
+   ]
+  },
+  {
+   "cell": [
+    442.0,
+    59.0
+   ],
+   "version": 3,
+   "angle": -0.7853981633974483,
+   "road_type": 0,
+   "type_name": "OreNode",
+   "props": [
+    {
+     "key": "objectInitialHealth",
+     "type": "int",
+     "value": 100
+    },
+    {
+     "key": "objectEnabled",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectIndestructible",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectUnsellable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectPowered",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectRecruitableAI",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectTargetable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectSleeping",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectBasePriority",
+     "type": "int",
+     "value": 40
+    },
+    {
+     "key": "objectBasePhase",
+     "type": "int",
+     "value": 1
+    },
+    {
+     "key": "originalOwner",
+     "type": "ascii",
+     "value": "PlyrNeutral/teamPlyrNeutral"
+    },
+    {
+     "key": "uniqueID",
+     "type": "ascii",
+     "value": "qianhe-ore-36"
+    },
+    {
+     "key": "objectLayer",
+     "type": "ascii",
+     "value": ""
+    }
+   ]
+  },
+  {
+   "cell": [
+    640.0,
+    234.0
+   ],
+   "version": 3,
+   "angle": -0.7853981633974483,
+   "road_type": 0,
+   "type_name": "OreNode",
+   "props": [
+    {
+     "key": "objectInitialHealth",
+     "type": "int",
+     "value": 100
+    },
+    {
+     "key": "objectEnabled",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectIndestructible",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectUnsellable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectPowered",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectRecruitableAI",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectTargetable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectSleeping",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectBasePriority",
+     "type": "int",
+     "value": 40
+    },
+    {
+     "key": "objectBasePhase",
+     "type": "int",
+     "value": 1
+    },
+    {
+     "key": "originalOwner",
+     "type": "ascii",
+     "value": "PlyrNeutral/teamPlyrNeutral"
+    },
+    {
+     "key": "uniqueID",
+     "type": "ascii",
+     "value": "qianhe-ore-37"
+    },
+    {
+     "key": "objectLayer",
+     "type": "ascii",
+     "value": ""
+    }
+   ]
+  },
+  {
+   "cell": [
+    624.0,
+    281.0
+   ],
+   "version": 3,
+   "angle": -0.7853981633974483,
+   "road_type": 0,
+   "type_name": "OreNode",
+   "props": [
+    {
+     "key": "objectInitialHealth",
+     "type": "int",
+     "value": 100
+    },
+    {
+     "key": "objectEnabled",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectIndestructible",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectUnsellable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectPowered",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectRecruitableAI",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectTargetable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectSleeping",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectBasePriority",
+     "type": "int",
+     "value": 40
+    },
+    {
+     "key": "objectBasePhase",
+     "type": "int",
+     "value": 1
+    },
+    {
+     "key": "originalOwner",
+     "type": "ascii",
+     "value": "PlyrNeutral/teamPlyrNeutral"
+    },
+    {
+     "key": "uniqueID",
+     "type": "ascii",
+     "value": "qianhe-ore-38"
+    },
+    {
+     "key": "objectLayer",
+     "type": "ascii",
+     "value": ""
+    }
+   ]
+  },
+  {
+   "cell": [
+    501.0,
+    405.0
+   ],
+   "version": 3,
+   "angle": -0.7853981633974483,
+   "road_type": 0,
+   "type_name": "OreNode",
+   "props": [
+    {
+     "key": "objectInitialHealth",
+     "type": "int",
+     "value": 100
+    },
+    {
+     "key": "objectEnabled",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectIndestructible",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectUnsellable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectPowered",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectRecruitableAI",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectTargetable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectSleeping",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectBasePriority",
+     "type": "int",
+     "value": 40
+    },
+    {
+     "key": "objectBasePhase",
+     "type": "int",
+     "value": 1
+    },
+    {
+     "key": "originalOwner",
+     "type": "ascii",
+     "value": "PlyrNeutral/teamPlyrNeutral"
+    },
+    {
+     "key": "uniqueID",
+     "type": "ascii",
+     "value": "qianhe-ore-39"
+    },
+    {
+     "key": "objectLayer",
+     "type": "ascii",
+     "value": ""
+    }
+   ]
+  },
+  {
+   "cell": [
+    505.0,
+    466.0
+   ],
+   "version": 3,
+   "angle": -2.356194490192345,
+   "road_type": 0,
+   "type_name": "OreNode",
+   "props": [
+    {
+     "key": "objectInitialHealth",
+     "type": "int",
+     "value": 100
+    },
+    {
+     "key": "objectEnabled",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectIndestructible",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectUnsellable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectPowered",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectRecruitableAI",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectTargetable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectSleeping",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectBasePriority",
+     "type": "int",
+     "value": 40
+    },
+    {
+     "key": "objectBasePhase",
+     "type": "int",
+     "value": 1
+    },
+    {
+     "key": "originalOwner",
+     "type": "ascii",
+     "value": "PlyrNeutral/teamPlyrNeutral"
+    },
+    {
+     "key": "uniqueID",
+     "type": "ascii",
+     "value": "qianhe-ore-40"
+    },
+    {
+     "key": "objectLayer",
+     "type": "ascii",
+     "value": ""
+    }
+   ]
+  },
+  {
+   "cell": [
+    441.0,
+    355.0
+   ],
+   "version": 3,
+   "angle": -0.7853981633974483,
+   "road_type": 0,
+   "type_name": "OreNode",
+   "props": [
+    {
+     "key": "objectInitialHealth",
+     "type": "int",
+     "value": 100
+    },
+    {
+     "key": "objectEnabled",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectIndestructible",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectUnsellable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectPowered",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectRecruitableAI",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectTargetable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectSleeping",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectBasePriority",
+     "type": "int",
+     "value": 40
+    },
+    {
+     "key": "objectBasePhase",
+     "type": "int",
+     "value": 1
+    },
+    {
+     "key": "originalOwner",
+     "type": "ascii",
+     "value": "PlyrNeutral/teamPlyrNeutral"
+    },
+    {
+     "key": "uniqueID",
+     "type": "ascii",
+     "value": "qianhe-ore-41"
+    },
+    {
+     "key": "objectLayer",
+     "type": "ascii",
+     "value": ""
+    }
+   ]
+  },
+  {
+   "cell": [
+    523.0,
+    315.0
+   ],
+   "version": 3,
+   "angle": -0.7853981633974483,
+   "road_type": 0,
+   "type_name": "OreNode",
+   "props": [
+    {
+     "key": "objectInitialHealth",
+     "type": "int",
+     "value": 100
+    },
+    {
+     "key": "objectEnabled",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectIndestructible",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectUnsellable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectPowered",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectRecruitableAI",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectTargetable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectSleeping",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectBasePriority",
+     "type": "int",
+     "value": 40
+    },
+    {
+     "key": "objectBasePhase",
+     "type": "int",
+     "value": 1
+    },
+    {
+     "key": "originalOwner",
+     "type": "ascii",
+     "value": "PlyrNeutral/teamPlyrNeutral"
+    },
+    {
+     "key": "uniqueID",
+     "type": "ascii",
+     "value": "qianhe-ore-42"
+    },
+    {
+     "key": "objectLayer",
+     "type": "ascii",
+     "value": ""
+    }
+   ]
+  },
+  {
+   "cell": [
+    372.0,
+    532.0
+   ],
+   "version": 3,
+   "angle": 0.7853981633974483,
+   "road_type": 0,
+   "type_name": "OreNode",
+   "props": [
+    {
+     "key": "objectInitialHealth",
+     "type": "int",
+     "value": 100
+    },
+    {
+     "key": "objectEnabled",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectIndestructible",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectUnsellable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectPowered",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectRecruitableAI",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectTargetable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectSleeping",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectBasePriority",
+     "type": "int",
+     "value": 40
+    },
+    {
+     "key": "objectBasePhase",
+     "type": "int",
+     "value": 1
+    },
+    {
+     "key": "originalOwner",
+     "type": "ascii",
+     "value": "PlyrNeutral/teamPlyrNeutral"
+    },
+    {
+     "key": "uniqueID",
+     "type": "ascii",
+     "value": "qianhe-ore-43"
+    },
+    {
+     "key": "objectLayer",
+     "type": "ascii",
+     "value": ""
+    }
+   ]
+  },
+  {
+   "cell": [
+    422.0,
+    441.0
+   ],
+   "version": 3,
+   "angle": -0.7853981633974483,
+   "road_type": 0,
+   "type_name": "OreNode",
+   "props": [
+    {
+     "key": "objectInitialHealth",
+     "type": "int",
+     "value": 100
+    },
+    {
+     "key": "objectEnabled",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectIndestructible",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectUnsellable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectPowered",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectRecruitableAI",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectTargetable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectSleeping",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectBasePriority",
+     "type": "int",
+     "value": 40
+    },
+    {
+     "key": "objectBasePhase",
+     "type": "int",
+     "value": 1
+    },
+    {
+     "key": "originalOwner",
+     "type": "ascii",
+     "value": "PlyrNeutral/teamPlyrNeutral"
+    },
+    {
+     "key": "uniqueID",
+     "type": "ascii",
+     "value": "qianhe-ore-44"
+    },
+    {
+     "key": "objectLayer",
+     "type": "ascii",
+     "value": ""
+    }
+   ]
+  },
+  {
+   "cell": [
+    526.0,
+    268.0
+   ],
+   "version": 3,
+   "angle": -0.7853981633974483,
+   "road_type": 0,
+   "type_name": "OreNode",
+   "props": [
+    {
+     "key": "objectInitialHealth",
+     "type": "int",
+     "value": 100
+    },
+    {
+     "key": "objectEnabled",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectIndestructible",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectUnsellable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectPowered",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectRecruitableAI",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectTargetable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectSleeping",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectBasePriority",
+     "type": "int",
+     "value": 40
+    },
+    {
+     "key": "objectBasePhase",
+     "type": "int",
+     "value": 1
+    },
+    {
+     "key": "originalOwner",
+     "type": "ascii",
+     "value": "PlyrNeutral/teamPlyrNeutral"
+    },
+    {
+     "key": "uniqueID",
+     "type": "ascii",
+     "value": "qianhe-ore-45"
+    },
+    {
+     "key": "objectLayer",
+     "type": "ascii",
+     "value": ""
+    }
+   ]
+  },
+  {
+   "cell": [
+    473.0,
+    321.0
+   ],
+   "version": 3,
+   "angle": -0.7853981633974483,
+   "road_type": 0,
+   "type_name": "OreNode",
+   "props": [
+    {
+     "key": "objectInitialHealth",
+     "type": "int",
+     "value": 100
+    },
+    {
+     "key": "objectEnabled",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectIndestructible",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectUnsellable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectPowered",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectRecruitableAI",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectTargetable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectSleeping",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectBasePriority",
+     "type": "int",
+     "value": 40
+    },
+    {
+     "key": "objectBasePhase",
+     "type": "int",
+     "value": 1
+    },
+    {
+     "key": "originalOwner",
+     "type": "ascii",
+     "value": "PlyrNeutral/teamPlyrNeutral"
+    },
+    {
+     "key": "uniqueID",
+     "type": "ascii",
+     "value": "qianhe-ore-46"
+    },
+    {
+     "key": "objectLayer",
+     "type": "ascii",
+     "value": ""
+    }
+   ]
+  },
+  {
+   "cell": [
+    397.0,
+    404.0
+   ],
+   "version": 3,
+   "angle": -0.7853981633974483,
+   "road_type": 0,
+   "type_name": "OreNode",
+   "props": [
+    {
+     "key": "objectInitialHealth",
+     "type": "int",
+     "value": 100
+    },
+    {
+     "key": "objectEnabled",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectIndestructible",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectUnsellable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectPowered",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectRecruitableAI",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectTargetable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectSleeping",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectBasePriority",
+     "type": "int",
+     "value": 40
+    },
+    {
+     "key": "objectBasePhase",
+     "type": "int",
+     "value": 1
+    },
+    {
+     "key": "originalOwner",
+     "type": "ascii",
+     "value": "PlyrNeutral/teamPlyrNeutral"
+    },
+    {
+     "key": "uniqueID",
+     "type": "ascii",
+     "value": "qianhe-ore-47"
+    },
+    {
+     "key": "objectLayer",
+     "type": "ascii",
+     "value": ""
+    }
+   ]
+  },
+  {
+   "cell": [
+    446.0,
+    403.0
+   ],
+   "version": 3,
+   "angle": -0.7853981633974483,
+   "road_type": 0,
+   "type_name": "OreNode",
+   "props": [
+    {
+     "key": "objectInitialHealth",
+     "type": "int",
+     "value": 100
+    },
+    {
+     "key": "objectEnabled",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectIndestructible",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectUnsellable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectPowered",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectRecruitableAI",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectTargetable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectSleeping",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectBasePriority",
+     "type": "int",
+     "value": 40
+    },
+    {
+     "key": "objectBasePhase",
+     "type": "int",
+     "value": 1
+    },
+    {
+     "key": "originalOwner",
+     "type": "ascii",
+     "value": "PlyrNeutral/teamPlyrNeutral"
+    },
+    {
+     "key": "uniqueID",
+     "type": "ascii",
+     "value": "qianhe-ore-48"
+    },
+    {
+     "key": "objectLayer",
+     "type": "ascii",
+     "value": ""
+    }
+   ]
+  },
+  {
+   "cell": [
+    110.0,
+    700.0
+   ],
+   "version": 3,
+   "angle": 0.0,
+   "road_type": 0,
+   "type_name": "*Waypoints/Waypoint",
+   "props": [
+    {
+     "key": "objectInitialHealth",
+     "type": "int",
+     "value": 100
+    },
+    {
+     "key": "objectEnabled",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectIndestructible",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectUnsellable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectPowered",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectRecruitableAI",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectTargetable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectSleeping",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectBasePriority",
+     "type": "int",
+     "value": 40
+    },
+    {
+     "key": "objectBasePhase",
+     "type": "int",
+     "value": 1
+    },
+    {
+     "key": "originalOwner",
+     "type": "ascii",
+     "value": "/team"
+    },
+    {
+     "key": "uniqueID",
+     "type": "ascii",
+     "value": "Player_1_Start"
+    },
+    {
+     "key": "objectLayer",
+     "type": "ascii",
+     "value": ""
+    },
+    {
+     "key": "waypointID",
+     "type": "int",
+     "value": 1
+    },
+    {
+     "key": "waypointName",
+     "type": "ascii",
+     "value": "Player_1_Start"
+    },
+    {
+     "key": "waypointTypeOption",
+     "type": "ascii",
+     "value": ""
+    }
+   ]
+  },
+  {
+   "cell": [
+    260.0,
+    720.0
+   ],
+   "version": 3,
+   "angle": 0.0,
+   "road_type": 0,
+   "type_name": "*Waypoints/Waypoint",
+   "props": [
+    {
+     "key": "objectInitialHealth",
+     "type": "int",
+     "value": 100
+    },
+    {
+     "key": "objectEnabled",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectIndestructible",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectUnsellable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectPowered",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectRecruitableAI",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectTargetable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectSleeping",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectBasePriority",
+     "type": "int",
+     "value": 40
+    },
+    {
+     "key": "objectBasePhase",
+     "type": "int",
+     "value": 1
+    },
+    {
+     "key": "originalOwner",
+     "type": "ascii",
+     "value": "/team"
+    },
+    {
+     "key": "uniqueID",
+     "type": "ascii",
+     "value": "Player_2_Start"
+    },
+    {
+     "key": "objectLayer",
+     "type": "ascii",
+     "value": ""
+    },
+    {
+     "key": "waypointID",
+     "type": "int",
+     "value": 2
+    },
+    {
+     "key": "waypointName",
+     "type": "ascii",
+     "value": "Player_2_Start"
+    },
+    {
+     "key": "waypointTypeOption",
+     "type": "ascii",
+     "value": ""
+    }
+   ]
+  },
+  {
+   "cell": [
+    470.0,
+    700.0
+   ],
+   "version": 3,
+   "angle": 0.0,
+   "road_type": 0,
+   "type_name": "*Waypoints/Waypoint",
+   "props": [
+    {
+     "key": "objectInitialHealth",
+     "type": "int",
+     "value": 100
+    },
+    {
+     "key": "objectEnabled",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectIndestructible",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectUnsellable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectPowered",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectRecruitableAI",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectTargetable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectSleeping",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectBasePriority",
+     "type": "int",
+     "value": 40
+    },
+    {
+     "key": "objectBasePhase",
+     "type": "int",
+     "value": 1
+    },
+    {
+     "key": "originalOwner",
+     "type": "ascii",
+     "value": "/team"
+    },
+    {
+     "key": "uniqueID",
+     "type": "ascii",
+     "value": "Player_3_Start"
+    },
+    {
+     "key": "objectLayer",
+     "type": "ascii",
+     "value": ""
+    },
+    {
+     "key": "waypointID",
+     "type": "int",
+     "value": 3
+    },
+    {
+     "key": "waypointName",
+     "type": "ascii",
+     "value": "Player_3_Start"
+    },
+    {
+     "key": "waypointTypeOption",
+     "type": "ascii",
+     "value": ""
+    }
+   ]
+  },
+  {
+   "cell": [
+    620.0,
+    680.0
+   ],
+   "version": 3,
+   "angle": 0.0,
+   "road_type": 0,
+   "type_name": "*Waypoints/Waypoint",
+   "props": [
+    {
+     "key": "objectInitialHealth",
+     "type": "int",
+     "value": 100
+    },
+    {
+     "key": "objectEnabled",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectIndestructible",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectUnsellable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectPowered",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectRecruitableAI",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectTargetable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectSleeping",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectBasePriority",
+     "type": "int",
+     "value": 40
+    },
+    {
+     "key": "objectBasePhase",
+     "type": "int",
+     "value": 1
+    },
+    {
+     "key": "originalOwner",
+     "type": "ascii",
+     "value": "/team"
+    },
+    {
+     "key": "uniqueID",
+     "type": "ascii",
+     "value": "Player_4_Start"
+    },
+    {
+     "key": "objectLayer",
+     "type": "ascii",
+     "value": ""
+    },
+    {
+     "key": "waypointID",
+     "type": "int",
+     "value": 4
+    },
+    {
+     "key": "waypointName",
+     "type": "ascii",
+     "value": "Player_4_Start"
+    },
+    {
+     "key": "waypointTypeOption",
+     "type": "ascii",
+     "value": ""
+    }
+   ]
+  },
+  {
+   "cell": [
+    180.0,
+    130.0
+   ],
+   "version": 3,
+   "angle": 0.0,
+   "road_type": 0,
+   "type_name": "*Waypoints/Waypoint",
+   "props": [
+    {
+     "key": "objectInitialHealth",
+     "type": "int",
+     "value": 100
+    },
+    {
+     "key": "objectEnabled",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectIndestructible",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectUnsellable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectPowered",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectRecruitableAI",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectTargetable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectSleeping",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectBasePriority",
+     "type": "int",
+     "value": 40
+    },
+    {
+     "key": "objectBasePhase",
+     "type": "int",
+     "value": 1
+    },
+    {
+     "key": "originalOwner",
+     "type": "ascii",
+     "value": "/team"
+    },
+    {
+     "key": "uniqueID",
+     "type": "ascii",
+     "value": "Player_5_Start"
+    },
+    {
+     "key": "objectLayer",
+     "type": "ascii",
+     "value": ""
+    },
+    {
+     "key": "waypointID",
+     "type": "int",
+     "value": 5
+    },
+    {
+     "key": "waypointName",
+     "type": "ascii",
+     "value": "Player_5_Start"
+    },
+    {
+     "key": "waypointTypeOption",
+     "type": "ascii",
+     "value": ""
+    }
+   ]
+  },
+  {
+   "cell": [
+    700.0,
+    130.0
+   ],
+   "version": 3,
+   "angle": 0.0,
+   "road_type": 0,
+   "type_name": "*Waypoints/Waypoint",
+   "props": [
+    {
+     "key": "objectInitialHealth",
+     "type": "int",
+     "value": 100
+    },
+    {
+     "key": "objectEnabled",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectIndestructible",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectUnsellable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectPowered",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectRecruitableAI",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectTargetable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectSleeping",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectBasePriority",
+     "type": "int",
+     "value": 40
+    },
+    {
+     "key": "objectBasePhase",
+     "type": "int",
+     "value": 1
+    },
+    {
+     "key": "originalOwner",
+     "type": "ascii",
+     "value": "/team"
+    },
+    {
+     "key": "uniqueID",
+     "type": "ascii",
+     "value": "Player_6_Start"
+    },
+    {
+     "key": "objectLayer",
+     "type": "ascii",
+     "value": ""
+    },
+    {
+     "key": "waypointID",
+     "type": "int",
+     "value": 6
+    },
+    {
+     "key": "waypointName",
+     "type": "ascii",
+     "value": "Player_6_Start"
+    },
+    {
+     "key": "waypointTypeOption",
+     "type": "ascii",
+     "value": ""
+    }
+   ]
+  },
+  {
+   "cell": [
+    360.0,
+    130.0
+   ],
+   "version": 3,
+   "angle": 0.0,
+   "road_type": 0,
+   "type_name": "*Waypoints/Waypoint",
+   "props": [
+    {
+     "key": "objectInitialHealth",
+     "type": "int",
+     "value": 100
+    },
+    {
+     "key": "objectEnabled",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectIndestructible",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectUnsellable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectPowered",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectRecruitableAI",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectTargetable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectSleeping",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectBasePriority",
+     "type": "int",
+     "value": 40
+    },
+    {
+     "key": "objectBasePhase",
+     "type": "int",
+     "value": 1
+    },
+    {
+     "key": "originalOwner",
+     "type": "ascii",
+     "value": "/team"
+    },
+    {
+     "key": "uniqueID",
+     "type": "ascii",
+     "value": "Player_7_Start (imported)"
+    },
+    {
+     "key": "objectLayer",
+     "type": "ascii",
+     "value": ""
+    },
+    {
+     "key": "waypointID",
+     "type": "int",
+     "value": 7
+    },
+    {
+     "key": "waypointName",
+     "type": "ascii",
+     "value": "Player_7_Start (imported)"
+    },
+    {
+     "key": "waypointTypeOption",
+     "type": "ascii",
+     "value": ""
+    }
+   ]
+  },
+  {
+   "cell": [
+    520.0,
+    130.0
+   ],
+   "version": 3,
+   "angle": 0.0,
+   "road_type": 0,
+   "type_name": "*Waypoints/Waypoint",
+   "props": [
+    {
+     "key": "objectInitialHealth",
+     "type": "int",
+     "value": 100
+    },
+    {
+     "key": "objectEnabled",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectIndestructible",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectUnsellable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectPowered",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectRecruitableAI",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectTargetable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectSleeping",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectBasePriority",
+     "type": "int",
+     "value": 40
+    },
+    {
+     "key": "objectBasePhase",
+     "type": "int",
+     "value": 1
+    },
+    {
+     "key": "originalOwner",
+     "type": "ascii",
+     "value": "/team"
+    },
+    {
+     "key": "uniqueID",
+     "type": "ascii",
+     "value": "Player_8_Start (imported)"
+    },
+    {
+     "key": "objectLayer",
+     "type": "ascii",
+     "value": ""
+    },
+    {
+     "key": "waypointID",
+     "type": "int",
+     "value": 8
+    },
+    {
+     "key": "waypointName",
+     "type": "ascii",
+     "value": "Player_8_Start (imported)"
+    },
+    {
+     "key": "waypointTypeOption",
+     "type": "ascii",
+     "value": ""
+    }
+   ]
+  },
+  {
+   "cell": [
+    120.0,
+    666.0
+   ],
+   "version": 3,
+   "angle": 0.0,
+   "road_type": 0,
+   "type_name": "*Waypoints/Waypoint",
+   "props": [
+    {
+     "key": "objectInitialHealth",
+     "type": "int",
+     "value": 100
+    },
+    {
+     "key": "objectEnabled",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectIndestructible",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectUnsellable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectPowered",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectRecruitableAI",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectTargetable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectSleeping",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectBasePriority",
+     "type": "int",
+     "value": 40
+    },
+    {
+     "key": "objectBasePhase",
+     "type": "int",
+     "value": 1
+    },
+    {
+     "key": "originalOwner",
+     "type": "ascii",
+     "value": "/team"
+    },
+    {
+     "key": "uniqueID",
+     "type": "ascii",
+     "value": "dual-p1-bar"
+    },
+    {
+     "key": "objectLayer",
+     "type": "ascii",
+     "value": ""
+    },
+    {
+     "key": "waypointID",
+     "type": "int",
+     "value": 9
+    },
+    {
+     "key": "waypointName",
+     "type": "ascii",
+     "value": "dual-p1-bar"
+    },
+    {
+     "key": "waypointTypeOption",
+     "type": "ascii",
+     "value": ""
+    }
+   ]
+  },
+  {
+   "cell": [
+    154.0,
+    700.0
+   ],
+   "version": 3,
+   "angle": 0.0,
+   "road_type": 0,
+   "type_name": "*Waypoints/Waypoint",
+   "props": [
+    {
+     "key": "objectInitialHealth",
+     "type": "int",
+     "value": 100
+    },
+    {
+     "key": "objectEnabled",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectIndestructible",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectUnsellable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectPowered",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectRecruitableAI",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectTargetable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectSleeping",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectBasePriority",
+     "type": "int",
+     "value": 40
+    },
+    {
+     "key": "objectBasePhase",
+     "type": "int",
+     "value": 1
+    },
+    {
+     "key": "originalOwner",
+     "type": "ascii",
+     "value": "/team"
+    },
+    {
+     "key": "uniqueID",
+     "type": "ascii",
+     "value": "dual-p1-wf"
+    },
+    {
+     "key": "objectLayer",
+     "type": "ascii",
+     "value": ""
+    },
+    {
+     "key": "waypointID",
+     "type": "int",
+     "value": 10
+    },
+    {
+     "key": "waypointName",
+     "type": "ascii",
+     "value": "dual-p1-wf"
+    },
+    {
+     "key": "waypointTypeOption",
+     "type": "ascii",
+     "value": ""
+    }
+   ]
+  },
+  {
+   "cell": [
+    120.0,
+    734.0
+   ],
+   "version": 3,
+   "angle": 0.0,
+   "road_type": 0,
+   "type_name": "*Waypoints/Waypoint",
+   "props": [
+    {
+     "key": "objectInitialHealth",
+     "type": "int",
+     "value": 100
+    },
+    {
+     "key": "objectEnabled",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectIndestructible",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectUnsellable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectPowered",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectRecruitableAI",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectTargetable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectSleeping",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectBasePriority",
+     "type": "int",
+     "value": 40
+    },
+    {
+     "key": "objectBasePhase",
+     "type": "int",
+     "value": 1
+    },
+    {
+     "key": "originalOwner",
+     "type": "ascii",
+     "value": "/team"
+    },
+    {
+     "key": "uniqueID",
+     "type": "ascii",
+     "value": "dual-p1-air"
+    },
+    {
+     "key": "objectLayer",
+     "type": "ascii",
+     "value": ""
+    },
+    {
+     "key": "waypointID",
+     "type": "int",
+     "value": 11
+    },
+    {
+     "key": "waypointName",
+     "type": "ascii",
+     "value": "dual-p1-air"
+    },
+    {
+     "key": "waypointTypeOption",
+     "type": "ascii",
+     "value": ""
+    }
+   ]
+  },
+  {
+   "cell": [
+    260.0,
+    686.0
+   ],
+   "version": 3,
+   "angle": 0.0,
+   "road_type": 0,
+   "type_name": "*Waypoints/Waypoint",
+   "props": [
+    {
+     "key": "objectInitialHealth",
+     "type": "int",
+     "value": 100
+    },
+    {
+     "key": "objectEnabled",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectIndestructible",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectUnsellable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectPowered",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectRecruitableAI",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectTargetable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectSleeping",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectBasePriority",
+     "type": "int",
+     "value": 40
+    },
+    {
+     "key": "objectBasePhase",
+     "type": "int",
+     "value": 1
+    },
+    {
+     "key": "originalOwner",
+     "type": "ascii",
+     "value": "/team"
+    },
+    {
+     "key": "uniqueID",
+     "type": "ascii",
+     "value": "dual-p2-bar"
+    },
+    {
+     "key": "objectLayer",
+     "type": "ascii",
+     "value": ""
+    },
+    {
+     "key": "waypointID",
+     "type": "int",
+     "value": 12
+    },
+    {
+     "key": "waypointName",
+     "type": "ascii",
+     "value": "dual-p2-bar"
+    },
+    {
+     "key": "waypointTypeOption",
+     "type": "ascii",
+     "value": ""
+    }
+   ]
+  },
+  {
+   "cell": [
+    294.0,
+    720.0
+   ],
+   "version": 3,
+   "angle": 0.0,
+   "road_type": 0,
+   "type_name": "*Waypoints/Waypoint",
+   "props": [
+    {
+     "key": "objectInitialHealth",
+     "type": "int",
+     "value": 100
+    },
+    {
+     "key": "objectEnabled",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectIndestructible",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectUnsellable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectPowered",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectRecruitableAI",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectTargetable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectSleeping",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectBasePriority",
+     "type": "int",
+     "value": 40
+    },
+    {
+     "key": "objectBasePhase",
+     "type": "int",
+     "value": 1
+    },
+    {
+     "key": "originalOwner",
+     "type": "ascii",
+     "value": "/team"
+    },
+    {
+     "key": "uniqueID",
+     "type": "ascii",
+     "value": "dual-p2-wf"
+    },
+    {
+     "key": "objectLayer",
+     "type": "ascii",
+     "value": ""
+    },
+    {
+     "key": "waypointID",
+     "type": "int",
+     "value": 13
+    },
+    {
+     "key": "waypointName",
+     "type": "ascii",
+     "value": "dual-p2-wf"
+    },
+    {
+     "key": "waypointTypeOption",
+     "type": "ascii",
+     "value": ""
+    }
+   ]
+  },
+  {
+   "cell": [
+    260.0,
+    754.0
+   ],
+   "version": 3,
+   "angle": 0.0,
+   "road_type": 0,
+   "type_name": "*Waypoints/Waypoint",
+   "props": [
+    {
+     "key": "objectInitialHealth",
+     "type": "int",
+     "value": 100
+    },
+    {
+     "key": "objectEnabled",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectIndestructible",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectUnsellable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectPowered",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectRecruitableAI",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectTargetable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectSleeping",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectBasePriority",
+     "type": "int",
+     "value": 40
+    },
+    {
+     "key": "objectBasePhase",
+     "type": "int",
+     "value": 1
+    },
+    {
+     "key": "originalOwner",
+     "type": "ascii",
+     "value": "/team"
+    },
+    {
+     "key": "uniqueID",
+     "type": "ascii",
+     "value": "dual-p2-air"
+    },
+    {
+     "key": "objectLayer",
+     "type": "ascii",
+     "value": ""
+    },
+    {
+     "key": "waypointID",
+     "type": "int",
+     "value": 14
+    },
+    {
+     "key": "waypointName",
+     "type": "ascii",
+     "value": "dual-p2-air"
+    },
+    {
+     "key": "waypointTypeOption",
+     "type": "ascii",
+     "value": ""
+    }
+   ]
+  },
+  {
+   "cell": [
+    460.0,
+    666.0
+   ],
+   "version": 3,
+   "angle": 0.0,
+   "road_type": 0,
+   "type_name": "*Waypoints/Waypoint",
+   "props": [
+    {
+     "key": "objectInitialHealth",
+     "type": "int",
+     "value": 100
+    },
+    {
+     "key": "objectEnabled",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectIndestructible",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectUnsellable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectPowered",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectRecruitableAI",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectTargetable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectSleeping",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectBasePriority",
+     "type": "int",
+     "value": 40
+    },
+    {
+     "key": "objectBasePhase",
+     "type": "int",
+     "value": 1
+    },
+    {
+     "key": "originalOwner",
+     "type": "ascii",
+     "value": "/team"
+    },
+    {
+     "key": "uniqueID",
+     "type": "ascii",
+     "value": "dual-p3-bar"
+    },
+    {
+     "key": "objectLayer",
+     "type": "ascii",
+     "value": ""
+    },
+    {
+     "key": "waypointID",
+     "type": "int",
+     "value": 15
+    },
+    {
+     "key": "waypointName",
+     "type": "ascii",
+     "value": "dual-p3-bar"
+    },
+    {
+     "key": "waypointTypeOption",
+     "type": "ascii",
+     "value": ""
+    }
+   ]
+  },
+  {
+   "cell": [
+    494.0,
+    700.0
+   ],
+   "version": 3,
+   "angle": 0.0,
+   "road_type": 0,
+   "type_name": "*Waypoints/Waypoint",
+   "props": [
+    {
+     "key": "objectInitialHealth",
+     "type": "int",
+     "value": 100
+    },
+    {
+     "key": "objectEnabled",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectIndestructible",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectUnsellable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectPowered",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectRecruitableAI",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectTargetable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectSleeping",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectBasePriority",
+     "type": "int",
+     "value": 40
+    },
+    {
+     "key": "objectBasePhase",
+     "type": "int",
+     "value": 1
+    },
+    {
+     "key": "originalOwner",
+     "type": "ascii",
+     "value": "/team"
+    },
+    {
+     "key": "uniqueID",
+     "type": "ascii",
+     "value": "dual-p3-wf"
+    },
+    {
+     "key": "objectLayer",
+     "type": "ascii",
+     "value": ""
+    },
+    {
+     "key": "waypointID",
+     "type": "int",
+     "value": 16
+    },
+    {
+     "key": "waypointName",
+     "type": "ascii",
+     "value": "dual-p3-wf"
+    },
+    {
+     "key": "waypointTypeOption",
+     "type": "ascii",
+     "value": ""
+    }
+   ]
+  },
+  {
+   "cell": [
+    460.0,
+    734.0
+   ],
+   "version": 3,
+   "angle": 0.0,
+   "road_type": 0,
+   "type_name": "*Waypoints/Waypoint",
+   "props": [
+    {
+     "key": "objectInitialHealth",
+     "type": "int",
+     "value": 100
+    },
+    {
+     "key": "objectEnabled",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectIndestructible",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectUnsellable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectPowered",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectRecruitableAI",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectTargetable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectSleeping",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectBasePriority",
+     "type": "int",
+     "value": 40
+    },
+    {
+     "key": "objectBasePhase",
+     "type": "int",
+     "value": 1
+    },
+    {
+     "key": "originalOwner",
+     "type": "ascii",
+     "value": "/team"
+    },
+    {
+     "key": "uniqueID",
+     "type": "ascii",
+     "value": "dual-p3-air"
+    },
+    {
+     "key": "objectLayer",
+     "type": "ascii",
+     "value": ""
+    },
+    {
+     "key": "waypointID",
+     "type": "int",
+     "value": 17
+    },
+    {
+     "key": "waypointName",
+     "type": "ascii",
+     "value": "dual-p3-air"
+    },
+    {
+     "key": "waypointTypeOption",
+     "type": "ascii",
+     "value": ""
+    }
+   ]
+  },
+  {
+   "cell": [
+    580.0,
+    646.0
+   ],
+   "version": 3,
+   "angle": 0.0,
+   "road_type": 0,
+   "type_name": "*Waypoints/Waypoint",
+   "props": [
+    {
+     "key": "objectInitialHealth",
+     "type": "int",
+     "value": 100
+    },
+    {
+     "key": "objectEnabled",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectIndestructible",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectUnsellable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectPowered",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectRecruitableAI",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectTargetable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectSleeping",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectBasePriority",
+     "type": "int",
+     "value": 40
+    },
+    {
+     "key": "objectBasePhase",
+     "type": "int",
+     "value": 1
+    },
+    {
+     "key": "originalOwner",
+     "type": "ascii",
+     "value": "/team"
+    },
+    {
+     "key": "uniqueID",
+     "type": "ascii",
+     "value": "dual-p4-bar"
+    },
+    {
+     "key": "objectLayer",
+     "type": "ascii",
+     "value": ""
+    },
+    {
+     "key": "waypointID",
+     "type": "int",
+     "value": 18
+    },
+    {
+     "key": "waypointName",
+     "type": "ascii",
+     "value": "dual-p4-bar"
+    },
+    {
+     "key": "waypointTypeOption",
+     "type": "ascii",
+     "value": ""
+    }
+   ]
+  },
+  {
+   "cell": [
+    614.0,
+    680.0
+   ],
+   "version": 3,
+   "angle": 0.0,
+   "road_type": 0,
+   "type_name": "*Waypoints/Waypoint",
+   "props": [
+    {
+     "key": "objectInitialHealth",
+     "type": "int",
+     "value": 100
+    },
+    {
+     "key": "objectEnabled",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectIndestructible",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectUnsellable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectPowered",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectRecruitableAI",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectTargetable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectSleeping",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectBasePriority",
+     "type": "int",
+     "value": 40
+    },
+    {
+     "key": "objectBasePhase",
+     "type": "int",
+     "value": 1
+    },
+    {
+     "key": "originalOwner",
+     "type": "ascii",
+     "value": "/team"
+    },
+    {
+     "key": "uniqueID",
+     "type": "ascii",
+     "value": "dual-p4-wf"
+    },
+    {
+     "key": "objectLayer",
+     "type": "ascii",
+     "value": ""
+    },
+    {
+     "key": "waypointID",
+     "type": "int",
+     "value": 19
+    },
+    {
+     "key": "waypointName",
+     "type": "ascii",
+     "value": "dual-p4-wf"
+    },
+    {
+     "key": "waypointTypeOption",
+     "type": "ascii",
+     "value": ""
+    }
+   ]
+  },
+  {
+   "cell": [
+    580.0,
+    714.0
+   ],
+   "version": 3,
+   "angle": 0.0,
+   "road_type": 0,
+   "type_name": "*Waypoints/Waypoint",
+   "props": [
+    {
+     "key": "objectInitialHealth",
+     "type": "int",
+     "value": 100
+    },
+    {
+     "key": "objectEnabled",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectIndestructible",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectUnsellable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectPowered",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectRecruitableAI",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectTargetable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectSleeping",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectBasePriority",
+     "type": "int",
+     "value": 40
+    },
+    {
+     "key": "objectBasePhase",
+     "type": "int",
+     "value": 1
+    },
+    {
+     "key": "originalOwner",
+     "type": "ascii",
+     "value": "/team"
+    },
+    {
+     "key": "uniqueID",
+     "type": "ascii",
+     "value": "dual-p4-air"
+    },
+    {
+     "key": "objectLayer",
+     "type": "ascii",
+     "value": ""
+    },
+    {
+     "key": "waypointID",
+     "type": "int",
+     "value": 20
+    },
+    {
+     "key": "waypointName",
+     "type": "ascii",
+     "value": "dual-p4-air"
+    },
+    {
+     "key": "waypointTypeOption",
+     "type": "ascii",
+     "value": ""
+    }
+   ]
+  },
+  {
+   "cell": [
+    180.0,
+    96.0
+   ],
+   "version": 3,
+   "angle": 0.0,
+   "road_type": 0,
+   "type_name": "*Waypoints/Waypoint",
+   "props": [
+    {
+     "key": "objectInitialHealth",
+     "type": "int",
+     "value": 100
+    },
+    {
+     "key": "objectEnabled",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectIndestructible",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectUnsellable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectPowered",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectRecruitableAI",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectTargetable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectSleeping",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectBasePriority",
+     "type": "int",
+     "value": 40
+    },
+    {
+     "key": "objectBasePhase",
+     "type": "int",
+     "value": 1
+    },
+    {
+     "key": "originalOwner",
+     "type": "ascii",
+     "value": "/team"
+    },
+    {
+     "key": "uniqueID",
+     "type": "ascii",
+     "value": "dual-p5-bar"
+    },
+    {
+     "key": "objectLayer",
+     "type": "ascii",
+     "value": ""
+    },
+    {
+     "key": "waypointID",
+     "type": "int",
+     "value": 21
+    },
+    {
+     "key": "waypointName",
+     "type": "ascii",
+     "value": "dual-p5-bar"
+    },
+    {
+     "key": "waypointTypeOption",
+     "type": "ascii",
+     "value": ""
+    }
+   ]
+  },
+  {
+   "cell": [
+    214.0,
+    130.0
+   ],
+   "version": 3,
+   "angle": 0.0,
+   "road_type": 0,
+   "type_name": "*Waypoints/Waypoint",
+   "props": [
+    {
+     "key": "objectInitialHealth",
+     "type": "int",
+     "value": 100
+    },
+    {
+     "key": "objectEnabled",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectIndestructible",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectUnsellable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectPowered",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectRecruitableAI",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectTargetable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectSleeping",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectBasePriority",
+     "type": "int",
+     "value": 40
+    },
+    {
+     "key": "objectBasePhase",
+     "type": "int",
+     "value": 1
+    },
+    {
+     "key": "originalOwner",
+     "type": "ascii",
+     "value": "/team"
+    },
+    {
+     "key": "uniqueID",
+     "type": "ascii",
+     "value": "dual-p5-wf"
+    },
+    {
+     "key": "objectLayer",
+     "type": "ascii",
+     "value": ""
+    },
+    {
+     "key": "waypointID",
+     "type": "int",
+     "value": 22
+    },
+    {
+     "key": "waypointName",
+     "type": "ascii",
+     "value": "dual-p5-wf"
+    },
+    {
+     "key": "waypointTypeOption",
+     "type": "ascii",
+     "value": ""
+    }
+   ]
+  },
+  {
+   "cell": [
+    180.0,
+    164.0
+   ],
+   "version": 3,
+   "angle": 0.0,
+   "road_type": 0,
+   "type_name": "*Waypoints/Waypoint",
+   "props": [
+    {
+     "key": "objectInitialHealth",
+     "type": "int",
+     "value": 100
+    },
+    {
+     "key": "objectEnabled",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectIndestructible",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectUnsellable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectPowered",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectRecruitableAI",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectTargetable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectSleeping",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectBasePriority",
+     "type": "int",
+     "value": 40
+    },
+    {
+     "key": "objectBasePhase",
+     "type": "int",
+     "value": 1
+    },
+    {
+     "key": "originalOwner",
+     "type": "ascii",
+     "value": "/team"
+    },
+    {
+     "key": "uniqueID",
+     "type": "ascii",
+     "value": "dual-p5-air"
+    },
+    {
+     "key": "objectLayer",
+     "type": "ascii",
+     "value": ""
+    },
+    {
+     "key": "waypointID",
+     "type": "int",
+     "value": 23
+    },
+    {
+     "key": "waypointName",
+     "type": "ascii",
+     "value": "dual-p5-air"
+    },
+    {
+     "key": "waypointTypeOption",
+     "type": "ascii",
+     "value": ""
+    }
+   ]
+  },
+  {
+   "cell": [
+    700.0,
+    96.0
+   ],
+   "version": 3,
+   "angle": 0.0,
+   "road_type": 0,
+   "type_name": "*Waypoints/Waypoint",
+   "props": [
+    {
+     "key": "objectInitialHealth",
+     "type": "int",
+     "value": 100
+    },
+    {
+     "key": "objectEnabled",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectIndestructible",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectUnsellable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectPowered",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectRecruitableAI",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectTargetable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectSleeping",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectBasePriority",
+     "type": "int",
+     "value": 40
+    },
+    {
+     "key": "objectBasePhase",
+     "type": "int",
+     "value": 1
+    },
+    {
+     "key": "originalOwner",
+     "type": "ascii",
+     "value": "/team"
+    },
+    {
+     "key": "uniqueID",
+     "type": "ascii",
+     "value": "dual-p6-bar"
+    },
+    {
+     "key": "objectLayer",
+     "type": "ascii",
+     "value": ""
+    },
+    {
+     "key": "waypointID",
+     "type": "int",
+     "value": 24
+    },
+    {
+     "key": "waypointName",
+     "type": "ascii",
+     "value": "dual-p6-bar"
+    },
+    {
+     "key": "waypointTypeOption",
+     "type": "ascii",
+     "value": ""
+    }
+   ]
+  },
+  {
+   "cell": [
+    734.0,
+    130.0
+   ],
+   "version": 3,
+   "angle": 0.0,
+   "road_type": 0,
+   "type_name": "*Waypoints/Waypoint",
+   "props": [
+    {
+     "key": "objectInitialHealth",
+     "type": "int",
+     "value": 100
+    },
+    {
+     "key": "objectEnabled",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectIndestructible",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectUnsellable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectPowered",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectRecruitableAI",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectTargetable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectSleeping",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectBasePriority",
+     "type": "int",
+     "value": 40
+    },
+    {
+     "key": "objectBasePhase",
+     "type": "int",
+     "value": 1
+    },
+    {
+     "key": "originalOwner",
+     "type": "ascii",
+     "value": "/team"
+    },
+    {
+     "key": "uniqueID",
+     "type": "ascii",
+     "value": "dual-p6-wf"
+    },
+    {
+     "key": "objectLayer",
+     "type": "ascii",
+     "value": ""
+    },
+    {
+     "key": "waypointID",
+     "type": "int",
+     "value": 25
+    },
+    {
+     "key": "waypointName",
+     "type": "ascii",
+     "value": "dual-p6-wf"
+    },
+    {
+     "key": "waypointTypeOption",
+     "type": "ascii",
+     "value": ""
+    }
+   ]
+  },
+  {
+   "cell": [
+    700.0,
+    164.0
+   ],
+   "version": 3,
+   "angle": 0.0,
+   "road_type": 0,
+   "type_name": "*Waypoints/Waypoint",
+   "props": [
+    {
+     "key": "objectInitialHealth",
+     "type": "int",
+     "value": 100
+    },
+    {
+     "key": "objectEnabled",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectIndestructible",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectUnsellable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectPowered",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectRecruitableAI",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectTargetable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectSleeping",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectBasePriority",
+     "type": "int",
+     "value": 40
+    },
+    {
+     "key": "objectBasePhase",
+     "type": "int",
+     "value": 1
+    },
+    {
+     "key": "originalOwner",
+     "type": "ascii",
+     "value": "/team"
+    },
+    {
+     "key": "uniqueID",
+     "type": "ascii",
+     "value": "dual-p6-air"
+    },
+    {
+     "key": "objectLayer",
+     "type": "ascii",
+     "value": ""
+    },
+    {
+     "key": "waypointID",
+     "type": "int",
+     "value": 26
+    },
+    {
+     "key": "waypointName",
+     "type": "ascii",
+     "value": "dual-p6-air"
+    },
+    {
+     "key": "waypointTypeOption",
+     "type": "ascii",
+     "value": ""
+    }
+   ]
+  },
+  {
+   "cell": [
+    360.0,
+    96.0
+   ],
+   "version": 3,
+   "angle": 0.0,
+   "road_type": 0,
+   "type_name": "*Waypoints/Waypoint",
+   "props": [
+    {
+     "key": "objectInitialHealth",
+     "type": "int",
+     "value": 100
+    },
+    {
+     "key": "objectEnabled",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectIndestructible",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectUnsellable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectPowered",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectRecruitableAI",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectTargetable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectSleeping",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectBasePriority",
+     "type": "int",
+     "value": 40
+    },
+    {
+     "key": "objectBasePhase",
+     "type": "int",
+     "value": 1
+    },
+    {
+     "key": "originalOwner",
+     "type": "ascii",
+     "value": "/team"
+    },
+    {
+     "key": "uniqueID",
+     "type": "ascii",
+     "value": "dual-civilian-bar"
+    },
+    {
+     "key": "objectLayer",
+     "type": "ascii",
+     "value": ""
+    },
+    {
+     "key": "waypointID",
+     "type": "int",
+     "value": 27
+    },
+    {
+     "key": "waypointName",
+     "type": "ascii",
+     "value": "dual-civilian-bar"
+    },
+    {
+     "key": "waypointTypeOption",
+     "type": "ascii",
+     "value": ""
+    }
+   ]
+  },
+  {
+   "cell": [
+    394.0,
+    130.0
+   ],
+   "version": 3,
+   "angle": 0.0,
+   "road_type": 0,
+   "type_name": "*Waypoints/Waypoint",
+   "props": [
+    {
+     "key": "objectInitialHealth",
+     "type": "int",
+     "value": 100
+    },
+    {
+     "key": "objectEnabled",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectIndestructible",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectUnsellable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectPowered",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectRecruitableAI",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectTargetable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectSleeping",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectBasePriority",
+     "type": "int",
+     "value": 40
+    },
+    {
+     "key": "objectBasePhase",
+     "type": "int",
+     "value": 1
+    },
+    {
+     "key": "originalOwner",
+     "type": "ascii",
+     "value": "/team"
+    },
+    {
+     "key": "uniqueID",
+     "type": "ascii",
+     "value": "dual-civilian-wf"
+    },
+    {
+     "key": "objectLayer",
+     "type": "ascii",
+     "value": ""
+    },
+    {
+     "key": "waypointID",
+     "type": "int",
+     "value": 28
+    },
+    {
+     "key": "waypointName",
+     "type": "ascii",
+     "value": "dual-civilian-wf"
+    },
+    {
+     "key": "waypointTypeOption",
+     "type": "ascii",
+     "value": ""
+    }
+   ]
+  },
+  {
+   "cell": [
+    360.0,
+    164.0
+   ],
+   "version": 3,
+   "angle": 0.0,
+   "road_type": 0,
+   "type_name": "*Waypoints/Waypoint",
+   "props": [
+    {
+     "key": "objectInitialHealth",
+     "type": "int",
+     "value": 100
+    },
+    {
+     "key": "objectEnabled",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectIndestructible",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectUnsellable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectPowered",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectRecruitableAI",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectTargetable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectSleeping",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectBasePriority",
+     "type": "int",
+     "value": 40
+    },
+    {
+     "key": "objectBasePhase",
+     "type": "int",
+     "value": 1
+    },
+    {
+     "key": "originalOwner",
+     "type": "ascii",
+     "value": "/team"
+    },
+    {
+     "key": "uniqueID",
+     "type": "ascii",
+     "value": "dual-civilian-air"
+    },
+    {
+     "key": "objectLayer",
+     "type": "ascii",
+     "value": ""
+    },
+    {
+     "key": "waypointID",
+     "type": "int",
+     "value": 29
+    },
+    {
+     "key": "waypointName",
+     "type": "ascii",
+     "value": "dual-civilian-air"
+    },
+    {
+     "key": "waypointTypeOption",
+     "type": "ascii",
+     "value": ""
+    }
+   ]
+  },
+  {
+   "cell": [
+    520.0,
+    96.0
+   ],
+   "version": 3,
+   "angle": 0.0,
+   "road_type": 0,
+   "type_name": "*Waypoints/Waypoint",
+   "props": [
+    {
+     "key": "objectInitialHealth",
+     "type": "int",
+     "value": 100
+    },
+    {
+     "key": "objectEnabled",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectIndestructible",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectUnsellable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectPowered",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectRecruitableAI",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectTargetable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectSleeping",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectBasePriority",
+     "type": "int",
+     "value": 40
+    },
+    {
+     "key": "objectBasePhase",
+     "type": "int",
+     "value": 1
+    },
+    {
+     "key": "originalOwner",
+     "type": "ascii",
+     "value": "/team"
+    },
+    {
+     "key": "uniqueID",
+     "type": "ascii",
+     "value": "dual-creeps-bar"
+    },
+    {
+     "key": "objectLayer",
+     "type": "ascii",
+     "value": ""
+    },
+    {
+     "key": "waypointID",
+     "type": "int",
+     "value": 30
+    },
+    {
+     "key": "waypointName",
+     "type": "ascii",
+     "value": "dual-creeps-bar"
+    },
+    {
+     "key": "waypointTypeOption",
+     "type": "ascii",
+     "value": ""
+    }
+   ]
+  },
+  {
+   "cell": [
+    554.0,
+    130.0
+   ],
+   "version": 3,
+   "angle": 0.0,
+   "road_type": 0,
+   "type_name": "*Waypoints/Waypoint",
+   "props": [
+    {
+     "key": "objectInitialHealth",
+     "type": "int",
+     "value": 100
+    },
+    {
+     "key": "objectEnabled",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectIndestructible",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectUnsellable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectPowered",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectRecruitableAI",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectTargetable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectSleeping",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectBasePriority",
+     "type": "int",
+     "value": 40
+    },
+    {
+     "key": "objectBasePhase",
+     "type": "int",
+     "value": 1
+    },
+    {
+     "key": "originalOwner",
+     "type": "ascii",
+     "value": "/team"
+    },
+    {
+     "key": "uniqueID",
+     "type": "ascii",
+     "value": "dual-creeps-wf"
+    },
+    {
+     "key": "objectLayer",
+     "type": "ascii",
+     "value": ""
+    },
+    {
+     "key": "waypointID",
+     "type": "int",
+     "value": 31
+    },
+    {
+     "key": "waypointName",
+     "type": "ascii",
+     "value": "dual-creeps-wf"
+    },
+    {
+     "key": "waypointTypeOption",
+     "type": "ascii",
+     "value": ""
+    }
+   ]
+  },
+  {
+   "cell": [
+    520.0,
+    164.0
+   ],
+   "version": 3,
+   "angle": 0.0,
+   "road_type": 0,
+   "type_name": "*Waypoints/Waypoint",
+   "props": [
+    {
+     "key": "objectInitialHealth",
+     "type": "int",
+     "value": 100
+    },
+    {
+     "key": "objectEnabled",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectIndestructible",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectUnsellable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectPowered",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectRecruitableAI",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectTargetable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectSleeping",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectBasePriority",
+     "type": "int",
+     "value": 40
+    },
+    {
+     "key": "objectBasePhase",
+     "type": "int",
+     "value": 1
+    },
+    {
+     "key": "originalOwner",
+     "type": "ascii",
+     "value": "/team"
+    },
+    {
+     "key": "uniqueID",
+     "type": "ascii",
+     "value": "dual-creeps-air"
+    },
+    {
+     "key": "objectLayer",
+     "type": "ascii",
+     "value": ""
+    },
+    {
+     "key": "waypointID",
+     "type": "int",
+     "value": 32
+    },
+    {
+     "key": "waypointName",
+     "type": "ascii",
+     "value": "dual-creeps-air"
+    },
+    {
+     "key": "waypointTypeOption",
+     "type": "ascii",
+     "value": ""
+    }
+   ]
+  },
+  {
+   "cell": [
+    360.0,
+    130.0
+   ],
+   "version": 3,
+   "angle": 2.3561945,
+   "road_type": 0,
+   "type_name": "SovietConstructionYard",
+   "props": [
+    {
+     "key": "objectInitialHealth",
+     "type": "int",
+     "value": 100
+    },
+    {
+     "key": "objectEnabled",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectIndestructible",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectUnsellable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectPowered",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectRecruitableAI",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectTargetable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectSleeping",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectBasePriority",
+     "type": "int",
+     "value": 40
+    },
+    {
+     "key": "objectBasePhase",
+     "type": "int",
+     "value": 1
+    },
+    {
+     "key": "originalOwner",
+     "type": "ascii",
+     "value": "PlyrCivilian/teamPlyrCivilian"
+    },
+    {
+     "key": "uniqueID",
+     "type": "ascii",
+     "value": "sea-mcv-7"
+    },
+    {
+     "key": "objectLayer",
+     "type": "ascii",
+     "value": ""
+    },
+    {
+     "key": "objectName",
+     "type": "ascii",
+     "value": ""
+    }
+   ]
+  },
+  {
+   "cell": [
+    520.0,
+    130.0
+   ],
+   "version": 3,
+   "angle": -2.3561945,
+   "road_type": 0,
+   "type_name": "JapanConstructionYard",
+   "props": [
+    {
+     "key": "objectInitialHealth",
+     "type": "int",
+     "value": 100
+    },
+    {
+     "key": "objectEnabled",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectIndestructible",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectUnsellable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectPowered",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectRecruitableAI",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectTargetable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectSleeping",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectBasePriority",
+     "type": "int",
+     "value": 40
+    },
+    {
+     "key": "objectBasePhase",
+     "type": "int",
+     "value": 1
+    },
+    {
+     "key": "originalOwner",
+     "type": "ascii",
+     "value": "PlyrCreeps/teamPlyrCreeps"
+    },
+    {
+     "key": "uniqueID",
+     "type": "ascii",
+     "value": "sea-mcv-8"
+    },
+    {
+     "key": "objectLayer",
+     "type": "ascii",
+     "value": ""
+    },
+    {
+     "key": "objectName",
+     "type": "ascii",
+     "value": ""
+    }
+   ]
+  },
+  {
+   "cell": [
+    338.0,
+    456.0
+   ],
+   "version": 3,
+   "angle": 0.7853982,
+   "road_type": 0,
+   "type_name": "OilDerrick",
+   "props": [
+    {
+     "key": "objectInitialHealth",
+     "type": "int",
+     "value": 100
+    },
+    {
+     "key": "objectEnabled",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectIndestructible",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectUnsellable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectPowered",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectRecruitableAI",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectTargetable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectSleeping",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectBasePriority",
+     "type": "int",
+     "value": 40
+    },
+    {
+     "key": "objectBasePhase",
+     "type": "int",
+     "value": 1
+    },
+    {
+     "key": "originalOwner",
+     "type": "ascii",
+     "value": "PlyrNeutral/teamPlyrNeutral"
+    },
+    {
+     "key": "uniqueID",
+     "type": "ascii",
+     "value": "qianhe-derrick-1"
+    },
+    {
+     "key": "objectLayer",
+     "type": "ascii",
+     "value": ""
+    }
+   ]
+  },
+  {
+   "cell": [
+    356.0,
+    366.0
+   ],
+   "version": 3,
+   "angle": 0.7853982,
+   "road_type": 0,
+   "type_name": "OilDerrick",
+   "props": [
+    {
+     "key": "objectInitialHealth",
+     "type": "int",
+     "value": 100
+    },
+    {
+     "key": "objectEnabled",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectIndestructible",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectUnsellable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectPowered",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectRecruitableAI",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectTargetable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectSleeping",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectBasePriority",
+     "type": "int",
+     "value": 40
+    },
+    {
+     "key": "objectBasePhase",
+     "type": "int",
+     "value": 1
+    },
+    {
+     "key": "originalOwner",
+     "type": "ascii",
+     "value": "PlyrNeutral/teamPlyrNeutral"
+    },
+    {
+     "key": "uniqueID",
+     "type": "ascii",
+     "value": "qianhe-derrick-2"
+    },
+    {
+     "key": "objectLayer",
+     "type": "ascii",
+     "value": ""
+    }
+   ]
+  },
+  {
+   "cell": [
+    470.0,
+    534.0
+   ],
+   "version": 3,
+   "angle": 0.7853982,
+   "road_type": 0,
+   "type_name": "OilDerrick",
+   "props": [
+    {
+     "key": "objectInitialHealth",
+     "type": "int",
+     "value": 100
+    },
+    {
+     "key": "objectEnabled",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectIndestructible",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectUnsellable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectPowered",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectRecruitableAI",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectTargetable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectSleeping",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectBasePriority",
+     "type": "int",
+     "value": 40
+    },
+    {
+     "key": "objectBasePhase",
+     "type": "int",
+     "value": 1
+    },
+    {
+     "key": "originalOwner",
+     "type": "ascii",
+     "value": "PlyrNeutral/teamPlyrNeutral"
+    },
+    {
+     "key": "uniqueID",
+     "type": "ascii",
+     "value": "qianhe-derrick-3"
+    },
+    {
+     "key": "objectLayer",
+     "type": "ascii",
+     "value": ""
+    }
+   ]
+  },
+  {
+   "cell": [
+    542.0,
+    456.0
+   ],
+   "version": 3,
+   "angle": 0.7853982,
+   "road_type": 0,
+   "type_name": "OilDerrick",
+   "props": [
+    {
+     "key": "objectInitialHealth",
+     "type": "int",
+     "value": 100
+    },
+    {
+     "key": "objectEnabled",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectIndestructible",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectUnsellable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectPowered",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectRecruitableAI",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectTargetable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectSleeping",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectBasePriority",
+     "type": "int",
+     "value": 40
+    },
+    {
+     "key": "objectBasePhase",
+     "type": "int",
+     "value": 1
+    },
+    {
+     "key": "originalOwner",
+     "type": "ascii",
+     "value": "PlyrNeutral/teamPlyrNeutral"
+    },
+    {
+     "key": "uniqueID",
+     "type": "ascii",
+     "value": "qianhe-derrick-4"
+    },
+    {
+     "key": "objectLayer",
+     "type": "ascii",
+     "value": ""
+    }
+   ]
+  },
+  {
+   "cell": [
+    386.0,
+    570.0
+   ],
+   "version": 3,
+   "angle": 0.7853982,
+   "road_type": 0,
+   "type_name": "OilDerrick",
+   "props": [
+    {
+     "key": "objectInitialHealth",
+     "type": "int",
+     "value": 100
+    },
+    {
+     "key": "objectEnabled",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectIndestructible",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectUnsellable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectPowered",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectRecruitableAI",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectTargetable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectSleeping",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectBasePriority",
+     "type": "int",
+     "value": 40
+    },
+    {
+     "key": "objectBasePhase",
+     "type": "int",
+     "value": 1
+    },
+    {
+     "key": "originalOwner",
+     "type": "ascii",
+     "value": "PlyrNeutral/teamPlyrNeutral"
+    },
+    {
+     "key": "uniqueID",
+     "type": "ascii",
+     "value": "qianhe-derrick-5"
+    },
+    {
+     "key": "objectLayer",
+     "type": "ascii",
+     "value": ""
+    }
+   ]
+  },
+  {
+   "cell": [
+    272.0,
+    402.0
+   ],
+   "version": 3,
+   "angle": 0.7853982,
+   "road_type": 0,
+   "type_name": "OilDerrick",
+   "props": [
+    {
+     "key": "objectInitialHealth",
+     "type": "int",
+     "value": 100
+    },
+    {
+     "key": "objectEnabled",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectIndestructible",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectUnsellable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectPowered",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectRecruitableAI",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectTargetable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectSleeping",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectBasePriority",
+     "type": "int",
+     "value": 40
+    },
+    {
+     "key": "objectBasePhase",
+     "type": "int",
+     "value": 1
+    },
+    {
+     "key": "originalOwner",
+     "type": "ascii",
+     "value": "PlyrNeutral/teamPlyrNeutral"
+    },
+    {
+     "key": "uniqueID",
+     "type": "ascii",
+     "value": "qianhe-derrick-6"
+    },
+    {
+     "key": "objectLayer",
+     "type": "ascii",
+     "value": ""
+    }
+   ]
+  },
+  {
+   "cell": [
+    422.0,
+    320.0
+   ],
+   "version": 3,
+   "angle": 0.7853982,
+   "road_type": 0,
+   "type_name": "HospitalTechStructure",
+   "props": [
+    {
+     "key": "objectInitialHealth",
+     "type": "int",
+     "value": 100
+    },
+    {
+     "key": "objectEnabled",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectIndestructible",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectUnsellable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectPowered",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectRecruitableAI",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectTargetable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectSleeping",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectBasePriority",
+     "type": "int",
+     "value": 40
+    },
+    {
+     "key": "objectBasePhase",
+     "type": "int",
+     "value": 1
+    },
+    {
+     "key": "originalOwner",
+     "type": "ascii",
+     "value": "PlyrNeutral/teamPlyrNeutral"
+    },
+    {
+     "key": "uniqueID",
+     "type": "ascii",
+     "value": "qianhe-tech-1"
+    },
+    {
+     "key": "objectLayer",
+     "type": "ascii",
+     "value": ""
+    }
+   ]
+  },
+  {
+   "cell": [
+    302.0,
+    524.0
+   ],
+   "version": 3,
+   "angle": 0.7853982,
+   "road_type": 0,
+   "type_name": "HospitalTechStructure",
+   "props": [
+    {
+     "key": "objectInitialHealth",
+     "type": "int",
+     "value": 100
+    },
+    {
+     "key": "objectEnabled",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectIndestructible",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectUnsellable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectPowered",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectRecruitableAI",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectTargetable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectSleeping",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectBasePriority",
+     "type": "int",
+     "value": 40
+    },
+    {
+     "key": "objectBasePhase",
+     "type": "int",
+     "value": 1
+    },
+    {
+     "key": "originalOwner",
+     "type": "ascii",
+     "value": "PlyrNeutral/teamPlyrNeutral"
+    },
+    {
+     "key": "uniqueID",
+     "type": "ascii",
+     "value": "qianhe-tech-2"
+    },
+    {
+     "key": "objectLayer",
+     "type": "ascii",
+     "value": ""
+    }
+   ]
+  },
+  {
+   "cell": [
+    290.0,
+    326.0
+   ],
+   "version": 3,
+   "angle": 0.7853982,
+   "road_type": 0,
+   "type_name": "VeterancyTechStructure",
+   "props": [
+    {
+     "key": "objectInitialHealth",
+     "type": "int",
+     "value": 100
+    },
+    {
+     "key": "objectEnabled",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectIndestructible",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectUnsellable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectPowered",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectRecruitableAI",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectTargetable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectSleeping",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectBasePriority",
+     "type": "int",
+     "value": 40
+    },
+    {
+     "key": "objectBasePhase",
+     "type": "int",
+     "value": 1
+    },
+    {
+     "key": "originalOwner",
+     "type": "ascii",
+     "value": "PlyrNeutral/teamPlyrNeutral"
+    },
+    {
+     "key": "uniqueID",
+     "type": "ascii",
+     "value": "qianhe-tech-3"
+    },
+    {
+     "key": "objectLayer",
+     "type": "ascii",
+     "value": ""
+    }
+   ]
+  },
+  {
+   "cell": [
+    602.0,
+    398.0
+   ],
+   "version": 3,
+   "angle": 0.7853982,
+   "road_type": 0,
+   "type_name": "VeterancyTechStructure",
+   "props": [
+    {
+     "key": "objectInitialHealth",
+     "type": "int",
+     "value": 100
+    },
+    {
+     "key": "objectEnabled",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectIndestructible",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectUnsellable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectPowered",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectRecruitableAI",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectTargetable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectSleeping",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectBasePriority",
+     "type": "int",
+     "value": 40
+    },
+    {
+     "key": "objectBasePhase",
+     "type": "int",
+     "value": 1
+    },
+    {
+     "key": "originalOwner",
+     "type": "ascii",
+     "value": "PlyrNeutral/teamPlyrNeutral"
+    },
+    {
+     "key": "uniqueID",
+     "type": "ascii",
+     "value": "qianhe-tech-4"
+    },
+    {
+     "key": "objectLayer",
+     "type": "ascii",
+     "value": ""
+    }
+   ]
+  },
+  {
+   "cell": [
+    560.0,
+    530.0
+   ],
+   "version": 3,
+   "angle": 0.7853982,
+   "road_type": 0,
+   "type_name": "ObservationPostTechStructure",
+   "props": [
+    {
+     "key": "objectInitialHealth",
+     "type": "int",
+     "value": 100
+    },
+    {
+     "key": "objectEnabled",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectIndestructible",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectUnsellable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectPowered",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectRecruitableAI",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectTargetable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectSleeping",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectBasePriority",
+     "type": "int",
+     "value": 40
+    },
+    {
+     "key": "objectBasePhase",
+     "type": "int",
+     "value": 1
+    },
+    {
+     "key": "originalOwner",
+     "type": "ascii",
+     "value": "PlyrNeutral/teamPlyrNeutral"
+    },
+    {
+     "key": "uniqueID",
+     "type": "ascii",
+     "value": "qianhe-tech-5"
+    },
+    {
+     "key": "objectLayer",
+     "type": "ascii",
+     "value": ""
+    }
+   ]
+  },
+  {
+   "cell": [
+    236.0,
+    470.0
+   ],
+   "version": 3,
+   "angle": 0.7853982,
+   "road_type": 0,
+   "type_name": "ObservationPostTechStructure",
+   "props": [
+    {
+     "key": "objectInitialHealth",
+     "type": "int",
+     "value": 100
+    },
+    {
+     "key": "objectEnabled",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectIndestructible",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectUnsellable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectPowered",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectRecruitableAI",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectTargetable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectSleeping",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectBasePriority",
+     "type": "int",
+     "value": 40
+    },
+    {
+     "key": "objectBasePhase",
+     "type": "int",
+     "value": 1
+    },
+    {
+     "key": "originalOwner",
+     "type": "ascii",
+     "value": "PlyrNeutral/teamPlyrNeutral"
+    },
+    {
+     "key": "uniqueID",
+     "type": "ascii",
+     "value": "qianhe-tech-6"
+    },
+    {
+     "key": "objectLayer",
+     "type": "ascii",
+     "value": ""
+    }
+   ]
+  },
+  {
+   "cell": [
+    584.0,
+    320.0
+   ],
+   "version": 3,
+   "angle": 0.7853982,
+   "road_type": 0,
+   "type_name": "GarageTechStructure",
+   "props": [
+    {
+     "key": "objectInitialHealth",
+     "type": "int",
+     "value": 100
+    },
+    {
+     "key": "objectEnabled",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectIndestructible",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectUnsellable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectPowered",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectRecruitableAI",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectTargetable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectSleeping",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectBasePriority",
+     "type": "int",
+     "value": 40
+    },
+    {
+     "key": "objectBasePhase",
+     "type": "int",
+     "value": 1
+    },
+    {
+     "key": "originalOwner",
+     "type": "ascii",
+     "value": "PlyrNeutral/teamPlyrNeutral"
+    },
+    {
+     "key": "uniqueID",
+     "type": "ascii",
+     "value": "qianhe-tech-7"
+    },
+    {
+     "key": "objectLayer",
+     "type": "ascii",
+     "value": ""
+    }
+   ]
+  },
+  {
+   "cell": [
+    638.0,
+    470.0
+   ],
+   "version": 3,
+   "angle": 0.7853982,
+   "road_type": 0,
+   "type_name": "GarageTechStructure",
+   "props": [
+    {
+     "key": "objectInitialHealth",
+     "type": "int",
+     "value": 100
+    },
+    {
+     "key": "objectEnabled",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectIndestructible",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectUnsellable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectPowered",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectRecruitableAI",
+     "type": "bool",
+     "value": 1
+    },
+    {
+     "key": "objectTargetable",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectSleeping",
+     "type": "bool",
+     "value": 0
+    },
+    {
+     "key": "objectBasePriority",
+     "type": "int",
+     "value": 40
+    },
+    {
+     "key": "objectBasePhase",
+     "type": "int",
+     "value": 1
+    },
+    {
+     "key": "originalOwner",
+     "type": "ascii",
+     "value": "PlyrNeutral/teamPlyrNeutral"
+    },
+    {
+     "key": "uniqueID",
+     "type": "ascii",
+     "value": "qianhe-tech-8"
+    },
+    {
+     "key": "objectLayer",
+     "type": "ascii",
+     "value": ""
+    }
+   ]
+  }
+ ],
+ "city_cells": []
+}

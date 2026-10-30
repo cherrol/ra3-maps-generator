@@ -1,0 +1,121 @@
+{
+  "native_crc32": 2234449502,
+  "image": "native-field-contact-sheet.png",
+  "interpretation": "4x4 tiles, row-major R1–R13, southwest shore, southeast shore, level-4 cliff. Each is a 93x93-cell window at 3px/cell. Bottom strip shows centerline native navigation: green open, red blocked.",
+  "kind": "native height/material field schematic with representative colors and hill shading; not game rendering and not a real-texture composition",
+  "tiles": [
+    [
+      "R1",
+      [
+        659.5,
+        115.0
+      ]
+    ],
+    [
+      "R2",
+      [
+        489.5,
+        196.0
+      ]
+    ],
+    [
+      "R3",
+      [
+        372.5,
+        301.0
+      ]
+    ],
+    [
+      "R4",
+      [
+        512.5,
+        301.0
+      ]
+    ],
+    [
+      "R5",
+      [
+        594.5,
+        295.0
+      ]
+    ],
+    [
+      "R6",
+      [
+        276.5,
+        450.0
+      ]
+    ],
+    [
+      "R7",
+      [
+        464.5,
+        469.0
+      ]
+    ],
+    [
+      "R8",
+      [
+        264.5,
+        528.0
+      ]
+    ],
+    [
+      "R9",
+      [
+        369.5,
+        528.0
+      ]
+    ],
+    [
+      "R10",
+      [
+        399.5,
+        693.0
+      ]
+    ],
+    [
+      "R11",
+      [
+        292.5,
+        633.0
+      ]
+    ],
+    [
+      "R12",
+      [
+        665.5,
+        548.0
+      ]
+    ],
+    [
+      "R13",
+      [
+        747.5,
+        548.0
+      ]
+    ],
+    [
+      "Coast SW",
+      [
+        359,
+        766
+      ]
+    ],
+    [
+      "Coast SE",
+      [
+        660,
+        770
+      ]
+    ],
+    [
+      "L4 cliff",
+      [
+        75,
+        230
+      ]
+    ]
+  ],
+  "limitations": "Diffuse/normal texture appearance, engine water rendering and runtime movement have not been observed. The schematic supports encoded material placement, slope/shoulder/shore alignment and navigation review only."
+}

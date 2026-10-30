@@ -109,8 +109,12 @@ pub fn map_id(root: &Path, blueprint: &str) -> Result<String> {
     identity(root, blueprint).map(|(id, _)| id)
 }
 
+/// Geographic naming table. It is build input for region previews, not prose:
+/// every local directory name, CLI id and generated title is resolved from it.
+pub const NAMING_DOCUMENT: &str = "docs/spec/九州大地命名.md";
+
 fn identity(root: &Path, blueprint: &str) -> Result<(String, String)> {
-    let text = fs::read_to_string(root.join("docs/九州大地命名.md"))?;
+    let text = fs::read_to_string(root.join(NAMING_DOCUMENT))?;
     let table = text
         .split("## 全系列定名")
         .nth(1)
@@ -137,7 +141,7 @@ fn identity(root: &Path, blueprint: &str) -> Result<(String, String)> {
         }
     }
     Err(err(format!(
-        "docs/九州大地命名.md 中找不到蓝图 {blueprint} 的地图名称"
+        "{NAMING_DOCUMENT} 中找不到蓝图 {blueprint} 的地图名称"
     )))
 }
 fn array(files: &std::collections::BTreeMap<String, Vec<u8>>, key: &str) -> Result<Option<Npy>> {
@@ -667,9 +671,10 @@ mod policy_tests {
                 std::process::id(),
                 NEXT.fetch_add(1, Ordering::Relaxed)
             ));
-            fs::create_dir_all(root.join("docs")).unwrap();
+            let naming = root.join(NAMING_DOCUMENT);
+            fs::create_dir_all(naming.parent().unwrap()).unwrap();
             fs::write(
-                root.join("docs/九州大地命名.md"),
+                naming,
                 "## 全系列定名\n\n| 地形原型 | 地图名 | 命名画面 |\n|---|---|---|\n| 云南 | 层峦织彩 | 山地 |\n| 海南 | 翠屿浮光 | 海岛 |\n| ../outside | 非法目录 | 无 |\n",
             )
             .unwrap();

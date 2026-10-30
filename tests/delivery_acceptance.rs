@@ -34,9 +34,9 @@ impl Fixture {
             ));
         let id = "synthetic".to_owned();
         let name = "SyntheticT0.0.1".to_owned();
-        fs::create_dir_all(root.join("templates/rules")).unwrap();
+        fs::create_dir_all(root.join("rules")).unwrap();
         fs::write(
-            root.join("templates/rules/common-T0.5.1.json"),
+            root.join("rules/common-T0.5.1.json"),
             json!({"production_placement":{"full_footprint":true}}).to_string(),
         )
         .unwrap();
@@ -273,13 +273,13 @@ fn candidate_layout_policy_and_plan_changes_invalidate_the_review() {
     assert!(f.checked().is_err());
     f.project.cfg.as_object_mut().unwrap().remove("WATER_Z");
     fs::write(
-        f.project.root.join("templates/rules/common-T0.5.1.json"),
+        f.project.root.join("rules/common-T0.5.1.json"),
         json!({"production_placement":{"full_footprint":false}}).to_string(),
     )
     .unwrap();
     assert!(f.checked().is_err());
     fs::write(
-        f.project.root.join("templates/rules/common-T0.5.1.json"),
+        f.project.root.join("rules/common-T0.5.1.json"),
         json!({"production_placement":{"full_footprint":true}}).to_string(),
     )
     .unwrap();
@@ -296,7 +296,7 @@ fn formatting_and_source_pointer_updates_do_not_change_candidate_identity() {
     let mut f = Fixture::new();
     f.write(&f.record());
     fs::write(
-        f.project.root.join("templates/rules/common-T0.5.1.json"),
+        f.project.root.join("rules/common-T0.5.1.json"),
         "{\n  \"production_placement\": { \"full_footprint\": true }\n}\n",
     )
     .unwrap();

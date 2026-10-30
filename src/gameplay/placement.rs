@@ -888,10 +888,8 @@ mod tests {
             clearance: 0,
             score_cache: RefCell::new(BTreeMap::new()),
         };
-        let mut policy: spatial::Policy = serde_json::from_str(include_str!(
-            "../../templates/rules/coordinate-pipeline.json"
-        ))
-        .unwrap();
+        let mut policy: spatial::Policy =
+            serde_json::from_str(include_str!("../../rules/coordinate-pipeline.json")).unwrap();
         policy.navigation_clearance = 0;
         assert_eq!(
             reachable_without_self(

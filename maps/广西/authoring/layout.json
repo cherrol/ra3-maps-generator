@@ -1,0 +1,5000 @@
+{
+  "schema_version": 1,
+  "base_cells": [
+    [
+      145.0,
+      110.0
+    ],
+    [
+      140.0,
+      260.0
+    ],
+    [
+      140.0,
+      415.0
+    ],
+    [
+      170.0,
+      635.0
+    ],
+    [
+      740.0,
+      105.0
+    ],
+    [
+      745.0,
+      695.0
+    ],
+    [
+      720.0,
+      300.0
+    ],
+    [
+      750.0,
+      465.0
+    ]
+  ],
+  "base_pad_cells": [],
+  "ore_cells": [
+    [
+      204.0,
+      110.0
+    ],
+    [
+      145.0,
+      51.0
+    ],
+    [
+      199.0,
+      260.0
+    ],
+    [
+      81.0,
+      260.0
+    ],
+    [
+      195.0,
+      438.0
+    ],
+    [
+      117.0,
+      470.0
+    ],
+    [
+      229.0,
+      635.0
+    ],
+    [
+      115.0,
+      612.0
+    ],
+    [
+      768.0,
+      155.0
+    ],
+    [
+      782.0,
+      63.0
+    ],
+    [
+      690.0,
+      675.0
+    ],
+    [
+      784.0,
+      650.0
+    ],
+    [
+      775.0,
+      323.0
+    ],
+    [
+      697.0,
+      355.0
+    ],
+    [
+      695.0,
+      442.0
+    ],
+    [
+      777.0,
+      410.0
+    ],
+    [
+      275.0,
+      110.0
+    ],
+    [
+      225.0,
+      320.0
+    ],
+    [
+      175.0,
+      525.0
+    ],
+    [
+      260.0,
+      700.0
+    ],
+    [
+      625.0,
+      70.0
+    ],
+    [
+      625.0,
+      695.0
+    ],
+    [
+      590.0,
+      250.0
+    ],
+    [
+      645.0,
+      500.0
+    ],
+    [
+      355.0,
+      110.0
+    ],
+    [
+      305.0,
+      310.0
+    ],
+    [
+      275.0,
+      575.0
+    ],
+    [
+      335.0,
+      720.0
+    ],
+    [
+      560.0,
+      55.0
+    ],
+    [
+      550.0,
+      695.0
+    ],
+    [
+      545.0,
+      340.0
+    ],
+    [
+      570.0,
+      530.0
+    ],
+    [
+      455.0,
+      110.0
+    ],
+    [
+      415.0,
+      315.0
+    ],
+    [
+      390.0,
+      565.0
+    ],
+    [
+      440.0,
+      660.0
+    ],
+    [
+      495.0,
+      55.0
+    ],
+    [
+      490.0,
+      685.0
+    ],
+    [
+      440.0,
+      265.0
+    ],
+    [
+      445.0,
+      545.0
+    ],
+    [
+      340.0,
+      190.0
+    ],
+    [
+      345.0,
+      260.0
+    ],
+    [
+      325.0,
+      485.0
+    ],
+    [
+      490.0,
+      605.0
+    ],
+    [
+      635.0,
+      190.0
+    ],
+    [
+      585.0,
+      625.0
+    ],
+    [
+      400.0,
+      175.0
+    ],
+    [
+      530.0,
+      490.0
+    ]
+  ],
+  "ore_angles": [
+    -2.356194490192345,
+    2.356194490192345,
+    -2.356194490192345,
+    0.7853981633974483,
+    -2.356194490192345,
+    -0.7853981633974483,
+    2.356194490192345,
+    0.7853981633974483,
+    -0.7853981633974483,
+    2.356194490192345,
+    0.7853981633974483,
+    2.356194490192345,
+    -2.356194490192345,
+    -0.7853981633974483,
+    0.7853981633974483,
+    2.356194490192345,
+    0.7853981633974483,
+    -0.7853981633974483,
+    2.356194490192345,
+    0.7853981633974483,
+    -0.7853981633974483,
+    2.356194490192345,
+    -0.7853981633974483,
+    -0.7853981633974483,
+    0.7853981633974483,
+    2.356194490192345,
+    2.356194490192345,
+    -2.356194490192345,
+    2.356194490192345,
+    -0.7853981633974483,
+    0.7853981633974483,
+    -0.7853981633974483,
+    2.356194490192345,
+    0.7853981633974483,
+    0.7853981633974483,
+    -0.7853981633974483,
+    0.7853981633974483,
+    -0.7853981633974483,
+    0.7853981633974483,
+    0.7853981633974483,
+    0.7853981633974483,
+    -2.356194490192345,
+    -0.7853981633974483,
+    0.7853981633974483,
+    2.356194490192345,
+    0.7853981633974483,
+    -0.7853981633974483,
+    2.356194490192345
+  ],
+  "ore_kind": [],
+  "ore_owner": [],
+  "derrick_cells": [
+    [
+      405.0,
+      65.0
+    ],
+    [
+      465.0,
+      350.0
+    ],
+    [
+      385.0,
+      420.0
+    ],
+    [
+      380.0,
+      630.0
+    ]
+  ],
+  "house_cells": [],
+  "post_cells": [],
+  "garage_cells": [
+    [
+      420.0,
+      480.0
+    ]
+  ],
+  "airport_cells": [],
+  "hospital_cells": [
+    [
+      490.0,
+      165.0
+    ]
+  ],
+  "academy_cells": [],
+  "shipyard_cells": [],
+  "bridge_cells": [],
+  "ramps": [
+    {
+      "auto": true,
+      "h": 40.0,
+      "pair": [
+        280.0,
+        350.0
+      ],
+      "route": 1,
+      "route_kind": "main_path",
+      "span": 40.0,
+      "style": "mountain",
+      "surface_style": "mountain",
+      "ux": -1.0,
+      "uy": 1.2246467991473532e-16,
+      "w": 40.0,
+      "width": 24.0,
+      "x": 659.5,
+      "y": 115.0
+    },
+    {
+      "auto": true,
+      "h": 40.0,
+      "pair": [
+        280.0,
+        350.0
+      ],
+      "route": 1,
+      "route_kind": "secondary_path",
+      "span": 40.0,
+      "style": "mountain",
+      "surface_style": "mountain",
+      "ux": -1.0,
+      "uy": 1.2246467991473532e-16,
+      "w": 40.0,
+      "width": 24.0,
+      "x": 489.5,
+      "y": 196.0
+    },
+    {
+      "auto": true,
+      "h": 40.0,
+      "pair": [
+        280.0,
+        350.0
+      ],
+      "route": 2,
+      "route_kind": "main_path",
+      "span": 40.0,
+      "style": "mountain",
+      "surface_style": "mountain",
+      "ux": -0.4999999999999998,
+      "uy": 0.8660254037844387,
+      "w": 40.0,
+      "width": 24.0,
+      "x": 372.5,
+      "y": 301.0
+    },
+    {
+      "auto": true,
+      "h": 40.0,
+      "pair": [
+        210.0,
+        280.0
+      ],
+      "route": 2,
+      "route_kind": "main_path",
+      "span": 40.0,
+      "style": "mountain",
+      "surface_style": "mountain",
+      "ux": -0.4999999999999998,
+      "uy": 0.8660254037844387,
+      "w": 40.0,
+      "width": 24.0,
+      "x": 512.5,
+      "y": 301.0
+    },
+    {
+      "auto": true,
+      "h": 40.0,
+      "pair": [
+        210.0,
+        280.0
+      ],
+      "route": 2,
+      "route_kind": "main_path",
+      "span": 40.0,
+      "style": "mountain",
+      "surface_style": "mountain",
+      "ux": 1.0,
+      "uy": 0.0,
+      "w": 40.0,
+      "width": 24.0,
+      "x": 594.5,
+      "y": 295.0
+    },
+    {
+      "auto": true,
+      "h": 40.0,
+      "pair": [
+        280.0,
+        350.0
+      ],
+      "route": 3,
+      "route_kind": "main_path",
+      "span": 40.0,
+      "style": "mountain",
+      "surface_style": "mountain",
+      "ux": -0.25881904510252063,
+      "uy": 0.9659258262890683,
+      "w": 40.0,
+      "width": 24.0,
+      "x": 276.5,
+      "y": 450.0
+    },
+    {
+      "auto": true,
+      "h": 40.0,
+      "pair": [
+        210.0,
+        280.0
+      ],
+      "route": 3,
+      "route_kind": "main_path",
+      "span": 40.0,
+      "style": "mountain",
+      "surface_style": "mountain",
+      "ux": -0.4999999999999998,
+      "uy": 0.8660254037844387,
+      "w": 40.0,
+      "width": 24.0,
+      "x": 464.5,
+      "y": 469.0
+    },
+    {
+      "auto": true,
+      "h": 40.0,
+      "pair": [
+        280.0,
+        350.0
+      ],
+      "route": 3,
+      "route_kind": "secondary_path",
+      "span": 40.0,
+      "style": "mountain",
+      "surface_style": "mountain",
+      "ux": -0.9659258262890683,
+      "uy": -0.2588190451025208,
+      "w": 40.0,
+      "width": 24.0,
+      "x": 264.5,
+      "y": 528.0
+    },
+    {
+      "auto": true,
+      "h": 40.0,
+      "pair": [
+        210.0,
+        280.0
+      ],
+      "route": 3,
+      "route_kind": "secondary_path",
+      "span": 40.0,
+      "style": "mountain",
+      "surface_style": "mountain",
+      "ux": -0.8660254037844387,
+      "uy": 0.49999999999999994,
+      "w": 40.0,
+      "width": 24.0,
+      "x": 369.5,
+      "y": 528.0
+    },
+    {
+      "auto": true,
+      "h": 40.0,
+      "pair": [
+        210.0,
+        280.0
+      ],
+      "route": 4,
+      "route_kind": "main_path",
+      "span": 40.0,
+      "style": "mountain",
+      "surface_style": "mountain",
+      "ux": -0.9659258262890683,
+      "uy": -0.2588190451025208,
+      "w": 40.0,
+      "width": 24.0,
+      "x": 399.5,
+      "y": 693.0
+    },
+    {
+      "auto": true,
+      "h": 40.0,
+      "pair": [
+        210.0,
+        280.0
+      ],
+      "route": 4,
+      "route_kind": "secondary_path",
+      "span": 40.0,
+      "style": "mountain",
+      "surface_style": "mountain",
+      "ux": -0.4999999999999998,
+      "uy": 0.8660254037844387,
+      "w": 40.0,
+      "width": 24.0,
+      "x": 292.5,
+      "y": 633.0
+    },
+    {
+      "auto": true,
+      "h": 40.0,
+      "pair": [
+        210.0,
+        280.0
+      ],
+      "route": 5,
+      "route_kind": "main_path",
+      "span": 40.0,
+      "style": "mountain",
+      "surface_style": "mountain",
+      "ux": 1.0,
+      "uy": 0.0,
+      "w": 40.0,
+      "width": 24.0,
+      "x": 665.5,
+      "y": 548.0
+    },
+    {
+      "auto": true,
+      "h": 40.0,
+      "pair": [
+        210.0,
+        280.0
+      ],
+      "route": 5,
+      "route_kind": "main_path",
+      "span": 40.0,
+      "style": "mountain",
+      "surface_style": "mountain",
+      "ux": -0.9659258262890682,
+      "uy": 0.258819045102521,
+      "w": 40.0,
+      "width": 24.0,
+      "x": 747.5,
+      "y": 548.0
+    }
+  ],
+  "objects": [
+    {
+      "cell": [
+        145.0,
+        110.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "Player_1_Start"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 1
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "GX-WP-0001"
+        }
+      ]
+    },
+    {
+      "cell": [
+        140.0,
+        260.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "Player_2_Start"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 2
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "GX-WP-0002"
+        }
+      ]
+    },
+    {
+      "cell": [
+        140.0,
+        415.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "Player_3_Start"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 3
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "GX-WP-0003"
+        }
+      ]
+    },
+    {
+      "cell": [
+        170.0,
+        635.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "Player_4_Start"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 4
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "GX-WP-0004"
+        }
+      ]
+    },
+    {
+      "cell": [
+        740.0,
+        105.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "Player_5_Start"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 5
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "GX-WP-0005"
+        }
+      ]
+    },
+    {
+      "cell": [
+        745.0,
+        695.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "Player_6_Start"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 6
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "GX-WP-0006"
+        }
+      ]
+    },
+    {
+      "cell": [
+        720.0,
+        300.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "Player_7_Start (imported)"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 7
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "GX-WP-0007"
+        }
+      ]
+    },
+    {
+      "cell": [
+        750.0,
+        465.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "Player_8_Start (imported)"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 8
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "GX-WP-0008"
+        }
+      ]
+    },
+    {
+      "cell": [
+        720.0,
+        300.0
+      ],
+      "version": 3,
+      "angle": 0.7853982,
+      "road_type": 0,
+      "type_name": "SovietConstructionYard",
+      "props": [
+        {
+          "key": "objectName",
+          "type": "ascii",
+          "value": "land-mcv-7"
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "GX-CY-7"
+        },
+        {
+          "key": "originalOwner",
+          "type": "ascii",
+          "value": "PlyrCivilian/teamPlyrCivilian"
+        }
+      ]
+    },
+    {
+      "cell": [
+        750.0,
+        465.0
+      ],
+      "version": 3,
+      "angle": 0.7853982,
+      "road_type": 0,
+      "type_name": "JapanConstructionYard",
+      "props": [
+        {
+          "key": "objectName",
+          "type": "ascii",
+          "value": "sea-mcv-8"
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "GX-CY-8"
+        },
+        {
+          "key": "originalOwner",
+          "type": "ascii",
+          "value": "PlyrCreeps/teamPlyrCreeps"
+        }
+      ]
+    },
+    {
+      "cell": [
+        204.0,
+        110.0
+      ],
+      "version": 3,
+      "angle": 2.3561945,
+      "road_type": 0,
+      "type_name": "OreNode",
+      "props": [
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "GX-ORE-P1-1"
+        },
+        {
+          "key": "originalOwner",
+          "type": "ascii",
+          "value": "PlyrNeutral/teamPlyrNeutral"
+        }
+      ]
+    },
+    {
+      "cell": [
+        145.0,
+        51.0
+      ],
+      "version": 3,
+      "angle": -2.3561945,
+      "road_type": 0,
+      "type_name": "OreNode",
+      "props": [
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "GX-ORE-P1-2"
+        },
+        {
+          "key": "originalOwner",
+          "type": "ascii",
+          "value": "PlyrNeutral/teamPlyrNeutral"
+        }
+      ]
+    },
+    {
+      "cell": [
+        199.0,
+        260.0
+      ],
+      "version": 3,
+      "angle": 2.3561945,
+      "road_type": 0,
+      "type_name": "OreNode",
+      "props": [
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "GX-ORE-P2-1"
+        },
+        {
+          "key": "originalOwner",
+          "type": "ascii",
+          "value": "PlyrNeutral/teamPlyrNeutral"
+        }
+      ]
+    },
+    {
+      "cell": [
+        81.0,
+        260.0
+      ],
+      "version": 3,
+      "angle": -0.7853982,
+      "road_type": 0,
+      "type_name": "OreNode",
+      "props": [
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "GX-ORE-P2-2"
+        },
+        {
+          "key": "originalOwner",
+          "type": "ascii",
+          "value": "PlyrNeutral/teamPlyrNeutral"
+        }
+      ]
+    },
+    {
+      "cell": [
+        195.0,
+        438.0
+      ],
+      "version": 3,
+      "angle": 2.3561945,
+      "road_type": 0,
+      "type_name": "OreNode",
+      "props": [
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "GX-ORE-P3-1"
+        },
+        {
+          "key": "originalOwner",
+          "type": "ascii",
+          "value": "PlyrNeutral/teamPlyrNeutral"
+        }
+      ]
+    },
+    {
+      "cell": [
+        117.0,
+        470.0
+      ],
+      "version": 3,
+      "angle": 0.7853982,
+      "road_type": 0,
+      "type_name": "OreNode",
+      "props": [
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "GX-ORE-P3-2"
+        },
+        {
+          "key": "originalOwner",
+          "type": "ascii",
+          "value": "PlyrNeutral/teamPlyrNeutral"
+        }
+      ]
+    },
+    {
+      "cell": [
+        229.0,
+        635.0
+      ],
+      "version": 3,
+      "angle": -2.3561945,
+      "road_type": 0,
+      "type_name": "OreNode",
+      "props": [
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "GX-ORE-P4-1"
+        },
+        {
+          "key": "originalOwner",
+          "type": "ascii",
+          "value": "PlyrNeutral/teamPlyrNeutral"
+        }
+      ]
+    },
+    {
+      "cell": [
+        115.0,
+        612.0
+      ],
+      "version": 3,
+      "angle": -0.7853982,
+      "road_type": 0,
+      "type_name": "OreNode",
+      "props": [
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "GX-ORE-P4-2"
+        },
+        {
+          "key": "originalOwner",
+          "type": "ascii",
+          "value": "PlyrNeutral/teamPlyrNeutral"
+        }
+      ]
+    },
+    {
+      "cell": [
+        768.0,
+        155.0
+      ],
+      "version": 3,
+      "angle": 0.7853982,
+      "road_type": 0,
+      "type_name": "OreNode",
+      "props": [
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "GX-ORE-P5-1"
+        },
+        {
+          "key": "originalOwner",
+          "type": "ascii",
+          "value": "PlyrNeutral/teamPlyrNeutral"
+        }
+      ]
+    },
+    {
+      "cell": [
+        782.0,
+        63.0
+      ],
+      "version": 3,
+      "angle": -2.3561945,
+      "road_type": 0,
+      "type_name": "OreNode",
+      "props": [
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "GX-ORE-P5-2"
+        },
+        {
+          "key": "originalOwner",
+          "type": "ascii",
+          "value": "PlyrNeutral/teamPlyrNeutral"
+        }
+      ]
+    },
+    {
+      "cell": [
+        690.0,
+        675.0
+      ],
+      "version": 3,
+      "angle": -0.7853982,
+      "road_type": 0,
+      "type_name": "OreNode",
+      "props": [
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "GX-ORE-P6-1"
+        },
+        {
+          "key": "originalOwner",
+          "type": "ascii",
+          "value": "PlyrNeutral/teamPlyrNeutral"
+        }
+      ]
+    },
+    {
+      "cell": [
+        784.0,
+        650.0
+      ],
+      "version": 3,
+      "angle": -2.3561945,
+      "road_type": 0,
+      "type_name": "OreNode",
+      "props": [
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "GX-ORE-P6-2"
+        },
+        {
+          "key": "originalOwner",
+          "type": "ascii",
+          "value": "PlyrNeutral/teamPlyrNeutral"
+        }
+      ]
+    },
+    {
+      "cell": [
+        775.0,
+        323.0
+      ],
+      "version": 3,
+      "angle": 2.3561945,
+      "road_type": 0,
+      "type_name": "OreNode",
+      "props": [
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "GX-ORE-P7-1"
+        },
+        {
+          "key": "originalOwner",
+          "type": "ascii",
+          "value": "PlyrNeutral/teamPlyrNeutral"
+        }
+      ]
+    },
+    {
+      "cell": [
+        697.0,
+        355.0
+      ],
+      "version": 3,
+      "angle": 0.7853982,
+      "road_type": 0,
+      "type_name": "OreNode",
+      "props": [
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "GX-ORE-P7-2"
+        },
+        {
+          "key": "originalOwner",
+          "type": "ascii",
+          "value": "PlyrNeutral/teamPlyrNeutral"
+        }
+      ]
+    },
+    {
+      "cell": [
+        695.0,
+        442.0
+      ],
+      "version": 3,
+      "angle": -0.7853982,
+      "road_type": 0,
+      "type_name": "OreNode",
+      "props": [
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "GX-ORE-P8-1"
+        },
+        {
+          "key": "originalOwner",
+          "type": "ascii",
+          "value": "PlyrNeutral/teamPlyrNeutral"
+        }
+      ]
+    },
+    {
+      "cell": [
+        777.0,
+        410.0
+      ],
+      "version": 3,
+      "angle": -2.3561945,
+      "road_type": 0,
+      "type_name": "OreNode",
+      "props": [
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "GX-ORE-P8-2"
+        },
+        {
+          "key": "originalOwner",
+          "type": "ascii",
+          "value": "PlyrNeutral/teamPlyrNeutral"
+        }
+      ]
+    },
+    {
+      "cell": [
+        275.0,
+        110.0
+      ],
+      "version": 3,
+      "angle": -0.7853982,
+      "road_type": 0,
+      "type_name": "OreNode",
+      "props": [
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "GX-ORE-P1-3"
+        },
+        {
+          "key": "originalOwner",
+          "type": "ascii",
+          "value": "PlyrNeutral/teamPlyrNeutral"
+        }
+      ]
+    },
+    {
+      "cell": [
+        225.0,
+        320.0
+      ],
+      "version": 3,
+      "angle": 0.7853982,
+      "road_type": 0,
+      "type_name": "OreNode",
+      "props": [
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "GX-ORE-P2-3"
+        },
+        {
+          "key": "originalOwner",
+          "type": "ascii",
+          "value": "PlyrNeutral/teamPlyrNeutral"
+        }
+      ]
+    },
+    {
+      "cell": [
+        175.0,
+        525.0
+      ],
+      "version": 3,
+      "angle": -2.3561945,
+      "road_type": 0,
+      "type_name": "OreNode",
+      "props": [
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "GX-ORE-P3-3"
+        },
+        {
+          "key": "originalOwner",
+          "type": "ascii",
+          "value": "PlyrNeutral/teamPlyrNeutral"
+        }
+      ]
+    },
+    {
+      "cell": [
+        260.0,
+        700.0
+      ],
+      "version": 3,
+      "angle": -0.7853982,
+      "road_type": 0,
+      "type_name": "OreNode",
+      "props": [
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "GX-ORE-P4-3"
+        },
+        {
+          "key": "originalOwner",
+          "type": "ascii",
+          "value": "PlyrNeutral/teamPlyrNeutral"
+        }
+      ]
+    },
+    {
+      "cell": [
+        625.0,
+        70.0
+      ],
+      "version": 3,
+      "angle": 0.7853982,
+      "road_type": 0,
+      "type_name": "OreNode",
+      "props": [
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "GX-ORE-P5-3"
+        },
+        {
+          "key": "originalOwner",
+          "type": "ascii",
+          "value": "PlyrNeutral/teamPlyrNeutral"
+        }
+      ]
+    },
+    {
+      "cell": [
+        625.0,
+        695.0
+      ],
+      "version": 3,
+      "angle": -2.3561945,
+      "road_type": 0,
+      "type_name": "OreNode",
+      "props": [
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "GX-ORE-P6-3"
+        },
+        {
+          "key": "originalOwner",
+          "type": "ascii",
+          "value": "PlyrNeutral/teamPlyrNeutral"
+        }
+      ]
+    },
+    {
+      "cell": [
+        590.0,
+        250.0
+      ],
+      "version": 3,
+      "angle": 0.7853982,
+      "road_type": 0,
+      "type_name": "OreNode",
+      "props": [
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "GX-ORE-P7-3"
+        },
+        {
+          "key": "originalOwner",
+          "type": "ascii",
+          "value": "PlyrNeutral/teamPlyrNeutral"
+        }
+      ]
+    },
+    {
+      "cell": [
+        645.0,
+        500.0
+      ],
+      "version": 3,
+      "angle": 0.7853982,
+      "road_type": 0,
+      "type_name": "OreNode",
+      "props": [
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "GX-ORE-P8-3"
+        },
+        {
+          "key": "originalOwner",
+          "type": "ascii",
+          "value": "PlyrNeutral/teamPlyrNeutral"
+        }
+      ]
+    },
+    {
+      "cell": [
+        355.0,
+        110.0
+      ],
+      "version": 3,
+      "angle": -0.7853982,
+      "road_type": 0,
+      "type_name": "OreNode",
+      "props": [
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "GX-ORE-P1-4"
+        },
+        {
+          "key": "originalOwner",
+          "type": "ascii",
+          "value": "PlyrNeutral/teamPlyrNeutral"
+        }
+      ]
+    },
+    {
+      "cell": [
+        305.0,
+        310.0
+      ],
+      "version": 3,
+      "angle": -2.3561945,
+      "road_type": 0,
+      "type_name": "OreNode",
+      "props": [
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "GX-ORE-P2-4"
+        },
+        {
+          "key": "originalOwner",
+          "type": "ascii",
+          "value": "PlyrNeutral/teamPlyrNeutral"
+        }
+      ]
+    },
+    {
+      "cell": [
+        275.0,
+        575.0
+      ],
+      "version": 3,
+      "angle": -2.3561945,
+      "road_type": 0,
+      "type_name": "OreNode",
+      "props": [
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "GX-ORE-P3-4"
+        },
+        {
+          "key": "originalOwner",
+          "type": "ascii",
+          "value": "PlyrNeutral/teamPlyrNeutral"
+        }
+      ]
+    },
+    {
+      "cell": [
+        335.0,
+        720.0
+      ],
+      "version": 3,
+      "angle": 2.3561945,
+      "road_type": 0,
+      "type_name": "OreNode",
+      "props": [
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "GX-ORE-P4-4"
+        },
+        {
+          "key": "originalOwner",
+          "type": "ascii",
+          "value": "PlyrNeutral/teamPlyrNeutral"
+        }
+      ]
+    },
+    {
+      "cell": [
+        560.0,
+        55.0
+      ],
+      "version": 3,
+      "angle": -2.3561945,
+      "road_type": 0,
+      "type_name": "OreNode",
+      "props": [
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "GX-ORE-P5-4"
+        },
+        {
+          "key": "originalOwner",
+          "type": "ascii",
+          "value": "PlyrNeutral/teamPlyrNeutral"
+        }
+      ]
+    },
+    {
+      "cell": [
+        550.0,
+        695.0
+      ],
+      "version": 3,
+      "angle": 0.7853982,
+      "road_type": 0,
+      "type_name": "OreNode",
+      "props": [
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "GX-ORE-P6-4"
+        },
+        {
+          "key": "originalOwner",
+          "type": "ascii",
+          "value": "PlyrNeutral/teamPlyrNeutral"
+        }
+      ]
+    },
+    {
+      "cell": [
+        545.0,
+        340.0
+      ],
+      "version": 3,
+      "angle": -0.7853982,
+      "road_type": 0,
+      "type_name": "OreNode",
+      "props": [
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "GX-ORE-P7-4"
+        },
+        {
+          "key": "originalOwner",
+          "type": "ascii",
+          "value": "PlyrNeutral/teamPlyrNeutral"
+        }
+      ]
+    },
+    {
+      "cell": [
+        570.0,
+        530.0
+      ],
+      "version": 3,
+      "angle": 0.7853982,
+      "road_type": 0,
+      "type_name": "OreNode",
+      "props": [
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "GX-ORE-P8-4"
+        },
+        {
+          "key": "originalOwner",
+          "type": "ascii",
+          "value": "PlyrNeutral/teamPlyrNeutral"
+        }
+      ]
+    },
+    {
+      "cell": [
+        455.0,
+        110.0
+      ],
+      "version": 3,
+      "angle": -2.3561945,
+      "road_type": 0,
+      "type_name": "OreNode",
+      "props": [
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "GX-ORE-P1-5"
+        },
+        {
+          "key": "originalOwner",
+          "type": "ascii",
+          "value": "PlyrNeutral/teamPlyrNeutral"
+        }
+      ]
+    },
+    {
+      "cell": [
+        415.0,
+        315.0
+      ],
+      "version": 3,
+      "angle": -0.7853982,
+      "road_type": 0,
+      "type_name": "OreNode",
+      "props": [
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "GX-ORE-P2-5"
+        },
+        {
+          "key": "originalOwner",
+          "type": "ascii",
+          "value": "PlyrNeutral/teamPlyrNeutral"
+        }
+      ]
+    },
+    {
+      "cell": [
+        390.0,
+        565.0
+      ],
+      "version": 3,
+      "angle": -0.7853982,
+      "road_type": 0,
+      "type_name": "OreNode",
+      "props": [
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "GX-ORE-P3-5"
+        },
+        {
+          "key": "originalOwner",
+          "type": "ascii",
+          "value": "PlyrNeutral/teamPlyrNeutral"
+        }
+      ]
+    },
+    {
+      "cell": [
+        440.0,
+        660.0
+      ],
+      "version": 3,
+      "angle": 0.7853982,
+      "road_type": 0,
+      "type_name": "OreNode",
+      "props": [
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "GX-ORE-P4-5"
+        },
+        {
+          "key": "originalOwner",
+          "type": "ascii",
+          "value": "PlyrNeutral/teamPlyrNeutral"
+        }
+      ]
+    },
+    {
+      "cell": [
+        495.0,
+        55.0
+      ],
+      "version": 3,
+      "angle": -0.7853982,
+      "road_type": 0,
+      "type_name": "OreNode",
+      "props": [
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "GX-ORE-P5-5"
+        },
+        {
+          "key": "originalOwner",
+          "type": "ascii",
+          "value": "PlyrNeutral/teamPlyrNeutral"
+        }
+      ]
+    },
+    {
+      "cell": [
+        490.0,
+        685.0
+      ],
+      "version": 3,
+      "angle": 0.7853982,
+      "road_type": 0,
+      "type_name": "OreNode",
+      "props": [
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "GX-ORE-P6-5"
+        },
+        {
+          "key": "originalOwner",
+          "type": "ascii",
+          "value": "PlyrNeutral/teamPlyrNeutral"
+        }
+      ]
+    },
+    {
+      "cell": [
+        440.0,
+        265.0
+      ],
+      "version": 3,
+      "angle": -0.7853982,
+      "road_type": 0,
+      "type_name": "OreNode",
+      "props": [
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "GX-ORE-P7-5"
+        },
+        {
+          "key": "originalOwner",
+          "type": "ascii",
+          "value": "PlyrNeutral/teamPlyrNeutral"
+        }
+      ]
+    },
+    {
+      "cell": [
+        445.0,
+        545.0
+      ],
+      "version": 3,
+      "angle": -0.7853982,
+      "road_type": 0,
+      "type_name": "OreNode",
+      "props": [
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "GX-ORE-P8-5"
+        },
+        {
+          "key": "originalOwner",
+          "type": "ascii",
+          "value": "PlyrNeutral/teamPlyrNeutral"
+        }
+      ]
+    },
+    {
+      "cell": [
+        340.0,
+        190.0
+      ],
+      "version": 3,
+      "angle": -0.7853982,
+      "road_type": 0,
+      "type_name": "OreNode",
+      "props": [
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "GX-ORE-P1-6"
+        },
+        {
+          "key": "originalOwner",
+          "type": "ascii",
+          "value": "PlyrNeutral/teamPlyrNeutral"
+        }
+      ]
+    },
+    {
+      "cell": [
+        345.0,
+        260.0
+      ],
+      "version": 3,
+      "angle": 2.3561945,
+      "road_type": 0,
+      "type_name": "OreNode",
+      "props": [
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "GX-ORE-P2-6"
+        },
+        {
+          "key": "originalOwner",
+          "type": "ascii",
+          "value": "PlyrNeutral/teamPlyrNeutral"
+        }
+      ]
+    },
+    {
+      "cell": [
+        325.0,
+        485.0
+      ],
+      "version": 3,
+      "angle": 0.7853982,
+      "road_type": 0,
+      "type_name": "OreNode",
+      "props": [
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "GX-ORE-P3-6"
+        },
+        {
+          "key": "originalOwner",
+          "type": "ascii",
+          "value": "PlyrNeutral/teamPlyrNeutral"
+        }
+      ]
+    },
+    {
+      "cell": [
+        490.0,
+        605.0
+      ],
+      "version": 3,
+      "angle": -0.7853982,
+      "road_type": 0,
+      "type_name": "OreNode",
+      "props": [
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "GX-ORE-P4-6"
+        },
+        {
+          "key": "originalOwner",
+          "type": "ascii",
+          "value": "PlyrNeutral/teamPlyrNeutral"
+        }
+      ]
+    },
+    {
+      "cell": [
+        635.0,
+        190.0
+      ],
+      "version": 3,
+      "angle": -2.3561945,
+      "road_type": 0,
+      "type_name": "OreNode",
+      "props": [
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "GX-ORE-P5-6"
+        },
+        {
+          "key": "originalOwner",
+          "type": "ascii",
+          "value": "PlyrNeutral/teamPlyrNeutral"
+        }
+      ]
+    },
+    {
+      "cell": [
+        585.0,
+        625.0
+      ],
+      "version": 3,
+      "angle": -0.7853982,
+      "road_type": 0,
+      "type_name": "OreNode",
+      "props": [
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "GX-ORE-P6-6"
+        },
+        {
+          "key": "originalOwner",
+          "type": "ascii",
+          "value": "PlyrNeutral/teamPlyrNeutral"
+        }
+      ]
+    },
+    {
+      "cell": [
+        400.0,
+        175.0
+      ],
+      "version": 3,
+      "angle": 0.7853982,
+      "road_type": 0,
+      "type_name": "OreNode",
+      "props": [
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "GX-ORE-P7-6"
+        },
+        {
+          "key": "originalOwner",
+          "type": "ascii",
+          "value": "PlyrNeutral/teamPlyrNeutral"
+        }
+      ]
+    },
+    {
+      "cell": [
+        530.0,
+        490.0
+      ],
+      "version": 3,
+      "angle": -2.3561945,
+      "road_type": 0,
+      "type_name": "OreNode",
+      "props": [
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "GX-ORE-P8-6"
+        },
+        {
+          "key": "originalOwner",
+          "type": "ascii",
+          "value": "PlyrNeutral/teamPlyrNeutral"
+        }
+      ]
+    },
+    {
+      "cell": [
+        405.0,
+        65.0
+      ],
+      "version": 3,
+      "angle": 0.7853982,
+      "road_type": 0,
+      "type_name": "OilDerrick",
+      "props": [
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "GX-NEUTRAL-0"
+        },
+        {
+          "key": "originalOwner",
+          "type": "ascii",
+          "value": "PlyrNeutral/teamPlyrNeutral"
+        }
+      ]
+    },
+    {
+      "cell": [
+        465.0,
+        350.0
+      ],
+      "version": 3,
+      "angle": 0.7853982,
+      "road_type": 0,
+      "type_name": "OilDerrick",
+      "props": [
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "GX-NEUTRAL-1"
+        },
+        {
+          "key": "originalOwner",
+          "type": "ascii",
+          "value": "PlyrNeutral/teamPlyrNeutral"
+        }
+      ]
+    },
+    {
+      "cell": [
+        385.0,
+        420.0
+      ],
+      "version": 3,
+      "angle": 0.7853982,
+      "road_type": 0,
+      "type_name": "OilDerrick",
+      "props": [
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "GX-NEUTRAL-2"
+        },
+        {
+          "key": "originalOwner",
+          "type": "ascii",
+          "value": "PlyrNeutral/teamPlyrNeutral"
+        }
+      ]
+    },
+    {
+      "cell": [
+        380.0,
+        630.0
+      ],
+      "version": 3,
+      "angle": 0.7853982,
+      "road_type": 0,
+      "type_name": "OilDerrick",
+      "props": [
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "GX-NEUTRAL-3"
+        },
+        {
+          "key": "originalOwner",
+          "type": "ascii",
+          "value": "PlyrNeutral/teamPlyrNeutral"
+        }
+      ]
+    },
+    {
+      "cell": [
+        490.0,
+        165.0
+      ],
+      "version": 3,
+      "angle": 0.7853982,
+      "road_type": 0,
+      "type_name": "HospitalTechStructure",
+      "props": [
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "GX-NEUTRAL-4"
+        },
+        {
+          "key": "originalOwner",
+          "type": "ascii",
+          "value": "PlyrNeutral/teamPlyrNeutral"
+        }
+      ]
+    },
+    {
+      "cell": [
+        420.0,
+        480.0
+      ],
+      "version": 3,
+      "angle": 0.7853982,
+      "road_type": 0,
+      "type_name": "GarageTechStructure",
+      "props": [
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "GX-NEUTRAL-5"
+        },
+        {
+          "key": "originalOwner",
+          "type": "ascii",
+          "value": "PlyrNeutral/teamPlyrNeutral"
+        }
+      ]
+    },
+    {
+      "cell": [
+        718.0,
+        270.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "dual-civilian-air"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 164
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "GX-WP-0164"
+        }
+      ]
+    },
+    {
+      "cell": [
+        718.0,
+        242.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "dual-civilian-bar"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 165
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "GX-WP-0165"
+        }
+      ]
+    },
+    {
+      "cell": [
+        690.0,
+        278.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "dual-civilian-wf"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 166
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "GX-WP-0166"
+        }
+      ]
+    },
+    {
+      "cell": [
+        780.0,
+        458.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "dual-creeps-air"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 167
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "GX-WP-0167"
+        }
+      ]
+    },
+    {
+      "cell": [
+        806.0,
+        388.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "dual-creeps-bar"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 168
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "GX-WP-0168"
+        }
+      ]
+    },
+    {
+      "cell": [
+        780.0,
+        486.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "dual-creeps-wf"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 169
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "GX-WP-0169"
+        }
+      ]
+    },
+    {
+      "cell": [
+        144.0,
+        140.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "dual-p1-air"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 170
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "GX-WP-0170"
+        }
+      ]
+    },
+    {
+      "cell": [
+        116.0,
+        138.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "dual-p1-bar"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 171
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "GX-WP-0171"
+        }
+      ]
+    },
+    {
+      "cell": [
+        116.0,
+        110.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "dual-p1-wf"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 172
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "GX-WP-0172"
+        }
+      ]
+    },
+    {
+      "cell": [
+        140.0,
+        230.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "dual-p2-air"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 173
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "GX-WP-0173"
+        }
+      ]
+    },
+    {
+      "cell": [
+        112.0,
+        242.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "dual-p2-bar"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 174
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "GX-WP-0174"
+        }
+      ]
+    },
+    {
+      "cell": [
+        140.0,
+        288.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "dual-p2-wf"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 175
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "GX-WP-0175"
+        }
+      ]
+    },
+    {
+      "cell": [
+        140.0,
+        384.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "dual-p3-air"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 176
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "GX-WP-0176"
+        }
+      ]
+    },
+    {
+      "cell": [
+        112.0,
+        416.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "dual-p3-bar"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 177
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "GX-WP-0177"
+        }
+      ]
+    },
+    {
+      "cell": [
+        110.0,
+        388.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "dual-p3-wf"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 178
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "GX-WP-0178"
+        }
+      ]
+    },
+    {
+      "cell": [
+        170.0,
+        666.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "dual-p4-air"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 179
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "GX-WP-0179"
+        }
+      ]
+    },
+    {
+      "cell": [
+        206.0,
+        576.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "dual-p4-bar"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 180
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "GX-WP-0180"
+        }
+      ]
+    },
+    {
+      "cell": [
+        162.0,
+        606.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "dual-p4-wf"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 181
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "GX-WP-0181"
+        }
+      ]
+    },
+    {
+      "cell": [
+        722.0,
+        74.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "dual-p5-air"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 182
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "GX-WP-0182"
+        }
+      ]
+    },
+    {
+      "cell": [
+        798.0,
+        96.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "dual-p5-bar"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 183
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "GX-WP-0183"
+        }
+      ]
+    },
+    {
+      "cell": [
+        734.0,
+        44.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "dual-p5-wf"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 184
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "GX-WP-0184"
+        }
+      ]
+    },
+    {
+      "cell": [
+        782.0,
+        702.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "dual-p6-air"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 185
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "GX-WP-0185"
+        }
+      ]
+    },
+    {
+      "cell": [
+        682.0,
+        734.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "dual-p6-bar"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 186
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "GX-WP-0186"
+        }
+      ]
+    },
+    {
+      "cell": [
+        700.0,
+        642.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "dual-p6-wf"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 187
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "GX-WP-0187"
+        }
+      ]
+    },
+    {
+      "cell": [
+        654.0,
+        750.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "SW63"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 188
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "SW63"
+        }
+      ]
+    },
+    {
+      "cell": [
+        626.0,
+        744.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "SWA61"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 189
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "SWA61"
+        }
+      ]
+    },
+    {
+      "cell": [
+        794.0,
+        588.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "SWA62"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 190
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "SWA62"
+        }
+      ]
+    },
+    {
+      "cell": [
+        746.0,
+        214.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "SW53"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 191
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "SW53"
+        }
+      ]
+    },
+    {
+      "cell": [
+        800.0,
+        32.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "SWA51"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 192
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "SWA51"
+        }
+      ]
+    },
+    {
+      "cell": [
+        718.0,
+        208.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "SWA52"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 193
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "SWA52"
+        }
+      ]
+    },
+    {
+      "cell": [
+        172.0,
+        150.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "SWJ1"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 194
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "SWJ1"
+        }
+      ]
+    },
+    {
+      "cell": [
+        748.0,
+        584.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "SW83"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 195
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "SW83"
+        }
+      ]
+    },
+    {
+      "cell": [
+        748.0,
+        612.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "SWA81"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 196
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "SWA81"
+        }
+      ]
+    },
+    {
+      "cell": [
+        720.0,
+        592.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "SWA82"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 197
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "SWA82"
+        }
+      ]
+    },
+    {
+      "cell": [
+        94.0,
+        582.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "SWJ4"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 198
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "SWJ4"
+        }
+      ]
+    },
+    {
+      "cell": [
+        690.0,
+        250.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "SWA71"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 199
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "SWA71"
+        }
+      ]
+    },
+    {
+      "cell": [
+        662.0,
+        278.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "SWA72"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 200
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "SWA72"
+        }
+      ]
+    },
+    {
+      "cell": [
+        140.0,
+        202.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "SWJ2"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 201
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "SWJ2"
+        }
+      ]
+    },
+    {
+      "cell": [
+        654.0,
+        722.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "PP61"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 202
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "PP61"
+        }
+      ]
+    },
+    {
+      "cell": [
+        792.0,
+        616.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "PP62"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 203
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "PP62"
+        }
+      ]
+    },
+    {
+      "cell": [
+        644.0,
+        654.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "PP63"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 204
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "PP63"
+        }
+      ]
+    },
+    {
+      "cell": [
+        746.0,
+        186.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "PP51"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 205
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "PP51"
+        }
+      ]
+    },
+    {
+      "cell": [
+        762.0,
+        32.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "PP52"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 206
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "PP52"
+        }
+      ]
+    },
+    {
+      "cell": [
+        666.0,
+        78.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "PP53"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 207
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "PP53"
+        }
+      ]
+    },
+    {
+      "cell": [
+        140.0,
+        356.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "SWJ3"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 208
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "SWJ3"
+        }
+      ]
+    },
+    {
+      "cell": [
+        144.0,
+        168.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "PPJ1"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 209
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "PPJ1"
+        }
+      ]
+    },
+    {
+      "cell": [
+        652.0,
+        420.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "PP81"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 210
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "PP81"
+        }
+      ]
+    },
+    {
+      "cell": [
+        738.0,
+        514.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "PP82"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 211
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "PP82"
+        }
+      ]
+    },
+    {
+      "cell": [
+        624.0,
+        430.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "PP83"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 212
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "PP83"
+        }
+      ]
+    },
+    {
+      "cell": [
+        210.0,
+        694.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "PPJ4"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 213
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "PPJ4"
+        }
+      ]
+    },
+    {
+      "cell": [
+        746.0,
+        264.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "PP71"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 214
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "PP71"
+        }
+      ]
+    },
+    {
+      "cell": [
+        678.0,
+        324.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "PP72"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 215
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "PP72"
+        }
+      ]
+    },
+    {
+      "cell": [
+        746.0,
+        356.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "PP73"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 216
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "PP73"
+        }
+      ]
+    },
+    {
+      "cell": [
+        140.0,
+        316.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "PPJ2"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 217
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "PPJ2"
+        }
+      ]
+    },
+    {
+      "cell": [
+        84.0,
+        416.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "PPJ3"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 218
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "PPJ3"
+        }
+      ]
+    },
+    {
+      "cell": [
+        650.0,
+        780.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "gift-alt-dual-p6-air-1"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 219
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "gift-alt-dual-p6-air-1"
+        }
+      ]
+    },
+    {
+      "cell": [
+        686.0,
+        50.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "gift-alt-dual-p5-air-1"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 220
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "gift-alt-dual-p5-air-1"
+        }
+      ]
+    },
+    {
+      "cell": [
+        696.0,
+        498.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "gift-alt-dual-creeps-air-1"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 221
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "gift-alt-dual-creeps-air-1"
+        }
+      ]
+    },
+    {
+      "cell": [
+        648.0,
+        330.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "gift-alt-dual-civilian-air-1"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 222
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "gift-alt-dual-civilian-air-1"
+        }
+      ]
+    },
+    {
+      "cell": [
+        114.0,
+        168.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "gift-alt-dual-p1-air-1"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 223
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "gift-alt-dual-p1-air-1"
+        }
+      ]
+    },
+    {
+      "cell": [
+        82.0,
+        620.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "gift-alt-dual-p4-air-1"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 224
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "gift-alt-dual-p4-air-1"
+        }
+      ]
+    },
+    {
+      "cell": [
+        622.0,
+        772.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "gift-alt-dual-p6-bar-1"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 225
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "gift-alt-dual-p6-bar-1"
+        }
+      ]
+    },
+    {
+      "cell": [
+        624.0,
+        614.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "gift-alt-dual-p6-wf-1"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 226
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "gift-alt-dual-p6-wf-1"
+        }
+      ]
+    },
+    {
+      "cell": [
+        170.0,
+        378.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "gift-alt-dual-p3-air-1"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 227
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "gift-alt-dual-p3-air-1"
+        }
+      ]
+    },
+    {
+      "cell": [
+        594.0,
+        142.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "gift-alt-dual-p5-bar-1"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 228
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "gift-alt-dual-p5-bar-1"
+        }
+      ]
+    },
+    {
+      "cell": [
+        594.0,
+        114.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "gift-alt-dual-p5-wf-1"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 229
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "gift-alt-dual-p5-wf-1"
+        }
+      ]
+    },
+    {
+      "cell": [
+        170.0,
+        302.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "gift-alt-dual-p2-air-1"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 230
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "gift-alt-dual-p2-air-1"
+        }
+      ]
+    },
+    {
+      "cell": [
+        686.0,
+        582.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "gift-alt-dual-creeps-bar-1"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 231
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "gift-alt-dual-creeps-bar-1"
+        }
+      ]
+    },
+    {
+      "cell": [
+        580.0,
+        444.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "gift-alt-dual-creeps-wf-1"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 232
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "gift-alt-dual-creeps-wf-1"
+        }
+      ]
+    },
+    {
+      "cell": [
+        172.0,
+        178.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "gift-alt-dual-p1-bar-1"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 233
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "gift-alt-dual-p1-bar-1"
+        }
+      ]
+    },
+    {
+      "cell": [
+        86.0,
+        74.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "gift-alt-dual-p1-wf-1"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 234
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "gift-alt-dual-p1-wf-1"
+        }
+      ]
+    },
+    {
+      "cell": [
+        634.0,
+        262.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "gift-alt-dual-civilian-bar-1"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 235
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "gift-alt-dual-civilian-bar-1"
+        }
+      ]
+    },
+    {
+      "cell": [
+        662.0,
+        248.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "gift-alt-dual-civilian-wf-1"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 236
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "gift-alt-dual-civilian-wf-1"
+        }
+      ]
+    },
+    {
+      "cell": [
+        340.0,
+        624.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "gift-alt-dual-p4-bar-1"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 237
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "gift-alt-dual-p4-bar-1"
+        }
+      ]
+    },
+    {
+      "cell": [
+        54.0,
+        602.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "gift-alt-dual-p4-wf-1"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 238
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "gift-alt-dual-p4-wf-1"
+        }
+      ]
+    },
+    {
+      "cell": [
+        170.0,
+        466.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "gift-alt-dual-p3-bar-1"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 239
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "gift-alt-dual-p3-bar-1"
+        }
+      ]
+    },
+    {
+      "cell": [
+        110.0,
+        360.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "gift-alt-dual-p3-wf-1"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 240
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "gift-alt-dual-p3-wf-1"
+        }
+      ]
+    },
+    {
+      "cell": [
+        112.0,
+        320.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "gift-alt-dual-p2-bar-1"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 241
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "gift-alt-dual-p2-bar-1"
+        }
+      ]
+    },
+    {
+      "cell": [
+        110.0,
+        214.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "gift-alt-dual-p2-wf-1"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 242
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "gift-alt-dual-p2-wf-1"
+        }
+      ]
+    },
+    {
+      "cell": [
+        594.0,
+        782.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "gift-alt-SW63-1"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 243
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "gift-alt-SW63-1"
+        }
+      ]
+    },
+    {
+      "cell": [
+        592.0,
+        592.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "gift-alt-SWA61-1"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 244
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "gift-alt-SWA61-1"
+        }
+      ]
+    },
+    {
+      "cell": [
+        564.0,
+        594.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "gift-alt-SWA62-1"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 245
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "gift-alt-SWA62-1"
+        }
+      ]
+    },
+    {
+      "cell": [
+        566.0,
+        112.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "gift-alt-SW53-1"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 246
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "gift-alt-SW53-1"
+        }
+      ]
+    },
+    {
+      "cell": [
+        532.0,
+        142.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "gift-alt-SWA51-1"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 247
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "gift-alt-SWA51-1"
+        }
+      ]
+    },
+    {
+      "cell": [
+        558.0,
+        236.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "gift-alt-SWA52-1"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 248
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "gift-alt-SWA52-1"
+        }
+      ]
+    },
+    {
+      "cell": [
+        524.0,
+        440.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "gift-alt-SW83-1"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 249
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "gift-alt-SW83-1"
+        }
+      ]
+    },
+    {
+      "cell": [
+        566.0,
+        484.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "gift-alt-SWA81-1"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 250
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "gift-alt-SWA81-1"
+        }
+      ]
+    },
+    {
+      "cell": [
+        534.0,
+        412.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "gift-alt-SWA82-1"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 251
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "gift-alt-SWA82-1"
+        }
+      ]
+    },
+    {
+      "cell": [
+        178.0,
+        38.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "gift-alt-SWJ1-1"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 252
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "gift-alt-SWJ1-1"
+        }
+      ]
+    },
+    {
+      "cell": [
+        798.0,
+        352.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "gift-alt-SWA71-1"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 253
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "gift-alt-SWA71-1"
+        }
+      ]
+    },
+    {
+      "cell": [
+        588.0,
+        328.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "gift-alt-SWA72-1"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 254
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "gift-alt-SWA72-1"
+        }
+      ]
+    },
+    {
+      "cell": [
+        322.0,
+        654.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "gift-alt-SWJ4-1"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 255
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "gift-alt-SWJ4-1"
+        }
+      ]
+    },
+    {
+      "cell": [
+        82.0,
+        388.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "gift-alt-SWJ3-1"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 256
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "gift-alt-SWJ3-1"
+        }
+      ]
+    },
+    {
+      "cell": [
+        168.0,
+        330.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "gift-alt-SWJ2-1"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 257
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "gift-alt-SWJ2-1"
+        }
+      ]
+    },
+    {
+      "cell": [
+        594.0,
+        754.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "gift-alt-PP61-1"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 258
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "gift-alt-PP61-1"
+        }
+      ]
+    },
+    {
+      "cell": [
+        622.0,
+        800.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "gift-alt-PP62-1"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 259
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "gift-alt-PP62-1"
+        }
+      ]
+    },
+    {
+      "cell": [
+        620.0,
+        586.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "gift-alt-PP63-1"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 260
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "gift-alt-PP63-1"
+        }
+      ]
+    },
+    {
+      "cell": [
+        564.0,
+        168.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "gift-alt-PP51-1"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 261
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "gift-alt-PP51-1"
+        }
+      ]
+    },
+    {
+      "cell": [
+        576.0,
+        208.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "gift-alt-PP52-1"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 262
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "gift-alt-PP52-1"
+        }
+      ]
+    },
+    {
+      "cell": [
+        560.0,
+        140.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "gift-alt-PP53-1"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 263
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "gift-alt-PP53-1"
+        }
+      ]
+    },
+    {
+      "cell": [
+        738.0,
+        640.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "gift-alt-PP81-1"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 264
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "gift-alt-PP81-1"
+        }
+      ]
+    },
+    {
+      "cell": [
+        552.0,
+        440.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "gift-alt-PP82-1"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 265
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "gift-alt-PP82-1"
+        }
+      ]
+    },
+    {
+      "cell": [
+        562.0,
+        412.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "gift-alt-PP83-1"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 266
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "gift-alt-PP83-1"
+        }
+      ]
+    },
+    {
+      "cell": [
+        200.0,
+        156.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "gift-alt-PPJ1-1"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 267
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "gift-alt-PPJ1-1"
+        }
+      ]
+    },
+    {
+      "cell": [
+        620.0,
+        328.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "gift-alt-PP71-1"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 268
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "gift-alt-PP71-1"
+        }
+      ]
+    },
+    {
+      "cell": [
+        658.0,
+        220.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "gift-alt-PP72-1"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 269
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "gift-alt-PP72-1"
+        }
+      ]
+    },
+    {
+      "cell": [
+        664.0,
+        358.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "gift-alt-PP73-1"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 270
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "gift-alt-PP73-1"
+        }
+      ]
+    },
+    {
+      "cell": [
+        56.0,
+        416.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "gift-alt-PPJ3-1"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 271
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "gift-alt-PPJ3-1"
+        }
+      ]
+    },
+    {
+      "cell": [
+        44.0,
+        630.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "gift-alt-PPJ4-1"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 272
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "gift-alt-PPJ4-1"
+        }
+      ]
+    },
+    {
+      "cell": [
+        82.0,
+        226.0
+      ],
+      "version": 3,
+      "angle": 0.0,
+      "road_type": 0,
+      "type_name": "Waypoint",
+      "props": [
+        {
+          "key": "waypointName",
+          "type": "ascii",
+          "value": "gift-alt-PPJ2-1"
+        },
+        {
+          "key": "waypointID",
+          "type": "int",
+          "value": 273
+        },
+        {
+          "key": "uniqueID",
+          "type": "ascii",
+          "value": "gift-alt-PPJ2-1"
+        }
+      ]
+    }
+  ],
+  "city_cells": []
+}

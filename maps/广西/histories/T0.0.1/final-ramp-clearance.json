@@ -1,0 +1,18 @@
+{
+  "checked_objects": 54,
+  "findings": [],
+  "geometry_model": "conservative planning reservations, not exact faction meshes",
+  "inherited": 0,
+  "passed": true,
+  "policy": {
+    "approach_extension": 25.0,
+    "gap": 8.0,
+    "refinery_back": 5.0,
+    "refinery_forward": 48.0,
+    "refinery_half_width": 18.0
+  },
+  "ramps": 13,
+  "raw_passed": true,
+  "regressions": [],
+  "status": "strict"
+}

@@ -1,0 +1,31 @@
+{
+  "instruction": "保持原来的预览图；不改地形，斜坡可以新增",
+  "images": {
+    "source.png": {
+      "crc32": 3768767078,
+      "bytes": 1335278
+    },
+    "preview.png": {
+      "crc32": 790931293,
+      "bytes": 62759
+    },
+    "preview--line.png": {
+      "crc32": 2747073168,
+      "bytes": 79524
+    },
+    "preview--center--line.png": {
+      "crc32": 4275253114,
+      "bytes": 97181
+    }
+  },
+  "all_match_locked_original": true,
+  "mask_counts": [
+    34967,
+    178545,
+    196018,
+    217912,
+    12558
+  ],
+  "source_height_rule_sha256": "6620b044e53c831c9daf784da961f0398726c1f739273f4fbb0f884c983e6f05",
+  "border": "20-cell unplayable production border extends the nearest visible edge sample; no claim of reference data outside the PNG crop"
+}

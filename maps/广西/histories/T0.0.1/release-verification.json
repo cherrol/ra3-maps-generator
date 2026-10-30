@@ -1,0 +1,24 @@
+{
+  "native_crc32": 860207244,
+  "game_file_sha256": {
+    "map.str": "5e538c1c4079c77ab9aa81d10cf1a88fcc6878970613a917e76ddcab0ceabc5a",
+    "overrides.xml": "e94193fa1f69987870af8bd457691172bb61d775fc6d8edd6d12b036a2ab6cad",
+    "map.xml": "dd1ee7936bfa8baf9a2b9c394e7db350b30b12eae618385857fb5766a5d1c884",
+    "[CHAI]碧嶂回澜T0.0.1_art.tga": "2ef9a5400f54f55242f956a1e2c01c8c33f3c7b766b6099475d699027b94336c",
+    "[CHAI]碧嶂回澜T0.0.1.map": "ab2f83d9b00e2c372760afb92a5c37bec878d05248c4c2fd56e3506d584dab9a"
+  },
+  "frozen_rebuild_changed_files": [],
+  "dist_zip": "dist/广西/[CHAI]碧嶂回澜T0.0.1.zip",
+  "dist_zip_sha256": "05f292bef8c93fb9f79968a849397c6f4698c1fd52c5116fab96ded38dbef33a",
+  "dist_bytes": 230244,
+  "zip_entries": 5,
+  "zip_matches_current_game_files": true,
+  "frozen_source": "authoring/source.zip",
+  "frozen_layout": "authoring/layout.json (separate complete declarative snapshot)",
+  "complete_native_objects": 174,
+  "ramps": 13,
+  "selected_layers": "histories/T0.0.1/layers.npz",
+  "installed": false,
+  "game_or_GUI_launched": false,
+  "passed": true
+}

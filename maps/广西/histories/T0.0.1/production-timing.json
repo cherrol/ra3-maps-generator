@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "clock": "monotonic elapsed seconds plus UTC timestamps",
+  "timing_scope": "User requested live major-step timing while step 1 was already running; step 1 measurement starts with the reproducible verification rerun, earlier work is unmeasured",
+  "steps": [
+    {
+      "step": 1,
+      "name": "原预览重建与仅新增斜坡的一致性核验",
+      "started_at": "2026-10-30T15:18:00Z",
+      "elapsed_seconds": 25.573,
+      "finished_at": "2026-10-30T15:18:25Z",
+      "result": "原预览完整保留；新增13坡；仅15651格高度变化；水陆差异0、坡外高度差异0"
+    },
+    {
+      "step": 2,
+      "name": "出生资源赠送占地与路线核验",
+      "started_at": "2026-10-30T15:18:35Z",
+      "elapsed_seconds": 98.015,
+      "finished_at": "2026-10-30T15:20:13Z",
+      "result": "8条主次路线均通过；最小保守净宽10.2368格；赠送与伸入地形相交0；出生矿场和292项建筑动作朝向已核对"
+    },
+    {
+      "step": 3,
+      "name": "地形交接剖面材质导航与独立验收",
+      "started_at": "2026-10-30T15:20:35Z",
+      "elapsed_seconds": 581.461,
+      "finished_at": "2026-10-30T15:30:17Z",
+      "result": "地形交接、915段岸线、432资源路径、96产能分支与13项独立验收记录完成"
+    },
+    {
+      "step": 4,
+      "name": "冻结制作源重建一致性与地图打包",
+      "started_at": "2026-10-30T15:30:28Z",
+      "elapsed_seconds": 215.3,
+      "finished_at": "2026-10-30T15:34:03Z",
+      "result": "制作源冻结、11阶段全流水重建、五文件字节一致、ZIP核验及交付文档整理完成"
+    }
+  ],
+  "measured_total_seconds": 920.349
+}

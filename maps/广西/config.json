@@ -1,0 +1,173 @@
+{
+  "BASES": [
+    [
+      145.0,
+      110.0,
+      "P1",
+      "W",
+      "human"
+    ],
+    [
+      140.0,
+      260.0,
+      "P2",
+      "W",
+      "human"
+    ],
+    [
+      140.0,
+      415.0,
+      "P3",
+      "W",
+      "human"
+    ],
+    [
+      170.0,
+      635.0,
+      "P4",
+      "W",
+      "human"
+    ],
+    [
+      740.0,
+      105.0,
+      "P5",
+      "E",
+      "human"
+    ],
+    [
+      745.0,
+      695.0,
+      "P6",
+      "E",
+      "human"
+    ],
+    [
+      720.0,
+      300.0,
+      "P7",
+      "E",
+      "ai"
+    ],
+    [
+      750.0,
+      465.0,
+      "P8",
+      "E",
+      "ai"
+    ]
+  ],
+  "BORDER": 20,
+  "CELL": 10.0,
+  "COORDINATE_PIPELINE": {
+    "baseline": "authoring/baseline.json",
+    "layout": "authoring/layout.json",
+    "source_crc32": 860207244,
+    "source_name": "[CHAI]碧嶂回澜T0.0.1",
+    "source_package": "authoring/source.zip"
+  },
+  "DELIVERY_ACCEPTANCE": "histories/T0.0.1/delivery-acceptance.json",
+  "DESIGN_EXCEPTION": {
+    "date": "2026-10-30",
+    "instruction": "用户明确要求实际地形严格按照预览，不得修改水域与台地轮廓。保持原图，记录东西侧水域不均衡。",
+    "rule": "SPAWN.TEAM_AREA"
+  },
+  "GRID": 840,
+  "GRID_HEIGHT": 840,
+  "HEIGHT_PRESET": "standard",
+  "LAND_Z": 210.0,
+  "LAYERS": "histories/T0.0.1/layers.npz",
+  "LAYER_M": [
+    [
+      200.0,
+      210.0
+    ],
+    [
+      500.0,
+      280.0
+    ],
+    [
+      1500.0,
+      350.0
+    ],
+    [
+      4000.0,
+      420.0
+    ]
+  ],
+  "LAYER_TEX_PRESET": "mountain",
+  "LAYER_TEX_STRICT": true,
+  "LAYOUT": "authoring/layout.json",
+  "MAP_DESCRIPTION": "碧色峰丛环绕曲水，清流转过石壁，回澜映出天光。八席东西对置，基地各两矿，四线外扩，南部连通海湾。",
+  "MAP_NAME": "[CHAI]碧嶂回澜",
+  "MAP_STR_INFO": {
+    "GameStart": "游戏时间"
+  },
+  "MAP_STR_INTRO": "欢迎来到九州大地·碧嶂回澜，祝大家玩得开心。",
+  "PEAK_IMPASSABLE": 500.0,
+  "PREVIEW_SUBTITLE": "800×800 · 八席 / 48矿 · 台地与南部海湾",
+  "PREVIEW_TITLE": "九州大地·碧嶂回澜 {version}",
+  "PRODUCTION_SPAWN_RADIUS": 180,
+  "RAMP_CLEARANCE": {},
+  "RESOURCE_DISTRIBUTION": "authoring/resource-distribution.json",
+  "RULESET": "common-T0.5.1",
+  "SCHEMA_VERSION": 1,
+  "SEA_TEX_BANDS": [
+    [
+      6.0,
+      "Sand_Hawaii02"
+    ],
+    [
+      36.0,
+      "Reef_Yucatan01"
+    ],
+    [
+      1000000000.0,
+      "RA3_ShallowSeaFloor"
+    ]
+  ],
+  "SERIES_NAME": "九州大地",
+  "SLOPE_IMPASSABLE": 24.0,
+  "SPAWN_PLACEMENT": {},
+  "TEMPLATE": "8p_template.map",
+  "TERRAIN": {
+    "base_min_flat_radius": 24.0,
+    "levels": [
+      210,
+      280,
+      350,
+      420
+    ],
+    "ore_border_clear": 30.0,
+    "ore_mouth_r1": 20.0,
+    "ore_near_max_r": 62.0,
+    "ore_near_min_r": 44.0,
+    "sea_flat": 130.0,
+    "use_v11_layers": true,
+    "v11_baked": true,
+    "v11_plain": true,
+    "v11_smooth": 0
+  },
+  "TERRAIN_LOCK": {
+    "authorized_changes": "13 explicitly recorded mountain ramps only; no water/land or layer-mask changes, no shore grading",
+    "design_mask": "histories/T0.0.1/native-fields.npz#design_layers",
+    "instruction": "不改地形，斜坡可以新增",
+    "source": "preview.png",
+    "source_crc32": 790931293,
+    "water_depth_source": "Fresh preview generator rule: water layer 0 maps to sea floor 130; WATER_Z=200; no coast grading"
+  },
+  "TEX_NOISE_CELLS": 24.0,
+  "TEX_SET": [
+    "Grass_CapeCod05",
+    "Grass_Geneva01",
+    "Grass_NewYork01",
+    "Grass_MtRush04",
+    "Dirt_Iceland05",
+    "Sand_Hawaii02",
+    "Reef_Yucatan01",
+    "RA3_ShallowSeaFloor",
+    "Rock_Yucatan01"
+  ],
+  "WATER_Z": 200.0,
+  "Z_SCALE": 0.0390625
+}

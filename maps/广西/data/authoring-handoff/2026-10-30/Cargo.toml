@@ -1,0 +1,16 @@
+[package]
+name = "guangxi-preview-handoff"
+version = "0.1.0"
+edition = "2024"
+publish = false
+[dependencies]
+ra3maps = { path = "../../../../.." }
+serde_json = "1.0.149"
+flate2 = "1.1.5"
+crc32fast = "1.5.0"
+[[bin]]
+name = "guangxi-preview-handoff"
+path = "audit.rs"
+[profile.release]
+lto = false
+strip = true

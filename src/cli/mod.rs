@@ -57,6 +57,9 @@ pub(crate) fn run() -> Result<()> {
         (argv[0].as_str(), &argv[1..])
     };
     let mut args = parse(rest)?;
+    if args.planning.specified() && command != "plan-layout" {
+        return Err(err("planning options apply only to plan-layout"));
+    }
     match command {
         "check-xml" => {
             paths(&args, 1)?;
@@ -207,6 +210,24 @@ pub(crate) fn run() -> Result<()> {
             println!("{}  {}", p.id, p.name);
         }
         return Ok(());
+    }
+    if command == "project-status" {
+        paths(&args, 0)?;
+        println!(
+            "{}",
+            serde_json::to_string_pretty(&ra3maps::pipeline::status::inventory(&root)?)?
+        );
+        return Ok(());
+    }
+    if command == "check-docs" {
+        paths(&args, 0)?;
+        let report = ra3maps::pipeline::status::check_links(&root)?;
+        println!("{}", serde_json::to_string_pretty(&report)?);
+        return if report["passed"] == true {
+            Ok(())
+        } else {
+            Err(err("active documentation contains unresolved local links"))
+        };
     }
     let id = project::select(&root, args.map.as_deref())?;
     if command == "audit-scene" {
@@ -381,6 +402,37 @@ pub(crate) fn run() -> Result<()> {
         }
         return Ok(());
     }
+    if command == "timing-summary" {
+        paths(&args, 0)?;
+        if args.opts.bump || args.opts.release || args.opts.install || args.opts.wb_install {
+            return Err(err("timing-summary only reads recorded attempts"));
+        }
+        println!(
+            "{}",
+            serde_json::to_string_pretty(&ra3maps::pipeline::telemetry::summary(&root, &id)?)?
+        );
+        return Ok(());
+    }
+    if command == "archive-evidence" {
+        paths(&args, 0)?;
+        if args.opts.bump || args.opts.release || args.opts.install || args.opts.wb_install {
+            return Err(err(
+                "archive-evidence only archives reports; it does not publish or install",
+            ));
+        }
+        let p = Project::load(&root, &id)?;
+        let report = ra3maps::pipeline::evidence::collect(&p)?;
+        println!(
+            "证据归档：{}；报告 {} 份，未自动生成独立通过结论",
+            p.map_dir()
+                .join("histories")
+                .join(&p.version)
+                .join("evidence.zip")
+                .display(),
+            report["reports"].as_array().map_or(0, Vec::len)
+        );
+        return Ok(());
+    }
     if command == "prepare-delivery" {
         paths(&args, 0)?;
         if args.opts.bump || args.opts.release || args.opts.install || args.opts.wb_install {
@@ -396,6 +448,84 @@ pub(crate) fn run() -> Result<()> {
         let path = ra3maps::pipeline::acceptance::stage_release(&p, &files)?;
         println!("待核验候选：{}", path.display());
         return Ok(());
+    }
+    if command == "plan-layout" {
+        paths(&args, 0)?;
+        if args.opts.bump
+            || args.opts.release
+            || args.opts.install
+            || args.opts.wb_install
+            || !args.opts.only.is_empty()
+            || !args.opts.skip.is_empty()
+        {
+            return Err(err(
+                "plan-layout writes a candidate plan only; build, version and installation flags do not apply",
+            ));
+        }
+        let p = Project::load(&root, &id)?;
+        let options = ra3maps::terrain::planner::Options {
+            budget: args.planning.budget.unwrap_or(100_000),
+            time_limit_secs: args.planning.time_limit.unwrap_or(60),
+            seed: args.planning.seed.unwrap_or(0),
+            output: args
+                .planning
+                .output
+                .clone()
+                .unwrap_or_else(|| p.assets.join("planning/plan-layout.json")),
+            resume: args.planning.resume,
+            candidate_limit: args.planning.candidate_limit.unwrap_or(64),
+            radius_cells: args.planning.radius.unwrap_or(56.),
+        };
+        return ra3maps::pipeline::telemetry::attempt(&p, "plan-layout", |log| {
+            let inputs = ra3maps::pipeline::run_inputs::RunInputs::capture(&p)?;
+            log.inputs(inputs.manifest())?;
+            log.stage("search", || {
+                inputs.verify()?;
+                let report = ra3maps::terrain::planner::run(&p, &options)?;
+                inputs.verify()?;
+                println!(
+                    "规划状态：{}；候选报告 {}",
+                    report["status"],
+                    options.output.display()
+                );
+                if report["status"] != "candidate_ready" {
+                    return Err(err(
+                        "未获得完整可行候选；查看报告中的搜索状态、覆盖范围和未解决项",
+                    ));
+                }
+                Ok(())
+            })
+        });
+    }
+    if command == "check-layout" {
+        paths(&args, 0)?;
+        let p = Project::load(&root, &id)?;
+        if args.opts.bump || args.opts.release || args.opts.install || args.opts.wb_install {
+            return Err(err(
+                "check-layout is a read-only diagnostic; version and installation flags do not apply",
+            ));
+        }
+        return ra3maps::pipeline::telemetry::attempt(&p, "check-layout", |log| {
+            let inputs = ra3maps::pipeline::run_inputs::RunInputs::capture(&p)?;
+            log.inputs(inputs.manifest())?;
+            log.stage("preflight", || {
+                inputs.verify()?;
+                let report = ra3maps::terrain::preflight::run(&p)?;
+                project::write_json(&p.assets.join("layout-preflight.json"), &report)?;
+                inputs.verify()?;
+                eprintln!(
+                    "预检状态：{}；完整报告 {}",
+                    report["status"],
+                    p.assets.join("layout-preflight.json").display()
+                );
+                if report["passed"] != true {
+                    return Err(err(
+                        "布局预检未通过；查看报告中的冲突双方、覆盖范围和未检查项",
+                    ));
+                }
+                Ok(())
+            })
+        });
     }
     if command == "analyze-terrain" {
         let p = Project::load(&root, &id)?;

@@ -50,7 +50,7 @@ pub fn binding(p: &Project) -> Result<Json> {
             json!({"algorithm":REVISION,"status":"not_applicable","terrain_only":true,"catalog":official::binding()}),
         );
     }
-    let common = match std::fs::read(p.root.join("templates/rules/common-T0.5.1.json")) {
+    let common = match std::fs::read(p.root.join("rules/common-T0.5.1.json")) {
         Ok(bytes) => Some(crc32fast::hash(&bytes)),
         Err(error) if error.kind() == std::io::ErrorKind::NotFound => None,
         Err(error) => return Err(error.into()),

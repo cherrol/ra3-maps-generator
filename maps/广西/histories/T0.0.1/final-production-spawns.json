@@ -1,0 +1,1750 @@
+{
+  "native_crc32": 2234449502,
+  "policy": {
+    "full_footprint": true,
+    "naval_yard": {
+      "padding": 8,
+      "surface": "water"
+    },
+    "war_factory": {
+      "padding": 6,
+      "surface": "land"
+    }
+  },
+  "policy_source": "rules/common-T0.5.1.json#/production_placement",
+  "scope": "current native complete production primary/fallback branch positions and independently recomputed base/exit access",
+  "access_model": "four-neighbor static ground point movement, max adjacent height step 12, same native impassability; complete 20-cell ore discs, 48x36 rotated refinery reservations, and union of every actual native/conditional/main/fallback foundation; start access is nearest exterior of the actual same-layer base; own-factory geometry is excluded only in the final <=16-step exit connector",
+  "placements": [
+    {
+      "seat": 1,
+      "waypoint": "dual-p1-wf",
+      "kind": "alliedwarfactory",
+      "primary": true,
+      "cell": [
+        116.0,
+        110.0
+      ],
+      "base_distance_cells": 29.0,
+      "start_access": [
+        144,
+        110
+      ],
+      "path_steps": 25,
+      "distance_world": 250,
+      "passed": true
+    },
+    {
+      "seat": 1,
+      "waypoint": "dual-p1-wf",
+      "kind": "sovietwarfactory",
+      "primary": true,
+      "cell": [
+        116.0,
+        110.0
+      ],
+      "base_distance_cells": 29.0,
+      "start_access": [
+        144,
+        110
+      ],
+      "path_steps": 28,
+      "distance_world": 280,
+      "passed": true
+    },
+    {
+      "seat": 1,
+      "waypoint": "dual-p1-wf",
+      "kind": "japanwarfactory",
+      "primary": true,
+      "cell": [
+        116.0,
+        110.0
+      ],
+      "base_distance_cells": 29.0,
+      "start_access": [
+        144,
+        110
+      ],
+      "path_steps": 28,
+      "distance_world": 280,
+      "passed": true
+    },
+    {
+      "seat": 1,
+      "waypoint": "dual-p1-bar",
+      "kind": "alliedbarracks",
+      "primary": true,
+      "cell": [
+        116.0,
+        138.0
+      ],
+      "base_distance_cells": 40.311288741492746,
+      "start_access": [
+        144,
+        110
+      ],
+      "path_steps": 54,
+      "distance_world": 540,
+      "passed": true
+    },
+    {
+      "seat": 1,
+      "waypoint": "dual-p1-bar",
+      "kind": "sovietbarracks",
+      "primary": true,
+      "cell": [
+        116.0,
+        138.0
+      ],
+      "base_distance_cells": 40.311288741492746,
+      "start_access": [
+        144,
+        110
+      ],
+      "path_steps": 54,
+      "distance_world": 540,
+      "passed": true
+    },
+    {
+      "seat": 1,
+      "waypoint": "dual-p1-bar",
+      "kind": "japanbarracks",
+      "primary": true,
+      "cell": [
+        116.0,
+        138.0
+      ],
+      "base_distance_cells": 40.311288741492746,
+      "start_access": [
+        144,
+        110
+      ],
+      "path_steps": 54,
+      "distance_world": 540,
+      "passed": true
+    },
+    {
+      "seat": 1,
+      "waypoint": "gift-alt-dual-p1-wf-1",
+      "kind": "alliedwarfactory",
+      "primary": false,
+      "cell": [
+        86.0,
+        74.0
+      ],
+      "base_distance_cells": 69.1158447825099,
+      "start_access": [
+        145,
+        109
+      ],
+      "path_steps": 83,
+      "distance_world": 830,
+      "passed": true
+    },
+    {
+      "seat": 1,
+      "waypoint": "gift-alt-dual-p1-wf-1",
+      "kind": "sovietwarfactory",
+      "primary": false,
+      "cell": [
+        86.0,
+        74.0
+      ],
+      "base_distance_cells": 69.1158447825099,
+      "start_access": [
+        145,
+        109
+      ],
+      "path_steps": 82,
+      "distance_world": 820,
+      "passed": true
+    },
+    {
+      "seat": 1,
+      "waypoint": "gift-alt-dual-p1-wf-1",
+      "kind": "japanwarfactory",
+      "primary": false,
+      "cell": [
+        86.0,
+        74.0
+      ],
+      "base_distance_cells": 69.1158447825099,
+      "start_access": [
+        145,
+        109
+      ],
+      "path_steps": 82,
+      "distance_world": 820,
+      "passed": true
+    },
+    {
+      "seat": 1,
+      "waypoint": "gift-alt-dual-p1-bar-1",
+      "kind": "alliedbarracks",
+      "primary": false,
+      "cell": [
+        172.0,
+        178.0
+      ],
+      "base_distance_cells": 73.16419889536138,
+      "start_access": [
+        146,
+        110
+      ],
+      "path_steps": 100,
+      "distance_world": 1000,
+      "passed": true
+    },
+    {
+      "seat": 1,
+      "waypoint": "gift-alt-dual-p1-bar-1",
+      "kind": "sovietbarracks",
+      "primary": false,
+      "cell": [
+        172.0,
+        178.0
+      ],
+      "base_distance_cells": 73.16419889536138,
+      "start_access": [
+        146,
+        110
+      ],
+      "path_steps": 100,
+      "distance_world": 1000,
+      "passed": true
+    },
+    {
+      "seat": 1,
+      "waypoint": "gift-alt-dual-p1-bar-1",
+      "kind": "japanbarracks",
+      "primary": false,
+      "cell": [
+        172.0,
+        178.0
+      ],
+      "base_distance_cells": 73.16419889536138,
+      "start_access": [
+        146,
+        110
+      ],
+      "path_steps": 100,
+      "distance_world": 1000,
+      "passed": true
+    },
+    {
+      "seat": 2,
+      "waypoint": "dual-p2-wf",
+      "kind": "alliedwarfactory",
+      "primary": true,
+      "cell": [
+        140.0,
+        288.0
+      ],
+      "base_distance_cells": 28.0,
+      "start_access": [
+        141,
+        260
+      ],
+      "path_steps": 42,
+      "distance_world": 420,
+      "passed": true
+    },
+    {
+      "seat": 2,
+      "waypoint": "dual-p2-wf",
+      "kind": "sovietwarfactory",
+      "primary": true,
+      "cell": [
+        140.0,
+        288.0
+      ],
+      "base_distance_cells": 28.0,
+      "start_access": [
+        141,
+        260
+      ],
+      "path_steps": 39,
+      "distance_world": 390,
+      "passed": true
+    },
+    {
+      "seat": 2,
+      "waypoint": "dual-p2-wf",
+      "kind": "japanwarfactory",
+      "primary": true,
+      "cell": [
+        140.0,
+        288.0
+      ],
+      "base_distance_cells": 28.0,
+      "start_access": [
+        141,
+        260
+      ],
+      "path_steps": 39,
+      "distance_world": 390,
+      "passed": true
+    },
+    {
+      "seat": 2,
+      "waypoint": "dual-p2-bar",
+      "kind": "alliedbarracks",
+      "primary": true,
+      "cell": [
+        112.0,
+        242.0
+      ],
+      "base_distance_cells": 33.28663395418648,
+      "start_access": [
+        140,
+        259
+      ],
+      "path_steps": 39,
+      "distance_world": 390,
+      "passed": true
+    },
+    {
+      "seat": 2,
+      "waypoint": "dual-p2-bar",
+      "kind": "sovietbarracks",
+      "primary": true,
+      "cell": [
+        112.0,
+        242.0
+      ],
+      "base_distance_cells": 33.28663395418648,
+      "start_access": [
+        140,
+        259
+      ],
+      "path_steps": 39,
+      "distance_world": 390,
+      "passed": true
+    },
+    {
+      "seat": 2,
+      "waypoint": "dual-p2-bar",
+      "kind": "japanbarracks",
+      "primary": true,
+      "cell": [
+        112.0,
+        242.0
+      ],
+      "base_distance_cells": 33.28663395418648,
+      "start_access": [
+        140,
+        259
+      ],
+      "path_steps": 39,
+      "distance_world": 390,
+      "passed": true
+    },
+    {
+      "seat": 2,
+      "waypoint": "gift-alt-dual-p2-wf-1",
+      "kind": "alliedwarfactory",
+      "primary": false,
+      "cell": [
+        110.0,
+        214.0
+      ],
+      "base_distance_cells": 54.91812087098393,
+      "start_access": [
+        140,
+        259
+      ],
+      "path_steps": 64,
+      "distance_world": 640,
+      "passed": true
+    },
+    {
+      "seat": 2,
+      "waypoint": "gift-alt-dual-p2-wf-1",
+      "kind": "sovietwarfactory",
+      "primary": false,
+      "cell": [
+        110.0,
+        214.0
+      ],
+      "base_distance_cells": 54.91812087098393,
+      "start_access": [
+        140,
+        259
+      ],
+      "path_steps": 63,
+      "distance_world": 630,
+      "passed": true
+    },
+    {
+      "seat": 2,
+      "waypoint": "gift-alt-dual-p2-wf-1",
+      "kind": "japanwarfactory",
+      "primary": false,
+      "cell": [
+        110.0,
+        214.0
+      ],
+      "base_distance_cells": 54.91812087098393,
+      "start_access": [
+        140,
+        259
+      ],
+      "path_steps": 63,
+      "distance_world": 630,
+      "passed": true
+    },
+    {
+      "seat": 2,
+      "waypoint": "gift-alt-dual-p2-bar-1",
+      "kind": "alliedbarracks",
+      "primary": false,
+      "cell": [
+        112.0,
+        320.0
+      ],
+      "base_distance_cells": 66.2117814289874,
+      "start_access": [
+        139,
+        260
+      ],
+      "path_steps": 85,
+      "distance_world": 850,
+      "passed": true
+    },
+    {
+      "seat": 2,
+      "waypoint": "gift-alt-dual-p2-bar-1",
+      "kind": "sovietbarracks",
+      "primary": false,
+      "cell": [
+        112.0,
+        320.0
+      ],
+      "base_distance_cells": 66.2117814289874,
+      "start_access": [
+        139,
+        260
+      ],
+      "path_steps": 85,
+      "distance_world": 850,
+      "passed": true
+    },
+    {
+      "seat": 2,
+      "waypoint": "gift-alt-dual-p2-bar-1",
+      "kind": "japanbarracks",
+      "primary": false,
+      "cell": [
+        112.0,
+        320.0
+      ],
+      "base_distance_cells": 66.2117814289874,
+      "start_access": [
+        139,
+        260
+      ],
+      "path_steps": 85,
+      "distance_world": 850,
+      "passed": true
+    },
+    {
+      "seat": 3,
+      "waypoint": "dual-p3-bar",
+      "kind": "alliedbarracks",
+      "primary": true,
+      "cell": [
+        112.0,
+        416.0
+      ],
+      "base_distance_cells": 28.0178514522438,
+      "start_access": [
+        140,
+        414
+      ],
+      "path_steps": 28,
+      "distance_world": 280,
+      "passed": true
+    },
+    {
+      "seat": 3,
+      "waypoint": "dual-p3-bar",
+      "kind": "sovietbarracks",
+      "primary": true,
+      "cell": [
+        112.0,
+        416.0
+      ],
+      "base_distance_cells": 28.0178514522438,
+      "start_access": [
+        140,
+        414
+      ],
+      "path_steps": 28,
+      "distance_world": 280,
+      "passed": true
+    },
+    {
+      "seat": 3,
+      "waypoint": "dual-p3-bar",
+      "kind": "japanbarracks",
+      "primary": true,
+      "cell": [
+        112.0,
+        416.0
+      ],
+      "base_distance_cells": 28.0178514522438,
+      "start_access": [
+        140,
+        414
+      ],
+      "path_steps": 28,
+      "distance_world": 280,
+      "passed": true
+    },
+    {
+      "seat": 3,
+      "waypoint": "dual-p3-wf",
+      "kind": "alliedwarfactory",
+      "primary": true,
+      "cell": [
+        110.0,
+        388.0
+      ],
+      "base_distance_cells": 40.36087214122113,
+      "start_access": [
+        140,
+        414
+      ],
+      "path_steps": 45,
+      "distance_world": 450,
+      "passed": true
+    },
+    {
+      "seat": 3,
+      "waypoint": "dual-p3-wf",
+      "kind": "sovietwarfactory",
+      "primary": true,
+      "cell": [
+        110.0,
+        388.0
+      ],
+      "base_distance_cells": 40.36087214122113,
+      "start_access": [
+        140,
+        414
+      ],
+      "path_steps": 44,
+      "distance_world": 440,
+      "passed": true
+    },
+    {
+      "seat": 3,
+      "waypoint": "dual-p3-wf",
+      "kind": "japanwarfactory",
+      "primary": true,
+      "cell": [
+        110.0,
+        388.0
+      ],
+      "base_distance_cells": 40.36087214122113,
+      "start_access": [
+        140,
+        414
+      ],
+      "path_steps": 44,
+      "distance_world": 440,
+      "passed": true
+    },
+    {
+      "seat": 3,
+      "waypoint": "gift-alt-dual-p3-bar-1",
+      "kind": "alliedbarracks",
+      "primary": false,
+      "cell": [
+        170.0,
+        466.0
+      ],
+      "base_distance_cells": 59.16924876994806,
+      "start_access": [
+        141,
+        415
+      ],
+      "path_steps": 78,
+      "distance_world": 780,
+      "passed": true
+    },
+    {
+      "seat": 3,
+      "waypoint": "gift-alt-dual-p3-bar-1",
+      "kind": "sovietbarracks",
+      "primary": false,
+      "cell": [
+        170.0,
+        466.0
+      ],
+      "base_distance_cells": 59.16924876994806,
+      "start_access": [
+        141,
+        415
+      ],
+      "path_steps": 78,
+      "distance_world": 780,
+      "passed": true
+    },
+    {
+      "seat": 3,
+      "waypoint": "gift-alt-dual-p3-bar-1",
+      "kind": "japanbarracks",
+      "primary": false,
+      "cell": [
+        170.0,
+        466.0
+      ],
+      "base_distance_cells": 59.16924876994806,
+      "start_access": [
+        141,
+        415
+      ],
+      "path_steps": 78,
+      "distance_world": 780,
+      "passed": true
+    },
+    {
+      "seat": 3,
+      "waypoint": "gift-alt-dual-p3-wf-1",
+      "kind": "alliedwarfactory",
+      "primary": false,
+      "cell": [
+        110.0,
+        360.0
+      ],
+      "base_distance_cells": 62.64982043070834,
+      "start_access": [
+        140,
+        414
+      ],
+      "path_steps": 73,
+      "distance_world": 730,
+      "passed": true
+    },
+    {
+      "seat": 3,
+      "waypoint": "gift-alt-dual-p3-wf-1",
+      "kind": "sovietwarfactory",
+      "primary": false,
+      "cell": [
+        110.0,
+        360.0
+      ],
+      "base_distance_cells": 62.64982043070834,
+      "start_access": [
+        140,
+        414
+      ],
+      "path_steps": 72,
+      "distance_world": 720,
+      "passed": true
+    },
+    {
+      "seat": 3,
+      "waypoint": "gift-alt-dual-p3-wf-1",
+      "kind": "japanwarfactory",
+      "primary": false,
+      "cell": [
+        110.0,
+        360.0
+      ],
+      "base_distance_cells": 62.64982043070834,
+      "start_access": [
+        140,
+        414
+      ],
+      "path_steps": 72,
+      "distance_world": 720,
+      "passed": true
+    },
+    {
+      "seat": 4,
+      "waypoint": "dual-p4-wf",
+      "kind": "alliedwarfactory",
+      "primary": true,
+      "cell": [
+        162.0,
+        606.0
+      ],
+      "base_distance_cells": 30.083217912982647,
+      "start_access": [
+        170,
+        634
+      ],
+      "path_steps": 41,
+      "distance_world": 410,
+      "passed": true
+    },
+    {
+      "seat": 4,
+      "waypoint": "dual-p4-wf",
+      "kind": "sovietwarfactory",
+      "primary": true,
+      "cell": [
+        162.0,
+        606.0
+      ],
+      "base_distance_cells": 30.083217912982647,
+      "start_access": [
+        170,
+        634
+      ],
+      "path_steps": 36,
+      "distance_world": 360,
+      "passed": true
+    },
+    {
+      "seat": 4,
+      "waypoint": "dual-p4-wf",
+      "kind": "japanwarfactory",
+      "primary": true,
+      "cell": [
+        162.0,
+        606.0
+      ],
+      "base_distance_cells": 30.083217912982647,
+      "start_access": [
+        170,
+        634
+      ],
+      "path_steps": 36,
+      "distance_world": 360,
+      "passed": true
+    },
+    {
+      "seat": 4,
+      "waypoint": "dual-p4-bar",
+      "kind": "alliedbarracks",
+      "primary": true,
+      "cell": [
+        206.0,
+        576.0
+      ],
+      "base_distance_cells": 69.1158447825099,
+      "start_access": [
+        170,
+        634
+      ],
+      "path_steps": 100,
+      "distance_world": 1000,
+      "passed": true
+    },
+    {
+      "seat": 4,
+      "waypoint": "dual-p4-bar",
+      "kind": "sovietbarracks",
+      "primary": true,
+      "cell": [
+        206.0,
+        576.0
+      ],
+      "base_distance_cells": 69.1158447825099,
+      "start_access": [
+        170,
+        634
+      ],
+      "path_steps": 100,
+      "distance_world": 1000,
+      "passed": true
+    },
+    {
+      "seat": 4,
+      "waypoint": "dual-p4-bar",
+      "kind": "japanbarracks",
+      "primary": true,
+      "cell": [
+        206.0,
+        576.0
+      ],
+      "base_distance_cells": 69.1158447825099,
+      "start_access": [
+        170,
+        634
+      ],
+      "path_steps": 100,
+      "distance_world": 1000,
+      "passed": true
+    },
+    {
+      "seat": 4,
+      "waypoint": "gift-alt-dual-p4-wf-1",
+      "kind": "alliedwarfactory",
+      "primary": false,
+      "cell": [
+        54.0,
+        602.0
+      ],
+      "base_distance_cells": 120.60265337047937,
+      "start_access": [
+        170,
+        634
+      ],
+      "path_steps": 159,
+      "distance_world": 1590,
+      "passed": true
+    },
+    {
+      "seat": 4,
+      "waypoint": "gift-alt-dual-p4-wf-1",
+      "kind": "sovietwarfactory",
+      "primary": false,
+      "cell": [
+        54.0,
+        602.0
+      ],
+      "base_distance_cells": 120.60265337047937,
+      "start_access": [
+        170,
+        634
+      ],
+      "path_steps": 158,
+      "distance_world": 1580,
+      "passed": true
+    },
+    {
+      "seat": 4,
+      "waypoint": "gift-alt-dual-p4-wf-1",
+      "kind": "japanwarfactory",
+      "primary": false,
+      "cell": [
+        54.0,
+        602.0
+      ],
+      "base_distance_cells": 120.60265337047937,
+      "start_access": [
+        170,
+        634
+      ],
+      "path_steps": 158,
+      "distance_world": 1580,
+      "passed": true
+    },
+    {
+      "seat": 4,
+      "waypoint": "gift-alt-dual-p4-bar-1",
+      "kind": "alliedbarracks",
+      "primary": false,
+      "cell": [
+        340.0,
+        624.0
+      ],
+      "base_distance_cells": 170.35551062410633,
+      "start_access": [
+        170,
+        634
+      ],
+      "path_steps": 210,
+      "distance_world": 2100,
+      "passed": true
+    },
+    {
+      "seat": 4,
+      "waypoint": "gift-alt-dual-p4-bar-1",
+      "kind": "sovietbarracks",
+      "primary": false,
+      "cell": [
+        340.0,
+        624.0
+      ],
+      "base_distance_cells": 170.35551062410633,
+      "start_access": [
+        170,
+        634
+      ],
+      "path_steps": 210,
+      "distance_world": 2100,
+      "passed": true
+    },
+    {
+      "seat": 4,
+      "waypoint": "gift-alt-dual-p4-bar-1",
+      "kind": "japanbarracks",
+      "primary": false,
+      "cell": [
+        340.0,
+        624.0
+      ],
+      "base_distance_cells": 170.35551062410633,
+      "start_access": [
+        170,
+        634
+      ],
+      "path_steps": 210,
+      "distance_world": 2100,
+      "passed": true
+    },
+    {
+      "seat": 5,
+      "waypoint": "dual-p5-wf",
+      "kind": "alliedwarfactory",
+      "primary": true,
+      "cell": [
+        734.0,
+        44.0
+      ],
+      "base_distance_cells": 61.29437168288782,
+      "start_access": [
+        738,
+        103
+      ],
+      "path_steps": 60,
+      "distance_world": 600,
+      "passed": true
+    },
+    {
+      "seat": 5,
+      "waypoint": "dual-p5-wf",
+      "kind": "sovietwarfactory",
+      "primary": true,
+      "cell": [
+        734.0,
+        44.0
+      ],
+      "base_distance_cells": 61.29437168288782,
+      "start_access": [
+        738,
+        103
+      ],
+      "path_steps": 63,
+      "distance_world": 630,
+      "passed": true
+    },
+    {
+      "seat": 5,
+      "waypoint": "dual-p5-wf",
+      "kind": "japanwarfactory",
+      "primary": true,
+      "cell": [
+        734.0,
+        44.0
+      ],
+      "base_distance_cells": 61.29437168288782,
+      "start_access": [
+        738,
+        103
+      ],
+      "path_steps": 63,
+      "distance_world": 630,
+      "passed": true
+    },
+    {
+      "seat": 5,
+      "waypoint": "dual-p5-bar",
+      "kind": "alliedbarracks",
+      "primary": true,
+      "cell": [
+        798.0,
+        96.0
+      ],
+      "base_distance_cells": 58.69412236331676,
+      "start_access": [
+        742,
+        107
+      ],
+      "path_steps": 67,
+      "distance_world": 670,
+      "passed": true
+    },
+    {
+      "seat": 5,
+      "waypoint": "dual-p5-bar",
+      "kind": "sovietbarracks",
+      "primary": true,
+      "cell": [
+        798.0,
+        96.0
+      ],
+      "base_distance_cells": 58.69412236331676,
+      "start_access": [
+        742,
+        107
+      ],
+      "path_steps": 67,
+      "distance_world": 670,
+      "passed": true
+    },
+    {
+      "seat": 5,
+      "waypoint": "dual-p5-bar",
+      "kind": "japanbarracks",
+      "primary": true,
+      "cell": [
+        798.0,
+        96.0
+      ],
+      "base_distance_cells": 58.69412236331676,
+      "start_access": [
+        742,
+        107
+      ],
+      "path_steps": 67,
+      "distance_world": 670,
+      "passed": true
+    },
+    {
+      "seat": 5,
+      "waypoint": "gift-alt-dual-p5-wf-1",
+      "kind": "alliedwarfactory",
+      "primary": false,
+      "cell": [
+        594.0,
+        114.0
+      ],
+      "base_distance_cells": 146.27713423498562,
+      "start_access": [
+        738,
+        107
+      ],
+      "path_steps": 166,
+      "distance_world": 1660,
+      "passed": true
+    },
+    {
+      "seat": 5,
+      "waypoint": "gift-alt-dual-p5-wf-1",
+      "kind": "sovietwarfactory",
+      "primary": false,
+      "cell": [
+        594.0,
+        114.0
+      ],
+      "base_distance_cells": 146.27713423498562,
+      "start_access": [
+        738,
+        107
+      ],
+      "path_steps": 163,
+      "distance_world": 1630,
+      "passed": true
+    },
+    {
+      "seat": 5,
+      "waypoint": "gift-alt-dual-p5-wf-1",
+      "kind": "japanwarfactory",
+      "primary": false,
+      "cell": [
+        594.0,
+        114.0
+      ],
+      "base_distance_cells": 146.27713423498562,
+      "start_access": [
+        738,
+        107
+      ],
+      "path_steps": 163,
+      "distance_world": 1630,
+      "passed": true
+    },
+    {
+      "seat": 5,
+      "waypoint": "gift-alt-dual-p5-bar-1",
+      "kind": "alliedbarracks",
+      "primary": false,
+      "cell": [
+        594.0,
+        142.0
+      ],
+      "base_distance_cells": 150.6154042586614,
+      "start_access": [
+        738,
+        107
+      ],
+      "path_steps": 185,
+      "distance_world": 1850,
+      "passed": true
+    },
+    {
+      "seat": 5,
+      "waypoint": "gift-alt-dual-p5-bar-1",
+      "kind": "sovietbarracks",
+      "primary": false,
+      "cell": [
+        594.0,
+        142.0
+      ],
+      "base_distance_cells": 150.6154042586614,
+      "start_access": [
+        738,
+        107
+      ],
+      "path_steps": 185,
+      "distance_world": 1850,
+      "passed": true
+    },
+    {
+      "seat": 5,
+      "waypoint": "gift-alt-dual-p5-bar-1",
+      "kind": "japanbarracks",
+      "primary": false,
+      "cell": [
+        594.0,
+        142.0
+      ],
+      "base_distance_cells": 150.6154042586614,
+      "start_access": [
+        738,
+        107
+      ],
+      "path_steps": 185,
+      "distance_world": 1850,
+      "passed": true
+    },
+    {
+      "seat": 6,
+      "waypoint": "dual-p6-wf",
+      "kind": "alliedwarfactory",
+      "primary": true,
+      "cell": [
+        700.0,
+        642.0
+      ],
+      "base_distance_cells": 69.52697318307479,
+      "start_access": [
+        743,
+        693
+      ],
+      "path_steps": 109,
+      "distance_world": 1090,
+      "passed": true
+    },
+    {
+      "seat": 6,
+      "waypoint": "dual-p6-wf",
+      "kind": "sovietwarfactory",
+      "primary": true,
+      "cell": [
+        700.0,
+        642.0
+      ],
+      "base_distance_cells": 69.52697318307479,
+      "start_access": [
+        743,
+        693
+      ],
+      "path_steps": 106,
+      "distance_world": 1060,
+      "passed": true
+    },
+    {
+      "seat": 6,
+      "waypoint": "dual-p6-wf",
+      "kind": "japanwarfactory",
+      "primary": true,
+      "cell": [
+        700.0,
+        642.0
+      ],
+      "base_distance_cells": 69.52697318307479,
+      "start_access": [
+        743,
+        693
+      ],
+      "path_steps": 106,
+      "distance_world": 1060,
+      "passed": true
+    },
+    {
+      "seat": 6,
+      "waypoint": "dual-p6-bar",
+      "kind": "alliedbarracks",
+      "primary": true,
+      "cell": [
+        682.0,
+        734.0
+      ],
+      "base_distance_cells": 74.09453421137081,
+      "start_access": [
+        743,
+        697
+      ],
+      "path_steps": 100,
+      "distance_world": 1000,
+      "passed": true
+    },
+    {
+      "seat": 6,
+      "waypoint": "dual-p6-bar",
+      "kind": "sovietbarracks",
+      "primary": true,
+      "cell": [
+        682.0,
+        734.0
+      ],
+      "base_distance_cells": 74.09453421137081,
+      "start_access": [
+        743,
+        697
+      ],
+      "path_steps": 100,
+      "distance_world": 1000,
+      "passed": true
+    },
+    {
+      "seat": 6,
+      "waypoint": "dual-p6-bar",
+      "kind": "japanbarracks",
+      "primary": true,
+      "cell": [
+        682.0,
+        734.0
+      ],
+      "base_distance_cells": 74.09453421137081,
+      "start_access": [
+        743,
+        697
+      ],
+      "path_steps": 100,
+      "distance_world": 1000,
+      "passed": true
+    },
+    {
+      "seat": 6,
+      "waypoint": "gift-alt-dual-p6-wf-1",
+      "kind": "alliedwarfactory",
+      "primary": false,
+      "cell": [
+        624.0,
+        614.0
+      ],
+      "base_distance_cells": 145.60906565183365,
+      "start_access": [
+        743,
+        693
+      ],
+      "path_steps": 213,
+      "distance_world": 2130,
+      "passed": true
+    },
+    {
+      "seat": 6,
+      "waypoint": "gift-alt-dual-p6-wf-1",
+      "kind": "sovietwarfactory",
+      "primary": false,
+      "cell": [
+        624.0,
+        614.0
+      ],
+      "base_distance_cells": 145.60906565183365,
+      "start_access": [
+        743,
+        693
+      ],
+      "path_steps": 210,
+      "distance_world": 2100,
+      "passed": true
+    },
+    {
+      "seat": 6,
+      "waypoint": "gift-alt-dual-p6-wf-1",
+      "kind": "japanwarfactory",
+      "primary": false,
+      "cell": [
+        624.0,
+        614.0
+      ],
+      "base_distance_cells": 145.60906565183365,
+      "start_access": [
+        743,
+        693
+      ],
+      "path_steps": 210,
+      "distance_world": 2100,
+      "passed": true
+    },
+    {
+      "seat": 6,
+      "waypoint": "gift-alt-dual-p6-bar-1",
+      "kind": "alliedbarracks",
+      "primary": false,
+      "cell": [
+        622.0,
+        772.0
+      ],
+      "base_distance_cells": 145.11374848717816,
+      "start_access": [
+        743,
+        697
+      ],
+      "path_steps": 198,
+      "distance_world": 1980,
+      "passed": true
+    },
+    {
+      "seat": 6,
+      "waypoint": "gift-alt-dual-p6-bar-1",
+      "kind": "sovietbarracks",
+      "primary": false,
+      "cell": [
+        622.0,
+        772.0
+      ],
+      "base_distance_cells": 145.11374848717816,
+      "start_access": [
+        743,
+        697
+      ],
+      "path_steps": 198,
+      "distance_world": 1980,
+      "passed": true
+    },
+    {
+      "seat": 6,
+      "waypoint": "gift-alt-dual-p6-bar-1",
+      "kind": "japanbarracks",
+      "primary": false,
+      "cell": [
+        622.0,
+        772.0
+      ],
+      "base_distance_cells": 145.11374848717816,
+      "start_access": [
+        743,
+        697
+      ],
+      "path_steps": 198,
+      "distance_world": 1980,
+      "passed": true
+    },
+    {
+      "seat": 7,
+      "waypoint": "dual-civilian-wf",
+      "kind": "alliedwarfactory",
+      "primary": true,
+      "cell": [
+        690.0,
+        278.0
+      ],
+      "base_distance_cells": 37.20215047547655,
+      "start_access": [
+        716,
+        296
+      ],
+      "path_steps": 41,
+      "distance_world": 410,
+      "passed": true
+    },
+    {
+      "seat": 7,
+      "waypoint": "dual-civilian-wf",
+      "kind": "sovietwarfactory",
+      "primary": true,
+      "cell": [
+        690.0,
+        278.0
+      ],
+      "base_distance_cells": 37.20215047547655,
+      "start_access": [
+        716,
+        296
+      ],
+      "path_steps": 44,
+      "distance_world": 440,
+      "passed": true
+    },
+    {
+      "seat": 7,
+      "waypoint": "dual-civilian-wf",
+      "kind": "japanwarfactory",
+      "primary": true,
+      "cell": [
+        690.0,
+        278.0
+      ],
+      "base_distance_cells": 37.20215047547655,
+      "start_access": [
+        716,
+        296
+      ],
+      "path_steps": 44,
+      "distance_world": 440,
+      "passed": true
+    },
+    {
+      "seat": 7,
+      "waypoint": "dual-civilian-bar",
+      "kind": "alliedbarracks",
+      "primary": true,
+      "cell": [
+        718.0,
+        242.0
+      ],
+      "base_distance_cells": 58.034472514187634,
+      "start_access": [
+        716,
+        296
+      ],
+      "path_steps": 68,
+      "distance_world": 680,
+      "passed": true
+    },
+    {
+      "seat": 7,
+      "waypoint": "dual-civilian-bar",
+      "kind": "sovietbarracks",
+      "primary": true,
+      "cell": [
+        718.0,
+        242.0
+      ],
+      "base_distance_cells": 58.034472514187634,
+      "start_access": [
+        716,
+        296
+      ],
+      "path_steps": 68,
+      "distance_world": 680,
+      "passed": true
+    },
+    {
+      "seat": 7,
+      "waypoint": "dual-civilian-bar",
+      "kind": "japanbarracks",
+      "primary": true,
+      "cell": [
+        718.0,
+        242.0
+      ],
+      "base_distance_cells": 58.034472514187634,
+      "start_access": [
+        716,
+        296
+      ],
+      "path_steps": 68,
+      "distance_world": 680,
+      "passed": true
+    },
+    {
+      "seat": 7,
+      "waypoint": "gift-alt-dual-civilian-wf-1",
+      "kind": "alliedwarfactory",
+      "primary": false,
+      "cell": [
+        662.0,
+        248.0
+      ],
+      "base_distance_cells": 77.89736837660179,
+      "start_access": [
+        716,
+        296
+      ],
+      "path_steps": 99,
+      "distance_world": 990,
+      "passed": true
+    },
+    {
+      "seat": 7,
+      "waypoint": "gift-alt-dual-civilian-wf-1",
+      "kind": "sovietwarfactory",
+      "primary": false,
+      "cell": [
+        662.0,
+        248.0
+      ],
+      "base_distance_cells": 77.89736837660179,
+      "start_access": [
+        716,
+        296
+      ],
+      "path_steps": 102,
+      "distance_world": 1020,
+      "passed": true
+    },
+    {
+      "seat": 7,
+      "waypoint": "gift-alt-dual-civilian-wf-1",
+      "kind": "japanwarfactory",
+      "primary": false,
+      "cell": [
+        662.0,
+        248.0
+      ],
+      "base_distance_cells": 77.89736837660179,
+      "start_access": [
+        716,
+        296
+      ],
+      "path_steps": 102,
+      "distance_world": 1020,
+      "passed": true
+    },
+    {
+      "seat": 7,
+      "waypoint": "gift-alt-dual-civilian-bar-1",
+      "kind": "alliedbarracks",
+      "primary": false,
+      "cell": [
+        634.0,
+        262.0
+      ],
+      "base_distance_cells": 94.02127418834527,
+      "start_access": [
+        716,
+        296
+      ],
+      "path_steps": 114,
+      "distance_world": 1140,
+      "passed": true
+    },
+    {
+      "seat": 7,
+      "waypoint": "gift-alt-dual-civilian-bar-1",
+      "kind": "sovietbarracks",
+      "primary": false,
+      "cell": [
+        634.0,
+        262.0
+      ],
+      "base_distance_cells": 94.02127418834527,
+      "start_access": [
+        716,
+        296
+      ],
+      "path_steps": 114,
+      "distance_world": 1140,
+      "passed": true
+    },
+    {
+      "seat": 7,
+      "waypoint": "gift-alt-dual-civilian-bar-1",
+      "kind": "japanbarracks",
+      "primary": false,
+      "cell": [
+        634.0,
+        262.0
+      ],
+      "base_distance_cells": 94.02127418834527,
+      "start_access": [
+        716,
+        296
+      ],
+      "path_steps": 114,
+      "distance_world": 1140,
+      "passed": true
+    },
+    {
+      "seat": 8,
+      "waypoint": "dual-creeps-wf",
+      "kind": "alliedwarfactory",
+      "primary": true,
+      "cell": [
+        780.0,
+        486.0
+      ],
+      "base_distance_cells": 36.61966684720111,
+      "start_access": [
+        754,
+        468
+      ],
+      "path_steps": 33,
+      "distance_world": 330,
+      "passed": true
+    },
+    {
+      "seat": 8,
+      "waypoint": "dual-creeps-wf",
+      "kind": "sovietwarfactory",
+      "primary": true,
+      "cell": [
+        780.0,
+        486.0
+      ],
+      "base_distance_cells": 36.61966684720111,
+      "start_access": [
+        754,
+        468
+      ],
+      "path_steps": 32,
+      "distance_world": 320,
+      "passed": true
+    },
+    {
+      "seat": 8,
+      "waypoint": "dual-creeps-wf",
+      "kind": "japanwarfactory",
+      "primary": true,
+      "cell": [
+        780.0,
+        486.0
+      ],
+      "base_distance_cells": 36.61966684720111,
+      "start_access": [
+        754,
+        468
+      ],
+      "path_steps": 32,
+      "distance_world": 320,
+      "passed": true
+    },
+    {
+      "seat": 8,
+      "waypoint": "dual-creeps-bar",
+      "kind": "alliedbarracks",
+      "primary": true,
+      "cell": [
+        806.0,
+        388.0
+      ],
+      "base_distance_cells": 95.2102935611481,
+      "start_access": [
+        748,
+        461
+      ],
+      "path_steps": 129,
+      "distance_world": 1290,
+      "passed": true
+    },
+    {
+      "seat": 8,
+      "waypoint": "dual-creeps-bar",
+      "kind": "sovietbarracks",
+      "primary": true,
+      "cell": [
+        806.0,
+        388.0
+      ],
+      "base_distance_cells": 95.2102935611481,
+      "start_access": [
+        748,
+        461
+      ],
+      "path_steps": 129,
+      "distance_world": 1290,
+      "passed": true
+    },
+    {
+      "seat": 8,
+      "waypoint": "dual-creeps-bar",
+      "kind": "japanbarracks",
+      "primary": true,
+      "cell": [
+        806.0,
+        388.0
+      ],
+      "base_distance_cells": 95.2102935611481,
+      "start_access": [
+        748,
+        461
+      ],
+      "path_steps": 129,
+      "distance_world": 1290,
+      "passed": true
+    },
+    {
+      "seat": 8,
+      "waypoint": "gift-alt-dual-creeps-wf-1",
+      "kind": "alliedwarfactory",
+      "primary": false,
+      "cell": [
+        580.0,
+        444.0
+      ],
+      "base_distance_cells": 171.29214809792072,
+      "start_access": [
+        747,
+        461
+      ],
+      "path_steps": 243,
+      "distance_world": 2430,
+      "passed": true
+    },
+    {
+      "seat": 8,
+      "waypoint": "gift-alt-dual-creeps-wf-1",
+      "kind": "sovietwarfactory",
+      "primary": false,
+      "cell": [
+        580.0,
+        444.0
+      ],
+      "base_distance_cells": 171.29214809792072,
+      "start_access": [
+        747,
+        461
+      ],
+      "path_steps": 234,
+      "distance_world": 2340,
+      "passed": true
+    },
+    {
+      "seat": 8,
+      "waypoint": "gift-alt-dual-creeps-wf-1",
+      "kind": "japanwarfactory",
+      "primary": false,
+      "cell": [
+        580.0,
+        444.0
+      ],
+      "base_distance_cells": 171.29214809792072,
+      "start_access": [
+        747,
+        461
+      ],
+      "path_steps": 234,
+      "distance_world": 2340,
+      "passed": true
+    },
+    {
+      "seat": 8,
+      "waypoint": "gift-alt-dual-creeps-bar-1",
+      "kind": "alliedbarracks",
+      "primary": false,
+      "cell": [
+        686.0,
+        582.0
+      ],
+      "base_distance_cells": 133.3604139165742,
+      "start_access": [
+        754,
+        468
+      ],
+      "path_steps": 216,
+      "distance_world": 2160,
+      "passed": true
+    },
+    {
+      "seat": 8,
+      "waypoint": "gift-alt-dual-creeps-bar-1",
+      "kind": "sovietbarracks",
+      "primary": false,
+      "cell": [
+        686.0,
+        582.0
+      ],
+      "base_distance_cells": 133.3604139165742,
+      "start_access": [
+        754,
+        468
+      ],
+      "path_steps": 216,
+      "distance_world": 2160,
+      "passed": true
+    },
+    {
+      "seat": 8,
+      "waypoint": "gift-alt-dual-creeps-bar-1",
+      "kind": "japanbarracks",
+      "primary": false,
+      "cell": [
+        686.0,
+        582.0
+      ],
+      "base_distance_cells": 133.3604139165742,
+      "start_access": [
+        754,
+        468
+      ],
+      "path_steps": 216,
+      "distance_world": 2160,
+      "passed": true
+    }
+  ],
+  "candidate_order": "gift-road-planning.json; all production primaries before other primaries, then backups",
+  "passed": true,
+  "ingame_test": "not run"
+}

@@ -15,7 +15,7 @@ use std::{
 };
 
 /// Included in placement proofs so a rule change invalidates cached acceptance.
-pub const RULES_VERSION: u32 = 3;
+pub const RULES_VERSION: u32 = 4;
 
 #[derive(Clone, Debug, Serialize, Deserialize)]
 #[serde(default, deny_unknown_fields)]
@@ -74,7 +74,7 @@ impl Policy {
             self.ore_radius = self.ore_radius.max(value);
         }
         let mut reserve = None;
-        let common = p.root.join("templates/rules/coordinate-pipeline.json");
+        let common = p.root.join("rules/coordinate-pipeline.json");
         match fs::read(common) {
             Ok(bytes) => {
                 reserve = serde_json::from_slice::<Value>(&bytes)?
@@ -106,7 +106,7 @@ impl Policy {
 }
 pub fn policy(p: &Project) -> Result<Policy> {
     let mut fields = serde_json::to_value(Policy::default())?;
-    let common: Value = match fs::read(p.root.join("templates/rules/coordinate-pipeline.json")) {
+    let common: Value = match fs::read(p.root.join("rules/coordinate-pipeline.json")) {
         Ok(bytes) => serde_json::from_slice(&bytes)?,
         Err(e) if e.kind() == std::io::ErrorKind::NotFound => json!({}),
         Err(e) => return Err(e.into()),
@@ -553,6 +553,8 @@ fn check_occupancy(
                 );
                 issue["objects"] = json!([a.object + 1, b.object + 1]);
                 issue["roles"] = json!([a.role, b.role]);
+                issue["a"] = json!({"object_id":a.object+1,"kind":scene.objects[a.object].type_name,"cell":scene.point(a.object),"role":a.role});
+                issue["b"] = json!({"object_id":b.object+1,"kind":scene.objects[b.object].type_name,"cell":scene.point(b.object),"role":b.role});
                 findings.push(issue);
             }
         }
@@ -757,33 +759,44 @@ pub fn report(p: &Project, m: &MapFile, layout: &Layout, policy: &Policy) -> Res
         .iter()
         .map(|id| scene.point(*id))
         .collect::<Vec<_>>();
-    let matches = |axes: &[usize]| {
-        positions.iter().enumerate().all(|(i, point)| {
-            axes.iter().all(|&axis| {
-                if i < 4 {
-                    point[axis] > center[axis]
-                } else {
-                    point[axis] < center[axis]
-                }
+    // A complete authored route plan selects A/B direction. Standalone spawn
+    // diagnostics can still use explicit BASES when no resource plan exists;
+    // the independent resource validator remains responsible for requiring it.
+    let plan = match crate::terrain::resource_routes::input(p) {
+        Ok(Some(bytes)) => Some(serde_json::from_slice::<
+            crate::terrain::resource_routes::Plan,
+        >(&bytes)?),
+        Ok(None) => None,
+        Err(error)
+            if error
+                .downcast_ref::<std::io::Error>()
+                .is_some_and(|e| e.kind() == std::io::ErrorKind::NotFound) =>
+        {
+            None
+        }
+        Err(error) => return Err(error),
+    };
+    let teams =
+        crate::terrain::planning_constraints::team_sides(p, positions.len(), plan.as_ref())?;
+    let separated = |axes: &[(usize, bool)]| {
+        teams.iter().enumerate().all(|(side, seats)| {
+            seats.iter().all(|seat| {
+                axes.iter().all(|&(axis, low_first)| {
+                    let low = (side == 0) == low_first;
+                    if low {
+                        positions[*seat - 1][axis] < center[axis]
+                    } else {
+                        positions[*seat - 1][axis] > center[axis]
+                    }
+                })
             })
         })
     };
-    let west_east = positions.iter().enumerate().all(|(i, point)| {
-        if i < 4 {
-            point[0] < center[0]
-        } else {
-            point[0] > center[0]
-        }
-    });
-    let mut orientations = vec![("west_east", west_east), ("south_north", matches(&[1]))];
-    let southwest = positions.iter().enumerate().all(|(i, point)| {
-        if i < 4 {
-            point[0] < center[0] && point[1] > center[1]
-        } else {
-            point[0] > center[0] && point[1] < center[1]
-        }
-    });
-    orientations.push(("southwest_northeast", southwest));
+    let orientations = vec![
+        ("west_east", separated(&[(0, true)])),
+        ("south_north", separated(&[(1, false)])),
+        ("southwest_northeast", separated(&[(0, true), (1, false)])),
+    ];
     let orientation_exception = p.cfg.get("SPAWN_ORIENTATION_EXCEPTION");
     if let Some(exception) = orientation_exception
         && (exception["layout"] != "west_east"
@@ -812,7 +825,7 @@ pub fn report(p: &Project, m: &MapFile, layout: &Layout, policy: &Policy) -> Res
             format!("orientation/{}", scene.stamp(&scene.bases)),
             1.,
             vec![],
-            "P1-P4 must all be west/south/southwest, with P5-P8 east/north/northeast respectively",
+            "the two explicitly declared teams must occupy opposite west/east, south/north or southwest/northeast sides",
         ));
     }
     let mut seats = Vec::new();
@@ -882,7 +895,7 @@ pub fn report(p: &Project, m: &MapFile, layout: &Layout, policy: &Policy) -> Res
     let passed = findings.is_empty();
     let mut checked = json!({"schema_version":1,"passed":passed,"raw_passed":passed,"status":"strict","findings":findings,
         "regressions":findings,"inherited":0,"seats":seats,"orientation":{"center":center,"accepted":accepted,"candidates":orientations},
-        "frame":scene.frame,"policy":policy,"refinery_policy":refinery});
+        "frame":scene.frame,"team_sides":teams,"policy":policy,"refinery_policy":refinery});
     if let Some(exception) = orientation_exception {
         checked["orientation"]["explicit_exception"] = exception.clone();
     }

@@ -1,0 +1,429 @@
+{
+  "hotspots": [
+    {
+      "absolute_difference_world": 320.0,
+      "ore_id": 43,
+      "relative_difference": 0.09329446064139942,
+      "side_a": {
+        "domain": "land",
+        "path_steps": 311,
+        "reachable": true,
+        "route_status": "reachable",
+        "seat": 1,
+        "start_access": [
+          145,
+          110
+        ],
+        "start_id": 1,
+        "straight_distance_world": 3100.0,
+        "target": [
+          455.0,
+          110.0
+        ],
+        "target_access": [
+          451,
+          105
+        ],
+        "target_id": 43,
+        "target_type": "OreNode",
+        "world_distance": 3110.0
+      },
+      "side_b": {
+        "domain": "land",
+        "path_steps": 343,
+        "reachable": true,
+        "route_status": "reachable",
+        "seat": 5,
+        "start_access": [
+          740,
+          105
+        ],
+        "start_id": 5,
+        "straight_distance_world": 2850.438562747845,
+        "target": [
+          455.0,
+          110.0
+        ],
+        "target_access": [
+          458,
+          104
+        ],
+        "target_id": 43,
+        "target_type": "OreNode",
+        "world_distance": 3430.0
+      }
+    },
+    {
+      "absolute_difference_world": 60.0,
+      "ore_id": 44,
+      "relative_difference": 0.018691588785046728,
+      "side_a": {
+        "domain": "land",
+        "path_steps": 321,
+        "reachable": true,
+        "route_status": "reachable",
+        "seat": 2,
+        "start_access": [
+          140,
+          260
+        ],
+        "start_id": 2,
+        "straight_distance_world": 2804.460732476032,
+        "target": [
+          415.0,
+          315.0
+        ],
+        "target_access": [
+          412,
+          309
+        ],
+        "target_id": 44,
+        "target_type": "OreNode",
+        "world_distance": 3210.0
+      },
+      "side_b": {
+        "domain": "land",
+        "path_steps": 315,
+        "reachable": true,
+        "route_status": "reachable",
+        "seat": 7,
+        "start_access": [
+          718,
+          294
+        ],
+        "start_id": 7,
+        "straight_distance_world": 3053.686296920494,
+        "target": [
+          415.0,
+          315.0
+        ],
+        "target_access": [
+          418,
+          309
+        ],
+        "target_id": 44,
+        "target_type": "OreNode",
+        "world_distance": 3150.0
+      }
+    },
+    {
+      "absolute_difference_world": 640.0,
+      "ore_id": 45,
+      "relative_difference": 0.14065934065934066,
+      "side_a": {
+        "domain": "land",
+        "path_steps": 391,
+        "reachable": true,
+        "route_status": "reachable",
+        "seat": 3,
+        "start_access": [
+          140,
+          415
+        ],
+        "start_id": 3,
+        "straight_distance_world": 2915.4759474226503,
+        "target": [
+          390.0,
+          565.0
+        ],
+        "target_access": [
+          387,
+          559
+        ],
+        "target_id": 45,
+        "target_type": "OreNode",
+        "world_distance": 3910.0
+      },
+      "side_b": {
+        "domain": "land",
+        "path_steps": 455,
+        "reachable": true,
+        "route_status": "reachable",
+        "seat": 8,
+        "start_access": [
+          748,
+          459
+        ],
+        "start_id": 8,
+        "straight_distance_world": 3736.3083384538813,
+        "target": [
+          390.0,
+          565.0
+        ],
+        "target_access": [
+          393,
+          559
+        ],
+        "target_id": 45,
+        "target_type": "OreNode",
+        "world_distance": 4550.0
+      }
+    },
+    {
+      "absolute_difference_world": 50.0,
+      "ore_id": 46,
+      "relative_difference": 0.015105740181268883,
+      "side_a": {
+        "domain": "land",
+        "path_steps": 326,
+        "reachable": true,
+        "route_status": "reachable",
+        "seat": 4,
+        "start_access": [
+          170,
+          635
+        ],
+        "start_id": 4,
+        "straight_distance_world": 2711.5493725912493,
+        "target": [
+          440.0,
+          660.0
+        ],
+        "target_access": [
+          434,
+          663
+        ],
+        "target_id": 46,
+        "target_type": "OreNode",
+        "world_distance": 3260.0
+      },
+      "side_b": {
+        "domain": "land",
+        "path_steps": 331,
+        "reachable": true,
+        "route_status": "reachable",
+        "seat": 6,
+        "start_access": [
+          745,
+          695
+        ],
+        "start_id": 6,
+        "straight_distance_world": 3070.01628660175,
+        "target": [
+          440.0,
+          660.0
+        ],
+        "target_access": [
+          446,
+          663
+        ],
+        "target_id": 46,
+        "target_type": "OreNode",
+        "world_distance": 3310.0
+      }
+    },
+    {
+      "absolute_difference_world": 1100.0,
+      "ore_id": 47,
+      "relative_difference": 0.2777777777777778,
+      "side_a": {
+        "domain": "land",
+        "path_steps": 396,
+        "reachable": true,
+        "route_status": "reachable",
+        "seat": 1,
+        "start_access": [
+          145,
+          110
+        ],
+        "start_id": 1,
+        "straight_distance_world": 3542.950747611375,
+        "target": [
+          495.0,
+          55.0
+        ],
+        "target_access": [
+          489,
+          58
+        ],
+        "target_id": 47,
+        "target_type": "OreNode",
+        "world_distance": 3960.0
+      },
+      "side_b": {
+        "domain": "land",
+        "path_steps": 286,
+        "reachable": true,
+        "route_status": "reachable",
+        "seat": 5,
+        "start_access": [
+          740,
+          105
+        ],
+        "start_id": 5,
+        "straight_distance_world": 2500.4999500099975,
+        "target": [
+          495.0,
+          55.0
+        ],
+        "target_access": [
+          501,
+          58
+        ],
+        "target_id": 47,
+        "target_type": "OreNode",
+        "world_distance": 2860.0
+      }
+    },
+    {
+      "absolute_difference_world": 1050.0,
+      "ore_id": 48,
+      "relative_difference": 0.29085872576177285,
+      "side_a": {
+        "domain": "land",
+        "path_steps": 361,
+        "reachable": true,
+        "route_status": "reachable",
+        "seat": 4,
+        "start_access": [
+          170,
+          635
+        ],
+        "start_id": 4,
+        "straight_distance_world": 3238.8269481403295,
+        "target": [
+          490.0,
+          685.0
+        ],
+        "target_access": [
+          486,
+          680
+        ],
+        "target_id": 48,
+        "target_type": "OreNode",
+        "world_distance": 3610.0
+      },
+      "side_b": {
+        "domain": "land",
+        "path_steps": 256,
+        "reachable": true,
+        "route_status": "reachable",
+        "seat": 6,
+        "start_access": [
+          745,
+          695
+        ],
+        "start_id": 6,
+        "straight_distance_world": 2551.9600310349692,
+        "target": [
+          490.0,
+          685.0
+        ],
+        "target_access": [
+          496,
+          688
+        ],
+        "target_id": 48,
+        "target_type": "OreNode",
+        "world_distance": 2560.0
+      }
+    },
+    {
+      "absolute_difference_world": 560.0,
+      "ore_id": 49,
+      "relative_difference": 0.15819209039548024,
+      "side_a": {
+        "domain": "land",
+        "path_steps": 354,
+        "reachable": true,
+        "route_status": "reachable",
+        "seat": 2,
+        "start_access": [
+          140,
+          260
+        ],
+        "start_id": 2,
+        "straight_distance_world": 3000.4166377354995,
+        "target": [
+          440.0,
+          265.0
+        ],
+        "target_access": [
+          434,
+          268
+        ],
+        "target_id": 49,
+        "target_type": "OreNode",
+        "world_distance": 3540.0
+      },
+      "side_b": {
+        "domain": "land",
+        "path_steps": 298,
+        "reachable": true,
+        "route_status": "reachable",
+        "seat": 7,
+        "start_access": [
+          718,
+          294
+        ],
+        "start_id": 7,
+        "straight_distance_world": 2821.7902119044925,
+        "target": [
+          440.0,
+          265.0
+        ],
+        "target_access": [
+          446,
+          268
+        ],
+        "target_id": 49,
+        "target_type": "OreNode",
+        "world_distance": 2980.0
+      }
+    },
+    {
+      "absolute_difference_world": 460.0,
+      "ore_id": 50,
+      "relative_difference": 0.107981220657277,
+      "side_a": {
+        "domain": "land",
+        "path_steps": 426,
+        "reachable": true,
+        "route_status": "reachable",
+        "seat": 3,
+        "start_access": [
+          140,
+          415
+        ],
+        "start_id": 3,
+        "straight_distance_world": 3315.4939300200804,
+        "target": [
+          445.0,
+          545.0
+        ],
+        "target_access": [
+          442,
+          539
+        ],
+        "target_id": 50,
+        "target_type": "OreNode",
+        "world_distance": 4260.0
+      },
+      "side_b": {
+        "domain": "land",
+        "path_steps": 380,
+        "reachable": true,
+        "route_status": "reachable",
+        "seat": 8,
+        "start_access": [
+          748,
+          459
+        ],
+        "start_id": 8,
+        "straight_distance_world": 3153.173005085512,
+        "target": [
+          445.0,
+          545.0
+        ],
+        "target_access": [
+          448,
+          539
+        ],
+        "target_id": 50,
+        "target_type": "OreNode",
+        "world_distance": 3800.0
+      }
+    }
+  ],
+  "model": "public Scene::routes, same land domain, four-neighbor static shortest walk, identical clearance/obstacles/max step for both sides"
+}

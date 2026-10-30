@@ -50,7 +50,7 @@ impl Default for Policy {
     }
 }
 pub fn policy(p: &Project) -> Result<Policy> {
-    let path = p.root.join("templates/rules/coordinate-pipeline.json");
+    let path = p.root.join("rules/coordinate-pipeline.json");
     let common: Value = match fs::read(path) {
         Ok(bytes) => serde_json::from_slice(&bytes)?,
         Err(e) if e.kind() == ErrorKind::NotFound => json!({}),
@@ -104,15 +104,15 @@ pub fn binding(p: &Project) -> Result<Value> {
         "terrain_only":p.flag("TERRAIN_ONLY")}))
 }
 
-#[derive(Deserialize)]
-struct Plan {
-    home_radius: Option<f64>,
-    home_maximum: Option<usize>,
-    home_ores_per_seat: Option<usize>,
-    override_reason: Option<String>,
-    mine_count: Option<usize>,
-    routes: Vec<Route>,
-    slots: Vec<Slot>,
+#[derive(Clone, Debug, Deserialize, Serialize)]
+pub struct Plan {
+    pub home_radius: Option<f64>,
+    pub home_maximum: Option<usize>,
+    pub home_ores_per_seat: Option<usize>,
+    pub override_reason: Option<String>,
+    pub mine_count: Option<usize>,
+    pub routes: Vec<Route>,
+    pub slots: Vec<Slot>,
 }
 fn home_ores(plan: &Plan, policy: &Policy) -> Result<usize> {
     let count = plan.home_ores_per_seat.unwrap_or(policy.home_ores_per_seat);
@@ -122,24 +122,110 @@ fn home_ores(plan: &Plan, policy: &Policy) -> Result<usize> {
     Ok(count)
 }
 
-#[derive(Deserialize)]
-struct Route {
-    id: usize,
+#[derive(Clone, Debug, Deserialize, Serialize)]
+pub struct Route {
+    pub id: usize,
     #[serde(alias = "north_seat")]
-    side_a_seat: usize,
+    pub side_a_seat: usize,
     #[serde(alias = "south_seat")]
-    side_b_seat: usize,
-    main_path: Vec<[f64; 2]>,
-    secondary_path: Vec<[f64; 2]>,
+    pub side_b_seat: usize,
+    pub main_path: Vec<[f64; 2]>,
+    pub secondary_path: Vec<[f64; 2]>,
 }
-#[derive(Deserialize)]
-struct Slot {
-    seat: usize,
-    ordinal: usize,
-    ore_id: usize,
+#[derive(Clone, Debug, Deserialize, Serialize)]
+pub struct Slot {
+    pub seat: usize,
+    pub ordinal: usize,
+    pub ore_id: usize,
     #[serde(default)]
-    route_id: Option<usize>,
+    pub route_id: Option<usize>,
 }
+/// A formal slot failure retains native identity for bounded planning repair.
+#[derive(Clone, Debug, Serialize)]
+pub struct Violation {
+    pub rule: String,
+    pub seat: usize,
+    pub ordinal: usize,
+    pub objects: Vec<usize>,
+    pub detail: String,
+}
+impl std::fmt::Display for Violation {
+    fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
+        f.write_str(&self.detail)
+    }
+}
+impl std::error::Error for Violation {}
+fn slot_error(slot: &Slot, rule: &str, detail: impl Into<String>) -> crate::Error {
+    Box::new(Violation {
+        rule: rule.into(),
+        seat: slot.seat,
+        ordinal: slot.ordinal,
+        objects: vec![slot.ore_id],
+        detail: detail.into(),
+    })
+}
+
+impl Plan {
+    pub fn load(p: &Project) -> Result<Option<Self>> {
+        input(p)?
+            .map(|bytes| serde_json::from_slice(&bytes).map_err(Into::into))
+            .transpose()
+    }
+    pub fn slot_for_ore(&self, ore_id: usize) -> Option<&Slot> {
+        self.slots.iter().find(|slot| slot.ore_id == ore_id)
+    }
+    pub fn route_for_slot(&self, slot: &Slot) -> Option<&Route> {
+        self.routes.iter().find(|route| {
+            Some(route.id) == slot.route_id
+                && [route.side_a_seat, route.side_b_seat].contains(&slot.seat)
+        })
+    }
+    pub fn home_ores(&self, policy: &Policy) -> Result<usize> {
+        home_ores(self, policy)
+    }
+}
+
+impl Policy {
+    /// Progress is measured in the authored route direction, never by seat number.
+    pub fn progress_band(&self, route: &Route, seat: usize, ordinal: usize) -> Result<[f64; 2]> {
+        if ![route.side_a_seat, route.side_b_seat].contains(&seat) {
+            return Err(err("resource stage seat is not part of its declared route"));
+        }
+        Ok(match ordinal {
+            3 | 4 if seat == route.side_a_seat => self.fourth_progress,
+            3 | 4 => [1. - self.fourth_progress[1], 1. - self.fourth_progress[0]],
+            5 => self.hotspot_progress,
+            6 => [0., 1.],
+            _ => return Err(err("route stages are the third through sixth ore")),
+        })
+    }
+    pub fn stage_matches(
+        &self,
+        route: &Route,
+        seat: usize,
+        ordinal: usize,
+        point: [f64; 2],
+    ) -> Result<bool> {
+        if route.main_path.len() < 2 || route.secondary_path.len() < 2 {
+            return Err(err(
+                "resource route requires at least two points on both paths",
+            ));
+        }
+        let (main, progress) = projection(point, &route.main_path);
+        let (secondary, _) = projection(point, &route.secondary_path);
+        let band = self.progress_band(route, seat, ordinal)?;
+        Ok(match ordinal {
+            3..=5 => {
+                main <= self.main_route_max_distance && (band[0]..=band[1]).contains(&progress)
+            }
+            6 => {
+                secondary <= self.secondary_max_distance && main >= self.secondary_min_main_distance
+            }
+            _ => false,
+        })
+    }
+}
+
 pub fn input(p: &Project) -> Result<Option<Vec<u8>>> {
     p.cfg
         .get("RESOURCE_DISTRIBUTION")
@@ -154,7 +240,7 @@ pub fn input(p: &Project) -> Result<Option<Vec<u8>>> {
 fn distance(a: [f64; 2], b: [f64; 2]) -> f64 {
     (a[0] - b[0]).hypot(a[1] - b[1])
 }
-fn projection(point: [f64; 2], path: &[[f64; 2]]) -> (f64, f64) {
+pub fn projection(point: [f64; 2], path: &[[f64; 2]]) -> (f64, f64) {
     let (i, d) = path
         .iter()
         .enumerate()
@@ -187,7 +273,7 @@ pub fn validate(p: &Project, m: &MapFile) -> Result<Option<Value>> {
         return Err(err("invalid resource expansion plan"));
     }
     let objects = map::objects(m.get("ObjectsList")?, &m.table)?;
-    let frame = Frame::from_project(p);
+    let frame = Frame::from_heightmap(p, &map::HeightMap::parse(m.get("HeightMapData")?)?)?;
     let mut bases = vec![None; 8];
     for o in &objects {
         let name = map::prop(&o.props, "waypointName")
@@ -224,12 +310,13 @@ pub fn validate(p: &Project, m: &MapFile) -> Result<Option<Value>> {
             "resource plan must cover every actual ore exactly once",
         ));
     }
+    let teams = crate::terrain::planning_constraints::team_sides(p, bases.len(), Some(&plan))?;
     let mut route_ids = BTreeSet::new();
     let mut seats = BTreeSet::new();
     for r in &plan.routes {
         if !route_ids.insert(r.id)
-            || !(1..=4).contains(&r.side_a_seat)
-            || !(5..=8).contains(&r.side_b_seat)
+            || !teams[0].contains(&r.side_a_seat)
+            || !teams[1].contains(&r.side_b_seat)
             || !seats.insert(r.side_a_seat)
             || !seats.insert(r.side_b_seat)
             || [&r.main_path, &r.secondary_path].iter().any(|line| {
@@ -282,24 +369,35 @@ pub fn validate(p: &Project, m: &MapFile) -> Result<Option<Value>> {
             .1;
         let home = distance(point, bases[slot.seat - 1]);
         if slot.ordinal <= 2 && home > near {
-            return Err(err("opening ores must remain inside the near-ore radius"));
+            return Err(slot_error(
+                slot,
+                "opening_radius",
+                "opening ores must remain inside the near-ore radius",
+            ));
         }
         if slot.ordinal == 3 && home <= near {
-            return Err(err(
+            return Err(slot_error(
+                slot,
+                "third_radius",
                 "third ore must lie beyond the two opening ores' radius",
             ));
         }
         let mut row = json!({"seat":slot.seat,"ordinal":slot.ordinal,"ore_id":slot.ore_id,"cell":point,"home_distance":home});
         if slot.ordinal <= home_ores_per_seat {
             if home > home_radius {
-                return Err(err(format!(
-                    "P{} ore {} left the home area",
-                    slot.seat, slot.ordinal
-                )));
+                return Err(slot_error(
+                    slot,
+                    "home_radius",
+                    format!("P{} ore {} left the home area", slot.seat, slot.ordinal),
+                ));
             }
         } else {
             if bases.iter().any(|b| distance(point, *b) <= home_radius) {
-                return Err(err("all expansion ores must leave every home area"));
+                return Err(slot_error(
+                    slot,
+                    "expansion_home_intrusion",
+                    "all expansion ores must leave every home area",
+                ));
             }
             let route = plan
                 .routes
@@ -308,43 +406,48 @@ pub fn validate(p: &Project, m: &MapFile) -> Result<Option<Value>> {
                     Some(r.id) == slot.route_id
                         && (r.side_a_seat == slot.seat || r.side_b_seat == slot.seat)
                 })
-                .ok_or_else(|| err("expansion slot has no route for its seat"))?;
+                .ok_or_else(|| {
+                    slot_error(
+                        slot,
+                        "missing_route",
+                        "expansion slot has no route for its seat",
+                    )
+                })?;
             let (main, progress) = projection(point, &route.main_path);
             let (secondary, _) = projection(point, &route.secondary_path);
             match slot.ordinal {
                 3 | 4 => {
-                    let expected = if slot.seat == route.side_a_seat {
-                        policy.fourth_progress[0]..=policy.fourth_progress[1]
-                    } else {
-                        (1. - policy.fourth_progress[1])..=(1. - policy.fourth_progress[0])
-                    };
-                    if main > policy.main_route_max_distance || !expected.contains(&progress) {
-                        return Err(err(format!(
-                            "P{} {} ore does not lead into its main route",
-                            slot.seat,
-                            if slot.ordinal == 3 { "third" } else { "fourth" }
-                        )));
+                    if !policy.stage_matches(route, slot.seat, slot.ordinal, point)? {
+                        return Err(slot_error(
+                            slot,
+                            "main_route",
+                            format!(
+                                "P{} {} ore does not lead into its main route",
+                                slot.seat,
+                                if slot.ordinal == 3 { "third" } else { "fourth" }
+                            ),
+                        ));
                     }
                 }
                 5 => {
-                    if main > policy.main_route_max_distance
-                        || !(policy.hotspot_progress[0]..=policy.hotspot_progress[1])
-                            .contains(&progress)
-                    {
-                        return Err(err(format!(
-                            "P{} fifth ore is outside the contested hotspot",
-                            slot.seat
-                        )));
+                    if !policy.stage_matches(route, slot.seat, slot.ordinal, point)? {
+                        return Err(slot_error(
+                            slot,
+                            "hotspot",
+                            format!("P{} fifth ore is outside the contested hotspot", slot.seat),
+                        ));
                     }
                 }
                 6 => {
-                    if secondary > policy.secondary_max_distance
-                        || main < policy.secondary_min_main_distance
-                    {
-                        return Err(err(format!(
-                            "P{} sixth ore is not on a distinct secondary route",
-                            slot.seat
-                        )));
+                    if !policy.stage_matches(route, slot.seat, slot.ordinal, point)? {
+                        return Err(slot_error(
+                            slot,
+                            "secondary_route",
+                            format!(
+                                "P{} sixth ore is not on a distinct secondary route",
+                                slot.seat
+                            ),
+                        ));
                     }
                 }
                 _ => unreachable!(),

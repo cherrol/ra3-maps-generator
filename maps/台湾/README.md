@@ -14,7 +14,7 @@
 
 ## 2026-10-29 游戏预览水域整理
 
-按[公共水域整理规则](../../docs/terrain_preview.md#游戏水域整理)，相邻分叉与碎水优先就近合并、圆整为宽阔闭合水面，无法合理合并的细小水域并入附近陆地层；开阔海域保留并清理窄水道。当前基础图与中心标点图均使用设计水域。真实高程、边界、取景和原始来源掩码保持一致，岸线调整不作为真实水体面积资料。
+按[公共水域整理规则](../../docs/spec/terrain_preview.md#游戏水域整理)，相邻分叉与碎水优先就近合并、圆整为宽阔闭合水面，无法合理合并的细小水域并入附近陆地层；开阔海域保留并清理窄水道。当前基础图与中心标点图均使用设计水域。真实高程、边界、取景和原始来源掩码保持一致，岸线调整不作为真实水体面积资料。
 
 [当前预览](preview--line.png) · [中心标点版](preview--center--line.png) · [本图整理规则](data/terrain-preview/water-shaping.json) · [水域统计](data/terrain-preview/water-report.json) · [验收记录](data/terrain-preview/water-verification.json)
 

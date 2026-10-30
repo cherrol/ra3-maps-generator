@@ -11,7 +11,7 @@ use serde::{Deserialize, Serialize};
 use serde_json::{Value as Json, json};
 use std::collections::BTreeMap;
 
-const POLICY_SOURCE: &str = "templates/rules/common-T0.5.1.json";
+const POLICY_SOURCE: &str = "rules/common-T0.5.1.json";
 
 #[derive(Clone, Debug, Deserialize, Serialize)]
 struct FootprintRule {
@@ -1081,7 +1081,7 @@ mod tests {
     fn every_ruleset_reads_the_public_policy_and_rejects_wrong_surfaces() {
         let directory =
             std::env::temp_dir().join(format!("ra3-public-placement-{}", std::process::id()));
-        let rules = directory.join("templates/rules");
+        let rules = directory.join("rules");
         std::fs::create_dir_all(&rules).unwrap();
         let path = rules.join("common-T0.5.1.json");
         let mut common = json!({"production_placement": {

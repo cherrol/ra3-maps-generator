@@ -517,7 +517,9 @@ fn audit_projected(p: &Project, projection: &Projection) -> Result<Json> {
         if !p.assets.join("spatial.zip").is_file() {
             reports_archive(p)?;
         }
-        return Ok(cached);
+        let mut reused = cached;
+        reused["cache_hit"] = json!(true);
+        return Ok(reused);
     }
     let (mut report, issues) = analyse(p, m, layout, Some(s))?;
     let baseline: Vec<Issue> = serde_json::from_slice(&baseline_bytes)?;
@@ -527,6 +529,7 @@ fn audit_projected(p: &Project, projection: &Projection) -> Result<Json> {
     report["baseline_issues"] = json!(baseline.len());
     report["inherited_issues"] = json!(issues.len() - regressions.len());
     report["input_crc32"] = json!(input_crc32);
+    report["cache_hit"] = json!(false);
     let mut md = format!(
         "# {} 坐标制作检查\n\n检查结果：{}。原生对象 {}，斜坡 {}，资源路线关系 {}。\n\n当前问题 {}，继承放行 {}；全部成品统一要求零问题。\n\n",
         p.name,

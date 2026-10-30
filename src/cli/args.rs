@@ -10,6 +10,28 @@ pub(super) struct Args {
     pub(super) set: Option<String>,
     pub(super) show: bool,
     pub(super) positional: Vec<String>,
+    pub(super) planning: PlanningArgs,
+}
+#[derive(Default)]
+pub(super) struct PlanningArgs {
+    pub(super) budget: Option<u64>,
+    pub(super) time_limit: Option<u64>,
+    pub(super) seed: Option<u64>,
+    pub(super) output: Option<PathBuf>,
+    pub(super) resume: bool,
+    pub(super) candidate_limit: Option<usize>,
+    pub(super) radius: Option<f64>,
+}
+impl PlanningArgs {
+    pub(super) fn specified(&self) -> bool {
+        self.budget.is_some()
+            || self.time_limit.is_some()
+            || self.seed.is_some()
+            || self.output.is_some()
+            || self.resume
+            || self.candidate_limit.is_some()
+            || self.radius.is_some()
+    }
 }
 pub(super) fn parse(input: &[String]) -> Result<Args> {
     let mut a = Args::default();
@@ -24,6 +46,13 @@ pub(super) fn parse(input: &[String]) -> Result<Args> {
                 .ok_or_else(|| err(format!("{arg} requires a value")))
         };
         match arg.as_str() {
+            "--budget" => a.planning.budget = Some(val()?.parse()?),
+            "--time-limit" => a.planning.time_limit = Some(val()?.parse()?),
+            "--seed" => a.planning.seed = Some(val()?.parse()?),
+            "--output" => a.planning.output = Some(val()?.into()),
+            "--resume" => a.planning.resume = true,
+            "--candidate-limit" => a.planning.candidate_limit = Some(val()?.parse()?),
+            "--radius" => a.planning.radius = Some(val()?.parse()?),
             "--root" => a.root = Some(val()?.into()),
             "--map" => a.map = Some(val()?),
             "--only" => a.opts.only.push(val()?),
@@ -71,4 +100,34 @@ pub(super) fn find_root(a: &Args) -> Result<PathBuf> {
         }
     }
     Err(err("cannot find project root; use --root or RA3MAP_ROOT"))
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+    #[test]
+    fn planning_options_are_explicit_and_missing_values_fail() {
+        let values = [
+            "--budget",
+            "40",
+            "--time-limit",
+            "2",
+            "--seed",
+            "7",
+            "--resume",
+            "--candidate-limit",
+            "12",
+            "--radius",
+            "24",
+            "--output",
+            "candidate.json",
+        ]
+        .map(str::to_owned);
+        let args = parse(&values).unwrap();
+        assert_eq!(args.planning.budget, Some(40));
+        assert_eq!(args.planning.seed, Some(7));
+        assert!(args.planning.resume);
+        assert!(parse(&["--budget".into()]).is_err());
+        assert!(parse(&["--radius".into(), "invalid".into()]).is_err());
+    }
 }

@@ -52,7 +52,7 @@ fn stage_enabled(options: &Options, stage: &str) -> bool {
 }
 
 #[derive(Default)]
-struct StageInputs(Option<(Terrain, Surface)>);
+struct StageInputs(Option<(Terrain, Surface)>, Vec<serde_json::Value>);
 
 impl StageInputs {
     fn surface(&mut self, p: &Project) -> Result<&(Terrain, Surface)> {
@@ -66,6 +66,17 @@ impl StageInputs {
 }
 
 pub fn run(root: &Path, id: &str, options: &Options) -> Result<Project> {
+    let original = Project::load(root, id)?;
+    crate::pipeline::telemetry::attempt(&original, "build", |log| {
+        run_logged(root, id, options, log)
+    })
+}
+fn run_logged(
+    root: &Path,
+    id: &str,
+    options: &Options,
+    log: &mut crate::pipeline::telemetry::RunLog,
+) -> Result<Project> {
     for stage in options.only.iter().chain(&options.skip) {
         if !STAGES.contains(&stage.as_str()) {
             return Err(err(format!("unknown build stage {stage}")));
@@ -73,6 +84,8 @@ pub fn run(root: &Path, id: &str, options: &Options) -> Result<Project> {
     }
     let original = Project::load(root, id)?;
     let selected_layers = crate::terrain::layers::SelectedLayers::load(&original)?;
+    let run_inputs = crate::pipeline::run_inputs::RunInputs::capture(&original)?;
+    log.inputs(run_inputs.manifest())?;
     if !crate::pipeline::coordinate_pipeline::enabled(&original)
         && options.only.iter().any(|s| s == "spatial")
     {
@@ -115,12 +128,19 @@ pub fn run(root: &Path, id: &str, options: &Options) -> Result<Project> {
         p.ensure_dirs()?;
         crate::coordinates::prepare(&p)?;
         let mut inputs = StageInputs::default();
-        for stage in STAGES {
+        for &stage in &STAGES {
             if !stage_enabled(options, stage) {
                 continue;
             }
             println!("\n---- {stage} ----");
-            run_stage(&p, stage, options, &mut inputs)?;
+            log.stage(stage, || {
+                run_inputs.verify()?;
+                run_stage(&p, stage, options, &mut inputs)?;
+                run_inputs.verify()
+            })?;
+            for event in inputs.1.drain(..) {
+                log.event("cache", event)?;
+            }
         }
         if options.install && crate::pipeline::coordinate_pipeline::enabled(&p) {
             crate::pipeline::coordinate_pipeline::accept(&p)?;
@@ -148,7 +168,9 @@ pub fn run(root: &Path, id: &str, options: &Options) -> Result<Project> {
         return Err(error);
     }
     if options.install {
-        install(&p).map_err(|e| err(format!("构建已完成，安装失败：{e}")))?;
+        log.stage("install", || {
+            install(&p).map_err(|e| err(format!("构建已完成，安装失败：{e}")))
+        })?;
     }
     Ok(p)
 }
@@ -169,7 +191,8 @@ fn run_stage(p: &Project, stage: &str, options: &Options, inputs: &mut StageInpu
             inputs.0 = None;
         }
         "passability" | "spatial" if frozen => {
-            crate::pipeline::coordinate_pipeline::audit(p)?;
+            let report = crate::pipeline::coordinate_pipeline::audit(p)?;
+            inputs.1.push(serde_json::json!({"stage":stage,"check":"coordinate-audit","hit":report["cache_hit"]}));
         }
         "passability" => {
             let (t, s) = inputs.surface(p)?;
@@ -244,6 +267,10 @@ fn assembled_layout(
             moves.push((source.cell, cell));
         }
         source.cell = cell;
+        source.angle = object.angle;
+        source.props = object.props.clone();
+        source.version = object.version;
+        source.road_type = object.road_type;
     }
     // Update each declaration from its original coordinate once, including
     // moves into another object's former position.
@@ -263,6 +290,15 @@ fn assembled_layout(
             if let Some((_, cell)) = moves.iter().find(|(before, _)| before == point) {
                 *point = *cell;
             }
+        }
+    }
+    for (point, angle) in layout.ore_cells.iter().zip(&mut layout.ore_angles) {
+        if let Some(object) = layout
+            .objects
+            .iter()
+            .find(|o| o.type_name == "OreNode" && o.cell == *point)
+        {
+            *angle = -f64::from(object.angle);
         }
     }
     for object in actual
@@ -347,9 +383,6 @@ fn assemble_with_previews(
             serde_json::from_slice(&fs::read(p.assets.join("production-spawns.json"))?)?;
         crate::gameplay::production_spawns::refresh_report(p, &m, &mut spawn_report)?;
         project::write_json(&p.assets.join("production-spawns.json"), &spawn_report)?;
-        let actual = map::objects(m.get("ObjectsList")?, &m.table)?;
-        let layout = assembled_layout(p, &t.layout, &actual)?;
-        project::write_json(&p.source().join("layout.json"), &layout)?;
         crate::gameplay::script_spawns::refresh_report(p, &m)?;
     }
     if !p.flag("TERRAIN_ONLY")
@@ -373,6 +406,23 @@ fn assemble_with_previews(
     map::write_props(&mut w, &props, &m)?;
     m.get_mut("WorldInfo")?.payload = w.data;
     m.get_mut("StandingWaterAreas")?.payload = water(p)?;
+    let preflight_layout = assembled_layout(
+        p,
+        &t.layout,
+        &map::objects(m.get("ObjectsList")?, &m.table)?,
+    )?;
+    let preflight = crate::terrain::preflight::check_native(p, &m, &preflight_layout)?;
+    project::write_json(&p.assets.join("preflight-native.json"), &preflight)?;
+    if crate::terrain::preflight::require_native(&preflight).is_err() {
+        return Err(err(format!(
+            "完整布局预检失败；详见 {}",
+            p.assets.join("preflight-native.json").display()
+        )));
+    }
+    let mut final_terrain = t.clone();
+    final_terrain.layout = preflight_layout;
+    final_terrain.save(p)?;
+    let t = &final_terrain;
     // Share the accepted finished-map rules with ordinary builds. Apply after
     // objects and gameplay masks are fixed, so only materials vary.
     let mut textured = if crate::terrain::texture_polish::enabled(p)? {
@@ -528,9 +578,11 @@ mod tests {
         let first_position = actual[0].position;
         actual[0].position = actual[1].position;
         actual[1].position = first_position;
+        actual[0].angle = std::f32::consts::FRAC_PI_2;
         let layout = assembled_layout(&p, &saved, &actual).unwrap();
         assert_eq!(layout.shipyard_cells, vec![[60., 60.], [32., 32.]]);
         assert_eq!(layout.hospital_cells, saved.hospital_cells);
+        assert_eq!(layout.objects[0].angle, actual[0].angle);
         for (object, cell) in layout.objects.iter().zip(&layout.shipyard_cells) {
             assert_eq!(object.cell, *cell);
         }

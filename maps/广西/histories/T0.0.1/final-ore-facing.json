@@ -1,0 +1,740 @@
+{
+  "allowed_degrees": [
+    45,
+    135,
+    -45,
+    -135
+  ],
+  "checked_actions": 0,
+  "checked_objects": 48,
+  "failed_actions": 0,
+  "failed_objects": 0,
+  "native_crc32": 2234449502,
+  "objects": [
+    {
+      "degrees": 135.00000034162267,
+      "native_radians": 2.356194496154785,
+      "nearest_allowed_error_radians": 5.962440319251527e-9,
+      "normalized_degrees": 135.00000034162267,
+      "object_id": 11,
+      "passed": true,
+      "type": "OreNode",
+      "unique_id": "GX-ORE-P1-1",
+      "world": [
+        1840.0,
+        7090.0,
+        0.0
+      ]
+    },
+    {
+      "degrees": -135.00000034162267,
+      "native_radians": -2.356194496154785,
+      "nearest_allowed_error_radians": 5.962440319251527e-9,
+      "normalized_degrees": -135.00000034162267,
+      "object_id": 12,
+      "passed": true,
+      "type": "OreNode",
+      "unique_id": "GX-ORE-P1-2",
+      "world": [
+        1250.0,
+        7680.0,
+        0.0
+      ]
+    },
+    {
+      "degrees": 135.00000034162267,
+      "native_radians": 2.356194496154785,
+      "nearest_allowed_error_radians": 5.962440319251527e-9,
+      "normalized_degrees": 135.00000034162267,
+      "object_id": 13,
+      "passed": true,
+      "type": "OreNode",
+      "unique_id": "GX-ORE-P2-1",
+      "world": [
+        1790.0,
+        5590.0,
+        0.0
+      ]
+    },
+    {
+      "degrees": -45.00000125223908,
+      "native_radians": -0.7853981852531433,
+      "nearest_allowed_error_radians": 2.185569503154738e-8,
+      "normalized_degrees": -45.00000125223908,
+      "object_id": 14,
+      "passed": true,
+      "type": "OreNode",
+      "unique_id": "GX-ORE-P2-2",
+      "world": [
+        610.0,
+        5590.0,
+        0.0
+      ]
+    },
+    {
+      "degrees": 135.00000034162267,
+      "native_radians": 2.356194496154785,
+      "nearest_allowed_error_radians": 5.962440319251527e-9,
+      "normalized_degrees": 135.00000034162267,
+      "object_id": 15,
+      "passed": true,
+      "type": "OreNode",
+      "unique_id": "GX-ORE-P3-1",
+      "world": [
+        1750.0,
+        3810.0,
+        0.0
+      ]
+    },
+    {
+      "degrees": 45.00000125223908,
+      "native_radians": 0.7853981852531433,
+      "nearest_allowed_error_radians": 2.185569503154738e-8,
+      "normalized_degrees": 45.00000125223908,
+      "object_id": 16,
+      "passed": true,
+      "type": "OreNode",
+      "unique_id": "GX-ORE-P3-2",
+      "world": [
+        970.0,
+        3490.0,
+        0.0
+      ]
+    },
+    {
+      "degrees": -135.00000034162267,
+      "native_radians": -2.356194496154785,
+      "nearest_allowed_error_radians": 5.962440319251527e-9,
+      "normalized_degrees": -135.00000034162267,
+      "object_id": 17,
+      "passed": true,
+      "type": "OreNode",
+      "unique_id": "GX-ORE-P4-1",
+      "world": [
+        2090.0,
+        1840.0,
+        0.0
+      ]
+    },
+    {
+      "degrees": -45.00000125223908,
+      "native_radians": -0.7853981852531433,
+      "nearest_allowed_error_radians": 2.185569503154738e-8,
+      "normalized_degrees": -45.00000125223908,
+      "object_id": 18,
+      "passed": true,
+      "type": "OreNode",
+      "unique_id": "GX-ORE-P4-2",
+      "world": [
+        950.0,
+        2070.0,
+        0.0
+      ]
+    },
+    {
+      "degrees": 45.00000125223908,
+      "native_radians": 0.7853981852531433,
+      "nearest_allowed_error_radians": 2.185569503154738e-8,
+      "normalized_degrees": 45.00000125223908,
+      "object_id": 19,
+      "passed": true,
+      "type": "OreNode",
+      "unique_id": "GX-ORE-P5-1",
+      "world": [
+        7480.0,
+        6640.0,
+        0.0
+      ]
+    },
+    {
+      "degrees": -135.00000034162267,
+      "native_radians": -2.356194496154785,
+      "nearest_allowed_error_radians": 5.962440319251527e-9,
+      "normalized_degrees": -135.00000034162267,
+      "object_id": 20,
+      "passed": true,
+      "type": "OreNode",
+      "unique_id": "GX-ORE-P5-2",
+      "world": [
+        7620.0,
+        7560.0,
+        0.0
+      ]
+    },
+    {
+      "degrees": -45.00000125223908,
+      "native_radians": -0.7853981852531433,
+      "nearest_allowed_error_radians": 2.185569503154738e-8,
+      "normalized_degrees": -45.00000125223908,
+      "object_id": 21,
+      "passed": true,
+      "type": "OreNode",
+      "unique_id": "GX-ORE-P6-1",
+      "world": [
+        6700.0,
+        1440.0,
+        0.0
+      ]
+    },
+    {
+      "degrees": -135.00000034162267,
+      "native_radians": -2.356194496154785,
+      "nearest_allowed_error_radians": 5.962440319251527e-9,
+      "normalized_degrees": -135.00000034162267,
+      "object_id": 22,
+      "passed": true,
+      "type": "OreNode",
+      "unique_id": "GX-ORE-P6-2",
+      "world": [
+        7640.0,
+        1690.0,
+        0.0
+      ]
+    },
+    {
+      "degrees": 135.00000034162267,
+      "native_radians": 2.356194496154785,
+      "nearest_allowed_error_radians": 5.962440319251527e-9,
+      "normalized_degrees": 135.00000034162267,
+      "object_id": 23,
+      "passed": true,
+      "type": "OreNode",
+      "unique_id": "GX-ORE-P7-1",
+      "world": [
+        7550.0,
+        4960.0,
+        0.0
+      ]
+    },
+    {
+      "degrees": 45.00000125223908,
+      "native_radians": 0.7853981852531433,
+      "nearest_allowed_error_radians": 2.185569503154738e-8,
+      "normalized_degrees": 45.00000125223908,
+      "object_id": 24,
+      "passed": true,
+      "type": "OreNode",
+      "unique_id": "GX-ORE-P7-2",
+      "world": [
+        6770.0,
+        4640.0,
+        0.0
+      ]
+    },
+    {
+      "degrees": -45.00000125223908,
+      "native_radians": -0.7853981852531433,
+      "nearest_allowed_error_radians": 2.185569503154738e-8,
+      "normalized_degrees": -45.00000125223908,
+      "object_id": 25,
+      "passed": true,
+      "type": "OreNode",
+      "unique_id": "GX-ORE-P8-1",
+      "world": [
+        6750.0,
+        3770.0,
+        0.0
+      ]
+    },
+    {
+      "degrees": -135.00000034162267,
+      "native_radians": -2.356194496154785,
+      "nearest_allowed_error_radians": 5.962440319251527e-9,
+      "normalized_degrees": -135.00000034162267,
+      "object_id": 26,
+      "passed": true,
+      "type": "OreNode",
+      "unique_id": "GX-ORE-P8-2",
+      "world": [
+        7570.0,
+        4090.0,
+        0.0
+      ]
+    },
+    {
+      "degrees": -45.00000125223908,
+      "native_radians": -0.7853981852531433,
+      "nearest_allowed_error_radians": 2.185569503154738e-8,
+      "normalized_degrees": -45.00000125223908,
+      "object_id": 27,
+      "passed": true,
+      "type": "OreNode",
+      "unique_id": "GX-ORE-P1-3",
+      "world": [
+        2550.0,
+        7090.0,
+        0.0
+      ]
+    },
+    {
+      "degrees": 45.00000125223908,
+      "native_radians": 0.7853981852531433,
+      "nearest_allowed_error_radians": 2.185569503154738e-8,
+      "normalized_degrees": 45.00000125223908,
+      "object_id": 28,
+      "passed": true,
+      "type": "OreNode",
+      "unique_id": "GX-ORE-P2-3",
+      "world": [
+        2050.0,
+        4990.0,
+        0.0
+      ]
+    },
+    {
+      "degrees": -135.00000034162267,
+      "native_radians": -2.356194496154785,
+      "nearest_allowed_error_radians": 5.962440319251527e-9,
+      "normalized_degrees": -135.00000034162267,
+      "object_id": 29,
+      "passed": true,
+      "type": "OreNode",
+      "unique_id": "GX-ORE-P3-3",
+      "world": [
+        1550.0,
+        2940.0,
+        0.0
+      ]
+    },
+    {
+      "degrees": -45.00000125223908,
+      "native_radians": -0.7853981852531433,
+      "nearest_allowed_error_radians": 2.185569503154738e-8,
+      "normalized_degrees": -45.00000125223908,
+      "object_id": 30,
+      "passed": true,
+      "type": "OreNode",
+      "unique_id": "GX-ORE-P4-3",
+      "world": [
+        2400.0,
+        1190.0,
+        0.0
+      ]
+    },
+    {
+      "degrees": 45.00000125223908,
+      "native_radians": 0.7853981852531433,
+      "nearest_allowed_error_radians": 2.185569503154738e-8,
+      "normalized_degrees": 45.00000125223908,
+      "object_id": 31,
+      "passed": true,
+      "type": "OreNode",
+      "unique_id": "GX-ORE-P5-3",
+      "world": [
+        6050.0,
+        7490.0,
+        0.0
+      ]
+    },
+    {
+      "degrees": -135.00000034162267,
+      "native_radians": -2.356194496154785,
+      "nearest_allowed_error_radians": 5.962440319251527e-9,
+      "normalized_degrees": -135.00000034162267,
+      "object_id": 32,
+      "passed": true,
+      "type": "OreNode",
+      "unique_id": "GX-ORE-P6-3",
+      "world": [
+        6050.0,
+        1240.0,
+        0.0
+      ]
+    },
+    {
+      "degrees": 45.00000125223908,
+      "native_radians": 0.7853981852531433,
+      "nearest_allowed_error_radians": 2.185569503154738e-8,
+      "normalized_degrees": 45.00000125223908,
+      "object_id": 33,
+      "passed": true,
+      "type": "OreNode",
+      "unique_id": "GX-ORE-P7-3",
+      "world": [
+        5700.0,
+        5690.0,
+        0.0
+      ]
+    },
+    {
+      "degrees": 45.00000125223908,
+      "native_radians": 0.7853981852531433,
+      "nearest_allowed_error_radians": 2.185569503154738e-8,
+      "normalized_degrees": 45.00000125223908,
+      "object_id": 34,
+      "passed": true,
+      "type": "OreNode",
+      "unique_id": "GX-ORE-P8-3",
+      "world": [
+        6250.0,
+        3190.0,
+        0.0
+      ]
+    },
+    {
+      "degrees": -45.00000125223908,
+      "native_radians": -0.7853981852531433,
+      "nearest_allowed_error_radians": 2.185569503154738e-8,
+      "normalized_degrees": -45.00000125223908,
+      "object_id": 35,
+      "passed": true,
+      "type": "OreNode",
+      "unique_id": "GX-ORE-P1-4",
+      "world": [
+        3350.0,
+        7090.0,
+        0.0
+      ]
+    },
+    {
+      "degrees": -135.00000034162267,
+      "native_radians": -2.356194496154785,
+      "nearest_allowed_error_radians": 5.962440319251527e-9,
+      "normalized_degrees": -135.00000034162267,
+      "object_id": 36,
+      "passed": true,
+      "type": "OreNode",
+      "unique_id": "GX-ORE-P2-4",
+      "world": [
+        2850.0,
+        5090.0,
+        0.0
+      ]
+    },
+    {
+      "degrees": -135.00000034162267,
+      "native_radians": -2.356194496154785,
+      "nearest_allowed_error_radians": 5.962440319251527e-9,
+      "normalized_degrees": -135.00000034162267,
+      "object_id": 37,
+      "passed": true,
+      "type": "OreNode",
+      "unique_id": "GX-ORE-P3-4",
+      "world": [
+        2550.0,
+        2440.0,
+        0.0
+      ]
+    },
+    {
+      "degrees": 135.00000034162267,
+      "native_radians": 2.356194496154785,
+      "nearest_allowed_error_radians": 5.962440319251527e-9,
+      "normalized_degrees": 135.00000034162267,
+      "object_id": 38,
+      "passed": true,
+      "type": "OreNode",
+      "unique_id": "GX-ORE-P4-4",
+      "world": [
+        3150.0,
+        990.0,
+        0.0
+      ]
+    },
+    {
+      "degrees": -135.00000034162267,
+      "native_radians": -2.356194496154785,
+      "nearest_allowed_error_radians": 5.962440319251527e-9,
+      "normalized_degrees": -135.00000034162267,
+      "object_id": 39,
+      "passed": true,
+      "type": "OreNode",
+      "unique_id": "GX-ORE-P5-4",
+      "world": [
+        5400.0,
+        7640.0,
+        0.0
+      ]
+    },
+    {
+      "degrees": 45.00000125223908,
+      "native_radians": 0.7853981852531433,
+      "nearest_allowed_error_radians": 2.185569503154738e-8,
+      "normalized_degrees": 45.00000125223908,
+      "object_id": 40,
+      "passed": true,
+      "type": "OreNode",
+      "unique_id": "GX-ORE-P6-4",
+      "world": [
+        5300.0,
+        1240.0,
+        0.0
+      ]
+    },
+    {
+      "degrees": -45.00000125223908,
+      "native_radians": -0.7853981852531433,
+      "nearest_allowed_error_radians": 2.185569503154738e-8,
+      "normalized_degrees": -45.00000125223908,
+      "object_id": 41,
+      "passed": true,
+      "type": "OreNode",
+      "unique_id": "GX-ORE-P7-4",
+      "world": [
+        5250.0,
+        4790.0,
+        0.0
+      ]
+    },
+    {
+      "degrees": 45.00000125223908,
+      "native_radians": 0.7853981852531433,
+      "nearest_allowed_error_radians": 2.185569503154738e-8,
+      "normalized_degrees": 45.00000125223908,
+      "object_id": 42,
+      "passed": true,
+      "type": "OreNode",
+      "unique_id": "GX-ORE-P8-4",
+      "world": [
+        5500.0,
+        2890.0,
+        0.0
+      ]
+    },
+    {
+      "degrees": -135.00000034162267,
+      "native_radians": -2.356194496154785,
+      "nearest_allowed_error_radians": 5.962440319251527e-9,
+      "normalized_degrees": -135.00000034162267,
+      "object_id": 43,
+      "passed": true,
+      "type": "OreNode",
+      "unique_id": "GX-ORE-P1-5",
+      "world": [
+        4350.0,
+        7090.0,
+        0.0
+      ]
+    },
+    {
+      "degrees": -45.00000125223908,
+      "native_radians": -0.7853981852531433,
+      "nearest_allowed_error_radians": 2.185569503154738e-8,
+      "normalized_degrees": -45.00000125223908,
+      "object_id": 44,
+      "passed": true,
+      "type": "OreNode",
+      "unique_id": "GX-ORE-P2-5",
+      "world": [
+        3950.0,
+        5040.0,
+        0.0
+      ]
+    },
+    {
+      "degrees": -45.00000125223908,
+      "native_radians": -0.7853981852531433,
+      "nearest_allowed_error_radians": 2.185569503154738e-8,
+      "normalized_degrees": -45.00000125223908,
+      "object_id": 45,
+      "passed": true,
+      "type": "OreNode",
+      "unique_id": "GX-ORE-P3-5",
+      "world": [
+        3700.0,
+        2540.0,
+        0.0
+      ]
+    },
+    {
+      "degrees": 45.00000125223908,
+      "native_radians": 0.7853981852531433,
+      "nearest_allowed_error_radians": 2.185569503154738e-8,
+      "normalized_degrees": 45.00000125223908,
+      "object_id": 46,
+      "passed": true,
+      "type": "OreNode",
+      "unique_id": "GX-ORE-P4-5",
+      "world": [
+        4200.0,
+        1590.0,
+        0.0
+      ]
+    },
+    {
+      "degrees": -45.00000125223908,
+      "native_radians": -0.7853981852531433,
+      "nearest_allowed_error_radians": 2.185569503154738e-8,
+      "normalized_degrees": -45.00000125223908,
+      "object_id": 47,
+      "passed": true,
+      "type": "OreNode",
+      "unique_id": "GX-ORE-P5-5",
+      "world": [
+        4750.0,
+        7640.0,
+        0.0
+      ]
+    },
+    {
+      "degrees": 45.00000125223908,
+      "native_radians": 0.7853981852531433,
+      "nearest_allowed_error_radians": 2.185569503154738e-8,
+      "normalized_degrees": 45.00000125223908,
+      "object_id": 48,
+      "passed": true,
+      "type": "OreNode",
+      "unique_id": "GX-ORE-P6-5",
+      "world": [
+        4700.0,
+        1340.0,
+        0.0
+      ]
+    },
+    {
+      "degrees": -45.00000125223908,
+      "native_radians": -0.7853981852531433,
+      "nearest_allowed_error_radians": 2.185569503154738e-8,
+      "normalized_degrees": -45.00000125223908,
+      "object_id": 49,
+      "passed": true,
+      "type": "OreNode",
+      "unique_id": "GX-ORE-P7-5",
+      "world": [
+        4200.0,
+        5540.0,
+        0.0
+      ]
+    },
+    {
+      "degrees": -45.00000125223908,
+      "native_radians": -0.7853981852531433,
+      "nearest_allowed_error_radians": 2.185569503154738e-8,
+      "normalized_degrees": -45.00000125223908,
+      "object_id": 50,
+      "passed": true,
+      "type": "OreNode",
+      "unique_id": "GX-ORE-P8-5",
+      "world": [
+        4250.0,
+        2740.0,
+        0.0
+      ]
+    },
+    {
+      "degrees": -45.00000125223908,
+      "native_radians": -0.7853981852531433,
+      "nearest_allowed_error_radians": 2.185569503154738e-8,
+      "normalized_degrees": -45.00000125223908,
+      "object_id": 51,
+      "passed": true,
+      "type": "OreNode",
+      "unique_id": "GX-ORE-P1-6",
+      "world": [
+        3200.0,
+        6290.0,
+        0.0
+      ]
+    },
+    {
+      "degrees": 135.00000034162267,
+      "native_radians": 2.356194496154785,
+      "nearest_allowed_error_radians": 5.962440319251527e-9,
+      "normalized_degrees": 135.00000034162267,
+      "object_id": 52,
+      "passed": true,
+      "type": "OreNode",
+      "unique_id": "GX-ORE-P2-6",
+      "world": [
+        3250.0,
+        5590.0,
+        0.0
+      ]
+    },
+    {
+      "degrees": 45.00000125223908,
+      "native_radians": 0.7853981852531433,
+      "nearest_allowed_error_radians": 2.185569503154738e-8,
+      "normalized_degrees": 45.00000125223908,
+      "object_id": 53,
+      "passed": true,
+      "type": "OreNode",
+      "unique_id": "GX-ORE-P3-6",
+      "world": [
+        3050.0,
+        3340.0,
+        0.0
+      ]
+    },
+    {
+      "degrees": -45.00000125223908,
+      "native_radians": -0.7853981852531433,
+      "nearest_allowed_error_radians": 2.185569503154738e-8,
+      "normalized_degrees": -45.00000125223908,
+      "object_id": 54,
+      "passed": true,
+      "type": "OreNode",
+      "unique_id": "GX-ORE-P4-6",
+      "world": [
+        4700.0,
+        2140.0,
+        0.0
+      ]
+    },
+    {
+      "degrees": -135.00000034162267,
+      "native_radians": -2.356194496154785,
+      "nearest_allowed_error_radians": 5.962440319251527e-9,
+      "normalized_degrees": -135.00000034162267,
+      "object_id": 55,
+      "passed": true,
+      "type": "OreNode",
+      "unique_id": "GX-ORE-P5-6",
+      "world": [
+        6150.0,
+        6290.0,
+        0.0
+      ]
+    },
+    {
+      "degrees": -45.00000125223908,
+      "native_radians": -0.7853981852531433,
+      "nearest_allowed_error_radians": 2.185569503154738e-8,
+      "normalized_degrees": -45.00000125223908,
+      "object_id": 56,
+      "passed": true,
+      "type": "OreNode",
+      "unique_id": "GX-ORE-P6-6",
+      "world": [
+        5650.0,
+        1940.0,
+        0.0
+      ]
+    },
+    {
+      "degrees": 45.00000125223908,
+      "native_radians": 0.7853981852531433,
+      "nearest_allowed_error_radians": 2.185569503154738e-8,
+      "normalized_degrees": 45.00000125223908,
+      "object_id": 57,
+      "passed": true,
+      "type": "OreNode",
+      "unique_id": "GX-ORE-P7-6",
+      "world": [
+        3800.0,
+        6440.0,
+        0.0
+      ]
+    },
+    {
+      "degrees": -135.00000034162267,
+      "native_radians": -2.356194496154785,
+      "nearest_allowed_error_radians": 5.962440319251527e-9,
+      "normalized_degrees": -135.00000034162267,
+      "object_id": 58,
+      "passed": true,
+      "type": "OreNode",
+      "unique_id": "GX-ORE-P8-6",
+      "world": [
+        5100.0,
+        3290.0,
+        0.0
+      ]
+    }
+  ],
+  "passed": true,
+  "pending_actions": 0,
+  "scope": "OreNode objects and explicit typed/named ore script creation and orientation; other buildings and unresolved indirect script targets require the complete building-facing acceptance",
+  "script_actions": [],
+  "tolerance_radians": 1e-6
+}

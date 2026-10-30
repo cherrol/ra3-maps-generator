@@ -31,12 +31,12 @@ pub struct Policy {
 
 /// Resolve the same common policy for new blueprints and frozen native sources.
 pub fn policy(p: &Project) -> Result<Policy> {
-    let path = p.root.join("templates/rules/coordinate-pipeline.json");
+    let path = p.root.join("rules/coordinate-pipeline.json");
     let mut data: Json = match fs::read(path) {
         Ok(bytes) => serde_json::from_slice(&bytes)?,
-        Err(error) if error.kind() == std::io::ErrorKind::NotFound => serde_json::from_str(
-            include_str!("../../templates/rules/coordinate-pipeline.json"),
-        )?,
+        Err(error) if error.kind() == std::io::ErrorKind::NotFound => {
+            serde_json::from_str(include_str!("../../rules/coordinate-pipeline.json"))?
+        }
         Err(error) => return Err(error.into()),
     };
     if let Some(value) = p.cfg["COORDINATE_PIPELINE"].get("policy")

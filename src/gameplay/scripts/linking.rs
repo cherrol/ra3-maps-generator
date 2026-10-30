@@ -12,7 +12,7 @@ pub fn load_rules(p: &Project) -> Result<Rules> {
     let key = p.string("RULESET", &p.id);
     crate::pipeline::project::safe_component(key)?;
     Ok(serde_json::from_slice(&fs::read(
-        p.root.join("templates/rules").join(format!("{key}.json")),
+        p.root.join("rules").join(format!("{key}.json")),
     )?)?)
 }
 pub fn apply(map: &mut MapFile, p: &Project) -> Result<()> {

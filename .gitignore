@@ -159,3 +159,22 @@ __pycache__/
 !/maps/*/data/terrain-preview/raw/before-intrusion-repair-2026-10-30/report.json
 !/maps/*/data/terrain-preview/raw/before-intrusion-repair-2026-10-30/parameters.json
 !/maps/*/data/terrain-preview/raw/before-intrusion-repair-2026-10-30/water-layer-verification.json
+
+# 广西：原预览保护交接、历史撤回审计及本轮独立验收证据。
+!/maps/广西/data/authoring-handoff/
+!/maps/广西/data/authoring-handoff/2026-10-30/
+!/maps/广西/data/authoring-handoff/2026-10-30/README.md
+!/maps/广西/data/authoring-handoff/2026-10-30/preview-lock.json
+!/maps/广西/data/authoring-handoff/2026-10-30/handoff-status.json
+!/maps/广西/data/authoring-handoff/2026-10-30/candidate-terrain-diff.json
+!/maps/广西/data/authoring-handoff/2026-10-30/locked-reference.npz
+!/maps/广西/data/authoring-handoff/2026-10-30/audit.rs
+!/maps/广西/data/authoring-handoff/2026-10-30/Cargo.toml
+!/maps/广西/data/authoring-handoff/2026-10-30/Cargo.lock
+
+!/maps/广西/histories/T0.0.1/functional-corridors.png
+!/maps/广西/histories/T0.0.1/native-field-contact-sheet.png
+!/maps/广西/histories/T0.0.1/production-steps.md
+
+# Standard per-release measured evidence archive.
+!/maps/*/histories/[TV][0-9]*/evidence.zip

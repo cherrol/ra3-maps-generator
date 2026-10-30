@@ -50,7 +50,7 @@ impl Policy {
 }
 pub fn policy(p: &Project) -> Result<Option<Policy>> {
     let mut fields = serde_json::to_value(Policy::default())?;
-    let path = p.root.join("templates/rules/coordinate-pipeline.json");
+    let path = p.root.join("rules/coordinate-pipeline.json");
     let common: Value = match fs::read(path) {
         Ok(bytes) => serde_json::from_slice(&bytes)?,
         Err(e) if e.kind() == std::io::ErrorKind::NotFound => json!({}),
@@ -460,7 +460,7 @@ mod tests {
     #[test]
     fn common_policy_is_enabled_and_merges_shared_and_local_fields() {
         let mut f = Fixture::new();
-        let directory = f.0.root.join("templates/rules");
+        let directory = f.0.root.join("rules");
         fs::create_dir_all(&directory).unwrap();
         fs::write(
             directory.join("coordinate-pipeline.json"),

@@ -5,7 +5,7 @@ use std::sync::OnceLock;
 fn defaults() -> &'static Value {
     static VALUE: OnceLock<Value> = OnceLock::new();
     VALUE.get_or_init(|| {
-        serde_json::from_str(include_str!("../templates/rules/coordinate-pipeline.json"))
+        serde_json::from_str(include_str!("../rules/coordinate-pipeline.json"))
             .expect("valid bundled coordinate-pipeline rules")
     })
 }

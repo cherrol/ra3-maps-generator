@@ -15,9 +15,8 @@ const DIRECTION: &str = "opposing_team_center";
 pub const ALLOWED_DEGREES: [i32; 4] = [45, 135, -45, -135];
 
 fn enabled(p: &Project) -> Result<bool> {
-    let common: Json = serde_json::from_slice(&std::fs::read(
-        p.root.join("templates/rules/common-T0.5.1.json"),
-    )?)?;
+    let common: Json =
+        serde_json::from_slice(&std::fs::read(p.root.join("rules/common-T0.5.1.json"))?)?;
     if common["production_placement"]["facing"].as_str() != Some(DIRECTION) {
         return Err(err(
             "public production facing must use opposing_team_center",

@@ -1,0 +1,45 @@
+{
+  "native_crc32": 2234449502,
+  "reviewer": "Codex current native data review, separate from build reports",
+  "reviewed_at": "2026-10-30T15:27:57Z",
+  "scope": "13 added ramps; all 8088 original design-boundary edges; 44 native boundary paths; all 915 playable shore edges; all 226 gift building branches with all 110 primary/fallback groups",
+  "geometry": {
+    "status": "passed",
+    "basis": "All 13 declared ramps have continuous full-width native profiles, zero blocked samples, max step <=2.071 and endpoint error <=0.04. Extended straight probes disclose neighboring original cliffs outside the +/-20 ramp span; these original barriers are retained. Actual approaches and resource connections are traced separately, with full functional reservations. No source-mask changes or height changes outside authorized ramp footprints.",
+    "evidence": [
+      "terrain-profiles.json",
+      "terrain-interface-inventory.json",
+      "native-source-conformance.json",
+      "native-spatial.json",
+      "functional-corridors.json"
+    ]
+  },
+  "materials": {
+    "status": "passed_for_encoded_placement",
+    "basis": "Both native blend planes and cliff-index plane exported for the complete grid. First-plane blends occupy 44472 cells; second-plane and cliff-UV indices are zero, so no uninspected active secondary/cliff mapping. Native references and atlas validated. All 13 ramp windows show continuous terrain material across the pass; side cliff strips terminate at the opening and connect to unchanged tier edges. Original open-sea cliff coastline retains a sand marker, not a falsely labelled amphibious transition.",
+    "evidence": [
+      "native-fields.npz",
+      "native-material-table.json",
+      "native-field-contact-sheet.png",
+      "native-field-visual-index.json"
+    ],
+    "limitation": "Field schematic supports material placement/transition alignment. Actual diffuse/normal texture and engine water appearance were not rendered, and no gameplay/GUI claim is made."
+  },
+  "navigation": {
+    "status": "passed",
+    "basis": "Full 24-cell ramp lanes open in both directions; all 432 base/resource routes reachable; eight final full-reservation combat corridors >=10.2368 cells; 96 production branch base-to-exit paths connected under full foundation union. Shores are measured symmetric barriers, not designated amphibious access.",
+    "evidence": [
+      "native-spatial.json",
+      "functional-corridors.json",
+      "production-proximity-review.json",
+      "shoreline-review.json"
+    ]
+  },
+  "user_priority": {
+    "source_preview_preservation": "User explicitly prohibits terrain changes except new ramps. Therefore original west/east sea imbalance and 16 noncombat source tip samples are retained; no gifts intersect those tips and all chosen battle corridors meet width. Default preview-cleanup changes would violate the authorized scope.",
+    "source_tip_locations": "functional-corridors.json#thin_source_tips",
+    "terrain_change_scope": "ramp-only-rebuild.json"
+  },
+  "visual_review": "Reviewed native-field-contact-sheet.png: 4x4 contact sheet of all 13 passes and 3 shoreline/cliff checks, linked to full-grid fields and exact profiles. It is clearly labelled schematic; no source PNG is edited.",
+  "passed": true
+}

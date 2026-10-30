@@ -1,0 +1,174 @@
+{
+  "findings": [],
+  "frame": {
+    "border": 20,
+    "cell_size": 10.0,
+    "height": 840,
+    "width": 840,
+    "z_scale": 0.0390625
+  },
+  "inherited": 0,
+  "orientation": {
+    "accepted": [
+      "west_east"
+    ],
+    "candidates": [
+      [
+        "west_east",
+        true
+      ],
+      [
+        "south_north",
+        false
+      ],
+      [
+        "southwest_northeast",
+        false
+      ]
+    ],
+    "center": [
+      419.5,
+      419.5
+    ]
+  },
+  "passed": true,
+  "policy": {
+    "base_radius": 24.0,
+    "flat_tolerance": 3.0,
+    "near_ore_radius": 62.0,
+    "ore_radius": 20.0
+  },
+  "raw_passed": true,
+  "refinery_policy": {
+    "approach_extension": 25.0,
+    "gap": 8.0,
+    "refinery_back": 5.0,
+    "refinery_forward": 48.0,
+    "refinery_half_width": 18.0
+  },
+  "regressions": [],
+  "schema_version": 1,
+  "seats": [
+    {
+      "base": [
+        145.0,
+        110.0
+      ],
+      "group_key": "P1/0:Waypoint:449c4000:45dd9000:00000000:{\"owner\":null,\"uniqueID\":\"GX-WP-0001\",\"waypointName\":\"Player_1_Start\"};10:OreNode:44e60000:45dd9000:4016cbe4:{\"owner\":\"PlyrNeutral/teamPlyrNeutral\",\"uniqueID\":\"GX-ORE-P1-1\",\"waypointName\":null};11:OreNode:449c4000:45f00000:c016cbe4:{\"owner\":\"PlyrNeutral/teamPlyrNeutral\",\"uniqueID\":\"GX-ORE-P1-2\",\"waypointName\":null}",
+      "height": 350.0,
+      "ore_ids": [
+        11,
+        12
+      ],
+      "seat": 1,
+      "start_id": 1,
+      "water": false
+    },
+    {
+      "base": [
+        140.0,
+        260.0
+      ],
+      "group_key": "P2/1:Waypoint:44960000:45aeb000:00000000:{\"owner\":null,\"uniqueID\":\"GX-WP-0002\",\"waypointName\":\"Player_2_Start\"};12:OreNode:44dfc000:45aeb000:4016cbe4:{\"owner\":\"PlyrNeutral/teamPlyrNeutral\",\"uniqueID\":\"GX-ORE-P2-1\",\"waypointName\":null};13:OreNode:44188000:45aeb000:bf490fdb:{\"owner\":\"PlyrNeutral/teamPlyrNeutral\",\"uniqueID\":\"GX-ORE-P2-2\",\"waypointName\":null}",
+      "height": 350.0,
+      "ore_ids": [
+        13,
+        14
+      ],
+      "seat": 2,
+      "start_id": 2,
+      "water": false
+    },
+    {
+      "base": [
+        140.0,
+        415.0
+      ],
+      "group_key": "P3/2:Waypoint:44960000:457c8000:00000000:{\"owner\":null,\"uniqueID\":\"GX-WP-0003\",\"waypointName\":\"Player_3_Start\"};14:OreNode:44dac000:456e2000:4016cbe4:{\"owner\":\"PlyrNeutral/teamPlyrNeutral\",\"uniqueID\":\"GX-ORE-P3-1\",\"waypointName\":null};15:OreNode:44728000:455a2000:3f490fdb:{\"owner\":\"PlyrNeutral/teamPlyrNeutral\",\"uniqueID\":\"GX-ORE-P3-2\",\"waypointName\":null}",
+      "height": 350.0,
+      "ore_ids": [
+        15,
+        16
+      ],
+      "seat": 3,
+      "start_id": 3,
+      "water": false
+    },
+    {
+      "base": [
+        170.0,
+        635.0
+      ],
+      "group_key": "P4/3:Waypoint:44bb8000:44e60000:00000000:{\"owner\":null,\"uniqueID\":\"GX-WP-0004\",\"waypointName\":\"Player_4_Start\"};16:OreNode:4502a000:44e60000:c016cbe4:{\"owner\":\"PlyrNeutral/teamPlyrNeutral\",\"uniqueID\":\"GX-ORE-P4-1\",\"waypointName\":null};17:OreNode:446d8000:45016000:bf490fdb:{\"owner\":\"PlyrNeutral/teamPlyrNeutral\",\"uniqueID\":\"GX-ORE-P4-2\",\"waypointName\":null}",
+      "height": 280.0,
+      "ore_ids": [
+        17,
+        18
+      ],
+      "seat": 4,
+      "start_id": 4,
+      "water": false
+    },
+    {
+      "base": [
+        740.0,
+        105.0
+      ],
+      "group_key": "P5/4:Waypoint:45e10000:45df2000:00000000:{\"owner\":null,\"uniqueID\":\"GX-WP-0005\",\"waypointName\":\"Player_5_Start\"};18:OreNode:45e9c000:45cf8000:3f490fdb:{\"owner\":\"PlyrNeutral/teamPlyrNeutral\",\"uniqueID\":\"GX-ORE-P5-1\",\"waypointName\":null};19:OreNode:45ee2000:45ec4000:c016cbe4:{\"owner\":\"PlyrNeutral/teamPlyrNeutral\",\"uniqueID\":\"GX-ORE-P5-2\",\"waypointName\":null}",
+      "height": 280.0,
+      "ore_ids": [
+        19,
+        20
+      ],
+      "seat": 5,
+      "start_id": 5,
+      "water": false
+    },
+    {
+      "base": [
+        745.0,
+        695.0
+      ],
+      "group_key": "P6/5:Waypoint:45e29000:449b0000:00000000:{\"owner\":null,\"uniqueID\":\"GX-WP-0006\",\"waypointName\":\"Player_6_Start\"};20:OreNode:45d16000:44b40000:bf490fdb:{\"owner\":\"PlyrNeutral/teamPlyrNeutral\",\"uniqueID\":\"GX-ORE-P6-1\",\"waypointName\":null};21:OreNode:45eec000:44d34000:c016cbe4:{\"owner\":\"PlyrNeutral/teamPlyrNeutral\",\"uniqueID\":\"GX-ORE-P6-2\",\"waypointName\":null}",
+      "height": 210.0,
+      "ore_ids": [
+        21,
+        22
+      ],
+      "seat": 6,
+      "start_id": 6,
+      "water": false
+    },
+    {
+      "base": [
+        720.0,
+        300.0
+      ],
+      "group_key": "P7/6:Waypoint:45dac000:45a23000:00000000:{\"owner\":null,\"uniqueID\":\"GX-WP-0007\",\"waypointName\":\"Player_7_Start (imported)\"};22:OreNode:45ebf000:459b0000:4016cbe4:{\"owner\":\"PlyrNeutral/teamPlyrNeutral\",\"uniqueID\":\"GX-ORE-P7-1\",\"waypointName\":null};23:OreNode:45d39000:45910000:3f490fdb:{\"owner\":\"PlyrNeutral/teamPlyrNeutral\",\"uniqueID\":\"GX-ORE-P7-2\",\"waypointName\":null}",
+      "height": 280.0,
+      "ore_ids": [
+        23,
+        24
+      ],
+      "seat": 7,
+      "start_id": 7,
+      "water": false
+    },
+    {
+      "base": [
+        750.0,
+        465.0
+      ],
+      "group_key": "P8/7:Waypoint:45e42000:455d4000:00000000:{\"owner\":null,\"uniqueID\":\"GX-WP-0008\",\"waypointName\":\"Player_8_Start (imported)\"};24:OreNode:45d2f000:456ba000:bf490fdb:{\"owner\":\"PlyrNeutral/teamPlyrNeutral\",\"uniqueID\":\"GX-ORE-P8-1\",\"waypointName\":null};25:OreNode:45ec9000:457fa000:c016cbe4:{\"owner\":\"PlyrNeutral/teamPlyrNeutral\",\"uniqueID\":\"GX-ORE-P8-2\",\"waypointName\":null}",
+      "height": 210.0,
+      "ore_ids": [
+        25,
+        26
+      ],
+      "seat": 8,
+      "start_id": 8,
+      "water": false
+    }
+  ],
+  "status": "strict"
+}

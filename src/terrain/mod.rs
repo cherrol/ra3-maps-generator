@@ -1,4 +1,5 @@
 //! Terrain generation, native edits, navigation and resource placement checks.
+pub mod corridors;
 pub mod grid;
 pub mod layers;
 mod layout;
@@ -7,6 +8,9 @@ pub use layout::{Layout, ObjectSpec};
 pub mod materials;
 pub mod mobility;
 pub mod native_cell_edits;
+pub mod planner;
+pub mod planning_constraints;
+pub mod preflight;
 pub mod ramp_clearance;
 pub mod ramps;
 pub mod resource_routes;
@@ -175,12 +179,42 @@ pub fn carve(z: &mut [f64], n: usize, ramps: &[Value], p: &Project) -> Result<()
     }
     Ok(())
 }
+fn terrain_input_fingerprint(p: &Project, declared: &Layout) -> Result<String> {
+    let source = fs::read(p.path(p.string("LAYERS", "layers.npz"))?)?;
+    let keys = [
+        "GRID",
+        "GRID_HEIGHT",
+        "BORDER",
+        "CELL",
+        "Z_SCALE",
+        "WATER_Z",
+        "LAND_Z",
+        "HEIGHT_PRESET",
+        "TERRAIN",
+        "RAMP_PROFILE",
+    ];
+    let settings = keys
+        .into_iter()
+        .map(|key| {
+            (
+                key.to_owned(),
+                p.cfg.get(key).cloned().unwrap_or(Value::Null),
+            )
+        })
+        .collect::<serde_json::Map<_, _>>();
+    let bytes = serde_json::to_vec(
+        &serde_json::json!({"algorithm":"terrain-input-v1","blueprint_sha256":crate::formats::sha256::hex(&source),"settings":settings,"declared_layout":declared}),
+    )?;
+    Ok(crate::formats::sha256::hex(&bytes))
+}
 impl Terrain {
     pub fn height(&self) -> usize {
         self.raw.len() / self.n
     }
     pub fn generate(p: &Project) -> Result<Self> {
-        crate::coordinates::prepare(p)?;
+        // Generation is also used by read-only planning. Persist declarations
+        // only in save/build, never while inspecting selected inputs.
+        crate::coordinates::Frame::from_project(p).validate()?;
         if !p.terrain_flag("use_v11_layers")
             || !p.cfg["TERRAIN"]["v11_plain"].as_bool().unwrap_or(true)
         {
@@ -361,7 +395,16 @@ impl Terrain {
             .flat_map(|v| v.to_le_bytes())
             .collect::<Vec<_>>();
         let land = self.land.iter().map(|v| *v as u8).collect::<Vec<_>>();
-        let arrays = vec![
+        // Bind selected declarations, not the final native snapshot (which may
+        // contain generated gift waypoints). Both have distinct responsibilities.
+        let frozen = crate::pipeline::coordinate_pipeline::enabled(p);
+        let declared = if frozen || !p.path(p.string("LAYOUT", "layout.json"))?.is_file() {
+            self.layout.clone()
+        } else {
+            Layout::load(p)?
+        };
+        let layout_crc = crc32fast::hash(&serde_json::to_vec(&declared)?);
+        let mut arrays = vec![
             (
                 "raw.npy".into(),
                 encode("<u2", &[self.height(), self.n], &raw),
@@ -370,7 +413,29 @@ impl Terrain {
                 "land.npy".into(),
                 encode("|b1", &[self.height(), self.n], &land),
             ),
+            (
+                "layout_crc32.npy".into(),
+                encode("<f8", &[], &(layout_crc as f64).to_le_bytes()),
+            ),
         ];
+        if !frozen {
+            let snapshot = crate::formats::sha256::hex(&serde_json::to_vec(&self.layout)?);
+            arrays.push((
+                "layout_snapshot_sha256.npy".into(),
+                encode("|u1", &[snapshot.len()], snapshot.as_bytes()),
+            ));
+            // Native-only exports may save diagnostics without declarations.
+            // Such artifacts are not reusable new-map assembly caches.
+            if p.path(p.string("LAYOUT", "layout.json"))?.is_file()
+                && p.path(p.string("LAYERS", "layers.npz"))?.is_file()
+            {
+                let fingerprint = terrain_input_fingerprint(p, &declared)?;
+                arrays.push((
+                    "terrain_input_sha256.npy".into(),
+                    encode("|u1", &[fingerprint.len()], fingerprint.as_bytes()),
+                ));
+            }
+        }
         fs::write(p.source().join("terrain.npz"), zip(&arrays)?)?;
         write_json(&p.source().join("layout.json"), &self.layout)?;
         Ok(())
@@ -405,7 +470,41 @@ impl Terrain {
             .into_iter()
             .map(|v| v != 0.)
             .collect::<Vec<_>>();
+        if let Some(bytes) = archive.get("layout_crc32.npy")
+            && !crate::pipeline::coordinate_pipeline::enabled(p)
+        {
+            let expected = Npy::parse(bytes)?.numbers()?.first().copied().unwrap_or(0.) as u32;
+            let declared = Layout::load(p)?;
+            let actual = crc32fast::hash(&serde_json::to_vec(&declared)?);
+            if actual != expected {
+                return Err(err(
+                    "布局自上次地形阶段后已变更；请先重新运行 terrain 阶段再组装地图",
+                ));
+            }
+        }
+        if !crate::pipeline::coordinate_pipeline::enabled(p) {
+            let fingerprint = archive.get("terrain_input_sha256.npy").ok_or_else(||err("terrain cache has no selected-input fingerprint; run the terrain stage before assembly"))?;
+            let stored = Npy::parse(fingerprint)?;
+            let declared = Layout::load(p)?;
+            if stored.bytes != terrain_input_fingerprint(p, &declared)?.as_bytes() {
+                return Err(err(
+                    "selected blueprint, layout or terrain settings changed; run the terrain stage before assembly",
+                ));
+            }
+        }
         let layout: Layout = serde_json::from_slice(&fs::read(p.source().join("layout.json"))?)?;
+        if !crate::pipeline::coordinate_pipeline::enabled(p) {
+            let fingerprint = archive.get("layout_snapshot_sha256.npy").ok_or_else(|| {
+                err("terrain cache has no final-layout snapshot fingerprint; run the terrain stage before assembly")
+            })?;
+            let stored = Npy::parse(fingerprint)?;
+            let actual = crate::formats::sha256::hex(&serde_json::to_vec(&layout)?);
+            if stored.shape != [actual.len()] || stored.bytes != actual.as_bytes() {
+                return Err(err(
+                    "cached final layout snapshot changed; run the terrain stage before assembly",
+                ));
+            }
+        }
         let z = raw
             .iter()
             .map(|&v| v as f64 * p.number("Z_SCALE", 0.))
@@ -516,6 +615,91 @@ mod tests {
         fixture.0.cfg.as_object_mut().unwrap().remove("LAYERS");
         assert_eq!(from_version.raw, Terrain::generate(&fixture.0).unwrap().raw);
         assert_eq!(from_version.raw, vec![420; 64]);
+    }
+
+    #[test]
+    fn cached_terrain_rejects_a_layout_edited_after_generation() {
+        let fixture = Fixture::new();
+        fixture.blueprint("layers.npz", 420);
+        let terrain = Terrain::generate(&fixture.0).unwrap();
+        terrain.save(&fixture.0).unwrap();
+        assert_eq!(Terrain::load(&fixture.0).unwrap().raw, terrain.raw);
+        let path = fixture.0.path("layout.json").unwrap();
+        let mut layout: serde_json::Value =
+            serde_json::from_slice(&fs::read(&path).unwrap()).unwrap();
+        layout["base_cells"][0] = json!([1, 1]);
+        write_json(&path, &layout).unwrap();
+        let error = Terrain::load(&fixture.0).unwrap_err().to_string();
+        assert!(error.contains("布局"), "{error}");
+    }
+
+    #[test]
+    fn cached_terrain_rejects_changed_blueprint_and_keeps_final_layout_snapshot() {
+        let fixture = Fixture::new();
+        fixture.blueprint("layers.npz", 420);
+        let mut terrain = Terrain::generate(&fixture.0).unwrap();
+        terrain.layout.city_cells.push([2., 2.]); // a derived snapshot may have extra metadata
+        terrain.save(&fixture.0).unwrap();
+        assert_eq!(
+            Terrain::load(&fixture.0).unwrap().layout.city_cells,
+            vec![[2., 2.]]
+        );
+        fixture.blueprint("layers.npz", 560);
+        assert!(
+            Terrain::load(&fixture.0)
+                .unwrap_err()
+                .to_string()
+                .contains("blueprint")
+        );
+    }
+
+    #[test]
+    fn cached_terrain_rejects_tampered_derived_snapshot_with_unchanged_declaration() {
+        let fixture = Fixture::new();
+        fixture.blueprint("layers.npz", 420);
+        let terrain = Terrain::generate(&fixture.0).unwrap();
+        terrain.save(&fixture.0).unwrap();
+        let declaration = fs::read(fixture.0.path("layout.json").unwrap()).unwrap();
+        let path = fixture.0.source().join("layout.json");
+        let mut snapshot: Layout = serde_json::from_slice(&fs::read(&path).unwrap()).unwrap();
+        snapshot.city_cells.push([3., 3.]);
+        write_json(&path, &snapshot).unwrap();
+        assert_eq!(
+            fs::read(fixture.0.path("layout.json").unwrap()).unwrap(),
+            declaration
+        );
+        let error = Terrain::load(&fixture.0).unwrap_err().to_string();
+        assert!(
+            error.contains("snapshot changed") && error.contains("terrain stage"),
+            "{error}"
+        );
+        // Re-saving the actual, intentionally finalized snapshot is legitimate.
+        let mut finalized = terrain;
+        finalized.layout = snapshot;
+        finalized.save(&fixture.0).unwrap();
+        assert_eq!(
+            Terrain::load(&fixture.0).unwrap().layout.city_cells,
+            vec![[3., 3.]]
+        );
+    }
+
+    #[test]
+    fn cached_terrain_requires_derived_snapshot_digest_for_new_map_assembly() {
+        let fixture = Fixture::new();
+        fixture.blueprint("layers.npz", 420);
+        Terrain::generate(&fixture.0)
+            .unwrap()
+            .save(&fixture.0)
+            .unwrap();
+        let path = fixture.0.source().join("terrain.npz");
+        let mut arrays = unzip(&fs::read(&path).unwrap()).unwrap();
+        arrays.remove("layout_snapshot_sha256.npy");
+        fs::write(&path, zip(&arrays.into_iter().collect::<Vec<_>>()).unwrap()).unwrap();
+        let error = Terrain::load(&fixture.0).unwrap_err().to_string();
+        assert!(
+            error.contains("snapshot fingerprint") && error.contains("terrain stage"),
+            "{error}"
+        );
     }
 
     #[test]

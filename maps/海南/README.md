@@ -10,4 +10,4 @@
 - [原始输入](data/terrain-preview/input.npz)、[当前分层数组](data/terrain-preview/terrain.npz)与[分层报告](data/terrain-preview/report.json)。
 - [尺寸核对](data/terrain-preview/square-verification.json)、[水域统计](data/terrain-preview/water-report.json)及原始地理资料保留。
 
-后续制作按[公共地形预览规范](../../docs/terrain_preview.md)与[公共地图约束](../../docs/map_rules.md)重新规划出生、对位进攻路线、沿线坡口和资源布局。现有预览不代表原生通行、可建造或完整交付验收已经通过。
+后续制作按[公共地形预览规范](../../docs/spec/terrain_preview.md)与[公共地图约束](../../docs/spec/map_rules.md)重新规划出生、对位进攻路线、沿线坡口和资源布局。现有预览不代表原生通行、可建造或完整交付验收已经通过。

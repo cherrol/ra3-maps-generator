@@ -1,0 +1,164 @@
+{
+  "added_texture_families": [],
+  "after": {
+    "Dirt_Iceland05": 31514,
+    "Grass_CapeCod05": 255432,
+    "Grass_Geneva01": 62743,
+    "Grass_MtRush04": 137687,
+    "Grass_NewYork01": 140187,
+    "RA3_ShallowSeaFloor": 29112,
+    "Reef_Yucatan01": 17115,
+    "Rock_Yucatan01": 10404,
+    "Rock_Yucatan03": 18554,
+    "Sand_Hawaii02": 2852
+  },
+  "all_gameplay_bitmaps_unchanged": true,
+  "before": {
+    "Grass_CapeCod05": 236936,
+    "Grass_MtRush04": 195285,
+    "Grass_NewYork01": 181348,
+    "RA3_ShallowSeaFloor": 21952,
+    "Reef_Yucatan01": 18104,
+    "Rock_Yucatan01": 23349,
+    "Rock_Yucatan03": 18107,
+    "Sand_Hawaii02": 10519
+  },
+  "blend_descriptions": 2807,
+  "changed_texture_cells": 167804,
+  "excluded_patterned_grass": [
+    "Grass_CapeCod01",
+    "Grass_CapeCod03",
+    "Grass_CapeCod07",
+    "Grass_Golf01",
+    "Grass_Golf03",
+    "Grass_Golf05"
+  ],
+  "existing_atlas_and_resource_ids_unchanged": true,
+  "finalization": {
+    "after": {
+      "Dirt_Iceland05": 31514,
+      "Grass_CapeCod05": 255432,
+      "Grass_Geneva01": 62743,
+      "Grass_MtRush04": 137687,
+      "Grass_NewYork01": 140187,
+      "RA3_ShallowSeaFloor": 29112,
+      "Reef_Yucatan01": 17115,
+      "Rock_Yucatan01": 10404,
+      "Rock_Yucatan03": 18554,
+      "Sand_Hawaii02": 2852
+    },
+    "compaction": {
+      "blends_after": 2281,
+      "blends_before": 2807,
+      "changed": true,
+      "cliffs_after": 0,
+      "cliffs_before": 0,
+      "removed_textures": 2,
+      "textures_after": 10,
+      "textures_before": 12,
+      "unused_textures": 2
+    },
+    "modified_chunks_since_polish_input": [
+      "BlendTileData"
+    ],
+    "runtime_resource_ids": "Package finalization owns map and atlas version IDs; the polish-stage preservation flag does not cover them.",
+    "scope": "native map after terrain-package finalization",
+    "texture_families": [
+      "Grass_CapeCod05",
+      "Grass_Geneva01",
+      "Grass_NewYork01",
+      "Grass_MtRush04",
+      "Dirt_Iceland05",
+      "Sand_Hawaii02",
+      "Reef_Yucatan01",
+      "RA3_ShallowSeaFloor",
+      "Rock_Yucatan01",
+      "Rock_Yucatan03"
+    ],
+    "texture_id_mapping": [
+      {
+        "final_family_id": 0,
+        "name": "Grass_CapeCod05",
+        "polish_family_id": 0
+      },
+      {
+        "final_family_id": 1,
+        "name": "Grass_Geneva01",
+        "polish_family_id": 1
+      },
+      {
+        "final_family_id": 2,
+        "name": "Grass_NewYork01",
+        "polish_family_id": 2
+      },
+      {
+        "final_family_id": 3,
+        "name": "Grass_MtRush04",
+        "polish_family_id": 3
+      },
+      {
+        "final_family_id": 4,
+        "name": "Dirt_Iceland05",
+        "polish_family_id": 4
+      },
+      {
+        "final_family_id": 5,
+        "name": "Sand_Hawaii02",
+        "polish_family_id": 5
+      },
+      {
+        "final_family_id": 6,
+        "name": "Reef_Yucatan01",
+        "polish_family_id": 6
+      },
+      {
+        "final_family_id": 7,
+        "name": "RA3_ShallowSeaFloor",
+        "polish_family_id": 7
+      },
+      {
+        "final_family_id": 8,
+        "name": "Rock_Yucatan01",
+        "polish_family_id": 8
+      },
+      {
+        "final_family_id": null,
+        "name": "Pavement_Amsterdam05",
+        "polish_family_id": 9
+      },
+      {
+        "final_family_id": 9,
+        "name": "Rock_Yucatan03",
+        "polish_family_id": 10
+      },
+      {
+        "final_family_id": null,
+        "name": "Rock_Iceland02",
+        "polish_family_id": 11
+      }
+    ],
+    "texture_table_unchanged": false
+  },
+  "height_and_ramps_unchanged": true,
+  "ingame_test": "not run",
+  "layer_primary_textures": [
+    "Grass_NewYork01",
+    "Grass_MtRush04",
+    "Grass_CapeCod05",
+    "Rock_Yucatan03",
+    "Rock_Iceland02"
+  ],
+  "modified_chunks": [
+    "BlendTileData"
+  ],
+  "objects_and_scripts_unchanged": true,
+  "palette_revision": "five-layer-2026-10-29",
+  "preservation_scope": "Preservation flags and modified_chunks compare only the input and output of texture_polish::apply; final package changes are reported separately in finalization.",
+  "preview": "Representative colors of actual material assignments, not game screenshots or decoded texture pixels",
+  "profile": "classic-natural",
+  "reference_version": "T2.2.9",
+  "scope": "texture-polish-before-terrain-package-finalization",
+  "source": "[CHAI]碧嶂回澜T0.0.1",
+  "style": "three grass layers, two rock layers, narrow shores and per-cell material blends",
+  "total_cells": 705600
+}

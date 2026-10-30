@@ -123,7 +123,7 @@ fn changed_plan_and_common_policy_cannot_reuse_successful_spatial_cache() {
     assert!(pipeline::audit(&p).is_err());
     fs::write(&path, original).unwrap();
     pipeline::audit(&p).unwrap();
-    let common = f.0.join("templates/rules/coordinate-pipeline.json");
+    let common = f.0.join("rules/coordinate-pipeline.json");
     let mut policy: Value = serde_json::from_slice(&fs::read(&common).unwrap()).unwrap();
     policy["resource_distribution"]["main_route_max_distance"] = json!(1.);
     project::write_json(&common, &policy).unwrap();
@@ -135,7 +135,7 @@ fn strict_ramp_policy_rejects_source_conflicts_instead_of_inheriting_them() {
     let f = fixture();
     let p = load(&f);
     pipeline::audit(&p).unwrap();
-    let common = f.0.join("templates/rules/coordinate-pipeline.json");
+    let common = f.0.join("rules/coordinate-pipeline.json");
     let mut policy: Value = serde_json::from_slice(&fs::read(&common).unwrap()).unwrap();
     policy["ramp_clearance"]["gap"] = json!(1000.);
     project::write_json(&common, &policy).unwrap();

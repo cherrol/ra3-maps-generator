@@ -13,7 +13,7 @@ use std::{collections::BTreeMap, path::Path};
 #[test]
 fn shared_template_has_the_current_fixed_ai_lookup_and_roundtrips() {
     let shared: serde_json::Value =
-        serde_json::from_str(include_str!("../templates/rules/common-T0.5.1.json")).unwrap();
+        serde_json::from_str(include_str!("../rules/common-T0.5.1.json")).unwrap();
     let nodes: Vec<scripts::Node> = serde_json::from_value(shared["scripts"].clone()).unwrap();
     assert_eq!(scripts::script_names(&nodes).unwrap().len(), 224);
     fn check(nodes: &[scripts::Node]) -> usize {

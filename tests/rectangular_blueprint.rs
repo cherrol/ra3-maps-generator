@@ -17,18 +17,17 @@ fn wide_and_tall_blueprints_roundtrip_native_heights_masks_and_materials() {
     for (width, height) in [(96, 64), (64, 96)] {
         let root =
             std::env::temp_dir().join(format!("ra3-rect-{}-{width}-{height}", std::process::id()));
-        fs::create_dir_all(root.join("templates/rules")).unwrap();
+        fs::create_dir_all(root.join("rules")).unwrap();
         fs::copy(
-            repository.join("templates/rules/common-T0.5.1.json"),
-            root.join("templates/rules/common-T0.5.1.json"),
+            repository.join("rules/common-T0.5.1.json"),
+            root.join("rules/common-T0.5.1.json"),
         )
         .unwrap();
-        let mut rules: serde_json::Value = serde_json::from_slice(
-            &fs::read(root.join("templates/rules/common-T0.5.1.json")).unwrap(),
-        )
-        .unwrap();
+        let mut rules: serde_json::Value =
+            serde_json::from_slice(&fs::read(root.join("rules/common-T0.5.1.json")).unwrap())
+                .unwrap();
         rules["spawn_waypoints"] = json!([]);
-        project::write_json(&root.join("templates/rules/common-T0.5.1.json"), &rules).unwrap();
+        project::write_json(&root.join("rules/common-T0.5.1.json"), &rules).unwrap();
         let mut cfg: serde_json::Value =
             serde_json::from_slice(&fs::read(repository.join("maps/河南/config.json")).unwrap())
                 .unwrap();

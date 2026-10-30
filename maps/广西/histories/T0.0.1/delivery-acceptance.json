@@ -1,0 +1,444 @@
+{
+  "binding": {
+    "frame": {
+      "border": 20,
+      "cell_size": 10.0,
+      "height": 840,
+      "width": 840,
+      "z_scale": 0.0390625
+    },
+    "layout_crc32": 2483835337,
+    "native_crc32": 860207244,
+    "native_decoded_crc32": 2234449502,
+    "package_files": {
+      "[CHAI]碧嶂回澜T0.0.1.map": {
+        "bytes": 292580,
+        "crc32": 860207244
+      },
+      "[CHAI]碧嶂回澜T0.0.1_art.tga": {
+        "bytes": 786476,
+        "crc32": 2318005593
+      },
+      "map.str": {
+        "bytes": 574,
+        "crc32": 812922246
+      },
+      "map.xml": {
+        "bytes": 146982,
+        "crc32": 3457620679
+      },
+      "overrides.xml": {
+        "bytes": 124,
+        "crc32": 2113619238
+      }
+    },
+    "parameters_crc32": 3052867672,
+    "rules_revision": "independent-delivery-v2-full-functional-reservations-terrain-transitions"
+  },
+  "items": {
+    "attack_routes": {
+      "decision": "主线对位为P1–P5、P2–P7、P3–P8、P4–P6；先规划跨原图层界的坡道和通路，再安排沿线分级资源。最终四主四次路线按原生导航和全部潜在赠送、矿盘及旋转矿场叠加重算，实际路径均保存；未以直线或纸面路线冒充。",
+      "evidence": [
+        {
+          "path": "functional-corridors.json",
+          "bytes": 786845,
+          "crc32": 1127989961
+        },
+        {
+          "path": "primary-roads-before-outer-ores.json",
+          "bytes": 411699,
+          "crc32": 416850732
+        },
+        {
+          "path": "final-resource-distribution.json",
+          "bytes": 13105,
+          "crc32": 3953705858
+        }
+      ],
+      "name": "对位进攻方向与沿线布置",
+      "status": "passed"
+    },
+    "building_angles": {
+      "decision": "直接检查56个原生实体对象及292项实际脚本创建/转向建筑动作，全部采用±45/±135四向；矿脉OreNode全部覆盖。280条面向检查从当前原生航点重新生成，选面向对方队伍中心的最近合法四向。变更矿口后完整矿场与引道、全部主备生产占地均重新验收；非碰撞标记单独分类，不用航点角度代替建筑动作。",
+      "evidence": [
+        {
+          "path": "object-angles.json",
+          "bytes": 10810,
+          "crc32": 1734162032
+        },
+        {
+          "path": "script-angle-review.json",
+          "bytes": 232830,
+          "crc32": 1794580239
+        },
+        {
+          "path": "final-ore-facing.json",
+          "bytes": 18554,
+          "crc32": 1005659526
+        },
+        {
+          "path": "final-production-facing.json",
+          "bytes": 99840,
+          "crc32": 1524576495
+        },
+        {
+          "path": "final-official-placement.json",
+          "bytes": 1108531,
+          "crc32": 98682697
+        },
+        {
+          "path": "final-ramp-clearance.json",
+          "bytes": 401,
+          "crc32": 2331941647
+        }
+      ],
+      "name": "建筑朝向（含矿脉）",
+      "status": "passed"
+    },
+    "gift_intrusion_exclusion": {
+      "decision": "实际脚本抽取226个建筑分支、110组主备用点，使用完整旋转地基、生产出口与接驳预留；与全部原图细长伸入样本相交为0。全组最终矿场/引道保留检查110组无发现，未仅检查中心点或主点。",
+      "evidence": [
+        {
+          "path": "functional-corridors.json",
+          "bytes": 786845,
+          "crc32": 1127989961
+        },
+        {
+          "path": "gift-reservations-final.json",
+          "bytes": 394,
+          "crc32": 656821921
+        },
+        {
+          "path": "final-official-placement.json",
+          "bytes": 1108531,
+          "crc32": 98682697
+        }
+      ],
+      "name": "赠送建筑避开伸入区域",
+      "status": "passed"
+    },
+    "hotspot_distances": {
+      "decision": "八个第5阶段热点均比较同一对位双方，使用相同原生陆域、四邻接、阻挡/高度步长与单位，保存实际接入点和路径步数。双方均可达，相对差1.5%至29.1%如实记录；没有采用未定义阈值声称完全均衡，也没有用直线距离或不同移动域拼接。路线与原预览地形共同决定这些差异。",
+      "evidence": [
+        {
+          "path": "hotspot-distances.json",
+          "bytes": 9615,
+          "crc32": 976671904
+        },
+        {
+          "path": "native-spatial.json",
+          "bytes": 209137,
+          "crc32": 405437110
+        },
+        {
+          "path": "functional-corridors.json",
+          "bytes": 786845,
+          "crc32": 1127989961
+        }
+      ],
+      "name": "热点双方实际路程",
+      "status": "passed"
+    },
+    "neutral_building_siting": {
+      "decision": "四油井分布于四条路线附近的交战区，医院(490,165)、车库(420,480)分散于中部战线，最近基地分别257.10/287.45格，均远离开局家区。原生完整占地及所有基地到每个目标接入均已核对，没有将固定AI建造场当成中立资源。",
+      "evidence": [
+        {
+          "path": "neutral-siting.json",
+          "bytes": 28941,
+          "crc32": 3910703858
+        },
+        {
+          "path": "final-official-placement.json",
+          "bytes": 1108531,
+          "crc32": 98682697
+        },
+        {
+          "path": "native-spatial.json",
+          "bytes": 209137,
+          "crc32": 405437110
+        }
+      ],
+      "name": "中立建筑选址",
+      "status": "passed"
+    },
+    "ore_distribution": {
+      "decision": "48矿按每席6矿规划，16开局矿、32外围矿。家区100格半径每席恰为2矿，外围矿退出全部家区并按四组主次线分级配置；矿盘半径20与旋转48×36矿场完整保留。13坡优先保持，仅退让有冲突的矿位/朝向；没有删矿、缩预留或削坡。",
+      "evidence": [
+        {
+          "path": "final-resource-distribution.json",
+          "bytes": 13105,
+          "crc32": 3953705858
+        },
+        {
+          "path": "final-spawn-placement.json",
+          "bytes": 5779,
+          "crc32": 239058656
+        },
+        {
+          "path": "ramp-priority-ore-moves.json",
+          "bytes": 386,
+          "crc32": 4090722969
+        },
+        {
+          "path": "gift-reservations-final.json",
+          "bytes": 394,
+          "crc32": 656821921
+        }
+      ],
+      "name": "布矿",
+      "status": "passed"
+    },
+    "production_base_proximity": {
+      "decision": "核对96条实际产能建筑分支，包括所有主备及阵营条件，均有所属基地至实际生产出口的同域静态路径。全部生产主点先于其他主点和备用点，同级先处理受限地形，再选静态基地接入较近的合格候选；逐点候选数、前后位置和理由有记录。产能点最远171.30格，最终路径最长243步；远点受完整矿场、主路、坡口、主备占地共同约束，无未解释远迁。路径模型为原生高度/阻挡与完整占地并集，最终自身工厂出口接驳单列，不将中心距离替代实际路径。",
+      "evidence": [
+        {
+          "path": "production-proximity-review.json",
+          "bytes": 601719,
+          "crc32": 15526330
+        },
+        {
+          "path": "gift-road-planning.json",
+          "bytes": 40174,
+          "crc32": 443365885
+        },
+        {
+          "path": "final-production-spawns.json",
+          "bytes": 35508,
+          "crc32": 152932597
+        },
+        {
+          "path": "final-official-placement.json",
+          "bytes": 1108531,
+          "crc32": 98682697
+        },
+        {
+          "path": "gift-reservations-final.json",
+          "bytes": 394,
+          "crc32": 656821921
+        }
+      ],
+      "name": "赠送生产建筑靠近基地",
+      "status": "passed"
+    },
+    "ramp_clearance": {
+      "decision": "13座新增坡保持24格全宽、40格坡长和各自原图层界轴向，完整坡体/上下引道的资源保留无冲突。325条平行纵剖面覆盖每坡25条车道，原生通行零阻断，坡面最大逐格差≤2.071；坡肩及既有崖界另列。延伸到±53格的探测会遇到原有邻近崖岸，未把探测范围虚报成直通106格坡体；真实接入路线另存并通过。",
+      "evidence": [
+        {
+          "path": "final-ramp-clearance.json",
+          "bytes": 401,
+          "crc32": 2331941647
+        },
+        {
+          "path": "native-spatial.json",
+          "bytes": 209137,
+          "crc32": 405437110
+        },
+        {
+          "path": "terrain-profiles.json",
+          "bytes": 1789580,
+          "crc32": 2702236307
+        },
+        {
+          "path": "terrain-transition-review.json",
+          "bytes": 3267,
+          "crc32": 1899318841
+        },
+        {
+          "path": "functional-corridors.json",
+          "bytes": 786845,
+          "crc32": 1127989961
+        }
+      ],
+      "name": "坡口",
+      "status": "passed"
+    },
+    "ramp_priority": {
+      "decision": "本轮先规划原图跨层连接，再布资源；补充东部两坡时将(645,530)矿退让至(645,500)，另一(570,530)矿旋转至合法四向。13坡的中心、轴向、宽长和完整引道均未为保矿削改，最终全部矿及家区配额复验通过。新增坡道局部变化逐格记录，原始分层/水陆标签无改动。",
+      "evidence": [
+        {
+          "path": "ramp-design-before-ores.json",
+          "bytes": 4928,
+          "crc32": 3179733703
+        },
+        {
+          "path": "lobe-pass-design.json",
+          "bytes": 979,
+          "crc32": 282087076
+        },
+        {
+          "path": "ramp-priority-ore-moves.json",
+          "bytes": 386,
+          "crc32": 4090722969
+        },
+        {
+          "path": "ramp-only-rebuild.json",
+          "bytes": 5495,
+          "crc32": 1356687982
+        },
+        {
+          "path": "final-ramp-clearance.json",
+          "bytes": 401,
+          "crc32": 2331941647
+        },
+        {
+          "path": "final-resource-distribution.json",
+          "bytes": 13105,
+          "crc32": 3953705858
+        }
+      ],
+      "name": "斜坡优先于矿",
+      "status": "passed"
+    },
+    "resource_access": {
+      "decision": "八基地至全部48矿、4油井及2科技建筑共432条同域路径全部可达，最终完整赠送/矿场叠加后仍有八条宽通路。产能出口96个分支另有实际接入路径。未将需运输、单位诊断中的不适用水上状态或没有起点接入计为零距离。静态通行结论不冒充引擎寻路实测。",
+      "evidence": [
+        {
+          "path": "native-spatial.json",
+          "bytes": 209137,
+          "crc32": 405437110
+        },
+        {
+          "path": "functional-corridors.json",
+          "bytes": 786845,
+          "crc32": 1127989961
+        },
+        {
+          "path": "production-proximity-review.json",
+          "bytes": 601719,
+          "crc32": 15526330
+        },
+        {
+          "path": "terrain-transition-review.json",
+          "bytes": 3267,
+          "crc32": 1899318841
+        }
+      ],
+      "name": "交战区与资源通行便利",
+      "status": "passed"
+    },
+    "route_width_intrusions": {
+      "decision": "八条最终交战通路的逐点保守净宽均不小于10.2368格，扣除0.71格栅格误差后仍大于10格。全图8088条原设计边和44条原生边界路径有完整交接清单，13坡有全宽纵横剖面、材质双平面与导航记录。原预览16格非交战岸角细尖按用户地形锁定保留，属于已披露的原图特征，不擅自归并；未安排赠送，选定通路均绕开。材质结论限于原生字段示意能支持的坡口/层界/岸边位置和收口，没有冒充真实贴图或游戏渲染。",
+      "evidence": [
+        {
+          "path": "functional-corridors.json",
+          "bytes": 786845,
+          "crc32": 1127989961
+        },
+        {
+          "path": "terrain-transition-review.json",
+          "bytes": 3267,
+          "crc32": 1899318841
+        },
+        {
+          "path": "terrain-interface-inventory.json",
+          "bytes": 5319057,
+          "crc32": 2981856356
+        },
+        {
+          "path": "terrain-profiles.json",
+          "bytes": 1789580,
+          "crc32": 2702236307
+        },
+        {
+          "path": "native-fields.npz",
+          "bytes": 183280,
+          "crc32": 1754725601
+        },
+        {
+          "path": "native-field-contact-sheet.png",
+          "bytes": 73914,
+          "crc32": 1377993901
+        },
+        {
+          "path": "native-field-visual-index.json",
+          "bytes": 1826,
+          "crc32": 1748559241
+        },
+        {
+          "path": "preview-identity.json",
+          "bytes": 784,
+          "crc32": 2741689472
+        }
+      ],
+      "name": "交战路线宽度与伸入地形",
+      "status": "passed"
+    },
+    "shore_perimeter": {
+      "decision": "完整可玩水体为两片跨出游戏框的开放海湾，共34967格；陆地为单一主体，无封闭小水域及岛屿。按开放海域单列适用性，整圈两栖通行的小岛/内湖规则不套用为全海岸开放要求。915条游戏内岸边逐段回读高度、两侧导航和接岸层，完整覆盖无遗漏；都按原图保留为对称阻断岸线。水底130、水面200，岸边210/280来自原预览规则，没有额外岸坡/水深塑形，也不宣称海岸可两栖跨越。",
+      "evidence": [
+        {
+          "path": "shoreline-review.json",
+          "bytes": 327331,
+          "crc32": 919344191
+        },
+        {
+          "path": "shoreline-segments.json",
+          "bytes": 565300,
+          "crc32": 2459559865
+        },
+        {
+          "path": "terrain-profiles.json",
+          "bytes": 1789580,
+          "crc32": 2702236307
+        },
+        {
+          "path": "terrain-transition-review.json",
+          "bytes": 3267,
+          "crc32": 1899318841
+        },
+        {
+          "path": "native-fields.npz",
+          "bytes": 183280,
+          "crc32": 1754725601
+        },
+        {
+          "path": "preview-identity.json",
+          "bytes": 784,
+          "crc32": 2741689472
+        }
+      ],
+      "name": "整圈岸线",
+      "status": "passed"
+    },
+    "spawn_layout": {
+      "decision": "八席按东西对置，P5/P6为东侧角落，固定苏联P7与日本P8在中间，六个人类位及固定AI归属/外交由实际规则和原生脚本核对。每席同层完整出生组及两座家矿通过。原图东西陆地差异8.59%，水域差异495.72%按用户“保持原预览、不改地形”保留，明确不声称满足默认水域面积均衡；没有扩海、铺平台。",
+      "evidence": [
+        {
+          "path": "final-spawn-placement.json",
+          "bytes": 5779,
+          "crc32": 239058656
+        },
+        {
+          "path": "team-area-final-design.json",
+          "bytes": 284,
+          "crc32": 2727219211
+        },
+        {
+          "path": "preview-identity.json",
+          "bytes": 784,
+          "crc32": 2741689472
+        },
+        {
+          "path": "native-spatial.json",
+          "bytes": 209137,
+          "crc32": 405437110
+        }
+      ],
+      "name": "出生座位布局",
+      "status": "passed"
+    }
+  },
+  "kind": "independent_delivery_acceptance",
+  "map": "[CHAI]碧嶂回澜T0.0.1",
+  "map_id": "广西",
+  "reviewed_at": "2026-10-30T15:30:17Z",
+  "reviewer": "Codex separate current-candidate native, route, geometry and encoded-material review",
+  "rules_revision": "independent-delivery-v2-full-functional-reservations-terrain-transitions",
+  "schema_version": 1,
+  "status": "passed",
+  "version": "T0.0.1",
+  "limitations": [
+    "静态原生验收；未启动游戏或GUI；材质图为原生字段示意，不是贴图渲染。",
+    "按用户要求保留原预览两侧水域面积差异及非交战岸角细尖，不通过重塑地形取得默认几何整理结果。"
+  ]
+}

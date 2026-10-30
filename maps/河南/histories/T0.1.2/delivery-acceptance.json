@@ -1,0 +1,355 @@
+{
+ "binding": {
+  "frame": {
+   "border": 20,
+   "cell_size": 10.0,
+   "height": 840,
+   "width": 840,
+   "z_scale": 0.0390625
+  },
+  "layout_crc32": 1881933369,
+  "native_crc32": 1007508494,
+  "native_decoded_crc32": 2643432166,
+  "package_files": {
+   "[CHAI]沃野奔流T0.1.2.map": {
+    "bytes": 285079,
+    "crc32": 1007508494
+   },
+   "[CHAI]沃野奔流T0.1.2_art.tga": {
+    "bytes": 786476,
+    "crc32": 3200424618
+   },
+   "map.str": {
+    "bytes": 501,
+    "crc32": 4031021017
+   },
+   "map.xml": {
+    "bytes": 149093,
+    "crc32": 2904213310
+   },
+   "overrides.xml": {
+    "bytes": 124,
+    "crc32": 2113619238
+   }
+  },
+  "parameters_crc32": 886781487,
+  "rules_revision": "independent-delivery-v2-full-functional-reservations-terrain-transitions"
+ },
+ "items": {
+  "attack_routes": {
+   "name": "对位进攻方向与沿线布置",
+   "status": "passed",
+   "decision": "候选高度图、全部通行／建造等玩法位图、对象列表与脚本逐字节等于 T0.1.1（高度 crc32 3773833044、位图 706440 字节 crc32 1593470479、26 个区块中仅 BlendTileData 变化）；本版只改地表材质与混合记录，因此本项几何／玩法结论沿用 T0.1.1 已验收结论。21 坡坡体与高度未改，主次通路几何不变。",
+   "evidence": [
+    {
+     "path": "material-change.json",
+     "bytes": 6140,
+     "crc32": 3141072749
+    },
+    {
+     "path": "candidate-files.json",
+     "bytes": 905,
+     "crc32": 3833572253
+    },
+    {
+     "path": "../T0.1.1/delivery-acceptance.json",
+     "bytes": 16689,
+     "crc32": 534427269
+    }
+   ]
+  },
+  "building_angles": {
+   "name": "建筑朝向（含矿脉）",
+   "status": "passed",
+   "decision": "候选高度图、全部通行／建造等玩法位图、对象列表与脚本逐字节等于 T0.1.1（高度 crc32 3773833044、位图 706440 字节 crc32 1593470479、26 个区块中仅 BlendTileData 变化）；本版只改地表材质与混合记录，因此本项几何／玩法结论沿用 T0.1.1 已验收结论。对象列表逐字节相同，含矿脉朝向。",
+   "evidence": [
+    {
+     "path": "material-change.json",
+     "bytes": 6140,
+     "crc32": 3141072749
+    },
+    {
+     "path": "candidate-files.json",
+     "bytes": 905,
+     "crc32": 3833572253
+    },
+    {
+     "path": "../T0.1.1/delivery-acceptance.json",
+     "bytes": 16689,
+     "crc32": 534427269
+    }
+   ]
+  },
+  "gift_intrusion_exclusion": {
+   "name": "赠送建筑避开伸入区域",
+   "status": "passed",
+   "decision": "候选高度图、全部通行／建造等玩法位图、对象列表与脚本逐字节等于 T0.1.1（高度 crc32 3773833044、位图 706440 字节 crc32 1593470479、26 个区块中仅 BlendTileData 变化）；本版只改地表材质与混合记录，因此本项几何／玩法结论沿用 T0.1.1 已验收结论。赠送对象与位图未改。",
+   "evidence": [
+    {
+     "path": "material-change.json",
+     "bytes": 6140,
+     "crc32": 3141072749
+    },
+    {
+     "path": "candidate-files.json",
+     "bytes": 905,
+     "crc32": 3833572253
+    },
+    {
+     "path": "../T0.1.1/delivery-acceptance.json",
+     "bytes": 16689,
+     "crc32": 534427269
+    }
+   ]
+  },
+  "hotspot_distances": {
+   "name": "热点双方实际路程",
+   "status": "passed",
+   "decision": "候选高度图、全部通行／建造等玩法位图、对象列表与脚本逐字节等于 T0.1.1（高度 crc32 3773833044、位图 706440 字节 crc32 1593470479、26 个区块中仅 BlendTileData 变化）；本版只改地表材质与混合记录，因此本项几何／玩法结论沿用 T0.1.1 已验收结论。高度相同，双方实际路程不变。",
+   "evidence": [
+    {
+     "path": "material-change.json",
+     "bytes": 6140,
+     "crc32": 3141072749
+    },
+    {
+     "path": "candidate-files.json",
+     "bytes": 905,
+     "crc32": 3833572253
+    },
+    {
+     "path": "../T0.1.1/delivery-acceptance.json",
+     "bytes": 16689,
+     "crc32": 534427269
+    }
+   ]
+  },
+  "neutral_building_siting": {
+   "name": "中立建筑选址",
+   "status": "passed",
+   "decision": "候选高度图、全部通行／建造等玩法位图、对象列表与脚本逐字节等于 T0.1.1（高度 crc32 3773833044、位图 706440 字节 crc32 1593470479、26 个区块中仅 BlendTileData 变化）；本版只改地表材质与混合记录，因此本项几何／玩法结论沿用 T0.1.1 已验收结论。中立建筑对象逐字节相同。",
+   "evidence": [
+    {
+     "path": "material-change.json",
+     "bytes": 6140,
+     "crc32": 3141072749
+    },
+    {
+     "path": "candidate-files.json",
+     "bytes": 905,
+     "crc32": 3833572253
+    },
+    {
+     "path": "../T0.1.1/delivery-acceptance.json",
+     "bytes": 16689,
+     "crc32": 534427269
+    }
+   ]
+  },
+  "ore_distribution": {
+   "name": "布矿",
+   "status": "passed",
+   "decision": "候选高度图、全部通行／建造等玩法位图、对象列表与脚本逐字节等于 T0.1.1（高度 crc32 3773833044、位图 706440 字节 crc32 1593470479、26 个区块中仅 BlendTileData 变化）；本版只改地表材质与混合记录，因此本项几何／玩法结论沿用 T0.1.1 已验收结论。48 矿对象逐字节相同。",
+   "evidence": [
+    {
+     "path": "material-change.json",
+     "bytes": 6140,
+     "crc32": 3141072749
+    },
+    {
+     "path": "candidate-files.json",
+     "bytes": 905,
+     "crc32": 3833572253
+    },
+    {
+     "path": "../T0.1.1/delivery-acceptance.json",
+     "bytes": 16689,
+     "crc32": 534427269
+    }
+   ]
+  },
+  "production_base_proximity": {
+   "name": "赠送生产建筑靠近基地",
+   "status": "passed",
+   "decision": "候选高度图、全部通行／建造等玩法位图、对象列表与脚本逐字节等于 T0.1.1（高度 crc32 3773833044、位图 706440 字节 crc32 1593470479、26 个区块中仅 BlendTileData 变化）；本版只改地表材质与混合记录，因此本项几何／玩法结论沿用 T0.1.1 已验收结论。赠送生产建筑落点与位图未改。",
+   "evidence": [
+    {
+     "path": "material-change.json",
+     "bytes": 6140,
+     "crc32": 3141072749
+    },
+    {
+     "path": "candidate-files.json",
+     "bytes": 905,
+     "crc32": 3833572253
+    },
+    {
+     "path": "../T0.1.1/delivery-acceptance.json",
+     "bytes": 16689,
+     "crc32": 534427269
+    }
+   ]
+  },
+  "ramp_clearance": {
+   "name": "坡口",
+   "status": "passed",
+   "decision": "坡面材质改为按实测坡度识别陡面：坡度 ≥8（每格高度单位）即岩面，含 4–6 格坡肩；坡脚土带收窄为 1 格，去掉沿崖线的宽土带。共重绘 21124 格，材质边界 32820→27915、无混合硬缝 646→551。坡口高度、宽度、坡形与引道未改；仅坡肩与坡脚材质调整。",
+   "evidence": [
+    {
+     "path": "material-change.json",
+     "bytes": 6140,
+     "crc32": 3141072749
+    },
+    {
+     "path": "candidate-files.json",
+     "bytes": 905,
+     "crc32": 3833572253
+    },
+    {
+     "path": "ramp-shoulder-materials.png",
+     "bytes": 8395,
+     "crc32": 220752390
+    },
+    {
+     "path": "../T0.1.1/delivery-acceptance.json",
+     "bytes": 16689,
+     "crc32": 534427269
+    },
+    {
+     "path": "material-comparison.png",
+     "bytes": 209445,
+     "crc32": 3138143660
+    }
+   ]
+  },
+  "ramp_priority": {
+   "name": "斜坡优先于矿",
+   "status": "passed",
+   "decision": "候选高度图、全部通行／建造等玩法位图、对象列表与脚本逐字节等于 T0.1.1（高度 crc32 3773833044、位图 706440 字节 crc32 1593470479、26 个区块中仅 BlendTileData 变化）；本版只改地表材质与混合记录，因此本项几何／玩法结论沿用 T0.1.1 已验收结论。矿与坡体几何未改，坡优先结论不变。",
+   "evidence": [
+    {
+     "path": "material-change.json",
+     "bytes": 6140,
+     "crc32": 3141072749
+    },
+    {
+     "path": "candidate-files.json",
+     "bytes": 905,
+     "crc32": 3833572253
+    },
+    {
+     "path": "../T0.1.1/delivery-acceptance.json",
+     "bytes": 16689,
+     "crc32": 534427269
+    }
+   ]
+  },
+  "resource_access": {
+   "name": "交战区与资源通行便利",
+   "status": "passed",
+   "decision": "候选高度图、全部通行／建造等玩法位图、对象列表与脚本逐字节等于 T0.1.1（高度 crc32 3773833044、位图 706440 字节 crc32 1593470479、26 个区块中仅 BlendTileData 变化）；本版只改地表材质与混合记录，因此本项几何／玩法结论沿用 T0.1.1 已验收结论。通行位图与高度相同，资源接入不变。",
+   "evidence": [
+    {
+     "path": "material-change.json",
+     "bytes": 6140,
+     "crc32": 3141072749
+    },
+    {
+     "path": "candidate-files.json",
+     "bytes": 905,
+     "crc32": 3833572253
+    },
+    {
+     "path": "../T0.1.1/delivery-acceptance.json",
+     "bytes": 16689,
+     "crc32": 534427269
+    }
+   ]
+  },
+  "route_width_intrusions": {
+   "name": "交战路线宽度与伸入地形",
+   "status": "passed",
+   "decision": "候选高度图、全部通行／建造等玩法位图、对象列表与脚本逐字节等于 T0.1.1（高度 crc32 3773833044、位图 706440 字节 crc32 1593470479、26 个区块中仅 BlendTileData 变化）；本版只改地表材质与混合记录，因此本项几何／玩法结论沿用 T0.1.1 已验收结论。净宽由高度与通行位图决定，未改。",
+   "evidence": [
+    {
+     "path": "material-change.json",
+     "bytes": 6140,
+     "crc32": 3141072749
+    },
+    {
+     "path": "candidate-files.json",
+     "bytes": 905,
+     "crc32": 3833572253
+    },
+    {
+     "path": "../T0.1.1/delivery-acceptance.json",
+     "bytes": 16689,
+     "crc32": 534427269
+    }
+   ]
+  },
+  "shore_perimeter": {
+   "name": "整圈岸线",
+   "status": "passed",
+   "decision": "候选高度图、全部通行／建造等玩法位图、对象列表与脚本逐字节等于 T0.1.1（高度 crc32 3773833044、位图 706440 字节 crc32 1593470479、26 个区块中仅 BlendTileData 变化）；本版只改地表材质与混合记录，因此本项几何／玩法结论沿用 T0.1.1 已验收结论。水陆几何与沙带规则保留（岸线 4 格内不落岩面）。",
+   "evidence": [
+    {
+     "path": "material-change.json",
+     "bytes": 6140,
+     "crc32": 3141072749
+    },
+    {
+     "path": "candidate-files.json",
+     "bytes": 905,
+     "crc32": 3833572253
+    },
+    {
+     "path": "before-after-materials.png",
+     "bytes": 60994,
+     "crc32": 1937599899
+    },
+    {
+     "path": "../T0.1.1/delivery-acceptance.json",
+     "bytes": 16689,
+     "crc32": 534427269
+    }
+   ]
+  },
+  "spawn_layout": {
+   "name": "出生座位布局",
+   "status": "passed",
+   "decision": "候选高度图、全部通行／建造等玩法位图、对象列表与脚本逐字节等于 T0.1.1（高度 crc32 3773833044、位图 706440 字节 crc32 1593470479、26 个区块中仅 BlendTileData 变化）；本版只改地表材质与混合记录，因此本项几何／玩法结论沿用 T0.1.1 已验收结论。",
+   "evidence": [
+    {
+     "path": "material-change.json",
+     "bytes": 6140,
+     "crc32": 3141072749
+    },
+    {
+     "path": "candidate-files.json",
+     "bytes": 905,
+     "crc32": 3833572253
+    },
+    {
+     "path": "../T0.1.1/delivery-acceptance.json",
+     "bytes": 16689,
+     "crc32": 534427269
+    }
+   ]
+  }
+ },
+ "kind": "independent_delivery_acceptance",
+ "map": "[CHAI]沃野奔流T0.1.2",
+ "map_id": "河南",
+ "reviewed_at": "2026-10-30T12:28:07Z",
+ "reviewer": "材质专项复核 / material-change-audit",
+ "rules_revision": "independent-delivery-v2-full-functional-reservations-terrain-transitions",
+ "schema_version": 1,
+ "status": "passed",
+ "version": "T0.1.2",
+ "notes": {
+  "scope": "materials and blend records only; no height, bitmap, object or script change",
+  "ingame_test": "not run; visual check in game still required",
+  "remaining": "diagonal level edges are still one-cell raster staircases; a geometry pass is not part of this version"
+ }
+}

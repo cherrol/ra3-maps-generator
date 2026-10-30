@@ -8,22 +8,22 @@ publish = false
 
 [[example]]
 name = "test-data"
-path = "tools/test_data.rs"
+path = "xtask/test_data.rs"
 test = true
 
 [[example]]
 name = "maintenance"
-path = "tools/maintenance.rs"
+path = "xtask/maintenance.rs"
 test = true
 
 [[example]]
 name = "preview-water-layers"
-path = "tools/preview_water_layers.rs"
+path = "xtask/preview_water_layers.rs"
 test = true
 
 [[example]]
 name = "preview-acceptance"
-path = "tools/preview_acceptance.rs"
+path = "xtask/preview_acceptance.rs"
 test = true
 
 [dependencies]
@@ -44,10 +44,32 @@ opt-level = 2
 
 [[example]]
 name = "preview-intrusion-repair"
-path = "tools/preview_intrusion_repair.rs"
+path = "xtask/preview_intrusion_repair.rs"
 test = true
 
 [[example]]
 name = "preview-source-reference"
-path = "tools/preview_source_reference.rs"
+path = "xtask/preview_source_reference.rs"
 test = true
+
+[[example]]
+name = "import-ea-catalog"
+path = "xtask/import_ea_catalog.rs"
+test = true
+
+[[example]]
+name = "verify-official-maps"
+path = "xtask/verify_official_maps.rs"
+test = true
+
+[[example]]
+name = "verify-preview-intrusion-repair"
+path = "xtask/verify_preview_intrusion_repair.rs"
+test = true
+
+# Stable iterative-authoring profile; do not toggle release LTO mid-task.
+[profile.authoring]
+inherits = "release"
+lto = false
+codegen-units = 16
+incremental = true

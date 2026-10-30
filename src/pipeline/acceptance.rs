@@ -72,14 +72,14 @@ fn parameters(p: &Project) -> Result<Value> {
     ] {
         settings.remove(key);
     }
-    let common = match fs::read(p.root.join("templates/rules/coordinate-pipeline.json")) {
+    let common = match fs::read(p.root.join("rules/coordinate-pipeline.json")) {
         Ok(bytes) => serde_json::from_slice::<Value>(&bytes)?,
-        Err(error) if error.kind() == std::io::ErrorKind::NotFound => serde_json::from_str(
-            include_str!("../../templates/rules/coordinate-pipeline.json"),
-        )?,
+        Err(error) if error.kind() == std::io::ErrorKind::NotFound => {
+            serde_json::from_str(include_str!("../../rules/coordinate-pipeline.json"))?
+        }
         Err(error) => return Err(error.into()),
     };
-    let production = json_input(&p.root.join("templates/rules/common-T0.5.1.json"))?;
+    let production = json_input(&p.root.join("rules/common-T0.5.1.json"))?;
     let policy_override = p.cfg["COORDINATE_PIPELINE"]
         .get("policy")
         .filter(|value| !value.is_null())

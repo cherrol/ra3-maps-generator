@@ -1,0 +1,31 @@
+{
+ "map": "[CHAI]沃野奔流T0.1.2",
+ "installed_at": "2026-10-30T12:57:46Z",
+ "destination_windows": "C:\\Users\\cherrol\\AppData\\Roaming\\Red Alert 3\\Maps\\[CHAI]沃野奔流T0.1.2",
+ "all_five_files_byte_equal_to_release": true,
+ "game_started": false,
+ "source": "dist/河南/[CHAI]沃野奔流T0.1.2（与 assets、发行 ZIP、authoring/source.zip 逐字节相同）",
+ "known_issue": "包内 map.str 的 Map:DisplayName 仍为 [CHAI]沃野奔流T0.1.1（polish 路径未重写 .str 显示名），map.xml 的 DisplayName 已为 T0.1.2；游戏列表若读 .str 会与旧版同名，下一版修正。",
+ "files": {
+  "[CHAI]沃野奔流T0.1.2.map": {
+   "bytes": 285079,
+   "sha256": "243875994a339b6595ff4e687126b6ce0f345e2b0df682d9efbeec0ad7a53861"
+  },
+  "[CHAI]沃野奔流T0.1.2_art.tga": {
+   "bytes": 786476,
+   "sha256": "c35ca927f82d8c7408922ca6bad6400393a357ef13fa138eba0382e34f994aa0"
+  },
+  "map.str": {
+   "bytes": 501,
+   "sha256": "3a1a1994c5f8dbf0219da6dcb1d6c08df0175a1936d4fcc88ab0574e8a0e0209"
+  },
+  "map.xml": {
+   "bytes": 149093,
+   "sha256": "f6bb712398e95232334d3914c519ed3bd53e7ea072ffda9de29f8cdcc55cd09b"
+  },
+  "overrides.xml": {
+   "bytes": 124,
+   "sha256": "e94193fa1f69987870af8bd457691172bb61d775fc6d8edd6d12b036a2ab6cad"
+  }
+ }
+}

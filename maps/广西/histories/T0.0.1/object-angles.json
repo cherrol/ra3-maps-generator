@@ -1,0 +1,567 @@
+{
+  "findings": [],
+  "objects": [
+    {
+      "cell": [
+        720.0,
+        300.0
+      ],
+      "degrees": 45.00000125223908,
+      "error": 1.2522390836327076e-6,
+      "kind": "SovietConstructionYard",
+      "object_id": 9
+    },
+    {
+      "cell": [
+        750.0,
+        465.0
+      ],
+      "degrees": 45.00000125223908,
+      "error": 1.2522390836327076e-6,
+      "kind": "JapanConstructionYard",
+      "object_id": 10
+    },
+    {
+      "cell": [
+        204.0,
+        110.0
+      ],
+      "degrees": 135.00000034162267,
+      "error": 3.416226658917477e-7,
+      "kind": "OreNode",
+      "object_id": 11
+    },
+    {
+      "cell": [
+        145.0,
+        51.0
+      ],
+      "degrees": -135.00000034162267,
+      "error": 3.416226658917477e-7,
+      "kind": "OreNode",
+      "object_id": 12
+    },
+    {
+      "cell": [
+        199.0,
+        260.0
+      ],
+      "degrees": 135.00000034162267,
+      "error": 3.416226658917477e-7,
+      "kind": "OreNode",
+      "object_id": 13
+    },
+    {
+      "cell": [
+        81.0,
+        260.0
+      ],
+      "degrees": -45.00000125223908,
+      "error": 1.2522390836327076e-6,
+      "kind": "OreNode",
+      "object_id": 14
+    },
+    {
+      "cell": [
+        195.0,
+        438.0
+      ],
+      "degrees": 135.00000034162267,
+      "error": 3.416226658917477e-7,
+      "kind": "OreNode",
+      "object_id": 15
+    },
+    {
+      "cell": [
+        117.0,
+        470.0
+      ],
+      "degrees": 45.00000125223908,
+      "error": 1.2522390836327076e-6,
+      "kind": "OreNode",
+      "object_id": 16
+    },
+    {
+      "cell": [
+        229.0,
+        635.0
+      ],
+      "degrees": -135.00000034162267,
+      "error": 3.416226658917477e-7,
+      "kind": "OreNode",
+      "object_id": 17
+    },
+    {
+      "cell": [
+        115.0,
+        612.0
+      ],
+      "degrees": -45.00000125223908,
+      "error": 1.2522390836327076e-6,
+      "kind": "OreNode",
+      "object_id": 18
+    },
+    {
+      "cell": [
+        768.0,
+        155.0
+      ],
+      "degrees": 45.00000125223908,
+      "error": 1.2522390836327076e-6,
+      "kind": "OreNode",
+      "object_id": 19
+    },
+    {
+      "cell": [
+        782.0,
+        63.0
+      ],
+      "degrees": -135.00000034162267,
+      "error": 3.416226658917477e-7,
+      "kind": "OreNode",
+      "object_id": 20
+    },
+    {
+      "cell": [
+        690.0,
+        675.0
+      ],
+      "degrees": -45.00000125223908,
+      "error": 1.2522390836327076e-6,
+      "kind": "OreNode",
+      "object_id": 21
+    },
+    {
+      "cell": [
+        784.0,
+        650.0
+      ],
+      "degrees": -135.00000034162267,
+      "error": 3.416226658917477e-7,
+      "kind": "OreNode",
+      "object_id": 22
+    },
+    {
+      "cell": [
+        775.0,
+        323.0
+      ],
+      "degrees": 135.00000034162267,
+      "error": 3.416226658917477e-7,
+      "kind": "OreNode",
+      "object_id": 23
+    },
+    {
+      "cell": [
+        697.0,
+        355.0
+      ],
+      "degrees": 45.00000125223908,
+      "error": 1.2522390836327076e-6,
+      "kind": "OreNode",
+      "object_id": 24
+    },
+    {
+      "cell": [
+        695.0,
+        442.0
+      ],
+      "degrees": -45.00000125223908,
+      "error": 1.2522390836327076e-6,
+      "kind": "OreNode",
+      "object_id": 25
+    },
+    {
+      "cell": [
+        777.0,
+        410.0
+      ],
+      "degrees": -135.00000034162267,
+      "error": 3.416226658917477e-7,
+      "kind": "OreNode",
+      "object_id": 26
+    },
+    {
+      "cell": [
+        275.0,
+        110.0
+      ],
+      "degrees": -45.00000125223908,
+      "error": 1.2522390836327076e-6,
+      "kind": "OreNode",
+      "object_id": 27
+    },
+    {
+      "cell": [
+        225.0,
+        320.0
+      ],
+      "degrees": 45.00000125223908,
+      "error": 1.2522390836327076e-6,
+      "kind": "OreNode",
+      "object_id": 28
+    },
+    {
+      "cell": [
+        175.0,
+        525.0
+      ],
+      "degrees": -135.00000034162267,
+      "error": 3.416226658917477e-7,
+      "kind": "OreNode",
+      "object_id": 29
+    },
+    {
+      "cell": [
+        260.0,
+        700.0
+      ],
+      "degrees": -45.00000125223908,
+      "error": 1.2522390836327076e-6,
+      "kind": "OreNode",
+      "object_id": 30
+    },
+    {
+      "cell": [
+        625.0,
+        70.0
+      ],
+      "degrees": 45.00000125223908,
+      "error": 1.2522390836327076e-6,
+      "kind": "OreNode",
+      "object_id": 31
+    },
+    {
+      "cell": [
+        625.0,
+        695.0
+      ],
+      "degrees": -135.00000034162267,
+      "error": 3.416226658917477e-7,
+      "kind": "OreNode",
+      "object_id": 32
+    },
+    {
+      "cell": [
+        590.0,
+        250.0
+      ],
+      "degrees": 45.00000125223908,
+      "error": 1.2522390836327076e-6,
+      "kind": "OreNode",
+      "object_id": 33
+    },
+    {
+      "cell": [
+        645.0,
+        500.0
+      ],
+      "degrees": 45.00000125223908,
+      "error": 1.2522390836327076e-6,
+      "kind": "OreNode",
+      "object_id": 34
+    },
+    {
+      "cell": [
+        355.0,
+        110.0
+      ],
+      "degrees": -45.00000125223908,
+      "error": 1.2522390836327076e-6,
+      "kind": "OreNode",
+      "object_id": 35
+    },
+    {
+      "cell": [
+        305.0,
+        310.0
+      ],
+      "degrees": -135.00000034162267,
+      "error": 3.416226658917477e-7,
+      "kind": "OreNode",
+      "object_id": 36
+    },
+    {
+      "cell": [
+        275.0,
+        575.0
+      ],
+      "degrees": -135.00000034162267,
+      "error": 3.416226658917477e-7,
+      "kind": "OreNode",
+      "object_id": 37
+    },
+    {
+      "cell": [
+        335.0,
+        720.0
+      ],
+      "degrees": 135.00000034162267,
+      "error": 3.416226658917477e-7,
+      "kind": "OreNode",
+      "object_id": 38
+    },
+    {
+      "cell": [
+        560.0,
+        55.0
+      ],
+      "degrees": -135.00000034162267,
+      "error": 3.416226658917477e-7,
+      "kind": "OreNode",
+      "object_id": 39
+    },
+    {
+      "cell": [
+        550.0,
+        695.0
+      ],
+      "degrees": 45.00000125223908,
+      "error": 1.2522390836327076e-6,
+      "kind": "OreNode",
+      "object_id": 40
+    },
+    {
+      "cell": [
+        545.0,
+        340.0
+      ],
+      "degrees": -45.00000125223908,
+      "error": 1.2522390836327076e-6,
+      "kind": "OreNode",
+      "object_id": 41
+    },
+    {
+      "cell": [
+        570.0,
+        530.0
+      ],
+      "degrees": 45.00000125223908,
+      "error": 1.2522390836327076e-6,
+      "kind": "OreNode",
+      "object_id": 42
+    },
+    {
+      "cell": [
+        455.0,
+        110.0
+      ],
+      "degrees": -135.00000034162267,
+      "error": 3.416226658917477e-7,
+      "kind": "OreNode",
+      "object_id": 43
+    },
+    {
+      "cell": [
+        415.0,
+        315.0
+      ],
+      "degrees": -45.00000125223908,
+      "error": 1.2522390836327076e-6,
+      "kind": "OreNode",
+      "object_id": 44
+    },
+    {
+      "cell": [
+        390.0,
+        565.0
+      ],
+      "degrees": -45.00000125223908,
+      "error": 1.2522390836327076e-6,
+      "kind": "OreNode",
+      "object_id": 45
+    },
+    {
+      "cell": [
+        440.0,
+        660.0
+      ],
+      "degrees": 45.00000125223908,
+      "error": 1.2522390836327076e-6,
+      "kind": "OreNode",
+      "object_id": 46
+    },
+    {
+      "cell": [
+        495.0,
+        55.0
+      ],
+      "degrees": -45.00000125223908,
+      "error": 1.2522390836327076e-6,
+      "kind": "OreNode",
+      "object_id": 47
+    },
+    {
+      "cell": [
+        490.0,
+        685.0
+      ],
+      "degrees": 45.00000125223908,
+      "error": 1.2522390836327076e-6,
+      "kind": "OreNode",
+      "object_id": 48
+    },
+    {
+      "cell": [
+        440.0,
+        265.0
+      ],
+      "degrees": -45.00000125223908,
+      "error": 1.2522390836327076e-6,
+      "kind": "OreNode",
+      "object_id": 49
+    },
+    {
+      "cell": [
+        445.0,
+        545.0
+      ],
+      "degrees": -45.00000125223908,
+      "error": 1.2522390836327076e-6,
+      "kind": "OreNode",
+      "object_id": 50
+    },
+    {
+      "cell": [
+        340.0,
+        190.0
+      ],
+      "degrees": -45.00000125223908,
+      "error": 1.2522390836327076e-6,
+      "kind": "OreNode",
+      "object_id": 51
+    },
+    {
+      "cell": [
+        345.0,
+        260.0
+      ],
+      "degrees": 135.00000034162267,
+      "error": 3.416226658917477e-7,
+      "kind": "OreNode",
+      "object_id": 52
+    },
+    {
+      "cell": [
+        325.0,
+        485.0
+      ],
+      "degrees": 45.00000125223908,
+      "error": 1.2522390836327076e-6,
+      "kind": "OreNode",
+      "object_id": 53
+    },
+    {
+      "cell": [
+        490.0,
+        605.0
+      ],
+      "degrees": -45.00000125223908,
+      "error": 1.2522390836327076e-6,
+      "kind": "OreNode",
+      "object_id": 54
+    },
+    {
+      "cell": [
+        635.0,
+        190.0
+      ],
+      "degrees": -135.00000034162267,
+      "error": 3.416226658917477e-7,
+      "kind": "OreNode",
+      "object_id": 55
+    },
+    {
+      "cell": [
+        585.0,
+        625.0
+      ],
+      "degrees": -45.00000125223908,
+      "error": 1.2522390836327076e-6,
+      "kind": "OreNode",
+      "object_id": 56
+    },
+    {
+      "cell": [
+        400.0,
+        175.0
+      ],
+      "degrees": 45.00000125223908,
+      "error": 1.2522390836327076e-6,
+      "kind": "OreNode",
+      "object_id": 57
+    },
+    {
+      "cell": [
+        530.0,
+        490.0
+      ],
+      "degrees": -135.00000034162267,
+      "error": 3.416226658917477e-7,
+      "kind": "OreNode",
+      "object_id": 58
+    },
+    {
+      "cell": [
+        405.0,
+        65.0
+      ],
+      "degrees": 45.00000125223908,
+      "error": 1.2522390836327076e-6,
+      "kind": "OilDerrick",
+      "object_id": 59
+    },
+    {
+      "cell": [
+        465.0,
+        350.0
+      ],
+      "degrees": 45.00000125223908,
+      "error": 1.2522390836327076e-6,
+      "kind": "OilDerrick",
+      "object_id": 60
+    },
+    {
+      "cell": [
+        385.0,
+        420.0
+      ],
+      "degrees": 45.00000125223908,
+      "error": 1.2522390836327076e-6,
+      "kind": "OilDerrick",
+      "object_id": 61
+    },
+    {
+      "cell": [
+        380.0,
+        630.0
+      ],
+      "degrees": 45.00000125223908,
+      "error": 1.2522390836327076e-6,
+      "kind": "OilDerrick",
+      "object_id": 62
+    },
+    {
+      "cell": [
+        490.0,
+        165.0
+      ],
+      "degrees": 45.00000125223908,
+      "error": 1.2522390836327076e-6,
+      "kind": "HospitalTechStructure",
+      "object_id": 63
+    },
+    {
+      "cell": [
+        420.0,
+        480.0
+      ],
+      "degrees": 45.00000125223908,
+      "error": 1.2522390836327076e-6,
+      "kind": "GarageTechStructure",
+      "object_id": 64
+    }
+  ],
+  "passed": true,
+  "script_actions": "production-facing.json and ore-facing.json cover explicit creation/turn branches; further script review required"
+}

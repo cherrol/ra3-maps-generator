@@ -1,0 +1,80 @@
+{
+  "full_grid": [
+    840,
+    840
+  ],
+  "grid_offset": [
+    20,
+    20
+  ],
+  "ignored_cached_height_arrays": "The existing terrain.npz contains layer-mapped game_heights, including a generator default for water. Per the task, these caches are not terrain input; they do not supply completed ramp or shoreline geometry.",
+  "images": [
+    {
+      "bytes": 62759,
+      "crc32": 790931293,
+      "matches_existing_preview_image_identity": true,
+      "path": "maps/广西/preview.png",
+      "sha256": "e385c2a33b13f7874b057ea42be22f2254a90a7860bd849589286239958b6ac6"
+    },
+    {
+      "bytes": 79524,
+      "crc32": 2747073168,
+      "matches_existing_preview_image_identity": true,
+      "path": "maps/广西/preview--line.png",
+      "sha256": "652b2abeca8544d07dc24394b5593702e2528c966bcfe37cd74d0e6cdf203f15"
+    },
+    {
+      "bytes": 97181,
+      "crc32": 4275253114,
+      "matches_existing_preview_image_identity": true,
+      "path": "maps/广西/preview--center--line.png",
+      "sha256": "67b32e283a01d8524cd56faf94386a5259faf6c107943d69fb7456192c9a4f1d"
+    },
+    {
+      "bytes": 1335278,
+      "crc32": 3768767078,
+      "matches_existing_preview_image_identity": true,
+      "path": "maps/广西/source.png",
+      "sha256": "6a4a2677226a35a8eeca1ff1cb2413658154ec1d3277dbc2a7107f669b031d6c"
+    }
+  ],
+  "import": "fresh palette and boundary-shade classification from the current PNG; no NPZ cache, historical native source or earlier layout used as terrain input",
+  "known_land_heights": [
+    210.0,
+    280.0,
+    350.0,
+    420.0
+  ],
+  "layer_counts_in_playable_frame": [
+    34967,
+    178545,
+    196018,
+    217912,
+    12558
+  ],
+  "map": "广西",
+  "pixel_crop": [
+    28,
+    112,
+    800,
+    800
+  ],
+  "playable_grid": [
+    800,
+    800
+  ],
+  "reference_npz": {
+    "does_not_contain_buildable_base_z": true,
+    "known_land_height_cells": 605033,
+    "path": "locked-reference.npz",
+    "sha256": "ec5a055e06f6c54eb7105b9da71c83cee7b63ffee8eb951be3b5c6640adb3288",
+    "unknown_values": "NaN known_land_height; layer_class=255 outside the visible frame",
+    "unknown_water_height_cells": 34967,
+    "valid_cells": 640000
+  },
+  "schema_version": 1,
+  "selected_preview": "maps/广西/preview.png",
+  "slopes_and_shore_geometry": "not provided by the selected PNG or completed same-version design",
+  "status": "awaiting_same_version_terrain_design",
+  "water_depth": "unknown in the selected PNG; not inferred from public defaults"
+}

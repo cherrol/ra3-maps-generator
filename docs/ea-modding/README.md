@@ -103,14 +103,14 @@ CNC_MODDING_SUPPORT_PROXY=http://127.0.0.1:10808 tools/fetch_ea_modding.sh # git
 | 对象摆放 | 对象 ID、`DATA:` 源路径、模块字段（占地、朝向、模型） | 项目 `templates/resources/stock-object-sources.json`（36 条对照）、`stock-global-objects.json`（507 个 ID）；源 XML 就在镜像 `Xml/Neutral/`、`Xml/Civilian/` 等目录，路径一一对应 |
 | 资源与中立建筑 | `OreNode*`、`OilDerrick`、医院、机场、观察站 | 镜像 `Xml/Neutral/Structures/`、`Xml/BaseObjects/BaseOreNode.xml`、`Schemas/Modules/OreNodeBehavior.xsd` |
 | 道路与水 | 道路网、`WaterAreaType`、水面高度与水面模板 | 镜像 `Xml/GlobalData/Roads.xml`、`WaterTemplates.xml`、`WaterModels.xml`；项目写进 `map.xml` 的 `<Road>`、`<WaterAreaType>` |
-| 脚本 | 动作/条件 ID 与参数、航点、队伍与出生 | 项目 `docs/script_functions.md`、`docs/ra3wiki/`；实例看镜像 `Xml/Maps/*/*/map.xml`，字段看 `Schemas/AssetTypeGameScriptList.xsd`，遭遇战整套脚本可参考 `Libraries/Lib_Skirmish_Setup` |
+| 脚本 | 动作/条件 ID 与参数、航点、队伍与出生 | 项目 `docs/spec/script_functions.md`、`reference/ra3wiki/`；实例看镜像 `Xml/Maps/*/*/map.xml`，字段看 `Schemas/AssetTypeGameScriptList.xsd`，遭遇战整套脚本可参考 `Libraries/Lib_Skirmish_Setup` |
 | 遭遇战 AI | AI 人格、军队构成、开局套路 | 镜像 `Xml/SkirmishAI/`（65 个：`ArmyDefAllied` 等、`Personalities/`、`OpeningMoves/`） |
 | 本地化 | 地图名、简介、提示文本 | 项目自己生成 `map.str`（`Intro:` / `End:` 段）；镜像没有 `.str`，上游不带本地化文件 |
 | 打包 | `.map` + `map.xml` + `overrides.xml` + `map.str` + `_art.tga` + 预览图 | 项目 `src/pipeline/build/`；安装到 `APPDATA/Red Alert 3/Maps/<发布名>/` |
 
 用不上的部分：`Shaders/`（渲染）、`Xml/UI` 系与 `AptUI/`（界面）、`Sounds/`、`Video/`、`PathMusic/`、`dlcontent/`、27 张战役图的专用脚本，做遭遇战地图时都不涉及。
 
-当前生产接入方式见[官方资源索引与最终场景验收](../official_resource_pipeline.md)。镜像用于离线提取，普通构建读取已纳管的小型索引。
+当前生产接入方式见[官方资源索引与最终场景验收](../spec/official_resource_pipeline.md)。镜像用于离线提取，普通构建读取已纳管的小型索引。
 
 ## 做地图时先看哪几个
 
@@ -142,7 +142,7 @@ CNC_MODDING_SUPPORT_PROXY=http://127.0.0.1:10808 tools/fetch_ea_modding.sh # git
 
 `map.xml` 是资产声明：`<Includes>` 列出这张图要挂的参考资产（`DATA:static.xml`、`DATA:global.xml`、`ART:*` 特效等），后面是地图自己的 `GameMap`、出生点、脚本等定义。本项目生成器写出的 `map.xml` / `overrides.xml`（`src/pipeline/build/mod.rs`）与它们是同一套格式，拿官方图对照字段名和 include 顺序最省事。
 
-`.map` 的二进制布局不在本镜像范围内，见 [`.map` 格式规范](../ra3_map_format_spec.md)。
+`.map` 的二进制布局不在本镜像范围内，见 [`.map` 格式规范](../spec/ra3_map_format_spec.md)。
 
 ## 检索示例
 
@@ -162,7 +162,7 @@ XML 是 UTF-8，个别文件带 BOM（如 `Xml/MapMetaData.xml`），按字节�
 
 ## 和其它文档的关系
 
-- [`.map` 格式规范](../ra3_map_format_spec.md)：二进制容器、WorldInfo、Waypoints 等，来源是 OpenSAGE，与本镜像互补。
-- [WorldBuilder 集成](../ra3_worldbuilder_integration.md)：地编侧的使用方式。
-- [离线 RA3Wiki](../ra3wiki/README.md)：编辑器脚本动作、条件和单位数据的说明，来自 wiki，不是 EA 源码；两者冲突时以本镜像的 `.xml` / `.xsd` 为准。
-- [脚本功能分类](../script_functions.md)：本项目对脚本函数的归类，对着 `Xml/Maps/*/*/map.xml` 和 `Libraries/` 里的实际用法看更快。
+- [`.map` 格式规范](../spec/ra3_map_format_spec.md)：二进制容器、WorldInfo、Waypoints 等，来源是 OpenSAGE，与本镜像互补。
+- [WorldBuilder 集成](../spec/ra3_worldbuilder_integration.md)：地编侧的使用方式。
+- [离线 RA3Wiki](../../reference/ra3wiki/README.md)：编辑器脚本动作、条件和单位数据的说明，来自 wiki，不是 EA 源码；两者冲突时以本镜像的 `.xml` / `.xsd` 为准。
+- [脚本功能分类](../spec/script_functions.md)：本项目对脚本函数的归类，对着 `Xml/Maps/*/*/map.xml` 和 `Libraries/` 里的实际用法看更快。
