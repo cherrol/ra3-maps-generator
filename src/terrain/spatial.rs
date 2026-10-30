@@ -840,7 +840,7 @@ mod tests {
     #[test]
     fn near_ore_audit_uses_the_spawn_policy_override_and_always_requires_two() {
         let mut p =
-            Project::load(std::path::Path::new(env!("CARGO_MANIFEST_DIR")), "海南").unwrap();
+            Project::load(std::path::Path::new(env!("CARGO_MANIFEST_DIR")), "河南").unwrap();
         p.cfg["TERRAIN"]["ore_near_max_r"] = json!(62.);
         p.cfg["TERRAIN"]["base_min_ore"] = json!(1);
         p.cfg["SPAWN_PLACEMENT"] = json!({"near_ore_radius":75.});

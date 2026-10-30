@@ -397,8 +397,7 @@ fn sync_terrain_package(
     refresh_terrain_asset_ids(&xml, version)
 }
 
-/// Runtime checks are stricter than historical source import. Reject an
-/// incomplete saved package even if the map decoder and overview accept it.
+/// All source and publication packages use the current strict terrain checks.
 pub fn validate_terrain_package(map: &MapFile, xml: &str, version: Option<&str>) -> Result<()> {
     crate::resources::terrain_package::validate_texture_limit(map)?;
     crate::resources::terrain_package::validate_references(map)?;

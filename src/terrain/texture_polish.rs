@@ -16,7 +16,6 @@ pub const PROFILE: &str = "classic-natural";
 pub fn enabled(p: &Project) -> Result<bool> {
     match p.string("TEXTURE_PROFILE", PROFILE) {
         PROFILE => Ok(true),
-        "legacy" => Ok(false),
         name => Err(err(format!("unknown TEXTURE_PROFILE {name}"))),
     }
 }
@@ -231,6 +230,7 @@ fn histogram(tiles: &[u16], names: &[String]) -> BTreeMap<String, usize> {
 }
 
 pub fn apply(p: &Project, map: &mut MapFile, source_name: &str) -> Result<Polished> {
+    enabled(p)?;
     let source = map.clone();
     let hm = HeightMap::parse(map.get("HeightMapData")?)?;
     let n = hm.width;
@@ -329,7 +329,14 @@ pub fn apply(p: &Project, map: &mut MapFile, source_name: &str) -> Result<Polish
     if checked.textures != bt.textures || !checked.textures.starts_with(&old_textures) {
         return Err(err("texture polishing changed atlas IDs"));
     }
-    crate::gameplay::script_spawns::validate(p, map, &hm, &checked, &objects)?;
+    crate::gameplay::script_spawns::validate_with_layout(
+        p,
+        map,
+        &hm,
+        &checked,
+        &objects,
+        &terrain.layout,
+    )?;
     let changed = before.iter().zip(&after).filter(|(a, b)| a != b).count();
     let report = json!({"source":source_name,"profile":PROFILE,"reference_version":"T2.2.9",
         "scope":"texture-polish-before-terrain-package-finalization",
@@ -649,6 +656,21 @@ mod tests {
     }
 
     #[test]
+    fn texture_profile_rejects_the_removed_legacy_switch() {
+        let (mut fixture, _, mut map) = fixture();
+        fixture.0.cfg["TEXTURE_PROFILE"] = json!("legacy");
+        assert!(enabled(&fixture.0).is_err());
+        let before = chunk_fingerprints(&map);
+        let rejected = apply(&fixture.0, &mut map, "invalid-profile")
+            .err()
+            .unwrap();
+        assert!(rejected.to_string().contains("TEXTURE_PROFILE"));
+        assert_eq!(chunk_fingerprints(&map), before);
+        fixture.0.cfg["TEXTURE_PROFILE"] = json!(PROFILE);
+        assert!(enabled(&fixture.0).unwrap());
+    }
+
+    #[test]
     fn finalized_report_separates_polish_claims_from_compaction_and_loading_changes() {
         let (_fixture, mut polished, mut map) = fixture();
         let compaction = crate::resources::terrain_package::compact(&mut map).unwrap();
@@ -721,7 +743,7 @@ mod tests {
 
     #[test]
     fn five_plateaus_keep_grass_variants_and_two_distinct_rock_interiors() {
-        let mut p = Project::load(Path::new(env!("CARGO_MANIFEST_DIR")), "陕西").unwrap();
+        let mut p = Project::load(Path::new(env!("CARGO_MANIFEST_DIR")), "河南").unwrap();
         p.cfg["LAYER_M"] = json!([
             [4000, 700.],
             [1500, 420.],

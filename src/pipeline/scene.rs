@@ -12,7 +12,7 @@ use crate::{
 use serde_json::{Value as Json, json};
 use std::{collections::BTreeMap, fs};
 
-const REVISION: &str = "final-native-scene-v4-package-asset-definitions";
+const REVISION: &str = "final-native-scene-v6-strict-all-placement-targets";
 const REPORT: &str = "scene-report.json";
 const ARTIFACTS: [&str; 4] = [
     "source/final-scene.json",
@@ -35,11 +35,7 @@ fn xml_enforced(p: &Project) -> Result<bool> {
         None if !p.cfg["XML_STRUCTURE"].is_null() && !p.cfg["XML_STRUCTURE"].is_object() => {
             Err(err("XML_STRUCTURE must be an object"))
         }
-        None => Ok(!p.cfg["COORDINATE_PIPELINE"].is_object()
-            && p.string("TEXTURE_PROFILE", "") != "legacy"
-            && p.string("RAMP_PROFILE", "") != "legacy"
-            && !p.cfg["SPAWN_PLACEMENT_REFERENCE"].is_string()
-            && !p.cfg["RAMP_CLEARANCE_REFERENCE"].is_string()),
+        None => Ok(true),
     }
 }
 
@@ -49,26 +45,11 @@ pub fn binding(p: &Project) -> Result<Json> {
         "xml":{"enforced":xml_enforced(p)?,"settings":p.cfg["XML_STRUCTURE"]}}))
 }
 
-/// A complete saved-package edit inherits its source content by default, even
-/// before it has been adopted into COORDINATE_PIPELINE. Explicit modes win.
+/// Saved-package edits retain the same explicit settings and strict defaults.
 pub(crate) fn incremental_context(p: &Project) -> Result<Project> {
-    let mut context = p.clone();
-    for key in ["OFFICIAL_PLACEMENT", "XML_STRUCTURE"] {
-        if context.cfg[key].is_null() {
-            context.cfg[key] = json!({});
-        }
-        let settings = context.cfg[key]
-            .as_object_mut()
-            .ok_or_else(|| err(format!("{key} must be an object")))?;
-        if !settings.contains_key("mode") {
-            settings.insert("mode".into(), json!("diagnostic"));
-            settings.insert(
-                "default_reason".into(),
-                json!("incremental edit of a complete saved package"),
-            );
-        }
-    }
-    Ok(context)
+    xml_enforced(p)?;
+    official_placement::enforced(p)?;
+    Ok(p.clone())
 }
 
 fn snapshot(p: &Project, map: &MapFile, native_crc32: u32) -> Result<Json> {
@@ -227,21 +208,34 @@ fn analyse_inner(
         || json!({"passed":null,"status":"unavailable","findings":[],"scope":"map.xml is absent"}),
     );
     structure["enforced"] = json!(xml_enforced(p)?);
-    let xml_passed = structure["enforced"] != true || structure["passed"] == true;
-    let placement_passed = placement["enforced"] != true || placement["passed"] == true;
+    let xml_passed = structure["enforced"] == true && structure["passed"] == true;
+    let placement_passed = placement["status"] == "not_applicable"
+        || (placement["enforced"] == true
+            && placement["passed"] == true
+            && placement["raw_passed"] == true);
     Ok(json!({"schema_version":1,"algorithm":REVISION,"map":p.name,
         "catalog_fingerprint":official::binding().fingerprint,
         "effective_bindings":binding(p)?,
         "passed":xml_passed && placement_passed,
-        "raw_passed":structure["passed"] == true && (placement["passed"] == true || placement["status"] == "not_applicable"),
+        "raw_passed":structure["passed"] == true && (placement["raw_passed"] == true || placement["status"] == "not_applicable"),
         "xml_structure":structure,"official_placement":placement,"unit_routes":routes,"package_overrides":override_report,
         "scope":"automatic structural/placement checks plus diagnostic unit-state routes; independent delivery checks remain separate"}))
 }
 
 pub(crate) fn require_passed(report: &Json) -> Result<()> {
     official_placement::require_passed(&report["official_placement"])?;
-    if report["xml_structure"]["enforced"] == true && report["xml_structure"]["passed"] != true {
+    if report["xml_structure"]["enforced"] != true {
+        return Err(err(
+            "diagnostic XML structure cannot authorize production; use strict mode",
+        ));
+    }
+    if report["xml_structure"]["passed"] != true {
         return Err(err("XML structure failed; see xml-structure.json"));
+    }
+    if report["passed"] != true || report["raw_passed"] != true {
+        return Err(err(
+            "production requires both passed and raw_passed for the complete final scene",
+        ));
     }
     Ok(())
 }
@@ -254,18 +248,36 @@ pub fn read_xml(p: &Project) -> Result<Option<String>> {
     }
 }
 
-/// Inspect a saved release, inheriting its default mode only from a matching
-/// validated incremental publication proof. Explicit strict settings still win.
+/// Inspect explicit diagnostic modes without production authorization or writes.
+/// Strict audits also refresh the content-bound production evidence.
 pub fn audit_existing(p: &Project) -> Result<Json> {
     let bytes = fs::read(p.assets.join(format!("{}.map", p.name)))?;
     let map = MapFile::load_bytes(&bytes)?;
-    let context = if crate::pipeline::build::placement_proof(p, &bytes)?.is_some() {
-        incremental_context(p)?
-    } else {
-        p.clone()
-    };
     let xml = read_xml(p)?;
-    verify(&context, &map, xml.as_deref())
+    if !xml_enforced(p)? || !official_placement::enforced(p)? {
+        let mut report = analyse(p, &map, xml.as_deref())?;
+        report["native_crc32"] = json!(crc32fast::hash(&map.encode()?));
+        report["read_only"] = json!(true);
+        return Ok(report);
+    }
+    verify(p, &map, xml.as_deref())
+}
+
+/// Diagnose all gift/resource reservations without changing any game file.
+pub fn audit_gifts_existing(p: &Project) -> Result<Json> {
+    let bytes = fs::read(p.assets.join(format!("{}.map", p.name)))?;
+    let native = MapFile::load_bytes(&bytes)?;
+    let saved = crate::terrain::Layout::release_snapshot(p, &p.name)?
+        .ok_or_else(|| err("gift audit requires complete same-version source/layout.json"))?;
+    let (layout, _) = crate::coordinates::native_layout(p, &native, &saved)?;
+    let mut report = crate::gameplay::gift_clearance::audit_reservations(p, &native, &layout)?;
+    report["map_id"] = json!(p.id);
+    report["map"] = json!(p.name);
+    report["native_crc32"] = json!(crc32fast::hash(&bytes));
+    report["layout_crc32"] = json!(crc32fast::hash(&serde_json::to_vec(&layout)?));
+    report["read_only_native"] = json!(true);
+    project::write_json(&p.assets.join("gift-reservations.json"), &report)?;
+    Ok(report)
 }
 
 fn read_overrides(p: &Project) -> Result<Option<String>> {
@@ -430,33 +442,36 @@ mod tests {
                 version: "T0.0.1".into(),
                 state: json!({}),
                 cfg: json!({"GRID":hm.width,"GRID_HEIGHT":hm.height,"BORDER":hm.border,"CELL":7.5,"Z_SCALE":0.0390625,
-                "TERRAIN_ONLY":true,"XML_STRUCTURE":{"mode":"diagnostic"}}),
+                "TERRAIN_ONLY":true}),
             },
             map,
         )
     }
     fn xml() -> String {
-        "<AssetDeclaration xmlns='uri:ea.com:eala:asset'><GameMap id='test'><Structure id='house'><Position x='1' y='2' z='0'/></Structure><Waypoint id='late'><Position x='3' y='4' z='0'/></Waypoint></GameMap></AssetDeclaration>".into()
+        "<AssetDeclaration xmlns='uri:ea.com:eala:asset'><GameMap id='test'><Waypoint id='start'><Position x='3' y='4' z='0'/></Waypoint><Structure id='house'><Position x='1' y='2' z='0'/></Structure></GameMap></AssetDeclaration>".into()
     }
     #[test]
-    fn strict_mode_cannot_reuse_a_diagnostic_scene_pass() {
+    fn diagnostic_scene_cannot_authorize_verify_even_when_raw_checks_pass() {
         let mut f = fixture();
         let xml = xml();
         let native = f.1.encode().unwrap();
-        let before = verify(&f.0, &f.1, Some(&xml)).unwrap();
-        assert_eq!(before["passed"], true);
-        assert_eq!(before["xml_structure"]["passed"], false);
-        f.0.cfg["XML_STRUCTURE"]["mode"] = json!("strict");
+        f.0.cfg["XML_STRUCTURE"] = json!({"mode":"diagnostic"});
+        let before = analyse(&f.0, &f.1, Some(&xml)).unwrap();
+        assert_eq!(before["passed"], false);
+        assert_eq!(before["raw_passed"], true);
+        assert!(require_passed(&before).is_err());
         assert!(
             verify(&f.0, &f.1, Some(&xml))
                 .unwrap_err()
                 .to_string()
-                .contains("XML structure failed")
+                .contains("diagnostic XML structure")
         );
-        let failed: Json =
+        let diagnostic: Json =
             serde_json::from_slice(&fs::read(f.0.assets.join(REPORT)).unwrap()).unwrap();
-        assert_ne!(failed["input_crc32"], before["input_crc32"]);
-        assert_eq!(failed["passed"], false);
+        f.0.cfg["XML_STRUCTURE"]["mode"] = json!("strict");
+        let strict = verify(&f.0, &f.1, Some(&xml)).unwrap();
+        assert_ne!(strict["input_crc32"], diagnostic["input_crc32"]);
+        assert_eq!(strict["passed"], true);
         assert_eq!(f.1.encode().unwrap(), native);
     }
     #[test]
@@ -487,14 +502,35 @@ mod tests {
     }
 
     #[test]
+    fn partial_native_results_cannot_authorize_a_final_scene() {
+        let f = fixture();
+        let mut report = analyse(&f.0, &f.1, Some(&xml())).unwrap();
+        assert_eq!(report["passed"], true);
+        assert_eq!(report["raw_passed"], true);
+        require_passed(&report).unwrap();
+        report["raw_passed"] = json!(false);
+        assert!(require_passed(&report).is_err());
+        report["raw_passed"] = json!(true);
+        report["official_placement"] = json!({"enforced":true,"passed":true,"raw_passed":false,"strict_scope":"all applicable native buildings and explicit building creation actions","findings":[],"diagnostic_findings":[{"kind":"OreNode","detail":"unresolved instance"}]});
+        assert!(require_passed(&report).is_err());
+    }
+
+    #[test]
     fn saved_package_context_preserves_explicit_strict_modes() {
         let mut f = fixture();
         f.0.cfg["XML_STRUCTURE"] = json!({});
         f.0.cfg["SPAWN_PLACEMENT_REFERENCE"] = Json::Null;
         f.0.cfg["RAMP_CLEARANCE_REFERENCE"] = Json::Null;
         assert!(xml_enforced(&f.0).unwrap());
+        f.0.cfg["COORDINATE_PIPELINE"] = json!({});
+        f.0.cfg["TEXTURE_PROFILE"] = json!("legacy");
+        f.0.cfg["RAMP_PROFILE"] = json!("legacy");
+        f.0.cfg["SPAWN_PLACEMENT_REFERENCE"] = json!("old.json");
+        f.0.cfg["RAMP_CLEARANCE_REFERENCE"] = json!("old.json");
         let inherited = incremental_context(&f.0).unwrap();
-        assert!(!xml_enforced(&inherited).unwrap());
+        assert!(xml_enforced(&inherited).unwrap());
+        assert!(official_placement::enforced(&inherited).unwrap());
+        assert_eq!(inherited.cfg, f.0.cfg);
         assert_eq!(f.0.cfg["XML_STRUCTURE"], json!({}));
         f.0.cfg["XML_STRUCTURE"]["mode"] = json!("strict");
         f.0.cfg["OFFICIAL_PLACEMENT"] = json!({"mode":"strict"});
@@ -513,7 +549,7 @@ mod tests {
         cached.as_object_mut().unwrap().remove("xml_structure");
         project::write_json(&path, &cached).unwrap();
         let repaired = verify(&f.0, &f.1, Some(&xml)).unwrap();
-        assert_eq!(repaired["xml_structure"]["passed"], false);
+        assert_eq!(repaired["xml_structure"]["passed"], true);
         let overrides = "<AssetDeclaration xmlns='uri:ea.com:eala:asset'><AIData id='AIData' DeepWaterDepth='100'/></AssetDeclaration>";
         let evidence = overrides_evidence(Some(overrides)).unwrap();
         assert_eq!(evidence["asset_definitions"][0]["type"], "AIData");

@@ -316,7 +316,7 @@ mod tests {
     fn complete_material_catalog_retains_explicit_recipe_overrides() {
         let mut project = crate::pipeline::project::Project::load(
             std::path::Path::new(env!("CARGO_MANIFEST_DIR")),
-            "陕西",
+            "河南",
         )
         .unwrap();
         project.cfg["TEX_SET"]

@@ -17,14 +17,6 @@ path = "tools/maintenance.rs"
 test = true
 
 [[example]]
-name = "henan-authoring"
-path = "tools/henan_authoring.rs"
-
-[[example]]
-name = "henan-spawns"
-path = "tools/henan_spawns.rs"
-
-[[example]]
 name = "preview-water-layers"
 path = "tools/preview_water_layers.rs"
 test = true
@@ -36,7 +28,7 @@ test = true
 
 [dependencies]
 serde = { version = "1.0.228", features = ["derive"] }
-serde_json = "1.0.149"
+serde_json = { version = "1.0.149", features = ["float_roundtrip"] }
 flate2 = "1.1.5"
 crc32fast = "1.5.0"
 chrono = "0.4.42"
@@ -53,4 +45,9 @@ opt-level = 2
 [[example]]
 name = "preview-intrusion-repair"
 path = "tools/preview_intrusion_repair.rs"
+test = true
+
+[[example]]
+name = "preview-source-reference"
+path = "tools/preview_source_reference.rs"
 test = true

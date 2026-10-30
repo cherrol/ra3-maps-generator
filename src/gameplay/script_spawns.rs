@@ -67,6 +67,9 @@ pub(crate) fn keepouts(p: &Project, objects: &[MapObject]) -> Vec<([f64; 2], f64
     objects
         .iter()
         .filter_map(|o| {
+            if super::placement::is_decoration(o) {
+                return None;
+            }
             let radius = if o.type_name.contains("Waypoint") {
                 let name = prop(&o.props, "waypointName")
                     .and_then(Value::text)
@@ -135,11 +138,57 @@ pub fn append(p: &Project, t: &Terrain, s: &Surface, objects: &mut Vec<MapObject
     if p.flag("TERRAIN_ONLY") {
         return Ok(());
     }
-    let specs = specs(p)?;
+    let mut specs = specs(p)?;
     if specs.is_empty() {
         return Ok(());
     }
     let mut protected = keepouts(p, objects);
+    let rules = scripts::load_rules(p)?;
+    protected.extend(super::production_spawns::reservations(
+        p,
+        &rules.scripts,
+        objects,
+    )?);
+    // Sample terrain scarcity before claiming lower-priority sites. Each chosen
+    // point still receives the complete checks; names never determine priority.
+    let mut ranked = Vec::new();
+    for (identity, spec) in specs.into_iter().enumerate() {
+        let base = t.layout.base_cells[spec.seat - 1];
+        let radius = seat_radius(p, spec.seat)?;
+        let center = base.map(|value| value.round_ties_even() as usize);
+        let stride = (2 * spec.padding).max(8);
+        let mut availability = 0;
+        for y in (center[1].saturating_sub(radius)..=(center[1] + radius).min(t.height() - 1))
+            .step_by(stride)
+        {
+            for x in (center[0].saturating_sub(radius)..=(center[0] + radius).min(t.n - 1))
+                .step_by(stride)
+            {
+                if (14.0..=radius as f64).contains(&distance(base, [x as f64, y as f64]))
+                    && suitable(
+                        p,
+                        t.n,
+                        &t.z,
+                        &s.impassable,
+                        &s.build_block,
+                        [x, y],
+                        spec.padding,
+                    )
+                    && clear([x, y], spec.padding, &protected)
+                {
+                    availability += 1;
+                }
+            }
+        }
+        ranked.push((
+            availability,
+            std::cmp::Reverse(spec.padding),
+            identity,
+            spec,
+        ));
+    }
+    ranked.sort_by_key(|entry| (entry.0, entry.1, entry.2));
+    specs = ranked.into_iter().map(|entry| entry.3).collect();
     let frame = crate::coordinates::Frame::from_project(p);
     let prototype = objects
         .iter()
@@ -159,15 +208,30 @@ pub fn append(p: &Project, t: &Terrain, s: &Surface, objects: &mut Vec<MapObject
     for spec in &specs {
         let base = t.layout.base_cells[spec.seat - 1];
         let radius = seat_radius(p, spec.seat)?;
-        let existing = objects.iter().find(|o| {
+        let existing = objects.iter().position(|o| {
             prop(&o.props, "waypointName").and_then(Value::text) == Some(spec.name.as_str())
         });
-        let point = if let Some(o) = existing {
-            let c = to_cell(p, o);
+        let old = existing.map(|index| {
+            let c = to_cell(p, &objects[index]);
             [
                 c[0].round_ties_even() as usize,
                 c[1].round_ties_even() as usize,
             ]
+        });
+        let acceptable = |point: [usize; 2]| {
+            suitable(
+                p,
+                t.n,
+                &t.z,
+                &s.impassable,
+                &s.build_block,
+                point,
+                spec.padding,
+            ) && clear(point, spec.padding, &protected)
+                && (14.0..=radius as f64).contains(&distance(base, point.map(|v| v as f64)))
+        };
+        let point = if let Some(point) = old.filter(|point| acceptable(*point)) {
+            point
         } else {
             let [bx, by] = [
                 base[0].round_ties_even() as usize,
@@ -185,24 +249,14 @@ pub fn append(p: &Project, t: &Terrain, s: &Surface, objects: &mut Vec<MapObject
             candidates.sort_by(|a, b| a.0.total_cmp(&b.0).then(a.2.cmp(&b.2)).then(a.1.cmp(&b.1)));
             let (_, x, y) = candidates
                 .into_iter()
-                .find(|&(_, x, y)| {
-                    suitable(
-                        p,
-                        t.n,
-                        &t.z,
-                        &s.impassable,
-                        &s.build_block,
-                        [x, y],
-                        spec.padding,
-                    ) && clear([x, y], spec.padding, &protected)
-                })
+                .find(|&(_, x, y)| acceptable([x, y]))
                 .ok_or_else(|| {
                     err(format!(
                         "{}: no flat land for {} within {} cells of P{}",
                         p.id, spec.name, radius, spec.seat
                     ))
                 })?;
-            let mut o = prototype.clone();
+            let mut o = existing.map_or_else(|| prototype.clone(), |index| objects[index].clone());
             let position = frame.world([x as f64, y as f64]);
             o.position = [position[0] as f32, position[1] as f32, 0.];
             map::set(
@@ -210,10 +264,14 @@ pub fn append(p: &Project, t: &Terrain, s: &Surface, objects: &mut Vec<MapObject
                 "waypointName",
                 Value::Ascii(spec.name.clone()),
             );
-            map::set(&mut o.props, "uniqueID", Value::Ascii(spec.name.clone()));
-            map::set(&mut o.props, "waypointID", Value::Int(next_id));
-            next_id += 1;
-            objects.push(o);
+            if let Some(index) = existing {
+                objects[index] = o;
+            } else {
+                map::set(&mut o.props, "uniqueID", Value::Ascii(spec.name.clone()));
+                map::set(&mut o.props, "waypointID", Value::Int(next_id));
+                next_id += 1;
+                objects.push(o);
+            }
             [x, y]
         };
         if !suitable(
@@ -307,7 +365,18 @@ pub fn validate(
     bt: &BlendTiles,
     objects: &[MapObject],
 ) -> Result<()> {
-    crate::gameplay::production_spawns::validate(p, map, hm, bt, objects)?;
+    validate_with_layout(p, map, hm, bt, objects, &crate::terrain::Layout::load(p)?)
+}
+
+pub(crate) fn validate_with_layout(
+    p: &Project,
+    map: &MapFile,
+    hm: &HeightMap,
+    bt: &BlendTiles,
+    objects: &[MapObject],
+    layout: &crate::terrain::Layout,
+) -> Result<()> {
+    crate::gameplay::production_spawns::validate_with_layout(p, map, hm, bt, objects, layout)?;
     let specs = specs(p)?;
     if specs.is_empty() {
         return Ok(());
@@ -320,7 +389,6 @@ pub fn validate(
     let impassable = crate::terrain::flip(&bt.impassability, n);
     let blocked = crate::terrain::flip(&bt.buildability, n);
     let mut protected = keepouts(p, objects);
-    let layout = crate::terrain::Layout::load(p)?;
     for spec in &specs {
         let o = objects
             .iter()
@@ -398,7 +466,7 @@ mod tests {
     impl ReportFixture {
         fn new() -> Self {
             let root = std::path::Path::new(env!("CARGO_MANIFEST_DIR"));
-            let mut p = Project::load(root, "海南").unwrap();
+            let mut p = Project::load(root, "河南").unwrap();
             p.assets = std::env::temp_dir().join(format!(
                 "ra3-script-report-{}-{}",
                 std::process::id(),

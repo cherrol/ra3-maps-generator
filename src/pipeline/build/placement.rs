@@ -5,7 +5,7 @@ use crate::{
     err,
     formats::map::{self, HeightMap, MapFile},
     pipeline::project::Project,
-    terrain::{Layout, ObjectSpec, ramp_clearance, spawn_placement},
+    terrain::{Layout, ramp_clearance, spawn_placement},
 };
 use serde_json::{Value, json};
 use std::fs;
@@ -17,61 +17,27 @@ fn resources(m: &MapFile) -> Result<Vec<map::MapObject>> {
         .collect())
 }
 
-/// Spawn checks can read an old, layout-free package without a rules template.
-/// A same-version saved layout remains authoritative and must parse
-/// successfully. An unrelated recipe blueprint cannot override native starts.
-fn spawn_layout(p: &Project, release: &str, native: &MapFile) -> Result<Layout> {
-    if let Some(layout) = Layout::release_snapshot(p, release)? {
-        return Ok(layout);
-    }
-    let hm = HeightMap::parse(native.get("HeightMapData")?)?;
-    let frame = Frame::from_heightmap(p, &hm)?;
-    let objects = map::objects(native.get("ObjectsList")?, &native.table)?;
-    let bases = Layout::native_base_cells(p, native)?;
-    let mut layout: Layout = serde_json::from_value(json!({
-        "schema_version":1,"base_cells":bases,"ore_cells":[],"ore_angles":[],"objects":[]
-    }))?;
-    for object in objects {
-        let cell = frame.grid([object.position[0] as f64, object.position[1] as f64]);
-        if object.type_name == "OreNode" {
-            layout.ore_cells.push(cell);
-            layout.ore_angles.push(-(object.angle as f64));
-        }
-        layout.objects.push(ObjectSpec {
-            cell,
-            version: object.version,
-            angle: object.angle,
-            road_type: object.road_type,
-            type_name: object.type_name,
-            props: object.props,
-        });
-    }
-    Ok(layout)
+/// Publication requires the actual same-version layout, including all ramps.
+fn spawn_layout(p: &Project, release: &str, _native: &MapFile) -> Result<Layout> {
+    Layout::release_snapshot(p, release)?
+        .ok_or_else(|| err("publication requires a complete same-version source/layout.json"))
 }
 
 fn spawn_binding(p: &Project) -> Result<Value> {
-    let reference = p
-        .cfg
-        .get("SPAWN_PLACEMENT_REFERENCE")
-        .map(|value| -> Result<Value> {
-            let path = value
-                .as_str()
-                .ok_or_else(|| err("SPAWN_PLACEMENT_REFERENCE must name a fixture file"))?;
-            Ok(json!({"path":path,"crc32":crc32fast::hash(&fs::read(p.path(path)?)?)}))
-        })
-        .transpose()?;
+    crate::pipeline::project::validate_current_rules(&p.cfg)?;
     if crate::pipeline::coordinate_pipeline::enabled(p) {
         // A cached report cannot replace checking the actual CRC-bound source.
         crate::pipeline::frozen_source::FrozenSource::load(p)?;
     }
     Ok(json!({
-        "schema_version":1,
+        "schema_version":2,
+        "rules_version":spawn_placement::RULES_VERSION,
+        "orientation_exception":p.cfg.get("SPAWN_ORIENTATION_EXCEPTION"),
         "policy":spawn_placement::policy(p)?,
         "water_height":p.number("WATER_Z",200.),
         "terrain_only":p.flag("TERRAIN_ONLY"),
         "strict":p.cfg.get("SPAWN_PLACEMENT").is_some(),
-        "source":p.cfg.get("COORDINATE_PIPELINE"),
-        "historical_reference":reference
+        "source":p.cfg.get("COORDINATE_PIPELINE")
     }))
 }
 
@@ -115,20 +81,14 @@ pub(crate) fn release_fields(
                 "resource or terrain edits require complete ramp-layout validation",
             ));
         }
-        let strict = if p.cfg.get("RAMP_CLEARANCE").is_some() {
-            ramp_clearance::validate(p, after, &Layout::load_release(p, source_name)?)?
-        } else {
-            None
-        };
-        Some(json!({
-            "passed":true,"status":"unchanged_resource_geometry",
-            "policy":ramp_clearance::policy(p)?,"strict_check":strict
-        }))
+        ramp_clearance::validate(p, after, &Layout::load_release(p, source_name)?)?
     };
     let frame = Frame::from_heightmap(p, &HeightMap::parse(after.get("HeightMapData")?)?)?;
-    let geometry = edited_layout
-        .map(|layout| ramp_clearance::geometry_crc32(p, after, layout))
-        .transpose()?;
+    let geometry_layout = match edited_layout {
+        Some(layout) => layout.clone(),
+        None => Layout::load_release(p, source_name)?,
+    };
+    let geometry = ramp_clearance::geometry_crc32(p, after, &geometry_layout)?;
     Ok(serde_json::Map::from_iter([
         ("ramp_clearance".into(), serde_json::to_value(clearance)?),
         ("spawn_placement".into(), spawn_report),
@@ -174,8 +134,10 @@ fn matching_proof(
         && report["map_crc32"] == crc32fast::hash(bytes)
         && report["coordinate_frame"] == serde_json::to_value(frame)?
         && report["ramp_clearance"]["passed"] == true
+        && report["ramp_clearance"]["raw_passed"] == true
         && report["ramp_clearance"]["policy"] == serde_json::to_value(ramp_clearance::policy(p)?)?
         && report["spawn_placement"]["passed"] == true
+        && report["spawn_placement"]["raw_passed"] == true
         && report["spawn_placement_binding"] == spawn_binding(p)?
         && report["resource_distribution_binding"] == crate::terrain::resource_routes::binding(p)?
     {
@@ -213,9 +175,6 @@ pub(crate) fn validate_native(p: &Project, bytes: &[u8], native: &MapFile) -> Re
             return Err(err(
                 "cached spawn layout differs from the validated release seat declarations",
             ));
-        }
-        if proof["ramp_clearance"]["status"] == "unchanged_resource_geometry" {
-            return Ok(());
         }
         let layout: Layout = serde_json::from_slice(&fs::read(p.source().join("layout.json"))?)?;
         if proof["placement_geometry_crc32"] != ramp_clearance::geometry_crc32(p, native, &layout)?

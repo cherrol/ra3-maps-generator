@@ -62,7 +62,7 @@ impl Fixture {
                 320,
                 400,
                 (0..8)
-                    .map(|i| [if i < 4 { 255. } else { 65. }, 70. + (i % 4) as f64 * 80.])
+                    .map(|i| [if i < 4 { 65. } else { 255. }, 70. + (i % 4) as f64 * 80.])
                     .collect::<Vec<_>>(),
                 [1., 0.],
             ),
@@ -303,7 +303,7 @@ impl Drop for Fixture {
 }
 
 fn full_refinery_fixture() -> Fixture {
-    let mut fixture = Fixture::new("east_west");
+    let mut fixture = Fixture::new("west_east");
     fixture.frame.width = 640;
     fixture.project.cfg["GRID"] = json!(640);
     let count = fixture.frame.width * fixture.frame.height;
@@ -315,7 +315,7 @@ fn full_refinery_fixture() -> Fixture {
         .base_cells
         .iter()
         .enumerate()
-        .map(|(seat, base)| [if seat < 4 { 480. } else { 160. }, base[1]])
+        .map(|(seat, base)| [if seat < 4 { 160. } else { 480. }, base[1]])
         .collect();
     fixture.set_bases(bases, [1., 0.]);
     fixture
@@ -339,13 +339,8 @@ fn full_refinery_fixture() -> Fixture {
 }
 
 #[test]
-fn canonical_opposed_layouts_and_legacy_diagnostic_pass_on_actual_native_maps() {
-    for direction in [
-        "east_west",
-        "south_north",
-        "southwest_northeast",
-        "southeast_northwest",
-    ] {
+fn canonical_opposed_layouts_pass_on_actual_native_maps() {
+    for direction in ["west_east", "south_north", "southwest_northeast"] {
         let fixture = Fixture::new(direction);
         let report =
             spawn_placement::validate(&fixture.project, &fixture.native(), &fixture.layout)
@@ -363,10 +358,19 @@ fn canonical_opposed_layouts_and_legacy_diagnostic_pass_on_actual_native_maps() 
 }
 
 #[test]
+fn southeast_positions_are_only_accepted_as_the_south_north_layout() {
+    let fixture = Fixture::new("southeast_northwest");
+    let report =
+        spawn_placement::validate(&fixture.project, &fixture.native(), &fixture.layout).unwrap();
+    assert_eq!(report["orientation"]["accepted"], json!(["south_north"]));
+    assert_eq!(report["passed"], true);
+}
+
+#[test]
 fn each_seat_must_be_on_its_allowed_side_including_the_centerline() {
-    let mut fixture = Fixture::new("east_west");
+    let mut fixture = Fixture::new("west_east");
     let original = fixture.layout.base_cells.clone();
-    for x in [145., (fixture.frame.width - 1) as f64 / 2.] {
+    for x in [175., (fixture.frame.width - 1) as f64 / 2.] {
         let mut bases = original.clone();
         bases[0][0] = x;
         fixture.set_bases(bases, [1., 0.]);
@@ -393,6 +397,46 @@ fn each_seat_must_be_on_its_allowed_side_including_the_centerline() {
 }
 
 #[test]
+fn recorded_west_east_choice_remains_compatible_with_the_default_and_keeps_footprint_checks() {
+    let mut fixture = Fixture::new("west_east");
+    let bases = fixture.layout.base_cells.clone();
+    assert_eq!(fixture.report()["passed"], true);
+    fixture.project.cfg["SPAWN_ORIENTATION_EXCEPTION"] = json!({
+        "layout": "west_east", "reason": "User requires P1-P4 west and P5-P8 east"
+    });
+    let checked =
+        spawn_placement::validate(&fixture.project, &fixture.native(), &fixture.layout).unwrap();
+    assert_eq!(checked["orientation"]["accepted"], json!(["west_east"]));
+    assert_eq!(checked["passed"], true);
+    let k = bases[0][1] as usize * fixture.frame.width + bases[0][0] as usize;
+    fixture.buildability[k] = true;
+    fixture.assert_rejected();
+    fixture.buildability[k] = false;
+    for x in [255., (fixture.frame.width - 1) as f64 / 2.] {
+        let mut wrong = bases.clone();
+        wrong[0][0] = x;
+        fixture.set_bases(wrong, [1., 0.]);
+        assert!(
+            fixture.report()["findings"]
+                .as_array()
+                .unwrap()
+                .iter()
+                .any(|f| f["rule"] == "orientation")
+        );
+        fixture.assert_rejected();
+    }
+    fixture.project.cfg["SPAWN_ORIENTATION_EXCEPTION"]["reason"] = json!("");
+    assert!(
+        spawn_placement::validate(&fixture.project, &fixture.native(), &fixture.layout).is_err()
+    );
+    fixture.project.cfg["SPAWN_ORIENTATION_EXCEPTION"] =
+        json!({"layout":"unknown", "reason":"explicit"});
+    assert!(
+        spawn_placement::validate(&fixture.project, &fixture.native(), &fixture.layout).is_err()
+    );
+}
+
+#[test]
 fn fractional_coordinates_and_rectangular_north_axis_are_preserved() {
     let mut fixture = Fixture::new("south_north");
     let bases = fixture
@@ -411,7 +455,7 @@ fn fractional_coordinates_and_rectangular_north_axis_are_preserved() {
 
 #[test]
 fn water_surface_accepts_uneven_seabed_but_rejects_disconnected_water() {
-    let mut fixture = Fixture::new("east_west");
+    let mut fixture = Fixture::new("west_east");
     for (i, height) in fixture.heights.iter_mut().enumerate() {
         *height = 60 + (i % 83) as u16;
     }
@@ -426,7 +470,7 @@ fn water_surface_accepts_uneven_seabed_but_rejects_disconnected_water() {
 
 #[test]
 fn equal_center_heights_do_not_prove_a_shared_flat_platform() {
-    let mut fixture = Fixture::new("east_west");
+    let mut fixture = Fixture::new("west_east");
     for y in fixture.frame.border..fixture.frame.height - fixture.frame.border {
         fixture.heights[y * fixture.frame.width + 244] = 320;
     }
@@ -438,7 +482,7 @@ fn equal_center_heights_do_not_prove_a_shared_flat_platform() {
 
 #[test]
 fn complete_ore_and_base_footprints_cannot_cross_heights_or_shorelines() {
-    let mut fixture = Fixture::new("east_west");
+    let mut fixture = Fixture::new("west_east");
     let ore_edge = 70 * fixture.frame.width + 239;
     fixture.heights[ore_edge] = 320;
     fixture.assert_rejected();
@@ -460,9 +504,9 @@ fn refinery_corners_are_checked_beyond_the_ore_disk() {
 
 #[test]
 fn two_near_ores_cannot_occupy_the_same_starting_resource_space() {
-    let mut fixture = Fixture::new("east_west");
-    fixture.layout.ore_cells[1] = [221., 70.];
-    fixture.layout.objects[9].cell = [221., 70.];
+    let mut fixture = Fixture::new("west_east");
+    fixture.layout.ore_cells[1] = [31., 70.];
+    fixture.layout.objects[9].cell = [31., 70.];
     fixture.layout.objects[9].angle = 0.;
     fixture.layout.ore_angles[1] = 0.;
     // Both distinct native ore nodes are near P1 and all terrain is flat.
@@ -486,8 +530,8 @@ fn a_complete_refinery_reservation_cannot_pass_through_the_birth_base() {
     assert_eq!(fixture.report()["passed"], true);
     fixture.layout.objects[8].angle = 0.;
     fixture.layout.ore_angles[0] = 0.;
-    // The first ore's rectangle now extends east from (445,70) to x=493,
-    // through P1's physical base core centered at (480,70).
+    // The first ore's rectangle now extends east from (125,70) to x=173,
+    // through P1's physical base core centered at (160,70).
     let report = fixture.report();
     assert_eq!(report["passed"], false, "{report}");
     assert!(
@@ -511,7 +555,7 @@ fn a_complete_refinery_reservation_cannot_pass_through_the_birth_base() {
 
 #[test]
 fn native_buildings_block_reserved_space_even_when_terrain_masks_are_clear() {
-    let mut fixture = Fixture::new("east_west");
+    let mut fixture = Fixture::new("west_east");
     fixture.layout.objects.push(ObjectSpec {
         cell: [239., 70.],
         version: 3,
@@ -537,7 +581,7 @@ fn native_buildings_block_reserved_space_even_when_terrain_masks_are_clear() {
 
 #[test]
 fn a_large_flat_spawn_platform_is_not_the_base_buildings_physical_radius() {
-    let mut fixture = Fixture::new("east_west");
+    let mut fixture = Fixture::new("west_east");
     fixture.project.cfg["SPAWN_PLACEMENT"] = json!({"base_radius":24.});
     // The 24-cell flat platform and a nearby 20-cell ore disk share terrain,
     // while the physical base core at distance 35 still has enough clearance.
@@ -550,7 +594,7 @@ fn a_large_flat_spawn_platform_is_not_the_base_buildings_physical_radius() {
 
 #[test]
 fn fixed_ai_birth_base_is_its_own_body_only_when_native_ownership_matches() {
-    let mut fixture = Fixture::new("east_west");
+    let mut fixture = Fixture::new("west_east");
     let p7 = fixture.layout.base_cells[6];
     fixture.layout.objects.push(ObjectSpec {
         cell: [p7[0] + 3.6, p7[1]],
@@ -585,25 +629,25 @@ fn fixed_ai_birth_base_is_its_own_body_only_when_native_ownership_matches() {
 
 #[test]
 fn full_footprints_must_stay_inside_playable_bounds_and_navigation_masks() {
-    let mut fixture = Fixture::new("east_west");
+    let mut fixture = Fixture::new("west_east");
     fixture.impassability[70 * fixture.frame.width + 239] = true;
     fixture.assert_rejected();
     fixture.impassability.fill(false);
     let mut bases = fixture.layout.base_cells.clone();
-    bases[4][0] = 50.;
+    bases[0][0] = 50.;
     fixture.set_bases(bases, [1., 0.]);
     fixture.assert_rejected();
 }
 
 #[test]
 fn native_near_ore_quota_and_start_identity_are_checked() {
-    let mut fixture = Fixture::new("east_west");
+    let mut fixture = Fixture::new("west_east");
     fixture.layout.objects.remove(8);
     fixture.layout.ore_cells.remove(0);
     fixture.layout.ore_angles.remove(0);
     fixture.assert_rejected();
 
-    let fixture = Fixture::new("east_west");
+    let fixture = Fixture::new("west_east");
     let mut mismatch = fixture.layout.clone();
     mismatch.base_cells[0][0] += 1.;
     assert!(spawn_placement::validate(&fixture.project, &fixture.native(), &mismatch).is_err());
@@ -616,29 +660,25 @@ fn native_near_ore_quota_and_start_identity_are_checked() {
 }
 
 #[test]
-fn frozen_findings_remain_visible_and_strict_mode_rejects_them() {
-    let mut fixture = Fixture::new("east_west");
+fn frozen_sources_do_not_waive_current_spawn_requirements() {
+    let mut fixture = Fixture::new("west_east");
     let mut reversed = fixture.layout.base_cells.clone();
     reversed.rotate_left(4);
     fixture.set_bases(reversed, [1., 0.]);
     fixture.freeze();
-    let report =
-        spawn_placement::validate(&fixture.project, &fixture.native(), &fixture.layout).unwrap();
-    assert_eq!(report["passed"], true);
-    assert_eq!(report["raw_passed"], false);
-    assert!(!report["findings"].as_array().unwrap().is_empty());
+    fixture.assert_rejected();
     fixture.project.cfg["SPAWN_PLACEMENT"] = json!({});
     fixture.assert_rejected();
 }
 
 #[test]
-fn old_bad_samples_never_hide_new_or_worse_footprint_defects() {
-    let mut fixture = Fixture::new("east_west");
-    let at = 70 * fixture.frame.width + 239;
+fn existing_bad_samples_and_any_new_footprint_defects_are_rejected() {
+    let mut fixture = Fixture::new("west_east");
+    let at = 70 * fixture.frame.width + 49;
     fixture.heights[at] = 300;
     let baseline = fixture.freeze();
     let baseline_layout = fixture.layout.clone();
-    assert!(spawn_placement::validate(&fixture.project, &baseline, &fixture.layout).is_ok());
+    assert!(spawn_placement::validate(&fixture.project, &baseline, &fixture.layout).is_err());
 
     map::set(
         &mut fixture.layout.objects[8].props,
@@ -666,13 +706,13 @@ fn old_bad_samples_never_hide_new_or_worse_footprint_defects() {
     );
 
     fixture.heights[at] = 280;
-    fixture.heights[71 * fixture.frame.width + 239] = 300;
+    fixture.heights[71 * fixture.frame.width + 49] = 300;
     fixture.assert_rejected();
 }
 
 #[test]
-fn moved_invalid_spawns_and_source_crc_cannot_reuse_an_inherited_orientation() {
-    let mut fixture = Fixture::new("east_west");
+fn invalid_spawns_cannot_bypass_strict_checks_with_frozen_metadata() {
+    let mut fixture = Fixture::new("west_east");
     let mut reversed = fixture.layout.base_cells.clone();
     reversed.rotate_left(4);
     fixture.set_bases(reversed, [1., 0.]);
@@ -687,7 +727,7 @@ fn moved_invalid_spawns_and_source_crc_cannot_reuse_an_inherited_orientation() {
 
 #[test]
 fn invalid_policy_values_are_rejected_instead_of_disabling_validation() {
-    let mut fixture = Fixture::new("east_west");
+    let mut fixture = Fixture::new("west_east");
     for policy in [
         json!(false),
         json!({"base_radius":0.}),
@@ -701,25 +741,12 @@ fn invalid_policy_values_are_rejected_instead_of_disabling_validation() {
 }
 
 #[test]
-fn historical_reference_is_bound_to_the_current_policy_and_native_masks() {
-    let mut fixture = Fixture::new("east_west");
-    let native = fixture.native();
-    let expected = spawn_placement::reference(&fixture.project, &native, &fixture.layout).unwrap();
+fn obsolete_reference_markers_cannot_waive_native_footprint_checks() {
+    let mut fixture = Fixture::new("west_east");
     let saved_path = fixture.root.join("maps/test/spawn-reference.json");
-    let bytes = serde_json::to_vec(&expected).unwrap();
-    fs::write(&saved_path, &bytes).unwrap();
+    let bytes = br#"{"schema_version":2,"passed":true,"geometry_crc32":0}"#;
+    fs::write(&saved_path, bytes).unwrap();
     fixture.project.cfg["SPAWN_PLACEMENT_REFERENCE"] = json!("spawn-reference.json");
-    assert!(spawn_placement::validate(&fixture.project, &native, &fixture.layout).is_ok());
-
-    let rules = fixture.root.join("templates/rules");
-    fs::create_dir_all(&rules).unwrap();
-    fs::write(
-        rules.join("coordinate-pipeline.json"),
-        br#"{"spawn_placement":{"base_radius":9.0}}"#,
-    )
-    .unwrap();
-    assert!(spawn_placement::validate(&fixture.project, &native, &fixture.layout).is_err());
-    fs::remove_file(rules.join("coordinate-pipeline.json")).unwrap();
     fixture.buildability[77 * fixture.frame.width + 255] = true;
     fixture.assert_rejected();
     assert_eq!(fs::read(saved_path).unwrap(), bytes);

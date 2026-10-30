@@ -1,0 +1,68 @@
+{
+  "version": "T0.1.1",
+  "platform": "Linux 6.18.33.2-microsoft-standard-WSL2 x86_64",
+  "rustc": "rustc 1.99.1 (58cf8f9c3 2026-10-13)",
+  "checked_at": "2026-10-30T08:29:08.133937+00:00",
+  "full_test_command": "cargo test --locked --no-fail-fast -- --test-threads=4",
+  "full_test_exit_code": 0,
+  "passed": 315,
+  "failed": 0,
+  "ignored": 0,
+  "test_program_summaries": 25,
+  "clippy_command": "cargo clippy --locked --all-targets -- -D warnings",
+  "clippy_exit_code": 0,
+  "complete_frozen_build_exit_code": 0,
+  "final_independent_delivery_gate_exit_code": 0,
+  "native_crc32": 2613649220,
+  "source_and_candidate_layout_equal": true,
+  "gift_reservation_audit": {
+    "checked_slots": 110,
+    "findings": 0
+  },
+  "limits": "Local Linux execution; no Windows CI run or game/WorldBuilder launch claimed.",
+  "logs": {
+    "final-full-tests.log": {
+      "path": "validation-logs/final-full-tests.log",
+      "bytes": 35972,
+      "sha256": "5ece5dbaaafe384778f653c8aea0293ffd3e34f40785eb0e941c4ec11e4618c0"
+    },
+    "final-clippy.log": {
+      "path": "validation-logs/final-clippy.log",
+      "bytes": 139,
+      "sha256": "f4fb23168ea037eba5b0f67d5d38128b0f0eddbe660b060f3cb49cebdf8a65e6"
+    },
+    "material-tests.log": {
+      "path": "validation-logs/material-tests.log",
+      "bytes": 571,
+      "sha256": "ec1271a56687b93376a163b6729fa1435ea89aaa677290b3fa0a8c81b762214a"
+    },
+    "publish-combined.log": {
+      "path": "validation-logs/publish-combined.log",
+      "bytes": 454,
+      "sha256": "1756ae0c9a42afc80e3b1ac6c6a97fff114aa8378e1dd0b7950f80873821aa84"
+    },
+    "adopt-final-source.log": {
+      "path": "validation-logs/adopt-final-source.log",
+      "bytes": 90,
+      "sha256": "c22c532adba7e30097ffd82cc9bd3a96af2a81131a0f9872b8482e5d4b46aa7b"
+    },
+    "frozen-rebuild.log": {
+      "path": "validation-logs/frozen-rebuild.log",
+      "bytes": 1472,
+      "sha256": "56498431b5a7ed53b5b7e12a4c58181035c3a23b5be8d2a31d4ba2ae3dda72da"
+    },
+    "final-delivery-gate.log": {
+      "path": "validation-logs/final-delivery-gate.log",
+      "bytes": 215,
+      "sha256": "80d9a078ca33e7e1aa2dab8b27789d37d16a3f654589e66028c5f0390eb4abfd"
+    },
+    "final-gift-audit.log": {
+      "path": "validation-logs/final-gift-audit.log",
+      "bytes": 395,
+      "sha256": "b649a384ccc5b54753d7357154f2292e01d0af861c3c1c59a04e79383b990b8a"
+    }
+  },
+  "cargo_fmt_check_exit_code": 0,
+  "git_diff_check_exit_code": 0,
+  "local_document_file_links_passed": true
+}

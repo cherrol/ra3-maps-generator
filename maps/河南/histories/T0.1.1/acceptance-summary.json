@@ -1,0 +1,246 @@
+{
+  "kind": "independent_professional_acceptance_summary",
+  "review_complete": true,
+  "reviewer": "独立验收审查 / acceptance_evidence_audit",
+  "reviewed_at": "2026-10-30T08:20:41Z",
+  "map_id": "河南",
+  "map": "[CHAI]沃野奔流T0.1.1",
+  "version": "T0.1.1",
+  "binding": {
+    "frame": {
+      "border": 20,
+      "cell_size": 10.0,
+      "height": 840,
+      "width": 840,
+      "z_scale": 0.0390625
+    },
+    "layout_crc32": 1881933369,
+    "native_crc32": 2613649220,
+    "native_decoded_crc32": 4224800773,
+    "package_files": {
+      "[CHAI]沃野奔流T0.1.1.map": {
+        "bytes": 312663,
+        "crc32": 2613649220
+      },
+      "[CHAI]沃野奔流T0.1.1_art.tga": {
+        "bytes": 786476,
+        "crc32": 3200424618
+      },
+      "map.str": {
+        "bytes": 501,
+        "crc32": 4031021017
+      },
+      "map.xml": {
+        "bytes": 149093,
+        "crc32": 3073707100
+      },
+      "overrides.xml": {
+        "bytes": 124,
+        "crc32": 2113619238
+      }
+    },
+    "parameters_crc32": 886781487,
+    "rules_revision": "independent-delivery-v2-full-functional-reservations-terrain-transitions"
+  },
+  "native_sha256": "9f3417c133ac39b48f6cd068e2297a1daa537f2fe84372eef30db599f917c17a",
+  "items": {
+    "attack_routes": {
+      "name": "对位进攻方向与沿线布置",
+      "status": "passed",
+      "decision": "从真实8基地端点重新核对4组对位/主攻方向及21坡沿线关系。完整110潜在主备/280分支叠加后，主路772/773/768/760格，分别等于同端点无中点约束最短宽路；次路936/773/838/846，全部路径与确认来源相同。P8机场[702,500]虽单站接入更短，却导致主路+78，已据实际反事实拒绝并恢复主路。48矿阶段和原21坡未为赠送选址改变。",
+      "archive_evidence": [
+        "final-review/corridors/corridor-width-acceptance.json",
+        "final-review/old-evidence/direct-main-route-acceptance.json",
+        "rejected-749c21a1/corridors/corridor-width-acceptance.json"
+      ]
+    },
+    "building_angles": {
+      "name": "建筑朝向（含矿脉）",
+      "status": "passed",
+      "decision": "从精确本版原生回读64建筑/矿对象与286递归创建/转向动作的实际弧度，全部合法四向；280赠送动作另按实际移动后落点核对最近合法方向面向敌队中心。48矿原生/内部及翻Y实际矿口方向一致。完整脚本树/身份与确认源完全一致，未先吸附角度再验；全部旋转地基/矿场/真实接驳的资源净距、坡口及受影响通路已独立重算。",
+      "archive_evidence": [
+        "final-review/preservation.json",
+        "final-review/candidate/official-placement.json",
+        "final-review/resource-geometry.json"
+      ]
+    },
+    "gift_intrusion_exclusion": {
+      "name": "赠送建筑避开伸入区域",
+      "status": "passed",
+      "decision": "重新核对110站/280分支完整实际几何、归属及合法朝向。每站原33×33同高可走可建支持仍完整有效，所有地基/碰撞/公共padding/真实create→rally扫掠最大轴向半径10.606602格，均完全位于该半径16的主体支持内；占地及接驳不进入细长伸入区域。既有主体范围、地形形态与5格排除基准未扩大或改名。",
+      "archive_evidence": [
+        "final-review/preservation.json",
+        "final-review/measured-summary.json"
+      ]
+    },
+    "hotspot_distances": {
+      "name": "热点双方实际路程",
+      "status": "passed",
+      "decision": "4组主线全部8座第5矿，对同一真实矿ID分别重新计算双方静态陆路，统一4邻接、1格导航余量、逐格高度差和全部潜在赠送包络。8组长度为369/427、371/411、405/357、369/433、449/362、402/427、398/362、368/434格；abs(a-b)/max(a,b)为5.85%–19.38%。结合原路线/层界转折与本版全路径，双方仍有可争夺接入；不把直线或路线进度作路程，也不私设公共差异比上限。",
+      "archive_evidence": [
+        "final-review/measured-summary.json",
+        "final-review/routes/route-facts.json"
+      ]
+    },
+    "neutral_building_siting": {
+      "name": "中立建筑选址",
+      "status": "passed",
+      "decision": "8座适用科技建筑的原生位置/归属/朝向、4组中段交战区、最近基地距离和分散布置事实与确认源相同，原始落点/距离/区域判断按实际依赖等同性复用。重新计算包含全部主备阻挡的8席×62资源496实际关系，覆盖全部科技建筑接入，仍全部可达；没有仅因中立建筑未移动就跳过本版完整通路检查。",
+      "archive_evidence": [
+        "final-review/old-evidence/neutral-combat-placement.json",
+        "final-review/routes/route-facts.json",
+        "final-review/preservation.json"
+      ]
+    },
+    "ore_distribution": {
+      "name": "布矿",
+      "status": "passed",
+      "decision": "原生48矿/全部朝向、分级计划和8基地与冻结源完全相同；本版当前分级/完整出生组检查重新通过，16开局矿每基地2矿、32外围矿退出所有基地家区并保持主次路线分散。全部280赠送分支按完整官方地基、碰撞、公共padding和真实出口扫掠，对48完整20格矿盘及合法旋转矿场执行3格净距，0失败。原先11处报告在完整口径下扩为14个受影响站，已通过移赠送修复，没有删矿或放宽预留。",
+      "archive_evidence": [
+        "final-review/resource-geometry.json",
+        "final-review/candidate/native-review.json",
+        "final-review/old-evidence/attack-route-layout-acceptance.json",
+        "context/baseline-full-geometry-resource-audit.json"
+      ]
+    },
+    "production_base_proximity": {
+      "name": "赠送生产建筑靠近基地",
+      "status": "passed",
+      "decision": "全部48产能主备/128真实分支重新绑定实际受益基地，保存直距、真实rally静态路线及完整自体阻挡的外侧接入，两组均128/128可接入；派生外侧点明确不是官方rally，机场不补造地面出口。819旧有限坐标按本版其他主备/对象完整重算，794充分硬拒绝、25另作真实目标与8路线比较；P6备用193步、P2备用180–183步另补4522个更近4格网格点，全按原主体/33支持及完整几何拒绝。48站逐点设计判断保留主点优先/主备分散及P3WF近点使主次路各+4等实际取舍。P1无路线代价的近点问题已显式联动主备重选至99/126步；不声称全局数学最短或设置统一距离阈值。",
+      "archive_evidence": [
+        "final-review/measured-summary.json",
+        "final-review/production-independent-judgments.json",
+        "final-review/comparisons/recorded-comparisons.json",
+        "final-review/supplemental-grid-from-66dec179/recorded-comparisons.json",
+        "final-review/exterior-support/exterior-target-derivation.json",
+        "final-review/exterior-support/exterior-route-facts.json"
+      ]
+    },
+    "ramp_clearance": {
+      "name": "坡口",
+      "status": "passed",
+      "decision": "本版原生21坡严格公共坡口检查零发现；280赠送完整几何到全部坡体/坡肩/端口及25格上下引道的8格避让独立重算零失败。521条全宽平行纵剖面坡体阻挡0、最大相邻高差4.140625、端部接入遗漏0；与原坡声明/height/nav等同性及全图交接清单分别保存。 最终实际原生材质另行提取并独立目视真实原贴图离线合成：R15–21的13界面组件仅968格普通混合引用及290追加描述改变，主材/相位、第二混合、UV、全部旧描述、height/nav和其他native块逐字节保护。29469个实际边样本中非端口新增失败0；10个已列非core自然第三材质端口的322非零权重样本如实保留，经实际前后图确认自然岩土收口，不声称全界面二材权重误差为零。60处最终局部外观及8份高分辨率对照涵盖21坡、18层界中部、2水体、7交点与端口，原中央硬缝已闭合；这是标注清楚的原贴图离线模型，非实机渲染。",
+      "archive_evidence": [
+        "final-review/resource-geometry.json",
+        "final-review/candidate/native-review.json",
+        "terrain-transitions/geometry-749c21a1/full-width-ramp-profiles.json",
+        "terrain-transitions/material/terrain-transition-review-final.md",
+        "terrain-transitions/material/final-d05e5671/independent-terrain-transition-review.json",
+        "terrain-transitions/material/final-d05e5671/final-material-preservation-review.json",
+        "terrain-transitions/material/final-d05e5671/before-after/actual-native-diffuse-before-after-contact.png",
+        "terrain-transitions/geometry-final-d05e5671-dependency-transfer.json"
+      ]
+    },
+    "ramp_priority": {
+      "name": "斜坡优先于矿",
+      "status": "passed",
+      "decision": "与已确认T0.1.0制作源逐项对比，全部21坡轴/宽长/坡心/端口/完整25格引道、真实高度/导航及48矿位置/角度完全不变；本轮仅移动14个资源净距受影响赠送点、2个必要P1选址联动点及有限材质混合。原P2直接近坡先落定、矿50/51/52/67/68及油83退让的设计基准和原始差异保留。未为保矿削坡、缩坡、移坡、缩减预留或改走远坡，全部完整矿/赠送/主备路线联动检查已重新完成。",
+      "archive_evidence": [
+        "final-review/preservation.json",
+        "final-review/old-evidence/ramp-priority-acceptance.json",
+        "final-review/corridors/corridor-width-acceptance.json"
+      ]
+    },
+    "resource_access": {
+      "name": "交战区与资源通行便利",
+      "status": "passed",
+      "decision": "本版8席至48矿/6油井/8科技建筑共496实际同域关系全部重新保存起终接入、完整路径和长度，全部可达；8主次交战通路完整净宽和直接性分别重算。与冻结源用同一新模型相比466条长度相同、20缩短、10增加；最大+30为P1第四矿62的207→237步，是P1已显式改善的近基地机场潜在预留绕行，保持主路772且不新增瓶颈阈值，仍可便利外扩。地形交接/坡口补全剖面与全实体检查， 最终实际原生材质另行提取并独立目视真实原贴图离线合成：R15–21的13界面组件仅968格普通混合引用及290追加描述改变，主材/相位、第二混合、UV、全部旧描述、height/nav和其他native块逐字节保护。29469个实际边样本中非端口新增失败0；10个已列非core自然第三材质端口的322非零权重样本如实保留，经实际前后图确认自然岩土收口，不声称全界面二材权重误差为零。60处最终局部外观及8份高分辨率对照涵盖21坡、18层界中部、2水体、7交点与端口，原中央硬缝已闭合；这是标注清楚的原贴图离线模型，非实机渲染。",
+      "archive_evidence": [
+        "final-review/routes/route-facts.json",
+        "final-review/measured-summary.json",
+        "final-review/old-evidence/resource-access-selection.json",
+        "terrain-transitions/material/terrain-transition-review-final.md",
+        "terrain-transitions/material/final-d05e5671/independent-terrain-transition-review.json",
+        "terrain-transitions/material/final-d05e5671/final-material-preservation-review.json",
+        "terrain-transitions/material/final-d05e5671/before-after/actual-native-diffuse-before-after-contact.png",
+        "terrain-transitions/geometry-final-d05e5671-dependency-transfer.json"
+      ]
+    },
+    "route_width_intrusions": {
+      "name": "交战路线宽度与伸入地形",
+      "status": "passed",
+      "decision": "全部110主备及280实际分支的官方地基/碰撞/公共padding/真实出口扫掠已独立证明被保守通路包络完整覆盖；8主次路逐点净宽下界均10格。源与本版height/nav/build完全相同，旧全图5格形态/伸入范围逐输入复用，非以旧CRC继承新要求。全图交接清单、521坡道纵向lane、18层界6161边、7交点与材质/局部外观按本版地形专项补查。 最终实际原生材质另行提取并独立目视真实原贴图离线合成：R15–21的13界面组件仅968格普通混合引用及290追加描述改变，主材/相位、第二混合、UV、全部旧描述、height/nav和其他native块逐字节保护。29469个实际边样本中非端口新增失败0；10个已列非core自然第三材质端口的322非零权重样本如实保留，经实际前后图确认自然岩土收口，不声称全界面二材权重误差为零。60处最终局部外观及8份高分辨率对照涵盖21坡、18层界中部、2水体、7交点与端口，原中央硬缝已闭合；这是标注清楚的原贴图离线模型，非实机渲染。",
+      "archive_evidence": [
+        "final-review/corridors/corridor-width-acceptance.json",
+        "final-review/routes/union-coverage.json",
+        "final-review/old-evidence/terrain-shape-acceptance.json",
+        "terrain-transitions/material/terrain-transition-review-final.md",
+        "terrain-transitions/material/final-d05e5671/independent-terrain-transition-review.json",
+        "terrain-transitions/material/final-d05e5671/final-material-preservation-review.json",
+        "terrain-transitions/material/final-d05e5671/before-after/actual-native-diffuse-before-after-contact.png",
+        "terrain-transitions/geometry-final-d05e5671-dependency-transfer.json"
+      ]
+    },
+    "shore_perimeter": {
+      "name": "整圈岸线",
+      "status": "passed",
+      "decision": "全2湖356条适用内外水陆边重新回读，逐边真实跨岸高度/nav剖面、全1格导航窗及全部native/110潜在主备完整实体叠加后，到实际归属台地主体的双向链356/356通过。旧33条具体回台地链在完整实体模型下受阻，已如实保留诊断并重新搜索有效链，未只沿用旧端点可达。水面/水域/height/nav未变，旧最大接触层归属及修改前后接触计数按输入等同性复用，并归档原始前后数组。 最终实际原生材质另行提取并独立目视真实原贴图离线合成：R15–21的13界面组件仅968格普通混合引用及290追加描述改变，主材/相位、第二混合、UV、全部旧描述、height/nav和其他native块逐字节保护。29469个实际边样本中非端口新增失败0；10个已列非core自然第三材质端口的322非零权重样本如实保留，经实际前后图确认自然岩土收口，不声称全界面二材权重误差为零。60处最终局部外观及8份高分辨率对照涵盖21坡、18层界中部、2水体、7交点与端口，原中央硬缝已闭合；这是标注清楚的原贴图离线模型，非实机渲染。",
+      "archive_evidence": [
+        "final-review/shore-complete-overlay-recheck.json",
+        "final-review/old-evidence/shoreline-acceptance.json",
+        "historical-shore-enclosure/water-layer-verification.json",
+        "terrain-transitions/material/terrain-transition-review-final.md",
+        "terrain-transitions/material/final-d05e5671/independent-terrain-transition-review.json",
+        "terrain-transitions/material/final-d05e5671/final-material-preservation-review.json",
+        "terrain-transitions/material/final-d05e5671/before-after/actual-native-diffuse-before-after-contact.png",
+        "terrain-transitions/geometry-final-d05e5671-dependency-transfer.json"
+      ]
+    },
+    "spawn_layout": {
+      "name": "出生座位布局",
+      "status": "passed",
+      "decision": "重新回读8个真实出生位、P7/P8固定AI及完整脚本，身份/归属/外交/开局两矿与已确认来源一致；当前base_radius24的完整出生组检查重新通过，不沿用旧base_radius8的检查结论。西侧1/2/3/4、东侧5/7/8/6，P5/P6位于两角、P7/P8位于中间；用户既有东西布局及双湖水域面积例外保持，面积原始计数按高度/水面等同性复用并明确水域不满足默认均衡。",
+      "archive_evidence": [
+        "final-review/preservation.json",
+        "final-review/candidate/native-review.json",
+        "final-review/old-evidence/seat-order-acceptance.json",
+        "final-review/old-evidence/team-area-balance.json"
+      ]
+    }
+  },
+  "scope": "精确d05e5671候选全部13项独立审阅完成。完整测量、冻结原始输入、代码/规则快照、实际材料字段/原贴图及有限比较保留各自原始身份，统一归档于independent-evidence.zip；evidence-manifest.json逐成员给出SHA/CRC/bytes。最终delivery binding完全取自该精确候选pending，不沿用66或旧版本身份。",
+  "evidence_reuse": "本版完整几何/496资源/128真实rally+128外侧接入/356岸线/819近点/8主次路均实际重算；66→final除BlendTileData外全部native块、完整layout、objects/scripts/triggers、height/nav/build、官方几何、策略和所有实际路径相等。仅将原4522补网格与已审48站设计理由按这一精确依赖证明复用，保留66原始identity；材料和最终pending binding不复用。原生/旧地形证据只复用已证明输入与模型适用的设计事实，当前新增交接材质另补真实原贴图离线图。 原66完整5文件/同版layout/plan和纯只读原生JSON也原样归档于dependency-66dec179/，可直接独立核对原始字节保护，无需先重构66。",
+  "counts": {
+    "actual_gift_sites": 110,
+    "actual_gift_actions": 280,
+    "changed_waypoints": 16,
+    "original_full_geometry_deficit_sites": 14,
+    "explicit_unobstructed_P1_reselections": 2,
+    "native_building_and_ore_angles": 64,
+    "script_angles": 286,
+    "resources": 62,
+    "resource_relations": 496,
+    "production_sites": 48,
+    "production_branches": 128,
+    "shore_edges": 356,
+    "ramps": 21,
+    "corridors": 8,
+    "finite_recorded_comparisons": 819,
+    "supplemental_near_grid": 4522
+  },
+  "limitations": [
+    "原生静态数据/寻路模型及明确标注的真实贴图离线合成；未启动游戏或WorldBuilder，不作运行时寻路或实机渲染认证。",
+    "有限近点比较不是连续全局最优证明；基地距离、绕行和热点差异均无新增公共数值阈值。",
+    "三材质自然端口若最终核验确认保留，将如实列非零权重样本，不声称全界面二材权重误差为零。"
+  ],
+  "terrain_transition_review": {
+    "actual_native_sha256": "9f3417c133ac39b48f6cd068e2297a1daa537f2fe84372eef30db599f917c17a",
+    "actual_native_compressed_crc32": 2613649220,
+    "actual_native_decoded_crc32": 4224800773,
+    "actual_blend_chunk_crc32": 96146656,
+    "ordinary_changed_cells": 968,
+    "append_descriptors": 290,
+    "actual_pair_edge_samples": 29469,
+    "nonterminal_pair_edge_weight_failures": 0,
+    "retained_natural_terminal_edges": 10,
+    "retained_natural_terminal_nonzero_weight_samples": 322,
+    "final_actual_regions": 60,
+    "display_limit": "True original game diffuse pixels and exact native subphase/blend fields, interpolated with the cited OpenSAGE unlit blend model. NOT an RA3/WorldBuilder screenshot, normal/light/macro texture/water-transparency render, nor proof of gameplay navigation by colour."
+  },
+  "archive_verification": {
+    "member_count": 747,
+    "crc_and_member_integrity_verified": true,
+    "every_item_internal_evidence_reference_exists": true,
+    "raw_66_candidate_and_readback_included": true
+  }
+}

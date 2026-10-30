@@ -14,6 +14,7 @@ use std::{collections::BTreeSet, fs, io::ErrorKind};
 #[serde(default)]
 pub struct Policy {
     pub mines_per_seat: usize,
+    pub home_ores_per_seat: usize,
     pub home_radius: f64,
     pub home_maximum: usize,
     pub route_count: usize,
@@ -27,6 +28,7 @@ impl Default for Policy {
     fn default() -> Self {
         Self {
             mines_per_seat: crate::rules::count("resource_distribution", "mines_per_seat"),
+            home_ores_per_seat: crate::rules::count("resource_distribution", "home_ores_per_seat"),
             home_radius: crate::rules::number("resource_distribution", "home_radius"),
             home_maximum: crate::rules::count("resource_distribution", "home_maximum"),
             route_count: crate::rules::count("resource_distribution", "route_count"),
@@ -61,6 +63,8 @@ pub fn policy(p: &Project) -> Result<Policy> {
             .unwrap_or_else(|| json!({})),
     )?;
     if policy.mines_per_seat != 6
+        || policy.home_ores_per_seat != 2
+        || policy.home_maximum != 2
         || policy.route_count != 4
         || policy.home_maximum == 0
         || [
@@ -82,22 +86,42 @@ pub fn policy(p: &Project) -> Result<Policy> {
 
 /// Bind both the shared policy and the map's actual plan to cached proofs.
 pub fn binding(p: &Project) -> Result<Value> {
-    Ok(json!({"schema_version":1,"policy":policy(p)?,
+    let policy = policy(p)?;
+    let bytes = input(p)?;
+    let plan = bytes
+        .as_ref()
+        .map(|bytes| serde_json::from_slice::<Plan>(bytes))
+        .transpose()?;
+    let home_ores_per_seat = plan
+        .as_ref()
+        .map(|plan| home_ores(plan, &policy))
+        .transpose()?;
+    Ok(json!({"schema_version":4,"policy":policy,
         "near_ore_radius":crate::terrain::spawn_placement::policy(p)?.near_ore_radius,
-        "plan_crc32":input(p)?.as_ref().map(|v|crc32fast::hash(v)),
-        "terrain_only":p.flag("TERRAIN_ONLY"),
-        "frozen":p.cfg["COORDINATE_PIPELINE"].is_object(),
-        "historical_reference":p.cfg.get("SPAWN_PLACEMENT_REFERENCE")}))
+        "plan_crc32":bytes.as_ref().map(|v|crc32fast::hash(v)),
+        "home_ores_per_seat":home_ores_per_seat,
+        "override_reason":plan.as_ref().and_then(|v|v.override_reason.as_deref()),
+        "terrain_only":p.flag("TERRAIN_ONLY")}))
 }
 
 #[derive(Deserialize)]
 struct Plan {
     home_radius: Option<f64>,
     home_maximum: Option<usize>,
+    home_ores_per_seat: Option<usize>,
+    override_reason: Option<String>,
     mine_count: Option<usize>,
     routes: Vec<Route>,
     slots: Vec<Slot>,
 }
+fn home_ores(plan: &Plan, policy: &Policy) -> Result<usize> {
+    let count = plan.home_ores_per_seat.unwrap_or(policy.home_ores_per_seat);
+    if count != policy.home_ores_per_seat {
+        return Err(err("home_ores_per_seat must be 2 for every playable map"));
+    }
+    Ok(count)
+}
+
 #[derive(Deserialize)]
 struct Route {
     id: usize,
@@ -145,27 +169,18 @@ pub fn validate(p: &Project, m: &MapFile) -> Result<Option<Value>> {
         return Ok(None);
     }
     let Some(bytes) = input(p)? else {
-        if p.cfg["COORDINATE_PIPELINE"].is_object()
-            || p.cfg["SPAWN_PLACEMENT_REFERENCE"].is_string()
-        {
-            // Existing unplanned releases remain reproducible. This is not a
-            // statement that their allocation satisfies the new common rule.
-            return Ok(None);
-        }
         return Err(err(
-            "common ore allocation requires RESOURCE_DISTRIBUTION: six ores per seat, three home ores, main/hotspot/secondary routes",
+            "every playable map requires RESOURCE_DISTRIBUTION: six ores per seat, two home ores, main/hotspot/secondary routes",
         ));
     };
     let plan: Plan = serde_json::from_slice(&bytes)?;
+    let home_ores_per_seat = home_ores(&plan, &policy)?;
     let home_radius = plan.home_radius.unwrap_or(policy.home_radius);
-    let home_maximum = plan.home_maximum.unwrap_or(policy.home_maximum);
     let near = crate::terrain::spawn_placement::policy(p)?.near_ore_radius;
     let mine_count = 8 * policy.mines_per_seat;
     if !home_radius.is_finite()
         || home_radius <= near
         || (home_radius - policy.home_radius).abs() > 1e-6
-        || home_maximum == 0
-        || home_maximum > policy.home_maximum
         || plan.mine_count.is_some_and(|count| count != mine_count)
         || plan.routes.len() != policy.route_count
     {
@@ -238,6 +253,11 @@ pub fn validate(p: &Project, m: &MapFile) -> Result<Option<Value>> {
                 .count()
         })
         .collect();
+    let home_limit = policy.home_maximum;
+    let home_maximum = plan.home_maximum.unwrap_or(home_limit);
+    if home_maximum == 0 || home_maximum > home_limit {
+        return Err(err("invalid resource expansion plan home maximum"));
+    }
     for (i, count) in home_counts.iter().enumerate() {
         if *count > home_maximum {
             return Err(err(format!(
@@ -270,7 +290,7 @@ pub fn validate(p: &Project, m: &MapFile) -> Result<Option<Value>> {
             ));
         }
         let mut row = json!({"seat":slot.seat,"ordinal":slot.ordinal,"ore_id":slot.ore_id,"cell":point,"home_distance":home});
-        if slot.ordinal <= 3 {
+        if slot.ordinal <= home_ores_per_seat {
             if home > home_radius {
                 return Err(err(format!(
                     "P{} ore {} left the home area",
@@ -279,7 +299,7 @@ pub fn validate(p: &Project, m: &MapFile) -> Result<Option<Value>> {
             }
         } else {
             if bases.iter().any(|b| distance(point, *b) <= home_radius) {
-                return Err(err("fourth and later ores must leave all home areas"));
+                return Err(err("all expansion ores must leave every home area"));
             }
             let route = plan
                 .routes
@@ -292,7 +312,7 @@ pub fn validate(p: &Project, m: &MapFile) -> Result<Option<Value>> {
             let (main, progress) = projection(point, &route.main_path);
             let (secondary, _) = projection(point, &route.secondary_path);
             match slot.ordinal {
-                4 => {
+                3 | 4 => {
                     let expected = if slot.seat == route.side_a_seat {
                         policy.fourth_progress[0]..=policy.fourth_progress[1]
                     } else {
@@ -300,8 +320,9 @@ pub fn validate(p: &Project, m: &MapFile) -> Result<Option<Value>> {
                     };
                     if main > policy.main_route_max_distance || !expected.contains(&progress) {
                         return Err(err(format!(
-                            "P{} fourth ore does not lead into its main route",
-                            slot.seat
+                            "P{} {} ore does not lead into its main route",
+                            slot.seat,
+                            if slot.ordinal == 3 { "third" } else { "fourth" }
                         )));
                     }
                 }
@@ -343,41 +364,16 @@ pub fn validate(p: &Project, m: &MapFile) -> Result<Option<Value>> {
         }
     }
     Ok(Some(
-        json!({"policy":policy,"home_radius":home_radius,"home_maximum":home_maximum,"home_counts":home_counts,"mine_count":ores.len(),"routes":plan.routes.len(),"slots":rows,"passed":true,"ai_behavior":"Resource incentives only; no runtime AI behavior inferred."}),
+        json!({"policy":policy,"home_radius":home_radius,"home_maximum":home_maximum,"home_ores_per_seat":home_ores_per_seat,"allocation_mode":"current_two_home_ores","override_reason":plan.override_reason,"home_counts":home_counts,"mine_count":ores.len(),"routes":plan.routes.len(),"slots":rows,"passed":true,"ai_behavior":"Resource incentives only; no runtime AI behavior inferred."}),
     ))
 }
 
-/// Unplanned frozen maps can be rebuilt, but moving mines or starts requires
-/// completing the common route plan before publishing a changed allocation.
+/// All publication paths validate the current plan, including byte-preserving
+/// repacks and maps with frozen or historical source settings.
 pub fn validate_transition(
     p: &Project,
-    before: &MapFile,
+    _before: &MapFile,
     after: &MapFile,
 ) -> Result<Option<Value>> {
-    if !p.flag("TERRAIN_ONLY") && input(p)?.is_none() {
-        let geometry = |m: &MapFile| -> Result<Vec<(String, [f32; 3])>> {
-            Ok(map::objects(m.get("ObjectsList")?, &m.table)?
-                .into_iter()
-                .filter_map(|o| {
-                    let start = map::prop(&o.props, "waypointName")
-                        .and_then(map::Value::text)
-                        .filter(|n| n.starts_with("Player_") && n.contains("_Start"));
-                    if o.type_name == "OreNode" || start.is_some() {
-                        Some((start.unwrap_or("OreNode").to_owned(), o.position))
-                    } else {
-                        None
-                    }
-                })
-                .collect())
-        };
-        if geometry(before)? != geometry(after)? {
-            return Err(err(
-                "changed ore/start allocation requires RESOURCE_DISTRIBUTION under the common six-stage ore rule",
-            ));
-        }
-        // A byte-preserving legacy repack is not creation of a new allocation.
-        policy(p)?;
-        return Ok(None);
-    }
     validate(p, after)
 }

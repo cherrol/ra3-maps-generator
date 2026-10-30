@@ -14,11 +14,13 @@ use std::{
 mod centers;
 mod layering;
 mod rendering;
+mod source;
 mod water_design;
 use layering::design_layers;
 #[cfg(test)]
 use layering::layer_counts;
 use rendering::{RenderInput, render_image};
+pub use source::generate as generate_source;
 
 const COLORS: [[u8; 3]; 6] = [
     [53, 116, 150],
@@ -454,11 +456,49 @@ pub fn generate(
         heights: &heights,
         thresholds: &thresholds,
     };
-    let mut images = ["source.png", "preview.png", "preview--line.png"]
-        .iter()
-        .enumerate()
-        .map(|(mode, &file)| (file, render_image(&render_input, mode as u8)))
-        .collect::<Vec<_>>();
+    // The source image has its own geographic water and unmodified elevation.
+    // A design water mask must never replace the real reference shoreline.
+    let source_path = map_dir.join("data/terrain-preview/source-reference.npz");
+    let (mut source_files, source_bytes, source_path) = if source_path.is_file() {
+        let bytes = fs::read(&source_path)?;
+        (unzip(&bytes)?, bytes, source_path)
+    } else {
+        (
+            files.clone(),
+            reference_bytes.clone(),
+            reference.to_path_buf(),
+        )
+    };
+    let source_water_key = if let Some(mask) = source_files.get("source_water_mask.npy").cloned() {
+        source_files.insert("water_mask.npy".into(), mask);
+        "source_water_mask"
+    } else {
+        "water_mask"
+    };
+    let source_bounds = if crop_bounds.is_null() {
+        None
+    } else {
+        Some(serde_json::from_value(crop_bounds.clone())?)
+    };
+    let (source_image, mut source_metadata) =
+        source::image(&name, &source_files, &f, b, source_bounds)?;
+    source_metadata["reference"] = json!(
+        source_path
+            .strip_prefix(root)
+            .unwrap_or(&source_path)
+            .to_string_lossy()
+    );
+    source_metadata["reference_crc32"] = json!(crc32fast::hash(&source_bytes));
+    if source_water_key == "source_water_mask" {
+        source_metadata["water_array"] = json!(source_water_key);
+    }
+    let mut images = vec![("source.png", source_image)];
+    images.extend(
+        ["preview.png", "preview--line.png"]
+            .iter()
+            .enumerate()
+            .map(|(mode, &file)| (file, render_image(&render_input, mode as u8 + 1))),
+    );
     let center_report = if map_dir.join("data/terrain-preview/centers.json").is_file() {
         let data = centers::read(&map_dir, &name)?;
         let bounds: [f64; 4] = serde_json::from_value(crop_bounds.clone())
@@ -482,7 +522,7 @@ pub fn generate(
         fs::write(internal.join("terrain.npz"), zip(&cache)?)?;
         let reference_crc = crc32fast::hash(&reference_bytes);
         fs::write(internal.join("reference.npz"), &reference_bytes)?;
-        let metadata = json!({"schema_version":1,"blueprint":blueprint,"map_id":id,"map_name":name,"reference_crc32":reference_crc,
+        let mut metadata = json!({"schema_version":1,"blueprint":blueprint,"map_id":id,"map_name":name,"reference_crc32":reference_crc,
             "source_reference":reference.strip_prefix(root).unwrap_or(reference).to_string_lossy(),"north_up":true,"same_view_for_all_images":true,
             "game_cells":[view_w,view_h],"border_cells":b,"bounds_wgs84":crop_bounds,
             "size_policy":{"shape":"square","playable_cells":[800,800],
@@ -491,15 +531,21 @@ pub fn generate(
                 "dimension_multiple":8,"border_included_in_size":false,
                 "source_playable_cells":[crop[2]-crop[0],crop[3]-crop[1]]},
             "elevation_thresholds_m":thresholds,"game_layer_heights":heights,"processing":parameters,
+            "source_image":source_metadata,
             "layer_policy":layer_policy,
             "terrain_shape_repair":cfg.get("terrain_shape_repair").cloned().unwrap_or(Value::Null),
             "water_policy":cfg.get("water_policy").cloned().unwrap_or(Value::Null),
             "scope":"entire rectangle including terrain outside the prototype outline; no province-based clipping",
             "final_images":images.iter().map(|(n,_)|*n).collect::<Vec<_>>(),
             "image_crc32":images.iter().map(|(n,_)|Ok((n.to_string(),crc32fast::hash(&fs::read(temp.join(n))?)))).collect::<Result<std::collections::BTreeMap<_,_>>>()?});
+        metadata["source_image"]["image_crc32"] = metadata["image_crc32"]["source.png"].clone();
         fs::write(
             internal.join("report.json"),
             serde_json::to_vec_pretty(&metadata)?,
+        )?;
+        fs::write(
+            internal.join("source-report.json"),
+            serde_json::to_vec_pretty(&metadata["source_image"])?,
         )?;
         write_coordinate_system(&map_dir, &id, &name, &f, b)?;
         if let Some(report) = &center_report {

@@ -1,15 +1,14 @@
 use ra3maps::{
-    formats::map::{BlendTiles, HeightMap, MapFile},
-    pipeline::project::Project,
+    formats::map::{BlendTiles, HeightMap},
     terrain::native_cell_edits,
 };
 use serde_json::json;
-use std::{fs, path::Path};
+use std::fs;
+mod support;
 
 #[test]
 fn local_cell_edits_are_idempotent_and_preserve_other_navigation_planes() {
-    let mut p = Project::load(Path::new(env!("CARGO_MANIFEST_DIR")), "陕西").unwrap();
-    let mut map = MapFile::load(p.assets.join(format!("{}.map", p.name))).unwrap();
+    let (mut p, mut map) = support::current_map();
     let original = map.clone();
     let hm = HeightMap::parse(map.get("HeightMapData").unwrap()).unwrap();
     let bt = BlendTiles::parse(map.get("BlendTileData").unwrap(), hm.width, hm.height).unwrap();
@@ -17,7 +16,7 @@ fn local_cell_edits_are_idempotent_and_preserve_other_navigation_planes() {
     let index = (hm.height - 1 - y) * hm.width + x;
     let raw = hm.elevations[index];
     let temp = std::env::temp_dir().join(format!("ra3-native-cells-{}", std::process::id()));
-    let directory = temp.join("maps/陕西");
+    let directory = temp.join("maps/河南");
     fs::create_dir_all(&directory).unwrap();
     fs::write(directory.join("cells.json"),serde_json::to_vec(&json!([{"x":x,"y":y,"before_raw":raw,"raw":raw+1,"impassable":!bt.impassability[index],"build_blocked":!bt.buildability[index],"tile":null}])).unwrap()).unwrap();
     p.root = temp.clone();

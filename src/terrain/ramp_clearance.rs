@@ -9,7 +9,7 @@ use crate::{
 };
 use serde::{Deserialize, Serialize};
 use serde_json::{Value, json};
-use std::{collections::BTreeMap, fs};
+use std::fs;
 
 #[derive(Clone, Debug, Deserialize, Serialize)]
 #[serde(default)]
@@ -294,7 +294,7 @@ fn ramp_geometry(ramp: &Ramp) -> Value {
         "width":fixed(ramp.width),"pair":ramp.pair.map(fixed)})
 }
 
-/// Bind immutable historical expectations to the geometry this check observes.
+/// Bind geometry diagnostics to the native data this check observes.
 /// Textures, scripts and release labels are intentionally outside this binding.
 pub fn geometry_crc32(p: &Project, m: &MapFile, layout: &Layout) -> Result<u32> {
     let policy = policy(p)?.expect("the common clearance policy is always enabled");
@@ -316,7 +316,7 @@ pub fn geometry_crc32(p: &Project, m: &MapFile, layout: &Layout) -> Result<u32> 
     Ok(hash.finalize())
 }
 
-/// Explicit fixture authoring API. Validation never creates or updates this file.
+/// Read-only diagnostic output; it cannot authorize placement acceptance.
 pub fn reference(p: &Project, m: &MapFile, layout: &Layout) -> Result<Value> {
     let policy = policy(p)?.expect("the common clearance policy is always enabled");
     Ok(json!({"schema_version":1,"map_id":p.id,
@@ -324,111 +324,11 @@ pub fn reference(p: &Project, m: &MapFile, layout: &Layout) -> Result<Value> {
         "report":report(p,m,layout,&policy)?}))
 }
 
-fn conflict_key(
-    objects: &[map::MapObject],
-    layout: &Layout,
-    ramps: &[Ramp],
-    finding: &Value,
-) -> Result<String> {
-    let object_index = finding["object_id"]
-        .as_u64()
-        .and_then(|n| usize::try_from(n).ok())
-        .and_then(|n| n.checked_sub(1))
-        .ok_or_else(|| err("clearance finding has invalid object identity"))?;
-    let object = objects
-        .get(object_index)
-        .ok_or_else(|| err("clearance finding refers to a missing object"))?;
-    let ramp_index = finding["conflict"]["ramp_id"]
-        .as_u64()
-        .and_then(|n| usize::try_from(n).ok())
-        .and_then(|n| n.checked_sub(layout.objects.len() + 1))
-        .ok_or_else(|| err("clearance finding has invalid ramp identity"))?;
-    let ramp = ramps
-        .get(ramp_index)
-        .ok_or_else(|| err("clearance finding refers to a missing ramp"))?;
-    let identity = map::prop(&object.props, "uniqueID")
-        .and_then(map::Value::text)
-        .map(str::to_owned)
-        .unwrap_or_else(|| format!("native-object-{}", object_index + 1));
-    Ok(serde_json::to_string(
-        &json!({"identity":identity,"kind":object.type_name,"cell":finding["cell"],
-        "position":object.position,"angle":if object.type_name=="OreNode" {Some(object.angle)}else{None},
-        "ramp":ramp_geometry(ramp)}),
-    )?)
-}
-
-fn gaps(finding: &Value) -> Result<[Option<f64>; 3]> {
-    let mut values = [None; 3];
-    for (i, key) in ["body_gap", "approach_gap", "refinery_gap"]
-        .iter()
-        .enumerate()
-    {
-        let value = &finding["conflict"][key];
-        if !value.is_null() {
-            values[i] = Some(
-                value
-                    .as_f64()
-                    .filter(|n| n.is_finite())
-                    .ok_or_else(|| err("clearance finding has invalid distance"))?,
-            );
-        }
-    }
-    Ok(values)
-}
-
-fn compare(
-    p: &Project,
-    before: (&MapFile, &Layout),
-    after: (&MapFile, &Layout),
-    policy: &Policy,
-) -> Result<Value> {
-    let baseline = report(p, before.0, before.1, policy)?;
-    let mut checked = report(p, after.0, after.1, policy)?;
-    let old_objects = map::objects(before.0.get("ObjectsList")?, &before.0.table)?;
-    let new_objects = map::objects(after.0.get("ObjectsList")?, &after.0.table)?;
-    let old_ramps = ramps(before.1, policy)?;
-    let new_ramps = ramps(after.1, policy)?;
-    let mut inherited = BTreeMap::<String, Vec<[Option<f64>; 3]>>::new();
-    for finding in baseline["findings"].as_array().unwrap() {
-        inherited
-            .entry(conflict_key(&old_objects, before.1, &old_ramps, finding)?)
-            .or_default()
-            .push(gaps(finding)?);
-    }
-    let mut regressions = Vec::new();
-    for finding in checked["findings"].as_array().unwrap() {
-        let key = conflict_key(&new_objects, after.1, &new_ramps, finding)?;
-        let current = gaps(finding)?;
-        let acceptable = inherited.get_mut(&key).and_then(|candidates| {
-            let index = candidates.iter().position(|old| {
-                current.iter().zip(old).all(|(a, b)| match (a, b) {
-                    (Some(a), Some(b)) => a + 1e-6 >= *b,
-                    (None, None) => true,
-                    _ => false,
-                })
-            })?;
-            Some(candidates.remove(index))
-        });
-        if acceptable.is_none() {
-            regressions.push(finding.clone());
-        }
-    }
-    checked["raw_passed"] = checked["passed"].clone();
-    checked["passed"] = json!(regressions.is_empty());
-    checked["inherited"] = json!(checked["findings"].as_array().unwrap().len() - regressions.len());
-    checked["baseline_findings"] = json!(baseline["findings"].as_array().unwrap().len());
-    checked["regressions"] = json!(regressions);
-    checked["status"] = json!("compared_with_source");
-    Ok(checked)
-}
-
 fn finish(mut checked: Value) -> Result<Option<Value>> {
-    if checked.get("regressions").is_none() {
-        checked["raw_passed"] = checked["passed"].clone();
-        checked["inherited"] = json!(0);
-        checked["regressions"] = checked["findings"].clone();
-        checked["status"] = json!("strict");
-    }
+    checked["raw_passed"] = checked["passed"].clone();
+    checked["inherited"] = json!(0);
+    checked["regressions"] = checked["findings"].clone();
+    checked["status"] = json!("strict");
     if checked["passed"] != true {
         return Err(err(format!(
             "ramp approach clearance rejected: {}",
@@ -438,82 +338,26 @@ fn finish(mut checked: Value) -> Result<Option<Value>> {
     Ok(Some(checked))
 }
 
-/// Compare against the CRC-bound frozen source. New maps require zero findings;
-/// an explicit per-map policy also retains strict zero-finding enforcement.
+/// Every map requires zero current ramp-approach conflicts.
 pub fn validate(p: &Project, m: &MapFile, layout: &Layout) -> Result<Option<Value>> {
+    if p.cfg.get("RAMP_CLEARANCE_REFERENCE").is_some() {
+        return Err(err(
+            "RAMP_CLEARANCE_REFERENCE is no longer supported; all maps require current strict ramp clearance",
+        ));
+    }
     let policy = policy(p)?.expect("the common clearance policy is always enabled");
-    if p.cfg.get("RAMP_CLEARANCE").is_some() {
-        return finish(report(p, m, layout, &policy)?);
-    }
-    if let Some(path) = p.cfg.get("RAMP_CLEARANCE_REFERENCE") {
-        let path = path
-            .as_str()
-            .ok_or_else(|| err("RAMP_CLEARANCE_REFERENCE must name a fixture file"))?;
-        let saved: Value = serde_json::from_slice(&fs::read(p.path(path)?)?)?;
-        // The fixture has crossed the JSON writer/reader boundary. Apply the
-        // same round trip to live distances before comparing, since the JSON
-        // parser may round a computed f64 by one ULP. Geometry CRC and policy
-        // remain exact; no geometric tolerance is introduced here.
-        let expected: Value =
-            serde_json::from_slice(&serde_json::to_vec(&reference(p, m, layout)?)?)?;
-        if saved != expected {
-            let changed = [
-                "schema_version",
-                "map_id",
-                "geometry_crc32",
-                "policy",
-                "report",
-            ]
-            .into_iter()
-            .filter(|field| saved[field] != expected[field])
-            .collect::<Vec<_>>();
-            return Err(err(format!(
-                "historical ramp clearance reference differs from its bound map geometry/policy: saved geometry {}, actual geometry {}, differing fields {changed:?}",
-                saved["geometry_crc32"], expected["geometry_crc32"]
-            )));
-        }
-        let mut checked = expected["report"].clone();
-        checked["raw_passed"] = checked["passed"].clone();
-        checked["passed"] = json!(true);
-        checked["inherited"] = json!(checked["findings"].as_array().unwrap().len());
-        checked["regressions"] = json!([]);
-        checked["status"] = json!("immutable_historical_reference");
-        return finish(checked);
-    }
-    if !p.cfg["COORDINATE_PIPELINE"].is_object() {
-        return finish(report(p, m, layout, &policy)?);
-    }
-    let source = crate::pipeline::frozen_source::FrozenSource::load(p)?;
-    let baseline = source.native_map()?;
-    let saved = source.layout()?;
-    let mut checked = compare(p, (&baseline, &saved), (m, layout), &policy)?;
-    checked["source_crc32"] = json!(source.crc32);
-    finish(checked)
+    finish(report(p, m, layout, &policy)?)
 }
 
-/// Used before publishing an incremental edit or replacing an adopted source.
-/// Both the baseline and final ramp geometry must be supplied explicitly.
+/// Incremental edits use the same strict check as initial publication.
 pub fn validate_transition(
     p: &Project,
-    before_map: &MapFile,
-    before_layout: &Layout,
+    _before_map: &MapFile,
+    _before_layout: &Layout,
     after_map: &MapFile,
     after_layout: &Layout,
 ) -> Result<Option<Value>> {
-    let policy = policy(p)?.expect("the common clearance policy is always enabled");
-    if p.cfg.get("RAMP_CLEARANCE").is_some() {
-        return finish(report(p, after_map, after_layout, &policy)?);
-    }
-    if p.cfg.get("RAMP_CLEARANCE_REFERENCE").is_some() {
-        validate(p, before_map, before_layout)?;
-        return validate(p, after_map, after_layout);
-    }
-    finish(compare(
-        p,
-        (before_map, before_layout),
-        (after_map, after_layout),
-        &policy,
-    )?)
+    validate(p, after_map, after_layout)
 }
 
 #[cfg(test)]
@@ -521,6 +365,7 @@ mod tests {
     use super::*;
     use crate::terrain::ObjectSpec;
     use std::{
+        collections::BTreeMap,
         path::PathBuf,
         sync::atomic::{AtomicUsize, Ordering},
     };
@@ -632,7 +477,7 @@ mod tests {
     }
 
     #[test]
-    fn frozen_findings_are_visible_but_new_objects_positions_and_ramps_are_rejected() {
+    fn frozen_source_findings_are_rejected_even_when_unchanged() {
         let mut f = Fixture::new();
         let (m, l) = sample(&f.0, "HospitalTechStructure", [145., 100.], 0.);
         assert!(
@@ -640,11 +485,8 @@ mod tests {
             "new maps must be strict by default"
         );
         freeze(&mut f.0, &m, &l);
-        let r = validate(&f.0, &m, &l).unwrap().unwrap();
-        assert_eq!(r["passed"], true);
-        assert_eq!(r["raw_passed"], false);
-        assert_eq!(r["inherited"], 1);
-        assert_eq!(r["findings"].as_array().unwrap().len(), 1);
+        assert!(validate(&f.0, &m, &l).is_err());
+        assert!(validate_transition(&f.0, &m, &l, &m, &l).is_err());
         let (moved, ml) = sample(&f.0, "HospitalTechStructure", [144., 100.], 0.);
         assert!(validate(&f.0, &moved, &ml).is_err());
         assert!(validate_transition(&f.0, &m, &l, &moved, &ml).is_err());
@@ -665,19 +507,17 @@ mod tests {
     }
 
     #[test]
-    fn ore_heading_and_source_crc_are_checked_before_inheritance() {
+    fn native_ore_heading_controls_the_complete_refinery_reserve() {
         let mut f = Fixture::new();
         let (m, l) = sample(&f.0, "OreNode", [180., 100.], 0.);
         freeze(&mut f.0, &m, &l);
         assert!(validate(&f.0, &m, &l).is_ok());
         let (turned, tl) = sample(&f.0, "OreNode", [180., 100.], std::f32::consts::PI);
         assert!(validate_transition(&f.0, &m, &l, &turned, &tl).is_err());
-        f.0.cfg["COORDINATE_PIPELINE"]["source_crc32"] = json!(0);
-        assert!(validate(&f.0, &m, &l).is_err());
     }
 
     #[test]
-    fn historical_expectations_require_exact_geometry_and_policy_without_rewriting() {
+    fn removed_reference_parameter_cannot_authorize_a_conflict() {
         let mut f = Fixture::new();
         let (m, l) = sample(&f.0, "HospitalTechStructure", [145., 100.], 0.);
         let expected = reference(&f.0, &m, &l).unwrap();
@@ -685,9 +525,11 @@ mod tests {
         let bytes = serde_json::to_vec(&expected).unwrap();
         fs::write(&path, &bytes).unwrap();
         f.0.cfg["RAMP_CLEARANCE_REFERENCE"] = json!("reference.json");
-        assert_eq!(
-            validate(&f.0, &m, &l).unwrap().unwrap()["status"],
-            "immutable_historical_reference"
+        assert!(
+            validate(&f.0, &m, &l)
+                .unwrap_err()
+                .to_string()
+                .contains("no longer supported")
         );
         let mut changed = m.clone();
         let mut hm = HeightMap::parse(changed.get("HeightMapData").unwrap()).unwrap();
@@ -699,9 +541,8 @@ mod tests {
     }
 
     #[test]
-    fn persisted_historical_distances_compare_after_the_same_json_round_trip() {
-        let mut f = Fixture::new();
-        f.0.cfg["RAMP_CLEARANCE_REFERENCE"] = json!("reference.json");
+    fn diagnostic_reference_output_does_not_change_strict_acceptance() {
+        let f = Fixture::new();
         for step in 0..32 {
             let (m, layout) = sample(
                 &f.0,
@@ -715,7 +556,8 @@ mod tests {
                 serde_json::to_vec_pretty(&saved).unwrap(),
             )
             .unwrap();
-            validate(&f.0, &m, &layout).unwrap();
+            assert_eq!(saved["report"]["passed"], false);
+            assert!(validate(&f.0, &m, &layout).is_err());
         }
     }
 
@@ -729,10 +571,7 @@ mod tests {
             serde_json::from_slice(&serde_json::to_vec_pretty(&layout).unwrap()).unwrap();
         let before = geometry_crc32(&f.0, &m, &layout).unwrap();
         assert_eq!(before, geometry_crc32(&f.0, &m, &saved).unwrap());
-        let inherited = validate_transition(&f.0, &m, &layout, &m, &saved)
-            .unwrap()
-            .unwrap();
-        assert_eq!(inherited["inherited"], 1);
+        assert!(validate_transition(&f.0, &m, &layout, &m, &saved).is_err());
 
         let mut edited = saved.clone();
         edited.ramps[0]["x"] = json!(9.789168638004107 + 0.001);
@@ -753,9 +592,10 @@ mod tests {
     }
 
     #[test]
-    fn four_frozen_layouts_retain_their_geometry_crc_after_real_json_round_trips() {
+    fn current_henan_geometry_crc_survives_real_layout_json_round_trips() {
         let root = std::path::Path::new(env!("CARGO_MANIFEST_DIR"));
-        for id in ["陕西", "广东", "广西", "海南"] {
+        {
+            let id = "河南";
             let p = Project::load(root, id).unwrap();
             let source = p.cfg["COORDINATE_PIPELINE"]["source_package"]
                 .as_str()

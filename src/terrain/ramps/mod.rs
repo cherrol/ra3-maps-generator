@@ -18,7 +18,9 @@ use super::grid::sample;
 mod artifacts;
 mod geometry;
 use geometry::*;
+mod material_joins;
 mod surface;
+pub use material_joins::{repair_material_joins, repair_material_joins_seeded};
 use surface::paint;
 pub(crate) use surface::patch_blend;
 
@@ -36,7 +38,6 @@ pub const PROFILE: &str = "mountain";
 pub fn enabled(p: &Project) -> Result<bool> {
     match p.string("RAMP_PROFILE", PROFILE) {
         PROFILE => Ok(true),
-        "legacy" => Ok(false),
         name => Err(err(format!("unknown RAMP_PROFILE {name}"))),
     }
 }
@@ -80,6 +81,7 @@ fn apply_inner(
     source_name: &str,
     geometry: bool,
 ) -> Result<Polished> {
+    enabled(p)?;
     let source = map.clone();
     let mut hm = HeightMap::parse(map.get("HeightMapData")?)?;
     let n = hm.width;
@@ -248,8 +250,8 @@ fn apply_inner(
                 rejected[1] += 1;
                 continue;
             };
-            // Preserve every previously valid opening, including ramps later
-            // in the list. An inherited invalid ramp cannot veto unrelated cuts.
+            // Preserve every valid opening, including ramps later in the list.
+            // The final package separately requires every ramp to pass.
             if layout.ramps.iter().enumerate().any(|(i, r)| {
                 i != index
                     && valid_shapes[i]
@@ -368,9 +370,16 @@ fn apply_inner(
             return Err(err("ramp surface refresh changed gameplay bitmaps"));
         }
     }
-    crate::gameplay::script_spawns::validate(p, map, &checked_hm, &checked_bt, &objects)?;
+    crate::gameplay::script_spawns::validate_with_layout(
+        p,
+        map,
+        &checked_hm,
+        &checked_bt,
+        &objects,
+        &layout,
+    )?;
     if gift_reservations.guarded {
-        crate::gameplay::gift_clearance::validate(p, map)?;
+        crate::gameplay::gift_clearance::validate_with_layout(p, map, &layout)?;
     }
     for i in 0..n * n {
         if locks[i] && raw[i] != (before[i] / scale).round_ties_even() as u16 {

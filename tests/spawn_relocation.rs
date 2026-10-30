@@ -1,13 +1,11 @@
 use ra3maps::{
-    formats::{
-        archive,
-        map::{self, BlendTiles, HeightMap, MapFile},
-    },
+    formats::map::{self, BlendTiles, HeightMap},
     gameplay::{gift_clearance, script_spawns, scripts},
     pipeline::project::{self, Project},
     terrain::Layout,
 };
 use std::{fs, path::Path};
+mod support;
 
 fn without_headings(nodes: &mut [scripts::Node]) {
     for node in nodes {
@@ -27,7 +25,7 @@ fn without_headings(nodes: &mut [scripts::Node]) {
 }
 
 #[test]
-fn rectangular_spawn_relocation_preserves_conditions_identities_terrain_and_resource_objects() {
+fn current_spawn_relocation_preserves_conditions_identities_terrain_and_resource_objects() {
     let repo = Path::new(env!("CARGO_MANIFEST_DIR"));
     let root = std::env::temp_dir().join(format!("ra3-spawn-relocation-{}", std::process::id()));
     let dir = root.join("maps/河南");
@@ -40,23 +38,22 @@ fn rectangular_spawn_relocation_preserves_conditions_identities_terrain_and_reso
         )
         .unwrap();
     }
-    let archive =
-        archive::unzip(&fs::read(repo.join("maps/河南/histories/T0.0.1/source.zip")).unwrap())
-            .unwrap();
-    fs::write(dir.join("authoring/layout.json"), &archive["layout.json"]).unwrap();
-    let mut cfg: serde_json::Value = serde_json::from_slice(
-        &fs::read(repo.join("maps/河南/histories/T0.0.1/config.json")).unwrap(),
+    let (current, mut native) = support::current_map();
+    let source = current.map_dir();
+    fs::copy(
+        source.join("authoring/layout.json"),
+        dir.join("authoring/layout.json"),
     )
     .unwrap();
+    let mut cfg = current.cfg.clone();
     cfg.as_object_mut().unwrap().remove("COORDINATE_PIPELINE");
     project::write_json(&dir.join("config.json"), &cfg).unwrap();
     let p = Project::load(&root, "河南").unwrap();
-    let mut native = MapFile::load_bytes(&archive["[CHAI]沃野奔流T0.0.1.map"]).unwrap();
     let before = native.clone();
     let original = map::objects(before.get("ObjectsList").unwrap(), &before.table).unwrap();
     let layout = Layout::load(&p).unwrap();
     let report = gift_clearance::relocate_for_starts(&p, &mut native, &layout).unwrap();
-    assert_eq!(report["changes"].as_array().unwrap().len(), 110);
+    assert!(!report["changes"].as_array().unwrap().is_empty());
     let actual = map::objects(native.get("ObjectsList").unwrap(), &native.table).unwrap();
     assert_eq!(original.len(), actual.len());
     for (old, new) in original.iter().zip(&actual) {

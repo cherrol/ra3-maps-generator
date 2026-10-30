@@ -30,9 +30,10 @@ fn wide_and_tall_blueprints_roundtrip_native_heights_masks_and_materials() {
         rules["spawn_waypoints"] = json!([]);
         project::write_json(&root.join("templates/rules/common-T0.5.1.json"), &rules).unwrap();
         let mut cfg: serde_json::Value =
-            serde_json::from_slice(&fs::read(repository.join("maps/海南/config.json")).unwrap())
+            serde_json::from_slice(&fs::read(repository.join("maps/河南/config.json")).unwrap())
                 .unwrap();
         cfg.as_object_mut().unwrap().remove("COORDINATE_PIPELINE");
+        cfg.as_object_mut().unwrap().remove("RESOURCE_DISTRIBUTION");
         cfg["MAP_NAME"] = json!("Rect");
         cfg["GRID"] = json!(width);
         cfg["GRID_HEIGHT"] = json!(height);

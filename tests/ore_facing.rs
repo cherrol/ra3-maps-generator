@@ -1,6 +1,5 @@
 use ra3maps::{
     formats::{
-        archive,
         binary::Writer,
         map::{self, MapFile},
     },
@@ -8,24 +7,23 @@ use ra3maps::{
         ore_facing,
         scripts::{self, Node},
     },
-    pipeline::{build, coordinate_pipeline, project::Project, release},
+    pipeline::{
+        build, coordinate_pipeline,
+        project::{self, Project},
+        release,
+    },
 };
 use serde_json::json;
 use std::{
     fs,
-    path::{Path, PathBuf},
+    path::PathBuf,
     sync::atomic::{AtomicUsize, Ordering},
 };
 
+mod support;
+
 fn package() -> (Vec<(String, Vec<u8>)>, MapFile) {
-    let source = Path::new(env!("CARGO_MANIFEST_DIR"))
-        .join("maps/陕西/histories/T0.5.1/[CHAI]叠岭连原T0.5.1--rebuild.zip");
-    let files: Vec<_> = archive::unzip(&fs::read(source).unwrap())
-        .unwrap()
-        .into_iter()
-        .filter(|(name, _)| !name.ends_with('/'))
-        .map(|(name, bytes)| (name.rsplit('/').next().unwrap().to_owned(), bytes))
-        .collect();
+    let (_, files) = support::current_package();
     let mut native =
         MapFile::load_bytes(&files.iter().find(|(n, _)| n.ends_with(".map")).unwrap().1).unwrap();
     let mut objects = map::objects(native.get("ObjectsList").unwrap(), &native.table).unwrap();
@@ -54,7 +52,7 @@ fn encoded(files: &[(String, Vec<u8>)], native: &MapFile) -> Vec<(String, Vec<u8
 }
 
 #[test]
-fn illegal_native_ores_remain_importable_but_cannot_pass_publication() {
+fn illegal_native_ores_are_rejected_by_source_import_and_publication() {
     let (files, mut native) = package();
     release::validate_runtime_files(&encoded(&files, &native)).unwrap();
     let mut objects = map::objects(native.get("ObjectsList").unwrap(), &native.table).unwrap();
@@ -72,7 +70,7 @@ fn illegal_native_ores_remain_importable_but_cannot_pass_publication() {
         assert_eq!(report["failed_objects"], 1);
         assert_eq!(report["objects"][0]["object_id"], ore_id + 1);
         let output = encoded(&files, &native);
-        release::validate_files(&output).unwrap();
+        assert!(release::validate_files(&output).is_err());
         assert!(
             release::validate_runtime_files(&output)
                 .unwrap_err()
@@ -237,12 +235,20 @@ fn distribution_and_adoption_reject_illegal_ores_before_writing_any_game_file() 
         .0
         .trim_end_matches(".map")
         .to_owned();
+    let version = name
+        .char_indices()
+        .rev()
+        .find_map(|(pos, ch)| {
+            ((ch == 'T' || ch == 'V') && project::parse_version(&name[pos..]).is_ok())
+                .then_some(name[pos..].to_owned())
+        })
+        .unwrap();
     let p = Project {
         root: temp.0.clone(),
         id: "ore-test".into(),
         cfg: json!({}),
         state: json!({}),
-        version: "T0.5.1".into(),
+        version,
         group: "ore-test".into(),
         name: name.clone(),
         assets: temp.0.join("assets"),

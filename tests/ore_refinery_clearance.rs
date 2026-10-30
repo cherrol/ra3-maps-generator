@@ -1,10 +1,9 @@
 use ra3maps::{
     coordinates::Frame,
-    formats::map::{self, BlendTiles, HeightMap, MapFile, MapObject},
-    pipeline::project::Project,
+    formats::map::{self, BlendTiles, HeightMap, MapObject},
     terrain,
 };
-use std::path::Path;
+mod support;
 
 // Conservative planning envelope for the ore approach and refinery placement:
 // 5 cells behind the ore, 48 ahead, and 18 to either side. This is a clearance
@@ -47,59 +46,35 @@ fn refinery_clear(
 }
 
 #[test]
-fn reported_ores_leave_room_for_refineries_beyond_the_old_twenty_cell_disk() {
-    let p = Project::load(Path::new(env!("CARGO_MANIFEST_DIR")), "陕西").unwrap();
-    let m = MapFile::load(p.assets.join(format!("{}.map", p.name))).unwrap();
+fn all_current_ores_have_complete_refinery_foundations_beyond_the_ore_disk() {
+    let (p, native) = support::current_map();
     let frame = Frame::from_project(&p);
-    let hm = HeightMap::parse(m.get("HeightMapData").unwrap()).unwrap();
-    let bt = BlendTiles::parse(m.get("BlendTileData").unwrap(), hm.width, hm.height).unwrap();
+    let hm = HeightMap::parse(native.get("HeightMapData").unwrap()).unwrap();
+    let bt = BlendTiles::parse(native.get("BlendTileData").unwrap(), hm.width, hm.height).unwrap();
     let heights = terrain::flip(&hm.elevations, hm.width);
     let imp = terrain::flip(&bt.impassability, hm.width);
     let build = terrain::flip(&bt.buildability, hm.width);
-    let objects = map::objects(m.get("ObjectsList").unwrap(), &m.table).unwrap();
-    let historical = p.release_assets("[CHAI]千壑横原T0.7.6").unwrap();
-    let historical = MapFile::load(historical.join("[CHAI]千壑横原T0.7.6.map")).unwrap();
-    let historical_objects =
-        map::objects(historical.get("ObjectsList").unwrap(), &historical.table).unwrap();
-    let historical_hm = HeightMap::parse(historical.get("HeightMapData").unwrap()).unwrap();
-    let historical_bt = BlendTiles::parse(
-        historical.get("BlendTileData").unwrap(),
-        historical_hm.width,
-        historical_hm.height,
-    )
-    .unwrap();
-    let historical_heights = terrain::flip(&historical_hm.elevations, historical_hm.width);
-    let historical_imp = terrain::flip(&historical_bt.impassability, historical_hm.width);
-    let historical_build = terrain::flip(&historical_bt.buildability, historical_hm.width);
-    for (identity, old_heading) in [
-        ("OreNode 324", -std::f32::consts::FRAC_PI_4),
-        ("OreNode 319", std::f32::consts::FRAC_PI_4),
-    ] {
-        let ore = objects
-            .iter()
-            .find(|o| {
-                o.type_name == "OreNode"
-                    && map::prop(&o.props, "uniqueID").and_then(map::Value::text) == Some(identity)
-            })
-            .expect("reported ore identity must be preserved");
-        let old_ore = historical_objects
-            .iter()
-            .find(|o| map::prop(&o.props, "uniqueID").and_then(map::Value::text) == Some(identity))
-            .unwrap();
-        assert!(
-            !refinery_clear(
-                old_ore,
-                old_heading,
-                &frame,
-                &historical_heights,
-                &historical_imp,
-                &historical_build
-            ),
-            "the in-game reported heading must reproduce the cliff collision: {identity}"
-        );
+    let objects = map::objects(native.get("ObjectsList").unwrap(), &native.table).unwrap();
+    let ores: Vec<_> = objects
+        .iter()
+        .filter(|o| o.type_name == "OreNode")
+        .collect();
+    assert_eq!(ores.len(), 48);
+    for ore in &ores {
         assert!(
             refinery_clear(ore, ore.angle, &frame, &heights, &imp, &build),
-            "the complete refinery reservation must fit: {identity}"
+            "{:?}",
+            ore.position
         );
     }
+    let ore = ores[0];
+    let c = frame.grid([f64::from(ore.position[0]), f64::from(ore.position[1])]);
+    let x = (c[0] + 40. * f64::from(ore.angle).cos()).round() as usize;
+    let y = (c[1] - 40. * f64::from(ore.angle).sin()).round() as usize;
+    assert!((x as f64 - c[0]).hypot(y as f64 - c[1]) > 20.);
+    let mut damaged = heights;
+    damaged[y * frame.width + x] += 1000;
+    assert!(!refinery_clear(
+        ore, ore.angle, &frame, &damaged, &imp, &build
+    ));
 }

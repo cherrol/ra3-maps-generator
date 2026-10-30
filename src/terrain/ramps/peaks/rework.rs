@@ -392,9 +392,16 @@ pub(super) fn apply(
             return Err(err(format!("mountain changed unrelated chunk {name}")));
         }
     }
-    crate::gameplay::script_spawns::validate(p, map, &checked_hm, &checked, &objects)?;
+    crate::gameplay::script_spawns::validate_with_layout(
+        p,
+        map,
+        &checked_hm,
+        &checked,
+        &objects,
+        &layout,
+    )?;
     if gifts.guarded {
-        crate::gameplay::gift_clearance::validate(p, map)?;
+        crate::gameplay::gift_clearance::validate_with_layout(p, map, &layout)?;
     }
     crate::gameplay::production_facing::validate(p, map)?;
     crate::terrain::resource_routes::validate(p, map)?;

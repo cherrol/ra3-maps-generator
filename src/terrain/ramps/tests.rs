@@ -264,7 +264,7 @@ fn minimum_width_and_exactly_two_endpoints() {
 #[test]
 fn direct_first_to_third_connection_avoids_intermediate_platform() {
     let n = 128;
-    let r = json!({"x":64.,"y":64.,"ux":1.,"uy":0.,"w":25.,"h":25.,"span":40.,"width":20.,"auto":true,"pair":[210.,350.]});
+    let r = json!({"x":64.,"y":64.,"ux":1.,"uy":0.,"w":25.,"h":25.,"span":40.,"width":20.,"auto":true,"style":"mountain","surface_style":"mountain","pair":[210.,350.]});
     let base: Vec<_> = (0..n * n)
         .map(|i| if i % n < 64 { 210. } else { 350. })
         .collect();
@@ -277,7 +277,7 @@ fn direct_first_to_third_connection_avoids_intermediate_platform() {
     let metrics = validate_shape(&slope, n, &r, 0).unwrap();
     assert_eq!(metrics["width_cells"], 20.);
     assert_eq!(metrics["parallel_lanes"], 21);
-    let p = Project::load(std::path::Path::new(env!("CARGO_MANIFEST_DIR")), "广西").unwrap();
+    let p = Project::load(std::path::Path::new(env!("CARGO_MANIFEST_DIR")), "河南").unwrap();
     let mut carved = base.clone();
     terrain::carve(&mut carved, n, std::slice::from_ref(&r), &p).unwrap();
     // The declared width also controls carving when the old rectangle is

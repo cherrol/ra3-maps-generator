@@ -587,8 +587,15 @@ pub fn relocate(
     }
     let hm = HeightMap::parse(map.get("HeightMapData")?)?;
     let bt_checked = BlendTiles::parse(map.get("BlendTileData")?, n, n)?;
-    crate::gameplay::production_spawns::validate(p, map, &hm, &bt_checked, &objects)?;
-    crate::gameplay::gift_clearance::validate(p, map)?;
+    crate::gameplay::production_spawns::validate_with_layout(
+        p,
+        map,
+        &hm,
+        &bt_checked,
+        &objects,
+        &layout,
+    )?;
+    crate::gameplay::gift_clearance::validate_with_layout(p, map, &layout)?;
     crate::gameplay::production_facing::validate(p, map)?;
     crate::gameplay::periodic_attack::validate(p, map)?;
     for (old, new) in original_objects.iter().zip(&objects) {
@@ -687,7 +694,7 @@ mod tests {
     use super::*;
     #[test]
     fn moved_ore_requires_full_clear_build_disk_and_boundary_clearance() {
-        let p = Project::load(std::path::Path::new(env!("CARGO_MANIFEST_DIR")), "陕西").unwrap();
+        let p = Project::load(std::path::Path::new(env!("CARGO_MANIFEST_DIR")), "河南").unwrap();
         let n = 128;
         let mut z = vec![212.; n * n];
         let imp = vec![false; n * n];

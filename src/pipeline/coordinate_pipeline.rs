@@ -401,7 +401,15 @@ fn analyse(
     let resource_distribution = if let Some(source) = source {
         crate::terrain::resource_routes::validate_transition(p, &source.map, m)?
     } else {
-        crate::terrain::resource_routes::validate(p, m)?
+        // Prospective settings do not prove that a frozen source exists.
+        // Every allocation must meet the current public policy before adoption.
+        let mut initial = p.clone();
+        initial
+            .cfg
+            .as_object_mut()
+            .unwrap()
+            .remove("COORDINATE_PIPELINE");
+        crate::terrain::resource_routes::validate(&initial, m)?
     };
     let s = settings(p)?;
     let scene = Scene::load(p, m, policy(p, &s)?)?;
@@ -463,9 +471,10 @@ fn audit_projected(p: &Project, projection: &Projection) -> Result<Json> {
         map: m,
         ..
     } = projection;
+    project::validate_current_rules(&p.cfg)?;
     let baseline_bytes = fs::read(p.path(&s.settings.baseline)?)?;
     let mut key = crc32fast::Hasher::new();
-    key.update(b"coordinate-audit-v12-rectangular-spatial-policy");
+    key.update(b"coordinate-audit-v13-current-strict-policy");
     key.update(&serde_json::to_vec(
         &crate::terrain::resource_routes::binding(p)?,
     )?);
@@ -473,24 +482,16 @@ fn audit_projected(p: &Project, projection: &Projection) -> Result<Json> {
         &crate::terrain::ramp_clearance::policy(p)?,
     )?);
     key.update(&serde_json::to_vec(&p.cfg.get("RAMP_CLEARANCE"))?);
-    key.update(&serde_json::to_vec(&p.cfg.get("RAMP_CLEARANCE_REFERENCE"))?);
-    if p.cfg.get("RAMP_CLEARANCE").is_none()
-        && let Some(reference) = p.cfg["RAMP_CLEARANCE_REFERENCE"].as_str()
-    {
-        key.update(&fs::read(p.path(reference)?)?);
-    }
     key.update(&serde_json::to_vec(
         &crate::terrain::spawn_placement::policy(p)?,
     )?);
-    key.update(&serde_json::to_vec(&p.cfg.get("SPAWN_PLACEMENT"))?);
+    key.update(&crate::terrain::spawn_placement::RULES_VERSION.to_le_bytes());
     key.update(&serde_json::to_vec(
-        &p.cfg.get("SPAWN_PLACEMENT_REFERENCE"),
+        &p.cfg.get("SPAWN_ORIENTATION_EXCEPTION"),
     )?);
+    key.update(&serde_json::to_vec(&p.cfg.get("SPAWN_PLACEMENT"))?);
     key.update(&serde_json::to_vec(&p.cfg.get("WATER_Z"))?);
     key.update(&serde_json::to_vec(&p.flag("TERRAIN_ONLY"))?);
-    if let Some(reference) = p.cfg["SPAWN_PLACEMENT_REFERENCE"].as_str() {
-        key.update(&fs::read(p.path(reference)?)?);
-    }
     key.update(&s.settings.source_crc32.to_le_bytes());
     if let Some(bytes) = crate::terrain::resource_routes::input(p)? {
         key.update(&bytes);
@@ -520,17 +521,17 @@ fn audit_projected(p: &Project, projection: &Projection) -> Result<Json> {
     }
     let (mut report, issues) = analyse(p, m, layout, Some(s))?;
     let baseline: Vec<Issue> = serde_json::from_slice(&baseline_bytes)?;
-    let regressions = spatial::regressions(&issues, &baseline);
+    let regressions = issues.clone();
     report["regressions"] = serde_json::to_value(&regressions)?;
     report["passed"] = json!(regressions.is_empty());
     report["baseline_issues"] = json!(baseline.len());
     report["inherited_issues"] = json!(issues.len() - regressions.len());
     report["input_crc32"] = json!(input_crc32);
     let mut md = format!(
-        "# {} 坐标制作检查\n\n检查结果：{}。原生对象 {}，斜坡 {}，资源路线关系 {}。\n\n新增/恶化问题 {}，当前继承问题 {}；继承项明确列出，不表示已修复。\n\n",
+        "# {} 坐标制作检查\n\n检查结果：{}。原生对象 {}，斜坡 {}，资源路线关系 {}。\n\n当前问题 {}，继承放行 {}；全部成品统一要求零问题。\n\n",
         p.name,
         if regressions.is_empty() {
-            "通过增量检查"
+            "通过严格检查"
         } else {
             "拒绝发布"
         },
@@ -594,12 +595,12 @@ fn audit_projected(p: &Project, projection: &Projection) -> Result<Json> {
     reports_archive(p)?;
     if !regressions.is_empty() {
         return Err(err(format!(
-            "coordinate checks rejected {} new/worsened issues; see spatial/report.json",
+            "coordinate checks rejected {} current issues; see spatial/report.json",
             regressions.len()
         )));
     }
     println!(
-        "坐标检查：{} 个对象、{} 条坡、{} 条资源路线关系；继承 {} 项，新增/恶化 0",
+        "坐标检查：{} 个对象、{} 条坡、{} 条资源路线关系；当前问题 {}，严格验收通过",
         report["counts"]["objects"],
         report["counts"]["ramps"],
         report["counts"]["routes"],
@@ -832,11 +833,17 @@ pub fn adopt(p: &Project) -> Result<()> {
         }
     }
     let mut audit_project = p.clone();
-    if initial && !p.cfg["RAMP_CLEARANCE_REFERENCE"].is_string() {
+    if initial {
         audit_project.cfg["RAMP_CLEARANCE"] =
             serde_json::to_value(crate::terrain::ramp_clearance::policy(p)?)?;
     }
     let (_, issues) = analyse(&audit_project, &m, &layout, previous.as_ref())?;
+    if !issues.is_empty() {
+        return Err(err(format!(
+            "cannot adopt source with {} current spatial issues",
+            issues.len()
+        )));
+    }
     let mut scene_project = p.clone();
     if initial {
         scene_project
@@ -849,6 +856,25 @@ pub fn adopt(p: &Project) -> Result<()> {
         scene_project = crate::pipeline::scene::incremental_context(&scene_project)?;
     }
     crate::pipeline::scene::verify_files(&scene_project, &m, &files)?;
+    if !scene_project.flag("TERRAIN_ONLY") {
+        crate::gameplay::gift_clearance::validate_with_layout(&scene_project, &m, &layout)?;
+        crate::gameplay::production_spawns::validate_final_with_layout(
+            &scene_project,
+            &m,
+            &layout,
+        )?;
+    }
+    if let Err(error) =
+        crate::pipeline::acceptance::require_delivery_with_layout(&scene_project, &files, &layout)
+    {
+        let candidate =
+            crate::pipeline::acceptance::stage_candidate(&scene_project, &files, &layout)?;
+        return Err(err(format!(
+            "{error}; review candidate {} before adopting its source",
+            candidate.display()
+        )));
+    }
+    crate::gameplay::placement::validate_final_access(&scene_project, &m)?;
     let selected_layers = crate::terrain::layers::SelectedLayers::load(p)?;
     let source_crc32 = crc32fast::hash(bytes);
     files.push(("layout.json".into(), serde_json::to_vec_pretty(&layout)?));

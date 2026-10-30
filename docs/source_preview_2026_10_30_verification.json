@@ -1,0 +1,1982 @@
+{
+  "date": "2026-10-30",
+  "scope": "Regenerate source.png for all 34 regions using original elevation and geographic water; refresh Windows Downloads comparison exports",
+  "source_images": {
+    "maps": [
+      {
+        "map_id": "上海",
+        "unchanged_source_arrays": [
+          "elevation_m.npy",
+          "inside_province.npy",
+          "bounds_wgs84.npy"
+        ],
+        "source_size": [
+          832,
+          840
+        ],
+        "source_crop": [
+          20,
+          20,
+          812,
+          820
+        ],
+        "png_size": [
+          1104,
+          1002
+        ],
+        "png_crc32": 912309902,
+        "png_crc_chunks_checked": 3,
+        "terrain_pixels_checked": 640000,
+        "water_pixels": 262777,
+        "land_pixels": 377223,
+        "land_dem_samples": 2048,
+        "land_dem_samples_exact": 2048,
+        "land_dem_samples_within_one_color_level": 0,
+        "maximum_color_difference": 0,
+        "passed": true
+      },
+      {
+        "map_id": "云南",
+        "unchanged_source_arrays": [
+          "elevation_m.npy",
+          "inside_province.npy",
+          "bounds_wgs84.npy"
+        ],
+        "source_size": [
+          776,
+          800
+        ],
+        "source_crop": [
+          20,
+          20,
+          756,
+          780
+        ],
+        "png_size": [
+          1104,
+          1002
+        ],
+        "png_crc32": 468413459,
+        "png_crc_chunks_checked": 3,
+        "terrain_pixels_checked": 640000,
+        "water_pixels": 974,
+        "land_pixels": 639026,
+        "land_dem_samples": 2048,
+        "land_dem_samples_exact": 2048,
+        "land_dem_samples_within_one_color_level": 0,
+        "maximum_color_difference": 0,
+        "passed": true
+      },
+      {
+        "map_id": "内蒙古",
+        "unchanged_source_arrays": [
+          "elevation_m.npy",
+          "inside_province.npy",
+          "bounds_wgs84.npy"
+        ],
+        "source_size": [
+          840,
+          664
+        ],
+        "source_crop": [
+          20,
+          20,
+          820,
+          644
+        ],
+        "png_size": [
+          1104,
+          1002
+        ],
+        "png_crc32": 1887587703,
+        "png_crc_chunks_checked": 3,
+        "terrain_pixels_checked": 640000,
+        "water_pixels": 27548,
+        "land_pixels": 612452,
+        "land_dem_samples": 2048,
+        "land_dem_samples_exact": 2048,
+        "land_dem_samples_within_one_color_level": 0,
+        "maximum_color_difference": 0,
+        "passed": true
+      },
+      {
+        "map_id": "北京",
+        "unchanged_source_arrays": [
+          "elevation_m.npy",
+          "inside_province.npy",
+          "bounds_wgs84.npy"
+        ],
+        "source_size": [
+          824,
+          840
+        ],
+        "source_crop": [
+          20,
+          20,
+          804,
+          820
+        ],
+        "png_size": [
+          1104,
+          1002
+        ],
+        "png_crc32": 3320111781,
+        "png_crc_chunks_checked": 3,
+        "terrain_pixels_checked": 640000,
+        "water_pixels": 5157,
+        "land_pixels": 634843,
+        "land_dem_samples": 2048,
+        "land_dem_samples_exact": 2048,
+        "land_dem_samples_within_one_color_level": 0,
+        "maximum_color_difference": 0,
+        "passed": true
+      },
+      {
+        "map_id": "台湾",
+        "unchanged_source_arrays": [
+          "elevation_m.npy",
+          "inside_province.npy",
+          "bounds_wgs84.npy"
+        ],
+        "source_size": [
+          840,
+          728
+        ],
+        "source_crop": [
+          20,
+          20,
+          820,
+          708
+        ],
+        "png_size": [
+          1104,
+          1002
+        ],
+        "png_crc32": 1389837737,
+        "png_crc_chunks_checked": 3,
+        "terrain_pixels_checked": 640000,
+        "water_pixels": 539062,
+        "land_pixels": 100938,
+        "land_dem_samples": 2048,
+        "land_dem_samples_exact": 2048,
+        "land_dem_samples_within_one_color_level": 0,
+        "maximum_color_difference": 0,
+        "passed": true
+      },
+      {
+        "map_id": "吉林",
+        "unchanged_source_arrays": [
+          "elevation_m.npy",
+          "inside_province.npy",
+          "bounds_wgs84.npy"
+        ],
+        "source_size": [
+          840,
+          664
+        ],
+        "source_crop": [
+          20,
+          20,
+          820,
+          644
+        ],
+        "png_size": [
+          1104,
+          1002
+        ],
+        "png_crc32": 3452788656,
+        "png_crc_chunks_checked": 3,
+        "terrain_pixels_checked": 640000,
+        "water_pixels": 30029,
+        "land_pixels": 609971,
+        "land_dem_samples": 2048,
+        "land_dem_samples_exact": 2048,
+        "land_dem_samples_within_one_color_level": 0,
+        "maximum_color_difference": 0,
+        "passed": true
+      },
+      {
+        "map_id": "四川",
+        "unchanged_source_arrays": [
+          "elevation_m.npy",
+          "inside_province.npy",
+          "bounds_wgs84.npy"
+        ],
+        "source_size": [
+          840,
+          720
+        ],
+        "source_crop": [
+          20,
+          20,
+          820,
+          700
+        ],
+        "png_size": [
+          1104,
+          1002
+        ],
+        "png_crc32": 2983238664,
+        "png_crc_chunks_checked": 3,
+        "terrain_pixels_checked": 640000,
+        "water_pixels": 270,
+        "land_pixels": 639730,
+        "land_dem_samples": 2048,
+        "land_dem_samples_exact": 2048,
+        "land_dem_samples_within_one_color_level": 0,
+        "maximum_color_difference": 0,
+        "passed": true
+      },
+      {
+        "map_id": "天津",
+        "unchanged_source_arrays": [
+          "elevation_m.npy",
+          "inside_province.npy",
+          "bounds_wgs84.npy"
+        ],
+        "source_size": [
+          536,
+          840
+        ],
+        "source_crop": [
+          20,
+          20,
+          516,
+          820
+        ],
+        "png_size": [
+          1104,
+          1002
+        ],
+        "png_crc32": 1465748813,
+        "png_crc_chunks_checked": 3,
+        "terrain_pixels_checked": 640000,
+        "water_pixels": 74523,
+        "land_pixels": 565477,
+        "land_dem_samples": 2048,
+        "land_dem_samples_exact": 2048,
+        "land_dem_samples_within_one_color_level": 0,
+        "maximum_color_difference": 0,
+        "passed": true
+      },
+      {
+        "map_id": "宁夏",
+        "unchanged_source_arrays": [
+          "elevation_m.npy",
+          "inside_province.npy",
+          "bounds_wgs84.npy"
+        ],
+        "source_size": [
+          560,
+          840
+        ],
+        "source_crop": [
+          20,
+          20,
+          540,
+          820
+        ],
+        "png_size": [
+          1104,
+          1002
+        ],
+        "png_crc32": 1151894039,
+        "png_crc_chunks_checked": 3,
+        "terrain_pixels_checked": 640000,
+        "water_pixels": 0,
+        "land_pixels": 640000,
+        "land_dem_samples": 2048,
+        "land_dem_samples_exact": 2048,
+        "land_dem_samples_within_one_color_level": 0,
+        "maximum_color_difference": 0,
+        "passed": true
+      },
+      {
+        "map_id": "安徽",
+        "unchanged_source_arrays": [
+          "elevation_m.npy",
+          "inside_province.npy",
+          "bounds_wgs84.npy"
+        ],
+        "source_size": [
+          656,
+          840
+        ],
+        "source_crop": [
+          20,
+          20,
+          636,
+          820
+        ],
+        "png_size": [
+          1104,
+          1002
+        ],
+        "png_crc32": 1299160118,
+        "png_crc_chunks_checked": 3,
+        "terrain_pixels_checked": 640000,
+        "water_pixels": 18526,
+        "land_pixels": 621474,
+        "land_dem_samples": 2048,
+        "land_dem_samples_exact": 2048,
+        "land_dem_samples_within_one_color_level": 0,
+        "maximum_color_difference": 0,
+        "passed": true
+      },
+      {
+        "map_id": "山东",
+        "unchanged_source_arrays": [
+          "elevation_m.npy",
+          "inside_province.npy",
+          "bounds_wgs84.npy"
+        ],
+        "source_size": [
+          840,
+          544
+        ],
+        "source_crop": [
+          20,
+          20,
+          820,
+          524
+        ],
+        "png_size": [
+          1104,
+          1002
+        ],
+        "png_crc32": 429298972,
+        "png_crc_chunks_checked": 3,
+        "terrain_pixels_checked": 640000,
+        "water_pixels": 214843,
+        "land_pixels": 425157,
+        "land_dem_samples": 2048,
+        "land_dem_samples_exact": 2048,
+        "land_dem_samples_within_one_color_level": 0,
+        "maximum_color_difference": 0,
+        "passed": true
+      },
+      {
+        "map_id": "山西",
+        "unchanged_source_arrays": [
+          "elevation_m.npy",
+          "inside_province.npy",
+          "bounds_wgs84.npy"
+        ],
+        "source_size": [
+          488,
+          840
+        ],
+        "source_crop": [
+          20,
+          20,
+          468,
+          820
+        ],
+        "png_size": [
+          1104,
+          1002
+        ],
+        "png_crc32": 617955663,
+        "png_crc_chunks_checked": 3,
+        "terrain_pixels_checked": 640000,
+        "water_pixels": 0,
+        "land_pixels": 640000,
+        "land_dem_samples": 2048,
+        "land_dem_samples_exact": 2048,
+        "land_dem_samples_within_one_color_level": 0,
+        "maximum_color_difference": 0,
+        "passed": true
+      },
+      {
+        "map_id": "广东",
+        "unchanged_source_arrays": [
+          "elevation_m.npy",
+          "inside_province.npy",
+          "bounds_wgs84.npy"
+        ],
+        "source_size": [
+          800,
+          640
+        ],
+        "source_crop": [
+          20,
+          20,
+          780,
+          620
+        ],
+        "png_size": [
+          1104,
+          1002
+        ],
+        "png_crc32": 1600886373,
+        "png_crc_chunks_checked": 3,
+        "terrain_pixels_checked": 640000,
+        "water_pixels": 240362,
+        "land_pixels": 399638,
+        "land_dem_samples": 2048,
+        "land_dem_samples_exact": 2048,
+        "land_dem_samples_within_one_color_level": 0,
+        "maximum_color_difference": 0,
+        "passed": true
+      },
+      {
+        "map_id": "广西",
+        "unchanged_source_arrays": [
+          "elevation_m.npy",
+          "inside_province.npy",
+          "bounds_wgs84.npy"
+        ],
+        "source_size": [
+          800,
+          640
+        ],
+        "source_crop": [
+          20,
+          20,
+          780,
+          620
+        ],
+        "png_size": [
+          1104,
+          1002
+        ],
+        "png_crc32": 3768767078,
+        "png_crc_chunks_checked": 3,
+        "terrain_pixels_checked": 640000,
+        "water_pixels": 46905,
+        "land_pixels": 593095,
+        "land_dem_samples": 2048,
+        "land_dem_samples_exact": 2048,
+        "land_dem_samples_within_one_color_level": 0,
+        "maximum_color_difference": 0,
+        "passed": true
+      },
+      {
+        "map_id": "新疆",
+        "unchanged_source_arrays": [
+          "elevation_m.npy",
+          "inside_province.npy",
+          "bounds_wgs84.npy"
+        ],
+        "source_size": [
+          840,
+          736
+        ],
+        "source_crop": [
+          20,
+          20,
+          820,
+          716
+        ],
+        "png_size": [
+          1104,
+          1002
+        ],
+        "png_crc32": 208249523,
+        "png_crc_chunks_checked": 3,
+        "terrain_pixels_checked": 640000,
+        "water_pixels": 9032,
+        "land_pixels": 630968,
+        "land_dem_samples": 2048,
+        "land_dem_samples_exact": 2048,
+        "land_dem_samples_within_one_color_level": 0,
+        "maximum_color_difference": 0,
+        "passed": true
+      },
+      {
+        "map_id": "江苏",
+        "unchanged_source_arrays": [
+          "elevation_m.npy",
+          "inside_province.npy",
+          "bounds_wgs84.npy"
+        ],
+        "source_size": [
+          840,
+          784
+        ],
+        "source_crop": [
+          20,
+          20,
+          820,
+          764
+        ],
+        "png_size": [
+          1104,
+          1002
+        ],
+        "png_crc32": 2218450846,
+        "png_crc_chunks_checked": 3,
+        "terrain_pixels_checked": 640000,
+        "water_pixels": 154810,
+        "land_pixels": 485190,
+        "land_dem_samples": 2048,
+        "land_dem_samples_exact": 2048,
+        "land_dem_samples_within_one_color_level": 0,
+        "maximum_color_difference": 0,
+        "passed": true
+      },
+      {
+        "map_id": "江西",
+        "unchanged_source_arrays": [
+          "elevation_m.npy",
+          "inside_province.npy",
+          "bounds_wgs84.npy"
+        ],
+        "source_size": [
+          664,
+          840
+        ],
+        "source_crop": [
+          20,
+          20,
+          644,
+          820
+        ],
+        "png_size": [
+          1104,
+          1002
+        ],
+        "png_crc32": 452605989,
+        "png_crc_chunks_checked": 3,
+        "terrain_pixels_checked": 640000,
+        "water_pixels": 9642,
+        "land_pixels": 630358,
+        "land_dem_samples": 2048,
+        "land_dem_samples_exact": 2048,
+        "land_dem_samples_within_one_color_level": 0,
+        "maximum_color_difference": 0,
+        "passed": true
+      },
+      {
+        "map_id": "河北",
+        "unchanged_source_arrays": [
+          "elevation_m.npy",
+          "inside_province.npy",
+          "bounds_wgs84.npy"
+        ],
+        "source_size": [
+          640,
+          840
+        ],
+        "source_crop": [
+          20,
+          20,
+          620,
+          820
+        ],
+        "png_size": [
+          1104,
+          1002
+        ],
+        "png_crc32": 3280676391,
+        "png_crc_chunks_checked": 3,
+        "terrain_pixels_checked": 640000,
+        "water_pixels": 53412,
+        "land_pixels": 586588,
+        "land_dem_samples": 2048,
+        "land_dem_samples_exact": 2048,
+        "land_dem_samples_within_one_color_level": 0,
+        "maximum_color_difference": 0,
+        "passed": true
+      },
+      {
+        "map_id": "河南",
+        "unchanged_source_arrays": [
+          "elevation_m.npy",
+          "inside_province.npy",
+          "bounds_wgs84.npy"
+        ],
+        "source_size": [
+          840,
+          840
+        ],
+        "source_crop": [
+          20,
+          20,
+          820,
+          820
+        ],
+        "png_size": [
+          1104,
+          1002
+        ],
+        "png_crc32": 3190370420,
+        "png_crc_chunks_checked": 3,
+        "terrain_pixels_checked": 640000,
+        "water_pixels": 2139,
+        "land_pixels": 637861,
+        "land_dem_samples": 2048,
+        "land_dem_samples_exact": 2048,
+        "land_dem_samples_within_one_color_level": 0,
+        "maximum_color_difference": 0,
+        "passed": true
+      },
+      {
+        "map_id": "浙江",
+        "unchanged_source_arrays": [
+          "elevation_m.npy",
+          "inside_province.npy",
+          "bounds_wgs84.npy"
+        ],
+        "source_size": [
+          840,
+          808
+        ],
+        "source_crop": [
+          20,
+          20,
+          820,
+          788
+        ],
+        "png_size": [
+          1104,
+          1002
+        ],
+        "png_crc32": 395080789,
+        "png_crc_chunks_checked": 3,
+        "terrain_pixels_checked": 640000,
+        "water_pixels": 201142,
+        "land_pixels": 438858,
+        "land_dem_samples": 2048,
+        "land_dem_samples_exact": 2048,
+        "land_dem_samples_within_one_color_level": 0,
+        "maximum_color_difference": 0,
+        "passed": true
+      },
+      {
+        "map_id": "海南",
+        "unchanged_source_arrays": [
+          "elevation_m.npy",
+          "inside_province.npy",
+          "bounds_wgs84.npy"
+        ],
+        "source_size": [
+          800,
+          696
+        ],
+        "source_crop": [
+          20,
+          20,
+          780,
+          676
+        ],
+        "png_size": [
+          1104,
+          1002
+        ],
+        "png_crc32": 3623108272,
+        "png_crc_chunks_checked": 3,
+        "terrain_pixels_checked": 640000,
+        "water_pixels": 289812,
+        "land_pixels": 350188,
+        "land_dem_samples": 2048,
+        "land_dem_samples_exact": 2048,
+        "land_dem_samples_within_one_color_level": 0,
+        "maximum_color_difference": 0,
+        "passed": true
+      },
+      {
+        "map_id": "湖北",
+        "unchanged_source_arrays": [
+          "elevation_m.npy",
+          "inside_province.npy",
+          "bounds_wgs84.npy"
+        ],
+        "source_size": [
+          840,
+          552
+        ],
+        "source_crop": [
+          20,
+          20,
+          820,
+          532
+        ],
+        "png_size": [
+          1104,
+          1002
+        ],
+        "png_crc32": 2662600610,
+        "png_crc_chunks_checked": 3,
+        "terrain_pixels_checked": 640000,
+        "water_pixels": 9339,
+        "land_pixels": 630661,
+        "land_dem_samples": 2048,
+        "land_dem_samples_exact": 2048,
+        "land_dem_samples_within_one_color_level": 0,
+        "maximum_color_difference": 0,
+        "passed": true
+      },
+      {
+        "map_id": "湖南",
+        "unchanged_source_arrays": [
+          "elevation_m.npy",
+          "inside_province.npy",
+          "bounds_wgs84.npy"
+        ],
+        "source_size": [
+          744,
+          840
+        ],
+        "source_crop": [
+          20,
+          20,
+          724,
+          820
+        ],
+        "png_size": [
+          1104,
+          1002
+        ],
+        "png_crc32": 3673766889,
+        "png_crc_chunks_checked": 3,
+        "terrain_pixels_checked": 640000,
+        "water_pixels": 4245,
+        "land_pixels": 635755,
+        "land_dem_samples": 2048,
+        "land_dem_samples_exact": 2048,
+        "land_dem_samples_within_one_color_level": 0,
+        "maximum_color_difference": 0,
+        "passed": true
+      },
+      {
+        "map_id": "澳门",
+        "unchanged_source_arrays": [
+          "elevation_m.npy",
+          "inside_province.npy",
+          "bounds_wgs84.npy"
+        ],
+        "source_size": [
+          528,
+          840
+        ],
+        "source_crop": [
+          20,
+          20,
+          508,
+          820
+        ],
+        "png_size": [
+          1104,
+          1002
+        ],
+        "png_crc32": 3626939852,
+        "png_crc_chunks_checked": 3,
+        "terrain_pixels_checked": 640000,
+        "water_pixels": 292421,
+        "land_pixels": 347579,
+        "land_dem_samples": 2048,
+        "land_dem_samples_exact": 2048,
+        "land_dem_samples_within_one_color_level": 0,
+        "maximum_color_difference": 0,
+        "passed": true
+      },
+      {
+        "map_id": "甘肃",
+        "unchanged_source_arrays": [
+          "elevation_m.npy",
+          "inside_province.npy",
+          "bounds_wgs84.npy"
+        ],
+        "source_size": [
+          840,
+          672
+        ],
+        "source_crop": [
+          20,
+          20,
+          820,
+          652
+        ],
+        "png_size": [
+          1104,
+          1002
+        ],
+        "png_crc32": 2172207912,
+        "png_crc_chunks_checked": 3,
+        "terrain_pixels_checked": 640000,
+        "water_pixels": 2484,
+        "land_pixels": 637516,
+        "land_dem_samples": 2048,
+        "land_dem_samples_exact": 2048,
+        "land_dem_samples_within_one_color_level": 0,
+        "maximum_color_difference": 0,
+        "passed": true
+      },
+      {
+        "map_id": "福建",
+        "unchanged_source_arrays": [
+          "elevation_m.npy",
+          "inside_province.npy",
+          "bounds_wgs84.npy"
+        ],
+        "source_size": [
+          776,
+          840
+        ],
+        "source_crop": [
+          20,
+          20,
+          756,
+          820
+        ],
+        "png_size": [
+          1104,
+          1002
+        ],
+        "png_crc32": 940517085,
+        "png_crc_chunks_checked": 3,
+        "terrain_pixels_checked": 640000,
+        "water_pixels": 165450,
+        "land_pixels": 474550,
+        "land_dem_samples": 2048,
+        "land_dem_samples_exact": 2048,
+        "land_dem_samples_within_one_color_level": 0,
+        "maximum_color_difference": 0,
+        "passed": true
+      },
+      {
+        "map_id": "西藏",
+        "unchanged_source_arrays": [
+          "elevation_m.npy",
+          "inside_province.npy",
+          "bounds_wgs84.npy"
+        ],
+        "source_size": [
+          840,
+          480
+        ],
+        "source_crop": [
+          20,
+          20,
+          820,
+          460
+        ],
+        "png_size": [
+          1104,
+          1002
+        ],
+        "png_crc32": 3751409441,
+        "png_crc_chunks_checked": 3,
+        "terrain_pixels_checked": 640000,
+        "water_pixels": 5342,
+        "land_pixels": 634658,
+        "land_dem_samples": 2048,
+        "land_dem_samples_exact": 2048,
+        "land_dem_samples_within_one_color_level": 0,
+        "maximum_color_difference": 0,
+        "passed": true
+      },
+      {
+        "map_id": "贵州",
+        "unchanged_source_arrays": [
+          "elevation_m.npy",
+          "inside_province.npy",
+          "bounds_wgs84.npy"
+        ],
+        "source_size": [
+          840,
+          728
+        ],
+        "source_crop": [
+          20,
+          20,
+          820,
+          708
+        ],
+        "png_size": [
+          1104,
+          1002
+        ],
+        "png_crc32": 3669445538,
+        "png_crc_chunks_checked": 3,
+        "terrain_pixels_checked": 640000,
+        "water_pixels": 520,
+        "land_pixels": 639480,
+        "land_dem_samples": 2048,
+        "land_dem_samples_exact": 2048,
+        "land_dem_samples_within_one_color_level": 0,
+        "maximum_color_difference": 0,
+        "passed": true
+      },
+      {
+        "map_id": "辽宁",
+        "unchanged_source_arrays": [
+          "elevation_m.npy",
+          "inside_province.npy",
+          "bounds_wgs84.npy"
+        ],
+        "source_size": [
+          840,
+          768
+        ],
+        "source_crop": [
+          20,
+          20,
+          820,
+          748
+        ],
+        "png_size": [
+          1104,
+          1002
+        ],
+        "png_crc32": 1854881166,
+        "png_crc_chunks_checked": 3,
+        "terrain_pixels_checked": 640000,
+        "water_pixels": 145268,
+        "land_pixels": 494732,
+        "land_dem_samples": 2048,
+        "land_dem_samples_exact": 2048,
+        "land_dem_samples_within_one_color_level": 0,
+        "maximum_color_difference": 0,
+        "passed": true
+      },
+      {
+        "map_id": "重庆",
+        "unchanged_source_arrays": [
+          "elevation_m.npy",
+          "inside_province.npy",
+          "bounds_wgs84.npy"
+        ],
+        "source_size": [
+          840,
+          800
+        ],
+        "source_crop": [
+          20,
+          20,
+          820,
+          780
+        ],
+        "png_size": [
+          1104,
+          1002
+        ],
+        "png_crc32": 746541751,
+        "png_crc_chunks_checked": 3,
+        "terrain_pixels_checked": 640000,
+        "water_pixels": 1464,
+        "land_pixels": 638536,
+        "land_dem_samples": 2048,
+        "land_dem_samples_exact": 2048,
+        "land_dem_samples_within_one_color_level": 0,
+        "maximum_color_difference": 0,
+        "passed": true
+      },
+      {
+        "map_id": "陕西",
+        "unchanged_source_arrays": [
+          "elevation_m.npy",
+          "inside_province.npy",
+          "bounds_wgs84.npy"
+        ],
+        "source_size": [
+          640,
+          800
+        ],
+        "source_crop": [
+          20,
+          20,
+          620,
+          780
+        ],
+        "png_size": [
+          1104,
+          1002
+        ],
+        "png_crc32": 2115721555,
+        "png_crc_chunks_checked": 3,
+        "terrain_pixels_checked": 640000,
+        "water_pixels": 6431,
+        "land_pixels": 633569,
+        "land_dem_samples": 2048,
+        "land_dem_samples_exact": 2048,
+        "land_dem_samples_within_one_color_level": 0,
+        "maximum_color_difference": 0,
+        "passed": true
+      },
+      {
+        "map_id": "青海",
+        "unchanged_source_arrays": [
+          "elevation_m.npy",
+          "inside_province.npy",
+          "bounds_wgs84.npy"
+        ],
+        "source_size": [
+          840,
+          584
+        ],
+        "source_crop": [
+          20,
+          20,
+          820,
+          564
+        ],
+        "png_size": [
+          1104,
+          1002
+        ],
+        "png_crc32": 407089162,
+        "png_crc_chunks_checked": 3,
+        "terrain_pixels_checked": 640000,
+        "water_pixels": 6348,
+        "land_pixels": 633652,
+        "land_dem_samples": 2048,
+        "land_dem_samples_exact": 2048,
+        "land_dem_samples_within_one_color_level": 0,
+        "maximum_color_difference": 0,
+        "passed": true
+      },
+      {
+        "map_id": "香港",
+        "unchanged_source_arrays": [
+          "elevation_m.npy",
+          "inside_province.npy",
+          "bounds_wgs84.npy"
+        ],
+        "source_size": [
+          840,
+          624
+        ],
+        "source_crop": [
+          20,
+          20,
+          820,
+          604
+        ],
+        "png_size": [
+          1104,
+          1002
+        ],
+        "png_crc32": 74078057,
+        "png_crc_chunks_checked": 3,
+        "terrain_pixels_checked": 640000,
+        "water_pixels": 349182,
+        "land_pixels": 290818,
+        "land_dem_samples": 2048,
+        "land_dem_samples_exact": 2048,
+        "land_dem_samples_within_one_color_level": 0,
+        "maximum_color_difference": 0,
+        "passed": true
+      },
+      {
+        "map_id": "黑龙江",
+        "unchanged_source_arrays": [
+          "elevation_m.npy",
+          "inside_province.npy",
+          "bounds_wgs84.npy"
+        ],
+        "source_size": [
+          768,
+          840
+        ],
+        "source_crop": [
+          20,
+          20,
+          748,
+          820
+        ],
+        "png_size": [
+          1104,
+          1002
+        ],
+        "png_crc32": 775945770,
+        "png_crc_chunks_checked": 3,
+        "terrain_pixels_checked": 640000,
+        "water_pixels": 2514,
+        "land_pixels": 637486,
+        "land_dem_samples": 2048,
+        "land_dem_samples_exact": 2048,
+        "land_dem_samples_within_one_color_level": 0,
+        "maximum_color_difference": 0,
+        "passed": true
+      }
+    ],
+    "map_count": 34,
+    "terrain_pixels_checked": 21760000,
+    "land_dem_samples": 69632,
+    "land_dem_samples_exact": 69632,
+    "land_dem_samples_within_one_color_level": 0,
+    "baseline_existing_files_checked": 3827,
+    "protected_files_unchanged": 3725,
+    "allowed_changed_existing_files": [
+      "maps/上海/data/terrain-preview/report.json",
+      "maps/上海/data/terrain-preview/water-policy.json",
+      "maps/上海/source.png",
+      "maps/云南/data/terrain-preview/report.json",
+      "maps/云南/data/terrain-preview/water-policy.json",
+      "maps/云南/source.png",
+      "maps/内蒙古/data/terrain-preview/report.json",
+      "maps/内蒙古/data/terrain-preview/water-policy.json",
+      "maps/内蒙古/source.png",
+      "maps/北京/data/terrain-preview/report.json",
+      "maps/北京/data/terrain-preview/water-policy.json",
+      "maps/北京/source.png",
+      "maps/台湾/data/terrain-preview/report.json",
+      "maps/台湾/data/terrain-preview/water-policy.json",
+      "maps/台湾/source.png",
+      "maps/吉林/data/terrain-preview/report.json",
+      "maps/吉林/data/terrain-preview/water-policy.json",
+      "maps/吉林/source.png",
+      "maps/四川/data/terrain-preview/report.json",
+      "maps/四川/data/terrain-preview/water-policy.json",
+      "maps/四川/source.png",
+      "maps/天津/data/terrain-preview/report.json",
+      "maps/天津/data/terrain-preview/water-policy.json",
+      "maps/天津/source.png",
+      "maps/宁夏/data/terrain-preview/report.json",
+      "maps/宁夏/data/terrain-preview/water-policy.json",
+      "maps/宁夏/source.png",
+      "maps/安徽/data/terrain-preview/report.json",
+      "maps/安徽/data/terrain-preview/water-policy.json",
+      "maps/安徽/source.png",
+      "maps/山东/data/terrain-preview/report.json",
+      "maps/山东/data/terrain-preview/water-policy.json",
+      "maps/山东/source.png",
+      "maps/山西/data/terrain-preview/report.json",
+      "maps/山西/data/terrain-preview/water-policy.json",
+      "maps/山西/source.png",
+      "maps/广东/data/terrain-preview/report.json",
+      "maps/广东/data/terrain-preview/water-policy.json",
+      "maps/广东/source.png",
+      "maps/广西/data/terrain-preview/report.json",
+      "maps/广西/data/terrain-preview/water-policy.json",
+      "maps/广西/source.png",
+      "maps/新疆/data/terrain-preview/report.json",
+      "maps/新疆/data/terrain-preview/water-policy.json",
+      "maps/新疆/source.png",
+      "maps/江苏/data/terrain-preview/report.json",
+      "maps/江苏/data/terrain-preview/water-policy.json",
+      "maps/江苏/source.png",
+      "maps/江西/data/terrain-preview/report.json",
+      "maps/江西/data/terrain-preview/water-policy.json",
+      "maps/江西/source.png",
+      "maps/河北/data/terrain-preview/report.json",
+      "maps/河北/data/terrain-preview/water-policy.json",
+      "maps/河北/source.png",
+      "maps/河南/data/terrain-preview/report.json",
+      "maps/河南/data/terrain-preview/water-policy.json",
+      "maps/河南/source.png",
+      "maps/浙江/data/terrain-preview/report.json",
+      "maps/浙江/data/terrain-preview/water-policy.json",
+      "maps/浙江/source.png",
+      "maps/海南/data/terrain-preview/report.json",
+      "maps/海南/data/terrain-preview/water-policy.json",
+      "maps/海南/source.png",
+      "maps/湖北/data/terrain-preview/report.json",
+      "maps/湖北/data/terrain-preview/water-policy.json",
+      "maps/湖北/source.png",
+      "maps/湖南/data/terrain-preview/report.json",
+      "maps/湖南/data/terrain-preview/water-policy.json",
+      "maps/湖南/source.png",
+      "maps/澳门/data/terrain-preview/report.json",
+      "maps/澳门/data/terrain-preview/water-policy.json",
+      "maps/澳门/source.png",
+      "maps/甘肃/data/terrain-preview/report.json",
+      "maps/甘肃/data/terrain-preview/water-policy.json",
+      "maps/甘肃/source.png",
+      "maps/福建/data/terrain-preview/report.json",
+      "maps/福建/data/terrain-preview/water-policy.json",
+      "maps/福建/source.png",
+      "maps/西藏/data/terrain-preview/report.json",
+      "maps/西藏/data/terrain-preview/water-policy.json",
+      "maps/西藏/source.png",
+      "maps/贵州/data/terrain-preview/report.json",
+      "maps/贵州/data/terrain-preview/water-policy.json",
+      "maps/贵州/source.png",
+      "maps/辽宁/data/terrain-preview/report.json",
+      "maps/辽宁/data/terrain-preview/water-policy.json",
+      "maps/辽宁/source.png",
+      "maps/重庆/data/terrain-preview/report.json",
+      "maps/重庆/data/terrain-preview/water-policy.json",
+      "maps/重庆/source.png",
+      "maps/陕西/data/terrain-preview/report.json",
+      "maps/陕西/data/terrain-preview/water-policy.json",
+      "maps/陕西/source.png",
+      "maps/青海/data/terrain-preview/report.json",
+      "maps/青海/data/terrain-preview/water-policy.json",
+      "maps/青海/source.png",
+      "maps/香港/data/terrain-preview/report.json",
+      "maps/香港/data/terrain-preview/water-policy.json",
+      "maps/香港/source.png",
+      "maps/黑龙江/data/terrain-preview/report.json",
+      "maps/黑龙江/data/terrain-preview/water-policy.json",
+      "maps/黑龙江/source.png"
+    ],
+    "all_passed": true
+  },
+  "source_references": {
+    "regions": 34,
+    "protected_existing_files": 136,
+    "all_protected_files_unchanged": true,
+    "all_checks_passed": true,
+    "results": [
+      {
+        "region": "上海",
+        "shape": [
+          840,
+          832
+        ],
+        "input_arrays_byte_identical": true,
+        "raw_features_identical": 1,
+        "source_water_cells": 296783,
+        "lake_only_cells": 1088,
+        "sampled_water_pixels_checked": 192,
+        "all_checks_passed": true
+      },
+      {
+        "region": "云南",
+        "shape": [
+          800,
+          776
+        ],
+        "input_arrays_byte_identical": true,
+        "raw_features_identical": 2,
+        "source_water_cells": 854,
+        "lake_only_cells": 130,
+        "sampled_water_pixels_checked": 192,
+        "all_checks_passed": true
+      },
+      {
+        "region": "内蒙古",
+        "shape": [
+          664,
+          840
+        ],
+        "input_arrays_byte_identical": true,
+        "raw_features_identical": 42,
+        "source_water_cells": 25201,
+        "lake_only_cells": 4468,
+        "sampled_water_pixels_checked": 192,
+        "all_checks_passed": true
+      },
+      {
+        "region": "北京",
+        "shape": [
+          840,
+          824
+        ],
+        "input_arrays_byte_identical": true,
+        "raw_features_identical": 4,
+        "source_water_cells": 5587,
+        "lake_only_cells": 5587,
+        "sampled_water_pixels_checked": 192,
+        "all_checks_passed": true
+      },
+      {
+        "region": "台湾",
+        "shape": [
+          728,
+          840
+        ],
+        "input_arrays_byte_identical": true,
+        "raw_features_identical": 0,
+        "source_water_cells": 522119,
+        "lake_only_cells": 0,
+        "sampled_water_pixels_checked": 128,
+        "all_checks_passed": true
+      },
+      {
+        "region": "吉林",
+        "shape": [
+          664,
+          840
+        ],
+        "input_arrays_byte_identical": true,
+        "raw_features_identical": 9,
+        "source_water_cells": 33095,
+        "lake_only_cells": 809,
+        "sampled_water_pixels_checked": 192,
+        "all_checks_passed": true
+      },
+      {
+        "region": "四川",
+        "shape": [
+          720,
+          840
+        ],
+        "input_arrays_byte_identical": true,
+        "raw_features_identical": 2,
+        "source_water_cells": 243,
+        "lake_only_cells": 243,
+        "sampled_water_pixels_checked": 192,
+        "all_checks_passed": true
+      },
+      {
+        "region": "天津",
+        "shape": [
+          840,
+          536
+        ],
+        "input_arrays_byte_identical": true,
+        "raw_features_identical": 2,
+        "source_water_cells": 55941,
+        "lake_only_cells": 2087,
+        "sampled_water_pixels_checked": 192,
+        "all_checks_passed": true
+      },
+      {
+        "region": "宁夏",
+        "shape": [
+          840,
+          560
+        ],
+        "input_arrays_byte_identical": true,
+        "raw_features_identical": 0,
+        "source_water_cells": 0,
+        "lake_only_cells": 0,
+        "sampled_water_pixels_checked": 128,
+        "all_checks_passed": true
+      },
+      {
+        "region": "安徽",
+        "shape": [
+          840,
+          656
+        ],
+        "input_arrays_byte_identical": true,
+        "raw_features_identical": 27,
+        "source_water_cells": 17984,
+        "lake_only_cells": 15663,
+        "sampled_water_pixels_checked": 192,
+        "all_checks_passed": true
+      },
+      {
+        "region": "山东",
+        "shape": [
+          544,
+          840
+        ],
+        "input_arrays_byte_identical": true,
+        "raw_features_identical": 2,
+        "source_water_cells": 161521,
+        "lake_only_cells": 580,
+        "sampled_water_pixels_checked": 192,
+        "all_checks_passed": true
+      },
+      {
+        "region": "山西",
+        "shape": [
+          840,
+          488
+        ],
+        "input_arrays_byte_identical": true,
+        "raw_features_identical": 0,
+        "source_water_cells": 0,
+        "lake_only_cells": 0,
+        "sampled_water_pixels_checked": 128,
+        "all_checks_passed": true
+      },
+      {
+        "region": "广东",
+        "shape": [
+          640,
+          800
+        ],
+        "input_arrays_byte_identical": true,
+        "raw_features_identical": 3,
+        "source_water_cells": 198222,
+        "lake_only_cells": 102,
+        "sampled_water_pixels_checked": 192,
+        "all_checks_passed": true
+      },
+      {
+        "region": "广西",
+        "shape": [
+          640,
+          800
+        ],
+        "input_arrays_byte_identical": true,
+        "raw_features_identical": 2,
+        "source_water_cells": 45499,
+        "lake_only_cells": 274,
+        "sampled_water_pixels_checked": 192,
+        "all_checks_passed": true
+      },
+      {
+        "region": "新疆",
+        "shape": [
+          736,
+          840
+        ],
+        "input_arrays_byte_identical": true,
+        "raw_features_identical": 44,
+        "source_water_cells": 8229,
+        "lake_only_cells": 8229,
+        "sampled_water_pixels_checked": 192,
+        "all_checks_passed": true
+      },
+      {
+        "region": "江苏",
+        "shape": [
+          784,
+          840
+        ],
+        "input_arrays_byte_identical": true,
+        "raw_features_identical": 13,
+        "source_water_cells": 169145,
+        "lake_only_cells": 18298,
+        "sampled_water_pixels_checked": 192,
+        "all_checks_passed": true
+      },
+      {
+        "region": "江西",
+        "shape": [
+          840,
+          664
+        ],
+        "input_arrays_byte_identical": true,
+        "raw_features_identical": 24,
+        "source_water_cells": 10920,
+        "lake_only_cells": 7952,
+        "sampled_water_pixels_checked": 192,
+        "all_checks_passed": true
+      },
+      {
+        "region": "河北",
+        "shape": [
+          840,
+          640
+        ],
+        "input_arrays_byte_identical": true,
+        "raw_features_identical": 6,
+        "source_water_cells": 46616,
+        "lake_only_cells": 574,
+        "sampled_water_pixels_checked": 192,
+        "all_checks_passed": true
+      },
+      {
+        "region": "河南",
+        "shape": [
+          840,
+          840
+        ],
+        "input_arrays_byte_identical": true,
+        "raw_features_identical": 7,
+        "source_water_cells": 2154,
+        "lake_only_cells": 2154,
+        "sampled_water_pixels_checked": 192,
+        "all_checks_passed": true
+      },
+      {
+        "region": "浙江",
+        "shape": [
+          808,
+          840
+        ],
+        "input_arrays_byte_identical": true,
+        "raw_features_identical": 5,
+        "source_water_cells": 223001,
+        "lake_only_cells": 7688,
+        "sampled_water_pixels_checked": 192,
+        "all_checks_passed": true
+      },
+      {
+        "region": "海南",
+        "shape": [
+          696,
+          800
+        ],
+        "input_arrays_byte_identical": true,
+        "raw_features_identical": 1,
+        "source_water_cells": 283883,
+        "lake_only_cells": 784,
+        "sampled_water_pixels_checked": 192,
+        "all_checks_passed": true
+      },
+      {
+        "region": "湖北",
+        "shape": [
+          552,
+          840
+        ],
+        "input_arrays_byte_identical": true,
+        "raw_features_identical": 33,
+        "source_water_cells": 7759,
+        "lake_only_cells": 7759,
+        "sampled_water_pixels_checked": 192,
+        "all_checks_passed": true
+      },
+      {
+        "region": "湖南",
+        "shape": [
+          840,
+          744
+        ],
+        "input_arrays_byte_identical": true,
+        "raw_features_identical": 14,
+        "source_water_cells": 4097,
+        "lake_only_cells": 4097,
+        "sampled_water_pixels_checked": 192,
+        "all_checks_passed": true
+      },
+      {
+        "region": "澳门",
+        "shape": [
+          840,
+          528
+        ],
+        "input_arrays_byte_identical": true,
+        "raw_features_identical": 0,
+        "source_water_cells": 211580,
+        "lake_only_cells": 0,
+        "sampled_water_pixels_checked": 128,
+        "all_checks_passed": true
+      },
+      {
+        "region": "甘肃",
+        "shape": [
+          672,
+          840
+        ],
+        "input_arrays_byte_identical": true,
+        "raw_features_identical": 10,
+        "source_water_cells": 2135,
+        "lake_only_cells": 2135,
+        "sampled_water_pixels_checked": 192,
+        "all_checks_passed": true
+      },
+      {
+        "region": "福建",
+        "shape": [
+          840,
+          776
+        ],
+        "input_arrays_byte_identical": true,
+        "raw_features_identical": 3,
+        "source_water_cells": 172506,
+        "lake_only_cells": 303,
+        "sampled_water_pixels_checked": 192,
+        "all_checks_passed": true
+      },
+      {
+        "region": "西藏",
+        "shape": [
+          480,
+          840
+        ],
+        "input_arrays_byte_identical": true,
+        "raw_features_identical": 53,
+        "source_water_cells": 2972,
+        "lake_only_cells": 2972,
+        "sampled_water_pixels_checked": 192,
+        "all_checks_passed": true
+      },
+      {
+        "region": "贵州",
+        "shape": [
+          728,
+          840
+        ],
+        "input_arrays_byte_identical": true,
+        "raw_features_identical": 1,
+        "source_water_cells": 455,
+        "lake_only_cells": 455,
+        "sampled_water_pixels_checked": 192,
+        "all_checks_passed": true
+      },
+      {
+        "region": "辽宁",
+        "shape": [
+          768,
+          840
+        ],
+        "input_arrays_byte_identical": true,
+        "raw_features_identical": 2,
+        "source_water_cells": 148554,
+        "lake_only_cells": 452,
+        "sampled_water_pixels_checked": 192,
+        "all_checks_passed": true
+      },
+      {
+        "region": "重庆",
+        "shape": [
+          800,
+          840
+        ],
+        "input_arrays_byte_identical": true,
+        "raw_features_identical": 1,
+        "source_water_cells": 1425,
+        "lake_only_cells": 1425,
+        "sampled_water_pixels_checked": 192,
+        "all_checks_passed": true
+      },
+      {
+        "region": "陕西",
+        "shape": [
+          800,
+          640
+        ],
+        "input_arrays_byte_identical": true,
+        "raw_features_identical": 1,
+        "source_water_cells": 5037,
+        "lake_only_cells": 0,
+        "sampled_water_pixels_checked": 128,
+        "all_checks_passed": true
+      },
+      {
+        "region": "青海",
+        "shape": [
+          584,
+          840
+        ],
+        "input_arrays_byte_identical": true,
+        "raw_features_identical": 27,
+        "source_water_cells": 4964,
+        "lake_only_cells": 4964,
+        "sampled_water_pixels_checked": 192,
+        "all_checks_passed": true
+      },
+      {
+        "region": "香港",
+        "shape": [
+          624,
+          840
+        ],
+        "input_arrays_byte_identical": true,
+        "raw_features_identical": 0,
+        "source_water_cells": 299821,
+        "lake_only_cells": 0,
+        "sampled_water_pixels_checked": 128,
+        "all_checks_passed": true
+      },
+      {
+        "region": "黑龙江",
+        "shape": [
+          840,
+          768
+        ],
+        "input_arrays_byte_identical": true,
+        "raw_features_identical": 9,
+        "source_water_cells": 4261,
+        "lake_only_cells": 2264,
+        "sampled_water_pixels_checked": 192,
+        "all_checks_passed": true
+      }
+    ]
+  },
+  "source_lake_compaction": {
+    "regions": 34,
+    "all_checks_passed": true,
+    "lake_bytes_before": 129471519,
+    "lake_bytes_after": 37992036,
+    "bytes_saved": 91479483,
+    "reduction_percent": 70.6560668373714,
+    "results": [
+      {
+        "region": "上海",
+        "source_reference_bytes_unchanged": true,
+        "raw_geometry_properties_and_order_unchanged": true,
+        "only_report_lake_crc_changed": true,
+        "lake_bytes_before": 6657,
+        "lake_bytes_after": 2698
+      },
+      {
+        "region": "云南",
+        "source_reference_bytes_unchanged": true,
+        "raw_geometry_properties_and_order_unchanged": true,
+        "only_report_lake_crc_changed": true,
+        "lake_bytes_before": 3105194,
+        "lake_bytes_after": 882077
+      },
+      {
+        "region": "内蒙古",
+        "source_reference_bytes_unchanged": true,
+        "raw_geometry_properties_and_order_unchanged": true,
+        "only_report_lake_crc_changed": true,
+        "lake_bytes_before": 1644423,
+        "lake_bytes_after": 481981
+      },
+      {
+        "region": "北京",
+        "source_reference_bytes_unchanged": true,
+        "raw_geometry_properties_and_order_unchanged": true,
+        "only_report_lake_crc_changed": true,
+        "lake_bytes_before": 649238,
+        "lake_bytes_after": 178976
+      },
+      {
+        "region": "台湾",
+        "source_reference_bytes_unchanged": true,
+        "raw_geometry_properties_and_order_unchanged": true,
+        "only_report_lake_crc_changed": true,
+        "lake_bytes_before": 664,
+        "lake_bytes_after": 545
+      },
+      {
+        "region": "吉林",
+        "source_reference_bytes_unchanged": true,
+        "raw_geometry_properties_and_order_unchanged": true,
+        "only_report_lake_crc_changed": true,
+        "lake_bytes_before": 1293976,
+        "lake_bytes_after": 380628
+      },
+      {
+        "region": "四川",
+        "source_reference_bytes_unchanged": true,
+        "raw_geometry_properties_and_order_unchanged": true,
+        "only_report_lake_crc_changed": true,
+        "lake_bytes_before": 11133294,
+        "lake_bytes_after": 3414211
+      },
+      {
+        "region": "天津",
+        "source_reference_bytes_unchanged": true,
+        "raw_geometry_properties_and_order_unchanged": true,
+        "only_report_lake_crc_changed": true,
+        "lake_bytes_before": 44311,
+        "lake_bytes_after": 14819
+      },
+      {
+        "region": "宁夏",
+        "source_reference_bytes_unchanged": true,
+        "raw_geometry_properties_and_order_unchanged": true,
+        "only_report_lake_crc_changed": true,
+        "lake_bytes_before": 662,
+        "lake_bytes_after": 543
+      },
+      {
+        "region": "安徽",
+        "source_reference_bytes_unchanged": true,
+        "raw_geometry_properties_and_order_unchanged": true,
+        "only_report_lake_crc_changed": true,
+        "lake_bytes_before": 14036929,
+        "lake_bytes_after": 3892422
+      },
+      {
+        "region": "山东",
+        "source_reference_bytes_unchanged": true,
+        "raw_geometry_properties_and_order_unchanged": true,
+        "only_report_lake_crc_changed": true,
+        "lake_bytes_before": 8616,
+        "lake_bytes_after": 4183
+      },
+      {
+        "region": "山西",
+        "source_reference_bytes_unchanged": true,
+        "raw_geometry_properties_and_order_unchanged": true,
+        "only_report_lake_crc_changed": true,
+        "lake_bytes_before": 662,
+        "lake_bytes_after": 543
+      },
+      {
+        "region": "广东",
+        "source_reference_bytes_unchanged": true,
+        "raw_geometry_properties_and_order_unchanged": true,
+        "only_report_lake_crc_changed": true,
+        "lake_bytes_before": 2023097,
+        "lake_bytes_after": 553882
+      },
+      {
+        "region": "广西",
+        "source_reference_bytes_unchanged": true,
+        "raw_geometry_properties_and_order_unchanged": true,
+        "only_report_lake_crc_changed": true,
+        "lake_bytes_before": 2943599,
+        "lake_bytes_after": 813630
+      },
+      {
+        "region": "新疆",
+        "source_reference_bytes_unchanged": true,
+        "raw_geometry_properties_and_order_unchanged": true,
+        "only_report_lake_crc_changed": true,
+        "lake_bytes_before": 337284,
+        "lake_bytes_after": 121501
+      },
+      {
+        "region": "江苏",
+        "source_reference_bytes_unchanged": true,
+        "raw_geometry_properties_and_order_unchanged": true,
+        "only_report_lake_crc_changed": true,
+        "lake_bytes_before": 100871,
+        "lake_bytes_after": 36456
+      },
+      {
+        "region": "江西",
+        "source_reference_bytes_unchanged": true,
+        "raw_geometry_properties_and_order_unchanged": true,
+        "only_report_lake_crc_changed": true,
+        "lake_bytes_before": 16345190,
+        "lake_bytes_after": 4546929
+      },
+      {
+        "region": "河北",
+        "source_reference_bytes_unchanged": true,
+        "raw_geometry_properties_and_order_unchanged": true,
+        "only_report_lake_crc_changed": true,
+        "lake_bytes_before": 655828,
+        "lake_bytes_after": 182378
+      },
+      {
+        "region": "河南",
+        "source_reference_bytes_unchanged": true,
+        "raw_geometry_properties_and_order_unchanged": true,
+        "only_report_lake_crc_changed": true,
+        "lake_bytes_before": 10580073,
+        "lake_bytes_after": 3248371
+      },
+      {
+        "region": "浙江",
+        "source_reference_bytes_unchanged": true,
+        "raw_geometry_properties_and_order_unchanged": true,
+        "only_report_lake_crc_changed": true,
+        "lake_bytes_before": 12427141,
+        "lake_bytes_after": 3465819
+      },
+      {
+        "region": "海南",
+        "source_reference_bytes_unchanged": true,
+        "raw_geometry_properties_and_order_unchanged": true,
+        "only_report_lake_crc_changed": true,
+        "lake_bytes_before": 1115033,
+        "lake_bytes_after": 333363
+      },
+      {
+        "region": "湖北",
+        "source_reference_bytes_unchanged": true,
+        "raw_geometry_properties_and_order_unchanged": true,
+        "only_report_lake_crc_changed": true,
+        "lake_bytes_before": 12190804,
+        "lake_bytes_after": 3676205
+      },
+      {
+        "region": "湖南",
+        "source_reference_bytes_unchanged": true,
+        "raw_geometry_properties_and_order_unchanged": true,
+        "only_report_lake_crc_changed": true,
+        "lake_bytes_before": 13867678,
+        "lake_bytes_after": 4152690
+      },
+      {
+        "region": "澳门",
+        "source_reference_bytes_unchanged": true,
+        "raw_geometry_properties_and_order_unchanged": true,
+        "only_report_lake_crc_changed": true,
+        "lake_bytes_before": 664,
+        "lake_bytes_after": 545
+      },
+      {
+        "region": "甘肃",
+        "source_reference_bytes_unchanged": true,
+        "raw_geometry_properties_and_order_unchanged": true,
+        "only_report_lake_crc_changed": true,
+        "lake_bytes_before": 4689390,
+        "lake_bytes_after": 1443205
+      },
+      {
+        "region": "福建",
+        "source_reference_bytes_unchanged": true,
+        "raw_geometry_properties_and_order_unchanged": true,
+        "only_report_lake_crc_changed": true,
+        "lake_bytes_before": 787652,
+        "lake_bytes_after": 238546
+      },
+      {
+        "region": "西藏",
+        "source_reference_bytes_unchanged": true,
+        "raw_geometry_properties_and_order_unchanged": true,
+        "only_report_lake_crc_changed": true,
+        "lake_bytes_before": 282140,
+        "lake_bytes_after": 107989
+      },
+      {
+        "region": "贵州",
+        "source_reference_bytes_unchanged": true,
+        "raw_geometry_properties_and_order_unchanged": true,
+        "only_report_lake_crc_changed": true,
+        "lake_bytes_before": 2517565,
+        "lake_bytes_after": 702985
+      },
+      {
+        "region": "辽宁",
+        "source_reference_bytes_unchanged": true,
+        "raw_geometry_properties_and_order_unchanged": true,
+        "only_report_lake_crc_changed": true,
+        "lake_bytes_before": 158601,
+        "lake_bytes_after": 49813
+      },
+      {
+        "region": "重庆",
+        "source_reference_bytes_unchanged": true,
+        "raw_geometry_properties_and_order_unchanged": true,
+        "only_report_lake_crc_changed": true,
+        "lake_bytes_before": 10545666,
+        "lake_bytes_after": 3235120
+      },
+      {
+        "region": "陕西",
+        "source_reference_bytes_unchanged": true,
+        "raw_geometry_properties_and_order_unchanged": true,
+        "only_report_lake_crc_changed": true,
+        "lake_bytes_before": 14190,
+        "lake_bytes_after": 5359
+      },
+      {
+        "region": "青海",
+        "source_reference_bytes_unchanged": true,
+        "raw_geometry_properties_and_order_unchanged": true,
+        "only_report_lake_crc_changed": true,
+        "lake_bytes_before": 4773776,
+        "lake_bytes_after": 1474733
+      },
+      {
+        "region": "香港",
+        "source_reference_bytes_unchanged": true,
+        "raw_geometry_properties_and_order_unchanged": true,
+        "only_report_lake_crc_changed": true,
+        "lake_bytes_before": 662,
+        "lake_bytes_after": 543
+      },
+      {
+        "region": "黑龙江",
+        "source_reference_bytes_unchanged": true,
+        "raw_geometry_properties_and_order_unchanged": true,
+        "only_report_lake_crc_changed": true,
+        "lake_bytes_before": 1189989,
+        "lake_bytes_after": 348348
+      }
+    ]
+  },
+  "comparison_export": {
+    "regions": 34,
+    "original_images": 102,
+    "district_images": 34,
+    "district_dimensions": [
+      3392,
+      1160
+    ],
+    "overview_dimensions": [
+      13760,
+      10928
+    ],
+    "original_rows_compared": 102204,
+    "original_pixels_compared": 112833216,
+    "overview_card_rows_compared": 39440,
+    "overview_card_pixels_compared": 133780480,
+    "crc_and_filter_validation": "PASS",
+    "source_pixel_comparison": "PASS",
+    "overview_card_pixel_comparison": "PASS"
+  },
+  "final_protected_files": {
+    "baseline_files": 3827,
+    "unchanged": 3725,
+    "expected_changed": 102,
+    "only_source_images_and_related_current_metadata_changed": true
+  },
+  "validation": {
+    "terrain_preview_integration_tests_passed": 7,
+    "source_unit_tests_passed": 4,
+    "source_reference_tool_tests_passed": 4,
+    "changed_rust_files_format_check": "PASS",
+    "repository_wide_format_check": "existing formatting differences in unrelated official_placement.rs and acceptance.rs; left untouched",
+    "source_reference_tool_test_method": "Standalone rustc test build using float_roundtrip-enabled serde_json; four tests passed",
+    "redundant_cargo_example_rebuild": "Stopped after the same tool tests passed in the standalone build; source unit tests in that invocation had already passed"
+  },
+  "windows_export": {
+    "path": "C:\\Users\\cherrol\\Downloads\\九州大地_三图对照_2026-10-30",
+    "source_images": 34,
+    "region_comparisons": 34,
+    "overview_images": 1,
+    "copied_pngs_sha256_verified": 69
+  }
+}

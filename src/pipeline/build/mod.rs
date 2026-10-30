@@ -312,10 +312,9 @@ fn assemble_with_previews(
             .map(|o| o.object(p))
             .collect::<Vec<_>>()
     };
-    crate::gameplay::script_spawns::append(p, t, s, &mut objects)?;
     if !p.flag("TERRAIN_ONLY") {
         let nodes = scripts::parse_nodes(&m.get("PlayerScriptsList")?.payload, &m.table)?;
-        let report = crate::gameplay::production_spawns::repair(
+        let report = crate::gameplay::production_spawns::repair_with_layout(
             p,
             t.n,
             &t.z,
@@ -323,9 +322,11 @@ fn assemble_with_previews(
             &s.build_block,
             &nodes,
             &mut objects,
+            &t.layout,
         )?;
         project::write_json(&p.assets.join("production-spawns.json"), &report)?;
     }
+    crate::gameplay::script_spawns::append(p, t, s, &mut objects)?;
     // The object layout is declarative. IDs and all property keys are linked here.
     for o in &objects {
         for prop in &o.props {
@@ -381,13 +382,7 @@ fn assemble_with_previews(
     };
     let resources = crate::resources::generate(&mut m, p)?;
     fs::write(p.assets.join("overrides.xml"), resources.overrides)?;
-    // Explicit legacy reproduction keeps its frozen lookup-table bytes. The
-    // ordinary terrain editors always finalize their newly written blends.
-    let finalization = if textured.is_some() || crate::terrain::ramps::enabled(p)? {
-        crate::resources::TerrainFinalization::CompactLookups
-    } else {
-        crate::resources::TerrainFinalization::PreserveLookups
-    };
+    let finalization = crate::resources::TerrainFinalization::CompactLookups;
     let finalized = crate::resources::finalize_terrain_package(
         p,
         &mut m,

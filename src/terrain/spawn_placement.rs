@@ -14,6 +14,9 @@ use std::{
     fs,
 };
 
+/// Included in placement proofs so a rule change invalidates cached acceptance.
+pub const RULES_VERSION: u32 = 3;
+
 #[derive(Clone, Debug, Serialize, Deserialize)]
 #[serde(default, deny_unknown_fields)]
 pub struct Policy {
@@ -765,12 +768,14 @@ pub fn report(p: &Project, m: &MapFile, layout: &Layout, policy: &Policy) -> Res
             })
         })
     };
-    let mut orientations = vec![
-        ("east_west", matches(&[0])),
-        ("south_north", matches(&[1])),
-        // Preserve the diagnostic field used by immutable source reports.
-        ("southeast_northwest", matches(&[0, 1])),
-    ];
+    let west_east = positions.iter().enumerate().all(|(i, point)| {
+        if i < 4 {
+            point[0] < center[0]
+        } else {
+            point[0] > center[0]
+        }
+    });
+    let mut orientations = vec![("west_east", west_east), ("south_north", matches(&[1]))];
     let southwest = positions.iter().enumerate().all(|(i, point)| {
         if i < 4 {
             point[0] < center[0] && point[1] > center[1]
@@ -778,12 +783,24 @@ pub fn report(p: &Project, m: &MapFile, layout: &Layout, policy: &Policy) -> Res
             point[0] > center[0] && point[1] < center[1]
         }
     });
-    if southwest {
-        orientations.push(("southwest_northeast", true));
+    orientations.push(("southwest_northeast", southwest));
+    let orientation_exception = p.cfg.get("SPAWN_ORIENTATION_EXCEPTION");
+    if let Some(exception) = orientation_exception
+        && (exception["layout"] != "west_east"
+            || exception["reason"]
+                .as_str()
+                .is_none_or(|s| s.trim().is_empty()))
+    {
+        return Err(err(
+            "SPAWN_ORIENTATION_EXCEPTION requires layout west_east and an explicit reason",
+        ));
     }
+    // An existing recorded west/east choice continues to require that layout.
     let accepted = orientations
         .iter()
-        .filter(|(_, passed)| *passed)
+        .filter(|(name, passed)| {
+            *passed && (orientation_exception.is_none() || *name == "west_east")
+        })
         .map(|(name, _)| *name)
         .collect::<Vec<_>>();
     let mut findings = Vec::new();
@@ -795,7 +812,7 @@ pub fn report(p: &Project, m: &MapFile, layout: &Layout, policy: &Policy) -> Res
             format!("orientation/{}", scene.stamp(&scene.bases)),
             1.,
             vec![],
-            "P1-P4 must all be east/south/southwest, with P5-P8 on the opposite side",
+            "P1-P4 must all be west/south/southwest, with P5-P8 east/north/northeast respectively",
         ));
     }
     let mut seats = Vec::new();
@@ -863,77 +880,13 @@ pub fn report(p: &Project, m: &MapFile, layout: &Layout, policy: &Policy) -> Res
     }
     check_occupancy(&scene, &policy, &refinery, &seats, &mut findings)?;
     let passed = findings.is_empty();
-    Ok(
-        json!({"schema_version":1,"passed":passed,"raw_passed":passed,"status":"strict","findings":findings,
+    let mut checked = json!({"schema_version":1,"passed":passed,"raw_passed":passed,"status":"strict","findings":findings,
         "regressions":findings,"inherited":0,"seats":seats,"orientation":{"center":center,"accepted":accepted,"candidates":orientations},
-        "frame":scene.frame,"policy":policy,"refinery_policy":refinery}),
-    )
-}
-
-fn compare(
-    p: &Project,
-    before_map: &MapFile,
-    before_layout: &Layout,
-    after_map: &MapFile,
-    after_layout: &Layout,
-    policy: &Policy,
-) -> Result<Value> {
-    let before = report(p, before_map, before_layout, policy)?;
-    let mut after = report(p, after_map, after_layout, policy)?;
-    if before["frame"] != after["frame"] {
-        return Err(err(
-            "spawn placement cannot inherit findings across a changed coordinate frame",
-        ));
+        "frame":scene.frame,"policy":policy,"refinery_policy":refinery});
+    if let Some(exception) = orientation_exception {
+        checked["orientation"]["explicit_exception"] = exception.clone();
     }
-    let old = before["findings"]
-        .as_array()
-        .unwrap()
-        .iter()
-        .map(|finding| (finding["key"].as_str().unwrap(), finding))
-        .collect::<BTreeMap<_, _>>();
-    let mut regressions = Vec::new();
-    for current in after["findings"].as_array().unwrap() {
-        let inherited = old
-            .get(current["key"].as_str().unwrap())
-            .is_some_and(|previous| {
-                if current["measurement"].as_f64().unwrap()
-                    > previous["measurement"].as_f64().unwrap() + 1e-6
-                {
-                    return false;
-                }
-                let cells = previous["cells"]
-                    .as_array()
-                    .unwrap()
-                    .iter()
-                    .map(|cell| {
-                        (
-                            (
-                                cell[0].as_f64().unwrap() as i64,
-                                cell[1].as_f64().unwrap() as i64,
-                            ),
-                            cell[2].as_f64().unwrap(),
-                        )
-                    })
-                    .collect::<BTreeMap<_, _>>();
-                current["cells"].as_array().unwrap().iter().all(|cell| {
-                    cells
-                        .get(&(
-                            cell[0].as_f64().unwrap() as i64,
-                            cell[1].as_f64().unwrap() as i64,
-                        ))
-                        .is_some_and(|previous| cell[2].as_f64().unwrap() <= *previous + 1e-6)
-                })
-            });
-        if !inherited {
-            regressions.push(current.clone());
-        }
-    }
-    after["passed"] = json!(regressions.is_empty());
-    after["inherited"] = json!(after["findings"].as_array().unwrap().len() - regressions.len());
-    after["baseline_findings"] = json!(before["findings"].as_array().unwrap().len());
-    after["regressions"] = json!(regressions);
-    after["status"] = json!("compared_with_source");
-    Ok(after)
+    Ok(checked)
 }
 
 fn finish(checked: Value) -> Result<Value> {
@@ -941,14 +894,14 @@ fn finish(checked: Value) -> Result<Value> {
         let count = checked["regressions"].as_array().map_or(0, Vec::len);
         let details=checked["regressions"].as_array().into_iter().flatten().take(8).map(|v|json!({"rule":v["rule"],"seat":v["seat"],"at":v["at"],"measurement":v["measurement"]})).collect::<Vec<_>>();
         return Err(err(format!(
-            "spawn placement rejected: {count} new/strict findings: {}",
+            "spawn placement rejected: {count} strict findings: {}",
             json!(details)
         )));
     }
     Ok(checked)
 }
 
-/// Compact immutable historical expectation; unrelated texture/script edits do not alter this binding.
+/// Read-only geometry diagnostic. It cannot authorize placement acceptance.
 pub fn reference(p: &Project, m: &MapFile, layout: &Layout) -> Result<Value> {
     let policy = policy(p)?;
     let checked = report(p, m, layout, &policy)?;
@@ -966,70 +919,84 @@ pub fn reference(p: &Project, m: &MapFile, layout: &Layout) -> Result<Value> {
         .collect::<Vec<_>>();
     let geometry = json!({"frame":scene.frame,"heights":scene.z,"impassability":scene.imp,"buildability":scene.build,"objects":selected,"water":scene.water});
     Ok(
-        json!({"schema_version":1,"map_id":p.id,"geometry_crc32":crc32fast::hash(&serde_json::to_vec(&geometry)?),
+        json!({"schema_version":2,"map_id":p.id,"geometry_crc32":crc32fast::hash(&serde_json::to_vec(&geometry)?),
         "policy":checked["policy"],"refinery_policy":checked["refinery_policy"],"report_crc32":crc32fast::hash(&serde_json::to_vec(&checked)?)}),
     )
 }
 
 pub fn validate(p: &Project, m: &MapFile, layout: &Layout) -> Result<Value> {
-    let policy = policy(p)?;
-    if p.cfg.get("SPAWN_PLACEMENT").is_some() || p.flag("TERRAIN_ONLY") {
-        return finish(report(p, m, layout, &policy)?);
+    if p.cfg.get("SPAWN_PLACEMENT_REFERENCE").is_some() {
+        return Err(err(
+            "SPAWN_PLACEMENT_REFERENCE is no longer supported; all maps require current strict spawn placement",
+        ));
     }
-    if let Some(path) = p.cfg.get("SPAWN_PLACEMENT_REFERENCE") {
-        let path = path
-            .as_str()
-            .ok_or_else(|| err("SPAWN_PLACEMENT_REFERENCE must name a fixture file"))?;
-        let saved: Value = serde_json::from_slice(&fs::read(p.path(path)?)?)?;
-        let actual = reference(p, m, layout)?;
-        if saved != actual {
-            return Err(err(
-                "historical spawn placement reference differs from its bound native geometry or policy",
-            ));
-        }
-        let mut checked = report(p, m, layout, &policy)?;
-        checked["passed"] = json!(true);
-        checked["status"] = json!("immutable_historical_reference");
-        checked["inherited"] = json!(checked["findings"].as_array().unwrap().len());
-        checked["regressions"] = json!([]);
-        return finish(checked);
-    }
-    if p.cfg["COORDINATE_PIPELINE"].is_object() {
-        let source = crate::pipeline::frozen_source::FrozenSource::load(p)?;
-        let mut checked = compare(
-            p,
-            &source.native_map()?,
-            &source.layout()?,
-            m,
-            layout,
-            &policy,
-        )?;
-        checked["source_crc32"] = json!(source.crc32);
-        return finish(checked);
-    }
-    finish(report(p, m, layout, &policy)?)
+    finish(report(p, m, layout, &policy(p)?)?)
 }
 
 pub fn validate_transition(
     p: &Project,
-    before_map: &MapFile,
-    before_layout: &Layout,
+    _before_map: &MapFile,
+    _before_layout: &Layout,
     after_map: &MapFile,
     after_layout: &Layout,
 ) -> Result<Value> {
-    if p.cfg.get("SPAWN_PLACEMENT").is_some() || p.flag("TERRAIN_ONLY") {
-        return finish(report(p, after_map, after_layout, &policy(p)?)?);
+    validate(p, after_map, after_layout)
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    fn current() -> (Project, MapFile, Layout) {
+        let p = Project::load(std::path::Path::new(env!("CARGO_MANIFEST_DIR")), "河南").unwrap();
+        let m = MapFile::load(p.assets.join(format!("{}.map", p.name))).unwrap();
+        let layout = Layout::load(&p).unwrap();
+        (p, m, layout)
     }
-    if p.cfg.get("SPAWN_PLACEMENT_REFERENCE").is_some() {
-        validate(p, before_map, before_layout)?;
-        return validate(p, after_map, after_layout);
+
+    #[test]
+    fn removed_reference_option_is_rejected_even_with_an_explicit_policy() {
+        let (mut p, m, layout) = current();
+        p.cfg["SPAWN_PLACEMENT_REFERENCE"] = json!("old-reference.json");
+        p.cfg["SPAWN_PLACEMENT"] = json!({});
+        assert!(
+            reference(&p, &m, &layout).is_ok(),
+            "diagnostics remain read-only"
+        );
+        assert!(
+            validate(&p, &m, &layout)
+                .unwrap_err()
+                .to_string()
+                .contains("no longer supported")
+        );
+        assert!(validate_transition(&p, &m, &layout, &m, &layout).is_err());
     }
-    finish(compare(
-        p,
-        before_map,
-        before_layout,
-        after_map,
-        after_layout,
-        &policy(p)?,
-    )?)
+
+    #[test]
+    fn identical_source_findings_cannot_be_inherited_by_incremental_edits() {
+        let (p, m, layout) = current();
+        assert!(
+            validate(&p, &m, &layout).unwrap()["raw_passed"]
+                .as_bool()
+                .unwrap()
+        );
+        let frame = Frame::from_project(&p);
+        let base = layout.base_cells[0];
+        let mut objects = map::objects(m.get("ObjectsList").unwrap(), &m.table).unwrap();
+        let outside = objects
+            .iter_mut()
+            .find(|o| {
+                let c = frame.grid([o.position[0] as f64, o.position[1] as f64]);
+                o.type_name == "OreNode" && (c[0] - base[0]).hypot(c[1] - base[1]) > 100.
+            })
+            .unwrap();
+        let point = frame.world([base[0] + 20., base[1]]);
+        outside.position[0] = point[0] as f32;
+        outside.position[1] = point[1] as f32;
+        let mut conflicting = m.clone();
+        conflicting.get_mut("ObjectsList").unwrap().payload =
+            map::write_objects(&objects, &conflicting).unwrap();
+        assert!(validate(&p, &conflicting, &layout).is_err());
+        assert!(validate_transition(&p, &conflicting, &layout, &conflicting, &layout).is_err());
+    }
 }

@@ -11,7 +11,7 @@ jobs:
       - uses: dtolnay/rust-toolchain@stable
         with:
           components: rustfmt, clippy
-      - name: Restore versioned map and historical regression inputs (offline)
+      - name: Restore versioned map and current Henan source (offline)
         run: cargo run --locked --example test-data -- restore
       - name: Verify restored fixture contents
         run: cargo run --locked --example test-data -- check

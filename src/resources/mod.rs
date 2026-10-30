@@ -339,23 +339,16 @@ mod tests {
     fn common_terrain_finalization_is_atomic_and_repeatable() {
         use std::path::Path;
         let root = Path::new(env!("CARGO_MANIFEST_DIR"));
-        let p = Project::load(root, "陕西").unwrap();
+        let p = Project::load(root, "河南").unwrap();
         let entries = crate::formats::archive::unzip(
-            &fs::read(root.join("maps/陕西/histories/T0.5.1/[CHAI]叠岭连原T0.5.1--rebuild.zip"))
-                .unwrap(),
+            &fs::read(p.path("authoring/source.zip").unwrap()).unwrap(),
         )
         .unwrap();
         let mut m =
             MapFile::load_bytes(entries.iter().find(|(n, _)| n.ends_with(".map")).unwrap().1)
                 .unwrap();
-        let xml = std::str::from_utf8(
-            entries
-                .iter()
-                .find(|(n, _)| n.ends_with("/map.xml"))
-                .unwrap()
-                .1,
-        )
-        .unwrap();
+        let xml =
+            std::str::from_utf8(entries.iter().find(|(n, _)| *n == "map.xml").unwrap().1).unwrap();
         let original = m.clone();
         let bad = xml.replace("</WorldDict>", "");
         assert!(
@@ -363,7 +356,7 @@ mod tests {
                 &p,
                 &mut m,
                 &bad,
-                "T0.5.2",
+                "T0.0.9",
                 TerrainFinalization::CompactLookups
             )
             .is_err()
@@ -374,11 +367,11 @@ mod tests {
             &p,
             &mut m,
             xml,
-            "T0.5.2",
+            "T0.0.9",
             TerrainFinalization::CompactLookups,
         )
         .unwrap();
-        validate_terrain_package(&m, &result.xml, Some("T0.5.2")).unwrap();
+        validate_terrain_package(&m, &result.xml, Some("T0.0.9")).unwrap();
         let extra_tile =
             "<Tile BaseTexture=\"unused\" NormalTexture=\"unused\" TextureID=\"4294967295\"/>";
         let with_unused = result.xml.replace(
@@ -389,7 +382,7 @@ mod tests {
             &p,
             &mut m,
             &with_unused,
-            "T0.5.2",
+            "T0.0.9",
             TerrainFinalization::CompactLookups,
         )
         .unwrap();
@@ -399,7 +392,7 @@ mod tests {
             &p,
             &mut m,
             &result.xml,
-            "T0.5.2",
+            "T0.0.9",
             TerrainFinalization::CompactLookups,
         )
         .unwrap();

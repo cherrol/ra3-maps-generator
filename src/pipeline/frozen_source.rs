@@ -2,7 +2,6 @@
 use crate::{
     Result, err,
     formats::archive,
-    formats::map::MapFile,
     pipeline::project::{self, Project},
     terrain::Layout,
 };
@@ -11,7 +10,6 @@ type GameFiles = Vec<(String, Vec<u8>)>;
 
 pub(crate) struct FrozenSource {
     name: String,
-    pub crc32: u32,
     entries: BTreeMap<String, Vec<u8>>,
 }
 
@@ -35,7 +33,6 @@ impl FrozenSource {
         }
         let source = Self {
             name: name.into(),
-            crc32,
             entries,
         };
         if crc32fast::hash(source.map_bytes()?) != crc32 {
@@ -51,10 +48,6 @@ impl FrozenSource {
             .get(&format!("{}.map", self.name))
             .map(Vec::as_slice)
             .ok_or_else(|| err("coordinate source map missing"))
-    }
-
-    pub fn native_map(&self) -> Result<MapFile> {
-        MapFile::load_bytes(self.map_bytes()?)
     }
 
     pub fn layout(&self) -> Result<Layout> {

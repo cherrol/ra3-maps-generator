@@ -216,8 +216,7 @@ mod tests {
     #[test]
     fn common_profile_defaults_to_grass_slopes_and_preserves_baked_geometry() {
         let root = std::path::Path::new(env!("CARGO_MANIFEST_DIR"));
-        let id = project::select(root, None).unwrap();
-        let mut p = Project::load(root, &id).unwrap();
+        let mut p = Project::load(root, "河南").unwrap();
         p.cfg.as_object_mut().unwrap().remove("RAMP_PROFILE");
         p.cfg["TERRAIN"]["v11_baked"] = json!(false);
         let mut layout:Layout=serde_json::from_value(json!({"schema_version":1,"base_cells":[],"ore_cells":[],"ore_angles":[],"objects":[],"ramps":[{"x":64.,"y":64.,"ux":1.,"uy":0.,"w":25.,"h":25.,"span":25.,"width":25.,"auto":true,"pair":[210.,280.]}]})).unwrap();
@@ -252,7 +251,15 @@ mod tests {
         configure_layout(&p, &mut layout).unwrap();
         assert_eq!(layout.ramps[0]["style"], "natural");
         p.cfg["RAMP_PROFILE"] = json!("legacy");
-        assert!(!enabled(&p).unwrap());
+        assert!(enabled(&p).is_err());
+        let mut unmodified = MapFile {
+            table: std::collections::BTreeMap::new(),
+            order: vec![],
+            chunks: vec![],
+        };
+        let rejected = apply(&p, &mut unmodified, "invalid-profile").err().unwrap();
+        assert!(rejected.to_string().contains("RAMP_PROFILE"));
+        assert!(unmodified.chunks.is_empty());
         p.cfg["RAMP_PROFILE"] = json!("invalid");
         assert!(enabled(&p).is_err());
     }

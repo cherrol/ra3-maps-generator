@@ -208,17 +208,8 @@ impl Surface {
                 layers.push((z, variants));
             }
         } else if p.string("LAYER_TEX_PRESET", "") == "mountain" {
-            let legacy = [
-                "Grass_NewYork01",
-                "Grass_MtRush04",
-                "Dirt_Iceland05",
-                "Pavement_Amsterdam05",
-            ];
-            let primary: &[&str] = if crate::terrain::texture_polish::enabled(p)? {
-                &crate::terrain::materials::PRIMARY
-            } else {
-                &legacy
-            };
+            crate::terrain::texture_polish::enabled(p)?;
+            let primary = &crate::terrain::materials::PRIMARY;
             for (i, name) in primary.iter().enumerate() {
                 if let Some(z) = p.cfg["LAYER_M"][i][1].as_f64() {
                     layers.push((z, vec![index(name).unwrap()]));

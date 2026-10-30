@@ -230,9 +230,16 @@ pub fn add_mountains(
             return Err(err(format!("mountain edit changed unrelated chunk {name}")));
         }
     }
-    crate::gameplay::script_spawns::validate(p, map, &checked_hm, &checked_bt, &objects)?;
+    crate::gameplay::script_spawns::validate_with_layout(
+        p,
+        map,
+        &checked_hm,
+        &checked_bt,
+        &objects,
+        &layout,
+    )?;
     if gifts.guarded {
-        crate::gameplay::gift_clearance::validate(p, map)?;
+        crate::gameplay::gift_clearance::validate_with_layout(p, map, &layout)?;
     }
     crate::gameplay::production_facing::validate(p, map)?;
     let new_scene = crate::terrain::spatial::Scene::load(p, map, policy)?;

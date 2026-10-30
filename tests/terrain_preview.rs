@@ -408,3 +408,183 @@ fn center_command_uses_cached_frame_and_preserves_original_artifacts() {
         4
     );
 }
+
+fn replace_water_reference(path: &Path, source_water: Option<Vec<u8>>, design_water: Vec<u8>) {
+    let mut arrays = archive::unzip(&fs::read(path).unwrap()).unwrap();
+    arrays.insert(
+        "water_mask.npy".into(),
+        npy("|u1", &[680, 640], design_water),
+    );
+    if let Some(water) = source_water {
+        arrays.insert(
+            "source_water_mask.npy".into(),
+            npy("|u1", &[680, 640], water),
+        );
+    }
+    fs::write(
+        path,
+        archive::zip(&arrays.into_iter().collect::<Vec<_>>()).unwrap(),
+    )
+    .unwrap();
+}
+
+fn water_square(x0: usize, y0: usize, size: usize) -> Vec<u8> {
+    let mut mask = vec![0; 640 * 680];
+    for y in y0..y0 + size {
+        for x in x0..x0 + size {
+            mask[y * 640 + x] = 1;
+        }
+    }
+    mask
+}
+
+// The fixture's geographic crop is [20, 20, 620, 660]. Choose a pixel
+// whose center samples the requested input location, independently of the
+// production renderer's source-water selection.
+fn reference_pixel(rgb: &[u8], width: usize, x: f64, y: f64) -> &[u8] {
+    let px = (((x + 0.5 - 20.) * 800. / 600. - 0.5).round() as usize) + 28;
+    let py = (((y + 0.5 - 20.) * 800. / 640. - 0.5).round() as usize) + 112;
+    &rgb[(py * width + px) * 3..(py * width + px) * 3 + 3]
+}
+
+#[test]
+fn source_preserves_real_water_when_design_water_is_added_or_removed() {
+    let f = fixture();
+    let input = reference(&f, false);
+    replace_water_reference(
+        &input,
+        Some(water_square(300, 300, 24)),
+        water_square(420, 420, 24),
+    );
+    let out = terrain_preview::generate(&f.0, "云南", &input, None).unwrap();
+    let source_before = fs::read(out.join("source.png")).unwrap();
+    let preview_before = fs::read(out.join("preview.png")).unwrap();
+    let (w, _, source) = png(&out.join("source.png"));
+    let (_, _, preview) = png(&out.join("preview.png"));
+    assert_eq!(reference_pixel(&source, w, 312., 312.), &[53, 116, 150]);
+    assert_ne!(reference_pixel(&preview, w, 312., 312.), &[53, 116, 150]);
+    assert_ne!(reference_pixel(&source, w, 432., 432.), &[53, 116, 150]);
+    assert_eq!(reference_pixel(&preview, w, 432., 432.), &[53, 116, 150]);
+
+    replace_water_reference(&input, None, water_square(500, 500, 32));
+    terrain_preview::generate(&f.0, "云南", &input, None).unwrap();
+    assert_eq!(fs::read(out.join("source.png")).unwrap(), source_before);
+    assert_ne!(fs::read(out.join("preview.png")).unwrap(), preview_before);
+}
+
+#[test]
+fn source_command_uses_real_reference_and_protects_design_and_playable_artifacts() {
+    let f = fixture();
+    let input = reference(&f, false);
+    let out = terrain_preview::generate(&f.0, "云南", &input, None).unwrap();
+    let internal = out.join("data/terrain-preview");
+    let source_path = out.join("source.png");
+    let report_path = internal.join("report.json");
+    let original_source = fs::read(&source_path).unwrap();
+    let original_report = fs::read(&report_path).unwrap();
+
+    // A failed source-only invocation cannot replace the current image or report.
+    assert!(terrain_preview::generate_source(&f.0, "云南").is_err());
+    assert_eq!(fs::read(&source_path).unwrap(), original_source);
+    assert_eq!(fs::read(&report_path).unwrap(), original_report);
+
+    let source_reference = internal.join("source-reference.npz");
+    fs::copy(&input, &source_reference).unwrap();
+    replace_water_reference(&source_reference, None, water_square(360, 360, 24));
+    let valid_reference = fs::read(&source_reference).unwrap();
+    let mut invalid = archive::unzip(&valid_reference).unwrap();
+    invalid.insert(
+        "bounds_wgs84.npy".into(),
+        npy(
+            "<f4",
+            &[4],
+            [98f32, 21., 107., 30.]
+                .into_iter()
+                .flat_map(f32::to_le_bytes)
+                .collect(),
+        ),
+    );
+    fs::write(
+        &source_reference,
+        archive::zip(&invalid.into_iter().collect::<Vec<_>>()).unwrap(),
+    )
+    .unwrap();
+    assert!(terrain_preview::generate_source(&f.0, "云南").is_err());
+    assert_eq!(fs::read(&source_path).unwrap(), original_source);
+    assert_eq!(fs::read(&report_path).unwrap(), original_report);
+    fs::write(&source_reference, &valid_reference).unwrap();
+
+    for (path, bytes) in [
+        ("config.json", b"playable recipe".as_slice()),
+        ("layers.npz", b"playable layers".as_slice()),
+        (
+            "preview--center--line.png",
+            b"existing center overlay".as_slice(),
+        ),
+        (
+            "data/terrain-preview/parameters.json",
+            b"{\"preserve_this_configuration\":true}".as_slice(),
+        ),
+    ] {
+        fs::write(out.join(path), bytes).unwrap();
+    }
+    let protected = [
+        "preview.png",
+        "preview--line.png",
+        "preview--center--line.png",
+        "coordinate-system.json",
+        "config.json",
+        "layers.npz",
+        "data/terrain-preview/coordinate-system.json",
+        "data/terrain-preview/terrain.npz",
+        "data/terrain-preview/reference.npz",
+        "data/terrain-preview/source-reference.npz",
+        "data/terrain-preview/parameters.json",
+    ];
+    let before: Vec<_> = protected
+        .iter()
+        .map(|path| fs::read(out.join(path)).unwrap())
+        .collect();
+    let result = Command::new(env!("CARGO_BIN_EXE_ra3maps"))
+        .args([
+            "terrain-preview-source",
+            "云南",
+            "--root",
+            f.0.to_str().unwrap(),
+        ])
+        .output()
+        .unwrap();
+    assert!(
+        result.status.success(),
+        "{}",
+        String::from_utf8_lossy(&result.stderr)
+    );
+    for (path, bytes) in protected.iter().zip(before) {
+        assert_eq!(fs::read(out.join(path)).unwrap(), bytes, "changed {path}");
+    }
+    let source_bytes = fs::read(&source_path).unwrap();
+    assert_ne!(source_bytes, original_source);
+    let (w, h, source) = png(&source_path);
+    assert_eq!((w, h), (1104, 1002));
+    assert_eq!(reference_pixel(&source, w, 372., 372.), &[53, 116, 150]);
+    assert_ne!(reference_pixel(&source, w, 306., 306.), &[53, 116, 150]);
+    let mut report: Value = serde_json::from_slice(&fs::read(&report_path).unwrap()).unwrap();
+    assert_eq!(
+        report["image_crc32"]["source.png"],
+        crc32fast::hash(&source_bytes)
+    );
+    assert!(internal.join("source-report.json").is_file());
+    let original: Value = serde_json::from_slice(&original_report).unwrap();
+    if let Some(source_image) = original.get("source_image") {
+        report["source_image"] = source_image.clone();
+    } else {
+        report.as_object_mut().unwrap().remove("source_image");
+    }
+    report["image_crc32"]["source.png"] = original["image_crc32"]["source.png"].clone();
+    assert_eq!(report, original);
+
+    // Ordinary regeneration must use the same independent source reference.
+    fs::remove_file(out.join("config.json")).unwrap();
+    terrain_preview::generate(&f.0, "云南", &input, None).unwrap();
+    assert_eq!(fs::read(source_path).unwrap(), source_bytes);
+}

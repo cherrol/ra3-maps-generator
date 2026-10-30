@@ -29,9 +29,6 @@ __pycache__/
 !/maps/*/histories/v[0-9]*/layout.json
 !/maps/*/histories/v[0-9]*/ramps.json
 !/maps/*/histories/v[0-9]*/preview*.png
-!/maps/*/histories/legacy/
-/maps/*/histories/legacy/*
-!/maps/*/histories/legacy/layers.npz
 !/maps/*/histories/[TV][0-9]*/
 /maps/*/histories/[TV][0-9]*/*
 !/maps/*/histories/[TV][0-9]*/*.json
@@ -41,7 +38,6 @@ __pycache__/
 !/maps/*/histories/[TV][0-9]*/*.txt
 !/maps/*/histories/[TV][0-9]*/acceptance.md
 !/maps/*/histories/[TV][0-9]*/source.zip
-!/maps/陕西/histories/T0.5.1/\[CHAI\]叠岭连原T0.5.1--rebuild.zip
 !/maps/*/coordinate-system.json
 
 !/maps/*/authoring/
@@ -76,6 +72,9 @@ __pycache__/
 !/maps/*/data/terrain-preview/reference-report.json
 !/maps/*/data/terrain-preview/reference.npz
 !/maps/*/data/terrain-preview/report.json
+!/maps/*/data/terrain-preview/source-reference.npz
+!/maps/*/data/terrain-preview/source-reference-report.json
+!/maps/*/data/terrain-preview/source-report.json
 !/maps/*/data/terrain-preview/shoreline-refinement-report.json
 !/maps/*/data/terrain-preview/shoreline-refinement.json
 !/maps/*/data/terrain-preview/shoreline-transition-plan.json
@@ -103,6 +102,7 @@ __pycache__/
 !/maps/*/data/terrain-preview/raw/before-water-shaping-water-policy.json
 !/maps/*/data/terrain-preview/raw/before-water-shaping-water-report.json
 !/maps/*/data/terrain-preview/raw/osm-coastlines.json
+!/maps/*/data/terrain-preview/raw/source-lakes.geojson
 !/maps/*/data/terrain-preview/raw/reference-before-shoreline-refinement.npz
 !/maps/*/data/terrain-preview/raw/reference-before-water-filter.npz
 !/maps/*/data/terrain-preview/raw/reference-before-water-shaping.npz

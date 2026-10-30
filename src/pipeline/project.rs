@@ -75,11 +75,28 @@ pub fn select(root: &Path, requested: Option<&str>) -> Result<String> {
     }
     Err(err(format!("specify --map; available: {}", all.join(", "))))
 }
+pub(crate) fn validate_current_rules(cfg: &Value) -> Result<()> {
+    for key in ["SPAWN_PLACEMENT_REFERENCE", "RAMP_CLEARANCE_REFERENCE"] {
+        if cfg.get(key).is_some() {
+            return Err(err(format!(
+                "{key} is no longer supported; use the current strict rules"
+            )));
+        }
+    }
+    for key in ["RAMP_PROFILE", "TEXTURE_PROFILE"] {
+        if cfg[key].as_str() == Some("legacy") {
+            return Err(err(format!("{key}=legacy is no longer supported")));
+        }
+    }
+    Ok(())
+}
+
 impl Project {
     pub fn load(root: &Path, id: &str) -> Result<Self> {
         safe_component(id)?;
         let cfg: Value =
             serde_json::from_slice(&fs::read(root.join("maps").join(id).join("config.json"))?)?;
+        validate_current_rules(&cfg)?;
         if cfg["SCHEMA_VERSION"].as_u64() != Some(1) {
             return Err(err("unsupported recipe schema"));
         }

@@ -5,20 +5,20 @@ pub fn validate_files(files: &[(String, Vec<u8>)]) -> Result<()> {
     load_source_map(files).map(|_| ())
 }
 
-/// Publication gate; historical import stays lenient enough to repair old maps.
+/// Source import and publication use the same complete-package gate.
 pub fn validate_runtime_files(files: &[(String, Vec<u8>)]) -> Result<()> {
     load_runtime_map(files).map(|_| ())
 }
 
 pub(crate) fn load_source_map(files: &[(String, Vec<u8>)]) -> Result<MapFile> {
-    validate_package(files, false)
+    validate_package(files)
 }
 
 pub(crate) fn load_runtime_map(files: &[(String, Vec<u8>)]) -> Result<MapFile> {
-    validate_package(files, true)
+    validate_package(files)
 }
 
-fn validate_package(files: &[(String, Vec<u8>)], runtime: bool) -> Result<MapFile> {
+fn validate_package(files: &[(String, Vec<u8>)]) -> Result<MapFile> {
     if files.iter().filter(|(n, _)| n.ends_with(".map")).count() != 1 {
         return Err(err("release requires exactly one .map"));
     }
@@ -39,10 +39,8 @@ fn validate_package(files: &[(String, Vec<u8>)], runtime: bool) -> Result<MapFil
     let hm = crate::formats::map::HeightMap::parse(map.get("HeightMapData")?)?;
     let bt =
         crate::formats::map::BlendTiles::parse(map.get("BlendTileData")?, hm.width, hm.height)?;
-    if runtime {
-        crate::resources::terrain_package::validate_texture_limit(&map)?;
-        crate::gameplay::ore_facing::validate(&map)?;
-    }
+    crate::resources::terrain_package::validate_texture_limit(&map)?;
+    crate::gameplay::ore_facing::validate(&map)?;
     crate::formats::map::objects(map.get("ObjectsList")?, &map.table)?;
     if bt
         .tiles
@@ -60,7 +58,7 @@ fn validate_package(files: &[(String, Vec<u8>)], runtime: bool) -> Result<MapFil
     }
     if let Some((_, xml)) = xml {
         let xml = std::str::from_utf8(xml)?;
-        crate::resources::xml_structure::asset_document(xml)?;
+        crate::resources::xml_structure::validate_generated(xml)?;
         let declarations = without_xml_comments(xml)?;
         if (declarations.contains("source=\"overrides.xml\"")
             || declarations.contains("source='overrides.xml'"))
@@ -118,13 +116,11 @@ fn validate_package(files: &[(String, Vec<u8>)], runtime: bool) -> Result<MapFil
                 )));
             }
         }
-        if runtime {
-            let version = name.char_indices().rev().find_map(|(pos, ch)| {
-                ((ch == 'T' || ch == 'V') && project::parse_version(&name[pos..]).is_ok())
-                    .then_some(&name[pos..])
-            });
-            crate::resources::validate_terrain_package(&map, &declarations, version)?;
-        }
+        let version = name.char_indices().rev().find_map(|(pos, ch)| {
+            ((ch == 'T' || ch == 'V') && project::parse_version(&name[pos..]).is_ok())
+                .then_some(&name[pos..])
+        });
+        crate::resources::validate_terrain_package(&map, &declarations, version)?;
     }
     Ok(map)
 }
@@ -186,4 +182,117 @@ pub fn retarget_xml(xml: &str, old_version: &str, version: &str) -> Result<Strin
     }
     out.push_str(rest);
     Ok(out)
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+    use crate::formats::{archive, map};
+    use std::{fs, path::Path};
+
+    fn current_package() -> Vec<(String, Vec<u8>)> {
+        archive::unzip(
+            &fs::read(Path::new(env!("CARGO_MANIFEST_DIR")).join("maps/河南/authoring/source.zip"))
+                .unwrap(),
+        )
+        .unwrap()
+        .into_iter()
+        .collect()
+    }
+
+    #[test]
+    fn source_and_runtime_reject_the_same_illegal_native_ore_heading() {
+        let mut files = current_package();
+        validate_files(&files).unwrap();
+        validate_runtime_files(&files).unwrap();
+        let native = files
+            .iter_mut()
+            .find(|(name, _)| name.ends_with(".map"))
+            .unwrap();
+        let mut map = MapFile::load_bytes(&native.1).unwrap();
+        let mut objects = map::objects(map.get("ObjectsList").unwrap(), &map.table).unwrap();
+        objects
+            .iter_mut()
+            .find(|object| object.type_name == "OreNode")
+            .unwrap()
+            .angle = 0.;
+        map.get_mut("ObjectsList").unwrap().payload = map::write_objects(&objects, &map).unwrap();
+        native.1 = map.encode().unwrap();
+        for error in [
+            validate_files(&files).unwrap_err(),
+            validate_runtime_files(&files).unwrap_err(),
+        ] {
+            assert!(error.to_string().contains("OreNode facing failed"));
+        }
+    }
+
+    #[test]
+    fn source_and_runtime_reject_stale_resource_versions_and_unordered_xml() {
+        let files = current_package();
+        let native_name = &files
+            .iter()
+            .find(|(name, _)| name.ends_with(".map"))
+            .unwrap()
+            .0;
+        let native_name = native_name.strip_suffix(".map").unwrap();
+        let current_version = native_name
+            .char_indices()
+            .rev()
+            .find_map(|(pos, ch)| {
+                ((ch == 'T' || ch == 'V') && project::parse_version(&native_name[pos..]).is_ok())
+                    .then_some(&native_name[pos..])
+            })
+            .unwrap();
+        let stale_version = project::format_version(
+            &project::bump(
+                &project::parse_version(current_version).unwrap(),
+                false,
+                1,
+                "invalid resource-version test fixture",
+            )
+            .unwrap(),
+        )
+        .unwrap();
+        assert_ne!(current_version, stale_version);
+        let mut stale = files.clone();
+        for (name, _) in &mut stale {
+            if name.ends_with(".map") || name.ends_with("_art.tga") {
+                assert!(name.contains(current_version));
+                *name = name.replace(current_version, &stale_version);
+            }
+        }
+        for error in [
+            validate_files(&stale).unwrap_err(),
+            validate_runtime_files(&stale).unwrap_err(),
+        ] {
+            assert!(
+                error
+                    .to_string()
+                    .contains(&format!("expected version {stale_version}"))
+            );
+        }
+        let mut unordered = files;
+        let (_, bytes) = unordered
+            .iter_mut()
+            .find(|(name, _)| name == "map.xml")
+            .unwrap();
+        let mut xml = String::from_utf8(bytes.clone()).unwrap();
+        let document = crate::resources::xml_structure::asset_document(&xml).unwrap();
+        let waypoint = document
+            .elements
+            .iter()
+            .find(|element| element.local_name() == "Waypoint")
+            .unwrap();
+        let range = waypoint.range.clone();
+        let element = xml[range.clone()].to_owned();
+        xml.replace_range(range, "");
+        xml.insert_str(xml.find("</GameMap>").unwrap(), &element);
+        *bytes = xml.into_bytes();
+        for error in [
+            validate_files(&unordered).unwrap_err(),
+            validate_runtime_files(&unordered).unwrap_err(),
+        ] {
+            assert!(error.to_string().contains("game_map_order"));
+        }
+    }
 }

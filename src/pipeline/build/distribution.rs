@@ -54,6 +54,20 @@ fn publication_files(p: &Project) -> Result<Vec<(String, Vec<u8>)>> {
         p.clone()
     };
     crate::pipeline::scene::verify_files(&scene_project, &native, &files)?;
+    let layout = crate::terrain::Layout::release_snapshot(p, &p.name)?
+        .ok_or_else(|| err("delivery requires a complete same-version source/layout.json"))?;
+    if !p.flag("TERRAIN_ONLY") {
+        crate::gameplay::gift_clearance::validate_with_layout(p, &native, &layout)?;
+        crate::gameplay::production_spawns::validate_final_with_layout(p, &native, &layout)?;
+    }
+    if let Err(error) = crate::pipeline::acceptance::require_delivery(p, &files) {
+        let candidate = crate::pipeline::acceptance::stage_candidate(p, &files, &layout)?;
+        return Err(err(format!(
+            "{error}; review candidate {} before publication",
+            candidate.display()
+        )));
+    }
+    crate::gameplay::placement::validate_final_access(p, &native)?;
     Ok(files)
 }
 pub fn dist(p: &Project, zip: bool) -> Result<()> {

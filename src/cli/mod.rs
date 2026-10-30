@@ -140,6 +140,23 @@ pub(crate) fn run() -> Result<()> {
         _ => {}
     }
     let root = find_root(&args)?;
+    if command == "terrain-preview-source" {
+        paths(&args, 1)?;
+        if args.opts.bump
+            || args.opts.release
+            || args.opts.install
+            || args.map.is_some()
+            || !args.opts.only.is_empty()
+            || !args.opts.skip.is_empty()
+        {
+            return Err(err(
+                "terrain-preview-source 只重绘真实地形图，不接受构建、版本或安装开关",
+            ));
+        }
+        let image = ra3maps::terrain_preview::generate_source(&root, &args.positional[0])?;
+        println!("真实地形图已保存至 {}", image.display());
+        return Ok(());
+    }
     if command == "terrain-preview-centers" {
         paths(&args, 1)?;
         if args.opts.bump
@@ -199,6 +216,13 @@ pub(crate) fn run() -> Result<()> {
         println!("{}", serde_json::to_string_pretty(&report)?);
         return Ok(());
     }
+    if command == "audit-gifts" {
+        paths(&args, 0)?;
+        let p = Project::load(&root, &id)?;
+        let report = ra3maps::pipeline::scene::audit_gifts_existing(&p)?;
+        println!("{}", serde_json::to_string_pretty(&report)?);
+        return Ok(());
+    }
     if command == "adopt-coordinate-source" {
         paths(&args, 0)?;
         let p = Project::load(&root, &id)?;
@@ -225,6 +249,17 @@ pub(crate) fn run() -> Result<()> {
     if command == "relocate-ramps" {
         paths(&args, 2)?;
         ra3maps::pipeline::release::relocate_ramps(
+            &root,
+            &id,
+            Path::new(&args.positional[0]),
+            Path::new(&args.positional[1]),
+            &args.opts,
+        )?;
+        return Ok(());
+    }
+    if command == "repair-gifts" {
+        paths(&args, 2)?;
+        ra3maps::pipeline::release::repair_gifts(
             &root,
             &id,
             Path::new(&args.positional[0]),
@@ -344,6 +379,22 @@ pub(crate) fn run() -> Result<()> {
                 );
             }
         }
+        return Ok(());
+    }
+    if command == "prepare-delivery" {
+        paths(&args, 0)?;
+        if args.opts.bump || args.opts.release || args.opts.install || args.opts.wb_install {
+            return Err(err(
+                "prepare-delivery only prepares the current candidate for review; version and installation options do not apply",
+            ));
+        }
+        let p = Project::load(&root, &id)?;
+        let files = build::release_files(&p)
+            .into_iter()
+            .map(|name| Ok((name.clone(), fs::read(p.assets.join(name))?)))
+            .collect::<Result<Vec<_>>>()?;
+        let path = ra3maps::pipeline::acceptance::stage_release(&p, &files)?;
+        println!("待核验候选：{}", path.display());
         return Ok(());
     }
     if command == "analyze-terrain" {

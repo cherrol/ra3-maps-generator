@@ -22,8 +22,9 @@
   },
   "resource_distribution": {
     "mines_per_seat": 6,
+    "home_ores_per_seat": 2,
     "home_radius": 100.0,
-    "home_maximum": 3,
+    "home_maximum": 2,
     "route_count": 4,
     "main_route_max_distance": 65.0,
     "fourth_progress": [0.10, 0.35],

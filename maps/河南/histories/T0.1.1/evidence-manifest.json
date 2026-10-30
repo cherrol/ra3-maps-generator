@@ -1,0 +1,4495 @@
+{
+  "scope": "Self-contained archived inputs, raw measurements, static models, exact candidate and independent judgments. The archive does not turn any item into passed. Sources and finite hypothetical probes retain their explicit original identities and limitations.",
+  "archive": {
+    "path": "independent-evidence.zip",
+    "bytes": 66340719,
+    "crc32": 1488968397,
+    "sha256": "0fcaa403dbd1ae77abee631fa3d33bbd4404f8d46567cecee13d438625bcc708"
+  },
+  "member_count": 747,
+  "uncompressed_bytes": 430128907,
+  "members": [
+    {
+      "path": "baseline-inputs/[CHAI]沃野奔流T0.1.0.map",
+      "bytes": 309234,
+      "crc32": 4273198950,
+      "sha256": "6f57c710998d79aa8a5f9f783bd121568416d9f4773a76941862fc8cdc79fbbb"
+    },
+    {
+      "path": "baseline-inputs/[CHAI]沃野奔流T0.1.0_art.tga",
+      "bytes": 786476,
+      "crc32": 3200424618,
+      "sha256": "c35ca927f82d8c7408922ca6bad6400393a357ef13fa138eba0382e34f994aa0"
+    },
+    {
+      "path": "baseline-inputs/common-policy.json",
+      "bytes": 508788,
+      "crc32": 2128824305,
+      "sha256": "82559011ebd002d7f662a2400fcf01f31ce7de73a1d33b3fd7d89bc7b0147508"
+    },
+    {
+      "path": "baseline-inputs/config.json",
+      "bytes": 8697,
+      "crc32": 262444818,
+      "sha256": "46a4f3541957f3cf4224eb2b62e2f6b6cc93e0a77f233cfbf6e14decd843a794"
+    },
+    {
+      "path": "baseline-inputs/coordinate-pipeline.json",
+      "bytes": 1106,
+      "crc32": 4241318110,
+      "sha256": "f4071760bf002a937dc309114a8f9ecb30290638ce3d654119250af459329aba"
+    },
+    {
+      "path": "baseline-inputs/gift-core-plan.json",
+      "bytes": 95069,
+      "crc32": 3999513823,
+      "sha256": "0c6c3e8447eb98c33d65ffcaeb05ec69366f08a0a636d480a9df42e7286d73f5"
+    },
+    {
+      "path": "baseline-inputs/layout.json",
+      "bytes": 338234,
+      "crc32": 1845589027,
+      "sha256": "3654ea4d2dc176fcbcb7ac5be5284ec1f1ef2ae0cd327e6796719c67eeb463fc"
+    },
+    {
+      "path": "baseline-inputs/manifest.json",
+      "bytes": 1561,
+      "crc32": 578010928,
+      "sha256": "de41589a67d60fca0f4b5d91ac8782fbd1a0044ae87598d6a6d8b76c1b31547b"
+    },
+    {
+      "path": "baseline-inputs/map.str",
+      "bytes": 501,
+      "crc32": 2123304934,
+      "sha256": "ed38ce1b7881ef9e96d7eab31a81795c9013042fd3485288caf9a667b9f36b99"
+    },
+    {
+      "path": "baseline-inputs/map.xml",
+      "bytes": 149093,
+      "crc32": 171774791,
+      "sha256": "f6470843e2b96c17d035c9d9ebcae42afbf8f4439c0239655b3cba14d227f732"
+    },
+    {
+      "path": "baseline-inputs/overrides.xml",
+      "bytes": 124,
+      "crc32": 2113619238,
+      "sha256": "e94193fa1f69987870af8bd457691172bb61d775fc6d8edd6d12b036a2ab6cad"
+    },
+    {
+      "path": "baseline-inputs/plan.json",
+      "bytes": 340341,
+      "crc32": 3289776477,
+      "sha256": "c3ba92ab3c96cb83699be786f2e8804604ed3c94e84dd8eeb117a8933199a665"
+    },
+    {
+      "path": "baseline-inputs/source.zip",
+      "bytes": 250806,
+      "crc32": 705492510,
+      "sha256": "ce362a357adca40fee9cbc183c0a819d79d724a7ad35af0b8d2c0918117717d9"
+    },
+    {
+      "path": "candidate/[CHAI]沃野奔流T0.1.1.map",
+      "bytes": 312663,
+      "crc32": 2613649220,
+      "sha256": "9f3417c133ac39b48f6cd068e2297a1daa537f2fe84372eef30db599f917c17a"
+    },
+    {
+      "path": "candidate/[CHAI]沃野奔流T0.1.1_art.tga",
+      "bytes": 786476,
+      "crc32": 3200424618,
+      "sha256": "c35ca927f82d8c7408922ca6bad6400393a357ef13fa138eba0382e34f994aa0"
+    },
+    {
+      "path": "candidate/delivery-acceptance.pending.json",
+      "bytes": 3073,
+      "crc32": 3315031050,
+      "sha256": "9f6dd59ba348b6e3406b687b205a2022c9b10fad9d3bb80529b6f1e0a1fea623"
+    },
+    {
+      "path": "candidate/gift-repair-plan.json",
+      "bytes": 9553,
+      "crc32": 3508028705,
+      "sha256": "24dd58c3d8c6f2d63f358eade28f22773f0aa86a7fa0ccca306fda12fed28424"
+    },
+    {
+      "path": "candidate/gift-repair.json",
+      "bytes": 1083307,
+      "crc32": 1447347269,
+      "sha256": "a9e6ef35887b8f6a55132b3d6cbed0621fc3a84dfdcb4f8f0ba0f0ec29cea91b"
+    },
+    {
+      "path": "candidate/map.str",
+      "bytes": 501,
+      "crc32": 4031021017,
+      "sha256": "3a1a1994c5f8dbf0219da6dcb1d6c08df0175a1936d4fcc88ab0574e8a0e0209"
+    },
+    {
+      "path": "candidate/map.xml",
+      "bytes": 149093,
+      "crc32": 3073707100,
+      "sha256": "daece9f47e74f99737911842729783566c45211d19191bdf2eeabd263d1ea2ae"
+    },
+    {
+      "path": "candidate/overrides.xml",
+      "bytes": 124,
+      "crc32": 2113619238,
+      "sha256": "e94193fa1f69987870af8bd457691172bb61d775fc6d8edd6d12b036a2ab6cad"
+    },
+    {
+      "path": "candidate/ramp-material-joins.json",
+      "bytes": 903631,
+      "crc32": 496599342,
+      "sha256": "b0df2fa7fc2368a7d26e704c50a129a96d891e284eae2825a9839a61a26f6b39"
+    },
+    {
+      "path": "candidate/source/layout.json",
+      "bytes": 338233,
+      "crc32": 2437322732,
+      "sha256": "e2f173a8deee3b85d35f9326dd5e11288be0abdbc2ff6dcc6d529350380c2ee1"
+    },
+    {
+      "path": "context/baseline-full-geometry-resource-audit.json",
+      "bytes": 58199382,
+      "crc32": 1240490709,
+      "sha256": "331bef80472bdc3cb426bf70c392514ca627fe3965d85b66047fffd97333450a"
+    },
+    {
+      "path": "context/p3-ore55-alternative-geometry.json",
+      "bytes": 9451,
+      "crc32": 534444833,
+      "sha256": "bee1c69a98143ca86b7d295981f96c66ba3abc03d060a27a2fbfc04dc80a53ac"
+    },
+    {
+      "path": "context/process-improvements.md",
+      "bytes": 3049,
+      "crc32": 3638384240,
+      "sha256": "cbac8241f952e370336bf2c691d026b3b46fb5fdc80ef0e69de3076725c7d3c7"
+    },
+    {
+      "path": "dependency-66dec179/candidate/[CHAI]沃野奔流T0.1.1.map",
+      "bytes": 309241,
+      "crc32": 1388556046,
+      "sha256": "ad84e8fcf13fa8ee6045f3d9955e7eea250e2e93782b8974250cd13c4b6e7847"
+    },
+    {
+      "path": "dependency-66dec179/candidate/[CHAI]沃野奔流T0.1.1_art.tga",
+      "bytes": 786476,
+      "crc32": 3200424618,
+      "sha256": "c35ca927f82d8c7408922ca6bad6400393a357ef13fa138eba0382e34f994aa0"
+    },
+    {
+      "path": "dependency-66dec179/candidate/delivery-acceptance.pending.json",
+      "bytes": 3071,
+      "crc32": 2919710164,
+      "sha256": "65de21bbb2bd430c46f85a25e6822f15ea98ca49c20c21f0a2fd92c6a4a171eb"
+    },
+    {
+      "path": "dependency-66dec179/candidate/gift-repair-plan.json",
+      "bytes": 5994,
+      "crc32": 1439173021,
+      "sha256": "8523c5dcbefef0130713b521321268b554595afbca860d99dee1b43cca6e982f"
+    },
+    {
+      "path": "dependency-66dec179/candidate/gift-repair.json",
+      "bytes": 97560,
+      "crc32": 673464223,
+      "sha256": "71a4b5a8d438752a2ea40c36b7055d87979d53a1852ed84549c9065bb4eb7f91"
+    },
+    {
+      "path": "dependency-66dec179/candidate/map.str",
+      "bytes": 501,
+      "crc32": 4031021017,
+      "sha256": "3a1a1994c5f8dbf0219da6dcb1d6c08df0175a1936d4fcc88ab0574e8a0e0209"
+    },
+    {
+      "path": "dependency-66dec179/candidate/map.xml",
+      "bytes": 149093,
+      "crc32": 3073707100,
+      "sha256": "daece9f47e74f99737911842729783566c45211d19191bdf2eeabd263d1ea2ae"
+    },
+    {
+      "path": "dependency-66dec179/candidate/overrides.xml",
+      "bytes": 124,
+      "crc32": 2113619238,
+      "sha256": "e94193fa1f69987870af8bd457691172bb61d775fc6d8edd6d12b036a2ab6cad"
+    },
+    {
+      "path": "dependency-66dec179/candidate/source/layout.json",
+      "bytes": 338233,
+      "crc32": 2437322732,
+      "sha256": "e2f173a8deee3b85d35f9326dd5e11288be0abdbc2ff6dcc6d529350380c2ee1"
+    },
+    {
+      "path": "dependency-66dec179/readback/native-review.json",
+      "bytes": 2555511,
+      "crc32": 838644127,
+      "sha256": "a98fae1c164e281343bd7197bf293f913f5788d6207fd48d49ab2ba2ba69daea"
+    },
+    {
+      "path": "dependency-66dec179/readback/official-placement.json",
+      "bytes": 1128455,
+      "crc32": 3074288641,
+      "sha256": "91deb13099c254ce9e5eb42e2c5be75b8c903e4722c70d4aa11ffbc6cad926f2"
+    },
+    {
+      "path": "final-review/baseline-routes/mask-receipt.json",
+      "bytes": 2245,
+      "crc32": 2787308587,
+      "sha256": "4464678d71d56180a02ba3569a03c834c9bc69c7086bf9ec4c75edf32acae83f"
+    },
+    {
+      "path": "final-review/baseline-routes/production-counts.u16",
+      "bytes": 1411200,
+      "crc32": 3045812794,
+      "sha256": "88a837f36db4d99432db2728f77d5c3ad9671815cd9e6dbd33106475e66294e4"
+    },
+    {
+      "path": "final-review/baseline-routes/resource-open.u8",
+      "bytes": 705600,
+      "crc32": 815003611,
+      "sha256": "f4da0185fafc7be440e2b726811d009ba2bde2ae02c7888da8fccbe6e880a837"
+    },
+    {
+      "path": "final-review/baseline-routes/route-facts.json",
+      "bytes": 16714673,
+      "crc32": 1284145344,
+      "sha256": "827190ae8b60b365445568b156792643fb53019b344f374b6e623f697285fb5c"
+    },
+    {
+      "path": "final-review/baseline-routes/route-facts.log",
+      "bytes": 42,
+      "crc32": 736548766,
+      "sha256": "f4501128bae5d84eaf6f1691c23331b97424949524e68e92c8f77d3c57f7f01e"
+    },
+    {
+      "path": "final-review/baseline-routes/route-input.json",
+      "bytes": 310636,
+      "crc32": 3425032172,
+      "sha256": "4a7d01b391dcaf40d2c234a8415c49f734c9d94a635d30345991d62cf16a4e9f"
+    },
+    {
+      "path": "final-review/baseline-routes/union-coverage.json",
+      "bytes": 507102,
+      "crc32": 2263944364,
+      "sha256": "0705227554e7e9fa01ee22ebc7dc9dbda0840c8652b48e31536ce9484b85a68c"
+    },
+    {
+      "path": "final-review/baseline/native-review.json",
+      "bytes": 2560441,
+      "crc32": 945112972,
+      "sha256": "e61b6159d92e760b00cec2eeb89d407d81044cbb0bc3d609befee052bc98545d"
+    },
+    {
+      "path": "final-review/baseline/official-placement.json",
+      "bytes": 1128414,
+      "crc32": 2408565373,
+      "sha256": "081740244610604b31807131b69d8ab62cb129a665c6294fb0c4a28f665e5e79"
+    },
+    {
+      "path": "final-review/baseline/review-build.u8",
+      "bytes": 705600,
+      "crc32": 3020378416,
+      "sha256": "8da58350ce0d7118a8909c0e8fc0845923c85247be97bfd645f6b505eea52cde"
+    },
+    {
+      "path": "final-review/baseline/review-height.u16",
+      "bytes": 1411200,
+      "crc32": 1107927905,
+      "sha256": "c2294697b9aeb2c89e7c0d8720a624a2d4ad0205ae9f0923366db2bcb07af548"
+    },
+    {
+      "path": "final-review/baseline/review-imp.u8",
+      "bytes": 705600,
+      "crc32": 1070776520,
+      "sha256": "2df65cc45a7cf3e58fb1a62ceb01f3fd598134ef48ac10d22d7725dd0b4eacbd"
+    },
+    {
+      "path": "final-review/baseline/scene-report.json",
+      "bytes": 3294070,
+      "crc32": 1083383533,
+      "sha256": "9b1ca2e664bf63907bd19aa762bfea1cbb009c6d046f287aa40a5cf4317cf291"
+    },
+    {
+      "path": "final-review/baseline/unit-routes.json",
+      "bytes": 1676975,
+      "crc32": 4081201373,
+      "sha256": "98c38bd12ed6190e1e45c0a6dd3bbd03bf6c0cb7fb32d8984af69681c0344cbb"
+    },
+    {
+      "path": "final-review/baseline/xml-structure.json",
+      "bytes": 648,
+      "crc32": 507307750,
+      "sha256": "7d888078d57bc963c22290aa55c1965b8d94dd1d0c837d5ddc940760a433e8e9"
+    },
+    {
+      "path": "final-review/candidate/native-review.json",
+      "bytes": 2555511,
+      "crc32": 2438841009,
+      "sha256": "12595cc449f5e9d534e608e1cb8961e468fe63127a248a4b74e2ad2b00bbc5ed"
+    },
+    {
+      "path": "final-review/candidate/official-placement.json",
+      "bytes": 1128455,
+      "crc32": 3074288641,
+      "sha256": "91deb13099c254ce9e5eb42e2c5be75b8c903e4722c70d4aa11ffbc6cad926f2"
+    },
+    {
+      "path": "final-review/candidate/review-build.u8",
+      "bytes": 705600,
+      "crc32": 3020378416,
+      "sha256": "8da58350ce0d7118a8909c0e8fc0845923c85247be97bfd645f6b505eea52cde"
+    },
+    {
+      "path": "final-review/candidate/review-height.u16",
+      "bytes": 1411200,
+      "crc32": 1107927905,
+      "sha256": "c2294697b9aeb2c89e7c0d8720a624a2d4ad0205ae9f0923366db2bcb07af548"
+    },
+    {
+      "path": "final-review/candidate/review-imp.u8",
+      "bytes": 705600,
+      "crc32": 1070776520,
+      "sha256": "2df65cc45a7cf3e58fb1a62ceb01f3fd598134ef48ac10d22d7725dd0b4eacbd"
+    },
+    {
+      "path": "final-review/candidate/scene-report.json",
+      "bytes": 3294155,
+      "crc32": 1280128502,
+      "sha256": "1f1c473f779b03bc13d8c33d814d1bd564e0d965eec182f664c78cdac7231920"
+    },
+    {
+      "path": "final-review/candidate/unit-routes.json",
+      "bytes": 1677017,
+      "crc32": 3185138969,
+      "sha256": "eba89a97d98885cf86b96936cd057b467900d72098b4187c6fec136e473521b7"
+    },
+    {
+      "path": "final-review/candidate/xml-structure.json",
+      "bytes": 648,
+      "crc32": 507307750,
+      "sha256": "7d888078d57bc963c22290aa55c1965b8d94dd1d0c837d5ddc940760a433e8e9"
+    },
+    {
+      "path": "final-review/comparisons.log",
+      "bytes": 77,
+      "crc32": 957962835,
+      "sha256": "9b28fb7ccb496aa9c7c80805046d721be80a391c343178b684c5aaf1f10d70a0"
+    },
+    {
+      "path": "final-review/comparisons/hypothetical-route-facts.json",
+      "bytes": 202698,
+      "crc32": 3959019245,
+      "sha256": "e0791e13864acc3eceb93ba19fd0d6a9689ed8e9926519b75f3e1a3067204bd7"
+    },
+    {
+      "path": "final-review/comparisons/hypothetical-route-input.json",
+      "bytes": 110185,
+      "crc32": 2562701153,
+      "sha256": "74979d0473dbf8c8d847ab22ef697ead5f6844f801147a11ab9a21c03ec9efdd"
+    },
+    {
+      "path": "final-review/comparisons/recorded-comparisons.json",
+      "bytes": 745664,
+      "crc32": 767738728,
+      "sha256": "7059bc0d07d01ccdd9bd5f703b573518bc7e9ed528e49ccab42d7dbf25eb13c4"
+    },
+    {
+      "path": "final-review/corridor-probes.log",
+      "bytes": 374,
+      "crc32": 734769783,
+      "sha256": "bff6f11d5c9c1b926bd15484b647667d2a9efd926140918d899c1c4d754277db"
+    },
+    {
+      "path": "final-review/corridor-probes/dual-creeps-wf/corridors.log",
+      "bytes": 59,
+      "crc32": 2023801612,
+      "sha256": "143dccb8c84e941cd971336dd30fdea6e37a60d6bad5f37247f15c86394b8c0d"
+    },
+    {
+      "path": "final-review/corridor-probes/dual-creeps-wf/corridors/corridor-width-acceptance.json",
+      "bytes": 834217,
+      "crc32": 3784226972,
+      "sha256": "44b5a0cf9719dce69bf78de1aa7016b255da3ab1dfd388765f8f6908de81261a"
+    },
+    {
+      "path": "final-review/corridor-probes/dual-creeps-wf/corridors/corridors-reserve.u8",
+      "bytes": 705600,
+      "crc32": 2643675498,
+      "sha256": "360eab422ac5c000e577ab13087ac93ef6fa63994f161fdf763fc9a6960c0890"
+    },
+    {
+      "path": "final-review/corridor-probes/dual-creeps-wf/hypothetical-layout.json",
+      "bytes": 338230,
+      "crc32": 632406717,
+      "sha256": "f7969a5214431d6a49521135327739f53316b42847269f1c1ef937e810159e7b"
+    },
+    {
+      "path": "final-review/corridor-probes/dual-creeps-wf/native-review.json",
+      "bytes": 2556014,
+      "crc32": 1094465306,
+      "sha256": "7c8162fd31fcb3cec2062f28f69304690c74f4dce16ca4b2642e637d40199d4f"
+    },
+    {
+      "path": "final-review/corridor-probes/dual-creeps-wf/review-height.u16",
+      "bytes": 1411200,
+      "crc32": 1107927905,
+      "sha256": "c2294697b9aeb2c89e7c0d8720a624a2d4ad0205ae9f0923366db2bcb07af548"
+    },
+    {
+      "path": "final-review/corridor-probes/dual-creeps-wf/review-imp.u8",
+      "bytes": 705600,
+      "crc32": 1070776520,
+      "sha256": "2df65cc45a7cf3e58fb1a62ceb01f3fd598134ef48ac10d22d7725dd0b4eacbd"
+    },
+    {
+      "path": "final-review/corridor-probes/dual-p3-wf/corridors.log",
+      "bytes": 59,
+      "crc32": 2023801612,
+      "sha256": "143dccb8c84e941cd971336dd30fdea6e37a60d6bad5f37247f15c86394b8c0d"
+    },
+    {
+      "path": "final-review/corridor-probes/dual-p3-wf/corridors/corridor-width-acceptance.json",
+      "bytes": 835095,
+      "crc32": 299829967,
+      "sha256": "91360725dcbba8532cb5c7c57bedfb15d8002fa544c95fe12edcef64e0a4ed05"
+    },
+    {
+      "path": "final-review/corridor-probes/dual-p3-wf/corridors/corridors-reserve.u8",
+      "bytes": 705600,
+      "crc32": 4055230019,
+      "sha256": "271ad5720edb62a5297fcb00b4e5a90341293a01b7747c0bed7d56e54453ce00"
+    },
+    {
+      "path": "final-review/corridor-probes/dual-p3-wf/hypothetical-layout.json",
+      "bytes": 338230,
+      "crc32": 3761849083,
+      "sha256": "e24b130da9e72d4853dbfc5b0334810f3d993d6bc899181b0f070faae4ee61ca"
+    },
+    {
+      "path": "final-review/corridor-probes/dual-p3-wf/native-review.json",
+      "bytes": 2556008,
+      "crc32": 436606800,
+      "sha256": "14f01bc97354cc2ec1ee5c5a2a2967b51fdbc057e32dde32a41d406d247f1cfc"
+    },
+    {
+      "path": "final-review/corridor-probes/dual-p3-wf/review-height.u16",
+      "bytes": 1411200,
+      "crc32": 1107927905,
+      "sha256": "c2294697b9aeb2c89e7c0d8720a624a2d4ad0205ae9f0923366db2bcb07af548"
+    },
+    {
+      "path": "final-review/corridor-probes/dual-p3-wf/review-imp.u8",
+      "bytes": 705600,
+      "crc32": 1070776520,
+      "sha256": "2df65cc45a7cf3e58fb1a62ceb01f3fd598134ef48ac10d22d7725dd0b4eacbd"
+    },
+    {
+      "path": "final-review/corridor-probes/gift-alt-dual-creeps-bar-1/corridors.log",
+      "bytes": 59,
+      "crc32": 2023801612,
+      "sha256": "143dccb8c84e941cd971336dd30fdea6e37a60d6bad5f37247f15c86394b8c0d"
+    },
+    {
+      "path": "final-review/corridor-probes/gift-alt-dual-creeps-bar-1/corridors/corridor-width-acceptance.json",
+      "bytes": 834217,
+      "crc32": 2522413705,
+      "sha256": "74aad231567dc2354987610df0a93583cf7ed79de160458387f743a381a03d35"
+    },
+    {
+      "path": "final-review/corridor-probes/gift-alt-dual-creeps-bar-1/corridors/corridors-reserve.u8",
+      "bytes": 705600,
+      "crc32": 3547267476,
+      "sha256": "2006b96abcfecb6d1f7158dee8caa0554448e624aadd787afe56a792c5957be2"
+    },
+    {
+      "path": "final-review/corridor-probes/gift-alt-dual-creeps-bar-1/hypothetical-layout.json",
+      "bytes": 338230,
+      "crc32": 336112833,
+      "sha256": "f327b8e2cbb6720fb4ec6efcbdf52c4269ff49670565138d06eedecfd9ef1f53"
+    },
+    {
+      "path": "final-review/corridor-probes/gift-alt-dual-creeps-bar-1/native-review.json",
+      "bytes": 2556026,
+      "crc32": 1523525791,
+      "sha256": "ca303cce60462c6e820913efff41af4f19f86632a88a0f28ac551180e4f00420"
+    },
+    {
+      "path": "final-review/corridor-probes/gift-alt-dual-creeps-bar-1/review-height.u16",
+      "bytes": 1411200,
+      "crc32": 1107927905,
+      "sha256": "c2294697b9aeb2c89e7c0d8720a624a2d4ad0205ae9f0923366db2bcb07af548"
+    },
+    {
+      "path": "final-review/corridor-probes/gift-alt-dual-creeps-bar-1/review-imp.u8",
+      "bytes": 705600,
+      "crc32": 1070776520,
+      "sha256": "2df65cc45a7cf3e58fb1a62ceb01f3fd598134ef48ac10d22d7725dd0b4eacbd"
+    },
+    {
+      "path": "final-review/corridor-probes/gift-alt-dual-p1-air-1/corridors.log",
+      "bytes": 59,
+      "crc32": 2023801612,
+      "sha256": "143dccb8c84e941cd971336dd30fdea6e37a60d6bad5f37247f15c86394b8c0d"
+    },
+    {
+      "path": "final-review/corridor-probes/gift-alt-dual-p1-air-1/corridors/corridor-width-acceptance.json",
+      "bytes": 834217,
+      "crc32": 2947896937,
+      "sha256": "dcf0be3cbd61e5adf0a9a1317893f67d4fe5cad7ac4731546617591852cf3d36"
+    },
+    {
+      "path": "final-review/corridor-probes/gift-alt-dual-p1-air-1/corridors/corridors-reserve.u8",
+      "bytes": 705600,
+      "crc32": 2006846637,
+      "sha256": "2a078153607fed85e23d71a1fd5b17f42eeec73c1b14e550e0b587c48b4abf5c"
+    },
+    {
+      "path": "final-review/corridor-probes/gift-alt-dual-p1-air-1/hypothetical-layout.json",
+      "bytes": 338230,
+      "crc32": 462264661,
+      "sha256": "3825b600866460b64a6e09df620f4ac32dfb7df3ffde1dd568deccc081e2fd00"
+    },
+    {
+      "path": "final-review/corridor-probes/gift-alt-dual-p1-air-1/native-review.json",
+      "bytes": 2556020,
+      "crc32": 102312461,
+      "sha256": "ebe99887e91c5b77f6b54d87be610b90caede88215a3bd083c690b3d2bc104b4"
+    },
+    {
+      "path": "final-review/corridor-probes/gift-alt-dual-p1-air-1/review-height.u16",
+      "bytes": 1411200,
+      "crc32": 1107927905,
+      "sha256": "c2294697b9aeb2c89e7c0d8720a624a2d4ad0205ae9f0923366db2bcb07af548"
+    },
+    {
+      "path": "final-review/corridor-probes/gift-alt-dual-p1-air-1/review-imp.u8",
+      "bytes": 705600,
+      "crc32": 1070776520,
+      "sha256": "2df65cc45a7cf3e58fb1a62ceb01f3fd598134ef48ac10d22d7725dd0b4eacbd"
+    },
+    {
+      "path": "final-review/corridor-probes/gift-alt-dual-p3-wf-1/corridors.log",
+      "bytes": 59,
+      "crc32": 2023801612,
+      "sha256": "143dccb8c84e941cd971336dd30fdea6e37a60d6bad5f37247f15c86394b8c0d"
+    },
+    {
+      "path": "final-review/corridor-probes/gift-alt-dual-p3-wf-1/corridors/corridor-width-acceptance.json",
+      "bytes": 835090,
+      "crc32": 1632635546,
+      "sha256": "326ec2f0ebb891efe378c5632979d23756594ecc264e69face2256a60c73ebfd"
+    },
+    {
+      "path": "final-review/corridor-probes/gift-alt-dual-p3-wf-1/corridors/corridors-reserve.u8",
+      "bytes": 705600,
+      "crc32": 4055230019,
+      "sha256": "271ad5720edb62a5297fcb00b4e5a90341293a01b7747c0bed7d56e54453ce00"
+    },
+    {
+      "path": "final-review/corridor-probes/gift-alt-dual-p3-wf-1/hypothetical-layout.json",
+      "bytes": 338229,
+      "crc32": 3916108158,
+      "sha256": "fc3ffdf245103edeb8c61a97bc026e26b2cfb8918c31da3861f689eb971d1b2d"
+    },
+    {
+      "path": "final-review/corridor-probes/gift-alt-dual-p3-wf-1/native-review.json",
+      "bytes": 2556018,
+      "crc32": 1568002580,
+      "sha256": "88fd45e8e08017d6c76ad802749688d851d752cc564a71f2cb7f11ec40395df5"
+    },
+    {
+      "path": "final-review/corridor-probes/gift-alt-dual-p3-wf-1/review-height.u16",
+      "bytes": 1411200,
+      "crc32": 1107927905,
+      "sha256": "c2294697b9aeb2c89e7c0d8720a624a2d4ad0205ae9f0923366db2bcb07af548"
+    },
+    {
+      "path": "final-review/corridor-probes/gift-alt-dual-p3-wf-1/review-imp.u8",
+      "bytes": 705600,
+      "crc32": 1070776520,
+      "sha256": "2df65cc45a7cf3e58fb1a62ceb01f3fd598134ef48ac10d22d7725dd0b4eacbd"
+    },
+    {
+      "path": "final-review/corridor-probes/gift-alt-dual-p5-bar-1/corridors.log",
+      "bytes": 59,
+      "crc32": 2023801612,
+      "sha256": "143dccb8c84e941cd971336dd30fdea6e37a60d6bad5f37247f15c86394b8c0d"
+    },
+    {
+      "path": "final-review/corridor-probes/gift-alt-dual-p5-bar-1/corridors/corridor-width-acceptance.json",
+      "bytes": 834217,
+      "crc32": 2480476217,
+      "sha256": "de9c94fe262db3f936dc229f81800a9f8855d88b946f5f2d06140a40fa8ab767"
+    },
+    {
+      "path": "final-review/corridor-probes/gift-alt-dual-p5-bar-1/corridors/corridors-reserve.u8",
+      "bytes": 705600,
+      "crc32": 1796992901,
+      "sha256": "a1b7992ecfa6e2296ba2f5246ae1727400b9dbc40f50ada2b6ac6e43a7af2c38"
+    },
+    {
+      "path": "final-review/corridor-probes/gift-alt-dual-p5-bar-1/hypothetical-layout.json",
+      "bytes": 338230,
+      "crc32": 4216866596,
+      "sha256": "20ac1467e1ced2cbaf9671d5f75baa5627ada19781d7c54bdaa2b16a9e85c153"
+    },
+    {
+      "path": "final-review/corridor-probes/gift-alt-dual-p5-bar-1/native-review.json",
+      "bytes": 2556022,
+      "crc32": 2220707913,
+      "sha256": "6be49cfe6e64844dafc214d7c1036b061bb7391208ee965abf82e1b0b0552032"
+    },
+    {
+      "path": "final-review/corridor-probes/gift-alt-dual-p5-bar-1/review-height.u16",
+      "bytes": 1411200,
+      "crc32": 1107927905,
+      "sha256": "c2294697b9aeb2c89e7c0d8720a624a2d4ad0205ae9f0923366db2bcb07af548"
+    },
+    {
+      "path": "final-review/corridor-probes/gift-alt-dual-p5-bar-1/review-imp.u8",
+      "bytes": 705600,
+      "crc32": 1070776520,
+      "sha256": "2df65cc45a7cf3e58fb1a62ceb01f3fd598134ef48ac10d22d7725dd0b4eacbd"
+    },
+    {
+      "path": "final-review/corridor-probes/hypothetical-corridor-comparisons.json",
+      "bytes": 22026,
+      "crc32": 1965978676,
+      "sha256": "78fdf6bb32d2d89431a208e6471cdd9900bb74c9069ebcffea10423fa178bedb"
+    },
+    {
+      "path": "final-review/corridors.log",
+      "bytes": 59,
+      "crc32": 2023801612,
+      "sha256": "143dccb8c84e941cd971336dd30fdea6e37a60d6bad5f37247f15c86394b8c0d"
+    },
+    {
+      "path": "final-review/corridors/corridor-width-acceptance.json",
+      "bytes": 834188,
+      "crc32": 265146109,
+      "sha256": "5fa020777d265ea1f96c7e141c892654a8b1c6c237edadbef8a2915b02d17595"
+    },
+    {
+      "path": "final-review/corridors/corridors-reserve.u8",
+      "bytes": 705600,
+      "crc32": 2643675498,
+      "sha256": "360eab422ac5c000e577ab13087ac93ef6fa63994f161fdf763fc9a6960c0890"
+    },
+    {
+      "path": "final-review/export.log",
+      "bytes": 96,
+      "crc32": 3247013191,
+      "sha256": "efdc86d055ab0437966ad5fc713d6a1a8c010f73321da57ea001dec96b28c809"
+    },
+    {
+      "path": "final-review/exterior-route-facts.log",
+      "bytes": 38,
+      "crc32": 2525885179,
+      "sha256": "1c430f9e83f1b095472b0bd68b3a8893259f6b1b55513dacdf6045a51b99810a"
+    },
+    {
+      "path": "final-review/exterior-support/exterior-route-facts.json",
+      "bytes": 752573,
+      "crc32": 1233246581,
+      "sha256": "b85362a58287f2d877a5887f76c4320a1f2d3c97b47ae2dd0de5e9d006684da4"
+    },
+    {
+      "path": "final-review/exterior-support/exterior-route-input.json",
+      "bytes": 53239,
+      "crc32": 1745484579,
+      "sha256": "fd35413bb78c3e7b7b443d3a70fa8cb45dac2758cff0dbe40e5256c260924525"
+    },
+    {
+      "path": "final-review/exterior-support/exterior-target-derivation.json",
+      "bytes": 536097,
+      "crc32": 704996238,
+      "sha256": "43b5b398f3d81fc1065dee372277199b779859feba0dbe5b65d59ee197be129b"
+    },
+    {
+      "path": "final-review/exterior-targets.log",
+      "bytes": 77,
+      "crc32": 410397744,
+      "sha256": "349e3701f6e008bffe35dfaa267af67fefd7bab2e9f731b346fe809d5663d3ed"
+    },
+    {
+      "path": "final-review/geometry-dependency-equivalence.json",
+      "bytes": 4734,
+      "crc32": 387543759,
+      "sha256": "ab2792a286e8fb031e6792e96378e45edae626d56f3395fb70053481f1a0e524"
+    },
+    {
+      "path": "final-review/gift-core-plan.json",
+      "bytes": 95737,
+      "crc32": 2335332693,
+      "sha256": "b7b29ad39e79255e34a944bec7fd4b07ee473c93311d34c98d72ffe1b3e043f3"
+    },
+    {
+      "path": "final-review/gift-inventory.log",
+      "bytes": 92,
+      "crc32": 3681560694,
+      "sha256": "5459f940ca7c23a862d0befa62cdf045487ddd837c8d8d8cd68d6ef6816c91df"
+    },
+    {
+      "path": "final-review/hypothetical-route-facts.log",
+      "bytes": 36,
+      "crc32": 1573011110,
+      "sha256": "d60b8dd18713b942c3d02ebe3ac3fd8e7954f28ba30a827790cf06ed31940f69"
+    },
+    {
+      "path": "final-review/measured-summary.json",
+      "bytes": 836825,
+      "crc32": 1379633072,
+      "sha256": "052b63f66060380204acea9471937a4421caf77afc8a95738e7fb5ed1ed3acea"
+    },
+    {
+      "path": "final-review/measurement-chain.json",
+      "bytes": 16990,
+      "crc32": 3338048522,
+      "sha256": "a5aa7b3a6c3d9171978109b7aee6228365b34a7b3eb2b83e264dfc52f8162612"
+    },
+    {
+      "path": "final-review/old-evidence/acceptance.json",
+      "bytes": 8708,
+      "crc32": 2043111944,
+      "sha256": "0d0298fc8e2de0de85317ab44ece111561da8aa637d0312a876407a2f6502c89"
+    },
+    {
+      "path": "final-review/old-evidence/all-independent-checks.json",
+      "bytes": 8121,
+      "crc32": 3852490385,
+      "sha256": "5e404e6303f7890c0ed6c17b9d3e7ab8ade02e92ac4317f6d6c49461e193c17f"
+    },
+    {
+      "path": "final-review/old-evidence/attack-route-layout-acceptance.json",
+      "bytes": 388111,
+      "crc32": 1623268304,
+      "sha256": "38ab7d78659f9f946f6b101a6522cc1cfc967c7e33a77f22bd842c011c5fa28d"
+    },
+    {
+      "path": "final-review/old-evidence/design/judgments.json",
+      "bytes": 108029,
+      "crc32": 3787757406,
+      "sha256": "58cfa890e126bae30bfa709290220d11faa1a7037931d21ee518e7262bcdc52a"
+    },
+    {
+      "path": "final-review/old-evidence/design/model-source/audit_current.py",
+      "bytes": 76617,
+      "crc32": 687921363,
+      "sha256": "2822f72fbfe275c97e3b7fea93644954b6caffc129f0095fc103a1b589a046a3"
+    },
+    {
+      "path": "final-review/old-evidence/design/model-source/corridors_current.rs",
+      "bytes": 11468,
+      "crc32": 2151534088,
+      "sha256": "29b22d2bcd384ab72fb02987c3a123dc0f18a072797775b1411bc19ae50d8d56"
+    },
+    {
+      "path": "final-review/old-evidence/design/production-recorded-comparisons-current.json",
+      "bytes": 674112,
+      "crc32": 3315707736,
+      "sha256": "29c6036090e076180f672ffe194f36b4ca1102c2bdf7410528322db1b174bf9f"
+    },
+    {
+      "path": "final-review/old-evidence/direct-main-route-acceptance.json",
+      "bytes": 1074964,
+      "crc32": 3989825028,
+      "sha256": "4d4aa4aace30e181925caf3c67a6e5af443fcd79ae91dc526e9b79276e159db2"
+    },
+    {
+      "path": "final-review/old-evidence/gift-base-proximity.json",
+      "bytes": 4430595,
+      "crc32": 1930841317,
+      "sha256": "30d95b4db967148b2420c43342074511becd5fc4a7c4307bccd89e3d238616e8"
+    },
+    {
+      "path": "final-review/old-evidence/hotspot-path-comparison.json",
+      "bytes": 432634,
+      "crc32": 456083745,
+      "sha256": "94d9ff2faeeb819c03b4586bb1f8a40d1a75896900a3526d60216a086d64975d"
+    },
+    {
+      "path": "final-review/old-evidence/manifest.json",
+      "bytes": 5667,
+      "crc32": 1219769699,
+      "sha256": "8379785a462093e6df7acd524aeb8c82cb18d148811232a29dd780df9fd2fd55"
+    },
+    {
+      "path": "final-review/old-evidence/neutral-combat-placement.json",
+      "bytes": 551106,
+      "crc32": 360279287,
+      "sha256": "b77b69404889dcd9fe5278a1f27b8d095c761cb5a9b054ef2f9fb390afef7bad"
+    },
+    {
+      "path": "final-review/old-evidence/ramp-priority-acceptance.json",
+      "bytes": 21013,
+      "crc32": 925899232,
+      "sha256": "552a5e697dd5129b4bc6b83dd7a0d5468fe78b40e2cfca115dc7fc9ad336aa6f"
+    },
+    {
+      "path": "final-review/old-evidence/resource-access-selection.json",
+      "bytes": 7766,
+      "crc32": 2342372629,
+      "sha256": "d19a379a574e5ca9f6cad5aad9949d8ba4cde3ab5dee65e373a438c95211ca55"
+    },
+    {
+      "path": "final-review/old-evidence/seat-order-acceptance.json",
+      "bytes": 6314,
+      "crc32": 1987397952,
+      "sha256": "95b9dfe021edd90588b2ab5ff75715263150fc57e88d544f6e3bfef81eedf1bc"
+    },
+    {
+      "path": "final-review/old-evidence/shoreline-acceptance.json",
+      "bytes": 872114,
+      "crc32": 2458911896,
+      "sha256": "12661116041dbbb1d0d6a7eb5d0917469a967966530aac8fd04ce598b019c537"
+    },
+    {
+      "path": "final-review/old-evidence/team-area-balance.json",
+      "bytes": 4426,
+      "crc32": 1272876786,
+      "sha256": "d85c40b2903537f368e16bf2f92fba33bcf099c476f4c5cde5b3f3ea67dc095f"
+    },
+    {
+      "path": "final-review/old-evidence/terrain-shape-acceptance.json",
+      "bytes": 246648,
+      "crc32": 1711783640,
+      "sha256": "1fc647460937436be01e68858587f1e4a0c48054b592828780daa7b018315128"
+    },
+    {
+      "path": "final-review/preservation.json",
+      "bytes": 638761,
+      "crc32": 132515837,
+      "sha256": "ad4ca28988cba38fb5d5edc26cf0a4105fb94a571bcc6059abcf8f4b7f724e7e"
+    },
+    {
+      "path": "final-review/preservation.log",
+      "bytes": 90,
+      "crc32": 3276984762,
+      "sha256": "98508bd20b30e93e4dece71c1a44aeb0abfa41173959c36ec44b056cf9bfa7e3"
+    },
+    {
+      "path": "final-review/production-design-review-from-66dec179.json",
+      "bytes": 53190,
+      "crc32": 3929563753,
+      "sha256": "abe3bd3e8cd24512d40f8b1c48482ce4325069d49f4658d4e52ed33f5cef123c"
+    },
+    {
+      "path": "final-review/production-independent-judgments.json",
+      "bytes": 55969,
+      "crc32": 3963842506,
+      "sha256": "edcff6908d22af9ec9d631408bbe28b742b4731673b94175272c9e647d8af1d0"
+    },
+    {
+      "path": "final-review/resource-geometry.json",
+      "bytes": 58130740,
+      "crc32": 1890072473,
+      "sha256": "61ea71ba76999f5c5c48b9d80e8dd6731084457fe56823fb5b9351942f8983da"
+    },
+    {
+      "path": "final-review/resource-geometry.log",
+      "bytes": 100,
+      "crc32": 1795212376,
+      "sha256": "8768ba0609d137e90404d64e0e9e03f589b9b1bfc9c87b71dbb2cb0b152e6266"
+    },
+    {
+      "path": "final-review/route-facts.log",
+      "bytes": 42,
+      "crc32": 736548766,
+      "sha256": "f4501128bae5d84eaf6f1691c23331b97424949524e68e92c8f77d3c57f7f01e"
+    },
+    {
+      "path": "final-review/route-masks.log",
+      "bytes": 111,
+      "crc32": 786817826,
+      "sha256": "b3a7b913fc315cc16481cc739eca49c6d37d27749f44b02c8e5291119608b707"
+    },
+    {
+      "path": "final-review/routes/mask-receipt.json",
+      "bytes": 2275,
+      "crc32": 2471034043,
+      "sha256": "a7afebb27c8e33ffa169a156b6dc47a8157de82d5988b442403827722d48bb0c"
+    },
+    {
+      "path": "final-review/routes/production-counts.u16",
+      "bytes": 1411200,
+      "crc32": 3571369950,
+      "sha256": "9c28f491df37c4441bababd4df64cc51af3adc9e60043172ca68fb01c15701e8"
+    },
+    {
+      "path": "final-review/routes/resource-open.u8",
+      "bytes": 705600,
+      "crc32": 422714586,
+      "sha256": "a50f692b50a493c6dc4f5a6feed3f56f6ff543cb852a77183b65ea5cb5f37734"
+    },
+    {
+      "path": "final-review/routes/route-facts.json",
+      "bytes": 16656867,
+      "crc32": 4114771169,
+      "sha256": "c16ecc802a1d6d29d76d85c1fcf0c2dbfd017d9513a2459bff84f501b303018b"
+    },
+    {
+      "path": "final-review/routes/route-input.json",
+      "bytes": 310434,
+      "crc32": 2762248733,
+      "sha256": "1252b59170f3e39605f7da56b2d4b43ffd8409c9160b58a208ff54230e7cc3d3"
+    },
+    {
+      "path": "final-review/routes/union-coverage.json",
+      "bytes": 507090,
+      "crc32": 2737924904,
+      "sha256": "0d673c83147ca99a18b2b7a61abef9758691cf528ceb50d4c68a114b48bcfcc7"
+    },
+    {
+      "path": "final-review/shore-complete-overlay-recheck.json",
+      "bytes": 906055,
+      "crc32": 3674329312,
+      "sha256": "2c4cbff439178e45c21c7e441f767772a3daf49eeb205bacb2d56e7229a69d71"
+    },
+    {
+      "path": "final-review/shore-complete-overlay.log",
+      "bytes": 102,
+      "crc32": 3567771833,
+      "sha256": "50b62da5a0f04632faaa51995c0fe256700c6b6fbeb46edc198edbb3f27e1a57"
+    },
+    {
+      "path": "final-review/shore-historical-chain-diagnostics-from-66dec179.json",
+      "bytes": 781696,
+      "crc32": 2716319737,
+      "sha256": "125613a4bfc2309dd6196124346802a3cc8dc4ce270368fc4a05718bad547ed6"
+    },
+    {
+      "path": "final-review/supplemental-grid-from-66dec179/finite-grid-input.json",
+      "bytes": 388362,
+      "crc32": 2448993765,
+      "sha256": "bd8480518a92a6d916d4eaa0174aeb41d59939db16ab2e03f6a6c5c7f606b11d"
+    },
+    {
+      "path": "final-review/supplemental-grid-from-66dec179/hypothetical-route-input.json",
+      "bytes": 1182,
+      "crc32": 4061744295,
+      "sha256": "7d9d28918f50a431be1736bcfb2b82a30246ce82ea0b1fd3a353c3188e928fbe"
+    },
+    {
+      "path": "final-review/supplemental-grid-from-66dec179/recorded-comparisons.json",
+      "bytes": 4131702,
+      "crc32": 1656488870,
+      "sha256": "a2d425da5132df6b8b3bf0acce5369905ceab8758a68dc9fb7d05dfea277a69d"
+    },
+    {
+      "path": "historical-model-source/audit_current.py",
+      "bytes": 76617,
+      "crc32": 687921363,
+      "sha256": "2822f72fbfe275c97e3b7fea93644954b6caffc129f0095fc103a1b589a046a3"
+    },
+    {
+      "path": "historical-model-source/audit_official.rs",
+      "bytes": 829,
+      "crc32": 3345044137,
+      "sha256": "a3ea73b792c40ce287dafc227c10f80a5d2abb4322d43fecadc844a9615f5303"
+    },
+    {
+      "path": "historical-model-source/classify.py",
+      "bytes": 19316,
+      "crc32": 2846971766,
+      "sha256": "75d1a738b65920a4f15c4c45f16f9d0ec32fe0f721e087aae50dce1f1023781a"
+    },
+    {
+      "path": "historical-model-source/corridors_current.rs",
+      "bytes": 11468,
+      "crc32": 2151534088,
+      "sha256": "29b22d2bcd384ab72fb02987c3a123dc0f18a072797775b1411bc19ae50d8d56"
+    },
+    {
+      "path": "historical-model-source/exact_gift_disk.py",
+      "bytes": 8037,
+      "crc32": 1231822705,
+      "sha256": "1bb4eb1e1ad6ca7e06b623915fc8e456a16c77a4c4a09696613e0562c3def3d0"
+    },
+    {
+      "path": "historical-model-source/union_coverage.py",
+      "bytes": 5561,
+      "crc32": 1484189629,
+      "sha256": "ab03cc42381c4a81dbbf11f487d6c0c82d6f4067b9748c88ed9ee9b113eb8478"
+    },
+    {
+      "path": "historical-shore-enclosure/coordinate-system.json",
+      "bytes": 1474,
+      "crc32": 2213816384,
+      "sha256": "b0671e19562e8ddf2e7756baae102cde55f4df29502575cb31f1909bd4d49275"
+    },
+    {
+      "path": "historical-shore-enclosure/parameters.json",
+      "bytes": 2141,
+      "crc32": 2071773849,
+      "sha256": "5ec19346e94fedb3a294fba2c502723a384b38a340b2bb6dd9c8376a689826ec"
+    },
+    {
+      "path": "historical-shore-enclosure/raw/before-water-layer-enclosure/parameters.json",
+      "bytes": 1669,
+      "crc32": 701816108,
+      "sha256": "699012888b03642b7217dc617035c79e55ab7e9a09a6cbb7dbb0a80d2bf2cdf9"
+    },
+    {
+      "path": "historical-shore-enclosure/raw/before-water-layer-enclosure/report.json",
+      "bytes": 2752,
+      "crc32": 2260339751,
+      "sha256": "4709b733fa36c543abc3a67de8a098344e40402a2cd4c906c3be2d7587b02f0f"
+    },
+    {
+      "path": "historical-shore-enclosure/raw/before-water-layer-enclosure/terrain.npz",
+      "bytes": 2537988,
+      "crc32": 68493263,
+      "sha256": "0ee86bae86ccf90f838cebe66d02293fa748e0685d3c38f67a725c703ad74371"
+    },
+    {
+      "path": "historical-shore-enclosure/terrain.npz",
+      "bytes": 2538062,
+      "crc32": 1216003793,
+      "sha256": "e4c77d6bd5bef22359901b3328e6bb528ba3d398cf4a57166144fed931c384ab"
+    },
+    {
+      "path": "historical-shore-enclosure/water-layer-reference-report.json",
+      "bytes": 3094,
+      "crc32": 3062009623,
+      "sha256": "d5bca84b04ef21a5c0e8b92d3eb4a54356d9bf05a7a8994fd340780437155273"
+    },
+    {
+      "path": "historical-shore-enclosure/water-layer-verification.json",
+      "bytes": 2750,
+      "crc32": 1996241298,
+      "sha256": "243bb57b1e1e76b8a270552717bcbf4d3535cc9bcfade5c82618d58b95577fd3"
+    },
+    {
+      "path": "historical-shore-enclosure/water-policy.json",
+      "bytes": 1540,
+      "crc32": 1302284174,
+      "sha256": "56e5184702b63084f2c0b8cf1adc3ac41c5a320089908faf4c7842406fc08d2b"
+    },
+    {
+      "path": "implementation-snapshot/Cargo.lock",
+      "bytes": 11872,
+      "crc32": 994897114,
+      "sha256": "3d73286bd012164707ea79a90fbf3f4f09c55db97dd35291efa3fc413c3468c0"
+    },
+    {
+      "path": "implementation-snapshot/Cargo.toml",
+      "bytes": 978,
+      "crc32": 1638915397,
+      "sha256": "fa0869cd23e54799c68587dc266e2617c706d2958602d338f4305cc5c41c1de8"
+    },
+    {
+      "path": "implementation-snapshot/lib/opensage/Asset.cs",
+      "bytes": 2732,
+      "crc32": 3394679011,
+      "sha256": "52d8104c501dd88eace809d004adfe57026fb17e1aa482099033f5e53f0a3751"
+    },
+    {
+      "path": "implementation-snapshot/lib/opensage/AssetList.cs",
+      "bytes": 1490,
+      "crc32": 2304542616,
+      "sha256": "9b6d87328f26ce6a9dbb1d6eba2ebf8bae89ed73d844abd1c65bb88a3a6657d4"
+    },
+    {
+      "path": "implementation-snapshot/lib/opensage/AssetNameCollection.cs",
+      "bytes": 2063,
+      "crc32": 147594849,
+      "sha256": "a3b1cb83b667ac5b1eb127128f6f2b94f952ab3f56f5b240b282d760e90426d1"
+    },
+    {
+      "path": "implementation-snapshot/lib/opensage/AssetProperty.cs",
+      "bytes": 2800,
+      "crc32": 1453914036,
+      "sha256": "3dd1f9eff63f6ff226cfc524f619c41e239918bea8873b0acd6769b622c7222c"
+    },
+    {
+      "path": "implementation-snapshot/lib/opensage/AssetPropertyCollection.cs",
+      "bytes": 2825,
+      "crc32": 2262067028,
+      "sha256": "af5f9d6ba833a44e9d9a6ab1399c756fd51664bdaac6dd0299d8c4c925b11e27"
+    },
+    {
+      "path": "implementation-snapshot/lib/opensage/AssetPropertyKey.cs",
+      "bytes": 1135,
+      "crc32": 4224827498,
+      "sha256": "f8c3d8a911120c881ac5409411b0d8012ca1cb940b807ad94333eef3704da824"
+    },
+    {
+      "path": "implementation-snapshot/lib/opensage/AssetPropertyType.cs",
+      "bytes": 219,
+      "crc32": 3245526558,
+      "sha256": "ba9883f384f55d704ad84e383869492cbc4ceba123dbdb2591dc458ca7eba9d6"
+    },
+    {
+      "path": "implementation-snapshot/lib/opensage/BlendDescription.cs",
+      "bytes": 3315,
+      "crc32": 2997066667,
+      "sha256": "6c9334d37a57e085da32c60be4ed9fdb55f6077d42b6c936ca4adb6a533f925d"
+    },
+    {
+      "path": "implementation-snapshot/lib/opensage/BlendDirection.cs",
+      "bytes": 460,
+      "crc32": 2753985439,
+      "sha256": "8c42c631c67da42b9b37332fc803a080f705e2b6f025ee8131f87ee76b90fa83"
+    },
+    {
+      "path": "implementation-snapshot/lib/opensage/BlendFlags.cs",
+      "bytes": 526,
+      "crc32": 1161301003,
+      "sha256": "119398416b4a2fd08b0f15721a1f1a853b4196fa5971aee4fd0427c0b7a21e0d"
+    },
+    {
+      "path": "implementation-snapshot/lib/opensage/BlendTileData.cs",
+      "bytes": 11871,
+      "crc32": 2169015496,
+      "sha256": "fbc3a586e3de0c44439d530839ceae865265ef987b8958be1a6d7052a3c485bf"
+    },
+    {
+      "path": "implementation-snapshot/lib/opensage/BlendTileTexture.cs",
+      "bytes": 1646,
+      "crc32": 1150865882,
+      "sha256": "963d68add4c233f3f14b524ef4863fd3a32726b54e6abe45a04f7c311e525c5d"
+    },
+    {
+      "path": "implementation-snapshot/lib/opensage/BlendTileTextureIndex.cs",
+      "bytes": 500,
+      "crc32": 863716667,
+      "sha256": "9f745ed534f0de61ecf9f30682fb4696ae30ac077144dc96e166740547e5a97b"
+    },
+    {
+      "path": "implementation-snapshot/lib/opensage/BuildList.cs",
+      "bytes": 2439,
+      "crc32": 3495105955,
+      "sha256": "9b2bf8a96c70c8ba0643afc120ab028a4c7df6c0595db97fdb0f29d9f5d8a57c"
+    },
+    {
+      "path": "implementation-snapshot/lib/opensage/BuildLists.cs",
+      "bytes": 1171,
+      "crc32": 3542093782,
+      "sha256": "81bbce9819237de4babaa27cb8747227b7f00ab702de2e012b69b21cb26173b0"
+    },
+    {
+      "path": "implementation-snapshot/lib/opensage/CameraAnimation.cs",
+      "bytes": 3891,
+      "crc32": 686336354,
+      "sha256": "9e2c03137d3dcf42ca14c4734eda446b9c912d8015385654f3032899b6201635"
+    },
+    {
+      "path": "implementation-snapshot/lib/opensage/CameraAnimationFrame.cs",
+      "bytes": 3298,
+      "crc32": 614197840,
+      "sha256": "4dd223ba289fdb9c5844546e254671bbe3962d7b230d211a79363de4bffc0dda"
+    },
+    {
+      "path": "implementation-snapshot/lib/opensage/CameraAnimationList.cs",
+      "bytes": 1097,
+      "crc32": 3499534206,
+      "sha256": "7d6e6d366462eb94168192eb9c2ad8e4722447cc99123e6b95414f088368c362"
+    },
+    {
+      "path": "implementation-snapshot/lib/opensage/CastlePerimeter.cs",
+      "bytes": 1222,
+      "crc32": 3570042092,
+      "sha256": "f80600da8a68559b84f25ca63a99295441ed65b87d2856082f3f0fb2fb312c28"
+    },
+    {
+      "path": "implementation-snapshot/lib/opensage/CastlePerimeterPoint.cs",
+      "bytes": 1066,
+      "crc32": 4037150145,
+      "sha256": "3e1c4e34dd8ebdd00cbef89d3933c16bd33a2dec0cd1bc2fb42800b768b25317"
+    },
+    {
+      "path": "implementation-snapshot/lib/opensage/CastleTemplate.cs",
+      "bytes": 1345,
+      "crc32": 857974879,
+      "sha256": "d4c09268af8a9d473626c411684ea282ae83c62bed418c7d5e7433dc4a417056"
+    },
+    {
+      "path": "implementation-snapshot/lib/opensage/CastleTemplates.cs",
+      "bytes": 1710,
+      "crc32": 3291649125,
+      "sha256": "84847460f2eebcf69c6a4f273b74ffae14ba8f35ace4380186e2b426e1a771e0"
+    },
+    {
+      "path": "implementation-snapshot/lib/opensage/CliffTextureMapping.cs",
+      "bytes": 1242,
+      "crc32": 305808800,
+      "sha256": "faaf931574f61e6443b53cbd242e68a945857535830656537a371da0ecf92b99"
+    },
+    {
+      "path": "implementation-snapshot/lib/opensage/EnvironmentData.cs",
+      "bytes": 2617,
+      "crc32": 2642265052,
+      "sha256": "0ae2f8391f47716ea2b88b3d50fd690db5799f8f827cd103f6a3946b6dfb5775"
+    },
+    {
+      "path": "implementation-snapshot/lib/opensage/FogSettings.cs",
+      "bytes": 731,
+      "crc32": 507400543,
+      "sha256": "c0f4d7e24587106420d65521feab292a06c65cda3482668ff708e6e04e99bd03"
+    },
+    {
+      "path": "implementation-snapshot/lib/opensage/GlobalLight.cs",
+      "bytes": 735,
+      "crc32": 910563079,
+      "sha256": "16d50c151593578901341623e8de2deee95d9dd36b47bd344be9ed4e2f3fd5f3"
+    },
+    {
+      "path": "implementation-snapshot/lib/opensage/GlobalLighting.cs",
+      "bytes": 3507,
+      "crc32": 4223469997,
+      "sha256": "10557ce25b20f84476a9f3c94bfc7352574c36cdd2678d196230a8eae525902e"
+    },
+    {
+      "path": "implementation-snapshot/lib/opensage/GlobalLightingConfiguration.cs",
+      "bytes": 2469,
+      "crc32": 2453124921,
+      "sha256": "8a807e160dfa54d82dc761c6377bc1f991a059446d329754f9094f8f7ba2b259"
+    },
+    {
+      "path": "implementation-snapshot/lib/opensage/GlobalVersion.cs",
+      "bytes": 450,
+      "crc32": 2717090394,
+      "sha256": "bfe3c93ba2f5556420375dcc270494957092919a016a785029af457599956ab0"
+    },
+    {
+      "path": "implementation-snapshot/lib/opensage/GlobalWaterSettings.cs",
+      "bytes": 953,
+      "crc32": 3086037801,
+      "sha256": "9feec06423fdf6374137756885fe9792c3888eb907118b3ef665deea64234b67"
+    },
+    {
+      "path": "implementation-snapshot/lib/opensage/HeightMapData.cs",
+      "bytes": 5285,
+      "crc32": 1737195019,
+      "sha256": "6cf8b614ef567d84f50655a0f5f6956234a91aa7b3ef302ac7d2dfcd5211cf81"
+    },
+    {
+      "path": "implementation-snapshot/lib/opensage/LibraryMapLists.cs",
+      "bytes": 1244,
+      "crc32": 1504148866,
+      "sha256": "6bc32ff4261d405d2032ec4544437070fb4ccdfdd1c06a15baa3d3fddfe16bca"
+    },
+    {
+      "path": "implementation-snapshot/lib/opensage/LibraryMaps.cs",
+      "bytes": 1024,
+      "crc32": 1282244620,
+      "sha256": "3b63b4338a2b986f7dd93da87147037457e5716ff6e9b766062aade5bbb761e8"
+    },
+    {
+      "path": "implementation-snapshot/lib/opensage/MPPositionInfo.cs",
+      "bytes": 2086,
+      "crc32": 505761196,
+      "sha256": "c196add1269bc78011464cd107814cd658901f131297eb02580913a11aec2119"
+    },
+    {
+      "path": "implementation-snapshot/lib/opensage/MPPositionList.cs",
+      "bytes": 1257,
+      "crc32": 3233850193,
+      "sha256": "3570c59f383e011d7c93c7394f231222d3740abf0cec0c60748fe7c64469452d"
+    },
+    {
+      "path": "implementation-snapshot/lib/opensage/MapColorArgb.cs",
+      "bytes": 1264,
+      "crc32": 72746049,
+      "sha256": "3feff2b7e98f2f44062a26d94b24100f19808586f71b56bf1248bdc4d7c3d780"
+    },
+    {
+      "path": "implementation-snapshot/lib/opensage/MapFile.cs",
+      "bytes": 17358,
+      "crc32": 2620647470,
+      "sha256": "1c89f1f4a589bf7d3a5fe915dfa867869c108ac3b5a118fbf45002f259707cc1"
+    },
+    {
+      "path": "implementation-snapshot/lib/opensage/MapObject.cs",
+      "bytes": 2167,
+      "crc32": 2548385340,
+      "sha256": "f1d66a2d65e210718260d3e14c521a60962a2971dc1d30ed51a0a7f20785b8bf"
+    },
+    {
+      "path": "implementation-snapshot/lib/opensage/MapParseContext.cs",
+      "bytes": 971,
+      "crc32": 3586185989,
+      "sha256": "d9431049a876cd0eed4702b0d3823694366957e49b52c19bd644218ac418c07f"
+    },
+    {
+      "path": "implementation-snapshot/lib/opensage/MissionHotSpot.cs",
+      "bytes": 862,
+      "crc32": 1368771922,
+      "sha256": "c2f20318845118aaaf2194db973a530cdc6ebf343ea1bfdccd3095b79d96a463"
+    },
+    {
+      "path": "implementation-snapshot/lib/opensage/MissionHotSpots.cs",
+      "bytes": 1016,
+      "crc32": 2737867966,
+      "sha256": "144ebbe358e175bfc50558bcd0d80157b36820b741b1b1efea8eabbf42e4d673"
+    },
+    {
+      "path": "implementation-snapshot/lib/opensage/MissionObjective.cs",
+      "bytes": 1391,
+      "crc32": 3589175762,
+      "sha256": "94414902d99e50f8fd4bbc1e68482f5c72262e41a9d8649395a56b7ea9f5d965"
+    },
+    {
+      "path": "implementation-snapshot/lib/opensage/MissionObjectives.cs",
+      "bytes": 1030,
+      "crc32": 1338299363,
+      "sha256": "39e205c39b59186716cee1666f067444b15208d7553c62a5f01810b134468749"
+    },
+    {
+      "path": "implementation-snapshot/lib/opensage/NamedCamera.cs",
+      "bytes": 1317,
+      "crc32": 469726288,
+      "sha256": "4af1a756f564df4977ab5c73f30ef756b53e71c616e890611c46210e780e8949"
+    },
+    {
+      "path": "implementation-snapshot/lib/opensage/NamedCameras.cs",
+      "bytes": 1010,
+      "crc32": 1132376056,
+      "sha256": "a4d29c87758a4e70683735fbe690edad6bc0cb6e15b2daa6b70ea72581e44d22"
+    },
+    {
+      "path": "implementation-snapshot/lib/opensage/ObjectsList.cs",
+      "bytes": 1222,
+      "crc32": 4105640589,
+      "sha256": "7e98fddb67f4498bb3c5b67cc582d7ade31f60c1a4eeec799f816e3047074f88"
+    },
+    {
+      "path": "implementation-snapshot/lib/opensage/Player.cs",
+      "bytes": 7305,
+      "crc32": 3649033491,
+      "sha256": "f8196eaa49df5a828df0a238b2958fadd8c4fb153758eef768dab87e1b05b715"
+    },
+    {
+      "path": "implementation-snapshot/lib/opensage/PlayerScriptsList.cs",
+      "bytes": 1925,
+      "crc32": 1430349776,
+      "sha256": "2bb8e00250cafb6f8f277d8568f62982f189ab9e885f6aadc08ce4d57af41e9b"
+    },
+    {
+      "path": "implementation-snapshot/lib/opensage/PolygonTriggers.cs",
+      "bytes": 2041,
+      "crc32": 2794215803,
+      "sha256": "3db767b9a89c464b88bae7e21c95b08d7f55fcd66cb3e48b65c39c535ac8c4ad"
+    },
+    {
+      "path": "implementation-snapshot/lib/opensage/PostEffect.cs",
+      "bytes": 3699,
+      "crc32": 802423085,
+      "sha256": "8ccb14d30b79086b022734deea3a7af93fe9411cc1493f65422df19c017ac98e"
+    },
+    {
+      "path": "implementation-snapshot/lib/opensage/PostEffectsChunk.cs",
+      "bytes": 1331,
+      "crc32": 2153029421,
+      "sha256": "ff87e95c6bf36d884644ef68e78433cd7f8292aa1e4e058d0f9357bf43eba7e7"
+    },
+    {
+      "path": "implementation-snapshot/lib/opensage/RiverArea.cs",
+      "bytes": 3383,
+      "crc32": 1477229359,
+      "sha256": "bf0ea3c06130e433474a685aefe0001077d9511e056500788304e01d6085180a"
+    },
+    {
+      "path": "implementation-snapshot/lib/opensage/RiverAreas.cs",
+      "bytes": 1001,
+      "crc32": 1824880841,
+      "sha256": "fdd0b5ac4d2f01263d66abf248ddef056109e615adde5bce1e6294ed78d30c99"
+    },
+    {
+      "path": "implementation-snapshot/lib/opensage/RoadType.cs",
+      "bytes": 426,
+      "crc32": 336416474,
+      "sha256": "bb93dd3c2de8a0d7fcd4453a87e85cf40a099e1c06b6605e71bd3fb7e5051be6"
+    },
+    {
+      "path": "implementation-snapshot/lib/opensage/Script.cs",
+      "bytes": 11929,
+      "crc32": 4051620949,
+      "sha256": "5e3ffd1de5f3d68d0a7fe5335349b11891742c8c1fcf2e7b13530b611a687283"
+    },
+    {
+      "path": "implementation-snapshot/lib/opensage/ScriptAction.cs",
+      "bytes": 1130,
+      "crc32": 2568883065,
+      "sha256": "90666efe114de04a3f8c94a7da0f42a372bfc4b6557acb142699feb0a73d5c97"
+    },
+    {
+      "path": "implementation-snapshot/lib/opensage/ScriptActionType.cs",
+      "bytes": 16212,
+      "crc32": 3422814229,
+      "sha256": "adfb650baa459d3f85d125301c5bc314b27998efac86646820c3c5ce89f51e4b"
+    },
+    {
+      "path": "implementation-snapshot/lib/opensage/ScriptArgument.cs",
+      "bytes": 3737,
+      "crc32": 821140311,
+      "sha256": "44c918490fc6811288ca7ba07013ecc4d2b0fd64bf7ea3b731f332920389934a"
+    },
+    {
+      "path": "implementation-snapshot/lib/opensage/ScriptArgumentType.cs",
+      "bytes": 1742,
+      "crc32": 2641123890,
+      "sha256": "3e9db21d29d55a50db739e0b7f60ad23f28df39d910b5f7377bf4010d9471bfc"
+    },
+    {
+      "path": "implementation-snapshot/lib/opensage/ScriptCondition.cs",
+      "bytes": 1937,
+      "crc32": 876168407,
+      "sha256": "72009a2abead4c6d673859939050ef39d00f66ec14918f1002e907b24900c035"
+    },
+    {
+      "path": "implementation-snapshot/lib/opensage/ScriptConditionType.cs",
+      "bytes": 5342,
+      "crc32": 373928905,
+      "sha256": "8793ba2b55aff8528f4567862c54d0697e153a64848e8e87de22a2044b361e07"
+    },
+    {
+      "path": "implementation-snapshot/lib/opensage/ScriptContent.cs",
+      "bytes": 2884,
+      "crc32": 2449514336,
+      "sha256": "70643e585c8d763327623a155d4519de0ac695f0cb27f9c29374d6be34643d3a"
+    },
+    {
+      "path": "implementation-snapshot/lib/opensage/ScriptGroup.cs",
+      "bytes": 4180,
+      "crc32": 3421344654,
+      "sha256": "a441e070c9a4f8b21f09023ea7a28b319b064de5bf69d139474b16c7efa10d53"
+    },
+    {
+      "path": "implementation-snapshot/lib/opensage/ScriptList.cs",
+      "bytes": 3740,
+      "crc32": 9138857,
+      "sha256": "063a4a3f3b7023ac55973450ab190d0f1f112b9e13ded9b3f66c3545793b65fc"
+    },
+    {
+      "path": "implementation-snapshot/lib/opensage/ScriptOrCondition.cs",
+      "bytes": 1664,
+      "crc32": 3198767396,
+      "sha256": "3e1c924aa62fa8d44913e9878fb56918722e8416658dcd4ea8a152156b8b1440"
+    },
+    {
+      "path": "implementation-snapshot/lib/opensage/ScriptingSystem.cs",
+      "bytes": 16138,
+      "crc32": 2434183803,
+      "sha256": "9c3c645081e1b34bb1a2fed83876be4b90d4c360bd7c1806fae3ac4ae0e1ddd6"
+    },
+    {
+      "path": "implementation-snapshot/lib/opensage/SkyboxSettings.cs",
+      "bytes": 1081,
+      "crc32": 556315503,
+      "sha256": "c3562c215f33dc5e3952beca26d5b7494898c8132c89ac63e4a73e991278a4f1"
+    },
+    {
+      "path": "implementation-snapshot/lib/opensage/StandingWaterArea.cs",
+      "bytes": 2379,
+      "crc32": 2042661481,
+      "sha256": "e162ec70a62d93f8afb58a484ebc6ce0f82ae3bdb5d34e24b6bc7254b26e1662"
+    },
+    {
+      "path": "implementation-snapshot/lib/opensage/StandingWaterAreas.cs",
+      "bytes": 1039,
+      "crc32": 1428549396,
+      "sha256": "20d114ef0351f7643b884d9d687528928cd1df93edaf25e55988fe111be5ba34"
+    },
+    {
+      "path": "implementation-snapshot/lib/opensage/StandingWaveArea.cs",
+      "bytes": 4103,
+      "crc32": 4108498504,
+      "sha256": "8c09a1b5a5f2512fd1dcda327f38ffa68220e78a98d7c73c06baeca10c77404f"
+    },
+    {
+      "path": "implementation-snapshot/lib/opensage/StandingWaveAreas.cs",
+      "bytes": 1050,
+      "crc32": 1296601178,
+      "sha256": "e43236fe035296a61c96358fe6c69a71e3d84bdf15f5976ab2fc7fcd91b322ca"
+    },
+    {
+      "path": "implementation-snapshot/lib/opensage/Team.cs",
+      "bytes": 17727,
+      "crc32": 190470300,
+      "sha256": "2a400ec982ac1c49dc28adde4f40012127b3606da55146f6ed7ed47b55ccc95c"
+    },
+    {
+      "path": "implementation-snapshot/lib/opensage/Teams.cs",
+      "bytes": 1017,
+      "crc32": 2970817806,
+      "sha256": "5e4e77d5230c073319a4f9b292a1ba0549248090bbfc37375be741ea6cc5b523"
+    },
+    {
+      "path": "implementation-snapshot/lib/opensage/TriggerArea.cs",
+      "bytes": 1427,
+      "crc32": 1331071846,
+      "sha256": "35acbfcc2cbbf77dd2a16bcc497118686ac79f0e8f70e1df347bd2189a22d3ea"
+    },
+    {
+      "path": "implementation-snapshot/lib/opensage/TriggerAreas.cs",
+      "bytes": 1021,
+      "crc32": 196826658,
+      "sha256": "099ed4e61ba9b9eeaa7a2dc2b01c6e1dd5791fbf6cb0f0e29ab94427e317e5af"
+    },
+    {
+      "path": "implementation-snapshot/lib/opensage/UserMapCache.cs",
+      "bytes": 13322,
+      "crc32": 344332391,
+      "sha256": "ac4f49396e76ced3426df1cec405a29b12d57ab24fc8b71b7a9c8208467e0827"
+    },
+    {
+      "path": "implementation-snapshot/lib/opensage/WaypointPath.cs",
+      "bytes": 551,
+      "crc32": 3386519392,
+      "sha256": "9db35bedb8fb6a2b5e4c7a103a55dc57f70a2a702c913ceb1fc6643656c2d270"
+    },
+    {
+      "path": "implementation-snapshot/lib/opensage/WaypointsList.cs",
+      "bytes": 1074,
+      "crc32": 391231303,
+      "sha256": "abb130046ba7b8e8460848f589b584fae868f68afc918ba9371a76e592eaa32a"
+    },
+    {
+      "path": "implementation-snapshot/lib/opensage/WorldInfo.cs",
+      "bytes": 920,
+      "crc32": 1975577273,
+      "sha256": "b8ceec93027b380eab4b5d252598823c4783305ce7d801e02a21949c33625d37"
+    },
+    {
+      "path": "implementation-snapshot/maps/河南/authoring/baseline.json",
+      "bytes": 3,
+      "crc32": 1885917764,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": "implementation-snapshot/maps/河南/authoring/layout.json",
+      "bytes": 338234,
+      "crc32": 1845589027,
+      "sha256": "3654ea4d2dc176fcbcb7ac5be5284ec1f1ef2ae0cd327e6796719c67eeb463fc"
+    },
+    {
+      "path": "implementation-snapshot/maps/河南/authoring/resource-distribution.json",
+      "bytes": 340341,
+      "crc32": 3289776477,
+      "sha256": "c3ba92ab3c96cb83699be786f2e8804604ed3c94e84dd8eeb117a8933199a665"
+    },
+    {
+      "path": "implementation-snapshot/maps/河南/config.json",
+      "bytes": 8710,
+      "crc32": 2322789187,
+      "sha256": "7c66492cd101916cbf3c978cc6d1cd409cd62f079e04e6abf63875327323cd4d"
+    },
+    {
+      "path": "implementation-snapshot/maps/河南/coordinate-system.json",
+      "bytes": 1244,
+      "crc32": 2434890637,
+      "sha256": "5035493674892ffabf42920d71ed22bf0c23b65b2e283611e09490bade756e69"
+    },
+    {
+      "path": "implementation-snapshot/maps/河南/version.json",
+      "bytes": 2305,
+      "crc32": 2516746099,
+      "sha256": "bd5cd835699a3422f2f85cca51bde689b05ca7cc23dfba5c051150380657c456"
+    },
+    {
+      "path": "implementation-snapshot/src/cli/args.rs",
+      "bytes": 2534,
+      "crc32": 2193277191,
+      "sha256": "5ae322ad61f735faf247c2ad4351e4acaf466cdc78c42637371d5d49d5678911"
+    },
+    {
+      "path": "implementation-snapshot/src/cli/help.rs",
+      "bytes": 4024,
+      "crc32": 2935935238,
+      "sha256": "8fea902e9f5b688f537bd376b20e4dccb43864483f69a70e9b80a6b139dee478"
+    },
+    {
+      "path": "implementation-snapshot/src/cli/mod.rs",
+      "bytes": 15425,
+      "crc32": 1148631776,
+      "sha256": "f208ee899d000de725c050a072e5f0e371251989af764ca7aab22d8da09ade58"
+    },
+    {
+      "path": "implementation-snapshot/src/coordinates/export.rs",
+      "bytes": 10386,
+      "crc32": 578151412,
+      "sha256": "47f768ad4ff5e3b7ca74f444bb3191dcc9414a6c518c6da8cdf8489a804735eb"
+    },
+    {
+      "path": "implementation-snapshot/src/coordinates/frame.rs",
+      "bytes": 13237,
+      "crc32": 349713012,
+      "sha256": "7b5382386cf5d23a1f13c8d0fa2ec659761c1f7285bdc65c67798a84a8fc91e2"
+    },
+    {
+      "path": "implementation-snapshot/src/coordinates/mod.rs",
+      "bytes": 21913,
+      "crc32": 3556813480,
+      "sha256": "a1abe3fddfeafd1c5598ccbdb3caeccccc1c93639a352f3347ea10c19601f819"
+    },
+    {
+      "path": "implementation-snapshot/src/coordinates/points.rs",
+      "bytes": 9186,
+      "crc32": 985167100,
+      "sha256": "a5d8a62ca194c2f4355ccdb3c2f1e86064ccec63cf0d72850593a3ce678f7d8b"
+    },
+    {
+      "path": "implementation-snapshot/src/coordinates/raster.rs",
+      "bytes": 10221,
+      "crc32": 4054246939,
+      "sha256": "df83411902df2db1cd68c8e4bb259eec4e43da298057db75e0cc9bc3447370f2"
+    },
+    {
+      "path": "implementation-snapshot/src/formats/archive.rs",
+      "bytes": 6202,
+      "crc32": 3532960427,
+      "sha256": "e7c8b162e43afa7d9cdcc985a80862a4e54dc2aed177c974a7214fdddd4865e6"
+    },
+    {
+      "path": "implementation-snapshot/src/formats/binary.rs",
+      "bytes": 4743,
+      "crc32": 248478050,
+      "sha256": "350b3568cbb3e7d06c0550dd70c6e6c9380d93c208901f24db48d9580e317a8e"
+    },
+    {
+      "path": "implementation-snapshot/src/formats/map.rs",
+      "bytes": 15137,
+      "crc32": 766645042,
+      "sha256": "8c615203ba3a2487a7d874fbd614576b4241cafa8a616248a301813ee403e2f4"
+    },
+    {
+      "path": "implementation-snapshot/src/formats/mod.rs",
+      "bytes": 147,
+      "crc32": 1491119342,
+      "sha256": "dacb2555730c05cc23bf64ee6916bd758596b4a2fd68280defb2a3570c83a190"
+    },
+    {
+      "path": "implementation-snapshot/src/formats/npy.rs",
+      "bytes": 5191,
+      "crc32": 229724891,
+      "sha256": "2c1f276112ee3e8bb76bcba69d2df06639ad21eb5fa69e177426053449fdaffd"
+    },
+    {
+      "path": "implementation-snapshot/src/formats/refpack.rs",
+      "bytes": 7369,
+      "crc32": 3420418702,
+      "sha256": "d5b6eec30ee6a95a24a7feaecd24393b92d37240d327eda3a828767d6f2726a6"
+    },
+    {
+      "path": "implementation-snapshot/src/formats/xml.rs",
+      "bytes": 14128,
+      "crc32": 22242731,
+      "sha256": "18142de5af1ce7c8aa27da832ae0bd977e3d105e72896d1b7bdb7cfb21fa0ea3"
+    },
+    {
+      "path": "implementation-snapshot/src/gameplay/decoration.rs",
+      "bytes": 16978,
+      "crc32": 2847016645,
+      "sha256": "7f90d2693d61ce314e3e88209b85f675632ed6f7f6d596fd3285006afdcd2d24"
+    },
+    {
+      "path": "implementation-snapshot/src/gameplay/gift_clearance.rs",
+      "bytes": 105855,
+      "crc32": 2491344473,
+      "sha256": "7512257fb0d2267549838b575fcbee2bf5fb9e97ce840f4db94c20344d7103ca"
+    },
+    {
+      "path": "implementation-snapshot/src/gameplay/mod.rs",
+      "bytes": 320,
+      "crc32": 976099205,
+      "sha256": "da089ecf7b4a6697df4c6cfba131041253dc654aa4850cac3da669b818033edb"
+    },
+    {
+      "path": "implementation-snapshot/src/gameplay/official_placement.rs",
+      "bytes": 80833,
+      "crc32": 1069688359,
+      "sha256": "715662a453a9ca702570550bcb7bf5f932c82950d8c6f6d555486540024b2fab"
+    },
+    {
+      "path": "implementation-snapshot/src/gameplay/ore_facing.rs",
+      "bytes": 8107,
+      "crc32": 1690722893,
+      "sha256": "4badb00c9fa29b1c7fa1b833589dc4cfd2329ad703f54eb751837cc518a849f2"
+    },
+    {
+      "path": "implementation-snapshot/src/gameplay/periodic_attack.rs",
+      "bytes": 22814,
+      "crc32": 2516216812,
+      "sha256": "c74c45f6ae5c42ffa31092b7924e23799ce40ff7d9be5555f9c78469f0a7ca8d"
+    },
+    {
+      "path": "implementation-snapshot/src/gameplay/placement.rs",
+      "bytes": 36262,
+      "crc32": 3991455952,
+      "sha256": "d607954dcc500739a21270f7ab5a9568d78379e851aadad732ce0f2f0f84d9cf"
+    },
+    {
+      "path": "implementation-snapshot/src/gameplay/production_facing.rs",
+      "bytes": 13544,
+      "crc32": 586608585,
+      "sha256": "063fa131bef2bec9c1026593505b309ee5ef0ed7fac750aced1cdc7fc599edbf"
+    },
+    {
+      "path": "implementation-snapshot/src/gameplay/production_spawns.rs",
+      "bytes": 55388,
+      "crc32": 415042087,
+      "sha256": "8bbbfbf0a1f0e0745e84624a285874634abaded5c69bbbce6223613efdf1b501"
+    },
+    {
+      "path": "implementation-snapshot/src/gameplay/script_spawns.rs",
+      "bytes": 20342,
+      "crc32": 3507475552,
+      "sha256": "d45b2cbdcd06c6c86c3ece430e3ccecdba4ab7c41c53ce782e49524480b3c25d"
+    },
+    {
+      "path": "implementation-snapshot/src/gameplay/scripts/arguments.rs",
+      "bytes": 4410,
+      "crc32": 2280379752,
+      "sha256": "3b4e761da9dacb714bf8f378dde43ec3289599362d6a1125272ad6d6e2afcd12"
+    },
+    {
+      "path": "implementation-snapshot/src/gameplay/scripts/codec.rs",
+      "bytes": 6706,
+      "crc32": 948639914,
+      "sha256": "642c4727629aaa1995952cce721ba0f6b1e81c2fd37ec15fab402453fbfb2dab"
+    },
+    {
+      "path": "implementation-snapshot/src/gameplay/scripts/linking.rs",
+      "bytes": 3757,
+      "crc32": 2463056650,
+      "sha256": "ffdacaea4fb7af74511bd1276b3ab18994fedf03a375c9085239ad76c5e294cd"
+    },
+    {
+      "path": "implementation-snapshot/src/gameplay/scripts/mod.rs",
+      "bytes": 1414,
+      "crc32": 1955852420,
+      "sha256": "e6ea818601e86e198cd10eceddb3c9b25bca539701af960f79201e0379a5d278"
+    },
+    {
+      "path": "implementation-snapshot/src/lib.rs",
+      "bytes": 412,
+      "crc32": 1908979780,
+      "sha256": "5900e95f43961cbd97c9a624492609accf12165fcaf41928066cb4b16003e1ab"
+    },
+    {
+      "path": "implementation-snapshot/src/main.rs",
+      "bytes": 129,
+      "crc32": 2385251493,
+      "sha256": "046463877312076eb3288d809bf3a3ac9c1ad9edb1bf2ee30f8867300277acc7"
+    },
+    {
+      "path": "implementation-snapshot/src/pipeline/acceptance.rs",
+      "bytes": 19517,
+      "crc32": 2018406144,
+      "sha256": "5dd7e435c54a62748dc4a26ea36ba5ae9ef9f4082aec12e3940ad4d3432ca1d8"
+    },
+    {
+      "path": "implementation-snapshot/src/pipeline/build/distribution.rs",
+      "bytes": 9347,
+      "crc32": 2463627080,
+      "sha256": "f6751d53520183c088a2d6fc74294b95f0866ee4a915d809102ea8361af1abe7"
+    },
+    {
+      "path": "implementation-snapshot/src/pipeline/build/mod.rs",
+      "bytes": 19612,
+      "crc32": 3823602263,
+      "sha256": "977a22a4d06cbca32f6d2701e6f0491a4974865bebd2549385c944314521f7e7"
+    },
+    {
+      "path": "implementation-snapshot/src/pipeline/build/placement.rs",
+      "bytes": 7778,
+      "crc32": 1387036631,
+      "sha256": "4acfb549ac1ba276e62c55fc44f3f384cefc1d50f2118f7a20249b2e27039a6e"
+    },
+    {
+      "path": "implementation-snapshot/src/pipeline/build/validation.rs",
+      "bytes": 12724,
+      "crc32": 3917383136,
+      "sha256": "be382e7b368a9bb12386ceff814008bad186e4537f67d6307b30f35b8518a124"
+    },
+    {
+      "path": "implementation-snapshot/src/pipeline/coordinate_pipeline.rs",
+      "bytes": 36031,
+      "crc32": 683642422,
+      "sha256": "1917ad615392d9645e6263ba42ba9f1e490d4cfd2c7ce79f63b6149a8c48d070"
+    },
+    {
+      "path": "implementation-snapshot/src/pipeline/frozen_source.rs",
+      "bytes": 2226,
+      "crc32": 2033181332,
+      "sha256": "6e2bab7109b044247a251843a7e14f63dec9faba7eb22824d425cd642cd946ee"
+    },
+    {
+      "path": "implementation-snapshot/src/pipeline/mod.rs",
+      "bytes": 207,
+      "crc32": 3516658328,
+      "sha256": "9c6e18522fd4d8247b996ed670c457d7741b5f44cbb34428a3c1c06058d8a08f"
+    },
+    {
+      "path": "implementation-snapshot/src/pipeline/project.rs",
+      "bytes": 15550,
+      "crc32": 2604086827,
+      "sha256": "1a615ffdb71d7cbe830afa7fd5e48c53f2e32c4d9f6656714957c6877b97b1f6"
+    },
+    {
+      "path": "implementation-snapshot/src/pipeline/release/mod.rs",
+      "bytes": 49807,
+      "crc32": 3462833689,
+      "sha256": "cffb715a23b230b18a533fc79e0f98a799b0d53d3c856eb04ed84fa3695e291c"
+    },
+    {
+      "path": "implementation-snapshot/src/pipeline/release/package.rs",
+      "bytes": 11515,
+      "crc32": 3466628621,
+      "sha256": "f486dadde683af5b753d9b04faff2590e8f9b2b0d236acf6c721a156f0da3da1"
+    },
+    {
+      "path": "implementation-snapshot/src/pipeline/scene.rs",
+      "bytes": 25580,
+      "crc32": 3184005613,
+      "sha256": "810855d2e7dddf769b686033594a6f84d0389819c305449c971beee1d752f706"
+    },
+    {
+      "path": "implementation-snapshot/src/render/image.rs",
+      "bytes": 7623,
+      "crc32": 338758575,
+      "sha256": "598108fbfc7ca121af10d335e854b1bb39472bc7bf8a5e92748862a20b6dc7d7"
+    },
+    {
+      "path": "implementation-snapshot/src/render/layout.rs",
+      "bytes": 15247,
+      "crc32": 2863542103,
+      "sha256": "e1cea3128c5b9cc59641654a02f3ec19fc663cf15ece3aa0b4b4c733ced84e4f"
+    },
+    {
+      "path": "implementation-snapshot/src/render/mod.rs",
+      "bytes": 6479,
+      "crc32": 1846433384,
+      "sha256": "6a3f0f80ff801eb3dabbd83d78adb6b11710da3f2658d453a47cd261dac4ff00"
+    },
+    {
+      "path": "implementation-snapshot/src/resources/atlas.rs",
+      "bytes": 15444,
+      "crc32": 1044506586,
+      "sha256": "24add7cba42a3b6b8f306a34a3dd787ab1ad7bf5caafde628bb5b20cc539199f"
+    },
+    {
+      "path": "implementation-snapshot/src/resources/manifest.rs",
+      "bytes": 5878,
+      "crc32": 1990781428,
+      "sha256": "198f18a74b3a2eb450c33df7e1304f9fc68c04384640ce16adc784b72c6db0b2"
+    },
+    {
+      "path": "implementation-snapshot/src/resources/mod.rs",
+      "bytes": 18588,
+      "crc32": 2224767358,
+      "sha256": "318cffb4bb951d7e4761b8730d8745f044aa8c0c2031ed66316b8a5ca9cc34dd"
+    },
+    {
+      "path": "implementation-snapshot/src/resources/official.rs",
+      "bytes": 11334,
+      "crc32": 3474405104,
+      "sha256": "2d6837384c5ab44eb5e6f58f5f3f884380815de057d7c3f4da847c82baa1bc98"
+    },
+    {
+      "path": "implementation-snapshot/src/resources/script_xml.rs",
+      "bytes": 3811,
+      "crc32": 2905295258,
+      "sha256": "f78f1c2e75f497de7c35fa76e960efd12b03433813a45fb96d49dc3303d21db4"
+    },
+    {
+      "path": "implementation-snapshot/src/resources/terrain_package.rs",
+      "bytes": 21138,
+      "crc32": 262723118,
+      "sha256": "09b164cc79ef520c599dc193804c5d2b2ac3a26f4a598f3b92ea5e0efbe42b8b"
+    },
+    {
+      "path": "implementation-snapshot/src/resources/xml_structure.rs",
+      "bytes": 12634,
+      "crc32": 2402402000,
+      "sha256": "fffe7ddae167e5c4ec242a6052512bd5a6db82d430e6557ed84814329c20c281"
+    },
+    {
+      "path": "implementation-snapshot/src/rules.rs",
+      "bytes": 1660,
+      "crc32": 1406922330,
+      "sha256": "0bb7f5cee77d9efab13d52faadc8cb61c5147ad0c127178348661452e0e54701"
+    },
+    {
+      "path": "implementation-snapshot/src/terrain/grid.rs",
+      "bytes": 4952,
+      "crc32": 1988163792,
+      "sha256": "2a6fc9fd3d5c2c4e179ce3ee15f424f164e04449f489edf0230b8eeb4ca4aaa4"
+    },
+    {
+      "path": "implementation-snapshot/src/terrain/layers.rs",
+      "bytes": 10442,
+      "crc32": 2757330394,
+      "sha256": "ee2213c2eedf76165e2bacdd25520de8db94f3827a327dc5772f7aa1edf31117"
+    },
+    {
+      "path": "implementation-snapshot/src/terrain/layout.rs",
+      "bytes": 8866,
+      "crc32": 2377185889,
+      "sha256": "1a46015f65e9f3d864a045c3b2d66e9cb27708fc7bf01639f1141eaa558e115b"
+    },
+    {
+      "path": "implementation-snapshot/src/terrain/materials.rs",
+      "bytes": 2397,
+      "crc32": 1090720158,
+      "sha256": "e7cfcf557878f0e49ae11bb2cfee4acd455460823866153b091e6919b6a66501"
+    },
+    {
+      "path": "implementation-snapshot/src/terrain/mobility.rs",
+      "bytes": 44915,
+      "crc32": 2822138336,
+      "sha256": "efe4d8afcdfae4d1431d38da700c5a5f7aa0a889fec26208c5422335ccc4d35b"
+    },
+    {
+      "path": "implementation-snapshot/src/terrain/mod.rs",
+      "bytes": 20195,
+      "crc32": 792411970,
+      "sha256": "2951b65fcba27077b27eed9ca59fa79b1339e1f7ecd5d5f95010f69b30c553c7"
+    },
+    {
+      "path": "implementation-snapshot/src/terrain/native_cell_edits.rs",
+      "bytes": 3008,
+      "crc32": 2055618254,
+      "sha256": "b4519cbc9eb5eb49177dcea99af179dce4e574fb20337fe495f0c1e9c43a0c9e"
+    },
+    {
+      "path": "implementation-snapshot/src/terrain/ramp_clearance.rs",
+      "bytes": 24659,
+      "crc32": 1922109723,
+      "sha256": "52d5df5e9e4e11831054d67046dee4da6678611fed8252f9173b1e4aa734e9a0"
+    },
+    {
+      "path": "implementation-snapshot/src/terrain/ramps/artifacts.rs",
+      "bytes": 11213,
+      "crc32": 472738882,
+      "sha256": "ff1f37da0afd0583d21061e7a0b4422883f45b590da8c246b16ca402189fdd90"
+    },
+    {
+      "path": "implementation-snapshot/src/terrain/ramps/geometry.rs",
+      "bytes": 17283,
+      "crc32": 856171441,
+      "sha256": "013de3532e1923a1859469a744177532129fc50326825971f65bc434ac4125c9"
+    },
+    {
+      "path": "implementation-snapshot/src/terrain/ramps/material_joins.rs",
+      "bytes": 45909,
+      "crc32": 1375029702,
+      "sha256": "cb0cb8b1fab9211ed7b16666abb983aa8b4e20b8098c5da44ccc37609912a40f"
+    },
+    {
+      "path": "implementation-snapshot/src/terrain/ramps/mod.rs",
+      "bytes": 17267,
+      "crc32": 2527058260,
+      "sha256": "f42a7229f445be373cd489e4d65baa2b6769b2c647ef25a31c7fe58e877d13f6"
+    },
+    {
+      "path": "implementation-snapshot/src/terrain/ramps/mountain.rs",
+      "bytes": 13920,
+      "crc32": 3091134726,
+      "sha256": "7deb49ba2bb2960abbcbb4b00183e6de7adcc89f48d790a5c50589676544da65"
+    },
+    {
+      "path": "implementation-snapshot/src/terrain/ramps/peaks.rs",
+      "bytes": 11396,
+      "crc32": 43434577,
+      "sha256": "abb9b3f1712095ac75645b9b36f0053c8ffa39ffcbe1067e55f5ee91c6bcb276"
+    },
+    {
+      "path": "implementation-snapshot/src/terrain/ramps/peaks/rework.rs",
+      "bytes": 18079,
+      "crc32": 1484792328,
+      "sha256": "dfcfe62bc8899d2553b40756e25f8b48705f9273692842a71050f8d8bc8d5256"
+    },
+    {
+      "path": "implementation-snapshot/src/terrain/ramps/relocate.rs",
+      "bytes": 28591,
+      "crc32": 1590522645,
+      "sha256": "348273c9f33a737941b4ffc54068cbac9eab1b604e4567c627fe613159083f10"
+    },
+    {
+      "path": "implementation-snapshot/src/terrain/ramps/repair.rs",
+      "bytes": 10673,
+      "crc32": 186532912,
+      "sha256": "38cb0018331a2a204154558bafcd7b2340622490c64abdf5d9808d313117b751"
+    },
+    {
+      "path": "implementation-snapshot/src/terrain/ramps/surface.rs",
+      "bytes": 7488,
+      "crc32": 1518887767,
+      "sha256": "de59c2c6e8758252208a3d47cde04c54c9bceaa86bb7ab1ebfa4fcfec9c7c009"
+    },
+    {
+      "path": "implementation-snapshot/src/terrain/ramps/tests.rs",
+      "bytes": 10145,
+      "crc32": 4110210712,
+      "sha256": "dda9961cfb44f47eb0c1f0d02012df1f4ab2bd7348b63c1b86b1139c56146007"
+    },
+    {
+      "path": "implementation-snapshot/src/terrain/resource_routes.rs",
+      "bytes": 14361,
+      "crc32": 1749727992,
+      "sha256": "297ee3912f508bdcce1c038c4105ac869f677bb9d37a4378ea59d9c5d10ab5a7"
+    },
+    {
+      "path": "implementation-snapshot/src/terrain/spatial.rs",
+      "bytes": 40575,
+      "crc32": 3921830548,
+      "sha256": "335c1a4efdaef972a667924d965aa3f93dfef0f9976764d7cd76cd7bd5776746"
+    },
+    {
+      "path": "implementation-snapshot/src/terrain/spawn_placement.rs",
+      "bytes": 36639,
+      "crc32": 4139768783,
+      "sha256": "7a51617c81a399e8f09e860902664f4d1f570330b364251355fbbd08206a1eb7"
+    },
+    {
+      "path": "implementation-snapshot/src/terrain/surface.rs",
+      "bytes": 25828,
+      "crc32": 3079894791,
+      "sha256": "9ceea5febd095bdaeea79a05366c5c2c31218adb68fd6576e17650ec66b0b639"
+    },
+    {
+      "path": "implementation-snapshot/src/terrain/texture_polish.rs",
+      "bytes": 31860,
+      "crc32": 1501358340,
+      "sha256": "925369adcf86af2be2b9f06e4827169881627cfde0c32892b5c2e46098cea4f4"
+    },
+    {
+      "path": "implementation-snapshot/src/terrain_preview/centers.rs",
+      "bytes": 11113,
+      "crc32": 1200612868,
+      "sha256": "355d8ad034b0b7b7e01f367bf341c06492e6ddb51c5da7d3733a4157beb8944d"
+    },
+    {
+      "path": "implementation-snapshot/src/terrain_preview/layering.rs",
+      "bytes": 11611,
+      "crc32": 780370461,
+      "sha256": "d25c956504843dc2243b4aa132b677a5abe20aea6f69a2f50f6b03e8b5005b0b"
+    },
+    {
+      "path": "implementation-snapshot/src/terrain_preview/mod.rs",
+      "bytes": 30759,
+      "crc32": 2917198344,
+      "sha256": "b5f0833c2696b4b67d5bae54c36db101ddb85e7797cb8ee639602f59dadc4c3e"
+    },
+    {
+      "path": "implementation-snapshot/src/terrain_preview/rendering.rs",
+      "bytes": 9407,
+      "crc32": 684448094,
+      "sha256": "99afc6975db7a68a339128fe8bfd4dfd2034f64df8a7c2f5065e2d16be92a9e8"
+    },
+    {
+      "path": "implementation-snapshot/src/terrain_preview/source.rs",
+      "bytes": 17881,
+      "crc32": 858737479,
+      "sha256": "dfefc7d835608bc890e3aca49a08573066856e8c0a193c09c9e44b8ea8c4a650"
+    },
+    {
+      "path": "implementation-snapshot/src/terrain_preview/water_design.rs",
+      "bytes": 13357,
+      "crc32": 1679060939,
+      "sha256": "508d8035aeab65dea3f161afe2c352bb9e7c685f234af08a1d146212d0a983c2"
+    },
+    {
+      "path": "implementation-snapshot/templates/resources/ea-catalog.json",
+      "bytes": 2223423,
+      "crc32": 4226584505,
+      "sha256": "afcb68e125cca31359fca0b621200bd572035208a57b6569cb25a156255c579b"
+    },
+    {
+      "path": "implementation-snapshot/templates/rules/common-T0.5.1.json",
+      "bytes": 508788,
+      "crc32": 2128824305,
+      "sha256": "82559011ebd002d7f662a2400fcf01f31ce7de73a1d33b3fd7d89bc7b0147508"
+    },
+    {
+      "path": "implementation-snapshot/templates/rules/coordinate-pipeline.json",
+      "bytes": 1106,
+      "crc32": 4241318110,
+      "sha256": "f4071760bf002a937dc309114a8f9ecb30290638ce3d654119250af459329aba"
+    },
+    {
+      "path": "implementation-snapshot/templates/rules/periodic-command-signatures.json",
+      "bytes": 1813,
+      "crc32": 2219804566,
+      "sha256": "abcdadc2c6020c385220922bf23c47293b94a4df4a517ba2caa8162d8778094a"
+    },
+    {
+      "path": "rejected-749c21a1/candidate/native-review.json",
+      "bytes": 2555514,
+      "crc32": 3738918002,
+      "sha256": "635b2640b0845e7a31e79e874d7e74f45ecf17014d0be9b22e9c2ff2d54e8fa3"
+    },
+    {
+      "path": "rejected-749c21a1/candidate/official-placement.json",
+      "bytes": 1128455,
+      "crc32": 1525739103,
+      "sha256": "84e12ebd0f1bfba5db579306598241324b9956fca4d934aa80134b38a50d6367"
+    },
+    {
+      "path": "rejected-749c21a1/corridors/corridor-width-acceptance.json",
+      "bytes": 848568,
+      "crc32": 889928247,
+      "sha256": "bbb70fd0147484e31e2288da00c833b720d1dc2b6dde99d2914a22fc552a5a3f"
+    },
+    {
+      "path": "rejected-749c21a1/p8-route-reversion-probe/corridors/corridor-width-acceptance.json",
+      "bytes": 834217,
+      "crc32": 3456697096,
+      "sha256": "87c70cba3c18b3c815d703cdc6fc49b6451e85d13fcc131def69585dc45a0b9b"
+    },
+    {
+      "path": "rejected-749c21a1/p8-route-reversion-probe/hypothetical-layout.json",
+      "bytes": 338226,
+      "crc32": 451113947,
+      "sha256": "2245c7c45e11962aebc2d390096f126e3a8d7038a0bf4d4de201e1bafced75ac"
+    },
+    {
+      "path": "rejected-749c21a1/p8-route-reversion-probe/native-review.json",
+      "bytes": 2555993,
+      "crc32": 2679199002,
+      "sha256": "7bdac2ffa98f3a920536136576cfe7c1dfc8a3cd887340d2fa0eed68c0b2d8ff"
+    },
+    {
+      "path": "rejected-749c21a1/preservation.json",
+      "bytes": 634411,
+      "crc32": 1277127297,
+      "sha256": "e0e89f73043df32c3e1a3ff644e775770007dd403313e3bb045c4e023c1af82c"
+    },
+    {
+      "path": "review-tools/README.md",
+      "bytes": 4146,
+      "crc32": 1459680930,
+      "sha256": "40d36c9e47259ed61dc2fa3c4dff0c28b6de0002da078b62e2cb2ce078caedef"
+    },
+    {
+      "path": "review-tools/build-receipt.json",
+      "bytes": 2553,
+      "crc32": 3676378752,
+      "sha256": "45ab61f15ee8427387358c1606a0941a4d3bcff0d9f3c73d6ce12f782790aec4"
+    },
+    {
+      "path": "review-tools/build_tools.py",
+      "bytes": 2606,
+      "crc32": 3748403129,
+      "sha256": "a3140dd54bf2385f7b3d60630ca6ad3990ab11f6b098fb35e15c2447354e48f1"
+    },
+    {
+      "path": "review-tools/candidate_comparisons.py",
+      "bytes": 11642,
+      "crc32": 1727007398,
+      "sha256": "4e0345b5ba2c7be5981fead83be530872a0d1d9b60fe1400ae1a006648e8c485"
+    },
+    {
+      "path": "review-tools/compare_geometry_dependencies.py",
+      "bytes": 6301,
+      "crc32": 3230159741,
+      "sha256": "08ed4dc9fedde7547fd2c24822c80479eb84bf6c96d6c7a96e06e120f7ec304a"
+    },
+    {
+      "path": "review-tools/corridors_frozen.rs",
+      "bytes": 11468,
+      "crc32": 2151534088,
+      "sha256": "29b22d2bcd384ab72fb02987c3a123dc0f18a072797775b1411bc19ae50d8d56"
+    },
+    {
+      "path": "review-tools/derive_gift_plan.py",
+      "bytes": 2180,
+      "crc32": 4097446464,
+      "sha256": "d3d833bbd0a6b4797af82d28b4b571849b543ee3242ef6291b13f352f917e631"
+    },
+    {
+      "path": "review-tools/export_native.rs",
+      "bytes": 9238,
+      "crc32": 3344181456,
+      "sha256": "99e17a3081160bc53a5b0bd440e9fd67aeb3fc88fc3b67f3ed147b9863696480"
+    },
+    {
+      "path": "review-tools/geometry.py",
+      "bytes": 3293,
+      "crc32": 1328379467,
+      "sha256": "5afd759ab62f854943eb6a5064de509ce35798382c7e6a326eaafacd7bd9f6d7"
+    },
+    {
+      "path": "review-tools/package_evidence.py",
+      "bytes": 5169,
+      "crc32": 949104970,
+      "sha256": "3cad11835762f38f02c5fb30d4b831936df567749f5de2699d9923e146df5052"
+    },
+    {
+      "path": "review-tools/prepare_exterior_support.py",
+      "bytes": 5623,
+      "crc32": 839752291,
+      "sha256": "ba466746bf4c98cef0f80441c29f65ba4b276ae44f4d9ec218863aa95cbb5d99"
+    },
+    {
+      "path": "review-tools/prepare_route_inputs.py",
+      "bytes": 10793,
+      "crc32": 1572094171,
+      "sha256": "e43855910beb9c0c870a5693663f22851d1c1004b0f113533140818df886f9d2"
+    },
+    {
+      "path": "review-tools/preservation_facts.py",
+      "bytes": 13761,
+      "crc32": 1660179403,
+      "sha256": "b6951ba73ce40bf8b92ad21aef81d919180134cef8bb07190c8e156a1030d085"
+    },
+    {
+      "path": "review-tools/probe_recorded_corridors.py",
+      "bytes": 5299,
+      "crc32": 2588159744,
+      "sha256": "a5ca3c244197383828181a8948867a4710632f2df147183b8b1105b885e2f17a"
+    },
+    {
+      "path": "review-tools/resource_geometry.py",
+      "bytes": 9711,
+      "crc32": 3724526964,
+      "sha256": "de47f7b540b366b0a88c82396171666c60a8448f1950e39779cbf30be8e2e0e4"
+    },
+    {
+      "path": "review-tools/route_facts.rs",
+      "bytes": 8702,
+      "crc32": 3882393506,
+      "sha256": "90a100c2ade1ebb2ee1227249d8e3c4452b1c1d590c5735830399f3b56f5abf1"
+    },
+    {
+      "path": "review-tools/run_review.py",
+      "bytes": 6551,
+      "crc32": 2319723643,
+      "sha256": "83033f86b15f62567234b12dddfa3b63106c6630729bc861d6bfe7e8508f0433"
+    },
+    {
+      "path": "review-tools/shore_overlay_routes.py",
+      "bytes": 5180,
+      "crc32": 1347920890,
+      "sha256": "b77d944592cfa8c04b8b077408c89700512e5a7e2df74250e7babfcf968c7914"
+    },
+    {
+      "path": "review-tools/summarize_facts.py",
+      "bytes": 7049,
+      "crc32": 3225549207,
+      "sha256": "e13ce0bb1a90720ab30009e158035723a39e9dc5442b3feac400e7f8d987c3f4"
+    },
+    {
+      "path": "review-tools/write_delivery_record.py",
+      "bytes": 2148,
+      "crc32": 381559889,
+      "sha256": "2b94a751567290735d72a8ff9fc9aaff320ba0cefb01b36be6880d55332f1b28"
+    },
+    {
+      "path": "rules-snapshot/docs/README.md",
+      "bytes": 4185,
+      "crc32": 169218467,
+      "sha256": "27b0f623914ab7d9da0d493bec5905ae8d83fe7c9e1cd24cedd58f17df0a1385"
+    },
+    {
+      "path": "rules-snapshot/docs/SESSION_STATE.md",
+      "bytes": 4986,
+      "crc32": 3717947719,
+      "sha256": "534a5c80fc8b1a382936a5550c0eb1c92e3c142ee1362a1e0c4b7b5285a29e6b"
+    },
+    {
+      "path": "rules-snapshot/docs/TODO.md",
+      "bytes": 4091,
+      "crc32": 3197558169,
+      "sha256": "123ad18d2a5584407e323ecaab92aa63d6be229bb6ae4b512ea365b11c73de07"
+    },
+    {
+      "path": "rules-snapshot/docs/blueprint_versions.md",
+      "bytes": 4120,
+      "crc32": 2138781257,
+      "sha256": "feddaa2881cadf4b4ca2013771863e8cfc8db7ce1d17d77e34954c509142f98d"
+    },
+    {
+      "path": "rules-snapshot/docs/coordinate_pipeline.md",
+      "bytes": 13013,
+      "crc32": 3856026407,
+      "sha256": "7df6f14ac0050015db684debbb9d3c3626bbf1fe249b806ffc0ea5039cf259d9"
+    },
+    {
+      "path": "rules-snapshot/docs/impassable_mountains.md",
+      "bytes": 8711,
+      "crc32": 2010268822,
+      "sha256": "698c63aadaa386757c7f4aea9b01b4e74ea64b29708dc4243c011c919206ecc2"
+    },
+    {
+      "path": "rules-snapshot/docs/maintenance.md",
+      "bytes": 2384,
+      "crc32": 2289886298,
+      "sha256": "992d298af6316d61299def965a87fd13eb12eaf3ed929a6042e49aa6b94cdc63"
+    },
+    {
+      "path": "rules-snapshot/docs/map_acceptance.md",
+      "bytes": 30568,
+      "crc32": 3491831697,
+      "sha256": "9c85b23f5066b678f015f367f7c9127d4e532abe10d85b22b8d64cd851c3d197"
+    },
+    {
+      "path": "rules-snapshot/docs/map_coordinates.md",
+      "bytes": 6219,
+      "crc32": 1367490626,
+      "sha256": "e5201b64322925420b6ebce68e13f6a633309979739b8422c87a53feb183393f"
+    },
+    {
+      "path": "rules-snapshot/docs/map_rules.md",
+      "bytes": 19740,
+      "crc32": 1568338919,
+      "sha256": "af04cd008cb4c617ba9dcf9aa44532f53b704563d4f8ab08f169cdafc1e6e757"
+    },
+    {
+      "path": "rules-snapshot/docs/map_skills_checklist.md",
+      "bytes": 7176,
+      "crc32": 243930596,
+      "sha256": "a982da92d8b6af47860daf25461dd0ec5bdbdb726a16e9d6a8436e13981dbbb4"
+    },
+    {
+      "path": "rules-snapshot/docs/mountain_ramps.md",
+      "bytes": 8115,
+      "crc32": 1744567322,
+      "sha256": "c68c5cb89ce91fed42807fdb3f6c89a0f63c362959eb269ca41652eef96389ae"
+    },
+    {
+      "path": "rules-snapshot/docs/naming_migration.md",
+      "bytes": 2848,
+      "crc32": 2964884116,
+      "sha256": "3a59c6827bfd3f200a30f9f08ef58a40442a49e1d2c1b7b9b39ec20f26c05b6f"
+    },
+    {
+      "path": "rules-snapshot/docs/official_resource_pipeline.md",
+      "bytes": 7149,
+      "crc32": 1719270523,
+      "sha256": "b23e355096b1e4f8493a081e4fa7ff8f9ee94a4380eb875546deb57737be879b"
+    },
+    {
+      "path": "rules-snapshot/docs/periodic_attack.md",
+      "bytes": 5185,
+      "crc32": 1837455919,
+      "sha256": "ff7e7deee95949e1087e71cdbc84e1ab720ed48689410bcd8a294b55f99ad7d0"
+    },
+    {
+      "path": "rules-snapshot/docs/preview_acceptance_2026_10_30.md",
+      "bytes": 10660,
+      "crc32": 725184166,
+      "sha256": "121f5696d078554208b59f35546c2e7b45cc9750a1110aa2ef187b1aa09281de"
+    },
+    {
+      "path": "rules-snapshot/docs/preview_intrusion_repair_2026_10_30.md",
+      "bytes": 5567,
+      "crc32": 900160871,
+      "sha256": "9a6d78da15879a65b431a69bb0d4e1b00acd0dcbc1426bcda11afd44468faa00"
+    },
+    {
+      "path": "rules-snapshot/docs/preview_water_layers.md",
+      "bytes": 5717,
+      "crc32": 1737898192,
+      "sha256": "84c0744be7cc954909cd6e46ab5820e735f6a07ea58b15afd697eb69a7f5dbba"
+    },
+    {
+      "path": "rules-snapshot/docs/production_placement_fix.md",
+      "bytes": 18669,
+      "crc32": 1461739433,
+      "sha256": "8e70dd016ef7b6fb03c60105079e92ff5eaff60c72019e92a934dded6aa58deb"
+    },
+    {
+      "path": "rules-snapshot/docs/ra3_map_format_spec.md",
+      "bytes": 99091,
+      "crc32": 1527009686,
+      "sha256": "67e384b8e18171d72f026961d5878e5f6f8dc0b2599ee7edbca5ce71e9a9dfc6"
+    },
+    {
+      "path": "rules-snapshot/docs/ra3_worldbuilder_integration.md",
+      "bytes": 10258,
+      "crc32": 1889749909,
+      "sha256": "3c37a2c26be7a1f0e363c21211db82279dd3f6ef9e05eef8fd402e40f7bf371c"
+    },
+    {
+      "path": "rules-snapshot/docs/ramp_additions.md",
+      "bytes": 3300,
+      "crc32": 1359123722,
+      "sha256": "e20a2679493b0755cf44fbcd6b5a872c5b92ae43c0cac7fe50411c4289843773"
+    },
+    {
+      "path": "rules-snapshot/docs/ramp_clearance.md",
+      "bytes": 5591,
+      "crc32": 4002426018,
+      "sha256": "cfc7e32d8d497986984897fb3af03e3e72576bc13466c754975d77bfe5e7f29f"
+    },
+    {
+      "path": "rules-snapshot/docs/ramp_relocation.md",
+      "bytes": 3458,
+      "crc32": 231348544,
+      "sha256": "161864649f72c96b34979a469d8536ff57dd7e5712dccb185760ef0eeb670910"
+    },
+    {
+      "path": "rules-snapshot/docs/reproducible_builds.md",
+      "bytes": 3506,
+      "crc32": 4009260494,
+      "sha256": "12d37a36bdb3fdc4495b46c26df9077b2f5d373e90b15982b9074d8000384eb0"
+    },
+    {
+      "path": "rules-snapshot/docs/resource_distribution.md",
+      "bytes": 8793,
+      "crc32": 2399891881,
+      "sha256": "c3eb70d5f03e6fd5364d3fef860deb2d99099f4979395b8d41d03d231b538d49"
+    },
+    {
+      "path": "rules-snapshot/docs/resource_packaging_fix.md",
+      "bytes": 4374,
+      "crc32": 247919497,
+      "sha256": "6bb4cbae390ac0db14c89ec81f195c4d7ed7f6d44a74b789075358808e6e1cec"
+    },
+    {
+      "path": "rules-snapshot/docs/rust_migration.md",
+      "bytes": 12023,
+      "crc32": 2059052374,
+      "sha256": "0741ef353a22d12b506738b1b90b78f1a6cbbf4000e32feed2b690bfeaa59ee1"
+    },
+    {
+      "path": "rules-snapshot/docs/script_functions.md",
+      "bytes": 10702,
+      "crc32": 2444742910,
+      "sha256": "f39fd607a20ed2a862f071d702de0c2d7766a75e55efffc853f22ebc92586658"
+    },
+    {
+      "path": "rules-snapshot/docs/spawn_placement.md",
+      "bytes": 8490,
+      "crc32": 59879390,
+      "sha256": "d2aa177dca1bca4cd2a222d4695ff2abda3254495ee3b476468110aa82968f59"
+    },
+    {
+      "path": "rules-snapshot/docs/terrain_package_fix.md",
+      "bytes": 3494,
+      "crc32": 1737911434,
+      "sha256": "fadfb680fd53ad67848a0d482f04f603b9ff438569acbec68083a0f555d9638b"
+    },
+    {
+      "path": "rules-snapshot/docs/terrain_preview.md",
+      "bytes": 25613,
+      "crc32": 4228264704,
+      "sha256": "40d159e02e1baf2c5d50218375562a219f01f0f4e238692a093996e3241e5fd6"
+    },
+    {
+      "path": "rules-snapshot/docs/terrain_texture_rules.md",
+      "bytes": 7109,
+      "crc32": 1343705018,
+      "sha256": "c62badc3191fe05d2225871727bda5d3425447a9045b5eb279b887da7cc1dd0a"
+    },
+    {
+      "path": "rules-snapshot/docs/terrain_transitions.md",
+      "bytes": 15680,
+      "crc32": 3869811599,
+      "sha256": "3b427657aaad2dcfb54c517203d2262d008b1e938f639ece40c4ae4f8b6896c2"
+    },
+    {
+      "path": "rules-snapshot/docs/texture_tiling_fix.md",
+      "bytes": 1745,
+      "crc32": 969999811,
+      "sha256": "578110e69753df7308987cc56641ee03082477cafcfe5e739dd31fe05e7eb6de"
+    },
+    {
+      "path": "rules-snapshot/docs/九州大地命名.md",
+      "bytes": 8139,
+      "crc32": 4257217410,
+      "sha256": "3a26e2484b6ba61bb9a648c93c827690e8130e987f645a6224ec594058487e0c"
+    },
+    {
+      "path": "rules-snapshot/skills/ra3-authoring/SKILL.md",
+      "bytes": 4238,
+      "crc32": 2369648902,
+      "sha256": "ddc8efed5f1e14cd3b5b525b1ddaf4ed887b9edebb8c58fb19516245a440cd19"
+    },
+    {
+      "path": "rules-snapshot/skills/ra3-pipeline/SKILL.md",
+      "bytes": 4875,
+      "crc32": 1022101402,
+      "sha256": "9d4fb71426b6ee54608a7c7c39a40a8dfafe5fc7ff0d5915c869dac52fe3b7e3"
+    },
+    {
+      "path": "rules-snapshot/skills/ra3-resources/SKILL.md",
+      "bytes": 4919,
+      "crc32": 3193602558,
+      "sha256": "023220c0d0a2c51958b3e25f8dd71a5de0ea6b157b50a629118ed989d3f2bcb8"
+    },
+    {
+      "path": "rules-snapshot/skills/ra3-spawns/SKILL.md",
+      "bytes": 4392,
+      "crc32": 3675660359,
+      "sha256": "5c7678810349fac2fadc130be0bc3348835913f5b3f69d25ecb6deef24cd2e4e"
+    },
+    {
+      "path": "rules-snapshot/skills/ra3-terrain/SKILL.md",
+      "bytes": 4837,
+      "crc32": 927595996,
+      "sha256": "47cb453b89a178eaaa439f6ec24fe3f650329a24d1e053d6388eae40afc54964"
+    },
+    {
+      "path": "terrain-transitions/geometry-749c21a1/all-shore-normal-profiles.json",
+      "bytes": 12486061,
+      "crc32": 3379635883,
+      "sha256": "2c3ba65cb44344d13375b46513f0f3ffa048c4d2657ed11c4673f76cfe1a955e"
+    },
+    {
+      "path": "terrain-transitions/geometry-749c21a1/boundary-and-junction-inventory.json",
+      "bytes": 5818427,
+      "crc32": 3895105093,
+      "sha256": "e079d166a15a1bcb95aad587eddeb56e0e030d5519ce50b63a247920f0ae981b"
+    },
+    {
+      "path": "terrain-transitions/geometry-749c21a1/full-width-ramp-profiles.json",
+      "bytes": 17629794,
+      "crc32": 2230017281,
+      "sha256": "aef00e1039683f1a6ac18c6c36aecdea6ed726a61c22d29415ddfb402f185047"
+    },
+    {
+      "path": "terrain-transitions/geometry-749c21a1/geometry-transition-review.json",
+      "bytes": 5317,
+      "crc32": 3620552724,
+      "sha256": "0be30d5878c5628a286fb0bf56f6eb1c8ed29f87e792dd27f43249374f530b9b"
+    },
+    {
+      "path": "terrain-transitions/geometry-749c21a1/native-height-navigation-fields.png",
+      "bytes": 27578,
+      "crc32": 3899288671,
+      "sha256": "d9f2915aa663a2805c905b2bb2678b212879a14af8a4dac5a945f1e4d6d70773"
+    },
+    {
+      "path": "terrain-transitions/geometry-749c21a1/nonflat-component-inventory.json",
+      "bytes": 182798,
+      "crc32": 3644780754,
+      "sha256": "22a306d26ed9e8abc51b6766cea58312f08a1950f413d4fa00305ed4b512a956"
+    },
+    {
+      "path": "terrain-transitions/geometry-final-d05e5671-dependency-transfer.json",
+      "bytes": 2438,
+      "crc32": 2847854105,
+      "sha256": "a98695f00a2fd88b7cb5798fccf186fb978a9b68d41fdf5895621b66c8904337"
+    },
+    {
+      "path": "terrain-transitions/initial-edge-scan.json",
+      "bytes": 99932,
+      "crc32": 210681544,
+      "sha256": "1e69e2a43589b9a81ada8544b95c12d585f7c88d509299293d64e78640384929"
+    },
+    {
+      "path": "terrain-transitions/material/all-chunk-identities.json",
+      "bytes": 2534,
+      "crc32": 2541848845,
+      "sha256": "b768c79d7ee6b413710dc4dc4e569bc8b829e7fc769f3fda75a6594ca214ce28"
+    },
+    {
+      "path": "terrain-transitions/material/all-confirmed-join-feasibility.json",
+      "bytes": 868858,
+      "crc32": 3498846096,
+      "sha256": "13402f1d53fe4fdf63b913c32f366f8167928cafa8c607ba834811432a2e8dcb"
+    },
+    {
+      "path": "terrain-transitions/material/all_confirmed_join_plan.py",
+      "bytes": 3581,
+      "crc32": 4031923237,
+      "sha256": "d99a1ef85c308ffc965f37c09f10b067163b0e2e1506a7819499272c65b29b74"
+    },
+    {
+      "path": "terrain-transitions/material/baseline-66dec179/all-chunk-identities.json",
+      "bytes": 2533,
+      "crc32": 2638879627,
+      "sha256": "7a68255fe59d83b118f520d145764d43306459416495e394602ba38c0ae2de75"
+    },
+    {
+      "path": "terrain-transitions/material/baseline-66dec179/blend-chunk.bin",
+      "bytes": 7103161,
+      "crc32": 3042035748,
+      "sha256": "9b8f222a4b6a7d793cd48009a5264127b05d6fe38dcf9b4442794b9f0e519ddb"
+    },
+    {
+      "path": "terrain-transitions/material/baseline-66dec179/blend.u32",
+      "bytes": 2822400,
+      "crc32": 722443515,
+      "sha256": "c206c5f315128e01fc930a0cfab773f8987b82916b08d8c15edafe647fcf4e90"
+    },
+    {
+      "path": "terrain-transitions/material/baseline-66dec179/blend2.u32",
+      "bytes": 2822400,
+      "crc32": 3687898581,
+      "sha256": "4d5dfececf9ba311f7dce724f3e5f00f9d05c24c267d4f94905ce0be10c7ebee"
+    },
+    {
+      "path": "terrain-transitions/material/baseline-66dec179/cliff.u32",
+      "bytes": 2822400,
+      "crc32": 3687898581,
+      "sha256": "4d5dfececf9ba311f7dce724f3e5f00f9d05c24c267d4f94905ce0be10c7ebee"
+    },
+    {
+      "path": "terrain-transitions/material/baseline-66dec179/material-native.json",
+      "bytes": 536711,
+      "crc32": 2484448485,
+      "sha256": "bf9800c23f88e4f28f84572c9445d33e996c85bcbc0e079bc7deefe98eac1871"
+    },
+    {
+      "path": "terrain-transitions/material/baseline-66dec179/native-preservation-vs-baseline.json",
+      "bytes": 4899,
+      "crc32": 2252059850,
+      "sha256": "c77ff64c1dd81b8ed1b7f077ea99434b4713308effc3c40478c8d89a67232302"
+    },
+    {
+      "path": "terrain-transitions/material/baseline-66dec179/tiles.u32",
+      "bytes": 2822400,
+      "crc32": 4205079610,
+      "sha256": "f3b9ff0009bbb741c4bcea397efd712438a668ae71d47aa93000fb784ea8e731"
+    },
+    {
+      "path": "terrain-transitions/material/blend-chunk.bin",
+      "bytes": 7103161,
+      "crc32": 3042035748,
+      "sha256": "9b8f222a4b6a7d793cd48009a5264127b05d6fe38dcf9b4442794b9f0e519ddb"
+    },
+    {
+      "path": "terrain-transitions/material/blend.u32",
+      "bytes": 2822400,
+      "crc32": 722443515,
+      "sha256": "c206c5f315128e01fc930a0cfab773f8987b82916b08d8c15edafe647fcf4e90"
+    },
+    {
+      "path": "terrain-transitions/material/blend2.u32",
+      "bytes": 2822400,
+      "crc32": 3687898581,
+      "sha256": "4d5dfececf9ba311f7dce724f3e5f00f9d05c24c267d4f94905ce0be10c7ebee"
+    },
+    {
+      "path": "terrain-transitions/material/build_extractor.py",
+      "bytes": 1281,
+      "crc32": 2958748431,
+      "sha256": "59fd7048ce2a840b48ab90a18e1157ebb2f557a5de9dccd2a4890712d0cc8609"
+    },
+    {
+      "path": "terrain-transitions/material/cliff.u32",
+      "bytes": 2822400,
+      "crc32": 3687898581,
+      "sha256": "4d5dfececf9ba311f7dce724f3e5f00f9d05c24c267d4f94905ce0be10c7ebee"
+    },
+    {
+      "path": "terrain-transitions/material/component_mask_feasibility.py",
+      "bytes": 2839,
+      "crc32": 1522921739,
+      "sha256": "b9040a7bb44766ffabebb87cb86d6556077ee1d3b073182f2d2dd7fba5acac15"
+    },
+    {
+      "path": "terrain-transitions/material/compose_final_crops.py",
+      "bytes": 4429,
+      "crc32": 1147877783,
+      "sha256": "27797b2a9714a5aa251c093a5cad4338994bb485e87e0d5e18d88a9376e52a86"
+    },
+    {
+      "path": "terrain-transitions/material/confirmed-join-connected-components.json",
+      "bytes": 285668,
+      "crc32": 3349798004,
+      "sha256": "cd9d553739f8c7168c9081f2c3266e47309b864407d44c1296cbfca9f463e021"
+    },
+    {
+      "path": "terrain-transitions/material/diffuse_review.py",
+      "bytes": 6038,
+      "crc32": 2188050599,
+      "sha256": "319d3237e7c1360f6377567c762376704e0a72ee71662567d65004702c8d4cd5"
+    },
+    {
+      "path": "terrain-transitions/material/extract_material.rs",
+      "bytes": 3759,
+      "crc32": 822792618,
+      "sha256": "1104204e1806c41464937e8a85839fa4b6ed5b2740e0e9f73df71d89bb4b544e"
+    },
+    {
+      "path": "terrain-transitions/material/extractor-build-receipt.json",
+      "bytes": 950,
+      "crc32": 3828936576,
+      "sha256": "05503b9b40816c8971622820fac6d6a028fdce8984f6bdba4ddc1b16e6826adb"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/all-chunk-identities.json",
+      "bytes": 2531,
+      "crc32": 1412082911,
+      "sha256": "f9e41eeb20459dd0625071c1993e8d1f5d158060506631aef462b0878f15961d"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/before-after/actual-diffuse-before-after-manifest.json",
+      "bytes": 6702,
+      "crc32": 2090407810,
+      "sha256": "1da00c1119fd606b558951c24a1151f71ac13db9ec7db29184638b96baaff852"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/before-after/actual-native-diffuse-before-after-contact.png",
+      "bytes": 1204718,
+      "crc32": 713053376,
+      "sha256": "d3b298a512ed913f4a1c674ca7f500d0b93ae3ef7840c13a1a88c15a4428fdc8"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/before-after/ramp-15-pair-1-9-after.png",
+      "bytes": 341880,
+      "crc32": 284582560,
+      "sha256": "a90e544219527f735c836c8a80c5372b59645a04594961be7ab433b0bd04880e"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/before-after/ramp-15-pair-1-9-before-after.png",
+      "bytes": 385381,
+      "crc32": 1046345112,
+      "sha256": "ae22478ea72716452126c2737d40ebb8226a4f177a5c2105c4f5658c4d7e270d"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/before-after/ramp-15-pair-1-9-before.png",
+      "bytes": 338989,
+      "crc32": 2123028836,
+      "sha256": "8ab02241f48f8763f43c46f192e3d203d17504408fb85407bba8abdb28faa245"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/before-after/ramp-16-pair-1-9-after.png",
+      "bytes": 338861,
+      "crc32": 3099527268,
+      "sha256": "7fcdc85659ff6b776858d4898b8a48bc8e7a140eccdd53bab037437fe4ac1f6b"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/before-after/ramp-16-pair-1-9-before-after.png",
+      "bytes": 384725,
+      "crc32": 1111092797,
+      "sha256": "d7adb2885d2d0869e2b618198969c9ba299a31cf47d0e2a33d942363d3b3f4ea"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/before-after/ramp-16-pair-1-9-before.png",
+      "bytes": 336407,
+      "crc32": 398088736,
+      "sha256": "f7593e5e426bf9fb231af1661a5d0434a5bf3fcf8dbeef79f1f36237b13eb13c"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/before-after/ramp-17-pair-0-1-after.png",
+      "bytes": 326366,
+      "crc32": 2955245298,
+      "sha256": "d98c5c3a0cfeea49da2908c1421dc52b671b09d3eedf6f93ecc9197effeea7bc"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/before-after/ramp-17-pair-0-1-before-after.png",
+      "bytes": 369734,
+      "crc32": 1175154052,
+      "sha256": "3805debe70f1801842ddf51c8bac8ac5c96156795b3d15ffa224ec953568da04"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/before-after/ramp-17-pair-0-1-before.png",
+      "bytes": 326030,
+      "crc32": 5830623,
+      "sha256": "6df6511e563526e23d2452e950859bd6e812b1499b95ef97795f8d6c0cb5456e"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/before-after/ramp-18-pair-0-1-after.png",
+      "bytes": 327362,
+      "crc32": 476280220,
+      "sha256": "2cfaa79d02d2e3928f97f3504a22a36f3bebb8feccbd82ac95cfdf82502d96a1"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/before-after/ramp-18-pair-0-1-before-after.png",
+      "bytes": 365951,
+      "crc32": 1637986448,
+      "sha256": "e33c29641e5712a6de965f2e63e6398a131ab4e66a12adc12b40b4235bb50bc1"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/before-after/ramp-18-pair-0-1-before.png",
+      "bytes": 319827,
+      "crc32": 2529052403,
+      "sha256": "c833afc1a8cb37e13e27c6df9ae1abc6a3902cf7252bda0d12fde33887a972eb"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/before-after/ramp-18-pair-1-9-after.png",
+      "bytes": 342894,
+      "crc32": 681422093,
+      "sha256": "87f6fa08069ce975806aec10b128263f5888e8a259d163ee4d117280c2e2bf81"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/before-after/ramp-18-pair-1-9-before-after.png",
+      "bytes": 384247,
+      "crc32": 2091586748,
+      "sha256": "8e15a7a7ba2c9c01a7223d35d312cd6a902b42b9f857870105372155756298be"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/before-after/ramp-18-pair-1-9-before.png",
+      "bytes": 339319,
+      "crc32": 313366925,
+      "sha256": "cda6cb43725f9276742b4db0f424f063f04c466f9a439754c2d0ff83fdf4c458"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/before-after/ramp-19-pair-1-9-after.png",
+      "bytes": 336979,
+      "crc32": 2181090324,
+      "sha256": "29c2670ee499394fbf4b23afea3afb98fb02be205bfc34585f56d71007912553"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/before-after/ramp-19-pair-1-9-before-after.png",
+      "bytes": 384206,
+      "crc32": 2838686950,
+      "sha256": "ed3421c91921d7cd6d935d0a03bf3ce2dd8898f90df93e80fd4fd2616a5c19c7"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/before-after/ramp-19-pair-1-9-before.png",
+      "bytes": 330689,
+      "crc32": 1087486538,
+      "sha256": "2b0500fae8818684f655b0e39b31cdafff76d7634fbe03b7c93102785f7ab516"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/before-after/ramp-20-pair-0-1-after.png",
+      "bytes": 321988,
+      "crc32": 2537747011,
+      "sha256": "e063c0a0dd9d9d4d691f29802e5ae17211487ea934d75572abdacd92a4e43fef"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/before-after/ramp-20-pair-0-1-before-after.png",
+      "bytes": 370102,
+      "crc32": 3598778034,
+      "sha256": "d22b0844de000e5d040fdb5d2d8c4c60d5fd34df3e1f9817ed488fe9c4e9bb2a"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/before-after/ramp-20-pair-0-1-before.png",
+      "bytes": 321085,
+      "crc32": 757308139,
+      "sha256": "25d01b60630d95397b08bd528ae04da3e4a6ef0d430d6ab734ed573df07de4f1"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/before-after/ramp-21-pair-0-1-after.png",
+      "bytes": 677104,
+      "crc32": 551853290,
+      "sha256": "5ebb1176f24074487a51380c44e4d2671f17878ffee7eda6c55f79f74e07a890"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/before-after/ramp-21-pair-0-1-before-after.png",
+      "bytes": 725616,
+      "crc32": 574313106,
+      "sha256": "2adb78e571a44046b65a4c25ac1edda5b9b0766900c9fb934f28f56edbc2c443"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/before-after/ramp-21-pair-0-1-before.png",
+      "bytes": 659763,
+      "crc32": 149857679,
+      "sha256": "2a3c4ae98e8d7b9ad23b6a3d3272e5b77359141701fef1492aed852759ad56bb"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/blend-chunk.bin",
+      "bytes": 7108381,
+      "crc32": 96146656,
+      "sha256": "b0c82408e114316aec89de6b6a2221d3da18687a5d889cdb251f5f16fe9d6c7f"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/blend.u32",
+      "bytes": 2822400,
+      "crc32": 2173655282,
+      "sha256": "73d37245601daa09b55438de17dd874dea83c2f78ecab9b9e7dad24fc497c1a5"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/blend2.u32",
+      "bytes": 2822400,
+      "crc32": 3687898581,
+      "sha256": "4d5dfececf9ba311f7dce724f3e5f00f9d05c24c267d4f94905ce0be10c7ebee"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/cliff.u32",
+      "bytes": 2822400,
+      "crc32": 3687898581,
+      "sha256": "4d5dfececf9ba311f7dce724f3e5f00f9d05c24c267d4f94905ce0be10c7ebee"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/final-material-preservation-review.json",
+      "bytes": 140702,
+      "crc32": 244517363,
+      "sha256": "9d88308d002ccb5809280c8126824c76f5d65320ef3ab0f27d9a011f1b3d6459"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/independent-terrain-transition-review.json",
+      "bytes": 3885,
+      "crc32": 2679420407,
+      "sha256": "e2b9fd2aadffd20d7ee95e17858f538172d8e2e7f22279ae1592b4b56120b1a8"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/material-native.json",
+      "bytes": 596336,
+      "crc32": 821196617,
+      "sha256": "614736e9de10a1e0e6237ad5cc70c24ea741d598a6ed87bda540e986c3c03805"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/native-preservation-vs-baseline.json",
+      "bytes": 4895,
+      "crc32": 1705346162,
+      "sha256": "09d8ceeb7ce98eb9495ff2fb6d08ec64e53f8af3978591fa71efd032dfdfd5ca"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/surface-evidence/R17-core-gravel-corner-native-diffuse-model.png",
+      "bytes": 162311,
+      "crc32": 3710224108,
+      "sha256": "a58bdb65539cabb64a7a87e37d678c1b4ef08a8c691481af22118cde0b07e7e6"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/surface-evidence/boundary-001-native-diffuse-model.png",
+      "bytes": 35174,
+      "crc32": 2781037352,
+      "sha256": "bb380df560650a66d5f3242ba255fbdeac4b01489ebd1a10f1cab4b9ed44fc49"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/surface-evidence/boundary-002-native-diffuse-model.png",
+      "bytes": 37868,
+      "crc32": 2486038956,
+      "sha256": "9100eecf6ad739f58859161087367666911c5707fc9142cd15f581d596073525"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/surface-evidence/boundary-003-native-diffuse-model.png",
+      "bytes": 39871,
+      "crc32": 450922393,
+      "sha256": "dab2883fd2725ea0377882d062ea0c3aa6d8b8bb10e31c1c13d14b61b6de95ce"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/surface-evidence/boundary-004-native-diffuse-model.png",
+      "bytes": 42227,
+      "crc32": 2866898728,
+      "sha256": "e42a9b1e98d94efd480265b8333f92334d5a15dd5541ff35bd95da453d186f2c"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/surface-evidence/boundary-005-native-diffuse-model.png",
+      "bytes": 43059,
+      "crc32": 3929689838,
+      "sha256": "435c9ecf94d49bc94eee867cc4d51f9f0eb37ff67a7825a9e1f014b281c2adf3"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/surface-evidence/boundary-006-native-diffuse-model.png",
+      "bytes": 20159,
+      "crc32": 3144502788,
+      "sha256": "fb64b673940b90d0ad5df6125b1439ff19fd419998644d29d02f99be4adc8a1c"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/surface-evidence/boundary-007-native-diffuse-model.png",
+      "bytes": 19007,
+      "crc32": 3863415337,
+      "sha256": "039911190522f0d6cd2479a5a8d9f5f832a47f83cd8de11719ec4d3a03239bed"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/surface-evidence/boundary-008-native-diffuse-model.png",
+      "bytes": 28268,
+      "crc32": 2827451196,
+      "sha256": "f55e1de6a0fd22d883f1b1d7d079175391532e663c5d680cc5129ce6a59c9f95"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/surface-evidence/boundary-009-native-diffuse-model.png",
+      "bytes": 36709,
+      "crc32": 3837330411,
+      "sha256": "1110b124319260d054a6555c133ab8e298bf3b2ec4236b1bc888280a048c67a2"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/surface-evidence/boundary-010-native-diffuse-model.png",
+      "bytes": 24979,
+      "crc32": 3583043494,
+      "sha256": "687557e6c781ba0837e4dae29e145dff254017e04b3059bef47617fd4644e444"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/surface-evidence/boundary-011-native-diffuse-model.png",
+      "bytes": 34259,
+      "crc32": 2694257027,
+      "sha256": "dbdbedb7effd06ed41c7f06c74c7cc118417db88ec350aee6c87b1562adcc105"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/surface-evidence/boundary-012-native-diffuse-model.png",
+      "bytes": 25246,
+      "crc32": 654799382,
+      "sha256": "51ec7fe9620bae622655d59803b99d4af177bcd88321939e096a592136e2d74b"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/surface-evidence/boundary-013-native-diffuse-model.png",
+      "bytes": 37035,
+      "crc32": 227940234,
+      "sha256": "d8b01687ff19cfac908f289e31020572ec4d814fd4512820762700cbd0eb3dcc"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/surface-evidence/boundary-014-native-diffuse-model.png",
+      "bytes": 35604,
+      "crc32": 1917028456,
+      "sha256": "88117273783d5f55733913c91b942c0419ccc2dc72055f284fef4311d23d662b"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/surface-evidence/boundary-015-native-diffuse-model.png",
+      "bytes": 39729,
+      "crc32": 2713569845,
+      "sha256": "db4a54eb2aac5636e158e683eb3d2f65710dfc769b90b87b7dfe8ee02de7247b"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/surface-evidence/boundary-016-native-diffuse-model.png",
+      "bytes": 20180,
+      "crc32": 1876127910,
+      "sha256": "47da1c70a80a5b52a4d5d6f8c6c3931294eddcda2319abe43d2809b527ba03b6"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/surface-evidence/boundary-017-native-diffuse-model.png",
+      "bytes": 20661,
+      "crc32": 3853120307,
+      "sha256": "4ba354a668ac4b7673f85abe7e62405762483b3af4c644bc3202f5191db4a698"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/surface-evidence/boundary-018-native-diffuse-model.png",
+      "bytes": 44671,
+      "crc32": 3037173404,
+      "sha256": "6cdac44fd296fcfb3974a03fe713fc6ce6aa1781121c5dddd162c02a4f1a81b8"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/surface-evidence/grass_mtrush04-verified-diffuse.png",
+      "bytes": 157642,
+      "crc32": 3614678074,
+      "sha256": "3dbc15fea82ab324ff92562a9bac66435f93539c40b9d8936f9628e8e27636c1"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/surface-evidence/layer-boundary-midsection-contact.png",
+      "bytes": 871623,
+      "crc32": 2371573033,
+      "sha256": "df4cbb0141cd82a1c2bbd33836ca63560eaf2d7154d0669e550b65025148ed15"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/surface-evidence/multilayer-junction-001-native-diffuse-model.png",
+      "bytes": 59570,
+      "crc32": 1946031768,
+      "sha256": "90d3f4e26c50d1d3b952b028dc6422df94aa69cbef83308eb68095f42fe34ffd"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/surface-evidence/multilayer-junction-002-native-diffuse-model.png",
+      "bytes": 32855,
+      "crc32": 1342847489,
+      "sha256": "06620e1f6f581fadeb119bf066c245943b413fceee02c72c2efce13a2ec29f9d"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/surface-evidence/multilayer-junction-003-native-diffuse-model.png",
+      "bytes": 30822,
+      "crc32": 3296467485,
+      "sha256": "b2b0a1ecfe4c6758aba2607b6dad16f8e2d8ab7478773a00b62ee000fd595078"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/surface-evidence/multilayer-junction-004-native-diffuse-model.png",
+      "bytes": 58618,
+      "crc32": 1383291856,
+      "sha256": "0749b29aa0eded63772b61c8ee4c04412cdd737787dc9ea097560566ceb56630"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/surface-evidence/multilayer-junction-005-native-diffuse-model.png",
+      "bytes": 61545,
+      "crc32": 2365635270,
+      "sha256": "59ddbc85da6de7ba82d308c0ef25ac6d20ac0379368023cbb1a9c0cf05ec7134"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/surface-evidence/multilayer-junction-006-native-diffuse-model.png",
+      "bytes": 29016,
+      "crc32": 2752978172,
+      "sha256": "c092493683abac8d82cb3556467ef54eb2fe2dbc85a56b69bc1e58ad340400f5"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/surface-evidence/multilayer-junction-007-native-diffuse-model.png",
+      "bytes": 46164,
+      "crc32": 248613209,
+      "sha256": "833698bdf4f018484138dadb20bc184031cbf0efe17ac06917348379ddaafb3b"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/surface-evidence/multilayer-junction-contact.png",
+      "bytes": 476541,
+      "crc32": 2838158641,
+      "sha256": "cdc0af3fa4f771fdc63dd6b2d1b8a4d3b1d99e322879fdf427477f93f3a4daed"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/surface-evidence/ramp-01-native-diffuse-model.png",
+      "bytes": 51783,
+      "crc32": 3332796512,
+      "sha256": "03f154bcc817d61e28428e5b2e930aa4de50679e2a36eca9d6c5a66e2256f044"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/surface-evidence/ramp-02-native-diffuse-model.png",
+      "bytes": 52215,
+      "crc32": 4186007853,
+      "sha256": "98165192faaeecd01c6d0a14730fa6803dfdc7ccac930455ed7d7baf0f9e353b"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/surface-evidence/ramp-03-native-diffuse-model.png",
+      "bytes": 52384,
+      "crc32": 1625853788,
+      "sha256": "d5439565931a32aa9b461790b843876e7ebf32d1ceb64201ca9c3fc71640d904"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/surface-evidence/ramp-04-native-diffuse-model.png",
+      "bytes": 43361,
+      "crc32": 3958723875,
+      "sha256": "879efc110d011fbc20b8df0007f0cd4caa7515c3f4bc110359ef4c0fba1b766a"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/surface-evidence/ramp-05-native-diffuse-model.png",
+      "bytes": 31458,
+      "crc32": 2891598762,
+      "sha256": "ecc8dd4e31e9ca22c51b917857492415ee14badcbac1d215cb45f7fbc7d70657"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/surface-evidence/ramp-06-native-diffuse-model.png",
+      "bytes": 63725,
+      "crc32": 3558201125,
+      "sha256": "945cf56de83da1756d23b68177053d599248d47f15dcbb7c22d1ba3a9faee61c"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/surface-evidence/ramp-07-native-diffuse-model.png",
+      "bytes": 38398,
+      "crc32": 2382439858,
+      "sha256": "00ced701202fdde77f0fe236df7e89235aad7826bf2b2f7b8a8123ac77dd4e2f"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/surface-evidence/ramp-08-native-diffuse-model.png",
+      "bytes": 27392,
+      "crc32": 3479909682,
+      "sha256": "196bf98bb86937d1c591edd30e6f1308367b57faa7cb1d5463a3ca1ca6e4c412"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/surface-evidence/ramp-09-native-diffuse-model.png",
+      "bytes": 34875,
+      "crc32": 3018436209,
+      "sha256": "550e646ab787ed818f750d783a0b0a3c9d7b0d1fd02939aca612ad42d99f2498"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/surface-evidence/ramp-10-native-diffuse-model.png",
+      "bytes": 67877,
+      "crc32": 2427040622,
+      "sha256": "de0a1e4a0b6ebd351559051022a648677b59beae9be9b05d0f1c3d487f781448"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/surface-evidence/ramp-11-native-diffuse-model.png",
+      "bytes": 55842,
+      "crc32": 1373670181,
+      "sha256": "578d911fa06f3253ca3bfbf0df9a3cec5bdbd745de049ba29f424c38b2c37e48"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/surface-evidence/ramp-12-native-diffuse-model.png",
+      "bytes": 38421,
+      "crc32": 3507822383,
+      "sha256": "49e50bff5e837a7a2a1c01a7bf02715a467d8792852f7f378f30b9ccdd935299"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/surface-evidence/ramp-13-native-diffuse-model.png",
+      "bytes": 38642,
+      "crc32": 1093836216,
+      "sha256": "ae1ae1bec63f9107818fdad6511f174b64f360f6ef14612712b46c67ef479328"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/surface-evidence/ramp-14-native-diffuse-model.png",
+      "bytes": 52517,
+      "crc32": 2718147996,
+      "sha256": "da782882cbe5c68e95d0181ea5b696aafe558fa30b669198e862d586e4d53f1c"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/surface-evidence/ramp-15-native-diffuse-model.png",
+      "bytes": 32324,
+      "crc32": 4022714343,
+      "sha256": "b7a7ac119f6788c69d25ec77b2f71b2d53255db7f7229126f936a1df41a0348d"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/surface-evidence/ramp-16-native-diffuse-model.png",
+      "bytes": 51534,
+      "crc32": 1533574066,
+      "sha256": "aaa368e2109ba913b6fb12276c34b2df5082ff941eb77c0e51e454180fb3842d"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/surface-evidence/ramp-17-native-diffuse-model.png",
+      "bytes": 66155,
+      "crc32": 2551859109,
+      "sha256": "385b74acf5f63257164f08d94ab707eb3adcb1b14b10085919d527a6fbf7a4a4"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/surface-evidence/ramp-18-native-diffuse-model.png",
+      "bytes": 39326,
+      "crc32": 2966234681,
+      "sha256": "c221f48547192b176f08c5f9a27d8c229e7ff97f5eb4e95cb921a5e40449a829"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/surface-evidence/ramp-19-native-diffuse-model.png",
+      "bytes": 39802,
+      "crc32": 2756295215,
+      "sha256": "246f6820e3afcfc7cb7b41c2990731cbc0a29b8c7177c16ba0afd7456caf70a8"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/surface-evidence/ramp-20-native-diffuse-model.png",
+      "bytes": 40562,
+      "crc32": 3471927463,
+      "sha256": "7f727aa0789b48eaf43c4422b92f11671d817a570fe6f8c34a690d8bf99bc832"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/surface-evidence/ramp-21-native-diffuse-model.png",
+      "bytes": 24432,
+      "crc32": 884896299,
+      "sha256": "edc066699fbbb102b635b211e0c8a883d45c41a8d7a05b109ad24825bed4f2d0"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/surface-evidence/ramp-contact.png",
+      "bytes": 1294180,
+      "crc32": 4254979018,
+      "sha256": "df1e1f16de60cf89696ee85c73809d0a4fe75e4a7a78fe47e3917f72c4ef5f7e"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/surface-evidence/shore-waterbody-contact.png",
+      "bytes": 192077,
+      "crc32": 3368768366,
+      "sha256": "9a46ba6b34329f41ee68c9eacec82ee2206f62e5d6e4f422cd84081135f6fa19"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/surface-evidence/surface-composition-manifest.json",
+      "bytes": 23671,
+      "crc32": 3058939890,
+      "sha256": "b620517fba2a87da8ac63bc6151e0a8a74e0a1fde357d7d5cf754e1b3c5ee72f"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/surface-evidence/tdirt_iceland05-verified-diffuse.png",
+      "bytes": 181140,
+      "crc32": 3494786855,
+      "sha256": "b0306e2e072798d7d4ec586f90f1e3cd9cc1aae9686ec4d7635ff4754a7e6117"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/surface-evidence/tdirt_yucatan06-verified-diffuse.png",
+      "bytes": 128768,
+      "crc32": 2314962658,
+      "sha256": "1230381db39d9a60315c5cb63e2e89dcc9a634d67dd37f02e555cb00eba1dccf"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/surface-evidence/terminal-R16-foreign-gravel-native-diffuse-model.png",
+      "bytes": 187982,
+      "crc32": 331164663,
+      "sha256": "7ee131c86067a92b6cd8a667f92d28b94bd8d7fb68b0ef8e3280829a28eb8f38"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/surface-evidence/terminal-R20-foreign-gravel-native-diffuse-model.png",
+      "bytes": 215388,
+      "crc32": 3679713121,
+      "sha256": "bf83268eed4862332131d53a7319f3219ae9a3521f4225329acd564bc4a9d2df"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/surface-evidence/terminal-foreign-R15-499-85-native-diffuse-model.png",
+      "bytes": 157063,
+      "crc32": 3910772916,
+      "sha256": "db75de1528cdfb0766490a8d07b242910a775964f8ed598aff71d1e72a0f2993"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/surface-evidence/terminal-foreign-R15-501-119-native-diffuse-model.png",
+      "bytes": 155381,
+      "crc32": 1058936670,
+      "sha256": "7662fda519ca6243edbc39ce8b5fe18852c40b723e158676debd3a4a6bd9ca02"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/surface-evidence/terminal-foreign-R16-294-281-native-diffuse-model.png",
+      "bytes": 157632,
+      "crc32": 3594387669,
+      "sha256": "5e7c70a2b48037969eba46b8aab269b59aadc8630ed1fcc89ebdda8d2d9e9d2a"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/surface-evidence/terminal-foreign-R16-296-278-native-diffuse-model.png",
+      "bytes": 151386,
+      "crc32": 2270793889,
+      "sha256": "2d4c7ba6402dc458feb2b056a919708109a99823978303e1ecc9d17330fb771f"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/surface-evidence/terminal-foreign-R17-257-499-native-diffuse-model.png",
+      "bytes": 162080,
+      "crc32": 3491923348,
+      "sha256": "58dee7885c94eff6b935421bf35b3930cf71aa1cec3d9c17afd1304d63192b7d"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/surface-evidence/terminal-foreign-R19-569-764-native-diffuse-model.png",
+      "bytes": 158376,
+      "crc32": 4164638653,
+      "sha256": "805eac50814067e299d7f0c7c8d0e82efa86b8090f6cb2e17e40f1f6e2c835ed"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/surface-evidence/terminal-foreign-R19-574-787-native-diffuse-model.png",
+      "bytes": 155897,
+      "crc32": 3353471063,
+      "sha256": "95b1dc19ed4176fa4a3296787dd961930c0807ed23abcbf1837a60a2eb23b832"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/surface-evidence/terminal-foreign-R20-198-230-native-diffuse-model.png",
+      "bytes": 170644,
+      "crc32": 2742578949,
+      "sha256": "6980586a694e0755a192ccf65aee2f9f17502b7cb9a82b66acbc29d52ee151fd"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/surface-evidence/terminal-foreign-R20-230-253-native-diffuse-model.png",
+      "bytes": 157176,
+      "crc32": 3838237294,
+      "sha256": "d94a8c0ec51840aa726401798868438a9f186016798587286cc150305e76e4fe"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/surface-evidence/terminal-foreign-actual-edge-contact.png",
+      "bytes": 1337291,
+      "crc32": 2876993979,
+      "sha256": "f34845cce61f08c354d583605457f1bca459942e134a96009cf23890e346ac6a"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/surface-evidence/terminal-join-contact.png",
+      "bytes": 418989,
+      "crc32": 1848551684,
+      "sha256": "6b763df780c1dd67d2e5be9d1ff8688709267d367e8ac5afb9f415ec3d9916a4"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/surface-evidence/tgrass_capecod05-verified-diffuse.png",
+      "bytes": 122012,
+      "crc32": 1041616357,
+      "sha256": "2627e1da9c1444ab95051443716a62585633096b971a8d78c85b27d2bb74818c"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/surface-evidence/tgrass_geneva01-verified-diffuse.png",
+      "bytes": 142769,
+      "crc32": 994968400,
+      "sha256": "b2a37800d15a7fd62c521d8cc204f70bc390e63ea49900ce5c74bfa96d2c996c"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/surface-evidence/tgrass_newyork01-verified-diffuse.png",
+      "bytes": 139821,
+      "crc32": 3555610928,
+      "sha256": "4f3dc060b0c80898942dd36b34aed50468b9b0a85a6764cec582a7976e670322"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/surface-evidence/tgravel_yucatan01-verified-diffuse.png",
+      "bytes": 168906,
+      "crc32": 4246145337,
+      "sha256": "451453c2d8c49f52012fd15a030becd68bce5fa936a4cb78d4ed7c269b8271c1"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/surface-evidence/treef_yucatan01-verified-diffuse.png",
+      "bytes": 112657,
+      "crc32": 537333500,
+      "sha256": "d7ccb795f62df3d3037c37e8b506506133cac5715b81f812fb7b1c8de6ca028e"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/surface-evidence/treef_yucatan02-verified-diffuse.png",
+      "bytes": 170160,
+      "crc32": 1805081216,
+      "sha256": "12d5a9d71847feecc14f749b65c369a73ebca6aaed8cf0163d5524a53487a235"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/surface-evidence/trock_yucatan01-verified-diffuse.png",
+      "bytes": 127843,
+      "crc32": 3492591773,
+      "sha256": "bf3824123ec69f72944de5700372f1cfe831914837e68566132e11ac2e417299"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/surface-evidence/trock_yucatan03-verified-diffuse.png",
+      "bytes": 169672,
+      "crc32": 1155943554,
+      "sha256": "7a7ffa868c81f2b561663a87fb4dbe58fe50d6adc45d5951abfc56bbaf0260aa"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/surface-evidence/tsand_hawaii02-verified-diffuse.png",
+      "bytes": 90555,
+      "crc32": 353133095,
+      "sha256": "b5447d6116167b32f705acffb1736cac6d1b5a38629dbef3b5f7d5c24346cd60"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/surface-evidence/waterbody-1-native-diffuse-model.png",
+      "bytes": 274249,
+      "crc32": 1504794409,
+      "sha256": "d834d9b6ed666d416fd449d32c3df760edf089adbb66975808fa7ff35cd4812d"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/surface-evidence/waterbody-2-native-diffuse-model.png",
+      "bytes": 45002,
+      "crc32": 1889103808,
+      "sha256": "dae3733fd93befaee712b1395c025d96a280b12722fadeee7c0a6b2ae621837b"
+    },
+    {
+      "path": "terrain-transitions/material/final-d05e5671/tiles.u32",
+      "bytes": 2822400,
+      "crc32": 4205079610,
+      "sha256": "f3b9ff0009bbb741c4bcea397efd712438a668ae71d47aa93000fb784ea8e731"
+    },
+    {
+      "path": "terrain-transitions/material/full-component-mask-feasibility.json",
+      "bytes": 1204615,
+      "crc32": 477840725,
+      "sha256": "926c8af140cb9670538ebd75f49dcf44bcba0ba230f43022c36fafd100d0ee5f"
+    },
+    {
+      "path": "terrain-transitions/material/full-component-prototype-review.json",
+      "bytes": 430711,
+      "crc32": 328216239,
+      "sha256": "2f83d46117769b099263509681609e07cd922eae9b4e18bc041c1969efa09ba0"
+    },
+    {
+      "path": "terrain-transitions/material/full_component_prototype.py",
+      "bytes": 4679,
+      "crc32": 453656219,
+      "sha256": "a2dc8eea1840707c56c75a0c2441ccd19379e397e57fca8671c41b1d4ce9ef05"
+    },
+    {
+      "path": "terrain-transitions/material/join_component_scope.py",
+      "bytes": 2264,
+      "crc32": 3520998958,
+      "sha256": "4c2070c4ab1615fe69716754c38dfc12929935ec2c9144c31c04bf3d958670a2"
+    },
+    {
+      "path": "terrain-transitions/material/material-native.json",
+      "bytes": 536711,
+      "crc32": 859345443,
+      "sha256": "c4d8ec9377590a4fc87ed909b80e0fe14db31547852dc11b77332f2fbd888c90"
+    },
+    {
+      "path": "terrain-transitions/material/material-transition-review.json",
+      "bytes": 1336982,
+      "crc32": 1196170040,
+      "sha256": "6c0e236529f2a4b8027340349a0bd92ab823b3061498f2ceaf571c999a1cf974"
+    },
+    {
+      "path": "terrain-transitions/material/material_review.py",
+      "bytes": 9877,
+      "crc32": 557454708,
+      "sha256": "740402c532409d6617a82cd567f624b517698f7d4abf7fc85a54205d609f8da6"
+    },
+    {
+      "path": "terrain-transitions/material/other_ramps_diffuse_review.py",
+      "bytes": 4430,
+      "crc32": 762141707,
+      "sha256": "f48f7c446d1f802e8143e69d5dcb3a292f7ae3ea44d9149dbefa9a1031cf0398"
+    },
+    {
+      "path": "terrain-transitions/material/prototype-all-confirmed/blend.u32",
+      "bytes": 2822400,
+      "crc32": 433526152,
+      "sha256": "458fa9744ba52eb7d2ca492dc741c089ec8e08d7c133a142f7f7e5486ce6d7f8"
+    },
+    {
+      "path": "terrain-transitions/material/prototype-all-confirmed/blend2.u32",
+      "bytes": 2822400,
+      "crc32": 3687898581,
+      "sha256": "4d5dfececf9ba311f7dce724f3e5f00f9d05c24c267d4f94905ce0be10c7ebee"
+    },
+    {
+      "path": "terrain-transitions/material/prototype-all-confirmed/cliff.u32",
+      "bytes": 2822400,
+      "crc32": 3687898581,
+      "sha256": "4d5dfececf9ba311f7dce724f3e5f00f9d05c24c267d4f94905ce0be10c7ebee"
+    },
+    {
+      "path": "terrain-transitions/material/prototype-all-confirmed/material-native.json",
+      "bytes": 596381,
+      "crc32": 138971983,
+      "sha256": "987d59bed7d98ad2c68e4169086d4b3f6af5d6b74d15454507d56c03a82278d4"
+    },
+    {
+      "path": "terrain-transitions/material/prototype-all-confirmed/tiles.u32",
+      "bytes": 2822400,
+      "crc32": 4205079610,
+      "sha256": "f3b9ff0009bbb741c4bcea397efd712438a668ae71d47aa93000fb784ea8e731"
+    },
+    {
+      "path": "terrain-transitions/material/ramp-15-pair-1-10-edge-strip-native-diffuse-unlit.png",
+      "bytes": 5276,
+      "crc32": 242078624,
+      "sha256": "9c60aecebfb18c4df9f108c76a796084d76e378ef58156e094e10d9126f04fdd"
+    },
+    {
+      "path": "terrain-transitions/material/ramp-15-pair-1-10-native-diffuse-unlit.png",
+      "bytes": 5276,
+      "crc32": 242078624,
+      "sha256": "9c60aecebfb18c4df9f108c76a796084d76e378ef58156e094e10d9126f04fdd"
+    },
+    {
+      "path": "terrain-transitions/material/ramp-15-pair-1-9-edge-strip-native-diffuse-unlit.png",
+      "bytes": 5092,
+      "crc32": 2293474700,
+      "sha256": "66b59b3584f6ba188f6d36332fb864e6f416894480c02220371d8cf845e3894a"
+    },
+    {
+      "path": "terrain-transitions/material/ramp-15-pair-1-9-native-diffuse-unlit.png",
+      "bytes": 338989,
+      "crc32": 2123028836,
+      "sha256": "8ab02241f48f8763f43c46f192e3d203d17504408fb85407bba8abdb28faa245"
+    },
+    {
+      "path": "terrain-transitions/material/ramp-16-pair-0-9-edge-strip-native-diffuse-unlit.png",
+      "bytes": 5007,
+      "crc32": 1550145707,
+      "sha256": "02e526a87751460ca7c4b1c52ba09fe8ca3aa24e5d46570be6da74d132eb40c3"
+    },
+    {
+      "path": "terrain-transitions/material/ramp-16-pair-0-9-native-diffuse-unlit.png",
+      "bytes": 5007,
+      "crc32": 1550145707,
+      "sha256": "02e526a87751460ca7c4b1c52ba09fe8ca3aa24e5d46570be6da74d132eb40c3"
+    },
+    {
+      "path": "terrain-transitions/material/ramp-16-pair-1-9-edge-strip-native-diffuse-unlit.png",
+      "bytes": 5072,
+      "crc32": 3000451567,
+      "sha256": "2e9e997d05a4d0f8bad6a3300b3fb5e93d234d9c47ff1033424d8aabbbb3f092"
+    },
+    {
+      "path": "terrain-transitions/material/ramp-16-pair-1-9-native-diffuse-unlit.png",
+      "bytes": 336407,
+      "crc32": 398088736,
+      "sha256": "f7593e5e426bf9fb231af1661a5d0434a5bf3fcf8dbeef79f1f36237b13eb13c"
+    },
+    {
+      "path": "terrain-transitions/material/ramp-17-pair-0-1-edge-strip-native-diffuse-unlit.png",
+      "bytes": 4936,
+      "crc32": 610206911,
+      "sha256": "5062d3f6c8f2b2c3949cb7d9ec48fa1d9ff1937296ba861805465a86465dbd78"
+    },
+    {
+      "path": "terrain-transitions/material/ramp-17-pair-0-1-native-diffuse-unlit.png",
+      "bytes": 326030,
+      "crc32": 5830623,
+      "sha256": "6df6511e563526e23d2452e950859bd6e812b1499b95ef97795f8d6c0cb5456e"
+    },
+    {
+      "path": "terrain-transitions/material/ramp-17-pair-0-11-edge-strip-native-diffuse-unlit.png",
+      "bytes": 5701,
+      "crc32": 2847758154,
+      "sha256": "6e827222666a29c7aaedbb4a6b26615b81c6f534356c61408a04c59805b1e5fa"
+    },
+    {
+      "path": "terrain-transitions/material/ramp-17-pair-0-11-native-diffuse-unlit.png",
+      "bytes": 5701,
+      "crc32": 2847758154,
+      "sha256": "6e827222666a29c7aaedbb4a6b26615b81c6f534356c61408a04c59805b1e5fa"
+    },
+    {
+      "path": "terrain-transitions/material/ramp-18-pair-0-1-edge-strip-native-diffuse-unlit.png",
+      "bytes": 4983,
+      "crc32": 248655396,
+      "sha256": "12b6d7114c3616600e03d7672abead8eb6713a4d709edc2edc0bde45125f9076"
+    },
+    {
+      "path": "terrain-transitions/material/ramp-18-pair-0-1-native-diffuse-unlit.png",
+      "bytes": 319827,
+      "crc32": 2529052403,
+      "sha256": "c833afc1a8cb37e13e27c6df9ae1abc6a3902cf7252bda0d12fde33887a972eb"
+    },
+    {
+      "path": "terrain-transitions/material/ramp-18-pair-1-9-edge-strip-native-diffuse-unlit.png",
+      "bytes": 5118,
+      "crc32": 195376331,
+      "sha256": "3d5ce539cb19526ce96578f024362dc28e80c946a79a9ed85bc2890b4d0c9210"
+    },
+    {
+      "path": "terrain-transitions/material/ramp-18-pair-1-9-native-diffuse-unlit.png",
+      "bytes": 339319,
+      "crc32": 313366925,
+      "sha256": "cda6cb43725f9276742b4db0f424f063f04c466f9a439754c2d0ff83fdf4c458"
+    },
+    {
+      "path": "terrain-transitions/material/ramp-19-pair-1-10-edge-strip-native-diffuse-unlit.png",
+      "bytes": 5225,
+      "crc32": 4114301872,
+      "sha256": "ac9771aa0ffbd9b8744b4ac7c213714403be3c28e23d2197c579472931af909e"
+    },
+    {
+      "path": "terrain-transitions/material/ramp-19-pair-1-10-native-diffuse-unlit.png",
+      "bytes": 5225,
+      "crc32": 4114301872,
+      "sha256": "ac9771aa0ffbd9b8744b4ac7c213714403be3c28e23d2197c579472931af909e"
+    },
+    {
+      "path": "terrain-transitions/material/ramp-19-pair-1-9-edge-strip-native-diffuse-unlit.png",
+      "bytes": 5132,
+      "crc32": 3115052113,
+      "sha256": "2ca5dc490313515eb215c604e74d9b7f001324220ef7cd433e15c4d313cad122"
+    },
+    {
+      "path": "terrain-transitions/material/ramp-19-pair-1-9-native-diffuse-unlit.png",
+      "bytes": 330689,
+      "crc32": 1087486538,
+      "sha256": "2b0500fae8818684f655b0e39b31cdafff76d7634fbe03b7c93102785f7ab516"
+    },
+    {
+      "path": "terrain-transitions/material/ramp-20-pair-0-1-edge-strip-native-diffuse-unlit.png",
+      "bytes": 4926,
+      "crc32": 1336948848,
+      "sha256": "dae1f76302fc302e36b30adaf76980b81f97b6766873e02903c9af7a9c5905cd"
+    },
+    {
+      "path": "terrain-transitions/material/ramp-20-pair-0-1-native-diffuse-unlit.png",
+      "bytes": 321085,
+      "crc32": 757308139,
+      "sha256": "25d01b60630d95397b08bd528ae04da3e4a6ef0d430d6ab734ed573df07de4f1"
+    },
+    {
+      "path": "terrain-transitions/material/ramp-20-pair-0-11-edge-strip-native-diffuse-unlit.png",
+      "bytes": 5631,
+      "crc32": 220161143,
+      "sha256": "423b146dfd4f8b04c37460323bc83565842a82f0044e1cf4e29a56edfa83024e"
+    },
+    {
+      "path": "terrain-transitions/material/ramp-20-pair-0-11-native-diffuse-unlit.png",
+      "bytes": 5631,
+      "crc32": 220161143,
+      "sha256": "423b146dfd4f8b04c37460323bc83565842a82f0044e1cf4e29a56edfa83024e"
+    },
+    {
+      "path": "terrain-transitions/material/ramp-material-fields-contact.png",
+      "bytes": 38535,
+      "crc32": 3560316740,
+      "sha256": "452709145e62598e67eeecd69cd6655ac7aeeec8a644ad4705885d00e9610f06"
+    },
+    {
+      "path": "terrain-transitions/material/ramp21-blend-descriptions.after.bin",
+      "bytes": 46926,
+      "crc32": 2100792553,
+      "sha256": "84109604e0d95af14655552d1397803c986c29f25f1c1242631a57dbb9fd118f"
+    },
+    {
+      "path": "terrain-transitions/material/ramp21-blend.after.u32",
+      "bytes": 2822400,
+      "crc32": 726803914,
+      "sha256": "b69a86848f0a353a2b0d0aa3faaa8db7ad97716832cd829c225721174c9501bf"
+    },
+    {
+      "path": "terrain-transitions/material/ramp21-diffuse-after-opensage-model.png",
+      "bytes": 826293,
+      "crc32": 1843241749,
+      "sha256": "c8f973bd2d3662814c45d493cf81a2f70662505e22b740bb755e2d863e891125"
+    },
+    {
+      "path": "terrain-transitions/material/ramp21-diffuse-before-after.png",
+      "bytes": 884621,
+      "crc32": 3076333592,
+      "sha256": "8cf145f7ae0152498be8ad3f2172a52eddb91a581fb4a4350396ea26c66042db"
+    },
+    {
+      "path": "terrain-transitions/material/ramp21-diffuse-before.png",
+      "bytes": 804434,
+      "crc32": 1013433278,
+      "sha256": "c65617d4a9cf000b29fc01ae6960873c88d1aabb66132ee1e9733381bda09ac3"
+    },
+    {
+      "path": "terrain-transitions/material/ramp21-diffuse-review.json",
+      "bytes": 5927,
+      "crc32": 1195709127,
+      "sha256": "64da26f3714f6c3017e10f4b06ec01aa945f4cda0a58ee29423ebf28e4365070"
+    },
+    {
+      "path": "terrain-transitions/material/ramp21-material-fields.svg",
+      "bytes": 90514,
+      "crc32": 1983157020,
+      "sha256": "6a682695c2bc24360edbc39d696daeaeb2643f1444094f07a381b55af5cd6db5"
+    },
+    {
+      "path": "terrain-transitions/material/ramp21-minimal-blend-plan.json",
+      "bytes": 20397,
+      "crc32": 2697043426,
+      "sha256": "11e7e66986a40836256df18dd144169cf2b238937f372f798227a03e2f5909b1"
+    },
+    {
+      "path": "terrain-transitions/material/ramp21-native-diffuse-unlit.png",
+      "bytes": 659763,
+      "crc32": 149857679,
+      "sha256": "2a3c4ae98e8d7b9ad23b6a3d3272e5b77359141701fef1492aed852759ad56bb"
+    },
+    {
+      "path": "terrain-transitions/material/ramp21_blend_prototype.py",
+      "bytes": 8024,
+      "crc32": 2975205374,
+      "sha256": "60d122babecf048a30f965cd5db360e20ce48aa4ed3b32ed3c656ce4f6ad7b91"
+    },
+    {
+      "path": "terrain-transitions/material/ramps15-20-actual-diffuse-contact.png",
+      "bytes": 2000450,
+      "crc32": 2422244704,
+      "sha256": "4f9fefe91ac536249325996f38f467fe61de8f6693639281a373a47b3d64e6f8"
+    },
+    {
+      "path": "terrain-transitions/material/ramps15-20-actual-diffuse-review.json",
+      "bytes": 9233,
+      "crc32": 3230169467,
+      "sha256": "0a2635118388d3eb324f9f95fda1bfae2fb5d2d014357ef86c72a3ffdc0fb179"
+    },
+    {
+      "path": "terrain-transitions/material/ramps15-20-all-pairs-diffuse-contact.png",
+      "bytes": 59815,
+      "crc32": 1014168875,
+      "sha256": "f878b577a47a247caf5d02e662338ee8ceadd0cc13f10fd86776ad7fd086a437"
+    },
+    {
+      "path": "terrain-transitions/material/ramps15-20-all-pairs-diffuse-review.json",
+      "bytes": 14285,
+      "crc32": 3374906192,
+      "sha256": "136a9f2ab567ee10fd6e7deb9b74e434115789c1488b0acb345153ac3e4f9c1c"
+    },
+    {
+      "path": "terrain-transitions/material/render_native_surface.py",
+      "bytes": 7164,
+      "crc32": 866369335,
+      "sha256": "d7473cc0ac88134fc7e211628925acfd393d6301f5515306a15c55529b4f95b7"
+    },
+    {
+      "path": "terrain-transitions/material/reviewed-component-seeds.json",
+      "bytes": 12351,
+      "crc32": 2176430297,
+      "sha256": "5c232fa5db9c5985513253cf91af3dc685c4b3fb61a7b133e8ccf6b10e7fd840"
+    },
+    {
+      "path": "terrain-transitions/material/surface-evidence/R17-core-gravel-corner-native-diffuse-model.png",
+      "bytes": 156762,
+      "crc32": 2126133937,
+      "sha256": "dc40d67d9da43dba54b146f3ef9d8c5cb57974e2077e5f019abc842964d7916c"
+    },
+    {
+      "path": "terrain-transitions/material/surface-evidence/boundary-001-native-diffuse-model.png",
+      "bytes": 35174,
+      "crc32": 2781037352,
+      "sha256": "bb380df560650a66d5f3242ba255fbdeac4b01489ebd1a10f1cab4b9ed44fc49"
+    },
+    {
+      "path": "terrain-transitions/material/surface-evidence/boundary-002-native-diffuse-model.png",
+      "bytes": 36058,
+      "crc32": 2490900034,
+      "sha256": "499c8656522057e871b3724d01ecdcf713006e1837f39ea5a0a4dbe5ed4f5342"
+    },
+    {
+      "path": "terrain-transitions/material/surface-evidence/boundary-003-native-diffuse-model.png",
+      "bytes": 39871,
+      "crc32": 450922393,
+      "sha256": "dab2883fd2725ea0377882d062ea0c3aa6d8b8bb10e31c1c13d14b61b6de95ce"
+    },
+    {
+      "path": "terrain-transitions/material/surface-evidence/boundary-004-native-diffuse-model.png",
+      "bytes": 42227,
+      "crc32": 2866898728,
+      "sha256": "e42a9b1e98d94efd480265b8333f92334d5a15dd5541ff35bd95da453d186f2c"
+    },
+    {
+      "path": "terrain-transitions/material/surface-evidence/boundary-005-native-diffuse-model.png",
+      "bytes": 43059,
+      "crc32": 3929689838,
+      "sha256": "435c9ecf94d49bc94eee867cc4d51f9f0eb37ff67a7825a9e1f014b281c2adf3"
+    },
+    {
+      "path": "terrain-transitions/material/surface-evidence/boundary-006-native-diffuse-model.png",
+      "bytes": 20159,
+      "crc32": 3144502788,
+      "sha256": "fb64b673940b90d0ad5df6125b1439ff19fd419998644d29d02f99be4adc8a1c"
+    },
+    {
+      "path": "terrain-transitions/material/surface-evidence/boundary-007-native-diffuse-model.png",
+      "bytes": 19007,
+      "crc32": 3863415337,
+      "sha256": "039911190522f0d6cd2479a5a8d9f5f832a47f83cd8de11719ec4d3a03239bed"
+    },
+    {
+      "path": "terrain-transitions/material/surface-evidence/boundary-008-native-diffuse-model.png",
+      "bytes": 28268,
+      "crc32": 2827451196,
+      "sha256": "f55e1de6a0fd22d883f1b1d7d079175391532e663c5d680cc5129ce6a59c9f95"
+    },
+    {
+      "path": "terrain-transitions/material/surface-evidence/boundary-009-native-diffuse-model.png",
+      "bytes": 36709,
+      "crc32": 3837330411,
+      "sha256": "1110b124319260d054a6555c133ab8e298bf3b2ec4236b1bc888280a048c67a2"
+    },
+    {
+      "path": "terrain-transitions/material/surface-evidence/boundary-010-native-diffuse-model.png",
+      "bytes": 24979,
+      "crc32": 3583043494,
+      "sha256": "687557e6c781ba0837e4dae29e145dff254017e04b3059bef47617fd4644e444"
+    },
+    {
+      "path": "terrain-transitions/material/surface-evidence/boundary-011-native-diffuse-model.png",
+      "bytes": 34259,
+      "crc32": 2694257027,
+      "sha256": "dbdbedb7effd06ed41c7f06c74c7cc118417db88ec350aee6c87b1562adcc105"
+    },
+    {
+      "path": "terrain-transitions/material/surface-evidence/boundary-012-native-diffuse-model.png",
+      "bytes": 25246,
+      "crc32": 654799382,
+      "sha256": "51ec7fe9620bae622655d59803b99d4af177bcd88321939e096a592136e2d74b"
+    },
+    {
+      "path": "terrain-transitions/material/surface-evidence/boundary-013-native-diffuse-model.png",
+      "bytes": 37035,
+      "crc32": 227940234,
+      "sha256": "d8b01687ff19cfac908f289e31020572ec4d814fd4512820762700cbd0eb3dcc"
+    },
+    {
+      "path": "terrain-transitions/material/surface-evidence/boundary-014-native-diffuse-model.png",
+      "bytes": 35604,
+      "crc32": 1917028456,
+      "sha256": "88117273783d5f55733913c91b942c0419ccc2dc72055f284fef4311d23d662b"
+    },
+    {
+      "path": "terrain-transitions/material/surface-evidence/boundary-015-native-diffuse-model.png",
+      "bytes": 39729,
+      "crc32": 2713569845,
+      "sha256": "db4a54eb2aac5636e158e683eb3d2f65710dfc769b90b87b7dfe8ee02de7247b"
+    },
+    {
+      "path": "terrain-transitions/material/surface-evidence/boundary-016-native-diffuse-model.png",
+      "bytes": 20126,
+      "crc32": 2547123089,
+      "sha256": "2054edcc0502962750c3ac9ffa0c7e5632110881e9789db58282895b1c291516"
+    },
+    {
+      "path": "terrain-transitions/material/surface-evidence/boundary-017-native-diffuse-model.png",
+      "bytes": 19650,
+      "crc32": 2853672927,
+      "sha256": "301aaf42f0969359abb8dc9675974909383e2e26339cdd6146343506245b446c"
+    },
+    {
+      "path": "terrain-transitions/material/surface-evidence/boundary-018-native-diffuse-model.png",
+      "bytes": 44671,
+      "crc32": 3037173404,
+      "sha256": "6cdac44fd296fcfb3974a03fe713fc6ce6aa1781121c5dddd162c02a4f1a81b8"
+    },
+    {
+      "path": "terrain-transitions/material/surface-evidence/grass_mtrush04-verified-diffuse.png",
+      "bytes": 157642,
+      "crc32": 3614678074,
+      "sha256": "3dbc15fea82ab324ff92562a9bac66435f93539c40b9d8936f9628e8e27636c1"
+    },
+    {
+      "path": "terrain-transitions/material/surface-evidence/layer-boundary-midsection-contact.png",
+      "bytes": 868174,
+      "crc32": 2564064384,
+      "sha256": "852df78087d40ccba80e5254f008120d37580cc1285c2f48bf5d5283bd109f4d"
+    },
+    {
+      "path": "terrain-transitions/material/surface-evidence/multilayer-junction-001-native-diffuse-model.png",
+      "bytes": 59570,
+      "crc32": 1946031768,
+      "sha256": "90d3f4e26c50d1d3b952b028dc6422df94aa69cbef83308eb68095f42fe34ffd"
+    },
+    {
+      "path": "terrain-transitions/material/surface-evidence/multilayer-junction-002-native-diffuse-model.png",
+      "bytes": 32855,
+      "crc32": 1342847489,
+      "sha256": "06620e1f6f581fadeb119bf066c245943b413fceee02c72c2efce13a2ec29f9d"
+    },
+    {
+      "path": "terrain-transitions/material/surface-evidence/multilayer-junction-003-native-diffuse-model.png",
+      "bytes": 30822,
+      "crc32": 3296467485,
+      "sha256": "b2b0a1ecfe4c6758aba2607b6dad16f8e2d8ab7478773a00b62ee000fd595078"
+    },
+    {
+      "path": "terrain-transitions/material/surface-evidence/multilayer-junction-004-native-diffuse-model.png",
+      "bytes": 58618,
+      "crc32": 1383291856,
+      "sha256": "0749b29aa0eded63772b61c8ee4c04412cdd737787dc9ea097560566ceb56630"
+    },
+    {
+      "path": "terrain-transitions/material/surface-evidence/multilayer-junction-005-native-diffuse-model.png",
+      "bytes": 61545,
+      "crc32": 2365635270,
+      "sha256": "59ddbc85da6de7ba82d308c0ef25ac6d20ac0379368023cbb1a9c0cf05ec7134"
+    },
+    {
+      "path": "terrain-transitions/material/surface-evidence/multilayer-junction-006-native-diffuse-model.png",
+      "bytes": 27357,
+      "crc32": 3906680097,
+      "sha256": "04538455543faa16fe3c706dc04bd1d372a4f05184203a910c680543db1a75b7"
+    },
+    {
+      "path": "terrain-transitions/material/surface-evidence/multilayer-junction-007-native-diffuse-model.png",
+      "bytes": 43847,
+      "crc32": 137728734,
+      "sha256": "d089aa74862682c592cd8f54070adeb7526e2db239412a040d036dc0a938051d"
+    },
+    {
+      "path": "terrain-transitions/material/surface-evidence/multilayer-junction-contact.png",
+      "bytes": 473866,
+      "crc32": 3648903223,
+      "sha256": "de3f1ef0db84b3509fa6c7bd7d5f97821346d6ad9df9ab5237db26f147d9fa4b"
+    },
+    {
+      "path": "terrain-transitions/material/surface-evidence/ramp-01-native-diffuse-model.png",
+      "bytes": 51783,
+      "crc32": 3332796512,
+      "sha256": "03f154bcc817d61e28428e5b2e930aa4de50679e2a36eca9d6c5a66e2256f044"
+    },
+    {
+      "path": "terrain-transitions/material/surface-evidence/ramp-02-native-diffuse-model.png",
+      "bytes": 52215,
+      "crc32": 4186007853,
+      "sha256": "98165192faaeecd01c6d0a14730fa6803dfdc7ccac930455ed7d7baf0f9e353b"
+    },
+    {
+      "path": "terrain-transitions/material/surface-evidence/ramp-03-native-diffuse-model.png",
+      "bytes": 52384,
+      "crc32": 1625853788,
+      "sha256": "d5439565931a32aa9b461790b843876e7ebf32d1ceb64201ca9c3fc71640d904"
+    },
+    {
+      "path": "terrain-transitions/material/surface-evidence/ramp-04-native-diffuse-model.png",
+      "bytes": 43361,
+      "crc32": 3958723875,
+      "sha256": "879efc110d011fbc20b8df0007f0cd4caa7515c3f4bc110359ef4c0fba1b766a"
+    },
+    {
+      "path": "terrain-transitions/material/surface-evidence/ramp-05-native-diffuse-model.png",
+      "bytes": 31458,
+      "crc32": 2891598762,
+      "sha256": "ecc8dd4e31e9ca22c51b917857492415ee14badcbac1d215cb45f7fbc7d70657"
+    },
+    {
+      "path": "terrain-transitions/material/surface-evidence/ramp-06-native-diffuse-model.png",
+      "bytes": 63725,
+      "crc32": 3558201125,
+      "sha256": "945cf56de83da1756d23b68177053d599248d47f15dcbb7c22d1ba3a9faee61c"
+    },
+    {
+      "path": "terrain-transitions/material/surface-evidence/ramp-07-native-diffuse-model.png",
+      "bytes": 38398,
+      "crc32": 2382439858,
+      "sha256": "00ced701202fdde77f0fe236df7e89235aad7826bf2b2f7b8a8123ac77dd4e2f"
+    },
+    {
+      "path": "terrain-transitions/material/surface-evidence/ramp-08-native-diffuse-model.png",
+      "bytes": 27024,
+      "crc32": 755947997,
+      "sha256": "8469cbfc0e9695e44f1082469a8c50c991799f4254a22e07ca4c41a413e1d958"
+    },
+    {
+      "path": "terrain-transitions/material/surface-evidence/ramp-09-native-diffuse-model.png",
+      "bytes": 34756,
+      "crc32": 1097810889,
+      "sha256": "01679e7cf91adc7adf6d0eaef073d99d3ba67704f1b74d40c7ad4e5ebec72d31"
+    },
+    {
+      "path": "terrain-transitions/material/surface-evidence/ramp-10-native-diffuse-model.png",
+      "bytes": 67877,
+      "crc32": 2427040622,
+      "sha256": "de0a1e4a0b6ebd351559051022a648677b59beae9be9b05d0f1c3d487f781448"
+    },
+    {
+      "path": "terrain-transitions/material/surface-evidence/ramp-11-native-diffuse-model.png",
+      "bytes": 55842,
+      "crc32": 1373670181,
+      "sha256": "578d911fa06f3253ca3bfbf0df9a3cec5bdbd745de049ba29f424c38b2c37e48"
+    },
+    {
+      "path": "terrain-transitions/material/surface-evidence/ramp-12-native-diffuse-model.png",
+      "bytes": 38421,
+      "crc32": 3507822383,
+      "sha256": "49e50bff5e837a7a2a1c01a7bf02715a467d8792852f7f378f30b9ccdd935299"
+    },
+    {
+      "path": "terrain-transitions/material/surface-evidence/ramp-13-native-diffuse-model.png",
+      "bytes": 38642,
+      "crc32": 1093836216,
+      "sha256": "ae1ae1bec63f9107818fdad6511f174b64f360f6ef14612712b46c67ef479328"
+    },
+    {
+      "path": "terrain-transitions/material/surface-evidence/ramp-14-native-diffuse-model.png",
+      "bytes": 52517,
+      "crc32": 2718147996,
+      "sha256": "da782882cbe5c68e95d0181ea5b696aafe558fa30b669198e862d586e4d53f1c"
+    },
+    {
+      "path": "terrain-transitions/material/surface-evidence/ramp-15-native-diffuse-model.png",
+      "bytes": 29903,
+      "crc32": 2595498691,
+      "sha256": "e3df99a6c0b2464991015d984c6b906bca2e535c394afd70659118360caf619b"
+    },
+    {
+      "path": "terrain-transitions/material/surface-evidence/ramp-16-native-diffuse-model.png",
+      "bytes": 49876,
+      "crc32": 4003804368,
+      "sha256": "309e795242f438e2efc580bd594c3373eed3776d6854e30a14de347e73179915"
+    },
+    {
+      "path": "terrain-transitions/material/surface-evidence/ramp-17-native-diffuse-model.png",
+      "bytes": 65104,
+      "crc32": 3646538861,
+      "sha256": "ab687d7d16886ca5c523738bcb9780494ab3283c2f4b1dfaecc887bbdcbde5a0"
+    },
+    {
+      "path": "terrain-transitions/material/surface-evidence/ramp-18-native-diffuse-model.png",
+      "bytes": 37212,
+      "crc32": 2976595108,
+      "sha256": "66d041f069a50876068c5d82cb4259376fdffd8887d012e2fd6e94446699facd"
+    },
+    {
+      "path": "terrain-transitions/material/surface-evidence/ramp-19-native-diffuse-model.png",
+      "bytes": 35742,
+      "crc32": 2023087713,
+      "sha256": "5faf456e033b2734940ecc748910a5b45dbd74544ccf1679753d81f7941c051a"
+    },
+    {
+      "path": "terrain-transitions/material/surface-evidence/ramp-20-native-diffuse-model.png",
+      "bytes": 39434,
+      "crc32": 3188208092,
+      "sha256": "5f3dd0bac8ab4452b3b552920ea7ad07d548407be425842d4f4f7208feb9dd02"
+    },
+    {
+      "path": "terrain-transitions/material/surface-evidence/ramp-21-native-diffuse-model.png",
+      "bytes": 23583,
+      "crc32": 634570896,
+      "sha256": "3ff8f770a4bb4e227b59bd5a9a7ec12b3295247e00e4c0074f83254e42589e16"
+    },
+    {
+      "path": "terrain-transitions/material/surface-evidence/ramp-contact.png",
+      "bytes": 1283157,
+      "crc32": 2504013486,
+      "sha256": "4e7bb96301cc37dcb9d4cfb199f9ca9b126899480e9235aa723ccd2cc0b47e7a"
+    },
+    {
+      "path": "terrain-transitions/material/surface-evidence/shore-waterbody-contact.png",
+      "bytes": 192077,
+      "crc32": 3368768366,
+      "sha256": "9a46ba6b34329f41ee68c9eacec82ee2206f62e5d6e4f422cd84081135f6fa19"
+    },
+    {
+      "path": "terrain-transitions/material/surface-evidence/surface-composition-manifest.json",
+      "bytes": 20725,
+      "crc32": 465014974,
+      "sha256": "389ee9342f976a38028dee121205f7eb7a18770ba628bef21d9c77f2f07d10be"
+    },
+    {
+      "path": "terrain-transitions/material/surface-evidence/tdirt_iceland05-verified-diffuse.png",
+      "bytes": 181140,
+      "crc32": 3494786855,
+      "sha256": "b0306e2e072798d7d4ec586f90f1e3cd9cc1aae9686ec4d7635ff4754a7e6117"
+    },
+    {
+      "path": "terrain-transitions/material/surface-evidence/tdirt_yucatan06-verified-diffuse.png",
+      "bytes": 128768,
+      "crc32": 2314962658,
+      "sha256": "1230381db39d9a60315c5cb63e2e89dcc9a634d67dd37f02e555cb00eba1dccf"
+    },
+    {
+      "path": "terrain-transitions/material/surface-evidence/terminal-R16-foreign-gravel-native-diffuse-model.png",
+      "bytes": 188418,
+      "crc32": 1425996240,
+      "sha256": "9b3b934c3c4fec016fc068a2bb1f678c136469d9b718d1fb80fb29d1387fd452"
+    },
+    {
+      "path": "terrain-transitions/material/surface-evidence/terminal-R20-foreign-gravel-native-diffuse-model.png",
+      "bytes": 214547,
+      "crc32": 287807010,
+      "sha256": "2db0780811010081311af964ca732d61c992c3a93c4d725cb7d6e7e2fbc9a27a"
+    },
+    {
+      "path": "terrain-transitions/material/surface-evidence/terminal-join-contact.png",
+      "bytes": 415228,
+      "crc32": 2458546007,
+      "sha256": "20c1aeaa9e1299e85fa6df73fa93075015a0ab030eb5d04dd52ff3e2e7700f60"
+    },
+    {
+      "path": "terrain-transitions/material/surface-evidence/tgrass_capecod05-verified-diffuse.png",
+      "bytes": 122012,
+      "crc32": 1041616357,
+      "sha256": "2627e1da9c1444ab95051443716a62585633096b971a8d78c85b27d2bb74818c"
+    },
+    {
+      "path": "terrain-transitions/material/surface-evidence/tgrass_geneva01-verified-diffuse.png",
+      "bytes": 142769,
+      "crc32": 994968400,
+      "sha256": "b2a37800d15a7fd62c521d8cc204f70bc390e63ea49900ce5c74bfa96d2c996c"
+    },
+    {
+      "path": "terrain-transitions/material/surface-evidence/tgrass_newyork01-verified-diffuse.png",
+      "bytes": 139821,
+      "crc32": 3555610928,
+      "sha256": "4f3dc060b0c80898942dd36b34aed50468b9b0a85a6764cec582a7976e670322"
+    },
+    {
+      "path": "terrain-transitions/material/surface-evidence/tgravel_yucatan01-verified-diffuse.png",
+      "bytes": 168906,
+      "crc32": 4246145337,
+      "sha256": "451453c2d8c49f52012fd15a030becd68bce5fa936a4cb78d4ed7c269b8271c1"
+    },
+    {
+      "path": "terrain-transitions/material/surface-evidence/treef_yucatan01-verified-diffuse.png",
+      "bytes": 112657,
+      "crc32": 537333500,
+      "sha256": "d7ccb795f62df3d3037c37e8b506506133cac5715b81f812fb7b1c8de6ca028e"
+    },
+    {
+      "path": "terrain-transitions/material/surface-evidence/treef_yucatan02-verified-diffuse.png",
+      "bytes": 170160,
+      "crc32": 1805081216,
+      "sha256": "12d5a9d71847feecc14f749b65c369a73ebca6aaed8cf0163d5524a53487a235"
+    },
+    {
+      "path": "terrain-transitions/material/surface-evidence/trock_yucatan01-verified-diffuse.png",
+      "bytes": 127843,
+      "crc32": 3492591773,
+      "sha256": "bf3824123ec69f72944de5700372f1cfe831914837e68566132e11ac2e417299"
+    },
+    {
+      "path": "terrain-transitions/material/surface-evidence/trock_yucatan03-verified-diffuse.png",
+      "bytes": 169672,
+      "crc32": 1155943554,
+      "sha256": "7a7ffa868c81f2b561663a87fb4dbe58fe50d6adc45d5951abfc56bbaf0260aa"
+    },
+    {
+      "path": "terrain-transitions/material/surface-evidence/tsand_hawaii02-verified-diffuse.png",
+      "bytes": 90555,
+      "crc32": 353133095,
+      "sha256": "b5447d6116167b32f705acffb1736cac6d1b5a38629dbef3b5f7d5c24346cd60"
+    },
+    {
+      "path": "terrain-transitions/material/surface-evidence/waterbody-1-native-diffuse-model.png",
+      "bytes": 274249,
+      "crc32": 1504794409,
+      "sha256": "d834d9b6ed666d416fd449d32c3df760edf089adbb66975808fa7ff35cd4812d"
+    },
+    {
+      "path": "terrain-transitions/material/surface-evidence/waterbody-2-native-diffuse-model.png",
+      "bytes": 45002,
+      "crc32": 1889103808,
+      "sha256": "dae3733fd93befaee712b1395c025d96a280b12722fadeee7c0a6b2ae621837b"
+    },
+    {
+      "path": "terrain-transitions/material/terminal-after-prototype/R17-core-gravel-corner-native-diffuse-model.png",
+      "bytes": 162311,
+      "crc32": 3710224108,
+      "sha256": "a58bdb65539cabb64a7a87e37d678c1b4ef08a8c691481af22118cde0b07e7e6"
+    },
+    {
+      "path": "terrain-transitions/material/terminal-after-prototype/grass_mtrush04-verified-diffuse.png",
+      "bytes": 157642,
+      "crc32": 3614678074,
+      "sha256": "3dbc15fea82ab324ff92562a9bac66435f93539c40b9d8936f9628e8e27636c1"
+    },
+    {
+      "path": "terrain-transitions/material/terminal-after-prototype/surface-composition-manifest.json",
+      "bytes": 10331,
+      "crc32": 893945781,
+      "sha256": "a656a886729143b5594b1ea42a34eca2c2558d8626a99853582e0e6aaef944e8"
+    },
+    {
+      "path": "terrain-transitions/material/terminal-after-prototype/tdirt_iceland05-verified-diffuse.png",
+      "bytes": 181140,
+      "crc32": 3494786855,
+      "sha256": "b0306e2e072798d7d4ec586f90f1e3cd9cc1aae9686ec4d7635ff4754a7e6117"
+    },
+    {
+      "path": "terrain-transitions/material/terminal-after-prototype/tdirt_yucatan06-verified-diffuse.png",
+      "bytes": 128768,
+      "crc32": 2314962658,
+      "sha256": "1230381db39d9a60315c5cb63e2e89dcc9a634d67dd37f02e555cb00eba1dccf"
+    },
+    {
+      "path": "terrain-transitions/material/terminal-after-prototype/terminal-R16-foreign-gravel-native-diffuse-model.png",
+      "bytes": 187982,
+      "crc32": 331164663,
+      "sha256": "7ee131c86067a92b6cd8a667f92d28b94bd8d7fb68b0ef8e3280829a28eb8f38"
+    },
+    {
+      "path": "terrain-transitions/material/terminal-after-prototype/terminal-R20-foreign-gravel-native-diffuse-model.png",
+      "bytes": 215388,
+      "crc32": 3679713121,
+      "sha256": "bf83268eed4862332131d53a7319f3219ae9a3521f4225329acd564bc4a9d2df"
+    },
+    {
+      "path": "terrain-transitions/material/terminal-after-prototype/terminal-foreign-R15-499-85-native-diffuse-model.png",
+      "bytes": 157063,
+      "crc32": 3910772916,
+      "sha256": "db75de1528cdfb0766490a8d07b242910a775964f8ed598aff71d1e72a0f2993"
+    },
+    {
+      "path": "terrain-transitions/material/terminal-after-prototype/terminal-foreign-R15-501-119-native-diffuse-model.png",
+      "bytes": 155381,
+      "crc32": 1058936670,
+      "sha256": "7662fda519ca6243edbc39ce8b5fe18852c40b723e158676debd3a4a6bd9ca02"
+    },
+    {
+      "path": "terrain-transitions/material/terminal-after-prototype/terminal-foreign-R16-294-281-native-diffuse-model.png",
+      "bytes": 157632,
+      "crc32": 3594387669,
+      "sha256": "5e7c70a2b48037969eba46b8aab269b59aadc8630ed1fcc89ebdda8d2d9e9d2a"
+    },
+    {
+      "path": "terrain-transitions/material/terminal-after-prototype/terminal-foreign-R16-296-278-native-diffuse-model.png",
+      "bytes": 151386,
+      "crc32": 2270793889,
+      "sha256": "2d4c7ba6402dc458feb2b056a919708109a99823978303e1ecc9d17330fb771f"
+    },
+    {
+      "path": "terrain-transitions/material/terminal-after-prototype/terminal-foreign-R17-257-499-native-diffuse-model.png",
+      "bytes": 162080,
+      "crc32": 3491923348,
+      "sha256": "58dee7885c94eff6b935421bf35b3930cf71aa1cec3d9c17afd1304d63192b7d"
+    },
+    {
+      "path": "terrain-transitions/material/terminal-after-prototype/terminal-foreign-R19-569-764-native-diffuse-model.png",
+      "bytes": 158376,
+      "crc32": 4164638653,
+      "sha256": "805eac50814067e299d7f0c7c8d0e82efa86b8090f6cb2e17e40f1f6e2c835ed"
+    },
+    {
+      "path": "terrain-transitions/material/terminal-after-prototype/terminal-foreign-R19-574-787-native-diffuse-model.png",
+      "bytes": 155897,
+      "crc32": 3353471063,
+      "sha256": "95b1dc19ed4176fa4a3296787dd961930c0807ed23abcbf1837a60a2eb23b832"
+    },
+    {
+      "path": "terrain-transitions/material/terminal-after-prototype/terminal-foreign-R20-198-230-native-diffuse-model.png",
+      "bytes": 170644,
+      "crc32": 2742578949,
+      "sha256": "6980586a694e0755a192ccf65aee2f9f17502b7cb9a82b66acbc29d52ee151fd"
+    },
+    {
+      "path": "terrain-transitions/material/terminal-after-prototype/terminal-foreign-R20-230-253-native-diffuse-model.png",
+      "bytes": 157176,
+      "crc32": 3838237294,
+      "sha256": "d94a8c0ec51840aa726401798868438a9f186016798587286cc150305e76e4fe"
+    },
+    {
+      "path": "terrain-transitions/material/terminal-after-prototype/terminal-foreign-actual-edge-contact.png",
+      "bytes": 1337291,
+      "crc32": 2876993979,
+      "sha256": "f34845cce61f08c354d583605457f1bca459942e134a96009cf23890e346ac6a"
+    },
+    {
+      "path": "terrain-transitions/material/terminal-after-prototype/terminal-join-contact.png",
+      "bytes": 418989,
+      "crc32": 1848551684,
+      "sha256": "6b763df780c1dd67d2e5be9d1ff8688709267d367e8ac5afb9f415ec3d9916a4"
+    },
+    {
+      "path": "terrain-transitions/material/terminal-after-prototype/tgrass_capecod05-verified-diffuse.png",
+      "bytes": 122012,
+      "crc32": 1041616357,
+      "sha256": "2627e1da9c1444ab95051443716a62585633096b971a8d78c85b27d2bb74818c"
+    },
+    {
+      "path": "terrain-transitions/material/terminal-after-prototype/tgrass_geneva01-verified-diffuse.png",
+      "bytes": 142769,
+      "crc32": 994968400,
+      "sha256": "b2a37800d15a7fd62c521d8cc204f70bc390e63ea49900ce5c74bfa96d2c996c"
+    },
+    {
+      "path": "terrain-transitions/material/terminal-after-prototype/tgrass_newyork01-verified-diffuse.png",
+      "bytes": 139821,
+      "crc32": 3555610928,
+      "sha256": "4f3dc060b0c80898942dd36b34aed50468b9b0a85a6764cec582a7976e670322"
+    },
+    {
+      "path": "terrain-transitions/material/terminal-after-prototype/tgravel_yucatan01-verified-diffuse.png",
+      "bytes": 168906,
+      "crc32": 4246145337,
+      "sha256": "451453c2d8c49f52012fd15a030becd68bce5fa936a4cb78d4ed7c269b8271c1"
+    },
+    {
+      "path": "terrain-transitions/material/terminal-after-prototype/treef_yucatan01-verified-diffuse.png",
+      "bytes": 112657,
+      "crc32": 537333500,
+      "sha256": "d7ccb795f62df3d3037c37e8b506506133cac5715b81f812fb7b1c8de6ca028e"
+    },
+    {
+      "path": "terrain-transitions/material/terminal-after-prototype/treef_yucatan02-verified-diffuse.png",
+      "bytes": 170160,
+      "crc32": 1805081216,
+      "sha256": "12d5a9d71847feecc14f749b65c369a73ebca6aaed8cf0163d5524a53487a235"
+    },
+    {
+      "path": "terrain-transitions/material/terminal-after-prototype/trock_yucatan01-verified-diffuse.png",
+      "bytes": 127843,
+      "crc32": 3492591773,
+      "sha256": "bf3824123ec69f72944de5700372f1cfe831914837e68566132e11ac2e417299"
+    },
+    {
+      "path": "terrain-transitions/material/terminal-after-prototype/trock_yucatan03-verified-diffuse.png",
+      "bytes": 169672,
+      "crc32": 1155943554,
+      "sha256": "7a7ffa868c81f2b561663a87fb4dbe58fe50d6adc45d5951abfc56bbaf0260aa"
+    },
+    {
+      "path": "terrain-transitions/material/terminal-after-prototype/tsand_hawaii02-verified-diffuse.png",
+      "bytes": 90555,
+      "crc32": 353133095,
+      "sha256": "b5447d6116167b32f705acffb1736cac6d1b5a38629dbef3b5f7d5c24346cd60"
+    },
+    {
+      "path": "terrain-transitions/material/terminal-before/R17-core-gravel-corner-native-diffuse-model.png",
+      "bytes": 156762,
+      "crc32": 2126133937,
+      "sha256": "dc40d67d9da43dba54b146f3ef9d8c5cb57974e2077e5f019abc842964d7916c"
+    },
+    {
+      "path": "terrain-transitions/material/terminal-before/grass_mtrush04-verified-diffuse.png",
+      "bytes": 157642,
+      "crc32": 3614678074,
+      "sha256": "3dbc15fea82ab324ff92562a9bac66435f93539c40b9d8936f9628e8e27636c1"
+    },
+    {
+      "path": "terrain-transitions/material/terminal-before/surface-composition-manifest.json",
+      "bytes": 10236,
+      "crc32": 2553309132,
+      "sha256": "554c04f11e6b249f49340b84193f048bdfc59c3f4d677ff3f12cc80c146b0cdd"
+    },
+    {
+      "path": "terrain-transitions/material/terminal-before/tdirt_iceland05-verified-diffuse.png",
+      "bytes": 181140,
+      "crc32": 3494786855,
+      "sha256": "b0306e2e072798d7d4ec586f90f1e3cd9cc1aae9686ec4d7635ff4754a7e6117"
+    },
+    {
+      "path": "terrain-transitions/material/terminal-before/tdirt_yucatan06-verified-diffuse.png",
+      "bytes": 128768,
+      "crc32": 2314962658,
+      "sha256": "1230381db39d9a60315c5cb63e2e89dcc9a634d67dd37f02e555cb00eba1dccf"
+    },
+    {
+      "path": "terrain-transitions/material/terminal-before/terminal-R16-foreign-gravel-native-diffuse-model.png",
+      "bytes": 188418,
+      "crc32": 1425996240,
+      "sha256": "9b3b934c3c4fec016fc068a2bb1f678c136469d9b718d1fb80fb29d1387fd452"
+    },
+    {
+      "path": "terrain-transitions/material/terminal-before/terminal-R20-foreign-gravel-native-diffuse-model.png",
+      "bytes": 214547,
+      "crc32": 287807010,
+      "sha256": "2db0780811010081311af964ca732d61c992c3a93c4d725cb7d6e7e2fbc9a27a"
+    },
+    {
+      "path": "terrain-transitions/material/terminal-before/terminal-foreign-R15-499-85-native-diffuse-model.png",
+      "bytes": 155304,
+      "crc32": 623755323,
+      "sha256": "2548cc47a6864fc1b3b7ef686941ea79188d06b05727cd9e413f9397b8958016"
+    },
+    {
+      "path": "terrain-transitions/material/terminal-before/terminal-foreign-R15-501-119-native-diffuse-model.png",
+      "bytes": 153910,
+      "crc32": 189120553,
+      "sha256": "bdf561606a7bb84d69e4dec20844de1acccbac04422167eb5da18dfff2c917e3"
+    },
+    {
+      "path": "terrain-transitions/material/terminal-before/terminal-foreign-R16-294-281-native-diffuse-model.png",
+      "bytes": 158394,
+      "crc32": 818584893,
+      "sha256": "1ddd6957ea1d042c7b7d55ce58aa8b681f4fa46a96758768a473314ce15de78e"
+    },
+    {
+      "path": "terrain-transitions/material/terminal-before/terminal-foreign-R16-296-278-native-diffuse-model.png",
+      "bytes": 153970,
+      "crc32": 3910556752,
+      "sha256": "811ca06aa6d0af614debb83fdd6870b7ec67c14c26d6b8968942b2ab2d07775f"
+    },
+    {
+      "path": "terrain-transitions/material/terminal-before/terminal-foreign-R17-257-499-native-diffuse-model.png",
+      "bytes": 157534,
+      "crc32": 388413062,
+      "sha256": "d23fd16b66222989bd5e78a8a4cc652cbf900aa0a602c2eea3a5c714a59eb3c7"
+    },
+    {
+      "path": "terrain-transitions/material/terminal-before/terminal-foreign-R19-569-764-native-diffuse-model.png",
+      "bytes": 157698,
+      "crc32": 3379377510,
+      "sha256": "3a42f6f9ad27cbdf42cf071e2b053e4e5e8081709cd57d2e59c63beed47ae512"
+    },
+    {
+      "path": "terrain-transitions/material/terminal-before/terminal-foreign-R19-574-787-native-diffuse-model.png",
+      "bytes": 156394,
+      "crc32": 3805031996,
+      "sha256": "504416fa01e50317b7d2876a8b6e4285ce57d8529fc3d4a34f29d14a1290b1c0"
+    },
+    {
+      "path": "terrain-transitions/material/terminal-before/terminal-foreign-R20-198-230-native-diffuse-model.png",
+      "bytes": 169367,
+      "crc32": 1302644777,
+      "sha256": "9c7cdb996423dac843b72da52a86907725358ca9c85efe04ee47ad471501ccdc"
+    },
+    {
+      "path": "terrain-transitions/material/terminal-before/terminal-foreign-R20-230-253-native-diffuse-model.png",
+      "bytes": 153287,
+      "crc32": 1654402251,
+      "sha256": "7b29d839d35428c10b153da3323cb4912d325294aaeb934a82f8d6924c2545c1"
+    },
+    {
+      "path": "terrain-transitions/material/terminal-before/terminal-foreign-actual-edge-contact.png",
+      "bytes": 1329913,
+      "crc32": 3374091386,
+      "sha256": "3fc44dedda8b553387089f108c50b78e6834817f0ad3be6e505dbe3522073605"
+    },
+    {
+      "path": "terrain-transitions/material/terminal-before/terminal-join-contact.png",
+      "bytes": 415228,
+      "crc32": 2458546007,
+      "sha256": "20c1aeaa9e1299e85fa6df73fa93075015a0ab030eb5d04dd52ff3e2e7700f60"
+    },
+    {
+      "path": "terrain-transitions/material/terminal-before/tgrass_capecod05-verified-diffuse.png",
+      "bytes": 122012,
+      "crc32": 1041616357,
+      "sha256": "2627e1da9c1444ab95051443716a62585633096b971a8d78c85b27d2bb74818c"
+    },
+    {
+      "path": "terrain-transitions/material/terminal-before/tgrass_geneva01-verified-diffuse.png",
+      "bytes": 142769,
+      "crc32": 994968400,
+      "sha256": "b2a37800d15a7fd62c521d8cc204f70bc390e63ea49900ce5c74bfa96d2c996c"
+    },
+    {
+      "path": "terrain-transitions/material/terminal-before/tgrass_newyork01-verified-diffuse.png",
+      "bytes": 139821,
+      "crc32": 3555610928,
+      "sha256": "4f3dc060b0c80898942dd36b34aed50468b9b0a85a6764cec582a7976e670322"
+    },
+    {
+      "path": "terrain-transitions/material/terminal-before/tgravel_yucatan01-verified-diffuse.png",
+      "bytes": 168906,
+      "crc32": 4246145337,
+      "sha256": "451453c2d8c49f52012fd15a030becd68bce5fa936a4cb78d4ed7c269b8271c1"
+    },
+    {
+      "path": "terrain-transitions/material/terminal-before/treef_yucatan01-verified-diffuse.png",
+      "bytes": 112657,
+      "crc32": 537333500,
+      "sha256": "d7ccb795f62df3d3037c37e8b506506133cac5715b81f812fb7b1c8de6ca028e"
+    },
+    {
+      "path": "terrain-transitions/material/terminal-before/treef_yucatan02-verified-diffuse.png",
+      "bytes": 170160,
+      "crc32": 1805081216,
+      "sha256": "12d5a9d71847feecc14f749b65c369a73ebca6aaed8cf0163d5524a53487a235"
+    },
+    {
+      "path": "terrain-transitions/material/terminal-before/trock_yucatan01-verified-diffuse.png",
+      "bytes": 127843,
+      "crc32": 3492591773,
+      "sha256": "bf3824123ec69f72944de5700372f1cfe831914837e68566132e11ac2e417299"
+    },
+    {
+      "path": "terrain-transitions/material/terminal-before/trock_yucatan03-verified-diffuse.png",
+      "bytes": 169672,
+      "crc32": 1155943554,
+      "sha256": "7a7ffa868c81f2b561663a87fb4dbe58fe50d6adc45d5951abfc56bbaf0260aa"
+    },
+    {
+      "path": "terrain-transitions/material/terminal-before/tsand_hawaii02-verified-diffuse.png",
+      "bytes": 90555,
+      "crc32": 353133095,
+      "sha256": "b5447d6116167b32f705acffb1736cac6d1b5a38629dbef3b5f7d5c24346cd60"
+    },
+    {
+      "path": "terrain-transitions/material/terrain-transition-review-final.md",
+      "bytes": 10489,
+      "crc32": 3485825286,
+      "sha256": "ca68edaba4bfd46e0f125ec4b202fbb5ce0c7d7ed8b47c54ee8a4e377a181495"
+    },
+    {
+      "path": "terrain-transitions/material/tgrass_capecod05-verified.png",
+      "bytes": 122012,
+      "crc32": 1041616357,
+      "sha256": "2627e1da9c1444ab95051443716a62585633096b971a8d78c85b27d2bb74818c"
+    },
+    {
+      "path": "terrain-transitions/material/tgrass_geneva01-verified.png",
+      "bytes": 142769,
+      "crc32": 994968400,
+      "sha256": "b2a37800d15a7fd62c521d8cc204f70bc390e63ea49900ce5c74bfa96d2c996c"
+    },
+    {
+      "path": "terrain-transitions/material/tiles.u32",
+      "bytes": 2822400,
+      "crc32": 4205079610,
+      "sha256": "f3b9ff0009bbb741c4bcea397efd712438a668ae71d47aa93000fb784ea8e731"
+    },
+    {
+      "path": "terrain-transitions/material/verify_final_material.py",
+      "bytes": 6970,
+      "crc32": 2389937776,
+      "sha256": "f1a3eea88c167a4f447dd09a4bf744cddb8814f9aacddd74a0997ef77c534417"
+    },
+    {
+      "path": "terrain-transitions/review_geometry.py",
+      "bytes": 20064,
+      "crc32": 2752728259,
+      "sha256": "3b45d44990a42b0dba45d8686b40d585bfe1b92ccb91133fce22d7a5cbc8ede6"
+    }
+  ]
+}

@@ -215,9 +215,23 @@ pub(super) fn apply(
         }
     }
     let checked_bt = BlendTiles::parse(map.get("BlendTileData")?, n, n)?;
-    crate::gameplay::script_spawns::validate(p, map, &hm, &checked_bt, &objects)?;
-    crate::gameplay::production_spawns::validate(p, map, &hm, &checked_bt, &objects)?;
-    crate::gameplay::gift_clearance::validate(p, map)?;
+    crate::gameplay::script_spawns::validate_with_layout(
+        p,
+        map,
+        &hm,
+        &checked_bt,
+        &objects,
+        &layout,
+    )?;
+    crate::gameplay::production_spawns::validate_with_layout(
+        p,
+        map,
+        &hm,
+        &checked_bt,
+        &objects,
+        &layout,
+    )?;
+    crate::gameplay::gift_clearance::validate_with_layout(p, map, &layout)?;
     crate::gameplay::production_facing::validate(p, map)?;
     // Compare with the actual source scene, without replacing its baseline.
     let policy = crate::pipeline::coordinate_pipeline::spatial_policy(p)?;

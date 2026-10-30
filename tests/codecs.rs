@@ -11,44 +11,45 @@ use serde_json::json;
 use std::{collections::BTreeMap, path::Path};
 
 #[test]
-fn shared_template_preserves_t051_except_the_named_yard_lookup() {
-    let source: serde_json::Value =
-        serde_json::from_str(include_str!("../maps/陕西/histories/T0.5.1/rules.json")).unwrap();
+fn shared_template_has_the_current_fixed_ai_lookup_and_roundtrips() {
     let shared: serde_json::Value =
         serde_json::from_str(include_str!("../templates/rules/common-T0.5.1.json")).unwrap();
-    for key in ["SidesList", "Teams", "names"] {
-        assert_eq!(source[key], shared[key], "{key}");
-    }
-    let mut expected: Vec<scripts::Node> =
-        serde_json::from_value(source["scripts"].clone()).unwrap();
-    fn adapt(nodes: &mut [scripts::Node]) -> usize {
-        let mut changes = 0;
+    let nodes: Vec<scripts::Node> = serde_json::from_value(shared["scripts"].clone()).unwrap();
+    assert_eq!(scripts::script_names(&nodes).unwrap().len(), 224);
+    fn check(nodes: &[scripts::Node]) -> usize {
+        let mut count = 0;
         for node in nodes {
             if node.asset == "Script"
                 && scripts::name(node).unwrap().as_deref() == Some("Player 8 Set Up")
             {
-                for action in node.children.as_mut().unwrap() {
+                for action in node.children.as_ref().unwrap() {
+                    assert_ne!(
+                        action.command.as_deref(),
+                        Some("SET_REF_TO_NEREST_TEAM_OF_UNNAMED_TYPE_OWNED_BY_PLAYER")
+                    );
                     if action.command.as_deref()
-                        == Some("SET_REF_TO_NEREST_TEAM_OF_UNNAMED_TYPE_OWNED_BY_PLAYER")
+                        == Some("SET_REF_TO_NEREST_TEAM_OF_TYPE_OWNED_BY_PLAYER")
                     {
-                        let mut bytes = scripts::unhex(&action.body).unwrap();
-                        assert_eq!(u32::from_le_bytes(bytes[..4].try_into().unwrap()), 371);
-                        bytes[..4].copy_from_slice(&370u32.to_le_bytes());
-                        action.body = scripts::hex(&bytes);
-                        action.command =
-                            Some("SET_REF_TO_NEREST_TEAM_OF_TYPE_OWNED_BY_PLAYER".into());
-                        changes += 1;
+                        let bytes = scripts::unhex(&action.body).unwrap();
+                        assert_eq!(u32::from_le_bytes(bytes[..4].try_into().unwrap()), 370);
+                        count += 1;
                     }
                 }
-            } else if let Some(children) = &mut node.children {
-                changes += adapt(children);
+            } else if let Some(children) = &node.children {
+                count += check(children);
             }
         }
-        changes
+        count
     }
-    assert_eq!(adapt(&mut expected), 1);
-    assert_eq!(scripts::script_names(&expected).unwrap().len(), 224);
-    assert_eq!(serde_json::to_value(expected).unwrap(), shared["scripts"]);
+    assert_eq!(check(&nodes), 1);
+    let mut native =
+        MapFile::load(Path::new(env!("CARGO_MANIFEST_DIR")).join("templates/8p_template.map"))
+            .unwrap();
+    let payload = scripts::encode_nodes(&nodes, &mut native).unwrap();
+    assert_eq!(
+        serde_json::to_value(scripts::parse_nodes(&payload, &native.table).unwrap()).unwrap(),
+        serde_json::to_value(nodes).unwrap()
+    );
 }
 
 #[test]

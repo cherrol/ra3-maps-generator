@@ -64,17 +64,17 @@ impl PlacementPolicy {
 
 fn water_only(name: &str) -> Option<bool> {
     let name = name.to_ascii_lowercase();
-    if name.ends_with("warfactory") {
-        Some(false)
-    } else if name.ends_with("navalyard") || name == "shipyardtechstructure" {
+    if name.ends_with("navalyard") || name == "shipyardtechstructure" {
         Some(true)
+    } else if super::placement::is_production(&name) {
+        Some(false)
     } else {
         None
     }
 }
 
 /// Resolve actual create actions rather than assuming a faction or waypoint name.
-fn bindings(nodes: &[Node], objects: &[MapObject]) -> Result<BTreeMap<usize, bool>> {
+pub(crate) fn bindings(nodes: &[Node], objects: &[MapObject]) -> Result<BTreeMap<usize, bool>> {
     let mut out = BTreeMap::new();
     for (i, o) in objects.iter().enumerate() {
         if let Some(wet) = water_only(&o.type_name) {
@@ -127,6 +127,93 @@ fn bindings(nodes: &[Node], objects: &[MapObject]) -> Result<BTreeMap<usize, boo
     Ok(out)
 }
 
+/// A seat comes from the actual create action's team, never a nearby base.
+pub(crate) fn owners(nodes: &[Node], objects: &[MapObject]) -> Result<BTreeMap<usize, usize>> {
+    let mut seats = BTreeMap::new();
+    fn visit(
+        nodes: &[Node],
+        objects: &[MapObject],
+        seats: &mut BTreeMap<usize, usize>,
+    ) -> Result<()> {
+        for node in nodes {
+            if let Some(children) = &node.children {
+                visit(children, objects, seats)?;
+                continue;
+            }
+            if !node.command.as_deref().is_some_and(|command| {
+                command.starts_with("CREATE_") && command.contains("AT_WAYPOINT")
+            }) {
+                continue;
+            }
+            let args = scripts::string_arguments(node)?;
+            if !args
+                .iter()
+                .any(|(kind, value)| *kind == 15 && water_only(value).is_some())
+            {
+                continue;
+            }
+            let team = args
+                .iter()
+                .find(|(kind, _)| *kind == 3)
+                .ok_or_else(|| err("production create action has no owning team"))?;
+            let seat = super::production_facing::seat(&team.1)?;
+            let name = args
+                .iter()
+                .find(|(kind, _)| *kind == 7)
+                .ok_or_else(|| err("production create action has no waypoint"))?;
+            let indices: Vec<_> = objects
+                .iter()
+                .enumerate()
+                .filter(|(_, object)| {
+                    prop(&object.props, "waypointName").and_then(Value::text)
+                        == Some(name.1.as_str())
+                })
+                .map(|(index, _)| index)
+                .collect();
+            if indices.len() != 1 {
+                return Err(err("production owner requires a unique waypoint"));
+            }
+            if seats
+                .insert(indices[0], seat)
+                .is_some_and(|old| old != seat)
+            {
+                return Err(err("production waypoint has multiple owning seats"));
+            }
+        }
+        Ok(())
+    }
+    visit(nodes, objects, &mut seats)?;
+    // Native player-owned production can use its explicit player identity.
+    // Neutral/native objects with no verified seat retain their original site.
+    for (index, object) in objects.iter().enumerate() {
+        if super::placement::is_production(&object.type_name)
+            && let Some(seat) = prop(&object.props, "playerName")
+                .and_then(Value::text)
+                .and_then(|name| super::production_facing::seat(name).ok())
+        {
+            seats.insert(index, seat);
+        }
+    }
+    Ok(seats)
+}
+
+pub(crate) fn reservations(
+    p: &Project,
+    nodes: &[Node],
+    objects: &[MapObject],
+) -> Result<Vec<([f64; 2], f64)>> {
+    let policy = PlacementPolicy::load(p)?;
+    Ok(bindings(nodes, objects)?
+        .into_iter()
+        .filter(|(index, _)| {
+            !prop(&objects[*index].props, "waypointName")
+                .and_then(Value::text)
+                .is_some_and(|name| name.starts_with("gift-alt-"))
+        })
+        .map(|(index, wet)| (to_cell(p, &objects[index]), policy.padding(wet) as f64))
+        .collect())
+}
+
 struct Ground<'a> {
     p: &'a Project,
     n: usize,
@@ -173,6 +260,17 @@ fn cell(p: &Project, o: &MapObject) -> [usize; 2] {
     to_cell(p, o).map(|v| v.round_ties_even() as usize)
 }
 
+fn clear_functional_reservations(
+    reservations: &super::gift_clearance::FixedReservations,
+    official: &super::official_placement::Checker,
+    object: &MapObject,
+    point: [usize; 2],
+    height: f64,
+) -> Result<bool> {
+    let polygons = official.object_reservation_polygons(object, point)?;
+    Ok(reservations.clear_polygons_at(point, height, &polygons))
+}
+
 #[allow(clippy::too_many_arguments)]
 pub fn repair(
     p: &Project,
@@ -183,6 +281,31 @@ pub fn repair(
     nodes: &[Node],
     objects: &mut [MapObject],
 ) -> Result<Json> {
+    repair_with_layout(
+        p,
+        n,
+        z,
+        impassable,
+        blocked,
+        nodes,
+        objects,
+        &terrain::Layout::load(p)?,
+    )
+}
+
+#[allow(clippy::too_many_arguments)]
+pub(crate) fn repair_with_layout(
+    p: &Project,
+    n: usize,
+    z: &[f64],
+    impassable: &[bool],
+    blocked: &[bool],
+    nodes: &[Node],
+    objects: &mut [MapObject],
+    layout: &terrain::Layout,
+) -> Result<Json> {
+    use super::placement::{AccessDistances, is_decoration};
+    use std::collections::BTreeSet;
     let frame = crate::coordinates::Frame::from_project(p);
     let ground = Ground {
         p,
@@ -192,101 +315,247 @@ pub fn repair(
         blocked,
         policy: PlacementPolicy::load(p)?,
     };
+    let targets: BTreeMap<_, _> = bindings(nodes, objects)?
+        .into_iter()
+        .filter(|(index, _)| {
+            !prop(&objects[*index].props, "waypointName")
+                .and_then(Value::text)
+                .is_some_and(|name| name.starts_with("gift-alt-"))
+        })
+        .collect();
+    let reservations = if !targets.is_empty() {
+        Some(super::gift_clearance::FixedReservations::new(
+            p, layout, objects, z, n,
+        )?)
+    } else {
+        None
+    };
+    let owners = owners(nodes, objects)?;
+    let lower_waypoints: BTreeSet<_> = scripts::load_rules(p)?
+        .spawn_waypoints
+        .into_iter()
+        .map(|spec| spec.name)
+        .collect();
+    let moving: BTreeSet<_> = targets
+        .keys()
+        .filter(|index| owners.contains_key(index))
+        .copied()
+        .collect();
+    let fixed: Vec<_> = objects
+        .iter()
+        .enumerate()
+        .filter(|(index, object)| {
+            !moving.contains(index)
+                && !is_decoration(object)
+                && !prop(&object.props, "waypointName")
+                    .and_then(Value::text)
+                    .is_some_and(|name| name.starts_with("gift-alt-"))
+                && !prop(&object.props, "waypointName")
+                    .and_then(Value::text)
+                    .is_some_and(|name| lower_waypoints.contains(name))
+        })
+        .map(|(_, object)| object.clone())
+        .collect();
+    let fixed_keepouts = keepouts(p, &fixed);
     let official = crate::gameplay::official_placement::Checker::for_candidates(
         p, n, z, impassable, blocked, nodes, objects,
     )?;
-    let mut placements = Vec::new();
-    for (index, wet) in bindings(nodes, objects)? {
+    if reservations.is_some() && official.is_none() {
+        return Err(err(
+            "production resource reservations require resolved official geometry",
+        ));
+    }
+    let mut access = BTreeMap::new();
+    type Candidate = (u32, f64, f64, usize, usize);
+    struct Plan {
+        index: usize,
+        wet: bool,
+        seat: Option<usize>,
+        base: Option<[f64; 2]>,
+        from: [usize; 2],
+        candidates: Vec<Candidate>,
+    }
+    let mut plans = Vec::new();
+    for (index, wet) in targets {
         let from = cell(p, &objects[index]);
-        let mut point = from;
-        let other: Vec<_> = objects
+        let seat = owners.get(&index).copied();
+        let mut candidates = Vec::new();
+        let base = if let Some(seat) = seat {
+            let ordinary = format!("Player_{seat}_Start");
+            let imported = format!("{ordinary} (imported)");
+            let starts: Vec<_> = objects
+                .iter()
+                .filter(|object| {
+                    prop(&object.props, "waypointName")
+                        .and_then(Value::text)
+                        .is_some_and(|name| name == ordinary || name == imported)
+                })
+                .collect();
+            if starts.len() != 1 {
+                return Err(err(format!(
+                    "production placement requires one start for P{seat}"
+                )));
+            }
+            let base = to_cell(p, starts[0]);
+            if let std::collections::btree_map::Entry::Vacant(entry) = access.entry(seat) {
+                entry.insert(AccessDistances::new(p, n, z, impassable, &fixed, seat)?);
+            }
+            let radius = p
+                .usize(
+                    "PRODUCTION_SPAWN_RADIUS",
+                    crate::gameplay::gift_clearance::search_radius(p, seat)?,
+                )
+                .min(n.max(z.len() / n));
+            let center = base.map(|value| value.round_ties_even() as usize);
+            for y in center[1].saturating_sub(radius)..=(center[1] + radius).min(z.len() / n - 1) {
+                for x in center[0].saturating_sub(radius)..=(center[0] + radius).min(n - 1) {
+                    let distance = (x as f64 - base[0]).hypot(y as f64 - base[1]);
+                    if distance > radius as f64
+                        || !ground.suitable([x, y], wet)
+                        || !clear([x, y], ground.policy.padding(wet), &fixed_keepouts)
+                        || reservations.as_ref().is_some_and(|reserves| {
+                            !clear_functional_reservations(
+                                reserves,
+                                official.as_ref().unwrap(),
+                                &objects[index],
+                                [x, y],
+                                z[y * n + x],
+                            )
+                            .unwrap_or(false)
+                        })
+                    {
+                        continue;
+                    }
+                    let steps = if let Some(checker) = &official {
+                        checker
+                            .object_production_access_targets(&objects[index], [x, y])
+                            .ok()
+                            .and_then(|targets| {
+                                if targets.is_empty() {
+                                    access[&seat].score([x, y], wet, ground.policy.padding(wet))
+                                } else {
+                                    targets
+                                        .into_iter()
+                                        .map(|(wet, point)| access[&seat].score_point(point, wet))
+                                        .collect::<Option<Vec<_>>>()
+                                        .and_then(|values| values.into_iter().max())
+                                }
+                            })
+                    } else {
+                        access[&seat].score([x, y], wet, ground.policy.padding(wet))
+                    };
+                    if let Some(steps) = steps {
+                        candidates.push((
+                            steps,
+                            distance,
+                            (x as f64 - from[0] as f64).hypot(y as f64 - from[1] as f64),
+                            x,
+                            y,
+                        ));
+                    }
+                }
+            }
+            Some(base)
+        } else {
+            // Do not infer ownership from proximity or silently relocate a
+            // neutral/native building whose owner has no verified seat.
+            if ground.suitable(from, wet) {
+                candidates.push((0, 0., 0., from[0], from[1]));
+            }
+            None
+        };
+        candidates.sort_by(|a, b| {
+            a.0.cmp(&b.0)
+                .then(a.1.total_cmp(&b.1))
+                .then(a.2.total_cmp(&b.2))
+                .then(a.4.cmp(&b.4))
+                .then(a.3.cmp(&b.3))
+        });
+        plans.push(Plan {
+            index,
+            wet,
+            seat,
+            base,
+            from,
+            candidates,
+        });
+    }
+    // Fewer terrain/access candidates are harder to place. Resolve those first;
+    // native object identity is only the final deterministic tie breaker.
+    plans.sort_by_key(|plan| {
+        (
+            plan.candidates.len(),
+            std::cmp::Reverse(ground.policy.padding(plan.wet)),
+            std::cmp::Reverse(plan.wet),
+            plan.index,
+        )
+    });
+    let mut placed = Vec::new();
+    let mut placements = Vec::new();
+    for plan in plans {
+        let others: Vec<_> = objects
             .iter()
             .enumerate()
-            .filter(|(i, _)| *i != index)
-            .map(|(_, o)| o.clone())
+            .filter(|(index, object)| {
+                *index != plan.index
+                    && (!moving.contains(index) || placed.contains(index))
+                    && !is_decoration(object)
+                    && !prop(&object.props, "waypointName")
+                        .and_then(Value::text)
+                        .is_some_and(|name| name.starts_with("gift-alt-"))
+                    && !prop(&object.props, "waypointName")
+                        .and_then(Value::text)
+                        .is_some_and(|name| {
+                            lower_waypoints.contains(name) && !placed.contains(index)
+                        })
+            })
+            .map(|(_, object)| object.clone())
             .collect();
+        let protected = keepouts(p, &others);
         let official_obstacles = official
             .as_ref()
-            .map(|checker| checker.planned_obstacles(&other));
-        let official_clear = |candidate| {
-            official.as_ref().is_none_or(|checker| {
-                checker.acceptable_object(
-                    &objects[index],
-                    candidate,
-                    official_obstacles.as_ref().unwrap(),
-                )
-            })
-        };
-        if !ground.suitable(from, wet) || !official_clear(from) {
-            let mut protected = keepouts(p, &other);
-            // Saved maps also contain the supplemental power/superweapon points.
-            for o in &other {
-                if o.type_name.contains("Waypoint") {
-                    protected.push((to_cell(p, o), 6.));
-                }
+            .map(|checker| checker.planned_obstacles(&others));
+        let mut rejected = None;
+        let target = plan.candidates.iter().find(|candidate| {
+            let point = [candidate.3, candidate.4];
+            if !clear(point, ground.policy.padding(plan.wet), &protected) { return false; }
+            if reservations.as_ref().is_some_and(|reserves| {
+                !clear_functional_reservations(reserves, official.as_ref().unwrap(),
+                    &objects[plan.index], point, z[point[1] * n + point[0]])
+                    .unwrap_or(false)
+            }) { return false; }
+            if official.as_ref().is_none_or(|checker| {
+                checker.acceptable_object(&objects[plan.index], point, official_obstacles.as_ref().unwrap())
+            }) { return true; }
+            if rejected.is_none() {
+                rejected = official.as_ref().map(|checker| checker.object_rejections(
+                    &objects[plan.index], point, official_obstacles.as_ref().unwrap())
+                    .into_iter().take(3).collect::<Vec<_>>());
             }
-            let nearest_seat = objects
-                .iter()
-                .filter_map(|o| {
-                    let name = prop(&o.props, "waypointName").and_then(Value::text)?;
-                    let seat = name
-                        .strip_prefix("Player_")?
-                        .split('_')
-                        .next()?
-                        .parse::<usize>()
-                        .ok()?;
-                    let c = to_cell(p, o);
-                    Some(((c[0] - from[0] as f64).hypot(c[1] - from[1] as f64), seat))
-                })
-                .min_by(|a, b| a.0.total_cmp(&b.0));
-            let default_radius = nearest_seat
-                .and_then(|(_, seat)| {
-                    p.cfg["SCRIPT_SPAWN_RADIUS_BY_SEAT"][seat.to_string()].as_u64()
-                })
-                .unwrap_or(80) as usize;
-            let radius = p.usize("PRODUCTION_SPAWN_RADIUS", default_radius).min(n);
-            let mut candidates = Vec::new();
-            for y in
-                from[1].saturating_sub(radius)..=from[1].saturating_add(radius).min(z.len() / n - 1)
-            {
-                for x in from[0].saturating_sub(radius)..=from[0].saturating_add(radius).min(n - 1)
-                {
-                    let d = (x as f64 - from[0] as f64).hypot(y as f64 - from[1] as f64);
-                    if d <= radius as f64 {
-                        candidates.push((d, x, y));
-                    }
-                }
-            }
-            candidates.sort_by(|a, b| a.0.total_cmp(&b.0).then(a.2.cmp(&b.2)).then(a.1.cmp(&b.1)));
-            let mut rejected = None;
-            let (_, x, y) = candidates
-                .into_iter()
-                .find(|&(_, x, y)| {
-                    if !ground.suitable([x,y],wet)||!clear([x,y],ground.policy.padding(wet),&protected){return false;}
-                    if official_clear([x,y]){return true;}
-                    if rejected.is_none(){
-                        let reasons=official.as_ref().map(|checker|checker.object_rejections(&objects[index],[x,y],official_obstacles.as_ref().unwrap()).into_iter().take(3).collect::<Vec<_>>()).unwrap_or_default();
-                        rejected=Some(([x,y],reasons));
-                    }
-                    false
-                })
-                .ok_or_else(|| {
-                    err(format!(
-                        "no safe {} for production building near {from:?}; object {} {} waypoint {:?}, search radius {radius}, first official rejection {rejected:?}",
-                        if wet { "water" } else { "land" },index+1,objects[index].type_name,
-                        prop(&objects[index].props,"waypointName").and_then(Value::text)
-                    ))
-                })?;
-            point = [x, y];
-            let position = frame.world([x as f64, y as f64]);
-            objects[index].position[0] = position[0] as f32;
-            objects[index].position[1] = position[1] as f32;
-        }
-        placements.push(json!({"object_index":index,"waypoint":prop(&objects[index].props,"waypointName").and_then(Value::text),"type":objects[index].type_name,"surface":if wet {"water"} else {"land"},"padding":ground.policy.padding(wet),"from":from,"cell":point,"moved":from!=point}));
+            false
+        }).ok_or_else(|| err(format!(
+            "no safe {} production site for object {} {:?}; owning seat {:?}, original {:?}, candidates {}, first official rejection {:?}",
+            if plan.wet { "water" } else { "land" }, plan.index + 1,
+            prop(&objects[plan.index].props, "waypointName").and_then(Value::text),
+            plan.seat, plan.from, plan.candidates.len(), rejected)))?;
+        let point = [target.3, target.4];
+        let position = frame.world(point.map(|value| value as f64));
+        objects[plan.index].position[0] = position[0] as f32;
+        objects[plan.index].position[1] = position[1] as f32;
+        placed.push(plan.index);
+        placements.push(json!({"object_index":plan.index,
+            "waypoint":prop(&objects[plan.index].props,"waypointName").and_then(Value::text),
+            "type":objects[plan.index].type_name,"surface":if plan.wet {"water"} else {"land"},
+            "padding":ground.policy.padding(plan.wet),"seat":plan.seat,"from":plan.from,
+            "cell":point,"moved":plan.from!=point,"candidate_count":plan.candidates.len(),
+            "distance_from_base":plan.base.map(|base| (point[0] as f64-base[0]).hypot(point[1] as f64-base[1])),
+            "static_access_steps":plan.seat.map(|_|target.0)}));
     }
-    Ok(
-        json!({"placements":placements,"policy":ground.policy,"policy_source":format!("{POLICY_SOURCE}#/production_placement"),"ingame_test":"not run"}),
-    )
+    Ok(json!({"placements":placements,"policy":ground.policy,
+        "policy_source":format!("{POLICY_SOURCE}#/production_placement"),
+        "candidate_order":"verified owner base access, base distance, displacement, y/x; fewer candidates first",
+        "access_model":"static same-domain four-neighbor paths to every actual rotated official rally target, worst branch first; mixed domain ranks reachable shoreline and a separate second leg; verified airfields without a ground rally and explicit NoExitPath use foundation access; official placement checks full rotated exit sweeps",
+        "ingame_test":"not run"}))
 }
 
 pub fn validate(
@@ -295,6 +564,28 @@ pub fn validate(
     hm: &HeightMap,
     bt: &BlendTiles,
     objects: &[MapObject],
+) -> Result<()> {
+    validate_with_layout(p, map, hm, bt, objects, &terrain::Layout::load(p)?)
+}
+
+pub(crate) fn validate_final_with_layout(
+    p: &Project,
+    map: &MapFile,
+    layout: &terrain::Layout,
+) -> Result<()> {
+    let hm = HeightMap::parse(map.get("HeightMapData")?)?;
+    let bt = BlendTiles::parse(map.get("BlendTileData")?, hm.width, hm.height)?;
+    let objects = map::objects(map.get("ObjectsList")?, &map.table)?;
+    validate_with_layout(p, map, &hm, &bt, &objects, layout)
+}
+
+pub(crate) fn validate_with_layout(
+    p: &Project,
+    map: &MapFile,
+    hm: &HeightMap,
+    bt: &BlendTiles,
+    objects: &[MapObject],
+    layout: &terrain::Layout,
 ) -> Result<()> {
     let z: Vec<_> = terrain::flip(&hm.elevations, hm.width)
         .iter()
@@ -311,7 +602,25 @@ pub fn validate(
         policy: PlacementPolicy::load(p)?,
     };
     let nodes = scripts::parse_nodes(&map.get("PlayerScriptsList")?.payload, &map.table)?;
-    for (i, wet) in bindings(&nodes, objects)? {
+    let targets = bindings(&nodes, objects)?;
+    let functional_reservations = if targets.is_empty() {
+        None
+    } else {
+        let reservations =
+            super::gift_clearance::FixedReservations::new(p, layout, objects, &z, hm.width)?;
+        let official = super::official_placement::Checker::for_candidates(
+            p,
+            hm.width,
+            &z,
+            &impassable,
+            &blocked,
+            &nodes,
+            objects,
+        )?
+        .ok_or_else(|| err("production validation requires resolved official geometry"))?;
+        Some((reservations, official))
+    };
+    for (i, wet) in targets {
         if !ground.suitable(cell(p, &objects[i]), wet) {
             return Err(err(format!(
                 "production footprint requires {}: {}",
@@ -321,11 +630,36 @@ pub fn validate(
                     .unwrap_or(&objects[i].type_name)
             )));
         }
+        if let Some((reservations, official)) = &functional_reservations {
+            let point = cell(p, &objects[i]);
+            let polygons = official.actual_reservation_polygons(&objects[i])?;
+            let findings = reservations.findings_polygons_at(
+                point,
+                z[point[1] * hm.width + point[0]],
+                &polygons,
+            );
+            if !findings.is_empty() {
+                return Err(err(format!(
+                    "production object {} {} {:?} enters complete ore/refinery or ramp reservations: {}",
+                    i + 1,
+                    objects[i].type_name,
+                    prop(&objects[i].props, "waypointName").and_then(Value::text),
+                    serde_json::to_string(&findings)?
+                )));
+            }
+        }
     }
     Ok(())
 }
 
 pub fn apply(p: &Project, map: &mut MapFile) -> Result<Json> {
+    let mut candidate = map.clone();
+    let report = apply_inner(p, &mut candidate)?;
+    *map = candidate;
+    Ok(report)
+}
+
+fn apply_inner(p: &Project, map: &mut MapFile) -> Result<Json> {
     let strict = crate::gameplay::official_placement::strict_project(p);
     let p = &strict;
     let hm = HeightMap::parse(map.get("HeightMapData")?)?;
@@ -335,6 +669,7 @@ pub fn apply(p: &Project, map: &mut MapFile) -> Result<Json> {
         .map(|v| *v as f64 * p.number("Z_SCALE", 0.0390625))
         .collect();
     let mut objects = map::objects(map.get("ObjectsList")?, &map.table)?;
+    let original_objects = objects.clone();
     let nodes = scripts::parse_nodes(&map.get("PlayerScriptsList")?.payload, &map.table)?;
     let report = repair(
         p,
@@ -346,14 +681,31 @@ pub fn apply(p: &Project, map: &mut MapFile) -> Result<Json> {
         &mut objects,
     )?;
     map.get_mut("ObjectsList")?.payload = map::write_objects(&objects, map)?;
+    // The production prepass may move primary waypoints on an already guarded
+    // map. Preserve their guard centres before the shared gift planner reads it.
+    crate::gameplay::gift_clearance::sync_moved_areas(map, &original_objects, &objects)?;
     let collision = crate::gameplay::gift_clearance::apply(p, map)?;
     let facing = crate::gameplay::production_facing::apply(p, map)?;
+    let native_decoded_crc32 = crc32fast::hash(&map.encode()?);
+    let recorded_access = collision.get("final_production_access").or_else(|| {
+        collision
+            .get("planning")
+            .and_then(|report| report.get("final_production_access"))
+    });
+    let final_access = if let Some(report) = recorded_access.filter(|report| {
+        report["passed"] == true && report["native_decoded_crc32"] == json!(native_decoded_crc32)
+    }) {
+        report.clone()
+    } else {
+        super::placement::validate_final_access(p, map)?
+    };
     let objects = map::objects(map.get("ObjectsList")?, &map.table)?;
     validate(p, map, &hm, &bt, &objects)?;
     let mut report = report;
     refresh_report(p, map, &mut report)?;
     report["collision_avoidance"] = collision;
     report["facing"] = facing;
+    report["final_production_access"] = final_access;
     let official = crate::gameplay::official_placement::audit(p, map)?;
     crate::gameplay::official_placement::require_passed(&official)?;
     report["official_placement"] = official;
@@ -377,13 +729,22 @@ pub fn refresh_report(p: &Project, map: &MapFile, report: &mut Json) -> Result<(
 }
 
 /// Find one physical object's XML position, tolerating WorldBuilder decimal precision.
-fn position_span(xml: &str, position: [f32; 3]) -> Result<(usize, usize)> {
+fn position_span(xml: &str, position: [f32; 3], kind: &str) -> Result<(usize, usize)> {
     let mut matches = Vec::new();
     for (start, _) in xml.match_indices("<Position ") {
         let Some(end) = xml[start..].find("/>").map(|i| start + i + 2) else {
             continue;
         };
         let tag = &xml[start..end];
+        // A start waypoint and its preplaced construction yard deliberately
+        // share coordinates. Match the physical object's type as well, so a
+        // moved waypoint cannot make the yard update ambiguous.
+        let Some(object_start) = xml[..start].rfind('<') else {
+            continue;
+        };
+        if !xml[object_start..start].contains(&format!("ThingTemplate=\"{kind}\"")) {
+            continue;
+        }
         let coordinates = ["x", "y", "z"].map(|axis| {
             let marker = format!("{axis}=\"");
             let part = tag.split_once(&marker)?.1;
@@ -407,7 +768,7 @@ fn position_span(xml: &str, position: [f32; 3]) -> Result<(usize, usize)> {
     Ok(matches[0])
 }
 fn sync_object_heading(xml: &mut String, object: &MapObject) -> Result<()> {
-    let (position, _) = position_span(xml, object.position)?;
+    let (position, _) = position_span(xml, object.position, &object.type_name)?;
     let start = xml[..position]
         .rfind('<')
         .ok_or_else(|| err("missing object XML opening tag"))?;
@@ -477,7 +838,7 @@ pub fn update_xml(xml: &str, before: &MapFile, after: &MapFile) -> Result<String
             )
         };
         if a.position != b.position {
-            let (start, end) = position_span(&xml, a.position)?;
+            let (start, end) = position_span(&xml, a.position, &a.type_name)?;
             xml.replace_range(start..end, &pos(b));
         }
         if sync_heading {
@@ -606,20 +967,43 @@ pub fn write_artifacts(p: &Project, source_name: &str, map: &MapFile, report: &J
 
 #[cfg(test)]
 mod tests {
+    #[test]
+    fn physical_xml_position_disambiguates_a_colocated_start_waypoint() {
+        let xml = "<Object ThingTemplate=\"SovietConstructionYard\" Angle=\"0\"><Position x=\"330\" y=\"3690\" z=\"0\"/></Object><Waypoint id=\"Player_3_Start\"><Position x=\"330\" y=\"3690\" z=\"0\"/></Waypoint>";
+        let (start, end) =
+            super::position_span(xml, [330., 3690., 0.], "SovietConstructionYard").unwrap();
+        assert_eq!(&xml[start..end], "<Position x=\"330\" y=\"3690\" z=\"0\"/>");
+        assert!(start < xml.find("</Object>").unwrap());
+        assert!(super::position_span(xml, [330., 3690., 0.], "JapanConstructionYard").is_err());
+        assert!(
+            super::position_span(
+                &format!("{xml}{xml}"),
+                [330., 3690., 0.],
+                "SovietConstructionYard"
+            )
+            .is_err()
+        );
+    }
+
     use super::*;
     use crate::{formats::binary::Writer, terrain::Layout};
     #[test]
     fn wb_decimal_coordinates_match_native_float_precision_but_duplicates_fail() {
         let tag = "<Position x=\"4642.596482\" y=\"3106.560427\" z=\"0\" />";
+        let opening = "<Object ThingTemplate=\"OreNode\">";
+        let xml = format!("{opening}{tag}</Object>");
         let position = [4642.596_f32, 3106.5603_f32, 0.];
-        assert_eq!(position_span(tag, position).unwrap(), (0, tag.len()));
-        assert!(position_span(&format!("{tag}{tag}"), position).is_err());
-        assert!(position_span(tag, [4642.6, 3106.56, 0.]).is_err());
+        assert_eq!(
+            position_span(&xml, position, "OreNode").unwrap(),
+            (opening.len(), opening.len() + tag.len())
+        );
+        assert!(position_span(&format!("{xml}{xml}"), position, "OreNode").is_err());
+        assert!(position_span(&xml, [4642.6, 3106.56, 0.], "OreNode").is_err());
     }
 
     #[test]
     fn angle_only_edits_and_stale_ore_xml_follow_native_headings_idempotently() {
-        let p = Project::load(std::path::Path::new(env!("CARGO_MANIFEST_DIR")), "陕西").unwrap();
+        let p = Project::load(std::path::Path::new(env!("CARGO_MANIFEST_DIR")), "河南").unwrap();
         let before = MapFile::load(p.assets.join(format!("{}.map", p.name))).unwrap();
         let mut objects = map::objects(before.get("ObjectsList").unwrap(), &before.table).unwrap();
         let ore = objects
@@ -646,31 +1030,40 @@ mod tests {
         let repaired = update_xml(&stale, &after, &after).unwrap();
         assert_eq!(edited, repaired);
         assert_eq!(update_xml(&repaired, &after, &after).unwrap(), repaired);
-        // Other inherited stale ores may also be reconciled, so inspect the
-        // exact opening tag at this ore's unchanged native position.
-        let (at, _) = position_span(&repaired, position).unwrap();
+        // Inspect the exact opening tag at this ore's unchanged native position.
+        let (at, _) = position_span(&repaired, position, "OreNode").unwrap();
         let start = repaired[..at].rfind('<').unwrap();
         assert!(repaired[start..at].contains("Angle=\"0.7853982\""));
-        let (old_start, old_end) = position_span(&xml, position).unwrap();
-        let (_, end) = position_span(&repaired, position).unwrap();
+        let (old_start, old_end) = position_span(&xml, position, "OreNode").unwrap();
+        let (_, end) = position_span(&repaired, position, "OreNode").unwrap();
         assert_eq!(&repaired[at..end], &xml[old_start..old_end]);
     }
 
     fn project() -> Project {
         let mut p =
-            Project::load(std::path::Path::new(env!("CARGO_MANIFEST_DIR")), "广西").unwrap();
+            Project::load(std::path::Path::new(env!("CARGO_MANIFEST_DIR")), "河南").unwrap();
         p.cfg["GRID"] = json!(220);
+        p.cfg["GRID_HEIGHT"] = json!(220);
         p
     }
     fn action(kind: &str, waypoint: &str) -> Node {
         let mut w = Writer::new();
         w.u32(467);
         w.u32(3);
-        w.u32(2);
-        for (ty, s) in [(15, kind), (7, waypoint)] {
+        w.u32(4);
+        for (ty, s) in [
+            (15, kind),
+            (3, "Player_1/teamPlayer_1"),
+            (7, waypoint),
+            (17, ""),
+        ] {
             w.u32(ty);
             w.u32(0);
-            w.f32(0.);
+            w.f32(if ty == 17 {
+                std::f32::consts::FRAC_PI_4
+            } else {
+                0.
+            });
             w.s16(s).unwrap();
         }
         w.u32(1);
@@ -697,9 +1090,9 @@ mod tests {
             "naval_yard":{"surface":"water","padding":9}
         }});
         std::fs::write(&path, serde_json::to_vec(&common).unwrap()).unwrap();
-        for id in ["陕西", "广西", "广东", "海南"] {
-            let mut p =
-                Project::load(std::path::Path::new(env!("CARGO_MANIFEST_DIR")), id).unwrap();
+        for ruleset in ["common-T0.5.1", "another-script-ruleset"] {
+            let mut p = project();
+            p.cfg["RULESET"] = json!(ruleset);
             p.root = directory.clone();
             let policy = PlacementPolicy::load(&p).unwrap();
             assert_eq!(policy.padding(false), 7);
@@ -757,12 +1150,146 @@ mod tests {
     }
 
     #[test]
+    fn native_factory_geometry_outside_its_public_padding_preserves_mine_clearance() {
+        let p = project();
+        let original =
+            Project::load(std::path::Path::new(env!("CARGO_MANIFEST_DIR")), "河南").unwrap();
+        let mut layout = Layout::load(&original).unwrap();
+        layout.ramps.clear();
+        let mut ore = layout
+            .objects
+            .iter()
+            .find(|object| object.type_name == "OreNode")
+            .unwrap()
+            .clone();
+        ore.cell = [141., 110.];
+        ore.angle = std::f32::consts::FRAC_PI_4;
+        let ore = ore.object(&p);
+        let mut factory = ore.clone();
+        factory.type_name = "AlliedWarFactory".into();
+        factory.props.clear();
+        let frame = crate::coordinates::Frame::from_project(&p);
+        let world = frame.world([110., 110.]);
+        factory.position[0] = world[0] as f32;
+        factory.position[1] = world[1] as f32;
+        let objects = vec![factory.clone(), ore];
+        let n = p.usize("GRID", 220);
+        let z = vec![210.; n * n];
+        let flags = vec![false; n * n];
+        let reservations =
+            super::super::gift_clearance::FixedReservations::new(&p, &layout, &objects, &z, n)
+                .unwrap();
+        let official = super::super::official_placement::Checker::for_candidates(
+            &p,
+            n,
+            &z,
+            &flags,
+            &flags,
+            &[],
+            &objects,
+        )
+        .unwrap()
+        .unwrap();
+        // The 6-cell policy square clears the 20-cell ore disk. The real
+        // diagonal EA foundation and production access extend farther.
+        assert!(reservations.clear_at([110, 110], 6, 210.));
+        assert!(
+            !clear_functional_reservations(&reservations, &official, &factory, [110, 110], 210.,)
+                .unwrap()
+        );
+        assert!(
+            clear_functional_reservations(&reservations, &official, &factory, [104, 110], 210.,)
+                .unwrap()
+        );
+    }
+
+    #[test]
+    fn custom_scripted_production_without_a_native_factory_checks_full_mine_reservations() {
+        let p = project();
+        let original =
+            Project::load(std::path::Path::new(env!("CARGO_MANIFEST_DIR")), "河南").unwrap();
+        let mut layout = Layout::load(&original).unwrap();
+        layout.ramps.clear();
+        let mut ore = layout
+            .objects
+            .iter()
+            .find(|object| object.type_name == "OreNode")
+            .unwrap()
+            .clone();
+        ore.cell = [141., 110.];
+        ore.angle = std::f32::consts::FRAC_PI_4;
+        let mut marker = layout
+            .objects
+            .iter()
+            .find(|object| object.type_name.contains("Waypoint"))
+            .unwrap()
+            .clone();
+        let mut objects = vec![ore.object(&p)];
+        for (name, point) in std::iter::once(("custom-production".to_owned(), [110., 110.])).chain(
+            (1..=8).map(|seat| {
+                (
+                    format!("Player_{seat}_Start"),
+                    [
+                        if seat <= 4 { 40. } else { 180. },
+                        35. + ((seat - 1) % 4) as f64 * 50.,
+                    ],
+                )
+            }),
+        ) {
+            marker.cell = point;
+            map::set(&mut marker.props, "waypointName", Value::Ascii(name));
+            objects.push(marker.object(&p));
+        }
+        assert!(
+            objects
+                .iter()
+                .all(|object| !super::super::placement::is_production(&object.type_name))
+        );
+        let nodes = vec![action("AlliedWarFactory", "custom-production")];
+        let mut map =
+            MapFile::load(original.assets.join(format!("{}.map", original.name))).unwrap();
+        map.get_mut("PlayerScriptsList").unwrap().payload =
+            scripts::encode_nodes(&nodes, &mut map).unwrap();
+        let n = p.usize("GRID", 220);
+        let hm = HeightMap {
+            width: n,
+            height: n,
+            border: 20,
+            borders: Vec::new(),
+            elevations: vec![5376; n * n],
+        };
+        let bt = BlendTiles {
+            tiles: vec![0; n * n],
+            impassability: vec![false; n * n],
+            buildability: vec![false; n * n],
+            textures: Vec::new(),
+            tail: Vec::new(),
+            blend_descriptions: Vec::new(),
+        };
+        let error = validate_with_layout(&p, &map, &hm, &bt, &objects, &layout)
+            .unwrap_err()
+            .to_string();
+        assert!(
+            error.contains("custom-production") && error.contains("ore_disk"),
+            "{error}"
+        );
+        let frame = crate::coordinates::Frame::from_project(&p);
+        let world = frame.world([104., 110.]);
+        objects[1].position[0] = world[0] as f32;
+        objects[1].position[1] = world[1] as f32;
+        validate_with_layout(&p, &map, &hm, &bt, &objects, &layout).unwrap();
+    }
+
+    #[test]
     fn repairs_scripted_factories_and_shipyards_without_changing_actions() {
         let p = project();
         let n = 220;
         let original_p =
-            Project::load(std::path::Path::new(env!("CARGO_MANIFEST_DIR")), "广西").unwrap();
+            Project::load(std::path::Path::new(env!("CARGO_MANIFEST_DIR")), "河南").unwrap();
         let mut layout = Layout::load(&original_p).unwrap();
+        // This synthetic 220-cell scene declares no ramps. Its fixtures must
+        // not accidentally inherit the real 800-cell map's slope geometry.
+        layout.ramps.clear();
         let mut prototype = layout.objects.remove(
             layout
                 .objects
@@ -780,6 +1307,20 @@ mod tests {
             );
             objects.push(prototype.object(&p));
         }
+        // Strict official placement resolves every scripted gift's native
+        // owner and facing target from all eight starts, even in a local test.
+        for seat in 1..=8 {
+            prototype.cell = [
+                if seat <= 4 { 40. } else { 180. },
+                35. + ((seat - 1) % 4) as f64 * 50.,
+            ];
+            map::set(
+                &mut prototype.props,
+                "waypointName",
+                Value::Ascii(format!("Player_{seat}_Start")),
+            );
+            objects.push(prototype.object(&p));
+        }
         let mut z = vec![210.; n * n];
         for y in 0..n {
             for x in 110..n {
@@ -794,7 +1335,9 @@ mod tests {
             ];
             let original = serde_json::to_value(&nodes).unwrap();
             let mut repaired = objects.clone();
-            let report = repair(&p, n, &z, &flags, &flags, &nodes, &mut repaired).unwrap();
+            let report =
+                repair_with_layout(&p, n, &z, &flags, &flags, &nodes, &mut repaired, &layout)
+                    .unwrap();
             assert!(
                 report["placements"]
                     .as_array()
@@ -813,7 +1356,9 @@ mod tests {
             assert!(ground.suitable(cell(&p, &repaired[0]), false));
             assert!(ground.suitable(cell(&p, &repaired[1]), true));
             assert_eq!(serde_json::to_value(&nodes).unwrap(), original);
-            let repeated = repair(&p, n, &z, &flags, &flags, &nodes, &mut repaired).unwrap();
+            let repeated =
+                repair_with_layout(&p, n, &z, &flags, &flags, &nodes, &mut repaired, &layout)
+                    .unwrap();
             assert!(
                 repeated["placements"]
                     .as_array()
@@ -822,6 +1367,28 @@ mod tests {
                     .all(|v| v["moved"] == false)
             );
         }
+        // A legal but remote point is also reconsidered against the script's
+        // owning seat; proximity to some other start does not change ownership.
+        let mut remote = objects.clone();
+        let world = crate::coordinates::Frame::from_project(&p).world([82., 140.]);
+        remote[0].position = [world[0] as f32, world[1] as f32, 0.];
+        let old_distance = (82_f64 - 40.).hypot(140_f64 - 35.);
+        let report = repair_with_layout(
+            &p,
+            n,
+            &z,
+            &flags,
+            &flags,
+            &[action("alliedwarfactory", "factory")],
+            &mut remote,
+            &layout,
+        )
+        .unwrap();
+        let placement = &report["placements"][0];
+        assert_eq!(placement["seat"], 1);
+        assert_eq!(placement["moved"], true);
+        assert!(placement["distance_from_base"].as_f64().unwrap() < old_distance);
+        assert!(placement["static_access_steps"].as_u64().is_some());
         assert!(bindings(&[action("sovietwarfactory", "missing")], &objects).is_err());
         assert!(
             bindings(
@@ -834,14 +1401,15 @@ mod tests {
             .is_err()
         );
         assert!(
-            repair(
+            repair_with_layout(
                 &p,
                 n,
                 &vec![130.; n * n],
                 &flags,
                 &flags,
                 &[action("sovietwarfactory", "factory")],
-                &mut objects
+                &mut objects,
+                &layout,
             )
             .is_err()
         );

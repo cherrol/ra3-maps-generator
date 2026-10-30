@@ -17,9 +17,10 @@ use serde_json::{Value as Json, json};
 use std::collections::{BTreeMap, BTreeSet};
 
 type Polygon = Vec<[f64; 2]>;
-const REVISION: &str = "official-placement-v2-actual-conditional-headings";
+const REVISION: &str = "official-placement-v5-full-functional-reservations";
+const FULL_SCOPE: &str = "all applicable native buildings and explicit building creation actions";
 
-/// Explicit mode overrides the compatibility defaults in either direction.
+/// Production defaults to strict; diagnostic is an explicit read-only audit mode.
 pub fn enforced(p: &Project) -> Result<bool> {
     if p.cfg["OFFICIAL_PLACEMENT"]
         .get("mode")
@@ -39,11 +40,7 @@ pub fn enforced(p: &Project) -> Result<bool> {
         {
             Err(err("OFFICIAL_PLACEMENT must be an object"))
         }
-        None => Ok(!p.cfg["COORDINATE_PIPELINE"].is_object()
-            && p.string("TEXTURE_PROFILE", "") != "legacy"
-            && p.string("RAMP_PROFILE", "") != "legacy"
-            && !p.cfg["SPAWN_PLACEMENT_REFERENCE"].is_string()
-            && !p.cfg["RAMP_CLEARANCE_REFERENCE"].is_string()),
+        None => Ok(true),
     }
 }
 
@@ -59,9 +56,8 @@ pub fn binding(p: &Project) -> Result<Json> {
         Err(error) => return Err(error.into()),
     };
     Ok(json!({"algorithm":REVISION,"enforced":enforced(p)?,
-        "settings":p.cfg["OFFICIAL_PLACEMENT"],"teams":p.cfg["BASES"],
+        "settings":p.cfg["OFFICIAL_PLACEMENT"],"enforced_scope":FULL_SCOPE,"teams":p.cfg["BASES"],
         "water_z":p.number("WATER_Z",200.),"cell":p.number("CELL",10.),"z_scale":p.number("Z_SCALE",0.0390625),
-        "compatibility":{"frozen":p.cfg["COORDINATE_PIPELINE"].is_object(),"texture_profile":p.cfg["TEXTURE_PROFILE"],"ramp_profile":p.cfg["RAMP_PROFILE"],"spawn_reference":p.cfg["SPAWN_PLACEMENT_REFERENCE"],"ramp_reference":p.cfg["RAMP_CLEARANCE_REFERENCE"]},
         "public_production_policy_crc32":common,"refinery_policy":terrain::ramp_clearance::policy(p)?,"spatial_policy":terrain::spatial::policy(p)?,"catalog":official::binding()}))
 }
 
@@ -71,7 +67,12 @@ pub(crate) fn strict_project(p: &Project) -> Project {
         strict.cfg["OFFICIAL_PLACEMENT"] = json!({});
     }
     strict.cfg["OFFICIAL_PLACEMENT"]["mode"] = json!("strict");
-    strict.cfg["OFFICIAL_PLACEMENT"]["scope"] = json!("production_repair");
+    // Candidate search may focus on a requested building, but its resulting
+    // native package must still pass the complete placement audit.
+    strict.cfg["OFFICIAL_PLACEMENT"]
+        .as_object_mut()
+        .unwrap()
+        .remove("scope");
     strict
 }
 
@@ -556,7 +557,11 @@ impl Checker {
         } else {
             Some(production_facing::Context::from_objects(p, objects)?)
         };
-        let policy = if bindings_out.is_empty() {
+        let policy = if bindings_out.is_empty()
+            && !objects
+                .iter()
+                .any(|object| super::placement::is_production(&object.type_name))
+        {
             None
         } else {
             Some(PlacementPolicy::load(p)?)
@@ -619,6 +624,377 @@ impl Checker {
 
     pub(crate) fn planned_obstacles(&self, objects: &[MapObject]) -> Obstacles {
         self.obstacles_for(objects, true)
+    }
+
+    /// Complete candidate foundations and real production access, separate from
+    /// the enlarged body bounds used to restrict a search to known legal areas.
+    pub(crate) fn candidate_reservation_polygons(
+        &self,
+        waypoint: &str,
+        cell: [usize; 2],
+    ) -> Result<Vec<Polygon>> {
+        let bindings = self.matching(waypoint);
+        if bindings.is_empty() {
+            return Err(err(format!(
+                "candidate reservation has no binding: {waypoint}"
+            )));
+        }
+        let point = cell.map(|value| value as f64);
+        let poses = bindings
+            .into_iter()
+            .map(|binding| {
+                Ok((
+                    binding.kind.as_str(),
+                    self.binding_heading(binding, point, true)?,
+                ))
+            })
+            .collect::<Result<Vec<_>>>()?;
+        self.functional_polygons(point, poses, true)
+    }
+
+    pub(crate) fn object_reservation_polygons(
+        &self,
+        object: &MapObject,
+        cell: [usize; 2],
+    ) -> Result<Vec<Polygon>> {
+        if let Some(waypoint) = prop(&object.props, "waypointName").and_then(Value::text) {
+            return self.candidate_reservation_polygons(waypoint, cell);
+        }
+        self.functional_polygons(
+            cell.map(|value| value as f64),
+            [(object.type_name.as_str(), object.angle)],
+            false,
+        )
+    }
+
+    /// Final audits keep the saved fractional position and explicit branch
+    /// headings. Integer search coordinates are a planner choice, not a licence
+    /// to snap an existing object's geometry before checking its clearance.
+    pub(crate) fn actual_reservation_polygons(&self, object: &MapObject) -> Result<Vec<Polygon>> {
+        let point = self
+            .frame
+            .grid([f64::from(object.position[0]), f64::from(object.position[1])]);
+        if let Some(waypoint) = prop(&object.props, "waypointName").and_then(Value::text) {
+            let bindings = self
+                .bindings
+                .iter()
+                .filter(|binding| binding.waypoint == waypoint)
+                .map(|binding| {
+                    Ok((
+                        binding.kind.as_str(),
+                        self.binding_heading(binding, point, false)?,
+                    ))
+                })
+                .collect::<Result<Vec<_>>>()?;
+            if bindings.is_empty() {
+                return Err(err(format!(
+                    "actual reservation has no explicit binding: {waypoint}"
+                )));
+            }
+            return self.functional_polygons(point, bindings, true);
+        }
+        self.functional_polygons(point, [(object.type_name.as_str(), object.angle)], false)
+    }
+
+    fn functional_polygons<'a>(
+        &self,
+        point: [f64; 2],
+        poses: impl IntoIterator<Item = (&'a str, f32)>,
+        scripted_gift: bool,
+    ) -> Result<Vec<Polygon>> {
+        let mut polygons = Vec::new();
+        for (kind, heading) in poses {
+            let model = self
+                .models
+                .get(kind)
+                .ok_or_else(|| err(format!("candidate reservation definition missing: {kind}")))?;
+            if !model.pending.is_empty() {
+                return Err(err(format!(
+                    "candidate reservation definition unresolved: {kind}"
+                )));
+            }
+            polygons.extend(model.placed(&self.frame, point, heading, true));
+            polygons.extend(model.placed(&self.frame, point, heading, false));
+            if let Some((_, padding)) = self.policy.as_ref().and_then(|policy| {
+                if scripted_gift {
+                    super::gift_clearance::kind(kind, policy)
+                } else {
+                    policy.footprint(kind)
+                }
+            }) {
+                polygons.push(square(point, padding as f64));
+            }
+            if let Some((create, rally)) = model.exit {
+                let mut corners = Vec::new();
+                for endpoint in [create, rally] {
+                    corners.extend(square(
+                        transform(&self.frame, point, heading, endpoint),
+                        self.exit_clearance,
+                    ));
+                }
+                // Exact convex sweep of the same axis-aligned clearance square
+                // used by assess, without filling the diagonal bounding box.
+                corners.sort_by(|a, b| a[0].total_cmp(&b[0]).then(a[1].total_cmp(&b[1])));
+                corners.dedup();
+                let cross = |a: [f64; 2], b: [f64; 2], c: [f64; 2]| {
+                    (b[0] - a[0]) * (c[1] - a[1]) - (b[1] - a[1]) * (c[0] - a[0])
+                };
+                let mut hull = Vec::new();
+                for &corner in &corners {
+                    while hull.len() >= 2
+                        && cross(hull[hull.len() - 2], hull[hull.len() - 1], corner) <= 0.
+                    {
+                        hull.pop();
+                    }
+                    hull.push(corner);
+                }
+                let lower = hull.len();
+                for &corner in corners.iter().rev().skip(1) {
+                    while hull.len() > lower
+                        && cross(hull[hull.len() - 2], hull[hull.len() - 1], corner) <= 0.
+                    {
+                        hull.pop();
+                    }
+                    hull.push(corner);
+                }
+                hull.pop();
+                polygons.push(hull);
+            }
+        }
+        Ok(polygons)
+    }
+
+    /// Conservative bounds for restricting a candidate to a declared legal body.
+    /// Includes every branch, public reservation and actual exit sweep. An
+    /// airfield without a ground rally receives no invented ground exit.
+    pub(crate) fn candidate_reservation_bounds(
+        &self,
+        waypoint: &str,
+        cell: [usize; 2],
+        margin: f64,
+    ) -> Result<[f64; 4]> {
+        if !margin.is_finite() || margin < 0. {
+            return Err(err(
+                "candidate reservation margin must be finite and nonnegative",
+            ));
+        }
+        let bindings = self.matching(waypoint);
+        if bindings.is_empty() {
+            return Err(err(format!(
+                "candidate reservation has no binding: {waypoint}"
+            )));
+        }
+        let point = cell.map(|value| value as f64);
+        let mut polygons = Vec::new();
+        for binding in bindings {
+            let model = self.models.get(&binding.kind).ok_or_else(|| {
+                err(format!(
+                    "candidate reservation definition missing: {}",
+                    binding.kind
+                ))
+            })?;
+            if !model.pending.is_empty() {
+                return Err(err(format!(
+                    "candidate reservation definition unresolved: {}",
+                    binding.kind
+                )));
+            }
+            let heading = self.binding_heading(binding, point, true)?;
+            polygons.extend(model.placed(&self.frame, point, heading, true));
+            polygons.extend(model.placed(&self.frame, point, heading, false));
+            if let Some((_, padding)) = self
+                .policy
+                .as_ref()
+                .and_then(|policy| super::gift_clearance::kind(&binding.kind, policy))
+            {
+                polygons.push(square(point, (padding as f64 + margin) * 2_f64.sqrt()));
+            }
+            if let Some((create, rally)) = model.exit {
+                // A rectangle is convex, so these endpoint sweeps bound the
+                // complete straight create-to-rally corridor used by assess.
+                for endpoint in [create, rally] {
+                    polygons.push(square(
+                        transform(&self.frame, point, heading, endpoint),
+                        self.exit_clearance + margin,
+                    ));
+                }
+            }
+        }
+        let bounds = polygons.iter().flatten().fold(
+            [
+                f64::INFINITY,
+                f64::INFINITY,
+                f64::NEG_INFINITY,
+                f64::NEG_INFINITY,
+            ],
+            |bounds, point| {
+                [
+                    bounds[0].min(point[0]),
+                    bounds[1].min(point[1]),
+                    bounds[2].max(point[0]),
+                    bounds[3].max(point[1]),
+                ]
+            },
+        );
+        if bounds.iter().any(|value| !value.is_finite()) {
+            return Err(err("candidate reservation has no resolved geometry"));
+        }
+        Ok(bounds)
+    }
+
+    /// Final routing overlays every actual conditional/fallback foundation and
+    /// collision body. The caller groups cells by native object for self exclusion.
+    pub(crate) fn navigation_cells(&self, objects: &[MapObject]) -> Result<Vec<usize>> {
+        let mut polygons = Vec::new();
+        for object in objects {
+            if official::certainly_noncolliding_marker(&object.type_name)
+                || official::object(&object.type_name).is_some_and(|definition| {
+                    definition.kind_of.iter().any(|flag| flag == "NO_COLLIDE")
+                })
+            {
+                continue;
+            }
+            let cell = self
+                .frame
+                .grid([object.position[0] as f64, object.position[1] as f64]);
+            if object.type_name.contains("Waypoint") {
+                if let Some(name) = prop(&object.props, "waypointName").and_then(Value::text) {
+                    for binding in self.matching(name) {
+                        let model = self.models.get(&binding.kind).ok_or_else(|| {
+                            err(format!("navigation definition missing: {}", binding.kind))
+                        })?;
+                        let heading = self.binding_heading(binding, cell, false)?;
+                        polygons.extend(model.placed(&self.frame, cell, heading, false));
+                        polygons.extend(model.placed(&self.frame, cell, heading, true));
+                        if let Some((_, padding)) = self
+                            .policy
+                            .as_ref()
+                            .and_then(|policy| super::gift_clearance::kind(&binding.kind, policy))
+                        {
+                            polygons.push(square(cell, padding as f64));
+                        }
+                    }
+                }
+            } else if let Some(model) = self.models.get(&object.type_name) {
+                polygons.extend(model.placed(&self.frame, cell, object.angle, false));
+                polygons.extend(model.placed(&self.frame, cell, object.angle, true));
+                if let Some((_, padding)) = self
+                    .policy
+                    .as_ref()
+                    .and_then(|policy| policy.footprint(&object.type_name))
+                {
+                    polygons.push(square(cell, padding as f64));
+                }
+            } else {
+                return Err(err(format!(
+                    "unresolved final navigation obstacle: {}",
+                    object.type_name
+                )));
+            }
+        }
+        let mut cells = BTreeSet::new();
+        for polygon in polygons {
+            let covered = self
+                .cells(&polygon)
+                .ok_or_else(|| err("final navigation foundation exceeds playable bounds"))?;
+            cells.extend(covered);
+        }
+        Ok(cells.into_iter().collect())
+    }
+
+    /// Use each actual production branch's rotated official rally point for
+    /// base-access ranking. Explicit NoExitPath and verified airfields without
+    /// a ground rally supply no invented point; their foundation access remains.
+    pub(crate) fn production_access_targets(
+        &self,
+        waypoint: &str,
+        cell: [usize; 2],
+    ) -> Result<Vec<(bool, [f64; 2])>> {
+        let point = cell.map(|value| value as f64);
+        let bindings = self.matching(waypoint);
+        if bindings.is_empty() {
+            return Err(err(format!(
+                "no explicit production binding for {waypoint}"
+            )));
+        }
+        let mut targets = Vec::new();
+        for binding in bindings
+            .into_iter()
+            .filter(|binding| super::placement::is_production(&binding.kind))
+        {
+            let heading = self.binding_heading(binding, point, true)?;
+            if let Some(target) = self.production_access_target(&binding.kind, point, heading)? {
+                targets.push(target);
+            }
+        }
+        Ok(targets)
+    }
+
+    pub(crate) fn object_production_access_targets(
+        &self,
+        object: &MapObject,
+        cell: [usize; 2],
+    ) -> Result<Vec<(bool, [f64; 2])>> {
+        if let Some(waypoint) = prop(&object.props, "waypointName").and_then(Value::text) {
+            return self.production_access_targets(waypoint, cell);
+        }
+        Ok(self
+            .production_access_target(
+                &object.type_name,
+                cell.map(|value| value as f64),
+                object.angle,
+            )?
+            .into_iter()
+            .collect())
+    }
+
+    pub(crate) fn production_ground_access_basis(&self, object: &MapObject) -> Vec<Json> {
+        let kinds =
+            if let Some(waypoint) = prop(&object.props, "waypointName").and_then(Value::text) {
+                self.matching(waypoint)
+                    .into_iter()
+                    .map(|binding| binding.kind.as_str())
+                    .collect::<Vec<_>>()
+            } else {
+                vec![object.type_name.as_str()]
+            };
+        kinds
+            .into_iter()
+            .filter_map(|kind| {
+                super::placement::ground_rally_omission(kind).map(
+                    |reason| json!({"kind":kind,"reason":reason,"ground_rally":"not_applicable"}),
+                )
+            })
+            .collect()
+    }
+
+    fn production_access_target(
+        &self,
+        kind: &str,
+        point: [f64; 2],
+        heading: f32,
+    ) -> Result<Option<(bool, [f64; 2])>> {
+        let model = self
+            .models
+            .get(kind)
+            .ok_or_else(|| err(format!("official production definition missing: {kind}")))?;
+        if !model.pending.is_empty() {
+            return Err(err(format!(
+                "unresolved official production definition {kind}: {:?}",
+                model.pending
+            )));
+        }
+        let Some((_, rally)) = model.exit else {
+            if super::placement::ground_rally_omission(kind).is_some() {
+                return Ok(None);
+            }
+            return Err(err(format!("official production exit unavailable: {kind}")));
+        };
+        let index = (point[1].round().clamp(0., (self.frame.height - 1) as f64) as usize)
+            * self.frame.width
+            + point[0].round().clamp(0., (self.frame.width - 1) as f64) as usize;
+        let wet = model.water.unwrap_or(self.z[index] <= self.water);
+        Ok(Some((wet, transform(&self.frame, point, heading, rally))))
     }
 
     fn obstacles(&self, objects: &[MapObject]) -> Obstacles {
@@ -882,7 +1258,7 @@ impl Checker {
     }
 }
 
-/// Audit the final native scene. Frozen and legacy defaults report without changing content.
+/// Audit the final native scene without changing game content. Strict is the default.
 pub fn audit(p: &Project, map: &MapFile) -> Result<Json> {
     let enforced = enforced(p)?;
     if p.flag("TERRAIN_ONLY") {
@@ -936,13 +1312,7 @@ pub fn audit(p: &Project, map: &MapFile) -> Result<Json> {
     };
     let mut entries = Vec::new();
     let mut findings = Vec::new();
-    let mut diagnostic_findings = Vec::new();
     let mut uncovered = Vec::new();
-    let repair_policy = if p.cfg["OFFICIAL_PLACEMENT"]["scope"] == "production_repair" {
-        Some(PlacementPolicy::load(p)?)
-    } else {
-        None
-    };
     for pending in &checker.script_pending {
         findings.push(json!({"status":"pending","detail":pending}));
     }
@@ -972,17 +1342,9 @@ pub fn audit(p: &Project, map: &MapFile) -> Result<Json> {
             problems.push(pending);
         }
         evidence["object_id"] = json!(index + 1);
-        let targeted = repair_policy
-            .as_ref()
-            .is_none_or(|policy| policy.footprint(&object.type_name).is_some());
-        evidence["enforced_target"] = json!(targeted);
+        evidence["enforced_target"] = json!(true);
         for detail in problems {
-            let issue = json!({"object_id":index+1,"kind":object.type_name,"detail":detail});
-            if targeted {
-                findings.push(issue);
-            } else {
-                diagnostic_findings.push(issue);
-            }
+            findings.push(json!({"object_id":index+1,"kind":object.type_name,"detail":detail}));
         }
         entries.push(evidence);
     }
@@ -1043,12 +1405,25 @@ pub fn audit(p: &Project, map: &MapFile) -> Result<Json> {
         .collect::<Vec<_>>();
     let passed = findings.is_empty();
     Ok(
-        json!({"schema_version":1,"scope":"official building placement/collision and explicit script creation exits; public reserves remain separate; unresolved decorations are uncovered rather than qualified","strict_scope":if p.cfg["OFFICIAL_PLACEMENT"]["scope"]=="production_repair"{"factories/naval yards and explicit building creation actions"}else{"all applicable native buildings and explicit building creation actions"},"enforced":enforced,"mode":if enforced{"strict"}else{"diagnostic"},"passed":passed,"raw_passed":passed&&diagnostic_findings.is_empty(),"pending":pending,"findings":findings,"diagnostic_findings":diagnostic_findings,"entries":entries,"uncovered_objects":uncovered,"classified_noncolliding_markers":checker.classified_markers,"coverage_complete":uncovered.is_empty()&&pending.is_empty(),"catalog":official::binding(),"ore_refinery_evidence":refinery_evidence(p),"runtime_navigation":"not inferred","bone_positions":"not inferred from bone names"}),
+        json!({"schema_version":1,"scope":"official building placement/collision and explicit script creation exits; public reserves remain separate; unresolved decorations are uncovered rather than qualified","strict_scope":FULL_SCOPE,"enforced":enforced,"mode":if enforced{"strict"}else{"diagnostic"},"passed":passed,"raw_passed":passed,"pending":pending,"findings":findings,"diagnostic_findings":[],"entries":entries,"uncovered_objects":uncovered,"classified_noncolliding_markers":checker.classified_markers,"coverage_complete":uncovered.is_empty()&&pending.is_empty(),"catalog":official::binding(),"ore_refinery_evidence":refinery_evidence(p),"runtime_navigation":"not inferred","bone_positions":"not inferred from bone names"}),
     )
 }
 
 pub fn require_passed(report: &Json) -> Result<()> {
-    if report["enforced"] == true && report["passed"] != true {
+    if report["status"] == "not_applicable" {
+        return Ok(());
+    }
+    if report["enforced"] != true {
+        return Err(err(
+            "diagnostic official placement cannot authorize production; use strict mode",
+        ));
+    }
+    if report["strict_scope"] != FULL_SCOPE {
+        return Err(err(
+            "production requires the full applicable official placement scope",
+        ));
+    }
+    if report["passed"] != true || report["raw_passed"] != true {
         return Err(err(format!(
             "official placement failed: {} findings; see official-placement.json",
             report["findings"].as_array().map_or(0, Vec::len)
@@ -1088,7 +1463,7 @@ mod tests {
 
     fn hospital_scene(headings: &[f32]) -> (Project, MapFile, [f64; 2]) {
         let root = std::path::Path::new(env!("CARGO_MANIFEST_DIR"));
-        let mut p = Project::load(root, "海南").unwrap();
+        let mut p = Project::load(root, "河南").unwrap();
         let mut map = MapFile::load(root.join("templates/8p_template.map")).unwrap();
         let mut hm = HeightMap::parse(map.get("HeightMapData").unwrap()).unwrap();
         p.cfg["GRID"] = json!(hm.width);
@@ -1243,7 +1618,7 @@ mod tests {
         assert!(!building("HA_GardenRock01"));
         assert!(building("HospitalTechStructure"));
         let mut p =
-            Project::load(std::path::Path::new(env!("CARGO_MANIFEST_DIR")), "海南").unwrap();
+            Project::load(std::path::Path::new(env!("CARGO_MANIFEST_DIR")), "河南").unwrap();
         for malformed in [json!(true), json!(false), json!(1), Json::Null] {
             p.cfg["OFFICIAL_PLACEMENT"] = json!({"mode":malformed});
             assert!(enforced(&p).is_err());
@@ -1308,7 +1683,7 @@ mod tests {
 
     fn checker(water: bool) -> Checker {
         let mut p =
-            Project::load(std::path::Path::new(env!("CARGO_MANIFEST_DIR")), "海南").unwrap();
+            Project::load(std::path::Path::new(env!("CARGO_MANIFEST_DIR")), "河南").unwrap();
         p.cfg["GRID"] = json!(128);
         p.cfg["GRID_HEIGHT"] = json!(128);
         p.cfg["BORDER"] = json!(4);
@@ -1337,6 +1712,119 @@ mod tests {
             checker.models.insert(kind.into(), model);
         }
         checker
+    }
+
+    #[test]
+    fn candidate_body_bounds_include_all_headings_and_the_exit_beyond_the_foundation() {
+        let mut checker = checker(false);
+        checker
+            .models
+            .get_mut("HospitalTechStructure")
+            .unwrap()
+            .exit = Some(([0., 0.], [400., 0.]));
+        for degrees in [45_f32, 135.] {
+            checker.bindings.push(Binding {
+                waypoint: "conditional-site".into(),
+                kind: "HospitalTechStructure".into(),
+                seat: None,
+                heading: Some(degrees.to_radians()),
+            });
+        }
+        let bounds = checker
+            .candidate_reservation_bounds("conditional-site", [64, 64], 3.)
+            .unwrap();
+        // Both rotated exits extend more than 28 cells from the centre;
+        // checking only a building centre or its short wings would miss them.
+        assert!(bounds[0] < 32. && bounds[2] > 96.);
+        assert!(bounds[1] < 32.);
+        assert!(
+            checker
+                .candidate_reservation_bounds("missing", [64, 64], 3.)
+                .is_err()
+        );
+        assert!(
+            checker
+                .candidate_reservation_bounds("conditional-site", [64, 64], f64::NAN)
+                .is_err()
+        );
+    }
+
+    #[test]
+    fn verified_airfields_need_no_ground_rally_but_other_missing_exits_still_fail() {
+        let mut checker = checker(false);
+        for kind in ["AlliedAirfield", "SovietAirfield"] {
+            let model = Model::load(kind);
+            assert!(model.pending.is_empty());
+            assert!(official::object(kind).unwrap().production_exit.is_none());
+            checker.models.insert(kind.into(), model);
+            assert_eq!(
+                checker
+                    .production_access_target(kind, [64., 64.], 45_f32.to_radians())
+                    .unwrap(),
+                None
+            );
+            assert_eq!(
+                super::super::placement::ground_rally_omission(kind),
+                Some("airfield_without_ground_rally")
+            );
+        }
+        // An unresolved/missing factory exit is not granted the airfield rule.
+        checker.models.get_mut("AlliedWarFactory").unwrap().exit = None;
+        assert!(
+            checker
+                .production_access_target("AlliedWarFactory", [64., 64.], 45_f32.to_radians())
+                .is_err()
+        );
+        assert!(
+            checker
+                .production_access_target("UnknownAirfield", [64., 64.], 45_f32.to_radians())
+                .is_err()
+        );
+    }
+
+    #[test]
+    fn native_production_without_create_actions_still_overlays_public_foundation() {
+        let mut p =
+            Project::load(std::path::Path::new(env!("CARGO_MANIFEST_DIR")), "河南").unwrap();
+        p.cfg["GRID"] = json!(128);
+        p.cfg["GRID_HEIGHT"] = json!(128);
+        p.cfg["BORDER"] = json!(4);
+        p.cfg["CELL"] = json!(10.);
+        let frame = Frame::from_project(&p);
+        let world = frame.world([64., 64.]);
+        let object = MapObject {
+            version: 3,
+            position: [world[0] as f32, world[1] as f32, 0.],
+            angle: 45_f32.to_radians(),
+            road_type: 0,
+            type_name: "AlliedBarracks".into(),
+            props: Vec::new(),
+        };
+        let checker = Checker::for_candidates(
+            &p,
+            128,
+            &vec![212.; 128 * 128],
+            &vec![false; 128 * 128],
+            &vec![false; 128 * 128],
+            &[],
+            std::slice::from_ref(&object),
+        )
+        .unwrap()
+        .unwrap();
+        assert!(checker.policy.is_some());
+        let padding = checker
+            .policy
+            .as_ref()
+            .unwrap()
+            .footprint(&object.type_name)
+            .unwrap()
+            .1;
+        assert!(
+            checker
+                .navigation_cells(&[object])
+                .unwrap()
+                .contains(&(64 * 128 + 64 + padding))
+        );
     }
 
     #[test]
@@ -1419,7 +1907,7 @@ mod tests {
     fn every_conditional_faction_and_fallback_uses_the_same_final_heading() {
         let mut checker = checker(false);
         let root = std::path::Path::new(env!("CARGO_MANIFEST_DIR"));
-        let p = Project::load(root, "海南").unwrap();
+        let p = Project::load(root, "河南").unwrap();
         let map = MapFile::load(root.join("templates/8p_template.map")).unwrap();
         let objects = map::objects(map.get("ObjectsList").unwrap(), &map.table).unwrap();
         checker.facing = Some(production_facing::Context::from_objects(&p, &objects).unwrap());
@@ -1462,7 +1950,7 @@ mod tests {
     }
 
     #[test]
-    fn unknown_building_geometry_is_pending_and_compatibility_mode_is_explicit() {
+    fn unknown_geometry_is_pending_and_diagnostic_mode_cannot_authorize_production() {
         let checker = checker(false);
         assert!(
             !checker
@@ -1477,15 +1965,20 @@ mod tests {
                 .is_empty()
         );
         let mut p =
-            Project::load(std::path::Path::new(env!("CARGO_MANIFEST_DIR")), "海南").unwrap();
-        assert!(!enforced(&p).unwrap());
-        p.cfg["TEXTURE_PROFILE"] = json!("legacy");
-        p.cfg["OFFICIAL_PLACEMENT"] = json!({"mode":"strict"});
+            Project::load(std::path::Path::new(env!("CARGO_MANIFEST_DIR")), "河南").unwrap();
         assert!(enforced(&p).unwrap());
-        assert!(
-            require_passed(&json!({"enforced":false,"passed":false,"findings":["inherited"]}))
-                .is_ok()
-        );
+        p.cfg["TEXTURE_PROFILE"] = json!("legacy");
+        p.cfg["RAMP_PROFILE"] = json!("legacy");
+        p.cfg["SPAWN_PLACEMENT_REFERENCE"] = json!("old-reference.json");
+        p.cfg["RAMP_CLEARANCE_REFERENCE"] = json!("old-reference.json");
+        assert!(enforced(&p).unwrap());
+        p.cfg["OFFICIAL_PLACEMENT"] = json!({"mode":"diagnostic"});
+        assert!(!enforced(&p).unwrap());
+        for passed in [false, true] {
+            assert!(
+                require_passed(&json!({"enforced":false,"passed":passed,"findings":[]})).is_err()
+            );
+        }
         assert!(
             require_passed(&json!({"enforced":true,"passed":false,"findings":["unknown"]}))
                 .is_err()
@@ -1493,9 +1986,52 @@ mod tests {
     }
 
     #[test]
+    fn repair_scopes_cannot_hide_unresolved_native_ore_instances() {
+        let mut p =
+            Project::load(std::path::Path::new(env!("CARGO_MANIFEST_DIR")), "河南").unwrap();
+        let mut native = MapFile::load(p.assets.join(format!("{}.map", p.name))).unwrap();
+        let baseline = audit(&p, &native).unwrap();
+        assert_eq!(baseline["passed"], true);
+        assert_eq!(baseline["raw_passed"], true);
+        let mut objects = map::objects(native.get("ObjectsList").unwrap(), &native.table).unwrap();
+        let index = objects
+            .iter()
+            .position(|o| o.type_name == "OreNode")
+            .unwrap();
+        native.id("objectPrototypeScale").unwrap();
+        map::set(
+            &mut objects[index].props,
+            "objectPrototypeScale",
+            Value::Float(2.),
+        );
+        native.get_mut("ObjectsList").unwrap().payload =
+            map::write_objects(&objects, &native).unwrap();
+        for scope in ["production_repair", "factories_only", "all"] {
+            p.cfg["OFFICIAL_PLACEMENT"] = json!({"mode":"strict","scope":scope});
+            let report = audit(&p, &native).unwrap();
+            assert_eq!(report["strict_scope"], FULL_SCOPE);
+            assert_eq!(report["passed"], false, "{scope}");
+            assert_eq!(report["raw_passed"], false, "{scope}");
+            assert!(report["findings"].as_array().unwrap().iter().any(|f| {
+                f["object_id"] == index + 1
+                    && f["detail"]
+                        .as_str()
+                        .is_some_and(|d| d.contains("objectPrototypeScale"))
+            }));
+            assert!(require_passed(&report).is_err());
+        }
+        let strict = strict_project(&p);
+        assert!(strict.cfg["OFFICIAL_PLACEMENT"].get("scope").is_none());
+        assert!(require_passed(&audit(&strict, &native).unwrap()).is_err());
+        // Even a previously narrowed report with passed=true cannot authorize
+        // production when its full native result was recorded as failing.
+        assert!(require_passed(&json!({"enforced":true,"strict_scope":FULL_SCOPE,"passed":true,"raw_passed":false,"findings":[]})).is_err());
+    }
+
+    #[test]
     fn terrain_only_audit_and_binding_do_not_require_rules_or_gameplay_assets() {
         let mut p =
-            Project::load(std::path::Path::new(env!("CARGO_MANIFEST_DIR")), "海南").unwrap();
+            Project::load(std::path::Path::new(env!("CARGO_MANIFEST_DIR")), "河南").unwrap();
         let map = MapFile {
             order: Vec::new(),
             table: BTreeMap::new(),
@@ -1513,7 +2049,7 @@ mod tests {
     #[test]
     fn scene_without_buildings_or_creation_actions_needs_no_facing_teams() {
         let root = std::path::Path::new(env!("CARGO_MANIFEST_DIR"));
-        let mut p = Project::load(root, "海南").unwrap();
+        let mut p = Project::load(root, "河南").unwrap();
         let mut map = MapFile::load(root.join("templates/8p_template.map")).unwrap();
         map.get_mut("ObjectsList").unwrap().payload = map::write_objects(&[], &map).unwrap();
         map.get_mut("PlayerScriptsList").unwrap().payload =

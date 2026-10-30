@@ -68,10 +68,11 @@
   "COORDINATE_PIPELINE": {
     "baseline": "authoring/baseline.json",
     "layout": "authoring/layout.json",
-    "source_crc32": 4273198950,
-    "source_name": "[CHAI]沃野奔流T0.1.0",
+    "source_crc32": 2613649220,
+    "source_name": "[CHAI]沃野奔流T0.1.1",
     "source_package": "authoring/source.zip"
   },
+  "DELIVERY_ACCEPTANCE": "histories/T0.1.1/delivery-acceptance.json",
   "GRASS_TEXTURES": [
     "Grass_CapeCod01",
     "Grass_CapeCod03",
@@ -111,14 +112,14 @@
   "LAYER_TEX_PRESET": "mountain",
   "LAYER_TEX_STRICT": true,
   "LAYOUT": "authoring/layout.json",
-  "MAP_DESCRIPTION": "河南三层双湖台地；基地各2矿，32外围矿沿对位路线散布，20坡；前移P2下坡并优化P2/P4主线与赠送接入。",
+  "MAP_DESCRIPTION": "河南三层双湖台地；基地各2矿，32外围矿沿对位路线散布，21坡；P2近坡接入，赠送主备避让资源并保持主次通路。",
   "MAP_NAME": "[CHAI]沃野奔流",
   "MAP_STR_INFO": {
     "GameStart": "游戏时间"
   },
   "MAP_STR_INTRO": "\"欢迎来到九州大地·沃野奔流，祝大家玩得开心。\"",
   "PEAK_IMPASSABLE": 235.0,
-  "PREVIEW_SUBTITLE": "800×800 · 基地各2矿 / 外围沿线 · 20坡 / 主路优化",
+  "PREVIEW_SUBTITLE": "800×800 · 基地各2矿 / 外围沿线 · 21坡 / 主路优化",
   "PREVIEW_TITLE": "九州大地·沃野奔流 {version}",
   "RAMP_CLEARANCE": {},
   "RESOURCE_DISTRIBUTION": "authoring/resource-distribution.json",
