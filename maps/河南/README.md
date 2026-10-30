@@ -19,4 +19,4 @@ R15–R21共13段已确认的材质边界补齐普通混合，保留主材及子
 
 [地图包](../../dist/河南/[CHAI]沃野奔流T0.1.1.zip) · [交互坐标地图](../../assets/河南/[CHAI]沃野奔流T0.1.1/coordinates/index.html) · [全图预览](../../assets/河南/[CHAI]沃野奔流T0.1.1/preview.png) · [13项独立验收](histories/T0.1.1/acceptance.md) · [公共流程改进](histories/T0.1.1/process-improvements.md)
 
-5个游戏文件在assets、dist、ZIP及冻结源逐字节相同，采用来源后的完整复构保持原字节。当前输入见[authoring](authoring/README.md)，机器复核见[封装证明](histories/T0.1.1/package-verification.json)与[测试记录](histories/T0.1.1/test-verification.json)。本轮没有安装或启动游戏。
+5个游戏文件在assets、dist、ZIP及冻结源逐字节相同，采用来源后的完整复构保持原字节。当前输入见[authoring](authoring/README.md)，机器复核见[封装证明](histories/T0.1.1/package-verification.json)与[测试记录](histories/T0.1.1/test-verification.json)。本版已安装到游戏地图目录，[5个文件校对一致](histories/T0.1.1/installation-verification.json)；未启动游戏。

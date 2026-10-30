@@ -10,7 +10,7 @@
 
 独立复核闭环110主备站、280创建分支、496资源接入关系、128实际产能分支及其完整本体阻挡后的外侧接入、两湖356段完整岸线回台地链。R15–R21的13段已确认材质硬接缝补齐普通混合，968格引用及290条新增描述之外的数据保持；有限自然第三材质端部逐点保留并复核。真实归档纹理的离线合成方法、静态模型及适用限制已明示，不当作游戏或地编实机渲染。
 
-[13项独立验收](../maps/河南/histories/T0.1.1/acceptance.md)绑定最终候选文件、布局、参数和当前规则；747成员自包含证据归档保留原始测量、有限候选比较、保护对照及实际材质证据。已发布、采用完整新源，并完成不递增版本的全流程构建；[5个游戏文件及冻结复构证明](../maps/河南/histories/T0.1.1/package-verification.json)确认assets、dist、ZIP和source逐字节相同。执行范围与结果见[本版测试记录](../maps/河南/histories/T0.1.1/test-verification.json)。未安装或启动游戏。
+[13项独立验收](../maps/河南/histories/T0.1.1/acceptance.md)绑定最终候选文件、布局、参数和当前规则；747成员自包含证据归档保留原始测量、有限候选比较、保护对照及实际材质证据。已发布、采用完整新源，并完成不递增版本的全流程构建；[5个游戏文件及冻结复构证明](../maps/河南/histories/T0.1.1/package-verification.json)确认assets、dist、ZIP和source逐字节相同。执行范围与结果见[本版测试记录](../maps/河南/histories/T0.1.1/test-verification.json)。本版已按用户要求安装并[核对5个文件](../maps/河南/histories/T0.1.1/installation-verification.json)，未启动游戏。
 
 ## 公共流程与规范入口
 

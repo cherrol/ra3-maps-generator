@@ -1,0 +1,29 @@
+{
+  "map": "[CHAI]沃野奔流T0.1.1",
+  "installed_at": "2026-10-30T08:42:24.193084+00:00",
+  "destination_windows": "C:\\Users\\cherrol\\AppData\\Roaming\\Red Alert 3\\Maps\\[CHAI]沃野奔流T0.1.1",
+  "all_five_files_byte_equal_to_release": true,
+  "files": {
+    "[CHAI]沃野奔流T0.1.1.map": {
+      "bytes": 312663,
+      "sha256": "9f3417c133ac39b48f6cd068e2297a1daa537f2fe84372eef30db599f917c17a"
+    },
+    "[CHAI]沃野奔流T0.1.1_art.tga": {
+      "bytes": 786476,
+      "sha256": "c35ca927f82d8c7408922ca6bad6400393a357ef13fa138eba0382e34f994aa0"
+    },
+    "map.str": {
+      "bytes": 501,
+      "sha256": "3a1a1994c5f8dbf0219da6dcb1d6c08df0175a1936d4fcc88ab0574e8a0e0209"
+    },
+    "map.xml": {
+      "bytes": 149093,
+      "sha256": "daece9f47e74f99737911842729783566c45211d19191bdf2eeabd263d1ea2ae"
+    },
+    "overrides.xml": {
+      "bytes": 124,
+      "sha256": "e94193fa1f69987870af8bd457691172bb61d775fc6d8edd6d12b036a2ab6cad"
+    }
+  },
+  "game_started": false
+}
