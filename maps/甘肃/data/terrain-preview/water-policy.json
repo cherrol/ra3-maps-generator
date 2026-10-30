@@ -7,6 +7,7 @@
   "source_selection_applies_to": "preserved geographic mask before game-preview shoreline design",
   "design_recipe": "water-shaping.json",
   "design_report": "water-shaping-report.json",
-  "source_water_display": "same design water mask in all existing preview images; original elevation and geographic masks preserved",
-  "real_shoreline_claim": false
+  "source_water_display": "source.png uses unmodified geographic water from source-reference.npz; game design water applies only to preview images",
+  "real_shoreline_claim": false,
+  "source_water_display_updated": "2026-10-30"
 }

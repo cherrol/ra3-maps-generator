@@ -1,0 +1,261 @@
+{
+  "map": "[CHAI]沃野奔流T0.1.0",
+  "date": "2026-10-30",
+  "native_sha256": "6f57c710998d79aa8a5f9f783bd121568416d9f4773a76941862fc8cdc79fbbb",
+  "native_crc32": 4273198950,
+  "layout_sha256": "3654ea4d2dc176fcbcb7ac5be5284ec1f1ef2ae0cd327e6796719c67eeb463fc",
+  "plan_sha256": "c3ba92ab3c96cb83699be786f2e8804604ed3c94e84dd8eeb117a8933199a665",
+  "frame": {
+    "border": 20,
+    "cell_size": 10.0,
+    "height": 840,
+    "width": 840,
+    "z_scale": 0.0390625
+  },
+  "policy": {
+    "bucket_size": 32.0,
+    "ore_reserve_radius": 20.0,
+    "building_reserve_radius": 8.0,
+    "oil_reserve_radius": 6.0,
+    "decoration_reserve_radius": 2.0,
+    "flat_tolerance": 12.0,
+    "maximum_walk_step": 12.0,
+    "navigation_clearance": 1,
+    "maximum_ramp_step": 6.1,
+    "maximum_landing_error": 12.0,
+    "terrain_shape": {
+      "combat_route_minimum_width_cells": 10.0,
+      "intrusion_minimum_width_cells": 5.0,
+      "exclude_gift_buildings_from_intrusions": true
+    },
+    "spawn_placement": {
+      "near_ore_radius": 62.0,
+      "base_radius": 8.0,
+      "ore_radius": 20.0,
+      "flat_tolerance": 3.0
+    },
+    "resource_distribution": {
+      "mines_per_seat": 6,
+      "home_ores_per_seat": 2,
+      "home_radius": 100.0,
+      "home_maximum": 2,
+      "route_count": 4,
+      "main_route_max_distance": 65.0,
+      "fourth_progress": [
+        0.1,
+        0.35
+      ],
+      "hotspot_progress": [
+        0.33,
+        0.67
+      ],
+      "secondary_max_distance": 75.0,
+      "secondary_min_main_distance": 35.0
+    },
+    "ramp_clearance": {
+      "approach_extension": 25.0,
+      "gap": 8.0,
+      "refinery_back": 5.0,
+      "refinery_forward": 48.0,
+      "refinery_half_width": 18.0
+    }
+  },
+  "source_layout_raw_sha256": "119c50a8e406501202b92f627367636d7aeb7b48f6eac2cea6f17191c531bf87",
+  "authoring_layout_raw_sha256": "3654ea4d2dc176fcbcb7ac5be5284ec1f1ef2ae0cd327e6796719c67eeb463fc",
+  "source_layout_semantic_equal": true,
+  "status": "通过",
+  "all_five_runtime_files_unchanged_by_adoption_and_frozen_rebuild": true,
+  "selected_blueprint": "histories/v3/layers.npz",
+  "selected_blueprint_sha256": "cfb4c779a747882120ba997b6f335aec286b7012e42e890af47fb6fc02b1eae5",
+  "root_blueprint_exact": true,
+  "regression_tests_passed": 251,
+  "regression_test_groups": 21,
+  "regression_failures": 0,
+  "validation_logs": {
+    "tests": {
+      "path": "work/henan-p2-direct-ramp-2026-10-30/all-tests-final.log",
+      "sha256": "781ab32f3c17679286335a1b22afa757d1ac90d18bfb3bb961006f9af0828610",
+      "bytes": 28648,
+      "command": "cargo test --manifest-path work/henan-p2-direct-ramp-2026-10-30/project/Cargo.toml --target-dir work/henan-p2-direct-ramp-2026-10-30/test-target --all-targets --locked",
+      "exit_code": 0,
+      "status": "通过",
+      "groups": [
+        {
+          "passed": 156,
+          "failed": 0,
+          "ignored": 0
+        },
+        {
+          "passed": 0,
+          "failed": 0,
+          "ignored": 0
+        },
+        {
+          "passed": 5,
+          "failed": 0,
+          "ignored": 0
+        },
+        {
+          "passed": 16,
+          "failed": 0,
+          "ignored": 0
+        },
+        {
+          "passed": 8,
+          "failed": 0,
+          "ignored": 0
+        },
+        {
+          "passed": 1,
+          "failed": 0,
+          "ignored": 0
+        },
+        {
+          "passed": 2,
+          "failed": 0,
+          "ignored": 0
+        },
+        {
+          "passed": 3,
+          "failed": 0,
+          "ignored": 0
+        },
+        {
+          "passed": 1,
+          "failed": 0,
+          "ignored": 0
+        },
+        {
+          "passed": 2,
+          "failed": 0,
+          "ignored": 0
+        },
+        {
+          "passed": 1,
+          "failed": 0,
+          "ignored": 0
+        },
+        {
+          "passed": 6,
+          "failed": 0,
+          "ignored": 0
+        },
+        {
+          "passed": 5,
+          "failed": 0,
+          "ignored": 0
+        },
+        {
+          "passed": 21,
+          "failed": 0,
+          "ignored": 0
+        },
+        {
+          "passed": 1,
+          "failed": 0,
+          "ignored": 0
+        },
+        {
+          "passed": 5,
+          "failed": 0,
+          "ignored": 0
+        },
+        {
+          "passed": 4,
+          "failed": 0,
+          "ignored": 0
+        },
+        {
+          "passed": 5,
+          "failed": 0,
+          "ignored": 0
+        },
+        {
+          "passed": 3,
+          "failed": 0,
+          "ignored": 0
+        },
+        {
+          "passed": 3,
+          "failed": 0,
+          "ignored": 0
+        },
+        {
+          "passed": 3,
+          "failed": 0,
+          "ignored": 0
+        }
+      ],
+      "group_count": 21,
+      "passed": 251,
+      "failed": 0,
+      "ignored": 0,
+      "archived_log": "maps/河南/histories/T0.1.0/validation-logs/tests.log"
+    },
+    "clippy": {
+      "path": "work/henan-p2-direct-ramp-2026-10-30/clippy-final.log",
+      "sha256": "22e0df986057b9ba5be07526ac5fb348862a3dedef42108383cc3e088acbb889",
+      "bytes": 72,
+      "command": "cargo clippy --all-targets --locked -- -D warnings",
+      "exit_code": 0,
+      "status": "通过",
+      "archived_log": "maps/河南/histories/T0.1.0/validation-logs/clippy.log"
+    },
+    "fmt": {
+      "path": "work/henan-p2-direct-ramp-2026-10-30/fmt-final.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "command": "cargo fmt --all -- --check",
+      "exit_code": 0,
+      "status": "通过",
+      "archived_log": "maps/河南/histories/T0.1.0/validation-logs/fmt.log"
+    },
+    "release": {
+      "path": "work/henan-p2-direct-ramp-2026-10-30/release-build-final.log",
+      "sha256": "c9ef3b68d69664e1d157e575848e4f6146e26ad39b9aa75897123cb92d2ce4bd",
+      "bytes": 62,
+      "command": "cargo build --release --locked",
+      "exit_code": 0,
+      "status": "通过",
+      "archived_log": "maps/河南/histories/T0.1.0/validation-logs/release.log"
+    },
+    "candidate_build": {
+      "path": "work/henan-p2-direct-ramp-2026-10-30/build-candidate-final.log",
+      "sha256": "3424b22c40c60c4dfc1a9dbbf62dc74f9718600395a22d75ee7525b09a6a1e04",
+      "bytes": 1607,
+      "command": "target/release/ra3maps build --root work/henan-p2-direct-ramp-2026-10-30/project --map 河南 --bump --note P2红标方向新增近坡和坡脚接路，开局两矿微挪，外围矿及油井让位，直接主路完整通行验收",
+      "exit_code": 0,
+      "status": "通过",
+      "archived_log": "maps/河南/histories/T0.1.0/validation-logs/candidate_build.log"
+    },
+    "adopt": {
+      "path": "work/henan-p2-direct-ramp-2026-10-30/adopt-current.log",
+      "sha256": "0758e65e7fdc444a4f354cfeae52d78222e3420168560ca3457a69774f2039b7",
+      "bytes": 90,
+      "command": "target/release/ra3maps adopt-coordinate-source --root work/henan-p2-direct-ramp-2026-10-30/project --map 河南",
+      "exit_code": 0,
+      "status": "通过",
+      "archived_log": "maps/河南/histories/T0.1.0/validation-logs/adopt.log"
+    },
+    "frozen_build": {
+      "path": "work/henan-p2-direct-ramp-2026-10-30/build-frozen-current.log",
+      "sha256": "269a289e7b0be5c77d8385fc9a81a6035db314e5d0044d1ebcf0b7c824b6473c",
+      "bytes": 1567,
+      "command": "target/release/ra3maps build --root work/henan-p2-direct-ramp-2026-10-30/project --map 河南",
+      "exit_code": 0,
+      "status": "通过",
+      "archived_log": "maps/河南/histories/T0.1.0/validation-logs/frozen_build.log"
+    },
+    "strict_package": {
+      "path": "work/henan-p2-direct-ramp-2026-10-30/strict-package-current.log",
+      "sha256": "8322951834949b9a0c9c38ce66bc63f09d79ddc1fc2e2c4d558f5a5259982ded",
+      "bytes": 270,
+      "command": "work/henan-current-rules-T0.0.9-2026-10-30/validate_package work/henan-p2-direct-ramp-2026-10-30/project",
+      "exit_code": 0,
+      "status": "通过",
+      "archived_log": "maps/河南/histories/T0.1.0/validation-logs/strict_package.log"
+    }
+  },
+  "tests_scope": "Actual supplied command/log receipts; no inherited fixed test totals.",
+  "no_install_or_gui": true
+}

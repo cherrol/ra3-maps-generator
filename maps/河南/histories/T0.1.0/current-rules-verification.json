@@ -1,0 +1,1071 @@
+{
+  "map": "[CHAI]沃野奔流T0.1.0",
+  "date": "2026-10-30",
+  "native_sha256": "6f57c710998d79aa8a5f9f783bd121568416d9f4773a76941862fc8cdc79fbbb",
+  "native_crc32": 4273198950,
+  "layout_sha256": "3654ea4d2dc176fcbcb7ac5be5284ec1f1ef2ae0cd327e6796719c67eeb463fc",
+  "plan_sha256": "c3ba92ab3c96cb83699be786f2e8804604ed3c94e84dd8eeb117a8933199a665",
+  "frame": {
+    "border": 20,
+    "cell_size": 10.0,
+    "height": 840,
+    "width": 840,
+    "z_scale": 0.0390625
+  },
+  "policy": {
+    "bucket_size": 32.0,
+    "ore_reserve_radius": 20.0,
+    "building_reserve_radius": 8.0,
+    "oil_reserve_radius": 6.0,
+    "decoration_reserve_radius": 2.0,
+    "flat_tolerance": 12.0,
+    "maximum_walk_step": 12.0,
+    "navigation_clearance": 1,
+    "maximum_ramp_step": 6.1,
+    "maximum_landing_error": 12.0,
+    "terrain_shape": {
+      "combat_route_minimum_width_cells": 10.0,
+      "intrusion_minimum_width_cells": 5.0,
+      "exclude_gift_buildings_from_intrusions": true
+    },
+    "spawn_placement": {
+      "near_ore_radius": 62.0,
+      "base_radius": 8.0,
+      "ore_radius": 20.0,
+      "flat_tolerance": 3.0
+    },
+    "resource_distribution": {
+      "mines_per_seat": 6,
+      "home_ores_per_seat": 2,
+      "home_radius": 100.0,
+      "home_maximum": 2,
+      "route_count": 4,
+      "main_route_max_distance": 65.0,
+      "fourth_progress": [
+        0.1,
+        0.35
+      ],
+      "hotspot_progress": [
+        0.33,
+        0.67
+      ],
+      "secondary_max_distance": 75.0,
+      "secondary_min_main_distance": 35.0
+    },
+    "ramp_clearance": {
+      "approach_extension": 25.0,
+      "gap": 8.0,
+      "refinery_back": 5.0,
+      "refinery_forward": 48.0,
+      "refinery_half_width": 18.0
+    }
+  },
+  "source_layout_raw_sha256": "119c50a8e406501202b92f627367636d7aeb7b48f6eac2cea6f17191c531bf87",
+  "authoring_layout_raw_sha256": "3654ea4d2dc176fcbcb7ac5be5284ec1f1ef2ae0cd327e6796719c67eeb463fc",
+  "source_layout_semantic_equal": true,
+  "status": "通过",
+  "strict_machine_passed": true,
+  "strict_machine_raw_passed": true,
+  "complete_official_scope": "all applicable native buildings and explicit building creation actions",
+  "all_current_independent_items_passed": true,
+  "independent_item_count": 13,
+  "machine_sources": {
+    "spatial/report.json": {
+      "path": "work/henan-p2-direct-ramp-2026-10-30/project/assets/河南/[CHAI]沃野奔流T0.1.0/spatial/report.json",
+      "sha256": "e55ed1dcbf751018b5848e0f35febe4ea7a1f8bf747b3a65d29ac43a3caa7347",
+      "bytes": 70326
+    },
+    "scene-report.json": {
+      "path": "work/henan-p2-direct-ramp-2026-10-30/project/assets/河南/[CHAI]沃野奔流T0.1.0/scene-report.json",
+      "sha256": "248599aa5917e42c81c27fec676925c661b2459a6dca5a6a14604ae3d5752716",
+      "bytes": 3294254
+    },
+    "official-placement.json": {
+      "path": "work/henan-p2-direct-ramp-2026-10-30/project/assets/河南/[CHAI]沃野奔流T0.1.0/official-placement.json",
+      "sha256": "081740244610604b31807131b69d8ab62cb129a665c6294fb0c4a28f665e5e79",
+      "bytes": 1128414
+    },
+    "xml-structure.json": {
+      "path": "work/henan-p2-direct-ramp-2026-10-30/project/assets/河南/[CHAI]沃野奔流T0.1.0/xml-structure.json",
+      "sha256": "7d888078d57bc963c22290aa55c1965b8d94dd1d0c837d5ddc940760a433e8e9",
+      "bytes": 648
+    },
+    "ore-facing.json": {
+      "path": "work/henan-p2-direct-ramp-2026-10-30/project/assets/河南/[CHAI]沃野奔流T0.1.0/ore-facing.json",
+      "sha256": "e3be5d12597464e276612ea46ee4ea249b76ac57a55780119f84b9ff13b556a9",
+      "bytes": 19094
+    },
+    "unit-routes.json": {
+      "path": "work/henan-p2-direct-ramp-2026-10-30/project/assets/河南/[CHAI]沃野奔流T0.1.0/unit-routes.json",
+      "sha256": "98c38bd12ed6190e1e45c0a6dd3bbd03bf6c0cb7fb32d8984af69681c0344cbb",
+      "bytes": 1676975
+    }
+  },
+  "rules_snapshot": {
+    "primary_normative_documents": 17,
+    "skill_count": 5,
+    "public_json_count": 2,
+    "markdown_dependency_closure": 49,
+    "files": [
+      {
+        "source": ".agents/skills/ra3-authoring/SKILL.md",
+        "source_sha256": "5d3125dfb4ca50cd2f6a0f9dab37169e4c8a7cf28b3d49ff8593fbad2aca91ac",
+        "snapshot": "rules/.agents/skills/ra3-authoring/SKILL.md",
+        "snapshot_sha256": "5d3125dfb4ca50cd2f6a0f9dab37169e4c8a7cf28b3d49ff8593fbad2aca91ac",
+        "primary": true,
+        "reference_annotations": []
+      },
+      {
+        "source": ".agents/skills/ra3-pipeline/SKILL.md",
+        "source_sha256": "c0579426ea7e74b5668ddaae5ce44a0a58604b41675a14cfa8f5de3e0bcbe8e6",
+        "snapshot": "rules/.agents/skills/ra3-pipeline/SKILL.md",
+        "snapshot_sha256": "c0579426ea7e74b5668ddaae5ce44a0a58604b41675a14cfa8f5de3e0bcbe8e6",
+        "primary": true,
+        "reference_annotations": []
+      },
+      {
+        "source": ".agents/skills/ra3-resources/SKILL.md",
+        "source_sha256": "8d06bc386f811bdbb05aec2792c01ef1ae5ef1498dcc19da6871511f09d1833c",
+        "snapshot": "rules/.agents/skills/ra3-resources/SKILL.md",
+        "snapshot_sha256": "8d06bc386f811bdbb05aec2792c01ef1ae5ef1498dcc19da6871511f09d1833c",
+        "primary": true,
+        "reference_annotations": []
+      },
+      {
+        "source": ".agents/skills/ra3-spawns/SKILL.md",
+        "source_sha256": "6922edd90715423b84f9e790543e9d662987ee51978c50b6432c2d5cc3a1a401",
+        "snapshot": "rules/.agents/skills/ra3-spawns/SKILL.md",
+        "snapshot_sha256": "6922edd90715423b84f9e790543e9d662987ee51978c50b6432c2d5cc3a1a401",
+        "primary": true,
+        "reference_annotations": []
+      },
+      {
+        "source": ".agents/skills/ra3-terrain/SKILL.md",
+        "source_sha256": "ea0a49bf07c0858c5d737b4a09810e1d761a62288321aa9fd7b72fa53a17507c",
+        "snapshot": "rules/.agents/skills/ra3-terrain/SKILL.md",
+        "snapshot_sha256": "ea0a49bf07c0858c5d737b4a09810e1d761a62288321aa9fd7b72fa53a17507c",
+        "primary": true,
+        "reference_annotations": []
+      },
+      {
+        "source": "README.md",
+        "source_sha256": "137add0f6d2eec7b4891b736ee55afe2ea6cbb792562b8594da15f64495757a3",
+        "snapshot": "rules/README.md",
+        "snapshot_sha256": "137add0f6d2eec7b4891b736ee55afe2ea6cbb792562b8594da15f64495757a3",
+        "primary": false,
+        "reference_annotations": []
+      },
+      {
+        "source": "docs/README.md",
+        "source_sha256": "b272f0a73e536bfb7e8f4cde402796dbdfd8bd5636a00c06357f2fa09420df23",
+        "snapshot": "rules/docs/README.md",
+        "snapshot_sha256": "288dbfca3f5d09c5f08f7d31117f64146f430f369a8166a0c812abb18c2fdd40",
+        "primary": false,
+        "reference_annotations": [
+          {
+            "reference": "preview_intrusion_repair_2026_10_30_verification.json",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "preview_acceptance_2026_10_30_verification.json",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "preview_water_layers_verification.json",
+            "exists_in_current_repository": true
+          }
+        ]
+      },
+      {
+        "source": "docs/SESSION_STATE.md",
+        "source_sha256": "865b1e93ea10ff23b10e4d9a1ffb9be12335b577e9aa1aed8c25e04cef3d6ce8",
+        "snapshot": "rules/docs/SESSION_STATE.md",
+        "snapshot_sha256": "865b1e93ea10ff23b10e4d9a1ffb9be12335b577e9aa1aed8c25e04cef3d6ce8",
+        "primary": false,
+        "reference_annotations": []
+      },
+      {
+        "source": "docs/TODO.md",
+        "source_sha256": "eb27864c71588150195ab8582a3a1eb81bea229b2b85907d02f97cc27397e5d2",
+        "snapshot": "rules/docs/TODO.md",
+        "snapshot_sha256": "eb27864c71588150195ab8582a3a1eb81bea229b2b85907d02f97cc27397e5d2",
+        "primary": false,
+        "reference_annotations": []
+      },
+      {
+        "source": "docs/blueprint_versions.md",
+        "source_sha256": "34a76898fa94c3619ed9f9ac7ecc6097fdc3474e748e25c050ae62760064f61c",
+        "snapshot": "rules/docs/blueprint_versions.md",
+        "snapshot_sha256": "34a76898fa94c3619ed9f9ac7ecc6097fdc3474e748e25c050ae62760064f61c",
+        "primary": true,
+        "reference_annotations": []
+      },
+      {
+        "source": "docs/coordinate_pipeline.md",
+        "source_sha256": "b83beee1cd4decbfa083ecfa6226ef441f725fe67614b39ec53877c8c6654edb",
+        "snapshot": "rules/docs/coordinate_pipeline.md",
+        "snapshot_sha256": "b83beee1cd4decbfa083ecfa6226ef441f725fe67614b39ec53877c8c6654edb",
+        "primary": true,
+        "reference_annotations": []
+      },
+      {
+        "source": "docs/ea-modding/README.md",
+        "source_sha256": "db5a9cf157d4e5d50536b39c7fcba57e5b8b8d9e98ec81879b9d399880fc2e7a",
+        "snapshot": "rules/docs/ea-modding/README.md",
+        "snapshot_sha256": "58e0be86a941b2d7b0b425f03aead447cb5ae9246e8d1d7f3e7c494d2d3cf000",
+        "primary": false,
+        "reference_annotations": [
+          {
+            "reference": "tree.txt",
+            "exists_in_current_repository": true
+          }
+        ]
+      },
+      {
+        "source": "docs/history/README.md",
+        "source_sha256": "2168ee4d3d215e66502b2d6bd9fe61a6d8da464f6871bef0f442d364d66ff558",
+        "snapshot": "rules/docs/history/README.md",
+        "snapshot_sha256": "2168ee4d3d215e66502b2d6bd9fe61a6d8da464f6871bef0f442d364d66ff558",
+        "primary": false,
+        "reference_annotations": []
+      },
+      {
+        "source": "docs/history/production-notes-2026-10-29.md",
+        "source_sha256": "b5630463209fd855c9fec5943afbc084ec2d861bda5a85134ef205159f269986",
+        "snapshot": "rules/docs/history/production-notes-2026-10-29.md",
+        "snapshot_sha256": "b5630463209fd855c9fec5943afbc084ec2d861bda5a85134ef205159f269986",
+        "primary": false,
+        "reference_annotations": []
+      },
+      {
+        "source": "docs/history/session-state-before-cleanup-2026-10-29.md",
+        "source_sha256": "6cce88d0444d774e1f38a8162c41755c2ab382ee7c622f97d911c0514e31f6c8",
+        "snapshot": "rules/docs/history/session-state-before-cleanup-2026-10-29.md",
+        "snapshot_sha256": "6cce88d0444d774e1f38a8162c41755c2ab382ee7c622f97d911c0514e31f6c8",
+        "primary": false,
+        "reference_annotations": []
+      },
+      {
+        "source": "docs/history/todo-before-cleanup-2026-10-29.md",
+        "source_sha256": "9c7ab6cae4d95d744709eddd590936698dffbf4c18c4170f56faeedef1c09b17",
+        "snapshot": "rules/docs/history/todo-before-cleanup-2026-10-29.md",
+        "snapshot_sha256": "9c7ab6cae4d95d744709eddd590936698dffbf4c18c4170f56faeedef1c09b17",
+        "primary": false,
+        "reference_annotations": []
+      },
+      {
+        "source": "docs/impassable_mountains.md",
+        "source_sha256": "698c63aadaa386757c7f4aea9b01b4e74ea64b29708dc4243c011c919206ecc2",
+        "snapshot": "rules/docs/impassable_mountains.md",
+        "snapshot_sha256": "2d88012c32c0fdf0590c24ffcc969429fef91017e6d455af6f4008008205b13f",
+        "primary": false,
+        "reference_annotations": [
+          {
+            "reference": "../dist/陕西/[CHAI]千壑横原T0.6.8.zip",
+            "exists_in_current_repository": false
+          },
+          {
+            "reference": "../assets/陕西/[CHAI]千壑横原T0.7.1/mountains--comparison--worldbuilder.png",
+            "exists_in_current_repository": false
+          },
+          {
+            "reference": "../dist/陕西/[CHAI]千壑横原T0.7.1.zip",
+            "exists_in_current_repository": false
+          },
+          {
+            "reference": "../dist/陕西/[CHAI]千壑横原T0.7.3.zip",
+            "exists_in_current_repository": false
+          }
+        ]
+      },
+      {
+        "source": "docs/maintenance.md",
+        "source_sha256": "992d298af6316d61299def965a87fd13eb12eaf3ed929a6042e49aa6b94cdc63",
+        "snapshot": "rules/docs/maintenance.md",
+        "snapshot_sha256": "992d298af6316d61299def965a87fd13eb12eaf3ed929a6042e49aa6b94cdc63",
+        "primary": false,
+        "reference_annotations": []
+      },
+      {
+        "source": "docs/map_acceptance.md",
+        "source_sha256": "e7a7ac129d19f9c525547503473d98af36949fcbaaf3e0246db566ba0f2f45e9",
+        "snapshot": "rules/docs/map_acceptance.md",
+        "snapshot_sha256": "e7a7ac129d19f9c525547503473d98af36949fcbaaf3e0246db566ba0f2f45e9",
+        "primary": true,
+        "reference_annotations": []
+      },
+      {
+        "source": "docs/map_coordinates.md",
+        "source_sha256": "e5201b64322925420b6ebce68e13f6a633309979739b8422c87a53feb183393f",
+        "snapshot": "rules/docs/map_coordinates.md",
+        "snapshot_sha256": "e5201b64322925420b6ebce68e13f6a633309979739b8422c87a53feb183393f",
+        "primary": true,
+        "reference_annotations": []
+      },
+      {
+        "source": "docs/map_rules.md",
+        "source_sha256": "0831883e5846bdd85cf25286f45673d22b6a097c2e744e3c9edaf890e0098c58",
+        "snapshot": "rules/docs/map_rules.md",
+        "snapshot_sha256": "0831883e5846bdd85cf25286f45673d22b6a097c2e744e3c9edaf890e0098c58",
+        "primary": true,
+        "reference_annotations": []
+      },
+      {
+        "source": "docs/map_skills_checklist.md",
+        "source_sha256": "67eea572c0a765e7d49a4f37f05c0ad8f7648156d9bf054b00b2105a9b05ac87",
+        "snapshot": "rules/docs/map_skills_checklist.md",
+        "snapshot_sha256": "67eea572c0a765e7d49a4f37f05c0ad8f7648156d9bf054b00b2105a9b05ac87",
+        "primary": true,
+        "reference_annotations": []
+      },
+      {
+        "source": "docs/mountain_ramps.md",
+        "source_sha256": "ecabbced8e8ef26e9a66813387df8d5ecd5521274c16aa09cee6c4e59f8d0257",
+        "snapshot": "rules/docs/mountain_ramps.md",
+        "snapshot_sha256": "ecabbced8e8ef26e9a66813387df8d5ecd5521274c16aa09cee6c4e59f8d0257",
+        "primary": true,
+        "reference_annotations": []
+      },
+      {
+        "source": "docs/naming_migration.md",
+        "source_sha256": "3a59c6827bfd3f200a30f9f08ef58a40442a49e1d2c1b7b9b39ec20f26c05b6f",
+        "snapshot": "rules/docs/naming_migration.md",
+        "snapshot_sha256": "3a59c6827bfd3f200a30f9f08ef58a40442a49e1d2c1b7b9b39ec20f26c05b6f",
+        "primary": false,
+        "reference_annotations": []
+      },
+      {
+        "source": "docs/official_resource_pipeline.md",
+        "source_sha256": "b23e355096b1e4f8493a081e4fa7ff8f9ee94a4380eb875546deb57737be879b",
+        "snapshot": "rules/docs/official_resource_pipeline.md",
+        "snapshot_sha256": "b23e355096b1e4f8493a081e4fa7ff8f9ee94a4380eb875546deb57737be879b",
+        "primary": true,
+        "reference_annotations": []
+      },
+      {
+        "source": "docs/periodic_attack.md",
+        "source_sha256": "ff7e7deee95949e1087e71cdbc84e1ab720ed48689410bcd8a294b55f99ad7d0",
+        "snapshot": "rules/docs/periodic_attack.md",
+        "snapshot_sha256": "e77576e4e69b5463cc34aa427ef3dab020841a201e4c771bc5e741c7c494d1c8",
+        "primary": false,
+        "reference_annotations": [
+          {
+            "reference": "../templates/rules/periodic-command-signatures.json",
+            "exists_in_current_repository": true
+          }
+        ]
+      },
+      {
+        "source": "docs/preview_acceptance_2026_10_30.md",
+        "source_sha256": "121f5696d078554208b59f35546c2e7b45cc9750a1110aa2ef187b1aa09281de",
+        "snapshot": "rules/docs/preview_acceptance_2026_10_30.md",
+        "snapshot_sha256": "5d5b011892e3f4409ada4b97bf2ce76fc442866a219f6acf6b331cc1f5d0efc4",
+        "primary": false,
+        "reference_annotations": [
+          {
+            "reference": "../maps/上海/data/terrain-preview/acceptance-2026-10-30.json",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "../maps/上海/data/terrain-preview/width-diagnostics-2026-10-30.png",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "../maps/云南/data/terrain-preview/acceptance-2026-10-30.json",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "../maps/云南/data/terrain-preview/width-diagnostics-2026-10-30.png",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "../maps/内蒙古/data/terrain-preview/acceptance-2026-10-30.json",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "../maps/内蒙古/data/terrain-preview/width-diagnostics-2026-10-30.png",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "../maps/北京/data/terrain-preview/acceptance-2026-10-30.json",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "../maps/北京/data/terrain-preview/width-diagnostics-2026-10-30.png",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "../maps/台湾/data/terrain-preview/acceptance-2026-10-30.json",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "../maps/台湾/data/terrain-preview/width-diagnostics-2026-10-30.png",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "../maps/吉林/data/terrain-preview/acceptance-2026-10-30.json",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "../maps/吉林/data/terrain-preview/width-diagnostics-2026-10-30.png",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "../maps/四川/data/terrain-preview/acceptance-2026-10-30.json",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "../maps/四川/data/terrain-preview/width-diagnostics-2026-10-30.png",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "../maps/天津/data/terrain-preview/acceptance-2026-10-30.json",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "../maps/天津/data/terrain-preview/width-diagnostics-2026-10-30.png",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "../maps/宁夏/data/terrain-preview/acceptance-2026-10-30.json",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "../maps/宁夏/data/terrain-preview/width-diagnostics-2026-10-30.png",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "../maps/安徽/data/terrain-preview/acceptance-2026-10-30.json",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "../maps/安徽/data/terrain-preview/width-diagnostics-2026-10-30.png",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "../maps/山东/data/terrain-preview/acceptance-2026-10-30.json",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "../maps/山东/data/terrain-preview/width-diagnostics-2026-10-30.png",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "../maps/山西/data/terrain-preview/acceptance-2026-10-30.json",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "../maps/山西/data/terrain-preview/width-diagnostics-2026-10-30.png",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "../maps/广东/data/terrain-preview/acceptance-2026-10-30.json",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "../maps/广东/data/terrain-preview/width-diagnostics-2026-10-30.png",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "../maps/广西/data/terrain-preview/acceptance-2026-10-30.json",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "../maps/广西/data/terrain-preview/width-diagnostics-2026-10-30.png",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "../maps/新疆/data/terrain-preview/acceptance-2026-10-30.json",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "../maps/新疆/data/terrain-preview/width-diagnostics-2026-10-30.png",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "../maps/江苏/data/terrain-preview/acceptance-2026-10-30.json",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "../maps/江苏/data/terrain-preview/width-diagnostics-2026-10-30.png",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "../maps/江西/data/terrain-preview/acceptance-2026-10-30.json",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "../maps/江西/data/terrain-preview/width-diagnostics-2026-10-30.png",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "../maps/河北/data/terrain-preview/acceptance-2026-10-30.json",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "../maps/河北/data/terrain-preview/width-diagnostics-2026-10-30.png",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "../maps/河南/data/terrain-preview/acceptance-2026-10-30.json",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "../maps/河南/data/terrain-preview/width-diagnostics-2026-10-30.png",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "../maps/浙江/data/terrain-preview/acceptance-2026-10-30.json",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "../maps/浙江/data/terrain-preview/width-diagnostics-2026-10-30.png",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "../maps/海南/data/terrain-preview/acceptance-2026-10-30.json",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "../maps/海南/data/terrain-preview/width-diagnostics-2026-10-30.png",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "../maps/湖北/data/terrain-preview/acceptance-2026-10-30.json",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "../maps/湖北/data/terrain-preview/width-diagnostics-2026-10-30.png",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "../maps/湖南/data/terrain-preview/acceptance-2026-10-30.json",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "../maps/湖南/data/terrain-preview/width-diagnostics-2026-10-30.png",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "../maps/澳门/data/terrain-preview/acceptance-2026-10-30.json",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "../maps/澳门/data/terrain-preview/width-diagnostics-2026-10-30.png",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "../maps/甘肃/data/terrain-preview/acceptance-2026-10-30.json",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "../maps/甘肃/data/terrain-preview/width-diagnostics-2026-10-30.png",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "../maps/福建/data/terrain-preview/acceptance-2026-10-30.json",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "../maps/福建/data/terrain-preview/width-diagnostics-2026-10-30.png",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "../maps/西藏/data/terrain-preview/acceptance-2026-10-30.json",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "../maps/西藏/data/terrain-preview/width-diagnostics-2026-10-30.png",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "../maps/贵州/data/terrain-preview/acceptance-2026-10-30.json",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "../maps/贵州/data/terrain-preview/width-diagnostics-2026-10-30.png",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "../maps/辽宁/data/terrain-preview/acceptance-2026-10-30.json",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "../maps/辽宁/data/terrain-preview/width-diagnostics-2026-10-30.png",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "../maps/重庆/data/terrain-preview/acceptance-2026-10-30.json",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "../maps/重庆/data/terrain-preview/width-diagnostics-2026-10-30.png",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "../maps/陕西/data/terrain-preview/acceptance-2026-10-30.json",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "../maps/陕西/data/terrain-preview/width-diagnostics-2026-10-30.png",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "../maps/青海/data/terrain-preview/acceptance-2026-10-30.json",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "../maps/青海/data/terrain-preview/width-diagnostics-2026-10-30.png",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "../maps/香港/data/terrain-preview/acceptance-2026-10-30.json",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "../maps/香港/data/terrain-preview/width-diagnostics-2026-10-30.png",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "../maps/黑龙江/data/terrain-preview/acceptance-2026-10-30.json",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "../maps/黑龙江/data/terrain-preview/width-diagnostics-2026-10-30.png",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "preview-acceptance-2026-10-30/review-sheet-1.png",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "preview-acceptance-2026-10-30/review-sheet-2.png",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "preview-acceptance-2026-10-30/review-sheet-3.png",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "preview-acceptance-2026-10-30/input-hashes.json",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "preview_acceptance_2026_10_30_verification.json",
+            "exists_in_current_repository": true
+          }
+        ]
+      },
+      {
+        "source": "docs/preview_intrusion_repair_2026_10_30.md",
+        "source_sha256": "9a6d78da15879a65b431a69bb0d4e1b00acd0dcbc1426bcda11afd44468faa00",
+        "snapshot": "rules/docs/preview_intrusion_repair_2026_10_30.md",
+        "snapshot_sha256": "3d88ccb8445b2a06131e54274e39013052ee18e11c7bbc1ae4657afac54cd2c7",
+        "primary": false,
+        "reference_annotations": [
+          {
+            "reference": "../maps/上海/preview.png",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "../maps/上海/preview--line.png",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "../maps/上海/data/terrain-preview/acceptance-repair-2026-10-30.json",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "../maps/内蒙古/preview.png",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "../maps/内蒙古/preview--line.png",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "../maps/内蒙古/data/terrain-preview/acceptance-repair-2026-10-30.json",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "../maps/吉林/preview.png",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "../maps/吉林/preview--line.png",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "../maps/吉林/data/terrain-preview/acceptance-repair-2026-10-30.json",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "../maps/山西/preview.png",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "../maps/山西/preview--line.png",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "../maps/山西/data/terrain-preview/acceptance-repair-2026-10-30.json",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "../maps/新疆/preview.png",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "../maps/新疆/preview--line.png",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "../maps/新疆/data/terrain-preview/acceptance-repair-2026-10-30.json",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "../maps/河北/preview.png",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "../maps/河北/preview--line.png",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "../maps/河北/data/terrain-preview/acceptance-repair-2026-10-30.json",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "../maps/湖北/preview.png",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "../maps/湖北/preview--line.png",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "../maps/湖北/data/terrain-preview/acceptance-repair-2026-10-30.json",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "../maps/澳门/preview.png",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "../maps/澳门/preview--line.png",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "../maps/澳门/data/terrain-preview/acceptance-repair-2026-10-30.json",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "../maps/福建/preview.png",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "../maps/福建/preview--line.png",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "../maps/福建/data/terrain-preview/acceptance-repair-2026-10-30.json",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "../maps/青海/preview.png",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "../maps/青海/preview--line.png",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "../maps/青海/data/terrain-preview/acceptance-repair-2026-10-30.json",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "../maps/香港/preview.png",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "../maps/香港/preview--line.png",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "../maps/香港/data/terrain-preview/acceptance-repair-2026-10-30.json",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "preview-repair-2026-10-30/before-after-1.png",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "preview-repair-2026-10-30/before-after-2.png",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "preview_intrusion_repair_2026_10_30_verification.json",
+            "exists_in_current_repository": true
+          }
+        ]
+      },
+      {
+        "source": "docs/preview_water_layers.md",
+        "source_sha256": "84c0744be7cc954909cd6e46ab5820e735f6a07ea58b15afd697eb69a7f5dbba",
+        "snapshot": "rules/docs/preview_water_layers.md",
+        "snapshot_sha256": "564cb756ec34c1531721c90f802ec8b8f22402523724140fc8a8ea8e8b7ea5ae",
+        "primary": false,
+        "reference_annotations": [
+          {
+            "reference": "../maps/北京/data/terrain-preview/water-layer-verification.json",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "../maps/广东/data/terrain-preview/water-layer-verification.json",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "../maps/新疆/data/terrain-preview/water-layer-verification.json",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "../maps/江西/data/terrain-preview/water-layer-verification.json",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "../maps/河南/data/terrain-preview/water-layer-verification.json",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "../maps/浙江/data/terrain-preview/water-layer-verification.json",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "../maps/海南/data/terrain-preview/water-layer-verification.json",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "../maps/湖北/data/terrain-preview/water-layer-verification.json",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "../maps/湖南/data/terrain-preview/water-layer-verification.json",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "../maps/黑龙江/data/terrain-preview/water-layer-verification.json",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "../tools/preview_water_layers.rs",
+            "exists_in_current_repository": true
+          },
+          {
+            "reference": "preview_water_layers_verification.json",
+            "exists_in_current_repository": true
+          }
+        ]
+      },
+      {
+        "source": "docs/production_placement_fix.md",
+        "source_sha256": "9fe987e97413f4531b61cdb32f2be64a15b2334443cc19b7e146df57b3f12c66",
+        "snapshot": "rules/docs/production_placement_fix.md",
+        "snapshot_sha256": "9fe987e97413f4531b61cdb32f2be64a15b2334443cc19b7e146df57b3f12c66",
+        "primary": true,
+        "reference_annotations": []
+      },
+      {
+        "source": "docs/ra3_map_format_spec.md",
+        "source_sha256": "67e384b8e18171d72f026961d5878e5f6f8dc0b2599ee7edbca5ce71e9a9dfc6",
+        "snapshot": "rules/docs/ra3_map_format_spec.md",
+        "snapshot_sha256": "67e384b8e18171d72f026961d5878e5f6f8dc0b2599ee7edbca5ce71e9a9dfc6",
+        "primary": false,
+        "reference_annotations": []
+      },
+      {
+        "source": "docs/ra3_worldbuilder_integration.md",
+        "source_sha256": "3c37a2c26be7a1f0e363c21211db82279dd3f6ef9e05eef8fd402e40f7bf371c",
+        "snapshot": "rules/docs/ra3_worldbuilder_integration.md",
+        "snapshot_sha256": "3c37a2c26be7a1f0e363c21211db82279dd3f6ef9e05eef8fd402e40f7bf371c",
+        "primary": false,
+        "reference_annotations": []
+      },
+      {
+        "source": "docs/ra3wiki/README.md",
+        "source_sha256": "a14134afda0bd453fe621d665c892b5c3cec1d2079c6ab88cd2262f124b85aeb",
+        "snapshot": "rules/docs/ra3wiki/README.md",
+        "snapshot_sha256": "a14134afda0bd453fe621d665c892b5c3cec1d2079c6ab88cd2262f124b85aeb",
+        "primary": false,
+        "reference_annotations": []
+      },
+      {
+        "source": "docs/ramp_additions.md",
+        "source_sha256": "e20a2679493b0755cf44fbcd6b5a872c5b92ae43c0cac7fe50411c4289843773",
+        "snapshot": "rules/docs/ramp_additions.md",
+        "snapshot_sha256": "e20a2679493b0755cf44fbcd6b5a872c5b92ae43c0cac7fe50411c4289843773",
+        "primary": false,
+        "reference_annotations": []
+      },
+      {
+        "source": "docs/ramp_clearance.md",
+        "source_sha256": "cfc7e32d8d497986984897fb3af03e3e72576bc13466c754975d77bfe5e7f29f",
+        "snapshot": "rules/docs/ramp_clearance.md",
+        "snapshot_sha256": "cfc7e32d8d497986984897fb3af03e3e72576bc13466c754975d77bfe5e7f29f",
+        "primary": true,
+        "reference_annotations": []
+      },
+      {
+        "source": "docs/ramp_relocation.md",
+        "source_sha256": "161864649f72c96b34979a469d8536ff57dd7e5712dccb185760ef0eeb670910",
+        "snapshot": "rules/docs/ramp_relocation.md",
+        "snapshot_sha256": "161864649f72c96b34979a469d8536ff57dd7e5712dccb185760ef0eeb670910",
+        "primary": false,
+        "reference_annotations": []
+      },
+      {
+        "source": "docs/reproducible_builds.md",
+        "source_sha256": "12d37a36bdb3fdc4495b46c26df9077b2f5d373e90b15982b9074d8000384eb0",
+        "snapshot": "rules/docs/reproducible_builds.md",
+        "snapshot_sha256": "12d37a36bdb3fdc4495b46c26df9077b2f5d373e90b15982b9074d8000384eb0",
+        "primary": true,
+        "reference_annotations": []
+      },
+      {
+        "source": "docs/resource_distribution.md",
+        "source_sha256": "c3eb70d5f03e6fd5364d3fef860deb2d99099f4979395b8d41d03d231b538d49",
+        "snapshot": "rules/docs/resource_distribution.md",
+        "snapshot_sha256": "c3eb70d5f03e6fd5364d3fef860deb2d99099f4979395b8d41d03d231b538d49",
+        "primary": true,
+        "reference_annotations": []
+      },
+      {
+        "source": "docs/resource_packaging_fix.md",
+        "source_sha256": "6bb4cbae390ac0db14c89ec81f195c4d7ed7f6d44a74b789075358808e6e1cec",
+        "snapshot": "rules/docs/resource_packaging_fix.md",
+        "snapshot_sha256": "6bb4cbae390ac0db14c89ec81f195c4d7ed7f6d44a74b789075358808e6e1cec",
+        "primary": false,
+        "reference_annotations": []
+      },
+      {
+        "source": "docs/rust_migration.md",
+        "source_sha256": "8b7cf16f876c9abaaa2000d765554164978f2a447dcbf56091f2c657809a1c6c",
+        "snapshot": "rules/docs/rust_migration.md",
+        "snapshot_sha256": "8b7cf16f876c9abaaa2000d765554164978f2a447dcbf56091f2c657809a1c6c",
+        "primary": true,
+        "reference_annotations": []
+      },
+      {
+        "source": "docs/script_functions.md",
+        "source_sha256": "f39fd607a20ed2a862f071d702de0c2d7766a75e55efffc853f22ebc92586658",
+        "snapshot": "rules/docs/script_functions.md",
+        "snapshot_sha256": "f39fd607a20ed2a862f071d702de0c2d7766a75e55efffc853f22ebc92586658",
+        "primary": false,
+        "reference_annotations": []
+      },
+      {
+        "source": "docs/spawn_placement.md",
+        "source_sha256": "d2aa177dca1bca4cd2a222d4695ff2abda3254495ee3b476468110aa82968f59",
+        "snapshot": "rules/docs/spawn_placement.md",
+        "snapshot_sha256": "d2aa177dca1bca4cd2a222d4695ff2abda3254495ee3b476468110aa82968f59",
+        "primary": true,
+        "reference_annotations": []
+      },
+      {
+        "source": "docs/terrain_package_fix.md",
+        "source_sha256": "fadfb680fd53ad67848a0d482f04f603b9ff438569acbec68083a0f555d9638b",
+        "snapshot": "rules/docs/terrain_package_fix.md",
+        "snapshot_sha256": "fadfb680fd53ad67848a0d482f04f603b9ff438569acbec68083a0f555d9638b",
+        "primary": true,
+        "reference_annotations": []
+      },
+      {
+        "source": "docs/terrain_preview.md",
+        "source_sha256": "a7eb151ff3bb677b350623974733fda63d13035fb6592a52fb77632ed35fc1d0",
+        "snapshot": "rules/docs/terrain_preview.md",
+        "snapshot_sha256": "a7eb151ff3bb677b350623974733fda63d13035fb6592a52fb77632ed35fc1d0",
+        "primary": true,
+        "reference_annotations": []
+      },
+      {
+        "source": "docs/terrain_texture_rules.md",
+        "source_sha256": "a196a466f86c36f852280b260a6b39657704163c9c30d89b66fd99cc037b820d",
+        "snapshot": "rules/docs/terrain_texture_rules.md",
+        "snapshot_sha256": "a196a466f86c36f852280b260a6b39657704163c9c30d89b66fd99cc037b820d",
+        "primary": true,
+        "reference_annotations": []
+      },
+      {
+        "source": "docs/texture_tiling_fix.md",
+        "source_sha256": "578110e69753df7308987cc56641ee03082477cafcfe5e739dd31fe05e7eb6de",
+        "snapshot": "rules/docs/texture_tiling_fix.md",
+        "snapshot_sha256": "578110e69753df7308987cc56641ee03082477cafcfe5e739dd31fe05e7eb6de",
+        "primary": false,
+        "reference_annotations": []
+      },
+      {
+        "source": "docs/九州大地命名.md",
+        "source_sha256": "3a26e2484b6ba61bb9a648c93c827690e8130e987f645a6224ec594058487e0c",
+        "snapshot": "rules/docs/九州大地命名.md",
+        "snapshot_sha256": "3a26e2484b6ba61bb9a648c93c827690e8130e987f645a6224ec594058487e0c",
+        "primary": false,
+        "reference_annotations": []
+      },
+      {
+        "source": "maps/河南/README.md",
+        "source_sha256": "71bfc7189276611572b2fb6d2485dea79ddf8341e7295899aec0ccf342abb70a",
+        "snapshot": "rules/maps/河南/README.md",
+        "snapshot_sha256": "9baa948ffc01ec03b54abeb00244bb0bff35406efe1507e1778339d989a5e3c1",
+        "primary": false,
+        "reference_annotations": [
+          {
+            "reference": "../../dist/河南/[CHAI]沃野奔流T0.1.0.zip",
+            "exists_in_current_repository": false
+          },
+          {
+            "reference": "../../assets/河南/[CHAI]沃野奔流T0.1.0/attack-routes.png",
+            "exists_in_current_repository": false
+          },
+          {
+            "reference": "../../assets/河南/[CHAI]沃野奔流T0.1.0/preview.png",
+            "exists_in_current_repository": false
+          },
+          {
+            "reference": "histories/T0.1.0/acceptance.md",
+            "exists_in_current_repository": false
+          }
+        ]
+      },
+      {
+        "source": "src/README.md",
+        "source_sha256": "809386ce0b6747acae373d9c4fd3ec7fd538fee93ecd75997211e435189f08d8",
+        "snapshot": "rules/src/README.md",
+        "snapshot_sha256": "809386ce0b6747acae373d9c4fd3ec7fd538fee93ecd75997211e435189f08d8",
+        "primary": false,
+        "reference_annotations": []
+      },
+      {
+        "source": "templates/rules/common-T0.5.1.json",
+        "source_sha256": "82559011ebd002d7f662a2400fcf01f31ce7de73a1d33b3fd7d89bc7b0147508",
+        "snapshot": "rules/templates/rules/common-T0.5.1.json",
+        "snapshot_sha256": "82559011ebd002d7f662a2400fcf01f31ce7de73a1d33b3fd7d89bc7b0147508",
+        "primary": true,
+        "reference_annotations": []
+      },
+      {
+        "source": "templates/rules/coordinate-pipeline.json",
+        "source_sha256": "f4071760bf002a937dc309114a8f9ecb30290638ce3d654119250af459329aba",
+        "snapshot": "rules/templates/rules/coordinate-pipeline.json",
+        "snapshot_sha256": "f4071760bf002a937dc309114a8f9ecb30290638ce3d654119250af459329aba",
+        "primary": true,
+        "reference_annotations": []
+      }
+    ],
+    "note": "Current sources dynamically snapshotted with repository-relative hierarchy. Markdown links within the captured document/skill closure remain portable; uncaptured code, binary and historical references are explicit original-path annotations, not live delivery claims."
+  },
+  "independent_source": {
+    "path": "work/henan-p2-direct-ramp-2026-10-30/independent-final/audit/all-independent-checks.json",
+    "sha256": "5e404e6303f7890c0ed6c17b9d3e7ab8ade02e92ac4317f6d6c49461e193c17f",
+    "bytes": 8121
+  },
+  "compatibility_bypasses": false
+}

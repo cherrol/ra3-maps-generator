@@ -2,7 +2,7 @@
   "blueprint": "香港",
   "border_cells": 20,
   "bounds_wgs84": [
-    113.83184748294259,
+    113.8318474829426,
     22.152011588260372,
     114.44541544675609,
     22.56388192111556
@@ -34,7 +34,7 @@
     "preview--center--line.png": 241107575,
     "preview--line.png": 200365655,
     "preview.png": 2049506343,
-    "source.png": 3740771779
+    "source.png": 74078057
   },
   "layer_policy": {
     "active_land_layers": [
@@ -126,7 +126,54 @@
       584
     ]
   },
+  "source_image": {
+    "border_cells": 20,
+    "bounds_wgs84": [
+      113.83184748294259,
+      22.152011588260372,
+      114.44541544675609,
+      22.56388192111556
+    ],
+    "dem_smoothing_applied": false,
+    "display_sampling": {
+      "elevation": "bilinear",
+      "water": "nearest-neighbor"
+    },
+    "display_water_cells": 349182,
+    "elevation_array": "elevation_m",
+    "game_cells": [
+      800,
+      800
+    ],
+    "game_layer_processing_applied": false,
+    "game_water_processing_applied": false,
+    "image_crc32": 74078057,
+    "kind": "real-terrain-reference",
+    "north_up": true,
+    "reference": "source-reference.npz",
+    "reference_crc32": 3568612167,
+    "schema_version": 1,
+    "source_crop_pixels": [
+      20,
+      20,
+      820,
+      604
+    ],
+    "source_data_modified": false,
+    "source_grid": [
+      840,
+      624
+    ],
+    "source_water_cells": 299821,
+    "water_array": "water_mask"
+  },
   "source_reference": "maps/香港/data/terrain-preview/input.npz",
+  "terrain_shape_repair": {
+    "baseline": "raw/before-intrusion-repair-2026-10-30",
+    "combat_routes": "not yet designated",
+    "method": "scoped disk opening and adjacent-terrain merges, followed by same-owner shore reconciliation",
+    "report": "intrusion-repair-2026-10-30.json"
+  },
   "water_policy": {
     "design_shaping": {
       "active_reference": "raw/reference-before-shoreline-refinement.npz",
@@ -147,11 +194,5 @@
     "ocean_channel_open_radius_cells": 3,
     "ocean_source": "OpenStreetMap detailed coastline with Natural Earth broad-context fallback",
     "preserve_ocean": true
-  },
-  "terrain_shape_repair": {
-    "baseline": "raw/before-intrusion-repair-2026-10-30",
-    "combat_routes": "not yet designated",
-    "method": "scoped disk opening and adjacent-terrain merges, followed by same-owner shore reconciliation",
-    "report": "intrusion-repair-2026-10-30.json"
   }
 }

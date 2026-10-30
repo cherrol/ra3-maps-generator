@@ -2,7 +2,7 @@
   "blueprint": "山东",
   "border_cells": 20,
   "bounds_wgs84": [
-    114.77417282247045,
+    114.77417282247043,
     34.35841061683913,
     122.75044036031436,
     38.42147111136212
@@ -34,7 +34,7 @@
     "preview--center--line.png": 2393043193,
     "preview--line.png": 734511355,
     "preview.png": 1949161612,
-    "source.png": 3863549386
+    "source.png": 429298972
   },
   "layer_policy": {
     "active_land_layers": [
@@ -124,6 +124,47 @@
       800,
       504
     ]
+  },
+  "source_image": {
+    "border_cells": 20,
+    "bounds_wgs84": [
+      114.77417282247045,
+      34.35841061683913,
+      122.75044036031436,
+      38.42147111136212
+    ],
+    "dem_smoothing_applied": false,
+    "display_sampling": {
+      "elevation": "bilinear",
+      "water": "nearest-neighbor"
+    },
+    "display_water_cells": 214843,
+    "elevation_array": "elevation_m",
+    "game_cells": [
+      800,
+      800
+    ],
+    "game_layer_processing_applied": false,
+    "game_water_processing_applied": false,
+    "image_crc32": 429298972,
+    "kind": "real-terrain-reference",
+    "north_up": true,
+    "reference": "source-reference.npz",
+    "reference_crc32": 252707276,
+    "schema_version": 1,
+    "source_crop_pixels": [
+      20,
+      20,
+      820,
+      524
+    ],
+    "source_data_modified": false,
+    "source_grid": [
+      840,
+      544
+    ],
+    "source_water_cells": 161521,
+    "water_array": "water_mask"
   },
   "source_reference": "maps/山东/data/terrain-preview/input.npz",
   "water_policy": {

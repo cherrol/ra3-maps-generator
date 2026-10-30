@@ -1,0 +1,777 @@
+{
+  "status": "通过",
+  "selection_judgment": {
+    "status": "通过",
+    "reason": "当前直接主路优先落定158,248的20宽/span20新坡及完整25引道，再令开局两矿小幅联动、外围矿与油井退让。原20坡声明值不变，仅新增近坡；实际局部切坡为坡脚道路自身，不扩大出生矿平台。当前生产原生严格坡形/公共引道与实际全赠送10宽均有独立机器事实。",
+    "new_ramp_center": [
+      158,
+      248
+    ],
+    "selected_geometry": {
+      "width": 20,
+      "span": 20,
+      "formal_approach_extension": 25
+    },
+    "ore_retreat_object_ids": [
+      50,
+      51,
+      52,
+      67,
+      68
+    ],
+    "linked_other_object_ids": [
+      83
+    ],
+    "mines_did_not_dictate_ramp_shrink_or_remote_replacement": true,
+    "ordinary_road_classification": {
+      "extra_u": [
+        -42,
+        -35
+      ],
+      "plane": 280,
+      "gap8_claimed": false
+    },
+    "evidence": [
+      {
+        "path": "terrain-design-review.json",
+        "sha256": "5a566e776786bd405161a66661fe82023c8c51c9923a9e1271b476020df6933d"
+      },
+      {
+        "path": "final-corridors/corridor-width-acceptance.json",
+        "sha256": "bd6dbcd1813ed85e51819ce29b8becfa2f885a09112a741756ded64dfc68e8ca"
+      },
+      {
+        "path": "final-review/native-review.json",
+        "sha256": "098862e7f6be095a46f552e07a638ec8a1ec9a1437ff5d41169835b4cb607306"
+      },
+      {
+        "path": "inset158/actual-toe-clearance.json",
+        "sha256": "7893d87ac141498344895b719bfad5f2cfb425fae135256ea897dde3f290327d"
+      }
+    ]
+  },
+  "existing_ramps_preserved": 20,
+  "baseline_identity": {
+    "native_sha256": "7234fa1437b0d08a961f14bc99fc7229ba58a3fa1f66294fc5f33bc5f9ad4863",
+    "layout_sha256": "75e0b7db1b2c27df0ef6b52281666c8d16874e69e507c0549894605d2ff5b431",
+    "plan_sha256": "c297f56da67816f2eeb2f360eca1e6b127f0523fbe121bbc1c9bdf774380de6e"
+  },
+  "baseline_array_sha256": {
+    "review-height.u16": "3e61e548955b80981cdf335c46ffcfdadaba4828be1d36ed9a837f3be9fbd31f",
+    "review-imp.u8": "67ff91735a4488964e731e2040381cdbb834a73992e73fbace786f2a8d4c2062",
+    "review-build.u8": "557adf620526af7ffbe871f1cc4b9a1da46e90e039874bd84a067b2c97665e7e"
+  },
+  "new_ramp": {
+    "auto": true,
+    "h": 20,
+    "layers": [
+      280,
+      350
+    ],
+    "pair": [
+      280,
+      350
+    ],
+    "span": 20,
+    "style": "mountain",
+    "surface_style": "mountain",
+    "ux": 0.9841749729088156,
+    "uy": -0.17719938684976244,
+    "w": 20,
+    "width": 20,
+    "x": 158,
+    "y": 248
+  },
+  "formal_ramp_and_complete_approach": "Same-candidate strict native-audit; unchanged public gap and approach extension.",
+  "object_changes": [
+    {
+      "object_id": 50,
+      "kind": "OreNode",
+      "before": [
+        78.0,
+        294.0
+      ],
+      "after": [
+        76.0,
+        294.0
+      ],
+      "displacement": 2.0
+    },
+    {
+      "object_id": 51,
+      "kind": "OreNode",
+      "before": [
+        94.0,
+        227.0
+      ],
+      "after": [
+        93.0,
+        226.0
+      ],
+      "displacement": 1.4142135623730951
+    },
+    {
+      "object_id": 52,
+      "kind": "OreNode",
+      "before": [
+        151.0,
+        331.0
+      ],
+      "after": [
+        151.0,
+        314.0
+      ],
+      "displacement": 17.0
+    },
+    {
+      "object_id": 67,
+      "kind": "OreNode",
+      "before": [
+        558.0,
+        226.0
+      ],
+      "after": [
+        558.0,
+        224.0
+      ],
+      "displacement": 2.0
+    },
+    {
+      "object_id": 68,
+      "kind": "OreNode",
+      "before": [
+        158.0,
+        231.0
+      ],
+      "after": [
+        160.0,
+        209.0
+      ],
+      "displacement": 22.090722034374522
+    },
+    {
+      "object_id": 83,
+      "kind": "OilDerrick",
+      "before": [
+        170.0,
+        256.0
+      ],
+      "after": [
+        172.0,
+        270.0
+      ],
+      "displacement": 14.142135623730951
+    }
+  ],
+  "all_ore_fields_on_unchanged_T9_native_terrain": [
+    {
+      "object_id": 35,
+      "native_samples": 2374,
+      "height_imp_build_exactly_equal_to_T9": true
+    },
+    {
+      "object_id": 36,
+      "native_samples": 2374,
+      "height_imp_build_exactly_equal_to_T9": true
+    },
+    {
+      "object_id": 37,
+      "native_samples": 2374,
+      "height_imp_build_exactly_equal_to_T9": true
+    },
+    {
+      "object_id": 38,
+      "native_samples": 2374,
+      "height_imp_build_exactly_equal_to_T9": true
+    },
+    {
+      "object_id": 39,
+      "native_samples": 2374,
+      "height_imp_build_exactly_equal_to_T9": true
+    },
+    {
+      "object_id": 40,
+      "native_samples": 2374,
+      "height_imp_build_exactly_equal_to_T9": true
+    },
+    {
+      "object_id": 41,
+      "native_samples": 2374,
+      "height_imp_build_exactly_equal_to_T9": true
+    },
+    {
+      "object_id": 42,
+      "native_samples": 2374,
+      "height_imp_build_exactly_equal_to_T9": true
+    },
+    {
+      "object_id": 43,
+      "native_samples": 2374,
+      "height_imp_build_exactly_equal_to_T9": true
+    },
+    {
+      "object_id": 44,
+      "native_samples": 2374,
+      "height_imp_build_exactly_equal_to_T9": true
+    },
+    {
+      "object_id": 45,
+      "native_samples": 2374,
+      "height_imp_build_exactly_equal_to_T9": true
+    },
+    {
+      "object_id": 46,
+      "native_samples": 2374,
+      "height_imp_build_exactly_equal_to_T9": true
+    },
+    {
+      "object_id": 47,
+      "native_samples": 2374,
+      "height_imp_build_exactly_equal_to_T9": true
+    },
+    {
+      "object_id": 48,
+      "native_samples": 2374,
+      "height_imp_build_exactly_equal_to_T9": true
+    },
+    {
+      "object_id": 49,
+      "native_samples": 2374,
+      "height_imp_build_exactly_equal_to_T9": true
+    },
+    {
+      "object_id": 50,
+      "native_samples": 2374,
+      "height_imp_build_exactly_equal_to_T9": true
+    },
+    {
+      "object_id": 51,
+      "native_samples": 2374,
+      "height_imp_build_exactly_equal_to_T9": true
+    },
+    {
+      "object_id": 52,
+      "native_samples": 2374,
+      "height_imp_build_exactly_equal_to_T9": true
+    },
+    {
+      "object_id": 53,
+      "native_samples": 2374,
+      "height_imp_build_exactly_equal_to_T9": true
+    },
+    {
+      "object_id": 54,
+      "native_samples": 2374,
+      "height_imp_build_exactly_equal_to_T9": true
+    },
+    {
+      "object_id": 55,
+      "native_samples": 2374,
+      "height_imp_build_exactly_equal_to_T9": true
+    },
+    {
+      "object_id": 56,
+      "native_samples": 2374,
+      "height_imp_build_exactly_equal_to_T9": true
+    },
+    {
+      "object_id": 57,
+      "native_samples": 2374,
+      "height_imp_build_exactly_equal_to_T9": true
+    },
+    {
+      "object_id": 58,
+      "native_samples": 2374,
+      "height_imp_build_exactly_equal_to_T9": true
+    },
+    {
+      "object_id": 59,
+      "native_samples": 2374,
+      "height_imp_build_exactly_equal_to_T9": true
+    },
+    {
+      "object_id": 60,
+      "native_samples": 2374,
+      "height_imp_build_exactly_equal_to_T9": true
+    },
+    {
+      "object_id": 61,
+      "native_samples": 2374,
+      "height_imp_build_exactly_equal_to_T9": true
+    },
+    {
+      "object_id": 62,
+      "native_samples": 2374,
+      "height_imp_build_exactly_equal_to_T9": true
+    },
+    {
+      "object_id": 63,
+      "native_samples": 2374,
+      "height_imp_build_exactly_equal_to_T9": true
+    },
+    {
+      "object_id": 64,
+      "native_samples": 2374,
+      "height_imp_build_exactly_equal_to_T9": true
+    },
+    {
+      "object_id": 65,
+      "native_samples": 2374,
+      "height_imp_build_exactly_equal_to_T9": true
+    },
+    {
+      "object_id": 66,
+      "native_samples": 2374,
+      "height_imp_build_exactly_equal_to_T9": true
+    },
+    {
+      "object_id": 67,
+      "native_samples": 2374,
+      "height_imp_build_exactly_equal_to_T9": true
+    },
+    {
+      "object_id": 68,
+      "native_samples": 2374,
+      "height_imp_build_exactly_equal_to_T9": true
+    },
+    {
+      "object_id": 69,
+      "native_samples": 2374,
+      "height_imp_build_exactly_equal_to_T9": true
+    },
+    {
+      "object_id": 70,
+      "native_samples": 2374,
+      "height_imp_build_exactly_equal_to_T9": true
+    },
+    {
+      "object_id": 71,
+      "native_samples": 2374,
+      "height_imp_build_exactly_equal_to_T9": true
+    },
+    {
+      "object_id": 72,
+      "native_samples": 2374,
+      "height_imp_build_exactly_equal_to_T9": true
+    },
+    {
+      "object_id": 73,
+      "native_samples": 2374,
+      "height_imp_build_exactly_equal_to_T9": true
+    },
+    {
+      "object_id": 74,
+      "native_samples": 2374,
+      "height_imp_build_exactly_equal_to_T9": true
+    },
+    {
+      "object_id": 75,
+      "native_samples": 2374,
+      "height_imp_build_exactly_equal_to_T9": true
+    },
+    {
+      "object_id": 76,
+      "native_samples": 2374,
+      "height_imp_build_exactly_equal_to_T9": true
+    },
+    {
+      "object_id": 77,
+      "native_samples": 2374,
+      "height_imp_build_exactly_equal_to_T9": true
+    },
+    {
+      "object_id": 78,
+      "native_samples": 2374,
+      "height_imp_build_exactly_equal_to_T9": true
+    },
+    {
+      "object_id": 79,
+      "native_samples": 2374,
+      "height_imp_build_exactly_equal_to_T9": true
+    },
+    {
+      "object_id": 80,
+      "native_samples": 2374,
+      "height_imp_build_exactly_equal_to_T9": true
+    },
+    {
+      "object_id": 81,
+      "native_samples": 2374,
+      "height_imp_build_exactly_equal_to_T9": true
+    },
+    {
+      "object_id": 82,
+      "native_samples": 2374,
+      "height_imp_build_exactly_equal_to_T9": true
+    }
+  ],
+  "complete_script_tree_exact": true,
+  "ordinary_flat_connector": {
+    "polygon": [
+      [
+        114.8926572693321,
+        245.60062451860188
+      ],
+      [
+        121.78188207969383,
+        244.36022881065352
+      ],
+      [
+        125.32586981668909,
+        264.04372826882985
+      ],
+      [
+        118.43664500632737,
+        265.2841239767782
+      ]
+    ],
+    "axial_interval": [
+      -42,
+      -35
+    ],
+    "width": 20,
+    "plane": 280,
+    "bilinear_quarter_cell_samples": 2349,
+    "unique_navigation_samples": 170,
+    "flat_walkable_buildable": true,
+    "complete_ore_reserve_gaps": [
+      {
+        "object_id": 35,
+        "refinery_gap": 573.1991384242652,
+        "ore_disk_gap": 603.7206950638431
+      },
+      {
+        "object_id": 36,
+        "refinery_gap": 598.2958597635617,
+        "ore_disk_gap": 621.4396086669224
+      },
+      {
+        "object_id": 37,
+        "refinery_gap": 495.34299478506455,
+        "ore_disk_gap": 515.7088904050854
+      },
+      {
+        "object_id": 38,
+        "refinery_gap": 606.0435760630851,
+        "ore_disk_gap": 633.2763357919506
+      },
+      {
+        "object_id": 39,
+        "refinery_gap": 609.6694163369893,
+        "ore_disk_gap": 638.5740853900865
+      },
+      {
+        "object_id": 40,
+        "refinery_gap": 482.1247899421722,
+        "ore_disk_gap": 509.6390650509428
+      },
+      {
+        "object_id": 41,
+        "refinery_gap": 630.5811593501857,
+        "ore_disk_gap": 648.0595070771682
+      },
+      {
+        "object_id": 42,
+        "refinery_gap": 659.5464726824069,
+        "ore_disk_gap": 690.7892514928883
+      },
+      {
+        "object_id": 43,
+        "refinery_gap": 524.0320862375265,
+        "ore_disk_gap": 555.2730066749303
+      },
+      {
+        "object_id": 44,
+        "refinery_gap": 740.4000886116168,
+        "ore_disk_gap": 728.9529544326684
+      },
+      {
+        "object_id": 45,
+        "refinery_gap": 723.8847495941541,
+        "ore_disk_gap": 722.3401604990235
+      },
+      {
+        "object_id": 46,
+        "refinery_gap": 680.2309897407056,
+        "ore_disk_gap": 678.4347171641328
+      },
+      {
+        "object_id": 47,
+        "refinery_gap": 151.20067340404762,
+        "ore_disk_gap": 174.7170030805461
+      },
+      {
+        "object_id": 48,
+        "refinery_gap": 127.38859668313862,
+        "ore_disk_gap": 119.04702460098798
+      },
+      {
+        "object_id": 49,
+        "refinery_gap": 135.61584977834983,
+        "ore_disk_gap": 134.2636202386201
+      },
+      {
+        "object_id": 50,
+        "refinery_gap": 2.31242990646761,
+        "ore_disk_gap": 31.23934401584485
+      },
+      {
+        "object_id": 51,
+        "refinery_gap": 11.340180916268988,
+        "ore_disk_gap": 9.384909797915952
+      },
+      {
+        "object_id": 52,
+        "refinery_gap": 37.50804785476883,
+        "ore_disk_gap": 36.16751771218046
+      },
+      {
+        "object_id": 53,
+        "refinery_gap": 124.40515279645867,
+        "ore_disk_gap": 123.07599741406415
+      },
+      {
+        "object_id": 54,
+        "refinery_gap": 191.4605053767291,
+        "ore_disk_gap": 220.85062047015714
+      },
+      {
+        "object_id": 55,
+        "refinery_gap": 169.1030416611105,
+        "ore_disk_gap": 189.47101895866592
+      },
+      {
+        "object_id": 56,
+        "refinery_gap": 435.9667689878802,
+        "ore_disk_gap": 433.31889285023055
+      },
+      {
+        "object_id": 57,
+        "refinery_gap": 482.9578226762135,
+        "ore_disk_gap": 508.7831829190161
+      },
+      {
+        "object_id": 58,
+        "refinery_gap": 432.2631999182058,
+        "ore_disk_gap": 451.64703532671
+      },
+      {
+        "object_id": 59,
+        "refinery_gap": 463.8993298568055,
+        "ore_disk_gap": 462.4021687901187
+      },
+      {
+        "object_id": 60,
+        "refinery_gap": 293.9548490199591,
+        "ore_disk_gap": 324.31938240170365
+      },
+      {
+        "object_id": 61,
+        "refinery_gap": 396.4818551469187,
+        "ore_disk_gap": 390.8629491277531
+      },
+      {
+        "object_id": 62,
+        "refinery_gap": 227.06789865824126,
+        "ore_disk_gap": 226.25417169950043
+      },
+      {
+        "object_id": 63,
+        "refinery_gap": 265.3020918417103,
+        "ore_disk_gap": 263.93617160414664
+      },
+      {
+        "object_id": 64,
+        "refinery_gap": 220.57504457788144,
+        "ore_disk_gap": 209.15211883004142
+      },
+      {
+        "object_id": 65,
+        "refinery_gap": 424.41073969535876,
+        "ore_disk_gap": 420.76513452874224
+      },
+      {
+        "object_id": 66,
+        "refinery_gap": 305.0767558094819,
+        "ore_disk_gap": 300.8612436226449
+      },
+      {
+        "object_id": 67,
+        "refinery_gap": 419.3113933096294,
+        "ore_disk_gap": 414.52319052445586
+      },
+      {
+        "object_id": 68,
+        "refinery_gap": 47.02774787778993,
+        "ore_disk_gap": 32.06697916061771
+      },
+      {
+        "object_id": 69,
+        "refinery_gap": 253.73103901730445,
+        "ore_disk_gap": 250.94990518680441
+      },
+      {
+        "object_id": 70,
+        "refinery_gap": 292.85931044331136,
+        "ore_disk_gap": 290.4923656525874
+      },
+      {
+        "object_id": 71,
+        "refinery_gap": 465.6178297535101,
+        "ore_disk_gap": 464.29922170968683
+      },
+      {
+        "object_id": 72,
+        "refinery_gap": 386.5355901136081,
+        "ore_disk_gap": 384.74959388731486
+      },
+      {
+        "object_id": 73,
+        "refinery_gap": 433.12080878359495,
+        "ore_disk_gap": 462.79998002412646
+      },
+      {
+        "object_id": 74,
+        "refinery_gap": 136.1188694232996,
+        "ore_disk_gap": 166.90076595037186
+      },
+      {
+        "object_id": 75,
+        "refinery_gap": 354.8799395978373,
+        "ore_disk_gap": 340.9558349221241
+      },
+      {
+        "object_id": 76,
+        "refinery_gap": 329.00626783107873,
+        "ore_disk_gap": 317.4066065097487
+      },
+      {
+        "object_id": 77,
+        "refinery_gap": 640.1506863205042,
+        "ore_disk_gap": 638.2511094028479
+      },
+      {
+        "object_id": 78,
+        "refinery_gap": 563.4535836795362,
+        "ore_disk_gap": 594.2980322736275
+      },
+      {
+        "object_id": 79,
+        "refinery_gap": 596.5121968657696,
+        "ore_disk_gap": 581.9467508040904
+      },
+      {
+        "object_id": 80,
+        "refinery_gap": 510.29655246987664,
+        "ore_disk_gap": 527.8374487916897
+      },
+      {
+        "object_id": 81,
+        "refinery_gap": 528.1148946818732,
+        "ore_disk_gap": 526.7958748788582
+      },
+      {
+        "object_id": 82,
+        "refinery_gap": 483.60333492661243,
+        "ore_disk_gap": 474.5043762010278
+      }
+    ],
+    "minimum_refinery_gap": 2.31242990646761,
+    "gap8_claimed": false
+  },
+  "all_potential_gift_routes": {
+    "path": "work/henan-p2-direct-ramp-2026-10-30/final-corridors/corridor-width-acceptance.json",
+    "sha256": "bd6dbcd1813ed85e51819ce29b8becfa2f885a09112a741756ded64dfc68e8ca",
+    "count": 8,
+    "status": "通过"
+  },
+  "scope": "Slope-first design and actual no-shrink/resource-retreat facts; ordinary same-level road is separately checked for full occupancy and ten-cell access, without inventing a universal eight-cell ordinary-road margin.",
+  "map": "[CHAI]沃野奔流T0.1.0",
+  "date": "2026-10-30",
+  "native_path": "/home/cherrol/dev/ra3-maps-generator/work/henan-p2-direct-ramp-2026-10-30/project/assets/河南/[CHAI]沃野奔流T0.1.0/[CHAI]沃野奔流T0.1.0.map",
+  "native_sha256": "6f57c710998d79aa8a5f9f783bd121568416d9f4773a76941862fc8cdc79fbbb",
+  "native_crc32": 4273198950,
+  "layout_sha256": "3654ea4d2dc176fcbcb7ac5be5284ec1f1ef2ae0cd327e6796719c67eeb463fc",
+  "plan_sha256": "c3ba92ab3c96cb83699be786f2e8804604ed3c94e84dd8eeb117a8933199a665",
+  "review_sha256": "098862e7f6be095a46f552e07a638ec8a1ec9a1437ff5d41169835b4cb607306",
+  "native_array_sha256": {
+    "review-height.u16": "c2294697b9aeb2c89e7c0d8720a624a2d4ad0205ae9f0923366db2bcb07af548",
+    "review-imp.u8": "2df65cc45a7cf3e58fb1a62ceb01f3fd598134ef48ac10d22d7725dd0b4eacbd",
+    "review-build.u8": "8da58350ce0d7118a8909c0e8fc0845923c85247be97bfd645f6b505eea52cde"
+  },
+  "frame": {
+    "border": 20,
+    "cell_size": 10.0,
+    "height": 840,
+    "width": 840,
+    "z_scale": 0.0390625
+  },
+  "policy": {
+    "bucket_size": 32.0,
+    "ore_reserve_radius": 20.0,
+    "building_reserve_radius": 8.0,
+    "oil_reserve_radius": 6.0,
+    "decoration_reserve_radius": 2.0,
+    "flat_tolerance": 12.0,
+    "maximum_walk_step": 12.0,
+    "navigation_clearance": 1,
+    "maximum_ramp_step": 6.1,
+    "maximum_landing_error": 12.0,
+    "terrain_shape": {
+      "combat_route_minimum_width_cells": 10.0,
+      "intrusion_minimum_width_cells": 5.0,
+      "exclude_gift_buildings_from_intrusions": true
+    },
+    "spawn_placement": {
+      "near_ore_radius": 62.0,
+      "base_radius": 8.0,
+      "ore_radius": 20.0,
+      "flat_tolerance": 3.0
+    },
+    "resource_distribution": {
+      "mines_per_seat": 6,
+      "home_ores_per_seat": 2,
+      "home_radius": 100.0,
+      "home_maximum": 2,
+      "route_count": 4,
+      "main_route_max_distance": 65.0,
+      "fourth_progress": [
+        0.1,
+        0.35
+      ],
+      "hotspot_progress": [
+        0.33,
+        0.67
+      ],
+      "secondary_max_distance": 75.0,
+      "secondary_min_main_distance": 35.0
+    },
+    "ramp_clearance": {
+      "approach_extension": 25.0,
+      "gap": 8.0,
+      "refinery_back": 5.0,
+      "refinery_forward": 48.0,
+      "refinery_half_width": 18.0
+    }
+  },
+  "policy_sha256": "f4071760bf002a937dc309114a8f9ecb30290638ce3d654119250af459329aba",
+  "audit_script_sha256": "2822f72fbfe275c97e3b7fea93644954b6caffc129f0095fc103a1b589a046a3",
+  "measurement_scope": "Fresh native static geometry; no game/GUI or runtime pathfinding claim.",
+  "rule_and_skill_sha256": {
+    "docs/map_acceptance.md": "e7a7ac129d19f9c525547503473d98af36949fcbaaf3e0246db566ba0f2f45e9",
+    "docs/map_rules.md": "0831883e5846bdd85cf25286f45673d22b6a097c2e744e3c9edaf890e0098c58",
+    "docs/map_skills_checklist.md": "67eea572c0a765e7d49a4f37f05c0ad8f7648156d9bf054b00b2105a9b05ac87",
+    ".agents/skills/ra3-authoring/SKILL.md": "5d3125dfb4ca50cd2f6a0f9dab37169e4c8a7cf28b3d49ff8593fbad2aca91ac",
+    ".agents/skills/ra3-pipeline/SKILL.md": "c0579426ea7e74b5668ddaae5ce44a0a58604b41675a14cfa8f5de3e0bcbe8e6",
+    ".agents/skills/ra3-resources/SKILL.md": "8d06bc386f811bdbb05aec2792c01ef1ae5ef1498dcc19da6871511f09d1833c",
+    ".agents/skills/ra3-spawns/SKILL.md": "6922edd90715423b84f9e790543e9d662987ee51978c50b6432c2d5cc3a1a401",
+    ".agents/skills/ra3-terrain/SKILL.md": "ea0a49bf07c0858c5d737b4a09810e1d761a62288321aa9fd7b72fa53a17507c"
+  },
+  "audit_run_id": "T0.1.0-final-20261030-c",
+  "review_entry_sha256": "664f6ff0e35a53398e7deecb3d8ed549889bbbd7920c07c0cb20ad9d5fe17389",
+  "frozen_model_source_sha256": "2822f72fbfe275c97e3b7fea93644954b6caffc129f0095fc103a1b589a046a3",
+  "judgments_sha256": "58cfa890e126bae30bfa709290220d11faa1a7037931d21ee518e7262bcdc52a",
+  "exact_gift_verifier_sha256": "1bb4eb1e1ad6ca7e06b623915fc8e456a16c77a4c4a09696613e0562c3def3d0",
+  "common_production_policy_sha256": "82559011ebd002d7f662a2400fcf01f31ce7de73a1d33b3fd7d89bc7b0147508",
+  "ramp_priority_check_sha256": "b6712551fbdcbcfc4c7b5529a7674c0ececba1a7951d4554d2b81571b66f557f"
+}

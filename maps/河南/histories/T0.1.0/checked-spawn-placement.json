@@ -1,0 +1,252 @@
+{
+  "findings": [],
+  "frame": {
+    "border": 20,
+    "cell_size": 10.0,
+    "height": 840,
+    "width": 840,
+    "z_scale": 0.0390625
+  },
+  "inherited": 0,
+  "orientation": {
+    "accepted": [
+      "west_east"
+    ],
+    "candidates": [
+      [
+        "west_east",
+        true
+      ],
+      [
+        "south_north",
+        false
+      ],
+      [
+        "southwest_northeast",
+        false
+      ]
+    ],
+    "center": [
+      419.5,
+      419.5
+    ],
+    "explicit_exception": {
+      "layout": "west_east",
+      "reason": "2026-10-30 用户明确要求1-4西侧、5-8东侧；现行规范要求P5/P6两角、P7/P8居中。"
+    }
+  },
+  "passed": true,
+  "policy": {
+    "bucket_size": 32.0,
+    "ore_reserve_radius": 20.0,
+    "building_reserve_radius": 8.0,
+    "oil_reserve_radius": 6.0,
+    "decoration_reserve_radius": 2.0,
+    "flat_tolerance": 12.0,
+    "maximum_walk_step": 12.0,
+    "navigation_clearance": 1,
+    "maximum_ramp_step": 6.1,
+    "maximum_landing_error": 12.0,
+    "terrain_shape": {
+      "combat_route_minimum_width_cells": 10.0,
+      "intrusion_minimum_width_cells": 5.0,
+      "exclude_gift_buildings_from_intrusions": true
+    },
+    "spawn_placement": {
+      "near_ore_radius": 62.0,
+      "base_radius": 8.0,
+      "ore_radius": 20.0,
+      "flat_tolerance": 3.0
+    },
+    "resource_distribution": {
+      "mines_per_seat": 6,
+      "home_ores_per_seat": 2,
+      "home_radius": 100.0,
+      "home_maximum": 2,
+      "route_count": 4,
+      "main_route_max_distance": 65.0,
+      "fourth_progress": [
+        0.1,
+        0.35
+      ],
+      "hotspot_progress": [
+        0.33,
+        0.67
+      ],
+      "secondary_max_distance": 75.0,
+      "secondary_min_main_distance": 35.0
+    },
+    "ramp_clearance": {
+      "approach_extension": 25.0,
+      "gap": 8.0,
+      "refinery_back": 5.0,
+      "refinery_forward": 48.0,
+      "refinery_half_width": 18.0
+    }
+  },
+  "raw_passed": true,
+  "refinery_policy": {
+    "approach_extension": 25.0,
+    "gap": 8.0,
+    "refinery_back": 5.0,
+    "refinery_forward": 48.0,
+    "refinery_half_width": 18.0
+  },
+  "regressions": [],
+  "schema_version": 1,
+  "seats": [
+    {
+      "base": [
+        65.0,
+        55.0
+      ],
+      "group_key": "P1/0:*Waypoints/Waypoint:43e10000:45eec000:00000000:{\"owner\":\"/team\",\"uniqueID\":\"Player_1_Start\",\"waypointName\":\"Player_1_Start\"};46:OreNode:44610000:45f05000:c016cbe4:{\"owner\":\"PlyrNeutral/teamPlyrNeutral\",\"uniqueID\":\"henan-east-west-P5-ore1\",\"waypointName\":null};47:OreNode:43fa0000:45dc5000:4016cbe4:{\"owner\":\"PlyrNeutral/teamPlyrNeutral\",\"uniqueID\":\"henan-east-west-P5-ore2\",\"waypointName\":null}",
+      "height": 350.0,
+      "ore_ids": [
+        47,
+        48
+      ],
+      "seat": 1,
+      "start_id": 1,
+      "water": false
+    },
+    {
+      "base": [
+        48.0,
+        261.5
+      ],
+      "group_key": "P2/4:*Waypoints/Waypoint:438c0000:45ae3800:00000000:{\"owner\":\"/team\",\"uniqueID\":\"Player_2_Start\",\"waypointName\":\"Player_2_Start\"};49:OreNode:440c0000:45a41000:3f490fdb:{\"owner\":\"PlyrNeutral/teamPlyrNeutral\",\"uniqueID\":\"henan-east-west-P6-ore1\",\"waypointName\":null};50:OreNode:44368000:45b95000:c016cbe4:{\"owner\":\"PlyrNeutral/teamPlyrNeutral\",\"uniqueID\":\"henan-east-west-P6-ore2\",\"waypointName\":null}",
+      "height": 280.0,
+      "ore_ids": [
+        50,
+        51
+      ],
+      "seat": 2,
+      "start_id": 5,
+      "water": false
+    },
+    {
+      "base": [
+        53.0,
+        450.0
+      ],
+      "group_key": "P3/8:*Waypoints/Waypoint:43a50000:4566a000:00000000:{\"owner\":\"/team\",\"uniqueID\":\"Player_3_Start\",\"waypointName\":\"Player_3_Start\"};52:OreNode:43a00000:45857000:bf490fdb:{\"owner\":\"PlyrNeutral/teamPlyrNeutral\",\"uniqueID\":\"henan-east-west-P7-ore1\",\"waypointName\":null};53:OreNode:44070000:45462000:3f490fdb:{\"owner\":\"PlyrNeutral/teamPlyrNeutral\",\"uniqueID\":\"henan-east-west-P7-ore2\",\"waypointName\":null}",
+      "height": 350.0,
+      "ore_ids": [
+        53,
+        54
+      ],
+      "seat": 3,
+      "start_id": 9,
+      "water": false
+    },
+    {
+      "base": [
+        55.0,
+        772.0
+      ],
+      "group_key": "P4/12:*Waypoints/Waypoint:43af0000:43eb0000:00000000:{\"owner\":\"/team\",\"uniqueID\":\"Player_4_Start\",\"waypointName\":\"Player_4_Start\"};55:OreNode:43aa0000:44834000:bf490fdb:{\"owner\":\"PlyrNeutral/teamPlyrNeutral\",\"uniqueID\":\"henan-east-west-P8-ore1\",\"waypointName\":null};56:OreNode:44610000:437a0000:4016cbe4:{\"owner\":\"PlyrNeutral/teamPlyrNeutral\",\"uniqueID\":\"henan-east-west-P8-ore2\",\"waypointName\":null}",
+      "height": 350.0,
+      "ore_ids": [
+        56,
+        57
+      ],
+      "seat": 4,
+      "start_id": 13,
+      "water": false
+    },
+    {
+      "base": [
+        763.0,
+        129.0
+      ],
+      "group_key": "P5/16:*Waypoints/Waypoint:45e83000:45d7a000:00000000:{\"owner\":\"/team\",\"uniqueID\":\"Player_5_Start\",\"waypointName\":\"Player_5_Start\"};34:OreNode:45dc0000:45e65000:c016cbe4:{\"owner\":\"PlyrNeutral/teamPlyrNeutral\",\"uniqueID\":\"henan-east-west-P1-ore1\",\"waypointName\":null};35:OreNode:45e7e000:45c5d000:4016cbe4:{\"owner\":\"PlyrNeutral/teamPlyrNeutral\",\"uniqueID\":\"henan-east-west-P1-ore2\",\"waypointName\":null}",
+      "height": 210.0,
+      "ore_ids": [
+        35,
+        36
+      ],
+      "seat": 5,
+      "start_id": 17,
+      "water": false
+    },
+    {
+      "base": [
+        756.0,
+        727.0
+      ],
+      "group_key": "P6/20:*Waypoints/Waypoint:45e60000:44660000:00000000:{\"owner\":\"/team\",\"uniqueID\":\"Player_6_Start\",\"waypointName\":\"Player_6_Start\"};43:OreNode:45e60000:44bcc000:bf490fdb:{\"owner\":\"PlyrNeutral/teamPlyrNeutral\",\"uniqueID\":\"henan-east-west-P4-ore1\",\"waypointName\":null};44:OreNode:45d70000:446d8000:3f490fdb:{\"owner\":\"PlyrNeutral/teamPlyrNeutral\",\"uniqueID\":\"henan-east-west-P4-ore2\",\"waypointName\":null}",
+      "height": 210.0,
+      "ore_ids": [
+        44,
+        45
+      ],
+      "seat": 6,
+      "start_id": 21,
+      "water": false
+    },
+    {
+      "base": [
+        779.0,
+        294.0
+      ],
+      "group_key": "P7/24:*Waypoints/Waypoint:45ed3000:45a41000:00000000:{\"owner\":\"/team\",\"uniqueID\":\"Player_7_Start (imported)\",\"waypointName\":\"Player_7_Start (imported)\"};37:OreNode:45ece000:45b63000:c016cbe4:{\"owner\":\"PlyrNeutral/teamPlyrNeutral\",\"uniqueID\":\"henan-east-west-P2-ore1\",\"waypointName\":null};38:OreNode:45ece000:4591f000:4016cbe4:{\"owner\":\"PlyrNeutral/teamPlyrNeutral\",\"uniqueID\":\"henan-east-west-P2-ore2\",\"waypointName\":null}",
+      "height": 210.0,
+      "ore_ids": [
+        38,
+        39
+      ],
+      "seat": 7,
+      "start_id": 25,
+      "water": false
+    },
+    {
+      "base": [
+        764.0,
+        518.0
+      ],
+      "group_key": "P8/28:*Waypoints/Waypoint:45e88000:453c2000:00000000:{\"owner\":\"/team\",\"uniqueID\":\"Player_8_Start (imported)\",\"waypointName\":\"Player_8_Start (imported)\"};40:OreNode:45e88000:45606000:c016cbe4:{\"owner\":\"PlyrNeutral/teamPlyrNeutral\",\"uniqueID\":\"henan-east-west-P3-ore1\",\"waypointName\":null};41:OreNode:45e88000:4517e000:4016cbe4:{\"owner\":\"PlyrNeutral/teamPlyrNeutral\",\"uniqueID\":\"henan-east-west-P3-ore2\",\"waypointName\":null}",
+      "height": 210.0,
+      "ore_ids": [
+        41,
+        42
+      ],
+      "seat": 8,
+      "start_id": 29,
+      "water": false
+    }
+  ],
+  "status": "strict",
+  "map": "[CHAI]沃野奔流T0.1.0",
+  "date": "2026-10-30",
+  "native_path": "/home/cherrol/dev/ra3-maps-generator/work/henan-p2-direct-ramp-2026-10-30/project/assets/河南/[CHAI]沃野奔流T0.1.0/[CHAI]沃野奔流T0.1.0.map",
+  "native_sha256": "6f57c710998d79aa8a5f9f783bd121568416d9f4773a76941862fc8cdc79fbbb",
+  "native_crc32": 4273198950,
+  "layout_sha256": "3654ea4d2dc176fcbcb7ac5be5284ec1f1ef2ae0cd327e6796719c67eeb463fc",
+  "plan_sha256": "c3ba92ab3c96cb83699be786f2e8804604ed3c94e84dd8eeb117a8933199a665",
+  "review_sha256": "098862e7f6be095a46f552e07a638ec8a1ec9a1437ff5d41169835b4cb607306",
+  "native_array_sha256": {
+    "review-height.u16": "c2294697b9aeb2c89e7c0d8720a624a2d4ad0205ae9f0923366db2bcb07af548",
+    "review-imp.u8": "2df65cc45a7cf3e58fb1a62ceb01f3fd598134ef48ac10d22d7725dd0b4eacbd",
+    "review-build.u8": "8da58350ce0d7118a8909c0e8fc0845923c85247be97bfd645f6b505eea52cde"
+  },
+  "policy_sha256": "f4071760bf002a937dc309114a8f9ecb30290638ce3d654119250af459329aba",
+  "audit_script_sha256": "2822f72fbfe275c97e3b7fea93644954b6caffc129f0095fc103a1b589a046a3",
+  "measurement_scope": "Fresh native static geometry; no game/GUI or runtime pathfinding claim.",
+  "rule_and_skill_sha256": {
+    "docs/map_acceptance.md": "e7a7ac129d19f9c525547503473d98af36949fcbaaf3e0246db566ba0f2f45e9",
+    "docs/map_rules.md": "0831883e5846bdd85cf25286f45673d22b6a097c2e744e3c9edaf890e0098c58",
+    "docs/map_skills_checklist.md": "67eea572c0a765e7d49a4f37f05c0ad8f7648156d9bf054b00b2105a9b05ac87",
+    ".agents/skills/ra3-authoring/SKILL.md": "5d3125dfb4ca50cd2f6a0f9dab37169e4c8a7cf28b3d49ff8593fbad2aca91ac",
+    ".agents/skills/ra3-pipeline/SKILL.md": "c0579426ea7e74b5668ddaae5ce44a0a58604b41675a14cfa8f5de3e0bcbe8e6",
+    ".agents/skills/ra3-resources/SKILL.md": "8d06bc386f811bdbb05aec2792c01ef1ae5ef1498dcc19da6871511f09d1833c",
+    ".agents/skills/ra3-spawns/SKILL.md": "6922edd90715423b84f9e790543e9d662987ee51978c50b6432c2d5cc3a1a401",
+    ".agents/skills/ra3-terrain/SKILL.md": "ea0a49bf07c0858c5d737b4a09810e1d761a62288321aa9fd7b72fa53a17507c"
+  },
+  "audit_run_id": "T0.1.0-final-20261030-c",
+  "review_entry_sha256": "664f6ff0e35a53398e7deecb3d8ed549889bbbd7920c07c0cb20ad9d5fe17389",
+  "frozen_model_source_sha256": "2822f72fbfe275c97e3b7fea93644954b6caffc129f0095fc103a1b589a046a3",
+  "judgments_sha256": "58cfa890e126bae30bfa709290220d11faa1a7037931d21ee518e7262bcdc52a",
+  "exact_gift_verifier_sha256": "1bb4eb1e1ad6ca7e06b623915fc8e456a16c77a4c4a09696613e0562c3def3d0",
+  "common_production_policy_sha256": "82559011ebd002d7f662a2400fcf01f31ce7de73a1d33b3fd7d89bc7b0147508"
+}

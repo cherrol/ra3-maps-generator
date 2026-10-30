@@ -1,0 +1,41 @@
+{
+  "border_cells": 20,
+  "bounds_wgs84": [
+    110.3300374658086,
+    31.360443347185814,
+    116.67010678120045,
+    36.39087932955142
+  ],
+  "dem_smoothing_applied": false,
+  "display_sampling": {
+    "elevation": "bilinear",
+    "water": "nearest-neighbor"
+  },
+  "display_water_cells": 2139,
+  "elevation_array": "elevation_m",
+  "game_cells": [
+    800,
+    800
+  ],
+  "game_layer_processing_applied": false,
+  "game_water_processing_applied": false,
+  "image_crc32": 3190370420,
+  "kind": "real-terrain-reference",
+  "north_up": true,
+  "reference": "source-reference.npz",
+  "reference_crc32": 347494074,
+  "schema_version": 1,
+  "source_crop_pixels": [
+    20,
+    20,
+    820,
+    820
+  ],
+  "source_data_modified": false,
+  "source_grid": [
+    840,
+    840
+  ],
+  "source_water_cells": 2154,
+  "water_array": "water_mask"
+}

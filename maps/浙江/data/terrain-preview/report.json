@@ -5,7 +5,7 @@
     117.99906866101747,
     27.119187686601563,
     122.8597778497326,
-    31.201068789859306
+    31.201068789859303
   ],
   "elevation_thresholds_m": [
     200.0,
@@ -34,7 +34,7 @@
     "preview--center--line.png": 2356237797,
     "preview--line.png": 763422395,
     "preview.png": 3693039995,
-    "source.png": 82898073
+    "source.png": 395080789
   },
   "layer_policy": {
     "active_land_layers": [
@@ -133,6 +133,47 @@
       800,
       768
     ]
+  },
+  "source_image": {
+    "border_cells": 20,
+    "bounds_wgs84": [
+      117.99906866101747,
+      27.119187686601563,
+      122.8597778497326,
+      31.201068789859306
+    ],
+    "dem_smoothing_applied": false,
+    "display_sampling": {
+      "elevation": "bilinear",
+      "water": "nearest-neighbor"
+    },
+    "display_water_cells": 201142,
+    "elevation_array": "elevation_m",
+    "game_cells": [
+      800,
+      800
+    ],
+    "game_layer_processing_applied": false,
+    "game_water_processing_applied": false,
+    "image_crc32": 395080789,
+    "kind": "real-terrain-reference",
+    "north_up": true,
+    "reference": "source-reference.npz",
+    "reference_crc32": 2880771062,
+    "schema_version": 1,
+    "source_crop_pixels": [
+      20,
+      20,
+      820,
+      788
+    ],
+    "source_data_modified": false,
+    "source_grid": [
+      840,
+      808
+    ],
+    "source_water_cells": 223001,
+    "water_array": "water_mask"
   },
   "source_reference": "maps/浙江/data/terrain-preview/input.npz",
   "water_policy": {

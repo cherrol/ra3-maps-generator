@@ -1,0 +1,68 @@
+{
+  "bounds_wgs84": [
+    120.71939764552336,
+    43.11630438735253,
+    135.54183265729048,
+    53.868360162351486
+  ],
+  "elevation": {
+    "array": "input.npz:elevation_m.npy",
+    "game_layering": false,
+    "height_edits": false,
+    "npy_crc32": 787421161,
+    "npy_preserved_byte_for_byte": true,
+    "raw_array_bytes_crc32": 81578988,
+    "smoothing": false
+  },
+  "input": "input.npz",
+  "input_crc32": 1584601852,
+  "north_up": true,
+  "preserved_arrays": [
+    "elevation_m.npy",
+    "inside_province.npy",
+    "bounds_wgs84.npy"
+  ],
+  "reference": "source-reference.npz",
+  "reference_crc32": 2938496169,
+  "region": "黑龙江",
+  "rendering_scope": "source reference only; game preview arrays, parameters and images are not edited by this tool",
+  "schema_version": 1,
+  "shape": [
+    840,
+    768
+  ],
+  "water": {
+    "area_filtering": false,
+    "coverage_note": "water coverage follows the preserved original ocean, full available lake/reservoir polygon datasets, and legacy water references where present; no river geometry is invented for regions without a river source",
+    "game_layer_enclosure": false,
+    "game_shoreline_shaping": false,
+    "lake_cells": 2264,
+    "lake_feature_count": 9,
+    "lake_features": "raw/source-lakes.geojson",
+    "lake_features_crc32": 1300723725,
+    "legacy_source_water_array": null,
+    "legacy_source_water_reason": null,
+    "minimum_lake_area_km2": null,
+    "morphological_closing": false,
+    "morphological_opening": false,
+    "ocean_array": "input.npz:source_ocean_mask.npy",
+    "ocean_cells": 1997,
+    "ocean_npy_crc32": 423217879,
+    "ocean_source": "preserved original geographic ocean mask",
+    "original_global_lake_inputs": [
+      {
+        "crc32": 2629966051,
+        "feature_count": 1355,
+        "path": "work/china-terrain-preview/sources/lakes.geojson"
+      },
+      {
+        "crc32": 2476220798,
+        "feature_count": 18,
+        "path": "work/china-terrain-preview/sources/extra-reservoirs.geojson"
+      }
+    ],
+    "rasterization": "original polygon interiors sampled at original input pixel centers; even-odd rings preserve holes; lake polygons and original geographic masks are unioned",
+    "small_water_removal": false,
+    "water_cells": 4261
+  }
+}

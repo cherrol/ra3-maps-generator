@@ -1,0 +1,27 @@
+{
+  "authority": [
+    "Schemas/AssetTypeGameMap.xsd",
+    "Schemas/AssetTypeTerrainTextureAtlas.xsd"
+  ],
+  "enforced": true,
+  "findings": [],
+  "object_group_order": [
+    "Waypoint",
+    "Structure",
+    "Unit",
+    "Prop",
+    "Audio",
+    "Unknown",
+    "Road",
+    "MapMetaData",
+    "EnvironmentData",
+    "WorldDict",
+    "PostEffect",
+    "MapAnalysis"
+  ],
+  "passed": true,
+  "project_diagnostics": [],
+  "project_diagnostics_scope": "Waypoint uniqueness is a project native/script-linking rule, not an EA XSD uniqueness constraint",
+  "schema_version": 1,
+  "scope": "EA XML structural subset; not complete XSD or engine validation"
+}

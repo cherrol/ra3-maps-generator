@@ -34,7 +34,7 @@
     "preview--center--line.png": 3675475027,
     "preview--line.png": 1574149233,
     "preview.png": 3503228034,
-    "source.png": 3808112909
+    "source.png": 3320111781
   },
   "layer_policy": {
     "active_land_layers": [
@@ -134,6 +134,47 @@
       784,
       800
     ]
+  },
+  "source_image": {
+    "border_cells": 20,
+    "bounds_wgs84": [
+      115.40639223071608,
+      39.43145386781912,
+      117.51852329288336,
+      41.06922547108672
+    ],
+    "dem_smoothing_applied": false,
+    "display_sampling": {
+      "elevation": "bilinear",
+      "water": "nearest-neighbor"
+    },
+    "display_water_cells": 5157,
+    "elevation_array": "elevation_m",
+    "game_cells": [
+      800,
+      800
+    ],
+    "game_layer_processing_applied": false,
+    "game_water_processing_applied": false,
+    "image_crc32": 3320111781,
+    "kind": "real-terrain-reference",
+    "north_up": true,
+    "reference": "source-reference.npz",
+    "reference_crc32": 1612435731,
+    "schema_version": 1,
+    "source_crop_pixels": [
+      20,
+      20,
+      804,
+      820
+    ],
+    "source_data_modified": false,
+    "source_grid": [
+      824,
+      840
+    ],
+    "source_water_cells": 5587,
+    "water_array": "water_mask"
   },
   "source_reference": "maps/北京/data/terrain-preview/input.npz",
   "water_policy": {

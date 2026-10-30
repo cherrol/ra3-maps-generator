@@ -1,0 +1,71 @@
+{
+  "map": "[CHAI]沃野奔流T0.1.0",
+  "date": "2026-10-30",
+  "native_sha256": "6f57c710998d79aa8a5f9f783bd121568416d9f4773a76941862fc8cdc79fbbb",
+  "native_crc32": 4273198950,
+  "layout_sha256": "3654ea4d2dc176fcbcb7ac5be5284ec1f1ef2ae0cd327e6796719c67eeb463fc",
+  "plan_sha256": "c3ba92ab3c96cb83699be786f2e8804604ed3c94e84dd8eeb117a8933199a665",
+  "frame": {
+    "border": 20,
+    "cell_size": 10.0,
+    "height": 840,
+    "width": 840,
+    "z_scale": 0.0390625
+  },
+  "policy": {
+    "bucket_size": 32.0,
+    "ore_reserve_radius": 20.0,
+    "building_reserve_radius": 8.0,
+    "oil_reserve_radius": 6.0,
+    "decoration_reserve_radius": 2.0,
+    "flat_tolerance": 12.0,
+    "maximum_walk_step": 12.0,
+    "navigation_clearance": 1,
+    "maximum_ramp_step": 6.1,
+    "maximum_landing_error": 12.0,
+    "terrain_shape": {
+      "combat_route_minimum_width_cells": 10.0,
+      "intrusion_minimum_width_cells": 5.0,
+      "exclude_gift_buildings_from_intrusions": true
+    },
+    "spawn_placement": {
+      "near_ore_radius": 62.0,
+      "base_radius": 8.0,
+      "ore_radius": 20.0,
+      "flat_tolerance": 3.0
+    },
+    "resource_distribution": {
+      "mines_per_seat": 6,
+      "home_ores_per_seat": 2,
+      "home_radius": 100.0,
+      "home_maximum": 2,
+      "route_count": 4,
+      "main_route_max_distance": 65.0,
+      "fourth_progress": [
+        0.1,
+        0.35
+      ],
+      "hotspot_progress": [
+        0.33,
+        0.67
+      ],
+      "secondary_max_distance": 75.0,
+      "secondary_min_main_distance": 35.0
+    },
+    "ramp_clearance": {
+      "approach_extension": 25.0,
+      "gap": 8.0,
+      "refinery_back": 5.0,
+      "refinery_forward": 48.0,
+      "refinery_half_width": 18.0
+    }
+  },
+  "source_layout_raw_sha256": "119c50a8e406501202b92f627367636d7aeb7b48f6eac2cea6f17191c531bf87",
+  "authoring_layout_raw_sha256": "3654ea4d2dc176fcbcb7ac5be5284ec1f1ef2ae0cd327e6796719c67eeb463fc",
+  "source_layout_semantic_equal": true,
+  "status": "通过",
+  "selected": "histories/v3/layers.npz",
+  "selected_blueprint_sha256": "cfb4c779a747882120ba997b6f335aec286b7012e42e890af47fb6fc02b1eae5",
+  "root_mirror_exact": true,
+  "native_source": "Current adopted complete native source; the selected blueprint is a byte-identical reference and is not used to regenerate the accepted native edits."
+}

@@ -1,0 +1,920 @@
+{
+  "map": "[CHAI]沃野奔流T0.1.0",
+  "date": "2026-10-30",
+  "native_sha256": "6f57c710998d79aa8a5f9f783bd121568416d9f4773a76941862fc8cdc79fbbb",
+  "native_crc32": 4273198950,
+  "layout_sha256": "3654ea4d2dc176fcbcb7ac5be5284ec1f1ef2ae0cd327e6796719c67eeb463fc",
+  "plan_sha256": "c3ba92ab3c96cb83699be786f2e8804604ed3c94e84dd8eeb117a8933199a665",
+  "frame": {
+    "border": 20,
+    "cell_size": 10.0,
+    "height": 840,
+    "width": 840,
+    "z_scale": 0.0390625
+  },
+  "policy": {
+    "bucket_size": 32.0,
+    "ore_reserve_radius": 20.0,
+    "building_reserve_radius": 8.0,
+    "oil_reserve_radius": 6.0,
+    "decoration_reserve_radius": 2.0,
+    "flat_tolerance": 12.0,
+    "maximum_walk_step": 12.0,
+    "navigation_clearance": 1,
+    "maximum_ramp_step": 6.1,
+    "maximum_landing_error": 12.0,
+    "terrain_shape": {
+      "combat_route_minimum_width_cells": 10.0,
+      "intrusion_minimum_width_cells": 5.0,
+      "exclude_gift_buildings_from_intrusions": true
+    },
+    "spawn_placement": {
+      "near_ore_radius": 62.0,
+      "base_radius": 8.0,
+      "ore_radius": 20.0,
+      "flat_tolerance": 3.0
+    },
+    "resource_distribution": {
+      "mines_per_seat": 6,
+      "home_ores_per_seat": 2,
+      "home_radius": 100.0,
+      "home_maximum": 2,
+      "route_count": 4,
+      "main_route_max_distance": 65.0,
+      "fourth_progress": [
+        0.1,
+        0.35
+      ],
+      "hotspot_progress": [
+        0.33,
+        0.67
+      ],
+      "secondary_max_distance": 75.0,
+      "secondary_min_main_distance": 35.0
+    },
+    "ramp_clearance": {
+      "approach_extension": 25.0,
+      "gap": 8.0,
+      "refinery_back": 5.0,
+      "refinery_forward": 48.0,
+      "refinery_half_width": 18.0
+    }
+  },
+  "source_layout_raw_sha256": "119c50a8e406501202b92f627367636d7aeb7b48f6eac2cea6f17191c531bf87",
+  "authoring_layout_raw_sha256": "3654ea4d2dc176fcbcb7ac5be5284ec1f1ef2ae0cd327e6796719c67eeb463fc",
+  "source_layout_semantic_equal": true,
+  "fresh_independent": [
+    {
+      "path": "work/henan-p2-direct-ramp-2026-10-30/independent-final/audit/acceptance.md",
+      "sha256": "6a3e1da83a38e05a2ce4fcd6adeb62c38003bdaf211893e49f6b89e31bada9e1",
+      "bytes": 587
+    },
+    {
+      "path": "work/henan-p2-direct-ramp-2026-10-30/independent-final/audit/access-convenience.json",
+      "sha256": "e4b27f9801bef815e2650eb4ecfde9d1074a5c49f10a5ff62c2a895bf71c27f5",
+      "bytes": 16780947
+    },
+    {
+      "path": "work/henan-p2-direct-ramp-2026-10-30/independent-final/audit/all-independent-checks.json",
+      "sha256": "5e404e6303f7890c0ed6c17b9d3e7ab8ade02e92ac4317f6d6c49461e193c17f",
+      "bytes": 8121
+    },
+    {
+      "path": "work/henan-p2-direct-ramp-2026-10-30/independent-final/audit/attack-route-layout-acceptance.json",
+      "sha256": "38ab7d78659f9f946f6b101a6522cc1cfc967c7e33a77f22bd842c011c5fa28d",
+      "bytes": 388111
+    },
+    {
+      "path": "work/henan-p2-direct-ramp-2026-10-30/independent-final/audit/building-facing-acceptance.json",
+      "sha256": "fba9fe7ba41109a3ad72e2e61d610364f166c5bc14fc7dfe1acc4039964657b9",
+      "bytes": 365016
+    },
+    {
+      "path": "work/henan-p2-direct-ramp-2026-10-30/independent-final/audit/checked-production-spawns.json",
+      "sha256": "2a157de5ac9b444ab4874784d1470b726015080684fafafc8b9f7a6a48813109",
+      "bytes": 4109
+    },
+    {
+      "path": "work/henan-p2-direct-ramp-2026-10-30/independent-final/audit/checked-resource-distribution.json",
+      "sha256": "e01da57c92f004ddff65fd4252b43135dc66aca108acc25fe886f1e4d6e1dd73",
+      "bytes": 17234
+    },
+    {
+      "path": "work/henan-p2-direct-ramp-2026-10-30/independent-final/audit/checked-spawn-placement.json",
+      "sha256": "b0035b0aea1745289109afb617425d51078f387b47baf060d9d91f7520c0f30c",
+      "bytes": 10074
+    },
+    {
+      "path": "work/henan-p2-direct-ramp-2026-10-30/independent-final/audit/corridor-width-acceptance.json",
+      "sha256": "45ea863ded29aad77a29a1b047ea5a243db055e9dc97f2a6e2cdcd58d0059bbd",
+      "bytes": 836971
+    },
+    {
+      "path": "work/henan-p2-direct-ramp-2026-10-30/independent-final/audit/direct-main-route-acceptance.json",
+      "sha256": "4d4aa4aace30e181925caf3c67a6e5af443fcd79ae91dc526e9b79276e159db2",
+      "bytes": 1074964
+    },
+    {
+      "path": "work/henan-p2-direct-ramp-2026-10-30/independent-final/audit/gift-base-proximity.json",
+      "sha256": "30d95b4db967148b2420c43342074511becd5fc4a7c4307bccd89e3d238616e8",
+      "bytes": 4430595
+    },
+    {
+      "path": "work/henan-p2-direct-ramp-2026-10-30/independent-final/audit/gift-intrusion-exclusion.json",
+      "sha256": "c7c9503132a815ef759c4b55e148f2a7222b17fbd890537ab0247551a1926750",
+      "bytes": 3588238
+    },
+    {
+      "path": "work/henan-p2-direct-ramp-2026-10-30/independent-final/audit/gift-potential-resource-access.json",
+      "sha256": "152b4925746f03c406e7e8cc10bb6227ba1feafdd8672bedb1a9ae9582c341d4",
+      "bytes": 16020460
+    },
+    {
+      "path": "work/henan-p2-direct-ramp-2026-10-30/independent-final/audit/hotspot-path-comparison.json",
+      "sha256": "94d9ff2faeeb819c03b4586bb1f8a40d1a75896900a3526d60216a086d64975d",
+      "bytes": 432634
+    },
+    {
+      "path": "work/henan-p2-direct-ramp-2026-10-30/independent-final/audit/native-audit.json",
+      "sha256": "892c7243496aec0e2c35af160a178cd9ed30c59eb7a2ddff152d0fba3e78aaf7",
+      "bytes": 32098
+    },
+    {
+      "path": "work/henan-p2-direct-ramp-2026-10-30/independent-final/audit/native-object-preservation.json",
+      "sha256": "590aba3c6b9163f94f7c741455f23ba992ec6232a730ac539eb3bf1331cc4a51",
+      "bytes": 5604
+    },
+    {
+      "path": "work/henan-p2-direct-ramp-2026-10-30/independent-final/audit/neutral-combat-placement.json",
+      "sha256": "b77b69404889dcd9fe5278a1f27b8d095c761cb5a9b054ef2f9fb390afef7bad",
+      "bytes": 551106
+    },
+    {
+      "path": "work/henan-p2-direct-ramp-2026-10-30/independent-final/audit/ramp-priority-acceptance.json",
+      "sha256": "552a5e697dd5129b4bc6b83dd7a0d5468fe78b40e2cfca115dc7fc9ad336aa6f",
+      "bytes": 21013
+    },
+    {
+      "path": "work/henan-p2-direct-ramp-2026-10-30/independent-final/audit/resource-access-selection.json",
+      "sha256": "d19a379a574e5ca9f6cad5aad9949d8ba4cde3ab5dee65e373a438c95211ca55",
+      "bytes": 7766
+    },
+    {
+      "path": "work/henan-p2-direct-ramp-2026-10-30/independent-final/audit/script-preservation.json",
+      "sha256": "26700c21ad8092f666f4634d3d1319f488c73bab7b5ecff02776ad6c4b038d54",
+      "bytes": 5957
+    },
+    {
+      "path": "work/henan-p2-direct-ramp-2026-10-30/independent-final/audit/seat-order-acceptance.json",
+      "sha256": "95b9dfe021edd90588b2ab5ff75715263150fc57e88d544f6e3bfef81eedf1bc",
+      "bytes": 6314
+    },
+    {
+      "path": "work/henan-p2-direct-ramp-2026-10-30/independent-final/audit/shoreline-acceptance.json",
+      "sha256": "12661116041dbbb1d0d6a7eb5d0917469a967966530aac8fd04ce598b019c537",
+      "bytes": 872114
+    },
+    {
+      "path": "work/henan-p2-direct-ramp-2026-10-30/independent-final/audit/team-area-balance.json",
+      "sha256": "d85c40b2903537f368e16bf2f92fba33bcf099c476f4c5cde5b3f3ea67dc095f",
+      "bytes": 4426
+    },
+    {
+      "path": "work/henan-p2-direct-ramp-2026-10-30/independent-final/audit/terrain-shape-acceptance.json",
+      "sha256": "1fc647460937436be01e68858587f1e4a0c48054b592828780daa7b018315128",
+      "bytes": 246648
+    }
+  ],
+  "supplemental": [
+    {
+      "path": "work/henan-p2-direct-ramp-2026-10-30/baseline/gift-base-proximity.json",
+      "sha256": "adbb171e9912890ff34298a9021832013ba792c6b8a95f3f9ad26c0e6af4ee1f",
+      "bytes": 2962112,
+      "archive": "design/baseline/gift-base-proximity.json",
+      "kind": "design",
+      "current_candidate_binding": {
+        "native_sha256": "6f57c710998d79aa8a5f9f783bd121568416d9f4773a76941862fc8cdc79fbbb",
+        "layout_sha256": "3654ea4d2dc176fcbcb7ac5be5284ec1f1ef2ae0cd327e6796719c67eeb463fc",
+        "plan_sha256": "c3ba92ab3c96cb83699be786f2e8804604ed3c94e84dd8eeb117a8933199a665"
+      },
+      "content_relabelled": false
+    },
+    {
+      "path": "work/henan-p2-direct-ramp-2026-10-30/baseline/policy.json",
+      "sha256": "f4071760bf002a937dc309114a8f9ecb30290638ce3d654119250af459329aba",
+      "bytes": 1106,
+      "archive": "design/baseline/policy.json",
+      "kind": "design",
+      "current_candidate_binding": {
+        "native_sha256": "6f57c710998d79aa8a5f9f783bd121568416d9f4773a76941862fc8cdc79fbbb",
+        "layout_sha256": "3654ea4d2dc176fcbcb7ac5be5284ec1f1ef2ae0cd327e6796719c67eeb463fc",
+        "plan_sha256": "c3ba92ab3c96cb83699be786f2e8804604ed3c94e84dd8eeb117a8933199a665"
+      },
+      "content_relabelled": false
+    },
+    {
+      "path": "work/henan-p2-direct-ramp-2026-10-30/baseline/recorded-production-comparisons-T9.json",
+      "sha256": "fb5d3f57c493e0c5257a2bfabdda0a5904529c2fbb4e46665234a5454d0d8776",
+      "bytes": 718103,
+      "archive": "design/baseline/recorded-production-comparisons-T9.json",
+      "kind": "design",
+      "current_candidate_binding": {
+        "native_sha256": "6f57c710998d79aa8a5f9f783bd121568416d9f4773a76941862fc8cdc79fbbb",
+        "layout_sha256": "3654ea4d2dc176fcbcb7ac5be5284ec1f1ef2ae0cd327e6796719c67eeb463fc",
+        "plan_sha256": "c3ba92ab3c96cb83699be786f2e8804604ed3c94e84dd8eeb117a8933199a665"
+      },
+      "content_relabelled": false
+    },
+    {
+      "path": "work/henan-p2-direct-ramp-2026-10-30/baseline/shoreline-acceptance.json",
+      "sha256": "822f440669e1f8b38da823ae943c5ecaadee3b3c3da9f85afe64a8ef0b95a093",
+      "bytes": 871936,
+      "archive": "design/baseline/shoreline-acceptance.json",
+      "kind": "design",
+      "current_candidate_binding": {
+        "native_sha256": "6f57c710998d79aa8a5f9f783bd121568416d9f4773a76941862fc8cdc79fbbb",
+        "layout_sha256": "3654ea4d2dc176fcbcb7ac5be5284ec1f1ef2ae0cd327e6796719c67eeb463fc",
+        "plan_sha256": "c3ba92ab3c96cb83699be786f2e8804604ed3c94e84dd8eeb117a8933199a665"
+      },
+      "content_relabelled": false
+    },
+    {
+      "path": "work/henan-p2-direct-ramp-2026-10-30/baseline/source-identity.json",
+      "sha256": "7fa84cba8a86249740117ffb318de948394c32292fa747fa1baacbd5c5a2a31a",
+      "bytes": 603,
+      "archive": "design/baseline/source-identity.json",
+      "kind": "design",
+      "current_candidate_binding": {
+        "native_sha256": "6f57c710998d79aa8a5f9f783bd121568416d9f4773a76941862fc8cdc79fbbb",
+        "layout_sha256": "3654ea4d2dc176fcbcb7ac5be5284ec1f1ef2ae0cd327e6796719c67eeb463fc",
+        "plan_sha256": "c3ba92ab3c96cb83699be786f2e8804604ed3c94e84dd8eeb117a8933199a665"
+      },
+      "content_relabelled": false
+    },
+    {
+      "path": "work/henan-p2-direct-ramp-2026-10-30/build_inset158.py",
+      "sha256": "719b562a266a00c5e3e22ae1bfda994fe9bb03e603cf2a23d580dd0d1fcd72fd",
+      "bytes": 8019,
+      "archive": "design/build_inset158.py",
+      "kind": "design",
+      "current_candidate_binding": {
+        "native_sha256": "6f57c710998d79aa8a5f9f783bd121568416d9f4773a76941862fc8cdc79fbbb",
+        "layout_sha256": "3654ea4d2dc176fcbcb7ac5be5284ec1f1ef2ae0cd327e6796719c67eeb463fc",
+        "plan_sha256": "c3ba92ab3c96cb83699be786f2e8804604ed3c94e84dd8eeb117a8933199a665"
+      },
+      "content_relabelled": false
+    },
+    {
+      "path": "work/henan-p2-direct-ramp-2026-10-30/current-metadata-update.json",
+      "sha256": "1dc2ef95a4d8f161a567a5d3167cd3240e94553aabd28b79fb66c87ecf95d2e6",
+      "bytes": 222,
+      "archive": "design/current-metadata-update.json",
+      "kind": "design",
+      "current_candidate_binding": {
+        "native_sha256": "6f57c710998d79aa8a5f9f783bd121568416d9f4773a76941862fc8cdc79fbbb",
+        "layout_sha256": "3654ea4d2dc176fcbcb7ac5be5284ec1f1ef2ae0cd327e6796719c67eeb463fc",
+        "plan_sha256": "c3ba92ab3c96cb83699be786f2e8804604ed3c94e84dd8eeb117a8933199a665"
+      },
+      "content_relabelled": false
+    },
+    {
+      "path": "work/henan-p2-direct-ramp-2026-10-30/final-corridors/corridor-width-acceptance.json",
+      "sha256": "bd6dbcd1813ed85e51819ce29b8becfa2f885a09112a741756ded64dfc68e8ca",
+      "bytes": 834188,
+      "archive": "design/final-corridors/corridor-width-acceptance.json",
+      "kind": "design",
+      "current_candidate_binding": {
+        "native_sha256": "6f57c710998d79aa8a5f9f783bd121568416d9f4773a76941862fc8cdc79fbbb",
+        "layout_sha256": "3654ea4d2dc176fcbcb7ac5be5284ec1f1ef2ae0cd327e6796719c67eeb463fc",
+        "plan_sha256": "c3ba92ab3c96cb83699be786f2e8804604ed3c94e84dd8eeb117a8933199a665"
+      },
+      "content_relabelled": false
+    },
+    {
+      "path": "work/henan-p2-direct-ramp-2026-10-30/final-exact/README.md",
+      "sha256": "8e0dffb0bc95c75f118f1e89beab24ee0b2a793017f95e0beff800de67a792ba",
+      "bytes": 2265,
+      "archive": "design/final-exact/README.md",
+      "kind": "design",
+      "current_candidate_binding": {
+        "native_sha256": "6f57c710998d79aa8a5f9f783bd121568416d9f4773a76941862fc8cdc79fbbb",
+        "layout_sha256": "3654ea4d2dc176fcbcb7ac5be5284ec1f1ef2ae0cd327e6796719c67eeb463fc",
+        "plan_sha256": "c3ba92ab3c96cb83699be786f2e8804604ed3c94e84dd8eeb117a8933199a665"
+      },
+      "content_relabelled": false
+    },
+    {
+      "path": "work/henan-p2-direct-ramp-2026-10-30/final-exact/branch-review.json",
+      "sha256": "fb0217947b8b137d10a4ebfc3a548c10f0942ac49e1c9f3b84464d46ccd4c600",
+      "bytes": 8068332,
+      "archive": "design/final-exact/branch-review.json",
+      "kind": "design",
+      "current_candidate_binding": {
+        "native_sha256": "6f57c710998d79aa8a5f9f783bd121568416d9f4773a76941862fc8cdc79fbbb",
+        "layout_sha256": "3654ea4d2dc176fcbcb7ac5be5284ec1f1ef2ae0cd327e6796719c67eeb463fc",
+        "plan_sha256": "c3ba92ab3c96cb83699be786f2e8804604ed3c94e84dd8eeb117a8933199a665"
+      },
+      "content_relabelled": false
+    },
+    {
+      "path": "work/henan-p2-direct-ramp-2026-10-30/final-exact/official-placement.json",
+      "sha256": "31587b7cb67c95535934010425bc5ae94e62cfa0639009d6c206200ced733e5b",
+      "bytes": 1128623,
+      "archive": "design/final-exact/official-placement.json",
+      "kind": "design",
+      "current_candidate_binding": {
+        "native_sha256": "6f57c710998d79aa8a5f9f783bd121568416d9f4773a76941862fc8cdc79fbbb",
+        "layout_sha256": "3654ea4d2dc176fcbcb7ac5be5284ec1f1ef2ae0cd327e6796719c67eeb463fc",
+        "plan_sha256": "c3ba92ab3c96cb83699be786f2e8804604ed3c94e84dd8eeb117a8933199a665"
+      },
+      "content_relabelled": false
+    },
+    {
+      "path": "work/henan-p2-direct-ramp-2026-10-30/final-exact/union-coverage.json",
+      "sha256": "5e8507e616dc188c3559365bd7806f1fa4c7675e1092d6dbae98ba641596b97a",
+      "bytes": 789851,
+      "archive": "design/final-exact/union-coverage.json",
+      "kind": "design",
+      "current_candidate_binding": {
+        "native_sha256": "6f57c710998d79aa8a5f9f783bd121568416d9f4773a76941862fc8cdc79fbbb",
+        "layout_sha256": "3654ea4d2dc176fcbcb7ac5be5284ec1f1ef2ae0cd327e6796719c67eeb463fc",
+        "plan_sha256": "c3ba92ab3c96cb83699be786f2e8804604ed3c94e84dd8eeb117a8933199a665"
+      },
+      "content_relabelled": false
+    },
+    {
+      "path": "work/henan-p2-direct-ramp-2026-10-30/final-input-identity.json",
+      "sha256": "6e638fe8dd7110e15d84623dbe5a2bf9948383351a5f8f6df9c0cbad50343442",
+      "bytes": 477,
+      "archive": "design/final-input-identity.json",
+      "kind": "design",
+      "current_candidate_binding": {
+        "native_sha256": "6f57c710998d79aa8a5f9f783bd121568416d9f4773a76941862fc8cdc79fbbb",
+        "layout_sha256": "3654ea4d2dc176fcbcb7ac5be5284ec1f1ef2ae0cd327e6796719c67eeb463fc",
+        "plan_sha256": "c3ba92ab3c96cb83699be786f2e8804604ed3c94e84dd8eeb117a8933199a665"
+      },
+      "content_relabelled": false
+    },
+    {
+      "path": "work/henan-p2-direct-ramp-2026-10-30/final-measurement/access-convenience.json",
+      "sha256": "950f5bb9fdedf533fa5b54dd9d16330396dd71c490610c482bd28571a4e8c6b0",
+      "bytes": 16780864,
+      "archive": "design/final-measurement/access-convenience.json",
+      "kind": "design",
+      "current_candidate_binding": {
+        "native_sha256": "6f57c710998d79aa8a5f9f783bd121568416d9f4773a76941862fc8cdc79fbbb",
+        "layout_sha256": "3654ea4d2dc176fcbcb7ac5be5284ec1f1ef2ae0cd327e6796719c67eeb463fc",
+        "plan_sha256": "c3ba92ab3c96cb83699be786f2e8804604ed3c94e84dd8eeb117a8933199a665"
+      },
+      "content_relabelled": false
+    },
+    {
+      "path": "work/henan-p2-direct-ramp-2026-10-30/final-measurement/gift-base-proximity.json",
+      "sha256": "9146fbf6292e4af7a18e6089adf168c02494f706d197dfe562145b783cd0fe29",
+      "bytes": 4394419,
+      "archive": "design/final-measurement/gift-base-proximity.json",
+      "kind": "design",
+      "current_candidate_binding": {
+        "native_sha256": "6f57c710998d79aa8a5f9f783bd121568416d9f4773a76941862fc8cdc79fbbb",
+        "layout_sha256": "3654ea4d2dc176fcbcb7ac5be5284ec1f1ef2ae0cd327e6796719c67eeb463fc",
+        "plan_sha256": "c3ba92ab3c96cb83699be786f2e8804604ed3c94e84dd8eeb117a8933199a665"
+      },
+      "content_relabelled": false
+    },
+    {
+      "path": "work/henan-p2-direct-ramp-2026-10-30/final-measurement/gift-potential-resource-access.json",
+      "sha256": "b2b607020cec18382bae6962325b188843af31087d9fe1d4673951e213daf12b",
+      "bytes": 16020377,
+      "archive": "design/final-measurement/gift-potential-resource-access.json",
+      "kind": "design",
+      "current_candidate_binding": {
+        "native_sha256": "6f57c710998d79aa8a5f9f783bd121568416d9f4773a76941862fc8cdc79fbbb",
+        "layout_sha256": "3654ea4d2dc176fcbcb7ac5be5284ec1f1ef2ae0cd327e6796719c67eeb463fc",
+        "plan_sha256": "c3ba92ab3c96cb83699be786f2e8804604ed3c94e84dd8eeb117a8933199a665"
+      },
+      "content_relabelled": false
+    },
+    {
+      "path": "work/henan-p2-direct-ramp-2026-10-30/final-measurement/hotspot-path-comparison.json",
+      "sha256": "2ed85371040e83a2f24a4233de8502100edef6d4660901af31163a137f356949",
+      "bytes": 426571,
+      "archive": "design/final-measurement/hotspot-path-comparison.json",
+      "kind": "design",
+      "current_candidate_binding": {
+        "native_sha256": "6f57c710998d79aa8a5f9f783bd121568416d9f4773a76941862fc8cdc79fbbb",
+        "layout_sha256": "3654ea4d2dc176fcbcb7ac5be5284ec1f1ef2ae0cd327e6796719c67eeb463fc",
+        "plan_sha256": "c3ba92ab3c96cb83699be786f2e8804604ed3c94e84dd8eeb117a8933199a665"
+      },
+      "content_relabelled": false
+    },
+    {
+      "path": "work/henan-p2-direct-ramp-2026-10-30/final-measurement/neutral-combat-placement.json",
+      "sha256": "ef9c886207540e1b8eeb1041a657f5f8366109408e35599b6f9b5b180004ecae",
+      "bytes": 547541,
+      "archive": "design/final-measurement/neutral-combat-placement.json",
+      "kind": "design",
+      "current_candidate_binding": {
+        "native_sha256": "6f57c710998d79aa8a5f9f783bd121568416d9f4773a76941862fc8cdc79fbbb",
+        "layout_sha256": "3654ea4d2dc176fcbcb7ac5be5284ec1f1ef2ae0cd327e6796719c67eeb463fc",
+        "plan_sha256": "c3ba92ab3c96cb83699be786f2e8804604ed3c94e84dd8eeb117a8933199a665"
+      },
+      "content_relabelled": false
+    },
+    {
+      "path": "work/henan-p2-direct-ramp-2026-10-30/final-resources/changes.json",
+      "sha256": "354b72ba9687d2f2f85386dbe22dccb928d6f7a4fb11e7fc6bf250114e04070b",
+      "bytes": 1860,
+      "archive": "design/final-resources/changes.json",
+      "kind": "design",
+      "current_candidate_binding": {
+        "native_sha256": "6f57c710998d79aa8a5f9f783bd121568416d9f4773a76941862fc8cdc79fbbb",
+        "layout_sha256": "3654ea4d2dc176fcbcb7ac5be5284ec1f1ef2ae0cd327e6796719c67eeb463fc",
+        "plan_sha256": "c3ba92ab3c96cb83699be786f2e8804604ed3c94e84dd8eeb117a8933199a665"
+      },
+      "content_relabelled": false
+    },
+    {
+      "path": "work/henan-p2-direct-ramp-2026-10-30/final-resources/layout.json",
+      "sha256": "a09269624bee1eb28654e362b77ad56e4b05caf5bb5a8b67532a0be75388c4e2",
+      "bytes": 337808,
+      "archive": "design/final-resources/layout.json",
+      "kind": "design",
+      "current_candidate_binding": {
+        "native_sha256": "6f57c710998d79aa8a5f9f783bd121568416d9f4773a76941862fc8cdc79fbbb",
+        "layout_sha256": "3654ea4d2dc176fcbcb7ac5be5284ec1f1ef2ae0cd327e6796719c67eeb463fc",
+        "plan_sha256": "c3ba92ab3c96cb83699be786f2e8804604ed3c94e84dd8eeb117a8933199a665"
+      },
+      "content_relabelled": false
+    },
+    {
+      "path": "work/henan-p2-direct-ramp-2026-10-30/final-resources/plan.json",
+      "sha256": "c3ba92ab3c96cb83699be786f2e8804604ed3c94e84dd8eeb117a8933199a665",
+      "bytes": 340341,
+      "archive": "design/final-resources/plan.json",
+      "kind": "design",
+      "current_candidate_binding": {
+        "native_sha256": "6f57c710998d79aa8a5f9f783bd121568416d9f4773a76941862fc8cdc79fbbb",
+        "layout_sha256": "3654ea4d2dc176fcbcb7ac5be5284ec1f1ef2ae0cd327e6796719c67eeb463fc",
+        "plan_sha256": "c3ba92ab3c96cb83699be786f2e8804604ed3c94e84dd8eeb117a8933199a665"
+      },
+      "content_relabelled": false
+    },
+    {
+      "path": "work/henan-p2-direct-ramp-2026-10-30/final-resources/resource-repair.json",
+      "sha256": "1cd3ab217abe9f58a7c0e14e2ec4409532e01827d5a2d64076b3bc91ec7bf8e0",
+      "bytes": 37742,
+      "archive": "design/final-resources/resource-repair.json",
+      "kind": "design",
+      "current_candidate_binding": {
+        "native_sha256": "6f57c710998d79aa8a5f9f783bd121568416d9f4773a76941862fc8cdc79fbbb",
+        "layout_sha256": "3654ea4d2dc176fcbcb7ac5be5284ec1f1ef2ae0cd327e6796719c67eeb463fc",
+        "plan_sha256": "c3ba92ab3c96cb83699be786f2e8804604ed3c94e84dd8eeb117a8933199a665"
+      },
+      "content_relabelled": false
+    },
+    {
+      "path": "work/henan-p2-direct-ramp-2026-10-30/final-resources/resource-review.json",
+      "sha256": "94a08379222b0c540244fa9282fddc9534ecec9d0290f7f598db4b533b87da3a",
+      "bytes": 25142,
+      "archive": "design/final-resources/resource-review.json",
+      "kind": "design",
+      "current_candidate_binding": {
+        "native_sha256": "6f57c710998d79aa8a5f9f783bd121568416d9f4773a76941862fc8cdc79fbbb",
+        "layout_sha256": "3654ea4d2dc176fcbcb7ac5be5284ec1f1ef2ae0cd327e6796719c67eeb463fc",
+        "plan_sha256": "c3ba92ab3c96cb83699be786f2e8804604ed3c94e84dd8eeb117a8933199a665"
+      },
+      "content_relabelled": false
+    },
+    {
+      "path": "work/henan-p2-direct-ramp-2026-10-30/frozen-rebuild-check.json",
+      "sha256": "48a93325f37ff207313e160821aaaff4ab55c4e4eb68aa7d1e24369001ec7188",
+      "bytes": 899,
+      "archive": "design/frozen-rebuild-check.json",
+      "kind": "design",
+      "current_candidate_binding": {
+        "native_sha256": "6f57c710998d79aa8a5f9f783bd121568416d9f4773a76941862fc8cdc79fbbb",
+        "layout_sha256": "3654ea4d2dc176fcbcb7ac5be5284ec1f1ef2ae0cd327e6796719c67eeb463fc",
+        "plan_sha256": "c3ba92ab3c96cb83699be786f2e8804604ed3c94e84dd8eeb117a8933199a665"
+      },
+      "content_relabelled": false
+    },
+    {
+      "path": "work/henan-p2-direct-ramp-2026-10-30/independent-final/run-receipt.json",
+      "sha256": "7d45b14159de12455ef909ae11ccd02900ba92fca2afc425aebff3a1f0cdba32",
+      "bytes": 1755,
+      "archive": "design/independent-final/run-receipt.json",
+      "kind": "design",
+      "current_candidate_binding": {
+        "native_sha256": "6f57c710998d79aa8a5f9f783bd121568416d9f4773a76941862fc8cdc79fbbb",
+        "layout_sha256": "3654ea4d2dc176fcbcb7ac5be5284ec1f1ef2ae0cd327e6796719c67eeb463fc",
+        "plan_sha256": "c3ba92ab3c96cb83699be786f2e8804604ed3c94e84dd8eeb117a8933199a665"
+      },
+      "content_relabelled": false
+    },
+    {
+      "path": "work/henan-p2-direct-ramp-2026-10-30/inset158/actual-toe-clearance.json",
+      "sha256": "7893d87ac141498344895b719bfad5f2cfb425fae135256ea897dde3f290327d",
+      "bytes": 1688,
+      "archive": "design/inset158/actual-toe-clearance.json",
+      "kind": "design",
+      "current_candidate_binding": {
+        "native_sha256": "6f57c710998d79aa8a5f9f783bd121568416d9f4773a76941862fc8cdc79fbbb",
+        "layout_sha256": "3654ea4d2dc176fcbcb7ac5be5284ec1f1ef2ae0cd327e6796719c67eeb463fc",
+        "plan_sha256": "c3ba92ab3c96cb83699be786f2e8804604ed3c94e84dd8eeb117a8933199a665"
+      },
+      "content_relabelled": false
+    },
+    {
+      "path": "work/henan-p2-direct-ramp-2026-10-30/inset158/final-terrain-handoff.json",
+      "sha256": "d3b538aaa56f6222909b2f8d04a005e432afe77d444c08933666e90627a03ecc",
+      "bytes": 6407,
+      "archive": "design/inset158/final-terrain-handoff.json",
+      "kind": "design",
+      "current_candidate_binding": {
+        "native_sha256": "6f57c710998d79aa8a5f9f783bd121568416d9f4773a76941862fc8cdc79fbbb",
+        "layout_sha256": "3654ea4d2dc176fcbcb7ac5be5284ec1f1ef2ae0cd327e6796719c67eeb463fc",
+        "plan_sha256": "c3ba92ab3c96cb83699be786f2e8804604ed3c94e84dd8eeb117a8933199a665"
+      },
+      "content_relabelled": false
+    },
+    {
+      "path": "work/henan-p2-direct-ramp-2026-10-30/inset158/opening-pair-review.json",
+      "sha256": "43d07929a0dc5bbcf53729a37688fcded3b03829ffa9633e0c2bc1c65418418f",
+      "bytes": 4149,
+      "archive": "design/inset158/opening-pair-review.json",
+      "kind": "design",
+      "current_candidate_binding": {
+        "native_sha256": "6f57c710998d79aa8a5f9f783bd121568416d9f4773a76941862fc8cdc79fbbb",
+        "layout_sha256": "3654ea4d2dc176fcbcb7ac5be5284ec1f1ef2ae0cd327e6796719c67eeb463fc",
+        "plan_sha256": "c3ba92ab3c96cb83699be786f2e8804604ed3c94e84dd8eeb117a8933199a665"
+      },
+      "content_relabelled": false
+    },
+    {
+      "path": "work/henan-p2-direct-ramp-2026-10-30/inset158/p2-route.json",
+      "sha256": "b81770501f54273d6dc41bedbe7ae876cea71b4eb55a2d3e141e30731e21821b",
+      "bytes": 85051,
+      "archive": "design/inset158/p2-route.json",
+      "kind": "design",
+      "current_candidate_binding": {
+        "native_sha256": "6f57c710998d79aa8a5f9f783bd121568416d9f4773a76941862fc8cdc79fbbb",
+        "layout_sha256": "3654ea4d2dc176fcbcb7ac5be5284ec1f1ef2ae0cd327e6796719c67eeb463fc",
+        "plan_sha256": "c3ba92ab3c96cb83699be786f2e8804604ed3c94e84dd8eeb117a8933199a665"
+      },
+      "content_relabelled": false
+    },
+    {
+      "path": "work/henan-p2-direct-ramp-2026-10-30/inset158/ramp.json",
+      "sha256": "d74c25d1d3ebf5322e35e0fdddd054f5196a7abb4202eac64433ea0ee79141ff",
+      "bytes": 276,
+      "archive": "design/inset158/ramp.json",
+      "kind": "design",
+      "current_candidate_binding": {
+        "native_sha256": "6f57c710998d79aa8a5f9f783bd121568416d9f4773a76941862fc8cdc79fbbb",
+        "layout_sha256": "3654ea4d2dc176fcbcb7ac5be5284ec1f1ef2ae0cd327e6796719c67eeb463fc",
+        "plan_sha256": "c3ba92ab3c96cb83699be786f2e8804604ed3c94e84dd8eeb117a8933199a665"
+      },
+      "content_relabelled": false
+    },
+    {
+      "path": "work/henan-p2-direct-ramp-2026-10-30/inset158/terrain-patches.json",
+      "sha256": "ea562267a9372a8ff0d0c855db56459ffed9a1dd730a1e2f68e1bf0af0632fa3",
+      "bytes": 208855,
+      "archive": "design/inset158/terrain-patches.json",
+      "kind": "design",
+      "current_candidate_binding": {
+        "native_sha256": "6f57c710998d79aa8a5f9f783bd121568416d9f4773a76941862fc8cdc79fbbb",
+        "layout_sha256": "3654ea4d2dc176fcbcb7ac5be5284ec1f1ef2ae0cd327e6796719c67eeb463fc",
+        "plan_sha256": "c3ba92ab3c96cb83699be786f2e8804604ed3c94e84dd8eeb117a8933199a665"
+      },
+      "content_relabelled": false
+    },
+    {
+      "path": "work/henan-p2-direct-ramp-2026-10-30/inset158/terrain-review.json",
+      "sha256": "304d779b2ef303d6008faade497d66a50630b3deae6baebeecdfa3972754afae",
+      "bytes": 2682,
+      "archive": "design/inset158/terrain-review.json",
+      "kind": "design",
+      "current_candidate_binding": {
+        "native_sha256": "6f57c710998d79aa8a5f9f783bd121568416d9f4773a76941862fc8cdc79fbbb",
+        "layout_sha256": "3654ea4d2dc176fcbcb7ac5be5284ec1f1ef2ae0cd327e6796719c67eeb463fc",
+        "plan_sha256": "c3ba92ab3c96cb83699be786f2e8804604ed3c94e84dd8eeb117a8933199a665"
+      },
+      "content_relabelled": false
+    },
+    {
+      "path": "work/henan-p2-direct-ramp-2026-10-30/judgments-production-fragment.json",
+      "sha256": "c9413c30316813cc396092f1968686f9846557fa91e1e91ab72c6b293398780e",
+      "bytes": 81949,
+      "archive": "design/judgments-production-fragment.json",
+      "kind": "design",
+      "current_candidate_binding": {
+        "native_sha256": "6f57c710998d79aa8a5f9f783bd121568416d9f4773a76941862fc8cdc79fbbb",
+        "layout_sha256": "3654ea4d2dc176fcbcb7ac5be5284ec1f1ef2ae0cd327e6796719c67eeb463fc",
+        "plan_sha256": "c3ba92ab3c96cb83699be786f2e8804604ed3c94e84dd8eeb117a8933199a665"
+      },
+      "content_relabelled": false
+    },
+    {
+      "path": "work/henan-p2-direct-ramp-2026-10-30/judgments-resource-fragment.json",
+      "sha256": "935a7a23f16a55fc40645063de32d8c2a102c027a7b298aec40e98450a0f38c7",
+      "bytes": 14580,
+      "archive": "design/judgments-resource-fragment.json",
+      "kind": "design",
+      "current_candidate_binding": {
+        "native_sha256": "6f57c710998d79aa8a5f9f783bd121568416d9f4773a76941862fc8cdc79fbbb",
+        "layout_sha256": "3654ea4d2dc176fcbcb7ac5be5284ec1f1ef2ae0cd327e6796719c67eeb463fc",
+        "plan_sha256": "c3ba92ab3c96cb83699be786f2e8804604ed3c94e84dd8eeb117a8933199a665"
+      },
+      "content_relabelled": false
+    },
+    {
+      "path": "work/henan-p2-direct-ramp-2026-10-30/judgments-terrain-fragment.json",
+      "sha256": "a0abb4c96b1a09114c17f30661e62c158c238f335e5a5278ac6a23cd52520dfb",
+      "bytes": 11683,
+      "archive": "design/judgments-terrain-fragment.json",
+      "kind": "design",
+      "current_candidate_binding": {
+        "native_sha256": "6f57c710998d79aa8a5f9f783bd121568416d9f4773a76941862fc8cdc79fbbb",
+        "layout_sha256": "3654ea4d2dc176fcbcb7ac5be5284ec1f1ef2ae0cd327e6796719c67eeb463fc",
+        "plan_sha256": "c3ba92ab3c96cb83699be786f2e8804604ed3c94e84dd8eeb117a8933199a665"
+      },
+      "content_relabelled": false
+    },
+    {
+      "path": "work/henan-p2-direct-ramp-2026-10-30/judgments.json",
+      "sha256": "58cfa890e126bae30bfa709290220d11faa1a7037931d21ee518e7262bcdc52a",
+      "bytes": 108029,
+      "archive": "design/judgments.json",
+      "kind": "design",
+      "current_candidate_binding": {
+        "native_sha256": "6f57c710998d79aa8a5f9f783bd121568416d9f4773a76941862fc8cdc79fbbb",
+        "layout_sha256": "3654ea4d2dc176fcbcb7ac5be5284ec1f1ef2ae0cd327e6796719c67eeb463fc",
+        "plan_sha256": "c3ba92ab3c96cb83699be786f2e8804604ed3c94e84dd8eeb117a8933199a665"
+      },
+      "content_relabelled": false
+    },
+    {
+      "path": "work/henan-p2-direct-ramp-2026-10-30/model-registry.json",
+      "sha256": "beac062290fd2df3d4e4a2030dd45c854c1244150206208b5b95e242c6c9de03",
+      "bytes": 3134,
+      "archive": "design/model-registry.json",
+      "kind": "design",
+      "current_candidate_binding": {
+        "native_sha256": "6f57c710998d79aa8a5f9f783bd121568416d9f4773a76941862fc8cdc79fbbb",
+        "layout_sha256": "3654ea4d2dc176fcbcb7ac5be5284ec1f1ef2ae0cd327e6796719c67eeb463fc",
+        "plan_sha256": "c3ba92ab3c96cb83699be786f2e8804604ed3c94e84dd8eeb117a8933199a665"
+      },
+      "content_relabelled": false
+    },
+    {
+      "path": "work/henan-p2-direct-ramp-2026-10-30/model-source/audit_current.py",
+      "sha256": "2822f72fbfe275c97e3b7fea93644954b6caffc129f0095fc103a1b589a046a3",
+      "bytes": 76617,
+      "archive": "design/model-source/audit_current.py",
+      "kind": "design",
+      "current_candidate_binding": {
+        "native_sha256": "6f57c710998d79aa8a5f9f783bd121568416d9f4773a76941862fc8cdc79fbbb",
+        "layout_sha256": "3654ea4d2dc176fcbcb7ac5be5284ec1f1ef2ae0cd327e6796719c67eeb463fc",
+        "plan_sha256": "c3ba92ab3c96cb83699be786f2e8804604ed3c94e84dd8eeb117a8933199a665"
+      },
+      "content_relabelled": false
+    },
+    {
+      "path": "work/henan-p2-direct-ramp-2026-10-30/model-source/audit_official.rs",
+      "sha256": "a3ea73b792c40ce287dafc227c10f80a5d2abb4322d43fecadc844a9615f5303",
+      "bytes": 829,
+      "archive": "design/model-source/audit_official.rs",
+      "kind": "design",
+      "current_candidate_binding": {
+        "native_sha256": "6f57c710998d79aa8a5f9f783bd121568416d9f4773a76941862fc8cdc79fbbb",
+        "layout_sha256": "3654ea4d2dc176fcbcb7ac5be5284ec1f1ef2ae0cd327e6796719c67eeb463fc",
+        "plan_sha256": "c3ba92ab3c96cb83699be786f2e8804604ed3c94e84dd8eeb117a8933199a665"
+      },
+      "content_relabelled": false
+    },
+    {
+      "path": "work/henan-p2-direct-ramp-2026-10-30/model-source/classify.py",
+      "sha256": "75d1a738b65920a4f15c4c45f16f9d0ec32fe0f721e087aae50dce1f1023781a",
+      "bytes": 19316,
+      "archive": "design/model-source/classify.py",
+      "kind": "design",
+      "current_candidate_binding": {
+        "native_sha256": "6f57c710998d79aa8a5f9f783bd121568416d9f4773a76941862fc8cdc79fbbb",
+        "layout_sha256": "3654ea4d2dc176fcbcb7ac5be5284ec1f1ef2ae0cd327e6796719c67eeb463fc",
+        "plan_sha256": "c3ba92ab3c96cb83699be786f2e8804604ed3c94e84dd8eeb117a8933199a665"
+      },
+      "content_relabelled": false
+    },
+    {
+      "path": "work/henan-p2-direct-ramp-2026-10-30/model-source/corridors_current.rs",
+      "sha256": "29b22d2bcd384ab72fb02987c3a123dc0f18a072797775b1411bc19ae50d8d56",
+      "bytes": 11468,
+      "archive": "design/model-source/corridors_current.rs",
+      "kind": "design",
+      "current_candidate_binding": {
+        "native_sha256": "6f57c710998d79aa8a5f9f783bd121568416d9f4773a76941862fc8cdc79fbbb",
+        "layout_sha256": "3654ea4d2dc176fcbcb7ac5be5284ec1f1ef2ae0cd327e6796719c67eeb463fc",
+        "plan_sha256": "c3ba92ab3c96cb83699be786f2e8804604ed3c94e84dd8eeb117a8933199a665"
+      },
+      "content_relabelled": false
+    },
+    {
+      "path": "work/henan-p2-direct-ramp-2026-10-30/model-source/exact_gift_disk.py",
+      "sha256": "1bb4eb1e1ad6ca7e06b623915fc8e456a16c77a4c4a09696613e0562c3def3d0",
+      "bytes": 8037,
+      "archive": "design/model-source/exact_gift_disk.py",
+      "kind": "design",
+      "current_candidate_binding": {
+        "native_sha256": "6f57c710998d79aa8a5f9f783bd121568416d9f4773a76941862fc8cdc79fbbb",
+        "layout_sha256": "3654ea4d2dc176fcbcb7ac5be5284ec1f1ef2ae0cd327e6796719c67eeb463fc",
+        "plan_sha256": "c3ba92ab3c96cb83699be786f2e8804604ed3c94e84dd8eeb117a8933199a665"
+      },
+      "content_relabelled": false
+    },
+    {
+      "path": "work/henan-p2-direct-ramp-2026-10-30/model-source/union_coverage.py",
+      "sha256": "ab03cc42381c4a81dbbf11f487d6c0c82d6f4067b9748c88ed9ee9b113eb8478",
+      "bytes": 5561,
+      "archive": "design/model-source/union_coverage.py",
+      "kind": "design",
+      "current_candidate_binding": {
+        "native_sha256": "6f57c710998d79aa8a5f9f783bd121568416d9f4773a76941862fc8cdc79fbbb",
+        "layout_sha256": "3654ea4d2dc176fcbcb7ac5be5284ec1f1ef2ae0cd327e6796719c67eeb463fc",
+        "plan_sha256": "c3ba92ab3c96cb83699be786f2e8804604ed3c94e84dd8eeb117a8933199a665"
+      },
+      "content_relabelled": false
+    },
+    {
+      "path": "work/henan-p2-direct-ramp-2026-10-30/production-design-review.json",
+      "sha256": "a307c5ea749a5a2134b290674bd67e4653cc6a8b426ef40dd759ecd975479434",
+      "bytes": 15064,
+      "archive": "design/production-design-review.json",
+      "kind": "design",
+      "current_candidate_binding": {
+        "native_sha256": "6f57c710998d79aa8a5f9f783bd121568416d9f4773a76941862fc8cdc79fbbb",
+        "layout_sha256": "3654ea4d2dc176fcbcb7ac5be5284ec1f1ef2ae0cd327e6796719c67eeb463fc",
+        "plan_sha256": "c3ba92ab3c96cb83699be786f2e8804604ed3c94e84dd8eeb117a8933199a665"
+      },
+      "content_relabelled": false
+    },
+    {
+      "path": "work/henan-p2-direct-ramp-2026-10-30/production-recorded-comparisons-current.json",
+      "sha256": "29c6036090e076180f672ffe194f36b4ca1102c2bdf7410528322db1b174bf9f",
+      "bytes": 674112,
+      "archive": "design/production-recorded-comparisons-current.json",
+      "kind": "design",
+      "current_candidate_binding": {
+        "native_sha256": "6f57c710998d79aa8a5f9f783bd121568416d9f4773a76941862fc8cdc79fbbb",
+        "layout_sha256": "3654ea4d2dc176fcbcb7ac5be5284ec1f1ef2ae0cd327e6796719c67eeb463fc",
+        "plan_sha256": "c3ba92ab3c96cb83699be786f2e8804604ed3c94e84dd8eeb117a8933199a665"
+      },
+      "content_relabelled": false
+    },
+    {
+      "path": "work/henan-p2-direct-ramp-2026-10-30/provisional-corridors/corridor-width-acceptance.json",
+      "sha256": "0623dbfdfd11349f5450982af05db1bec4dac85ad956b4d2b8186edc001b3a5d",
+      "bytes": 836048,
+      "archive": "design/provisional-corridors/corridor-width-acceptance.json",
+      "kind": "design",
+      "current_candidate_binding": {
+        "native_sha256": "6f57c710998d79aa8a5f9f783bd121568416d9f4773a76941862fc8cdc79fbbb",
+        "layout_sha256": "3654ea4d2dc176fcbcb7ac5be5284ec1f1ef2ae0cd327e6796719c67eeb463fc",
+        "plan_sha256": "c3ba92ab3c96cb83699be786f2e8804604ed3c94e84dd8eeb117a8933199a665"
+      },
+      "content_relabelled": false
+    },
+    {
+      "path": "work/henan-p2-direct-ramp-2026-10-30/provisional-review/native-review.json",
+      "sha256": "7eb406a302668fdfd04e05ddd552e162e2f5bdf79fcc3f7a9057bcc7f9153bde",
+      "bytes": 2506479,
+      "archive": "design/provisional-review/native-review.json",
+      "kind": "design",
+      "current_candidate_binding": {
+        "native_sha256": "6f57c710998d79aa8a5f9f783bd121568416d9f4773a76941862fc8cdc79fbbb",
+        "layout_sha256": "3654ea4d2dc176fcbcb7ac5be5284ec1f1ef2ae0cd327e6796719c67eeb463fc",
+        "plan_sha256": "c3ba92ab3c96cb83699be786f2e8804604ed3c94e84dd8eeb117a8933199a665"
+      },
+      "content_relabelled": false
+    },
+    {
+      "path": "work/henan-p2-direct-ramp-2026-10-30/ramp_priority_check.py",
+      "sha256": "b6712551fbdcbcfc4c7b5529a7674c0ececba1a7951d4554d2b81571b66f557f",
+      "bytes": 7008,
+      "archive": "design/ramp_priority_check.py",
+      "kind": "design",
+      "current_candidate_binding": {
+        "native_sha256": "6f57c710998d79aa8a5f9f783bd121568416d9f4773a76941862fc8cdc79fbbb",
+        "layout_sha256": "3654ea4d2dc176fcbcb7ac5be5284ec1f1ef2ae0cd327e6796719c67eeb463fc",
+        "plan_sha256": "c3ba92ab3c96cb83699be786f2e8804604ed3c94e84dd8eeb117a8933199a665"
+      },
+      "content_relabelled": false
+    },
+    {
+      "path": "work/henan-p2-direct-ramp-2026-10-30/resource-design-review.json",
+      "sha256": "1c3f56a0b591d98eece8b3ded4a2a1b403fd79af6ef4aaa0552c49a525fd302a",
+      "bytes": 9239,
+      "archive": "design/resource-design-review.json",
+      "kind": "design",
+      "current_candidate_binding": {
+        "native_sha256": "6f57c710998d79aa8a5f9f783bd121568416d9f4773a76941862fc8cdc79fbbb",
+        "layout_sha256": "3654ea4d2dc176fcbcb7ac5be5284ec1f1ef2ae0cd327e6796719c67eeb463fc",
+        "plan_sha256": "c3ba92ab3c96cb83699be786f2e8804604ed3c94e84dd8eeb117a8933199a665"
+      },
+      "content_relabelled": false
+    },
+    {
+      "path": "work/henan-p2-direct-ramp-2026-10-30/resource_screen.py",
+      "sha256": "42d288630d24aaf4db4a70bee0fbd6b80636b2a36c5466948f6792e1f5f9f145",
+      "bytes": 9881,
+      "archive": "design/resource_screen.py",
+      "kind": "design",
+      "current_candidate_binding": {
+        "native_sha256": "6f57c710998d79aa8a5f9f783bd121568416d9f4773a76941862fc8cdc79fbbb",
+        "layout_sha256": "3654ea4d2dc176fcbcb7ac5be5284ec1f1ef2ae0cd327e6796719c67eeb463fc",
+        "plan_sha256": "c3ba92ab3c96cb83699be786f2e8804604ed3c94e84dd8eeb117a8933199a665"
+      },
+      "content_relabelled": false
+    },
+    {
+      "path": "work/henan-p2-direct-ramp-2026-10-30/review_entry.py",
+      "sha256": "664f6ff0e35a53398e7deecb3d8ed549889bbbd7920c07c0cb20ad9d5fe17389",
+      "bytes": 5750,
+      "archive": "design/review_entry.py",
+      "kind": "design",
+      "current_candidate_binding": {
+        "native_sha256": "6f57c710998d79aa8a5f9f783bd121568416d9f4773a76941862fc8cdc79fbbb",
+        "layout_sha256": "3654ea4d2dc176fcbcb7ac5be5284ec1f1ef2ae0cd327e6796719c67eeb463fc",
+        "plan_sha256": "c3ba92ab3c96cb83699be786f2e8804604ed3c94e84dd8eeb117a8933199a665"
+      },
+      "content_relabelled": false
+    },
+    {
+      "path": "work/henan-p2-direct-ramp-2026-10-30/review_production.py",
+      "sha256": "8ef7aa35dfb01d9c256ff548d25eebc351a806bc092455a896841db1d6025aab",
+      "bytes": 7254,
+      "archive": "design/review_production.py",
+      "kind": "design",
+      "current_candidate_binding": {
+        "native_sha256": "6f57c710998d79aa8a5f9f783bd121568416d9f4773a76941862fc8cdc79fbbb",
+        "layout_sha256": "3654ea4d2dc176fcbcb7ac5be5284ec1f1ef2ae0cd327e6796719c67eeb463fc",
+        "plan_sha256": "c3ba92ab3c96cb83699be786f2e8804604ed3c94e84dd8eeb117a8933199a665"
+      },
+      "content_relabelled": false
+    },
+    {
+      "path": "work/henan-p2-direct-ramp-2026-10-30/targeted_terrain.py",
+      "sha256": "643f4dc1a7caeafb9328b03a0d924c532e19e33871f2fa6d1d8a315cec6dab3f",
+      "bytes": 6723,
+      "archive": "design/targeted_terrain.py",
+      "kind": "design",
+      "current_candidate_binding": {
+        "native_sha256": "6f57c710998d79aa8a5f9f783bd121568416d9f4773a76941862fc8cdc79fbbb",
+        "layout_sha256": "3654ea4d2dc176fcbcb7ac5be5284ec1f1ef2ae0cd327e6796719c67eeb463fc",
+        "plan_sha256": "c3ba92ab3c96cb83699be786f2e8804604ed3c94e84dd8eeb117a8933199a665"
+      },
+      "content_relabelled": false
+    },
+    {
+      "path": "work/henan-p2-direct-ramp-2026-10-30/terrain-design-review.json",
+      "sha256": "5a566e776786bd405161a66661fe82023c8c51c9923a9e1271b476020df6933d",
+      "bytes": 9835,
+      "archive": "design/terrain-design-review.json",
+      "kind": "design",
+      "current_candidate_binding": {
+        "native_sha256": "6f57c710998d79aa8a5f9f783bd121568416d9f4773a76941862fc8cdc79fbbb",
+        "layout_sha256": "3654ea4d2dc176fcbcb7ac5be5284ec1f1ef2ae0cd327e6796719c67eeb463fc",
+        "plan_sha256": "c3ba92ab3c96cb83699be786f2e8804604ed3c94e84dd8eeb117a8933199a665"
+      },
+      "content_relabelled": false
+    },
+    {
+      "path": "work/henan-p2-direct-ramp-2026-10-30/verify_opening_pair.py",
+      "sha256": "32b17a5ead4e7d3d806b0558a32f0ff9ca61720975a4a857d3e4ee837e3021ab",
+      "bytes": 5860,
+      "archive": "design/verify_opening_pair.py",
+      "kind": "design",
+      "current_candidate_binding": {
+        "native_sha256": "6f57c710998d79aa8a5f9f783bd121568416d9f4773a76941862fc8cdc79fbbb",
+        "layout_sha256": "3654ea4d2dc176fcbcb7ac5be5284ec1f1ef2ae0cd327e6796719c67eeb463fc",
+        "plan_sha256": "c3ba92ab3c96cb83699be786f2e8804604ed3c94e84dd8eeb117a8933199a665"
+      },
+      "content_relabelled": false
+    },
+    {
+      "path": "work/henan-p2-direct-ramp-2026-10-30/fresh-evidence-manifest.json",
+      "sha256": "c98ff2f8a6433e824cc2add7e2eed7023eeeefe331640cd40ec009244d32e095",
+      "bytes": 16727,
+      "archive": "design/fresh-evidence-manifest.json",
+      "kind": "design",
+      "current_candidate_binding": {
+        "native_sha256": "6f57c710998d79aa8a5f9f783bd121568416d9f4773a76941862fc8cdc79fbbb",
+        "layout_sha256": "3654ea4d2dc176fcbcb7ac5be5284ec1f1ef2ae0cd327e6796719c67eeb463fc",
+        "plan_sha256": "c3ba92ab3c96cb83699be786f2e8804604ed3c94e84dd8eeb117a8933199a665"
+      },
+      "content_relabelled": false
+    }
+  ],
+  "explicit_reused_reports": [],
+  "note": "Old authoring reports not explicitly selected are quarantined, never renamed or relabelled to the new release."
+}

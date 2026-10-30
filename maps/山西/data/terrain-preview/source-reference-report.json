@@ -1,0 +1,68 @@
+{
+  "bounds_wgs84": [
+    110.00700684613032,
+    34.39862295323773,
+    114.78024410634676,
+    40.92450402223874
+  ],
+  "elevation": {
+    "array": "input.npz:elevation_m.npy",
+    "game_layering": false,
+    "height_edits": false,
+    "npy_crc32": 2592050178,
+    "npy_preserved_byte_for_byte": true,
+    "raw_array_bytes_crc32": 116110467,
+    "smoothing": false
+  },
+  "input": "input.npz",
+  "input_crc32": 2272467428,
+  "north_up": true,
+  "preserved_arrays": [
+    "elevation_m.npy",
+    "inside_province.npy",
+    "bounds_wgs84.npy"
+  ],
+  "reference": "source-reference.npz",
+  "reference_crc32": 525556450,
+  "region": "山西",
+  "rendering_scope": "source reference only; game preview arrays, parameters and images are not edited by this tool",
+  "schema_version": 1,
+  "shape": [
+    840,
+    488
+  ],
+  "water": {
+    "area_filtering": false,
+    "coverage_note": "water coverage follows the preserved original ocean, full available lake/reservoir polygon datasets, and legacy water references where present; no river geometry is invented for regions without a river source",
+    "game_layer_enclosure": false,
+    "game_shoreline_shaping": false,
+    "lake_cells": 0,
+    "lake_feature_count": 0,
+    "lake_features": "raw/source-lakes.geojson",
+    "lake_features_crc32": 4145639129,
+    "legacy_source_water_array": null,
+    "legacy_source_water_reason": null,
+    "minimum_lake_area_km2": null,
+    "morphological_closing": false,
+    "morphological_opening": false,
+    "ocean_array": "input.npz:source_ocean_mask.npy",
+    "ocean_cells": 0,
+    "ocean_npy_crc32": 714461009,
+    "ocean_source": "preserved original geographic ocean mask",
+    "original_global_lake_inputs": [
+      {
+        "crc32": 2629966051,
+        "feature_count": 1355,
+        "path": "work/china-terrain-preview/sources/lakes.geojson"
+      },
+      {
+        "crc32": 2476220798,
+        "feature_count": 18,
+        "path": "work/china-terrain-preview/sources/extra-reservoirs.geojson"
+      }
+    ],
+    "rasterization": "original polygon interiors sampled at original input pixel centers; even-odd rings preserve holes; lake polygons and original geographic masks are unioned",
+    "small_water_removal": false,
+    "water_cells": 0
+  }
+}

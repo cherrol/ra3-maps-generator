@@ -4,7 +4,7 @@
   "bounds_wgs84": [
     113.42665890703049,
     36.015556213011315,
-    119.89881160454931,
+    119.89881160454932,
     42.64933142928928
   ],
   "elevation_thresholds_m": [
@@ -34,7 +34,7 @@
     "preview--center--line.png": 3585562576,
     "preview--line.png": 57462512,
     "preview.png": 1251837680,
-    "source.png": 3707256509
+    "source.png": 3280676391
   },
   "layer_policy": {
     "active_land_layers": [
@@ -128,7 +128,54 @@
       800
     ]
   },
+  "source_image": {
+    "border_cells": 20,
+    "bounds_wgs84": [
+      113.42665890703049,
+      36.015556213011315,
+      119.89881160454931,
+      42.64933142928928
+    ],
+    "dem_smoothing_applied": false,
+    "display_sampling": {
+      "elevation": "bilinear",
+      "water": "nearest-neighbor"
+    },
+    "display_water_cells": 53412,
+    "elevation_array": "elevation_m",
+    "game_cells": [
+      800,
+      800
+    ],
+    "game_layer_processing_applied": false,
+    "game_water_processing_applied": false,
+    "image_crc32": 3280676391,
+    "kind": "real-terrain-reference",
+    "north_up": true,
+    "reference": "source-reference.npz",
+    "reference_crc32": 2304690661,
+    "schema_version": 1,
+    "source_crop_pixels": [
+      20,
+      20,
+      620,
+      820
+    ],
+    "source_data_modified": false,
+    "source_grid": [
+      640,
+      840
+    ],
+    "source_water_cells": 46616,
+    "water_array": "water_mask"
+  },
   "source_reference": "maps/河北/data/terrain-preview/input.npz",
+  "terrain_shape_repair": {
+    "baseline": "raw/before-intrusion-repair-2026-10-30",
+    "combat_routes": "not yet designated",
+    "method": "scoped disk opening and adjacent-terrain merges, followed by same-owner shore reconciliation",
+    "report": "intrusion-repair-2026-10-30.json"
+  },
   "water_policy": {
     "design_shaping": {
       "active_reference": "raw/reference-before-shoreline-refinement.npz",
@@ -148,11 +195,5 @@
     "mode": "map-local-compact-water-design",
     "ocean_channel_open_radius_cells": 3,
     "preserve_ocean": true
-  },
-  "terrain_shape_repair": {
-    "baseline": "raw/before-intrusion-repair-2026-10-30",
-    "combat_routes": "not yet designated",
-    "method": "scoped disk opening and adjacent-terrain merges, followed by same-owner shore reconciliation",
-    "report": "intrusion-repair-2026-10-30.json"
   }
 }

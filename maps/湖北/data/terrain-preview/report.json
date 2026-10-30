@@ -34,7 +34,7 @@
     "preview--center--line.png": 186108730,
     "preview--line.png": 780962789,
     "preview.png": 1817851012,
-    "source.png": 1335453435
+    "source.png": 2662600610
   },
   "layer_policy": {
     "active_land_layers": [
@@ -136,7 +136,54 @@
       512
     ]
   },
+  "source_image": {
+    "border_cells": 20,
+    "bounds_wgs84": [
+      108.32363903434108,
+      29.01139481178693,
+      116.16879082407324,
+      33.29877201443209
+    ],
+    "dem_smoothing_applied": false,
+    "display_sampling": {
+      "elevation": "bilinear",
+      "water": "nearest-neighbor"
+    },
+    "display_water_cells": 9339,
+    "elevation_array": "elevation_m",
+    "game_cells": [
+      800,
+      800
+    ],
+    "game_layer_processing_applied": false,
+    "game_water_processing_applied": false,
+    "image_crc32": 2662600610,
+    "kind": "real-terrain-reference",
+    "north_up": true,
+    "reference": "source-reference.npz",
+    "reference_crc32": 2335347875,
+    "schema_version": 1,
+    "source_crop_pixels": [
+      20,
+      20,
+      820,
+      532
+    ],
+    "source_data_modified": false,
+    "source_grid": [
+      840,
+      552
+    ],
+    "source_water_cells": 7759,
+    "water_array": "water_mask"
+  },
   "source_reference": "maps/湖北/data/terrain-preview/input.npz",
+  "terrain_shape_repair": {
+    "baseline": "raw/before-intrusion-repair-2026-10-30",
+    "combat_routes": "not yet designated",
+    "method": "scoped disk opening and adjacent-terrain merges, followed by same-owner shore reconciliation",
+    "report": "intrusion-repair-2026-10-30.json"
+  },
   "water_policy": {
     "design_shaping": {
       "active_reference": "raw/reference-before-shoreline-refinement.npz",
@@ -164,11 +211,5 @@
       "shore_band_radius_cells": 12,
       "verification": "water-layer-verification.json"
     }
-  },
-  "terrain_shape_repair": {
-    "baseline": "raw/before-intrusion-repair-2026-10-30",
-    "combat_routes": "not yet designated",
-    "method": "scoped disk opening and adjacent-terrain merges, followed by same-owner shore reconciliation",
-    "report": "intrusion-repair-2026-10-30.json"
   }
 }

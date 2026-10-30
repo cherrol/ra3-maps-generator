@@ -1,59 +1,59 @@
 {
   "BASES": [
     [
-      116.2223393858009,
-      35.702338404465124,
-      "P1",
-      "E",
-      "human"
-    ],
-    [
-      116.34914077210874,
-      34.66481098310222,
-      "P2",
-      "E",
-      "human"
-    ],
-    [
-      116.23026447244514,
-      33.25628890803985,
-      "P3",
-      "E",
-      "human"
-    ],
-    [
-      116.16686377929122,
-      31.94208750764684,
-      "P4",
-      "E",
-      "human"
-    ],
-    [
       110.69062890812152,
       36.16765373283394,
-      "P5",
+      "P1",
       "W",
       "human"
     ],
     [
       110.55590243516944,
       34.86917244488582,
-      "P6",
+      "P2",
       "W",
       "human"
     ],
     [
       110.59552786839065,
       33.683875966540924,
-      "P7",
+      "P3",
       "W",
-      "ai"
+      "human"
     ],
     [
       110.61137804167912,
       31.65912548363877,
-      "P8",
+      "P4",
       "W",
+      "human"
+    ],
+    [
+      116.2223393858009,
+      35.702338404465124,
+      "P5",
+      "E",
+      "human"
+    ],
+    [
+      116.16686377929122,
+      31.94208750764684,
+      "P6",
+      "E",
+      "human"
+    ],
+    [
+      116.34914077210874,
+      34.66481098310222,
+      "P7",
+      "E",
+      "ai"
+    ],
+    [
+      116.23026447244514,
+      33.25628890803985,
+      "P8",
+      "E",
       "ai"
     ]
   ],
@@ -68,8 +68,8 @@
   "COORDINATE_PIPELINE": {
     "baseline": "authoring/baseline.json",
     "layout": "authoring/layout.json",
-    "source_crc32": 2105502829,
-    "source_name": "[CHAI]沃野奔流T0.0.6",
+    "source_crc32": 4273198950,
+    "source_name": "[CHAI]沃野奔流T0.1.0",
     "source_package": "authoring/source.zip"
   },
   "GRASS_TEXTURES": [
@@ -111,14 +111,14 @@
   "LAYER_TEX_PRESET": "mountain",
   "LAYER_TEX_STRICT": true,
   "LAYOUT": "authoring/layout.json",
-  "MAP_DESCRIPTION": "河南三层台地，东西八席，沿主线推进与侧翼扩张。",
+  "MAP_DESCRIPTION": "河南三层双湖台地；基地各2矿，32外围矿沿对位路线散布，20坡；前移P2下坡并优化P2/P4主线与赠送接入。",
   "MAP_NAME": "[CHAI]沃野奔流",
   "MAP_STR_INFO": {
     "GameStart": "游戏时间"
   },
   "MAP_STR_INTRO": "\"欢迎来到九州大地·沃野奔流，祝大家玩得开心。\"",
   "PEAK_IMPASSABLE": 235.0,
-  "PREVIEW_SUBTITLE": "800×800 · 东4人 / 西2人+2个固定AI；按最新红圈重建",
+  "PREVIEW_SUBTITLE": "800×800 · 基地各2矿 / 外围沿线 · 20坡 / 主路优化",
   "PREVIEW_TITLE": "九州大地·沃野奔流 {version}",
   "RAMP_CLEARANCE": {},
   "RESOURCE_DISTRIBUTION": "authoring/resource-distribution.json",
@@ -144,8 +144,12 @@
   ],
   "SERIES_NAME": "九州大地",
   "SLOPE_IMPASSABLE": 24.0,
+  "SPAWN_ORIENTATION_EXCEPTION": {
+    "layout": "west_east",
+    "reason": "2026-10-30 用户明确要求1-4西侧、5-8东侧；现行规范要求P5/P6两角、P7/P8居中。"
+  },
   "SPAWN_PLACEMENT": {},
-  "TEAM_AREA_LAYOUT": "east_west_user_marked",
+  "TEAM_AREA_LAYOUT": "west_east_user_marked",
   "TEMPLATE": "8p_template.map",
   "TERRAIN": {
     "art_keep_sea": true,

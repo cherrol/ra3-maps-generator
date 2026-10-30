@@ -34,7 +34,7 @@
     "preview--center--line.png": 2652014589,
     "preview--line.png": 3932628806,
     "preview.png": 495134932,
-    "source.png": 147533387
+    "source.png": 1887587703
   },
   "layer_policy": {
     "active_land_layers": [
@@ -129,7 +129,54 @@
       624
     ]
   },
+  "source_image": {
+    "border_cells": 20,
+    "bounds_wgs84": [
+      97.02752116809164,
+      37.326596112382575,
+      126.2051758967122,
+      53.414990662518
+    ],
+    "dem_smoothing_applied": false,
+    "display_sampling": {
+      "elevation": "bilinear",
+      "water": "nearest-neighbor"
+    },
+    "display_water_cells": 27548,
+    "elevation_array": "elevation_m",
+    "game_cells": [
+      800,
+      800
+    ],
+    "game_layer_processing_applied": false,
+    "game_water_processing_applied": false,
+    "image_crc32": 1887587703,
+    "kind": "real-terrain-reference",
+    "north_up": true,
+    "reference": "source-reference.npz",
+    "reference_crc32": 345834371,
+    "schema_version": 1,
+    "source_crop_pixels": [
+      20,
+      20,
+      820,
+      644
+    ],
+    "source_data_modified": false,
+    "source_grid": [
+      840,
+      664
+    ],
+    "source_water_cells": 25201,
+    "water_array": "water_mask"
+  },
   "source_reference": "maps/内蒙古/data/terrain-preview/input.npz",
+  "terrain_shape_repair": {
+    "baseline": "raw/before-intrusion-repair-2026-10-30",
+    "combat_routes": "not yet designated",
+    "method": "scoped disk opening and adjacent-terrain merges, followed by same-owner shore reconciliation",
+    "report": "intrusion-repair-2026-10-30.json"
+  },
   "water_policy": {
     "design_shaping": {
       "active_reference": "raw/reference-before-shoreline-refinement.npz",
@@ -149,11 +196,5 @@
     "mode": "map-local-compact-water-design",
     "ocean_channel_open_radius_cells": 3,
     "preserve_ocean": true
-  },
-  "terrain_shape_repair": {
-    "baseline": "raw/before-intrusion-repair-2026-10-30",
-    "combat_routes": "not yet designated",
-    "method": "scoped disk opening and adjacent-terrain merges, followed by same-owner shore reconciliation",
-    "report": "intrusion-repair-2026-10-30.json"
   }
 }

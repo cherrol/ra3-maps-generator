@@ -5,5 +5,7 @@
   "lake_area_method": "spherical polygon area; whole waterbody minus holes before frame clipping",
   "ocean_channel_open_radius_cells": 3,
   "lakes": [],
-  "date": "2026-10-29"
+  "date": "2026-10-29",
+  "source_water_display": "source.png uses unmodified geographic water from source-reference.npz; game design water applies only to preview images",
+  "source_water_display_updated": "2026-10-30"
 }

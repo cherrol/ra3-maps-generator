@@ -34,7 +34,7 @@
     "preview--center--line.png": 3530352419,
     "preview--line.png": 2213093625,
     "preview.png": 2315540426,
-    "source.png": 113811834
+    "source.png": 208249523
   },
   "layer_policy": {
     "active_land_layers": [
@@ -136,7 +136,54 @@
       696
     ]
   },
+  "source_image": {
+    "border_cells": 20,
+    "bounds_wgs84": [
+      73.38872451171193,
+      34.2621236211245,
+      96.4997442311897,
+      49.24906964671986
+    ],
+    "dem_smoothing_applied": false,
+    "display_sampling": {
+      "elevation": "bilinear",
+      "water": "nearest-neighbor"
+    },
+    "display_water_cells": 9032,
+    "elevation_array": "elevation_m",
+    "game_cells": [
+      800,
+      800
+    ],
+    "game_layer_processing_applied": false,
+    "game_water_processing_applied": false,
+    "image_crc32": 208249523,
+    "kind": "real-terrain-reference",
+    "north_up": true,
+    "reference": "source-reference.npz",
+    "reference_crc32": 2724538834,
+    "schema_version": 1,
+    "source_crop_pixels": [
+      20,
+      20,
+      820,
+      716
+    ],
+    "source_data_modified": false,
+    "source_grid": [
+      840,
+      736
+    ],
+    "source_water_cells": 8229,
+    "water_array": "water_mask"
+  },
   "source_reference": "maps/新疆/data/terrain-preview/input.npz",
+  "terrain_shape_repair": {
+    "baseline": "raw/before-intrusion-repair-2026-10-30",
+    "combat_routes": "not yet designated",
+    "method": "scoped disk opening and adjacent-terrain merges, followed by same-owner shore reconciliation",
+    "report": "intrusion-repair-2026-10-30.json"
+  },
   "water_policy": {
     "design_shaping": {
       "active_reference": "raw/reference-before-shoreline-refinement.npz",
@@ -164,11 +211,5 @@
       "shore_band_radius_cells": 12,
       "verification": "water-layer-verification.json"
     }
-  },
-  "terrain_shape_repair": {
-    "baseline": "raw/before-intrusion-repair-2026-10-30",
-    "combat_routes": "not yet designated",
-    "method": "scoped disk opening and adjacent-terrain merges, followed by same-owner shore reconciliation",
-    "report": "intrusion-repair-2026-10-30.json"
   }
 }

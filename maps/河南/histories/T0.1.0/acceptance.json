@@ -1,0 +1,230 @@
+{
+  "status": "通过",
+  "applicable_items": {
+    "出生座位布局": {
+      "status": "通过",
+      "measurement_groups": [
+        "seats_fixed_ai_and_area_exception",
+        "automated_native_checks"
+      ]
+    },
+    "对位进攻方向与沿线布置": {
+      "status": "通过",
+      "measurement_groups": [
+        "attack_directions_and_32_outer_mines",
+        "direct_main_route_selection"
+      ]
+    },
+    "交战路线宽度与伸入地形": {
+      "status": "通过",
+      "measurement_groups": [
+        "resource_routes_hotspots_and_convenience",
+        "terrain_shape_and_intrusions"
+      ]
+    },
+    "赠送建筑避开伸入区域": {
+      "status": "通过",
+      "measurement_groups": [
+        "gift_full_foundations_and_intrusion_exclusion"
+      ]
+    },
+    "赠送生产建筑靠近基地": {
+      "status": "通过",
+      "measurement_groups": [
+        "production_base_proximity_and_access"
+      ]
+    },
+    "布矿": {
+      "status": "通过",
+      "measurement_groups": [
+        "attack_directions_and_32_outer_mines",
+        "automated_native_checks"
+      ]
+    },
+    "中立建筑选址": {
+      "status": "通过",
+      "measurement_groups": [
+        "neutral_buildings_near_middle_combat_regions"
+      ]
+    },
+    "坡口": {
+      "status": "通过",
+      "measurement_groups": [
+        "automated_native_checks",
+        "attack_directions_and_32_outer_mines"
+      ]
+    },
+    "斜坡优先于矿": {
+      "status": "通过",
+      "measurement_groups": [
+        "slope_priority_over_mines"
+      ]
+    },
+    "交战区与资源通行便利": {
+      "status": "通过",
+      "measurement_groups": [
+        "resource_routes_hotspots_and_convenience",
+        "all_resource_access_after_potential_gifts",
+        "direct_main_route_selection",
+        "resource_access_convenience_selection"
+      ]
+    },
+    "整圈岸线": {
+      "status": "通过",
+      "measurement_groups": [
+        "shore_perimeter_and_single_layer"
+      ]
+    },
+    "热点双方实际路程": {
+      "status": "通过",
+      "measurement_groups": [
+        "resource_routes_hotspots_and_convenience"
+      ]
+    },
+    "建筑朝向（含矿脉）": {
+      "status": "通过",
+      "measurement_groups": [
+        "all_building_and_ore_headings",
+        "automated_native_checks"
+      ]
+    }
+  },
+  "measurement_groups": {
+    "automated_native_checks": "通过",
+    "shore_perimeter_and_single_layer": "通过",
+    "resource_routes_hotspots_and_convenience": "通过",
+    "all_building_and_ore_headings": "通过",
+    "gift_full_foundations_and_intrusion_exclusion": "通过",
+    "all_resource_access_after_potential_gifts": "通过",
+    "production_base_proximity_and_access": "通过",
+    "attack_directions_and_32_outer_mines": "通过",
+    "neutral_buildings_near_middle_combat_regions": "通过",
+    "seats_fixed_ai_and_area_exception": "通过",
+    "terrain_shape_and_intrusions": "通过",
+    "native_objects_and_complete_scripts": "通过",
+    "direct_main_route_selection": "通过",
+    "resource_access_convenience_selection": "通过",
+    "slope_priority_over_mines": "通过"
+  },
+  "counts": {
+    "ores": 48,
+    "outer_mines": 32,
+    "spawns": 8,
+    "ramps": 21,
+    "resource_route_relations": 496,
+    "gift_sites": 110,
+    "gift_branches": 280,
+    "building_actions": 286
+  },
+  "failures": [],
+  "baseline_identity": {
+    "native_sha256": "7234fa1437b0d08a961f14bc99fc7229ba58a3fa1f66294fc5f33bc5f9ad4863",
+    "layout_sha256": "75e0b7db1b2c27df0ef6b52281666c8d16874e69e507c0549894605d2ff5b431",
+    "plan_sha256": "c297f56da67816f2eeb2f360eca1e6b127f0523fbe121bbc1c9bdf774380de6e"
+  },
+  "scope": "Independent current-public-matrix audit only. Strict final package equality, source adoption and frozen rebuild remain separate required delivery gates.",
+  "notes": [
+    "缺判断、缺机器报告或旧身份不符不会填通过。",
+    "数据均从显式候选原生与同版布局/计划回读；未启动游戏或GUI。"
+  ],
+  "map": "[CHAI]沃野奔流T0.1.0",
+  "date": "2026-10-30",
+  "native_path": "/home/cherrol/dev/ra3-maps-generator/work/henan-p2-direct-ramp-2026-10-30/project/assets/河南/[CHAI]沃野奔流T0.1.0/[CHAI]沃野奔流T0.1.0.map",
+  "native_sha256": "6f57c710998d79aa8a5f9f783bd121568416d9f4773a76941862fc8cdc79fbbb",
+  "native_crc32": 4273198950,
+  "layout_sha256": "3654ea4d2dc176fcbcb7ac5be5284ec1f1ef2ae0cd327e6796719c67eeb463fc",
+  "plan_sha256": "c3ba92ab3c96cb83699be786f2e8804604ed3c94e84dd8eeb117a8933199a665",
+  "review_sha256": "098862e7f6be095a46f552e07a638ec8a1ec9a1437ff5d41169835b4cb607306",
+  "native_array_sha256": {
+    "review-height.u16": "c2294697b9aeb2c89e7c0d8720a624a2d4ad0205ae9f0923366db2bcb07af548",
+    "review-imp.u8": "2df65cc45a7cf3e58fb1a62ceb01f3fd598134ef48ac10d22d7725dd0b4eacbd",
+    "review-build.u8": "8da58350ce0d7118a8909c0e8fc0845923c85247be97bfd645f6b505eea52cde"
+  },
+  "frame": {
+    "border": 20,
+    "cell_size": 10.0,
+    "height": 840,
+    "width": 840,
+    "z_scale": 0.0390625
+  },
+  "policy": {
+    "bucket_size": 32.0,
+    "ore_reserve_radius": 20.0,
+    "building_reserve_radius": 8.0,
+    "oil_reserve_radius": 6.0,
+    "decoration_reserve_radius": 2.0,
+    "flat_tolerance": 12.0,
+    "maximum_walk_step": 12.0,
+    "navigation_clearance": 1,
+    "maximum_ramp_step": 6.1,
+    "maximum_landing_error": 12.0,
+    "terrain_shape": {
+      "combat_route_minimum_width_cells": 10.0,
+      "intrusion_minimum_width_cells": 5.0,
+      "exclude_gift_buildings_from_intrusions": true
+    },
+    "spawn_placement": {
+      "near_ore_radius": 62.0,
+      "base_radius": 8.0,
+      "ore_radius": 20.0,
+      "flat_tolerance": 3.0
+    },
+    "resource_distribution": {
+      "mines_per_seat": 6,
+      "home_ores_per_seat": 2,
+      "home_radius": 100.0,
+      "home_maximum": 2,
+      "route_count": 4,
+      "main_route_max_distance": 65.0,
+      "fourth_progress": [
+        0.1,
+        0.35
+      ],
+      "hotspot_progress": [
+        0.33,
+        0.67
+      ],
+      "secondary_max_distance": 75.0,
+      "secondary_min_main_distance": 35.0
+    },
+    "ramp_clearance": {
+      "approach_extension": 25.0,
+      "gap": 8.0,
+      "refinery_back": 5.0,
+      "refinery_forward": 48.0,
+      "refinery_half_width": 18.0
+    }
+  },
+  "policy_sha256": "f4071760bf002a937dc309114a8f9ecb30290638ce3d654119250af459329aba",
+  "audit_script_sha256": "2822f72fbfe275c97e3b7fea93644954b6caffc129f0095fc103a1b589a046a3",
+  "measurement_scope": "Fresh native static geometry; no game/GUI or runtime pathfinding claim.",
+  "rule_and_skill_sha256": {
+    "docs/map_acceptance.md": "e7a7ac129d19f9c525547503473d98af36949fcbaaf3e0246db566ba0f2f45e9",
+    "docs/map_rules.md": "0831883e5846bdd85cf25286f45673d22b6a097c2e744e3c9edaf890e0098c58",
+    "docs/map_skills_checklist.md": "67eea572c0a765e7d49a4f37f05c0ad8f7648156d9bf054b00b2105a9b05ac87",
+    ".agents/skills/ra3-authoring/SKILL.md": "5d3125dfb4ca50cd2f6a0f9dab37169e4c8a7cf28b3d49ff8593fbad2aca91ac",
+    ".agents/skills/ra3-pipeline/SKILL.md": "c0579426ea7e74b5668ddaae5ce44a0a58604b41675a14cfa8f5de3e0bcbe8e6",
+    ".agents/skills/ra3-resources/SKILL.md": "8d06bc386f811bdbb05aec2792c01ef1ae5ef1498dcc19da6871511f09d1833c",
+    ".agents/skills/ra3-spawns/SKILL.md": "6922edd90715423b84f9e790543e9d662987ee51978c50b6432c2d5cc3a1a401",
+    ".agents/skills/ra3-terrain/SKILL.md": "ea0a49bf07c0858c5d737b4a09810e1d761a62288321aa9fd7b72fa53a17507c"
+  },
+  "audit_run_id": "T0.1.0-final-20261030-c",
+  "review_entry_sha256": "664f6ff0e35a53398e7deecb3d8ed549889bbbd7920c07c0cb20ad9d5fe17389",
+  "frozen_model_source_sha256": "2822f72fbfe275c97e3b7fea93644954b6caffc129f0095fc103a1b589a046a3",
+  "judgments_sha256": "58cfa890e126bae30bfa709290220d11faa1a7037931d21ee518e7262bcdc52a",
+  "exact_gift_verifier_sha256": "1bb4eb1e1ad6ca7e06b623915fc8e456a16c77a4c4a09696613e0562c3def3d0",
+  "common_production_policy_sha256": "82559011ebd002d7f662a2400fcf01f31ce7de73a1d33b3fd7d89bc7b0147508",
+  "ramp_priority_check_sha256": "b6712551fbdcbcfc4c7b5529a7674c0ececba1a7951d4554d2b81571b66f557f",
+  "source_layout_raw_sha256": "119c50a8e406501202b92f627367636d7aeb7b48f6eac2cea6f17191c531bf87",
+  "authoring_layout_raw_sha256": "3654ea4d2dc176fcbcb7ac5be5284ec1f1ef2ae0cd327e6796719c67eeb463fc",
+  "source_layout_semantic_equal": true,
+  "delivery_gates": {
+    "final_strict_machine": "通过",
+    "complete_five_file_package": "通过",
+    "adoption_and_frozen_rebuild": "通过"
+  },
+  "package_verification": "package-verification.json",
+  "build_verification": "build-verification.json",
+  "current_rules_verification": "current-rules-verification.json",
+  "installed": false
+}
