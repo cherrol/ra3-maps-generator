@@ -67,6 +67,10 @@ name = "verify-preview-intrusion-repair"
 path = "xtask/verify_preview_intrusion_repair.rs"
 test = true
 
+[[example]]
+name = "extract-player-scripts"
+path = "xtask/extract_player_scripts.rs"
+
 # Stable iterative-authoring profile; do not toggle release LTO mid-task.
 [profile.authoring]
 inherits = "release"

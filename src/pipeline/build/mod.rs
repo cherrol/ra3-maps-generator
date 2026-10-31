@@ -329,7 +329,7 @@ fn assemble_with_previews(
     write_previews: bool,
 ) -> Result<()> {
     crate::coordinates::prepare(p)?;
-    let template = p.string("TEMPLATE", "8p_template.map");
+    let template = p.string("TEMPLATE", "template.map");
     project::safe_component(template)?;
     let mut m = MapFile::load(p.root.join("templates").join(template))?;
     let template_hm = HeightMap::parse(m.get("HeightMapData")?)?;

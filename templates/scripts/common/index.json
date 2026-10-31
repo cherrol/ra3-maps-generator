@@ -1,0 +1,952 @@
+{
+  "kind": "native_script_extract_index",
+  "lists": [
+    {
+      "file": "neutral.json",
+      "player": "_neutral_",
+      "script_count": 173,
+      "script_list_index": 0,
+      "script_list_sha256": "bf49a9d260f898984509364e0b3182bd570360e4376c0baa96d4e776f32dbb27"
+    },
+    {
+      "file": "plyr-neutral.json",
+      "player": "PlyrNeutral",
+      "script_count": 0,
+      "script_list_index": 1,
+      "script_list_sha256": "d546df0ac1a2fa018d9f100eaa5f0728b181cb1c694cd945fe90dce7bfbd4106"
+    },
+    {
+      "file": "skirmish-null.json",
+      "player": "SkirmishNull",
+      "script_count": 0,
+      "script_list_index": 2,
+      "script_list_sha256": "d546df0ac1a2fa018d9f100eaa5f0728b181cb1c694cd945fe90dce7bfbd4106"
+    },
+    {
+      "file": "skirmish-observer.json",
+      "player": "SkirmishObserver",
+      "script_count": 0,
+      "script_list_index": 3,
+      "script_list_sha256": "d546df0ac1a2fa018d9f100eaa5f0728b181cb1c694cd945fe90dce7bfbd4106"
+    },
+    {
+      "file": "skirmish-japan.json",
+      "player": "SkirmishJapan",
+      "script_count": 0,
+      "script_list_index": 4,
+      "script_list_sha256": "d546df0ac1a2fa018d9f100eaa5f0728b181cb1c694cd945fe90dce7bfbd4106"
+    },
+    {
+      "file": "skirmish-commentator.json",
+      "player": "SkirmishCommentator",
+      "script_count": 0,
+      "script_list_index": 5,
+      "script_list_sha256": "d546df0ac1a2fa018d9f100eaa5f0728b181cb1c694cd945fe90dce7bfbd4106"
+    },
+    {
+      "file": "skirmish-allies.json",
+      "player": "SkirmishAllies",
+      "script_count": 0,
+      "script_list_index": 6,
+      "script_list_sha256": "d546df0ac1a2fa018d9f100eaa5f0728b181cb1c694cd945fe90dce7bfbd4106"
+    },
+    {
+      "file": "skirmish-neutral.json",
+      "player": "SkirmishNeutral",
+      "script_count": 0,
+      "script_list_index": 7,
+      "script_list_sha256": "d546df0ac1a2fa018d9f100eaa5f0728b181cb1c694cd945fe90dce7bfbd4106"
+    },
+    {
+      "file": "skirmish-civilian.json",
+      "player": "SkirmishCivilian",
+      "script_count": 0,
+      "script_list_index": 8,
+      "script_list_sha256": "d546df0ac1a2fa018d9f100eaa5f0728b181cb1c694cd945fe90dce7bfbd4106"
+    },
+    {
+      "file": "skirmish-random.json",
+      "player": "SkirmishRandom",
+      "script_count": 0,
+      "script_list_index": 9,
+      "script_list_sha256": "d546df0ac1a2fa018d9f100eaa5f0728b181cb1c694cd945fe90dce7bfbd4106"
+    },
+    {
+      "file": "skirmish-soviet.json",
+      "player": "SkirmishSoviet",
+      "script_count": 0,
+      "script_list_index": 10,
+      "script_list_sha256": "d546df0ac1a2fa018d9f100eaa5f0728b181cb1c694cd945fe90dce7bfbd4106"
+    },
+    {
+      "file": "player-1.json",
+      "player": "Player_1",
+      "script_count": 0,
+      "script_list_index": 11,
+      "script_list_sha256": "d546df0ac1a2fa018d9f100eaa5f0728b181cb1c694cd945fe90dce7bfbd4106"
+    },
+    {
+      "file": "player-2.json",
+      "player": "Player_2",
+      "script_count": 0,
+      "script_list_index": 12,
+      "script_list_sha256": "d546df0ac1a2fa018d9f100eaa5f0728b181cb1c694cd945fe90dce7bfbd4106"
+    },
+    {
+      "file": "player-3.json",
+      "player": "Player_3",
+      "script_count": 0,
+      "script_list_index": 13,
+      "script_list_sha256": "d546df0ac1a2fa018d9f100eaa5f0728b181cb1c694cd945fe90dce7bfbd4106"
+    },
+    {
+      "file": "player-4.json",
+      "player": "Player_4",
+      "script_count": 0,
+      "script_list_index": 14,
+      "script_list_sha256": "d546df0ac1a2fa018d9f100eaa5f0728b181cb1c694cd945fe90dce7bfbd4106"
+    },
+    {
+      "file": "player-5.json",
+      "player": "Player_5",
+      "script_count": 4,
+      "script_list_index": 15,
+      "script_list_sha256": "394a9b621ad7d392acda0284507d565db04d398fdbaf61b9217abd834da870c9"
+    },
+    {
+      "file": "player-6.json",
+      "player": "Player_6",
+      "script_count": 4,
+      "script_list_index": 16,
+      "script_list_sha256": "2557deb7794d61094a1324ac90c19cf4e37ac6973f58af4fa6e4a0ab5df76f40"
+    },
+    {
+      "file": "plyr-civilian.json",
+      "player": "PlyrCivilian",
+      "script_count": 17,
+      "script_list_index": 17,
+      "script_list_sha256": "ff7caba55277ef49dc1ae028559c1131ece79fcbb8c28f021602db010875468b"
+    },
+    {
+      "file": "plyr-creeps.json",
+      "player": "PlyrCreeps",
+      "script_count": 26,
+      "script_list_index": 18,
+      "script_list_sha256": "0168b2e704164da321620236ae173f001dad684823acd34fe25d523706126e70"
+    }
+  ],
+  "player_scripts_sha256": "b43b60139c6ca3f95e4ff7f3b38cc88692aa1d72f4a5c17eadab4c258d73be4d",
+  "player_scripts_version": 1,
+  "schema_version": 1,
+  "script_count": 224,
+  "script_list_count": 19,
+  "source": {
+    "ruleset_sha256": "82559011ebd002d7f662a2400fcf01f31ce7de73a1d33b3fd7d89bc7b0147508"
+  },
+  "source_asset_names": [
+    [
+      "WaypointsList",
+      198
+    ],
+    [
+      "CameraAnimationList",
+      197
+    ],
+    [
+      "NamedCameras",
+      196
+    ],
+    [
+      "EnvironmentData",
+      195
+    ],
+    [
+      "PostEffectsChunk",
+      194
+    ],
+    [
+      "GlobalLighting",
+      193
+    ],
+    [
+      "StandingWaveAreas",
+      192
+    ],
+    [
+      "RiverAreas",
+      191
+    ],
+    [
+      "StandingWaterAreas",
+      190
+    ],
+    [
+      "MissionObjectives",
+      189
+    ],
+    [
+      "MissionHotSpots",
+      188
+    ],
+    [
+      "FogSettings",
+      187
+    ],
+    [
+      "GlobalWaterSettings",
+      186
+    ],
+    [
+      "TriggerAreas",
+      185
+    ],
+    [
+      "objectName",
+      184
+    ],
+    [
+      "waypointPathLabel3",
+      183
+    ],
+    [
+      "waypointPathLabel2",
+      182
+    ],
+    [
+      "waypointPathLabel1",
+      181
+    ],
+    [
+      "objectPrototypeScale",
+      180
+    ],
+    [
+      "waypointTypeOption",
+      179
+    ],
+    [
+      "waypointName",
+      178
+    ],
+    [
+      "waypointID",
+      177
+    ],
+    [
+      "objectLayer",
+      176
+    ],
+    [
+      "uniqueID",
+      175
+    ],
+    [
+      "originalOwner",
+      174
+    ],
+    [
+      "objectBasePhase",
+      173
+    ],
+    [
+      "objectBasePriority",
+      172
+    ],
+    [
+      "objectSleeping",
+      171
+    ],
+    [
+      "objectTargetable",
+      170
+    ],
+    [
+      "objectRecruitableAI",
+      169
+    ],
+    [
+      "objectPowered",
+      168
+    ],
+    [
+      "objectUnsellable",
+      167
+    ],
+    [
+      "objectIndestructible",
+      166
+    ],
+    [
+      "objectEnabled",
+      165
+    ],
+    [
+      "objectInitialHealth",
+      164
+    ],
+    [
+      "Object",
+      163
+    ],
+    [
+      "ObjectsList",
+      162
+    ],
+    [
+      "BuildLists",
+      161
+    ],
+    [
+      "DECREMENT_COUNTER",
+      160
+    ],
+    [
+      "COUNTER_MATH_COUNTER",
+      159
+    ],
+    [
+      "COUNTER_MATH_VALUE",
+      158
+    ],
+    [
+      "SET_PLAYER_OWNERSHIP_OF_TYPE_COUNTER",
+      157
+    ],
+    [
+      "ATTACK_MOVE_TEAM_TO_NAMED_OBJECT",
+      156
+    ],
+    [
+      "TEAM_GARRISON_SPECIFIC_BUILDING",
+      155
+    ],
+    [
+      "NAMED_DESTROYED",
+      154
+    ],
+    [
+      "SELL_OBJECT",
+      153
+    ],
+    [
+      "TEAM_TRANSFER_TO_PLAYER",
+      152
+    ],
+    [
+      "TEAM_GARRISON_SPECIFIC_BUILDING_INSTANTLY",
+      151
+    ],
+    [
+      "TEAM_ATTACK_MOVE_FOLLOW_WAYPOINTS",
+      150
+    ],
+    [
+      "PLAYER_HAS_COMPARISON_UNIT_TYPE_IN_TRIGGER_AREA",
+      149
+    ],
+    [
+      "TEAM_AI_TRANSFER",
+      148
+    ],
+    [
+      "PLAYER_SET_BASE_POWER",
+      147
+    ],
+    [
+      "UNIT_TELEPORT_TO_WAYPOINT",
+      146
+    ],
+    [
+      "ALLOW_DISALLOW_ONE_BUILDING",
+      145
+    ],
+    [
+      "NAMED_USE_COMMANDBUTTON_ABILITY",
+      144
+    ],
+    [
+      "SET_REF_TO_NEREST_TEAM_OF_TYPE_OWNED_BY_PLAYER",
+      143
+    ],
+    [
+      "CREATE_NAMED_ON_TEAM_AT_WAYPOINT_WITH_ORIENTATION",
+      142
+    ],
+    [
+      "NAMED_TRANSFER_OWNERSHIP_PLAYER",
+      141
+    ],
+    [
+      "SET_RANDOM_COUNTER",
+      140
+    ],
+    [
+      "DISABLE_SCRIPT",
+      139
+    ],
+    [
+      "PATH_MUSIC_ENABLE_RESUME_SYSTEM",
+      138
+    ],
+    [
+      "SKIRMISH_PLAYER_HAS_BEEN_ATTACKED_BY_PLAYER",
+      137
+    ],
+    [
+      "MOVIE_PLAY_RADAR",
+      136
+    ],
+    [
+      "NAMED_KILL",
+      135
+    ],
+    [
+      "UNIT_SET_TEAM",
+      134
+    ],
+    [
+      "NAMED_USE_COMMANDBUTTON_ABILITY_AT_WAYPOINT",
+      133
+    ],
+    [
+      "NAMED_FOLLOW_WAYPOINTS",
+      132
+    ],
+    [
+      "STOP_TIMER",
+      131
+    ],
+    [
+      "DISPLAY_COUNTDOWN_TIMER",
+      130
+    ],
+    [
+      "ADD_TO_MSEC_TIMER",
+      129
+    ],
+    [
+      "OBJECTLIST_ADDOBJECTTYPE",
+      128
+    ],
+    [
+      "FIND_HOME_BASE_OF_PLAYER",
+      127
+    ],
+    [
+      "NAMED_DELETE",
+      126
+    ],
+    [
+      "SET_MILLISECOND_TIMER",
+      125
+    ],
+    [
+      "OBJECT_CREATE_RADAR_EVENT",
+      124
+    ],
+    [
+      "MOVE_CAMERA_TO_NAMED",
+      123
+    ],
+    [
+      "HIDE_TUTORIAL_TEXT",
+      122
+    ],
+    [
+      "SET_UNIT_REFERENCE",
+      121
+    ],
+    [
+      "CREATE_NAMED_ON_TEAM_AT_WAYPOINT",
+      120
+    ],
+    [
+      "VICTORY",
+      119
+    ],
+    [
+      "NAMED_NOT_DESTROYED",
+      118
+    ],
+    [
+      "UNIT_AFFECT_OBJECT_PANEL_FLAGS",
+      117
+    ],
+    [
+      "ScriptActionFalse",
+      116
+    ],
+    [
+      "UNIT_SPAWN_NAMED_LOCATION_ORIENTATION",
+      115
+    ],
+    [
+      "ENABLE_SCRIPT",
+      114
+    ],
+    [
+      "PLAYER_GIVE_MONEY",
+      113
+    ],
+    [
+      "COUNTER_COUNTER",
+      112
+    ],
+    [
+      "SET_PLAYER_KILLS_OF_KINDOF_TO_COUNTER",
+      111
+    ],
+    [
+      "SET_COUNTER",
+      110
+    ],
+    [
+      "COUNTER_SECONDS",
+      109
+    ],
+    [
+      "PLAYER_GRANT_SPECIAL_POWER",
+      108
+    ],
+    [
+      "ScriptGroup",
+      107
+    ],
+    [
+      "CREATE_UNNAMED_ON_TEAM_AT_WAYPOINT_WITH_ORIENTATION",
+      106
+    ],
+    [
+      "PLAYER_HAS_OBJECT_COMPARISON",
+      105
+    ],
+    [
+      "PLAYER_IS_HUMAN_OR_AI_PERSONALITY",
+      104
+    ],
+    [
+      "CONDITION_FALSE",
+      103
+    ],
+    [
+      "SET_FLAG",
+      102
+    ],
+    [
+      "TEAM_TELEPORT_TO_WAYPOINT",
+      101
+    ],
+    [
+      "FLAG",
+      100
+    ],
+    [
+      "COUNTER",
+      99
+    ],
+    [
+      "PLAYER_RELATES_PLAYER",
+      98
+    ],
+    [
+      "INCREMENT_COUNTER",
+      97
+    ],
+    [
+      "START_POSITION_IS",
+      96
+    ],
+    [
+      "TIMER_EXPIRED",
+      95
+    ],
+    [
+      "PATH_MUSIC_ENABLE_SPECIFIC_DYNAMIC_SYSTEM",
+      94
+    ],
+    [
+      "PATH_MUSIC_PLAY_EVENT",
+      93
+    ],
+    [
+      "SHOW_MILITARY_CAPTION",
+      92
+    ],
+    [
+      "NO_OP",
+      91
+    ],
+    [
+      "ScriptAction",
+      90
+    ],
+    [
+      "CONDITION_TRUE",
+      89
+    ],
+    [
+      "Condition",
+      88
+    ],
+    [
+      "OrCondition",
+      87
+    ],
+    [
+      "Script",
+      86
+    ],
+    [
+      "ScriptList",
+      85
+    ],
+    [
+      "PlayerScriptsList",
+      84
+    ],
+    [
+      "teamAutoReinforce",
+      83
+    ],
+    [
+      "teamIsAIRecruitable",
+      82
+    ],
+    [
+      "teamHome",
+      81
+    ],
+    [
+      "teamUnitType7",
+      80
+    ],
+    [
+      "teamUnitType6",
+      79
+    ],
+    [
+      "teamUnitType5",
+      78
+    ],
+    [
+      "teamUnitType4",
+      77
+    ],
+    [
+      "teamUnitType3",
+      76
+    ],
+    [
+      "teamUnitType2",
+      75
+    ],
+    [
+      "teamBuildFromOldBuildSystem",
+      74
+    ],
+    [
+      "teamGenericScriptHook1",
+      73
+    ],
+    [
+      "microManagerIndex",
+      72
+    ],
+    [
+      "teamType",
+      71
+    ],
+    [
+      "teamGenericScriptHook0",
+      70
+    ],
+    [
+      "teamDestroyedThreshold",
+      69
+    ],
+    [
+      "teamUnitExperienceLevel1",
+      68
+    ],
+    [
+      "teamUnitUpgradeList1",
+      67
+    ],
+    [
+      "teamProductionCondition",
+      66
+    ],
+    [
+      "teamOnCreateScript",
+      65
+    ],
+    [
+      "teamExecutesActionsOnCreate",
+      64
+    ],
+    [
+      "teamInitialIdleSeconds",
+      63
+    ],
+    [
+      "teamProductionPriorityFailureDecrease",
+      62
+    ],
+    [
+      "teamProductionPrioritySuccessIncrease",
+      61
+    ],
+    [
+      "teamMaxInstances",
+      60
+    ],
+    [
+      "teamDescription",
+      59
+    ],
+    [
+      "teamUnitMinCount7",
+      58
+    ],
+    [
+      "teamUnitMaxCount7",
+      57
+    ],
+    [
+      "teamUnitMinCount6",
+      56
+    ],
+    [
+      "teamUnitMaxCount6",
+      55
+    ],
+    [
+      "teamUnitMinCount5",
+      54
+    ],
+    [
+      "teamUnitMaxCount5",
+      53
+    ],
+    [
+      "teamUnitMinCount4",
+      52
+    ],
+    [
+      "teamUnitMaxCount4",
+      51
+    ],
+    [
+      "teamUnitMinCount3",
+      50
+    ],
+    [
+      "teamUnitMaxCount3",
+      49
+    ],
+    [
+      "teamUnitMinCount2",
+      48
+    ],
+    [
+      "teamUnitMaxCount2",
+      47
+    ],
+    [
+      "teamUnitMinCount1",
+      46
+    ],
+    [
+      "teamUnitMaxCount1",
+      45
+    ],
+    [
+      "teamProductionPriority",
+      44
+    ],
+    [
+      "teamUnitType1",
+      43
+    ],
+    [
+      "exportWithScript",
+      42
+    ],
+    [
+      "teamIsSingleton",
+      41
+    ],
+    [
+      "teamOwner",
+      40
+    ],
+    [
+      "teamName",
+      39
+    ],
+    [
+      "Teams",
+      38
+    ],
+    [
+      "LibraryMaps",
+      37
+    ],
+    [
+      "LibraryMapLists",
+      36
+    ],
+    [
+      "playerRadarColor",
+      35
+    ],
+    [
+      "aiPersonality",
+      34
+    ],
+    [
+      "aiOpeningMover",
+      33
+    ],
+    [
+      "aiTactical",
+      32
+    ],
+    [
+      "aiScienceUpgrader",
+      31
+    ],
+    [
+      "aiUnitUpgrader",
+      30
+    ],
+    [
+      "aiWallBuilder",
+      29
+    ],
+    [
+      "aiEconomyBuilder",
+      28
+    ],
+    [
+      "aiTeamBuilder",
+      27
+    ],
+    [
+      "aiUnitBuilder",
+      26
+    ],
+    [
+      "aiBaseBuilder",
+      25
+    ],
+    [
+      "playerColor",
+      24
+    ],
+    [
+      "playerEnemies",
+      23
+    ],
+    [
+      "playerAllies",
+      22
+    ],
+    [
+      "playerFaction",
+      21
+    ],
+    [
+      "playerDisplayName",
+      20
+    ],
+    [
+      "playerIsHuman",
+      19
+    ],
+    [
+      "playerName",
+      18
+    ],
+    [
+      "SidesList",
+      17
+    ],
+    [
+      "MPPositionInfo",
+      16
+    ],
+    [
+      "MPPositionList",
+      15
+    ],
+    [
+      "isScenarioMultiplayer",
+      14
+    ],
+    [
+      "mapDescription",
+      13
+    ],
+    [
+      "mapName",
+      12
+    ],
+    [
+      "compression",
+      11
+    ],
+    [
+      "cameraGroundMaxHeight",
+      10
+    ],
+    [
+      "cameraGroundMinHeight",
+      9
+    ],
+    [
+      "weather",
+      8
+    ],
+    [
+      "terrainTextureStrings",
+      7
+    ],
+    [
+      "musicZone",
+      6
+    ],
+    [
+      "WorldInfo",
+      5
+    ],
+    [
+      "BlendTileData",
+      4
+    ],
+    [
+      "HeightMapData",
+      3
+    ],
+    [
+      "GlobalVersion",
+      2
+    ],
+    [
+      "AssetList",
+      1
+    ],
+    [
+      "SET_REF_TO_NEREST_TEAM_OF_UNNAMED_TYPE_OWNED_BY_PLAYER",
+      199
+    ],
+    [
+      "NAMED_OWNED_BY_PLAYER",
+      200
+    ],
+    [
+      "UNIT_HAS_UPGRADE",
+      201
+    ]
+  ]
+}

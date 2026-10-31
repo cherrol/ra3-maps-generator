@@ -1,0 +1,24 @@
+{
+  "kind": "native_player_script_extract",
+  "native_text_encoding": "Latin-1 byte mapping, matching scripts::Node; decode original GBK bytes only for display",
+  "references": {
+    "by_argument_kind": [],
+    "requires_source_context": true,
+    "scope": "All nonempty string arguments, including reads, writes and local definitions; not a resolved dependency graph"
+  },
+  "schema_version": 1,
+  "scripts": [
+    {
+      "asset": "ScriptList",
+      "children": [],
+      "version": 1
+    }
+  ],
+  "source": {
+    "map_sha256": "5d821900fb69c04a036488fad7b47f01fd5a408f2a97b5c379d2182a94ef7d82",
+    "player": "SkirmishAllies",
+    "script_count": 0,
+    "script_list_index": 8,
+    "script_list_sha256": "fe737dcdc9a2971ea3ecd710fc405acce6e9bde7d6db74301d7fdbc6b49e90db"
+  }
+}

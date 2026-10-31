@@ -476,7 +476,7 @@ mod tests {
                     .as_nanos()
             ));
             std::fs::create_dir(&p.assets).unwrap();
-            let map = MapFile::load(root.join("templates/8p_template.map")).unwrap();
+            let map = MapFile::load(root.join("templates/template.map")).unwrap();
             Self { p, map }
         }
     }

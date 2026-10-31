@@ -1,0 +1,318 @@
+{
+  "kind": "native_player_script_extract",
+  "native_text_encoding": "Latin-1 byte mapping, matching scripts::Node; decode original GBK bytes only for display",
+  "references": {
+    "by_argument_kind": [
+      {
+        "argument_kind": 2,
+        "meaning": "script_or_group",
+        "values": [
+          "ÂÒ³¬Îè"
+        ]
+      },
+      {
+        "argument_kind": 3,
+        "meaning": "team",
+        "values": [
+          "teamPlayer_6"
+        ]
+      },
+      {
+        "argument_kind": 7,
+        "meaning": "waypoint",
+        "values": [
+          "PP61",
+          "PP62",
+          "PP63",
+          "SW63",
+          "SWA61",
+          "SWA62"
+        ]
+      },
+      {
+        "argument_kind": 11,
+        "meaning": "player",
+        "values": [
+          "<This Player>"
+        ]
+      },
+      {
+        "argument_kind": 15,
+        "meaning": "object_type",
+        "values": [
+          "alliedpowerplant",
+          "alliedsuperweaponadvanced",
+          "japanpowerplant",
+          "japansuperweaponadvanced",
+          "sovietpowerplant",
+          "sovietsuperweapon",
+          "sovietsuperweaponadvanced"
+        ]
+      },
+      {
+        "argument_kind": 61,
+        "meaning": "object_type_or_list",
+        "values": [
+          "alliedconstructionyard",
+          "alliedsuperweaponadvanced",
+          "japanconstructionyard",
+          "japansuperweaponadvanced",
+          "sovietconstructionyard",
+          "sovietsuperweaponadvanced"
+        ]
+      },
+      {
+        "argument_kind": 70,
+        "meaning": "other",
+        "values": [
+          "Human"
+        ]
+      }
+    ],
+    "requires_source_context": true,
+    "scope": "All nonempty string arguments, including reads, writes and local definitions; not a resolved dependency graph"
+  },
+  "schema_version": 1,
+  "scripts": [
+    {
+      "asset": "ScriptList",
+      "children": [
+        {
+          "asset": "Script",
+          "children": [
+            {
+              "asset": "OrCondition",
+              "children": [
+                {
+                  "asset": "Condition",
+                  "body": "9200000003000000020000000b00000000000000000000000d003c5468697320506c617965723e460000000000000000000000050048756d616e0100000001000000",
+                  "command": "PLAYER_IS_HUMAN_OR_AI_PERSONALITY",
+                  "version": 6
+                }
+              ],
+              "version": 1
+            },
+            {
+              "asset": "ScriptAction",
+              "body": "0800000003000000010000000200000000000000000000000600c2d2b3accee801000000",
+              "command": "ENABLE_SCRIPT",
+              "version": 3
+            }
+          ],
+          "prefix": "080073657474696e677300000000000001010101010000000000000000000000010000010058",
+          "version": 4
+        },
+        {
+          "asset": "ScriptGroup",
+          "children": [
+            {
+              "asset": "Script",
+              "children": [
+                {
+                  "asset": "OrCondition",
+                  "children": [
+                    {
+                      "asset": "Condition",
+                      "body": "3100000003000000040000000b00000000000000000000000d003c5468697320506c617965723e060000000300000000000000000000000000010000000000000000003d00000000000000000000001600616c6c696564636f6e737472756374696f6e796172640100000000000000",
+                      "command": "PLAYER_HAS_OBJECT_COMPARISON",
+                      "version": 6
+                    },
+                    {
+                      "asset": "Condition",
+                      "body": "3100000003000000040000000b00000000000000000000000d003c5468697320506c617965723e060000000300000000000000000000000000010000000000000000003d00000000000000000000001900616c6c6965647375706572776561706f6e616476616e6365640100000000000000",
+                      "command": "PLAYER_HAS_OBJECT_COMPARISON",
+                      "version": 6
+                    }
+                  ],
+                  "version": 1
+                },
+                {
+                  "asset": "ScriptAction",
+                  "body": "d301000003000000040000000f000000000000000000000018006a6170616e7375706572776561706f6e616476616e6365640300000000000000000000000c007465616d506c617965725f36070000000000000000000000050053574136311100000000000000db0f49bf000001000000",
+                  "command": "CREATE_UNNAMED_ON_TEAM_AT_WAYPOINT_WITH_ORIENTATION",
+                  "version": 3
+                },
+                {
+                  "asset": "ScriptAction",
+                  "body": "d301000003000000040000000f00000000000000000000001900736f766965747375706572776561706f6e616476616e6365640300000000000000000000000c007465616d506c617965725f36070000000000000000000000050053574136321100000000000000db0f49bf000001000000",
+                  "command": "CREATE_UNNAMED_ON_TEAM_AT_WAYPOINT_WITH_ORIENTATION",
+                  "version": 3
+                },
+                {
+                  "asset": "ScriptAction",
+                  "body": "d301000003000000040000000f00000000000000000000001100736f766965747375706572776561706f6e0300000000000000000000000c007465616d506c617965725f360700000000000000000000000400535736331100000000000000db0f49bf000001000000",
+                  "command": "CREATE_UNNAMED_ON_TEAM_AT_WAYPOINT_WITH_ORIENTATION",
+                  "version": 3
+                },
+                {
+                  "asset": "ScriptAction",
+                  "body": "d301000003000000040000000f00000000000000000000001000616c6c696564706f776572706c616e740300000000000000000000000c007465616d506c617965725f360700000000000000000000000400505036311100000000000000db0f49bf000001000000",
+                  "command": "CREATE_UNNAMED_ON_TEAM_AT_WAYPOINT_WITH_ORIENTATION",
+                  "version": 3
+                },
+                {
+                  "asset": "ScriptAction",
+                  "body": "d301000003000000040000000f00000000000000000000001000616c6c696564706f776572706c616e740300000000000000000000000c007465616d506c617965725f360700000000000000000000000400505036321100000000000000db0f49bf000001000000",
+                  "command": "CREATE_UNNAMED_ON_TEAM_AT_WAYPOINT_WITH_ORIENTATION",
+                  "version": 3
+                },
+                {
+                  "asset": "ScriptAction",
+                  "body": "d301000003000000040000000f00000000000000000000001000616c6c696564706f776572706c616e740300000000000000000000000c007465616d506c617965725f360700000000000000000000000400505036331100000000000000db0f49bf000001000000",
+                  "command": "CREATE_UNNAMED_ON_TEAM_AT_WAYPOINT_WITH_ORIENTATION",
+                  "version": 3
+                },
+                {
+                  "asset": "ScriptAction",
+                  "body": "8100000003000000020000000b00000000000000000000000d003c5468697320506c617965723e000000003cddffff00000000000001000000",
+                  "command": "PLAYER_GIVE_MONEY",
+                  "version": 3
+                }
+              ],
+              "prefix": "0600416c6c69656400000000000001010101010000000000000000000000010000010058",
+              "version": 4
+            },
+            {
+              "asset": "Script",
+              "children": [
+                {
+                  "asset": "OrCondition",
+                  "children": [
+                    {
+                      "asset": "Condition",
+                      "body": "3100000003000000040000000b00000000000000000000000d003c5468697320506c617965723e060000000300000000000000000000000000010000000000000000003d000000000000000000000015006a6170616e636f6e737472756374696f6e796172640100000000000000",
+                      "command": "PLAYER_HAS_OBJECT_COMPARISON",
+                      "version": 6
+                    },
+                    {
+                      "asset": "Condition",
+                      "body": "3100000003000000040000000b00000000000000000000000d003c5468697320506c617965723e060000000300000000000000000000000000010000000000000000003d000000000000000000000018006a6170616e7375706572776561706f6e616476616e6365640100000000000000",
+                      "command": "PLAYER_HAS_OBJECT_COMPARISON",
+                      "version": 6
+                    }
+                  ],
+                  "version": 1
+                },
+                {
+                  "asset": "ScriptAction",
+                  "body": "d301000003000000040000000f00000000000000000000001900616c6c6965647375706572776561706f6e616476616e6365640300000000000000000000000c007465616d506c617965725f36070000000000000000000000050053574136311100000000000000db0f49bf000001000000",
+                  "command": "CREATE_UNNAMED_ON_TEAM_AT_WAYPOINT_WITH_ORIENTATION",
+                  "version": 3
+                },
+                {
+                  "asset": "ScriptAction",
+                  "body": "d301000003000000040000000f00000000000000000000001900736f766965747375706572776561706f6e616476616e6365640300000000000000000000000c007465616d506c617965725f36070000000000000000000000050053574136321100000000000000db0f49bf000001000000",
+                  "command": "CREATE_UNNAMED_ON_TEAM_AT_WAYPOINT_WITH_ORIENTATION",
+                  "version": 3
+                },
+                {
+                  "asset": "ScriptAction",
+                  "body": "d301000003000000040000000f00000000000000000000001100736f766965747375706572776561706f6e0300000000000000000000000c007465616d506c617965725f360700000000000000000000000400535736331100000000000000db0f49bf000001000000",
+                  "command": "CREATE_UNNAMED_ON_TEAM_AT_WAYPOINT_WITH_ORIENTATION",
+                  "version": 3
+                },
+                {
+                  "asset": "ScriptAction",
+                  "body": "d301000003000000040000000f00000000000000000000000f006a6170616e706f776572706c616e740300000000000000000000000c007465616d506c617965725f360700000000000000000000000400505036311100000000000000db0f49bf000001000000",
+                  "command": "CREATE_UNNAMED_ON_TEAM_AT_WAYPOINT_WITH_ORIENTATION",
+                  "version": 3
+                },
+                {
+                  "asset": "ScriptAction",
+                  "body": "d301000003000000040000000f00000000000000000000000f006a6170616e706f776572706c616e740300000000000000000000000c007465616d506c617965725f360700000000000000000000000400505036321100000000000000db0f49bf000001000000",
+                  "command": "CREATE_UNNAMED_ON_TEAM_AT_WAYPOINT_WITH_ORIENTATION",
+                  "version": 3
+                },
+                {
+                  "asset": "ScriptAction",
+                  "body": "d301000003000000040000000f00000000000000000000000f006a6170616e706f776572706c616e740300000000000000000000000c007465616d506c617965725f360700000000000000000000000400505036331100000000000000db0f49bf000001000000",
+                  "command": "CREATE_UNNAMED_ON_TEAM_AT_WAYPOINT_WITH_ORIENTATION",
+                  "version": 3
+                },
+                {
+                  "asset": "ScriptAction",
+                  "body": "8100000003000000020000000b00000000000000000000000d003c5468697320506c617965723e000000003cddffff00000000000001000000",
+                  "command": "PLAYER_GIVE_MONEY",
+                  "version": 3
+                }
+              ],
+              "prefix": "05004a6170616e00000000000001010101010000000000000000000000010000010058",
+              "version": 4
+            },
+            {
+              "asset": "Script",
+              "children": [
+                {
+                  "asset": "OrCondition",
+                  "children": [
+                    {
+                      "asset": "Condition",
+                      "body": "3100000003000000040000000b00000000000000000000000d003c5468697320506c617965723e060000000300000000000000000000000000010000000000000000003d00000000000000000000001600736f76696574636f6e737472756374696f6e796172640100000000000000",
+                      "command": "PLAYER_HAS_OBJECT_COMPARISON",
+                      "version": 6
+                    },
+                    {
+                      "asset": "Condition",
+                      "body": "3100000003000000040000000b00000000000000000000000d003c5468697320506c617965723e060000000300000000000000000000000000010000000000000000003d00000000000000000000001900736f766965747375706572776561706f6e616476616e6365640100000000000000",
+                      "command": "PLAYER_HAS_OBJECT_COMPARISON",
+                      "version": 6
+                    }
+                  ],
+                  "version": 1
+                },
+                {
+                  "asset": "ScriptAction",
+                  "body": "d301000003000000040000000f000000000000000000000018006a6170616e7375706572776561706f6e616476616e6365640300000000000000000000000c007465616d506c617965725f36070000000000000000000000050053574136311100000000000000db0f49bf000001000000",
+                  "command": "CREATE_UNNAMED_ON_TEAM_AT_WAYPOINT_WITH_ORIENTATION",
+                  "version": 3
+                },
+                {
+                  "asset": "ScriptAction",
+                  "body": "d301000003000000040000000f00000000000000000000001900616c6c6965647375706572776561706f6e616476616e6365640300000000000000000000000c007465616d506c617965725f36070000000000000000000000050053574136321100000000000000db0f49bf000001000000",
+                  "command": "CREATE_UNNAMED_ON_TEAM_AT_WAYPOINT_WITH_ORIENTATION",
+                  "version": 3
+                },
+                {
+                  "asset": "ScriptAction",
+                  "body": "d301000003000000040000000f00000000000000000000001000736f76696574706f776572706c616e740300000000000000000000000c007465616d506c617965725f360700000000000000000000000400505036311100000000000000db0f49bf000001000000",
+                  "command": "CREATE_UNNAMED_ON_TEAM_AT_WAYPOINT_WITH_ORIENTATION",
+                  "version": 3
+                },
+                {
+                  "asset": "ScriptAction",
+                  "body": "d301000003000000040000000f00000000000000000000001000736f76696574706f776572706c616e740300000000000000000000000c007465616d506c617965725f360700000000000000000000000400505036321100000000000000db0f49bf000001000000",
+                  "command": "CREATE_UNNAMED_ON_TEAM_AT_WAYPOINT_WITH_ORIENTATION",
+                  "version": 3
+                },
+                {
+                  "asset": "ScriptAction",
+                  "body": "d301000003000000040000000f00000000000000000000001000736f76696574706f776572706c616e740300000000000000000000000c007465616d506c617965725f360700000000000000000000000400505036331100000000000000db0f49bf000001000000",
+                  "command": "CREATE_UNNAMED_ON_TEAM_AT_WAYPOINT_WITH_ORIENTATION",
+                  "version": 3
+                },
+                {
+                  "asset": "ScriptAction",
+                  "body": "8100000003000000020000000b00000000000000000000000d003c5468697320506c617965723e0000000018e3ffff00000000000001000000",
+                  "command": "PLAYER_GIVE_MONEY",
+                  "version": 3
+                }
+              ],
+              "prefix": "0600536f7669657400000000000001010101010000000000000000000000010000010058",
+              "version": 4
+            }
+          ],
+          "prefix": "0600c2d2b3accee80000",
+          "version": 3
+        }
+      ],
+      "version": 1
+    }
+  ],
+  "source": {
+    "player": "Player_6",
+    "ruleset_sha256": "82559011ebd002d7f662a2400fcf01f31ce7de73a1d33b3fd7d89bc7b0147508",
+    "script_count": 4,
+    "script_list_index": 16,
+    "script_list_sha256": "2557deb7794d61094a1324ac90c19cf4e37ac6973f58af4fa6e4a0ab5df76f40"
+  }
+}

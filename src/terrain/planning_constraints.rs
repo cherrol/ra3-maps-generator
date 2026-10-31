@@ -164,7 +164,7 @@ pub fn native_scene(p: &Project, layout: &Layout) -> Result<MapFile> {
     }
     let t = Terrain::generate(p)?;
     let surface = Surface::generate(&t, p)?;
-    let template = p.string("TEMPLATE", "8p_template.map");
+    let template = p.string("TEMPLATE", "template.map");
     crate::pipeline::project::safe_component(template)?;
     let mut m = MapFile::load(p.root.join("templates").join(template))?;
     let hm = HeightMap::parse(m.get("HeightMapData")?)?;

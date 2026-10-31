@@ -1464,7 +1464,7 @@ mod tests {
     fn hospital_scene(headings: &[f32]) -> (Project, MapFile, [f64; 2]) {
         let root = std::path::Path::new(env!("CARGO_MANIFEST_DIR"));
         let mut p = Project::load(root, "河南").unwrap();
-        let mut map = MapFile::load(root.join("templates/8p_template.map")).unwrap();
+        let mut map = MapFile::load(root.join("templates/template.map")).unwrap();
         let mut hm = HeightMap::parse(map.get("HeightMapData").unwrap()).unwrap();
         p.cfg["GRID"] = json!(hm.width);
         p.cfg["GRID_HEIGHT"] = json!(hm.height);
@@ -1908,7 +1908,7 @@ mod tests {
         let mut checker = checker(false);
         let root = std::path::Path::new(env!("CARGO_MANIFEST_DIR"));
         let p = Project::load(root, "河南").unwrap();
-        let map = MapFile::load(root.join("templates/8p_template.map")).unwrap();
+        let map = MapFile::load(root.join("templates/template.map")).unwrap();
         let objects = map::objects(map.get("ObjectsList").unwrap(), &map.table).unwrap();
         checker.facing = Some(production_facing::Context::from_objects(&p, &objects).unwrap());
         checker.policy = Some(PlacementPolicy::load(&p).unwrap());
@@ -2050,7 +2050,7 @@ mod tests {
     fn scene_without_buildings_or_creation_actions_needs_no_facing_teams() {
         let root = std::path::Path::new(env!("CARGO_MANIFEST_DIR"));
         let mut p = Project::load(root, "河南").unwrap();
-        let mut map = MapFile::load(root.join("templates/8p_template.map")).unwrap();
+        let mut map = MapFile::load(root.join("templates/template.map")).unwrap();
         map.get_mut("ObjectsList").unwrap().payload = map::write_objects(&[], &map).unwrap();
         map.get_mut("PlayerScriptsList").unwrap().payload =
             scripts::encode_nodes(&[], &mut map).unwrap();

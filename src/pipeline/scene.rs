@@ -428,7 +428,7 @@ mod tests {
             NEXT.fetch_add(1, Ordering::Relaxed)
         ));
         let map =
-            MapFile::load(Path::new(env!("CARGO_MANIFEST_DIR")).join("templates/8p_template.map"))
+            MapFile::load(Path::new(env!("CARGO_MANIFEST_DIR")).join("templates/template.map"))
                 .unwrap();
         let hm = HeightMap::parse(map.get("HeightMapData").unwrap()).unwrap();
         Fixture(

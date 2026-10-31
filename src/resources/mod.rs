@@ -20,8 +20,9 @@ pub(crate) use atlas::{
 };
 use manifest::{environment, objects, runtime_objects, text, world};
 pub use manifest::{fast_hash, manifest, validate_manifest};
+pub use script_xml::player_names;
+pub(crate) use script_xml::refresh_script_xml;
 use script_xml::write_script_lists;
-pub(crate) use script_xml::{player_names, refresh_script_xml};
 use std::collections::{BTreeMap, BTreeSet};
 use std::fs;
 

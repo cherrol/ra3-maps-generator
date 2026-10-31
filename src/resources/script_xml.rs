@@ -7,7 +7,8 @@ use crate::{
     gameplay::scripts::{self, Node},
 };
 
-pub(crate) fn player_names(map: &MapFile) -> Result<Vec<String>> {
+/// Player identities in native SidesList order, also used by script lists.
+pub fn player_names(map: &MapFile) -> Result<Vec<String>> {
     let c = map.get("SidesList")?;
     let mut r = Reader::new(&c.payload);
     if c.version >= 6 {

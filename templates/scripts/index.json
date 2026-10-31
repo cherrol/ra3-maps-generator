@@ -1,0 +1,779 @@
+{
+  "kind": "native_script_extract_index",
+  "lists": [
+    {
+      "file": "neutral.json",
+      "player": "_neutral_",
+      "script_count": 52,
+      "script_list_index": 0,
+      "script_list_sha256": "a8bf95a29c7788440c64745965bb2b2edcfa2c22bd6aafcf9e1510e11cb3934b"
+    },
+    {
+      "file": "plyr-neutral.json",
+      "player": "PlyrNeutral",
+      "script_count": 0,
+      "script_list_index": 1,
+      "script_list_sha256": "fe737dcdc9a2971ea3ecd710fc405acce6e9bde7d6db74301d7fdbc6b49e90db"
+    },
+    {
+      "file": "plyr-civilian.json",
+      "player": "PlyrCivilian",
+      "script_count": 1,
+      "script_list_index": 2,
+      "script_list_sha256": "6380cec0ba8128ff8d69e602af6923870cace2fc4d378af39c586ce736b0913e"
+    },
+    {
+      "file": "plyr-creeps.json",
+      "player": "PlyrCreeps",
+      "script_count": 94,
+      "script_list_index": 3,
+      "script_list_sha256": "f5c200986bd611fd3824310afa3ad2d193a89f3823f7b49d19763ffa52067e19"
+    },
+    {
+      "file": "skirmish-null.json",
+      "player": "SkirmishNull",
+      "script_count": 0,
+      "script_list_index": 4,
+      "script_list_sha256": "fe737dcdc9a2971ea3ecd710fc405acce6e9bde7d6db74301d7fdbc6b49e90db"
+    },
+    {
+      "file": "skirmish-observer.json",
+      "player": "SkirmishObserver",
+      "script_count": 0,
+      "script_list_index": 5,
+      "script_list_sha256": "fe737dcdc9a2971ea3ecd710fc405acce6e9bde7d6db74301d7fdbc6b49e90db"
+    },
+    {
+      "file": "skirmish-japan.json",
+      "player": "SkirmishJapan",
+      "script_count": 0,
+      "script_list_index": 6,
+      "script_list_sha256": "fe737dcdc9a2971ea3ecd710fc405acce6e9bde7d6db74301d7fdbc6b49e90db"
+    },
+    {
+      "file": "skirmish-commentator.json",
+      "player": "SkirmishCommentator",
+      "script_count": 0,
+      "script_list_index": 7,
+      "script_list_sha256": "fe737dcdc9a2971ea3ecd710fc405acce6e9bde7d6db74301d7fdbc6b49e90db"
+    },
+    {
+      "file": "skirmish-allies.json",
+      "player": "SkirmishAllies",
+      "script_count": 0,
+      "script_list_index": 8,
+      "script_list_sha256": "fe737dcdc9a2971ea3ecd710fc405acce6e9bde7d6db74301d7fdbc6b49e90db"
+    },
+    {
+      "file": "skirmish-neutral.json",
+      "player": "SkirmishNeutral",
+      "script_count": 0,
+      "script_list_index": 9,
+      "script_list_sha256": "fe737dcdc9a2971ea3ecd710fc405acce6e9bde7d6db74301d7fdbc6b49e90db"
+    },
+    {
+      "file": "skirmish-civilian.json",
+      "player": "SkirmishCivilian",
+      "script_count": 0,
+      "script_list_index": 10,
+      "script_list_sha256": "fe737dcdc9a2971ea3ecd710fc405acce6e9bde7d6db74301d7fdbc6b49e90db"
+    },
+    {
+      "file": "skirmish-random.json",
+      "player": "SkirmishRandom",
+      "script_count": 0,
+      "script_list_index": 11,
+      "script_list_sha256": "fe737dcdc9a2971ea3ecd710fc405acce6e9bde7d6db74301d7fdbc6b49e90db"
+    },
+    {
+      "file": "skirmish-soviet.json",
+      "player": "SkirmishSoviet",
+      "script_count": 0,
+      "script_list_index": 12,
+      "script_list_sha256": "fe737dcdc9a2971ea3ecd710fc405acce6e9bde7d6db74301d7fdbc6b49e90db"
+    },
+    {
+      "file": "player-1.json",
+      "player": "Player_1",
+      "script_count": 1,
+      "script_list_index": 13,
+      "script_list_sha256": "609773cf607d8c54314c6808e32e2c736eecc7326d3832ecd0eb622724718ff9"
+    },
+    {
+      "file": "player-2.json",
+      "player": "Player_2",
+      "script_count": 1,
+      "script_list_index": 14,
+      "script_list_sha256": "174df81df7250388d4430cea3d6c54ac2c9f8bffc15284eac48246f787624877"
+    },
+    {
+      "file": "player-3.json",
+      "player": "Player_3",
+      "script_count": 1,
+      "script_list_index": 15,
+      "script_list_sha256": "a5e2a54d53d4d6bd9d84628b6ae4bf9074b230f8d55002717bef75f8b2233975"
+    },
+    {
+      "file": "player-4.json",
+      "player": "Player_4",
+      "script_count": 0,
+      "script_list_index": 16,
+      "script_list_sha256": "fe737dcdc9a2971ea3ecd710fc405acce6e9bde7d6db74301d7fdbc6b49e90db"
+    },
+    {
+      "file": "player-5.json",
+      "player": "Player_5",
+      "script_count": 51,
+      "script_list_index": 17,
+      "script_list_sha256": "07ba22800e10eb31e85438e1f4d5d903ed1aa2789b82e3bed078d463ecb6217f"
+    },
+    {
+      "file": "player-6.json",
+      "player": "Player_6",
+      "script_count": 52,
+      "script_list_index": 18,
+      "script_list_sha256": "ec47c62fe239f2d15669aa403e1eba18dc6ab441afca03ec6c21940270ba28dd"
+    },
+    {
+      "file": "plyr-soviet.json",
+      "player": "PlyrSoviet",
+      "script_count": 0,
+      "script_list_index": 19,
+      "script_list_sha256": "fe737dcdc9a2971ea3ecd710fc405acce6e9bde7d6db74301d7fdbc6b49e90db"
+    }
+  ],
+  "player_scripts_sha256": "07e4aee47e7991e9f5bbafee692510cfc5fd284d63fc92620a82b9749d4c88cf",
+  "player_scripts_version": 1,
+  "schema_version": 1,
+  "script_count": 253,
+  "script_list_count": 20,
+  "source": {
+    "map_sha256": "5d821900fb69c04a036488fad7b47f01fd5a408f2a97b5c379d2182a94ef7d82"
+  },
+  "source_asset_names": [
+    [
+      "WaypointsList",
+      156
+    ],
+    [
+      "CameraAnimationList",
+      155
+    ],
+    [
+      "NamedCameras",
+      154
+    ],
+    [
+      "EnvironmentData",
+      153
+    ],
+    [
+      "PostEffectsChunk",
+      152
+    ],
+    [
+      "GlobalLighting",
+      151
+    ],
+    [
+      "StandingWaveAreas",
+      150
+    ],
+    [
+      "RiverAreas",
+      149
+    ],
+    [
+      "StandingWaterAreas",
+      148
+    ],
+    [
+      "MissionObjectives",
+      147
+    ],
+    [
+      "MissionHotSpots",
+      146
+    ],
+    [
+      "FogSettings",
+      145
+    ],
+    [
+      "GlobalWaterSettings",
+      144
+    ],
+    [
+      "TriggerAreas",
+      143
+    ],
+    [
+      "objectRadius",
+      142
+    ],
+    [
+      "scorchType",
+      141
+    ],
+    [
+      "alignToTerrain",
+      140
+    ],
+    [
+      "objectPrototypeScale",
+      139
+    ],
+    [
+      "objectName",
+      138
+    ],
+    [
+      "waypointTypeOption",
+      137
+    ],
+    [
+      "waypointName",
+      136
+    ],
+    [
+      "waypointID",
+      135
+    ],
+    [
+      "objectLayer",
+      134
+    ],
+    [
+      "uniqueID",
+      133
+    ],
+    [
+      "originalOwner",
+      132
+    ],
+    [
+      "objectBasePhase",
+      131
+    ],
+    [
+      "objectBasePriority",
+      130
+    ],
+    [
+      "objectSleeping",
+      129
+    ],
+    [
+      "objectTargetable",
+      128
+    ],
+    [
+      "objectRecruitableAI",
+      127
+    ],
+    [
+      "objectPowered",
+      126
+    ],
+    [
+      "objectUnsellable",
+      125
+    ],
+    [
+      "objectIndestructible",
+      124
+    ],
+    [
+      "objectEnabled",
+      123
+    ],
+    [
+      "objectInitialHealth",
+      122
+    ],
+    [
+      "Object",
+      121
+    ],
+    [
+      "ObjectsList",
+      120
+    ],
+    [
+      "BuildLists",
+      119
+    ],
+    [
+      "ScriptActionFalse",
+      118
+    ],
+    [
+      "NAMED_KILL",
+      117
+    ],
+    [
+      "UNIT_GIVE_EXPERIENCE_POINTS",
+      116
+    ],
+    [
+      "SKIRMISH_PLAYER_HAS_UNITS_IN_AREA",
+      115
+    ],
+    [
+      "UNIT_HAS_UPGRADE",
+      114
+    ],
+    [
+      "SET_REF_TO_NEREST_TEAM_OF_TYPE_OWNED_BY_PLAYER",
+      113
+    ],
+    [
+      "NAMED_DELETE",
+      112
+    ],
+    [
+      "PLAYER_SET_BASE_POWER",
+      111
+    ],
+    [
+      "PLAYER_HAS_COMPARISON_UNIT_TYPE_IN_TRIGGER_AREA",
+      110
+    ],
+    [
+      "CREATE_UNNAMED_ON_TEAM_AT_WAYPOINT",
+      109
+    ],
+    [
+      "MAP_REVEAL_ALL_PERM",
+      108
+    ],
+    [
+      "PLAYER_GRANT_SPECIAL_POWER",
+      107
+    ],
+    [
+      "TEAM_SET_STANCE",
+      106
+    ],
+    [
+      "ALLOW_DISALLOW_ONE_BUILDING",
+      105
+    ],
+    [
+      "PLAYER_HAS_POWER",
+      104
+    ],
+    [
+      "NAMED_USE_COMMANDBUTTON_ABILITY_AT_WAYPOINT",
+      103
+    ],
+    [
+      "NAMED_TRANSFER_OWNERSHIP_PLAYER",
+      102
+    ],
+    [
+      "CREATE_NAMED_ON_TEAM_AT_WAYPOINT",
+      101
+    ],
+    [
+      "DISABLE_SCRIPT",
+      100
+    ],
+    [
+      "NAMED_DESTROYED",
+      99
+    ],
+    [
+      "CREATE_NAMED_ON_TEAM_AT_WAYPOINT_WITH_ORIENTATION",
+      98
+    ],
+    [
+      "NAMED_USE_COMMANDBUTTON_ABILITY",
+      97
+    ],
+    [
+      "NAMED_OWNED_BY_PLAYER",
+      96
+    ],
+    [
+      "PLAYER_LOST_OBJECT_TYPE",
+      95
+    ],
+    [
+      "ENABLE_SCRIPT",
+      94
+    ],
+    [
+      "CREATE_UNNAMED_ON_TEAM_AT_WAYPOINT_WITH_ORIENTATION",
+      93
+    ],
+    [
+      "NAMED_INSIDE_AREA",
+      92
+    ],
+    [
+      "NAMED_NOT_DESTROYED",
+      91
+    ],
+    [
+      "PLAYER_HAS_OBJECT_COMPARISON",
+      90
+    ],
+    [
+      "COUNTER_SECONDS",
+      89
+    ],
+    [
+      "ScriptGroup",
+      88
+    ],
+    [
+      "STOP_TIMER",
+      87
+    ],
+    [
+      "DISPLAY_COUNTDOWN_TIMER",
+      86
+    ],
+    [
+      "SHOW_MILITARY_CAPTION",
+      85
+    ],
+    [
+      "OBJECT_CREATE_RADAR_EVENT",
+      84
+    ],
+    [
+      "SET_MILLISECOND_TIMER",
+      83
+    ],
+    [
+      "ADD_TO_MSEC_TIMER",
+      82
+    ],
+    [
+      "PLAYER_RELATES_PLAYER",
+      81
+    ],
+    [
+      "PLAYER_GIVE_MONEY",
+      80
+    ],
+    [
+      "PATH_MUSIC_PLAY_EVENT",
+      79
+    ],
+    [
+      "NAMED_SET_DISABLED",
+      78
+    ],
+    [
+      "OBJECTLIST_ADDOBJECTTYPE",
+      77
+    ],
+    [
+      "SET_REF_TO_NEREST_TEAM_OF_UNNAMED_TYPE_OWNED_BY_PLAYER",
+      76
+    ],
+    [
+      "ScriptAction",
+      75
+    ],
+    [
+      "CONDITION_TRUE",
+      74
+    ],
+    [
+      "Condition",
+      73
+    ],
+    [
+      "OrCondition",
+      72
+    ],
+    [
+      "Script",
+      71
+    ],
+    [
+      "ScriptList",
+      70
+    ],
+    [
+      "PlayerScriptsList",
+      69
+    ],
+    [
+      "exportWithScript",
+      68
+    ],
+    [
+      "teamIsAIRecruitable",
+      67
+    ],
+    [
+      "teamAutoReinforce",
+      66
+    ],
+    [
+      "teamAggressiveness",
+      65
+    ],
+    [
+      "teamDestroyedThreshold",
+      64
+    ],
+    [
+      "teamExecutesActionsOnCreate",
+      63
+    ],
+    [
+      "teamInitialIdleSeconds",
+      62
+    ],
+    [
+      "teamProductionPriorityFailureDecrease",
+      61
+    ],
+    [
+      "teamProductionPrioritySuccessIncrease",
+      60
+    ],
+    [
+      "teamMaxInstances",
+      59
+    ],
+    [
+      "teamDescription",
+      58
+    ],
+    [
+      "teamUnitMinCount7",
+      57
+    ],
+    [
+      "teamUnitMaxCount7",
+      56
+    ],
+    [
+      "teamUnitMinCount6",
+      55
+    ],
+    [
+      "teamUnitMaxCount6",
+      54
+    ],
+    [
+      "teamUnitMinCount5",
+      53
+    ],
+    [
+      "teamUnitMaxCount5",
+      52
+    ],
+    [
+      "teamUnitMinCount4",
+      51
+    ],
+    [
+      "teamUnitMaxCount4",
+      50
+    ],
+    [
+      "teamUnitMinCount3",
+      49
+    ],
+    [
+      "teamUnitMaxCount3",
+      48
+    ],
+    [
+      "teamUnitMinCount2",
+      47
+    ],
+    [
+      "teamUnitMaxCount2",
+      46
+    ],
+    [
+      "teamUnitMinCount1",
+      45
+    ],
+    [
+      "teamUnitMaxCount1",
+      44
+    ],
+    [
+      "teamProductionPriority",
+      43
+    ],
+    [
+      "teamIsSingleton",
+      42
+    ],
+    [
+      "teamOwner",
+      41
+    ],
+    [
+      "teamName",
+      40
+    ],
+    [
+      "Teams",
+      39
+    ],
+    [
+      "LibraryMaps",
+      38
+    ],
+    [
+      "LibraryMapLists",
+      37
+    ],
+    [
+      "playerFactionIcon",
+      36
+    ],
+    [
+      "playerRadarColor",
+      35
+    ],
+    [
+      "aiPersonality",
+      34
+    ],
+    [
+      "aiOpeningMover",
+      33
+    ],
+    [
+      "aiTactical",
+      32
+    ],
+    [
+      "aiScienceUpgrader",
+      31
+    ],
+    [
+      "aiUnitUpgrader",
+      30
+    ],
+    [
+      "aiWallBuilder",
+      29
+    ],
+    [
+      "aiEconomyBuilder",
+      28
+    ],
+    [
+      "aiTeamBuilder",
+      27
+    ],
+    [
+      "aiUnitBuilder",
+      26
+    ],
+    [
+      "aiBaseBuilder",
+      25
+    ],
+    [
+      "playerColor",
+      24
+    ],
+    [
+      "playerEnemies",
+      23
+    ],
+    [
+      "playerAllies",
+      22
+    ],
+    [
+      "playerFaction",
+      21
+    ],
+    [
+      "playerDisplayName",
+      20
+    ],
+    [
+      "playerIsHuman",
+      19
+    ],
+    [
+      "playerName",
+      18
+    ],
+    [
+      "SidesList",
+      17
+    ],
+    [
+      "MPPositionInfo",
+      16
+    ],
+    [
+      "MPPositionList",
+      15
+    ],
+    [
+      "terrainTextureStrings",
+      14
+    ],
+    [
+      "weather",
+      13
+    ],
+    [
+      "isScenarioMultiplayer",
+      12
+    ],
+    [
+      "cameraGroundMaxHeight",
+      11
+    ],
+    [
+      "cameraGroundMinHeight",
+      10
+    ],
+    [
+      "compression",
+      9
+    ],
+    [
+      "mapDescription",
+      8
+    ],
+    [
+      "mapName",
+      7
+    ],
+    [
+      "musicZone",
+      6
+    ],
+    [
+      "WorldInfo",
+      5
+    ],
+    [
+      "BlendTileData",
+      4
+    ],
+    [
+      "HeightMapData",
+      3
+    ],
+    [
+      "GlobalVersion",
+      2
+    ],
+    [
+      "AssetList",
+      1
+    ]
+  ]
+}

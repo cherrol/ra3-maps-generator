@@ -1,0 +1,24 @@
+{
+  "kind": "native_player_script_extract",
+  "native_text_encoding": "Latin-1 byte mapping, matching scripts::Node; decode original GBK bytes only for display",
+  "references": {
+    "by_argument_kind": [],
+    "requires_source_context": true,
+    "scope": "All nonempty string arguments, including reads, writes and local definitions; not a resolved dependency graph"
+  },
+  "schema_version": 1,
+  "scripts": [
+    {
+      "asset": "ScriptList",
+      "children": [],
+      "version": 1
+    }
+  ],
+  "source": {
+    "player": "Player_4",
+    "ruleset_sha256": "82559011ebd002d7f662a2400fcf01f31ce7de73a1d33b3fd7d89bc7b0147508",
+    "script_count": 0,
+    "script_list_index": 14,
+    "script_list_sha256": "d546df0ac1a2fa018d9f100eaa5f0728b181cb1c694cd945fe90dce7bfbd4106"
+  }
+}

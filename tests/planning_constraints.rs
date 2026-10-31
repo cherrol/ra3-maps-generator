@@ -241,8 +241,8 @@ fn new_rectangular_preflight_is_read_only_and_marks_incomplete_coverage() {
     fs::create_dir_all(p.map_dir()).unwrap();
     fs::create_dir_all(root.join("templates")).unwrap();
     fs::copy(
-        repository.join("templates/8p_template.map"),
-        root.join("templates/8p_template.map"),
+        repository.join("templates/template.map"),
+        root.join("templates/template.map"),
     )
     .unwrap();
     let raw = vec![5376u16; 64 * 96];

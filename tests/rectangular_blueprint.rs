@@ -73,7 +73,7 @@ fn wide_and_tall_blueprints_roundtrip_native_heights_masks_and_materials() {
         assert_eq!(Terrain::load(&p).unwrap().raw, raw);
         assert_eq!(Frame::from_project(&p).height, height);
         let s = Surface::generate(&t, &p).unwrap();
-        let mut native = MapFile::load(repository.join("templates/8p_template.map")).unwrap();
+        let mut native = MapFile::load(repository.join("templates/template.map")).unwrap();
         let original_hm = HeightMap::parse(native.get("HeightMapData").unwrap()).unwrap();
         let original_bt = BlendTiles::parse(
             native.get("BlendTileData").unwrap(),
@@ -91,9 +91,11 @@ fn wide_and_tall_blueprints_roundtrip_native_heights_masks_and_materials() {
         native.get_mut("HeightMapData").unwrap().payload = hm.encode().unwrap();
         native.get_mut("BlendTileData").unwrap().payload =
             s.encode(width, &original_bt.blend_descriptions).unwrap();
-        // Use an empty object list: this test exercises terrain, not template seats.
+        // Exclude template gameplay: this test exercises terrain, and its empty
+        // object list cannot satisfy reference-map script waypoint dependencies.
         native.get_mut("ObjectsList").unwrap().payload =
             ra3maps::formats::map::write_objects(&[], &native).unwrap();
+        native.get_mut("PlayerScriptsList").unwrap().payload.clear();
         let bt = BlendTiles::parse(native.get("BlendTileData").unwrap(), width, height).unwrap();
         assert_eq!(terrain::flip(&bt.impassability, width), s.impassable);
         assert_eq!(terrain::flip(&bt.buildability, width), s.build_block);

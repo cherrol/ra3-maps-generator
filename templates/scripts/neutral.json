@@ -1,0 +1,3114 @@
+{
+  "kind": "native_player_script_extract",
+  "native_text_encoding": "Latin-1 byte mapping, matching scripts::Node; decode original GBK bytes only for display",
+  "references": {
+    "by_argument_kind": [
+      {
+        "argument_kind": 2,
+        "meaning": "script_or_group",
+        "values": [
+          "PlyrCreeps/±øÓª1´Ý»ÙÅÐ¶¨",
+          "PlyrCreeps/±øÓª2´Ý»ÙÅÐ¶¨",
+          "PlyrCreeps/´¬³§1´Ý»ÙÅÐ¶¨",
+          "PlyrCreeps/´¬³§2´Ý»ÙÅÐ¶¨",
+          "PlyrCreeps/´¬³§3´Ý»ÙÅÐ¶¨",
+          "PlyrCreeps/ÖØ¹¤1´Ý»ÙÅÐ¶¨",
+          "PlyrCreeps/ÖØ¹¤2´Ý»ÙÅÐ¶¨",
+          "S Air Build",
+          "S T3",
+          "Soviet Barrack Build T2",
+          "Soviet Factroy Build T2",
+          "Soviet Factroy Build T3",
+          "T3Build",
+          "T3BuildRES",
+          "big plant RES",
+          "big plant__1",
+          "±øÓª1",
+          "±øÓª1¶ªÊ§ÅÐ¶¨",
+          "±øÓª2",
+          "±øÓª2¶ªÊ§ÅÐ¶¨",
+          "´¬³§1",
+          "´¬³§1¶ªÊ§ÅÐ¶¨",
+          "´¬³§2",
+          "´¬³§2¶ªÊ§ÅÐ¶¨",
+          "´¬³§3",
+          "´¬³§3¶ªÊ§ÅÐ¶¨",
+          "¸ß¿Æ",
+          "¸ß¿Æ¶ªÊ§ÅÐ¶¨",
+          "ÖØ¹¤",
+          "ÖØ¹¤1¶ªÊ§ÅÐ¶¨",
+          "ÖØ¹¤2",
+          "ÖØ¹¤2¶ªÊ§ÅÐ¶¨"
+        ]
+      },
+      {
+        "argument_kind": 3,
+        "meaning": "team",
+        "values": [
+          "PlyrCivilian/teamPlyrCivilian",
+          "PlyrCreeps/teamPlyrCreeps"
+        ]
+      },
+      {
+        "argument_kind": 4,
+        "meaning": "counter_or_timer",
+        "values": [
+          "Game Start",
+          "jpBAR1Build",
+          "jpBAR2Build",
+          "jpGAOBuild",
+          "jpNaval1Build",
+          "jpNaval2Build",
+          "jpNaval3Build",
+          "jpWAR1Build",
+          "jpWAR2Build"
+        ]
+      },
+      {
+        "argument_kind": 7,
+        "meaning": "waypoint",
+        "values": [
+          "S Barrack",
+          "S Factroy",
+          "S air",
+          "S expand",
+          "S expand2",
+          "Waypoint expand",
+          "Waypoint expand3",
+          "Waypoint expandS",
+          "plant",
+          "t3"
+        ]
+      },
+      {
+        "argument_kind": 9,
+        "meaning": "trigger_area",
+        "values": [
+          "AreaSMCV"
+        ]
+      },
+      {
+        "argument_kind": 11,
+        "meaning": "player",
+        "values": [
+          "<1st Human Player's Allies incl Self>",
+          "Player_1",
+          "Player_2",
+          "Player_3",
+          "Player_4",
+          "Player_5",
+          "Player_6",
+          "PlyrCivilian",
+          "PlyrCreeps"
+        ]
+      },
+      {
+        "argument_kind": 14,
+        "meaning": "named_object_or_reference",
+        "values": [
+          "Japan MCV1",
+          "S Barrack",
+          "S Factroy",
+          "SAir",
+          "Soviet Barrack",
+          "Soviet Factroy",
+          "Soviet MCV",
+          "expand1",
+          "expand2",
+          "´óµç",
+          "Å£ÍÜ1",
+          "Å£ÍÜ2",
+          "Å£ÍÜ3",
+          "Å£ÍÜ4"
+        ]
+      },
+      {
+        "argument_kind": 15,
+        "meaning": "object_type",
+        "values": [
+          "alliedairfield",
+          "alliedantinavyshiptech1",
+          "alliedantistructureship",
+          "alliedbarracks",
+          "alliedconstructionyard",
+          "alliednavalyard",
+          "alliedpowerplant",
+          "alliedrefinery",
+          "alliedsuperweapon",
+          "alliedsuperweaponadvanced",
+          "alliedtechstructure",
+          "alliedwarfactory",
+          "japanantistructureship",
+          "japanantivehicleship",
+          "japanantivehiclevehicletech1_naval",
+          "japanbarracks",
+          "japanconstructionyard",
+          "japannavalyard",
+          "japannavalyardegg",
+          "japanpowerplant",
+          "japanrefinery",
+          "japansuperweapon",
+          "japansuperweaponadvanced",
+          "japantechstructure",
+          "japanwarfactory",
+          "sovietairfield",
+          "sovietantinavyshiptech2",
+          "sovietantistructureship",
+          "sovietbarracks",
+          "sovietcrane",
+          "sovietnavalyard",
+          "sovietpowerplant",
+          "sovietpowerplantadvanced",
+          "sovietrefinery",
+          "sovietsuperweapon",
+          "sovietsuperweaponadvanced",
+          "sovietsurveyor",
+          "soviettechstructure",
+          "sovietwarfactory"
+        ]
+      },
+      {
+        "argument_kind": 19,
+        "meaning": "other",
+        "values": [
+          "Enemy",
+          "Friend"
+        ]
+      },
+      {
+        "argument_kind": 25,
+        "meaning": "other",
+        "values": [
+          "SCRIPT:A00_Game Start",
+          "SCRIPT:A00_Welcome"
+        ]
+      },
+      {
+        "argument_kind": 31,
+        "meaning": "other",
+        "values": [
+          "specialpowerjapanenhancedkamikaze",
+          "specialpowerjapanroboticassembly"
+        ]
+      },
+      {
+        "argument_kind": 34,
+        "meaning": "command_button",
+        "values": [
+          "Command_ConstructJapanBarracksEgg",
+          "Command_ConstructJapanNavalYardEgg",
+          "Command_ConstructJapanPowerPlantEgg",
+          "Command_ConstructJapanRefineryEgg",
+          "Command_ConstructJapanSuperWeaponAdvancedEgg",
+          "Command_ConstructJapanTechStructureEgg",
+          "Command_ConstructJapanWarFactoryEgg",
+          "Command_ConstructSovietAntiAirShip_Ground",
+          "Command_ConstructSovietAntiGroundAircraft",
+          "Command_ConstructSovietAntiInfantryInfantry",
+          "Command_ConstructSovietAntiStructureVehicle",
+          "Command_ConstructSovietAntiVehicleInfantry",
+          "Command_ConstructSovietAntiVehicleVehicleTech1",
+          "Command_ConstructSovietAntiVehicleVehicleTech3",
+          "Command_ConstructSovietFighterAircraft",
+          "Command_ConstructSovietHeavyAntiVehicleInfantry",
+          "Command_ConstructSovietSurveyor",
+          "Command_UnPackSovietSurveyor"
+        ]
+      },
+      {
+        "argument_kind": 48,
+        "meaning": "object_list",
+        "values": [
+          "naval",
+          "t2naval",
+          "½¨Öþ"
+        ]
+      },
+      {
+        "argument_kind": 54,
+        "meaning": "object_reference",
+        "values": [
+          "Soviet Barrack",
+          "Soviet Factroy"
+        ]
+      },
+      {
+        "argument_kind": 61,
+        "meaning": "object_type_or_list",
+        "values": [
+          "alliednavalyard",
+          "japanbarracks",
+          "japanbarracksegg",
+          "japannavalyard",
+          "japannavalyardegg",
+          "japanrefinery",
+          "japansuperweaponadvanced",
+          "japansuperweaponadvancedegg",
+          "japantechstructure",
+          "japantechstructureegg",
+          "japanwarfactory",
+          "japanwarfactoryegg",
+          "naval",
+          "sovietairfield",
+          "sovietantivehiclevehicletech1",
+          "sovietantivehiclevehicletech3",
+          "sovietbarracks",
+          "sovietheavyantivehicleinfantry",
+          "sovietnavalyard",
+          "sovietpowerplantadvanced",
+          "sovietrefinery",
+          "sovietsurveyor",
+          "soviettechstructure",
+          "sovietwarfactory"
+        ]
+      },
+      {
+        "argument_kind": 95,
+        "meaning": "other",
+        "values": [
+          "UNMANNED"
+        ]
+      },
+      {
+        "argument_kind": 96,
+        "meaning": "other",
+        "values": [
+          "S_S01Hermitage",
+          "S_S04KrukovTellsYouOff",
+          "S_S05MykonosDownload",
+          "S_S06Krukov",
+          "S_S07FujiRobot"
+        ]
+      }
+    ],
+    "requires_source_context": true,
+    "scope": "All nonempty string arguments, including reads, writes and local definitions; not a resolved dependency graph"
+  },
+  "schema_version": 1,
+  "scripts": [
+    {
+      "asset": "ScriptList",
+      "children": [
+        {
+          "asset": "Script",
+          "children": [
+            {
+              "asset": "OrCondition",
+              "children": [
+                {
+                  "asset": "Condition",
+                  "body": "0300000003000000000000000100000000000000",
+                  "command": "CONDITION_TRUE",
+                  "version": 6
+                }
+              ],
+              "version": 1
+            },
+            {
+              "asset": "ScriptAction",
+              "body": "7301000003000000040000003d00000000000000000000001000736f76696574776172666163746f72790b00000000000000000000000c00506c7972436976696c69616e0300000000000000000000001d00506c7972436976696c69616e2f7465616d506c7972436976696c69616e3600000000000000000000000e00536f766965742046616374726f7901000000",
+              "command": "SET_REF_TO_NEREST_TEAM_OF_UNNAMED_TYPE_OWNED_BY_PLAYER",
+              "version": 3
+            },
+            {
+              "asset": "ScriptAction",
+              "body": "7301000003000000040000003d00000000000000000000000e00736f766965746261727261636b730b00000000000000000000000c00506c7972436976696c69616e0300000000000000000000001d00506c7972436976696c69616e2f7465616d506c7972436976696c69616e3600000000000000000000000e00536f76696574204261727261636b01000000",
+              "command": "SET_REF_TO_NEREST_TEAM_OF_UNNAMED_TYPE_OWNED_BY_PLAYER",
+              "version": 3
+            }
+          ],
+          "prefix": "040066696e6400000000000001000101010001000000000000000000010000010058",
+          "version": 4
+        },
+        {
+          "asset": "Script",
+          "children": [
+            {
+              "asset": "OrCondition",
+              "children": [
+                {
+                  "asset": "Condition",
+                  "body": "0300000003000000000000000100000000000000",
+                  "command": "CONDITION_TRUE",
+                  "version": 6
+                }
+              ],
+              "version": 1
+            },
+            {
+              "asset": "ScriptAction",
+              "body": "d800000003000000020000000f00000000000000000000001700736f76696574616e74696e617679736869707465636832300000000000000000000000070074326e6176616c01000000",
+              "command": "OBJECTLIST_ADDOBJECTTYPE",
+              "version": 3
+            },
+            {
+              "asset": "ScriptAction",
+              "body": "d800000003000000020000000f00000000000000000000001700616c6c696564616e74696e617679736869707465636831300000000000000000000000070074326e6176616c01000000",
+              "command": "OBJECTLIST_ADDOBJECTTYPE",
+              "version": 3
+            },
+            {
+              "asset": "ScriptAction",
+              "body": "d800000003000000020000000f000000000000000000000022006a6170616e616e746976656869636c6576656869636c6574656368315f6e6176616c300000000000000000000000070074326e6176616c01000000",
+              "command": "OBJECTLIST_ADDOBJECTTYPE",
+              "version": 3
+            },
+            {
+              "asset": "ScriptAction",
+              "body": "d800000003000000020000000f000000000000000000000014006a6170616e616e746976656869636c6573686970300000000000000000000000070074326e6176616c01000000",
+              "command": "OBJECTLIST_ADDOBJECTTYPE",
+              "version": 3
+            },
+            {
+              "asset": "ScriptAction",
+              "body": "d800000003000000020000000f00000000000000000000001700736f76696574616e746973747275637475726573686970300000000000000000000000070074326e6176616c01000000",
+              "command": "OBJECTLIST_ADDOBJECTTYPE",
+              "version": 3
+            },
+            {
+              "asset": "ScriptAction",
+              "body": "d800000003000000020000000f00000000000000000000001700616c6c696564616e746973747275637475726573686970300000000000000000000000070074326e6176616c01000000",
+              "command": "OBJECTLIST_ADDOBJECTTYPE",
+              "version": 3
+            },
+            {
+              "asset": "ScriptAction",
+              "body": "d800000003000000020000000f000000000000000000000016006a6170616e616e746973747275637475726573686970300000000000000000000000070074326e6176616c01000000",
+              "command": "OBJECTLIST_ADDOBJECTTYPE",
+              "version": 3
+            },
+            {
+              "asset": "ScriptAction",
+              "body": "d800000003000000020000000f00000000000000000000000f00736f766965746e6176616c7961726430000000000000000000000005006e6176616c01000000",
+              "command": "OBJECTLIST_ADDOBJECTTYPE",
+              "version": 3
+            },
+            {
+              "asset": "ScriptAction",
+              "body": "d800000003000000020000000f00000000000000000000000e006a6170616e6e6176616c7961726430000000000000000000000005006e6176616c01000000",
+              "command": "OBJECTLIST_ADDOBJECTTYPE",
+              "version": 3
+            },
+            {
+              "asset": "ScriptAction",
+              "body": "d800000003000000020000000f00000000000000000000000f00616c6c6965646e6176616c7961726430000000000000000000000005006e6176616c01000000",
+              "command": "OBJECTLIST_ADDOBJECTTYPE",
+              "version": 3
+            },
+            {
+              "asset": "ScriptAction",
+              "body": "d800000003000000020000000f00000000000000000000000e00616c6c6965646169726669656c643000000000000000000000000400bda8d6fe01000000",
+              "command": "OBJECTLIST_ADDOBJECTTYPE",
+              "version": 3
+            },
+            {
+              "asset": "ScriptAction",
+              "body": "d800000003000000020000000f00000000000000000000000e00616c6c6965646261727261636b733000000000000000000000000400bda8d6fe01000000",
+              "command": "OBJECTLIST_ADDOBJECTTYPE",
+              "version": 3
+            },
+            {
+              "asset": "ScriptAction",
+              "body": "d800000003000000020000000f00000000000000000000001600616c6c696564636f6e737472756374696f6e796172643000000000000000000000000400bda8d6fe01000000",
+              "command": "OBJECTLIST_ADDOBJECTTYPE",
+              "version": 3
+            },
+            {
+              "asset": "ScriptAction",
+              "body": "d800000003000000020000000f00000000000000000000000f00616c6c6965646e6176616c796172643000000000000000000000000400bda8d6fe01000000",
+              "command": "OBJECTLIST_ADDOBJECTTYPE",
+              "version": 3
+            },
+            {
+              "asset": "ScriptAction",
+              "body": "d800000003000000020000000f00000000000000000000001000616c6c696564706f776572706c616e743000000000000000000000000400bda8d6fe01000000",
+              "command": "OBJECTLIST_ADDOBJECTTYPE",
+              "version": 3
+            },
+            {
+              "asset": "ScriptAction",
+              "body": "d800000003000000020000000f00000000000000000000000e00616c6c696564726566696e6572793000000000000000000000000400bda8d6fe01000000",
+              "command": "OBJECTLIST_ADDOBJECTTYPE",
+              "version": 3
+            },
+            {
+              "asset": "ScriptAction",
+              "body": "d800000003000000020000000f00000000000000000000001100616c6c6965647375706572776561706f6e3000000000000000000000000400bda8d6fe01000000",
+              "command": "OBJECTLIST_ADDOBJECTTYPE",
+              "version": 3
+            },
+            {
+              "asset": "ScriptAction",
+              "body": "d800000003000000020000000f00000000000000000000001900616c6c6965647375706572776561706f6e616476616e6365643000000000000000000000000400bda8d6fe01000000",
+              "command": "OBJECTLIST_ADDOBJECTTYPE",
+              "version": 3
+            },
+            {
+              "asset": "ScriptAction",
+              "body": "d800000003000000020000000f00000000000000000000001300616c6c696564746563687374727563747572653000000000000000000000000400bda8d6fe01000000",
+              "command": "OBJECTLIST_ADDOBJECTTYPE",
+              "version": 3
+            },
+            {
+              "asset": "ScriptAction",
+              "body": "d800000003000000020000000f00000000000000000000001000616c6c696564776172666163746f72793000000000000000000000000400bda8d6fe01000000",
+              "command": "OBJECTLIST_ADDOBJECTTYPE",
+              "version": 3
+            },
+            {
+              "asset": "ScriptAction",
+              "body": "d800000003000000020000000f00000000000000000000000d006a6170616e6261727261636b733000000000000000000000000400bda8d6fe01000000",
+              "command": "OBJECTLIST_ADDOBJECTTYPE",
+              "version": 3
+            },
+            {
+              "asset": "ScriptAction",
+              "body": "d800000003000000020000000f000000000000000000000015006a6170616e636f6e737472756374696f6e796172643000000000000000000000000400bda8d6fe01000000",
+              "command": "OBJECTLIST_ADDOBJECTTYPE",
+              "version": 3
+            },
+            {
+              "asset": "ScriptAction",
+              "body": "d800000003000000020000000f00000000000000000000000e006a6170616e6e6176616c796172643000000000000000000000000400bda8d6fe01000000",
+              "command": "OBJECTLIST_ADDOBJECTTYPE",
+              "version": 3
+            },
+            {
+              "asset": "ScriptAction",
+              "body": "d800000003000000020000000f00000000000000000000000f006a6170616e706f776572706c616e743000000000000000000000000400bda8d6fe01000000",
+              "command": "OBJECTLIST_ADDOBJECTTYPE",
+              "version": 3
+            },
+            {
+              "asset": "ScriptAction",
+              "body": "d800000003000000020000000f00000000000000000000000d006a6170616e726566696e6572793000000000000000000000000400bda8d6fe01000000",
+              "command": "OBJECTLIST_ADDOBJECTTYPE",
+              "version": 3
+            },
+            {
+              "asset": "ScriptAction",
+              "body": "d800000003000000020000000f000000000000000000000010006a6170616e7375706572776561706f6e3000000000000000000000000400bda8d6fe01000000",
+              "command": "OBJECTLIST_ADDOBJECTTYPE",
+              "version": 3
+            },
+            {
+              "asset": "ScriptAction",
+              "body": "d800000003000000020000000f000000000000000000000018006a6170616e7375706572776561706f6e616476616e6365643000000000000000000000000400bda8d6fe01000000",
+              "command": "OBJECTLIST_ADDOBJECTTYPE",
+              "version": 3
+            },
+            {
+              "asset": "ScriptAction",
+              "body": "d800000003000000020000000f000000000000000000000012006a6170616e746563687374727563747572653000000000000000000000000400bda8d6fe01000000",
+              "command": "OBJECTLIST_ADDOBJECTTYPE",
+              "version": 3
+            },
+            {
+              "asset": "ScriptAction",
+              "body": "d800000003000000020000000f00000000000000000000000f006a6170616e776172666163746f72793000000000000000000000000400bda8d6fe01000000",
+              "command": "OBJECTLIST_ADDOBJECTTYPE",
+              "version": 3
+            },
+            {
+              "asset": "ScriptAction",
+              "body": "d800000003000000020000000f00000000000000000000000e00736f766965746169726669656c643000000000000000000000000400bda8d6fe01000000",
+              "command": "OBJECTLIST_ADDOBJECTTYPE",
+              "version": 3
+            },
+            {
+              "asset": "ScriptAction",
+              "body": "d800000003000000020000000f00000000000000000000000e00736f766965746261727261636b733000000000000000000000000400bda8d6fe01000000",
+              "command": "OBJECTLIST_ADDOBJECTTYPE",
+              "version": 3
+            },
+            {
+              "asset": "ScriptAction",
+              "body": "d800000003000000020000000f00000000000000000000000b00736f766965746372616e653000000000000000000000000400bda8d6fe01000000",
+              "command": "OBJECTLIST_ADDOBJECTTYPE",
+              "version": 3
+            },
+            {
+              "asset": "ScriptAction",
+              "body": "d800000003000000020000000f00000000000000000000000f00736f766965746e6176616c796172643000000000000000000000000400bda8d6fe01000000",
+              "command": "OBJECTLIST_ADDOBJECTTYPE",
+              "version": 3
+            },
+            {
+              "asset": "ScriptAction",
+              "body": "d800000003000000020000000f00000000000000000000001000736f76696574706f776572706c616e743000000000000000000000000400bda8d6fe01000000",
+              "command": "OBJECTLIST_ADDOBJECTTYPE",
+              "version": 3
+            },
+            {
+              "asset": "ScriptAction",
+              "body": "d800000003000000020000000f00000000000000000000001800736f76696574706f776572706c616e74616476616e6365643000000000000000000000000400bda8d6fe01000000",
+              "command": "OBJECTLIST_ADDOBJECTTYPE",
+              "version": 3
+            },
+            {
+              "asset": "ScriptAction",
+              "body": "d800000003000000020000000f00000000000000000000000e00736f76696574726566696e6572793000000000000000000000000400bda8d6fe01000000",
+              "command": "OBJECTLIST_ADDOBJECTTYPE",
+              "version": 3
+            },
+            {
+              "asset": "ScriptAction",
+              "body": "d800000003000000020000000f00000000000000000000001100736f766965747375706572776561706f6e3000000000000000000000000400bda8d6fe01000000",
+              "command": "OBJECTLIST_ADDOBJECTTYPE",
+              "version": 3
+            },
+            {
+              "asset": "ScriptAction",
+              "body": "d800000003000000020000000f00000000000000000000001900736f766965747375706572776561706f6e616476616e6365643000000000000000000000000400bda8d6fe01000000",
+              "command": "OBJECTLIST_ADDOBJECTTYPE",
+              "version": 3
+            },
+            {
+              "asset": "ScriptAction",
+              "body": "d800000003000000020000000f00000000000000000000001300736f76696574746563687374727563747572653000000000000000000000000400bda8d6fe01000000",
+              "command": "OBJECTLIST_ADDOBJECTTYPE",
+              "version": 3
+            },
+            {
+              "asset": "ScriptAction",
+              "body": "d800000003000000020000000f00000000000000000000001000736f76696574776172666163746f72793000000000000000000000000400bda8d6fe01000000",
+              "command": "OBJECTLIST_ADDOBJECTTYPE",
+              "version": 3
+            }
+          ],
+          "prefix": "03006f626a00000000000001010101010000000000000000000000010000010058",
+          "version": 4
+        },
+        {
+          "asset": "Script",
+          "children": [
+            {
+              "asset": "OrCondition",
+              "children": [
+                {
+                  "asset": "Condition",
+                  "body": "0300000003000000000000000100000000000000",
+                  "command": "CONDITION_TRUE",
+                  "version": 6
+                }
+              ],
+              "version": 1
+            },
+            {
+              "asset": "ScriptAction",
+              "body": "1802000003000000030000000e00000000000000000000000500c5a3cddc315f00000000000000000000000800554e4d414e4e4544080000000100000000000000000001000000",
+              "command": "NAMED_SET_DISABLED",
+              "version": 3
+            },
+            {
+              "asset": "ScriptAction",
+              "body": "1802000003000000030000000e00000000000000000000000500c5a3cddc325f00000000000000000000000800554e4d414e4e4544080000000100000000000000000001000000",
+              "command": "NAMED_SET_DISABLED",
+              "version": 3
+            },
+            {
+              "asset": "ScriptAction",
+              "body": "1802000003000000030000000e00000000000000000000000500c5a3cddc335f00000000000000000000000800554e4d414e4e4544080000000100000000000000000001000000",
+              "command": "NAMED_SET_DISABLED",
+              "version": 3
+            },
+            {
+              "asset": "ScriptAction",
+              "body": "1802000003000000030000000e00000000000000000000000500c5a3cddc345f00000000000000000000000800554e4d414e4e4544080000000100000000000000000001000000",
+              "command": "NAMED_SET_DISABLED",
+              "version": 3
+            }
+          ],
+          "prefix": "0800c5a3cddcd7b4ccac00000000000001010101010000000000000000000000010000010058",
+          "version": 4
+        },
+        {
+          "asset": "Script",
+          "children": [
+            {
+              "asset": "OrCondition",
+              "children": [
+                {
+                  "asset": "Condition",
+                  "body": "0300000003000000000000000100000000000000",
+                  "command": "CONDITION_TRUE",
+                  "version": 6
+                }
+              ],
+              "version": 1
+            },
+            {
+              "asset": "ScriptAction",
+              "body": "1f02000003000000010000006000000000000000000000000e00535f5330314865726d697461676500000000",
+              "command": "PATH_MUSIC_PLAY_EVENT",
+              "version": 3
+            },
+            {
+              "asset": "ScriptAction",
+              "body": "1f02000003000000010000006000000000000000000000001600535f5330344b72756b6f7654656c6c73596f754f666600000000",
+              "command": "PATH_MUSIC_PLAY_EVENT",
+              "version": 3
+            },
+            {
+              "asset": "ScriptAction",
+              "body": "1f02000003000000010000006000000000000000000000001400535f5330354d796b6f6e6f73446f776e6c6f616400000000",
+              "command": "PATH_MUSIC_PLAY_EVENT",
+              "version": 3
+            },
+            {
+              "asset": "ScriptAction",
+              "body": "1f02000003000000010000006000000000000000000000000b00535f5330364b72756b6f7600000000",
+              "command": "PATH_MUSIC_PLAY_EVENT",
+              "version": 3
+            },
+            {
+              "asset": "ScriptAction",
+              "body": "1f02000003000000010000006000000000000000000000000e00535f53303746756a69526f626f7401000000",
+              "command": "PATH_MUSIC_PLAY_EVENT",
+              "version": 3
+            }
+          ],
+          "prefix": "05004d757369630000000001003201010101010000000000000000000000010000010058",
+          "version": 4
+        },
+        {
+          "asset": "Script",
+          "children": [
+            {
+              "asset": "OrCondition",
+              "children": [
+                {
+                  "asset": "Condition",
+                  "body": "0300000003000000000000000100000000000000",
+                  "command": "CONDITION_TRUE",
+                  "version": 6
+                }
+              ],
+              "version": 1
+            },
+            {
+              "asset": "ScriptAction",
+              "body": "8100000003000000020000000b00000000000000000000000800506c617965725f3500000000e803000000000000000001000000",
+              "command": "PLAYER_GIVE_MONEY",
+              "version": 3
+            },
+            {
+              "asset": "ScriptAction",
+              "body": "8100000003000000020000000b00000000000000000000000800506c617965725f3600000000e803000000000000000001000000",
+              "command": "PLAYER_GIVE_MONEY",
+              "version": 3
+            },
+            {
+              "asset": "ScriptAction",
+              "body": "8100000003000000020000000b00000000000000000000000c00506c7972436976696c69616e00000000c409000000000000000001000000",
+              "command": "PLAYER_GIVE_MONEY",
+              "version": 3
+            },
+            {
+              "asset": "ScriptAction",
+              "body": "8100000003000000020000000b00000000000000000000000a00506c797243726565707300000000b80b000000000000000001000000",
+              "command": "PLAYER_GIVE_MONEY",
+              "version": 3
+            }
+          ],
+          "prefix": "07006d6f6e657931310000000000000100010101000a000000000000000000010000010058",
+          "version": 4
+        },
+        {
+          "asset": "Script",
+          "children": [
+            {
+              "asset": "OrCondition",
+              "children": [
+                {
+                  "asset": "Condition",
+                  "body": "0300000003000000000000000100000000000000",
+                  "command": "CONDITION_TRUE",
+                  "version": 6
+                }
+              ],
+              "version": 1
+            },
+            {
+              "asset": "ScriptAction",
+              "body": "4e00000003000000030000000b00000000000000000000000800506c617965725f310b00000000000000000000000c00506c7972436976696c69616e1300000000000000000000000500456e656d7901000000",
+              "command": "PLAYER_RELATES_PLAYER",
+              "version": 3
+            },
+            {
+              "asset": "ScriptAction",
+              "body": "4e00000003000000030000000b00000000000000000000000800506c617965725f310b00000000000000000000000a00506c79724372656570731300000000000000000000000500456e656d7901000000",
+              "command": "PLAYER_RELATES_PLAYER",
+              "version": 3
+            },
+            {
+              "asset": "ScriptAction",
+              "body": "4e00000003000000030000000b00000000000000000000000800506c617965725f310b00000000000000000000000800506c617965725f351300000000000000000000000500456e656d7901000000",
+              "command": "PLAYER_RELATES_PLAYER",
+              "version": 3
+            },
+            {
+              "asset": "ScriptAction",
+              "body": "4e00000003000000030000000b00000000000000000000000800506c617965725f310b00000000000000000000000800506c617965725f361300000000000000000000000500456e656d7901000000",
+              "command": "PLAYER_RELATES_PLAYER",
+              "version": 3
+            },
+            {
+              "asset": "ScriptAction",
+              "body": "4e00000003000000030000000b00000000000000000000000800506c617965725f320b00000000000000000000000c00506c7972436976696c69616e1300000000000000000000000500456e656d7901000000",
+              "command": "PLAYER_RELATES_PLAYER",
+              "version": 3
+            },
+            {
+              "asset": "ScriptAction",
+              "body": "4e00000003000000030000000b00000000000000000000000800506c617965725f320b00000000000000000000000a00506c79724372656570731300000000000000000000000500456e656d7901000000",
+              "command": "PLAYER_RELATES_PLAYER",
+              "version": 3
+            },
+            {
+              "asset": "ScriptAction",
+              "body": "4e00000003000000030000000b00000000000000000000000800506c617965725f320b00000000000000000000000800506c617965725f351300000000000000000000000500456e656d7901000000",
+              "command": "PLAYER_RELATES_PLAYER",
+              "version": 3
+            },
+            {
+              "asset": "ScriptAction",
+              "body": "4e00000003000000030000000b00000000000000000000000800506c617965725f320b00000000000000000000000800506c617965725f361300000000000000000000000500456e656d7901000000",
+              "command": "PLAYER_RELATES_PLAYER",
+              "version": 3
+            },
+            {
+              "asset": "ScriptAction",
+              "body": "4e00000003000000030000000b00000000000000000000000800506c617965725f330b00000000000000000000000c00506c7972436976696c69616e1300000000000000000000000500456e656d7901000000",
+              "command": "PLAYER_RELATES_PLAYER",
+              "version": 3
+            },
+            {
+              "asset": "ScriptAction",
+              "body": "4e00000003000000030000000b00000000000000000000000800506c617965725f330b00000000000000000000000a00506c79724372656570731300000000000000000000000500456e656d7901000000",
+              "command": "PLAYER_RELATES_PLAYER",
+              "version": 3
+            },
+            {
+              "asset": "ScriptAction",
+              "body": "4e00000003000000030000000b00000000000000000000000800506c617965725f330b00000000000000000000000800506c617965725f351300000000000000000000000500456e656d7901000000",
+              "command": "PLAYER_RELATES_PLAYER",
+              "version": 3
+            },
+            {
+              "asset": "ScriptAction",
+              "body": "4e00000003000000030000000b00000000000000000000000800506c617965725f330b00000000000000000000000800506c617965725f361300000000000000000000000500456e656d7901000000",
+              "command": "PLAYER_RELATES_PLAYER",
+              "version": 3
+            },
+            {
+              "asset": "ScriptAction",
+              "body": "4e00000003000000030000000b00000000000000000000000800506c617965725f340b00000000000000000000000c00506c7972436976696c69616e1300000000000000000000000500456e656d7901000000",
+              "command": "PLAYER_RELATES_PLAYER",
+              "version": 3
+            },
+            {
+              "asset": "ScriptAction",
+              "body": "4e00000003000000030000000b00000000000000000000000800506c617965725f340b00000000000000000000000a00506c79724372656570731300000000000000000000000500456e656d7901000000",
+              "command": "PLAYER_RELATES_PLAYER",
+              "version": 3
+            },
+            {
+              "asset": "ScriptAction",
+              "body": "4e00000003000000030000000b00000000000000000000000800506c617965725f340b00000000000000000000000800506c617965725f351300000000000000000000000500456e656d7901000000",
+              "command": "PLAYER_RELATES_PLAYER",
+              "version": 3
+            },
+            {
+              "asset": "ScriptAction",
+              "body": "4e00000003000000030000000b00000000000000000000000800506c617965725f340b00000000000000000000000800506c617965725f361300000000000000000000000500456e656d7901000000",
+              "command": "PLAYER_RELATES_PLAYER",
+              "version": 3
+            },
+            {
+              "asset": "ScriptAction",
+              "body": "4e00000003000000030000000b00000000000000000000000c00506c7972436976696c69616e0b00000000000000000000000800506c617965725f311300000000000000000000000500456e656d7901000000",
+              "command": "PLAYER_RELATES_PLAYER",
+              "version": 3
+            },
+            {
+              "asset": "ScriptAction",
+              "body": "4e00000003000000030000000b00000000000000000000000c00506c7972436976696c69616e0b00000000000000000000000800506c617965725f321300000000000000000000000500456e656d7901000000",
+              "command": "PLAYER_RELATES_PLAYER",
+              "version": 3
+            },
+            {
+              "asset": "ScriptAction",
+              "body": "4e00000003000000030000000b00000000000000000000000c00506c7972436976696c69616e0b00000000000000000000000800506c617965725f331300000000000000000000000500456e656d7901000000",
+              "command": "PLAYER_RELATES_PLAYER",
+              "version": 3
+            },
+            {
+              "asset": "ScriptAction",
+              "body": "4e00000003000000030000000b00000000000000000000000c00506c7972436976696c69616e0b00000000000000000000000800506c617965725f341300000000000000000000000500456e656d7901000000",
+              "command": "PLAYER_RELATES_PLAYER",
+              "version": 3
+            },
+            {
+              "asset": "ScriptAction",
+              "body": "4e00000003000000030000000b00000000000000000000000a00506c79724372656570730b00000000000000000000000800506c617965725f311300000000000000000000000500456e656d7901000000",
+              "command": "PLAYER_RELATES_PLAYER",
+              "version": 3
+            },
+            {
+              "asset": "ScriptAction",
+              "body": "4e00000003000000030000000b00000000000000000000000a00506c79724372656570730b00000000000000000000000800506c617965725f321300000000000000000000000500456e656d7901000000",
+              "command": "PLAYER_RELATES_PLAYER",
+              "version": 3
+            },
+            {
+              "asset": "ScriptAction",
+              "body": "4e00000003000000030000000b00000000000000000000000a00506c79724372656570730b00000000000000000000000800506c617965725f331300000000000000000000000500456e656d7901000000",
+              "command": "PLAYER_RELATES_PLAYER",
+              "version": 3
+            },
+            {
+              "asset": "ScriptAction",
+              "body": "4e00000003000000030000000b00000000000000000000000a00506c79724372656570730b00000000000000000000000800506c617965725f341300000000000000000000000500456e656d7901000000",
+              "command": "PLAYER_RELATES_PLAYER",
+              "version": 3
+            },
+            {
+              "asset": "ScriptAction",
+              "body": "4e00000003000000030000000b00000000000000000000000800506c617965725f350b00000000000000000000000800506c617965725f311300000000000000000000000500456e656d7901000000",
+              "command": "PLAYER_RELATES_PLAYER",
+              "version": 3
+            },
+            {
+              "asset": "ScriptAction",
+              "body": "4e00000003000000030000000b00000000000000000000000800506c617965725f350b00000000000000000000000800506c617965725f321300000000000000000000000500456e656d7901000000",
+              "command": "PLAYER_RELATES_PLAYER",
+              "version": 3
+            },
+            {
+              "asset": "ScriptAction",
+              "body": "4e00000003000000030000000b00000000000000000000000800506c617965725f350b00000000000000000000000800506c617965725f331300000000000000000000000500456e656d7901000000",
+              "command": "PLAYER_RELATES_PLAYER",
+              "version": 3
+            },
+            {
+              "asset": "ScriptAction",
+              "body": "4e00000003000000030000000b00000000000000000000000800506c617965725f350b00000000000000000000000800506c617965725f341300000000000000000000000500456e656d7901000000",
+              "command": "PLAYER_RELATES_PLAYER",
+              "version": 3
+            },
+            {
+              "asset": "ScriptAction",
+              "body": "4e00000003000000030000000b00000000000000000000000800506c617965725f360b00000000000000000000000800506c617965725f311300000000000000000000000500456e656d7901000000",
+              "command": "PLAYER_RELATES_PLAYER",
+              "version": 3
+            },
+            {
+              "asset": "ScriptAction",
+              "body": "4e00000003000000030000000b00000000000000000000000800506c617965725f360b00000000000000000000000800506c617965725f321300000000000000000000000500456e656d7901000000",
+              "command": "PLAYER_RELATES_PLAYER",
+              "version": 3
+            },
+            {
+              "asset": "ScriptAction",
+              "body": "4e00000003000000030000000b00000000000000000000000800506c617965725f360b00000000000000000000000800506c617965725f331300000000000000000000000500456e656d7901000000",
+              "command": "PLAYER_RELATES_PLAYER",
+              "version": 3
+            },
+            {
+              "asset": "ScriptAction",
+              "body": "4e00000003000000030000000b00000000000000000000000800506c617965725f360b00000000000000000000000800506c617965725f341300000000000000000000000500456e656d7901000000",
+              "command": "PLAYER_RELATES_PLAYER",
+              "version": 3
+            },
+            {
+              "asset": "ScriptAction",
+              "body": "4e00000003000000030000000b00000000000000000000000c00506c7972436976696c69616e0b00000000000000000000000800506c617965725f351300000002000000000000000600467269656e6401000000",
+              "command": "PLAYER_RELATES_PLAYER",
+              "version": 3
+            },
+            {
+              "asset": "ScriptAction",
+              "body": "4e00000003000000030000000b00000000000000000000000c00506c7972436976696c69616e0b00000000000000000000000800506c617965725f361300000002000000000000000600467269656e6401000000",
+              "command": "PLAYER_RELATES_PLAYER",
+              "version": 3
+            },
+            {
+              "asset": "ScriptAction",
+              "body": "4e00000003000000030000000b00000000000000000000000c00506c7972436976696c69616e0b00000000000000000000000a00506c79724372656570731300000002000000000000000600467269656e6401000000",
+              "command": "PLAYER_RELATES_PLAYER",
+              "version": 3
+            },
+            {
+              "asset": "ScriptAction",
+              "body": "4e00000003000000030000000b00000000000000000000000a00506c79724372656570730b00000000000000000000000800506c617965725f351300000002000000000000000600467269656e6401000000",
+              "command": "PLAYER_RELATES_PLAYER",
+              "version": 3
+            },
+            {
+              "asset": "ScriptAction",
+              "body": "4e00000003000000030000000b00000000000000000000000a00506c79724372656570730b00000000000000000000000800506c617965725f361300000002000000000000000600467269656e6401000000",
+              "command": "PLAYER_RELATES_PLAYER",
+              "version": 3
+            },
+            {
+              "asset": "ScriptAction",
+              "body": "4e00000003000000030000000b00000000000000000000000a00506c79724372656570730b00000000000000000000000c00506c7972436976696c69616e1300000002000000000000000600467269656e6401000000",
+              "command": "PLAYER_RELATES_PLAYER",
+              "version": 3
+            },
+            {
+              "asset": "ScriptAction",
+              "body": "4e00000003000000030000000b00000000000000000000000800506c617965725f350b00000000000000000000000800506c617965725f361300000002000000000000000600467269656e6401000000",
+              "command": "PLAYER_RELATES_PLAYER",
+              "version": 3
+            },
+            {
+              "asset": "ScriptAction",
+              "body": "4e00000003000000030000000b00000000000000000000000800506c617965725f350b00000000000000000000000a00506c79724372656570731300000002000000000000000600467269656e6401000000",
+              "command": "PLAYER_RELATES_PLAYER",
+              "version": 3
+            },
+            {
+              "asset": "ScriptAction",
+              "body": "4e00000003000000030000000b00000000000000000000000800506c617965725f350b00000000000000000000000c00506c7972436976696c69616e1300000002000000000000000600467269656e6401000000",
+              "command": "PLAYER_RELATES_PLAYER",
+              "version": 3
+            },
+            {
+              "asset": "ScriptAction",
+              "body": "4e00000003000000030000000b00000000000000000000000800506c617965725f360b00000000000000000000000800506c617965725f351300000002000000000000000600467269656e6401000000",
+              "command": "PLAYER_RELATES_PLAYER",
+              "version": 3
+            },
+            {
+              "asset": "ScriptAction",
+              "body": "4e00000003000000030000000b00000000000000000000000800506c617965725f360b00000000000000000000000a00506c79724372656570731300000002000000000000000600467269656e6401000000",
+              "command": "PLAYER_RELATES_PLAYER",
+              "version": 3
+            },
+            {
+              "asset": "ScriptAction",
+              "body": "4e00000003000000030000000b00000000000000000000000800506c617965725f360b00000000000000000000000c00506c7972436976696c69616e1300000002000000000000000600467269656e6401000000",
+              "command": "PLAYER_RELATES_PLAYER",
+              "version": 3
+            }
+          ],
+          "prefix": "0200464500000000000001010101010000000000000000000000010000010058",
+          "version": 4
+        },
+        {
+          "asset": "Script",
+          "children": [
+            {
+              "asset": "OrCondition",
+              "children": [
+                {
+                  "asset": "Condition",
+                  "body": "0300000003000000000000000100000000000000",
+                  "command": "CONDITION_TRUE",
+                  "version": 6
+                }
+              ],
+              "version": 1
+            },
+            {
+              "asset": "ScriptAction",
+              "body": "7d000000030000000200000001000000000000000000803f00000400000000000000000000000a0047616d6520537461727401000000",
+              "command": "ADD_TO_MSEC_TIMER",
+              "version": 3
+            }
+          ],
+          "prefix": "120054696d652d47616d6520537461727420757000000000000001000101010001000000000000000000010000010058",
+          "version": 4
+        },
+        {
+          "asset": "Script",
+          "children": [
+            {
+              "asset": "OrCondition",
+              "children": [
+                {
+                  "asset": "Condition",
+                  "body": "0300000003000000000000000100000000000000",
+                  "command": "CONDITION_TRUE",
+                  "version": 6
+                }
+              ],
+              "version": 1
+            },
+            {
+              "asset": "ScriptAction",
+              "body": "1500000003000000020000000400000000000000000000000a0047616d6520537461727401000000000000000ad7233c000001000000",
+              "command": "SET_MILLISECOND_TIMER",
+              "version": 3
+            },
+            {
+              "asset": "ScriptAction",
+              "body": "ac00000003000000020000000e00000000000000000000000400b4f3b5e71e0000000000000000000000000001000000",
+              "command": "OBJECT_CREATE_RADAR_EVENT",
+              "version": 3
+            },
+            {
+              "asset": "ScriptAction",
+              "body": "74000000030000000200000019000000000000000000000012005343524950543a4130305f57656c636f6d65010000000000000000002041000001000000",
+              "command": "SHOW_MILITARY_CAPTION",
+              "version": 3
+            },
+            {
+              "asset": "ScriptAction",
+              "body": "8200000003000000020000000400000000000000000000000a0047616d6520537461727419000000000000000000000015005343524950543a4130305f47616d6520537461727401000000",
+              "command": "DISPLAY_COUNTDOWN_TIMER",
+              "version": 3
+            },
+            {
+              "asset": "ScriptAction",
+              "body": "7b00000003000000010000000400000000000000000000000a0047616d6520537461727401000000",
+              "command": "STOP_TIMER",
+              "version": 3
+            }
+          ],
+          "prefix": "0f0054696d655f47616d6520537461727400000000000001010101010000000000000000000000010000010058",
+          "version": 4
+        },
+        {
+          "asset": "ScriptGroup",
+          "children": [
+            {
+              "asset": "ScriptGroup",
+              "children": [
+                {
+                  "asset": "Script",
+                  "children": [
+                    {
+                      "asset": "OrCondition",
+                      "children": [
+                        {
+                          "asset": "Condition",
+                          "body": "5200000003000000030000000400000000000000000000000a0047616d65205374617274060000000300000000000000000001000000000000000000344300000100000000000000",
+                          "command": "COUNTER_SECONDS",
+                          "version": 6
+                        },
+                        {
+                          "asset": "Condition",
+                          "body": "3100000003000000040000000b00000000000000000000000c00506c7972436976696c69616e060000000000000000000000000000000000010000000000000000003d00000000000000000000001800736f76696574706f776572706c616e74616476616e6365640100000000000000",
+                          "command": "PLAYER_HAS_OBJECT_COMPARISON",
+                          "version": 6
+                        },
+                        {
+                          "asset": "Condition",
+                          "body": "5200000003000000030000000400000000000000000000000a0047616d65205374617274060000000000000000000000000001000000000000000000b44300000100000000000000",
+                          "command": "COUNTER_SECONDS",
+                          "version": 6
+                        },
+                        {
+                          "asset": "Condition",
+                          "body": "0c00000003000000010000000e00000000000000000000000a00536f76696574204d43560100000000000000",
+                          "command": "NAMED_NOT_DESTROYED",
+                          "version": 6
+                        },
+                        {
+                          "asset": "Condition",
+                          "body": "0900000003000000020000000e00000000000000000000000a00536f76696574204d4356090000000000000000000000080041726561534d43560100000000000000",
+                          "command": "NAMED_INSIDE_AREA",
+                          "version": 6
+                        }
+                      ],
+                      "version": 1
+                    },
+                    {
+                      "asset": "ScriptAction",
+                      "body": "d301000003000000040000000f00000000000000000000001800736f76696574706f776572706c616e74616476616e6365640300000000000000000000001d00506c7972436976696c69616e2f7465616d506c7972436976696c69616e0700000000000000000000000500706c616e741100000000000000db0f493f000001000000",
+                      "command": "CREATE_UNNAMED_ON_TEAM_AT_WAYPOINT_WITH_ORIENTATION",
+                      "version": 3
+                    },
+                    {
+                      "asset": "ScriptAction",
+                      "body": "0800000003000000010000000200000000000000000000001700536f766965742046616374726f79204275696c6420543201000000",
+                      "command": "ENABLE_SCRIPT",
+                      "version": 3
+                    },
+                    {
+                      "asset": "ScriptAction",
+                      "body": "0800000003000000010000000200000000000000000000000d0062696720706c616e742052455301000000",
+                      "command": "ENABLE_SCRIPT",
+                      "version": 3
+                    }
+                  ],
+                  "prefix": "090062696720706c616e740000000000000101010101000a000000000000000000010000010058",
+                  "version": 4
+                },
+                {
+                  "asset": "Script",
+                  "children": [
+                    {
+                      "asset": "OrCondition",
+                      "children": [
+                        {
+                          "asset": "Condition",
+                          "body": "5200000003000000030000000400000000000000000000000a0047616d65205374617274060000000300000000000000000001000000000000000000344300000100000000000000",
+                          "command": "COUNTER_SECONDS",
+                          "version": 6
+                        },
+                        {
+                          "asset": "Condition",
+                          "body": "3100000003000000040000000b00000000000000000000000c00506c7972436976696c69616e060000000000000000000000000000000000010000000000000000003d00000000000000000000001800736f76696574706f776572706c616e74616476616e6365640100000000000000",
+                          "command": "PLAYER_HAS_OBJECT_COMPARISON",
+                          "version": 6
+                        },
+                        {
+                          "asset": "Condition",
+                          "body": "0c00000003000000010000000e00000000000000000000000a00536f76696574204d43560100000000000000",
+                          "command": "NAMED_NOT_DESTROYED",
+                          "version": 6
+                        },
+                        {
+                          "asset": "Condition",
+                          "body": "0900000003000000020000000e00000000000000000000000a00536f76696574204d4356090000000000000000000000080041726561534d43560100000000000000",
+                          "command": "NAMED_INSIDE_AREA",
+                          "version": 6
+                        }
+                      ],
+                      "version": 1
+                    },
+                    {
+                      "asset": "ScriptAction",
+                      "body": "d301000003000000040000000f00000000000000000000001800736f76696574706f776572706c616e74616476616e6365640300000000000000000000001d00506c7972436976696c69616e2f7465616d506c7972436976696c69616e0700000000000000000000000500706c616e741100000000000000db0f493f000001000000",
+                      "command": "CREATE_UNNAMED_ON_TEAM_AT_WAYPOINT_WITH_ORIENTATION",
+                      "version": 3
+                    },
+                    {
+                      "asset": "ScriptAction",
+                      "body": "0800000003000000010000000200000000000000000000001700536f766965742046616374726f79204275696c6420543201000000",
+                      "command": "ENABLE_SCRIPT",
+                      "version": 3
+                    }
+                  ],
+                  "prefix": "0c0062696720706c616e745f5f310000000000000001010101000a000000000000000000010000010058",
+                  "version": 4
+                },
+                {
+                  "asset": "Script",
+                  "children": [
+                    {
+                      "asset": "OrCondition",
+                      "children": [
+                        {
+                          "asset": "Condition",
+                          "body": "4c00000003000000020000000b00000000000000000000000c00506c7972436976696c69616e3d00000000000000000000001800736f76696574706f776572706c616e74616476616e6365640100000000000000",
+                          "command": "PLAYER_LOST_OBJECT_TYPE",
+                          "version": 6
+                        }
+                      ],
+                      "version": 1
+                    },
+                    {
+                      "asset": "ScriptAction",
+                      "body": "0800000003000000010000000200000000000000000000000c0062696720706c616e745f5f3101000000",
+                      "command": "ENABLE_SCRIPT",
+                      "version": 3
+                    }
+                  ],
+                  "prefix": "0d0062696720706c616e74205245530000000000000000010101003c000000000000000000010000010058",
+                  "version": 4
+                }
+              ],
+              "prefix": "0b00626967202020706c616e740100",
+              "version": 3
+            },
+            {
+              "asset": "ScriptGroup",
+              "children": [
+                {
+                  "asset": "ScriptGroup",
+                  "children": [
+                    {
+                      "asset": "Script",
+                      "children": [
+                        {
+                          "asset": "OrCondition",
+                          "children": [
+                            {
+                              "asset": "Condition",
+                              "body": "1900000003000000020000000b00000000000000000000000c00506c7972436976696c69616e0e00000000000000000000000400534169720100000000000000",
+                              "command": "NAMED_OWNED_BY_PLAYER",
+                              "version": 6
+                            }
+                          ],
+                          "version": 1
+                        },
+                        {
+                          "asset": "ScriptAction",
+                          "body": "c000000003000000020000000e00000000000000000000000400534169722200000000000000000000002900436f6d6d616e645f436f6e737472756374536f76696574416e746947726f756e64416972637261667401000000",
+                          "command": "NAMED_USE_COMMANDBUTTON_ABILITY",
+                          "version": 3
+                        },
+                        {
+                          "asset": "ScriptAction",
+                          "body": "c000000003000000020000000e00000000000000000000000400534169722200000000000000000000002600436f6d6d616e645f436f6e737472756374536f7669657446696768746572416972637261667401000000",
+                          "command": "NAMED_USE_COMMANDBUTTON_ABILITY",
+                          "version": 3
+                        }
+                      ],
+                      "prefix": "0b005320416972204275696c6400000000000000000101010019000000000000000000010000010058",
+                      "version": 4
+                    },
+                    {
+                      "asset": "Script",
+                      "children": [
+                        {
+                          "asset": "OrCondition",
+                          "children": [
+                            {
+                              "asset": "Condition",
+                              "body": "3100000003000000040000000b00000000000000000000000c00506c7972436976696c69616e060000000300000000000000000000000000010000000000000000003d00000000000000000000000e00736f766965746169726669656c640100000000000000",
+                              "command": "PLAYER_HAS_OBJECT_COMPARISON",
+                              "version": 6
+                            }
+                          ],
+                          "version": 1
+                        },
+                        {
+                          "asset": "ScriptAction",
+                          "body": "d201000003000000050000000e00000000000000000000000400534169720f00000000000000000000000e00736f766965746169726669656c640300000000000000000000001d00506c7972436976696c69616e2f7465616d506c7972436976696c69616e070000000000000000000000050053206169721100000000000000db0f493f000001000000",
+                          "command": "CREATE_NAMED_ON_TEAM_AT_WAYPOINT_WITH_ORIENTATION",
+                          "version": 3
+                        },
+                        {
+                          "asset": "ScriptAction",
+                          "body": "0800000003000000010000000200000000000000000000000b005320416972204275696c6401000000",
+                          "command": "ENABLE_SCRIPT",
+                          "version": 3
+                        }
+                      ],
+                      "prefix": "0500532041697200000000000001010101010000000000000000000000010000010058",
+                      "version": 4
+                    }
+                  ],
+                  "prefix": "050053204169720100",
+                  "version": 3
+                },
+                {
+                  "asset": "ScriptGroup",
+                  "children": [
+                    {
+                      "asset": "Script",
+                      "children": [
+                        {
+                          "asset": "OrCondition",
+                          "children": [
+                            {
+                              "asset": "Condition",
+                              "body": "5200000003000000030000000400000000000000000000000a0047616d65205374617274060000000300000000000000000001000000000000000000f04300000100000000000000",
+                              "command": "COUNTER_SECONDS",
+                              "version": 6
+                            },
+                            {
+                              "asset": "Condition",
+                              "body": "3100000003000000040000000b00000000000000000000000c00506c7972436976696c69616e060000000000000000000000000000000000010000000000000000003d00000000000000000000001300736f76696574746563687374727563747572650100000000000000",
+                              "command": "PLAYER_HAS_OBJECT_COMPARISON",
+                              "version": 6
+                            },
+                            {
+                              "asset": "Condition",
+                              "body": "0c00000003000000010000000e00000000000000000000000a00536f76696574204d43560100000000000000",
+                              "command": "NAMED_NOT_DESTROYED",
+                              "version": 6
+                            },
+                            {
+                              "asset": "Condition",
+                              "body": "0900000003000000020000000e00000000000000000000000a00536f76696574204d4356090000000000000000000000080041726561534d43560100000000000000",
+                              "command": "NAMED_INSIDE_AREA",
+                              "version": 6
+                            }
+                          ],
+                          "version": 1
+                        },
+                        {
+                          "asset": "ScriptAction",
+                          "body": "d301000003000000040000000f00000000000000000000001300736f76696574746563687374727563747572650300000000000000000000001d00506c7972436976696c69616e2f7465616d506c7972436976696c69616e070000000000000000000000020074331100000000000000db0f493f000001000000",
+                          "command": "CREATE_UNNAMED_ON_TEAM_AT_WAYPOINT_WITH_ORIENTATION",
+                          "version": 3
+                        },
+                        {
+                          "asset": "ScriptAction",
+                          "body": "0800000003000000010000000200000000000000000000001700536f766965742046616374726f79204275696c6420543201000000",
+                          "command": "ENABLE_SCRIPT",
+                          "version": 3
+                        },
+                        {
+                          "asset": "ScriptAction",
+                          "body": "0800000003000000010000000200000000000000000000000a0054334275696c6452455301000000",
+                          "command": "ENABLE_SCRIPT",
+                          "version": 3
+                        },
+                        {
+                          "asset": "ScriptAction",
+                          "body": "0800000003000000010000000200000000000000000000000a0054334275696c6452455301000000",
+                          "command": "ENABLE_SCRIPT",
+                          "version": 3
+                        }
+                      ],
+                      "prefix": "070054334275696c640000000000000101010101000a000000000000000000010000010058",
+                      "version": 4
+                    },
+                    {
+                      "asset": "Script",
+                      "children": [
+                        {
+                          "asset": "OrCondition",
+                          "children": [
+                            {
+                              "asset": "Condition",
+                              "body": "4c00000003000000020000000b00000000000000000000000c00506c7972436976696c69616e3d00000000000000000000001300736f76696574746563687374727563747572650100000000000000",
+                              "command": "PLAYER_LOST_OBJECT_TYPE",
+                              "version": 6
+                            }
+                          ],
+                          "version": 1
+                        },
+                        {
+                          "asset": "ScriptAction",
+                          "body": "080000000300000001000000020000000000000000000000070054334275696c6401000000",
+                          "command": "ENABLE_SCRIPT",
+                          "version": 3
+                        }
+                      ],
+                      "prefix": "0a0054334275696c645245530000000000000000010101003c000000000000000000010000010058",
+                      "version": 4
+                    }
+                  ],
+                  "prefix": "08005433204275696c640100",
+                  "version": 3
+                },
+                {
+                  "asset": "ScriptGroup",
+                  "children": [
+                    {
+                      "asset": "Script",
+                      "children": [
+                        {
+                          "asset": "OrCondition",
+                          "children": [
+                            {
+                              "asset": "Condition",
+                              "body": "3100000003000000040000000b00000000000000000000000c00506c7972436976696c69616e060000000300000000000000000000000000010000000000000000003d00000000000000000000000e00736f766965746261727261636b730100000000000000",
+                              "command": "PLAYER_HAS_OBJECT_COMPARISON",
+                              "version": 6
+                            },
+                            {
+                              "asset": "Condition",
+                              "body": "0900000003000000020000000e00000000000000000000000a00536f76696574204d4356090000000000000000000000080041726561534d43560100000000000000",
+                              "command": "NAMED_INSIDE_AREA",
+                              "version": 6
+                            },
+                            {
+                              "asset": "Condition",
+                              "body": "0c00000003000000010000000e00000000000000000000000a00536f76696574204d43560100000000000000",
+                              "command": "NAMED_NOT_DESTROYED",
+                              "version": 6
+                            }
+                          ],
+                          "version": 1
+                        },
+                        {
+                          "asset": "ScriptAction",
+                          "body": "d201000003000000050000000e0000000000000000000000090053204261727261636b0f00000000000000000000000e00736f766965746261727261636b730300000000000000000000001d00506c7972436976696c69616e2f7465616d506c7972436976696c69616e070000000000000000000000090053204261727261636b1100000000000000e4cb1640000001000000",
+                          "command": "CREATE_NAMED_ON_TEAM_AT_WAYPOINT_WITH_ORIENTATION",
+                          "version": 3
+                        }
+                      ],
+                      "prefix": "0d004261727261636b206275696c6400000000000001010101010000000000000000000000010000010058",
+                      "version": 4
+                    },
+                    {
+                      "asset": "Script",
+                      "children": [
+                        {
+                          "asset": "OrCondition",
+                          "children": [
+                            {
+                              "asset": "Condition",
+                              "body": "0900000003000000020000000e00000000000000000000000a00536f76696574204d4356090000000000000000000000080041726561534d43560100000000000000",
+                              "command": "NAMED_INSIDE_AREA",
+                              "version": 6
+                            },
+                            {
+                              "asset": "Condition",
+                              "body": "0b00000003000000010000000e0000000000000000000000090053204261727261636b0100000000000000",
+                              "command": "NAMED_DESTROYED",
+                              "version": 6
+                            },
+                            {
+                              "asset": "Condition",
+                              "body": "0c00000003000000010000000e00000000000000000000000a00536f76696574204d43560100000000000000",
+                              "command": "NAMED_NOT_DESTROYED",
+                              "version": 6
+                            }
+                          ],
+                          "version": 1
+                        },
+                        {
+                          "asset": "ScriptAction",
+                          "body": "d201000003000000050000000e0000000000000000000000090053204261727261636b0f00000000000000000000000e00736f766965746261727261636b730300000000000000000000001d00506c7972436976696c69616e2f7465616d506c7972436976696c69616e070000000000000000000000090053204261727261636b1100000000000000e4cb1640000001000000",
+                          "command": "CREATE_NAMED_ON_TEAM_AT_WAYPOINT_WITH_ORIENTATION",
+                          "version": 3
+                        }
+                      ],
+                      "prefix": "0b004261727261636b205245530000000000000100010101000a000000000000000000010000010058",
+                      "version": 4
+                    },
+                    {
+                      "asset": "Script",
+                      "children": [
+                        {
+                          "asset": "OrCondition",
+                          "children": [
+                            {
+                              "asset": "Condition",
+                              "body": "5200000003000000030000000400000000000000000000000a0047616d65205374617274060000000300000000000000000001000000000000000000344300000100000000000000",
+                              "command": "COUNTER_SECONDS",
+                              "version": 6
+                            },
+                            {
+                              "asset": "Condition",
+                              "body": "3100000003000000040000000b00000000000000000000000c00506c7972436976696c69616e060000000300000000000000000000000000010000000000000000003d00000000000000000000001800736f76696574706f776572706c616e74616476616e6365640100000000000000",
+                              "command": "PLAYER_HAS_OBJECT_COMPARISON",
+                              "version": 6
+                            },
+                            {
+                              "asset": "Condition",
+                              "body": "3100000003000000040000000b00000000000000000000000c00506c7972436976696c69616e060000000300000000000000000000000000010000000000000000003d00000000000000000000000e00736f766965746261727261636b730100000000000000",
+                              "command": "PLAYER_HAS_OBJECT_COMPARISON",
+                              "version": 6
+                            },
+                            {
+                              "asset": "Condition",
+                              "body": "3100000003000000040000000b00000000000000000000000c00506c7972436976696c69616e0600000000000000000000000000000000001e0000000000000000003d00000000000000000000001e00736f766965746865617679616e746976656869636c65696e66616e7472790100000000000000",
+                              "command": "PLAYER_HAS_OBJECT_COMPARISON",
+                              "version": 6
+                            }
+                          ],
+                          "version": 1
+                        },
+                        {
+                          "asset": "ScriptAction",
+                          "body": "c000000003000000020000000e00000000000000000000000e00536f76696574204261727261636b2200000000000000000000002a00436f6d6d616e645f436f6e737472756374536f76696574416e746956656869636c65496e66616e74727901000000",
+                          "command": "NAMED_USE_COMMANDBUTTON_ABILITY",
+                          "version": 3
+                        },
+                        {
+                          "asset": "ScriptAction",
+                          "body": "c000000003000000020000000e00000000000000000000000e00536f76696574204261727261636b2200000000000000000000002b00436f6d6d616e645f436f6e737472756374536f76696574416e7469496e66616e747279496e66616e74727901000000",
+                          "command": "NAMED_USE_COMMANDBUTTON_ABILITY",
+                          "version": 3
+                        },
+                        {
+                          "asset": "ScriptAction",
+                          "body": "c000000003000000020000000e00000000000000000000000e00536f76696574204261727261636b2200000000000000000000002a00436f6d6d616e645f436f6e737472756374536f76696574416e746956656869636c65496e66616e74727901000000",
+                          "command": "NAMED_USE_COMMANDBUTTON_ABILITY",
+                          "version": 3
+                        },
+                        {
+                          "asset": "ScriptAction",
+                          "body": "c000000003000000020000000e00000000000000000000000e00536f76696574204261727261636b2200000000000000000000002f00436f6d6d616e645f436f6e737472756374536f766965744865617679416e746956656869636c65496e66616e74727901000000",
+                          "command": "NAMED_USE_COMMANDBUTTON_ABILITY",
+                          "version": 3
+                        },
+                        {
+                          "asset": "ScriptAction",
+                          "body": "c000000003000000020000000e0000000000000000000000090053204261727261636b2200000000000000000000002a00436f6d6d616e645f436f6e737472756374536f76696574416e746956656869636c65496e66616e74727901000000",
+                          "command": "NAMED_USE_COMMANDBUTTON_ABILITY",
+                          "version": 3
+                        },
+                        {
+                          "asset": "ScriptAction",
+                          "body": "c000000003000000020000000e0000000000000000000000090053204261727261636b2200000000000000000000002b00436f6d6d616e645f436f6e737472756374536f76696574416e7469496e66616e747279496e66616e74727901000000",
+                          "command": "NAMED_USE_COMMANDBUTTON_ABILITY",
+                          "version": 3
+                        },
+                        {
+                          "asset": "ScriptAction",
+                          "body": "c000000003000000020000000e0000000000000000000000090053204261727261636b2200000000000000000000002a00436f6d6d616e645f436f6e737472756374536f76696574416e746956656869636c65496e66616e74727901000000",
+                          "command": "NAMED_USE_COMMANDBUTTON_ABILITY",
+                          "version": 3
+                        },
+                        {
+                          "asset": "ScriptAction",
+                          "body": "c000000003000000020000000e0000000000000000000000090053204261727261636b2200000000000000000000002f00436f6d6d616e645f436f6e737472756374536f766965744865617679416e746956656869636c65496e66616e74727901000000",
+                          "command": "NAMED_USE_COMMANDBUTTON_ABILITY",
+                          "version": 3
+                        }
+                      ],
+                      "prefix": "1700536f76696574204261727261636b204275696c6420543200000000000000000101010018000000000000000000010000010058",
+                      "version": 4
+                    }
+                  ],
+                  "prefix": "0e00536f76696574204261727261636b0100",
+                  "version": 3
+                },
+                {
+                  "asset": "ScriptGroup",
+                  "children": [
+                    {
+                      "asset": "Script",
+                      "children": [
+                        {
+                          "asset": "OrCondition",
+                          "children": [
+                            {
+                              "asset": "Condition",
+                              "body": "3100000003000000040000000b00000000000000000000000c00506c7972436976696c69616e060000000000000000000000000000000000010000000000000000003d00000000000000000000000e00736f766965747375727665796f720100000000000000",
+                              "command": "PLAYER_HAS_OBJECT_COMPARISON",
+                              "version": 6
+                            }
+                          ],
+                          "version": 1
+                        },
+                        {
+                          "asset": "ScriptAction",
+                          "body": "c000000003000000020000000e00000000000000000000000e00536f766965742046616374726f792200000000000000000000001f00436f6d6d616e645f436f6e737472756374536f766965745375727665796f7201000000",
+                          "command": "NAMED_USE_COMMANDBUTTON_ABILITY",
+                          "version": 3
+                        }
+                      ],
+                      "prefix": "03004b414900000000000001000101010078000000000000000000010000010058",
+                      "version": 4
+                    },
+                    {
+                      "asset": "Script",
+                      "children": [
+                        {
+                          "asset": "OrCondition",
+                          "children": [
+                            {
+                              "asset": "Condition",
+                              "body": "3100000003000000040000000b00000000000000000000000c00506c7972436976696c69616e060000000300000000000000000000000000010000000000000000003d00000000000000000000001000736f76696574776172666163746f72790100000000000000",
+                              "command": "PLAYER_HAS_OBJECT_COMPARISON",
+                              "version": 6
+                            },
+                            {
+                              "asset": "Condition",
+                              "body": "0c00000003000000010000000e00000000000000000000000a00536f76696574204d43560100000000000000",
+                              "command": "NAMED_NOT_DESTROYED",
+                              "version": 6
+                            },
+                            {
+                              "asset": "Condition",
+                              "body": "0900000003000000020000000e00000000000000000000000a00536f76696574204d4356090000000000000000000000080041726561534d43560100000000000000",
+                              "command": "NAMED_INSIDE_AREA",
+                              "version": 6
+                            }
+                          ],
+                          "version": 1
+                        },
+                        {
+                          "asset": "ScriptAction",
+                          "body": "d201000003000000050000000e00000000000000000000000900532046616374726f790f00000000000000000000001000736f76696574776172666163746f72790300000000000000000000001d00506c7972436976696c69616e2f7465616d506c7972436976696c69616e0700000000000000000000000900532046616374726f791100000000000000e4cb16c0000001000000",
+                          "command": "CREATE_NAMED_ON_TEAM_AT_WAYPOINT_WITH_ORIENTATION",
+                          "version": 3
+                        }
+                      ],
+                      "prefix": "0d0046616374726f79206275696c6400000000000001010101010000000000000000000000010000010058",
+                      "version": 4
+                    },
+                    {
+                      "asset": "Script",
+                      "children": [
+                        {
+                          "asset": "OrCondition",
+                          "children": [
+                            {
+                              "asset": "Condition",
+                              "body": "0b00000003000000010000000e00000000000000000000000900532046616374726f790100000000000000",
+                              "command": "NAMED_DESTROYED",
+                              "version": 6
+                            },
+                            {
+                              "asset": "Condition",
+                              "body": "0c00000003000000010000000e00000000000000000000000a00536f76696574204d43560100000000000000",
+                              "command": "NAMED_NOT_DESTROYED",
+                              "version": 6
+                            },
+                            {
+                              "asset": "Condition",
+                              "body": "0900000003000000020000000e00000000000000000000000a00536f76696574204d4356090000000000000000000000080041726561534d43560100000000000000",
+                              "command": "NAMED_INSIDE_AREA",
+                              "version": 6
+                            }
+                          ],
+                          "version": 1
+                        },
+                        {
+                          "asset": "ScriptAction",
+                          "body": "d201000003000000050000000e00000000000000000000000900532046616374726f790f00000000000000000000001000736f76696574776172666163746f72790300000000000000000000001d00506c7972436976696c69616e2f7465616d506c7972436976696c69616e0700000000000000000000000900532046616374726f791100000000000000e4cb1640000001000000",
+                          "command": "CREATE_NAMED_ON_TEAM_AT_WAYPOINT_WITH_ORIENTATION",
+                          "version": 3
+                        }
+                      ],
+                      "prefix": "0b0046616374726f79205245530000000000000100010101000a000000000000000000010000010058",
+                      "version": 4
+                    },
+                    {
+                      "asset": "Script",
+                      "children": [
+                        {
+                          "asset": "OrCondition",
+                          "children": [
+                            {
+                              "asset": "Condition",
+                              "body": "5200000003000000030000000400000000000000000000000a0047616d65205374617274060000000300000000000000000001000000000000000000344300000100000000000000",
+                              "command": "COUNTER_SECONDS",
+                              "version": 6
+                            },
+                            {
+                              "asset": "Condition",
+                              "body": "3100000003000000040000000b00000000000000000000000c00506c7972436976696c69616e060000000300000000000000000000000000010000000000000000003d00000000000000000000001800736f76696574706f776572706c616e74616476616e6365640100000000000000",
+                              "command": "PLAYER_HAS_OBJECT_COMPARISON",
+                              "version": 6
+                            },
+                            {
+                              "asset": "Condition",
+                              "body": "3100000003000000040000000b00000000000000000000000c00506c7972436976696c69616e060000000300000000000000000000000000010000000000000000003d00000000000000000000001000736f76696574776172666163746f72790100000000000000",
+                              "command": "PLAYER_HAS_OBJECT_COMPARISON",
+                              "version": 6
+                            },
+                            {
+                              "asset": "Condition",
+                              "body": "3100000003000000040000000b00000000000000000000000c00506c7972436976696c69616e0600000000000000000000000000000000001e0000000000000000003d00000000000000000000001d00736f76696574616e746976656869636c6576656869636c6574656368310100000000000000",
+                              "command": "PLAYER_HAS_OBJECT_COMPARISON",
+                              "version": 6
+                            }
+                          ],
+                          "version": 1
+                        },
+                        {
+                          "asset": "ScriptAction",
+                          "body": "c000000003000000020000000e00000000000000000000000e00536f766965742046616374726f792200000000000000000000002e00436f6d6d616e645f436f6e737472756374536f76696574416e746956656869636c6556656869636c65546563683101000000",
+                          "command": "NAMED_USE_COMMANDBUTTON_ABILITY",
+                          "version": 3
+                        },
+                        {
+                          "asset": "ScriptAction",
+                          "body": "c000000003000000020000000e00000000000000000000000e00536f766965742046616374726f792200000000000000000000002e00436f6d6d616e645f436f6e737472756374536f76696574416e746956656869636c6556656869636c65546563683101000000",
+                          "command": "NAMED_USE_COMMANDBUTTON_ABILITY",
+                          "version": 3
+                        },
+                        {
+                          "asset": "ScriptAction",
+                          "body": "c000000003000000020000000e00000000000000000000000e00536f766965742046616374726f792200000000000000000000002900436f6d6d616e645f436f6e737472756374536f76696574416e7469416972536869705f47726f756e6401000000",
+                          "command": "NAMED_USE_COMMANDBUTTON_ABILITY",
+                          "version": 3
+                        },
+                        {
+                          "asset": "ScriptAction",
+                          "body": "c000000003000000020000000e00000000000000000000000900532046616374726f792200000000000000000000002e00436f6d6d616e645f436f6e737472756374536f76696574416e746956656869636c6556656869636c65546563683101000000",
+                          "command": "NAMED_USE_COMMANDBUTTON_ABILITY",
+                          "version": 3
+                        },
+                        {
+                          "asset": "ScriptAction",
+                          "body": "c000000003000000020000000e00000000000000000000000900532046616374726f792200000000000000000000002e00436f6d6d616e645f436f6e737472756374536f76696574416e746956656869636c6556656869636c65546563683101000000",
+                          "command": "NAMED_USE_COMMANDBUTTON_ABILITY",
+                          "version": 3
+                        },
+                        {
+                          "asset": "ScriptAction",
+                          "body": "c000000003000000020000000e00000000000000000000000900532046616374726f792200000000000000000000002900436f6d6d616e645f436f6e737472756374536f76696574416e7469416972536869705f47726f756e6401000000",
+                          "command": "NAMED_USE_COMMANDBUTTON_ABILITY",
+                          "version": 3
+                        }
+                      ],
+                      "prefix": "1700536f766965742046616374726f79204275696c642054320000000000000000010101001e000000000000000000010000010058",
+                      "version": 4
+                    },
+                    {
+                      "asset": "Script",
+                      "children": [
+                        {
+                          "asset": "OrCondition",
+                          "children": [
+                            {
+                              "asset": "Condition",
+                              "body": "3100000003000000040000000b00000000000000000000000c00506c7972436976696c69616e060000000300000000000000000000000000010000000000000000003d00000000000000000000001300736f76696574746563687374727563747572650100000000000000",
+                              "command": "PLAYER_HAS_OBJECT_COMPARISON",
+                              "version": 6
+                            },
+                            {
+                              "asset": "Condition",
+                              "body": "3100000003000000040000000b00000000000000000000000c00506c7972436976696c69616e060000000300000000000000000000000000010000000000000000003d00000000000000000000001000736f76696574776172666163746f72790100000000000000",
+                              "command": "PLAYER_HAS_OBJECT_COMPARISON",
+                              "version": 6
+                            },
+                            {
+                              "asset": "Condition",
+                              "body": "3100000003000000040000000b00000000000000000000000c00506c7972436976696c69616e0600000000000000000000000000000000000f0000000000000000003d00000000000000000000001d00736f76696574616e746976656869636c6576656869636c6574656368330100000000000000",
+                              "command": "PLAYER_HAS_OBJECT_COMPARISON",
+                              "version": 6
+                            }
+                          ],
+                          "version": 1
+                        },
+                        {
+                          "asset": "ScriptAction",
+                          "body": "c000000003000000020000000e00000000000000000000000e00536f766965742046616374726f792200000000000000000000002e00436f6d6d616e645f436f6e737472756374536f76696574416e746956656869636c6556656869636c65546563683301000000",
+                          "command": "NAMED_USE_COMMANDBUTTON_ABILITY",
+                          "version": 3
+                        },
+                        {
+                          "asset": "ScriptAction",
+                          "body": "c000000003000000020000000e00000000000000000000000e00536f766965742046616374726f792200000000000000000000002b00436f6d6d616e645f436f6e737472756374536f76696574416e746953747275637475726556656869636c6501000000",
+                          "command": "NAMED_USE_COMMANDBUTTON_ABILITY",
+                          "version": 3
+                        },
+                        {
+                          "asset": "ScriptAction",
+                          "body": "c000000003000000020000000e00000000000000000000000e00536f766965742046616374726f792200000000000000000000002900436f6d6d616e645f436f6e737472756374536f76696574416e7469416972536869705f47726f756e6401000000",
+                          "command": "NAMED_USE_COMMANDBUTTON_ABILITY",
+                          "version": 3
+                        },
+                        {
+                          "asset": "ScriptAction",
+                          "body": "c000000003000000020000000e00000000000000000000000900532046616374726f792200000000000000000000002e00436f6d6d616e645f436f6e737472756374536f76696574416e746956656869636c6556656869636c65546563683301000000",
+                          "command": "NAMED_USE_COMMANDBUTTON_ABILITY",
+                          "version": 3
+                        },
+                        {
+                          "asset": "ScriptAction",
+                          "body": "c000000003000000020000000e00000000000000000000000900532046616374726f792200000000000000000000002b00436f6d6d616e645f436f6e737472756374536f76696574416e746953747275637475726556656869636c6501000000",
+                          "command": "NAMED_USE_COMMANDBUTTON_ABILITY",
+                          "version": 3
+                        },
+                        {
+                          "asset": "ScriptAction",
+                          "body": "c000000003000000020000000e00000000000000000000000900532046616374726f792200000000000000000000002900436f6d6d616e645f436f6e737472756374536f76696574416e7469416972536869705f47726f756e6401000000",
+                          "command": "NAMED_USE_COMMANDBUTTON_ABILITY",
+                          "version": 3
+                        }
+                      ],
+                      "prefix": "1700536f766965742046616374726f79204275696c642054330000000000000000010101002d000000000000000000010000010058",
+                      "version": 4
+                    }
+                  ],
+                  "prefix": "0e00536f766965742046616374726f790100",
+                  "version": 3
+                },
+                {
+                  "asset": "Script",
+                  "children": [
+                    {
+                      "asset": "OrCondition",
+                      "children": [
+                        {
+                          "asset": "Condition",
+                          "body": "3100000003000000040000000b00000000000000000000000c00506c7972436976696c69616e060000000300000000000000000000000000010000000000000000003d00000000000000000000001800736f76696574706f776572706c616e74616476616e6365640100000000000000",
+                          "command": "PLAYER_HAS_OBJECT_COMPARISON",
+                          "version": 6
+                        }
+                      ],
+                      "version": 1
+                    },
+                    {
+                      "asset": "ScriptAction",
+                      "body": "0800000003000000010000000200000000000000000000001700536f766965742046616374726f79204275696c6420543201000000",
+                      "command": "ENABLE_SCRIPT",
+                      "version": 3
+                    },
+                    {
+                      "asset": "ScriptAction",
+                      "body": "0800000003000000010000000200000000000000000000001700536f76696574204261727261636b204275696c6420543201000000",
+                      "command": "ENABLE_SCRIPT",
+                      "version": 3
+                    },
+                    {
+                      "asset": "ScriptAction",
+                      "body": "08000000030000000100000002000000000000000000000004005320543301000000",
+                      "command": "ENABLE_SCRIPT",
+                      "version": 3
+                    }
+                  ],
+                  "prefix": "04005320543200000000000001010101010000000000000000000000010000010058",
+                  "version": 4
+                },
+                {
+                  "asset": "Script",
+                  "children": [
+                    {
+                      "asset": "OrCondition",
+                      "children": [
+                        {
+                          "asset": "Condition",
+                          "body": "3100000003000000040000000b00000000000000000000000c00506c7972436976696c69616e060000000300000000000000000000000000010000000000000000003d00000000000000000000001300736f76696574746563687374727563747572650100000000000000",
+                          "command": "PLAYER_HAS_OBJECT_COMPARISON",
+                          "version": 6
+                        }
+                      ],
+                      "version": 1
+                    },
+                    {
+                      "asset": "ScriptAction",
+                      "body": "0800000003000000010000000200000000000000000000001700536f766965742046616374726f79204275696c6420543301000000",
+                      "command": "ENABLE_SCRIPT",
+                      "version": 3
+                    },
+                    {
+                      "asset": "ScriptAction",
+                      "body": "0900000003000000010000000200000000000000000000001700536f766965742046616374726f79204275696c6420543201000000",
+                      "command": "DISABLE_SCRIPT",
+                      "version": 3
+                    }
+                  ],
+                  "prefix": "04005320543300000000000000010101010000000000000000000000010000010058",
+                  "version": 4
+                }
+              ],
+              "prefix": "05004275696c640100",
+              "version": 3
+            },
+            {
+              "asset": "Script",
+              "children": [
+                {
+                  "asset": "OrCondition",
+                  "children": [
+                    {
+                      "asset": "Condition",
+                      "body": "5200000003000000030000000400000000000000000000000a0047616d65205374617274060000000300000000000000000001000000000000000000344300000100000000000000",
+                      "command": "COUNTER_SECONDS",
+                      "version": 6
+                    }
+                  ],
+                  "version": 1
+                },
+                {
+                  "asset": "ScriptAction",
+                  "body": "2300000003000000040000000e00000000000000000000000700657870616e64320f00000000000000000000000e00736f766965747375727665796f720300000000000000000000001d00506c7972436976696c69616e2f7465616d506c7972436976696c69616e07000000000000000000000008005320657870616e6401000000",
+                  "command": "CREATE_NAMED_ON_TEAM_AT_WAYPOINT",
+                  "version": 3
+                },
+                {
+                  "asset": "ScriptAction",
+                  "body": "4d00000003000000020000000e00000000000000000000000700657870616e64320b00000000000000000000000c00506c7972436976696c69616e01000000",
+                  "command": "NAMED_TRANSFER_OWNERSHIP_PLAYER",
+                  "version": 3
+                },
+                {
+                  "asset": "ScriptAction",
+                  "body": "a200000003000000030000000e00000000000000000000000700657870616e64322200000000000000000000001c00436f6d6d616e645f556e5061636b536f766965745375727665796f720700000000000000000000001000576179706f696e7420657870616e645301000000",
+                  "command": "NAMED_USE_COMMANDBUTTON_ABILITY_AT_WAYPOINT",
+                  "version": 3
+                }
+              ],
+              "prefix": "0700457870616e645300000000000001010101010000000000000000000000010000010058",
+              "version": 4
+            },
+            {
+              "asset": "Script",
+              "children": [
+                {
+                  "asset": "OrCondition",
+                  "children": [
+                    {
+                      "asset": "Condition",
+                      "body": "5200000003000000030000000400000000000000000000000a0047616d65205374617274060000000300000000000000000001000000000000000000704300000100000000000000",
+                      "command": "COUNTER_SECONDS",
+                      "version": 6
+                    }
+                  ],
+                  "version": 1
+                },
+                {
+                  "asset": "ScriptAction",
+                  "body": "2300000003000000040000000e00000000000000000000000700657870616e64310f00000000000000000000000e00736f766965747375727665796f720300000000000000000000001d00506c7972436976696c69616e2f7465616d506c7972436976696c69616e07000000000000000000000009005320657870616e643201000000",
+                  "command": "CREATE_NAMED_ON_TEAM_AT_WAYPOINT",
+                  "version": 3
+                },
+                {
+                  "asset": "ScriptAction",
+                  "body": "a200000003000000030000000e00000000000000000000000700657870616e64312200000000000000000000001c00436f6d6d616e645f556e5061636b536f766965745375727665796f720700000000000000000000001000576179706f696e7420657870616e643301000000",
+                  "command": "NAMED_USE_COMMANDBUTTON_ABILITY_AT_WAYPOINT",
+                  "version": 3
+                }
+              ],
+              "prefix": "0700457870616e643100000000000001010101010000000000000000000000010000010058",
+              "version": 4
+            },
+            {
+              "asset": "Script",
+              "children": [
+                {
+                  "asset": "OrCondition",
+                  "children": [
+                    {
+                      "asset": "Condition",
+                      "body": "3100000003000000040000000b00000000000000000000000c00506c7972436976696c69616e060000000300000000000000000000000000030000000000000000003d00000000000000000000000e00736f76696574726566696e6572790100000000000000",
+                      "command": "PLAYER_HAS_OBJECT_COMPARISON",
+                      "version": 6
+                    }
+                  ],
+                  "version": 1
+                },
+                {
+                  "asset": "ScriptAction",
+                  "body": "d301000003000000040000000f00000000000000000000000b00736f766965746372616e650300000000000000000000001d00506c7972436976696c69616e2f7465616d506c7972436976696c69616e0700000000000000000000000f00576179706f696e7420657870616e641100000000000000db0f493f000001000000",
+                  "command": "CREATE_UNNAMED_ON_TEAM_AT_WAYPOINT_WITH_ORIENTATION",
+                  "version": 3
+                }
+              ],
+              "prefix": "0700457870616e644300000000000001010101010000000000000000000000010000010058",
+              "version": 4
+            },
+            {
+              "asset": "Script",
+              "children": [
+                {
+                  "asset": "OrCondition",
+                  "children": [
+                    {
+                      "asset": "Condition",
+                      "body": "0300000003000000000000000100000000000000",
+                      "command": "CONDITION_TRUE",
+                      "version": 6
+                    }
+                  ],
+                  "version": 1
+                },
+                {
+                  "asset": "ScriptAction",
+                  "body": "4d00000003000000020000000e00000000000000000000000a00536f76696574204d43560b00000000000000000000000c00506c7972436976696c69616e01000000",
+                  "command": "NAMED_TRANSFER_OWNERSHIP_PLAYER",
+                  "version": 3
+                }
+              ],
+              "prefix": "0d00536f76696574204d4356204f6e00000000000001010101010000000000000000000000010000010058",
+              "version": 4
+            }
+          ],
+          "prefix": "0900536f766965742041490100",
+          "version": 3
+        },
+        {
+          "asset": "ScriptGroup",
+          "children": [
+            {
+              "asset": "ScriptGroup",
+              "children": [
+                {
+                  "asset": "ScriptGroup",
+                  "children": [
+                    {
+                      "asset": "Script",
+                      "children": [
+                        {
+                          "asset": "OrCondition",
+                          "children": [
+                            {
+                              "asset": "Condition",
+                              "body": "3100000003000000040000000b00000000000000000000000a00506c7972437265657073060000000000000000000000000000000000010000000000000000003d000000000000000000000012006a6170616e746563687374727563747572650100000000000000",
+                              "command": "PLAYER_HAS_OBJECT_COMPARISON",
+                              "version": 6
+                            },
+                            {
+                              "asset": "Condition",
+                              "body": "5200000003000000030000000400000000000000000000000a0047616d65205374617274060000000300000000000000000001000000000000000000b44300000100000000000000",
+                              "command": "COUNTER_SECONDS",
+                              "version": 6
+                            }
+                          ],
+                          "version": 1
+                        },
+                        {
+                          "asset": "ScriptAction",
+                          "body": "c000000003000000020000000e00000000000000000000000a004a6170616e204d4356312200000000000000000000002600436f6d6d616e645f436f6e7374727563744a6170616e5465636853747275637475726545676701000000",
+                          "command": "NAMED_USE_COMMANDBUTTON_ABILITY",
+                          "version": 3
+                        },
+                        {
+                          "asset": "ScriptAction",
+                          "body": "1500000003000000020000000400000000000000000000000a006a7047414f4275696c6401000000000000000000f041000001000000",
+                          "command": "SET_MILLISECOND_TIMER",
+                          "version": 3
+                        },
+                        {
+                          "asset": "ScriptAction",
+                          "body": "0800000003000000010000000200000000000000000000000c00b8dfbfc6b6aacaa7c5d0b6a801000000",
+                          "command": "ENABLE_SCRIPT",
+                          "version": 3
+                        }
+                      ],
+                      "prefix": "0400b8dfbfc600000000000001010101010000000000000000000000010000010058",
+                      "version": 4
+                    },
+                    {
+                      "asset": "Script",
+                      "children": [
+                        {
+                          "asset": "OrCondition",
+                          "children": [
+                            {
+                              "asset": "Condition",
+                              "body": "3100000003000000040000000b00000000000000000000000a00506c7972437265657073060000000000000000000000000000000000010000000000000000003d000000000000000000000012006a6170616e746563687374727563747572650100000000000000",
+                              "command": "PLAYER_HAS_OBJECT_COMPARISON",
+                              "version": 6
+                            },
+                            {
+                              "asset": "Condition",
+                              "body": "3100000003000000040000000b00000000000000000000000a00506c7972437265657073060000000000000000000000000000000000010000000000000000003d000000000000000000000015006a6170616e746563687374727563747572656567670100000000000000",
+                              "command": "PLAYER_HAS_OBJECT_COMPARISON",
+                              "version": 6
+                            },
+                            {
+                              "asset": "Condition",
+                              "body": "5200000003000000030000000400000000000000000000000a006a7047414f4275696c64060000000100000000000000000001000000000000000000803f00000100000000000000",
+                              "command": "COUNTER_SECONDS",
+                              "version": 6
+                            }
+                          ],
+                          "version": 1
+                        },
+                        {
+                          "asset": "ScriptAction",
+                          "body": "0800000003000000010000000200000000000000000000000400b8dfbfc601000000",
+                          "command": "ENABLE_SCRIPT",
+                          "version": 3
+                        }
+                      ],
+                      "prefix": "0c00b8dfbfc6b6aacaa7c5d0b6a800000000000000010101010000000000000000000000010000010058",
+                      "version": 4
+                    }
+                  ],
+                  "prefix": "0800bda8d4ecb8dfbfc60100",
+                  "version": 3
+                },
+                {
+                  "asset": "ScriptGroup",
+                  "children": [
+                    {
+                      "asset": "Script",
+                      "children": [
+                        {
+                          "asset": "OrCondition",
+                          "children": [
+                            {
+                              "asset": "Condition",
+                              "body": "3100000003000000040000000b00000000000000000000000a00506c7972437265657073060000000000000000000000000000000000010000000000000000003d00000000000000000000000d006a6170616e6261727261636b730100000000000000",
+                              "command": "PLAYER_HAS_OBJECT_COMPARISON",
+                              "version": 6
+                            },
+                            {
+                              "asset": "Condition",
+                              "body": "5200000003000000030000000400000000000000000000000a0047616d65205374617274060000000300000000000000000001000000000000000000704200000100000000000000",
+                              "command": "COUNTER_SECONDS",
+                              "version": 6
+                            }
+                          ],
+                          "version": 1
+                        },
+                        {
+                          "asset": "ScriptAction",
+                          "body": "c000000003000000020000000e00000000000000000000000a004a6170616e204d4356312200000000000000000000002100436f6d6d616e645f436f6e7374727563744a6170616e4261727261636b7345676701000000",
+                          "command": "NAMED_USE_COMMANDBUTTON_ABILITY",
+                          "version": 3
+                        },
+                        {
+                          "asset": "ScriptAction",
+                          "body": "1500000003000000020000000400000000000000000000000b006a70424152314275696c64010000000000000000007042000001000000",
+                          "command": "SET_MILLISECOND_TIMER",
+                          "version": 3
+                        },
+                        {
+                          "asset": "ScriptAction",
+                          "body": "0800000003000000010000000200000000000000000000000d00b1f8d3aa31b6aacaa7c5d0b6a801000000",
+                          "command": "ENABLE_SCRIPT",
+                          "version": 3
+                        }
+                      ],
+                      "prefix": "0500b1f8d3aa3100000000000001010101010001000000000000000000010000010058",
+                      "version": 4
+                    },
+                    {
+                      "asset": "Script",
+                      "children": [
+                        {
+                          "asset": "OrCondition",
+                          "children": [
+                            {
+                              "asset": "Condition",
+                              "body": "3100000003000000040000000b00000000000000000000000a00506c7972437265657073060000000000000000000000000000000000010000000000000000003d00000000000000000000000d006a6170616e6261727261636b730100000000000000",
+                              "command": "PLAYER_HAS_OBJECT_COMPARISON",
+                              "version": 6
+                            },
+                            {
+                              "asset": "Condition",
+                              "body": "3100000003000000040000000b00000000000000000000000a00506c7972437265657073060000000000000000000000000000000000010000000000000000003d000000000000000000000010006a6170616e6261727261636b736567670100000000000000",
+                              "command": "PLAYER_HAS_OBJECT_COMPARISON",
+                              "version": 6
+                            },
+                            {
+                              "asset": "Condition",
+                              "body": "5200000003000000030000000400000000000000000000000b006a70424152314275696c64060000000100000000000000000001000000000000000000803f00000100000000000000",
+                              "command": "COUNTER_SECONDS",
+                              "version": 6
+                            }
+                          ],
+                          "version": 1
+                        },
+                        {
+                          "asset": "ScriptAction",
+                          "body": "0800000003000000010000000200000000000000000000000500b1f8d3aa3101000000",
+                          "command": "ENABLE_SCRIPT",
+                          "version": 3
+                        },
+                        {
+                          "asset": "ScriptAction",
+                          "body": "0800000003000000010000000200000000000000000000001800506c79724372656570732fb1f8d3aa31b4ddbbd9c5d0b6a801000000",
+                          "command": "ENABLE_SCRIPT",
+                          "version": 3
+                        }
+                      ],
+                      "prefix": "0d00b1f8d3aa31b6aacaa7c5d0b6a800000000000000010101010000000000000000000000010000010058",
+                      "version": 4
+                    }
+                  ],
+                  "prefix": "0900bda8d4ecb1f8d3aa310000",
+                  "version": 3
+                },
+                {
+                  "asset": "ScriptGroup",
+                  "children": [
+                    {
+                      "asset": "Script",
+                      "children": [
+                        {
+                          "asset": "OrCondition",
+                          "children": [
+                            {
+                              "asset": "Condition",
+                              "body": "3100000003000000040000000b00000000000000000000000a00506c7972437265657073060000000300000000000000000000000000020000000000000000003d00000000000000000000000d006a6170616e726566696e6572790100000000000000",
+                              "command": "PLAYER_HAS_OBJECT_COMPARISON",
+                              "version": 6
+                            },
+                            {
+                              "asset": "Condition",
+                              "body": "5200000003000000030000000400000000000000000000000a0047616d65205374617274060000000300000000000000000001000000000000000000344300000100000000000000",
+                              "command": "COUNTER_SECONDS",
+                              "version": 6
+                            },
+                            {
+                              "asset": "Condition",
+                              "body": "3100000003000000040000000b00000000000000000000000a00506c7972437265657073060000000000000000000000000000000000010000000000000000003d00000000000000000000000f006a6170616e776172666163746f72790100000000000000",
+                              "command": "PLAYER_HAS_OBJECT_COMPARISON",
+                              "version": 6
+                            }
+                          ],
+                          "version": 1
+                        },
+                        {
+                          "asset": "ScriptAction",
+                          "body": "c000000003000000020000000e00000000000000000000000a004a6170616e204d4356312200000000000000000000002300436f6d6d616e645f436f6e7374727563744a6170616e576172466163746f727945676701000000",
+                          "command": "NAMED_USE_COMMANDBUTTON_ABILITY",
+                          "version": 3
+                        },
+                        {
+                          "asset": "ScriptAction",
+                          "body": "1500000003000000020000000400000000000000000000000b006a70574152314275696c64010000000000000000007042000001000000",
+                          "command": "SET_MILLISECOND_TIMER",
+                          "version": 3
+                        },
+                        {
+                          "asset": "ScriptAction",
+                          "body": "0800000003000000010000000200000000000000000000000d00d6d8b9a431b6aacaa7c5d0b6a801000000",
+                          "command": "ENABLE_SCRIPT",
+                          "version": 3
+                        }
+                      ],
+                      "prefix": "0400d6d8b9a400000000000001010101010000000000000000000000010000010058",
+                      "version": 4
+                    },
+                    {
+                      "asset": "Script",
+                      "children": [
+                        {
+                          "asset": "OrCondition",
+                          "children": [
+                            {
+                              "asset": "Condition",
+                              "body": "3100000003000000040000000b00000000000000000000000a00506c7972437265657073060000000000000000000000000000000000010000000000000000003d00000000000000000000000f006a6170616e776172666163746f72790100000000000000",
+                              "command": "PLAYER_HAS_OBJECT_COMPARISON",
+                              "version": 6
+                            },
+                            {
+                              "asset": "Condition",
+                              "body": "3100000003000000040000000b00000000000000000000000a00506c7972437265657073060000000000000000000000000000000000010000000000000000003d000000000000000000000012006a6170616e776172666163746f72796567670100000000000000",
+                              "command": "PLAYER_HAS_OBJECT_COMPARISON",
+                              "version": 6
+                            },
+                            {
+                              "asset": "Condition",
+                              "body": "5200000003000000030000000400000000000000000000000b006a70574152314275696c64060000000100000000000000000001000000000000000000803f00000100000000000000",
+                              "command": "COUNTER_SECONDS",
+                              "version": 6
+                            }
+                          ],
+                          "version": 1
+                        },
+                        {
+                          "asset": "ScriptAction",
+                          "body": "0800000003000000010000000200000000000000000000000400d6d8b9a401000000",
+                          "command": "ENABLE_SCRIPT",
+                          "version": 3
+                        },
+                        {
+                          "asset": "ScriptAction",
+                          "body": "0800000003000000010000000200000000000000000000001800506c79724372656570732fd6d8b9a431b4ddbbd9c5d0b6a801000000",
+                          "command": "ENABLE_SCRIPT",
+                          "version": 3
+                        }
+                      ],
+                      "prefix": "0d00d6d8b9a431b6aacaa7c5d0b6a800000000000000010101010000000000000000000000010000010058",
+                      "version": 4
+                    }
+                  ],
+                  "prefix": "0800bda8d4ecd6d8b9a40000",
+                  "version": 3
+                },
+                {
+                  "asset": "ScriptGroup",
+                  "children": [
+                    {
+                      "asset": "Script",
+                      "children": [
+                        {
+                          "asset": "OrCondition",
+                          "children": [
+                            {
+                              "asset": "Condition",
+                              "body": "3100000003000000040000000b00000000000000000000000a00506c7972437265657073060000000300000000000000000000000000030000000000000000003d00000000000000000000000d006a6170616e726566696e6572790100000000000000",
+                              "command": "PLAYER_HAS_OBJECT_COMPARISON",
+                              "version": 6
+                            },
+                            {
+                              "asset": "Condition",
+                              "body": "3100000003000000040000000b00000000000000000000000a00506c7972437265657073060000000300000000000000000000000000010000000000000000003d00000000000000000000000f006a6170616e776172666163746f72790100000000000000",
+                              "command": "PLAYER_HAS_OBJECT_COMPARISON",
+                              "version": 6
+                            },
+                            {
+                              "asset": "Condition",
+                              "body": "3100000003000000040000000b00000000000000000000000a00506c7972437265657073060000000000000000000000000000000000020000000000000000003d00000000000000000000000f006a6170616e776172666163746f72790100000000000000",
+                              "command": "PLAYER_HAS_OBJECT_COMPARISON",
+                              "version": 6
+                            },
+                            {
+                              "asset": "Condition",
+                              "body": "3100000003000000040000000b00000000000000000000000a00506c7972437265657073060000000000000000000000000000000000010000000000000000003d000000000000000000000012006a6170616e776172666163746f72796567670100000000000000",
+                              "command": "PLAYER_HAS_OBJECT_COMPARISON",
+                              "version": 6
+                            }
+                          ],
+                          "version": 1
+                        },
+                        {
+                          "asset": "ScriptAction",
+                          "body": "c000000003000000020000000e00000000000000000000000a004a6170616e204d4356312200000000000000000000002300436f6d6d616e645f436f6e7374727563744a6170616e576172466163746f727945676701000000",
+                          "command": "NAMED_USE_COMMANDBUTTON_ABILITY",
+                          "version": 3
+                        },
+                        {
+                          "asset": "ScriptAction",
+                          "body": "1500000003000000020000000400000000000000000000000b006a70574152324275696c64010000000000000000007042000001000000",
+                          "command": "SET_MILLISECOND_TIMER",
+                          "version": 3
+                        },
+                        {
+                          "asset": "ScriptAction",
+                          "body": "0800000003000000010000000200000000000000000000000d00d6d8b9a432b6aacaa7c5d0b6a801000000",
+                          "command": "ENABLE_SCRIPT",
+                          "version": 3
+                        }
+                      ],
+                      "prefix": "0500d6d8b9a43200000000000001010101010000000000000000000000010000010058",
+                      "version": 4
+                    },
+                    {
+                      "asset": "Script",
+                      "children": [
+                        {
+                          "asset": "OrCondition",
+                          "children": [
+                            {
+                              "asset": "Condition",
+                              "body": "3100000003000000040000000b00000000000000000000000a00506c7972437265657073060000000000000000000000000000000000020000000000000000003d00000000000000000000000f006a6170616e776172666163746f72790100000000000000",
+                              "command": "PLAYER_HAS_OBJECT_COMPARISON",
+                              "version": 6
+                            },
+                            {
+                              "asset": "Condition",
+                              "body": "3100000003000000040000000b00000000000000000000000a00506c7972437265657073060000000000000000000000000000000000010000000000000000003d000000000000000000000012006a6170616e776172666163746f72796567670100000000000000",
+                              "command": "PLAYER_HAS_OBJECT_COMPARISON",
+                              "version": 6
+                            },
+                            {
+                              "asset": "Condition",
+                              "body": "5200000003000000030000000400000000000000000000000b006a70574152324275696c64060000000100000000000000000001000000000000000000803f00000100000000000000",
+                              "command": "COUNTER_SECONDS",
+                              "version": 6
+                            },
+                            {
+                              "asset": "Condition",
+                              "body": "3100000003000000040000000b00000000000000000000000a00506c7972437265657073060000000300000000000000000000000000010000000000000000003d00000000000000000000000f006a6170616e776172666163746f72790100000000000000",
+                              "command": "PLAYER_HAS_OBJECT_COMPARISON",
+                              "version": 6
+                            }
+                          ],
+                          "version": 1
+                        },
+                        {
+                          "asset": "ScriptAction",
+                          "body": "0800000003000000010000000200000000000000000000000500d6d8b9a43201000000",
+                          "command": "ENABLE_SCRIPT",
+                          "version": 3
+                        },
+                        {
+                          "asset": "ScriptAction",
+                          "body": "0800000003000000010000000200000000000000000000001800506c79724372656570732fd6d8b9a432b4ddbbd9c5d0b6a801000000",
+                          "command": "ENABLE_SCRIPT",
+                          "version": 3
+                        }
+                      ],
+                      "prefix": "0d00d6d8b9a432b6aacaa7c5d0b6a800000000000000010101010000000000000000000000010000010058",
+                      "version": 4
+                    }
+                  ],
+                  "prefix": "0900bda8d4ecd6d8b9a4320100",
+                  "version": 3
+                },
+                {
+                  "asset": "ScriptGroup",
+                  "children": [
+                    {
+                      "asset": "Script",
+                      "children": [
+                        {
+                          "asset": "OrCondition",
+                          "children": [
+                            {
+                              "asset": "Condition",
+                              "body": "1900000003000000020000000b00000000000000000000000a00506c79724372656570730e00000000000000000000000a004a6170616e204d4356310100000000000000",
+                              "command": "NAMED_OWNED_BY_PLAYER",
+                              "version": 6
+                            },
+                            {
+                              "asset": "Condition",
+                              "body": "3100000003000000040000000b00000000000000000000000a00506c7972437265657073060000000300000000000000000000000000010000000000000000003d00000000000000000000000e006a6170616e6e6176616c796172640100000000000000",
+                              "command": "PLAYER_HAS_OBJECT_COMPARISON",
+                              "version": 6
+                            }
+                          ],
+                          "version": 1
+                        },
+                        {
+                          "asset": "ScriptAction",
+                          "body": "c000000003000000020000000e00000000000000000000000a004a6170616e204d4356312200000000000000000000002200436f6d6d616e645f436f6e7374727563744a6170616e4e6176616c5961726445676701000000",
+                          "command": "NAMED_USE_COMMANDBUTTON_ABILITY",
+                          "version": 3
+                        },
+                        {
+                          "asset": "ScriptAction",
+                          "body": "1500000003000000020000000400000000000000000000000d006a704e6176616c314275696c64010000000000000000007042000001000000",
+                          "command": "SET_MILLISECOND_TIMER",
+                          "version": 3
+                        },
+                        {
+                          "asset": "ScriptAction",
+                          "body": "0800000003000000010000000200000000000000000000000d00b4acb3a731b6aacaa7c5d0b6a801000000",
+                          "command": "ENABLE_SCRIPT",
+                          "version": 3
+                        }
+                      ],
+                      "prefix": "0500b4acb3a73100000000000001010101010001000000000000000000010000010058",
+                      "version": 4
+                    },
+                    {
+                      "asset": "Script",
+                      "children": [
+                        {
+                          "asset": "OrCondition",
+                          "children": [
+                            {
+                              "asset": "Condition",
+                              "body": "3100000003000000040000000b00000000000000000000000a00506c7972437265657073060000000000000000000000000000000000010000000000000000003d00000000000000000000000e006a6170616e6e6176616c796172640100000000000000",
+                              "command": "PLAYER_HAS_OBJECT_COMPARISON",
+                              "version": 6
+                            },
+                            {
+                              "asset": "Condition",
+                              "body": "3100000003000000040000000b00000000000000000000000a00506c7972437265657073060000000000000000000000000000000000010000000000000000003d000000000000000000000011006a6170616e6e6176616c796172646567670100000000000000",
+                              "command": "PLAYER_HAS_OBJECT_COMPARISON",
+                              "version": 6
+                            },
+                            {
+                              "asset": "Condition",
+                              "body": "5200000003000000030000000400000000000000000000000d006a704e6176616c314275696c64060000000100000000000000000001000000000000000000803f00000100000000000000",
+                              "command": "COUNTER_SECONDS",
+                              "version": 6
+                            }
+                          ],
+                          "version": 1
+                        },
+                        {
+                          "asset": "ScriptAction",
+                          "body": "0800000003000000010000000200000000000000000000000500b4acb3a73101000000",
+                          "command": "ENABLE_SCRIPT",
+                          "version": 3
+                        },
+                        {
+                          "asset": "ScriptAction",
+                          "body": "0800000003000000010000000200000000000000000000001800506c79724372656570732fb4acb3a731b4ddbbd9c5d0b6a801000000",
+                          "command": "ENABLE_SCRIPT",
+                          "version": 3
+                        }
+                      ],
+                      "prefix": "0d00b4acb3a731b6aacaa7c5d0b6a800000000000000010101010000000000000000000000010000010058",
+                      "version": 4
+                    }
+                  ],
+                  "prefix": "0900bda8d4ecb4acb3a7310100",
+                  "version": 3
+                },
+                {
+                  "asset": "ScriptGroup",
+                  "children": [
+                    {
+                      "asset": "Script",
+                      "children": [
+                        {
+                          "asset": "OrCondition",
+                          "children": [
+                            {
+                              "asset": "Condition",
+                              "body": "3100000003000000040000000b000000000000000000000025003c3173742048756d616e20506c61796572277320416c6c69657320696e636c2053656c663e060000000300000000000000000000000000010000000000000000003d00000000000000000000000f00616c6c6965646e6176616c796172640100000000000000",
+                              "command": "PLAYER_HAS_OBJECT_COMPARISON",
+                              "version": 6
+                            },
+                            {
+                              "asset": "Condition",
+                              "body": "1900000003000000020000000b00000000000000000000000a00506c79724372656570730e00000000000000000000000a004a6170616e204d4356310100000000000000",
+                              "command": "NAMED_OWNED_BY_PLAYER",
+                              "version": 6
+                            },
+                            {
+                              "asset": "Condition",
+                              "body": "3100000003000000040000000b00000000000000000000000a00506c7972437265657073060000000300000000000000000000000000010000000000000000003d00000000000000000000000d006a6170616e726566696e6572790100000000000000",
+                              "command": "PLAYER_HAS_OBJECT_COMPARISON",
+                              "version": 6
+                            },
+                            {
+                              "asset": "Condition",
+                              "body": "3100000003000000040000000b00000000000000000000000a00506c7972437265657073060000000300000000000000000000000000010000000000000000003d00000000000000000000000e006a6170616e6e6176616c796172640100000000000000",
+                              "command": "PLAYER_HAS_OBJECT_COMPARISON",
+                              "version": 6
+                            }
+                          ],
+                          "version": 1
+                        },
+                        {
+                          "asset": "OrCondition",
+                          "children": [
+                            {
+                              "asset": "Condition",
+                              "body": "3100000003000000040000000b000000000000000000000025003c3173742048756d616e20506c61796572277320416c6c69657320696e636c2053656c663e060000000300000000000000000000000000010000000000000000003d00000000000000000000000f00736f766965746e6176616c796172640100000000000000",
+                              "command": "PLAYER_HAS_OBJECT_COMPARISON",
+                              "version": 6
+                            },
+                            {
+                              "asset": "Condition",
+                              "body": "1900000003000000020000000b00000000000000000000000a00506c79724372656570730e00000000000000000000000a004a6170616e204d4356310100000000000000",
+                              "command": "NAMED_OWNED_BY_PLAYER",
+                              "version": 6
+                            },
+                            {
+                              "asset": "Condition",
+                              "body": "3100000003000000040000000b00000000000000000000000a00506c7972437265657073060000000300000000000000000000000000010000000000000000003d00000000000000000000000d006a6170616e726566696e6572790100000000000000",
+                              "command": "PLAYER_HAS_OBJECT_COMPARISON",
+                              "version": 6
+                            },
+                            {
+                              "asset": "Condition",
+                              "body": "3100000003000000040000000b00000000000000000000000a00506c7972437265657073060000000300000000000000000000000000010000000000000000003d00000000000000000000000e006a6170616e6e6176616c796172640100000000000000",
+                              "command": "PLAYER_HAS_OBJECT_COMPARISON",
+                              "version": 6
+                            }
+                          ],
+                          "version": 1
+                        },
+                        {
+                          "asset": "OrCondition",
+                          "children": [
+                            {
+                              "asset": "Condition",
+                              "body": "3100000003000000040000000b000000000000000000000025003c3173742048756d616e20506c61796572277320416c6c69657320696e636c2053656c663e060000000300000000000000000000000000010000000000000000003d00000000000000000000000e006a6170616e6e6176616c796172640100000000000000",
+                              "command": "PLAYER_HAS_OBJECT_COMPARISON",
+                              "version": 6
+                            },
+                            {
+                              "asset": "Condition",
+                              "body": "1900000003000000020000000b00000000000000000000000a00506c79724372656570730e00000000000000000000000a004a6170616e204d4356310100000000000000",
+                              "command": "NAMED_OWNED_BY_PLAYER",
+                              "version": 6
+                            },
+                            {
+                              "asset": "Condition",
+                              "body": "3100000003000000040000000b00000000000000000000000a00506c7972437265657073060000000300000000000000000000000000010000000000000000003d00000000000000000000000d006a6170616e726566696e6572790100000000000000",
+                              "command": "PLAYER_HAS_OBJECT_COMPARISON",
+                              "version": 6
+                            },
+                            {
+                              "asset": "Condition",
+                              "body": "3100000003000000040000000b00000000000000000000000a00506c7972437265657073060000000300000000000000000000000000010000000000000000003d00000000000000000000000e006a6170616e6e6176616c796172640100000000000000",
+                              "command": "PLAYER_HAS_OBJECT_COMPARISON",
+                              "version": 6
+                            }
+                          ],
+                          "version": 1
+                        },
+                        {
+                          "asset": "ScriptAction",
+                          "body": "c000000003000000020000000e00000000000000000000000a004a6170616e204d4356312200000000000000000000002200436f6d6d616e645f436f6e7374727563744a6170616e4e6176616c5961726445676701000000",
+                          "command": "NAMED_USE_COMMANDBUTTON_ABILITY",
+                          "version": 3
+                        },
+                        {
+                          "asset": "ScriptAction",
+                          "body": "1500000003000000020000000400000000000000000000000d006a704e6176616c324275696c64010000000000000000007042000001000000",
+                          "command": "SET_MILLISECOND_TIMER",
+                          "version": 3
+                        },
+                        {
+                          "asset": "ScriptAction",
+                          "body": "0800000003000000010000000200000000000000000000000d00b4acb3a732b6aacaa7c5d0b6a801000000",
+                          "command": "ENABLE_SCRIPT",
+                          "version": 3
+                        }
+                      ],
+                      "prefix": "0500b4acb3a73200000000000001010101010000000000000000000000010000010058",
+                      "version": 4
+                    },
+                    {
+                      "asset": "Script",
+                      "children": [
+                        {
+                          "asset": "OrCondition",
+                          "children": [
+                            {
+                              "asset": "Condition",
+                              "body": "3100000003000000040000000b00000000000000000000000a00506c7972437265657073060000000300000000000000000000000000010000000000000000003d00000000000000000000000e006a6170616e6e6176616c796172640100000000000000",
+                              "command": "PLAYER_HAS_OBJECT_COMPARISON",
+                              "version": 6
+                            },
+                            {
+                              "asset": "Condition",
+                              "body": "3100000003000000040000000b00000000000000000000000a00506c7972437265657073060000000000000000000000000000000000020000000000000000003d00000000000000000000000e006a6170616e6e6176616c796172640100000000000000",
+                              "command": "PLAYER_HAS_OBJECT_COMPARISON",
+                              "version": 6
+                            },
+                            {
+                              "asset": "Condition",
+                              "body": "3100000003000000040000000b00000000000000000000000a00506c7972437265657073060000000000000000000000000000000000010000000000000000003d000000000000000000000011006a6170616e6e6176616c796172646567670100000000000000",
+                              "command": "PLAYER_HAS_OBJECT_COMPARISON",
+                              "version": 6
+                            },
+                            {
+                              "asset": "Condition",
+                              "body": "5200000003000000030000000400000000000000000000000d006a704e6176616c324275696c64060000000100000000000000000001000000000000000000803f00000100000000000000",
+                              "command": "COUNTER_SECONDS",
+                              "version": 6
+                            }
+                          ],
+                          "version": 1
+                        },
+                        {
+                          "asset": "ScriptAction",
+                          "body": "0800000003000000010000000200000000000000000000000500b4acb3a73201000000",
+                          "command": "ENABLE_SCRIPT",
+                          "version": 3
+                        },
+                        {
+                          "asset": "ScriptAction",
+                          "body": "0800000003000000010000000200000000000000000000001800506c79724372656570732fb4acb3a732b4ddbbd9c5d0b6a801000000",
+                          "command": "ENABLE_SCRIPT",
+                          "version": 3
+                        }
+                      ],
+                      "prefix": "0d00b4acb3a732b6aacaa7c5d0b6a800000000000000010101010000000000000000000000010000010058",
+                      "version": 4
+                    }
+                  ],
+                  "prefix": "0900bda8d4ecb4acb3a7320000",
+                  "version": 3
+                },
+                {
+                  "asset": "ScriptGroup",
+                  "children": [
+                    {
+                      "asset": "Script",
+                      "children": [
+                        {
+                          "asset": "OrCondition",
+                          "children": [
+                            {
+                              "asset": "Condition",
+                              "body": "3100000003000000040000000b00000000000000000000000a00506c7972437265657073060000000300000000000000000000000000030000000000000000003d00000000000000000000000d006a6170616e726566696e6572790100000000000000",
+                              "command": "PLAYER_HAS_OBJECT_COMPARISON",
+                              "version": 6
+                            },
+                            {
+                              "asset": "Condition",
+                              "body": "3100000003000000040000000b00000000000000000000000a00506c7972437265657073060000000300000000000000000000000000020000000000000000003d00000000000000000000000e006a6170616e6e6176616c796172640100000000000000",
+                              "command": "PLAYER_HAS_OBJECT_COMPARISON",
+                              "version": 6
+                            },
+                            {
+                              "asset": "Condition",
+                              "body": "3100000003000000040000000b00000000000000000000000a00506c7972437265657073060000000000000000000000000000000000030000000000000000003d00000000000000000000000e006a6170616e6e6176616c796172640100000000000000",
+                              "command": "PLAYER_HAS_OBJECT_COMPARISON",
+                              "version": 6
+                            },
+                            {
+                              "asset": "Condition",
+                              "body": "3100000003000000040000000b00000000000000000000000800506c617965725f34060000000300000000000000000000000000010000000000000000003d000000000000000000000005006e6176616c0100000000000000",
+                              "command": "PLAYER_HAS_OBJECT_COMPARISON",
+                              "version": 6
+                            }
+                          ],
+                          "version": 1
+                        },
+                        {
+                          "asset": "ScriptAction",
+                          "body": "c000000003000000020000000e00000000000000000000000a004a6170616e204d4356312200000000000000000000002200436f6d6d616e645f436f6e7374727563744a6170616e4e6176616c5961726445676701000000",
+                          "command": "NAMED_USE_COMMANDBUTTON_ABILITY",
+                          "version": 3
+                        },
+                        {
+                          "asset": "ScriptAction",
+                          "body": "1500000003000000020000000400000000000000000000000d006a704e6176616c334275696c64010000000000000000007042000001000000",
+                          "command": "SET_MILLISECOND_TIMER",
+                          "version": 3
+                        },
+                        {
+                          "asset": "ScriptAction",
+                          "body": "0800000003000000010000000200000000000000000000000d00b4acb3a733b6aacaa7c5d0b6a801000000",
+                          "command": "ENABLE_SCRIPT",
+                          "version": 3
+                        }
+                      ],
+                      "prefix": "0500b4acb3a73300000000000001010101010000000000000000000000010000010058",
+                      "version": 4
+                    },
+                    {
+                      "asset": "Script",
+                      "children": [
+                        {
+                          "asset": "OrCondition",
+                          "children": [
+                            {
+                              "asset": "Condition",
+                              "body": "3100000003000000040000000b00000000000000000000000a00506c7972437265657073060000000300000000000000000000000000020000000000000000003d00000000000000000000000e006a6170616e6e6176616c796172640100000000000000",
+                              "command": "PLAYER_HAS_OBJECT_COMPARISON",
+                              "version": 6
+                            },
+                            {
+                              "asset": "Condition",
+                              "body": "3100000003000000040000000b00000000000000000000000a00506c7972437265657073060000000000000000000000000000000000030000000000000000003d00000000000000000000000e006a6170616e6e6176616c796172640100000000000000",
+                              "command": "PLAYER_HAS_OBJECT_COMPARISON",
+                              "version": 6
+                            },
+                            {
+                              "asset": "Condition",
+                              "body": "3100000003000000040000000b00000000000000000000000a00506c7972437265657073060000000000000000000000000000000000010000000000000000003d000000000000000000000011006a6170616e6e6176616c796172646567670100000000000000",
+                              "command": "PLAYER_HAS_OBJECT_COMPARISON",
+                              "version": 6
+                            },
+                            {
+                              "asset": "Condition",
+                              "body": "5200000003000000030000000400000000000000000000000d006a704e6176616c334275696c64060000000100000000000000000001000000000000000000803f00000100000000000000",
+                              "command": "COUNTER_SECONDS",
+                              "version": 6
+                            }
+                          ],
+                          "version": 1
+                        },
+                        {
+                          "asset": "ScriptAction",
+                          "body": "0800000003000000010000000200000000000000000000000500b4acb3a73301000000",
+                          "command": "ENABLE_SCRIPT",
+                          "version": 3
+                        },
+                        {
+                          "asset": "ScriptAction",
+                          "body": "0800000003000000010000000200000000000000000000001800506c79724372656570732fb4acb3a733b4ddbbd9c5d0b6a800000000",
+                          "command": "ENABLE_SCRIPT",
+                          "version": 3
+                        }
+                      ],
+                      "prefix": "0d00b4acb3a733b6aacaa7c5d0b6a800000000000000010101010000000000000000000000010000010058",
+                      "version": 4
+                    }
+                  ],
+                  "prefix": "0900bda8d4ecb4acb3a7330000",
+                  "version": 3
+                },
+                {
+                  "asset": "ScriptGroup",
+                  "children": [
+                    {
+                      "asset": "Script",
+                      "children": [
+                        {
+                          "asset": "OrCondition",
+                          "children": [
+                            {
+                              "asset": "Condition",
+                              "body": "3100000003000000040000000b00000000000000000000000a00506c7972437265657073060000000300000000000000000000000000020000000000000000003d00000000000000000000000d006a6170616e726566696e6572790100000000000000",
+                              "command": "PLAYER_HAS_OBJECT_COMPARISON",
+                              "version": 6
+                            },
+                            {
+                              "asset": "Condition",
+                              "body": "3100000003000000040000000b00000000000000000000000a00506c7972437265657073060000000300000000000000000000000000010000000000000000003d00000000000000000000000d006a6170616e6261727261636b730100000000000000",
+                              "command": "PLAYER_HAS_OBJECT_COMPARISON",
+                              "version": 6
+                            },
+                            {
+                              "asset": "Condition",
+                              "body": "3100000003000000040000000b00000000000000000000000a00506c7972437265657073060000000000000000000000000000000000020000000000000000003d00000000000000000000000d006a6170616e6261727261636b730100000000000000",
+                              "command": "PLAYER_HAS_OBJECT_COMPARISON",
+                              "version": 6
+                            }
+                          ],
+                          "version": 1
+                        },
+                        {
+                          "asset": "ScriptAction",
+                          "body": "c000000003000000020000000e00000000000000000000000a004a6170616e204d4356312200000000000000000000002100436f6d6d616e645f436f6e7374727563744a6170616e4261727261636b7345676701000000",
+                          "command": "NAMED_USE_COMMANDBUTTON_ABILITY",
+                          "version": 3
+                        },
+                        {
+                          "asset": "ScriptAction",
+                          "body": "1500000003000000020000000400000000000000000000000b006a70424152324275696c64010000000000000000007042000001000000",
+                          "command": "SET_MILLISECOND_TIMER",
+                          "version": 3
+                        },
+                        {
+                          "asset": "ScriptAction",
+                          "body": "0800000003000000010000000200000000000000000000000d00b1f8d3aa32b6aacaa7c5d0b6a801000000",
+                          "command": "ENABLE_SCRIPT",
+                          "version": 3
+                        }
+                      ],
+                      "prefix": "0500b1f8d3aa3200000000000001010101010000000000000000000000010000010058",
+                      "version": 4
+                    },
+                    {
+                      "asset": "Script",
+                      "children": [
+                        {
+                          "asset": "OrCondition",
+                          "children": [
+                            {
+                              "asset": "Condition",
+                              "body": "3100000003000000040000000b00000000000000000000000a00506c7972437265657073060000000300000000000000000000000000010000000000000000003d00000000000000000000000d006a6170616e6261727261636b730100000000000000",
+                              "command": "PLAYER_HAS_OBJECT_COMPARISON",
+                              "version": 6
+                            },
+                            {
+                              "asset": "Condition",
+                              "body": "3100000003000000040000000b00000000000000000000000a00506c7972437265657073060000000000000000000000000000000000020000000000000000003d00000000000000000000000d006a6170616e6261727261636b730100000000000000",
+                              "command": "PLAYER_HAS_OBJECT_COMPARISON",
+                              "version": 6
+                            },
+                            {
+                              "asset": "Condition",
+                              "body": "3100000003000000040000000b00000000000000000000000a00506c7972437265657073060000000000000000000000000000000000010000000000000000003d000000000000000000000010006a6170616e6261727261636b736567670100000000000000",
+                              "command": "PLAYER_HAS_OBJECT_COMPARISON",
+                              "version": 6
+                            },
+                            {
+                              "asset": "Condition",
+                              "body": "5200000003000000030000000400000000000000000000000b006a70424152324275696c64060000000100000000000000000001000000000000000000803f00000100000000000000",
+                              "command": "COUNTER_SECONDS",
+                              "version": 6
+                            }
+                          ],
+                          "version": 1
+                        },
+                        {
+                          "asset": "ScriptAction",
+                          "body": "0800000003000000010000000200000000000000000000000500b1f8d3aa3201000000",
+                          "command": "ENABLE_SCRIPT",
+                          "version": 3
+                        },
+                        {
+                          "asset": "ScriptAction",
+                          "body": "0800000003000000010000000200000000000000000000001800506c79724372656570732fb1f8d3aa32b4ddbbd9c5d0b6a801000000",
+                          "command": "ENABLE_SCRIPT",
+                          "version": 3
+                        }
+                      ],
+                      "prefix": "0d00b1f8d3aa32b6aacaa7c5d0b6a800000000000000010101010000000000000000000000010000010058",
+                      "version": 4
+                    }
+                  ],
+                  "prefix": "0900bda8d4ecb1f8d3aa320100",
+                  "version": 3
+                },
+                {
+                  "asset": "Script",
+                  "children": [
+                    {
+                      "asset": "OrCondition",
+                      "children": [
+                        {
+                          "asset": "Condition",
+                          "body": "3100000003000000040000000b00000000000000000000000a00506c7972437265657073060000000000000000000000000000000000070000000000000000003d00000000000000000000000d006a6170616e726566696e6572790100000000000000",
+                          "command": "PLAYER_HAS_OBJECT_COMPARISON",
+                          "version": 6
+                        },
+                        {
+                          "asset": "Condition",
+                          "body": "5200000003000000030000000400000000000000000000000a0047616d65205374617274060000000300000000000000000001000000000000000000f04200000100000000000000",
+                          "command": "COUNTER_SECONDS",
+                          "version": 6
+                        }
+                      ],
+                      "version": 1
+                    },
+                    {
+                      "asset": "ScriptAction",
+                      "body": "c000000003000000020000000e00000000000000000000000a004a6170616e204d4356312200000000000000000000002100436f6d6d616e645f436f6e7374727563744a6170616e526566696e65727945676701000000",
+                      "command": "NAMED_USE_COMMANDBUTTON_ABILITY",
+                      "version": 3
+                    }
+                  ],
+                  "prefix": "0400bfaabff30000000000000100010101004b000000000000000000010000010058",
+                  "version": 4
+                },
+                {
+                  "asset": "Script",
+                  "children": [
+                    {
+                      "asset": "OrCondition",
+                      "children": [
+                        {
+                          "asset": "Condition",
+                          "body": "1b00000003000000010000000b00000000000000000000000a00506c79724372656570730100000001000000",
+                          "command": "PLAYER_HAS_POWER",
+                          "version": 6
+                        },
+                        {
+                          "asset": "Condition",
+                          "body": "1900000003000000020000000b00000000000000000000000a00506c79724372656570730e00000000000000000000000a004a6170616e204d4356310100000000000000",
+                          "command": "NAMED_OWNED_BY_PLAYER",
+                          "version": 6
+                        }
+                      ],
+                      "version": 1
+                    },
+                    {
+                      "asset": "ScriptAction",
+                      "body": "c000000003000000020000000e00000000000000000000000a004a6170616e204d4356312200000000000000000000002300436f6d6d616e645f436f6e7374727563744a6170616e506f776572506c616e7445676701000000",
+                      "command": "NAMED_USE_COMMANDBUTTON_ABILITY",
+                      "version": 3
+                    }
+                  ],
+                  "prefix": "0800b2b9b3e4b5e7c1a60000000000000100010101000a000000000000000000010000010058",
+                  "version": 4
+                }
+              ],
+              "prefix": "0400bda8d4ec0100",
+              "version": 3
+            },
+            {
+              "asset": "Script",
+              "children": [
+                {
+                  "asset": "OrCondition",
+                  "children": [
+                    {
+                      "asset": "Condition",
+                      "body": "0300000003000000000000000100000000000000",
+                      "command": "CONDITION_TRUE",
+                      "version": 6
+                    }
+                  ],
+                  "version": 1
+                },
+                {
+                  "asset": "ScriptAction",
+                  "body": "8100000003000000020000000b00000000000000000000000a00506c797243726565707300000000c409000000000000000001000000",
+                  "command": "PLAYER_GIVE_MONEY",
+                  "version": 3
+                }
+              ],
+              "prefix": "06006d6f6e65794a0000000000000000010101000a000000000000000000010000010058",
+              "version": 4
+            },
+            {
+              "asset": "Script",
+              "children": [
+                {
+                  "asset": "OrCondition",
+                  "children": [
+                    {
+                      "asset": "Condition",
+                      "body": "0300000003000000000000000100000000000000",
+                      "command": "CONDITION_TRUE",
+                      "version": 6
+                    }
+                  ],
+                  "version": 1
+                },
+                {
+                  "asset": "ScriptAction",
+                  "body": "1b01000003000000030000000b00000000000000000000000a00506c79724372656570730f000000000000000000000011006a6170616e6e6176616c79617264656767080000000000000000000000000001000000",
+                  "command": "ALLOW_DISALLOW_ONE_BUILDING",
+                  "version": 3
+                }
+              ],
+              "prefix": "0800bdfbd6b9baa3befc00000000000000010101010000000000000000000000010000010058",
+              "version": 4
+            },
+            {
+              "asset": "Script",
+              "children": [
+                {
+                  "asset": "OrCondition",
+                  "children": [
+                    {
+                      "asset": "Condition",
+                      "body": "0300000003000000000000000100000000000000",
+                      "command": "CONDITION_TRUE",
+                      "version": 6
+                    }
+                  ],
+                  "version": 1
+                },
+                {
+                  "asset": "ScriptAction",
+                  "body": "1902000003000000020000000300000000000000000000001900506c79724372656570732f7465616d506c7972437265657073440000000100000000000000000001000000",
+                  "command": "TEAM_SET_STANCE",
+                  "version": 3
+                }
+              ],
+              "prefix": "0200455800000000000000000101010005000000000000000000010000010058",
+              "version": 4
+            },
+            {
+              "asset": "Script",
+              "children": [
+                {
+                  "asset": "OrCondition",
+                  "children": [
+                    {
+                      "asset": "Condition",
+                      "body": "5200000003000000030000000400000000000000000000000a0047616d65205374617274060000000300000000000000000001000000000000000000164400000100000000000000",
+                      "command": "COUNTER_SECONDS",
+                      "version": 6
+                    },
+                    {
+                      "asset": "Condition",
+                      "body": "3100000003000000040000000b00000000000000000000000a00506c7972437265657073060000000000000000000000000000000000010000000000000000003d000000000000000000000018006a6170616e7375706572776561706f6e616476616e6365640100000000000000",
+                      "command": "PLAYER_HAS_OBJECT_COMPARISON",
+                      "version": 6
+                    },
+                    {
+                      "asset": "Condition",
+                      "body": "1900000003000000020000000b00000000000000000000000a00506c79724372656570730e00000000000000000000000a004a6170616e204d4356310100000000000000",
+                      "command": "NAMED_OWNED_BY_PLAYER",
+                      "version": 6
+                    },
+                    {
+                      "asset": "Condition",
+                      "body": "3100000003000000040000000b00000000000000000000000a00506c7972437265657073060000000000000000000000000000000000010000000000000000003d00000000000000000000001b006a6170616e7375706572776561706f6e616476616e6365646567670100000000000000",
+                      "command": "PLAYER_HAS_OBJECT_COMPARISON",
+                      "version": 6
+                    }
+                  ],
+                  "version": 1
+                },
+                {
+                  "asset": "ScriptAction",
+                  "body": "c000000003000000020000000e00000000000000000000000a004a6170616e204d4356312200000000000000000000002c00436f6d6d616e645f436f6e7374727563744a6170616e5375706572576561706f6e416476616e63656445676701000000",
+                  "command": "NAMED_USE_COMMANDBUTTON_ABILITY",
+                  "version": 3
+                }
+              ],
+              "prefix": "0a00b3acbcb6cee4c6f7203100000000000001010101010000000000000000000000010000010058",
+              "version": 4
+            },
+            {
+              "asset": "Script",
+              "children": [
+                {
+                  "asset": "OrCondition",
+                  "children": [
+                    {
+                      "asset": "Condition",
+                      "body": "0300000003000000000000000100000000000000",
+                      "command": "CONDITION_TRUE",
+                      "version": 6
+                    }
+                  ],
+                  "version": 1
+                },
+                {
+                  "asset": "ScriptAction",
+                  "body": "4d00000003000000020000000e00000000000000000000000a004a6170616e204d4356310b00000000000000000000000a00506c797243726565707301000000",
+                  "command": "NAMED_TRANSFER_OWNERSHIP_PLAYER",
+                  "version": 3
+                },
+                {
+                  "asset": "ScriptAction",
+                  "body": "1002000003000000020000001f000000000000000000000021007370656369616c706f7765726a6170616e656e68616e6365646b616d696b617a650b00000000000000000000000a00506c797243726565707301000000",
+                  "command": "PLAYER_GRANT_SPECIAL_POWER",
+                  "version": 3
+                },
+                {
+                  "asset": "ScriptAction",
+                  "body": "1002000003000000020000001f000000000000000000000020007370656369616c706f7765726a6170616e726f626f746963617373656d626c790b00000000000000000000000a00506c797243726565707301000000",
+                  "command": "PLAYER_GRANT_SPECIAL_POWER",
+                  "version": 3
+                },
+                {
+                  "asset": "ScriptAction",
+                  "body": "b700000003000000010000000b00000000000000000000000a00506c797243726565707301000000",
+                  "command": "MAP_REVEAL_ALL_PERM",
+                  "version": 3
+                },
+                {
+                  "asset": "ScriptAction",
+                  "body": "1902000003000000020000000300000000000000000000001900506c79724372656570732f7465616d506c7972437265657073440000000100000000000000000001000000",
+                  "command": "TEAM_SET_STANCE",
+                  "version": 3
+                }
+              ],
+              "prefix": "0c004a6170616e204d4356204f6e00000000000001010101010000000000000000000000010000010058",
+              "version": 4
+            }
+          ],
+          "prefix": "08005072204a6170616e0100",
+          "version": 3
+        }
+      ],
+      "version": 1
+    }
+  ],
+  "source": {
+    "map_sha256": "5d821900fb69c04a036488fad7b47f01fd5a408f2a97b5c379d2182a94ef7d82",
+    "player": "_neutral_",
+    "script_count": 52,
+    "script_list_index": 0,
+    "script_list_sha256": "a8bf95a29c7788440c64745965bb2b2edcfa2c22bd6aafcf9e1510e11cb3934b"
+  }
+}

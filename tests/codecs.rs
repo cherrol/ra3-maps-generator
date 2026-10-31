@@ -43,7 +43,7 @@ fn shared_template_has_the_current_fixed_ai_lookup_and_roundtrips() {
     }
     assert_eq!(check(&nodes), 1);
     let mut native =
-        MapFile::load(Path::new(env!("CARGO_MANIFEST_DIR")).join("templates/8p_template.map"))
+        MapFile::load(Path::new(env!("CARGO_MANIFEST_DIR")).join("templates/template.map"))
             .unwrap();
     let payload = scripts::encode_nodes(&nodes, &mut native).unwrap();
     assert_eq!(
@@ -145,7 +145,7 @@ fn deterministic_random_refpack_roundtrips() {
 }
 #[test]
 fn template_codecs_are_byte_exact() {
-    let path = Path::new(env!("CARGO_MANIFEST_DIR")).join("templates/8p_template.map");
+    let path = Path::new(env!("CARGO_MANIFEST_DIR")).join("templates/template.map");
     let disk = std::fs::read(&path).unwrap();
     let plain = refpack::unpack(&disk).unwrap();
     let m = MapFile::decode(&plain).unwrap();

@@ -737,7 +737,7 @@ mod tests {
     fn named_or_player_owned_props_never_yield_as_decoration() {
         let root = std::path::Path::new(env!("CARGO_MANIFEST_DIR"));
         let native =
-            crate::formats::map::MapFile::load(root.join("templates/8p_template.map")).unwrap();
+            crate::formats::map::MapFile::load(root.join("templates/template.map")).unwrap();
         let mut object =
             crate::formats::map::objects(native.get("ObjectsList").unwrap(), &native.table)
                 .unwrap()
@@ -784,7 +784,7 @@ mod tests {
         p.cfg["BORDER"] = serde_json::json!(4);
         let frame = crate::coordinates::Frame::from_project(&p);
         let native =
-            crate::formats::map::MapFile::load(root.join("templates/8p_template.map")).unwrap();
+            crate::formats::map::MapFile::load(root.join("templates/template.map")).unwrap();
         let mut start =
             crate::formats::map::objects(native.get("ObjectsList").unwrap(), &native.table)
                 .unwrap()
@@ -948,7 +948,7 @@ mod tests {
         p.cfg["BORDER"] = serde_json::json!(4);
         let frame = crate::coordinates::Frame::from_project(&p);
         let native =
-            crate::formats::map::MapFile::load(root.join("templates/8p_template.map")).unwrap();
+            crate::formats::map::MapFile::load(root.join("templates/template.map")).unwrap();
         let mut start =
             crate::formats::map::objects(native.get("ObjectsList").unwrap(), &native.table)
                 .unwrap()

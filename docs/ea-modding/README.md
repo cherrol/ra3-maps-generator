@@ -98,7 +98,7 @@ CNC_MODDING_SUPPORT_PROXY=http://127.0.0.1:10808 tools/fetch_ea_modding.sh # git
 | --- | --- | --- |
 | 地形 | 真实高程/参考图 → 可玩格高度、通行、水域掩码 | 项目 `maps/<id>/source.png`、`layers.npz`。镜像里没有，地形来自外部资料 |
 | 地表材质 | `TerrainAsset` 名单（材质名、UV、混合规则），全图纹理不超过 49 种 | 镜像 `Xml/Terrain/Terrain.xml`（406 条）、`Schemas/AssetTypeTerrainAsset.xsd`、`AssetTypeTerrainTextureAtlas.xsd`；项目生成 `_art.tga` 与 `TerrainTextureAtlas` |
-| 地图骨架 | 一张空的原生地图底面和脚本容器 | 项目 `templates/8p_template.map`、`nkl_blizzard_scripts.bin`；官方 `Xml/Maps/official/MAP_MP_*/*.map` 可对照 |
+| 地图骨架 | 原生参考地图及脚本容器，构建时按配置替换地形、对象与玩法 | 项目 `templates/template.map`、`scripts.bin`，来源与用途见[模板说明](../../templates/README.md)；官方 `Xml/Maps/official/MAP_MP_*/*.map` 可对照 |
 | 地图元数据 | 显示名、玩家数、宽高、出生点、`FileName`、`IsMultiplayer` | 镜像 `Xml/MapMetaData.xml`、`Schemas/AssetTypeMapMetaData.xsd`；项目写进生成的一行 `MapMetaData` |
 | 对象摆放 | 对象 ID、`DATA:` 源路径、模块字段（占地、朝向、模型） | 项目 `templates/resources/stock-object-sources.json`（36 条对照）、`stock-global-objects.json`（507 个 ID）；源 XML 就在镜像 `Xml/Neutral/`、`Xml/Civilian/` 等目录，路径一一对应 |
 | 资源与中立建筑 | `OreNode*`、`OilDerrick`、医院、机场、观察站 | 镜像 `Xml/Neutral/Structures/`、`Xml/BaseObjects/BaseOreNode.xml`、`Schemas/Modules/OreNodeBehavior.xsd` |
